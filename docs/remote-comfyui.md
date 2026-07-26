@@ -330,14 +330,24 @@ v0.8.1은 색상 축이 이미 안정적으로 반영된 점을 이용해 중복
 그 자리에 `glossy satin clothing`, `large peeling ink patches`, `narrow light beams`,
 `one shoulder and trouser edge`처럼 물리적으로 관찰 가능한 surface/atmosphere/edge 지시를
 넣는다. 최종 generated prompt 최대 길이는 589자이며 승인 69개의 본문과 5-seed 이력은
-계속 보존된다. 아래 Make target은 v0.8.1 증거 경로를 사용한다.
+계속 보존된다. 두 번째 5개 × 3-seed calibration은 faceted, geometric, ornamental,
+rounded 대표군을 통과시켰고 추가 인물 문제도 제거했다. Minimal 대표군만 satin sheet와
+rim light를 무시해 4개 `testing`, 1개 `rejected` 판정을 받았다.
+
+v0.8.2는 실패한 minimal shape의 25개 보정문만 다시 작성한다. Surface를 피사체 의상
+형용사 대신 실제 set sheet/panel로 만들고 edge를 물리적인 rim light 또는 배경과 같은
+톤의 특정 shoulder/trouser 경계로 표현한다. 비교 검사는 style 150개 중 정확히 이 25개
+본문만 변경되고 승인 69개와 v0.8.1을 통과한 non-minimal 56개가 동일함을 확인한다.
+따라서 최신 `remote-style-refill-calibration`은 minimal 대표 1개 × 3-seed delta만 실행하며,
+통합 교정 판정은 v0.8.1의 통과 4개와 이 delta를 함께 사용한다. 아래 Make target은
+v0.8.2 증거 경로를 사용한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
 make deploy-preview-dry-run
 make deploy-preview
-make remote-style-refill-calibration  # 대표 5개 × seed 3개
+make remote-style-refill-calibration  # minimal delta 1개 × seed 3개
 # calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
 make remote-generated-screen          # 81개 × seed 3개
 make review-style-screen
