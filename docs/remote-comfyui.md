@@ -363,7 +363,11 @@ v0.8.3 delta 9장은 모두 기술적으로 성공했다. Fibrous 대표군은 �
 이어 generated 81개 × seed 1001/2002/3003의 공식 refill 243장을 완료했다. 실행 기록,
 PNG, scorecard가 각각 243개이고 81개 스타일의 세 seed가 정확히 대응한다. 모든 PNG는
 1024 × 1024이며 실행 메타데이터 민감정보 0건, 종료 후 원격 큐 running/pending 0건을
-확인했다. 9개 contact sheet의 전수 시각 판정과 5-seed 승격은 다음 게이트에서 수행한다.
+확인했다. 9개 contact sheet 전수 판정은 28개 `testing`, 53개 `rejected`, critical
+failure 0건이었다. 통과 28개에 seed 4004/5005의 56장을 추가해 각 항목을 정확히 다섯
+seed로 집계했고, 27개가 `approved`, 한 개가 새 seed에서 halo를 유지하지 못해
+`rejected`가 됐다. 기존 승인과 합친 현재 style pack 승인은 117개이며 150개 목표까지
+33개가 남았다. 다음 v0.9 refill은 누적 탈락 54개만 실패 노트별로 다시 작성한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
