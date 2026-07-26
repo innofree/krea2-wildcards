@@ -76,6 +76,12 @@ class TemplateSpec:
 
 
 @dataclass(frozen=True)
+class RetrySpec:
+    template: str
+    dimensions: tuple[DimensionSpec, ...]
+
+
+@dataclass(frozen=True)
 class CollectionSpec:
     id: str
     kind: str
@@ -88,6 +94,7 @@ class CollectionSpec:
     dimensions: tuple[DimensionSpec, ...]
     templates: tuple[TemplateSpec, ...]
     prompt_overrides: tuple[tuple[str, str], ...]
+    retry: RetrySpec | None
     compatibility_avoid: tuple[str, ...]
 
     @property
@@ -348,6 +355,67 @@ def _parse_template(raw: Any, dimension_ids: tuple[str, ...], context: str) -> T
     return TemplateSpec(template_id, text)
 
 
+def _parse_retry(
+    raw: Any,
+    dimensions: tuple[DimensionSpec, ...],
+    context: str,
+) -> RetrySpec:
+    value = _mapping(raw, context)
+    _strict_keys(value, {"template", "dimensions"}, context)
+    dimension_ids = tuple(dimension.id for dimension in dimensions)
+    template = value["template"]
+    if not isinstance(template, str) or not template.strip() or template != template.strip():
+        raise ValueError(f"{context}.template must be trimmed, non-empty prose")
+    fields = _template_fields(template, f"{context}.template")
+    unknown = set(fields) - set(dimension_ids)
+    missing = set(dimension_ids) - set(fields)
+    repeated = sorted(field for field, count in Counter(fields).items() if count != 1)
+    if unknown:
+        raise ValueError(
+            f"{context}.template has unknown placeholder(s): {', '.join(sorted(unknown))}"
+        )
+    if missing:
+        raise ValueError(
+            f"{context}.template is missing placeholder(s): {', '.join(sorted(missing))}"
+        )
+    if repeated:
+        raise ValueError(f"{context}.template must use each placeholder exactly once")
+
+    raw_dimensions = _mapping(value["dimensions"], f"{context}.dimensions")
+    if set(raw_dimensions) != set(dimension_ids):
+        raise ValueError(f"{context}.dimensions must exactly match collection dimensions")
+    retry_dimensions: list[DimensionSpec] = []
+    for dimension in dimensions:
+        raw_values = _mapping(
+            raw_dimensions[dimension.id], f"{context}.dimensions.{dimension.id}"
+        )
+        expected_ids = {item.id for item in dimension.values}
+        if set(raw_values) != expected_ids:
+            raise ValueError(
+                f"{context}.dimensions.{dimension.id} must exactly match collection values"
+            )
+        retry_dimensions.append(
+            DimensionSpec(
+                dimension.id,
+                tuple(
+                    ValueSpec(
+                        item.id,
+                        _validate_fragment(
+                            raw_values[item.id],
+                            f"{context}.dimensions.{dimension.id}.{item.id}",
+                        ),
+                    )
+                    for item in dimension.values
+                ),
+            )
+        )
+    probe = template.format_map(
+        {dimension_id: "observable physical detail" for dimension_id in dimension_ids}
+    )
+    _validate_prompt(probe, f"{context}.template", check_repetition=False)
+    return RetrySpec(template, tuple(retry_dimensions))
+
+
 def parse_collection(raw: Any, context: str, source_ids: set[str]) -> CollectionSpec:
     value = _mapping(raw, context)
     _strict_keys_with_optional(
@@ -364,7 +432,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
             "templates",
             "compatibility",
         },
-        {"prompt_overrides"},
+        {"prompt_overrides", "retry"},
         context,
     )
     collection_id = _identifier(value["id"], f"{context}.id")
@@ -423,6 +491,12 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         text = _validate_fragment(raw_text, f"{context}.prompt_overrides.{item_id}")
         prompt_overrides.append((item_id, text))
 
+    retry = (
+        _parse_retry(value["retry"], dimensions, f"{context}.retry")
+        if "retry" in value
+        else None
+    )
+
     compatibility = _mapping(value["compatibility"], f"{context}.compatibility")
     _strict_keys(compatibility, {"avoid"}, f"{context}.compatibility")
     avoids = _identifiers(
@@ -441,6 +515,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         dimensions=dimensions,
         templates=templates,
         prompt_overrides=tuple(sorted(prompt_overrides)),
+        retry=retry,
         compatibility_avoid=avoids,
     )
     if collection.product_size < target_count:
@@ -643,6 +718,14 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         for dimension in collection.dimensions
     }
     templates = {template.id: template for template in collection.templates}
+    retry_dimension_values = (
+        {
+            dimension.id: {value.id: value for value in dimension.values}
+            for dimension in collection.retry.dimensions
+        }
+        if collection.retry is not None
+        else None
+    )
     prompt_overrides = dict(collection.prompt_overrides)
     items: dict[str, dict[str, Any]] = {}
     prompt_origins: dict[str, str] = {}
@@ -666,6 +749,19 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
             f"{base_prompt} {override}" if override else base_prompt,
             f"collection {collection.id}, item {item_id}, template {template_id}",
         )
+        retry_prompt = None
+        if collection.retry is not None and retry_dimension_values is not None:
+            retry_prompt = _validate_prompt(
+                collection.retry.template.format_map(
+                    {
+                        dimension.id: retry_dimension_values[dimension.id][value_id].text
+                        for dimension, value_id in zip(
+                            collection.dimensions, dimension_ids, strict=True
+                        )
+                    }
+                ),
+                f"collection {collection.id}, item {item_id}, retry",
+            )
         if item_id in items:
             raise ValueError(f"collection {collection.id} produced duplicate item ID {item_id!r}")
         normalized = normalized_phrase(prompt)
@@ -703,6 +799,7 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
                 "kind": collection.kind,
                 "template_id": template_id,
             },
+            **({"_retry_prompt": retry_prompt} if retry_prompt is not None else {}),
         }
     unknown_overrides = set(prompt_overrides) - set(items)
     if unknown_overrides:
@@ -815,11 +912,14 @@ def _preserve_evaluated_validation(
 ) -> None:
     for item_id, item in generated_items.items():
         previous = previous_items.get(item_id)
+        retry_prompt = item.pop("_retry_prompt", None)
         if previous is None:
             continue
         previous_validation = previous.get("validation")
         if not isinstance(previous_validation, dict):
             raise ValueError(f"managed item lacks validation in {output_file}: {item_id}")
+        if previous_validation.get("status") == "rejected" and isinstance(retry_prompt, str):
+            item["prompt"] = retry_prompt
         if _body_without_validation(item) == _body_without_validation(previous):
             item["validation"] = dict(previous_validation)
             continue
