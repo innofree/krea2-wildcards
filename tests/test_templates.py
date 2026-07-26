@@ -20,6 +20,14 @@ EXPANSION_BLUEPRINTS = (
     ROOT / "catalog/blueprints/scene_and_control.yaml",
 )
 FIXED_COMPLEMENT_MARKERS = {
+    "style_pack": (
+        "one adult woman",
+        "plain fitted long-sleeve top",
+        "balanced standing pose",
+        "warm-grey studio cyclorama",
+        "eye-level full-length camera",
+        "broad neutral diffused lighting",
+    ),
     "artist_signature": (
         "plain fitted long-sleeve top",
         "balanced standing pose",
@@ -194,6 +202,6 @@ def test_expansion_templates_are_fixed_safe_benchmark_prompts() -> None:
         r"\b(?:wears|standing|seated|camera|lighting|palette|cyclorama)\b",
         re.I,
     )
-    for family in ("style_pack", "preset"):
+    for family in ("preset",):
         text = (ROOT / registry[family]).read_text(encoding="utf-8")
         assert not controlled_axis_words.search(text), (family, text)
