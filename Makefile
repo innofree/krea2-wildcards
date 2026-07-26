@@ -62,10 +62,10 @@ release-deploy:
 	python3 scripts/run_release.py --apply
 
 deploy-preview-dry-run: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_8_2-dry-run.json
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_8_3-dry-run.json
 
 deploy-preview: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_8_2-apply.json --apply
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_8_3-apply.json --apply
 
 deploy-production-dry-run: impact-production
 	python3 scripts/deploy_remote_wildcards.py
@@ -80,16 +80,16 @@ remote-pilot:
 	python3 scripts/run_remote_pilot.py --submit
 
 remote-style-refill-calibration:
-	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status generated --style-id style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_etched_accent_complete_style --output tests/reports/expansion_style_refill_calibration_delta_v0_8_2 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status generated --style-id style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_lost_and_found_complete_style --style-id style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_soft_bleed_complete_style --style-id style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_etched_accent_complete_style --output tests/reports/expansion_style_refill_calibration_delta_v0_8_3 --resume --submit
 
 remote-generated-screen:
-	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status generated --output tests/reports/expansion_style_refill_v0_8_2 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status generated --output tests/reports/expansion_style_refill_v0_8_3 --resume --submit
 
 remote-testing-retest:
-	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status testing --seed 4004 --seed 5005 --output tests/reports/expansion_style_refill_retest_v0_8_2 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --templates catalog/expansion_templates.yaml --status testing --seed 4004 --seed 5005 --output tests/reports/expansion_style_refill_retest_v0_8_3 --resume --submit
 
 review-style-screen:
-	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_refill_v0_8_2/scorecard.csv --catalog catalog/style_expansion.yaml --expected-seeds 3 --styles-per-sheet 10 --overwrite
+	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_refill_v0_8_3/scorecard.csv --catalog catalog/style_expansion.yaml --expected-seeds 3 --styles-per-sheet 10 --overwrite
 
 remote-artist-native-dry-run: artist-native-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl

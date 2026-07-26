@@ -338,16 +338,26 @@ v0.8.2는 실패한 minimal shape의 25개 보정문만 다시 작성한다. Sur
 형용사 대신 실제 set sheet/panel로 만들고 edge를 물리적인 rim light 또는 배경과 같은
 톤의 특정 shoulder/trouser 경계로 표현한다. 비교 검사는 style 150개 중 정확히 이 25개
 본문만 변경되고 승인 69개와 v0.8.1을 통과한 non-minimal 56개가 동일함을 확인한다.
-따라서 최신 `remote-style-refill-calibration`은 minimal 대표 1개 × 3-seed delta만 실행하며,
-통합 교정 판정은 v0.8.1의 통과 4개와 이 delta를 함께 사용한다. 아래 Make target은
-v0.8.2 증거 경로를 사용한다.
+첫 satin delta는 rim light만 개선되고 satin sheet가 약해 실패했다. 이어 fibrous, chalk,
+weathered 대표 3개를 각각 3-seed로 확인했으며 weathered만 큰 박리 패치와 firm edge로
+통과했다. Fibrous는 재질이 너무 미세했고 chalk soft-bleed는 한 시드에서 추가 사람 형태의
+그림자를 만들었다. 이 상태의 기대 하한은 non-minimal 56개와 weathered minimal 5개를
+합친 61개라서 목표 60개에 대한 안전 여유가 부족하다.
+
+v0.8.3은 이미 통과한 weathered minimal 5개를 보존하고 satin/fibrous/chalk 20개만 다시
+작성한다. 세 재질은 sheet가 아니라 `entire backdrop`의 큰 satin fold, coarse fiber,
+powdery chalk stroke로 지정하고, soft bleed는 사람 실루엣이 아닌 단 하나의 soft-edged
+background halo로 제한한다. 비교 검사는 정확히 20개 본문만 변경되고 나머지 style 130개가
+동일함을 확인한다. 최신 `remote-style-refill-calibration`은 이 세 재질 대표 3개 × 3-seed
+delta를 실행하며, 통합 교정은 v0.8.1의 non-minimal 4개, v0.8.2 weathered 1개, 이 delta를
+함께 사용한다. 아래 Make target은 v0.8.3 증거 경로를 사용한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
 make deploy-preview-dry-run
 make deploy-preview
-make remote-style-refill-calibration  # minimal delta 1개 × seed 3개
+make remote-style-refill-calibration  # minimal material delta 3개 × seed 3개
 # calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
 make remote-generated-screen          # 81개 × seed 3개
 make review-style-screen
