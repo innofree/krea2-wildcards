@@ -6,7 +6,12 @@ import pytest
 
 from build_impact_yaml import impact_compatible_document
 from common import iter_leaf_lists, item_status, iter_catalog_items, load_yaml
-from deploy_remote_wildcards import krea2_namespace, rsync_command
+from deploy_remote_wildcards import (
+    atomic_write_evidence,
+    deployment_evidence,
+    krea2_namespace,
+    rsync_command,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -138,3 +143,37 @@ def test_namespace_filter_excludes_unrelated_wildcards() -> None:
         "__krea2/style/complete_pack/all__",
         "__krea2/style/complete_pack/sumi_mist__",
     }
+
+
+def test_deployment_evidence_is_redacted_and_written_atomically(tmp_path: Path) -> None:
+    artifact = tmp_path / "preview.yaml"
+    artifact.write_text("krea2: {}\n", encoding="utf-8")
+    document = deployment_evidence(
+        artifact,
+        applied=True,
+        status="passed",
+        expected_paths=42,
+        digest="a" * 64,
+    )
+    output = Path("tests/reports/deployments/test-preview.json")
+
+    previous = Path.cwd()
+    try:
+        import os
+
+        os.chdir(tmp_path)
+        atomic_write_evidence(output, document)
+    finally:
+        os.chdir(previous)
+
+    raw = (tmp_path / output).read_text(encoding="utf-8")
+    assert "private_comfyui" in raw
+    assert "ssh" not in raw.lower()
+    assert "api" not in raw.lower()
+    assert str(tmp_path) not in raw
+    assert not list((tmp_path / output.parent).glob(".test-preview.json.*"))
+
+
+def test_deployment_evidence_rejects_absolute_path(tmp_path: Path) -> None:
+    with pytest.raises(ValueError, match="must remain relative"):
+        atomic_write_evidence(tmp_path / "outside.json", {})

@@ -53,10 +53,10 @@ release-deploy:
 	python3 scripts/run_release.py --apply
 
 deploy-preview-dry-run: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_5-dry-run.json
 
 deploy-preview: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --apply
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_5-apply.json --apply
 
 deploy-production-dry-run: impact-production
 	python3 scripts/deploy_remote_wildcards.py

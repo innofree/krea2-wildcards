@@ -8,6 +8,7 @@ import os
 import shlex
 import subprocess
 import sys
+import tempfile
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -33,6 +34,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--remote-dir", default=os.environ.get(REMOTE_DIR_ENV))
     parser.add_argument("--remote-name", default=DEFAULT_REMOTE_NAME)
     parser.add_argument("--api-url", default=os.environ.get(API_URL_ENV))
+    parser.add_argument(
+        "--evidence",
+        type=Path,
+        help="write a redacted relative-path JSON deployment record",
+    )
     parser.add_argument(
         "--apply",
         action="store_true",
@@ -74,6 +80,49 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def atomic_write_evidence(path: Path, document: dict) -> None:
+    pure = PurePosixPath(path.as_posix())
+    if path.is_absolute() or ".." in pure.parts:
+        raise ValueError("deployment evidence path must remain relative")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    content = json.dumps(document, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    descriptor, temporary_name = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
+def deployment_evidence(
+    source: Path,
+    *,
+    applied: bool,
+    status: str,
+    expected_paths: int,
+    digest: str,
+) -> dict:
+    return {
+        "schema_version": 1,
+        "status": status,
+        "remote": "private_comfyui",
+        "mode": "apply" if applied else "dry-run",
+        "applied": applied and status == "passed",
+        "artifact": {
+            "name": source.name,
+            "sha256": digest,
+            "bytes": source.stat().st_size,
+            "wildcard_path_count": expected_paths,
+        },
+        "reload": "impact_wildcards_refresh" if applied and status == "passed" else None,
+    }
 
 
 def remote_sha256(ssh_target: str, remote_path: PurePosixPath) -> str:
@@ -154,6 +203,8 @@ def main() -> int:
     transfer_complete = False
     backup_suffix = ".bak." + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     previous_namespace: set[str] | None = None
+    expected: set[str] = set()
+    local_digest = ""
     try:
         missing_settings = [
             name
@@ -178,6 +229,7 @@ def main() -> int:
         expected = runtime_paths(args.source)
         if len(expected) < 2:
             raise ValueError(f"deployment artifact has too few runtime paths: {len(expected)}")
+        local_digest = sha256(args.source)
         if args.apply:
             previous_namespace = remote_krea2_namespace(args.api_url)
 
@@ -195,10 +247,20 @@ def main() -> int:
         if result.stdout.strip():
             print(result.stdout.rstrip())
         if not args.apply:
+            if args.evidence:
+                atomic_write_evidence(
+                    args.evidence,
+                    deployment_evidence(
+                        args.source,
+                        applied=False,
+                        status="passed",
+                        expected_paths=len(expected),
+                        digest=local_digest,
+                    ),
+                )
             print("DRY RUN complete. Re-run with --apply to deploy and reload.")
             return 0
 
-        local_digest = sha256(args.source)
         remote_digest = remote_sha256(args.ssh_target, remote_path)
         if local_digest != remote_digest:
             raise RuntimeError(
@@ -218,6 +280,17 @@ def main() -> int:
                 "remote krea2 namespace mismatch after refresh: " + ", ".join(details)
             )
         print(f"Remote verification OK: {len(expected)} wildcard path(s).")
+        if args.evidence:
+            atomic_write_evidence(
+                args.evidence,
+                deployment_evidence(
+                    args.source,
+                    applied=True,
+                    status="passed",
+                    expected_paths=len(expected),
+                    digest=local_digest,
+                ),
+            )
         return 0
     except (
         FileNotFoundError,
@@ -248,6 +321,20 @@ def main() -> int:
             print(f"ERROR: {exc}", file=sys.stderr)
         if rollback_error is not None:
             print("ERROR: automatic rollback could not be verified", file=sys.stderr)
+        if args.evidence and args.source.is_file() and local_digest:
+            try:
+                atomic_write_evidence(
+                    args.evidence,
+                    deployment_evidence(
+                        args.source,
+                        applied=args.apply,
+                        status="failed",
+                        expected_paths=len(expected),
+                        digest=local_digest,
+                    ),
+                )
+            except (OSError, ValueError):
+                pass
         return 1
 
 
