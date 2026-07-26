@@ -31,6 +31,9 @@ The remaining 45 complete packs completed 135-image screening; 16 pilot-pass sty
 effect and are `rejected` pending rewrites. The catalog therefore has 21 approved styles.
 The 3,700 expansion entries are intentionally `generated`: exact content counts are complete, but
 none is eligible for production until the three-seed screen and five-distinct-seed approval gate.
+The strict completion evaluator currently passes 4 of 16 cross-checked criteria. It counts every
+initial-scale category directly, requires the release security stages, rejects stale duplicate and
+deployment evidence, and cannot treat a three-seed item as approved.
 
 ## Ordered implementation tranches
 
@@ -54,7 +57,7 @@ and zero differing pixels.
 
 1. Introduce namespaced feature, source, evaluation, runtime-route, and lifecycle registries.
 2. Support `catalog/items/**/*.yaml` shards of at most 25 items.
-3. Migrate the existing 50 complete packs without changing public wildcard paths.
+3. Project all 3,750 catalog items without changing public wildcard paths.
 4. Add reference closure, kind-specific feature cardinality, deterministic staged builds, and
    canonical/Impact equivalence tests.
 5. Replace free compatibility strings with canonical feature references and structured rules.
@@ -71,6 +74,13 @@ The 45-style, three-seed screen and the 16-style extension are independently ver
 The 16 candidates completed seeds 4004 and 5005 and were approved only after five-seed aggregation;
 no item was approved from only three seeds.
 
+The first expansion attempt exposed two invalid experimental designs. Twenty images made with a
+multi-subject/crop-conflicting template are quarantined as invalid-template evidence. A later
+56-image partial batch used only four explicit style axes and is quarantined as exploratory evidence.
+Neither set is eligible for scoring or lifecycle promotion. The regenerated official style catalog
+now fixes five independently reviewable axes: shape, color, surface, atmosphere, and edge. A fresh
+v0.6 preview deployment and canary therefore precede the official 150-style screen.
+
 ### D. Source and visual-signature catalogs
 
 1. Capture official and domain terminology sources with access date, usage, license note, locator,
@@ -84,6 +94,14 @@ Phase 1 core prompting sources are registered for NovelAI tagging and character 
 model card, Danbooru taxonomy implementation, and ComfyUI Dynamic Prompts. Domain-specific
 animation, cinematography, fashion, environment, and color/lighting terminology sources are also
 registered and referenced by the expansion blueprints.
+
+A pinned CC0 Anima tagger-artifact snapshot now supplies 300 deterministic canonical artist tag
+identities and post-count evidence. Identity evidence is deliberately separated from style evidence:
+all registry signatures remain pending until native Krea observation. The candidate signature
+structure has exactly eight axes—linework, face, eyes, body, palette, light/shading, framing, and
+ornament—and no source tag is treated as proof of those visual properties. A generic resolved-prompt
+runner and a 300-artist × 3-seed native-name matrix provide queue-guarded, resumable observation
+without storing server or account data.
 
 ### E. Atomic content expansion
 
@@ -106,9 +124,14 @@ advances bounded candidate tranches without promoting untested content.
 ## Expected evaluation volume
 
 The completion criteria still require 129 more approved style packs and 200 approved artist visual
-signatures. The next bounded tranche screens 150 new style packs and 150 artist signatures at three
-seeds (900 images). Pilot-pass candidates receive two additional distinct seeds; no three-seed item
-can enter production. A second artist tranche is expected because 150 candidates cannot satisfy the
-200-signature threshold. Representative single-axis, A/B/C, pairwise, preset-conflict, and random-
-utility runs are recorded separately. Batches remain resumable and queue-guarded so individual
-failures do not invalidate completed evidence.
+signatures. The next official bounded tranche screens 150 five-axis style packs at three seeds
+(450 images); pilot-pass candidates receive two additional distinct seeds. Canonical artist work
+starts with 300 native-name candidates at three seeds (900 observation images), followed by authored,
+name-free eight-axis signatures and five-seed approval runs for at least 200 effective candidates.
+No three-seed item can enter production.
+
+Representative Phase 6 evidence is kept separate from lifecycle approval: fixed-scene single-axis
+comparisons, an 8-artist native/signature/hybrid A/B/C matrix, pairwise coverage of all six required
+combination types, at least 100 preset conflict checks, measured random utility, and a Krea2 Turbo
+benchmark. Batches remain resumable and queue-guarded so individual failures do not invalidate
+completed evidence.

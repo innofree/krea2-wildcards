@@ -31,6 +31,12 @@
 - Generalized the Impact adapter and release evidence from one style runtime file to the complete
   canonical runtime tree.
 - Aligned prose repetition lint with the plan's abstract-quality-word and adjacent-duplicate rules.
+- Migrated generated style packs from four to five explicit visual axes and artist candidates to
+  eight explicit signature axes while preserving the exact 3,750-item library size.
+- Added deterministic stale-generated projection cleanup for blueprint identity changes; evaluated
+  stale items remain protected from deletion.
+- Added a pinned 300-entry canonical artist research registry with tag-identity evidence kept
+  separate from pending native Krea visual-signature observation.
 
 ### Changed
 
@@ -49,6 +55,15 @@
 - Machine-readable plan targets and a persistent implementation roadmap.
 - Exact same-workflow/prompt/seed reproducibility proof with zero pixel difference.
 - Phase 1 official source records for NovelAI, Anima, Danbooru, and Dynamic Prompts.
+- Generic resolved-prompt matrix export/execution with offline dry-run, queue guards, resume
+  validation, 1024×1024 evidence, and redacted metadata.
+- A strict 16-criterion completion evaluator covering content scale, five-seed approvals, functional
+  and security stages, structured Phase 6 evidence, duplicate freshness, and deployment smoke.
+
+### Fixed
+
+- Quarantined 20 invalid-template expansion runs and 56 four-axis exploratory runs so neither can
+  enter scoring, lifecycle promotion, or production.
 
 ## 0.1.0 - 2026-07-26
 

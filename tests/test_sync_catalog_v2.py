@@ -363,3 +363,44 @@ def test_sync_projection_is_deterministic_across_clean_roots(tmp_path: Path) -> 
     )
 
     assert _tree_digest(repo_a / "catalog_v2") == _tree_digest(repo_b / "catalog_v2")
+
+
+def test_sync_removes_stale_generated_items_after_blueprint_identity_change(
+    tmp_path: Path,
+) -> None:
+    repo, blueprint, manifest = _fixture_repo(tmp_path, 2)
+    sync_catalog_v2(
+        repo,
+        blueprint_paths=[blueprint],
+        manifest_paths=[manifest],
+        apply=True,
+    )
+
+    catalog_path = repo / "catalog/style_atomics.yaml"
+    catalog = _read_yaml(catalog_path)
+    del catalog["items"]["atomic_002"]
+    _write_yaml(catalog_path, catalog)
+    blueprint_data = _read_yaml(blueprint)
+    blueprint_data["collections"][0]["target_count"] = 1
+    blueprint_data["collections"][0]["dimensions"][0]["values"] = [
+        blueprint_data["collections"][0]["dimensions"][0]["values"][0]
+    ]
+    _write_yaml(blueprint, blueprint_data)
+    _refresh_manifest(repo, blueprint, manifest, 1)
+
+    report = sync_catalog_v2(
+        repo,
+        blueprint_paths=[blueprint],
+        manifest_paths=[manifest],
+        apply=True,
+    )
+    assert report.removed_items == 1
+    assert set(_v2_items(repo, "style_atomic")) == {"item:style_atomic:atomic_001"}
+    assert validate_catalog_v2(repo / "catalog_v2") == []
+
+    idempotent = sync_catalog_v2(
+        repo,
+        blueprint_paths=[blueprint],
+        manifest_paths=[manifest],
+    )
+    assert idempotent.changed is False

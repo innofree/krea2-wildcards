@@ -106,6 +106,7 @@ class SyncReport:
     scanned_items: int = 0
     added_items: int = 0
     updated_items: int = 0
+    removed_items: int = 0
     added_features: int = 0
     added_sources: int = 0
     added_routes: int = 0
@@ -119,6 +120,7 @@ class SyncReport:
             (
                 self.added_items,
                 self.updated_items,
+                self.removed_items,
                 self.added_features,
                 self.added_sources,
                 self.added_routes,
@@ -650,6 +652,19 @@ class V2State:
             self.item_locations[row["id"]] = (path, row_index)
         return True
 
+    def remove_items(self, item_ids: set[str]) -> None:
+        if not item_ids:
+            return
+        for document in self.shards.values():
+            rows = _sequence(document.get("items"), "item shard")
+            document["items"] = [row for row in rows if row.get("id") not in item_ids]
+        self.item_locations.clear()
+        for path, document in self.shards.items():
+            for index, item in enumerate(_sequence(document.get("items"), str(path))):
+                item_id = item.get("id")
+                if isinstance(item_id, str):
+                    self.item_locations[item_id] = (path, index)
+
     def write(self, destination: Path) -> None:
         documents = {
             Path("vocab/features.yaml"): self.features_doc,
@@ -952,6 +967,39 @@ def _sync_to_stage(
     specs = _catalog_specs(repo_root, collections)
     state = V2State(catalog_v2)
     pending_items: list[tuple[str, dict[str, Any], bool]] = []
+
+    expected_legacy_refs = {
+        f"{catalog_file}#items/{item_id}"
+        for catalog_file in specs
+        for item_id in _catalog_items(repo_root / catalog_file)
+    }
+    owned_prefixes = tuple(f"{catalog_file}#items/" for catalog_file in specs)
+    stale_item_ids: set[str] = set()
+    for item_id in sorted(state.item_locations):
+        item = state.item(item_id)
+        if item is None:
+            continue
+        legacy_ref = item.get("legacy_ref")
+        if (
+            isinstance(legacy_ref, str)
+            and legacy_ref.startswith(owned_prefixes)
+            and legacy_ref not in expected_legacy_refs
+        ):
+            lifecycle_ref = item.get("lifecycle_ref")
+            lifecycle = state.lifecycles.get(lifecycle_ref)
+            if isinstance(lifecycle, Mapping) and lifecycle.get("current_status") != "generated":
+                raise SyncError(
+                    f"{item_id}: refusing to remove stale evaluated item with status "
+                    f"{lifecycle.get('current_status')!r}"
+                )
+            evaluation_ref = item.get("evaluation_ref")
+            if isinstance(evaluation_ref, str):
+                state.evaluations.pop(evaluation_ref, None)
+            if isinstance(lifecycle_ref, str):
+                state.lifecycles.pop(lifecycle_ref, None)
+            stale_item_ids.add(item_id)
+    state.remove_items(stale_item_ids)
+    report.removed_items = len(stale_item_ids)
 
     for catalog_file, (kind, file_collections) in specs.items():
         _, catalog_path = _repo_relative(repo_root, catalog_file, "catalog file")

@@ -156,13 +156,15 @@ An adult woman stands in a relaxed three-quarter pose against a neutral studio b
 보안 정리, template 검토, exact content build, schema-v2 projection이 끝났으므로 다음
 이미지 실행은 bounded expansion pilot이다.
 
-1. 전체 canonical preview runtime을 단일 Impact-compatible bundle로 빌드·배포한다.
-2. 신규 스타일 팩 150개와 작가 시각 시그니처 150개를 seed 3개씩 실행한다.
-3. contact sheet 검토와 점수 기준을 통과한 후보만 `testing`으로 이동한다.
-4. pilot 통과 후보에 seed 2개를 추가해 총 5개 이상의 서로 다른 seed를 확보한다.
-5. `summarize_results.py`로 5-seed 승인 기준과 점수 기준을 함께 검사한다.
-6. 통과 항목만 `approved`로 승격하고 production runtime을 빌드·배포한다.
-7. 작가 시그니처 200개 승인 목표에 부족한 수량은 다음 bounded tranche로 보충한다.
+1. 5축 style/8축 artist 마이그레이션으로 다시 만든 전체 preview를 v0.6 증거로 배포한다.
+2. 신규 5축 스타일 팩 150개를 seed 3개씩 실행하고 contact sheet로 전수 검토한다.
+3. 통과 후보만 `testing`으로 이동하고 seed 2개를 추가해 서로 다른 seed 5개를 확보한다.
+4. 5-seed 통합 점수 기준을 통과한 항목만 `approved`로 승격해 style 150개를 확보한다.
+5. canonical artist 300명의 native-name 반응을 seed 3개로 관찰하고 각 8축 시각 특성을
+   이름 없는 자연어 시그니처로 작성한다.
+6. 시그니처 후보를 5-seed 승인하고 대표 8명은 native/signature/hybrid A/B/C로 비교한다.
+7. 단일축·pairwise·preset·random utility·Turbo benchmark 후 strict 완료 판정을 수행한다.
+8. 최종 approved-only production을 빌드·배포하고 smoke/queue/checksum/namespace를 확인한다.
 
 ### 최소 baseline workflow
 
@@ -266,9 +268,29 @@ normalized prompt 중복은 0, 최대 prompt 길이는 600자 이하, 최대 ite
 호환 bundle로 처리한다.
 
 schema-v2 projection은 prompt 본문을 복제하지 않고 `legacy_ref`로 연결하며, 25개 상한
-shard 150개로 3,750개 전체를 표현한다. 첫 원격 tranche는 신규 스타일 150개와 작가
-시그니처 150개, seed 3개씩 총 900장이다. 모든 실행은 큐가 비어 있을 때만 시작하고
-완료 image·run metadata를 검증하며 resume 가능하게 저장한다.
+shard 150개로 3,750개 전체를 표현한다. 첫 공식 원격 tranche는 신규 5축 스타일 150개를
+seed 3개씩 실행하는 450장이다. canonical artist는 별도 native 관찰 matrix로 분리한다.
+모든 실행은 큐가 비어 있을 때만 시작하고 완료 image·run metadata를 검증하며 resume
+가능하게 저장한다.
+
+### Axis migration and v0.6 execution gate
+
+v0.5 첫 expansion template의 다중 피사체·crop 충돌로 생성된 20장은 invalid-template로
+격리했다. 이후 시작한 style batch도 명시적 축이 shape/color/surface/atmosphere 네 개뿐인
+것을 발견해 큐가 빈 시점에 안전하게 중단했고, 완료된 56장은 four-axis exploratory
+증거로만 보존한다. 두 묶음 모두 점수·상태 변경·production 입력에서 제외한다.
+
+공식 style catalog는 edge 축을 더한 정확한 5축으로 재생성했다. artist candidate 구조도
+linework/face/eye/body/palette/light-shading/framing/ornament의 정확한 8축으로 재생성했다.
+schema-v2 sync는 blueprint identity 변경으로 사라진 generated projection 450개를 안전하게
+제거하고 새 450개를 투영하며, 평가된 항목 삭제는 거부한다. 전체는 다시 3,750개이고
+static duplicate와 reference closure 검사를 통과했다.
+
+별도의 canonical artist registry는 pinned CC0 snapshot에서 결정적으로 선택한 300개 tag
+identity를 기록한다. tag identity 자체는 시각 특성 증거가 아니므로 모든 signature 축은
+native Krea 관찰 전까지 pending이다. `run_remote_prompt_matrix.py`는 완전히 해석된 JSONL만
+받고 wildcard·접속정보를 거부하며, 기본은 offline dry-run이다. submit 시 각 job 전후로
+빈 큐를 확인하고 1024×1024 PNG, 비식별 run record, scorecard, manifest를 검증한다.
 
 ## Pilot v0.1 결과
 

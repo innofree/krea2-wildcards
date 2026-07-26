@@ -17,57 +17,98 @@ collections:
       - id: line_language
         values:
           - id: lace_tapered
-            text: lace-fine contours with gentle pressure changes and sparse interior marks
+            text: lace-fine tapered lines with sparse inner marks
           - id: crisp_measured
-            text: crisp narrow contours with measured corners and selective accent strokes
+            text: crisp narrow lines with measured corners
           - id: supple_ribbon
-            text: supple ribbonlike contours that swell at focal edges and fade in quiet areas
+            text: supple ribbon lines with focal swells
           - id: dry_broken
-            text: dry textured contours with broken accents and confident economy
+            text: dry broken lines with confident accents
           - id: rounded_continuous
-            text: rounded continuous contours with softly reinforced facial features
+            text: rounded linework with reinforced features
           - id: angular_architectural
-            text: angular architectural contours with clean intersections and disciplined spacing
+            text: angular architectural lines with even spacing
+      - id: face_design
+        values:
+          - id: compact_oval
+            text: a compact oval face with a soft jaw and small nose
+          - id: tapered_high
+            text: a tapered face with high cheekbones
+          - id: rounded_soft
+            text: a rounded face with full cheeks and short nose
+          - id: angular_planar
+            text: an angular face with a firm jaw and planar cheeks
+      - id: eye_design
+        values:
+          - id: layered_large
+            text: large layered irises, tapered lashes, and paired catchlights
+          - id: narrow_focused
+            text: narrow dark-rimmed eyes and single catchlights
+          - id: rounded_radial
+            text: rounded eyes, radial irises, and soft lower gradients
+          - id: almond_deep
+            text: deep-set almond eyes, light lashes, and small catchlights
+      - id: body_design
+        values:
+          - id: balanced_narrow
+            text: a balanced figure with narrow shoulders and precise hands
+          - id: compact_grounded
+            text: a grounded figure with sturdy limbs and clear hands
+          - id: elongated_graceful
+            text: an elongated figure with graceful limbs and tapered hands
+          - id: broad_athletic
+            text: an athletic figure with stable joints and firm hands
       - id: palette_language
         values:
           - id: mineral_pastel
-            text: a pale mineral palette with powder blue, warm ivory, muted coral, and charcoal anchors
+            text: pale mineral blue, ivory, coral, and charcoal
           - id: deep_jewel
-            text: a deep jewel palette of garnet, ink blue, forest green, and restrained gold accents
+            text: deep garnet, ink blue, forest, and restrained gold
           - id: sunlit_earth
-            text: a sunlit earth palette of terracotta, sand, olive, cream, and weathered brown
+            text: sunlit terracotta, sand, olive, cream, and brown
           - id: nocturnal_neon
-            text: a nocturnal palette with dark indigo fields, cool cyan accents, and measured magenta light
+            text: nocturnal indigo, cool cyan, and measured magenta
           - id: monochrome_tint
-            text: a near-monochrome palette shifted by one quiet tint and a small high-value accent
+            text: near-monochrome color, a quiet tint, and a pale accent
       - id: light_modeling
         values:
           - id: soft_two_step
-            text: soft two-step value modeling with clean shadow shapes and gentle facial transitions
+            text: soft two-step values and gentle facial transitions
           - id: broad_painterly
-            text: broad blended value planes with visible edge control and rounded volume
+            text: broad blended value planes and rounded volume
           - id: luminous_glaze
-            text: translucent luminous layers that build color depth while keeping shadows open
+            text: translucent glaze, reflected color, and open penumbrae
           - id: crisp_graphic
-            text: crisp separated light and shadow masses with selective reflected-color accents
+            text: hard-edged two-value cel blocks
           - id: velvety_diffuse
-            text: velvety diffuse modeling with restrained contrast and soft contact shadows
+            text: velvety diffuse values and soft contact shadows
       - id: framing_language
         values:
           - id: centered_emblematic
-            text: centered emblematic framing with balanced side motifs and a clear face-to-hands hierarchy
+            text: centered emblematic framing with face-to-hands hierarchy
           - id: spacious_asymmetric
-            text: spacious asymmetric framing with deliberate negative space and a quiet directional flow
+            text: spacious asymmetric framing and quiet directional flow
           - id: layered_intimate
-            text: layered intimate framing with a close foreground accent and softly receding secondary forms
+            text: layered intimate framing and a close foreground accent
           - id: vertical_heroic
-            text: a strong vertical arrangement with a low visual anchor and an uninterrupted adult silhouette
+            text: a strong vertical frame with a low visual anchor
+      - id: ornament_language
+        values:
+          - id: floral_trace
+            text: sparse floral traces and quiet border motifs
+          - id: geometric_inset
+            text: precise geometric insets and corner accents
+          - id: particle_drift
+            text: drifting particles away from facial features
+          - id: textile_echo
+            text: restrained textile patterns around the silhouette
     templates:
       - id: complete_signature
         text: >-
-          An adult subject uses {line_language}, {palette_language}, {light_modeling}, and
-          {framing_language}. Preserve realistic skin texture, coherent hands, believable fabric,
-          natural proportions, cinematic depth, and no text, logos, or watermarks.
+          An adult portrait uses {line_language}, {face_design}, {eye_design}, {body_design},
+          {palette_language}, {light_modeling}, {framing_language}, and {ornament_language}.
+          Preserve realistic skin texture, coherent hands, believable fabric, natural proportions,
+          cinematic depth, and no text, logos, or watermarks.
     compatibility:
       avoid: [hard_photorealism]
 
@@ -131,13 +172,25 @@ collections:
             text: buoyant ceremonial energy conveyed through upward rhythms and luminous accents
           - id: nocturnal_tension
             text: restrained nocturnal tension built from deep values, narrow light paths, and stillness
+      - id: edge_language
+        values:
+          - id: selective_taper
+            text: tapered focal edges with soft peripheral boundaries
+          - id: lost_and_found
+            text: lost-and-found edges with quiet merges and firm accents
+          - id: crisp_cut
+            text: crisp cut edges with small controlled breaks
+          - id: soft_bleed
+            text: soft pigment bleeds around a clear focal silhouette
+          - id: etched_accent
+            text: fine etched accents around the face and hands
     templates:
       - id: complete_style
         text: >-
-          A polished image of an adult subject is organized through {shape_language}. It uses
-          {color_strategy} over {surface_character}, while {atmosphere} defines the final mood.
-          Preserve realistic skin texture, coherent hands, believable fabric, natural proportions,
-          cinematic depth, and a frame free of text, logos, and watermarks.
+          An adult visual treatment combines {shape_language}, {color_strategy},
+          {surface_character}, {atmosphere}, and {edge_language}. Preserve realistic skin texture,
+          coherent hands, believable fabric, natural proportions, cinematic depth, and a frame free
+          of text, logos, and watermarks.
     compatibility:
       avoid: []
 

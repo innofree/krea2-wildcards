@@ -7,453 +7,653 @@ shard:
   item_count: 25
   maximum_items: 25
 items:
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_crisp_graphic_layered_intimate_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature
   feature_refs:
-    framing_language:
-    - feature:framing_language:layered_intimate
-    light_modeling:
-    - feature:light_modeling:crisp_graphic
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_layered_intimate_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_crisp_graphic_spacious_asymmetric_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:spacious_asymmetric
-    light_modeling:
-    - feature:light_modeling:crisp_graphic
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_spacious_asymmetric_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_crisp_graphic_vertical_heroic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:vertical_heroic
-    light_modeling:
-    - feature:light_modeling:crisp_graphic
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_crisp_graphic_vertical_heroic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_centered_emblematic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_luminous_glaze_centered_emblematic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:centered_emblematic
-    light_modeling:
-    - feature:light_modeling:luminous_glaze
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_centered_emblematic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_luminous_glaze_layered_intimate_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:layered_intimate
-    light_modeling:
-    - feature:light_modeling:luminous_glaze
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_layered_intimate_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_luminous_glaze_spacious_asymmetric_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:spacious_asymmetric
-    light_modeling:
-    - feature:light_modeling:luminous_glaze
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_spacious_asymmetric_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_luminous_glaze_vertical_heroic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:vertical_heroic
-    light_modeling:
-    - feature:light_modeling:luminous_glaze
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_luminous_glaze_vertical_heroic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_centered_emblematic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_soft_two_step_centered_emblematic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:centered_emblematic
-    light_modeling:
-    - feature:light_modeling:soft_two_step
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_centered_emblematic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_soft_two_step_layered_intimate_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:layered_intimate
-    light_modeling:
-    - feature:light_modeling:soft_two_step
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_layered_intimate_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_soft_two_step_spacious_asymmetric_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:spacious_asymmetric
-    light_modeling:
-    - feature:light_modeling:soft_two_step
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_spacious_asymmetric_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_soft_two_step_vertical_heroic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:vertical_heroic
-    light_modeling:
-    - feature:light_modeling:soft_two_step
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_soft_two_step_vertical_heroic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_centered_emblematic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_centered_emblematic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:centered_emblematic
-    light_modeling:
-    - feature:light_modeling:velvety_diffuse
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_centered_emblematic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_layered_intimate_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:layered_intimate
-    light_modeling:
-    - feature:light_modeling:velvety_diffuse
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_layered_intimate_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_spacious_asymmetric_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:spacious_asymmetric
-    light_modeling:
-    - feature:light_modeling:velvety_diffuse
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_spacious_asymmetric_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_vertical_heroic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:vertical_heroic
-    light_modeling:
-    - feature:light_modeling:velvety_diffuse
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:mineral_pastel
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_mineral_pastel_velvety_diffuse_vertical_heroic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_centered_emblematic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_broad_painterly_centered_emblematic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:centered_emblematic
-    light_modeling:
-    - feature:light_modeling:broad_painterly
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:sunlit_earth
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_centered_emblematic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_broad_painterly_layered_intimate_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:layered_intimate
-    light_modeling:
-    - feature:light_modeling:broad_painterly
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:sunlit_earth
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_layered_intimate_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_broad_painterly_spacious_asymmetric_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:spacious_asymmetric
-    light_modeling:
-    - feature:light_modeling:broad_painterly
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:sunlit_earth
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_spacious_asymmetric_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_broad_painterly_vertical_heroic_complete_signature
-  feature_refs:
-    framing_language:
-    - feature:framing_language:vertical_heroic
-    light_modeling:
-    - feature:light_modeling:broad_painterly
-    line_language:
-    - feature:line_language:lace_tapered
-    palette_language:
-    - feature:palette_language:sunlit_earth
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:novelai_official_tagging
-  - source:v1:anima_official_model_card
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_broad_painterly_vertical_heroic_complete_signature
-  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_centered_emblematic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_crisp_graphic_centered_emblematic_complete_signature
-  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
     - feature:framing_language:centered_emblematic
     light_modeling:
     - feature:light_modeling:crisp_graphic
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_centered_emblematic_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_crisp_graphic_layered_intimate_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature
   feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
     - feature:framing_language:layered_intimate
     light_modeling:
     - feature:light_modeling:crisp_graphic
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_layered_intimate_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_spacious_asymmetric_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_crisp_graphic_spacious_asymmetric_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
   feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:layered_intimate
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:layered_intimate
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:layered_intimate
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
     - feature:framing_language:spacious_asymmetric
     light_modeling:
     - feature:light_modeling:crisp_graphic
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_spacious_asymmetric_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_crisp_graphic_vertical_heroic_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
   feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:spacious_asymmetric
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:spacious_asymmetric
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:spacious_asymmetric
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
     - feature:framing_language:vertical_heroic
     light_modeling:
     - feature:light_modeling:crisp_graphic
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_crisp_graphic_vertical_heroic_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_luminous_glaze_layered_intimate_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_luminous_glaze_layered_intimate_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature
   feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
-    - feature:framing_language:layered_intimate
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:crisp_graphic
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
     light_modeling:
     - feature:light_modeling:luminous_glaze
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_luminous_glaze_layered_intimate_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
-- id: item:artist_signature:artist_signature_lace_tapered_sunlit_earth_luminous_glaze_vertical_heroic_complete_signature
-  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_sunlit_earth_luminous_glaze_vertical_heroic_complete_signature
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature
   feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:centered_emblematic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:spacious_asymmetric
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
     framing_language:
     - feature:framing_language:vertical_heroic
     light_modeling:
     - feature:light_modeling:luminous_glaze
     line_language:
     - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:floral_trace
     palette_language:
-    - feature:palette_language:sunlit_earth
+    - feature:palette_language:nocturnal_neon
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:novelai_official_tagging
   - source:v1:anima_official_model_card
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_sunlit_earth_luminous_glaze_vertical_heroic_complete_signature
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:geometric_inset
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:particle_drift
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  runtime_route_ref: runtime_route:artist_signature:artist_signature_modern
+- id: item:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  legacy_ref: catalog/artists.yaml#items/artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  feature_refs:
+    body_design:
+    - feature:body_design:compact_grounded
+    eye_design:
+    - feature:eye_design:rounded_radial
+    face_design:
+    - feature:face_design:compact_oval
+    framing_language:
+    - feature:framing_language:vertical_heroic
+    light_modeling:
+    - feature:light_modeling:luminous_glaze
+    line_language:
+    - feature:line_language:lace_tapered
+    ornament_language:
+    - feature:ornament_language:textile_echo
+    palette_language:
+    - feature:palette_language:nocturnal_neon
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:artist_signature:artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature
   runtime_route_ref: runtime_route:artist_signature:artist_signature_modern

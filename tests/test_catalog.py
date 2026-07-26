@@ -53,6 +53,34 @@ def test_initial_style_pack_count_and_schema() -> None:
         assert not re.search(r"[{}\[\]]|(?<!\w)@[a-z0-9_]", prompts[0], re.I)
 
 
+def test_expansion_style_and_artist_axis_contracts() -> None:
+    contracts = {
+        "style_expansion.yaml": {
+            "shape_language",
+            "color_strategy",
+            "surface_character",
+            "atmosphere",
+            "edge_language",
+        },
+        "artists.yaml": {
+            "line_language",
+            "face_design",
+            "eye_design",
+            "body_design",
+            "palette_language",
+            "light_modeling",
+            "framing_language",
+            "ornament_language",
+        },
+    }
+    for filename, expected_axes in contracts.items():
+        items = load_yaml(CATALOG / filename)["items"]
+        assert items, filename
+        for item_id, item in items.items():
+            assert set(item["feature_axes"]) == expected_axes, item_id
+            assert len(item["visual_axes"]) == len(expected_axes), item_id
+
+
 def test_approved_entries_require_real_evaluation() -> None:
     evaluation = load_yaml(CATALOG / "evaluation.yaml")["approval_policy"]
     for _, item_id, item in iter_catalog_items(CATALOG):

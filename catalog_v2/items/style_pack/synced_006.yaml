@@ -7,13 +7,15 @@ shard:
   item_count: 25
   maximum_items: 25
 items:
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_crisp_cut_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_crisp_cut_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:ceremonial_energy
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:crisp_cut
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -23,15 +25,97 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_crisp_cut_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_etched_accent_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_etched_accent_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:etched_accent
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_etched_accent_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_lost_and_found_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_lost_and_found_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:lost_and_found
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_lost_and_found_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_selective_taper_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_selective_taper_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:selective_taper
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_selective_taper_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_soft_bleed_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_soft_bleed_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:soft_bleed
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_soft_bleed_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_crisp_cut_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_crisp_cut_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:contemplative_air
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:crisp_cut
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -41,15 +125,17 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_crisp_cut_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_nocturnal_tension_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_etched_accent_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_etched_accent_complete_style
   feature_refs:
     atmosphere:
-    - feature:atmosphere:nocturnal_tension
+    - feature:atmosphere:contemplative_air
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:etched_accent
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -59,15 +145,77 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_nocturnal_tension_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_etched_accent_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_lost_and_found_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_lost_and_found_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:lost_and_found
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_lost_and_found_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_selective_taper_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_selective_taper_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:selective_taper
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_selective_taper_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_soft_bleed_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_soft_bleed_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:soft_bleed
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:chalk_matte
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_soft_bleed_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_crisp_cut_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_crisp_cut_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:ceremonial_energy
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:crisp_cut
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -77,15 +225,17 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_crisp_cut_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_contemplative_air_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_etched_accent_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_etched_accent_complete_style
   feature_refs:
     atmosphere:
-    - feature:atmosphere:contemplative_air
+    - feature:atmosphere:ceremonial_energy
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:etched_accent
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -95,15 +245,17 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_contemplative_air_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_etched_accent_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_nocturnal_tension_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_lost_and_found_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_lost_and_found_complete_style
   feature_refs:
     atmosphere:
-    - feature:atmosphere:nocturnal_tension
+    - feature:atmosphere:ceremonial_energy
     color_strategy:
     - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:lost_and_found
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -113,231 +265,17 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_nocturnal_tension_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_lost_and_found_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_selective_taper_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_selective_taper_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:ceremonial_energy
     color_strategy:
     - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:glazed_luminous
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:contemplative_air
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:glazed_luminous
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:glazed_luminous
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_nocturnal_tension_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_ceremonial_energy_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:ceremonial_energy
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:satin_clean
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_ceremonial_energy_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_contemplative_air_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:contemplative_air
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:satin_clean
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_contemplative_air_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:satin_clean
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_satin_clean_nocturnal_tension_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_ceremonial_energy_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:ceremonial_energy
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:weathered_ink
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_ceremonial_energy_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_contemplative_air_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:contemplative_air
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:weathered_ink
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_contemplative_air_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:jewel_and_gold
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:weathered_ink
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_weathered_ink_nocturnal_tension_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_ceremonial_energy_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:ceremonial_energy
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:chalk_matte
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_ceremonial_energy_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_contemplative_air_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:contemplative_air
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:chalk_matte
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_contemplative_air_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:chalk_matte
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_chalk_matte_nocturnal_tension_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_fibrous_paper_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_fibrous_paper_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
+    edge_language:
+    - feature:edge_language:selective_taper
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
@@ -347,113 +285,225 @@ items:
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_fibrous_paper_nocturnal_tension_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_selective_taper_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_ceremonial_energy_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_soft_bleed_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_soft_bleed_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:ceremonial_energy
     color_strategy:
-    - feature:color_strategy:warm_cool_split
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:soft_bleed
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
-    - feature:surface_character:glazed_luminous
+    - feature:surface_character:fibrous_paper
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_ceremonial_energy_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_soft_bleed_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_contemplative_air_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:contemplative_air
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:glazed_luminous
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_contemplative_air_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_nocturnal_tension_complete_style
-  feature_refs:
-    atmosphere:
-    - feature:atmosphere:nocturnal_tension
-    color_strategy:
-    - feature:color_strategy:warm_cool_split
-    shape_language:
-    - feature:shape_language:organic_flowing
-    surface_character:
-    - feature:surface_character:glazed_luminous
-  source_refs:
-  - source:internal:taxonomy_v1
-  - source:v1:anima_official_model_card
-  - source:v1:getty_aat_costume_vocabulary
-  - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_glazed_luminous_nocturnal_tension_complete_style
-  runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_ceremonial_energy_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_ceremonial_energy_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_crisp_cut_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_crisp_cut_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:ceremonial_energy
     color_strategy:
-    - feature:color_strategy:warm_cool_split
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:crisp_cut
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
-    - feature:surface_character:weathered_ink
+    - feature:surface_character:glazed_luminous
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_ceremonial_energy_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_crisp_cut_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_contemplative_air_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_contemplative_air_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_etched_accent_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_etched_accent_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:etched_accent
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_etched_accent_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_lost_and_found_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_lost_and_found_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:lost_and_found
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_lost_and_found_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_selective_taper_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_selective_taper_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:selective_taper
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_selective_taper_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_soft_bleed_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_soft_bleed_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:ceremonial_energy
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:soft_bleed
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_soft_bleed_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_crisp_cut_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_crisp_cut_complete_style
   feature_refs:
     atmosphere:
     - feature:atmosphere:contemplative_air
     color_strategy:
-    - feature:color_strategy:warm_cool_split
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:crisp_cut
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
-    - feature:surface_character:weathered_ink
+    - feature:surface_character:glazed_luminous
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_contemplative_air_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_crisp_cut_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack
-- id: item:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_nocturnal_tension_complete_style
-  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_nocturnal_tension_complete_style
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_etched_accent_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_etched_accent_complete_style
   feature_refs:
     atmosphere:
-    - feature:atmosphere:nocturnal_tension
+    - feature:atmosphere:contemplative_air
     color_strategy:
-    - feature:color_strategy:warm_cool_split
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:etched_accent
     shape_language:
     - feature:shape_language:organic_flowing
     surface_character:
-    - feature:surface_character:weathered_ink
+    - feature:surface_character:glazed_luminous
   source_refs:
   - source:internal:taxonomy_v1
   - source:v1:anima_official_model_card
   - source:v1:getty_aat_costume_vocabulary
   - source:v1:cie_international_lighting_vocabulary
-  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_warm_cool_split_weathered_ink_nocturnal_tension_complete_style
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_etched_accent_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_lost_and_found_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_lost_and_found_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:lost_and_found
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_lost_and_found_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_selective_taper_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_selective_taper_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:selective_taper
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_selective_taper_complete_style
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_soft_bleed_complete_style
+  legacy_ref: catalog/style_expansion.yaml#items/style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_soft_bleed_complete_style
+  feature_refs:
+    atmosphere:
+    - feature:atmosphere:contemplative_air
+    color_strategy:
+    - feature:color_strategy:jewel_and_gold
+    edge_language:
+    - feature:edge_language:soft_bleed
+    shape_language:
+    - feature:shape_language:organic_flowing
+    surface_character:
+    - feature:surface_character:glazed_luminous
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:style_pack:style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_soft_bleed_complete_style
   runtime_route_ref: runtime_route:style_pack:complete_pack

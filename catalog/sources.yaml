@@ -69,6 +69,21 @@ sources:
     evidence_summary: >-
       States that Anima uses Danbooru-style tags, natural-language captions, and mixtures; artist
       tags use an at-sign prefix while detailed natural-language prompts should use multiple sentences
+  anima_tagger_artifacts_snapshot:
+    title: Anima tagger artifacts — pinned Danbooru tag metadata snapshot
+    kind: community_dataset_snapshot
+    url: https://huggingface.co/datasets/freedumb2000/anima-tagger-artifacts
+    accessed: '2026-07-26'
+    revision: 3819f8341e6675df3b0034bcdab37b0de9f6c56e
+    usage: >-
+      Select canonical artist-tag identities, post-count evidence, and available aliases for the
+      non-runtime research registry; never treat tag identity as evidence of visual style
+    license_note: >-
+      The artifact is published as CC0-1.0; its card identifies upstream Danbooru tag metadata and
+      separate source-dataset attribution considerations
+    evidence_summary: >-
+      The pinned SQLite artifact exposes tag ID, canonical name, category, post count, aliases, and
+      wiki fields with a post-count floor of 10; artist records are category 1
   danbooru_official_repository:
     title: Danbooru official repository and taxonomy implementation
     kind: official_repository

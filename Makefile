@@ -1,4 +1,4 @@
-.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-smoke remote-pilot remote-generated-screen remote-testing-retest review-style-screen
+.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix completion completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-smoke remote-pilot remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native
 
 preview:
 	python3 scripts/build_runtime_yaml.py --include-status generated --include-status testing --include-status approved --output build/preview-wildcards
@@ -37,6 +37,15 @@ check: preview
 matrix:
 	python3 scripts/export_prompt_matrix.py --output tests/prompt_matrix/styles.jsonl
 
+artist-native-matrix:
+	python3 scripts/export_artist_native_matrix.py --output tests/prompt_matrix/artist_native_name.jsonl
+
+completion:
+	python3 scripts/check_completion_criteria.py
+
+completion-strict:
+	python3 scripts/check_completion_criteria.py --strict
+
 progress:
 	python3 scripts/check_plan_progress.py --output tests/reports/plan_progress.json
 
@@ -53,10 +62,10 @@ release-deploy:
 	python3 scripts/run_release.py --apply
 
 deploy-preview-dry-run: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_5-dry-run.json
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_6-dry-run.json
 
 deploy-preview: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_5-apply.json --apply
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_6-apply.json --apply
 
 deploy-production-dry-run: impact-production
 	python3 scripts/deploy_remote_wildcards.py
@@ -71,10 +80,16 @@ remote-pilot:
 	python3 scripts/run_remote_pilot.py --submit
 
 remote-generated-screen:
-	python3 scripts/run_remote_catalog_batch.py --status generated --output tests/reports/style_screen_v0_3 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status generated --output tests/reports/expansion_style_screen_v0_6 --resume --submit
 
 remote-testing-retest:
-	python3 scripts/run_remote_catalog_batch.py --status testing --seed 4004 --seed 5005 --output tests/reports/style_retest_v0_4 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status testing --seed 4004 --seed 5005 --output tests/reports/expansion_style_retest_v0_6 --resume --submit
 
 review-style-screen:
-	python3 scripts/build_contact_sheets.py tests/reports/style_screen_v0_3/scorecard.csv --overwrite
+	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_screen_v0_6/scorecard.csv --overwrite
+
+remote-artist-native-dry-run: artist-native-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl
+
+remote-artist-native: artist-native-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --output tests/reports/artist_native_screen_v0_6 --resume --submit
