@@ -413,6 +413,14 @@ ceremonial set을 검은 간격으로 분리된 세 개의 완전히 보이는 �
 통과했다. 따라서 v0.10의 fibrous/chalk와 v0.10.1의 faceted/satin을 합친 네 실패군 전체가
 공식 screen 진입 gate를 통과했다.
 
+v0.10.1 공식 screen은 20개 × 3-seed의 60장을 모두 완료했다. Run, PNG, scorecard가
+각각 60개이고 20개 스타일의 seed 1001/2002/3003이 정확히 대응하며, 모든 PNG는
+1024 × 1024다. 실행 메타데이터 민감정보 0건, 종료 큐 0/0도 확인했다. 두 contact sheet의
+분할 전수 리뷰에서 10개가 `testing`, 10개가 `rejected`, 집계 critical failure는 0건이었다.
+탈락은 주로 화면에 드러나지 않은 etched/lost-and-found/selective-taper edge 지시와
+한 seed에서 성인이 두 명으로 갈라진 ceremonial soft-bleed였다. 통과 10개만 두 추가
+seed로 연장하고, style 150 목표에 부족한 최소 두 개는 다음 targeted refill에서 보충한다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
