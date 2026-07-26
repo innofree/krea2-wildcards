@@ -1,0 +1,1043 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/expansion_style_retest_v0_7/review_extension_part_a.yaml
+  - tests/reports/expansion_style_retest_v0_7/review_extension_part_b.yaml
+  - tests/reports/expansion_style_retest_v0_7/review_extension_part_c.yaml
+styles:
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the intersecting amber-blue diagonal planes, matte ceremonial staging,
+      crisp boundaries, clean anatomy, and centered full-length composition seen in the initial screen.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds retain rising crossed light geometry, the warm-cool split, and narrow facial
+      rim accents without character or composition defects.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 repeat the faceted amber-blue beams and controlled dark silhouette merging while
+      keeping the face, hands, and full figure readable.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two new seeds maintain sharp focal features, softer peripheral light transitions, diagonal ceremonial
+      divisions, and the prior stable one-subject layout.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve subtle bloom around a readable silhouette, warm-blue faceted lighting,
+      and the same clean centered portrait quality as the first three seeds.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds reproduce the intentional amber-blue translucent echo figures and bright diagonal
+      planes; the known overlap cost remains but introduces no new corruption or critical failure.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 retain luminous colored echoes, upward diagonal illumination, and fine bright
+      contours with the same readable central adult and previously scored overlap limitations.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension pair consistently shows silhouettes dissolving into layered warm-blue echoes against
+      rising beams, with no anatomy degradation beyond the established multiple-exposure treatment.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both seeds keep the central face sharp while translucent outer figures soften, and the glazed ceremonial
+      diagonals remain compositionally controlled with no new defect.
+    recommendation: approved
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 repeat the soft colored echo halo, readable center figure, and amber-blue ceremonial
+      light paths at the same quality and compatibility level as screening.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 maintain broad rising curves, separated garnet-blue-green-gold fields, matte
+      restraint, hard light boundaries, and clean full-length subjects.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension images preserve the upward organic gold curves and jewel blocks, with narrow highlights
+      around the face and body and no character-quality regression.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 consistently retain organic rising color forms and selective dark silhouette
+      merging while focal anatomy remains fully usable.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The new pair preserves sharp faces against softer outer curves, jewel-and-gold separation, vertical
+      ceremonial motion, and stable centered composition.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both seeds sustain broad colored glow around clean adult figures, flowing upward jewel fields, gold
+      accents, and the prior ceremonial composition without new failures.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 keep calm open spacing, flowing jewel-and-gold curves, a hard readable silhouette,
+      and the same understated chalk texture noted in screening.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two extension seeds repeat quiet organic gold curves, jewel garment blocks, and narrow facial
+      highlights with clean anatomy and no loss of compatibility.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new images retain calm flowing forms and shadow-merging garment sections while faces and hands
+      stay firm, preserving the original strengths and subtle matte limitation.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 maintain detailed facial edges against softer peripheral curves, restrained
+      open spacing, and stable jewel-and-gold styling without defects.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension pair preserves visible colored glow, flowing contemplative curves, saturated jewel
+      accents, and clean single-adult composition at the prior score level.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 repeat firm subject boundaries, organic upward gold forms, and jewel color fields;
+      restrained paper texture remains consistent with the initial three-seed evidence.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds preserve fine luminous contours, rising organic jewel-and-gold staging, readable
+      adults, and the previously modest fibrous surface impression.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 retain selectively merged shadows, clear focal anatomy, broad rising curves,
+      and ceremonial jewel-and-gold separation without a new failure.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two extension outputs maintain sharp central faces, softer background curves, visible paper-like
+      creases, upward ceremonial scale, and clean hands and feet.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_fibrous_paper_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both seeds preserve peripheral jewel-color glow, flowing gold bands, a usable ceremonial subject,
+      and the same faint fibrous-paper limitation recorded in screening.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 strongly sustain saturated glazed jewel ribbons, gold accents, upward ceremonial
+      flow, hard luminous boundaries, and clean full-length anatomy.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension pair repeats glossy flowing color, narrow bright rims around the subject and curves,
+      stable ceremonial composition, and high character quality.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seed 4004 again shows a separate colored shadow-like silhouette while seed 5005 remains single-centered,
+      confirming the known projection instability but adding no corruption beyond the existing lower stability
+      and compatibility scores.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 retain sharp central adults, softer luminous outer curves, vivid jewel-and-gold
+      separation, and stable upward ceremonial staging.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new images preserve conspicuous colored halation, coherent glazed ribbons, readable one-subject
+      composition, and rising jewel-and-gold ceremonial energy without defects.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the single adult, broad glazed jewel waves, gold reflections, calm
+      spacing, and crisp boundaries seen in the pilot without anatomy or composition failure.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension seeds maintain luminous organic color layers and fine bright contours across the
+      subject, with stable full-length framing and no new character defect.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seed 4004 uses a broad dark ribbon to merge parts of the figure while keeping the face readable,
+      and seed 5005 retains a clear central adult; both preserve the established style with no corruption.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two new seeds repeat crisp facial and hand detail against softer peripheral jewel waves, while
+      proportions, full-length composition, and compatibility remain stable.
+    recommendation: approved
+  style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 consistently retain the adult subject, flowing jewel-and-gold ribbons, and visible
+      luminous bleed without obscuring anatomy or weakening the established composition.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_chalk_matte_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension seeds preserve mirrored mineral ornament, matte texture, evening restraint, and firm
+      figure separation; seed 5005 is darker but remains clear and anatomically sound.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_chalk_matte_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 sustain the muted chalk-matte frame and readable full-length adult while irregular
+      border sections dissolve into the pale ground as in the pilot.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The new seeds repeat upward botanical side motifs, mineral color, visible paper fibers, and crisp
+      subject boundaries with stable anatomy and centered ceremonial framing.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension images retain fibrous botanical framing and fine subject contrast; the etched emphasis
+      remains subtle, consistent with the existing score, and introduces no new failure.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve rising ornamental forms, fibrous pale grounds, and irregular edge merging
+      while keeping the adult figure and full-length layout intact.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds retain calm open spacing, fibrous mineral ornament, and clean hard border separation
+      around a stable, correctly formed full-length adult.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the calm fibrous frame and fine facial contrast; the etched distinction
+      remains modest but stable, with no anatomy or layout regression.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension pair repeats low-noise centered composition and fibrous mineral borders whose outer
+      sections merge into the ground, while the subject remains consistently readable.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both seeds keep sharp facial detail and softer peripheral ornament within the established subtle
+      range, with stable proportions, framing, and compatibility.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve a softly blooming fibrous ornamental perimeter and calm central adult
+      without losing figure clarity or introducing visual artifacts.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension seeds maintain dark mineral values, visible paper fibers, repeated hard-edged ornament,
+      and a readable adult; the darker seed 5005 remains usable and on-prompt.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_nocturnal_tension_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new images retain the nocturnal fibrous frame and narrow subject highlights; etched accents
+      stay close to the crisp sibling but do not deteriorate from the pilot.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 continue the established exposure range, including a darker second image, while
+      fibrous dissolving borders and the intact centered figure remain legible without corruption.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two extension seeds preserve a readable face, dark fibrous ornament, and moderately softened
+      peripheral borders, matching the prior subtle selective-taper behavior.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds maintain the dark fibrous frame and softly blooming outer ornament while preserving
+      clean anatomy, a centered full-length composition, and figure readability.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the sculpted satin border, muted mineral color, upward ceremonial curls,
+      crisp separation, sound anatomy, and balanced framing without a new defect.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension seeds retain smooth dimensional ornament and fine bright accents around a readable
+      adult subject, matching the earlier fidelity and composition with no critical failure.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The new seeds keep satin ceremonial curls while selected frame sections dissolve into the pale ground;
+      the figure, hands, and composition remain usable and consistent.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 repeat the glossy layered frame with firm focal boundaries and softer outer
+      curls, preserving the prior selective-taper reading and character quality.
+    recommendation: approved
+  style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new images maintain luminous satin ornament, stable ceremonial framing, and a gentle peripheral
+      glow without obscuring the subject or introducing artifacts.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_limited_duotone_weathered_ink_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 retain the large circular field, strict dark-light duotone, weathered grain,
+      and hard subject boundary; deep facial shadow remains the known limitation rather than a new failure.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_limited_duotone_weathered_ink_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension seeds again merge the shadowed silhouette into the nocturnal field against a stable
+      circular source, with no anatomy corruption, text, or compositional regression.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_limited_duotone_weathered_ink_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The two new seeds sustain the broad circular halo, shadowed duotone figure, restrained grain, and
+      centered composition without any new critical defect.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_glazed_luminous_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the blush-blue luminous circle, calm open spacing, glazed projection,
+      and clean boundary; strong projected facial shadow is consistent with the original results.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_glazed_luminous_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new images repeat the tranquil pastel light pool and shadow-side figure merging while retaining
+      coherent anatomy, stable framing, and the established glazed treatment.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_glazed_luminous_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 maintain the pastel circular halo, luminous glaze, contemplative spacing, and
+      readable full figure with no new corruption or unwanted marks.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_weathered_ink_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The extension seeds preserve the pale circular field, deep nocturnal subject, subtle aged texture,
+      and firm light boundary; low facial visibility remains unchanged from the initial score.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_weathered_ink_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds again blend dark body sections into the field while keeping the pastel disk, quiet
+      weathering, tense mood, and centered composition stable.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_low_contrast_pastel_weathered_ink_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 3
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 retain the soft-edged pale disk, deep nocturnal figure, mild weathering, and
+      stable spacing without introducing anatomy or rendering failure.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds strongly preserve the amber-blue split, fibrous specks, circular geometry,
+      nocturnal depth, crisp separation, and coherent adult figure.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 repeat the warm-cool fibrous nocturne with fine facial contrast and stable circular
+      staging, adding no new compatibility or character defect.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both seeds retain blue shadow merging, amber circular light, and paper specks; the extra left floor
+      shadow in seed 4004 is connected to the intended lost-edge projection and does not impair the composition.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The new seeds keep crisp facial color division, softer circular boundaries, fibrous texture, and
+      stable amber-blue composition with no observed regression.
+    recommendation: approved
+  style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the dramatic warm-cool split, paper texture, dark depth, rounded pool,
+      and broad soft halo at the same high quality without critical failure.
+    recommendation: approved
