@@ -352,6 +352,19 @@ background halo로 제한한다. 비교 검사는 정확히 20개 본문만 변�
 delta를 실행하며, 통합 교정은 v0.8.1의 non-minimal 4개, v0.8.2 weathered 1개, 이 delta를
 함께 사용한다. 아래 Make target은 v0.8.3 증거 경로를 사용한다.
 
+v0.8.3 delta 9장은 모두 기술적으로 성공했다. Fibrous 대표군은 화면 전체의 거친 종이
+섬유가, chalk 대표군은 분말감과 단일 배경 halo가 세 seed에서 반복되어 `testing`을
+통과했다. 이전 초크 교정에서 보였던 사람 형태의 중복 그림자는 재발하지 않았다. Satin
+대표군은 안정적인 단일 인물과 약한 의상 광택은 유지했지만, 넓고 거울처럼 밝은 배경
+주름과 얼굴·손가락의 etched light가 충분히 드러나지 않아 `rejected`로 남겼다. 따라서
+공식 refill의 보수적인 기대 통과 풀은 non-minimal 56개, weathered 5개, fibrous/chalk
+10개를 합친 71개다.
+
+이어 generated 81개 × seed 1001/2002/3003의 공식 refill 243장을 완료했다. 실행 기록,
+PNG, scorecard가 각각 243개이고 81개 스타일의 세 seed가 정확히 대응한다. 모든 PNG는
+1024 × 1024이며 실행 메타데이터 민감정보 0건, 종료 후 원격 큐 running/pending 0건을
+확인했다. 9개 contact sheet의 전수 시각 판정과 5-seed 승격은 다음 게이트에서 수행한다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
