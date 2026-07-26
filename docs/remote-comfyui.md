@@ -402,12 +402,23 @@ v0.10은 실패 원인이 명확한 20개만 다시 연다. 새 `retry_prompt_re
 이 네 실패군에서 한 개씩 골라 4개 × 3-seed로 실행한다. 정확히 20개 prompt만 바뀌고
 승인 항목 변경은 0건이며, 최대 prompt 길이는 486자로 정적 검증을 통과했다.
 
+첫 v0.10 calibration에서 fibrous paper와 chalk mural 대표는 세 seed 모두 통과했다.
+Faceted etched는 얼굴의 흰 패치를 제거했지만 amber-blue 분할이 blue-gray로 수렴했고,
+satin ceremonial은 재질은 강해졌으나 세 light box의 수가 흔들렸다. v0.10.1은 이 다섯
+prompt만 다시 고쳐 crossed slab을 하나의 solid amber-orange와 하나의 solid cobalt-blue로,
+ceremonial set을 검은 간격으로 분리된 세 개의 완전히 보이는 직사각 light-box panel로
+고정한다. 나머지 15개 v0.10 prompt는 변경하지 않고 두 실패군 대표만 2개 × 3-seed로
+재교정한다. v0.10.1의 여섯 결과는 모두 1024 × 1024로 완료됐고, 세 seed에서 두 색의
+교차 slab과 정확히 세 개의 분리된 light-box가 반복되어 두 대표군 모두 `testing` 기준을
+통과했다. 따라서 v0.10의 fibrous/chalk와 v0.10.1의 faceted/satin을 합친 네 실패군 전체가
+공식 screen 진입 gate를 통과했다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
 make deploy-preview-dry-run
 make deploy-preview
-make remote-style-refill-calibration  # v0.10 실패군 대표 4개 × seed 3개
+make remote-style-refill-calibration  # v0.10.1 잔여 실패군 대표 2개 × seed 3개
 # calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
 make remote-generated-screen          # v0.10 재작성 20개 × seed 3개
 make review-style-screen
@@ -417,8 +428,8 @@ make remote-testing-retest            # seed 4004, 5005
 
 각 제출 전후 runner가 빈 큐를 확인하며 다른 사용자의 작업을 취소하거나 변경하지 않는다.
 Calibration은 공식 refill과 별도 디렉터리에 보존하고, 3-seed 결과는 screening에만 사용한다.
-승격은 공식 screen과 extension을 합친 5-seed 점수에서만 허용한다. v0.9에서 최소 33개가
-추가 승인되면 style pack 150개 목표를 충족한다.
+승격은 공식 screen과 extension을 합친 5-seed 점수에서만 허용한다. 현재 승인 138개에서
+v0.10 대상 중 최소 12개가 추가 승인되면 style pack 150개 목표를 충족한다.
 
 ## Pilot v0.1 결과
 
