@@ -387,6 +387,14 @@ v0.9.4는 retry override와 조립 template 사이의 중복 마침표만 정규
 artifact다. Prompt 의미는 v0.9.3과 동일하므로 calibration은 반복하지 않고, 공식 screen과
 extension 증거 경로만 v0.9.4로 분리한다.
 
+v0.9.4 공식 screen은 54개 × 3-seed의 162장을 모두 완료했다. Run, PNG, scorecard가
+각각 162개이고 모든 이미지는 1024 × 1024, 민감 메타데이터 0건, 종료 큐 0/0이다. 여섯
+contact sheet의 분할 전수 리뷰에서 22개가 `testing`, 32개가 `rejected`, critical failure는
+0건이었다. Etched face rim이 불투명한 흰 얼굴 패치로 변한 사례와 재질·광원 축이 약한
+minimal/rounded 조합은 통과시키지 않았다. 통과 22개에 seed 4004/5005의 44장을 추가해
+정확히 5개 seed로 통합했으며, 21개는 `approved`, ornamental soft-bleed 한 개는 새 seed의
+halo 불안정으로 `rejected`가 됐다. Style pack 승인은 138개이며 목표까지 12개가 남았다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash

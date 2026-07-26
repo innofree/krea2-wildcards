@@ -17,7 +17,7 @@ report.
 
 | Target | Current | Required |
 | --- | ---: | ---: |
-| Approved style packs | 21 | 150 |
+| Approved style packs | 138 | 150 |
 | Approved artist visual signatures | 0 | 200 |
 | Character-design items | 400 | 400 |
 | Pose and camera items | 600 | 600 |
@@ -26,9 +26,8 @@ report.
 | Total catalog items | 3,750 | 3,750 |
 
 The initial five styles completed five-seed family-compatible evaluation and production deployment.
-The remaining 45 complete packs completed 135-image screening; 16 pilot-pass styles then completed
-32 extension images and are now `approved`. The other 29 showed insufficient individual style
-effect and are `rejected` pending rewrites. The catalog therefore has 21 approved styles.
+Subsequent v0.7 through v0.9.4 screens and two-seed extensions raised the catalog to 138 approved
+style packs. Twelve additional approvals remain before the 150-style completion criterion.
 The 3,700 expansion entries are intentionally `generated`: exact content counts are complete, but
 none is eligible for production until the three-seed screen and five-distinct-seed approval gate.
 The strict completion evaluator currently passes 4 of 16 cross-checked criteria. It counts every
@@ -74,11 +73,11 @@ The 45-style, three-seed screen and the 16-style extension are independently ver
 The 16 candidates completed seeds 4004 and 5005 and were approved only after five-seed aggregation;
 no item was approved from only three seeds.
 
-The v0.7 expansion and v0.8 refill cycles have raised the approved style-pack total to 117. The
-remaining 54 rejected candidates now use a persistent retry prompt profile. Representative v0.9.3
-calibration covers the last weak surface treatments at three seeds and passes the screening gate;
-the official 54-candidate screen remains separate, and only its two-seed extension can produce the
-five distinct seeds required for approval.
+The v0.7 expansion and v0.8 refill cycles raised the approved style-pack total to 117. The remaining
+54 rejected candidates use a persistent retry prompt profile. Representative v0.9.3 calibration
+covered the last weak surface treatments, and the separate v0.9.4 official screen advanced 22 of
+54 candidates to testing. Their two-seed extension produced exactly five distinct seeds per style:
+21 were approved and one was rejected after its halo became unstable. The total is now 138.
 
 The first expansion attempt exposed two invalid experimental designs. Twenty images made with a
 multi-subject/crop-conflicting template are quarantined as invalid-template evidence. A later
@@ -133,9 +132,9 @@ advances bounded candidate tranches without promoting untested content.
 
 ## Expected evaluation volume
 
-The completion criteria still require 129 more approved style packs and 200 approved artist visual
-signatures. The next official bounded tranche screens 150 five-axis style packs at three seeds
-(450 images); pilot-pass candidates receive two additional distinct seeds. Canonical artist work
+The completion criteria still require 12 more approved style packs and 200 approved artist visual
+signatures. Remaining style work uses bounded failure-specific retry tranches at three seeds;
+pilot-pass candidates receive two additional distinct seeds. Canonical artist work
 starts with 300 native-name candidates at three seeds (900 observation images), followed by authored,
 name-free eight-axis signatures and five-seed approval runs for at least 200 effective candidates.
 No three-seed item can enter production.

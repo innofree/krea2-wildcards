@@ -1,0 +1,350 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/expansion_style_refill_retest_v0_9_4/review_part_a.yaml
+  - tests/reports/expansion_style_refill_retest_v0_9_4/review_part_b.yaml
+  - tests/reports/expansion_style_refill_retest_v0_9_4/review_part_c.yaml
+styles:
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 fully preserve the prior screen: one natural adult, two huge dry crossed amber-blue
+      chalk strokes, deep-black cinematic space, and knife-hard silhouette and cast-shadow edges, with
+      coherent hands, fabric, and proportions.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds match the three-seed evidence with one realistic adult, crossed dry chalk slabs,
+      stable warm-cool nocturnal color, and garment sections lost into shadow while face, hands, and anatomy
+      remain readable.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 maintain the screened one-adult chalk X, deep warm-cool split, focused face
+      and hands, coherent clothing, and natural proportions; the outer chalk border remains only moderately
+      softened, consistent with the prior score.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds preserve the initial result's single adult, crossed dry amber-blue strokes, black
+      nocturnal depth, and restrained halo without a person-shaped echo, text, anatomy defect, or fabric
+      failure.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 continue the prior stable treatment with one coherent adult, two empty crossed
+      refractive sheets, calm haze and spacing, a clean amber-blue division, focused skin and hands, and
+      no reflected human.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension images retain one natural adult, empty crossed glass geometry, deep-black warm-cool
+      tension, focused facial and hand detail, believable fabric, and the same modest outer-panel softness
+      recorded in the first three seeds.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the prior single-adult composition, two amber-blue refractive sheets,
+      dark cinematic spacing, and broad light spill without a duplicate silhouette, unrealistic skin,
+      incoherent hands, text, or logo.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both new seeds keep one proportionate adult, charcoal-ivory peeled ink, calm haze, vertical light
+      divisions, and crisp silhouette separation, but they show fewer than the prior screen's consistent
+      three narrow columns, so adherence, fidelity, and stability are conservatively lowered.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 maintain the prior score level with one realistic adult, upright ivory openings,
+      giant peeled black marks, calm monochrome spacing, and dark body-edge loss; the known visible-column
+      variation persists without a new content failure.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new outputs continue the screened one-adult charcoal-ivory treatment, with broken black ink,
+      tall light openings, calm depth, focused natural skin and hands, believable fabric, and only moderately
+      softened outer set edges.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve one coherent adult, charcoal-and-ivory peeled ink, narrow luminous
+      openings, calm spacing, and soft non-figurative haze within the prior three-seed variation.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both new seeds retain one adult, deep black weathered-ink surroundings, narrow ivory paths, strict
+      neutral duotone, and hard readable silhouette and floor boundaries without defects.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 5
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 keep one realistic charcoal-clad adult with body edges lost in deep ink; the
+      U-shaped versus split-column light geometry continues the variability already recorded in the prior
+      screen.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Both extension images preserve a tack-sharp single adult and hands against softer torn-ink outer
+      regions, while column arrangement varies only within the prior three-seed range.
+    recommendation: testing
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seed 4004 forms a broad ivory halo and seed 5005 uses softly bleeding vertical paths; both retain
+      one adult, black weathered surround, neutral duotone tension, and no person-shaped echo.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 match the prior screen with one natural full-length adult, pale mirror-bright
+      satin folds, broad calm empty space, and clean separated figure and floor shadows.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_mineral_muted_weathered_ink_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both new seeds strongly maintain one slate-clad adult, calm broad spacing, a floor-to-ceiling torn
+      black-and-white mural, and hard silhouette separation with realistic anatomy and fabric.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_mineral_muted_weathered_ink_contemplative_air_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve one coherent adult against giant peeled ink patches, with bright face
+      and hand rims remaining visible and consistent with the prior etched treatment.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_mineral_muted_weathered_ink_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds retain one adult, mineral-muted clothing, calm spacing, and a dominant torn
+      mural while dark sleeve and trouser sections merge into black without losing the face or hands.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_mineral_muted_weathered_ink_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 keep one sharply rendered adult and coherent hands against broad torn ink whose
+      irregular peripheral patches soften, matching the prior selective-taper behavior.
+    recommendation: testing
+  style_pack_expansion_ornamental_layered_mineral_muted_chalk_matte_nocturnal_tension_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve the prior three-seed result with one natural adult, coherent hands,
+      believable gray fabric, a dry chalk scalloped mineral arch, deep-black surround, and a narrow inner
+      light path; faces and hands stay firm while the rough outer strokes soften, with no text, extra
+      person, proportion defect, or loss of cinematic depth.
+  style_pack_expansion_ornamental_layered_mineral_muted_chalk_matte_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Seed 4004 retains one realistic adult and a broad pale chalk bloom directly behind the silhouette,
+      but seed 5005 leaves a black gap around the adult and shifts the pale band into an outer arch, weakening
+      the requested wide halo; its gray skin exposure also reduces character consistency, although hands,
+      fabric, proportions, depth, and clean one-person content remain coherent.
