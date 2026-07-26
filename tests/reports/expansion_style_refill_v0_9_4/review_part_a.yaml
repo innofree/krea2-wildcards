@@ -1,0 +1,106 @@
+schema_version: 1
+review_id: expansion_style_refill_v0_9_4_part_a
+reviewer_scope:
+  - style_pack_001.png
+  - style_pack_002.png
+styles:
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_crisp_cut_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds show one realistic adult against two huge crossed amber-blue chalk strokes, with dry texture, a deep surround, cinematic depth, and knife-hard silhouette and floor-shadow edges; hands, fabric, and proportions remain coherent."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_etched_accent_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 3, composition_quality: 5, compatibility: 2, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The three seeds strongly repeat the crossed chalk X, deep amber-blue nocturnal split, and literal white cheek rims, but the rims become opaque glowing facial patches in seeds 1001 and 2002, violating the realistic-skin compatibility gate."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_lost_and_found_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed keeps one natural adult, two dry crossed chalk slabs, deep black space, and a stable warm-cool split while short garment sections disappear into shadow and focal skin, hands, and fabric remain believable."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_selective_taper_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three outputs preserve the one-adult chalk X, black nocturnal depth, amber-blue split, realistic anatomy, and sharp face and hands; the outer chalk border remains more defined than fully defocused but is consistent."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_soft_bleed_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three seeds consistently render one adult, crossed dry amber-blue strokes, deep-black cinematic spacing, and restrained light bloom without any person-shaped echo; skin, hands, proportions, and clothing remain usable."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_contemplative_air_selective_taper_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds contain one coherent adult and two empty crossed glass sheets with visible refractive haze, stable amber-blue division, calm open space, and sharp focal features; no reflected or duplicate human appears."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_etched_accent_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 3, composition_quality: 5, compatibility: 2, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Two empty amber-blue glass sheets, black nocturnal depth, and white cheek and finger outlines recur in every seed, but the face rims read as opaque luminous patches rather than realistic skin lighting, so the content gate fails despite stable geometry."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_selective_taper_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three images maintain one natural adult, crossed empty refractive sheets, a deep warm-cool nocturnal split, sharp face and hands, coherent fabric, and cinematic depth; the outer panel softness is modest but stable."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_soft_bleed_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds show a single realistic adult framed by two crossed amber-blue glass sheets, dark tense space, and broad luminous spill with no human-shaped echo, text, logo, anatomy issue, or fabric failure."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_crisp_cut_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed presents one proportionate adult before three narrow ivory columns in a peeled black-ink field, with strict charcoal-ivory color, calm haze, hard silhouette separation, coherent hands, and believable dark fabric."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_etched_accent_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 3, composition_quality: 5, compatibility: 2, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Peeled black ink, narrow ivory columns, limited duotone color, and calm space remain strong across all seeds, but seeds 1001 and 3003 place opaque white discs or loops on the cheeks, breaking realistic facial skin despite coherent body anatomy."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_lost_and_found_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds preserve one natural adult, upright ivory divisions, giant peeled black marks, calm monochrome space, and body sections lost into dark ink; visible column count varies slightly but the five physical axes remain readable."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_selective_taper_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three outputs consistently keep one adult with realistic skin and hands against tall ivory openings and broken black ink, with calm haze and focused facial detail; outer ink edges are only moderately defocused but remain stable."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_soft_bleed_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Each seed repeats one coherent adult, charcoal-ivory peeled ink, narrow vertical light, calm open spacing, and soft luminous haze without a person-shaped echo; skin, hands, fabric, and proportions remain credible."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_crisp_cut_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds maintain one full-length adult, deep black peeled-ink surroundings, narrow ivory vertical paths, strict neutral duotone, and hard floor and silhouette edges, with coherent anatomy and no text or echo."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_etched_accent_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 3, composition_quality: 5, compatibility: 2, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The three images consistently deliver a single adult, weathered black ink, ivory light columns, and nocturnal duotone tension, but seeds 1001 and 3003 turn cheek rims into unnatural white facial patches or loops, failing realistic-skin compatibility."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_lost_and_found_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 3, character_quality: 5, composition_quality: 4, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds retain one realistic adult in charcoal and ivory with body edges hidden in deep ink, but the light-path geometry varies from one broad U-shaped opening to several columns; the weathered nocturnal identity and anatomy remain usable."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_selective_taper_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three outputs consistently contain one natural adult, dark peeled ink, narrow ivory paths, and sharp facial detail, though the number of columns and amount of outer-edge defocus vary; hands, fabric, proportions, and depth stay coherent."
+  style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_soft_bleed_complete_style:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds keep one adult, black weathered surround, ivory vertical light, neutral duotone tension, and soft luminous spill without person-shaped echoes; column count varies but the content and five style axes remain usable."
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_crisp_cut_complete_style:
+    metrics: {prompt_adherence: 2, style_fidelity: 2, stability: 5, character_quality: 5, composition_quality: 4, compatibility: 5, distinctiveness: 1, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "All three seeds are clean one-adult emerald studio portraits, but large paper fibers, garnet color, a visible metallic-gold border, knife-hard shadow separation, and a distinctive material backdrop are absent, so only quiet spacing and one jewel hue survive."
