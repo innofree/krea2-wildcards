@@ -48,7 +48,7 @@ def main() -> int:
         fields, rows = merge_rows(args.scorecards)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         with args.output.open("w", encoding="utf-8", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=fields)
+            writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
             writer.writeheader()
             writer.writerows(rows)
         print(f"Merged {len(rows)} unique scorecard row(s) into {args.output}.")

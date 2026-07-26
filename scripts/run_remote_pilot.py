@@ -55,7 +55,7 @@ def write_scorecard(
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = ["test_id", "seed", "style_id", "image_path", *METRICS, "notes"]
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for index, (style_id, seed) in enumerate(jobs or pilot_jobs(), start=1):
             writer.writerow(
