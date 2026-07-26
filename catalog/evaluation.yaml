@@ -1,0 +1,167 @@
+schema_version: 1
+catalog: evaluation
+approval_policy:
+  minimum_pilot_seeds: 3
+  minimum_approval_seeds: 5
+  minimum_prompt_adherence: 4
+  minimum_style_fidelity: 3
+  minimum_stability: 3
+  minimum_compatibility: 3
+  maximum_critical_failures: 0
+score_range: [1, 5]
+metrics:
+  - prompt_adherence
+  - style_fidelity
+  - stability
+  - character_quality
+  - composition_quality
+  - compatibility
+  - distinctiveness
+  - prompt_efficiency
+results:
+  pilot_v0_1:
+    date: '2026-07-26'
+    model: krea2_turbo_mxfp8
+    workflow: tests/baseline/workflow.json
+    seeds: [1001, 2002, 3003]
+    resolution: [1024, 1024]
+    lora_applied: false
+    styles:
+      crystal_iris_pastel:
+        averages:
+          prompt_adherence: 4
+          style_fidelity: 4
+          stability: 5
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 4
+          distinctiveness: 4
+          prompt_efficiency: 4
+        critical_failures: 0
+        recommendation: advance_to_combination_testing
+      angular_impact:
+        averages:
+          prompt_adherence: 3
+          style_fidelity: 4
+          stability: 5
+          character_quality: 4
+          composition_quality: 4
+          compatibility: 2
+          distinctiveness: 5
+          prompt_efficiency: 4
+        critical_failures: 0
+        recommendation: retest_with_graphic_action_template
+      prismatic_key_visual:
+        averages:
+          prompt_adherence: 3
+          style_fidelity: 4
+          stability: 5
+          character_quality: 5
+          composition_quality: 5
+          compatibility: 3
+          distinctiveness: 4
+          prompt_efficiency: 4
+        critical_failures: 0
+        recommendation: retest_with_luminous_game_template
+      sumi_mist:
+        averages:
+          prompt_adherence: 5
+          style_fidelity: 5
+          stability: 5
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 4
+          distinctiveness: 5
+          prompt_efficiency: 5
+        critical_failures: 0
+        recommendation: advance_to_combination_testing
+      minimal_studio:
+        averages:
+          prompt_adherence: 3
+          style_fidelity: 4
+          stability: 4
+          character_quality: 3
+          composition_quality: 1.3
+          compatibility: 2
+          distinctiveness: 4
+          prompt_efficiency: 4
+        critical_failures: 3
+        recommendation: retest_with_full_length_editorial_template
+    conclusion: >-
+      Remote wildcard expansion and model response are verified. A single neutral template is
+      suitable for atomic attributes but conflicts with complete packs that intentionally control
+      pose, environment, or framing; family-compatible templates are required before approval.
+  family_retest_v0_2:
+    date: '2026-07-26'
+    model: krea2_turbo_mxfp8
+    workflow: tests/baseline/workflow.json
+    report: tests/reports/family_retest_v0_2/review.md
+    summary: tests/reports/family_retest_v0_2/approval_summary.json
+    seeds: [1001, 2002, 3003, 4004, 5005]
+    resolution: [1024, 1024]
+    lora_applied: false
+    styles:
+      crystal_iris_pastel:
+        averages: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+        critical_failures: 0
+        recommendation: approved
+      angular_impact:
+        averages: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+        critical_failures: 0
+        recommendation: approved
+      prismatic_key_visual:
+        averages: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+        critical_failures: 0
+        recommendation: approved_with_tight_framing_note
+      sumi_mist:
+        averages: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+        critical_failures: 0
+        recommendation: approved
+      minimal_studio:
+        averages: {prompt_adherence: 4.8, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+        critical_failures: 0
+        recommendation: approved
+    conclusion: >-
+      Family-compatible templates resolved the generic-scene conflicts. All five styles completed
+      five distinct seeds without critical failures and met the approval thresholds. The luminous
+      game result consistently preferred a tighter hero frame, which remains documented as a
+      non-blocking limitation.
+  style_screen_v0_3:
+    date: '2026-07-26'
+    model: krea2_turbo_mxfp8
+    workflow: tests/baseline/workflow.json
+    scorecard: tests/reports/style_screen_v0_3/scored.csv
+    summary: tests/reports/style_screen_v0_3/summary.json
+    visual_review: tests/reports/style_screen_v0_3/visual_review.yaml
+    review_manifest: tests/reports/style_screen_v0_3/review/manifest.json
+    seeds: [1001, 2002, 3003]
+    resolution: [1024, 1024]
+    lora_applied: false
+    image_count: 135
+    style_count: 45
+    status_counts: {testing: 16, rejected: 29, approved: 0}
+    conclusion: >-
+      Fixed-seed screening confirmed high image and seed stability but found that family templates
+      dominated many individual style prompts. Sixteen styles met the pilot quality gates and move
+      to two additional approval seeds. Twenty-nine styles remain out of runtime production and
+      require stronger visual-property wording before a new three-seed screen.
+  style_retest_v0_4:
+    date: '2026-07-26'
+    model: krea2_turbo_mxfp8
+    workflow: tests/baseline/workflow.json
+    pilot_scorecard: tests/reports/style_retest_v0_4/pilot_scored.csv
+    extension_scorecard: tests/reports/style_retest_v0_4/extension_scored.csv
+    approval_scorecard: tests/reports/style_retest_v0_4/approval_scored.csv
+    summary: tests/reports/style_retest_v0_4/approval_summary.json
+    visual_review: tests/reports/style_retest_v0_4/review.yaml
+    review_manifest: tests/reports/style_retest_v0_4/review/manifest.json
+    seeds: [1001, 2002, 3003, 4004, 5005]
+    resolution: [1024, 1024]
+    lora_applied: false
+    extension_image_count: 32
+    style_count: 16
+    status_counts: {approved: 16, rejected: 0}
+    conclusion: >-
+      All sixteen pilot-pass styles completed two additional seeds without critical failures. The
+      combined scorecard contains five unique seeds per style, and every style meets the configured
+      adherence, fidelity, stability, and compatibility thresholds for approval.

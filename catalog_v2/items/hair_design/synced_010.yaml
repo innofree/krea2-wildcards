@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:hair_design:synced_010
+  kind: hair_design
+  sequence: 10
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_natural_ebony_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_airy_feathered_lifted_crown_natural_ebony_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:lifted_crown
+    color_design:
+    - feature:color_design:natural_ebony
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:airy_feathered
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_natural_ebony_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_airy_feathered_lifted_crown_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:lifted_crown
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:airy_feathered
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_warm_copper_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_airy_feathered_lifted_crown_warm_copper_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:lifted_crown
+    color_design:
+    - feature:color_design:warm_copper
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:airy_feathered
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_airy_feathered_lifted_crown_warm_copper_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_cool_ash_brown_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_clean_center_part_cool_ash_brown_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:cool_ash_brown
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_cool_ash_brown_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_deep_chestnut_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_clean_center_part_deep_chestnut_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:deep_chestnut
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_deep_chestnut_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_natural_ebony_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_clean_center_part_natural_ebony_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:natural_ebony
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_natural_ebony_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_clean_center_part_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_warm_copper_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_clean_center_part_warm_copper_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:warm_copper
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_clean_center_part_warm_copper_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_cool_ash_brown_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_deep_side_part_cool_ash_brown_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:deep_side_part
+    color_design:
+    - feature:color_design:cool_ash_brown
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_cool_ash_brown_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_deep_chestnut_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_deep_side_part_deep_chestnut_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:deep_side_part
+    color_design:
+    - feature:color_design:deep_chestnut
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_deep_chestnut_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_natural_ebony_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_deep_side_part_natural_ebony_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:deep_side_part
+    color_design:
+    - feature:color_design:natural_ebony
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_natural_ebony_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_deep_side_part_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:deep_side_part
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_warm_copper_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_deep_side_part_warm_copper_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:deep_side_part
+    color_design:
+    - feature:color_design:warm_copper
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_deep_side_part_warm_copper_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_compact_curl_lifted_crown_cool_ash_brown_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_compact_curl_lifted_crown_cool_ash_brown_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:lifted_crown
+    color_design:
+    - feature:color_design:cool_ash_brown
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:compact_curl
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_compact_curl_lifted_crown_cool_ash_brown_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_cool_ash_brown_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_clean_center_part_cool_ash_brown_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:cool_ash_brown
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_cool_ash_brown_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_deep_chestnut_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_clean_center_part_deep_chestnut_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:deep_chestnut
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_deep_chestnut_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_natural_ebony_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_clean_center_part_natural_ebony_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:natural_ebony
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_natural_ebony_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_clean_center_part_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_warm_copper_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_clean_center_part_warm_copper_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:clean_center_part
+    color_design:
+    - feature:color_design:warm_copper
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_clean_center_part_warm_copper_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_open_brow_fringe_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_open_brow_fringe_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:open_brow_fringe
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_open_brow_fringe_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_cool_ash_brown_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_temple_asymmetry_cool_ash_brown_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:temple_asymmetry
+    color_design:
+    - feature:color_design:cool_ash_brown
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_cool_ash_brown_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_deep_chestnut_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_temple_asymmetry_deep_chestnut_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:temple_asymmetry
+    color_design:
+    - feature:color_design:deep_chestnut
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_deep_chestnut_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_natural_ebony_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_temple_asymmetry_natural_ebony_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:temple_asymmetry
+    color_design:
+    - feature:color_design:natural_ebony
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_natural_ebony_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_silver_black_gradient_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_temple_asymmetry_silver_black_gradient_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:temple_asymmetry
+    color_design:
+    - feature:color_design:silver_black_gradient
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_silver_black_gradient_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair
+- id: item:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_warm_copper_complete_hair
+  legacy_ref: catalog/hair_designs.yaml#items/hair_design_waist_layers_loose_wave_temple_asymmetry_warm_copper_complete_hair
+  feature_refs:
+    arrangement:
+    - feature:arrangement:temple_asymmetry
+    color_design:
+    - feature:color_design:warm_copper
+    cut_shape:
+    - feature:cut_shape:waist_layers
+    strand_texture:
+    - feature:strand_texture:loose_wave
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:hair_design:hair_design_waist_layers_loose_wave_temple_asymmetry_warm_copper_complete_hair
+  runtime_route_ref: runtime_route:hair_design:character_hair

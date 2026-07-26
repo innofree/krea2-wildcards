@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "deployment_id": "production_v0_1",
+  "date": "2026-07-26",
+  "remote": "private_comfyui",
+  "artifact": "build/impact-production/krea2_complete_pack.yaml",
+  "artifact_sha256": "d1d42649e48d5afa41367ff1f3e730c1dd572242da5c2b875aab80bb7033a039",
+  "approved_items": 5,
+  "expected_wildcard_paths": 6,
+  "backup_suffix": ".bak.20260726T124415Z",
+  "verification": {
+    "checksum_match": true,
+    "exact_krea2_namespace": true,
+    "impact_reload": true,
+    "smoke_completed": true,
+    "queue_empty": true
+  },
+  "smoke": {
+    "style_id": "crystal_iris_pastel",
+    "seed": 6006,
+    "run_record": "tests/reports/production_smoke_v0_1/runs/crystal_iris_pastel_seed_6006/run.json"
+  }
+}

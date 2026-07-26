@@ -1,0 +1,32 @@
+schema_version: 1
+catalog: schema
+catalog_item:
+  id:
+    type: string
+    pattern: '^[a-z][a-z0-9_]*$'
+  required:
+    - family
+    - visual_axes
+    - prompt
+    - compatibility
+    - source_refs
+    - runtime
+    - validation
+  runtime:
+    file: relative_yaml_path
+    path: [krea2, category, group, item_id]
+  validation:
+    statuses: [research, normalized, generated, testing, approved, limited, rejected, deprecated]
+    approved_requires:
+      - tested_seeds_at_least_5
+      - prompt_adherence_at_least_4
+      - style_fidelity_at_least_3
+      - stability_at_least_3
+      - compatibility_at_least_3
+      - critical_failures_at_most_0
+runtime_yaml:
+  root: krea2
+  leaves: non_empty_string_lists
+  metadata_allowed: false
+  key_pattern: '^[a-z][a-z0-9_]*$'
+  aggregate_leaf: all

@@ -1,0 +1,95 @@
+schema_version: 2
+catalog: runtime_route_registry
+namespace: runtime_route
+entries:
+  runtime_route:style_pack:complete_pack:
+    enabled: true
+    file: krea2/style/complete_pack.yaml
+    path_prefix:
+    - krea2
+    - style
+    - complete_pack
+  runtime_route:artist_signature:artist_signature_modern:
+    enabled: true
+    file: krea2/artist_signature/modern.yaml
+    path_prefix:
+    - krea2
+    - artist_signature
+    - modern
+  runtime_route:background:environment_complete:
+    enabled: true
+    file: krea2/environment/complete.yaml
+    path_prefix:
+    - krea2
+    - environment
+    - complete
+  runtime_route:camera:camera_composition:
+    enabled: true
+    file: krea2/camera/composition.yaml
+    path_prefix:
+    - krea2
+    - camera
+    - composition
+  runtime_route:character_design:character_design_language:
+    enabled: true
+    file: krea2/character/design_language.yaml
+    path_prefix:
+    - krea2
+    - character
+    - design_language
+  runtime_route:effect:style_effects:
+    enabled: true
+    file: krea2/style/effects.yaml
+    path_prefix:
+    - krea2
+    - style
+    - effects
+  runtime_route:fashion:fashion_complete_outfit:
+    enabled: true
+    file: krea2/fashion/complete_outfit.yaml
+    path_prefix:
+    - krea2
+    - fashion
+    - complete_outfit
+  runtime_route:hair_design:character_hair:
+    enabled: true
+    file: krea2/character/hair.yaml
+    path_prefix:
+    - krea2
+    - character
+    - hair
+  runtime_route:lighting:lighting_complete:
+    enabled: true
+    file: krea2/lighting/complete.yaml
+    path_prefix:
+    - krea2
+    - lighting
+    - complete
+  runtime_route:linework_coloring:style_coloring:
+    enabled: true
+    file: krea2/style/coloring.yaml
+    path_prefix:
+    - krea2
+    - style
+    - coloring
+  runtime_route:media_rendering:style_rendering:
+    enabled: true
+    file: krea2/style/rendering.yaml
+    path_prefix:
+    - krea2
+    - style
+    - rendering
+  runtime_route:pose:pose_gesture:
+    enabled: true
+    file: krea2/pose/gesture.yaml
+    path_prefix:
+    - krea2
+    - pose
+    - gesture
+  runtime_route:preset:preset_complete:
+    enabled: true
+    file: krea2/preset/complete.yaml
+    path_prefix:
+    - krea2
+    - preset
+    - complete

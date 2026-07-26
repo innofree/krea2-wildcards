@@ -1,0 +1,16 @@
+test_id,seed,style_id,image_path,prompt_adherence,style_fidelity,stability,character_quality,composition_quality,compatibility,distinctiveness,prompt_efficiency,critical_failure,notes
+PILOT001,1001,crystal_iris_pastel,tests/reports/runs/crystal_iris_pastel_seed_1001/image_01.png,4,4,5,4,5,4,4,4,false,Stable cel treatment and coherent framing
+PILOT002,2002,crystal_iris_pastel,tests/reports/runs/crystal_iris_pastel_seed_2002/image_01.png,4,4,5,4,5,4,4,4,false,Large eyes and pastel negative space retained
+PILOT003,3003,crystal_iris_pastel,tests/reports/runs/crystal_iris_pastel_seed_3003/image_01.png,4,4,5,4,5,4,4,4,false,Consistent line and color language
+PILOT004,1001,angular_impact,tests/reports/runs/angular_impact_seed_1001/image_01.png,3,4,5,4,4,2,5,4,false,Graphic facial planes strong but relaxed pose suppresses action
+PILOT005,2002,angular_impact,tests/reports/runs/angular_impact_seed_2002/image_01.png,3,4,5,4,4,2,5,4,false,Palette stable but no diagonal action composition
+PILOT006,3003,angular_impact,tests/reports/runs/angular_impact_seed_3003/image_01.png,3,4,5,4,4,2,5,4,false,Distinct graphic rendering with incompatible fixed pose
+PILOT007,1001,prismatic_key_visual,tests/reports/runs/prismatic_key_visual_seed_1001/image_01.png,3,4,5,5,5,3,4,4,false,Luminous rendering stable but fantasy cues suppressed
+PILOT008,2002,prismatic_key_visual,tests/reports/runs/prismatic_key_visual_seed_2002/image_01.png,3,4,5,5,5,3,4,4,false,Strong character quality and rim light
+PILOT009,3003,prismatic_key_visual,tests/reports/runs/prismatic_key_visual_seed_3003/image_01.png,3,4,5,5,5,3,4,4,false,Consistent game-like finish with limited particles
+PILOT010,1001,sumi_mist,tests/reports/runs/sumi_mist_seed_1001/image_01.png,5,5,5,4,5,4,5,5,false,Strong ink wash paper and open-space response
+PILOT011,2002,sumi_mist,tests/reports/runs/sumi_mist_seed_2002/image_01.png,5,5,5,4,5,4,5,5,false,Stable monochrome brush character
+PILOT012,3003,sumi_mist,tests/reports/runs/sumi_mist_seed_3003/image_01.png,5,5,5,4,5,4,5,5,false,Distinct and consistent wash treatment
+PILOT013,1001,minimal_studio,tests/reports/runs/minimal_studio_seed_1001/image_01.png,3,4,4,3,1,2,4,4,true,Head cropped by full-length versus mid-thigh framing conflict
+PILOT014,2002,minimal_studio,tests/reports/runs/minimal_studio_seed_2002/image_01.png,3,4,4,3,1,2,4,4,true,Repeated head crop makes composition unusable
+PILOT015,3003,minimal_studio,tests/reports/runs/minimal_studio_seed_3003/image_01.png,3,4,4,3,2,2,4,4,true,Face remains partially cropped despite otherwise stable editorial style

@@ -1,0 +1,95 @@
+schema_version: 1
+catalog: roadmap
+content_targets:
+  approved_art_styles:
+    label: Approved art style packs
+    catalogs: [art_styles.yaml, style_expansion.yaml]
+    metric: status
+    status: approved
+    target: 150
+  approved_artist_signatures:
+    label: Approved artist visual signatures
+    catalogs: [artists.yaml]
+    metric: status
+    status: approved
+    target: 200
+  character_design_items:
+    label: Character design items
+    catalogs: [character_designs.yaml]
+    metric: items
+    target: 400
+  pose_camera_items:
+    label: Pose and camera items
+    catalogs: [poses.yaml, cameras.yaml]
+    metric: items
+    target: 300
+  lighting_background_items:
+    label: Lighting and background items
+    catalogs: [lighting.yaml, backgrounds.yaml]
+    metric: items
+    target: 300
+  preset_items:
+    label: Complete preset items
+    catalogs: [presets.yaml]
+    metric: items
+    target: 200
+  style_pack_items:
+    label: Complete art style packs
+    catalogs: [art_styles.yaml, style_expansion.yaml]
+    metric: items
+    target: 200
+  artist_signature_items:
+    label: Artist visual signature items
+    catalogs: [artists.yaml]
+    metric: items
+    target: 300
+  media_rendering_items:
+    label: Media and rendering items
+    catalogs: [media_rendering.yaml]
+    metric: items
+    target: 150
+  linework_coloring_items:
+    label: Linework, coloring, and shading items
+    catalogs: [linework_coloring.yaml]
+    metric: items
+    target: 300
+  hair_design_items:
+    label: Hair design items
+    catalogs: [hair_designs.yaml]
+    metric: items
+    target: 250
+  fashion_items:
+    label: Fashion items
+    catalogs: [fashion.yaml]
+    metric: items
+    target: 500
+  pose_items:
+    label: Pose and gesture items
+    catalogs: [poses.yaml]
+    metric: items
+    target: 350
+  camera_items:
+    label: Camera and composition items
+    catalogs: [cameras.yaml]
+    metric: items
+    target: 250
+  lighting_items:
+    label: Lighting and color items
+    catalogs: [lighting.yaml]
+    metric: items
+    target: 250
+  background_items:
+    label: Background and environment items
+    catalogs: [backgrounds.yaml]
+    metric: items
+    target: 400
+  effect_items:
+    label: Effect and atmosphere items
+    catalogs: [effects.yaml]
+    metric: items
+    target: 200
+  total_library_items:
+    label: Total catalog items
+    catalogs: ['*']
+    metric: items
+    target: 3750

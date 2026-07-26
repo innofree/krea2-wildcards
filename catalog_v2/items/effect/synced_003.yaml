@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:effect:synced_003
+  kind: effect
+  sequence: 3
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:effect:effect_mist_beads_background_trail_gradual_build_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_gradual_build_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:gradual_build
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_gradual_build_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_light_scatter_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_light_scatter_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_light_scatter_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_light_scatter_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_light_scatter_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_light_scatter_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_light_scatter_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_light_scatter_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_light_scatter_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_light_scatter_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_light_scatter_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_light_scatter_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_moderate_cluster_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_moderate_cluster_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:moderate_cluster
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_moderate_cluster_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_moderate_cluster_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_moderate_cluster_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:moderate_cluster
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_moderate_cluster_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_moderate_cluster_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_moderate_cluster_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:moderate_cluster
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_moderate_cluster_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_moderate_cluster_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_moderate_cluster_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:moderate_cluster
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_moderate_cluster_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_nearly_sparse_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_nearly_sparse_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_nearly_sparse_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_nearly_sparse_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_nearly_sparse_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_nearly_sparse_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_nearly_sparse_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_nearly_sparse_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_nearly_sparse_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_background_trail_nearly_sparse_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_background_trail_nearly_sparse_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:background_trail
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_background_trail_nearly_sparse_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_depth_layers_nearly_sparse_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_depth_layers_nearly_sparse_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:depth_layers
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_depth_layers_nearly_sparse_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_depth_layers_nearly_sparse_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_depth_layers_nearly_sparse_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:depth_layers
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_depth_layers_nearly_sparse_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_depth_layers_nearly_sparse_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_depth_layers_nearly_sparse_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:nearly_sparse
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:depth_layers
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_depth_layers_nearly_sparse_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_gradual_build_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_gradual_build_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:gradual_build
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_gradual_build_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_light_scatter_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_light_scatter_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_light_scatter_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_light_scatter_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_light_scatter_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_light_scatter_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_light_scatter_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_light_scatter_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:light_scatter
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_light_scatter_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_moderate_cluster_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_moderate_cluster_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:moderate_cluster
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_moderate_cluster_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_rhythmic_groups_gentle_fall_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_rhythmic_groups_gentle_fall_complete_effect
+  feature_refs:
+    density:
+    - feature:density:rhythmic_groups
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:gentle_fall
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_rhythmic_groups_gentle_fall_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_rhythmic_groups_lateral_flow_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_rhythmic_groups_lateral_flow_complete_effect
+  feature_refs:
+    density:
+    - feature:density:rhythmic_groups
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:lateral_flow
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_rhythmic_groups_lateral_flow_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_rhythmic_groups_slow_spiral_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_rhythmic_groups_slow_spiral_complete_effect
+  feature_refs:
+    density:
+    - feature:density:rhythmic_groups
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:slow_spiral
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_rhythmic_groups_slow_spiral_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects
+- id: item:effect:effect_mist_beads_foreground_arc_rhythmic_groups_upward_drift_complete_effect
+  legacy_ref: catalog/effects.yaml#items/effect_mist_beads_foreground_arc_rhythmic_groups_upward_drift_complete_effect
+  feature_refs:
+    density:
+    - feature:density:rhythmic_groups
+    effect_element:
+    - feature:effect_element:mist_beads
+    motion:
+    - feature:motion:upward_drift
+    placement:
+    - feature:placement:foreground_arc
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:effect:effect_mist_beads_foreground_arc_rhythmic_groups_upward_drift_complete_effect
+  runtime_route_ref: runtime_route:effect:style_effects

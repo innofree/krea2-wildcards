@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:character_design:synced_003
+  kind: character_design
+  sequence: 3
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_agile_medium_frame_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:agile_medium_frame
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_agile_medium_frame_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:agile_medium_frame
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_agile_medium_frame_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:agile_medium_frame
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_agile_medium_frame_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_compact_adult_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_compact_adult_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:compact_adult
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_compact_adult_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_compact_adult_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_compact_adult_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:compact_adult
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_compact_adult_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_compact_adult_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_compact_adult_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:compact_adult
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_compact_adult_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_grounded_broad_torso_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:grounded_broad_torso
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_grounded_broad_torso_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:grounded_broad_torso
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_grounded_broad_torso_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:grounded_broad_torso
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_grounded_broad_torso_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_long_legged_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_long_legged_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_long_legged_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_long_legged_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_long_legged_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_long_legged_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_long_legged_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_long_legged_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_long_legged_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_natural_balanced_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_natural_balanced_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_natural_balanced_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_natural_balanced_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_statuesque_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_statuesque_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:statuesque
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_statuesque_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_statuesque_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_statuesque_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:statuesque
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_statuesque_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_diamond_defined_statuesque_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_diamond_defined_statuesque_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:statuesque
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:diamond_defined
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_diamond_defined_statuesque_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_compact_adult_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_compact_adult_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:compact_adult
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_compact_adult_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_long_legged_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_long_legged_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_long_legged_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:long_legged
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_long_legged_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_botanical_seams_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_natural_balanced_botanical_seams_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:botanical_seams
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_botanical_seams_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_modular_utility_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_natural_balanced_modular_utility_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:modular_utility
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_modular_utility_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language
+- id: item:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_restrained_geometry_complete_character
+  legacy_ref: catalog/character_designs.yaml#items/character_design_broad_heroic_heart_tapered_chin_natural_balanced_restrained_geometry_complete_character
+  feature_refs:
+    body_proportion:
+    - feature:body_proportion:natural_balanced
+    design_motif:
+    - feature:design_motif:restrained_geometry
+    face_structure:
+    - feature:face_structure:heart_tapered_chin
+    silhouette:
+    - feature:silhouette:broad_heroic
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:anima_official_model_card
+  - source:v1:getty_aat_costume_vocabulary
+  lifecycle_ref: lifecycle:character_design:character_design_broad_heroic_heart_tapered_chin_natural_balanced_restrained_geometry_complete_character
+  runtime_route_ref: runtime_route:character_design:character_design_language

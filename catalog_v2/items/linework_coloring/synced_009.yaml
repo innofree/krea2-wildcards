@@ -1,0 +1,459 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:linework_coloring:synced_009
+  kind: linework_coloring
+  sequence: 9
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:linework_coloring:linework_coloring_fine_tapered_limited_two_tone_soft_two_band_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_limited_two_tone_soft_two_band_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:limited_two_tone
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:soft_two_band
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_limited_two_tone_soft_two_band_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:muted_split_complement
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:broad_blended_plane
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:muted_split_complement
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:broad_blended_plane
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:muted_split_complement
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:muted_split_complement
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:soft_two_band
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:soft_two_band
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:subtle_contact_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:subtle_contact_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:transparent_glaze
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:skin_centered_neutral
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:transparent_glaze
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_broad_blended_plane_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_broad_blended_plane_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:broad_blended_plane
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_broad_blended_plane_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_broad_blended_plane_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_broad_blended_plane_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:broad_blended_plane
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_broad_blended_plane_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:crisp_shape_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:fine_tonal_hatching
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:fine_tonal_hatching
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_soft_two_band_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_soft_two_band_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:soft_two_band
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_soft_two_band_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_soft_two_band_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_soft_two_band_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:soft_two_band
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_soft_two_band_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:subtle_contact_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:subtle_contact_shadow
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_transparent_glaze_controlled_rim_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_transparent_glaze_controlled_rim_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:controlled_rim
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:transparent_glaze
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_transparent_glaze_controlled_rim_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring
+- id: item:linework_coloring:linework_coloring_fine_tapered_warm_earth_transparent_glaze_reflected_color_complete_line_color
+  legacy_ref: catalog/linework_coloring.yaml#items/linework_coloring_fine_tapered_warm_earth_transparent_glaze_reflected_color_complete_line_color
+  feature_refs:
+    accent_light:
+    - feature:accent_light:reflected_color
+    coloring:
+    - feature:coloring:warm_earth
+    linework:
+    - feature:linework:fine_tapered
+    shading:
+    - feature:shading:transparent_glaze
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:novelai_official_tagging
+  - source:v1:anima_official_model_card
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:linework_coloring:linework_coloring_fine_tapered_warm_earth_transparent_glaze_reflected_color_complete_line_color
+  runtime_route_ref: runtime_route:linework_coloring:style_coloring

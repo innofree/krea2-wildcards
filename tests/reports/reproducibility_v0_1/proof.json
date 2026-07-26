@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "proof_id": "reproducibility_v0_1",
+  "date": "2026-07-26",
+  "remote": "private_comfyui",
+  "style_id": "crystal_iris_pastel",
+  "seed": 6006,
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "reference_image": "tests/reports/production_smoke_v0_1/runs/crystal_iris_pastel_seed_6006/image_01.png",
+  "repeat_image": "tests/reports/reproducibility_v0_1/repeat/runs/crystal_iris_pastel_seed_6006/image_01.png",
+  "image_sha256": "ef6f8a560126453746bc8f9af2086f0e5be2c1a466af865d85664d3e9e10b940",
+  "pixel_absolute_error": 0,
+  "selected_metadata_equal": true,
+  "result": "exact_reproduction"
+}

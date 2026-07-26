@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:media_rendering:synced_003
+  kind: media_rendering
+  sequence: 3
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:dry_brush
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_dry_brush_fibrous_tooth_sculpted_midtones_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:atmospheric_recession
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:atmospheric_recession
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:glaze_buildup
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:glaze_buildup
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:glaze_buildup
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:glaze_buildup
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:cold_pressed_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_cold_pressed_grain_glaze_buildup_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_layered_overlays_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_layered_overlays_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:layered_overlays
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_layered_overlays_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_poster_separation_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_poster_separation_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:fibrous_tooth
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_fibrous_tooth_sculpted_midtones_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_rough_mineral_ground_glaze_buildup_velvety_diffuse_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_rough_mineral_ground_glaze_buildup_velvety_diffuse_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:glaze_buildup
+    light_response:
+    - feature:light_response:velvety_diffuse
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:rough_mineral_ground
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_rough_mineral_ground_glaze_buildup_velvety_diffuse_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_satin_film_poster_separation_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_satin_film_poster_separation_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:satin_film
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_satin_film_poster_separation_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_satin_film_poster_separation_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_satin_film_poster_separation_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:poster_separation
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:satin_film
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_satin_film_poster_separation_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_absorbed_low_sheen_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_satin_film_sculpted_midtones_absorbed_low_sheen_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:absorbed_low_sheen
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:satin_film
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_absorbed_low_sheen_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_crisp_edge_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_satin_film_sculpted_midtones_crisp_edge_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:crisp_edge
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:satin_film
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_crisp_edge_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering
+- id: item:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_pearlescent_soft_complete_media
+  legacy_ref: catalog/media_rendering.yaml#items/media_rendering_fluid_ink_satin_film_sculpted_midtones_pearlescent_soft_complete_media
+  feature_refs:
+    depth_treatment:
+    - feature:depth_treatment:sculpted_midtones
+    light_response:
+    - feature:light_response:pearlescent_soft
+    mark_making:
+    - feature:mark_making:fluid_ink
+    surface_behavior:
+    - feature:surface_behavior:satin_film
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:media_rendering:media_rendering_fluid_ink_satin_film_sculpted_midtones_pearlescent_soft_complete_media
+  runtime_route_ref: runtime_route:media_rendering:style_rendering

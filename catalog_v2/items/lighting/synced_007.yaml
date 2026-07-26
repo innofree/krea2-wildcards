@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:lighting:synced_007
+  kind: lighting
+  sequence: 7
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:lighting:lighting_low_horizon_source_back_edge_enveloping_diffuse_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_enveloping_diffuse_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_enveloping_diffuse_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_feathered_soft_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_feathered_soft_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_feathered_soft_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_back_edge_medium_defined_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_back_edge_medium_defined_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:back_edge
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_back_edge_medium_defined_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:mixed_edge
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:mixed_edge
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_cross_room_mixed_edge_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_cross_room_mixed_edge_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:cross_room
+    softness:
+    - feature:softness:mixed_edge
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_cross_room_mixed_edge_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:high_side
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:high_side
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:crisp_controlled
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:enveloping_diffuse
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:feathered_soft
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:cool_key_warm_practical
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:late_gold_neutral_shadow
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_neutral_daylight_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_medium_defined_neutral_daylight_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:neutral_daylight
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_neutral_daylight_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete
+- id: item:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting
+  legacy_ref: catalog/lighting.yaml#items/lighting_low_horizon_source_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting
+  feature_refs:
+    color_balance:
+    - feature:color_balance:warm_key_cool_fill
+    direction:
+    - feature:direction:side_sculpting
+    softness:
+    - feature:softness:medium_defined
+    source_character:
+    - feature:source_character:low_horizon_source
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:lighting:lighting_low_horizon_source_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting
+  runtime_route_ref: runtime_route:lighting:lighting_complete

@@ -1,0 +1,831 @@
+{
+  "schema_version": 1,
+  "scorecard": "tests/reports/style_screen_v0_3/scorecard.csv",
+  "expected_seeds_per_style": 3,
+  "style_count": 45,
+  "image_count": 135,
+  "sheets": {
+    "editorial_fashion": "tests/reports/style_screen_v0_3/review/editorial_fashion.png",
+    "futuristic_neon": "tests/reports/style_screen_v0_3/review/futuristic_neon.png",
+    "gothic_luxury": "tests/reports/style_screen_v0_3/review/gothic_luxury.png",
+    "graphic_action": "tests/reports/style_screen_v0_3/review/graphic_action.png",
+    "ink_wash": "tests/reports/style_screen_v0_3/review/ink_wash.png",
+    "luminous_game": "tests/reports/style_screen_v0_3/review/luminous_game.png",
+    "refined_pastel": "tests/reports/style_screen_v0_3/review/refined_pastel.png",
+    "retro_cel": "tests/reports/style_screen_v0_3/review/retro_cel.png",
+    "romantic_ornamental": "tests/reports/style_screen_v0_3/review/romantic_ornamental.png",
+    "watercolor_story": "tests/reports/style_screen_v0_3/review/watercolor_story.png"
+  },
+  "items": [
+    {
+      "style_id": "architectural_couture",
+      "family": "editorial_fashion",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/architectural_couture_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "architectural_couture",
+      "family": "editorial_fashion",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/architectural_couture_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "architectural_couture",
+      "family": "editorial_fashion",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/architectural_couture_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "monochrome_magazine",
+      "family": "editorial_fashion",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_magazine_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "monochrome_magazine",
+      "family": "editorial_fashion",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_magazine_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "monochrome_magazine",
+      "family": "editorial_fashion",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_magazine_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "nocturne_runway",
+      "family": "editorial_fashion",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/nocturne_runway_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "nocturne_runway",
+      "family": "editorial_fashion",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/nocturne_runway_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "nocturne_runway",
+      "family": "editorial_fashion",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/nocturne_runway_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "sunwashed_resort",
+      "family": "editorial_fashion",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunwashed_resort_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "sunwashed_resort",
+      "family": "editorial_fashion",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunwashed_resort_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "sunwashed_resort",
+      "family": "editorial_fashion",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunwashed_resort_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "chrome_dawn",
+      "family": "futuristic_neon",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/chrome_dawn_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "chrome_dawn",
+      "family": "futuristic_neon",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/chrome_dawn_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "chrome_dawn",
+      "family": "futuristic_neon",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/chrome_dawn_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "cyan_magenta_noir",
+      "family": "futuristic_neon",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cyan_magenta_noir_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "cyan_magenta_noir",
+      "family": "futuristic_neon",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cyan_magenta_noir_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "cyan_magenta_noir",
+      "family": "futuristic_neon",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cyan_magenta_noir_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "holographic_city",
+      "family": "futuristic_neon",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/holographic_city_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "holographic_city",
+      "family": "futuristic_neon",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/holographic_city_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "holographic_city",
+      "family": "futuristic_neon",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/holographic_city_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "orbital_signal",
+      "family": "futuristic_neon",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/orbital_signal_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "orbital_signal",
+      "family": "futuristic_neon",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/orbital_signal_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "orbital_signal",
+      "family": "futuristic_neon",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/orbital_signal_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "ultraviolet_rain",
+      "family": "futuristic_neon",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ultraviolet_rain_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "ultraviolet_rain",
+      "family": "futuristic_neon",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ultraviolet_rain_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "ultraviolet_rain",
+      "family": "futuristic_neon",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ultraviolet_rain_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "black_lace_candle",
+      "family": "gothic_luxury",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/black_lace_candle_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "black_lace_candle",
+      "family": "gothic_luxury",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/black_lace_candle_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "black_lace_candle",
+      "family": "gothic_luxury",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/black_lace_candle_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "cathedral_velvet",
+      "family": "gothic_luxury",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cathedral_velvet_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "cathedral_velvet",
+      "family": "gothic_luxury",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cathedral_velvet_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "cathedral_velvet",
+      "family": "gothic_luxury",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/cathedral_velvet_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "crimson_baroque",
+      "family": "gothic_luxury",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_baroque_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "crimson_baroque",
+      "family": "gothic_luxury",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_baroque_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "crimson_baroque",
+      "family": "gothic_luxury",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_baroque_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "mourning_jewel",
+      "family": "gothic_luxury",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mourning_jewel_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "mourning_jewel",
+      "family": "gothic_luxury",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mourning_jewel_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "mourning_jewel",
+      "family": "gothic_luxury",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mourning_jewel_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "silver_nocturne",
+      "family": "gothic_luxury",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/silver_nocturne_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "silver_nocturne",
+      "family": "gothic_luxury",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/silver_nocturne_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "silver_nocturne",
+      "family": "gothic_luxury",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/silver_nocturne_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "crimson_speed",
+      "family": "graphic_action",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_speed_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "crimson_speed",
+      "family": "graphic_action",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_speed_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "crimson_speed",
+      "family": "graphic_action",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/crimson_speed_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "electric_foreshortening",
+      "family": "graphic_action",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/electric_foreshortening_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "electric_foreshortening",
+      "family": "graphic_action",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/electric_foreshortening_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "electric_foreshortening",
+      "family": "graphic_action",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/electric_foreshortening_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "kinetic_ink",
+      "family": "graphic_action",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/kinetic_ink_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "kinetic_ink",
+      "family": "graphic_action",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/kinetic_ink_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "kinetic_ink",
+      "family": "graphic_action",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/kinetic_ink_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "monochrome_burst",
+      "family": "graphic_action",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_burst_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "monochrome_burst",
+      "family": "graphic_action",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_burst_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "monochrome_burst",
+      "family": "graphic_action",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/monochrome_burst_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "calligraphic_night",
+      "family": "ink_wash",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/calligraphic_night_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "calligraphic_night",
+      "family": "ink_wash",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/calligraphic_night_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "calligraphic_night",
+      "family": "ink_wash",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/calligraphic_night_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "dry_brush_wind",
+      "family": "ink_wash",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/dry_brush_wind_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "dry_brush_wind",
+      "family": "ink_wash",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/dry_brush_wind_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "dry_brush_wind",
+      "family": "ink_wash",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/dry_brush_wind_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "sparse_mountain_ink",
+      "family": "ink_wash",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sparse_mountain_ink_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "sparse_mountain_ink",
+      "family": "ink_wash",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sparse_mountain_ink_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "sparse_mountain_ink",
+      "family": "ink_wash",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sparse_mountain_ink_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "vermilion_ink",
+      "family": "ink_wash",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/vermilion_ink_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "vermilion_ink",
+      "family": "ink_wash",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/vermilion_ink_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "vermilion_ink",
+      "family": "ink_wash",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/vermilion_ink_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "celestial_party",
+      "family": "luminous_game",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/celestial_party_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "celestial_party",
+      "family": "luminous_game",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/celestial_party_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "celestial_party",
+      "family": "luminous_game",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/celestial_party_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "ethereal_splash",
+      "family": "luminous_game",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ethereal_splash_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "ethereal_splash",
+      "family": "luminous_game",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ethereal_splash_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "ethereal_splash",
+      "family": "luminous_game",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ethereal_splash_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "jewel_tone_hero",
+      "family": "luminous_game",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/jewel_tone_hero_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "jewel_tone_hero",
+      "family": "luminous_game",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/jewel_tone_hero_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "jewel_tone_hero",
+      "family": "luminous_game",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/jewel_tone_hero_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "radiant_fantasy",
+      "family": "luminous_game",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/radiant_fantasy_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "radiant_fantasy",
+      "family": "luminous_game",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/radiant_fantasy_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "radiant_fantasy",
+      "family": "luminous_game",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/radiant_fantasy_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "petal_airlight",
+      "family": "refined_pastel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/petal_airlight_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "petal_airlight",
+      "family": "refined_pastel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/petal_airlight_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "petal_airlight",
+      "family": "refined_pastel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/petal_airlight_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "porcelain_sky",
+      "family": "refined_pastel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/porcelain_sky_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "porcelain_sky",
+      "family": "refined_pastel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/porcelain_sky_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "porcelain_sky",
+      "family": "refined_pastel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/porcelain_sky_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "quiet_blossom",
+      "family": "refined_pastel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/quiet_blossom_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "quiet_blossom",
+      "family": "refined_pastel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/quiet_blossom_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "quiet_blossom",
+      "family": "refined_pastel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/quiet_blossom_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "ribbon_glow",
+      "family": "refined_pastel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ribbon_glow_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "ribbon_glow",
+      "family": "refined_pastel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ribbon_glow_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "ribbon_glow",
+      "family": "refined_pastel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/ribbon_glow_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "analog_scifi_cel",
+      "family": "retro_cel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/analog_scifi_cel_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "analog_scifi_cel",
+      "family": "retro_cel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/analog_scifi_cel_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "analog_scifi_cel",
+      "family": "retro_cel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/analog_scifi_cel_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "bold_saturday_cel",
+      "family": "retro_cel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/bold_saturday_cel_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "bold_saturday_cel",
+      "family": "retro_cel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/bold_saturday_cel_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "bold_saturday_cel",
+      "family": "retro_cel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/bold_saturday_cel_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "muted_1980s_drama",
+      "family": "retro_cel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/muted_1980s_drama_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "muted_1980s_drama",
+      "family": "retro_cel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/muted_1980s_drama_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "muted_1980s_drama",
+      "family": "retro_cel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/muted_1980s_drama_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "sunlit_1990s_cel",
+      "family": "retro_cel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunlit_1990s_cel_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "sunlit_1990s_cel",
+      "family": "retro_cel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunlit_1990s_cel_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "sunlit_1990s_cel",
+      "family": "retro_cel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/sunlit_1990s_cel_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "warm_vhs_memory",
+      "family": "retro_cel",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/warm_vhs_memory_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "warm_vhs_memory",
+      "family": "retro_cel",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/warm_vhs_memory_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "warm_vhs_memory",
+      "family": "retro_cel",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/warm_vhs_memory_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "floral_cameo",
+      "family": "romantic_ornamental",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/floral_cameo_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "floral_cameo",
+      "family": "romantic_ornamental",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/floral_cameo_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "floral_cameo",
+      "family": "romantic_ornamental",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/floral_cameo_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "gilded_devotion",
+      "family": "romantic_ornamental",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/gilded_devotion_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "gilded_devotion",
+      "family": "romantic_ornamental",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/gilded_devotion_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "gilded_devotion",
+      "family": "romantic_ornamental",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/gilded_devotion_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "lace_reverie",
+      "family": "romantic_ornamental",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/lace_reverie_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "lace_reverie",
+      "family": "romantic_ornamental",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/lace_reverie_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "lace_reverie",
+      "family": "romantic_ornamental",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/lace_reverie_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "moonlit_ribbons",
+      "family": "romantic_ornamental",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/moonlit_ribbons_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "moonlit_ribbons",
+      "family": "romantic_ornamental",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/moonlit_ribbons_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "moonlit_ribbons",
+      "family": "romantic_ornamental",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/moonlit_ribbons_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "rose_glass",
+      "family": "romantic_ornamental",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/rose_glass_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "rose_glass",
+      "family": "romantic_ornamental",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/rose_glass_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "rose_glass",
+      "family": "romantic_ornamental",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/rose_glass_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "granulating_garden",
+      "family": "watercolor_story",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/granulating_garden_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "granulating_garden",
+      "family": "watercolor_story",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/granulating_garden_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "granulating_garden",
+      "family": "watercolor_story",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/granulating_garden_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "mineral_bloom",
+      "family": "watercolor_story",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mineral_bloom_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "mineral_bloom",
+      "family": "watercolor_story",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mineral_bloom_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "mineral_bloom",
+      "family": "watercolor_story",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/mineral_bloom_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "storybook_meadow",
+      "family": "watercolor_story",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/storybook_meadow_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "storybook_meadow",
+      "family": "watercolor_story",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/storybook_meadow_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "storybook_meadow",
+      "family": "watercolor_story",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/storybook_meadow_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "tea_stain_daydream",
+      "family": "watercolor_story",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/tea_stain_daydream_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "tea_stain_daydream",
+      "family": "watercolor_story",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/tea_stain_daydream_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "tea_stain_daydream",
+      "family": "watercolor_story",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/tea_stain_daydream_seed_3003/image_01.png"
+    },
+    {
+      "style_id": "translucent_rain",
+      "family": "watercolor_story",
+      "seed": 1001,
+      "image_path": "tests/reports/style_screen_v0_3/runs/translucent_rain_seed_1001/image_01.png"
+    },
+    {
+      "style_id": "translucent_rain",
+      "family": "watercolor_story",
+      "seed": 2002,
+      "image_path": "tests/reports/style_screen_v0_3/runs/translucent_rain_seed_2002/image_01.png"
+    },
+    {
+      "style_id": "translucent_rain",
+      "family": "watercolor_story",
+      "seed": 3003,
+      "image_path": "tests/reports/style_screen_v0_3/runs/translucent_rain_seed_3003/image_01.png"
+    }
+  ]
+}

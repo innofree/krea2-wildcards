@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "audit_id": "catalog_static_v0_5",
+  "catalog": {
+    "total_items": 3750,
+    "foundation_items": 50,
+    "generated_expansion_items": 3700,
+    "generated_output_files": 13,
+    "maximum_generated_prompt_characters": 595,
+    "maximum_generated_item_id_characters": 141
+  },
+  "preview": {
+    "active_items": 3721,
+    "canonical_runtime_files": 13,
+    "impact_runtime_paths": 3734
+  },
+  "duplicates": {
+    "threshold": 0.94,
+    "exact_duplicates": 0,
+    "near_duplicates": 0,
+    "family_scoped_comparisons": 590750,
+    "global_comparisons": 7029375
+  },
+  "schema_v2": {
+    "items": 3750,
+    "shards": 150,
+    "maximum_items_per_shard": 25,
+    "prompt_fields": 0,
+    "idempotent_sync_changes": 0
+  },
+  "gates": {
+    "catalog_normalization_changes": 0,
+    "runtime_lint_issues": 0,
+    "normalized_conflict_pairs_loaded": 9,
+    "sensitive_worktree_issues": 0,
+    "sensitive_history_issues": 0
+  }
+}

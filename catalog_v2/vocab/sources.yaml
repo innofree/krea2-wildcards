@@ -1,0 +1,24 @@
+schema_version: 2
+catalog: source_registry
+namespace: source
+entries:
+  source:internal:taxonomy_v1:
+    legacy_ref: catalog/sources.yaml#sources/internal_taxonomy_v1
+  source:v1:novelai_official_tagging:
+    legacy_ref: catalog/sources.yaml#sources/novelai_official_tagging
+  source:v1:anima_official_model_card:
+    legacy_ref: catalog/sources.yaml#sources/anima_official_model_card
+  source:v1:cie_international_lighting_vocabulary:
+    legacy_ref: catalog/sources.yaml#sources/cie_international_lighting_vocabulary
+  source:v1:benchmark_observation:
+    legacy_ref: catalog/sources.yaml#sources/benchmark_observation
+  source:v1:getty_tgn_place_type_vocabulary:
+    legacy_ref: catalog/sources.yaml#sources/getty_tgn_place_type_vocabulary
+  source:v1:blender_camera_manual:
+    legacy_ref: catalog/sources.yaml#sources/blender_camera_manual
+  source:v1:novelai_official_character_creation:
+    legacy_ref: catalog/sources.yaml#sources/novelai_official_character_creation
+  source:v1:getty_aat_costume_vocabulary:
+    legacy_ref: catalog/sources.yaml#sources/getty_aat_costume_vocabulary
+  source:v1:blender_animation_keyframes_manual:
+    legacy_ref: catalog/sources.yaml#sources/blender_animation_keyframes_manual

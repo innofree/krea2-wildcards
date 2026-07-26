@@ -1,0 +1,18 @@
+schema_version: 1
+review_id: style_retest_v0_4
+review_method: family_contact_sheet_extension_review
+review_date: '2026-07-26'
+evidence:
+  manifest: tests/reports/style_retest_v0_4/review/manifest.json
+  inherited_scores_from: tests/reports/style_screen_v0_3/visual_review.yaml
+  image_count: 32
+  seeds: [4004, 5005]
+  resolution: [1024, 1024]
+result:
+  styles_reviewed: 16
+  critical_failures: 0
+  score_adjustments: 0
+  conclusion: >-
+    Both extension seeds preserve the style and family behavior observed in the pilot. No unusable
+    anatomy, text, watermark, image corruption, or new prompt-response failure was found, so the
+    pilot style-level scores are retained for the combined five-seed approval calculation.

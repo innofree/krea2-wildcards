@@ -1,0 +1,1947 @@
+schema_version: 1
+catalog: art_styles
+items:
+  crystal_iris_pastel:
+    family: refined_pastel
+    visual_axes:
+      - thin_linework
+      - layered_irises
+      - soft_cel_shading
+      - pastel_palette
+      - airy_composition
+    prompt: >-
+      Refined character artwork with thin tapered contours, compact facial proportions, large crystal-clear
+      irises built from layered gradients, soft two-step cel shading, restrained pastel colors, and generous
+      luminous negative space
+    compatibility:
+      recommended:
+        - soft_cel_shading
+        - subtle_sparkles
+      avoid:
+        - rough_charcoal
+        - hard_noon_contrast
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - crystal_iris_pastel
+    validation:
+      model: krea2_turbo_mxfp8
+      tested_seeds: 5
+      status: approved
+      last_evaluation: family_retest_v0_2
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      compatibility: 5
+      critical_failures: 0
+  petal_airlight:
+    family: refined_pastel
+    visual_axes:
+      - graceful_contours
+      - delicate_face
+      - reflective_eyes
+      - low_contrast_color
+      - floral_space
+    prompt: >-
+      Airy character portrait with graceful narrow contour lines, a delicate oval face, reflective eyes
+      with precise catchlights, low-contrast blush and lavender color, soft feathered shadows, and drifting
+      petals framing open space
+    compatibility:
+      recommended:
+        - thin_tapered
+        - floating_petals
+      avoid:
+        - bold_graphic
+        - industrial_grit
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - petal_airlight
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  porcelain_sky:
+    family: refined_pastel
+    visual_axes:
+      - precise_linework
+      - porcelain_skin
+      - glass_eyes
+      - cool_palette
+      - balanced_frame
+    prompt: >-
+      Polished character key visual with precise hairline contours, porcelain-smooth facial color transitions,
+      glass-like eyes with pale lower-iris light, cool sky-blue accents, restrained cel shadows, and a
+      balanced uncluttered frame
+    compatibility:
+      recommended:
+        - delicate_clean
+        - luminous_low_contrast
+      avoid:
+        - coarse_graphite
+        - dramatic_shadow
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - porcelain_sky
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  ribbon_glow:
+    family: refined_pastel
+    visual_axes:
+      - flowing_lines
+      - compact_features
+      - bright_irises
+      - satin_color
+      - curved_composition
+    prompt: >-
+      Elegant character artwork shaped by flowing tapered lines, compact understated features, bright
+      layered irises, satin-soft peach and mint coloring, gentle cel-modelled volume, and curved ribbon
+      motifs guiding the eye around the figure
+    compatibility:
+      recommended:
+        - soft_gradient
+        - decorative_curves
+      avoid:
+        - angular_ink
+        - heavy_impasto
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - ribbon_glow
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  quiet_blossom:
+    family: refined_pastel
+    visual_axes:
+      - restrained_lines
+      - subtle_expression
+      - luminous_eyes
+      - cream_palette
+      - intimate_crop
+    prompt: >-
+      Quiet intimate character study with restrained tapered lines, softly pointed facial structure, luminous
+      eyes under fine upper lashes, cream and dusty-rose local colors, minimal facial shadow, and sparse
+      blossom accents near the close framing
+    compatibility:
+      recommended:
+        - intimate_portrait
+        - restrained_pastel
+      avoid:
+        - impact_particles
+        - high_contrast
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - quiet_blossom
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  angular_impact:
+    family: graphic_action
+    visual_axes:
+      - bold_contours
+      - angular_forms
+      - hard_cel
+      - primary_palette
+      - diagonal_composition
+    prompt: >-
+      Forceful character artwork with bold contour hierarchy, sharp angular interior marks, crisp hard-edged
+      cel shadows, a concentrated red-blue-yellow palette, enlarged action shapes, and a steep diagonal
+      composition charged with forward momentum
+    compatibility:
+      recommended:
+        - bold_graphic
+        - hard_cel
+        - impact_particles
+      avoid:
+        - muted_pastel
+        - soft_shadowless_studio_lighting
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - angular_impact
+    validation:
+      model: krea2_turbo_mxfp8
+      tested_seeds: 5
+      status: approved
+      last_evaluation: family_retest_v0_2
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      compatibility: 5
+      critical_failures: 0
+  kinetic_ink:
+    family: graphic_action
+    visual_axes:
+      - brush_ink
+      - compressed_face
+      - sharp_eyes
+      - limited_color
+      - speed_marks
+    prompt: >-
+      Kinetic character scene with pressure-sensitive black brush contours, compressed decisive facial
+      shapes, narrow focused eyes, two-tone cel shading, limited vermilion accents, and sweeping directional
+      marks that reinforce the movement
+    compatibility:
+      recommended:
+        - angular_ink
+        - limited_palette
+        - speed_lines
+      avoid:
+        - pastel
+        - floral_framing
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - kinetic_ink
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  crimson_speed:
+    family: graphic_action
+    visual_axes:
+      - thick_outer_lines
+      - fine_inner_lines
+      - hard_light
+      - crimson_palette
+      - cropped_action
+    prompt: >-
+      High-energy character key visual with thick outer contours against fine interior details, hard directional
+      cel lighting, deep crimson and charcoal color blocks, bright white impact accents, and a tightly
+      cropped pose breaking across the frame
+    compatibility:
+      recommended:
+        - high_contrast
+        - hard_cel
+        - tight_crop
+      avoid:
+        - gentle_gradient
+        - open_negative_space
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - crimson_speed
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  electric_foreshortening:
+    family: graphic_action
+    visual_axes:
+      - confident_lines
+      - geometric_face
+      - intense_gaze
+      - electric_color
+      - deep_perspective
+    prompt: >-
+      Dynamic character artwork with confident angular contours, a geometric face and intense gaze, saturated
+      cyan-orange light separation, crisp graphic shadows, controlled sparks, and dramatic foreshortening
+      that pushes one limb toward the viewer
+    compatibility:
+      recommended:
+        - foreshortening
+        - emissive_accents
+        - controlled_sparks
+      avoid:
+        - flat_front_view
+        - delicate_watercolor
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - electric_foreshortening
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  monochrome_burst:
+    family: graphic_action
+    visual_axes:
+      - razor_lines
+      - stark_face
+      - black_white
+      - solid_shadows
+      - radial_composition
+    prompt: >-
+      Stark black-and-white character artwork with razor-clean contours, simplified facial planes, solid
+      ink shadows, sparse halftone texture, explosive radial marks, and an off-center figure held together
+      by a clear graphic silhouette
+    compatibility:
+      recommended:
+        - monochrome_ink
+        - radial_composition
+      avoid:
+        - prismatic_jewel_palette
+        - soft_pastel
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - monochrome_burst
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  prismatic_key_visual:
+    family: luminous_game
+    visual_axes:
+      - precise_contours
+      - elegant_face
+      - jewel_eyes
+      - layered_light
+      - heroic_frame
+    prompt: >-
+      Premium fantasy character key visual with precise controlled contours, elegant facial proportions,
+      jewel-like eyes with radial iris detail, layered cel and gradient modelling, prismatic rim light,
+      and a heroic centered composition with restrained particles
+    compatibility:
+      recommended:
+        - jewel_palette
+        - layered_glow
+        - hero_composition
+      avoid:
+        - coarse_graphite
+        - flat_monochrome
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - prismatic_key_visual
+    validation:
+      model: krea2_turbo_mxfp8
+      tested_seeds: 5
+      status: approved
+      last_evaluation: family_retest_v0_2
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      compatibility: 5
+      critical_failures: 0
+  jewel_tone_hero:
+    family: luminous_game
+    visual_axes:
+      - clean_lines
+      - noble_face
+      - faceted_eyes
+      - rich_color
+      - low_angle
+    prompt: >-
+      Noble character showcase with clean narrow linework, a calm sculpted face, faceted irises, rich
+      sapphire and garnet color separation, softly modelled fabric and armor surfaces, and a spacious
+      low-angle composition under controlled rim lighting
+    compatibility:
+      recommended:
+        - low_angle
+        - jewel_palette
+        - rim_lighting
+      avoid:
+        - rough_charcoal
+        - diffuse_flat_light
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - jewel_tone_hero
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  ethereal_splash:
+    family: luminous_game
+    visual_axes:
+      - filigree_lines
+      - serene_face
+      - luminous_eyes
+      - spectral_palette
+      - layered_depth
+    prompt: >-
+      Ethereal character splash artwork with filigree-fine contours, serene compact features, luminous
+      layered eyes, spectral turquoise-violet color transitions, translucent fabric edges, and floating
+      foreground shapes creating deep ceremonial space
+    compatibility:
+      recommended:
+        - layered_depth
+        - luminous_low_contrast
+        - translucent_fabric
+      avoid:
+        - bold_primary
+        - flat_white_background
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - ethereal_splash
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  celestial_party:
+    family: luminous_game
+    visual_axes:
+      - polished_lines
+      - varied_faces
+      - bright_eyes
+      - celestial_color
+      - ensemble_layout
+    prompt: >-
+      Polished ensemble key visual with consistent tapered contours, distinct refined faces, bright layered
+      eyes, midnight blue and warm gold color harmony, soft celestial bloom, and overlapping figures arranged
+      in a clear triangular hierarchy
+    compatibility:
+      recommended:
+        - ensemble_layout
+        - midnight_gold
+        - subtle_bloom
+      avoid:
+        - single_subject_crop
+        - coarse_texture
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - celestial_party
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  radiant_fantasy:
+    family: luminous_game
+    visual_axes:
+      - ornate_contours
+      - refined_face
+      - starburst_eyes
+      - radiant_color
+      - decorative_arch
+    prompt: >-
+      Radiant fantasy character artwork with ornate yet readable contours, a refined oval face, starburst
+      iris highlights, emerald and rose-gold color separation, luminous edge accents, and a decorative
+      arch framing the silhouette without obscuring it
+    compatibility:
+      recommended:
+        - ornate_contours
+        - emerald_rose_gold
+        - decorative_arch
+      avoid:
+        - industrial_grit
+        - chaotic_particles
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - radiant_fantasy
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  lace_reverie:
+    family: romantic_ornamental
+    visual_axes:
+      - lace_lines
+      - heart_face
+      - moist_eyes
+      - blush_palette
+      - cameo_frame
+    prompt: >-
+      Romantic character portrait with lace-fine tapered linework, a softly heart-shaped face, moist reflective
+      eyes under long upper lashes, blush pink and pearl coloring, diffused shadows, and an oval cameo
+      frame surrounded by restrained floral detail
+    compatibility:
+      recommended:
+        - intimate_portrait
+        - floral_framing
+        - diffused_shadows
+      avoid:
+        - industrial_grit
+        - hard_flash
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - lace_reverie
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  floral_cameo:
+    family: romantic_ornamental
+    visual_axes:
+      - curved_contours
+      - delicate_profile
+      - gem_eyes
+      - cream_palette
+      - botanical_border
+    prompt: >-
+      Graceful profile artwork with long curved contours, a delicate nose and softly pointed chin, gem-bright
+      eyes, cream and rose local colors, gentle gradient shading, and a botanical border whose stems echo
+      the direction of the hair
+    compatibility:
+      recommended:
+        - profile_view
+        - botanical_border
+        - gentle_gradient
+      avoid:
+        - bold_graphic
+        - speed_lines
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - floral_cameo
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  moonlit_ribbons:
+    family: romantic_ornamental
+    visual_axes:
+      - flowing_lines
+      - wistful_face
+      - moonlit_eyes
+      - blue_palette
+      - ribbon_spiral
+    prompt: >-
+      Moonlit character artwork with flowing pressure-sensitive lines, wistful refined features, silver
+      catchlights suspended in deep blue irises, soft indigo cel shading, pale rim light, and long ribbons
+      spiralling through a quiet circular composition
+    compatibility:
+      recommended:
+        - moonlight
+        - circular_composition
+        - flowing_ribbons
+      avoid:
+        - hard_noon_sunlight
+        - primary_palette
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - moonlit_ribbons
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  rose_glass:
+    family: romantic_ornamental
+    visual_axes:
+      - precise_linework
+      - porcelain_face
+      - glass_eyes
+      - rose_palette
+      - stained_light
+    prompt: >-
+      Ornamental character study with precise narrow contours, porcelain facial planes, glass-like rose
+      irises with controlled highlights, burgundy and antique-gold accents, softly separated shadows,
+      and stained-glass light shapes behind the figure
+    compatibility:
+      recommended:
+        - burgundy_gold
+        - stained_light
+        - ornamental_frame
+      avoid:
+        - minimal_white
+        - rough_pencil
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - rose_glass
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  gilded_devotion:
+    family: romantic_ornamental
+    visual_axes:
+      - gilded_lines
+      - elongated_face
+      - luminous_gaze
+      - warm_neutral
+      - symmetrical_frame
+    prompt: >-
+      Devotional character portrait with hairline gilded contours, elongated serene facial proportions,
+      a luminous steady gaze, warm ivory and muted gold coloring, velvet-soft shadow transitions, and
+      symmetrical leaf motifs framing the shoulders
+    compatibility:
+      recommended:
+        - symmetry
+        - warm_ivory
+        - velvet_softness
+      avoid:
+        - diagonal_action
+        - neon_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - gilded_devotion
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  sunlit_1990s_cel:
+    family: retro_cel
+    visual_axes:
+      - ink_contours
+      - rounded_face
+      - simple_eyes
+      - warm_cel
+      - analog_texture
+    prompt: >-
+      Sunlit retro character frame with clean inked contours, rounded expressive facial shapes, simple
+      bright irises, crisp two-level cel shadows, warm coral and sky-blue paint colors, subtle analog
+      grain, and a straightforward waist-up composition
+    compatibility:
+      recommended:
+        - inked_contours
+        - warm_cel
+        - film_grain
+      avoid:
+        - ray_traced_gloss
+        - prismatic_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - sunlit_1990s_cel
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  muted_1980s_drama:
+    family: retro_cel
+    visual_axes:
+      - dark_ink
+      - mature_face
+      - narrow_eyes
+      - muted_palette
+      - cinematic_crop
+    prompt: >-
+      Restrained retro drama frame with dark variable-width ink contours, mature angular facial proportions,
+      narrow reflective eyes, muted teal and brick-red cel colors, broad hard shadow shapes, and a cinematic
+      close crop with quiet tension
+    compatibility:
+      recommended:
+        - mature_angular
+        - muted_teal
+        - hard_cel
+      avoid:
+        - pastel_sparkles
+        - shadowless_light
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - muted_1980s_drama
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  analog_scifi_cel:
+    family: retro_cel
+    visual_axes:
+      - technical_lines
+      - geometric_face
+      - focused_eyes
+      - analog_neon
+      - cockpit_depth
+    prompt: >-
+      Analog science-fiction character frame with crisp technical contours, geometric mature features,
+      focused eyes, hard cel shadows in navy and amber, restrained luminous instrument accents, painted
+      surface wear, and layered cockpit depth
+    compatibility:
+      recommended:
+        - technical_contours
+        - navy_amber
+        - cockpit_depth
+      avoid:
+        - pastoral_watercolor
+        - floral_cameo
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - analog_scifi_cel
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  warm_vhs_memory:
+    family: retro_cel
+    visual_axes:
+      - soft_ink
+      - friendly_face
+      - clear_eyes
+      - faded_color
+      - memory_haze
+    prompt: >-
+      Warm nostalgic character frame with softened ink contours, friendly balanced facial shapes, clear
+      uncomplicated eyes, faded apricot and turquoise cel colors, gentle film grain, slight halation,
+      and an unforced eye-level composition
+    compatibility:
+      recommended:
+        - faded_palette
+        - film_grain
+        - eye_level
+      avoid:
+        - ultra_crisp_chrome
+        - deep_black_neon
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - warm_vhs_memory
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  bold_saturday_cel:
+    family: retro_cel
+    visual_axes:
+      - bold_ink
+      - heroic_face
+      - graphic_eyes
+      - bright_cel
+      - clear_silhouette
+    prompt: >-
+      Bold retro action frame with thick confident ink contours, heroic simplified features, sharply readable
+      eyes, bright primary cel colors, compact hard shadows, and a strong full-body silhouette staged
+      against broad graphic background shapes
+    compatibility:
+      recommended:
+        - bold_ink
+        - primary_cel
+        - full_body
+      avoid:
+        - delicate_pastel
+        - subtle_watercolor
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - bold_saturday_cel
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  sumi_mist:
+    family: ink_wash
+    visual_axes:
+      - fluid_brush
+      - spare_face
+      - dark_eyes
+      - diluted_tone
+      - open_space
+    prompt: >-
+      Contemplative ink-and-wash character artwork with fluid black brush contours, spare facial marks,
+      dark lucid eyes, pale diluted grey washes, visible absorbent paper grain, mist-softened edges, and
+      broad breathing negative space
+    compatibility:
+      recommended:
+        - brush_variation
+        - paper_grain
+        - open_negative_space
+      avoid:
+        - glossy_mobile_rendering
+        - neon_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - sumi_mist
+    validation:
+      model: krea2_turbo_mxfp8
+      tested_seeds: 5
+      status: approved
+      last_evaluation: family_retest_v0_2
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      compatibility: 5
+      critical_failures: 0
+  dry_brush_wind:
+    family: ink_wash
+    visual_axes:
+      - dry_brush
+      - angular_face
+      - narrow_gaze
+      - monochrome
+      - wind_composition
+    prompt: >-
+      Wind-swept character study built from dry-brush contours, angular economical features, a narrow
+      unwavering gaze, broken black and grey ink textures, bare paper highlights, and long diagonal strokes
+      carrying motion across the open frame
+    compatibility:
+      recommended:
+        - dry_brush
+        - diagonal_motion
+        - bare_paper
+      avoid:
+        - soft_pastel
+        - polished_gloss
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - dry_brush_wind
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  vermilion_ink:
+    family: ink_wash
+    visual_axes:
+      - calligraphic_line
+      - calm_face
+      - focused_eyes
+      - vermilion_accent
+      - seal_composition
+    prompt: >-
+      Calligraphic character artwork with elastic black brush lines, calm simplified facial structure,
+      focused dark eyes, translucent smoke-grey washes, a single controlled vermilion accent, and asymmetrical
+      framing anchored by a small square color mark
+    compatibility:
+      recommended:
+        - calligraphic_line
+        - vermilion_accent
+        - asymmetry
+      avoid:
+        - prismatic_palette
+        - dense_particles
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - vermilion_ink
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  sparse_mountain_ink:
+    family: ink_wash
+    visual_axes:
+      - fine_brush
+      - tiny_figure
+      - minimal_face
+      - layered_wash
+      - landscape_scale
+    prompt: >-
+      Sparse ink landscape with a small adult figure defined by fine brush contours, minimal yet readable
+      facial detail, layered pale mountain washes, receding atmospheric values, fibrous paper texture,
+      and immense vertical negative space
+    compatibility:
+      recommended:
+        - landscape_scale
+        - atmospheric_wash
+        - vertical_space
+      avoid:
+        - tight_portrait
+        - dense_ornament
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - sparse_mountain_ink
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  calligraphic_night:
+    family: ink_wash
+    visual_axes:
+      - sweeping_ink
+      - mature_profile
+      - silver_eye
+      - deep_wash
+      - moon_space
+    prompt: >-
+      Nocturnal brushwork portrait with sweeping pressure-rich ink contours, a mature restrained profile,
+      one silver-lit eye, deep indigo wash pooling into black, dry paper texture, and a pale circular
+      moon shape balancing the dark figure
+    compatibility:
+      recommended:
+        - profile_view
+        - indigo_wash
+        - circular_balance
+      avoid:
+        - bright_primary
+        - hard_studio_flash
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - calligraphic_night
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  granulating_garden:
+    family: watercolor_story
+    visual_axes:
+      - pencil_edge
+      - soft_face
+      - clear_eyes
+      - granulating_pigment
+      - garden_depth
+    prompt: >-
+      Gentle watercolor character scene with faint pencil edges, softly simplified facial forms, clear
+      expressive eyes, granulating green and rose pigments, translucent layered shadows, visible cold-pressed
+      paper, and loosely suggested garden depth
+    compatibility:
+      recommended:
+        - translucent_pigment
+        - cold_pressed_paper
+        - garden
+      avoid:
+        - hard_cel
+        - chrome_surface
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - granulating_garden
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  tea_stain_daydream:
+    family: watercolor_story
+    visual_axes:
+      - broken_pencil
+      - round_face
+      - warm_eyes
+      - tea_palette
+      - vignette
+    prompt: >-
+      Warm daydream portrait with broken graphite contours, a softly rounded adult face, gentle amber
+      eyes, transparent tea-brown and faded blue washes, naturally blooming pigment edges, and an irregular
+      paper-white vignette
+    compatibility:
+      recommended:
+        - graphite_edge
+        - warm_wash
+        - paper_vignette
+      avoid:
+        - neon_bloom
+        - crisp_hard_cel_shading
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - tea_stain_daydream
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  translucent_rain:
+    family: watercolor_story
+    visual_axes:
+      - fine_pencil
+      - wistful_face
+      - wet_eyes
+      - cool_wash
+      - rain_streaks
+    prompt: >-
+      Rain-softened character artwork with fine wandering pencil lines, wistful adult features, wet reflective
+      eyes, translucent slate-blue and violet washes, blooms of displaced pigment, and vertical rain marks
+      dissolving into the paper
+    compatibility:
+      recommended:
+        - cool_wash
+        - rain
+        - reflective_eyes
+      avoid:
+        - hard_noon_sunlight
+        - geometric_vector
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - translucent_rain
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  storybook_meadow:
+    family: watercolor_story
+    visual_axes:
+      - soft_ink
+      - adult_figure
+      - bright_eyes
+      - botanical_color
+      - panoramic_space
+    prompt: >-
+      Lyrical watercolor scene with soft sepia ink contours, a clearly adult figure with bright attentive
+      eyes, fresh botanical greens and butter-yellow washes, gentle sunlit shadows, textured paper, and
+      a wide meadow composition with layered foreground grasses
+    compatibility:
+      recommended:
+        - panoramic_space
+        - botanical_color
+        - soft_sunlight
+      avoid:
+        - deep_neon_black
+        - brutalist_geometry
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - storybook_meadow
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  mineral_bloom:
+    family: watercolor_story
+    visual_axes:
+      - delicate_edge
+      - oval_face
+      - luminous_eyes
+      - mineral_palette
+      - floral_bloom
+    prompt: >-
+      Delicate watercolor portrait with intermittent fine contours, an oval adult face, luminous eyes
+      reserved from the paper white, mineral turquoise and coral pigments, soft layered skin washes, and
+      abstract floral blooms spreading beyond the shoulders
+    compatibility:
+      recommended:
+        - mineral_pigment
+        - floral_bloom
+        - delicate_edge
+      avoid:
+        - solid_black_shadow
+        - polished_chrome
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - mineral_bloom
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  cathedral_velvet:
+    family: gothic_luxury
+    visual_axes:
+      - ornate_line
+      - aristocratic_face
+      - dark_eyes
+      - velvet_palette
+      - cathedral_symmetry
+    prompt: >-
+      Gothic luxury portrait with ornate controlled contours, aristocratic angular features, deep reflective
+      eyes, black velvet and oxblood color fields, narrow candlelit highlights, and symmetrical cathedral
+      arches rising behind the figure
+    compatibility:
+      recommended:
+        - cathedral_symmetry
+        - candlelight
+        - oxblood_velvet
+      avoid:
+        - tropical_daylight
+        - playful_primary
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - cathedral_velvet
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 5.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  black_lace_candle:
+    family: gothic_luxury
+    visual_axes:
+      - lace_line
+      - pale_face
+      - lowered_gaze
+      - black_ivory
+      - candle_frame
+    prompt: >-
+      Intimate gothic character study with black-lace line detail, a pale elongated adult face, lowered
+      dark eyes, ivory skin against matte black fabric, soft candle gradients, and an asymmetrical cluster
+      of flames balanced by deep shadow
+    compatibility:
+      recommended:
+        - black_lace
+        - candle_gradient
+        - deep_shadow
+      avoid:
+        - shadowless_studio
+        - bright_cyan
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - black_lace_candle
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  silver_nocturne:
+    family: gothic_luxury
+    visual_axes:
+      - silver_contour
+      - sharp_face
+      - moon_eyes
+      - blue_black
+      - vertical_frame
+    prompt: >-
+      Nocturne character artwork with fine silver-edged contours, sharp composed facial planes, moonlit
+      grey eyes, blue-black fabric and muted metal accents, cool directional rim light, and a tall vertical
+      composition surrounded by pointed architectural shapes
+    compatibility:
+      recommended:
+        - cool_rim_light
+        - blue_black
+        - vertical_frame
+      avoid:
+        - warm_pastoral
+        - rounded_playful_shapes
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - silver_nocturne
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  crimson_baroque:
+    family: gothic_luxury
+    visual_axes:
+      - baroque_line
+      - sculpted_face
+      - garnet_eyes
+      - crimson_gold
+      - theatrical_depth
+    prompt: >-
+      Baroque character showcase with disciplined scrolling contours, sculpted mature features, garnet-dark
+      eyes, saturated crimson and aged-gold surfaces, dramatic side lighting, and layered drapery creating
+      theatrical depth around a clear central silhouette
+    compatibility:
+      recommended:
+        - dramatic_side_light
+        - crimson_gold
+        - drapery
+      avoid:
+        - minimal_white
+        - diffuse_flat_light
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - crimson_baroque
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  mourning_jewel:
+    family: gothic_luxury
+    visual_axes:
+      - precise_dark_line
+      - solemn_face
+      - jewel_eye
+      - charcoal_palette
+      - oval_frame
+    prompt: >-
+      Solemn gothic portrait with precise dark contours, restrained adult features, one vivid jewel-toned
+      eye accent, charcoal and faded plum coloring, soft velvet shadows, and a sparse oval frame set with
+      small metallic botanical details
+    compatibility:
+      recommended:
+        - restrained_expression
+        - faded_plum
+        - oval_frame
+      avoid:
+        - cheerful_primary
+        - explosive_action
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - mourning_jewel
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  holographic_city:
+    family: futuristic_neon
+    visual_axes:
+      - geometric_line
+      - sleek_face
+      - luminous_eyes
+      - holographic_color
+      - city_depth
+    prompt: >-
+      Futuristic character key visual with precise geometric contours, sleek mature facial planes, luminous
+      cyan irises, holographic magenta-green reflections, crisp material separation, and layered city
+      lights receding through atmospheric depth
+    compatibility:
+      recommended:
+        - holographic_color
+        - city_depth
+        - precise_geometry
+      avoid:
+        - rustic_watercolor
+        - antique_parchment
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - holographic_city
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  cyan_magenta_noir:
+    family: futuristic_neon
+    visual_axes:
+      - sharp_line
+      - angular_face
+      - narrow_eyes
+      - split_neon
+      - noir_crop
+    prompt: >-
+      Neon-noir character portrait with sharp economical contours, angular adult features, narrow watchful
+      eyes, cyan and magenta split lighting against deep charcoal, wet reflective surfaces, and a tight
+      off-center crop with strong shadow geometry
+    compatibility:
+      recommended:
+        - split_lighting
+        - wet_reflection
+        - off_center_crop
+      avoid:
+        - pastoral_softness
+        - warm_flat_daylight
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - cyan_magenta_noir
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  chrome_dawn:
+    family: futuristic_neon
+    visual_axes:
+      - clean_contour
+      - refined_face
+      - pale_eyes
+      - chrome_pastel
+      - horizon_light
+    prompt: >-
+      Clean futuristic character artwork with narrow engineered contours, refined adult features, pale
+      luminous eyes, pearl-chrome surfaces reflecting peach and blue dawn, soft horizon rim light, and
+      a spacious low-contrast composition with crisp material boundaries
+    compatibility:
+      recommended:
+        - pearl_chrome
+        - dawn_rim
+        - low_contrast
+      avoid:
+        - rough_charcoal
+        - antique_ink
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - chrome_dawn
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 3.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  orbital_signal:
+    family: futuristic_neon
+    visual_axes:
+      - technical_line
+      - composed_face
+      - signal_eye
+      - restrained_neon
+      - orbital_frame
+    prompt: >-
+      Orbital character showcase with disciplined technical linework, composed mature proportions, ring-shaped
+      iris highlights, restrained cobalt and amber emissive accents, matte engineered surfaces, and concentric
+      structural arcs framing the centered figure
+    compatibility:
+      recommended:
+        - concentric_frame
+        - cobalt_amber
+        - matte_surface
+      avoid:
+        - floral_ornament
+        - paper_grain
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - orbital_signal
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  ultraviolet_rain:
+    family: futuristic_neon
+    visual_axes:
+      - fine_line
+      - tired_face
+      - violet_eyes
+      - ultraviolet_color
+      - rain_perspective
+    prompt: >-
+      Atmospheric future-city portrait with fine dark contours, tired yet mature facial features, ultraviolet
+      eye reflections, violet and electric-blue light on wet fabric, soft neon haze, and converging rain
+      lines pulling the gaze into deep street perspective
+    compatibility:
+      recommended:
+        - neon_haze
+        - wet_fabric
+        - street_perspective
+      avoid:
+        - dry_pastoral
+        - flat_white_background
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - ultraviolet_rain
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 2.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  minimal_studio:
+    family: editorial_fashion
+    visual_axes:
+      - clean_edge
+      - mature_face
+      - natural_eyes
+      - neutral_palette
+      - spacious_studio
+    prompt: >-
+      Minimal fashion editorial with clean precise garment edges, mature natural facial structure, restrained
+      eye detail, ivory-charcoal color blocking, soft directional studio light, believable fabric weight,
+      and generous negative space around a full-length silhouette
+    compatibility:
+      recommended:
+        - full_length
+        - soft_studio
+        - neutral_palette
+      avoid:
+        - chaotic_particles
+        - dense_fantasy_ornament
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - minimal_studio
+    validation:
+      model: krea2_turbo_mxfp8
+      tested_seeds: 5
+      status: approved
+      last_evaluation: family_retest_v0_2
+      prompt_adherence: 4.8
+      style_fidelity: 5
+      stability: 5
+      compatibility: 5
+      critical_failures: 0
+  architectural_couture:
+    family: editorial_fashion
+    visual_axes:
+      - structured_edge
+      - sculpted_face
+      - focused_gaze
+      - stone_palette
+      - architecture
+    prompt: >-
+      Architectural fashion image with sharply structured garment edges, sculpted adult facial planes,
+      a focused direct gaze, limestone and black color harmony, hard raking light, and an elongated figure
+      aligned with monumental geometric walls
+    compatibility:
+      recommended:
+        - elongated_fashion_proportions
+        - geometric_walls
+        - raking_light
+      avoid:
+        - chibi_proportions
+        - floral_cameo
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - architectural_couture
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 3.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  monochrome_magazine:
+    family: editorial_fashion
+    visual_axes:
+      - crisp_edge
+      - angular_face
+      - direct_eyes
+      - monochrome
+      - graphic_layout
+    prompt: >-
+      Monochrome fashion portrait with crisp silhouette edges, angular mature facial structure, direct
+      understated eyes, smooth grayscale tonal separation, controlled hard-soft lighting, and a bold asymmetrical
+      composition without text or branding
+    compatibility:
+      recommended:
+        - monochrome
+        - asymmetry
+        - controlled_contrast
+      avoid:
+        - prismatic_jewel_palette
+        - ornate_fantasy
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - monochrome_magazine
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: style_retest_v0_4
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 5.0
+      critical_failures: 0
+  sunwashed_resort:
+    family: editorial_fashion
+    visual_axes:
+      - natural_edge
+      - relaxed_face
+      - sunlit_eyes
+      - warm_palette
+      - coastal_space
+    prompt: >-
+      Sunwashed resort fashion image with naturally defined garment edges, relaxed adult features, clear
+      sunlit eyes, sand-white and marine-blue colors, believable linen texture, open shade with warm reflected
+      light, and an uncluttered coastal composition
+    compatibility:
+      recommended:
+        - linen
+        - coastal_space
+        - open_shade
+      avoid:
+        - gothic_candlelight
+        - neon_noir
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - sunwashed_resort
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  nocturne_runway:
+    family: editorial_fashion
+    visual_axes:
+      - sleek_edge
+      - composed_face
+      - reflective_eyes
+      - black_jewel
+      - runway_depth
+    prompt: >-
+      Nocturnal runway editorial with sleek readable garment edges, composed adult facial planes, restrained
+      reflective eyes, black fabric with emerald accents, narrow overhead spotlights, subtle atmospheric
+      haze, and a long central perspective behind the walking figure
+    compatibility:
+      recommended:
+        - runway_perspective
+        - overhead_spot
+        - black_emerald
+      avoid:
+        - watercolor_bleed
+        - pastoral_daylight
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - nocturne_runway
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: style_screen_v0_3
+      prompt_adherence: 2.0
+      style_fidelity: 1.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0

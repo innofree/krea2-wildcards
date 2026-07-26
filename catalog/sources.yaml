@@ -1,0 +1,173 @@
+schema_version: 1
+catalog: sources
+sources:
+  internal_taxonomy_v1:
+    title: Krea2 wildcard visual taxonomy v1
+    kind: internal_design
+    accessed: '2026-07-26'
+    usage: Original visual-property descriptions derived from plan.md
+    license_note: Newly authored project metadata and prompt prose
+    evidence_summary: Initial observable visual-axis vocabulary and family structure
+  benchmark_observation:
+    title: Local Krea2 benchmark observations
+    kind: generated_evidence
+    accessed: null
+    usage: Reserved for Phase 6 image evaluation records
+    license_note: Record the checkpoint and service terms with each run
+    evidence_summary: Generated images, resolved prompts, scorecards, and reproducibility evidence
+  krea2_official_repository:
+    title: Krea 2 official repository
+    kind: official_documentation
+    url: https://github.com/krea-ai/krea-2
+    accessed: '2026-07-26'
+    usage: Turbo architecture and eight-step baseline confirmation
+    license_note: Reference documentation only
+    evidence_summary: Official model architecture, model files, and Turbo baseline guidance
+  comfyui_krea2_workflow:
+    title: Krea 2 open-source models in ComfyUI
+    kind: official_documentation
+    url: https://comfyui.org/en/krea-2-open-source-models-are-now
+    accessed: '2026-07-26'
+    usage: Native loader, encoder, VAE, and workflow guidance
+    license_note: Reference documentation only
+    evidence_summary: Official ComfyUI integration and model-loading workflow guidance
+  impact_wildcard_tutorial:
+    title: Impact Pack wildcard tutorial
+    kind: official_documentation
+    url: https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md
+    accessed: '2026-07-26'
+    usage: YAML wildcard paths, cache refresh, and populate/fixed behavior
+    license_note: Reference documentation only
+    evidence_summary: ImpactWildcardProcessor wildcard path and cache behavior
+  novelai_official_tagging:
+    title: NovelAI image generation tagging documentation
+    kind: official_documentation
+    url: https://docs.novelai.net/en/image/tags/
+    accessed: '2026-07-26'
+    usage: Tag ordering, tag categories, known-tag behavior, and syntax conversion rules
+    license_note: Reference documentation only; do not copy prompt collections
+    evidence_summary: >-
+      Documents learned tag behavior, recommended subject-character-series ordering, special tag
+      classes, and strengthening or weakening syntax that must not be copied into runtime prose
+  novelai_official_character_creation:
+    title: NovelAI consistent character creation tutorial
+    kind: official_documentation
+    url: https://docs.novelai.net/en/image/tutorial-charactercreation/
+    accessed: '2026-07-26'
+    usage: Character feature taxonomy for hair, eyes, body, clothing, framing, and camera
+    license_note: Reference documentation only; retain only authored visual-property summaries
+    evidence_summary: Organizes character prompting into observable subject and composition axes
+  anima_official_model_card:
+    title: Anima official model card
+    kind: official_model_card
+    url: https://huggingface.co/seam/Anima
+    accessed: '2026-07-26'
+    usage: Tag order, artist tag handling, tag dropout, natural-language prompting, and limitations
+    license_note: >-
+      Reference documentation only; model use is governed by the CircleStone Labs Non-Commercial
+      License and applicable NVIDIA terms
+    evidence_summary: >-
+      States that Anima uses Danbooru-style tags, natural-language captions, and mixtures; artist
+      tags use an at-sign prefix while detailed natural-language prompts should use multiple sentences
+  danbooru_official_repository:
+    title: Danbooru official repository and taxonomy implementation
+    kind: official_repository
+    url: https://github.com/danbooru/danbooru
+    accessed: '2026-07-26'
+    usage: Source taxonomy boundaries for artist, character, copyright, general, and metadata tags
+    license_note: Reference source structure and tag categories only; do not redistribute images
+    evidence_summary: Official implementation of the taggable source system used for taxonomy research
+  dynamicprompts_official_repository:
+    title: ComfyUI Dynamic Prompts official repository
+    kind: official_repository
+    url: https://github.com/adieyal/comfyui-dynamicprompts
+    accessed: '2026-07-26'
+    usage: Wildcard file formats, random/combinatorial prompt behavior, and runtime compatibility
+    license_note: MIT-licensed implementation; reference documentation only
+    evidence_summary: Supports text, JSON, and YAML wildcard files plus random and combinatorial nodes
+  blender_animation_keyframes_manual:
+    title: Blender 5.0 Manual — Keyframes introduction
+    kind: official_manual
+    url: https://docs.blender.org/manual/en/5.0/animation/keyframes/introduction.html
+    accessed: '2026-07-26'
+    locator: Animation > Keyframes > Introduction
+    domains:
+      - animation
+    usage: >-
+      Normalize animation-production terms for keyframes, interpolation, breakdowns, extremes,
+      moving holds, and in-between motion without treating software controls as visual tags
+    license_note: >-
+      Blender Manual content is CC BY-SA 4.0; attribute the Blender Foundation if adapted and
+      retain only project-authored terminology summaries in the catalog
+    evidence_summary: >-
+      The official manual separates time markers, interpolation behavior, and production-oriented
+      keyframe types such as breakdown, moving hold, extreme, and in-between states
+  blender_camera_manual:
+    title: Blender 5.0 Manual — Cameras
+    kind: official_manual
+    url: https://docs.blender.org/manual/en/5.0/render/cameras.html
+    accessed: '2026-07-26'
+    locator: Rendering > Cameras; Lens and Depth of Field panels
+    domains:
+      - cinematography
+    usage: >-
+      Normalize projection, focal length, field of view, lens shift, sensor fit, aperture, focus,
+      and depth-of-field terms used by camera and composition prompt axes
+    license_note: >-
+      Blender Manual content is CC BY-SA 4.0; attribute the Blender Foundation if adapted and
+      retain only project-authored terminology summaries in the catalog
+    evidence_summary: >-
+      The official camera reference distinguishes perspective, orthographic, and panoramic
+      projection while relating focal length, field of view, sensor settings, and focus controls
+  getty_aat_costume_vocabulary:
+    title: Getty Art & Architecture Thesaurus — Costume hierarchy
+    kind: institutional_controlled_vocabulary
+    url: https://www.getty.edu/publications/vocabularies-editorial-guidelines/aat-guidelines/3_editorial_rules/3.1/
+    accessed: '2026-07-26'
+    locator: Hierarchical Relationships > Objects Facet > Furnishings and Equipment > Costume
+    domains:
+      - fashion
+    usage: >-
+      Normalize garment, costume component, material, form, and function concepts while preserving
+      the distinction between a concept record and a hierarchy-only guide term
+    license_note: >-
+      Getty Vocabulary data is ODC-By 1.0; preserve J. Paul Getty Trust attribution and applicable
+      contributor/source attribution when vocabulary data is displayed
+    evidence_summary: >-
+      Getty's maintained AAT hierarchy organizes costume by form, function, wearer, material, and
+      component relationships within a broader visual-arts controlled vocabulary
+  getty_tgn_place_type_vocabulary:
+    title: Getty Thesaurus of Geographic Names — Place Types
+    kind: institutional_controlled_vocabulary
+    url: https://www.getty.edu/publications/vocabularies-editorial-guidelines/tgn-guidelines/3_editorial_rules/3.6/
+    accessed: '2026-07-26'
+    locator: TGN Editorial Rules > 3.6 Place Types
+    domains:
+      - environment
+    usage: >-
+      Normalize natural features, settlements, districts, open spaces, and other setting types
+      independently from proper place names and historical or current status
+    license_note: >-
+      Getty Vocabulary data is ODC-By 1.0; preserve J. Paul Getty Trust attribution and applicable
+      contributor/source attribution when vocabulary data is displayed
+    evidence_summary: >-
+      Getty's maintained TGN rules define controlled place types for physical features and political
+      or inhabited entities, with preferred, additional, current, and historical distinctions
+  cie_international_lighting_vocabulary:
+    title: CIE S 017:2020 International Lighting Vocabulary and e-ILV
+    kind: international_standard
+    url: https://cie.co.at/e-ilv
+    accessed: '2026-07-26'
+    locator: CIE S 017:2020, 2nd edition; e-ILV term-number and keyword search
+    domains:
+      - color
+      - lighting
+    usage: >-
+      Normalize scientific color, vision, illumination, optical-radiation, and image-technology
+      terms before translating them into observable prompt properties
+    license_note: >-
+      Reference CIE terms and standard identifiers only; do not redistribute the paid standard or
+      bulk-copy e-ILV definitions into the catalog
+    evidence_summary: >-
+      The CIE international vocabulary standardizes quantities, units, symbols, and terminology for
+      light, lighting, colour, vision, optical radiation, and image technology

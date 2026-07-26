@@ -1,0 +1,41 @@
+schema_version: 1
+catalog: compatibility
+style_families:
+  refined_pastel:
+    recommended: [thin_tapered, soft_cel, luminous_low_contrast, subtle_sparkles]
+    avoid: [rough_charcoal, hard_noon_contrast, heavy_impasto]
+  graphic_action:
+    recommended: [bold_graphic, hard_cel, high_contrast, impact_particles]
+    avoid: [shadowless_studio, muted_pastel, delicate_watercolor]
+  luminous_game:
+    recommended: [precise_contours, layered_glow, jewel_palette, hero_composition]
+    avoid: [coarse_graphite, flat_monochrome, sparse_wash]
+  romantic_ornamental:
+    recommended: [graceful_tapered, soft_gradient, floral_framing, intimate_portrait]
+    avoid: [industrial_grit, brutalist_layout, hard_flash]
+  retro_cel:
+    recommended: [inked_contours, hard_cel, analog_palette, film_grain]
+    avoid: [ray_traced_gloss, watercolor_bleed, vector_perfection]
+  ink_wash:
+    recommended: [brush_variation, restrained_color, open_negative_space, paper_grain]
+    avoid: [glossy_mobile_rendering, neon_bloom, dense_microdetail]
+  watercolor_story:
+    recommended: [soft_edges, translucent_pigment, natural_paper, gentle_daylight]
+    avoid: [hard_cel, chrome_surface, deep_neon_black]
+  gothic_luxury:
+    recommended: [ornate_contours, deep_jewel_palette, candlelight, symmetrical_framing]
+    avoid: [airy_minimalism, tropical_daylight, playful_primary_colors]
+  futuristic_neon:
+    recommended: [precise_geometry, emissive_accents, reflective_surfaces, deep_contrast]
+    avoid: [rustic_watercolor, antique_parchment, pastoral_softness]
+  editorial_fashion:
+    recommended: [clean_silhouette, controlled_palette, deliberate_pose, spacious_composition]
+    avoid: [chibi_proportions, chaotic_particles, dense_fantasy_ornament]
+conflicts:
+  hard_photorealism: [flat_cel_rendering, monochrome_screen_tone]
+  rough_charcoal: [clean_vector_linework, glossy_mobile_rendering]
+  chibi_proportions: [elongated_fashion_proportions]
+  simple_white_background: [densely_detailed_fantasy_city]
+  hard_noon_sunlight: [soft_shadowless_studio_lighting]
+  delicate_watercolor: [crisp_hard_cel_shading]
+  monochrome_ink: [prismatic_jewel_palette]

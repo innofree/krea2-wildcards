@@ -1,0 +1,459 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:pose:synced_003
+  kind: pose
+  sequence: 3
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_direct_level_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_direct_level_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:direct_level
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_direct_level_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lifted_attentive_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lifted_attentive_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lifted_attentive_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lifted_attentive_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lifted_attentive_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lowered_reflective_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lowered_reflective
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lowered_reflective_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lowered_reflective
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lowered_reflective_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lowered_reflective
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_lowered_reflective_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lowered_reflective
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_lowered_reflective_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_side_distant_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_side_distant_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:side_distant
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_side_distant_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_side_distant_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_side_distant_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:side_distant
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_side_distant_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_side_distant_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_side_distant_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:side_distant
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_side_distant_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_side_distant_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_side_distant_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:side_distant
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_side_distant_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_three_quarter_near_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:three_quarter_near
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_three_quarter_near_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:three_quarter_near
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_three_quarter_near_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:three_quarter_near
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_loosely_clasped_three_quarter_near_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:loosely_clasped
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:three_quarter_near
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_loosely_clasped_three_quarter_near_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_direct_level_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_direct_level_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:direct_level
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_direct_level_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_direct_level_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_direct_level_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:direct_level
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_direct_level_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_direct_level_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_direct_level_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:direct_level
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_direct_level_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_direct_level_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_direct_level_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:direct_level
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_direct_level_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_controlled_forward_energy_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_lifted_attentive_controlled_forward_energy_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:controlled_forward_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_controlled_forward_energy_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_gentle_transition_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_lifted_attentive_gentle_transition_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:gentle_transition
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_gentle_transition_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_poised_counterbalance_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_lifted_attentive_poised_counterbalance_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:poised_counterbalance
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_poised_counterbalance_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture
+- id: item:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_settled_stillness_complete_pose
+  legacy_ref: catalog/poses.yaml#items/pose_grounded_forward_step_open_palms_extended_lifted_attentive_settled_stillness_complete_pose
+  feature_refs:
+    arm_gesture:
+    - feature:arm_gesture:open_palms_extended
+    body_arrangement:
+    - feature:body_arrangement:grounded_forward_step
+    head_gaze:
+    - feature:head_gaze:lifted_attentive
+    motion_quality:
+    - feature:motion_quality:settled_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:pose:pose_grounded_forward_step_open_palms_extended_lifted_attentive_settled_stillness_complete_pose
+  runtime_route_ref: runtime_route:pose:pose_gesture

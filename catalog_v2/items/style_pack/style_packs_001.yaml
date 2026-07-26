@@ -1,0 +1,460 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:style_pack:style_packs_001
+  kind: style_pack
+  sequence: 1
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:style_pack:crystal_iris_pastel
+  legacy_ref: catalog/art_styles.yaml#items/crystal_iris_pastel
+  feature_refs:
+    linework:
+    - feature:linework:thin_linework
+    face:
+    - feature:face:compact_proportions
+    eye:
+    - feature:eye:layered_irises
+    rendering:
+    - feature:rendering:soft_cel_shading
+    - feature:rendering:pastel_palette
+    composition:
+    - feature:composition:airy_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:crystal_iris_pastel_v0_2
+  lifecycle_ref: lifecycle:style_pack:crystal_iris_pastel
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:petal_airlight
+  legacy_ref: catalog/art_styles.yaml#items/petal_airlight
+  feature_refs:
+    linework:
+    - feature:linework:graceful_contours
+    face:
+    - feature:face:delicate_face
+    eye:
+    - feature:eye:reflective_eyes
+    rendering:
+    - feature:rendering:low_contrast_color
+    composition:
+    - feature:composition:floral_space
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:petal_airlight_v0_3
+  lifecycle_ref: lifecycle:style_pack:petal_airlight
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:porcelain_sky
+  legacy_ref: catalog/art_styles.yaml#items/porcelain_sky
+  feature_refs:
+    linework:
+    - feature:linework:precise_linework
+    face:
+    - feature:face:porcelain_skin
+    eye:
+    - feature:eye:glass_eyes
+    rendering:
+    - feature:rendering:cool_palette
+    composition:
+    - feature:composition:balanced_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:porcelain_sky_v0_4
+  lifecycle_ref: lifecycle:style_pack:porcelain_sky
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:ribbon_glow
+  legacy_ref: catalog/art_styles.yaml#items/ribbon_glow
+  feature_refs:
+    linework:
+    - feature:linework:flowing_lines
+    face:
+    - feature:face:compact_features
+    eye:
+    - feature:eye:bright_irises
+    rendering:
+    - feature:rendering:satin_color
+    composition:
+    - feature:composition:curved_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:ribbon_glow_v0_3
+  lifecycle_ref: lifecycle:style_pack:ribbon_glow
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:quiet_blossom
+  legacy_ref: catalog/art_styles.yaml#items/quiet_blossom
+  feature_refs:
+    linework:
+    - feature:linework:restrained_lines
+    face:
+    - feature:face:subtle_expression
+    eye:
+    - feature:eye:luminous_eyes
+    rendering:
+    - feature:rendering:cream_palette
+    composition:
+    - feature:composition:intimate_crop
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:quiet_blossom_v0_4
+  lifecycle_ref: lifecycle:style_pack:quiet_blossom
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:angular_impact
+  legacy_ref: catalog/art_styles.yaml#items/angular_impact
+  feature_refs:
+    linework:
+    - feature:linework:bold_contours
+    - feature:linework:angular_forms
+    face: []
+    eye: []
+    rendering:
+    - feature:rendering:hard_cel
+    - feature:rendering:primary_palette
+    composition:
+    - feature:composition:diagonal_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:angular_impact_v0_2
+  lifecycle_ref: lifecycle:style_pack:angular_impact
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:kinetic_ink
+  legacy_ref: catalog/art_styles.yaml#items/kinetic_ink
+  feature_refs:
+    linework:
+    - feature:linework:brush_ink
+    face:
+    - feature:face:compressed_face
+    eye:
+    - feature:eye:sharp_eyes
+    rendering:
+    - feature:rendering:limited_color
+    - feature:rendering:speed_marks
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:kinetic_ink_v0_3
+  lifecycle_ref: lifecycle:style_pack:kinetic_ink
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:crimson_speed
+  legacy_ref: catalog/art_styles.yaml#items/crimson_speed
+  feature_refs:
+    linework:
+    - feature:linework:thick_outer_lines
+    - feature:linework:fine_inner_lines
+    face: []
+    eye: []
+    rendering:
+    - feature:rendering:hard_light
+    - feature:rendering:crimson_palette
+    composition:
+    - feature:composition:cropped_action
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:crimson_speed_v0_4
+  lifecycle_ref: lifecycle:style_pack:crimson_speed
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:electric_foreshortening
+  legacy_ref: catalog/art_styles.yaml#items/electric_foreshortening
+  feature_refs:
+    linework:
+    - feature:linework:confident_lines
+    face:
+    - feature:face:geometric_face
+    eye:
+    - feature:eye:intense_gaze
+    rendering:
+    - feature:rendering:electric_color
+    composition:
+    - feature:composition:deep_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:electric_foreshortening_v0_4
+  lifecycle_ref: lifecycle:style_pack:electric_foreshortening
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:monochrome_burst
+  legacy_ref: catalog/art_styles.yaml#items/monochrome_burst
+  feature_refs:
+    linework:
+    - feature:linework:razor_lines
+    face:
+    - feature:face:stark_face
+    eye: []
+    rendering:
+    - feature:rendering:black_white
+    - feature:rendering:solid_shadows
+    composition:
+    - feature:composition:radial_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:monochrome_burst_v0_3
+  lifecycle_ref: lifecycle:style_pack:monochrome_burst
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:prismatic_key_visual
+  legacy_ref: catalog/art_styles.yaml#items/prismatic_key_visual
+  feature_refs:
+    linework:
+    - feature:linework:precise_contours
+    face:
+    - feature:face:elegant_face
+    eye:
+    - feature:eye:jewel_eyes
+    rendering:
+    - feature:rendering:layered_light
+    composition:
+    - feature:composition:heroic_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:prismatic_key_visual_v0_2
+  lifecycle_ref: lifecycle:style_pack:prismatic_key_visual
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:jewel_tone_hero
+  legacy_ref: catalog/art_styles.yaml#items/jewel_tone_hero
+  feature_refs:
+    linework:
+    - feature:linework:clean_lines
+    face:
+    - feature:face:noble_face
+    eye:
+    - feature:eye:faceted_eyes
+    rendering:
+    - feature:rendering:rich_color
+    composition:
+    - feature:composition:low_angle
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:jewel_tone_hero_v0_4
+  lifecycle_ref: lifecycle:style_pack:jewel_tone_hero
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:ethereal_splash
+  legacy_ref: catalog/art_styles.yaml#items/ethereal_splash
+  feature_refs:
+    linework:
+    - feature:linework:filigree_lines
+    face:
+    - feature:face:serene_face
+    eye:
+    - feature:eye:luminous_eyes
+    rendering:
+    - feature:rendering:spectral_palette
+    composition:
+    - feature:composition:layered_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:ethereal_splash_v0_4
+  lifecycle_ref: lifecycle:style_pack:ethereal_splash
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:celestial_party
+  legacy_ref: catalog/art_styles.yaml#items/celestial_party
+  feature_refs:
+    linework:
+    - feature:linework:polished_lines
+    face:
+    - feature:face:varied_faces
+    eye:
+    - feature:eye:bright_eyes
+    rendering:
+    - feature:rendering:celestial_color
+    composition:
+    - feature:composition:ensemble_layout
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:celestial_party_v0_3
+  lifecycle_ref: lifecycle:style_pack:celestial_party
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:radiant_fantasy
+  legacy_ref: catalog/art_styles.yaml#items/radiant_fantasy
+  feature_refs:
+    linework:
+    - feature:linework:ornate_contours
+    face:
+    - feature:face:refined_face
+    eye:
+    - feature:eye:starburst_eyes
+    rendering:
+    - feature:rendering:radiant_color
+    composition:
+    - feature:composition:decorative_arch
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:radiant_fantasy_v0_3
+  lifecycle_ref: lifecycle:style_pack:radiant_fantasy
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:lace_reverie
+  legacy_ref: catalog/art_styles.yaml#items/lace_reverie
+  feature_refs:
+    linework:
+    - feature:linework:lace_lines
+    face:
+    - feature:face:heart_face
+    eye:
+    - feature:eye:moist_eyes
+    rendering:
+    - feature:rendering:blush_palette
+    composition:
+    - feature:composition:cameo_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:lace_reverie_v0_3
+  lifecycle_ref: lifecycle:style_pack:lace_reverie
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:floral_cameo
+  legacy_ref: catalog/art_styles.yaml#items/floral_cameo
+  feature_refs:
+    linework:
+    - feature:linework:curved_contours
+    face:
+    - feature:face:delicate_profile
+    eye:
+    - feature:eye:gem_eyes
+    rendering:
+    - feature:rendering:cream_palette
+    composition:
+    - feature:composition:botanical_border
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:floral_cameo_v0_4
+  lifecycle_ref: lifecycle:style_pack:floral_cameo
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:moonlit_ribbons
+  legacy_ref: catalog/art_styles.yaml#items/moonlit_ribbons
+  feature_refs:
+    linework:
+    - feature:linework:flowing_lines
+    face:
+    - feature:face:wistful_face
+    eye:
+    - feature:eye:moonlit_eyes
+    rendering:
+    - feature:rendering:blue_palette
+    composition:
+    - feature:composition:ribbon_spiral
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:moonlit_ribbons_v0_3
+  lifecycle_ref: lifecycle:style_pack:moonlit_ribbons
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:rose_glass
+  legacy_ref: catalog/art_styles.yaml#items/rose_glass
+  feature_refs:
+    linework:
+    - feature:linework:precise_linework
+    face:
+    - feature:face:porcelain_face
+    eye:
+    - feature:eye:glass_eyes
+    rendering:
+    - feature:rendering:rose_palette
+    - feature:rendering:stained_light
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:rose_glass_v0_3
+  lifecycle_ref: lifecycle:style_pack:rose_glass
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:gilded_devotion
+  legacy_ref: catalog/art_styles.yaml#items/gilded_devotion
+  feature_refs:
+    linework:
+    - feature:linework:gilded_lines
+    face:
+    - feature:face:elongated_face
+    eye:
+    - feature:eye:luminous_gaze
+    rendering:
+    - feature:rendering:warm_neutral
+    composition:
+    - feature:composition:symmetrical_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:gilded_devotion_v0_3
+  lifecycle_ref: lifecycle:style_pack:gilded_devotion
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:sunlit_1990s_cel
+  legacy_ref: catalog/art_styles.yaml#items/sunlit_1990s_cel
+  feature_refs:
+    linework:
+    - feature:linework:ink_contours
+    face:
+    - feature:face:rounded_face
+    eye:
+    - feature:eye:simple_eyes
+    rendering:
+    - feature:rendering:warm_cel
+    - feature:rendering:analog_texture
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:sunlit_1990s_cel_v0_3
+  lifecycle_ref: lifecycle:style_pack:sunlit_1990s_cel
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:muted_1980s_drama
+  legacy_ref: catalog/art_styles.yaml#items/muted_1980s_drama
+  feature_refs:
+    linework:
+    - feature:linework:dark_ink
+    face:
+    - feature:face:mature_face
+    eye:
+    - feature:eye:narrow_eyes
+    rendering:
+    - feature:rendering:muted_palette
+    composition:
+    - feature:composition:cinematic_crop
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:muted_1980s_drama_v0_3
+  lifecycle_ref: lifecycle:style_pack:muted_1980s_drama
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:analog_scifi_cel
+  legacy_ref: catalog/art_styles.yaml#items/analog_scifi_cel
+  feature_refs:
+    linework:
+    - feature:linework:technical_lines
+    face:
+    - feature:face:geometric_face
+    eye:
+    - feature:eye:focused_eyes
+    rendering:
+    - feature:rendering:analog_neon
+    composition:
+    - feature:composition:cockpit_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:analog_scifi_cel_v0_3
+  lifecycle_ref: lifecycle:style_pack:analog_scifi_cel
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:warm_vhs_memory
+  legacy_ref: catalog/art_styles.yaml#items/warm_vhs_memory
+  feature_refs:
+    linework:
+    - feature:linework:soft_ink
+    face:
+    - feature:face:friendly_face
+    eye:
+    - feature:eye:clear_eyes
+    rendering:
+    - feature:rendering:faded_color
+    - feature:rendering:memory_haze
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:warm_vhs_memory_v0_3
+  lifecycle_ref: lifecycle:style_pack:warm_vhs_memory
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:bold_saturday_cel
+  legacy_ref: catalog/art_styles.yaml#items/bold_saturday_cel
+  feature_refs:
+    linework:
+    - feature:linework:bold_ink
+    face:
+    - feature:face:heroic_face
+    eye:
+    - feature:eye:graphic_eyes
+    rendering:
+    - feature:rendering:bright_cel
+    composition:
+    - feature:composition:clear_silhouette
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:bold_saturday_cel_v0_3
+  lifecycle_ref: lifecycle:style_pack:bold_saturday_cel
+  runtime_route_ref: runtime_route:style_pack:complete_pack

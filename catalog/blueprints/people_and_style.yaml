@@ -1,0 +1,540 @@
+schema_version: 1
+collections:
+  - id: artist_signature
+    kind: artist_signature
+    output_file: artists.yaml
+    family: artist_signature
+    runtime:
+      file: krea2/artist_signature/modern.yaml
+      path_prefix: [krea2, artist_signature, modern]
+    source_refs:
+      - internal_taxonomy_v1
+      - novelai_official_tagging
+      - anima_official_model_card
+      - cie_international_lighting_vocabulary
+    target_count: 300
+    dimensions:
+      - id: line_language
+        values:
+          - id: lace_tapered
+            text: lace-fine contours with gentle pressure changes and sparse interior marks
+          - id: crisp_measured
+            text: crisp narrow contours with measured corners and selective accent strokes
+          - id: supple_ribbon
+            text: supple ribbonlike contours that swell at focal edges and fade in quiet areas
+          - id: dry_broken
+            text: dry textured contours with broken accents and confident economy
+          - id: rounded_continuous
+            text: rounded continuous contours with softly reinforced facial features
+          - id: angular_architectural
+            text: angular architectural contours with clean intersections and disciplined spacing
+      - id: palette_language
+        values:
+          - id: mineral_pastel
+            text: a pale mineral palette with powder blue, warm ivory, muted coral, and charcoal anchors
+          - id: deep_jewel
+            text: a deep jewel palette of garnet, ink blue, forest green, and restrained gold accents
+          - id: sunlit_earth
+            text: a sunlit earth palette of terracotta, sand, olive, cream, and weathered brown
+          - id: nocturnal_neon
+            text: a nocturnal palette with dark indigo fields, cool cyan accents, and measured magenta light
+          - id: monochrome_tint
+            text: a near-monochrome palette shifted by one quiet tint and a small high-value accent
+      - id: light_modeling
+        values:
+          - id: soft_two_step
+            text: soft two-step value modeling with clean shadow shapes and gentle facial transitions
+          - id: broad_painterly
+            text: broad blended value planes with visible edge control and rounded volume
+          - id: luminous_glaze
+            text: translucent luminous layers that build color depth while keeping shadows open
+          - id: crisp_graphic
+            text: crisp separated light and shadow masses with selective reflected-color accents
+          - id: velvety_diffuse
+            text: velvety diffuse modeling with restrained contrast and soft contact shadows
+      - id: framing_language
+        values:
+          - id: centered_emblematic
+            text: centered emblematic framing with balanced side motifs and a clear face-to-hands hierarchy
+          - id: spacious_asymmetric
+            text: spacious asymmetric framing with deliberate negative space and a quiet directional flow
+          - id: layered_intimate
+            text: layered intimate framing with a close foreground accent and softly receding secondary forms
+          - id: vertical_heroic
+            text: a strong vertical arrangement with a low visual anchor and an uninterrupted adult silhouette
+    templates:
+      - id: complete_signature
+        text: >-
+          An adult subject uses {line_language}, {palette_language}, {light_modeling}, and
+          {framing_language}. Preserve realistic skin texture, coherent hands, believable fabric,
+          natural proportions, cinematic depth, and no text, logos, or watermarks.
+    compatibility:
+      avoid: [hard_photorealism]
+
+  - id: style_pack_expansion
+    kind: style_pack
+    output_file: style_expansion.yaml
+    family: style_pack
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path_prefix: [krea2, style, complete_pack]
+    source_refs:
+      - internal_taxonomy_v1
+      - anima_official_model_card
+      - getty_aat_costume_vocabulary
+      - cie_international_lighting_vocabulary
+    target_count: 150
+    dimensions:
+      - id: shape_language
+        values:
+          - id: geometric_slender
+            text: broad geometric masses balanced by slender accents and clean directional edges
+          - id: organic_flowing
+            text: soft organic silhouettes linked by flowing curves and gently repeated rhythms
+          - id: ornamental_layered
+            text: layered ornamental forms arranged around a clear central subject hierarchy
+          - id: minimal_quiet
+            text: quiet minimal shapes with generous open space and only a few decisive details
+          - id: faceted_rhythmic
+            text: faceted planes repeated in a controlled rhythm with sharp focal transitions
+          - id: rounded_graphic
+            text: rounded graphic forms with bold spacing and a compact, readable silhouette
+      - id: color_strategy
+        values:
+          - id: low_contrast_pastel
+            text: low-contrast pastels separated by small dark anchors and luminous skin-adjacent neutrals
+          - id: jewel_and_gold
+            text: saturated jewel colors disciplined by deep neutral fields and restrained gold notes
+          - id: warm_cool_split
+            text: a clear warm-cool division that guides attention without breaking material believability
+          - id: mineral_muted
+            text: muted mineral colors with subtle temperature shifts and carefully protected highlights
+          - id: limited_duotone
+            text: a limited two-color system expanded through value, translucency, and one quiet accent
+      - id: surface_character
+        values:
+          - id: chalk_matte
+            text: a matte chalklike surface with fine grain and softly absorbed highlights
+          - id: satin_clean
+            text: a clean satin surface with controlled sheen and smooth tonal continuity
+          - id: fibrous_paper
+            text: a visible fibrous paper tooth that catches dry marks and translucent color
+          - id: glazed_luminous
+            text: a layered glazed surface with luminous color depth and crisp final accents
+          - id: weathered_ink
+            text: a lightly weathered ink surface with broken edges and subtle registration character
+      - id: atmosphere
+        values:
+          - id: contemplative_air
+            text: a calm contemplative mood shaped by quiet spacing and softly suspended air
+          - id: ceremonial_energy
+            text: buoyant ceremonial energy conveyed through upward rhythms and luminous accents
+          - id: nocturnal_tension
+            text: restrained nocturnal tension built from deep values, narrow light paths, and stillness
+    templates:
+      - id: complete_style
+        text: >-
+          A polished image of an adult subject is organized through {shape_language}. It uses
+          {color_strategy} over {surface_character}, while {atmosphere} defines the final mood.
+          Preserve realistic skin texture, coherent hands, believable fabric, natural proportions,
+          cinematic depth, and a frame free of text, logos, and watermarks.
+    compatibility:
+      avoid: []
+
+  - id: media_rendering
+    kind: media_rendering
+    output_file: media_rendering.yaml
+    family: media_rendering
+    runtime:
+      file: krea2/style/rendering.yaml
+      path_prefix: [krea2, style, rendering]
+    source_refs:
+      - internal_taxonomy_v1
+      - getty_aat_costume_vocabulary
+      - cie_international_lighting_vocabulary
+    target_count: 150
+    dimensions:
+      - id: mark_making
+        values:
+          - id: transparent_washes
+            text: overlapping transparent washes with controlled blooms and preserved light areas
+          - id: dry_brush
+            text: directional dry-brush marks that reveal the ground and gather around focal edges
+          - id: dense_stipple
+            text: dense stippled marks that accumulate into smooth tonal fields from a normal viewing distance
+          - id: opaque_layers
+            text: flat opaque layers with carefully cut boundaries and selective soft transitions
+          - id: fluid_ink
+            text: fluid ink-like passages with tapered pools, narrow runs, and deliberate untouched space
+          - id: granular_graphite
+            text: granular graphite-like strokes with compressed darks and softly rubbed midtones
+          - id: carved_block
+            text: carved blocklike marks with firm directional cuts and small irregular edge breaks
+          - id: polished_airbrush
+            text: polished airbrush gradients held in check by crisp focal accents and clear silhouettes
+      - id: surface_behavior
+        values:
+          - id: fibrous_tooth
+            text: a fibrous surface tooth that catches pigment unevenly without obscuring facial detail
+          - id: smooth_coated
+            text: smooth coated stock that supports sharp edges and clean, uninterrupted gradients
+          - id: cold_pressed_grain
+            text: cold-pressed grain with shallow dimples that remain visible through transparent passages
+          - id: satin_film
+            text: a thin satin pigment film with restrained sheen and even color density
+          - id: translucent_vellum
+            text: a translucent vellum-like layer that reveals softly offset marks beneath the surface
+          - id: rough_mineral_ground
+            text: a rough mineral ground with scattered tooth and naturally varied mark absorption
+      - id: depth_treatment
+        values:
+          - id: layered_overlays
+            text: shallow layered overlays separated by edge clarity and controlled transparency
+          - id: atmospheric_recession
+            text: atmospheric recession built through cooling color, lower contrast, and softened distant edges
+          - id: sculpted_midtones
+            text: sculpted midtone volume with compact shadows and broad connected highlights
+          - id: poster_separation
+            text: strong poster-like depth separation using a few deliberate value bands
+          - id: glaze_buildup
+            text: luminous glaze buildup that deepens color while preserving light through the layers
+      - id: light_response
+        values:
+          - id: velvety_diffuse
+            text: velvety diffuse highlights that turn gradually across skin and fabric
+          - id: pearlescent_soft
+            text: pearlescent soft highlights with subtle hue shifts and no harsh clipping
+          - id: crisp_edge
+            text: crisp edge highlights reserved for the face, hands, and important garment folds
+          - id: absorbed_low_sheen
+            text: absorbed low-sheen light with deep but readable shadow color
+    templates:
+      - id: complete_media
+        text: >-
+          An adult subject uses {mark_making} on {surface_behavior}, with {depth_treatment} and
+          {light_response}. Preserve realistic skin texture, coherent hands, believable fabric,
+          natural proportions, cinematic depth, and no text, logos, or watermarks.
+    compatibility:
+      avoid: []
+
+  - id: linework_coloring
+    kind: linework_coloring
+    output_file: linework_coloring.yaml
+    family: linework_coloring
+    runtime:
+      file: krea2/style/coloring.yaml
+      path_prefix: [krea2, style, coloring]
+    source_refs:
+      - internal_taxonomy_v1
+      - novelai_official_tagging
+      - anima_official_model_card
+      - cie_international_lighting_vocabulary
+    target_count: 300
+    dimensions:
+      - id: linework
+        values:
+          - id: fine_tapered
+            text: fine tapered contours with subtle pressure variation and restrained inner detail
+          - id: crisp_uniform
+            text: crisp uniform contours with exact joins and consistently open facial features
+          - id: elastic_pressure
+            text: elastic pressure-sensitive lines that thicken around weight and narrow around light
+          - id: broken_dry
+            text: broken dry contours with textured gaps placed away from critical anatomy
+          - id: bold_outer_sparse_inner
+            text: bold outer contours paired with sparse, delicate interior marks
+          - id: angular_precise
+            text: angular precise lines with measured corners and clean garment construction
+          - id: rounded_soft
+            text: rounded soft contours with smooth turns and gently reinforced focal features
+          - id: selective_edge
+            text: selective near-invisible edges completed by color boundaries and a few dark accents
+      - id: coloring
+        values:
+          - id: muted_split_complement
+            text: muted split-complementary color with balanced warm skin notes and cool surrounding fields
+          - id: deep_jewel
+            text: deep jewel color separated by dark neutrals and small high-value accents
+          - id: airy_pastel
+            text: airy pastel color with low contrast, protected whites, and a few grounding darks
+          - id: warm_earth
+            text: warm earth color built from clay, sand, olive, cream, and softened brown
+          - id: cool_nocturne
+            text: cool nocturnal color with indigo shadows, blue-green midtones, and restrained warm light
+          - id: limited_two_tone
+            text: limited two-tone color expanded through value steps and controlled transparency
+          - id: skin_centered_neutral
+            text: skin-centered neutrals with believable undertones and quietly contrasting clothing color
+      - id: shading
+        values:
+          - id: soft_two_band
+            text: soft two-band shading with clean shadow shapes and lightly feathered transitions
+          - id: crisp_shape_shadow
+            text: crisp shape-defined shadows that clarify planes without fragmenting the face
+          - id: transparent_glaze
+            text: transparent glazed shadows with visible local color and luminous overlap
+          - id: broad_blended_plane
+            text: broad blended planes that round the figure while keeping silhouette edges clear
+          - id: fine_tonal_hatching
+            text: fine tonal hatching concentrated in occluded folds and kept sparse across skin
+          - id: subtle_contact_shadow
+            text: subtle contact shadows with open midtones and carefully preserved reflected light
+      - id: accent_light
+        values:
+          - id: controlled_rim
+            text: a controlled rim accent that separates only the shadow-side silhouette
+          - id: reflected_color
+            text: restrained reflected color accents along the jaw, hands, and lower garment folds
+    templates:
+      - id: complete_line_color
+        text: >-
+          An adult subject is defined by {linework}, filled with {coloring}, and modeled through
+          {shading}. The finish adds {accent_light}. Preserve realistic skin texture, coherent hands,
+          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
+          and watermarks.
+    compatibility:
+      avoid: [hard_photorealism]
+
+  - id: character_design
+    kind: character_design
+    output_file: character_designs.yaml
+    family: character_design
+    runtime:
+      file: krea2/character/design_language.yaml
+      path_prefix: [krea2, character, design_language]
+    source_refs:
+      - novelai_official_character_creation
+      - anima_official_model_card
+      - getty_aat_costume_vocabulary
+    target_count: 400
+    dimensions:
+      - id: silhouette
+        values:
+          - id: refined_elongated
+            text: a refined elongated silhouette with narrow shoulders and a clearly defined waist
+          - id: compact_balanced
+            text: a compact balanced silhouette with moderate limb length and a stable center of gravity
+          - id: broad_heroic
+            text: a broad heroic silhouette with a strong upper body and grounded stance
+          - id: narrow_angular
+            text: a narrow angular silhouette with long clean lines and sharply controlled joints
+          - id: soft_rounded
+            text: a soft rounded silhouette with gentle transitions and natural adult proportions
+          - id: layered_regal
+            text: a layered regal silhouette with a tall posture and measured outward volume
+          - id: practical_athletic
+            text: a practical athletic silhouette with mobile shoulders and believable functional balance
+          - id: asymmetric_urban
+            text: an asymmetric urban silhouette with offset layers and a clear uninterrupted body line
+      - id: face_structure
+        values:
+          - id: oval_fine_jaw
+            text: an oval mature face with a fine jaw, straight nose, and softly defined cheekbones
+          - id: square_strong_jaw
+            text: a square mature face with a strong jaw, broad brow, and restrained mouth
+          - id: heart_tapered_chin
+            text: a heart-shaped adult face with high cheeks and a gently tapered chin
+          - id: long_high_cheek
+            text: a long adult face with high cheekbones, a narrow nose bridge, and calm eyes
+          - id: round_soft_jaw
+            text: a round adult face with a soft jaw, balanced features, and clear eyelid structure
+          - id: diamond_defined
+            text: a diamond-shaped adult face with defined cheek planes and a compact chin
+          - id: rectangular_composed
+            text: a rectangular mature face with a level brow, structured jaw, and composed expression
+      - id: body_proportion
+        values:
+          - id: natural_balanced
+            text: naturally balanced body proportions with believable hands, feet, and joint placement
+          - id: long_legged
+            text: long-legged adult proportions with a moderate torso and relaxed shoulder width
+          - id: grounded_broad_torso
+            text: grounded adult proportions with a broad torso, sturdy limbs, and stable weight distribution
+          - id: compact_adult
+            text: compact adult proportions with a shorter frame and fully mature facial structure
+          - id: statuesque
+            text: statuesque adult proportions with an upright spine and measured limb length
+          - id: agile_medium_frame
+            text: agile medium-frame proportions with flexible posture and clear anatomical balance
+      - id: design_motif
+        values:
+          - id: restrained_geometry
+            text: restrained geometric fastenings and repeated seam angles that support a clear hierarchy
+          - id: botanical_seams
+            text: subtle botanical seam curves and leaflike closures used as controlled accents
+          - id: modular_utility
+            text: practical modular panels, secure closures, and small functional details
+    templates:
+      - id: complete_character
+        text: >-
+          An adult character has {silhouette}, {face_structure}, and {body_proportion}. The design is
+          unified by {design_motif}. Preserve realistic skin texture, coherent hands, believable fabric,
+          natural proportions, cinematic depth, and a frame free of text, logos, and watermarks.
+    compatibility:
+      avoid: [chibi_proportions]
+
+  - id: hair_design
+    kind: hair_design
+    output_file: hair_designs.yaml
+    family: hair_design
+    runtime:
+      file: krea2/character/hair.yaml
+      path_prefix: [krea2, character, hair]
+    source_refs:
+      - novelai_official_character_creation
+      - anima_official_model_card
+      - getty_aat_costume_vocabulary
+    target_count: 250
+    dimensions:
+      - id: cut_shape
+        values:
+          - id: chin_bob
+            text: a chin-length bob with a clean lower edge and softly tapered front sections
+          - id: collarbone_lob
+            text: a collarbone-length cut with subtle internal layers and controlled side volume
+          - id: shoulder_layers
+            text: shoulder-length layers with a light perimeter and distinct face-framing pieces
+          - id: long_blunt
+            text: a long blunt cut with a weighty lower line and minimal layering
+          - id: cropped_pixie
+            text: a cropped pixie cut with a neat nape and longer directional texture on top
+          - id: tapered_undercut
+            text: a tapered undercut with a compact side profile and a longer sculpted crown
+          - id: waist_layers
+            text: waist-length layers with a narrow cascade and separated lower sections
+          - id: sculpted_pageboy
+            text: a sculpted pageboy shape with a rounded perimeter and precise cheek-level ends
+          - id: asymmetric_shoulder
+            text: an asymmetric shoulder-length cut with one extended side and a clean short side
+          - id: curly_shag
+            text: a curly shag with graduated volume, a soft fringe, and a controlled shoulder outline
+      - id: strand_texture
+        values:
+          - id: glass_smooth
+            text: glass-smooth straight strands grouped into broad natural sections
+          - id: loose_wave
+            text: soft loose waves with varied bends and separated ends
+          - id: compact_curl
+            text: springy compact curls with defined clumps and believable root volume
+          - id: dense_coil
+            text: dense coiled texture with clear curl grouping and softly controlled expansion
+          - id: airy_feathered
+            text: airy feathered strands with light overlap and a soft moving edge
+          - id: thick_rope_wave
+            text: thick rope-like waves with broad highlights and weighty directional flow
+          - id: fine_wispy
+            text: fine wispy texture with transparent edge strands and a stable inner mass
+      - id: arrangement
+        values:
+          - id: clean_center_part
+            text: a clean center part with symmetrical face-framing sections
+          - id: deep_side_part
+            text: a deep side part with a controlled sweep across the brow
+          - id: lifted_crown
+            text: a softly lifted crown with balanced side volume and visible roots
+          - id: temple_asymmetry
+            text: deliberate asymmetry around the temples with one side held close
+          - id: open_brow_fringe
+            text: a layered fringe that opens around the brows and keeps both eyes visible
+      - id: color_design
+        values:
+          - id: natural_ebony
+            text: natural ebony color with cool soft highlights and readable strand separation
+          - id: deep_chestnut
+            text: deep chestnut color with warm brown midtones and darker roots
+          - id: warm_copper
+            text: warm copper color with subdued amber highlights and natural depth
+          - id: cool_ash_brown
+            text: cool ash-brown color with taupe midtones and restrained sheen
+          - id: silver_black_gradient
+            text: a gradual silver-to-black transition with neutral highlights and clean tonal separation
+    templates:
+      - id: complete_hair
+        text: >-
+          An adult character wears {cut_shape}, defined by {strand_texture}. The hair is arranged with
+          {arrangement} and colored in {color_design}. Preserve realistic skin texture, coherent hands,
+          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
+          and watermarks.
+    compatibility:
+      avoid: []
+
+  - id: fashion
+    kind: fashion
+    output_file: fashion.yaml
+    family: fashion
+    runtime:
+      file: krea2/fashion/complete_outfit.yaml
+      path_prefix: [krea2, fashion, complete_outfit]
+    source_refs:
+      - novelai_official_character_creation
+      - getty_aat_costume_vocabulary
+      - cie_international_lighting_vocabulary
+    target_count: 500
+    dimensions:
+      - id: garment_pairing
+        values:
+          - id: jacket_straight_trouser
+            text: a tailored single-breasted jacket over straight full-length trousers
+          - id: belted_midi_cropped_layer
+            text: a softly belted midi dress beneath a clean cropped outer layer
+          - id: high_neck_wide_leg
+            text: a high-neck blouse tucked into sharply cut wide-leg trousers
+          - id: longline_vest_pleated_skirt
+            text: a longline vest layered over a controlled mid-calf pleated skirt
+          - id: wrap_top_tapered_trouser
+            text: a structured wrap top paired with tapered ankle-length trousers
+          - id: overshirt_column_dress
+            text: a structured overshirt worn open over a fluid column dress
+          - id: knit_top_paneled_skirt
+            text: a fitted knit top paired with a paneled midi skirt
+          - id: collarless_coat_matching_set
+            text: a collarless long coat over a clean matching top-and-trouser set
+          - id: draped_tunic_slim_trouser
+            text: a draped tunic paired with slim straight trousers and a narrow waist tie
+          - id: shirt_sleeveless_dress
+            text: a crisp shirt beneath a sleeveless belted dress with a clear shoulder line
+      - id: fabric_system
+        values:
+          - id: matte_wool
+            text: matte wool blend with believable weight, soft structure, and low sheen
+          - id: silk_linen
+            text: silk-linen cloth with a dry sheen, fine slubs, and relaxed movement
+          - id: cotton_twill
+            text: dense cotton twill with crisp folds and visible diagonal structure
+          - id: knit_suiting
+            text: fine ribbed knit balanced by smooth medium-weight suiting
+          - id: satin_crepe
+            text: washed satin paired with matte crepe for controlled surface contrast
+          - id: supple_leather_weave
+            text: supple plant-based leather accents over a durable woven base
+      - id: construction_detail
+        values:
+          - id: bound_seams
+            text: clean bound seams and covered fastenings with no loose decorative clutter
+          - id: tonal_topstitch
+            text: precise tonal topstitching that follows the garment structure
+          - id: architectural_pleat
+            text: architectural pleats placed to preserve movement and a readable silhouette
+          - id: restrained_piping
+            text: restrained piping along key edges and carefully finished openings
+          - id: brushed_closure
+            text: small brushed-metal closures used as sparse functional accents
+      - id: palette
+        values:
+          - id: ivory_camel_brown
+            text: a warm ivory, camel, and deep brown palette with natural skin-adjacent contrast
+          - id: charcoal_stone_silver
+            text: a charcoal, stone, and muted silver palette with measured tonal separation
+          - id: forest_teal_ink
+            text: a forest green, muted teal, and ink-blue palette with restrained highlights
+          - id: oxblood_rose_cream
+            text: an oxblood, dusty rose, and cream palette balanced by deep neutral accents
+    templates:
+      - id: complete_outfit
+        text: >-
+          An adult model wears {garment_pairing}, made from {fabric_system}. The outfit uses
+          {construction_detail} and {palette}. Preserve realistic skin texture, coherent hands,
+          believable fabric construction, natural proportions, cinematic depth, and a frame free
+          of text, logos, and watermarks.
+    compatibility:
+      avoid: [chibi_proportions]

@@ -1,0 +1,498 @@
+schema_version: 1
+collections:
+  - id: pose
+    kind: pose
+    output_file: poses.yaml
+    family: pose
+    runtime:
+      file: krea2/pose/gesture.yaml
+      path_prefix: [krea2, pose, gesture]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - blender_animation_keyframes_manual
+      - novelai_official_character_creation
+    target_count: 350
+    dimensions:
+      - id: body_arrangement
+        values:
+          - id: upright_contrapposto
+            text: an upright contrapposto stance with one relaxed knee and a naturally offset hip line
+          - id: frontal_even_weight
+            text: an evenly weighted frontal stance with level shoulders and both feet clearly grounded
+          - id: standing_three_quarter
+            text: a three-quarter standing turn with the torso open and the far shoulder gently receding
+          - id: measured_walking_pause
+            text: a measured walking pause with one foot forward and the trailing heel lightly lifted
+          - id: grounded_forward_step
+            text: a grounded forward step with a stable pelvis and controlled bend through both knees
+          - id: upright_seated
+            text: an upright seated pose with the spine lengthened and both feet placed naturally
+          - id: low_kneeling
+            text: a low kneeling pose with balanced hips, a lifted torso, and visible lower-leg placement
+          - id: side_reclining
+            text: a relaxed side-reclining pose with supported weight and a long uninterrupted torso line
+      - id: arm_gesture
+        values:
+          - id: arms_relaxed_clear
+            text: both arms relaxed with clear separation from the torso and naturally curved fingers
+          - id: waist_and_open
+            text: one hand resting at the waist while the other hangs open and fully readable
+          - id: loosely_clasped
+            text: both hands loosely clasped at mid-torso with visible fingers and relaxed wrists
+          - id: low_crossed_forearm
+            text: one forearm crossing the lower torso while the other hand remains visible at the side
+          - id: hands_near_chest
+            text: both hands lifted near the chest with relaxed palms and distinct finger spacing
+          - id: collar_and_hip
+            text: one hand near the collar while the other anchors gently at the hip
+          - id: open_palms_extended
+            text: both arms extended slightly away from the body with open palms and soft elbows
+      - id: head_gaze
+        values:
+          - id: direct_level
+            text: aligned toward the camera with a level chin and calm direct eye contact
+          - id: three_quarter_near
+            text: turned three-quarters toward the near side with the eyes returning toward the camera
+          - id: side_distant
+            text: turned to the side with the gaze directed toward a distant point in the scene
+          - id: lowered_reflective
+            text: lowered slightly with a reflective downward gaze and a relaxed jaw
+          - id: lifted_attentive
+            text: lifted subtly with an attentive gaze above the camera line
+      - id: motion_quality
+        values:
+          - id: settled_stillness
+            text: settled stillness with even weight transfer and no strained joints
+          - id: gentle_transition
+            text: gentle transitional motion that keeps the torso stable and the limbs clearly separated
+          - id: controlled_forward_energy
+            text: controlled forward energy carried through the spine and supporting leg
+          - id: poised_counterbalance
+            text: poised counterbalance between the shoulders, hips, and visible hand gesture
+    templates:
+      - id: complete_pose
+        text: >-
+          An adult subject holds {body_arrangement}, with {arm_gesture}. The head and gaze are
+          {head_gaze}, and the posture conveys {motion_quality}. Preserve realistic skin texture,
+          coherent hands and feet, believable fabric, natural proportions, cinematic depth, and a
+          frame free of text, logos, and watermarks.
+    compatibility:
+      avoid: [chibi_proportions]
+
+  - id: camera
+    kind: camera
+    output_file: cameras.yaml
+    family: camera
+    runtime:
+      file: krea2/camera/composition.yaml
+      path_prefix: [krea2, camera, composition]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - blender_camera_manual
+      - novelai_official_character_creation
+    target_count: 250
+    dimensions:
+      - id: framing
+        values:
+          - id: close_face
+            text: close facial framing from the top of the hair to just below the chin
+          - id: head_shoulders
+            text: head-and-shoulders framing with breathing room around the hair and neckline
+          - id: chest_up
+            text: chest-up framing that keeps both shoulders and the upper arm gesture readable
+          - id: waist_up
+            text: waist-up framing with complete hands whenever they enter the composition
+          - id: thigh_up
+            text: thigh-up framing that preserves the waist, hand gesture, and garment silhouette
+          - id: full_length
+            text: full-length framing with both feet visible and clear space below the subject
+          - id: wide_environmental
+            text: wide environmental framing with the adult subject occupying about one third of the image
+          - id: vertical_full_scene
+            text: vertical full-scene framing with uninterrupted headroom and a stable foreground anchor
+      - id: camera_position
+        values:
+          - id: eye_level_front
+            text: an eye-level frontal camera position with undistorted facial alignment
+          - id: slight_high
+            text: a gently elevated camera position that reveals shoulder and floor relationships
+          - id: slight_low
+            text: a mildly lowered camera position that lengthens the stance without distorting the face
+          - id: three_quarter_front
+            text: a three-quarter frontal camera position with clear depth across the shoulders
+          - id: clean_profile
+            text: a clean side camera position that preserves the facial profile and body line
+          - id: rear_three_quarter
+            text: a rear three-quarter camera position with the face still readable through a natural turn
+      - id: lens_language
+        values:
+          - id: moderate_wide
+            text: a moderately wide field of view with clear near-to-far separation and straight verticals
+          - id: classic_wide
+            text: a classic wide field of view that includes context while keeping facial proportions natural
+          - id: natural_perspective
+            text: a natural perspective close to ordinary vision with balanced subject-to-background scale
+          - id: portrait_compression
+            text: gentle portrait compression with smooth feature spacing and a softly enlarged background
+          - id: long_compression
+            text: long-lens compression with flattened depth and carefully separated silhouette edges
+          - id: deep_focus_language
+            text: a controlled deep-focus view with readable foreground, subject, and distant structure
+      - id: composition
+        values:
+          - id: centered_symmetry
+            text: centered symmetry supported by balanced side masses and a stable horizon
+          - id: thirds_gaze_space
+            text: rule-of-thirds placement with open space extending in the direction of the gaze
+          - id: diagonal_depth
+            text: diagonal depth flow that leads from a quiet foreground anchor toward the face
+          - id: asymmetric_negative_space
+            text: asymmetric placement with generous negative space and one clear visual counterweight
+    templates:
+      - id: complete_camera
+        text: >-
+          Photograph an adult subject using {framing} from {camera_position}. The view uses
+          {lens_language} and {composition}. Preserve realistic skin texture, coherent visible hands,
+          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
+          and watermarks.
+    compatibility:
+      avoid: []
+
+  - id: lighting
+    kind: lighting
+    output_file: lighting.yaml
+    family: lighting
+    runtime:
+      file: krea2/lighting/complete.yaml
+      path_prefix: [krea2, lighting, complete]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - cie_international_lighting_vocabulary
+    target_count: 250
+    dimensions:
+      - id: source_character
+        values:
+          - id: broad_window
+            text: a broad window-like source that produces one coherent field of illumination
+          - id: large_diffused_key
+            text: a large diffused key source with wide coverage and controlled spill
+          - id: focused_beam
+            text: a focused beam with a readable pool of light and protected surrounding values
+          - id: overhead_skylight
+            text: an overhead skylight-like source that opens the face and shoulders
+          - id: low_horizon_source
+            text: a low horizon source that creates long transitions across the body and environment
+          - id: cloud_scattered
+            text: cloud-scattered daylight with broad ambient coverage and gentle directional cues
+          - id: practical_cluster
+            text: a small cluster of practical sources with one dominant key and restrained secondary glows
+      - id: direction
+        values:
+          - id: frontal_three_quarter
+            text: arriving from a frontal three-quarter direction that keeps both eyes readable
+          - id: side_sculpting
+            text: arriving from the side to sculpt the cheek, neck, and garment folds
+          - id: back_edge
+            text: arriving from behind as a controlled edge light with a separate soft facial fill
+          - id: high_side
+            text: arriving from high at one side with clear but gentle downward shadow direction
+          - id: low_bounce
+            text: rising as a restrained low bounce that opens deep facial and clothing shadows
+          - id: cross_room
+            text: traveling across the scene to create a gradual light-to-shadow progression
+      - id: softness
+        values:
+          - id: feathered_soft
+            text: feathered softness with broad penumbrae and smooth skin transitions
+          - id: medium_defined
+            text: medium-defined shadow edges that clarify form without becoming harsh
+          - id: crisp_controlled
+            text: crisp controlled shadows with clean shapes and readable reflected light
+          - id: enveloping_diffuse
+            text: enveloping diffuse light with open shadows and gentle local contrast
+          - id: mixed_edge
+            text: mixed edge quality with soft facial shadows and firmer garment shadows
+      - id: color_balance
+        values:
+          - id: neutral_daylight
+            text: neutral daylight balance with accurate skin undertones and quiet fabric color
+          - id: warm_key_cool_fill
+            text: a warm key balanced by cool fill with natural separation across the face
+          - id: cool_key_warm_practical
+            text: a cool key balanced by a small warm practical accent in the background
+          - id: late_gold_neutral_shadow
+            text: late golden light with neutral readable shadows and restrained saturation
+    templates:
+      - id: complete_lighting
+        text: >-
+          Light an adult subject with {source_character}, {direction}. The image uses {softness} and
+          {color_balance}. Preserve realistic skin texture, coherent hands, believable fabric, natural
+          proportions, cinematic depth, unclipped highlights, readable shadows, and a frame free of
+          text, logos, and watermarks.
+    compatibility:
+      avoid: []
+
+  - id: background
+    kind: background
+    output_file: backgrounds.yaml
+    family: background
+    runtime:
+      file: krea2/environment/complete.yaml
+      path_prefix: [krea2, environment, complete]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - getty_tgn_place_type_vocabulary
+    target_count: 400
+    dimensions:
+      - id: place_type
+        values:
+          - id: museum_hall
+            text: a quiet museum hall with pale stone walls, deep doorways, and sparse display forms
+          - id: library_room
+            text: a modern library reading room with tall shelves, warm wood, and broad clear aisles
+          - id: transit_concourse
+            text: a clean transit concourse with repeated columns, matte flooring, and distant entrances
+          - id: glasshouse_corridor
+            text: a glasshouse corridor with structural frames, layered foliage, and a clear walking path
+          - id: stone_courtyard
+            text: a stone courtyard with restrained planting, textured walls, and an open central area
+          - id: rooftop_terrace
+            text: a rooftop terrace with a low parapet, simple seating forms, and a distant skyline
+          - id: forest_clearing
+            text: a forest clearing with tall trunks, soft ground cover, and visible depth between trees
+          - id: riverbank_path
+            text: a riverbank path with layered reeds, a calm water plane, and a gently curving edge
+          - id: coastal_overlook
+            text: a coastal overlook with weathered stone, low vegetation, and a broad distant horizon
+          - id: covered_market
+            text: a covered market arcade with repeated bays, closed counters, and uncluttered passageways
+      - id: spatial_layout
+        values:
+          - id: clear_depth_layers
+            text: clear foreground, middle-distance, and background layers with no object merging into the subject
+          - id: leading_path
+            text: a visible path that leads gently from the lower frame toward the subject position
+          - id: flanking_verticals
+            text: paired vertical forms that flank the subject while leaving the silhouette unobstructed
+          - id: centered_opening
+            text: a centered opening behind the subject that creates natural separation and depth
+          - id: open_gaze_side
+            text: an asymmetric open side that provides generous space in the direction of the gaze
+          - id: elevated_horizon
+            text: a moderately elevated horizon that reveals surface patterns without crowding the figure
+          - id: low_horizon
+            text: a low stable horizon that emphasizes vertical space and a clean upper background
+          - id: repeated_recession
+            text: repeated forms that reduce gradually in scale and establish an orderly recession
+      - id: air_character
+        values:
+          - id: clear_still
+            text: clear still air with crisp nearby edges and gently softened distant detail
+          - id: faint_depth_haze
+            text: faint depth haze confined to distant layers while the subject plane remains clear
+          - id: soft_ambient_diffusion
+            text: softly diffused ambient air with even visibility across the setting
+          - id: crisp_visibility
+            text: crisp high-visibility depth with controlled contrast and no distracting glare
+          - id: delicate_particles
+            text: a few delicate suspended particles visible only where they cross the light
+      - id: color_continuity
+        values:
+          - id: warm_neutral
+            text: warm neutral surroundings with quiet cream, stone, wood, and muted brown relationships
+          - id: cool_mineral
+            text: cool mineral surroundings with slate, blue-grey, soft green, and restrained silver notes
+          - id: natural_green_earth
+            text: natural green and earth relationships balanced by desaturated structural colors
+          - id: deep_neutral_accent
+            text: deep neutral surroundings lifted by one controlled color accent away from the face
+    templates:
+      - id: complete_background
+        text: >-
+          An adult subject stands in {place_type}, with {spatial_layout}, {air_character}, and
+          {color_continuity}. Preserve realistic skin texture, coherent hands, believable fabric,
+          natural proportions, cinematic depth, and no text, logos, or watermarks.
+    compatibility:
+      avoid: []
+
+  - id: effect
+    kind: effect
+    output_file: effects.yaml
+    family: effect
+    runtime:
+      file: krea2/style/effects.yaml
+      path_prefix: [krea2, style, effects]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - cie_international_lighting_vocabulary
+    target_count: 200
+    dimensions:
+      - id: effect_element
+        values:
+          - id: fine_dust_glints
+            text: fine dust glints with tiny irregular highlights and transparent shadow-side particles
+          - id: translucent_circles
+            text: soft translucent circles with varied scale, clean overlap, and restrained brightness
+          - id: narrow_light_streaks
+            text: narrow light streaks with tapered ends and controlled directional alignment
+          - id: petal_shapes
+            text: small petal-shaped pieces with varied rotation and believable edge thickness
+          - id: prism_flecks
+            text: sparse prism flecks with subtle color separation and no blown highlights
+          - id: mist_beads
+            text: fine mist beads with soft focus changes and a few crisp foreground droplets
+          - id: ember_points
+            text: sparse ember-like points with warm cores and quickly fading halos
+          - id: paper_fragments
+            text: small paper-like fragments with visible folds, matte surfaces, and varied orientation
+      - id: placement
+        values:
+          - id: silhouette_edge
+            text: placed around the outer silhouette while leaving the face and hands clear
+          - id: foreground_arc
+            text: arranged in a loose foreground arc that guides attention back toward the subject
+          - id: background_trail
+            text: forming a restrained background trail that supports the direction of the gaze
+          - id: lower_frame
+            text: concentrated near the lower frame with open space around the torso and face
+          - id: upper_negative_space
+            text: suspended in upper negative space without touching the head contour
+          - id: depth_layers
+            text: distributed through three depth layers with clear scale and focus changes
+      - id: density
+        values:
+          - id: nearly_sparse
+            text: nearly sparse density with individually readable elements and large open intervals
+          - id: light_scatter
+            text: light scattered density with an uneven natural distribution
+          - id: moderate_cluster
+            text: moderate clustered density near one focal edge and quiet space elsewhere
+          - id: gradual_build
+            text: density that builds gradually from a clear foreground toward a richer distant layer
+          - id: rhythmic_groups
+            text: small rhythmic groups separated by open gaps and one dominant cluster
+      - id: motion
+        values:
+          - id: upward_drift
+            text: drifting upward in a slow widening path with subtle motion variation
+          - id: lateral_flow
+            text: moving laterally across the frame in a gentle coherent current
+          - id: slow_spiral
+            text: following a slow spiral that remains outside critical facial and hand detail
+          - id: gentle_fall
+            text: descending gently with varied spacing and no dense overlap across the subject
+    templates:
+      - id: complete_effect
+        text: >-
+          Add {effect_element}, {placement}. Use {density}, with the elements {motion}. Keep the adult
+          subject fully readable with realistic skin texture, coherent hands, believable fabric,
+          natural proportions, cinematic depth, controlled highlights, and no text, logos, or watermarks.
+    compatibility:
+      avoid: []
+
+  - id: preset
+    kind: preset
+    output_file: presets.yaml
+    family: preset
+    runtime:
+      file: krea2/preset/complete.yaml
+      path_prefix: [krea2, preset, complete]
+    source_refs:
+      - internal_taxonomy_v1
+      - benchmark_observation
+      - blender_animation_keyframes_manual
+      - blender_camera_manual
+      - getty_aat_costume_vocabulary
+      - getty_tgn_place_type_vocabulary
+      - cie_international_lighting_vocabulary
+    target_count: 200
+    dimensions:
+      - id: scene_setting
+        values:
+          - id: quiet_museum
+            text: a quiet pale-stone museum hall with deep openings and sparse displays
+          - id: modern_library
+            text: a modern library with warm shelves, broad aisles, and clear tables
+          - id: rooftop_terrace
+            text: a rooftop terrace with a low parapet, simple forms, and a distant skyline
+          - id: glasshouse_walkway
+            text: a framed glasshouse walkway with controlled foliage and a clear path
+          - id: coastal_overlook
+            text: a coastal overlook with weathered stone, low plants, and a broad horizon
+          - id: stone_courtyard
+            text: an open stone courtyard with restrained planting and textured walls
+          - id: covered_arcade
+            text: a covered market arcade with repeated bays and a clear central passage
+          - id: transit_concourse
+            text: a spacious transit concourse with repeated columns and distant entries
+      - id: pose_direction
+        values:
+          - id: balanced_contrapposto
+            text: holds a balanced contrapposto with both hands visible
+          - id: three_quarter_still
+            text: stands three-quarters, one hand at the waist and one lowered
+          - id: walking_pause
+            text: pauses mid-step with separated arms and stable weight
+          - id: frontal_composed
+            text: stands frontally with level shoulders and loosely clasped hands
+          - id: turned_gaze
+            text: turns through the torso while looking back toward the camera
+      - id: wardrobe
+        values:
+          - id: tailored_coat_trouser
+            text: a tailored long coat, fine knit top, and straight trousers
+          - id: belted_midi_layer
+            text: a belted midi dress with a clean cropped outer layer
+          - id: collarless_suit
+            text: a collarless jacket, wide-leg trousers, and high-neck base
+          - id: vest_pleated_skirt
+            text: a longline vest, fitted top, and mid-calf pleated skirt
+          - id: wrap_top_tapered
+            text: a structured wrap top, tapered trousers, and simple accessories
+          - id: overshirt_column_dress
+            text: a structured overshirt over a fluid column dress
+      - id: camera_direction
+        values:
+          - id: eye_level_full
+            text: eye-level full-length framing with visible feet and ample headroom
+          - id: thigh_up_three_quarter
+            text: eye-level thigh-up framing from a three-quarter position
+          - id: waist_up_natural
+            text: waist-up natural perspective with complete visible hand gestures
+          - id: wide_environmental
+            text: a wide view with the subject on a third and a clear depth path
+          - id: portrait_compressed
+            text: chest-up framing with gentle compression and soft background scale
+      - id: lighting_direction
+        values:
+          - id: broad_neutral_daylight
+            text: broad neutral daylight with open shadows and accurate skin tone
+          - id: warm_low_sun
+            text: warm low-angle light with soft transitions and neutral shadows
+          - id: diffused_key_ambient
+            text: a large diffused key blended with ambient light
+          - id: cool_overcast_warm_fill
+            text: cool overcast light with restrained warm facial fill
+      - id: expression
+        values:
+          - id: composed_direct
+            text: a composed expression with relaxed brows and steady eye contact
+          - id: quiet_reflective
+            text: a quiet reflective look with soft eyes and a relaxed mouth
+          - id: subtle_warmth
+            text: a subtle closed-mouth smile with gentle warmth
+          - id: attentive_calm
+            text: a calm attentive look with a level chin and focused eyes
+    templates:
+      - id: complete_scene
+        text: >-
+          An adult {pose_direction} in {scene_setting}, wearing {wardrobe}, with {expression}. Use
+          {camera_direction} and {lighting_direction}. Preserve realistic skin texture, coherent hands,
+          believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
+    compatibility:
+      avoid: [chibi_proportions]

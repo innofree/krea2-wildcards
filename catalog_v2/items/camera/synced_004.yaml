@@ -1,0 +1,459 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:camera:synced_004
+  kind: camera
+  sequence: 4
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:camera:camera_full_length_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:eye_level_front
+    composition:
+    - feature:composition:thirds_gaze_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:portrait_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:classic_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:classic_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:classic_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:thirds_gaze_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:thirds_gaze_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_moderate_wide_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_moderate_wide_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:moderate_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_moderate_wide_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:moderate_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:moderate_wide
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_natural_perspective_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_natural_perspective_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:natural_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_natural_perspective_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:natural_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:natural_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:thirds_gaze_space
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:natural_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:slight_low
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:full_length
+    lens_language:
+    - feature:lens_language:portrait_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:rear_three_quarter
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:head_shoulders
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:rear_three_quarter
+    composition:
+    - feature:composition:thirds_gaze_space
+    framing:
+    - feature:framing:head_shoulders
+    lens_language:
+    - feature:lens_language:deep_focus_language
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:rear_three_quarter
+    composition:
+    - feature:composition:asymmetric_negative_space
+    framing:
+    - feature:framing:head_shoulders
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:rear_three_quarter
+    composition:
+    - feature:composition:centered_symmetry
+    framing:
+    - feature:framing:head_shoulders
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition
+- id: item:camera:camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera
+  legacy_ref: catalog/cameras.yaml#items/camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera
+  feature_refs:
+    camera_position:
+    - feature:camera_position:rear_three_quarter
+    composition:
+    - feature:composition:diagonal_depth
+    framing:
+    - feature:framing:head_shoulders
+    lens_language:
+    - feature:lens_language:long_compression
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_camera_manual
+  - source:v1:novelai_official_character_creation
+  lifecycle_ref: lifecycle:camera:camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera
+  runtime_route_ref: runtime_route:camera:camera_composition

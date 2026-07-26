@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.egg-info/
+build/*
+!build/catalog-generation-manifest.json
+tests/prompt_matrix/*.csv
+tests/prompt_matrix/*.jsonl
+tests/reports/**/*.png
+tests/reports/**/*.jpg
+tests/reports/**/*.jpeg
+tests/reports/**/*.webp

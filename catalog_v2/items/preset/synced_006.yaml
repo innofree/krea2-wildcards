@@ -1,0 +1,634 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:preset:synced_006
+  kind: preset
+  sequence: 6
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:attentive_calm
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:waist_up_natural
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:vest_pleated_skirt
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:attentive_calm
+    lighting_direction:
+    - feature:lighting_direction:broad_neutral_daylight
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:broad_neutral_daylight
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:broad_neutral_daylight
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:broad_neutral_daylight
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:attentive_calm
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:cool_overcast_warm_fill
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:attentive_calm
+    lighting_direction:
+    - feature:lighting_direction:diffused_key_ambient
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:diffused_key_ambient
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:diffused_key_ambient
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:diffused_key_ambient
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:attentive_calm
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:composed_direct
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:thigh_up_three_quarter
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:wide_environmental
+    expression:
+    - feature:expression:quiet_reflective
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete
+- id: item:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene
+  legacy_ref: catalog/presets.yaml#items/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene
+  feature_refs:
+    camera_direction:
+    - feature:camera_direction:wide_environmental
+    expression:
+    - feature:expression:subtle_warmth
+    lighting_direction:
+    - feature:lighting_direction:warm_low_sun
+    pose_direction:
+    - feature:pose_direction:three_quarter_still
+    scene_setting:
+    - feature:scene_setting:rooftop_terrace
+    wardrobe:
+    - feature:wardrobe:wrap_top_tapered
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:blender_animation_keyframes_manual
+  - source:v1:blender_camera_manual
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:getty_tgn_place_type_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:preset:preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene
+  runtime_route_ref: runtime_route:preset:preset_complete

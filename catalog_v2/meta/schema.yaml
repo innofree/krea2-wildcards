@@ -1,0 +1,146 @@
+schema_version: 2
+catalog: meta_schema
+
+id_pattern: '^[a-z][a-z0-9_]*(?::[a-z][a-z0-9_]*){2,}$'
+
+registries:
+  features:
+    file: vocab/features.yaml
+    catalog: feature_registry
+    namespace: feature
+  sources:
+    file: vocab/sources.yaml
+    catalog: source_registry
+    namespace: source
+  evaluations:
+    file: lifecycle/evaluations.yaml
+    catalog: evaluation_registry
+    namespace: evaluation
+  lifecycles:
+    file: lifecycle/records.yaml
+    catalog: lifecycle_registry
+    namespace: lifecycle
+  runtime_routes:
+    file: runtime/routes.yaml
+    catalog: runtime_route_registry
+    namespace: runtime_route
+
+shards:
+  glob: items/**/*.yaml
+  namespace: shard
+  item_namespace: item
+  maximum_items: 25
+
+legacy_coverage:
+  style_pack_v1:
+    kind: style_pack
+    mapping_ref: catalog/art_styles.yaml#items
+
+lifecycle:
+  statuses: [research, normalized, generated, testing, approved, limited, rejected, deprecated]
+  evaluation_required_statuses: [testing, approved, limited, rejected, deprecated]
+  runtime_route_required_statuses: [approved, limited, deprecated]
+
+item_kinds:
+  style_pack:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 12
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      linework: {minimum: 0, maximum: 2}
+      face: {minimum: 0, maximum: 2}
+      eye: {minimum: 0, maximum: 2}
+      rendering: {minimum: 0, maximum: 3}
+      composition: {minimum: 0, maximum: 2}
+  artist_signature:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 12
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      signature: {minimum: 0, maximum: 12}
+  style_atomic:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      style: {minimum: 0, maximum: 8}
+  media_rendering:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 10
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      rendering: {minimum: 0, maximum: 10}
+  linework_coloring:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 10
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      linework_coloring: {minimum: 0, maximum: 10}
+  character_design:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 10
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      character: {minimum: 0, maximum: 10}
+  hair_design:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      hair: {minimum: 0, maximum: 8}
+  fashion:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 10
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      fashion: {minimum: 0, maximum: 10}
+  pose:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      pose: {minimum: 0, maximum: 8}
+  camera:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      camera: {minimum: 0, maximum: 8}
+  lighting:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      lighting: {minimum: 0, maximum: 8}
+  background:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 10
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      background: {minimum: 0, maximum: 10}
+  effect:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 8
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      effect: {minimum: 0, maximum: 8}
+  preset:
+    additional_feature_axes: true
+    minimum_total_features: 1
+    maximum_total_features: 12
+    additional_feature_axis: {minimum: 1, maximum: 8}
+    feature_axes:
+      preset: {minimum: 0, maximum: 12}

@@ -1,0 +1,43 @@
+schema_version: 1
+status: family_retest_v0_2_complete
+remote:
+  base_url_env: KREA2_COMFY_API_URL
+  ssh_target_env: KREA2_COMFY_SSH_TARGET
+  wildcard_directory_env: KREA2_COMFY_REMOTE_WILDCARD_DIR
+  comfyui_root: <REMOTE_COMFYUI_ROOT>
+  wildcard_directory: <REMOTE_COMFYUI_ROOT>/models/wildcards
+  connectivity: verified_private_remote
+  deployment_status: verified
+  detected_comfyui_version: 0.28.0
+  detected_gpu: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition
+model:
+  checkpoint: Krea 2/base model/krea2TurboOfficialComfy_krea2TurboMxfp8.safetensors
+  variant: krea2_turbo
+  text_encoder: qwen3vl_4b_bf16.safetensors
+  vae: qwen_image_vae.safetensors
+generation:
+  sampler: euler
+  scheduler: simple
+  steps: 8
+  guidance: 1.0
+  width: 1024
+  height: 1024
+  batch_size: 1
+wildcards:
+  engine: impact_wildcard_processor
+  version: 66655153
+  reload_endpoint: /impact/wildcards/refresh
+  expected_preview_paths: 51
+reproducibility:
+  save_final_prompt: true
+  save_png_metadata: true
+  workflow_sha256: 6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb
+  pilot_seeds: [1001, 2002, 3003]
+  approval_seeds: [1001, 2002, 3003, 4004, 5005]
+  proof: tests/reports/reproducibility_v0_1/proof.json
+  exact_repeat_pixel_error: 0
+notes:
+  - Keep subject, pose, camera, background, and lighting fixed for single-axis tests.
+  - Keep LoRA disabled for the baseline.
+  - Use populated/fixed text for API batches so the final prompt is reproducible.
+  - The baseline follows the official Turbo 8-step configuration with a minimal graph.

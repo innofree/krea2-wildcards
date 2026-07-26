@@ -1,0 +1,244 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5717,
+      "path": "wildcards-manifest.json",
+      "sha256": "e180ced337c1596807d34df25716daee47b0ba666d053c581e5be7eb104d3d85"
+    },
+    {
+      "bytes": 12530,
+      "path": "wildcards/krea2/style/complete_pack.yaml",
+      "sha256": "1ab18ddea62c2c6b7f723e5c7826ca374f886777f7686e2e39262208bb6de99a"
+    },
+    {
+      "bytes": 12182,
+      "path": "build/impact-production/krea2_complete_pack.yaml",
+      "sha256": "af5078e613455b3c214606fd47590cac9fce02eb525bede69597c329903b2f70"
+    }
+  ],
+  "deployment": {
+    "applied": false,
+    "mode": "none",
+    "requested": false
+  },
+  "failed_stage": null,
+  "outcomes": [
+    {
+      "argv": [
+        "python3",
+        "scripts/normalize_catalog.py",
+        "catalog"
+      ],
+      "kind": "command",
+      "name": "catalog_normalization",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_duplicates.py",
+        "catalog"
+      ],
+      "kind": "command",
+      "name": "catalog_duplicates",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_conflicts.py",
+        "--catalog",
+        "catalog/compatibility.yaml"
+      ],
+      "kind": "command",
+      "name": "catalog_conflicts",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/validate_catalog_v2.py"
+      ],
+      "kind": "command",
+      "name": "catalog_schema_v2",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_sensitive_data.py"
+      ],
+      "kind": "command",
+      "name": "sensitive_worktree",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_sensitive_history.py"
+      ],
+      "kind": "command",
+      "name": "sensitive_history",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/build_runtime_yaml.py",
+        "--include-status",
+        "generated",
+        "--include-status",
+        "testing",
+        "--include-status",
+        "approved",
+        "--output",
+        "build/preview-wildcards"
+      ],
+      "kind": "command",
+      "name": "preview_build",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/lint_wildcards.py",
+        "build/preview-wildcards"
+      ],
+      "kind": "command",
+      "name": "preview_runtime_lint",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "pytest"
+      ],
+      "kind": "command",
+      "name": "test_suite",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/build_runtime_yaml.py",
+        "--output",
+        "wildcards"
+      ],
+      "kind": "command",
+      "name": "production_build",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/lint_wildcards.py",
+        "wildcards"
+      ],
+      "kind": "command",
+      "name": "production_runtime_lint",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/build_impact_yaml.py",
+        "--source",
+        "wildcards/krea2/style/complete_pack.yaml",
+        "--output",
+        "build/impact-production/krea2_complete_pack.yaml"
+      ],
+      "kind": "command",
+      "name": "production_impact_build",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_plan_progress.py",
+        "--output",
+        "tests/reports/plan_progress.json"
+      ],
+      "kind": "command",
+      "name": "plan_progress",
+      "returncode": 0,
+      "status": "passed"
+    }
+  ],
+  "plan_progress": {
+    "complete": false,
+    "targets": [
+      {
+        "complete": false,
+        "current": 21,
+        "id": "approved_art_styles",
+        "remaining": 129,
+        "target": 150
+      },
+      {
+        "complete": false,
+        "current": 0,
+        "id": "approved_artist_signatures",
+        "remaining": 200,
+        "target": 200
+      },
+      {
+        "complete": false,
+        "current": 0,
+        "id": "character_design_items",
+        "remaining": 300,
+        "target": 300
+      },
+      {
+        "complete": false,
+        "current": 0,
+        "id": "pose_camera_items",
+        "remaining": 300,
+        "target": 300
+      },
+      {
+        "complete": false,
+        "current": 0,
+        "id": "lighting_background_items",
+        "remaining": 300,
+        "target": 300
+      },
+      {
+        "complete": false,
+        "current": 0,
+        "id": "preset_items",
+        "remaining": 100,
+        "target": 100
+      },
+      {
+        "complete": false,
+        "current": 50,
+        "id": "total_library_items",
+        "remaining": 2950,
+        "target": 3000
+      }
+    ]
+  },
+  "production": {
+    "included_statuses": [
+      "approved"
+    ],
+    "item_count": 21,
+    "prompt_count": 21
+  },
+  "release_id": "28359e15e4d3d1201495",
+  "schema_version": 1,
+  "status": "passed"
+}

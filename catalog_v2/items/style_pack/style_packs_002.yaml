@@ -1,0 +1,459 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:style_pack:style_packs_002
+  kind: style_pack
+  sequence: 2
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:style_pack:sumi_mist
+  legacy_ref: catalog/art_styles.yaml#items/sumi_mist
+  feature_refs:
+    linework:
+    - feature:linework:fluid_brush
+    face:
+    - feature:face:spare_face
+    eye:
+    - feature:eye:dark_eyes
+    rendering:
+    - feature:rendering:diluted_tone
+    composition:
+    - feature:composition:open_space
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:sumi_mist_v0_2
+  lifecycle_ref: lifecycle:style_pack:sumi_mist
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:dry_brush_wind
+  legacy_ref: catalog/art_styles.yaml#items/dry_brush_wind
+  feature_refs:
+    linework:
+    - feature:linework:dry_brush
+    face:
+    - feature:face:angular_face
+    eye:
+    - feature:eye:narrow_gaze
+    rendering:
+    - feature:rendering:monochrome
+    composition:
+    - feature:composition:wind_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:dry_brush_wind_v0_3
+  lifecycle_ref: lifecycle:style_pack:dry_brush_wind
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:vermilion_ink
+  legacy_ref: catalog/art_styles.yaml#items/vermilion_ink
+  feature_refs:
+    linework:
+    - feature:linework:calligraphic_line
+    face:
+    - feature:face:calm_face
+    eye:
+    - feature:eye:focused_eyes
+    rendering:
+    - feature:rendering:vermilion_accent
+    composition:
+    - feature:composition:seal_composition
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:vermilion_ink_v0_3
+  lifecycle_ref: lifecycle:style_pack:vermilion_ink
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:sparse_mountain_ink
+  legacy_ref: catalog/art_styles.yaml#items/sparse_mountain_ink
+  feature_refs:
+    linework:
+    - feature:linework:fine_brush
+    face:
+    - feature:face:minimal_face
+    eye: []
+    rendering:
+    - feature:rendering:layered_wash
+    composition:
+    - feature:composition:tiny_figure
+    - feature:composition:landscape_scale
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:sparse_mountain_ink_v0_3
+  lifecycle_ref: lifecycle:style_pack:sparse_mountain_ink
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:calligraphic_night
+  legacy_ref: catalog/art_styles.yaml#items/calligraphic_night
+  feature_refs:
+    linework:
+    - feature:linework:sweeping_ink
+    face:
+    - feature:face:mature_profile
+    eye:
+    - feature:eye:silver_eye
+    rendering:
+    - feature:rendering:deep_wash
+    composition:
+    - feature:composition:moon_space
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:calligraphic_night_v0_3
+  lifecycle_ref: lifecycle:style_pack:calligraphic_night
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:granulating_garden
+  legacy_ref: catalog/art_styles.yaml#items/granulating_garden
+  feature_refs:
+    linework:
+    - feature:linework:pencil_edge
+    face:
+    - feature:face:soft_face
+    eye:
+    - feature:eye:clear_eyes
+    rendering:
+    - feature:rendering:granulating_pigment
+    composition:
+    - feature:composition:garden_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:granulating_garden_v0_3
+  lifecycle_ref: lifecycle:style_pack:granulating_garden
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:tea_stain_daydream
+  legacy_ref: catalog/art_styles.yaml#items/tea_stain_daydream
+  feature_refs:
+    linework:
+    - feature:linework:broken_pencil
+    face:
+    - feature:face:round_face
+    eye:
+    - feature:eye:warm_eyes
+    rendering:
+    - feature:rendering:tea_palette
+    composition:
+    - feature:composition:vignette
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:tea_stain_daydream_v0_3
+  lifecycle_ref: lifecycle:style_pack:tea_stain_daydream
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:translucent_rain
+  legacy_ref: catalog/art_styles.yaml#items/translucent_rain
+  feature_refs:
+    linework:
+    - feature:linework:fine_pencil
+    face:
+    - feature:face:wistful_face
+    eye:
+    - feature:eye:wet_eyes
+    rendering:
+    - feature:rendering:cool_wash
+    - feature:rendering:rain_streaks
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:translucent_rain_v0_3
+  lifecycle_ref: lifecycle:style_pack:translucent_rain
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:storybook_meadow
+  legacy_ref: catalog/art_styles.yaml#items/storybook_meadow
+  feature_refs:
+    linework:
+    - feature:linework:soft_ink
+    face: []
+    eye:
+    - feature:eye:bright_eyes
+    rendering:
+    - feature:rendering:botanical_color
+    composition:
+    - feature:composition:adult_figure
+    - feature:composition:panoramic_space
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:storybook_meadow_v0_3
+  lifecycle_ref: lifecycle:style_pack:storybook_meadow
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:mineral_bloom
+  legacy_ref: catalog/art_styles.yaml#items/mineral_bloom
+  feature_refs:
+    linework:
+    - feature:linework:delicate_edge
+    face:
+    - feature:face:oval_face
+    eye:
+    - feature:eye:luminous_eyes
+    rendering:
+    - feature:rendering:mineral_palette
+    - feature:rendering:floral_bloom
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:mineral_bloom_v0_3
+  lifecycle_ref: lifecycle:style_pack:mineral_bloom
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:cathedral_velvet
+  legacy_ref: catalog/art_styles.yaml#items/cathedral_velvet
+  feature_refs:
+    linework:
+    - feature:linework:ornate_line
+    face:
+    - feature:face:aristocratic_face
+    eye:
+    - feature:eye:dark_eyes
+    rendering:
+    - feature:rendering:velvet_palette
+    composition:
+    - feature:composition:cathedral_symmetry
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:cathedral_velvet_v0_4
+  lifecycle_ref: lifecycle:style_pack:cathedral_velvet
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:black_lace_candle
+  legacy_ref: catalog/art_styles.yaml#items/black_lace_candle
+  feature_refs:
+    linework:
+    - feature:linework:lace_line
+    face:
+    - feature:face:pale_face
+    eye:
+    - feature:eye:lowered_gaze
+    rendering:
+    - feature:rendering:black_ivory
+    composition:
+    - feature:composition:candle_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:black_lace_candle_v0_4
+  lifecycle_ref: lifecycle:style_pack:black_lace_candle
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:silver_nocturne
+  legacy_ref: catalog/art_styles.yaml#items/silver_nocturne
+  feature_refs:
+    linework:
+    - feature:linework:silver_contour
+    face:
+    - feature:face:sharp_face
+    eye:
+    - feature:eye:moon_eyes
+    rendering:
+    - feature:rendering:blue_black
+    composition:
+    - feature:composition:vertical_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:silver_nocturne_v0_4
+  lifecycle_ref: lifecycle:style_pack:silver_nocturne
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:crimson_baroque
+  legacy_ref: catalog/art_styles.yaml#items/crimson_baroque
+  feature_refs:
+    linework:
+    - feature:linework:baroque_line
+    face:
+    - feature:face:sculpted_face
+    eye:
+    - feature:eye:garnet_eyes
+    rendering:
+    - feature:rendering:crimson_gold
+    composition:
+    - feature:composition:theatrical_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:crimson_baroque_v0_4
+  lifecycle_ref: lifecycle:style_pack:crimson_baroque
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:mourning_jewel
+  legacy_ref: catalog/art_styles.yaml#items/mourning_jewel
+  feature_refs:
+    linework:
+    - feature:linework:precise_dark_line
+    face:
+    - feature:face:solemn_face
+    eye:
+    - feature:eye:jewel_eye
+    rendering:
+    - feature:rendering:charcoal_palette
+    composition:
+    - feature:composition:oval_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:mourning_jewel_v0_3
+  lifecycle_ref: lifecycle:style_pack:mourning_jewel
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:holographic_city
+  legacy_ref: catalog/art_styles.yaml#items/holographic_city
+  feature_refs:
+    linework:
+    - feature:linework:geometric_line
+    face:
+    - feature:face:sleek_face
+    eye:
+    - feature:eye:luminous_eyes
+    rendering:
+    - feature:rendering:holographic_color
+    composition:
+    - feature:composition:city_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:holographic_city_v0_4
+  lifecycle_ref: lifecycle:style_pack:holographic_city
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:cyan_magenta_noir
+  legacy_ref: catalog/art_styles.yaml#items/cyan_magenta_noir
+  feature_refs:
+    linework:
+    - feature:linework:sharp_line
+    face:
+    - feature:face:angular_face
+    eye:
+    - feature:eye:narrow_eyes
+    rendering:
+    - feature:rendering:split_neon
+    composition:
+    - feature:composition:noir_crop
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:cyan_magenta_noir_v0_4
+  lifecycle_ref: lifecycle:style_pack:cyan_magenta_noir
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:chrome_dawn
+  legacy_ref: catalog/art_styles.yaml#items/chrome_dawn
+  feature_refs:
+    linework:
+    - feature:linework:clean_contour
+    face:
+    - feature:face:refined_face
+    eye:
+    - feature:eye:pale_eyes
+    rendering:
+    - feature:rendering:chrome_pastel
+    - feature:rendering:horizon_light
+    composition: []
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:chrome_dawn_v0_3
+  lifecycle_ref: lifecycle:style_pack:chrome_dawn
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:orbital_signal
+  legacy_ref: catalog/art_styles.yaml#items/orbital_signal
+  feature_refs:
+    linework:
+    - feature:linework:technical_line
+    face:
+    - feature:face:composed_face
+    eye:
+    - feature:eye:signal_eye
+    rendering:
+    - feature:rendering:restrained_neon
+    composition:
+    - feature:composition:orbital_frame
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:orbital_signal_v0_4
+  lifecycle_ref: lifecycle:style_pack:orbital_signal
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:ultraviolet_rain
+  legacy_ref: catalog/art_styles.yaml#items/ultraviolet_rain
+  feature_refs:
+    linework:
+    - feature:linework:fine_line
+    face:
+    - feature:face:tired_face
+    eye:
+    - feature:eye:violet_eyes
+    rendering:
+    - feature:rendering:ultraviolet_color
+    composition:
+    - feature:composition:rain_perspective
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:ultraviolet_rain_v0_3
+  lifecycle_ref: lifecycle:style_pack:ultraviolet_rain
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:minimal_studio
+  legacy_ref: catalog/art_styles.yaml#items/minimal_studio
+  feature_refs:
+    linework:
+    - feature:linework:clean_edge
+    face:
+    - feature:face:mature_face
+    eye:
+    - feature:eye:natural_eyes
+    rendering:
+    - feature:rendering:neutral_palette
+    composition:
+    - feature:composition:spacious_studio
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:minimal_studio_v0_2
+  lifecycle_ref: lifecycle:style_pack:minimal_studio
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:architectural_couture
+  legacy_ref: catalog/art_styles.yaml#items/architectural_couture
+  feature_refs:
+    linework:
+    - feature:linework:structured_edge
+    face:
+    - feature:face:sculpted_face
+    eye:
+    - feature:eye:focused_gaze
+    rendering:
+    - feature:rendering:stone_palette
+    composition:
+    - feature:composition:architecture
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:architectural_couture_v0_4
+  lifecycle_ref: lifecycle:style_pack:architectural_couture
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:monochrome_magazine
+  legacy_ref: catalog/art_styles.yaml#items/monochrome_magazine
+  feature_refs:
+    linework:
+    - feature:linework:crisp_edge
+    face:
+    - feature:face:angular_face
+    eye:
+    - feature:eye:direct_eyes
+    rendering:
+    - feature:rendering:monochrome
+    composition:
+    - feature:composition:graphic_layout
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:monochrome_magazine_v0_4
+  lifecycle_ref: lifecycle:style_pack:monochrome_magazine
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:sunwashed_resort
+  legacy_ref: catalog/art_styles.yaml#items/sunwashed_resort
+  feature_refs:
+    linework:
+    - feature:linework:natural_edge
+    face:
+    - feature:face:relaxed_face
+    eye:
+    - feature:eye:sunlit_eyes
+    rendering:
+    - feature:rendering:warm_palette
+    composition:
+    - feature:composition:coastal_space
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:sunwashed_resort_v0_3
+  lifecycle_ref: lifecycle:style_pack:sunwashed_resort
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:nocturne_runway
+  legacy_ref: catalog/art_styles.yaml#items/nocturne_runway
+  feature_refs:
+    linework:
+    - feature:linework:sleek_edge
+    face:
+    - feature:face:composed_face
+    eye:
+    - feature:eye:reflective_eyes
+    rendering:
+    - feature:rendering:black_jewel
+    composition:
+    - feature:composition:runway_depth
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:nocturne_runway_v0_3
+  lifecycle_ref: lifecycle:style_pack:nocturne_runway
+  runtime_route_ref: runtime_route:style_pack:complete_pack

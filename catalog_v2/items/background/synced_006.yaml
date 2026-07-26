@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:background:synced_006
+  kind: background
+  sequence: 6
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:background:background_glasshouse_corridor_leading_path_crisp_visibility_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_crisp_visibility_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_crisp_visibility_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_crisp_visibility_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_crisp_visibility_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_crisp_visibility_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_crisp_visibility_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_crisp_visibility_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_crisp_visibility_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_delicate_particles_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_delicate_particles_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_delicate_particles_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_delicate_particles_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_delicate_particles_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_delicate_particles_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_delicate_particles_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_delicate_particles_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_delicate_particles_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_delicate_particles_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_delicate_particles_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_delicate_particles_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_faint_depth_haze_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_faint_depth_haze_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:faint_depth_haze
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_faint_depth_haze_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:faint_depth_haze
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_faint_depth_haze_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_faint_depth_haze_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:faint_depth_haze
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_faint_depth_haze_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_faint_depth_haze_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_faint_depth_haze_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:faint_depth_haze
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_faint_depth_haze_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_soft_ambient_diffusion_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:soft_ambient_diffusion
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:soft_ambient_diffusion
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_soft_ambient_diffusion_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:soft_ambient_diffusion
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_leading_path_soft_ambient_diffusion_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:soft_ambient_diffusion
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:leading_path
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_leading_path_soft_ambient_diffusion_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_clear_still_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_clear_still_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:clear_still
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_clear_still_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_clear_still_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_clear_still_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:clear_still
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_clear_still_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_clear_still_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_clear_still_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:clear_still
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_clear_still_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_clear_still_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_clear_still_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:clear_still
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_clear_still_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_crisp_visibility_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_crisp_visibility_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_natural_green_earth_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_crisp_visibility_natural_green_earth_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:natural_green_earth
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_natural_green_earth_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_warm_neutral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_crisp_visibility_warm_neutral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:crisp_visibility
+    color_continuity:
+    - feature:color_continuity:warm_neutral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_crisp_visibility_warm_neutral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_delicate_particles_cool_mineral_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_delicate_particles_cool_mineral_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:cool_mineral
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_delicate_particles_cool_mineral_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete
+- id: item:background:background_glasshouse_corridor_repeated_recession_delicate_particles_deep_neutral_accent_complete_background
+  legacy_ref: catalog/backgrounds.yaml#items/background_glasshouse_corridor_repeated_recession_delicate_particles_deep_neutral_accent_complete_background
+  feature_refs:
+    air_character:
+    - feature:air_character:delicate_particles
+    color_continuity:
+    - feature:color_continuity:deep_neutral_accent
+    place_type:
+    - feature:place_type:glasshouse_corridor
+    spatial_layout:
+    - feature:spatial_layout:repeated_recession
+  source_refs:
+  - source:internal:taxonomy_v1
+  - source:v1:benchmark_observation
+  - source:v1:getty_tgn_place_type_vocabulary
+  lifecycle_ref: lifecycle:background:background_glasshouse_corridor_repeated_recession_delicate_particles_deep_neutral_accent_complete_background
+  runtime_route_ref: runtime_route:background:environment_complete

@@ -1,0 +1,434 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:fashion:synced_017
+  kind: fashion
+  sequence: 17
+  item_count: 25
+  maximum_items: 25
+items:
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:architectural_pleat
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:architectural_pleat
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:architectural_pleat
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:architectural_pleat
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_architectural_pleat_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:bound_seams
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:bound_seams
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:bound_seams
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:bound_seams
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_bound_seams_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_brushed_closure_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:restrained_piping
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:restrained_piping
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:restrained_piping
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:restrained_piping
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_restrained_piping_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:tonal_topstitch
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:tonal_topstitch
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:tonal_topstitch
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:tonal_topstitch
+    fabric_system:
+    - feature:fabric_system:cotton_twill
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_cotton_twill_tonal_topstitch_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_knit_suiting_bound_seams_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_knit_suiting_bound_seams_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:bound_seams
+    fabric_system:
+    - feature:fabric_system:knit_suiting
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_knit_suiting_bound_seams_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_charcoal_stone_silver_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_charcoal_stone_silver_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:knit_suiting
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:charcoal_stone_silver
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_charcoal_stone_silver_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_forest_teal_ink_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_forest_teal_ink_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:knit_suiting
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:forest_teal_ink
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_forest_teal_ink_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_ivory_camel_brown_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_ivory_camel_brown_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:knit_suiting
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:ivory_camel_brown
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_ivory_camel_brown_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
+- id: item:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_oxblood_rose_cream_complete_outfit
+  legacy_ref: catalog/fashion.yaml#items/fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_oxblood_rose_cream_complete_outfit
+  feature_refs:
+    construction_detail:
+    - feature:construction_detail:brushed_closure
+    fabric_system:
+    - feature:fabric_system:knit_suiting
+    garment_pairing:
+    - feature:garment_pairing:shirt_sleeveless_dress
+    palette:
+    - feature:palette:oxblood_rose_cream
+  source_refs:
+  - source:v1:novelai_official_character_creation
+  - source:v1:getty_aat_costume_vocabulary
+  - source:v1:cie_international_lighting_vocabulary
+  lifecycle_ref: lifecycle:fashion:fashion_shirt_sleeveless_dress_knit_suiting_brushed_closure_oxblood_rose_cream_complete_outfit
+  runtime_route_ref: runtime_route:fashion:fashion_complete_outfit
