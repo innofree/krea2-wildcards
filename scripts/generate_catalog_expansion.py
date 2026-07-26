@@ -96,6 +96,7 @@ class CollectionSpec:
     prompt_overrides: tuple[tuple[str, str], ...]
     retry: RetrySpec | None
     retry_prompt_overrides: tuple[tuple[str, str], ...]
+    retry_prompt_replacements: tuple[tuple[str, str], ...]
     compatibility_avoid: tuple[str, ...]
 
     @property
@@ -433,7 +434,12 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
             "templates",
             "compatibility",
         },
-        {"prompt_overrides", "retry", "retry_prompt_overrides"},
+        {
+            "prompt_overrides",
+            "retry",
+            "retry_prompt_overrides",
+            "retry_prompt_replacements",
+        },
         context,
     )
     collection_id = _identifier(value["id"], f"{context}.id")
@@ -514,6 +520,29 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         )
         retry_prompt_overrides.append((item_id, text))
 
+    raw_retry_replacements = value.get("retry_prompt_replacements", {})
+    if not isinstance(raw_retry_replacements, dict):
+        raise ValueError(f"{context}.retry_prompt_replacements must be a mapping")
+    if raw_retry_replacements and retry is None:
+        raise ValueError(f"{context}.retry_prompt_replacements requires retry")
+    retry_prompt_replacements: list[tuple[str, str]] = []
+    for raw_item_id, raw_text in raw_retry_replacements.items():
+        item_id = _identifier(raw_item_id, f"{context}.retry_prompt_replacements key")
+        if len(item_id) > MAX_ITEM_ID_LENGTH:
+            raise ValueError(
+                f"{context}.retry_prompt_replacements key is overlong: {item_id!r}"
+            )
+        text = _validate_prompt(
+            raw_text, f"{context}.retry_prompt_replacements.{item_id}"
+        )
+        retry_prompt_replacements.append((item_id, text))
+    overlap = set(dict(retry_prompt_overrides)) & set(dict(retry_prompt_replacements))
+    if overlap:
+        raise ValueError(
+            f"{context} retry override and replacement overlap: "
+            + ", ".join(sorted(overlap)[:5])
+        )
+
     compatibility = _mapping(value["compatibility"], f"{context}.compatibility")
     _strict_keys(compatibility, {"avoid"}, f"{context}.compatibility")
     avoids = _identifiers(
@@ -534,6 +563,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         prompt_overrides=tuple(sorted(prompt_overrides)),
         retry=retry,
         retry_prompt_overrides=tuple(sorted(retry_prompt_overrides)),
+        retry_prompt_replacements=tuple(sorted(retry_prompt_replacements)),
         compatibility_avoid=avoids,
     )
     if collection.product_size < target_count:
@@ -746,6 +776,7 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
     )
     prompt_overrides = dict(collection.prompt_overrides)
     retry_prompt_overrides = dict(collection.retry_prompt_overrides)
+    retry_prompt_replacements = dict(collection.retry_prompt_replacements)
     items: dict[str, dict[str, Any]] = {}
     prompt_origins: dict[str, str] = {}
     for row in select_combinations(collection):
@@ -779,8 +810,11 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
                 }
             )
             retry_override = retry_prompt_overrides.get(item_id)
+            retry_replacement = retry_prompt_replacements.get(item_id)
             retry_prompt = _validate_prompt(
-                f"{retry_base} {retry_override}" if retry_override else retry_base,
+                retry_replacement
+                if retry_replacement
+                else f"{retry_base} {retry_override}" if retry_override else retry_base,
                 f"collection {collection.id}, item {item_id}, retry",
             )
         if item_id in items:
@@ -833,6 +867,12 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         raise ValueError(
             f"collection {collection.id} has retry prompt override(s) for unselected item(s): "
             + ", ".join(sorted(unknown_retry_overrides)[:5])
+        )
+    unknown_retry_replacements = set(retry_prompt_replacements) - set(items)
+    if unknown_retry_replacements:
+        raise ValueError(
+            f"collection {collection.id} has retry prompt replacement(s) for unselected item(s): "
+            + ", ".join(sorted(unknown_retry_replacements)[:5])
         )
     return dict(sorted(items.items()))
 

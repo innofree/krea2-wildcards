@@ -476,6 +476,68 @@ def test_retry_profile_rewrites_only_rejected_items(tmp_path: Path) -> None:
     assert repeated.manifest == revised.manifest
 
 
+def test_retry_prompt_replacement_supersedes_generated_retry_prompt(tmp_path: Path) -> None:
+    raw = collection()
+    raw["templates"] = raw["templates"][:1]
+    raw["target_count"] = 6
+    compilation, output, manifest = compile_fixture(tmp_path, raw)
+    apply_compilation(compilation, output, manifest)
+    initial_items = compilation.documents["generated_characters.yaml"]["items"]
+    approved_id, rejected_id = list(initial_items)[:2]
+    set_managed_validations(
+        output,
+        manifest,
+        {approved_id: ("approved", 5), rejected_id: ("rejected", 3)},
+    )
+
+    replacement = (
+        "One adult full-length editorial photograph before one coarse handmade paper panel "
+        "with broad emerald and garnet fields and a thick metallic-gold frame. Keep realistic "
+        "skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no "
+        "text, logos, or watermarks."
+    )
+    blueprint_path = tmp_path / "blueprints/sample.yaml"
+    blueprint = yaml.safe_load(blueprint_path.read_text(encoding="utf-8"))
+    blueprint["collections"][0]["retry"] = {
+        "template": "Photograph one adult with {silhouette} and {palette} in a clean studio.",
+        "dimensions": {
+            "silhouette": {
+                "tall": "three tall light columns behind the adult",
+                "compact": "one compact circular light field behind the adult",
+                "broad": "a broad hard-edged arch surrounding the adult",
+            },
+            "palette": {
+                "mineral": "only slate blue and warm ivory across the frame",
+                "earth": "only warm clay and muted olive across the frame",
+            },
+        },
+    }
+    blueprint["collections"][0]["retry_prompt_replacements"] = {
+        rejected_id: replacement
+    }
+    blueprint_path.write_text(
+        yaml.safe_dump(blueprint, sort_keys=False), encoding="utf-8"
+    )
+
+    revised = compile_expansion(
+        tmp_path / "blueprints", output, output / "sources.yaml", manifest
+    )
+    items = revised.documents["generated_characters.yaml"]["items"]
+    assert items[approved_id]["prompt"] == initial_items[approved_id]["prompt"]
+    assert items[approved_id]["validation"]["status"] == "approved"
+    assert items[rejected_id]["prompt"] == replacement
+    assert items[rejected_id]["validation"]["status"] == "generated"
+    assert items[rejected_id]["validation"]["tested_seeds"] == 0
+    assert items[rejected_id]["generation"]["prompt_profile"] == "retry"
+
+    apply_compilation(revised, output, manifest)
+    repeated = compile_expansion(
+        tmp_path / "blueprints", output, output / "sources.yaml", manifest
+    )
+    assert repeated.rendered == revised.rendered
+    assert repeated.manifest == revised.manifest
+
+
 def test_retry_profile_requires_exact_dimension_value_coverage(tmp_path: Path) -> None:
     raw = collection()
     raw["retry"] = {

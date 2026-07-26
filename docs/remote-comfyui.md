@@ -395,14 +395,21 @@ minimal/rounded 조합은 통과시키지 않았다. 통과 22개에 seed 4004/5
 정확히 5개 seed로 통합했으며, 21개는 `approved`, ornamental soft-bleed 한 개는 새 seed의
 halo 불안정으로 `rejected`가 됐다. Style pack 승인은 138개이며 목표까지 12개가 남았다.
 
+v0.10은 실패 원인이 명확한 20개만 다시 연다. 새 `retry_prompt_replacements`는 기존 retry
+문장에 보정문을 덧붙이는 대신 항목별 완전 prompt를 제공하며, 승인된 138개 본문과 평가
+이력은 생성기가 변경 불가로 보호한다. 대상은 얼굴의 흰 패치를 만든 etched 4개, 재질이
+약했던 minimal fibrous 4개와 chalk 4개, 광원·edge가 약했던 satin 8개다. 대표 calibration은
+이 네 실패군에서 한 개씩 골라 4개 × 3-seed로 실행한다. 정확히 20개 prompt만 바뀌고
+승인 항목 변경은 0건이며, 최대 prompt 길이는 486자로 정적 검증을 통과했다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
 make deploy-preview-dry-run
 make deploy-preview
-make remote-style-refill-calibration  # 마지막 취약 조합 2개 × seed 3개
+make remote-style-refill-calibration  # v0.10 실패군 대표 4개 × seed 3개
 # calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
-make remote-generated-screen          # 재작성된 54개 × seed 3개
+make remote-generated-screen          # v0.10 재작성 20개 × seed 3개
 make review-style-screen
 # 통과 항목을 testing으로 반영한 뒤:
 make remote-testing-retest            # seed 4004, 5005
