@@ -87,6 +87,7 @@ class CollectionSpec:
     target_count: int
     dimensions: tuple[DimensionSpec, ...]
     templates: tuple[TemplateSpec, ...]
+    prompt_overrides: tuple[tuple[str, str], ...]
     compatibility_avoid: tuple[str, ...]
 
     @property
@@ -186,6 +187,17 @@ def _mapping(value: Any, context: str) -> dict[str, Any]:
 def _strict_keys(value: dict[str, Any], expected: set[str], context: str) -> None:
     missing = expected - set(value)
     unknown = set(value) - expected
+    if missing:
+        raise ValueError(f"{context} missing field(s): {', '.join(sorted(missing))}")
+    if unknown:
+        raise ValueError(f"{context} has unknown field(s): {', '.join(sorted(unknown))}")
+
+
+def _strict_keys_with_optional(
+    value: dict[str, Any], required: set[str], optional: set[str], context: str
+) -> None:
+    missing = required - set(value)
+    unknown = set(value) - required - optional
     if missing:
         raise ValueError(f"{context} missing field(s): {', '.join(sorted(missing))}")
     if unknown:
@@ -338,7 +350,7 @@ def _parse_template(raw: Any, dimension_ids: tuple[str, ...], context: str) -> T
 
 def parse_collection(raw: Any, context: str, source_ids: set[str]) -> CollectionSpec:
     value = _mapping(raw, context)
-    _strict_keys(
+    _strict_keys_with_optional(
         value,
         {
             "id",
@@ -352,6 +364,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
             "templates",
             "compatibility",
         },
+        {"prompt_overrides"},
         context,
     )
     collection_id = _identifier(value["id"], f"{context}.id")
@@ -399,6 +412,17 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
     if len(set(template_ids)) != len(template_ids):
         raise ValueError(f"{context} contains duplicate template IDs")
 
+    raw_overrides = value.get("prompt_overrides", {})
+    if not isinstance(raw_overrides, dict):
+        raise ValueError(f"{context}.prompt_overrides must be a mapping")
+    prompt_overrides: list[tuple[str, str]] = []
+    for raw_item_id, raw_text in raw_overrides.items():
+        item_id = _identifier(raw_item_id, f"{context}.prompt_overrides key")
+        if len(item_id) > MAX_ITEM_ID_LENGTH:
+            raise ValueError(f"{context}.prompt_overrides key is overlong: {item_id!r}")
+        text = _validate_fragment(raw_text, f"{context}.prompt_overrides.{item_id}")
+        prompt_overrides.append((item_id, text))
+
     compatibility = _mapping(value["compatibility"], f"{context}.compatibility")
     _strict_keys(compatibility, {"avoid"}, f"{context}.compatibility")
     avoids = _identifiers(
@@ -416,6 +440,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         target_count=target_count,
         dimensions=dimensions,
         templates=templates,
+        prompt_overrides=tuple(sorted(prompt_overrides)),
         compatibility_avoid=avoids,
     )
     if collection.product_size < target_count:
@@ -618,6 +643,7 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         for dimension in collection.dimensions
     }
     templates = {template.id: template for template in collection.templates}
+    prompt_overrides = dict(collection.prompt_overrides)
     items: dict[str, dict[str, Any]] = {}
     prompt_origins: dict[str, str] = {}
     for row in select_combinations(collection):
@@ -632,10 +658,12 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
             dimension.id: dimension_values[dimension.id][value_id]
             for dimension, value_id in zip(collection.dimensions, dimension_ids, strict=True)
         }
+        base_prompt = templates[template_id].text.format_map(
+            {dimension_id: value.text for dimension_id, value in selected.items()}
+        )
+        override = prompt_overrides.get(item_id)
         prompt = _validate_prompt(
-            templates[template_id].text.format_map(
-                {dimension_id: value.text for dimension_id, value in selected.items()}
-            ),
+            f"{base_prompt} {override}" if override else base_prompt,
             f"collection {collection.id}, item {item_id}, template {template_id}",
         )
         if item_id in items:
@@ -676,6 +704,12 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
                 "template_id": template_id,
             },
         }
+    unknown_overrides = set(prompt_overrides) - set(items)
+    if unknown_overrides:
+        raise ValueError(
+            f"collection {collection.id} has prompt override(s) for unselected item(s): "
+            + ", ".join(sorted(unknown_overrides)[:5])
+        )
     return dict(sorted(items.items()))
 
 
@@ -738,7 +772,7 @@ def _base_catalog(
     path: Path,
     output_file: str,
     previous_record: dict[str, Any] | None,
-) -> tuple[dict[str, Any], set[str]]:
+) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
     if path.is_file():
         document = _mapping(load_yaml(path), str(path))
         if document.get("schema_version") != 1 or document.get("catalog") != Path(output_file).stem:
@@ -751,7 +785,7 @@ def _base_catalog(
         document = {"schema_version": 1, "catalog": Path(output_file).stem, "items": {}}
         items = {}
 
-    owned: set[str] = set()
+    owned_items: dict[str, dict[str, Any]] = {}
     if previous_record is not None:
         generated_ids = previous_record.get("generated_item_ids")
         if not isinstance(generated_ids, list) or not all(isinstance(item, str) for item in generated_ids):
@@ -760,10 +794,40 @@ def _base_catalog(
         if not owned <= set(items):
             raise ValueError(f"managed items are missing from {output_file}")
         for item_id in owned:
+            item = items[item_id]
+            if not isinstance(item, dict):
+                raise ValueError(f"managed item is not a mapping in {output_file}: {item_id}")
+            owned_items[item_id] = item
             del items[item_id]
     output = dict(document)
     output["items"] = items
-    return output, owned
+    return output, owned_items
+
+
+def _body_without_validation(item: dict[str, Any]) -> dict[str, Any]:
+    return {key: value for key, value in item.items() if key != "validation"}
+
+
+def _preserve_evaluated_validation(
+    output_file: str,
+    generated_items: dict[str, dict[str, Any]],
+    previous_items: dict[str, dict[str, Any]],
+) -> None:
+    for item_id, item in generated_items.items():
+        previous = previous_items.get(item_id)
+        if previous is None:
+            continue
+        previous_validation = previous.get("validation")
+        if not isinstance(previous_validation, dict):
+            raise ValueError(f"managed item lacks validation in {output_file}: {item_id}")
+        if _body_without_validation(item) == _body_without_validation(previous):
+            item["validation"] = dict(previous_validation)
+            continue
+        status = previous_validation.get("status")
+        if status not in {"generated", "rejected"}:
+            raise ValueError(
+                f"refusing to rewrite managed {status!r} item in {output_file}: {item_id}"
+            )
 
 
 def _display_path(path: Path, fallback: str) -> str:
@@ -797,11 +861,14 @@ def compile_expansion(
     for output_file in sorted(grouped):
         output_path = output_root / output_file
         preconditions[output_file] = file_sha256(output_path) if output_path.is_file() else None
-        document, _ = _base_catalog(output_path, output_file, previous.get(output_file))
+        document, previous_items = _base_catalog(
+            output_path, output_file, previous.get(output_file)
+        )
         items = document["items"]
         generated_ids: list[str] = []
         for collection in sorted(grouped[output_file], key=lambda item: item.id):
             generated_items = compile_collection(collection)
+            _preserve_evaluated_validation(output_file, generated_items, previous_items)
             collisions = set(items) & set(generated_items)
             if collisions:
                 raise ValueError(

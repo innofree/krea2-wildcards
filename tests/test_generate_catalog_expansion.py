@@ -100,6 +100,27 @@ def compile_fixture(tmp_path: Path, raw_collection: dict | None = None):
     return compile_expansion(blueprints, output, sources, manifest), output, manifest
 
 
+def set_managed_validations(
+    output: Path,
+    manifest: Path,
+    statuses: dict[str, tuple[str, int]],
+) -> None:
+    catalog_path = output / "generated_characters.yaml"
+    document = yaml.safe_load(catalog_path.read_text(encoding="utf-8"))
+    for item_id, (status, tested_seeds) in statuses.items():
+        document["items"][item_id]["validation"] = {
+            "model": "krea2_turbo",
+            "tested_seeds": tested_seeds,
+            "status": status,
+        }
+    catalog_path.write_text(
+        yaml.safe_dump(document, sort_keys=False), encoding="utf-8"
+    )
+    evidence = json.loads(manifest.read_text(encoding="utf-8"))
+    evidence["outputs"][0]["sha256"] = file_sha256(catalog_path)
+    manifest.write_text(json.dumps(evidence), encoding="utf-8")
+
+
 def test_exact_selection_is_deterministic_unique_and_balanced(tmp_path: Path) -> None:
     first, _, _ = compile_fixture(tmp_path)
     second = compile_expansion(
@@ -347,6 +368,79 @@ def test_existing_unrelated_items_are_preserved(tmp_path: Path) -> None:
     assert len(document["items"]) == 8
     assert compilation.manifest["outputs"][0]["generated_item_count"] == 7
     assert compilation.manifest["outputs"][0]["item_count"] == 8
+
+
+def test_override_resets_rejected_item_and_preserves_unchanged_approval(
+    tmp_path: Path,
+) -> None:
+    compilation, output, manifest = compile_fixture(tmp_path)
+    apply_compilation(compilation, output, manifest)
+    item_ids = list(compilation.documents["generated_characters.yaml"]["items"])
+    approved_id, rejected_id = item_ids[:2]
+    set_managed_validations(
+        output,
+        manifest,
+        {approved_id: ("approved", 5), rejected_id: ("rejected", 3)},
+    )
+
+    blueprint_path = tmp_path / "blueprints/sample.yaml"
+    blueprint = yaml.safe_load(blueprint_path.read_text(encoding="utf-8"))
+    blueprint["collections"][0]["prompt_overrides"] = {
+        rejected_id: "Show three unmistakable vertical light bands around the adult figure."
+    }
+    blueprint_path.write_text(
+        yaml.safe_dump(blueprint, sort_keys=False), encoding="utf-8"
+    )
+
+    revised = compile_expansion(
+        tmp_path / "blueprints", output, output / "sources.yaml", manifest
+    )
+    items = revised.documents["generated_characters.yaml"]["items"]
+
+    assert items[approved_id]["validation"] == {
+        "model": "krea2_turbo",
+        "tested_seeds": 5,
+        "status": "approved",
+    }
+    assert items[rejected_id]["validation"] == {
+        "model": "krea2_turbo",
+        "tested_seeds": 0,
+        "status": "generated",
+    }
+    assert "three unmistakable vertical light bands" in items[rejected_id]["prompt"]
+
+
+def test_override_cannot_rewrite_approved_item(tmp_path: Path) -> None:
+    compilation, output, manifest = compile_fixture(tmp_path)
+    apply_compilation(compilation, output, manifest)
+    approved_id = next(iter(compilation.documents["generated_characters.yaml"]["items"]))
+    set_managed_validations(output, manifest, {approved_id: ("approved", 5)})
+
+    blueprint_path = tmp_path / "blueprints/sample.yaml"
+    blueprint = yaml.safe_load(blueprint_path.read_text(encoding="utf-8"))
+    blueprint["collections"][0]["prompt_overrides"] = {
+        approved_id: "Show three unmistakable vertical light bands around the adult figure."
+    }
+    blueprint_path.write_text(
+        yaml.safe_dump(blueprint, sort_keys=False), encoding="utf-8"
+    )
+
+    with pytest.raises(ValueError, match="refusing to rewrite managed 'approved' item"):
+        compile_expansion(
+            tmp_path / "blueprints", output, output / "sources.yaml", manifest
+        )
+
+
+def test_override_for_unselected_item_is_rejected(tmp_path: Path) -> None:
+    raw = collection()
+    raw["prompt_overrides"] = {
+        "sample_character_unselected_value": (
+            "Show three unmistakable vertical light bands around the adult figure."
+        )
+    }
+
+    with pytest.raises(ValueError, match="override.*unselected item"):
+        compile_fixture(tmp_path, raw)
 
 
 def test_tampered_managed_output_is_never_overwritten(tmp_path: Path) -> None:

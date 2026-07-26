@@ -61,19 +61,29 @@ collections:
           An adult subject has {silhouette} with {palette}. Preserve realistic skin texture,
           coherent hands, believable fabric, natural proportions, cinematic depth, and a frame
           free of text, logos, and watermarks.
+    prompt_overrides:
+      character_design_refined_elongated_mineral_muted_complete_design: >-
+        Place three tall light bars behind the adult figure and keep their boundaries visible.
     compatibility:
       avoid: [chibi_proportions]
 ```
 
-All fields shown above are required. `compatibility.avoid` may be empty. IDs use lowercase
-`snake_case`. `output_file` is one safe `.yaml` filename relative to the output catalog directory;
-reserved metadata files and nested or parent paths are rejected. The runtime file must be a safe
-`krea2/...yaml` path, and its suffix-free parts must exactly equal `runtime.path_prefix`.
+All fields except `prompt_overrides` are required. `compatibility.avoid` may be empty. IDs use
+lowercase `snake_case`. `output_file` is one safe `.yaml` filename relative to the output catalog
+directory; reserved metadata files and nested or parent paths are rejected. The runtime file must
+be a safe `krea2/...yaml` path, and its suffix-free parts must exactly equal
+`runtime.path_prefix`.
 
 Each `source_refs` entry must exist in the configured source catalog. Every dimension has one or
 more unique `{id, text}` values. Every template must reference every dimension exactly once, may not
 reference unknown placeholders, and may not use conversions or format specifications. Templates
 are ordinary Python-style named placeholders, not Dynamic Prompts choice syntax.
+
+`prompt_overrides` is an optional mapping from an exact selected generated item ID to an authored
+natural-language suffix. It is intended for evidence-led retests where one rejected combination
+needs more observable wording without changing every item that shares a dimension value. Unknown,
+unselected, unsafe, or overlong IDs fail compilation. The final template plus suffix still passes
+all prose, repetition, duplicate, and 600-character checks.
 
 ## Prose rules
 
@@ -141,15 +151,20 @@ sample_item_id:
 ```
 
 `visual_axes` preserves current flat-v1 compatibility. `feature_axes` preserves the selected value
-under its declared dimension for deterministic schema-v2 synchronization. Generated entries start
-at `generated` with zero tested seeds; the compiler never grants approval.
+under its declared dimension for deterministic schema-v2 synchronization. New and rewritten
+eligible entries start at `generated` with zero tested seeds; the compiler never grants approval.
+On a later deterministic compilation, an unchanged managed item preserves its existing validation
+record. A changed item may be reset only when its previous status is `generated` or `rejected`.
+Rewriting a `testing`, `approved`, `limited`, or `deprecated` item is refused so reviewed evidence
+cannot be silently invalidated.
 
 ## Safe apply and manifest
 
 Existing schema-v1 output files are merged and unrelated items are preserved. Generated item-ID or
 prompt collisions fail. On subsequent runs, the prior generator manifest identifies owned items;
-the compiler replaces only those items and refuses to proceed if a managed file changed outside the
-generator or if a prior managed output disappears from the blueprint set.
+the compiler replaces only those items, preserves validation for body-identical items, and refuses
+to proceed if a managed file changed outside the generator, if a protected evaluated body changes,
+or if a prior managed output disappears from the blueprint set.
 
 Every output and the manifest are staged and replaced atomically per file, with the manifest written
 last. The combined manifest contains:
