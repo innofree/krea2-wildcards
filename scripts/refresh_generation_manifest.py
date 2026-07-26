@@ -61,6 +61,16 @@ def validate_catalog_against_generation(
         expected_body = dict(expected)
         validation = current_body.pop("validation", None)
         expected_body.pop("validation", None)
+        retry_prompt = expected_body.pop("_retry_prompt", None)
+        current_generation = current_body.get("generation")
+        if isinstance(current_generation, dict) and current_generation.get("prompt_profile") == "retry":
+            if not isinstance(retry_prompt, str):
+                raise ValueError(f"{style_id}: unexpected retry prompt profile")
+            expected_body["prompt"] = retry_prompt
+            expected_generation = expected_body.get("generation")
+            if not isinstance(expected_generation, dict):
+                raise ValueError(f"{style_id}: generated item lacks generation metadata")
+            expected_generation["prompt_profile"] = "retry"
         if current_body != expected_body:
             raise ValueError(f"{style_id}: managed content changed outside the generator")
         validate_validation(style_id, validation)

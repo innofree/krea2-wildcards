@@ -411,7 +411,10 @@ def test_override_resets_rejected_item_and_preserves_unchanged_approval(
 
 
 def test_retry_profile_rewrites_only_rejected_items(tmp_path: Path) -> None:
-    compilation, output, manifest = compile_fixture(tmp_path)
+    raw = collection()
+    raw["templates"] = raw["templates"][:1]
+    raw["target_count"] = 6
+    compilation, output, manifest = compile_fixture(tmp_path, raw)
     apply_compilation(compilation, output, manifest)
     initial_items = compilation.documents["generated_characters.yaml"]["items"]
     approved_id, rejected_id = list(initial_items)[:2]
@@ -441,6 +444,9 @@ def test_retry_profile_rewrites_only_rejected_items(tmp_path: Path) -> None:
             },
         },
     }
+    blueprint["collections"][0]["retry_prompt_overrides"] = {
+        rejected_id: "Add one unmistakable floor-to-ceiling torn paper mural behind the adult."
+    }
     blueprint_path.write_text(
         yaml.safe_dump(blueprint, sort_keys=False), encoding="utf-8"
     )
@@ -453,12 +459,21 @@ def test_retry_profile_rewrites_only_rejected_items(tmp_path: Path) -> None:
     assert items[approved_id]["prompt"] == initial_items[approved_id]["prompt"]
     assert items[approved_id]["validation"]["status"] == "approved"
     assert items[rejected_id]["prompt"] != initial_items[rejected_id]["prompt"]
+    assert "floor-to-ceiling torn paper mural" in items[rejected_id]["prompt"]
     assert items[rejected_id]["validation"] == {
         "model": "krea2_turbo",
         "tested_seeds": 0,
         "status": "generated",
     }
+    assert items[rejected_id]["generation"]["prompt_profile"] == "retry"
     assert all("_retry_prompt" not in item for item in items.values())
+
+    apply_compilation(revised, output, manifest)
+    repeated = compile_expansion(
+        tmp_path / "blueprints", output, output / "sources.yaml", manifest
+    )
+    assert repeated.rendered == revised.rendered
+    assert repeated.manifest == revised.manifest
 
 
 def test_retry_profile_requires_exact_dimension_value_coverage(tmp_path: Path) -> None:

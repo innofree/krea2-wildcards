@@ -369,14 +369,32 @@ seed로 집계했고, 27개가 `approved`, 한 개가 새 seed에서 halo를 유
 `rejected`가 됐다. 기존 승인과 합친 현재 style pack 승인은 117개이며 150개 목표까지
 33개가 남았다. 다음 v0.9 refill은 누적 탈락 54개만 실패 노트별로 다시 작성한다.
 
+v0.9는 탈락 54개에만 적용되는 별도 retry profile을 추가했다. Shape, color, surface,
+atmosphere, edge를 추상적인 미감 용어가 아니라 화면에서 확인 가능한 물체·재질·광원으로
+다시 표현하고, 승인 96개는 본문과 5-seed 이력을 그대로 보호한다. Retry profile은
+`generation.prompt_profile`에 기록해 상태가 `generated`나 `testing`으로 바뀐 뒤에도
+재컴파일 결과가 되돌아가지 않도록 했다. 이 과정에서 초기 v0.9.1 preview가 상태 전환 후
+기존 prompt로 복귀하는 비멱등성 결함을 발견했고, 해당 9장은 실패 진단 증거로만 보존했다.
+
+수정된 v0.9.2 대표 교정에서는 geometric weathered 조합이 거대한 박리 잉크 면과 세로
+분할을 안정적으로 재현했다. 남은 두 약점은 항목 단위 retry override로 좁혔다. Minimal
+weathered는 프레임 대부분을 덮는 하나의 floor-to-ceiling torn ink mural로, rounded
+glazed는 두꺼운 투명 유리 원반과 보이는 테두리·굴절로 명시했다. v0.9.3의 두 대표군 ×
+3-seed 결과는 모두 1024 × 1024로 완료되었고, 각 seed에서 단일 인물과 요구한 재질·형태가
+반복되어 두 군 모두 `testing` 판정을 받았다. Calibration seed는 승인에 재사용하지 않고,
+공식 54개 screen과 그 후의 두 seed extension만 lifecycle 근거로 사용한다.
+v0.9.4는 retry override와 조립 template 사이의 중복 마침표만 정규화한 최종 배포
+artifact다. Prompt 의미는 v0.9.3과 동일하므로 calibration은 반복하지 않고, 공식 screen과
+extension 증거 경로만 v0.9.4로 분리한다.
+
 실행 순서는 다음 자동 게이트로 고정한다.
 
 ```bash
 make deploy-preview-dry-run
 make deploy-preview
-make remote-style-refill-calibration  # minimal material delta 3개 × seed 3개
+make remote-style-refill-calibration  # 마지막 취약 조합 2개 × seed 3개
 # calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
-make remote-generated-screen          # 81개 × seed 3개
+make remote-generated-screen          # 재작성된 54개 × seed 3개
 make review-style-screen
 # 통과 항목을 testing으로 반영한 뒤:
 make remote-testing-retest            # seed 4004, 5005
@@ -384,8 +402,8 @@ make remote-testing-retest            # seed 4004, 5005
 
 각 제출 전후 runner가 빈 큐를 확인하며 다른 사용자의 작업을 취소하거나 변경하지 않는다.
 Calibration은 공식 refill과 별도 디렉터리에 보존하고, 3-seed 결과는 screening에만 사용한다.
-승격은 통합 5-seed 점수에서만 허용한다. v0.8에서 최소 60개가 승인되면 style pack 150개
-목표를 충족한다.
+승격은 공식 screen과 extension을 합친 5-seed 점수에서만 허용한다. v0.9에서 최소 33개가
+추가 승인되면 style pack 150개 목표를 충족한다.
 
 ## Pilot v0.1 결과
 

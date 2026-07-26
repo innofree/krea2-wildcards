@@ -31,6 +31,22 @@ def test_managed_prompt_change_is_rejected() -> None:
         validate_catalog_against_generation(current, expected, ["one"])
 
 
+def test_persisted_retry_profile_is_accepted() -> None:
+    expected = {"one": item("Primary prompt.")}
+    expected["one"]["_retry_prompt"] = "Retry prompt."
+    current = {"one": item("Retry prompt.", "testing", 3)}
+    current["one"]["generation"]["prompt_profile"] = "retry"
+    validate_catalog_against_generation(current, expected, ["one"])
+
+
+def test_unexpected_retry_profile_is_rejected() -> None:
+    expected = {"one": item("Primary prompt.")}
+    current = {"one": item("Primary prompt.", "testing", 3)}
+    current["one"]["generation"]["prompt_profile"] = "retry"
+    with pytest.raises(ValueError, match="unexpected retry prompt profile"):
+        validate_catalog_against_generation(current, expected, ["one"])
+
+
 def test_refresh_updates_output_and_collection_hash(tmp_path: Path) -> None:
     catalog = tmp_path / "styles.yaml"
     catalog.write_text("catalog\n", encoding="utf-8")

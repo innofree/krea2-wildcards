@@ -95,6 +95,7 @@ class CollectionSpec:
     templates: tuple[TemplateSpec, ...]
     prompt_overrides: tuple[tuple[str, str], ...]
     retry: RetrySpec | None
+    retry_prompt_overrides: tuple[tuple[str, str], ...]
     compatibility_avoid: tuple[str, ...]
 
     @property
@@ -432,7 +433,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
             "templates",
             "compatibility",
         },
-        {"prompt_overrides", "retry"},
+        {"prompt_overrides", "retry", "retry_prompt_overrides"},
         context,
     )
     collection_id = _identifier(value["id"], f"{context}.id")
@@ -496,6 +497,22 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         if "retry" in value
         else None
     )
+    raw_retry_overrides = value.get("retry_prompt_overrides", {})
+    if not isinstance(raw_retry_overrides, dict):
+        raise ValueError(f"{context}.retry_prompt_overrides must be a mapping")
+    if raw_retry_overrides and retry is None:
+        raise ValueError(f"{context}.retry_prompt_overrides requires retry")
+    retry_prompt_overrides: list[tuple[str, str]] = []
+    for raw_item_id, raw_text in raw_retry_overrides.items():
+        item_id = _identifier(raw_item_id, f"{context}.retry_prompt_overrides key")
+        if len(item_id) > MAX_ITEM_ID_LENGTH:
+            raise ValueError(
+                f"{context}.retry_prompt_overrides key is overlong: {item_id!r}"
+            )
+        text = _validate_fragment(
+            raw_text, f"{context}.retry_prompt_overrides.{item_id}"
+        )
+        retry_prompt_overrides.append((item_id, text))
 
     compatibility = _mapping(value["compatibility"], f"{context}.compatibility")
     _strict_keys(compatibility, {"avoid"}, f"{context}.compatibility")
@@ -516,6 +533,7 @@ def parse_collection(raw: Any, context: str, source_ids: set[str]) -> Collection
         templates=templates,
         prompt_overrides=tuple(sorted(prompt_overrides)),
         retry=retry,
+        retry_prompt_overrides=tuple(sorted(retry_prompt_overrides)),
         compatibility_avoid=avoids,
     )
     if collection.product_size < target_count:
@@ -727,6 +745,7 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         else None
     )
     prompt_overrides = dict(collection.prompt_overrides)
+    retry_prompt_overrides = dict(collection.retry_prompt_overrides)
     items: dict[str, dict[str, Any]] = {}
     prompt_origins: dict[str, str] = {}
     for row in select_combinations(collection):
@@ -751,15 +770,17 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         )
         retry_prompt = None
         if collection.retry is not None and retry_dimension_values is not None:
+            retry_base = collection.retry.template.format_map(
+                {
+                    dimension.id: retry_dimension_values[dimension.id][value_id].text
+                    for dimension, value_id in zip(
+                        collection.dimensions, dimension_ids, strict=True
+                    )
+                }
+            )
+            retry_override = retry_prompt_overrides.get(item_id)
             retry_prompt = _validate_prompt(
-                collection.retry.template.format_map(
-                    {
-                        dimension.id: retry_dimension_values[dimension.id][value_id].text
-                        for dimension, value_id in zip(
-                            collection.dimensions, dimension_ids, strict=True
-                        )
-                    }
-                ),
+                f"{retry_base} {retry_override}" if retry_override else retry_base,
                 f"collection {collection.id}, item {item_id}, retry",
             )
         if item_id in items:
@@ -806,6 +827,12 @@ def compile_collection(collection: CollectionSpec) -> dict[str, dict[str, Any]]:
         raise ValueError(
             f"collection {collection.id} has prompt override(s) for unselected item(s): "
             + ", ".join(sorted(unknown_overrides)[:5])
+        )
+    unknown_retry_overrides = set(retry_prompt_overrides) - set(items)
+    if unknown_retry_overrides:
+        raise ValueError(
+            f"collection {collection.id} has retry prompt override(s) for unselected item(s): "
+            + ", ".join(sorted(unknown_retry_overrides)[:5])
         )
     return dict(sorted(items.items()))
 
@@ -913,13 +940,29 @@ def _preserve_evaluated_validation(
     for item_id, item in generated_items.items():
         previous = previous_items.get(item_id)
         retry_prompt = item.pop("_retry_prompt", None)
+        previous_validation = previous.get("validation") if previous is not None else None
+        previous_generation = previous.get("generation") if previous is not None else None
+        use_retry = isinstance(retry_prompt, str) and (
+            previous is None
+            or (
+                isinstance(previous_validation, dict)
+                and previous_validation.get("status") in {"generated", "rejected"}
+            )
+            or (
+                isinstance(previous_generation, dict)
+                and previous_generation.get("prompt_profile") == "retry"
+            )
+        )
+        if use_retry:
+            item["prompt"] = retry_prompt
+            generation = item.get("generation")
+            if not isinstance(generation, dict):
+                raise ValueError(f"generated item lacks generation metadata: {item_id}")
+            generation["prompt_profile"] = "retry"
         if previous is None:
             continue
-        previous_validation = previous.get("validation")
         if not isinstance(previous_validation, dict):
             raise ValueError(f"managed item lacks validation in {output_file}: {item_id}")
-        if previous_validation.get("status") == "rejected" and isinstance(retry_prompt, str):
-            item["prompt"] = retry_prompt
         if _body_without_validation(item) == _body_without_validation(previous):
             item["validation"] = dict(previous_validation)
             continue

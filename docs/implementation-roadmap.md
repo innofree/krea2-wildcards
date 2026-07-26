@@ -74,6 +74,12 @@ The 45-style, three-seed screen and the 16-style extension are independently ver
 The 16 candidates completed seeds 4004 and 5005 and were approved only after five-seed aggregation;
 no item was approved from only three seeds.
 
+The v0.7 expansion and v0.8 refill cycles have raised the approved style-pack total to 117. The
+remaining 54 rejected candidates now use a persistent retry prompt profile. Representative v0.9.3
+calibration covers the last weak surface treatments at three seeds and passes the screening gate;
+the official 54-candidate screen remains separate, and only its two-seed extension can produce the
+five distinct seeds required for approval.
+
 The first expansion attempt exposed two invalid experimental designs. Twenty images made with a
 multi-subject/crop-conflicting template are quarantined as invalid-template evidence. A later
 56-image partial batch used only four explicit style axes and is quarantined as exploratory evidence.
