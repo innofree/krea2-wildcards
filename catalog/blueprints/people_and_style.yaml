@@ -129,68 +129,66 @@ collections:
       - id: shape_language
         values:
           - id: geometric_slender
-            text: broad geometric masses balanced by slender accents and clean directional edges
+            text: long vertical set divisions, narrow rectangular shadows, and clean upright edges
           - id: organic_flowing
-            text: soft organic silhouettes linked by flowing curves and gently repeated rhythms
+            text: broad curved light paths, flowing shadows, and repeated organic shapes
           - id: ornamental_layered
-            text: layered ornamental forms arranged around a clear central subject hierarchy
+            text: layered border motifs and repeated decorative shapes framing the subject
           - id: minimal_quiet
-            text: quiet minimal shapes with generous open space and only a few decisive details
+            text: broad clean negative space with only two or three decisive set shapes
           - id: faceted_rhythmic
-            text: faceted planes repeated in a controlled rhythm with sharp focal transitions
+            text: angular shadow planes and repeated diagonal divisions around the subject
           - id: rounded_graphic
-            text: rounded graphic forms with bold spacing and a compact, readable silhouette
+            text: large circular light pools, rounded shadows, and bold silhouette spacing
       - id: color_strategy
         values:
           - id: low_contrast_pastel
-            text: low-contrast pastels separated by small dark anchors and luminous skin-adjacent neutrals
+            text: pale blush, powder blue, warm ivory, and small charcoal anchors
           - id: jewel_and_gold
-            text: saturated jewel colors disciplined by deep neutral fields and restrained gold notes
+            text: garnet, sapphire, and emerald fields with restrained gold highlights
           - id: warm_cool_split
-            text: a clear warm-cool division that guides attention without breaking material believability
+            text: an amber-lit side and blue-shadowed side across subject and backdrop
           - id: mineral_muted
-            text: muted mineral colors with subtle temperature shifts and carefully protected highlights
+            text: muted slate, clay, sage, and limestone with small pale highlights
           - id: limited_duotone
-            text: a limited two-color system expanded through value, translucency, and one quiet accent
+            text: exactly two dominant colors across clothing, light, shadow, and backdrop
       - id: surface_character
         values:
           - id: chalk_matte
-            text: a matte chalklike surface with fine grain and softly absorbed highlights
+            text: powdery matte grain across midtones and backdrop with absorbed highlights
           - id: satin_clean
-            text: a clean satin surface with controlled sheen and smooth tonal continuity
+            text: smooth tonal transitions and controlled satin sheen on lit surfaces
           - id: fibrous_paper
-            text: a visible fibrous paper tooth that catches dry marks and translucent color
+            text: fine paper fibers in backdrop and shadows while skin and fabric stay clear
           - id: glazed_luminous
-            text: a layered glazed surface with luminous color depth and crisp final accents
+            text: translucent color layers, luminous reflections, and crisp bright accents
           - id: weathered_ink
-            text: a lightly weathered ink surface with broken edges and subtle registration character
+            text: weathered dark marks, broken texture, and offset color at outer edges
       - id: atmosphere
         values:
           - id: contemplative_air
-            text: a calm contemplative mood shaped by quiet spacing and softly suspended air
+            text: calm open spacing, low visual noise, and thin suspended haze
           - id: ceremonial_energy
-            text: buoyant ceremonial energy conveyed through upward rhythms and luminous accents
+            text: upward beams, rising forms, and restrained ceremonial glints
           - id: nocturnal_tension
-            text: restrained nocturnal tension built from deep values, narrow light paths, and stillness
+            text: deep evening values, narrow light paths, and tense still space
       - id: edge_language
         values:
           - id: selective_taper
-            text: tapered focal edges with soft peripheral boundaries
+            text: sharp facial and hand edges tapering into soft peripheral boundaries
           - id: lost_and_found
-            text: lost-and-found edges with quiet merges and firm accents
+            text: silhouette sections merging into the backdrop while focal edges stay firm
           - id: crisp_cut
-            text: crisp cut edges with small controlled breaks
+            text: hard separated silhouette and shadow edges with few controlled breaks
           - id: soft_bleed
-            text: soft pigment bleeds around a clear focal silhouette
+            text: soft color bloom and halation outside a readable silhouette
           - id: etched_accent
-            text: fine etched accents around the face and hands
+            text: razor-thin highlights and fine contrast around the face and hands
     templates:
       - id: complete_style
         text: >-
-          An adult visual treatment combines {shape_language}, {color_strategy},
-          {surface_character}, {atmosphere}, and {edge_language}. Preserve realistic skin texture,
-          coherent hands, believable fabric, natural proportions, cinematic depth, and a frame free
-          of text, logos, and watermarks.
+          Photorealistic adult editorial treatment: {shape_language}. Use {color_strategy},
+          {surface_character}, {atmosphere}, and {edge_language}.
     compatibility:
       avoid: []
 

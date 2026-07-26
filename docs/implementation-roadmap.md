@@ -78,8 +78,12 @@ The first expansion attempt exposed two invalid experimental designs. Twenty ima
 multi-subject/crop-conflicting template are quarantined as invalid-template evidence. A later
 56-image partial batch used only four explicit style axes and is quarantined as exploratory evidence.
 Neither set is eligible for scoring or lifecycle promotion. The regenerated official style catalog
-now fixes five independently reviewable axes: shape, color, surface, atmosphere, and edge. A fresh
-v0.6 preview deployment and canary therefore precede the official 150-style screen.
+now fixes five independently reviewable axes: shape, color, surface, atmosphere, and edge. The v0.6
+preview and execution canary passed, but a five-style × three-seed calibration exposed another
+non-promotable failure: abstract treatment wording and fixed neutral lighting made visibly different
+axis combinations converge on nearly identical neutral studio photographs. The v0.7 prompt revision
+uses concrete frame-level effects, removes the lighting conflict and duplicated quality suffix, and
+must pass a new calibration before the official 150-style screen.
 
 ### D. Source and visual-signature catalogs
 

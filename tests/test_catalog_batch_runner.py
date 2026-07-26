@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from run_remote_catalog_batch import catalog_jobs, limit_style_jobs, pending_jobs
+from run_remote_catalog_batch import catalog_jobs, limit_style_jobs, pending_jobs, write_scorecard
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -76,3 +76,20 @@ def test_resume_accepts_only_complete_matching_runs(tmp_path: Path) -> None:
     ]
 
     assert pending_jobs(jobs, output, resume=True) == []
+
+
+def test_scorecard_is_lf_only_and_stale_content_is_rejected(tmp_path: Path) -> None:
+    path = tmp_path / "scorecard.csv"
+    jobs = [{"style_id": "example_style", "seed": 42}]
+
+    write_scorecard(path, jobs)
+    assert b"\r" not in path.read_bytes()
+    write_scorecard(path, jobs)
+    path.write_text("stale\n", encoding="utf-8")
+
+    try:
+        write_scorecard(path, jobs)
+    except ValueError as exc:
+        assert "does not match" in str(exc)
+    else:
+        raise AssertionError("stale scorecard must be rejected")

@@ -62,10 +62,10 @@ release-deploy:
 	python3 scripts/run_release.py --apply
 
 deploy-preview-dry-run: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_6-dry-run.json
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_7-dry-run.json
 
 deploy-preview: preview
-	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_6-apply.json --apply
+	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_7-apply.json --apply
 
 deploy-production-dry-run: impact-production
 	python3 scripts/deploy_remote_wildcards.py
@@ -80,16 +80,16 @@ remote-pilot:
 	python3 scripts/run_remote_pilot.py --submit
 
 remote-generated-screen:
-	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status generated --output tests/reports/expansion_style_screen_v0_6 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status generated --output tests/reports/expansion_style_screen_v0_7 --resume --submit
 
 remote-testing-retest:
-	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status testing --seed 4004 --seed 5005 --output tests/reports/expansion_style_retest_v0_6 --resume --submit
+	python3 scripts/run_remote_catalog_batch.py --catalog catalog/style_expansion.yaml --status testing --seed 4004 --seed 5005 --output tests/reports/expansion_style_retest_v0_7 --resume --submit
 
 review-style-screen:
-	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_screen_v0_6/scorecard.csv --overwrite
+	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_screen_v0_7/scorecard.csv --overwrite
 
 remote-artist-native-dry-run: artist-native-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl
 
 remote-artist-native: artist-native-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --output tests/reports/artist_native_screen_v0_6 --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --output tests/reports/artist_native_screen_v0_7 --resume --submit

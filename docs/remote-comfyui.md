@@ -156,7 +156,7 @@ An adult woman stands in a relaxed three-quarter pose against a neutral studio b
 보안 정리, template 검토, exact content build, schema-v2 projection이 끝났으므로 다음
 이미지 실행은 bounded expansion pilot이다.
 
-1. 5축 style/8축 artist 마이그레이션으로 다시 만든 전체 preview를 v0.6 증거로 배포한다.
+1. 5축 style/8축 artist 마이그레이션과 prompt 교정을 반영한 preview를 v0.7 증거로 배포한다.
 2. 신규 5축 스타일 팩 150개를 seed 3개씩 실행하고 contact sheet로 전수 검토한다.
 3. 통과 후보만 `testing`으로 이동하고 seed 2개를 추가해 서로 다른 seed 5개를 확보한다.
 4. 5-seed 통합 점수 기준을 통과한 항목만 `approved`로 승격해 style 150개를 확보한다.
@@ -291,6 +291,19 @@ identity를 기록한다. tag identity 자체는 시각 특성 증거가 아니�
 native Krea 관찰 전까지 pending이다. `run_remote_prompt_matrix.py`는 완전히 해석된 JSONL만
 받고 wildcard·접속정보를 거부하며, 기본은 offline dry-run이다. submit 시 각 job 전후로
 빈 큐를 확인하고 1024×1024 PNG, 비식별 run record, scorecard, manifest를 검증한다.
+
+v0.6 preview의 한 장 canary는 wildcard resolution, 1인 전신 framing, scene control을
+통과했다. 이어 서로 다른 조합 5개를 seed 3개씩 실행했으나, 15장 대부분이 거의 동일한
+중립 스튜디오 사진으로 수렴했다. 특히 warm-cool/duotone, ceremonial/nocturnal, surface,
+edge 차이가 약해 이 calibration 전체를 scoring에서 제외했다. 원인은 추상적 treatment
+표현과 benchmark의 broad neutral lighting 지시가 서로 다른 축 효과를 억제한 것으로
+판정했다.
+
+v0.7은 각 축을 set division, 명시적 색, 관찰 가능한 print texture, atmosphere light,
+silhouette edge처럼 화면에서 직접 확인 가능한 표현으로 바꾼다. benchmark에서는 고정
+조명 색을 제거하고 composition geometry만 고정하며, 중복 quality suffix도 제거한다.
+새 catalog prompt 길이는 377–420자이고 static duplicate 0건을 유지한다. 새 preview
+reload와 calibration을 통과하기 전에는 150×3 official screen을 시작하지 않는다.
 
 ## Pilot v0.1 결과
 

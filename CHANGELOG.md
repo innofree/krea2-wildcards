@@ -64,6 +64,9 @@
 
 - Quarantined 20 invalid-template expansion runs and 56 four-axis exploratory runs so neither can
   enter scoring, lifecycle promotion, or production.
+- Quarantined a 15-image v0.6 prompt calibration after distinct five-axis combinations converged on
+  neutral studio photographs; v0.7 uses concrete frame-level effects without a neutral-lighting
+  conflict or duplicated quality suffix.
 
 ## 0.1.0 - 2026-07-26
 

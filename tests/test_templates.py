@@ -26,7 +26,8 @@ FIXED_COMPLEMENT_MARKERS = {
         "balanced standing pose",
         "warm-grey studio cyclorama",
         "eye-level full-length camera",
-        "broad neutral diffused lighting",
+        "cyclorama geometry fixed",
+        "style visibly control palette",
     ),
     "artist_signature": (
         "plain fitted long-sleeve top",
@@ -205,3 +206,11 @@ def test_expansion_templates_are_fixed_safe_benchmark_prompts() -> None:
     for family in ("preset",):
         text = (ROOT / registry[family]).read_text(encoding="utf-8")
         assert not controlled_axis_words.search(text), (family, text)
+
+
+def test_style_pack_template_does_not_neutralize_style_control_axes() -> None:
+    path = ROOT / "templates/benchmark_expansion_style_pack.txt"
+    text = path.read_text(encoding="utf-8").lower()
+
+    assert "broad neutral diffused lighting" not in text
+    assert "palette, tonal divisions, surface texture, atmosphere, and edge behavior" in text

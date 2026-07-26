@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+from io import StringIO
 import json
 import os
 import subprocess
@@ -141,24 +142,28 @@ def pending_jobs(
 
 
 def write_scorecard(path: Path, jobs: list[dict[str, Any]]) -> None:
+    fields = ["test_id", "seed", "style_id", "image_path", *METRICS, "notes"]
+    handle = StringIO(newline="")
+    writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
+    writer.writeheader()
+    for index, job in enumerate(jobs, start=1):
+        style_id = job["style_id"]
+        seed = job["seed"]
+        writer.writerow(
+            {
+                "test_id": f"SCREEN{index:04d}",
+                "seed": seed,
+                "style_id": style_id,
+                "image_path": f"{path.parent}/runs/{style_id}_seed_{seed}/image_01.png",
+            }
+        )
+    content = handle.getvalue()
     if path.exists():
+        if path.read_text(encoding="utf-8") != content:
+            raise ValueError("existing scorecard does not match the completed catalog batch")
         return
     path.parent.mkdir(parents=True, exist_ok=True)
-    fields = ["test_id", "seed", "style_id", "image_path", *METRICS, "notes"]
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
-        writer.writeheader()
-        for index, job in enumerate(jobs, start=1):
-            style_id = job["style_id"]
-            seed = job["seed"]
-            writer.writerow(
-                {
-                    "test_id": f"SCREEN{index:04d}",
-                    "seed": seed,
-                    "style_id": style_id,
-                    "image_path": f"{path.parent}/runs/{style_id}_seed_{seed}/image_01.png",
-                }
-            )
+    path.write_text(content, encoding="utf-8", newline="")
 
 
 def main() -> int:
