@@ -305,6 +305,51 @@ silhouette edge처럼 화면에서 직접 확인 가능한 표현으로 바꾼�
 새 catalog prompt 길이는 377–420자이고 static duplicate 0건을 유지한다. 새 preview
 reload와 calibration을 통과하기 전에는 150×3 official screen을 시작하지 않는다.
 
+### Style expansion v0.7 결과와 v0.8 refill
+
+v0.7 preview는 checksum, Impact reload, exact namespace 검증과 5개 대표 조합의 3-seed
+calibration을 통과했다. 이후 150개 × 3 seed의 450장을 모두 1024 × 1024로 완료하고,
+10개 스타일 단위 contact sheet 15장을 세 분할 리뷰로 전수 확인했다. 3-seed screening에서
+69개가 품질 기준을 통과해 `testing`, 81개가 `rejected`가 됐으며 critical failure는 0건이다.
+통과한 69개에 seed 4004/5005를 더한 138장도 같은 기준을 유지해 모두 5-seed
+`approved`가 됐다. 기존 승인 21개와 합친 현재 style pack 승인은 90개다.
+
+v0.8 refill은 실패가 집중된 geometric/minimal shape, limited/pastel color,
+satin/weathered surface 및 약한 edge 구분을 화면에서 직접 확인할 수 있는 항목별 문장으로
+보강한다. Blueprint `prompt_overrides` 81개와 생성기 수명주기 보호를 사용해 재작성된
+81개만 `generated/0`으로 되돌리고, 본문이 동일한 승인 69개는 `approved/5`를 보존한다.
+승인된 본문 변경은 생성기가 즉시 거부한다.
+
+첫 v0.8 대표 5개 × 3-seed calibration은 15장 모두 기술적으로 성공했지만 내용 게이트에서
+중단했다. Faceted/ornamental 조합은 개선됐으나 minimal은 satin/etched 특성이 거의
+사라졌고, rounded는 weathered/ceremonial cue가 약했다. Geometric의 추상적인 outer-edge
+표현은 주변에 추가 인물처럼 보이는 실루엣을 만들어 one-subject 제약과 충돌했다. 이
+15장은 실패 원인 증거로만 보존하며 screening이나 승인 seed로 재사용하지 않는다.
+
+v0.8.1은 색상 축이 이미 안정적으로 반영된 점을 이용해 중복 색상 보정문을 제거하고,
+그 자리에 `glossy satin clothing`, `large peeling ink patches`, `narrow light beams`,
+`one shoulder and trouser edge`처럼 물리적으로 관찰 가능한 surface/atmosphere/edge 지시를
+넣는다. 최종 generated prompt 최대 길이는 589자이며 승인 69개의 본문과 5-seed 이력은
+계속 보존된다. 아래 Make target은 v0.8.1 증거 경로를 사용한다.
+
+실행 순서는 다음 자동 게이트로 고정한다.
+
+```bash
+make deploy-preview-dry-run
+make deploy-preview
+make remote-style-refill-calibration  # 대표 5개 × seed 3개
+# calibration contact sheet를 확인하고 통과한 경우에만 계속한다.
+make remote-generated-screen          # 81개 × seed 3개
+make review-style-screen
+# 통과 항목을 testing으로 반영한 뒤:
+make remote-testing-retest            # seed 4004, 5005
+```
+
+각 제출 전후 runner가 빈 큐를 확인하며 다른 사용자의 작업을 취소하거나 변경하지 않는다.
+Calibration은 공식 refill과 별도 디렉터리에 보존하고, 3-seed 결과는 screening에만 사용한다.
+승격은 통합 5-seed 점수에서만 허용한다. v0.8에서 최소 60개가 승인되면 style pack 150개
+목표를 충족한다.
+
 ## Pilot v0.1 결과
 
 2026-07-26에 대표 5개 스타일 × seed 3개의 15장 pilot을 완료했다. 모든 작업이
