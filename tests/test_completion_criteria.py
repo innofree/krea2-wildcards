@@ -29,6 +29,7 @@ def approved_item(
     item_id: str, *, family: str, runtime_file: str, kind: str
 ) -> dict[str, object]:
     return {
+        "prompts": [f"A complete visual prompt for {item_id}."],
         "family": family,
         "runtime": {"file": runtime_file, "path": ["krea2", "test", item_id]},
         "generation": {"kind": kind},
@@ -256,9 +257,46 @@ def test_collect_completion_accepts_only_complete_cross_checked_evidence(
     result = collect_completion(tmp_path)
 
     assert result["complete"] is True
+    assert result["stage"] == "final"
     assert result["summary"]["remaining"] == 0
     assert by_id(result)["approved_style_packs"]["actual"] == 150
     assert by_id(result)["approved_canonical_artist_signatures"]["actual"] == 200
+
+
+def test_manifest_requires_exact_approval_policy_valid_catalog_item_ids(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    manifest_path = tmp_path / "wildcards-manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["items"][-1]["id"] = "unexpected_item"
+    write_json(manifest_path, manifest)
+
+    criteria = by_id(collect_completion(tmp_path))
+
+    assert criteria["production_runtime_manifest"]["complete"] is False
+    assert criteria["release_functional_gates"]["complete"] is False
+    actual = criteria["production_runtime_manifest"]["actual"]
+    assert actual["missing_catalog_item_ids"] == ["artist_199"]
+    assert actual["unexpected_manifest_item_ids"] == ["unexpected_item"]
+
+
+def test_predeploy_excludes_only_deployment_and_smoke(tmp_path: Path) -> None:
+    complete_repository(tmp_path)
+    (tmp_path / "tests/reports/deployments/production_v1.json").unlink()
+
+    predeploy = collect_completion(tmp_path, stage="predeploy")
+    final = collect_completion(tmp_path, stage="final")
+
+    assert predeploy["stage"] == "predeploy"
+    assert predeploy["complete"] is True
+    assert predeploy["summary"]["criteria"] == 14
+    assert {item["id"] for item in predeploy["criteria"]}.isdisjoint(
+        {"production_deployment", "production_smoke_test"}
+    )
+    assert final["stage"] == "final"
+    assert final["complete"] is False
+    assert final["summary"]["criteria"] == 16
 
 
 def test_missing_and_stale_evidence_cannot_pass(tmp_path: Path) -> None:
@@ -384,6 +422,36 @@ def test_non_strict_writes_incomplete_report_and_only_strict_fails(
     assert normal.returncode == 0
     assert strict.returncode == 1
     assert json.loads(output.read_text(encoding="utf-8"))["complete"] is False
+
+
+def test_predeploy_cli_strict_writes_stage_and_ignores_only_deployment(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    (tmp_path / "tests/reports/deployments/production_v1.json").unlink()
+    output = tmp_path / "predeploy.json"
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(SCRIPT),
+            "--root",
+            str(tmp_path),
+            "--output",
+            str(output),
+            "--stage",
+            "predeploy",
+            "--strict",
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+
+    report = json.loads(output.read_text(encoding="utf-8"))
+    assert result.returncode == 0
+    assert report["stage"] == "predeploy"
+    assert report["complete"] is True
 
 
 def test_unmeasured_or_inconsistent_utility_rate_cannot_pass(tmp_path: Path) -> None:

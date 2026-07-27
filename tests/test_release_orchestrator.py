@@ -10,6 +10,32 @@ import run_release
 from run_release import CommandOutcome, Stage
 
 
+def write_approved_catalog(root: Path, item_id: str = "approved_style") -> None:
+    catalog = {
+        "items": {
+            item_id: {
+                "prompts": ["A complete approved style prompt."],
+                "runtime": {
+                    "file": "krea2/style/complete_pack.yaml",
+                    "path": ["krea2", "style", "complete_pack", item_id],
+                },
+                "validation": {
+                    "status": "approved",
+                    "tested_seeds": 5,
+                    "prompt_adherence": 4,
+                    "style_fidelity": 3,
+                    "stability": 3,
+                    "compatibility": 3,
+                    "critical_failures": 0,
+                },
+            }
+        }
+    }
+    path = root / "catalog/art_styles.yaml"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(catalog), encoding="utf-8")
+
+
 def test_release_sequence_contains_every_required_gate_and_approved_build() -> None:
     stages = run_release.release_stages()
     names = [stage.name for stage in stages]
@@ -41,9 +67,8 @@ def test_release_sequence_contains_every_required_gate_and_approved_build() -> N
     assert not any(name.startswith("deployment_") for name in names)
 
 
-def test_deployment_is_dry_run_by_default_and_apply_is_explicit() -> None:
+def test_release_allows_dry_run_but_refuses_apply_deployment() -> None:
     dry_run = run_release.release_stages("dry-run")[-1]
-    apply = run_release.release_stages("apply")[-1]
 
     assert dry_run.name == "deployment_dry-run"
     assert dry_run.argv == (
@@ -52,12 +77,9 @@ def test_deployment_is_dry_run_by_default_and_apply_is_explicit() -> None:
         "--evidence",
         "tests/reports/deployments/production_v1-dry-run.json",
     )
-    assert apply.name == "deployment_apply"
-    assert apply.argv[-3:-1] == (
-        "--evidence",
-        "tests/reports/deployments/production_v1.json",
-    )
-    assert apply.argv[-1] == "--apply"
+    with pytest.raises(ValueError, match="build-only"):
+        run_release.release_stages("apply")
+    assert run_release.main(["--apply"]) == 2
 
 
 def test_run_stage_uses_argv_without_shell(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
@@ -126,12 +148,13 @@ def test_release_evidence_path_must_remain_relative(tmp_path: Path) -> None:
 
 
 def test_atomic_evidence_has_relative_artifact_paths(tmp_path: Path) -> None:
+    write_approved_catalog(tmp_path)
     manifest = {
         "included_statuses": ["approved"],
         "item_count": 1,
         "prompt_count": 1,
         "files": ["krea2/style/complete_pack.yaml"],
-        "items": [{"status": "approved"}],
+        "items": [{"id": "approved_style", "status": "approved"}],
     }
     (tmp_path / "wildcards/krea2/style").mkdir(parents=True)
     (tmp_path / "build/impact-production").mkdir(parents=True)
@@ -163,3 +186,22 @@ def test_atomic_evidence_has_relative_artifact_paths(tmp_path: Path) -> None:
     assert all(not Path(item["path"]).is_absolute() for item in document["artifacts"])
     assert all(len(item["sha256"]) == 64 for item in document["artifacts"])
     assert not list((tmp_path / "reports").glob(".release.json.*"))
+
+
+def test_production_manifest_ids_must_exactly_match_valid_approved_catalog(
+    tmp_path: Path,
+) -> None:
+    write_approved_catalog(tmp_path)
+    manifest = {
+        "included_statuses": ["approved"],
+        "item_count": 1,
+        "prompt_count": 1,
+        "files": ["krea2/style/complete_pack.yaml"],
+        "items": [{"id": "stale_style", "status": "approved"}],
+    }
+    (tmp_path / "wildcards-manifest.json").write_text(
+        json.dumps(manifest), encoding="utf-8"
+    )
+
+    with pytest.raises(ValueError, match="do not match"):
+        run_release.verify_approved_production(tmp_path)

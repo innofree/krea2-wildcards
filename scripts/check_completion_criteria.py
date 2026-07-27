@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Any, Callable
 
-from common import load_yaml
+from common import item_prompts, load_yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -159,6 +159,43 @@ def _approved_and_valid(item: dict[str, Any]) -> bool:
         if maximum is not None and value > maximum:
             return False
     return True
+
+
+def approved_runtime_catalog_inventory(root: Path) -> tuple[set[str], list[str]]:
+    """Return approval-policy-valid runtime IDs and structural catalog problems."""
+
+    approved_ids: set[str] = set()
+    problems: list[str] = []
+    for path in sorted((root / "catalog").glob("*.yaml")):
+        for item_id, item in _catalog_items(path).items():
+            if not _approved_and_valid(item):
+                continue
+            runtime = item.get("runtime")
+            prompts = item_prompts(item)
+            if not prompts or not isinstance(runtime, dict):
+                problems.append("approval-policy-valid item lacks prompts/runtime")
+                continue
+            raw_file = runtime.get("file")
+            raw_path = runtime.get("path")
+            file_path = PurePosixPath(raw_file) if isinstance(raw_file, str) else None
+            runtime_valid = (
+                file_path is not None
+                and not file_path.is_absolute()
+                and ".." not in file_path.parts
+                and file_path.suffix == ".yaml"
+                and isinstance(raw_path, list)
+                and len(raw_path) >= 2
+                and all(isinstance(part, str) and part for part in raw_path)
+                and raw_path[-1] == item_id
+            )
+            if not runtime_valid:
+                problems.append("approval-policy-valid item has invalid runtime metadata")
+                continue
+            if item_id in approved_ids:
+                problems.append("duplicate approval-policy-valid runtime item ID")
+                continue
+            approved_ids.add(item_id)
+    return approved_ids, sorted(set(problems))
 
 
 def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
@@ -315,6 +352,10 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
     path = root / "wildcards-manifest.json"
     manifest = _json_object(path)
     problems: list[str] = []
+    expected_ids, catalog_problems = approved_runtime_catalog_inventory(root)
+    problems.extend(catalog_problems)
+    manifest_ids: set[str] = set()
+    catalog_ids_match = False
     if manifest is None:
         problems.append("missing or malformed manifest")
     else:
@@ -324,11 +365,27 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
             problems.append("manifest is not approved-only")
         if not isinstance(items, list) or not items:
             problems.append("manifest has no items")
-        elif manifest.get("item_count") != len(items) or any(
-            not isinstance(item, dict) or item.get("status") != "approved"
-            for item in items
-        ):
-            problems.append("manifest items are inconsistent")
+        else:
+            raw_ids = [
+                item.get("id") if isinstance(item, dict) else None for item in items
+            ]
+            if manifest.get("item_count") != len(items) or any(
+                not isinstance(item, dict)
+                or item.get("status") != "approved"
+                or not isinstance(item.get("id"), str)
+                or not item.get("id")
+                for item in items
+            ):
+                problems.append("manifest items are inconsistent")
+            else:
+                manifest_ids = set(raw_ids)
+                if len(manifest_ids) != len(raw_ids):
+                    problems.append("manifest contains duplicate item IDs")
+                if manifest_ids != expected_ids:
+                    problems.append(
+                        "manifest item IDs do not match approval-policy-valid catalog runtime IDs"
+                    )
+                catalog_ids_match = not catalog_problems and manifest_ids == expected_ids
         if not isinstance(files, list) or not files:
             problems.append("manifest has no runtime files")
         else:
@@ -346,6 +403,11 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
     actual = {
         "item_count": manifest.get("item_count") if manifest else None,
         "prompt_count": manifest.get("prompt_count") if manifest else None,
+        "catalog_approved_runtime_item_count": len(expected_ids),
+        "manifest_unique_item_id_count": len(manifest_ids),
+        "catalog_item_ids_match": catalog_ids_match,
+        "missing_catalog_item_ids": sorted(expected_ids - manifest_ids),
+        "unexpected_manifest_item_ids": sorted(manifest_ids - expected_ids),
         "problems": sorted(set(problems)),
     }
     return (
@@ -354,15 +416,26 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
             "functional",
             not problems,
             actual,
-            {"approved_only": True, "consistent_counts": True, "all_files_exist": True},
+            {
+                "approved_only": True,
+                "consistent_counts": True,
+                "all_files_exist": True,
+                "catalog_item_ids_match_exactly": True,
+                "approval_policy_valid": True,
+            },
             [_relative(path, root)] if path.is_file() else [],
-            "Production runtime must be an approved-only, internally consistent manifest.",
+            "Production runtime must exactly contain every approval-policy-valid approved catalog runtime item.",
         ),
         manifest,
     )
 
 
-def _release_criterion(root: Path, manifest: dict[str, Any] | None) -> dict[str, Any]:
+def _release_criterion(
+    root: Path,
+    manifest: dict[str, Any] | None,
+    *,
+    manifest_catalog_ids_match: bool,
+) -> dict[str, Any]:
     path = root / "tests/reports/releases/latest.json"
     report = _json_object(path)
     required = {
@@ -407,6 +480,7 @@ def _release_criterion(root: Path, manifest: dict[str, Any] | None) -> dict[str,
         and report.get("status") == "passed"
         and not missing
         and production_matches
+        and manifest_catalog_ids_match
     )
     return _criterion(
         "release_functional_gates",
@@ -416,11 +490,13 @@ def _release_criterion(root: Path, manifest: dict[str, Any] | None) -> dict[str,
             "passed_stages": sorted(passed & required),
             "missing_stages": missing,
             "production_matches_manifest": production_matches,
+            "manifest_catalog_item_ids_match": manifest_catalog_ids_match,
         },
         {
             "required_stages": sorted(required),
             "release_status": "passed",
             "production_matches_manifest": True,
+            "manifest_catalog_item_ids_match": True,
         },
         [_relative(path, root)] if path.is_file() else [],
         "Sensitive-data checks remain external; all deterministic build, lint, test, and schema gates are required.",
@@ -813,24 +889,34 @@ def _deployment_criteria(
     return [deploy, smoke]
 
 
-def collect_completion(root: Path) -> dict[str, Any]:
+def collect_completion(root: Path, stage: str = "final") -> dict[str, Any]:
+    if stage not in {"predeploy", "final"}:
+        raise ValueError(f"unsupported completion stage: {stage}")
     root = root.resolve()
     content, approved_items = _content_criteria(root)
     manifest_criterion, manifest = _manifest_criterion(root)
     reports = _discover_reports(root)
     criteria = [
         manifest_criterion,
-        _release_criterion(root, manifest),
+        _release_criterion(
+            root,
+            manifest,
+            manifest_catalog_ids_match=manifest_criterion["actual"][
+                "catalog_item_ids_match"
+            ],
+        ),
         *_structured_report_criteria(root, reports),
         *content,
         _content_scale_criterion(root),
         _quality_metric_criterion(root, approved_items),
         _duplicate_criterion(root),
-        *_deployment_criteria(root, manifest),
     ]
+    if stage == "final":
+        criteria.extend(_deployment_criteria(root, manifest))
     complete_count = sum(item["complete"] for item in criteria)
     return {
         "schema_version": 1,
+        "stage": stage,
         "complete": complete_count == len(criteria),
         "summary": {
             "criteria": len(criteria),
@@ -862,6 +948,12 @@ def main() -> int:
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument(
+        "--stage",
+        choices=("predeploy", "final"),
+        default="final",
+        help="evaluate pre-deployment gates or all final completion criteria",
+    )
+    parser.add_argument(
         "--strict",
         action="store_true",
         help="return nonzero until every criterion passes",
@@ -870,13 +962,14 @@ def main() -> int:
     root = args.root.resolve()
     output = args.output if args.output.is_absolute() else root / args.output
     try:
-        result = collect_completion(root)
+        result = collect_completion(root, stage=args.stage)
         _atomic_write_json(output, result)
     except (OSError, TypeError, ValueError) as exc:
         print(f"ERROR: {exc}")
         return 2
     print(
-        f"Completion criteria: {result['summary']['complete']}/{result['summary']['criteria']} "
+        f"Completion criteria ({result['stage']}): "
+        f"{result['summary']['complete']}/{result['summary']['criteria']} "
         f"passed; report={_relative(output, root)}"
     )
     if args.strict and not result["complete"]:

@@ -15,6 +15,8 @@ from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 from typing import Any
 
+from check_completion_criteria import approved_runtime_catalog_inventory
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EVIDENCE = Path("tests/reports/releases/latest.json")
@@ -22,9 +24,6 @@ PRODUCTION_MANIFEST = Path("wildcards-manifest.json")
 PRODUCTION_RUNTIME_ROOT = Path("wildcards")
 PRODUCTION_IMPACT = Path("build/impact-production/krea2_complete_pack.yaml")
 PROGRESS_REPORT = Path("tests/reports/plan_progress.json")
-PRODUCTION_DEPLOYMENT_EVIDENCE = Path(
-    "tests/reports/deployments/production_v1.json"
-)
 PRODUCTION_DRY_RUN_EVIDENCE = Path(
     "tests/reports/deployments/production_v1-dry-run.json"
 )
@@ -59,7 +58,11 @@ Runner = Callable[[Stage, Path], CommandOutcome]
 def release_stages(deployment: str = "none") -> tuple[Stage, ...]:
     """Return the fixed, fail-fast release sequence."""
 
-    if deployment not in {"none", "dry-run", "apply"}:
+    if deployment == "apply":
+        raise ValueError(
+            "release runner is build-only; apply deployment must use the final deployment workflow"
+        )
+    if deployment not in {"none", "dry-run"}:
         raise ValueError(f"unsupported deployment mode: {deployment}")
 
     stages = [
@@ -130,19 +133,13 @@ def release_stages(deployment: str = "none") -> tuple[Stage, ...]:
         ),
     ]
     if deployment != "none":
-        evidence = (
-            PRODUCTION_DEPLOYMENT_EVIDENCE
-            if deployment == "apply"
-            else PRODUCTION_DRY_RUN_EVIDENCE
-        )
+        evidence = PRODUCTION_DRY_RUN_EVIDENCE
         argv = [
             "python3",
             "scripts/deploy_remote_wildcards.py",
             "--evidence",
             str(evidence),
         ]
-        if deployment == "apply":
-            argv.append("--apply")
         stages.append(Stage(f"deployment_{deployment}", tuple(argv)))
     return tuple(stages)
 
@@ -195,6 +192,19 @@ def verify_approved_production(root: Path) -> dict[str, Any]:
         raise ValueError("production manifest contains no approved items")
     if any(not isinstance(item, dict) or item.get("status") != "approved" for item in items):
         raise ValueError("production manifest contains a non-approved item")
+    raw_ids = [item.get("id") if isinstance(item, dict) else None for item in items]
+    if any(not isinstance(item_id, str) or not item_id for item_id in raw_ids):
+        raise ValueError("production manifest contains an invalid item ID")
+    manifest_ids = set(raw_ids)
+    if len(manifest_ids) != len(raw_ids):
+        raise ValueError("production manifest contains duplicate item IDs")
+    expected_ids, catalog_problems = approved_runtime_catalog_inventory(root)
+    if catalog_problems:
+        raise ValueError("approved runtime catalog inventory is invalid")
+    if manifest_ids != expected_ids:
+        raise ValueError(
+            "production manifest item IDs do not match approval-policy-valid catalog runtime IDs"
+        )
     item_count = manifest.get("item_count")
     prompt_count = manifest.get("prompt_count")
     if not isinstance(item_count, int) or isinstance(item_count, bool) or item_count != len(items):
@@ -395,7 +405,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     deployment.add_argument(
         "--apply",
         action="store_true",
-        help="explicitly apply the production deployment after every local gate passes",
+        help="refused: use the separate final deployment workflow after predeploy gates",
     )
     parser.add_argument("--evidence", type=Path, default=DEFAULT_EVIDENCE)
     return parser.parse_args(argv)
@@ -403,7 +413,13 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
-    mode = "apply" if args.apply else "dry-run" if args.deploy else "none"
+    if args.apply:
+        print(
+            "ERROR: release runner is build-only; run the separate final deployment workflow after predeploy gates",
+            file=sys.stderr,
+        )
+        return 2
+    mode = "dry-run" if args.deploy else "none"
     try:
         return orchestrate(evidence_path=args.evidence, deployment=mode)
     except (OSError, ValueError) as exc:
