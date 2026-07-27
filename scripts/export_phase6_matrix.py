@@ -16,7 +16,7 @@ from run_remote_prompt_matrix import validate_job
 
 
 DEFAULT_SEEDS = (1001, 2002, 3003)
-CALIBRATION_SEEDS = (41001, 42002, 43003)
+CALIBRATION_SEEDS = (51001, 52002, 53003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
 SUBJECT_CONTRACT = (
     "Compose one continuous single-view vertical image built around exactly one clearly adult "
@@ -36,9 +36,20 @@ SIGNATURE_OPEN = (
     "and ornament."
 )
 PHASE6_PROFILE_ALGORITHM = (
-    "positive-subject-v5.2|terminal-camera-lock-v5.2|measured-axis-frame-v5.2|"
-    "scale-aware-signature-ledger-v5.2|random-scene-reconciliation-v5.2|"
+    "positive-subject-v6.4|opening-terminal-camera-lock-v6.4|"
+    "storyboard-camera-baseline-v6.4|lighting-neutral-style-synthesis-v6.4|"
+    "conditional-lighting-authority-v6.4|crop-aware-scene-body-v6.4|"
+    "scale-aware-signature-ledger-v6.4|random-scene-reconciliation-v6.4|"
     "proven-short-paths-v2"
+)
+CAMERA_STORYBOARD_BASELINE = (
+    "Render the camera test as one clean flat two-dimensional editorial storyboard frame with "
+    "simple neutral colors, a plain warm-grey setting, and no decorative border. The requested "
+    "viewpoint, crop, subject placement, open space, and counterweight are the only composition."
+)
+PRESET_COLOR_BASELINE = (
+    "Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, "
+    "and landscape."
 )
 PROVEN_VISIBILITY_FINISH = (
     "Make every requested visual direction plainly legible without replacing the selected medium "
@@ -57,6 +68,40 @@ FIXED_SCENE = (
     "cyclorama. Use an eye-level full-length camera, broad neutral diffused lighting, a plain "
     "long-sleeve top and straight trousers, with her head, both hands, and both feet visible."
 )
+STYLE_PACK_SHAPE = {
+    "geometric_slender": "long vertical set divisions, narrow rectangular graphic shadows, and clean upright edges",
+    "organic_flowing": "broad curved set paths, flowing graphic shadows, and repeated organic shapes",
+    "ornamental_layered": "layered border motifs and repeated decorative shapes around the subject",
+    "minimal_quiet": "broad clean negative space with only two or three decisive set shapes",
+    "faceted_rhythmic": "angular graphic planes and repeated diagonal divisions around the subject",
+    "rounded_graphic": "large circular set fields, rounded graphic shadows, and bold silhouette spacing",
+}
+STYLE_PACK_COLOR = {
+    "low_contrast_pastel": "pale blush, powder blue, warm ivory, and charcoal pigment fields",
+    "jewel_and_gold": "garnet, sapphire, emerald, and restrained metallic-gold material fields",
+    "warm_cool_split": "amber and blue pigment fields printed across clothing and backdrop",
+    "mineral_muted": "muted slate, clay, sage, limestone, and small pale pigment accents",
+    "limited_duotone": "exactly two dominant material colors across clothing and backdrop",
+}
+STYLE_PACK_SURFACE = {
+    "chalk_matte": "powdery matte grain with absorbed material highlights",
+    "satin_clean": "smooth tonal transitions and controlled satin material sheen",
+    "fibrous_paper": "fine paper fibers across backdrop and graphic shadow shapes",
+    "glazed_luminous": "translucent material layers and crisp bright surface accents",
+    "weathered_ink": "weathered dark marks, broken texture, and offset color at outer edges",
+}
+STYLE_PACK_ATMOSPHERE = {
+    "contemplative_air": "calm open spacing, low visual noise, and thin suspended haze",
+    "ceremonial_energy": "upward set panels, rising decorative forms, and restrained metallic glints",
+    "nocturnal_tension": "deep evening pigment values, narrow graphic paths, and tense still space",
+}
+STYLE_PACK_EDGE = {
+    "selective_taper": "firm face and hand edges tapering into soft peripheral boundaries",
+    "lost_and_found": "short silhouette sections merging into the backdrop while focal edges stay firm",
+    "crisp_cut": "hard separated silhouette and graphic edges with few controlled breaks",
+    "soft_bleed": "soft pigment bloom beyond a readable silhouette",
+    "etched_accent": "razor-thin pale edge accents and fine contrast around the face and hands",
+}
 SINGLE_AXIS_ANCHORS = {
     "character_design": (
         "Show the described adult design in a balanced standing pose. Dress her in a complete "
@@ -99,10 +144,17 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
             "profile_algorithm": PHASE6_PROFILE_ALGORITHM,
             "proven_visibility_finish": PROVEN_VISIBILITY_FINISH,
             "camera_subject_contract": CAMERA_SUBJECT_CONTRACT,
+            "camera_storyboard_baseline": CAMERA_STORYBOARD_BASELINE,
+            "preset_color_baseline": PRESET_COLOR_BASELINE,
             "signature_open": SIGNATURE_OPEN,
+            "style_pack_atmosphere": STYLE_PACK_ATMOSPHERE,
+            "style_pack_color": STYLE_PACK_COLOR,
+            "style_pack_edge": STYLE_PACK_EDGE,
+            "style_pack_shape": STYLE_PACK_SHAPE,
+            "style_pack_surface": STYLE_PACK_SURFACE,
             "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v5",
+            "version": "phase6_positive_profile_v6",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -196,6 +248,173 @@ def _prompt_body(value: str) -> str:
     return value.strip().rstrip(".,;:")
 
 
+def _feature_axis_phrase(
+    item: dict[str, Any],
+    axis: str,
+    phrases: dict[str, str],
+) -> str:
+    feature_axes = item.get("feature_axes")
+    values = feature_axes.get(axis) if isinstance(feature_axes, dict) else None
+    value = values[0] if isinstance(values, list) and values else None
+    phrase = phrases.get(value) if isinstance(value, str) else None
+    if phrase is None:
+        raise ValueError(f"style pack is missing supported feature axis {axis}")
+    return phrase
+
+
+def _lighting_neutral_style_direction(item: dict[str, Any]) -> str:
+    return (
+        "Use a photorealistic adult editorial material treatment with "
+        f"{_feature_axis_phrase(item, 'shape_language', STYLE_PACK_SHAPE)}; "
+        f"{_feature_axis_phrase(item, 'color_strategy', STYLE_PACK_COLOR)}; "
+        f"{_feature_axis_phrase(item, 'surface_character', STYLE_PACK_SURFACE)}; "
+        f"{_feature_axis_phrase(item, 'atmosphere', STYLE_PACK_ATMOSPHERE)}; and "
+        f"{_feature_axis_phrase(item, 'edge_language', STYLE_PACK_EDGE)}. "
+        "Treat these as material, set, pigment, and graphic properties; the second lighting "
+        "direction alone supplies every actual source and illumination color"
+    )
+
+
+def _lighting_axis_focus(value: str) -> str:
+    lowered = value.lower()
+    clauses = [
+        "The second lighting direction has authority over every actual source shape, direction, "
+        "and illumination color. Keep the face and requested visible eyes readable, and make each "
+        "source named by that direction visibly distinct."
+    ]
+    if "reflect" in lowered or "fill" in lowered:
+        clauses.append(
+            "Give its named reflected light or fill a separate readable role."
+        )
+    if any(word in lowered for word in ("practical", "lamp", "bulb")):
+        clauses.append(
+            "Keep its named practical as a separate small background source with its requested color."
+        )
+    clauses.append(
+        "Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment."
+    )
+    return " ".join(clauses)
+
+
+def _lighting_reconciliation(value: str) -> str:
+    lowered = value.lower()
+    clauses = [
+        "The second lighting direction is the final illumination blueprint: all visible "
+        "illumination comes only from its named sources, colors, and geometry."
+    ]
+    if "reflect" in lowered or "fill" in lowered:
+        clauses.append(
+            "Its named reflected light or fill remains visibly separate from the key."
+        )
+    if any(word in lowered for word in ("practical", "lamp", "bulb")):
+        clauses.append(
+            "Its named practical remains one separate small background source rather than a broad beam."
+        )
+    clauses.append(
+        "The first style contributes shape, material palette, surface, atmosphere, and edge treatment."
+    )
+    return " ".join(clauses)
+
+
+def _join_garments(items: list[str]) -> str:
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    return ", ".join(items[:-1]) + f", and {items[-1]}"
+
+
+def _crop_aware_scene_body(value: str) -> str:
+    kind = _framing_kind(value)
+    if kind in {"full-length", "wide"}:
+        return value
+    if kind in {"chest-up", "waist-up"}:
+        value = value.replace(
+            "pauses mid-step with separated arms and stable weight",
+            "pauses during a walk with both separated upper-arm gestures visible",
+        )
+        value = value.replace(
+            "stands three-quarters, one hand at the waist and one lowered",
+            "stands three-quarters with one upper arm bending toward a hand that continues below "
+            "the frame and the other arm descending beyond it",
+        )
+    marker = ", wearing "
+    if marker not in value:
+        return value
+    before, clothing_and_after = value.split(marker, 1)
+    if ", with " not in clothing_and_after:
+        return value
+    clothing, after = clothing_and_after.split(", with ", 1)
+    garments = [
+        part.strip() for part in re.split(r",\s*(?:and\s+)?", clothing) if part.strip()
+    ]
+    visible: list[str] = []
+    lower_words = ("trouser", "pants", "skirt", "shorts")
+    extended_words = (
+        "dress",
+        "long coat",
+        "longline",
+        "midi",
+        "long layer",
+        "sleeveless layer",
+    )
+    upper_outer_words = ("coat", "jacket", "overshirt", "outer layer", *extended_words)
+    for garment in garments:
+        lowered = garment.lower()
+        if kind in {"chest-up", "waist-up"} and any(
+            word in lowered for word in lower_words
+        ):
+            continue
+        if kind == "mid-thigh" and any(word in lowered for word in lower_words):
+            visible.append(
+                "two broad upper-leg fabric panels intersected at mid-thigh by the lower image edge"
+            )
+        elif kind == "mid-thigh" and any(word in lowered for word in extended_words):
+            visible.append(
+                "visible garment fabric intersected at mid-thigh by the lower image edge"
+            )
+        elif kind == "chest-up" and any(word in lowered for word in upper_outer_words):
+            if "overshirt" in lowered and "dress" in lowered:
+                visible.append("visible overshirt shoulders and dress bodice")
+            elif "vest" in lowered:
+                visible.append("visible vest neckline, shoulders, and lapels")
+            elif "dress" in lowered:
+                visible.append("visible dress bodice")
+            elif "overshirt" in lowered:
+                visible.append("visible overshirt shoulders, collar, and chest panels")
+            else:
+                visible.append("visible outerwear collar, shoulders, and chest panels")
+        elif kind == "waist-up" and any(word in lowered for word in upper_outer_words):
+            if "overshirt" in lowered and "dress" in lowered:
+                visible.append(
+                    "visible overshirt body and dress bodice ending below the waist"
+                )
+            elif "dress" in lowered:
+                visible.append("visible dress bodice ending below the waist")
+            else:
+                visible.append("visible outerwear body ending below the waist")
+        else:
+            visible.append(garment)
+    if not visible:
+        visible.append("a simple camera-scale upper garment")
+    return f"{before}{marker}{_join_garments(visible)}, with {after}"
+
+
+def _storyboard_camera_body(value: str) -> tuple[str, str]:
+    value = re.sub(
+        r"^Photograph an adult subject",
+        "Show the adult subject in this storyboard",
+        value,
+    )
+    counterweight = ""
+    if "counterweight" in value.lower():
+        counterweight = (
+            "Place one small neutral-grey rectangular storyboard block at the far opposite edge "
+            "as the sole visual counterweight, with the remaining side region broadly open."
+        )
+    return value, counterweight
+
+
 def _framing_contract(value: str) -> str:
     lowered = value.lower()
     if "chest-up" in lowered:
@@ -215,8 +434,8 @@ def _framing_contract(value: str) -> str:
         return (
             "Final camera lock—let the figure fill most of the canvas from the complete crown to "
             "a lower image edge visibly intersecting the middle of both thighs, with the face and "
-            "both described hand gestures inside while the knees, calves, shoes, and feet continue "
-            "beyond the canvas."
+            "any explicitly named visible hand gesture inside while the knees, calves, shoes, and "
+            "feet continue beyond the canvas."
         )
     if "full-length" in lowered:
         return (
@@ -225,15 +444,23 @@ def _framing_contract(value: str) -> str:
         )
     if "wide view" in lowered:
         return (
-            "Final camera lock—use the requested wide environmental view with the complete crown "
-            "and complete figure inside the canvas, a clear depth path, and the subject large "
-            "enough for the face and hands to remain readable."
+            "Final camera lock—pull the camera far back, keep the complete crown, both shoes, and "
+            "visible floor below both shoes inside the canvas, place the figure on one vertical "
+            "third, and limit the complete figure to at most two-thirds of the canvas height."
         )
     return (
         "Final camera lock—use an eye-level mid-thigh inspection frame with the lower edge "
         "visibly intersecting both thighs and the complete crown, both eyes, shoulders, and "
         "visible hand gestures inside while the knees, calves, shoes, and feet continue beyond "
         "the canvas."
+    )
+
+
+def _opening_framing_contract(value: str) -> str:
+    return _framing_contract(value).replace(
+        "Final camera lock—",
+        "Opening camera contract—",
+        1,
     )
 
 
@@ -259,7 +486,15 @@ def _signature_ledger_at_camera_scale(
     framing_value: str,
     *,
     camera_axis: bool = False,
+    scene_value: str = "",
+    spacious_asymmetric: bool = False,
 ) -> str:
+    if "contrapposto" in scene_value.lower():
+        value = value.replace(
+            "a compact grounded full-body stance",
+            "a compact grounded contrapposto with one weight-bearing leg, one relaxed bent knee, "
+            "and counter-tilted hips and shoulders",
+        )
     kind = _framing_kind(framing_value)
     if kind == "full-length" or kind == "wide":
         scaled = value
@@ -297,6 +532,11 @@ def _signature_ledger_at_camera_scale(
             scaled,
             count=1,
         )
+    if spacious_asymmetric:
+        scaled = scaled.replace(
+            "an off-center figure with broad open side space",
+            "a figure fixed on one vertical third with the opposite half kept broadly open",
+        )
     return scaled
 
 
@@ -323,10 +563,13 @@ def _random_utility_reconciliation(
     if feature_axes.get("framing_language") == ["spacious_asymmetric"]:
         clauses.append(
             "Place the visible figure near one vertical third, leave one broad open side region, "
-            "and use the outer-border ornament as the opposite-side counterweight."
+            "and use a thin edge-only outer-border ornament as the opposite-side counterweight "
+            "without filling the broad open region."
         )
     if feature_axes.get("eye_design") == ["rounded_radial"]:
-        clauses.append("Show distinct radial spokes inside both visible irises.")
+        clauses.append(
+            "Give both visible irises high-contrast radial spokes around a clear pupil."
+        )
     if feature_axes.get("palette_language") == ["nocturnal_neon"]:
         clauses.append(
             "Use large dark-blue fields with distinct cyan and magenta neon accents."
@@ -334,7 +577,8 @@ def _random_utility_reconciliation(
     if "contrapposto" in preset.lower():
         clauses.append(
             "Make the contrapposto structural: one straight weight-bearing leg, one relaxed bent "
-            "knee, and clearly counter-tilted hips and shoulders."
+            "knee, clearly counter-tilted hips and shoulders, and a lifted free heel with its toe "
+            "angled outward."
         )
     return " ".join(clauses)
 
@@ -413,6 +657,9 @@ def single_axis_rows(
         )
         anchor = SINGLE_AXIS_ANCHORS[right_family]
         for index, (item_id, prompt) in enumerate(selected, start=1):
+            camera_counterweight = ""
+            if right_family == "camera":
+                prompt, camera_counterweight = _storyboard_camera_body(prompt)
             focus = {
                 "character_design": (
                     "The character design is the measured axis: make its named face geometry, "
@@ -446,6 +693,8 @@ def single_axis_rows(
                 f"Apply exactly this {right_family} direction as the sole changing axis: "
                 f"{prompt}. {anchor}"
             )
+            if right_family == "camera":
+                value = f"{CAMERA_STORYBOARD_BASELINE} {value}"
             rendered_prompt = (
                 f"{value.rstrip('.,;:')}. {PROVEN_VISIBILITY_FINISH}"
                 if right_family == "lighting"
@@ -463,6 +712,13 @@ def single_axis_rows(
                         CAMERA_SUBJECT_CONTRACT
                         if right_family == "camera"
                         else SUBJECT_CONTRACT
+                    ),
+                    reconciliation=(
+                        "The requested camera position and asymmetric placement are the final "
+                        "composition blueprint; make the visible view angle, open side region, "
+                        f"and separate counterweight unmistakable. {camera_counterweight}"
+                        if right_family == "camera"
+                        else ""
                     ),
                 )
             )
@@ -486,6 +742,12 @@ def pairwise_rows(
         raise ValueError("cases_per_type must be at least 1")
     cases: list[dict[str, Any]] = []
     signature_items = _catalog_items(Path("catalog/artists.yaml"))
+    style_items: dict[str, dict[str, Any]] = {}
+    for style_path in (
+        Path("catalog/style_expansion.yaml"),
+        Path("catalog/art_styles.yaml"),
+    ):
+        style_items.update(_catalog_items(style_path))
     for pair_type, left_paths, left_family, right_path, right_family in PAIRWISE_SPECS:
         left = _select(
             (Path(path) for path in left_paths),
@@ -513,13 +775,7 @@ def pairwise_rows(
                     "The second pose direction is the measured axis. Make its named hand placement, "
                     "gaze, shoulder line, leg support, and weight distribution unambiguous."
                 ),
-                "lighting": (
-                    "The second lighting direction has authority over every source shape and "
-                    "direction. Keep both eyes lit and readable; render each named light color "
-                    "visibly; give its key, shadow structure, reflected fill, and small practical "
-                    "accent separate roles. Carry the first style through surface and color rather "
-                    "than replacing this measured lighting geometry."
-                ),
+                "lighting": _lighting_axis_focus(right_prompt),
                 "background": (
                     "The second background direction is the measured axis. Keep the complete subject "
                     "large enough to read while its foreground, middle-distance, horizon, and "
@@ -546,6 +802,8 @@ def pairwise_rows(
                 if signature_ledger
                 else left_prompt
             )
+            if right_family == "lighting":
+                left_direction = _lighting_neutral_style_direction(style_items[left_id])
             if signature_ledger and right_family == "camera":
                 left_direction = (
                     f"{SIGNATURE_OPEN} "
@@ -583,10 +841,7 @@ def pairwise_rows(
                         else SUBJECT_CONTRACT
                     ),
                     reconciliation=(
-                        "The second lighting direction is the final illumination blueprint: all "
-                        "visible illumination comes from its named key, reflected fill, and separate "
-                        "small background practical, while the first style contributes shape, "
-                        "surface, palette, and edge treatment."
+                        _lighting_reconciliation(right_prompt)
                         if right_family == "lighting"
                         else ""
                     ),
@@ -625,22 +880,25 @@ def preset_rows(
         family="preset",
         statuses=None,
     )
-    cases = [
-        {
-            "style_id": f"preset_audit_{index:03d}",
-            "prompt": _profiled_prompt(
-                prompt,
-                "Treat the validated preset as an exact scene contract: visibly preserve its named "
-                "pose, hand placement, location, expression, camera boundary, perspective, light "
-                "color, and accurate skin tone. Preserve the garment pieces visible within the "
-                "requested camera boundary, which controls where lower garment pieces continue "
-                "beyond the canvas. Keep visible skin in a natural skin hue.",
-                framing_value=prompt,
-            ),
-            "factors": {"preset": preset_id},
-        }
-        for index, (preset_id, prompt) in enumerate(presets, start=1)
-    ]
+    cases = []
+    for index, (preset_id, prompt) in enumerate(presets, start=1):
+        scaled_prompt = _crop_aware_scene_body(prompt)
+        framing = _opening_framing_contract(prompt)
+        cases.append(
+            {
+                "style_id": f"preset_audit_{index:03d}",
+                "prompt": _profiled_prompt(
+                    f"{framing} {PRESET_COLOR_BASELINE} {scaled_prompt}",
+                    "Treat the validated preset as an exact scene contract: visibly preserve its "
+                    "named pose, hand placement, location, expression, camera boundary, perspective, "
+                    "light color, and accurate skin tone. Preserve only garment pieces visible "
+                    "within the requested camera boundary. Preserve a named hand placement only "
+                    "when it lies inside that boundary; otherwise preserve its upper-arm direction.",
+                    framing_value=prompt,
+                ),
+                "factors": {"preset": preset_id},
+            }
+        )
     return _rows(cases, seeds, prefix="PA", mode="preset_audit")
 
 
@@ -684,18 +942,29 @@ def random_utility_rows(
     ) in enumerate(zip(chosen_presets, chosen_signatures, strict=True), start=1):
         if not isinstance(feature_axes, dict):
             raise ValueError("random utility signature is missing feature axes")
-        scaled_ledger = _signature_ledger_at_camera_scale(signature_ledger, preset)
+        scaled_preset = _crop_aware_scene_body(preset)
+        scaled_ledger = _signature_ledger_at_camera_scale(
+            signature_ledger,
+            preset,
+            camera_axis=True,
+            scene_value=preset,
+            spacious_asymmetric=feature_axes.get("framing_language")
+            == ["spacious_asymmetric"],
+        )
         cases.append(
             {
                 "style_id": f"random_utility_{index:03d}",
                 "prompt": _profiled_prompt(
-                    f"{SIGNATURE_OPEN} Apply this name-free visual treatment: "
+                    f"{_opening_framing_contract(preset)} {SIGNATURE_OPEN} "
+                    "Apply this name-free visual treatment: "
                     f"{scaled_ledger} Use it to render this "
-                    f"validated scene preset: {preset}. Keep the combined direction coherent",
+                    f"validated scene preset: {scaled_preset}. Keep the combined direction coherent",
                     "Make the name-free visual treatment the unmistakable rendering language across "
                     "the face, eyes, hair, clothing, silhouette, palette, shading, composition, and "
                     "motif placement. The validated scene's pose, hand placement, gaze, support leg, "
-                    "camera boundary, and negative-space layout remain equally binding.",
+                    "camera boundary, and negative-space layout remain equally binding. Preserve a "
+                    "named hand placement only inside that boundary; otherwise preserve its "
+                    "upper-arm direction.",
                     framing_value=preset,
                     reconciliation=_random_utility_reconciliation(
                         feature_axes,

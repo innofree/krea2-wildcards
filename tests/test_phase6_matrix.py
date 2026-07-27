@@ -7,11 +7,22 @@ from pathlib import Path
 import pytest
 import yaml
 
+from export_artist_visual_signature_matrix import reinforced_axis_visibility_ledger
 from export_phase6_matrix import (
     CALIBRATION_SEEDS,
+    CAMERA_STORYBOARD_BASELINE,
     PAIRWISE_SPECS,
     PHASE6_PROFILE_FACTOR,
     PROVEN_VISIBILITY_FINISH,
+    _crop_aware_scene_body,
+    _framing_contract,
+    _lighting_axis_focus,
+    _lighting_neutral_style_direction,
+    _lighting_reconciliation,
+    _opening_framing_contract,
+    _random_utility_reconciliation,
+    _signature_ledger_at_camera_scale,
+    _storyboard_camera_body,
     benchmark_rows,
     calibration_rows,
     pairwise_rows,
@@ -37,6 +48,14 @@ def _item(item_id: str, family: str, *, status: str = "generated") -> dict[str, 
             "light_modeling": ["soft_two_step"],
             "framing_language": ["spacious_asymmetric"],
             "ornament_language": ["textile_echo"],
+        }
+    if family == "style_pack":
+        item["feature_axes"] = {
+            "shape_language": ["faceted_rhythmic"],
+            "color_strategy": ["warm_cool_split"],
+            "surface_character": ["chalk_matte"],
+            "atmosphere": ["ceremonial_energy"],
+            "edge_language": ["crisp_cut"],
         }
     return item
 
@@ -166,8 +185,8 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert len(rows) == 69
     assert len({row["test_id"] for row in rows}) == 69
     assert len({(row["style_id"], row["mode"]) for row in rows}) == 23
-    assert CALIBRATION_SEEDS == (41001, 42002, 43003)
-    assert {row["seed"] for row in rows} == {41001, 42002, 43003}
+    assert CALIBRATION_SEEDS == (51001, 52002, 53003)
+    assert {row["seed"] for row in rows} == {51001, 52002, 53003}
     assert {row["mode"] for row in rows} == {
         "single_axis",
         "pairwise",
@@ -190,6 +209,12 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert "mid-thigh inspection" not in pose
     assert PROVEN_VISIBILITY_FINISH in by_style["krea2_turbo_benchmark"]
 
+    single_camera = by_style["single_axis_camera_001"]
+    assert CAMERA_STORYBOARD_BASELINE in single_camera
+    assert "final composition blueprint" in single_camera
+    assert "Photograph an adult subject" not in single_camera
+    assert "small neutral-grey rectangular storyboard block" not in single_camera
+
     camera = by_style["pairwise_artist_signature_camera_composition_001"]
     assert "these eight cues" in camera
     assert "framing language—" in camera
@@ -199,8 +224,9 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert camera.rfind("Final camera lock—") > camera.rfind("framing language—")
 
     lighting = by_style["pairwise_style_pack_lighting_001"]
+    assert "pigment fields printed across clothing and backdrop" in lighting
+    assert "direction alone supplies every actual source" in lighting
     assert "final illumination blueprint" in lighting
-    assert "separate small background practical" in lighting
     assert lighting.rfind("Final camera lock—") > lighting.rfind(
         "final illumination blueprint"
     )
@@ -210,8 +236,10 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert "Final camera lock—frame literally" in coloring
 
     preset = by_style["preset_audit_001"]
-    assert "camera boundary, which controls where lower garment pieces" in preset
-    assert preset.rfind("Final camera lock—") > preset.rfind("natural skin hue")
+    assert "Preserve only garment pieces visible" in preset
+    assert preset.count("Opening camera contract—") == 1
+    assert preset.count("Final camera lock—") == 1
+    assert preset.rfind("Final camera lock—") > preset.rfind("natural-color")
 
     random_close = by_style["random_utility_001"]
     for conflict in (
@@ -222,6 +250,106 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     ):
         assert conflict not in random_close
     assert "these eight cues" in random_close
+    assert random_close.count("Opening camera contract—") == 1
+    assert random_close.count("Final camera lock—") == 1
     assert random_close.rfind("Final camera lock—") > random_close.rfind(
         "outer-border ornament"
     )
+
+
+def test_crop_aware_scene_body_removes_out_of_frame_lower_garments() -> None:
+    chest = (
+        "An adult pauses mid-step with separated arms and stable weight in a library, "
+        "wearing a structured overshirt, fluid column dress, and tapered trousers, with a "
+        "quiet smile. Use chest-up framing with gentle compression."
+    )
+    rendered = _crop_aware_scene_body(chest)
+    assert "mid-step" not in rendered
+    assert "tapered trousers" not in rendered
+    assert "visible overshirt shoulders, collar, and chest panels" in rendered
+    assert "visible dress bodice" in rendered
+    assert "chest-up framing" in rendered
+
+    thigh = (
+        "An adult turns in a coastal setting, wearing a collarless jacket, wide-leg trousers, "
+        "and high-neck base, with a calm gaze. Use eye-level thigh-up framing."
+    )
+    rendered = _crop_aware_scene_body(thigh)
+    assert "wide-leg trousers" not in rendered
+    assert "two broad upper-leg fabric panels intersected at mid-thigh" in rendered
+
+    chest_hand = (
+        "An adult stands three-quarters, one hand at the waist and one lowered in a concourse, "
+        "wearing a longline vest, fitted top, and straight trousers, with a calm gaze. "
+        "Use chest-up framing."
+    )
+    rendered = _crop_aware_scene_body(chest_hand)
+    assert "one hand at the waist" not in rendered
+    assert "upper arm bending toward a hand that continues below the frame" in rendered
+    assert "longline vest" not in rendered
+    assert "visible vest neckline, shoulders, and lapels" in rendered
+    assert "straight trousers" not in rendered
+
+
+def test_wide_camera_contract_fixes_scale_and_floor_margin() -> None:
+    wide = "Use a wide view with the subject on a third and a clear depth path."
+    opening = _opening_framing_contract(wide)
+    closing = _framing_contract(wide)
+    assert opening.startswith("Opening camera contract—pull the camera far back")
+    assert closing.startswith("Final camera lock—pull the camera far back")
+    for value in (opening, closing):
+        assert "both shoes" in value
+        assert "visible floor below both shoes" in value
+        assert "at most two-thirds of the canvas height" in value
+        assert "large enough for the face" not in value
+
+
+def test_storyboard_camera_body_normalizes_medium_and_counterweight() -> None:
+    body, counterweight = _storyboard_camera_body(
+        "Photograph an adult subject from a clean side camera with one clear visual counterweight."
+    )
+    assert body.startswith("Show the adult subject in this storyboard")
+    assert "Photograph" not in body
+    assert "small neutral-grey rectangular storyboard block" in counterweight
+    assert "sole visual counterweight" in counterweight
+
+
+def test_lighting_style_synthesis_and_pose_ledger_remove_conflicts() -> None:
+    item = _item("style_pack_001", "style_pack", status="approved")
+    lighting_style = _lighting_neutral_style_direction(item)
+    assert "amber-lit side" not in lighting_style
+    assert "blue-shadowed side" not in lighting_style
+    assert "amber and blue pigment fields" in lighting_style
+    assert "second lighting direction alone supplies" in lighting_style
+
+    plain_light = "Use one broad neutral daylight source with soft shadows."
+    plain_authority = _lighting_axis_focus(plain_light) + _lighting_reconciliation(
+        plain_light
+    )
+    assert "practical" not in plain_authority
+    assert "reflected light" not in plain_authority
+
+    complex_light = (
+        "Use a cool key with readable reflected fill and one small warm practical lamp."
+    )
+    complex_authority = _lighting_axis_focus(complex_light) + _lighting_reconciliation(
+        complex_light
+    )
+    assert "separate small background source" in complex_authority
+    assert "reflected light or fill" in complex_authority
+
+    artist = _item("artist_signature_001", "artist_signature", status="approved")
+    ledger = reinforced_axis_visibility_ledger(artist["feature_axes"])
+    aligned = _signature_ledger_at_camera_scale(
+        ledger,
+        "Use eye-level full-length framing.",
+        scene_value="An adult holds a balanced contrapposto.",
+    )
+    assert "compact grounded contrapposto" in aligned
+    assert "compact grounded full-body stance" not in aligned
+    pose_lock = _random_utility_reconciliation(
+        artist["feature_axes"],
+        "An adult holds a balanced contrapposto.",
+    )
+    assert "lifted free heel" in pose_lock
+    assert "toe angled outward" in pose_lock
