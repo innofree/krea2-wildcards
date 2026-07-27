@@ -1,11 +1,16 @@
 from __future__ import annotations
 
+import csv
+import hashlib
+import json
+from pathlib import Path
 from typing import Any
 
 import pytest
 
+import summarize_phase6_results as phase6
 from export_phase6_matrix import PAIRWISE_SPECS
-from summarize_phase6_results import summarize
+from summarize_phase6_results import main, summarize, validate_report_freshness
 from summarize_results import METRICS
 
 
@@ -46,6 +51,57 @@ def _matrix(
     return jobs, [_scored(job) for job in jobs]
 
 
+def _write_cli_inputs(root: Path) -> tuple[Path, Path]:
+    cases = [
+        ("line_a", "single_axis", {"axis": "linework"}),
+        ("line_b", "single_axis", {"axis": "linework"}),
+        ("color_a", "single_axis", {"axis": "coloring"}),
+        ("color_b", "single_axis", {"axis": "coloring"}),
+    ]
+    jobs, rows = _matrix(cases)
+    inputs = root / "inputs"
+    inputs.mkdir(parents=True)
+    matrix = inputs / "matrix.jsonl"
+    matrix.write_text(
+        "".join(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    **job,
+                    "label": job["style_id"],
+                    "prompt": "Depict one adult subject in a plain studio.",
+                },
+                sort_keys=True,
+            )
+            + "\n"
+            for job in jobs
+        ),
+        encoding="utf-8",
+    )
+    scored = inputs / "scored.csv"
+    fields = [
+        "test_id",
+        "style_id",
+        "mode",
+        "seed",
+        "factors_json",
+        *METRICS,
+        "critical_failure",
+    ]
+    with scored.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(
+                {
+                    **{field: row[field] for field in fields if field in row},
+                    "factors_json": json.dumps(row["factors"], sort_keys=True),
+                    "critical_failure": "false",
+                }
+            )
+    return matrix, scored
+
+
 def test_single_axis_summary_requires_both_axes() -> None:
     cases = [
         ("line_a", "single_axis", {"axis": "linework"}),
@@ -58,6 +114,8 @@ def test_single_axis_summary_requires_both_axes() -> None:
     assert report["complete"] is True
     assert report["tested_axes"] == ["coloring", "linework"]
     assert report["total_cases"] == 4
+    assert "matrix_path" not in report
+    assert "scored_sha256" not in report
 
 
 def test_pairwise_summary_requires_ninety_six_cases_and_six_types() -> None:
@@ -133,3 +191,101 @@ def test_summary_rejects_metadata_drift_and_missing_seeds() -> None:
     )
     with pytest.raises(ValueError, match="at least 3 distinct seeds"):
         summarize("single-axis", jobs, rows)
+
+
+def test_cli_records_byte_digests_and_detects_report_or_input_drift(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    root = tmp_path / "repo"
+    root.mkdir()
+    monkeypatch.setattr(phase6, "ROOT", root.resolve())
+    matrix, scored = _write_cli_inputs(root)
+    output = root / "reports/summary.json"
+    arguments = [
+        "single-axis",
+        "inputs/scored.csv",
+        "--matrix",
+        "inputs/matrix.jsonl",
+        "--output",
+        str(output),
+    ]
+
+    assert main(arguments) == 0
+    report = json.loads(output.read_text(encoding="utf-8"))
+    assert report["matrix_path"] == "inputs/matrix.jsonl"
+    assert report["scored_path"] == "inputs/scored.csv"
+    assert report["matrix_sha256"] == hashlib.sha256(matrix.read_bytes()).hexdigest()
+    assert report["scored_sha256"] == hashlib.sha256(scored.read_bytes()).hexdigest()
+    validate_report_freshness(
+        report,
+        matrix,
+        scored,
+        matrix_path="inputs/matrix.jsonl",
+        scored_path="inputs/scored.csv",
+    )
+
+    stale_report = dict(report)
+    stale_report["matrix_sha256"] = "0" * 64
+    with pytest.raises(ValueError, match="report evidence digest mismatch"):
+        validate_report_freshness(
+            stale_report,
+            matrix,
+            scored,
+            matrix_path="inputs/matrix.jsonl",
+            scored_path="inputs/scored.csv",
+        )
+
+    old_scored_digest = report["scored_sha256"]
+    scored.write_bytes(scored.read_bytes() + b"\n")
+    with pytest.raises(ValueError, match="report evidence digest mismatch"):
+        validate_report_freshness(
+            report,
+            matrix,
+            scored,
+            matrix_path="inputs/matrix.jsonl",
+            scored_path="inputs/scored.csv",
+        )
+    assert main([*arguments, "--overwrite"]) == 0
+    refreshed = json.loads(output.read_text(encoding="utf-8"))
+    assert refreshed["scored_sha256"] != old_scored_digest
+    assert refreshed["scored_sha256"] == hashlib.sha256(scored.read_bytes()).hexdigest()
+
+
+def test_cli_rejects_absolute_parent_and_outside_symlink_without_path_leak(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    root = tmp_path / "repo"
+    root.mkdir()
+    monkeypatch.setattr(phase6, "ROOT", root.resolve())
+    _write_cli_inputs(root)
+    outside = tmp_path / "private-input.csv"
+    outside.write_text("not read\n", encoding="utf-8")
+    link = root / "inputs/outside.csv"
+    link.symlink_to(outside)
+    output = root / "reports/summary.json"
+
+    unsafe_inputs = (
+        str(outside),
+        "../private-input.csv",
+        "inputs/outside.csv",
+    )
+    for scored_arg in unsafe_inputs:
+        result = main(
+            [
+                "single-axis",
+                scored_arg,
+                "--matrix",
+                "inputs/matrix.jsonl",
+                "--output",
+                str(output),
+            ]
+        )
+        captured = capsys.readouterr().out
+        assert result == 2
+        assert str(outside) not in captured
+        assert scored_arg not in captured
+        assert "repository" in captured
+    assert not output.exists()

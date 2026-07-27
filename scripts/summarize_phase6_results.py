@@ -3,10 +3,11 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Any
+from typing import Any, Sequence
 
 from run_remote_prompt_matrix import load_jobs
 from summarize_results import METRICS, parse_boolean, parse_metric
@@ -16,6 +17,65 @@ MINIMUM_SEEDS = 3
 MINIMUM_PAIRWISE_CASES = 96
 MINIMUM_PRESETS = 100
 MINIMUM_RANDOM_SAMPLES = 20
+ROOT = Path(__file__).resolve().parents[1]
+EVIDENCE_PATH_FIELDS = ("matrix_path", "scored_path")
+EVIDENCE_DIGEST_FIELDS = ("matrix_sha256", "scored_sha256")
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def safe_repository_input(path: Path, *, field: str) -> tuple[Path, str]:
+    if path.is_absolute() or ".." in path.parts:
+        raise ValueError(f"{field} must be a safe repository-relative path")
+    resolved = (ROOT / path).resolve()
+    try:
+        relative = resolved.relative_to(ROOT)
+    except ValueError as exc:
+        raise ValueError(f"{field} must remain inside the repository") from exc
+    if not resolved.is_file():
+        raise ValueError(f"{field} must reference an existing repository file")
+    return resolved, relative.as_posix()
+
+
+def evidence_metadata(
+    matrix: Path,
+    scored: Path,
+    *,
+    matrix_path: str,
+    scored_path: str,
+) -> dict[str, str]:
+    return {
+        "matrix_path": matrix_path,
+        "matrix_sha256": file_sha256(matrix),
+        "scored_path": scored_path,
+        "scored_sha256": file_sha256(scored),
+    }
+
+
+def validate_report_freshness(
+    report: dict[str, Any],
+    matrix: Path,
+    scored: Path,
+    *,
+    matrix_path: str,
+    scored_path: str,
+) -> None:
+    expected = evidence_metadata(
+        matrix,
+        scored,
+        matrix_path=matrix_path,
+        scored_path=scored_path,
+    )
+    if any(report.get(field) != expected[field] for field in EVIDENCE_PATH_FIELDS):
+        raise ValueError("report evidence path mismatch")
+    if any(report.get(field) != expected[field] for field in EVIDENCE_DIGEST_FIELDS):
+        raise ValueError("report evidence digest mismatch")
 
 
 def _load_scored(path: Path) -> list[dict[str, Any]]:
@@ -279,7 +339,7 @@ def summarize(
     return common
 
 
-def main() -> int:
+def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="Summarize cross-checked Phase 6 image reviews"
     )
@@ -298,12 +358,34 @@ def main() -> int:
     parser.add_argument("--matrix", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--overwrite", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     try:
         if args.output.exists() and not args.overwrite:
             raise ValueError("output exists; pass --overwrite to replace it")
-        document = summarize(
-            args.kind, load_jobs(args.matrix), _load_scored(args.scored)
+        matrix, matrix_path = safe_repository_input(args.matrix, field="matrix")
+        scored, scored_path = safe_repository_input(args.scored, field="scored")
+        initial_evidence = evidence_metadata(
+            matrix,
+            scored,
+            matrix_path=matrix_path,
+            scored_path=scored_path,
+        )
+        document = summarize(args.kind, load_jobs(matrix), _load_scored(scored))
+        final_evidence = evidence_metadata(
+            matrix,
+            scored,
+            matrix_path=matrix_path,
+            scored_path=scored_path,
+        )
+        if final_evidence != initial_evidence:
+            raise ValueError("Phase 6 evidence input changed while summarizing")
+        document.update(final_evidence)
+        validate_report_freshness(
+            document,
+            matrix,
+            scored,
+            matrix_path=matrix_path,
+            scored_path=scored_path,
         )
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(
@@ -314,7 +396,10 @@ def main() -> int:
             f"status={document['status']} complete={document['complete']}."
         )
         return 0 if document["complete"] else 1
-    except (OSError, TypeError, ValueError, json.JSONDecodeError) as exc:
+    except OSError:
+        print("ERROR: unable to read or write Phase 6 evidence files")
+        return 2
+    except (TypeError, ValueError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}")
         return 2
 
