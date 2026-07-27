@@ -31,9 +31,7 @@ def matrix_row(**overrides: object) -> dict[str, object]:
 
 
 def write_matrix(path: Path, rows: list[dict[str, object]]) -> None:
-    path.write_text(
-        "".join(json.dumps(row) + "\n" for row in rows), encoding="utf-8"
-    )
+    path.write_text("".join(json.dumps(row) + "\n" for row in rows), encoding="utf-8")
 
 
 def fake_png(width: int = 1024, height: int = 1024) -> bytes:
@@ -54,7 +52,10 @@ def test_load_jobs_accepts_resolved_pairwise_metadata(tmp_path: Path) -> None:
     ("rows", "message"),
     [
         ([matrix_row(prompt="Use __krea2/style/all__ here.")], "unresolved wildcard"),
-        ([matrix_row(prompt="Fetch http://private.invalid before rendering.")], "connection data"),
+        (
+            [matrix_row(prompt="Fetch http://private.invalid before rendering.")],
+            "connection data",
+        ),
         ([matrix_row(api_url="private.invalid")], "unknown field"),
         ([matrix_row(seed=True)], "64-bit unsigned"),
         ([matrix_row(), matrix_row()], "duplicate test_id"),
@@ -126,10 +127,14 @@ def test_submit_job_guards_queue_and_records_only_private_alias(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     job = runner.validate_job(matrix_row(), 1)
-    workflow = json.loads((ROOT / "tests/baseline/workflow.json").read_text(encoding="utf-8"))
+    workflow = json.loads(
+        (ROOT / "tests/baseline/workflow.json").read_text(encoding="utf-8")
+    )
     events: list[str] = []
 
-    monkeypatch.setattr(runner, "require_empty_queue", lambda _url: events.append("queue"))
+    monkeypatch.setattr(
+        runner, "require_empty_queue", lambda _url: events.append("queue")
+    )
     monkeypatch.setattr(
         runner,
         "http_json",
@@ -156,7 +161,67 @@ def test_submit_job_guards_queue_and_records_only_private_alias(
     raw = (run_dir / "run.json").read_text(encoding="utf-8")
     assert "private_comfyui" in raw
     assert "http://private.invalid" not in raw
+    assert json.loads(raw)["queue_depth"] == 1
     runner.validate_complete_run(run_dir, job)
+
+
+def test_queue_depth_fills_then_collects_in_submission_order(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    jobs = [
+        runner.validate_job(
+            matrix_row(
+                test_id=f"PAIR{index:04d}",
+                style_id=f"pairwise_{index}",
+                seed=1000 + index,
+            ),
+            index,
+        )
+        for index in range(1, 6)
+    ]
+    events: list[str] = []
+
+    def enqueue(_url: str, _workflow: object, job: dict[str, object]) -> str:
+        events.append(f"queue:{job['test_id']}")
+        return f"prompt-{job['test_id']}"
+
+    def collect(
+        _url: str,
+        _prompt_id: str,
+        job: dict[str, object],
+        _run_dir: Path,
+        *,
+        timeout: int,
+        queue_depth: int,
+    ) -> None:
+        assert timeout == 10
+        assert queue_depth == 2
+        events.append(f"collect:{job['test_id']}")
+
+    monkeypatch.setattr(runner, "enqueue_job", enqueue)
+    monkeypatch.setattr(runner, "collect_job", collect)
+
+    runner.run_pending_jobs(
+        "http://private.invalid",
+        {},
+        jobs,
+        tmp_path,
+        timeout=10,
+        queue_depth=2,
+    )
+
+    assert events == [
+        "queue:PAIR0001",
+        "queue:PAIR0002",
+        "collect:PAIR0001",
+        "queue:PAIR0003",
+        "collect:PAIR0002",
+        "queue:PAIR0004",
+        "collect:PAIR0003",
+        "queue:PAIR0005",
+        "collect:PAIR0004",
+        "collect:PAIR0005",
+    ]
 
 
 def test_scorecard_and_manifest_have_complete_generic_identity(tmp_path: Path) -> None:
@@ -178,6 +243,7 @@ def test_scorecard_and_manifest_have_complete_generic_identity(tmp_path: Path) -
     assert json.loads(row["factors_json"])["camera"] == "eye_level"
     assert document["remote"] == "private_comfyui"
     assert document["job_count"] == document["completed_count"] == 1
+    assert document["queue_depth"] == 1
     assert "api_url" not in json.dumps(document)
 
 
@@ -200,7 +266,11 @@ def test_cli_defaults_to_offline_dry_run(tmp_path: Path) -> None:
     matrix = tmp_path / "matrix.jsonl"
     write_matrix(matrix, [matrix_row()])
     result = subprocess.run(
-        [sys.executable, str(ROOT / "scripts/run_remote_prompt_matrix.py"), str(matrix)],
+        [
+            sys.executable,
+            str(ROOT / "scripts/run_remote_prompt_matrix.py"),
+            str(matrix),
+        ],
         cwd=ROOT,
         env={},
         capture_output=True,

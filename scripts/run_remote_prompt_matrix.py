@@ -73,8 +73,14 @@ def _clean_label(value: Any, *, line_number: int, style_id: str) -> str:
         or len(value) > 200
     ):
         raise ValueError(f"line {line_number}: label must be a clean non-empty line")
-    if URL_RE.search(value) or HOME_PATH_RE.search(value) or ACCOUNT_AT_HOST_RE.search(value):
-        raise ValueError(f"line {line_number}: label contains forbidden connection data")
+    if (
+        URL_RE.search(value)
+        or HOME_PATH_RE.search(value)
+        or ACCOUNT_AT_HOST_RE.search(value)
+    ):
+        raise ValueError(
+            f"line {line_number}: label contains forbidden connection data"
+        )
     return value
 
 
@@ -126,13 +132,17 @@ def validate_job(raw: Any, line_number: int) -> dict[str, Any]:
         or HOME_PATH_RE.search(prompt)
         or ACCOUNT_AT_HOST_RE.search(prompt)
     ):
-        raise ValueError(f"line {line_number}: prompt contains forbidden connection data")
+        raise ValueError(
+            f"line {line_number}: prompt contains forbidden connection data"
+        )
 
     return {
         "schema_version": 1,
         "test_id": test_id,
         "style_id": style_id,
-        "label": _clean_label(raw.get("label"), line_number=line_number, style_id=style_id),
+        "label": _clean_label(
+            raw.get("label"), line_number=line_number, style_id=style_id
+        ),
         "mode": mode,
         "seed": seed,
         "prompt": prompt,
@@ -144,7 +154,9 @@ def load_jobs(path: Path) -> list[dict[str, Any]]:
     jobs: list[dict[str, Any]] = []
     seen_test_ids: set[str] = set()
     seen_matrix_keys: set[tuple[str, str, int]] = set()
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(), start=1
+    ):
         if not line.strip():
             continue
         try:
@@ -186,15 +198,21 @@ def validate_complete_run(run_dir: Path, job: dict[str, Any]) -> None:
     if any(metadata.get(key) != value for key, value in expected.items()):
         raise ValueError(f"run metadata mismatch: {record_path(run_dir)}")
     if "api_url" in metadata:
-        raise ValueError(f"run metadata contains forbidden api_url: {record_path(run_dir)}")
+        raise ValueError(
+            f"run metadata contains forbidden api_url: {record_path(run_dir)}"
+        )
     images = metadata.get("images")
     if images != ["image_01.png"]:
-        raise ValueError(f"run must record exactly one relative image: {record_path(run_dir)}")
+        raise ValueError(
+            f"run must record exactly one relative image: {record_path(run_dir)}"
+        )
     image_path = run_dir / images[0]
     if not image_path.is_file():
         raise ValueError(f"recorded image is missing: {record_path(run_dir)}")
     if png_dimensions(image_path.read_bytes()) != EXPECTED_DIMENSIONS:
-        raise ValueError(f"recorded image dimensions are invalid: {record_path(run_dir)}")
+        raise ValueError(
+            f"recorded image dimensions are invalid: {record_path(run_dir)}"
+        )
 
 
 def pending_jobs(
@@ -206,7 +224,9 @@ def pending_jobs(
         if not run_dir.exists():
             pending.append(job)
         elif not resume:
-            raise FileExistsError(f"run directory already exists: {record_path(run_dir)}")
+            raise FileExistsError(
+                f"run directory already exists: {record_path(run_dir)}"
+            )
         else:
             validate_complete_run(run_dir, job)
     return pending
@@ -221,14 +241,43 @@ def submit_job(
     timeout: int,
 ) -> None:
     require_empty_queue(api_url)
+    prompt_id = enqueue_job(api_url, workflow, job)
+    collect_job(
+        api_url,
+        prompt_id,
+        job,
+        run_dir,
+        timeout=timeout,
+        queue_depth=1,
+    )
+    require_empty_queue(api_url)
+
+
+def enqueue_job(
+    api_url: str,
+    workflow: dict[str, Any],
+    job: dict[str, Any],
+) -> str:
     prepared = prepare_workflow(workflow, job["prompt"], job["test_id"], job["seed"])
     result = http_json(
         f"{api_url.rstrip('/')}/prompt",
         {"prompt": prepared, "client_id": str(uuid.uuid4())},
     )
     prompt_id = result.get("prompt_id")
-    if not prompt_id:
+    if not isinstance(prompt_id, str) or not prompt_id:
         raise RuntimeError("remote submission rejected")
+    return prompt_id
+
+
+def collect_job(
+    api_url: str,
+    prompt_id: str,
+    job: dict[str, Any],
+    run_dir: Path,
+    *,
+    timeout: int,
+    queue_depth: int,
+) -> None:
     remote_record = wait_for_result(api_url, prompt_id, timeout)
     images = download_images(api_url, remote_record, run_dir, EXPECTED_DIMENSIONS)
     if [path.name for path in images] != ["image_01.png"]:
@@ -245,12 +294,69 @@ def submit_job(
         "resolved_prompt": job["prompt"],
         "factors": job["factors"],
         "images": ["image_01.png"],
+        "queue_depth": queue_depth,
     }
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "run.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    require_empty_queue(api_url)
+
+
+def run_pending_jobs(
+    api_url: str,
+    workflow: dict[str, Any],
+    pending: list[dict[str, Any]],
+    output: Path,
+    *,
+    timeout: int,
+    queue_depth: int,
+) -> None:
+    if queue_depth == 1:
+        for index, job in enumerate(pending, start=1):
+            print(
+                f"[{index}/{len(pending)}] {job['test_id']} "
+                f"style={job['style_id']} mode={job['mode']} seed={job['seed']}",
+                flush=True,
+            )
+            submit_job(
+                api_url,
+                workflow,
+                job,
+                run_dir_for(output, job),
+                timeout=timeout,
+            )
+        return
+
+    active: list[tuple[dict[str, Any], str]] = []
+    submitted = 0
+    completed = 0
+    while submitted < len(pending) or active:
+        while submitted < len(pending) and len(active) < queue_depth:
+            job = pending[submitted]
+            prompt_id = enqueue_job(api_url, workflow, job)
+            active.append((job, prompt_id))
+            submitted += 1
+            print(
+                f"[queued {submitted}/{len(pending)} depth={len(active)}] "
+                f"{job['test_id']} style={job['style_id']} "
+                f"mode={job['mode']} seed={job['seed']}",
+                flush=True,
+            )
+        job, prompt_id = active.pop(0)
+        collect_job(
+            api_url,
+            prompt_id,
+            job,
+            run_dir_for(output, job),
+            timeout=timeout,
+            queue_depth=queue_depth,
+        )
+        completed += 1
+        print(
+            f"[completed {completed}/{len(pending)} queued={len(active)}] "
+            f"{job['test_id']}",
+            flush=True,
+        )
 
 
 def scorecard_content(output: Path, jobs: list[dict[str, Any]]) -> str:
@@ -301,6 +407,8 @@ def manifest_document(
     workflow_path: Path,
     output: Path,
     jobs: list[dict[str, Any]],
+    *,
+    queue_depth: int = 1,
 ) -> dict[str, Any]:
     return {
         "schema_version": 1,
@@ -311,6 +419,7 @@ def manifest_document(
         "workflow": record_path(workflow_path),
         "workflow_sha256": file_sha256(workflow_path),
         "dimensions": list(EXPECTED_DIMENSIONS),
+        "queue_depth": queue_depth,
         "job_count": len(jobs),
         "completed_count": len(jobs),
         "style_count": len({job["style_id"] for job in jobs}),
@@ -352,12 +461,18 @@ def redact_error(message: str, api_url: str | None) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Run a fully resolved prompt JSONL matrix sequentially on private ComfyUI"
+        description="Run a fully resolved prompt JSONL matrix on private ComfyUI"
     )
     parser.add_argument("matrix", type=Path)
     parser.add_argument("--workflow", type=Path, default=DEFAULT_WORKFLOW)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--timeout", type=int, default=600)
+    parser.add_argument(
+        "--queue-depth",
+        type=int,
+        default=1,
+        help="maximum number of this matrix's jobs queued after an empty-queue preflight",
+    )
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--submit", action="store_true")
     args = parser.parse_args()
@@ -373,13 +488,18 @@ def main() -> int:
             )
         for job in jobs:
             prepare_workflow(workflow, job["prompt"], job["test_id"], job["seed"])
-        modes = ", ".join(f"{key}={value}" for key, value in sorted(Counter(job["mode"] for job in jobs).items()))
+        modes = ", ".join(
+            f"{key}={value}"
+            for key, value in sorted(Counter(job["mode"] for job in jobs).items())
+        )
         print(
             f"Prompt matrix: {len(jobs)} job(s), "
             f"{len({job['style_id'] for job in jobs})} style(s), modes[{modes}]"
         )
         if not args.submit:
-            print("DRY RUN complete. Re-run with --submit and --output to execute remotely.")
+            print(
+                "DRY RUN complete. Re-run with --submit and --output to execute remotely."
+            )
             return 0
         if args.output is None:
             raise ValueError("--output is required with --submit")
@@ -387,34 +507,39 @@ def main() -> int:
             raise ValueError(f"set {API_URL_ENV} before --submit")
         if args.timeout < 1:
             raise ValueError("--timeout must be at least 1 second")
+        if not 1 <= args.queue_depth <= 256:
+            raise ValueError("--queue-depth must be between 1 and 256")
 
         pending = pending_jobs(jobs, args.output, resume=args.resume)
-        print(f"Resume preflight: complete={len(jobs) - len(pending)} pending={len(pending)}")
+        print(
+            f"Resume preflight: complete={len(jobs) - len(pending)} pending={len(pending)}"
+        )
         prepared = prepare_workflow(
             workflow, jobs[0]["prompt"], jobs[0]["test_id"], jobs[0]["seed"]
         )
         validate_remote_nodes(api_url, prepared)
         require_empty_queue(api_url)
-        for index, job in enumerate(pending, start=1):
-            print(
-                f"[{index}/{len(pending)}] {job['test_id']} "
-                f"style={job['style_id']} mode={job['mode']} seed={job['seed']}",
-                flush=True,
-            )
-            submit_job(
-                api_url,
-                workflow,
-                job,
-                run_dir_for(args.output, job),
-                timeout=args.timeout,
-            )
+        run_pending_jobs(
+            api_url,
+            workflow,
+            pending,
+            args.output,
+            timeout=args.timeout,
+            queue_depth=args.queue_depth,
+        )
         require_empty_queue(api_url)
         for job in jobs:
             validate_complete_run(run_dir_for(args.output, job), job)
         write_scorecard(args.output / "scorecard.csv", args.output, jobs)
         write_manifest(
             args.output / "manifest.json",
-            manifest_document(args.matrix, args.workflow, args.output, jobs),
+            manifest_document(
+                args.matrix,
+                args.workflow,
+                args.output,
+                jobs,
+                queue_depth=args.queue_depth,
+            ),
         )
         print(f"Matrix completed: {len(jobs)} verified 1024x1024 PNG run(s).")
         return 0

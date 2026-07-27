@@ -886,6 +886,23 @@ tests/baseline/reference_prompts.txt
 
 동일 seed와 동일 프롬프트에서 재현 가능한 baseline 결과가 생성되어야 한다.
 
+### 원격 생성 용량 및 큐 운영
+
+원격 생성 노드는 NVIDIA RTX PRO 6000과 96 GB VRAM을 갖춘 전용
+ComfyUI 환경을 기준으로 한다. 이 용량은 calibration 이후의 다중 seed screen,
+retest, pairwise, preset 및 random benchmark를 batch 또는 대량 queue로 처리할 수
+있는 운영 자원으로 간주한다.
+
+* batch 크기와 동시 queue 깊이는 명시적인 실행 인자로 관리하고 report manifest에 기록한다.
+* 새 batch를 시작하기 전에 원격 큐에 기존 외부 작업이 없는지 확인한다.
+* 실행 도중 생성된 이 계획의 job만 추적하며, 기존 작업을 취소·재정렬·삭제하지 않는다.
+* 대량 queue에서도 각 test ID, seed, resolved prompt hash, workflow hash, 이미지 hash 및
+  실행 결과를 개별 `run.json`으로 보존한다.
+* 중단 후 재개 시 이미 검증된 run은 건너뛰고 누락되거나 불일치한 run만 실패로 처리한다.
+* GPU 용량은 seed 수 또는 승인 기준을 줄이는 근거로 사용하지 않는다. screen은 최소
+  3개 seed, `approved` 승격은 서로 다른 5개 seed를 그대로 요구한다.
+* wildcard 배포 후에는 ComfyUI 전체 재시작 대신 ImpactWildcardProcessor reload를 사용한다.
+
 ---
 
 ## Phase 1. 원본 태그 및 스타일 데이터 수집
