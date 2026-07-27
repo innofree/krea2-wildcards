@@ -1223,6 +1223,11 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    보여야 한다. 하나라도 top/head/face crop이 있으면 전체 115개로 확장하지 않고
    wrapper를 다시 versioning한다. 이 crop gate와 8축 품질 gate를 모두 통과한
    profile만 잔여 `generated` 전체에 서로 다른 새 3개 seed로 실행한다.
+   실제 v0.8.4 결과는 crop 0/15였으나 `character sheet` 해석으로 두 style에서
+   복수 view가 발생했고 8축 장식 가시성도 부족하여 `testing 0 / rejected 5`,
+   critical-failure image 6으로 전체 확장을 거부했다. 후속 v0.8.5는
+   `single-view illustration`과 no-lineup/turnaround/panel 제약을 사용하며 다시
+   5개 × 새 3-seed calibration을 통과해야 한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.
