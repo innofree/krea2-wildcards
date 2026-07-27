@@ -2,12 +2,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import tempfile
-from pathlib import Path
-from typing import Any
+from pathlib import Path, PurePosixPath
+from typing import Any, Sequence
 
 import yaml
 
@@ -16,6 +17,64 @@ from common import iter_leaf_lists, load_yaml
 
 WILDCARD_RE = re.compile(r"__[A-Za-z0-9][A-Za-z0-9_./-]*__")
 NOVELAI_BRACE_RE = re.compile(r"[{}]")
+PRODUCTION_ARTIFACT = Path("build/impact-production/krea2_complete_pack.yaml")
+DEFAULT_PROMPT_LOG = Path(
+    "tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json"
+)
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _repo_file(root: Path, raw: Path, *, label: str) -> tuple[Path, str]:
+    pure = PurePosixPath(raw.as_posix())
+    if raw.is_absolute() or not pure.parts or ".." in pure.parts:
+        raise ValueError(f"{label} must be a safe repository-relative path")
+    current = root
+    for part in pure.parts:
+        current /= part
+        if current.is_symlink():
+            raise ValueError(f"{label} must not traverse symbolic links")
+    candidate = current.resolve(strict=False)
+    try:
+        candidate.relative_to(root.resolve())
+    except ValueError as exc:
+        raise ValueError(f"{label} must remain inside the repository") from exc
+    if not candidate.is_file():
+        raise ValueError(f"{label} must reference an existing file")
+    return candidate, pure.as_posix()
+
+
+def _image_reference_valid(root: Path, run_path: Path, raw: Any) -> bool:
+    if not isinstance(raw, str) or not raw or "\\" in raw:
+        return False
+    pure = PurePosixPath(raw)
+    if pure.is_absolute() or not pure.parts or ".." in pure.parts:
+        return False
+    relative = Path(*pure.parts)
+    for candidate in (root / relative, run_path.parent / relative):
+        current = candidate.anchor and Path(candidate.anchor) or Path()
+        symlinked = False
+        for part in candidate.parts[len(current.parts) :]:
+            current /= part
+            if current.is_symlink():
+                symlinked = True
+                break
+        if symlinked:
+            continue
+        resolved = candidate.resolve(strict=False)
+        try:
+            resolved.relative_to(root.resolve())
+        except ValueError:
+            continue
+        if resolved.is_file():
+            return True
+    return False
 
 
 def _manifest(path: Path) -> dict[str, Any]:
@@ -37,28 +96,63 @@ def _manifest(path: Path) -> dict[str, Any]:
         raise ValueError("runtime manifest files must be a non-empty text list")
     if not isinstance(items, list) or not items:
         raise ValueError("runtime manifest items must be a non-empty list")
+    if type(document.get("item_count")) is not int or document.get("item_count") != len(
+        items
+    ):
+        raise ValueError("runtime manifest item count is inconsistent")
     return document
 
 
-def _logged_prompts(root: Path) -> int:
-    count = 0
-    if not root.is_dir():
-        return 0
-    for path in root.rglob("run.json"):
+def _prompt_log_evidence(
+    root: Path, prompt_logs: Sequence[Path]
+) -> list[dict[str, str]]:
+    if not prompt_logs:
+        raise ValueError("at least one --prompt-log run.json is required")
+    evidence: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for index, raw_path in enumerate(prompt_logs, start=1):
+        path, relative = _repo_file(root, raw_path, label=f"prompt log {index}")
+        if path.name != "run.json":
+            raise ValueError(f"prompt log {index} must be a run.json file")
+        if relative in seen:
+            raise ValueError("prompt logs must be unique")
         try:
             value = json.loads(path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            continue
-        if isinstance(value, dict) and isinstance(value.get("resolved_prompt"), str):
-            if value["resolved_prompt"].strip():
-                count += 1
-    return count
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"prompt log {index} is invalid JSON") from exc
+        if not isinstance(value, dict):
+            raise ValueError(f"prompt log {index} must be a JSON object")
+        resolved_prompt = value.get("resolved_prompt")
+        if not isinstance(resolved_prompt, str) or not resolved_prompt.strip():
+            raise ValueError(f"prompt log {index} lacks a resolved prompt")
+        if value.get("remote") != "private_comfyui":
+            raise ValueError(f"prompt log {index} has invalid remote metadata")
+        if type(value.get("seed")) is not int:
+            raise ValueError(f"prompt log {index} has invalid seed metadata")
+        images = value.get("images")
+        if (
+            not isinstance(images, list)
+            or not images
+            or not all(_image_reference_valid(root, path, image) for image in images)
+        ):
+            raise ValueError(f"prompt log {index} has invalid image references")
+        evidence.append({"path": relative, "sha256": _sha256(path)})
+        seen.add(relative)
+    return evidence
 
 
 def audit(
-    runtime_root: Path, manifest_path: Path, prompt_log_root: Path
+    runtime_root: Path,
+    manifest_path: Path,
+    prompt_logs: Sequence[Path],
 ) -> dict[str, Any]:
+    root = manifest_path.resolve().parent
     manifest = _manifest(manifest_path)
+    manifest_sha256 = _sha256(manifest_path)
+    artifact_path, artifact_relative = _repo_file(
+        root, PRODUCTION_ARTIFACT, label="production artifact"
+    )
+    prompt_log_evidence = _prompt_log_evidence(root, prompt_logs)
     expected_files = set(manifest["files"])
     actual_files = {
         path.relative_to(runtime_root).as_posix()
@@ -103,15 +197,21 @@ def audit(
                 novelai_brace_conflicts += len(NOVELAI_BRACE_RE.findall(value))
 
     expected_paths: set[tuple[str, tuple[str, ...]]] = set()
+    expected_ids: set[str] = set()
     resolved_paths = 0
+    expected_prompt_count = 0
     for index, item in enumerate(manifest["items"], start=1):
         if not isinstance(item, dict):
             raise ValueError(f"manifest item {index} must be an object")
+        item_id = item.get("id")
         relative = item.get("runtime_file")
         raw_path = item.get("runtime_path")
         prompt_count = item.get("prompt_count")
         if (
-            not isinstance(relative, str)
+            not isinstance(item_id, str)
+            or not item_id
+            or not isinstance(relative, str)
+            or relative not in expected_files
             or not isinstance(raw_path, str)
             or not raw_path
             or isinstance(prompt_count, bool)
@@ -121,15 +221,30 @@ def audit(
         ):
             raise ValueError(f"manifest item {index} has invalid runtime metadata")
         parts = tuple(raw_path.split("/"))
+        if (
+            not parts
+            or parts[0] != "krea2"
+            or any(not part or part in {".", ".."} for part in parts)
+            or parts[-1] != item_id
+        ):
+            raise ValueError(f"manifest item {index} has invalid id or runtime path")
         identity = (relative, parts)
         if identity in expected_paths:
             raise ValueError("runtime manifest contains a duplicate wildcard path")
+        if item_id in expected_ids:
+            raise ValueError("runtime manifest contains a duplicate item id")
+        expected_ids.add(item_id)
         expected_paths.add(identity)
+        expected_prompt_count += prompt_count
         values = loaded.get(relative, {}).get(parts)
         if isinstance(values, list) and len(values) == prompt_count:
             resolved_paths += 1
+    if (
+        type(manifest.get("prompt_count")) is not int
+        or manifest.get("prompt_count") != expected_prompt_count
+    ):
+        raise ValueError("runtime manifest prompt count is inconsistent")
 
-    logged_prompts = _logged_prompts(prompt_log_root)
     complete = (
         actual_files == expected_files
         and len(loaded) == len(expected_files)
@@ -138,13 +253,18 @@ def audit(
         and yaml_syntax_errors == 0
         and novelai_brace_conflicts == 0
         and catalog_runtime_separated
-        and logged_prompts > 0
+        and bool(prompt_log_evidence)
     )
     return {
         "schema_version": 1,
         "report_type": "runtime_coverage",
         "status": "passed" if complete else "failed",
         "complete": complete,
+        "manifest": manifest_path.name,
+        "manifest_sha256": manifest_sha256,
+        "production_artifact": artifact_relative,
+        "production_artifact_sha256": _sha256(artifact_path),
+        "production_artifact_bytes": artifact_path.stat().st_size,
         "runtime_files_expected": len(expected_files),
         "runtime_files_loaded": len(loaded),
         "wildcard_paths_expected": len(expected_paths),
@@ -153,8 +273,9 @@ def audit(
         "yaml_syntax_errors": yaml_syntax_errors,
         "novelai_brace_conflicts": novelai_brace_conflicts,
         "catalog_runtime_separated": catalog_runtime_separated,
-        "final_prompt_logs_saved": logged_prompts > 0,
-        "final_prompt_log_count": logged_prompts,
+        "final_prompt_logs_saved": bool(prompt_log_evidence),
+        "final_prompt_log_count": len(prompt_log_evidence),
+        "prompt_logs": prompt_log_evidence,
     }
 
 
@@ -179,7 +300,15 @@ def main() -> int:
     parser.add_argument(
         "--manifest", type=Path, default=Path("wildcards-manifest.json")
     )
-    parser.add_argument("--prompt-logs", type=Path, default=Path("tests/reports"))
+    parser.add_argument(
+        "--prompt-log",
+        type=Path,
+        action="append",
+        help=(
+            "safe repository-relative run.json; repeat for multiple explicit logs "
+            f"(default: {DEFAULT_PROMPT_LOG.as_posix()})"
+        ),
+    )
     parser.add_argument(
         "--output",
         type=Path,
@@ -190,7 +319,8 @@ def main() -> int:
     try:
         if args.output.exists() and not args.overwrite:
             raise ValueError("output exists; pass --overwrite to replace it")
-        document = audit(args.runtime, args.manifest, args.prompt_logs)
+        prompt_logs = args.prompt_log or [DEFAULT_PROMPT_LOG]
+        document = audit(args.runtime, args.manifest, prompt_logs)
         _atomic_write(args.output, document)
         print(
             f"Runtime coverage: {document['wildcard_paths_resolved']}/"
