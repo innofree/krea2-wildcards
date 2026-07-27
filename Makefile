@@ -1,4 +1,4 @@
-.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
+.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix artist-signature-illustrated-calibration-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-illustrated-calibration review-artist-signature-illustrated-calibration remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
 .PHONY: runtime-audit phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
 
@@ -44,6 +44,9 @@ artist-native-matrix:
 
 artist-signature-matrix:
 	python3 scripts/export_artist_visual_signature_matrix.py --output tests/prompt_matrix/artist_visual_signature.jsonl
+
+artist-signature-illustrated-calibration-matrix:
+	python3 scripts/export_artist_visual_signature_matrix.py --limit-signatures 5 --output tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl
 
 completion:
 	python3 scripts/check_completion_criteria.py
@@ -137,6 +140,12 @@ score-artist-signature-screen:
 
 apply-artist-signature-screen: score-artist-signature-screen
 	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_screen_v0_8/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_screen_v0_8 --from-status generated --apply
+
+remote-artist-signature-illustrated-calibration: artist-signature-illustrated-calibration-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl --output tests/reports/artist_signature_illustrated_calibration_v0_8_1 --resume --submit
+
+review-artist-signature-illustrated-calibration:
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_illustrated_calibration_v0_8_1/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl --expected-seeds 3 --cases-per-sheet 5 --overwrite
 
 remote-artist-signature-retest:
 	python3 scripts/export_artist_visual_signature_matrix.py --status testing --seed 4004 --seed 5005 --output tests/prompt_matrix/artist_visual_signature_retest.jsonl

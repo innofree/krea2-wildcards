@@ -21,11 +21,18 @@ CATALOG_QUALITY_SUFFIX = (
     "Preserve realistic skin texture, coherent hands, believable fabric, natural proportions, "
     "cinematic depth, and no text, logos, or watermarks."
 )
+ILLUSTRATED_BENCHMARK_FINISH = (
+    "Render the result as an unmistakably hand-drawn two-dimensional illustration with visible "
+    "designed contours, stylized local color shapes, coherent illustrated anatomy, readable "
+    "hands, clean garment shapes, controlled depth, and no text, logos, or watermarks."
+)
 FIXED_SCENE = (
-    "Depict exactly one adult woman in a balanced standing pose, wearing a plain fitted "
+    "Create a polished two-dimensional character illustration of exactly one adult woman in a "
+    "balanced standing pose, wearing a plain fitted "
     "long-sleeve top and straight trousers on an uncluttered warm-grey studio cyclorama. "
     "Use an eye-level full-length camera and broad neutral diffused lighting, with her head, "
-    "both hands, and both feet fully visible."
+    "both hands, and both feet fully visible. Keep the scene visually simple so the requested "
+    "line, face, eye, body, palette, shading, composition, and motif decisions remain obvious."
 )
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
@@ -53,11 +60,17 @@ def signature_body(value: Any, *, style_id: str) -> str:
     if "\x00" in prompt:
         raise ValueError(f"artist signature {style_id!r} contains a null byte")
     if "@" in prompt or ARTIST_REFERENCE_RE.search(prompt):
-        raise ValueError(f"artist signature {style_id!r} contains an artist-name reference")
+        raise ValueError(
+            f"artist signature {style_id!r} contains an artist-name reference"
+        )
     if WILDCARD_RE.search(prompt):
-        raise ValueError(f"artist signature {style_id!r} contains an unresolved wildcard")
+        raise ValueError(
+            f"artist signature {style_id!r} contains an unresolved wildcard"
+        )
     if any(token in prompt for token in ("{", "}", "[", "]", "::")):
-        raise ValueError(f"artist signature {style_id!r} contains NovelAI emphasis syntax")
+        raise ValueError(
+            f"artist signature {style_id!r} contains NovelAI emphasis syntax"
+        )
     if prompt.endswith(CATALOG_QUALITY_SUFFIX):
         prompt = prompt[: -len(CATALOG_QUALITY_SUFFIX)].rstrip()
     return prompt
@@ -102,6 +115,7 @@ def signature_rows(
     seeds: Iterable[int] = DEFAULT_SEEDS,
     *,
     statuses: Iterable[str] = DEFAULT_STATUSES,
+    limit_signatures: int | None = None,
 ) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
     status_values = validate_statuses(statuses)
@@ -118,10 +132,26 @@ def signature_rows(
         selected.append((style_id, body))
     if not selected:
         raise ValueError("no artist signatures matched the requested statuses")
+    if limit_signatures is not None:
+        if type(limit_signatures) is not int or limit_signatures < 1:
+            raise ValueError("limit_signatures must be a positive integer")
+        if limit_signatures > len(selected):
+            raise ValueError("limit_signatures exceeds the selected signature count")
+        if limit_signatures == 1:
+            selected = [selected[0]]
+        else:
+            indexes = [
+                (index * (len(selected) - 1)) // (limit_signatures - 1)
+                for index in range(limit_signatures)
+            ]
+            selected = [selected[index] for index in indexes]
 
     rows: list[dict[str, Any]] = []
     for style_id, body in selected:
-        prompt = f"{FIXED_SCENE} Apply these observable visual properties: {body} {CATALOG_QUALITY_SUFFIX}"
+        prompt = (
+            f"{FIXED_SCENE} Apply these observable visual properties: {body} "
+            f"{ILLUSTRATED_BENCHMARK_FINISH}"
+        )
         for seed in seed_values:
             row = {
                 "schema_version": 1,
@@ -157,12 +187,22 @@ def main() -> int:
         default=None,
         help="include a distinct seed; repeat for extension seeds",
     )
+    parser.add_argument(
+        "--limit-signatures",
+        type=int,
+        help="select an evenly spaced deterministic subset for calibration",
+    )
     args = parser.parse_args()
 
     try:
         seeds = validate_seeds(args.seed or DEFAULT_SEEDS)
         statuses = validate_statuses(args.status or DEFAULT_STATUSES)
-        rows = signature_rows(args.catalog, seeds, statuses=statuses)
+        rows = signature_rows(
+            args.catalog,
+            seeds,
+            statuses=statuses,
+            limit_signatures=args.limit_signatures,
+        )
         write_jsonl(args.output, rows)
         print(
             f"Wrote {len(rows)} resolved prompt(s): "

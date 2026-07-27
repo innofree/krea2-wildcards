@@ -12,6 +12,7 @@ import yaml
 from export_artist_visual_signature_matrix import (
     ARTIST_REFERENCE_RE,
     CATALOG_QUALITY_SUFFIX,
+    ILLUSTRATED_BENCHMARK_FINISH,
     signature_rows,
     validate_statuses,
 )
@@ -74,19 +75,22 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
         assert "exactly one adult woman" in prompt
         assert "warm-grey studio cyclorama" in prompt
         assert "eye-level full-length camera" in prompt
-        assert "realistic skin texture" in prompt
-        assert "coherent hands" in prompt
-        assert "believable fabric" in prompt
-        assert "natural proportions" in prompt
-        assert "cinematic depth" in prompt
+        assert "polished two-dimensional character illustration" in prompt
+        assert "unmistakably hand-drawn two-dimensional illustration" in prompt
+        assert "visible designed contours" in prompt
+        assert "coherent illustrated anatomy" in prompt
+        assert "clean garment shapes" in prompt
         assert "no text, logos, or watermarks" in prompt
-        assert prompt.count("Preserve realistic skin texture") == 1
+        assert prompt.count(ILLUSTRATED_BENCHMARK_FINISH) == 1
+        assert "Preserve realistic skin texture" not in prompt
         assert "@" not in prompt and "__" not in prompt and "::" not in prompt
         assert all(token not in prompt for token in ("{", "}", "[", "]"))
         assert not ARTIST_REFERENCE_RE.search(prompt)
 
 
-def test_status_and_extension_seed_filters_select_actual_catalog_ids(tmp_path: Path) -> None:
+def test_status_and_extension_seed_filters_select_actual_catalog_ids(
+    tmp_path: Path,
+) -> None:
     catalog = tmp_path / "artists.yaml"
     write_catalog(
         catalog,
@@ -115,6 +119,21 @@ def test_status_and_extension_seed_filters_select_actual_catalog_ids(tmp_path: P
     assert rows[0]["style_id"] == "artist_signature_approved"
 
 
+def test_evenly_spaced_calibration_subset_is_deterministic() -> None:
+    rows = signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+
+    assert len(rows) == 15
+    assert len({row["style_id"] for row in rows}) == 5
+    assert {row["seed"] for row in rows} == {1001, 2002, 3003}
+    assert rows == signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+
+
+@pytest.mark.parametrize("limit", [0, -1, 301])
+def test_calibration_subset_rejects_invalid_limits(limit: int) -> None:
+    with pytest.raises(ValueError, match="limit_signatures"):
+        signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=limit)
+
+
 @pytest.mark.parametrize(
     "prompt",
     [
@@ -136,7 +155,9 @@ def test_export_rejects_named_or_model_specific_prompt_syntax(
         {"artist_signature_unsafe": signature_item("generated", prompt)},
     )
 
-    with pytest.raises(ValueError, match="artist-name reference|unresolved wildcard|emphasis syntax"):
+    with pytest.raises(
+        ValueError, match="artist-name reference|unresolved wildcard|emphasis syntax"
+    ):
         signature_rows(catalog)
 
 
@@ -171,9 +192,10 @@ def test_cli_is_byte_deterministic_and_defaults_to_900_rows(tmp_path: Path) -> N
         assert "900 resolved prompt(s)" in result.stdout
         assert len(output.read_text(encoding="utf-8").splitlines()) == 900
 
-    assert hashlib.sha256(outputs[0].read_bytes()).hexdigest() == hashlib.sha256(
-        outputs[1].read_bytes()
-    ).hexdigest()
+    assert (
+        hashlib.sha256(outputs[0].read_bytes()).hexdigest()
+        == hashlib.sha256(outputs[1].read_bytes()).hexdigest()
+    )
 
 
 def test_cli_accepts_repeated_statuses_and_extension_seeds(tmp_path: Path) -> None:
@@ -212,7 +234,9 @@ def test_cli_accepts_repeated_statuses_and_extension_seeds(tmp_path: Path) -> No
     )
 
     assert result.returncode == 0, result.stdout or result.stderr
-    rows = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()]
+    rows = [
+        json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()
+    ]
     assert len(rows) == 4
     assert {row["style_id"] for row in rows} == {
         "artist_signature_testing",
