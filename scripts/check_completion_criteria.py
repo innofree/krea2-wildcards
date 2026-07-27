@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import tempfile
@@ -54,6 +55,7 @@ MINIMUM_PAIRWISE_CASES = 96
 MINIMUM_PRESETS_TESTED = 100
 MINIMUM_RANDOM_SAMPLES = 20
 MINIMUM_BENCHMARK_SEEDS = 5
+PRODUCTION_ARTIFACT = Path("build/impact-production/krea2_complete_pack.yaml")
 
 
 def _is_number(value: Any) -> bool:
@@ -73,6 +75,37 @@ def _json_object(path: Path) -> dict[str, Any] | None:
     except (OSError, UnicodeError, json.JSONDecodeError):
         return None
     return value if isinstance(value, dict) else None
+
+
+def _sha256(path: Path) -> str | None:
+    try:
+        digest = hashlib.sha256()
+        with path.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                digest.update(chunk)
+        return digest.hexdigest()
+    except OSError:
+        return None
+
+
+def _safe_repo_relative_file(root: Path, raw: Any) -> Path | None:
+    if not isinstance(raw, str) or not raw or "\\" in raw:
+        return None
+    pure = PurePosixPath(raw)
+    if pure.is_absolute() or not pure.parts or ".." in pure.parts:
+        return None
+    unresolved = root / Path(*pure.parts)
+    current = root
+    for part in pure.parts:
+        current /= part
+        if current.is_symlink():
+            return None
+    candidate = unresolved.resolve(strict=False)
+    try:
+        candidate.relative_to(root.resolve())
+    except ValueError:
+        return None
+    return candidate if candidate.is_file() else None
 
 
 def _criterion(
@@ -651,18 +684,34 @@ def _deployment_criteria(
             report = _json_object(path)
             if not report:
                 continue
-            identity = f"{path.name} {report.get('deployment_id', '')} {report.get('deployment_type', '')}"
-            if "production" in identity.lower():
+            identity = f"{path.name} {report.get('deployment_id', '')}"
+            if report.get("deployment_type") == "production" or (
+                "production" in identity.lower()
+            ):
                 candidates.append((path, report))
     expected_items = manifest.get("item_count") if isinstance(manifest, dict) else None
+    artifact_path = root / PRODUCTION_ARTIFACT
+    artifact_sha256 = _sha256(artifact_path)
+    artifact_bytes = artifact_path.stat().st_size if artifact_path.is_file() else None
 
     def deployment_valid(report: dict[str, Any]) -> bool:
         verification = report.get("verification")
+        artifact = report.get("artifact")
         approved_items = report.get("approved_items")
         return (
-            isinstance(expected_items, int)
+            type(expected_items) is int
+            and expected_items > 0
+            and type(approved_items) is int
             and approved_items == expected_items
-            and (report.get("applied") is True or report.get("status") == "passed")
+            and report.get("deployment_type") == "production"
+            and report.get("status") == "passed"
+            and report.get("mode") == "apply"
+            and report.get("applied") is True
+            and isinstance(artifact, dict)
+            and artifact.get("name") == artifact_path.name
+            and artifact.get("sha256") == artifact_sha256
+            and type(artifact.get("bytes")) is int
+            and artifact.get("bytes") == artifact_bytes
             and isinstance(verification, dict)
             and verification.get("checksum_match") is True
             and verification.get("exact_krea2_namespace") is True
@@ -682,9 +731,12 @@ def _deployment_criteria(
     actual = (
         {
             "deployment_id": selected[1].get("deployment_id"),
+            "deployment_type": selected[1].get("deployment_type"),
             "status": selected[1].get("status"),
+            "mode": selected[1].get("mode"),
             "applied": selected[1].get("applied"),
             "approved_items": selected[1].get("approved_items"),
+            "artifact": selected[1].get("artifact"),
             "verification": {
                 key: (selected[1].get("verification") or {}).get(key)
                 for key in (
@@ -707,25 +759,35 @@ def _deployment_criteria(
         actual,
         {
             "approved_items_match_manifest": True,
+            "deployment_type": "production",
+            "status": "passed",
+            "mode": "apply",
+            "applied": True,
+            "artifact_matches_current_production": True,
             "checksum_match": True,
             "exact_namespace": True,
             "impact_reload": True,
             "queue_empty": True,
         },
         evidence,
-        "Only production-labelled evidence matching the current approved-only manifest may pass.",
+        "Only a passed production apply matching the current manifest and production artifact may pass.",
     )
     smoke_valid = False
+    smoke_seed_valid = False
+    smoke_record_valid = False
     if valid_deployments:
         report = valid_deployments[-1][1]
         verification = report.get("verification", {})
         smoke = report.get("smoke")
+        smoke_seed_valid = isinstance(smoke, dict) and type(smoke.get("seed")) is int
+        smoke_record_valid = (
+            isinstance(smoke, dict)
+            and _safe_repo_relative_file(root, smoke.get("run_record")) is not None
+        )
         smoke_valid = (
             verification.get("smoke_completed") is True
-            and isinstance(smoke, dict)
-            and isinstance(smoke.get("seed"), int)
-            and isinstance(smoke.get("run_record"), str)
-            and (root / smoke["run_record"]).is_file()
+            and smoke_seed_valid
+            and smoke_record_valid
         )
     smoke = _criterion(
         "production_smoke_test",
@@ -733,7 +795,16 @@ def _deployment_criteria(
         smoke_valid,
         {
             "deployment_valid": bool(valid_deployments),
-            "smoke_completed": smoke_valid,
+            "smoke_completed": (
+                (valid_deployments[-1][1].get("verification") or {}).get(
+                    "smoke_completed"
+                )
+                is True
+                if valid_deployments
+                else False
+            ),
+            "seed_valid": smoke_seed_valid,
+            "run_record_valid": smoke_record_valid,
         },
         {"smoke_completed": True, "seed_recorded": True, "run_record_exists": True},
         evidence,

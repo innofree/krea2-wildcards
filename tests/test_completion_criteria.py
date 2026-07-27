@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import subprocess
 import sys
@@ -111,6 +112,12 @@ def complete_repository(root: Path) -> None:
             "items": items,
         },
     )
+    production_artifact = root / "build/impact-production/krea2_complete_pack.yaml"
+    production_artifact.parent.mkdir(parents=True, exist_ok=True)
+    production_artifact.write_text(
+        "krea2:\n  complete_pack:\n    all: [test]\n", encoding="utf-8"
+    )
+    production_bytes = production_artifact.read_bytes()
     stages = [
         "catalog_generation",
         "catalog_normalization",
@@ -212,8 +219,17 @@ def complete_repository(root: Path) -> None:
         root / "tests/reports/deployments/production_v1.json",
         {
             "deployment_id": "production_v1",
+            "deployment_type": "production",
             "status": "passed",
+            "mode": "apply",
+            "applied": True,
             "approved_items": 350,
+            "artifact": {
+                "name": "krea2_complete_pack.yaml",
+                "sha256": hashlib.sha256(production_bytes).hexdigest(),
+                "bytes": len(production_bytes),
+                "wildcard_path_count": 351,
+            },
             "verification": {
                 "checksum_match": True,
                 "exact_krea2_namespace": True,
@@ -260,6 +276,84 @@ def test_missing_and_stale_evidence_cannot_pass(tmp_path: Path) -> None:
     assert criteria["pairwise_combination_coverage"]["complete"] is False
     assert criteria["production_deployment"]["complete"] is False
     assert criteria["production_smoke_test"]["complete"] is False
+
+
+@pytest.mark.parametrize("variant", ["preview", "dry-run"])
+def test_preview_or_dry_run_deployment_cannot_pass(
+    tmp_path: Path, variant: str
+) -> None:
+    complete_repository(tmp_path)
+    path = tmp_path / "tests/reports/deployments/production_v1.json"
+    deployment = json.loads(path.read_text(encoding="utf-8"))
+    if variant == "preview":
+        deployment["deployment_type"] = "preview"
+    else:
+        deployment["status"] = "dry-run"
+        deployment["mode"] = "dry-run"
+        deployment["applied"] = False
+    write_json(path, deployment)
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is False
+    assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_production_artifact_change_invalidates_deployment_and_smoke(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    artifact = tmp_path / "build/impact-production/krea2_complete_pack.yaml"
+    artifact.write_text(artifact.read_text(encoding="utf-8") + "changed: true\n")
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is False
+    assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_smoke_path_traversal_cannot_pass_even_when_target_exists(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    write_json(tmp_path / "tests/outside-run.json", {"seed": 6006})
+    path = tmp_path / "tests/reports/deployments/production_v1.json"
+    deployment = json.loads(path.read_text(encoding="utf-8"))
+    deployment["smoke"]["run_record"] = "tests/reports/../outside-run.json"
+    write_json(path, deployment)
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is True
+    assert criteria["production_smoke_test"]["complete"] is False
+    assert criteria["production_smoke_test"]["actual"]["run_record_valid"] is False
+
+
+def test_smoke_symlink_cannot_pass(tmp_path: Path) -> None:
+    complete_repository(tmp_path)
+    real_run = tmp_path / "tests/reports/production_smoke/runs/test/run.json"
+    linked_run = real_run.with_name("linked-run.json")
+    linked_run.symlink_to(real_run.name)
+    path = tmp_path / "tests/reports/deployments/production_v1.json"
+    deployment = json.loads(path.read_text(encoding="utf-8"))
+    deployment["smoke"]["run_record"] = (
+        "tests/reports/production_smoke/runs/test/linked-run.json"
+    )
+    write_json(path, deployment)
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is True
+    assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_boolean_smoke_seed_is_not_an_integer_seed(tmp_path: Path) -> None:
+    complete_repository(tmp_path)
+    path = tmp_path / "tests/reports/deployments/production_v1.json"
+    deployment = json.loads(path.read_text(encoding="utf-8"))
+    deployment["smoke"]["seed"] = True
+    write_json(path, deployment)
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is True
+    assert criteria["production_smoke_test"]["complete"] is False
+    assert criteria["production_smoke_test"]["actual"]["seed_valid"] is False
 
 
 def test_non_strict_writes_incomplete_report_and_only_strict_fails(
