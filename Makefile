@@ -193,6 +193,7 @@ apply-artist-signature-repair-lifecycle-v0-8-3:
 		$(MAKE) prepare-artist-signature-repair-v0-8-3 && \
 		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_repair_lifecycle_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --evaluation-id artist_signature_screen_v0_8_2_deferred_repair --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation generated --minimum-recommendation testing=185 --apply; \
 	fi
+	python3 scripts/refresh_generation_manifest.py catalog/artists.yaml --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 
@@ -219,6 +220,7 @@ apply-artist-signature-repair-v0-8-3:
 		$(MAKE) score-artist-signature-repair-v0-8-3 && \
 		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_repair_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --evaluation-id artist_signature_repair_v0_8_3 --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation generated --minimum-recommendation testing=15 --apply; \
 	fi
+	python3 scripts/refresh_generation_manifest.py catalog/artists.yaml --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 
@@ -250,6 +252,7 @@ apply-artist-signature-retest-v0-8-3:
 		$(MAKE) score-artist-signature-retest-v0-8-3 && \
 		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_combined_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_combined_v0_8_3/prompt_binding.json --evaluation-id artist_signature_retest_v0_8_3 --from-status testing --require-exact-source-set --require-tested-seeds 5 --allow-recommendation approved --allow-recommendation rejected --minimum-recommendation approved=200 --apply; \
 	fi
+	python3 scripts/refresh_generation_manifest.py catalog/artists.yaml --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 

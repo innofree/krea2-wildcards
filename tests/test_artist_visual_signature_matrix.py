@@ -51,8 +51,21 @@ def clean_prompt() -> str:
     )
 
 
-def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
-    catalog_path = ROOT / "catalog/artists.yaml"
+def lifecycle_neutral_real_catalog(tmp_path: Path) -> Path:
+    document = yaml.safe_load(
+        (ROOT / "catalog/artists.yaml").read_text(encoding="utf-8")
+    )
+    for item in document["items"].values():
+        item["validation"] = {"status": "generated", "tested_seeds": 0}
+    path = tmp_path / "artists.yaml"
+    path.write_text(yaml.safe_dump(document, sort_keys=False), encoding="utf-8")
+    return path
+
+
+def test_real_catalog_exports_exact_generated_three_seed_matrix(
+    tmp_path: Path,
+) -> None:
+    catalog_path = lifecycle_neutral_real_catalog(tmp_path)
     catalog = yaml.safe_load(catalog_path.read_text(encoding="utf-8"))
     generated = {
         style_id
@@ -118,11 +131,12 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
         assert not ARTIST_REFERENCE_RE.search(prompt)
 
 
-def test_real_catalog_prompts_are_the_exact_evaluated_signature_bodies() -> None:
-    catalog = yaml.safe_load(
-        (ROOT / "catalog/artists.yaml").read_text(encoding="utf-8")
-    )["items"]
-    rows = signature_rows(ROOT / "catalog/artists.yaml")
+def test_real_catalog_prompts_are_the_exact_evaluated_signature_bodies(
+    tmp_path: Path,
+) -> None:
+    catalog_path = lifecycle_neutral_real_catalog(tmp_path)
+    catalog = yaml.safe_load(catalog_path.read_text(encoding="utf-8"))["items"]
+    rows = signature_rows(catalog_path)
     row_by_style = {row["style_id"]: row for row in rows}
 
     assert len(row_by_style) == 300
@@ -142,9 +156,11 @@ def test_real_catalog_prompts_are_the_exact_evaluated_signature_bodies() -> None
         )
 
 
-def test_legacy_matrix_can_omit_prompt_digests_without_changing_other_factors() -> None:
+def test_legacy_matrix_can_omit_prompt_digests_without_changing_other_factors(
+    tmp_path: Path,
+) -> None:
     rows = signature_rows(
-        ROOT / "catalog/artists.yaml",
+        lifecycle_neutral_real_catalog(tmp_path),
         seeds=(1001,),
         limit_signatures=1,
         include_prompt_digest=False,
@@ -211,20 +227,20 @@ def test_status_and_extension_seed_filters_select_actual_catalog_ids(
     assert rows[0]["style_id"] == "artist_signature_approved"
 
 
-def test_diverse_calibration_subset_is_deterministic() -> None:
-    rows = signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+def test_diverse_calibration_subset_is_deterministic(tmp_path: Path) -> None:
+    catalog_path = lifecycle_neutral_real_catalog(tmp_path)
+    rows = signature_rows(catalog_path, limit_signatures=5)
 
     assert len(rows) == 15
     assert len({row["style_id"] for row in rows}) == 5
     assert {row["seed"] for row in rows} == {1001, 2002, 3003}
-    assert rows == signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+    assert rows == signature_rows(catalog_path, limit_signatures=5)
 
 
-def test_calibration_subset_maximizes_feature_axis_coverage() -> None:
-    catalog = yaml.safe_load(
-        (ROOT / "catalog/artists.yaml").read_text(encoding="utf-8")
-    )["items"]
-    rows = signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+def test_calibration_subset_maximizes_feature_axis_coverage(tmp_path: Path) -> None:
+    catalog_path = lifecycle_neutral_real_catalog(tmp_path)
+    catalog = yaml.safe_load(catalog_path.read_text(encoding="utf-8"))["items"]
+    rows = signature_rows(catalog_path, limit_signatures=5)
     style_ids = list(dict.fromkeys(row["style_id"] for row in rows))
 
     coverage = {
@@ -249,9 +265,14 @@ def test_calibration_subset_maximizes_feature_axis_coverage() -> None:
 
 
 @pytest.mark.parametrize("limit", [0, -1, 301])
-def test_calibration_subset_rejects_invalid_limits(limit: int) -> None:
+def test_calibration_subset_rejects_invalid_limits(
+    tmp_path: Path, limit: int
+) -> None:
     with pytest.raises(ValueError, match="limit_signatures"):
-        signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=limit)
+        signature_rows(
+            lifecycle_neutral_real_catalog(tmp_path),
+            limit_signatures=limit,
+        )
 
 
 @pytest.mark.parametrize(
@@ -309,12 +330,15 @@ def test_status_filter_rejects_duplicates_and_empty_selection(tmp_path: Path) ->
 
 
 def test_cli_is_byte_deterministic_and_defaults_to_900_rows(tmp_path: Path) -> None:
+    catalog = lifecycle_neutral_real_catalog(tmp_path)
     outputs = [tmp_path / "one.jsonl", tmp_path / "two.jsonl"]
     for output in outputs:
         result = subprocess.run(
             [
                 sys.executable,
                 str(ROOT / "scripts/export_artist_visual_signature_matrix.py"),
+                "--catalog",
+                str(catalog),
                 "--output",
                 str(output),
             ],
@@ -334,6 +358,7 @@ def test_cli_is_byte_deterministic_and_defaults_to_900_rows(tmp_path: Path) -> N
 
 
 def test_cli_refuses_to_replace_a_different_matrix(tmp_path: Path) -> None:
+    catalog = lifecycle_neutral_real_catalog(tmp_path)
     output = tmp_path / "existing.jsonl"
     original = '{"preserved":true}\n'
     output.write_text(original, encoding="utf-8")
@@ -342,6 +367,8 @@ def test_cli_refuses_to_replace_a_different_matrix(tmp_path: Path) -> None:
         [
             sys.executable,
             str(ROOT / "scripts/export_artist_visual_signature_matrix.py"),
+            "--catalog",
+            str(catalog),
             "--limit-signatures",
             "1",
             "--output",
