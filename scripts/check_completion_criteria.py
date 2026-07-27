@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Any, Callable
 
-from common import item_prompts, load_yaml
+from common import item_prompts, load_yaml, normalized_phrase
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -106,6 +106,43 @@ def _safe_repo_relative_file(root: Path, raw: Any) -> Path | None:
     except ValueError:
         return None
     return candidate if candidate.is_file() else None
+
+
+def _digest_evidence_matches(
+    root: Path, report: dict[str, Any], path_field: str, digest_field: str
+) -> bool:
+    path = _safe_repo_relative_file(root, report.get(path_field))
+    digest = report.get(digest_field)
+    return (
+        path is not None
+        and isinstance(digest, str)
+        and len(digest) == 64
+        and _sha256(path) == digest
+    )
+
+
+def _phase6_evidence_fresh(root: Path, report: dict[str, Any]) -> bool:
+    return _digest_evidence_matches(
+        root, report, "matrix_path", "matrix_sha256"
+    ) and _digest_evidence_matches(root, report, "scored_path", "scored_sha256")
+
+
+def _runtime_evidence_fresh(root: Path, report: dict[str, Any]) -> bool:
+    artifact = _safe_repo_relative_file(root, report.get("production_artifact"))
+    prompt_logs = report.get("prompt_logs")
+    return (
+        _digest_evidence_matches(root, report, "manifest", "manifest_sha256")
+        and artifact is not None
+        and _sha256(artifact) == report.get("production_artifact_sha256")
+        and artifact.stat().st_size == report.get("production_artifact_bytes")
+        and isinstance(prompt_logs, list)
+        and bool(prompt_logs)
+        and all(
+            isinstance(item, dict)
+            and _digest_evidence_matches(root, item, "path", "sha256")
+            for item in prompt_logs
+        )
+    )
 
 
 def _criterion(
@@ -581,6 +618,7 @@ def _structured_report_criteria(
                 "prompt_logs_saved": True,
             },
             lambda r: base(r)
+            and _runtime_evidence_fresh(root, r)
             and _is_number(r.get("runtime_files_expected"))
             and r.get("runtime_files_expected") > 0
             and r.get("runtime_files_loaded") == r.get("runtime_files_expected")
@@ -605,6 +643,7 @@ def _structured_report_criteria(
                 "critical_failures": 0,
             },
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and isinstance(r.get("tested_axes"), list)
             and {"linework", "coloring"}.issubset(set(r["tested_axes"]))
             and _is_number(r.get("total_cases"))
@@ -623,6 +662,7 @@ def _structured_report_criteria(
                 "recommendations_complete": True,
             },
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and isinstance(r.get("modes"), list)
             and {"native_name", "visual_signature", "hybrid"}.issubset(set(r["modes"]))
             and _is_number(r.get("artist_count"))
@@ -642,6 +682,7 @@ def _structured_report_criteria(
                 "critical_failures": 0,
             },
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and isinstance(r.get("covered_pair_types"), list)
             and PAIRWISE_TYPES.issubset(set(r["covered_pair_types"]))
             and _is_number(r.get("total_cases"))
@@ -656,6 +697,7 @@ def _structured_report_criteria(
             "quality",
             {"presets_tested_minimum": MINIMUM_PRESETS_TESTED, "critical_conflicts": 0},
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and _is_number(r.get("presets_tested"))
             and r.get("presets_tested") >= MINIMUM_PRESETS_TESTED
             and r.get("critical_conflicts") == 0,
@@ -671,6 +713,7 @@ def _structured_report_criteria(
                 "measured_utility_rate": True,
             },
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and isinstance(r.get("sample_count"), int)
             and not isinstance(r.get("sample_count"), bool)
             and r.get("sample_count") >= MINIMUM_RANDOM_SAMPLES
@@ -696,6 +739,7 @@ def _structured_report_criteria(
                 "metrics_recorded": True,
             },
             lambda r: base(r)
+            and _phase6_evidence_fresh(root, r)
             and "krea2" in str(r.get("model", "")).lower()
             and "turbo" in str(r.get("model", "")).lower()
             and isinstance(r.get("distinct_seeds"), int)
@@ -714,6 +758,7 @@ def _duplicate_criterion(root: Path) -> dict[str, Any]:
     rate: float | None = None
     duplicates_count: int | None = None
     total: int | None = None
+    recorded_prompt_digest: str | None = None
     if report:
         duplicates = report.get("duplicates")
         catalog = report.get("catalog")
@@ -721,6 +766,7 @@ def _duplicate_criterion(root: Path) -> dict[str, Any]:
             exact = duplicates.get("exact_duplicates")
             near = duplicates.get("near_duplicates")
             total = catalog.get("total_items")
+            recorded_prompt_digest = catalog.get("prompt_digest_sha256")
             if (
                 isinstance(exact, int)
                 and isinstance(near, int)
@@ -732,21 +778,42 @@ def _duplicate_criterion(root: Path) -> dict[str, Any]:
     current_total = sum(
         len(_catalog_items(path)) for path in sorted((root / "catalog").glob("*.yaml"))
     )
+    prompt_rows = sorted(
+        (
+            path.name,
+            item_id,
+            normalized_phrase(prompt),
+        )
+        for path in sorted((root / "catalog").glob("*.yaml"))
+        for item_id, item in _catalog_items(path).items()
+        for prompt in item_prompts(item)
+    )
+    current_prompt_digest = hashlib.sha256(
+        json.dumps(prompt_rows, ensure_ascii=False, separators=(",", ":")).encode(
+            "utf-8"
+        )
+    ).hexdigest()
     total_matches = total == current_total
+    digest_matches = recorded_prompt_digest == current_prompt_digest
     return _criterion(
         "semantic_duplicate_rate",
         "quality",
-        rate is not None and rate <= 0.05 and total_matches,
+        rate is not None and rate <= 0.05 and total_matches and digest_matches,
         {
             "duplicate_items_or_pairs": duplicates_count,
             "catalog_items": total,
             "current_catalog_items": current_total,
             "catalog_count_matches": total_matches,
+            "catalog_prompt_digest_matches": digest_matches,
             "rate": round(rate, 6) if rate is not None else None,
         },
-        {"maximum_rate": 0.05, "catalog_count_matches": True},
+        {
+            "maximum_rate": 0.05,
+            "catalog_count_matches": True,
+            "catalog_prompt_digest_matches": True,
+        },
         [_relative(path, root)] if path.is_file() else [],
-        "Rate is derived from the committed static exact/near duplicate audit; missing counts cannot pass.",
+        "Rate is derived from the committed static exact/near duplicate audit bound to the current prompt corpus.",
     )
 
 

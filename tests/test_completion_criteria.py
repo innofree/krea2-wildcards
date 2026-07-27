@@ -10,6 +10,7 @@ import pytest
 import yaml
 
 from check_completion_criteria import PAIRWISE_TYPES, collect_completion
+from common import item_prompts, load_yaml, normalized_phrase
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/check_completion_criteria.py"
@@ -149,15 +150,54 @@ def complete_repository(root: Path) -> None:
     write_json(
         root / "tests/reports/static_audit_v0_5.json",
         {
-            "catalog": {"total_items": 3750},
+            "catalog": {
+                "total_items": 3750,
+                "prompt_digest_sha256": hashlib.sha256(
+                    json.dumps(
+                        sorted(
+                            (
+                                path.name,
+                                item_id,
+                                normalized_phrase(prompt),
+                            )
+                            for path in sorted((root / "catalog").glob("*.yaml"))
+                            for item_id, item in (
+                                load_yaml(path).get("items", {}) or {}
+                            ).items()
+                            for prompt in item_prompts(item)
+                        ),
+                        ensure_ascii=False,
+                        separators=(",", ":"),
+                    ).encode("utf-8")
+                ).hexdigest(),
+            },
             "duplicates": {"exact_duplicates": 5, "near_duplicates": 5},
         },
     )
     common = {"schema_version": 1, "status": "passed", "complete": True}
+    prompt_log = root / "tests/reports/runtime_prompt/run.json"
+    write_json(prompt_log, {"seed": 6006})
     reports = {
         "runtime.json": {
             **common,
             "report_type": "runtime_coverage",
+            "manifest": "wildcards-manifest.json",
+            "manifest_sha256": hashlib.sha256(
+                (root / "wildcards-manifest.json").read_bytes()
+            ).hexdigest(),
+            "production_artifact": (
+                "build/impact-production/krea2_complete_pack.yaml"
+            ),
+            "production_artifact_sha256": hashlib.sha256(
+                production_bytes
+            ).hexdigest(),
+            "production_artifact_bytes": len(production_bytes),
+            "prompt_logs": [
+                {
+                    "path": "tests/reports/runtime_prompt/run.json",
+                    "sha256": hashlib.sha256(prompt_log.read_bytes()).hexdigest(),
+                }
+            ],
             "runtime_files_expected": 1,
             "runtime_files_loaded": 1,
             "wildcard_paths_expected": 350,
@@ -213,6 +253,22 @@ def complete_repository(root: Path) -> None:
         },
     }
     for name, report in reports.items():
+        if report["report_type"] != "runtime_coverage":
+            stem = Path(name).stem
+            matrix = root / f"tests/prompt_matrix/{stem}.jsonl"
+            scored = root / f"tests/reports/completion_inputs/{stem}.csv"
+            matrix.parent.mkdir(parents=True, exist_ok=True)
+            scored.parent.mkdir(parents=True, exist_ok=True)
+            matrix.write_text(f"matrix evidence for {stem}\n", encoding="utf-8")
+            scored.write_text(f"scored evidence for {stem}\n", encoding="utf-8")
+            report.update(
+                {
+                    "matrix_path": f"tests/prompt_matrix/{stem}.jsonl",
+                    "matrix_sha256": hashlib.sha256(matrix.read_bytes()).hexdigest(),
+                    "scored_path": f"tests/reports/completion_inputs/{stem}.csv",
+                    "scored_sha256": hashlib.sha256(scored.read_bytes()).hexdigest(),
+                }
+            )
         write_json(root / "tests/reports/completion" / name, report)
     smoke_path = root / "tests/reports/production_smoke/runs/test/run.json"
     write_json(smoke_path, {"seed": 6006})
@@ -314,6 +370,19 @@ def test_missing_and_stale_evidence_cannot_pass(tmp_path: Path) -> None:
     assert criteria["pairwise_combination_coverage"]["complete"] is False
     assert criteria["production_deployment"]["complete"] is False
     assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_runtime_and_phase6_digest_drift_cannot_pass(tmp_path: Path) -> None:
+    complete_repository(tmp_path)
+    (tmp_path / "wildcards-manifest.json").write_text("{}\n", encoding="utf-8")
+    (tmp_path / "tests/prompt_matrix/single.jsonl").write_text(
+        "changed matrix\n", encoding="utf-8"
+    )
+
+    criteria = by_id(collect_completion(tmp_path))
+
+    assert criteria["runtime_resolution_coverage"]["complete"] is False
+    assert criteria["single_axis_coverage"]["complete"] is False
 
 
 @pytest.mark.parametrize("variant", ["preview", "dry-run"])

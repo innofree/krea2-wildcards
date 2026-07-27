@@ -1,4 +1,4 @@
-.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix completion completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
+.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
 .PHONY: runtime-audit phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
 
@@ -48,6 +48,9 @@ artist-signature-matrix:
 completion:
 	python3 scripts/check_completion_criteria.py
 
+completion-predeploy-strict:
+	python3 scripts/check_completion_criteria.py --stage predeploy --strict --output tests/reports/predeploy_criteria.json
+
 completion-strict:
 	python3 scripts/check_completion_criteria.py --strict
 
@@ -63,8 +66,7 @@ release:
 release-deploy-dry-run:
 	python3 scripts/run_release.py --deploy
 
-release-deploy:
-	python3 scripts/run_release.py --apply
+release-deploy: deploy-production
 
 deploy-preview-dry-run: preview
 	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_10_2-dry-run.json
@@ -75,7 +77,10 @@ deploy-preview: preview
 deploy-production-dry-run: impact-production
 	python3 scripts/deploy_remote_wildcards.py --evidence tests/reports/deployments/production_v1-dry-run.json
 
-deploy-production: impact-production
+deploy-production:
+	python3 scripts/run_release.py
+	python3 scripts/audit_runtime_coverage.py --prompt-log tests/reports/phase6_benchmark_v1/runs/KB000001/run.json --overwrite
+	python3 scripts/check_completion_criteria.py --stage predeploy --strict --output tests/reports/predeploy_criteria.json
 	python3 scripts/deploy_remote_wildcards.py --evidence tests/reports/deployments/production_v1.json --apply
 
 remote-production-smoke:
@@ -83,6 +88,11 @@ remote-production-smoke:
 
 finalize-production-deployment:
 	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-run tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json
+
+finish-production: deploy-production
+	python3 scripts/run_remote_benchmark.py --style-id crystal_iris_pastel --seed 6006 --output tests/reports/production_smoke_v1 --submit
+	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-run tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json
+	python3 scripts/check_completion_criteria.py --strict
 
 remote-smoke:
 	python3 scripts/run_remote_benchmark.py --submit
@@ -147,8 +157,8 @@ score-artist-signature-retest:
 apply-artist-signature-retest: score-artist-signature-retest
 	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_combined_v0_8/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_retest_v0_8 --from-status testing --apply
 
-runtime-audit:
-	python3 scripts/audit_runtime_coverage.py --overwrite
+runtime-audit: impact-production
+	python3 scripts/audit_runtime_coverage.py --prompt-log tests/reports/phase6_benchmark_v1/runs/KB000001/run.json --overwrite
 
 artist-abc-map:
 	python3 scripts/select_artist_abc_candidates.py --output tests/prompt_matrix/artist_abc_signature_map.yaml --overwrite
