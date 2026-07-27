@@ -9,7 +9,7 @@ import tempfile
 from pathlib import Path
 from typing import Any, Iterable
 
-from common import load_yaml
+from common import canonical_prompt_sha256, load_yaml
 from export_artist_native_matrix import validate_seeds
 from run_remote_prompt_matrix import STYLE_ID_RE, validate_job
 
@@ -102,8 +102,10 @@ def signature_body(value: Any, *, style_id: str) -> str:
         raise ValueError(
             f"artist signature {style_id!r} contains NovelAI emphasis syntax"
         )
-    if prompt.endswith(CATALOG_QUALITY_SUFFIX):
-        prompt = prompt[: -len(CATALOG_QUALITY_SUFFIX)].rstrip()
+    if CATALOG_QUALITY_SUFFIX in prompt:
+        raise ValueError(
+            f"artist signature {style_id!r} contains the unvalidated realistic quality suffix"
+        )
     return prompt
 
 
@@ -232,6 +234,7 @@ def signature_rows(
     *,
     statuses: Iterable[str] = DEFAULT_STATUSES,
     limit_signatures: int | None = None,
+    include_prompt_digest: bool = True,
 ) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
     status_values = validate_statuses(statuses)
@@ -261,6 +264,10 @@ def signature_rows(
             axis: values[0]
             for axis, values in sorted(items[style_id]["feature_axes"].items())
         }
+        if include_prompt_digest:
+            factors["evaluated_prompt_sha256"] = (
+                "sha256_" + canonical_prompt_sha256(items[style_id]["prompt"])
+            )
         prompt = (
             f"Treat this visual signature as the controlling design brief. Every listed property "
             f"must be visibly expressed: {body} {FIXED_SCENE} "
@@ -307,6 +314,11 @@ def main() -> int:
         type=int,
         help="select an evenly spaced deterministic subset for calibration",
     )
+    parser.add_argument(
+        "--omit-prompt-digest",
+        action="store_true",
+        help="reproduce a legacy immutable matrix that predates prompt digest binding",
+    )
     args = parser.parse_args()
 
     try:
@@ -317,6 +329,7 @@ def main() -> int:
             seeds,
             statuses=statuses,
             limit_signatures=args.limit_signatures,
+            include_prompt_digest=not args.omit_prompt_digest,
         )
         write_immutable_jsonl(args.output, rows)
         print(

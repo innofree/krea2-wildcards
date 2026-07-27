@@ -9,10 +9,11 @@ from pathlib import Path
 import pytest
 
 from audit_runtime_coverage import audit
+from build_impact_yaml import impact_compatible_document
 from common import dump_yaml
 
 
-RUNTIME_FILE = "approved.yaml"
+RUNTIME_FILE = "krea2/approved.yaml"
 RUNTIME_PATH = "krea2/styles/approved_example"
 RESOLVED_PROMPT = "A centered figure uses clean contours and soft neutral shading."
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/audit_runtime_coverage.py"
@@ -51,9 +52,15 @@ def valid_item(**updates: object) -> dict[str, object]:
 
 def write_runtime(path: Path, values: list[str]) -> None:
     dump_yaml(
-        {"krea2": {"styles": {"approved_example": values}}},
+        {"krea2": {"styles": {"approved_example": values, "all": values}}},
         path,
     )
+
+
+def write_artifact(tmp_path: Path, runtime_root: Path) -> Path:
+    artifact = tmp_path / "build/impact-production/krea2_complete_pack.yaml"
+    dump_yaml(impact_compatible_document(runtime_root), artifact)
+    return artifact
 
 
 def make_valid_case(tmp_path: Path) -> tuple[Path, Path, list[Path]]:
@@ -64,9 +71,7 @@ def make_valid_case(tmp_path: Path) -> tuple[Path, Path, list[Path]]:
     manifest_path = tmp_path / "manifest.json"
     write_manifest(manifest_path, [valid_item()])
 
-    artifact = tmp_path / "build/impact-production/krea2_complete_pack.yaml"
-    artifact.parent.mkdir(parents=True)
-    artifact.write_text("approved artifact\n", encoding="utf-8")
+    write_artifact(tmp_path, runtime_root)
 
     run_dir = tmp_path / "reports/run_one"
     run_dir.mkdir(parents=True)
@@ -96,10 +101,24 @@ def test_valid_approved_runtime_and_resolved_prompt_log_pass(tmp_path: Path) -> 
     assert report["status"] == "passed"
     assert report["runtime_files_expected"] == 1
     assert report["runtime_files_loaded"] == 1
-    assert report["wildcard_paths_expected"] == 1
-    assert report["wildcard_paths_resolved"] == 1
+    assert report["wildcard_paths_expected"] == 2
+    assert report["wildcard_paths_resolved"] == 2
+    assert report["approved_item_paths_expected"] == 1
+    assert report["approved_item_paths_resolved"] == 1
+    assert report["aggregate_paths_expected"] == 1
+    assert report["aggregate_paths_resolved"] == 1
+    assert report["impact_paths_expected"] == 2
+    assert report["impact_paths_resolved"] == 2
+    assert report["impact_adapter_exact"] is True
+    assert report["all_runtime_leaves_resolved"] is True
+    assert report["unexpected_runtime_leaf_paths"] == 0
+    assert report["missing_runtime_leaf_paths"] == 0
     assert report["unresolved_wildcards"] == 0
+    assert report["final_prompt_unresolved_wildcards"] == 0
     assert report["novelai_brace_conflicts"] == 0
+    assert report["final_prompt_brace_conflicts"] == 0
+    assert report["novelai_bracket_conflicts"] == 0
+    assert report["final_prompt_bracket_conflicts"] == 0
     assert report["catalog_runtime_separated"] is True
     assert report["final_prompt_logs_saved"] is True
     assert report["final_prompt_log_count"] == 1
@@ -142,16 +161,16 @@ def test_unresolved_wildcards_and_braces_fail_with_exact_counts(
 
     assert report["complete"] is False
     assert report["status"] == "failed"
-    assert report["wildcard_paths_resolved"] == 1
-    assert report["unresolved_wildcards"] == 2
-    assert report["novelai_brace_conflicts"] == 2
+    assert report["wildcard_paths_resolved"] == 2
+    assert report["unresolved_wildcards"] == 4
+    assert report["novelai_brace_conflicts"] == 4
 
 
 @pytest.mark.parametrize(
     ("scenario", "expected_loaded", "expected_resolved"),
     [
         ("missing_file", 0, 0),
-        ("extra_file", 1, 1),
+        ("extra_file", 1, 2),
         ("path_mismatch", 1, 0),
     ],
 )
@@ -202,6 +221,96 @@ def test_catalog_metadata_key_in_runtime_fails_separation(tmp_path: Path) -> Non
     assert report["catalog_runtime_separated"] is False
     assert report["complete"] is False
     assert report["status"] == "failed"
+
+
+def test_missing_or_inexact_aggregate_leaf_fails_exhaustive_resolution(
+    tmp_path: Path,
+) -> None:
+    runtime_root, manifest_path, prompt_logs = make_valid_case(tmp_path)
+    dump_yaml(
+        {"krea2": {"styles": {"approved_example": [RESOLVED_PROMPT]}}},
+        runtime_root / RUNTIME_FILE,
+    )
+    write_artifact(tmp_path, runtime_root)
+
+    report = audit(runtime_root, manifest_path, prompt_logs)
+
+    assert report["approved_item_paths_resolved"] == 1
+    assert report["aggregate_paths_resolved"] == 0
+    assert report["missing_runtime_leaf_paths"] == 1
+    assert report["all_runtime_leaves_resolved"] is False
+    assert report["complete"] is False
+
+
+def test_unexpected_leaf_fails_even_when_impact_artifact_matches_runtime(
+    tmp_path: Path,
+) -> None:
+    runtime_root, manifest_path, prompt_logs = make_valid_case(tmp_path)
+    dump_yaml(
+        {
+            "krea2": {
+                "styles": {
+                    "approved_example": [RESOLVED_PROMPT],
+                    "all": [RESOLVED_PROMPT],
+                    "stale_extra": ["A stale extra runtime prompt."],
+                }
+            }
+        },
+        runtime_root / RUNTIME_FILE,
+    )
+    write_artifact(tmp_path, runtime_root)
+
+    report = audit(runtime_root, manifest_path, prompt_logs)
+
+    assert report["impact_adapter_exact"] is False
+    assert report["unexpected_runtime_leaf_paths"] == 1
+    assert report["all_runtime_leaves_resolved"] is False
+    assert report["complete"] is False
+
+
+def test_unrelated_impact_artifact_cannot_prove_runtime_resolution(
+    tmp_path: Path,
+) -> None:
+    runtime_root, manifest_path, prompt_logs = make_valid_case(tmp_path)
+    artifact = tmp_path / "build/impact-production/krea2_complete_pack.yaml"
+    dump_yaml({"krea2": {"styles/approved_example": [RESOLVED_PROMPT]}}, artifact)
+
+    report = audit(runtime_root, manifest_path, prompt_logs)
+
+    assert report["wildcard_paths_resolved"] == 2
+    assert report["impact_paths_resolved"] == 0
+    assert report["impact_adapter_exact"] is False
+    assert report["all_runtime_leaves_resolved"] is False
+    assert report["complete"] is False
+
+
+@pytest.mark.parametrize(
+    "resolved_prompt",
+    [
+        "A prompt still contains __krea2/styles/approved_example__.",
+        "A prompt has a malformed __wild card__ token.",
+        "A prompt has an unterminated __wildcard token.",
+        "A prompt retains {NovelAI emphasis}.",
+        "A prompt retains [NovelAI de-emphasis].",
+    ],
+)
+def test_single_smoke_log_cannot_hide_unresolved_prompt_syntax(
+    tmp_path: Path, resolved_prompt: str
+) -> None:
+    runtime_root, manifest_path, prompt_logs = make_valid_case(tmp_path)
+    run_path = tmp_path / prompt_logs[0]
+    run = json.loads(run_path.read_text(encoding="utf-8"))
+    run["resolved_prompt"] = resolved_prompt
+    run_path.write_text(json.dumps(run), encoding="utf-8")
+
+    report = audit(runtime_root, manifest_path, prompt_logs)
+
+    assert (
+        report["final_prompt_unresolved_wildcards"] > 0
+        or report["final_prompt_brace_conflicts"] > 0
+        or report["final_prompt_bracket_conflicts"] > 0
+    )
+    assert report["complete"] is False
 
 
 @pytest.mark.parametrize("manifest_case", ["malformed_path", "duplicate_path"])

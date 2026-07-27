@@ -11,10 +11,12 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from common import load_yaml
+from deploy_remote_wildcards import load_json_object
 
 
 API_URL_ENV = "KREA2_COMFY_API_URL"
@@ -36,6 +38,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--style-id", default="crystal_iris_pastel")
     parser.add_argument("--seed", type=int, default=1001)
+    parser.add_argument(
+        "--deployment-evidence",
+        type=Path,
+        help="bind a production smoke run to a passed deployment evidence record",
+    )
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument(
         "--submit",
@@ -206,6 +213,120 @@ def record_path(path: Path) -> str:
         return path.name
 
 
+def utc_timestamp() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def deployment_binding(path: Path) -> dict[str, str]:
+    document = load_json_object(path, label="deployment evidence")
+    verification = document.get("verification")
+    artifact = document.get("artifact")
+    manifest = document.get("manifest")
+    deployment = document.get("deployment")
+    if (
+        document.get("schema_version") != 2
+        or document.get("deployment_type") != "production"
+        or document.get("status") != "passed"
+        or document.get("mode") != "apply"
+        or document.get("applied") is not True
+        or not isinstance(verification, dict)
+        or not all(
+            verification.get(key) is True
+            for key in (
+                "checksum_match",
+                "exact_krea2_namespace",
+                "impact_reload",
+                "queue_empty",
+            )
+        )
+        or not isinstance(artifact, dict)
+        or not isinstance(manifest, dict)
+        or not isinstance(deployment, dict)
+    ):
+        raise ValueError("deployment evidence is not a passed production apply")
+    binding = {
+        "deployment_id": document.get("deployment_id"),
+        "deployment_nonce": deployment.get("nonce"),
+        "artifact_sha256": artifact.get("sha256"),
+        "manifest_sha256": manifest.get("sha256"),
+        "deployed_at_utc": deployment.get("completed_at_utc"),
+    }
+    if (
+        not isinstance(binding["deployment_id"], str)
+        or not binding["deployment_id"]
+        or not isinstance(binding["deployment_nonce"], str)
+        or len(binding["deployment_nonce"]) != 32
+        or any(character not in "0123456789abcdef" for character in binding["deployment_nonce"])
+        or any(
+            not isinstance(binding[key], str)
+            or len(binding[key]) != 64
+            or any(character not in "0123456789abcdef" for character in binding[key])
+            for key in ("artifact_sha256", "manifest_sha256")
+        )
+        or not isinstance(binding["deployed_at_utc"], str)
+    ):
+        raise ValueError("deployment evidence binding is invalid")
+    try:
+        deployed_at = datetime.fromisoformat(
+            binding["deployed_at_utc"].replace("Z", "+00:00")
+        )
+    except ValueError as exc:
+        raise ValueError("deployment evidence timestamp is invalid") from exc
+    if not binding["deployed_at_utc"].endswith("Z") or deployed_at.tzinfo != timezone.utc:
+        raise ValueError("deployment evidence timestamp is invalid")
+    return binding
+
+
+def smoke_run_directory(
+    output: Path,
+    style_id: str,
+    seed: int,
+    binding: dict[str, str] | None,
+) -> Path:
+    name = f"{style_id}_seed_{seed}"
+    if binding is not None:
+        name += (
+            f"_{binding['deployment_id']}_{binding['deployment_nonce'][:12]}"
+        )
+    return output / "runs" / name
+
+
+def reusable_smoke_run(
+    run_dir: Path,
+    *,
+    style_id: str,
+    seed: int,
+    binding: dict[str, str],
+) -> bool:
+    run_path = run_dir / "run.json"
+    if not run_path.is_file():
+        return False
+    try:
+        document = load_json_object(run_path, label="smoke run")
+    except (OSError, ValueError):
+        return False
+    if (
+        document.get("style_id") != style_id
+        or document.get("seed") != seed
+        or document.get("remote") != "private_comfyui"
+        or document.get("deployment") != binding
+    ):
+        return False
+    images = document.get("images")
+    if not isinstance(images, list) or not images:
+        return False
+    for raw in images:
+        if not isinstance(raw, str) or not raw:
+            return False
+        path = Path(raw)
+        if path.is_absolute() or ".." in path.parts or not path.is_file():
+            return False
+    return all(
+        isinstance(document.get(key), str) and document[key].endswith("Z")
+        for key in ("started_at_utc", "completed_at_utc")
+    )
+
+
 def download_images(
     api_url: str,
     record: dict[str, Any],
@@ -247,10 +368,6 @@ def download_images(
 def main() -> int:
     args = parse_args()
     try:
-        if not args.api_url:
-            raise ValueError(
-                f"missing remote API URL; set {API_URL_ENV} or pass --api-url"
-            )
         valid_styles = catalog_style_ids(args.catalog)
         if args.style_id not in valid_styles:
             raise ValueError(f"unknown style id: {args.style_id}")
@@ -262,9 +379,31 @@ def main() -> int:
             args.template, catalog_path, args.style_id
         )
         prepared = prepare_workflow(workflow, prompt, args.style_id, args.seed)
-        run_dir = args.output / "runs" / f"{args.style_id}_seed_{args.seed}"
+        binding = (
+            deployment_binding(args.deployment_evidence)
+            if args.deployment_evidence is not None
+            else None
+        )
+        run_dir = smoke_run_directory(
+            args.output, args.style_id, args.seed, binding
+        )
         if args.submit and run_dir.exists():
+            if binding is not None and reusable_smoke_run(
+                run_dir,
+                style_id=args.style_id,
+                seed=args.seed,
+                binding=binding,
+            ):
+                print(
+                    "Reusing completed production smoke run: "
+                    f"{record_path(run_dir / 'run.json')}"
+                )
+                return 0
             raise FileExistsError(f"run directory already exists: {record_path(run_dir)}")
+        if not args.api_url:
+            raise ValueError(
+                f"missing remote API URL; set {API_URL_ENV} or pass --api-url"
+            )
         validate_remote_nodes(args.api_url, prepared)
         print(
             f"Prepared style={args.style_id} seed={args.seed} "
@@ -275,6 +414,16 @@ def main() -> int:
             return 0
 
         require_empty_queue(args.api_url)
+        started_at_utc = utc_timestamp()
+        if binding is not None:
+            deployed_at = datetime.fromisoformat(
+                binding["deployed_at_utc"].replace("Z", "+00:00")
+            )
+            started_at = datetime.fromisoformat(
+                started_at_utc.replace("Z", "+00:00")
+            )
+            if started_at < deployed_at:
+                raise ValueError("production smoke cannot start before deployment")
 
         client_id = str(uuid.uuid4())
         result = http_json(
@@ -289,7 +438,9 @@ def main() -> int:
 
         images = download_images(args.api_url, record, run_dir, dimensions)
         run_dir.mkdir(parents=True, exist_ok=True)
+        require_empty_queue(args.api_url)
         metadata = {
+            "schema_version": 2 if binding is not None else 1,
             "prompt_id": prompt_id,
             "style_id": args.style_id,
             "seed": args.seed,
@@ -299,11 +450,14 @@ def main() -> int:
             "wildcard_prompt": prompt,
             "resolved_prompt": resolved_prompt,
             "images": [record_path(path) for path in images],
+            "started_at_utc": started_at_utc,
+            "completed_at_utc": utc_timestamp(),
         }
+        if binding is not None:
+            metadata["deployment"] = binding
         (run_dir / "run.json").write_text(
             json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
-        require_empty_queue(args.api_url)
         print(f"Completed with {len(images)} image(s): {run_dir}")
         return 0
     except (

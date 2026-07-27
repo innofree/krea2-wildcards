@@ -10,6 +10,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from bind_artist_prompt_evidence import load_validated_binding
 from common import load_yaml
 
 
@@ -25,6 +26,8 @@ METRICS = (
 )
 DEFAULT_POLICY = Path("catalog/evaluation.yaml")
 INTEGER_TOKEN = re.compile(r"^[+-]?\d+$")
+SHA256_TOKEN = re.compile(r"^[0-9a-f]{64}$")
+FACTOR_SHA256_TOKEN = re.compile(r"^sha256_([0-9a-f]{64})$")
 
 
 def read_rows(path: Path) -> list[dict[str, Any]]:
@@ -68,6 +71,52 @@ def parse_boolean(value: Any, *, field: str) -> bool:
     raise ValueError(f"{field} must be the boolean token true or false")
 
 
+def parse_evaluated_prompt_sha256(row: dict[str, Any], *, row_number: int) -> str | None:
+    direct = row.get("evaluated_prompt_sha256")
+    factors_value = row.get("factors_json")
+    factors_digest: Any = None
+    if factors_value not in (None, ""):
+        if not isinstance(factors_value, str):
+            raise ValueError(f"row {row_number}: factors_json must be JSON text")
+        try:
+            factors = json.loads(factors_value)
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"row {row_number}: factors_json must be valid JSON"
+            ) from exc
+        if not isinstance(factors, dict):
+            raise ValueError(f"row {row_number}: factors_json must contain an object")
+        factors_digest = factors.get("evaluated_prompt_sha256")
+
+    normalized: list[str] = []
+    if direct not in (None, ""):
+        if not isinstance(direct, str) or not SHA256_TOKEN.fullmatch(direct):
+            raise ValueError(
+                f"row {row_number}: evaluated_prompt_sha256 must be "
+                "64 lowercase hex characters"
+            )
+        normalized.append(direct)
+    if factors_digest not in (None, ""):
+        factor_match = (
+            FACTOR_SHA256_TOKEN.fullmatch(factors_digest)
+            if isinstance(factors_digest, str)
+            else None
+        )
+        if factor_match is None:
+            raise ValueError(
+                f"row {row_number}: factors evaluated_prompt_sha256 must use "
+                "sha256_<64 lowercase hex> format"
+            )
+        normalized.append(factor_match.group(1))
+    if not normalized:
+        return None
+    if len(set(normalized)) != 1:
+        raise ValueError(
+            f"row {row_number}: evaluated_prompt_sha256 sources do not match"
+        )
+    return normalized[0]
+
+
 def validate_policy(policy: Any) -> dict[str, int | float]:
     if not isinstance(policy, dict):
         raise ValueError("approval_policy must be a mapping")
@@ -104,7 +153,11 @@ def validate_policy(policy: Any) -> dict[str, int | float]:
     return validated
 
 
-def validate_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def validate_rows(
+    rows: list[dict[str, Any]],
+    *,
+    prompt_bindings: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
     validated: list[dict[str, Any]] = []
     seen: set[tuple[str, int]] = set()
     for row_number, row in enumerate(rows, start=1):
@@ -140,6 +193,25 @@ def validate_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
             )
         except ValueError as exc:
             raise ValueError(f"row {row_number}: {exc}") from exc
+        evaluated_prompt_sha256 = parse_evaluated_prompt_sha256(
+            row, row_number=row_number
+        )
+        if prompt_bindings is not None:
+            bound_digest = prompt_bindings.get(style_id)
+            if bound_digest is None:
+                raise ValueError(
+                    f"row {row_number}: style_id is absent from prompt binding"
+                )
+            if (
+                evaluated_prompt_sha256 is not None
+                and evaluated_prompt_sha256 != bound_digest
+            ):
+                raise ValueError(
+                    f"row {row_number}: scorecard prompt digest does not match binding"
+                )
+            evaluated_prompt_sha256 = bound_digest
+        if evaluated_prompt_sha256 is not None:
+            scorecard["evaluated_prompt_sha256"] = evaluated_prompt_sha256
         validated.append(scorecard)
     return validated
 
@@ -149,10 +221,20 @@ def main() -> int:
     parser.add_argument("results", type=Path)
     parser.add_argument("--output", type=Path, default=Path("tests/reports/summary.json"))
     parser.add_argument("--policy", type=Path, default=DEFAULT_POLICY)
+    parser.add_argument(
+        "--prompt-binding",
+        type=Path,
+        help="validated immutable-matrix to catalog prompt digest binding",
+    )
     args = parser.parse_args()
 
     try:
-        rows = validate_rows(read_rows(args.results))
+        prompt_bindings = (
+            load_validated_binding(args.prompt_binding)
+            if args.prompt_binding is not None
+            else None
+        )
+        rows = validate_rows(read_rows(args.results), prompt_bindings=prompt_bindings)
         policy_document = load_yaml(args.policy)
         if not isinstance(policy_document, dict):
             raise ValueError("policy document must be a mapping")
@@ -165,6 +247,17 @@ def main() -> int:
         summaries = []
         for style_id, style_rows in sorted(grouped.items()):
             tested_seeds = {row["seed"] for row in style_rows}
+            prompt_digests = {
+                row.get("evaluated_prompt_sha256") for row in style_rows
+            }
+            if None in prompt_digests and len(prompt_digests) > 1:
+                raise ValueError(
+                    f"style {style_id!r} has incomplete evaluated_prompt_sha256 coverage"
+                )
+            if len(prompt_digests) > 1:
+                raise ValueError(
+                    f"style {style_id!r} has inconsistent evaluated_prompt_sha256 values"
+                )
             averages = {}
             for metric in METRICS:
                 values = [row[metric] for row in style_rows]
@@ -186,8 +279,7 @@ def main() -> int:
                 recommended_status = "testing"
             else:
                 recommended_status = "rejected"
-            summaries.append(
-                {
+            result = {
                     "style_id": style_id,
                     "sample_count": len(style_rows),
                     "tested_seeds": len(tested_seeds),
@@ -195,7 +287,10 @@ def main() -> int:
                     "critical_failures": critical_failures,
                     "recommended_status": recommended_status,
                 }
-            )
+            evaluated_prompt_sha256 = next(iter(prompt_digests))
+            if evaluated_prompt_sha256 is not None:
+                result["evaluated_prompt_sha256"] = evaluated_prompt_sha256
+            summaries.append(result)
     except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}")
         return 1

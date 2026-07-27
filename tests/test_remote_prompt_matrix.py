@@ -74,6 +74,14 @@ def test_load_jobs_rejects_unsafe_or_ambiguous_rows(
         runner.load_jobs(matrix)
 
 
+def test_load_jobs_rejects_raw_ipv4_in_persisted_label(tmp_path: Path) -> None:
+    matrix = tmp_path / "matrix.jsonl"
+    private_ip = ".".join(("10", "20", "30", "40"))
+    write_matrix(matrix, [matrix_row(label=f"server {private_ip}")])
+    with pytest.raises(ValueError, match="connection data"):
+        runner.load_jobs(matrix)
+
+
 def test_resume_requires_matching_redacted_1024_run(tmp_path: Path) -> None:
     job = runner.validate_job(matrix_row(), 1)
     output = tmp_path / "output"
@@ -181,7 +189,13 @@ def test_queue_depth_fills_then_collects_in_submission_order(
     ]
     events: list[str] = []
 
-    def enqueue(_url: str, _workflow: object, job: dict[str, object]) -> str:
+    def enqueue(
+        _url: str,
+        _workflow: object,
+        job: dict[str, object],
+        _state: dict[str, object],
+        _state_path: Path,
+    ) -> str:
         events.append(f"queue:{job['test_id']}")
         return f"prompt-{job['test_id']}"
 
@@ -193,13 +207,35 @@ def test_queue_depth_fills_then_collects_in_submission_order(
         *,
         timeout: int,
         queue_depth: int,
+        batch_size: int,
+        workflow_sha256: str,
     ) -> None:
         assert timeout == 10
         assert queue_depth == 2
+        assert batch_size == 1
+        assert workflow_sha256 == "a" * 64
         events.append(f"collect:{job['test_id']}")
 
-    monkeypatch.setattr(runner, "enqueue_job", enqueue)
+    monkeypatch.setattr(runner, "enqueue_and_journal", enqueue)
     monkeypatch.setattr(runner, "collect_job", collect)
+    monkeypatch.setattr(runner, "unknown_external_queue_count", lambda *_args: 0)
+    monkeypatch.setattr(
+        runner,
+        "mark_state_job_completed",
+        lambda state, job, _run_dir: state["jobs"][job["test_id"]].update(
+            {"completion_status": "completed"}
+        ),
+    )
+    state = {
+        "client_id": "client",
+        "jobs": {
+            job["test_id"]: {
+                "workflow_sha256": "a" * 64,
+                "completion_status": "pending",
+            }
+            for job in jobs
+        },
+    }
 
     runner.run_pending_jobs(
         "http://private.invalid",
@@ -208,6 +244,8 @@ def test_queue_depth_fills_then_collects_in_submission_order(
         tmp_path,
         timeout=10,
         queue_depth=2,
+        state=state,
+        state_path=tmp_path / "run-state.json",
     )
 
     assert events == [
@@ -222,6 +260,255 @@ def test_queue_depth_fills_then_collects_in_submission_order(
         "collect:PAIR0004",
         "collect:PAIR0005",
     ]
+
+
+def test_enqueue_journal_uses_stable_client_and_durable_prompt_identity(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    jobs = [
+        runner.validate_job(
+            matrix_row(
+                test_id=f"PAIR{index:04d}",
+                style_id=f"pairwise_{index}",
+                seed=1000 + index,
+            ),
+            index,
+        )
+        for index in range(1, 3)
+    ]
+    workflow = json.loads(
+        (ROOT / "tests/baseline/workflow.json").read_text(encoding="utf-8")
+    )
+    state = {
+        "client_id": "stable-client",
+        "jobs": {
+            job["test_id"]: {
+                "workflow_sha256": runner.prepared_workflow_sha256(workflow, job),
+                "completion_status": "pending",
+            }
+            for job in jobs
+        },
+    }
+    state_path = tmp_path / "run-state.json"
+    payloads: list[dict[str, object]] = []
+
+    def post(_url: str, payload: dict[str, object]) -> dict[str, str]:
+        payloads.append(payload)
+        return {"prompt_id": f"prompt-{len(payloads)}"}
+
+    monkeypatch.setattr(runner, "http_json", post)
+
+    for job in jobs:
+        runner.enqueue_and_journal(
+            "http://private.invalid", workflow, job, state, state_path
+        )
+
+    assert [payload["client_id"] for payload in payloads] == [
+        "stable-client",
+        "stable-client",
+    ]
+    persisted = json.loads(state_path.read_text(encoding="utf-8"))
+    assert persisted["jobs"]["PAIR0001"]["prompt_id"] == "prompt-1"
+    assert persisted["jobs"]["PAIR0002"]["prompt_id"] == "prompt-2"
+    assert not list(tmp_path.glob("*.tmp"))
+
+
+def test_resume_reconciles_unjournaled_owned_history_without_resubmission(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    job = runner.validate_job(matrix_row(), 1)
+    workflow = json.loads(
+        (ROOT / "tests/baseline/workflow.json").read_text(encoding="utf-8")
+    )
+    prepared = runner.prepare_workflow(
+        workflow, job["prompt"], job["test_id"], job["seed"]
+    )
+    state = {
+        "client_id": "stable-client",
+        "jobs": {
+            job["test_id"]: {
+                "workflow_sha256": runner.value_sha256(prepared),
+                "submission_status": "not_submitted",
+                "completion_status": "pending",
+            }
+        },
+    }
+    state_path = tmp_path / "run-state.json"
+
+    def get(url: str, _payload: object = None) -> dict[str, object]:
+        if url.endswith("/queue"):
+            return {"queue_running": [], "queue_pending": []}
+        if url.endswith("/history"):
+            return {
+                "recovered-prompt": {
+                    "prompt": [
+                        1,
+                        "recovered-prompt",
+                        prepared,
+                        {"client_id": "stable-client"},
+                        ["9"],
+                    ],
+                    "outputs": {"9": {"images": [{}]}},
+                }
+            }
+        raise AssertionError(url)
+
+    monkeypatch.setattr(runner, "http_json", get)
+    runner.reconcile_owned_remote_jobs(
+        "http://private.invalid", workflow, [job], state, state_path
+    )
+
+    assert state["jobs"][job["test_id"]]["prompt_id"] == "recovered-prompt"
+    assert state["jobs"][job["test_id"]]["submission_status"] == "history"
+    assert (
+        json.loads(state_path.read_text(encoding="utf-8"))["jobs"][job["test_id"]][
+            "prompt_id"
+        ]
+        == "recovered-prompt"
+    )
+
+
+def test_external_queue_halts_refill_but_harvests_owned_active_job(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    jobs = [
+        runner.validate_job(
+            matrix_row(
+                test_id=f"PAIR{index:04d}",
+                style_id=f"pairwise_{index}",
+                seed=1000 + index,
+            ),
+            index,
+        )
+        for index in range(1, 3)
+    ]
+    state = {
+        "client_id": "stable-client",
+        "jobs": {
+            jobs[0]["test_id"]: {
+                "prompt_id": "owned-active",
+                "workflow_sha256": "a" * 64,
+                "completion_status": "pending",
+            },
+            jobs[1]["test_id"]: {
+                "workflow_sha256": "b" * 64,
+                "completion_status": "pending",
+            },
+        },
+    }
+    events: list[str] = []
+    monkeypatch.setattr(runner, "unknown_external_queue_count", lambda *_args: 1)
+    monkeypatch.setattr(
+        runner,
+        "enqueue_and_journal",
+        lambda *_args: pytest.fail("external queue must prevent refill"),
+    )
+
+    def collect(
+        _url: str,
+        _prompt_id: str,
+        job: dict[str, object],
+        _run_dir: Path,
+        **_kwargs: object,
+    ) -> None:
+        events.append(f"collect:{job['test_id']}")
+
+    monkeypatch.setattr(runner, "collect_job", collect)
+    monkeypatch.setattr(
+        runner,
+        "mark_state_job_completed",
+        lambda current_state, job, _run_dir: current_state["jobs"][
+            job["test_id"]
+        ].update({"completion_status": "completed"}),
+    )
+
+    with pytest.raises(RuntimeError, match="unknown external queue"):
+        runner.run_pending_jobs(
+            "http://private.invalid",
+            {},
+            jobs,
+            tmp_path,
+            timeout=10,
+            queue_depth=2,
+            state=state,
+            state_path=tmp_path / "run-state.json",
+        )
+    assert events == ["collect:PAIR0001"]
+    assert state["jobs"]["PAIR0001"]["completion_status"] == "completed"
+
+
+def test_collection_failure_isolated_and_other_owned_result_harvested(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    jobs = [
+        runner.validate_job(
+            matrix_row(
+                test_id=f"PAIR{index:04d}",
+                style_id=f"pairwise_{index}",
+                seed=1000 + index,
+            ),
+            index,
+        )
+        for index in range(1, 4)
+    ]
+    state = {
+        "client_id": "stable-client",
+        "jobs": {
+            job["test_id"]: {
+                **(
+                    {"prompt_id": f"prompt-{job['test_id']}"}
+                    if index < 2
+                    else {}
+                ),
+                "workflow_sha256": "a" * 64,
+                "completion_status": "pending",
+            }
+            for index, job in enumerate(jobs)
+        },
+    }
+    events: list[str] = []
+    monkeypatch.setattr(runner, "unknown_external_queue_count", lambda *_args: 0)
+
+    def collect(
+        _url: str,
+        _prompt_id: str,
+        job: dict[str, object],
+        _run_dir: Path,
+        **_kwargs: object,
+    ) -> None:
+        events.append(f"collect:{job['test_id']}")
+        if job["test_id"] == "PAIR0001":
+            raise RuntimeError("remote failed")
+
+    monkeypatch.setattr(runner, "collect_job", collect)
+    monkeypatch.setattr(
+        runner,
+        "mark_state_job_completed",
+        lambda current_state, job, _run_dir: current_state["jobs"][
+            job["test_id"]
+        ].update({"completion_status": "completed"}),
+    )
+    monkeypatch.setattr(
+        runner,
+        "enqueue_and_journal",
+        lambda *_args: pytest.fail("failure must stop new submissions"),
+    )
+
+    with pytest.raises(RuntimeError, match="preserving available owned results"):
+        runner.run_pending_jobs(
+            "http://private.invalid",
+            {},
+            jobs,
+            tmp_path,
+            timeout=10,
+            queue_depth=2,
+            state=state,
+            state_path=tmp_path / "run-state.json",
+        )
+    assert events == ["collect:PAIR0001", "collect:PAIR0002"]
+    assert state["jobs"]["PAIR0001"]["completion_status"] == "failed"
+    assert state["jobs"]["PAIR0002"]["completion_status"] == "completed"
+    assert state["jobs"]["PAIR0003"]["completion_status"] == "pending"
 
 
 def test_scorecard_and_manifest_have_complete_generic_identity(tmp_path: Path) -> None:
@@ -260,6 +547,116 @@ def test_existing_scorecard_must_match_completed_matrix(tmp_path: Path) -> None:
 
     with pytest.raises(ValueError, match="does not match"):
         runner.write_scorecard(scorecard, output, jobs)
+
+
+def test_schema_two_run_verifies_prompt_workflow_image_status_and_depth_hashes(
+    tmp_path: Path,
+) -> None:
+    job = runner.validate_job(matrix_row(), 1)
+    workflow = json.loads(
+        (ROOT / "tests/baseline/workflow.json").read_text(encoding="utf-8")
+    )
+    run_dir = runner.run_dir_for(tmp_path, job)
+    run_dir.mkdir(parents=True)
+    image_path = run_dir / "image_01.png"
+    image_path.write_bytes(fake_png())
+    metadata = {
+        "schema_version": 2,
+        "test_id": job["test_id"],
+        "style_id": job["style_id"],
+        "label": job["label"],
+        "mode": job["mode"],
+        "seed": job["seed"],
+        "remote": "private_comfyui",
+        "resolved_prompt": job["prompt"],
+        "resolved_prompt_sha256": runner.text_sha256(job["prompt"]),
+        "workflow_sha256": runner.prepared_workflow_sha256(workflow, job),
+        "factors": job["factors"],
+        "images": ["image_01.png"],
+        "image_sha256": runner.file_sha256(image_path),
+        "queue_depth": 32,
+        "batch_size": 1,
+        "status": "completed",
+        "remote_status": "success",
+    }
+    (run_dir / "run.json").write_text(json.dumps(metadata), encoding="utf-8")
+
+    runner.validate_complete_run(run_dir, job, workflow=workflow)
+    metadata["image_sha256"] = "0" * 64
+    (run_dir / "run.json").write_text(json.dumps(metadata), encoding="utf-8")
+    with pytest.raises(ValueError, match="image_sha256 mismatch"):
+        runner.validate_complete_run(run_dir, job, workflow=workflow)
+
+
+@pytest.mark.parametrize(
+    ("prior_queue_depth", "expected_queue_depth"),
+    [(7, 7), (None, 1)],
+)
+def test_completed_resume_is_offline_noop_and_preserves_queue_depth_provenance(
+    tmp_path: Path,
+    prior_queue_depth: int | None,
+    expected_queue_depth: int,
+) -> None:
+    matrix = tmp_path / "matrix.jsonl"
+    output = tmp_path / "output"
+    write_matrix(matrix, [matrix_row()])
+    job = runner.load_jobs(matrix)[0]
+    run_dir = runner.run_dir_for(output, job)
+    run_dir.mkdir(parents=True)
+    (run_dir / "image_01.png").write_bytes(fake_png())
+    (run_dir / "run.json").write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "test_id": job["test_id"],
+                "style_id": job["style_id"],
+                "mode": job["mode"],
+                "seed": job["seed"],
+                "remote": "private_comfyui",
+                "resolved_prompt": job["prompt"],
+                "factors": job["factors"],
+                "images": ["image_01.png"],
+            }
+        ),
+        encoding="utf-8",
+    )
+    runner.write_scorecard(output / "scorecard.csv", output, [job])
+    manifest = runner.manifest_document(
+        matrix,
+        ROOT / "tests/baseline/workflow.json",
+        output,
+        [job],
+        queue_depth=prior_queue_depth or 1,
+    )
+    if prior_queue_depth is None:
+        manifest.pop("queue_depth")
+    (output / "manifest.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8"
+    )
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts/run_remote_prompt_matrix.py"),
+            str(matrix),
+            "--submit",
+            "--resume",
+            "--output",
+            str(output),
+            "--queue-depth",
+            "32",
+        ],
+        cwd=ROOT,
+        env={},
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout or result.stderr
+    assert "Matrix already complete" in result.stdout
+    assert json.loads(
+        (output / "manifest.json").read_text(encoding="utf-8")
+    )["queue_depth"] == expected_queue_depth
 
 
 def test_cli_defaults_to_offline_dry_run(tmp_path: Path) -> None:

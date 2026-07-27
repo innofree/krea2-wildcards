@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
 import yaml
 
 from build_runtime_yaml import compile_catalog
@@ -100,3 +101,73 @@ def test_runtime_rebuild_removes_stale_generated_files(tmp_path: Path) -> None:
     compile_catalog(catalog, output, {"approved"})
     assert not (output / "krea2/style/old.yaml").exists()
     assert (output / "krea2/style/new.yaml").is_file()
+
+
+@pytest.mark.parametrize(
+    ("runtime_file", "runtime_path"),
+    [
+        ("../escaped.yaml", ["krea2", "style", "test_item"]),
+        ("krea2/style/valid.yaml", ["krea2", "style/escaped", "test_item"]),
+        ("krea2/style/valid.yaml", ["krea2", "style", "all"]),
+        ("krea2/style/valid.yaml", ["other", "style", "test_item"]),
+    ],
+)
+def test_runtime_build_rejects_unsafe_or_ambiguous_public_paths(
+    tmp_path: Path, runtime_file: str, runtime_path: list[str]
+) -> None:
+    catalog = tmp_path / "catalog"
+    catalog.mkdir()
+    item_id = runtime_path[-1]
+    path = catalog / "items.yaml"
+    path.write_text(
+        yaml.safe_dump(
+            {
+                "schema_version": 1,
+                "catalog": "items",
+                "items": {
+                    item_id: {
+                        "prompt": "A complete safe prompt.",
+                        "runtime": {"file": runtime_file, "path": runtime_path},
+                        "validation": {"status": "approved"},
+                    }
+                },
+            },
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="invalid runtime"):
+        compile_catalog(catalog, tmp_path / "runtime", {"approved"})
+
+
+def test_runtime_build_rejects_one_aggregate_path_split_across_files(
+    tmp_path: Path,
+) -> None:
+    catalog = tmp_path / "catalog"
+    catalog.mkdir()
+    path = catalog / "items.yaml"
+    items = {
+        item_id: {
+            "prompt": f"A complete safe prompt for {item_id}.",
+            "runtime": {
+                "file": runtime_file,
+                "path": ["krea2", "style", "shared", item_id],
+            },
+            "validation": {"status": "approved"},
+        }
+        for item_id, runtime_file in (
+            ("first_item", "krea2/style/first.yaml"),
+            ("second_item", "krea2/style/second.yaml"),
+        )
+    }
+    path.write_text(
+        yaml.safe_dump(
+            {"schema_version": 1, "catalog": "items", "items": items},
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="split across multiple files"):
+        compile_catalog(catalog, tmp_path / "runtime", {"approved"})

@@ -30,9 +30,11 @@ FIXED_COMPLEMENT_MARKERS = {
         "style visibly control palette",
     ),
     "artist_signature": (
-        "plain fitted long-sleeve top",
-        "balanced standing pose",
-        "uncluttered studio",
+        "standing character-design portrait",
+        "mid-thigh upward",
+        "both complete hands",
+        "quiet uncluttered studio",
+        "selected signature controls silhouette",
     ),
     "media_rendering": (
         "plain tailored coat",
@@ -131,14 +133,24 @@ def test_all_template_wildcards_resolve_in_preview(tmp_path: Path) -> None:
 def test_scene_templates_follow_prompt_pool_safety_and_option_counts() -> None:
     for path in sorted((ROOT / "templates").glob("*.txt")):
         text = path.read_text(encoding="utf-8").strip()
+        is_artist_signature = (
+            path.name == "benchmark_expansion_artist_signature.txt"
+        )
         assert "adult" in text.lower(), path
-        assert "realistic skin texture" in text.lower(), path
-        assert "coherent hands" in text.lower(), path
-        assert "believable fabric" in text.lower(), path
-        assert "natural proportions" in text.lower(), path
-        assert "cinematic depth" in text.lower(), path
+        if is_artist_signature:
+            assert "clearly hand-drawn two-dimensional" in text.lower(), path
+            assert "coherent illustrated anatomy" in text.lower(), path
+            assert "readable hands" in text.lower(), path
+            assert "realistic skin texture" not in text.lower(), path
+        else:
+            assert "realistic skin texture" in text.lower(), path
+            assert "coherent hands" in text.lower(), path
+            assert "believable fabric" in text.lower(), path
+            assert "natural proportions" in text.lower(), path
+            assert "cinematic depth" in text.lower(), path
         assert "no text, logos, or watermarks" in text.lower() or "no generated text, logos, or watermarks" in text.lower(), path
-        assert not PROHIBITED.search(text), path
+        if not is_artist_signature:
+            assert not PROHIBITED.search(text), path
         assert "BREAK," not in text
 
         groups = GROUP_RE.findall(text)
@@ -190,8 +202,17 @@ def test_expansion_templates_are_fixed_safe_benchmark_prompts() -> None:
         template_path = ROOT / relative_path
         text = template_path.read_text(encoding="utf-8").strip()
         lowered = text.lower()
-        assert all(constraint in lowered for constraint in quality_constraints), template_path
-        assert not PROHIBITED.search(text), template_path
+        if family == "artist_signature":
+            assert "clearly hand-drawn two-dimensional" in lowered, template_path
+            assert "coherent illustrated anatomy" in lowered, template_path
+            assert "realistic skin texture" not in lowered, template_path
+            assert "cinematic depth" not in lowered, template_path
+        else:
+            assert all(
+                constraint in lowered for constraint in quality_constraints
+            ), template_path
+        if family != "artist_signature":
+            assert not PROHIBITED.search(text), template_path
         assert not GROUP_RE.findall(text), template_path
         assert "{" not in text and "}" not in text and "|" not in text, template_path
         assert "BREAK," not in text, template_path

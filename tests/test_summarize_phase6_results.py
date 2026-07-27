@@ -9,7 +9,7 @@ from typing import Any
 import pytest
 
 import summarize_phase6_results as phase6
-from export_phase6_matrix import PAIRWISE_SPECS
+from export_phase6_matrix import PAIRWISE_SPECS, PHASE6_PROFILE_FACTOR
 from summarize_phase6_results import main, summarize, validate_report_freshness
 from summarize_results import METRICS
 
@@ -46,18 +46,18 @@ def _matrix(
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     jobs: list[dict[str, Any]] = []
     for style_id, mode, factors in cases:
+        if mode != "artist_abc":
+            factors = {
+                **factors,
+                "prompt_profile_sha256": PHASE6_PROFILE_FACTOR,
+            }
         for seed in seeds:
             jobs.append(_job(len(jobs) + 1, style_id, mode, seed, factors))
     return jobs, [_scored(job) for job in jobs]
 
 
 def _write_cli_inputs(root: Path) -> tuple[Path, Path]:
-    cases = [
-        ("line_a", "single_axis", {"axis": "linework"}),
-        ("line_b", "single_axis", {"axis": "linework"}),
-        ("color_a", "single_axis", {"axis": "coloring"}),
-        ("color_b", "single_axis", {"axis": "coloring"}),
-    ]
+    cases = _single_axis_cases()
     jobs, rows = _matrix(cases)
     inputs = root / "inputs"
     inputs.mkdir(parents=True)
@@ -102,18 +102,41 @@ def _write_cli_inputs(root: Path) -> tuple[Path, Path]:
     return matrix, scored
 
 
-def test_single_axis_summary_requires_both_axes() -> None:
-    cases = [
-        ("line_a", "single_axis", {"axis": "linework"}),
-        ("line_b", "single_axis", {"axis": "linework"}),
-        ("color_a", "single_axis", {"axis": "coloring"}),
-        ("color_b", "single_axis", {"axis": "coloring"}),
+def _single_axis_cases() -> list[tuple[str, str, dict[str, str]]]:
+    axes = (
+        "background",
+        "camera",
+        "character_design",
+        "lighting",
+        "linework_coloring",
+        "pose",
+    )
+    return [
+        (
+            f"{axis}_{index:03d}",
+            "single_axis",
+            {"axis": axis, "item_id": f"{axis}_item_{index:03d}"},
+        )
+        for axis in axes
+        for index in range(1, 17)
     ]
+
+
+def test_single_axis_summary_requires_actual_pairwise_rhs_axes() -> None:
+    cases = _single_axis_cases()
     jobs, rows = _matrix(cases)
     report = summarize("single-axis", jobs, rows)
     assert report["complete"] is True
-    assert report["tested_axes"] == ["coloring", "linework"]
-    assert report["total_cases"] == 4
+    assert report["tested_axes"] == [
+        "background",
+        "camera",
+        "character_design",
+        "lighting",
+        "linework_coloring",
+        "pose",
+    ]
+    assert report["total_cases"] == 96
+    assert len(report["passed_item_ids"]) == 96
     assert "matrix_path" not in report
     assert "scored_sha256" not in report
 
@@ -122,7 +145,14 @@ def test_pairwise_summary_requires_ninety_six_cases_and_six_types() -> None:
     cases = []
     for pair_type, *_ in PAIRWISE_SPECS:
         cases.extend(
-            (f"{pair_type}_{index:03d}", "pairwise", {"pair_type": pair_type})
+            (
+                f"{pair_type}_{index:03d}",
+                "pairwise",
+                {
+                    "pair_type": pair_type,
+                    "right_item": f"right_item_{index:03d}",
+                },
+            )
             for index in range(1, 17)
         )
     jobs, rows = _matrix(cases)
@@ -181,13 +211,28 @@ def test_artist_abc_records_one_recommendation_per_artist() -> None:
 
 
 def test_summary_rejects_metadata_drift_and_missing_seeds() -> None:
-    jobs, rows = _matrix([("case_a", "single_axis", {"axis": "linework"})])
+    jobs, rows = _matrix(
+        [
+            (
+                "case_a",
+                "single_axis",
+                {"axis": "linework_coloring", "item_id": "linework_item_a"},
+            )
+        ]
+    )
     rows[0]["seed"] = 9999
     with pytest.raises(ValueError, match="metadata differs"):
         summarize("single-axis", jobs, rows)
 
     jobs, rows = _matrix(
-        [("case_a", "single_axis", {"axis": "linework"})], seeds=(1001, 2002)
+        [
+            (
+                "case_a",
+                "single_axis",
+                {"axis": "linework_coloring", "item_id": "linework_item_a"},
+            )
+        ],
+        seeds=(1001, 2002),
     )
     with pytest.raises(ValueError, match="at least 3 distinct seeds"):
         summarize("single-axis", jobs, rows)

@@ -894,6 +894,8 @@ retest, pairwise, preset 및 random benchmark를 batch 또는 대량 queue로 �
 있는 운영 자원으로 간주한다.
 
 * batch 크기와 동시 queue 깊이는 명시적인 실행 인자로 관리하고 report manifest에 기록한다.
+  Prompt matrix는 seed별 증거를 1:1로 유지하기 위해 `batch_size=1`, 기본
+  `queue_depth=32`를 사용하고, 처리량은 서로 다른 job의 동시 queue로 확보한다.
 * 새 batch를 시작하기 전에 원격 큐에 기존 외부 작업이 없는지 확인한다.
 * 실행 도중 생성된 이 계획의 job만 추적하며, 기존 작업을 취소·재정렬·삭제하지 않는다.
 * 대량 queue에서도 각 test ID, seed, resolved prompt hash, workflow hash, 이미지 hash 및
@@ -1122,6 +1124,13 @@ conflicts:
 
 ## Phase 6. 생성 검증
 
+### 6.0 Prompt profile calibration gate
+
+전체 Phase 6 대량 실행 전에 실제 single-axis, pairwise, preset, random utility,
+Turbo benchmark 생성 경로를 모두 포함하는 23 case × 3 seed, 총 69장 calibration을
+수행한다. 모든 case가 품질 gate를 통과하고 현재 prompt-profile SHA-256이 matrix,
+scored review, summary에 동일하게 기록되어야 이후 대량 target을 실행할 수 있다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.
@@ -1147,6 +1156,11 @@ conflicts:
 ```
 
 이를 통해 어떤 wildcard가 실제 결과 차이를 만드는지 확인한다.
+
+Pairwise의 오른쪽 축으로 사용될 character design, pose, lighting, background,
+linework/coloring, camera catalog에서 각각 16개 실제 항목을 선택해 총 96 case를
+서로 다른 3개 seed로 먼저 검증한다. Pairwise matrix의 `right_item`은 이
+single-axis report에서 통과한 ID 집합의 부분집합이어야 한다.
 
 ### 6.2 작가 스타일 A/B/C 테스트
 

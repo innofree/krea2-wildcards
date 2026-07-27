@@ -22,6 +22,8 @@ from deploy_remote_wildcards import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DEPLOYED_AT = "2026-07-27T12:00:00Z"
+DEPLOYMENT_NONCE = "d" * 32
 
 
 def write_approved_manifest(path: Path, item_count: int = 2) -> None:
@@ -117,6 +119,17 @@ def test_impact_adapter_bundles_runtime_tree_and_rejects_path_collisions(
         impact_compatible_document(tmp_path)
 
 
+@pytest.mark.parametrize("invalid_key", ["style/medium", "..", "UpperCase", "two words"])
+def test_impact_adapter_rejects_ambiguous_flattened_path_segments(
+    tmp_path: Path, invalid_key: str
+) -> None:
+    source = tmp_path / "source.yaml"
+    dump_yaml({"krea2": {invalid_key: {"ink": ["fluid ink detail"]}}}, source)
+
+    with pytest.raises(ValueError, match="invalid canonical runtime path"):
+        impact_compatible_document(source)
+
+
 def test_production_impact_contains_only_approved_paths(tmp_path: Path) -> None:
     from build_runtime_yaml import compile_catalog
 
@@ -187,8 +200,13 @@ def test_deployment_evidence_is_redacted_and_written_atomically(tmp_path: Path) 
         status="passed",
         expected_paths=42,
         digest="a" * 64,
+        manifest_name="wildcards-manifest.json",
+        manifest_digest="b" * 64,
+        manifest_bytes=123,
         approved_items=21,
         evidence_path=Path("tests/reports/deployments/test-preview.json"),
+        deployed_at_utc=DEPLOYED_AT,
+        deployment_nonce=DEPLOYMENT_NONCE,
     )
     output = Path("tests/reports/deployments/test-preview.json")
 
@@ -207,10 +225,19 @@ def test_deployment_evidence_is_redacted_and_written_atomically(tmp_path: Path) 
     assert "api" not in raw.lower()
     assert str(tmp_path) not in raw
     assert not list((tmp_path / output.parent).glob(".test-preview.json.*"))
-    assert document["schema_version"] == 1
+    assert document["schema_version"] == 2
     assert document["deployment_id"] == "test-preview"
     assert document["deployment_type"] == "preview"
     assert document["approved_items"] == 21
+    assert document["manifest"] == {
+        "name": "wildcards-manifest.json",
+        "sha256": "b" * 64,
+        "bytes": 123,
+    }
+    assert document["deployment"] == {
+        "nonce": DEPLOYMENT_NONCE,
+        "completed_at_utc": DEPLOYED_AT,
+    }
     assert document["verification"] == {
         "checksum_match": True,
         "exact_krea2_namespace": True,
@@ -274,6 +301,9 @@ def test_dry_run_evidence_is_non_applied_and_cannot_pass_production(
         status="dry-run",
         expected_paths=2,
         digest="b" * 64,
+        manifest_name="wildcards-manifest.json",
+        manifest_digest="c" * 64,
+        manifest_bytes=123,
         approved_items=2,
         evidence_path=Path("tests/reports/deployments/production_dry_run.json"),
         checksum_match=False,
@@ -286,6 +316,7 @@ def test_dry_run_evidence_is_non_applied_and_cannot_pass_production(
     assert document["status"] == "dry-run"
     assert document["mode"] == "dry-run"
     assert document["applied"] is False
+    assert document["deployment"] is None
     assert not any(document["verification"].values())
     assert document["smoke"] is None
 
@@ -380,6 +411,14 @@ def test_apply_writes_completion_compatible_evidence_after_queue_check(
     assert document["status"] == "passed"
     assert document["applied"] is True
     assert document["approved_items"] == 2
+    assert document["schema_version"] == 2
+    assert document["manifest"] == {
+        "name": manifest.name,
+        "sha256": deploy.sha256(manifest),
+        "bytes": manifest.stat().st_size,
+    }
+    assert len(document["deployment"]["nonce"]) == 32
+    assert document["deployment"]["completed_at_utc"].endswith("Z")
     assert document["verification"] == {
         "checksum_match": True,
         "exact_krea2_namespace": True,

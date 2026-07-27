@@ -12,12 +12,16 @@ from deploy_remote_wildcards import (
     deployment_evidence,
     sha256,
 )
-from finalize_production_deployment import finalize, main
+from finalize_production_deployment import discover_smoke_run, finalize, main
 
 
 EVIDENCE_PATH = Path("tests/reports/deployments/production_test.json")
 SMOKE_PATH = Path("tests/reports/production_smoke/runs/smoke_one/run.json")
 RESOLVED_PROMPT = "A centered adult portrait uses clean edges and soft neutral light."
+DEPLOYED_AT = "2026-07-27T12:00:00Z"
+STARTED_AT = "2026-07-27T12:00:01Z"
+COMPLETED_AT = "2026-07-27T12:00:02Z"
+DEPLOYMENT_NONCE = "d" * 32
 
 
 def write_json(path: Path, document: dict[str, object]) -> None:
@@ -58,13 +62,17 @@ def make_repository(tmp_path: Path) -> Path:
         "  style/complete_pack/two: [Second treatment.]\n",
         encoding="utf-8",
     )
-    write_manifest(root / DEFAULT_MANIFEST)
+    manifest = root / DEFAULT_MANIFEST
+    write_manifest(manifest)
     evidence = deployment_evidence(
         artifact,
         applied=True,
         status="passed",
         expected_paths=2,
         digest=sha256(artifact),
+        manifest_name=manifest.name,
+        manifest_digest=sha256(manifest),
+        manifest_bytes=manifest.stat().st_size,
         approved_items=2,
         evidence_path=EVIDENCE_PATH,
         deployment_type="production",
@@ -72,6 +80,8 @@ def make_repository(tmp_path: Path) -> Path:
         exact_krea2_namespace=True,
         impact_reload=True,
         queue_empty=True,
+        deployed_at_utc=DEPLOYED_AT,
+        deployment_nonce=DEPLOYMENT_NONCE,
     )
     atomic_write_evidence(EVIDENCE_PATH, evidence, root=root)
     write_json(
@@ -81,6 +91,15 @@ def make_repository(tmp_path: Path) -> Path:
             "remote": "private_comfyui",
             "resolved_prompt": RESOLVED_PROMPT,
             "images": ["smoke_output.png"],
+            "started_at_utc": STARTED_AT,
+            "completed_at_utc": COMPLETED_AT,
+            "deployment": {
+                "deployment_id": EVIDENCE_PATH.stem,
+                "deployment_nonce": DEPLOYMENT_NONCE,
+                "artifact_sha256": sha256(artifact),
+                "manifest_sha256": sha256(manifest),
+                "deployed_at_utc": DEPLOYED_AT,
+            },
         },
     )
     return root
@@ -98,9 +117,17 @@ def test_finalize_cross_checks_and_atomically_records_redacted_smoke(
     )
 
     assert document["verification"]["smoke_completed"] is True
+    smoke_path = root / SMOKE_PATH
     assert document["smoke"] == {
         "seed": 6006,
         "run_record": SMOKE_PATH.as_posix(),
+        "run_record_sha256": sha256(smoke_path),
+        "deployment_id": EVIDENCE_PATH.stem,
+        "deployment_nonce": DEPLOYMENT_NONCE,
+        "artifact_sha256": sha256(root / DEFAULT_SOURCE),
+        "manifest_sha256": sha256(root / DEFAULT_MANIFEST),
+        "started_at_utc": STARTED_AT,
+        "completed_at_utc": COMPLETED_AT,
     }
     raw = (root / EVIDENCE_PATH).read_text(encoding="utf-8")
     assert RESOLVED_PROMPT not in raw
@@ -168,6 +195,73 @@ def test_finalize_rejects_stale_artifact_checksum(tmp_path: Path) -> None:
             evidence_path=EVIDENCE_PATH,
             smoke_run_path=SMOKE_PATH,
         )
+
+
+def test_finalize_rejects_stale_manifest_checksum(tmp_path: Path) -> None:
+    root = make_repository(tmp_path)
+    with (root / DEFAULT_MANIFEST).open("a", encoding="utf-8") as handle:
+        handle.write("\n")
+
+    with pytest.raises(ValueError, match="manifest evidence is stale or mismatched"):
+        finalize(
+            root=root,
+            evidence_path=EVIDENCE_PATH,
+            smoke_run_path=SMOKE_PATH,
+        )
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "message"),
+    [
+        ("deployment_nonce", "e" * 32, "does not belong"),
+        ("artifact_sha256", "e" * 64, "does not belong"),
+        ("deployment_id", "other_deployment", "does not belong"),
+    ],
+)
+def test_finalize_rejects_smoke_bound_to_another_deployment(
+    tmp_path: Path, field: str, value: str, message: str
+) -> None:
+    root = make_repository(tmp_path)
+    smoke_path = root / SMOKE_PATH
+    smoke = json.loads(smoke_path.read_text(encoding="utf-8"))
+    smoke["deployment"][field] = value
+    write_json(smoke_path, smoke)
+
+    with pytest.raises(ValueError, match=message):
+        finalize(
+            root=root,
+            evidence_path=EVIDENCE_PATH,
+            smoke_run_path=SMOKE_PATH,
+        )
+
+
+def test_finalize_rejects_smoke_started_before_deployment(tmp_path: Path) -> None:
+    root = make_repository(tmp_path)
+    smoke_path = root / SMOKE_PATH
+    smoke = json.loads(smoke_path.read_text(encoding="utf-8"))
+    smoke["started_at_utc"] = "2026-07-27T11:59:59Z"
+    write_json(smoke_path, smoke)
+
+    with pytest.raises(ValueError, match="chronology is invalid"):
+        finalize(
+            root=root,
+            evidence_path=EVIDENCE_PATH,
+            smoke_run_path=SMOKE_PATH,
+        )
+
+
+def test_discover_smoke_run_selects_only_current_deployment(tmp_path: Path) -> None:
+    root = make_repository(tmp_path)
+    stale = root / "tests/reports/production_smoke/runs/stale/run.json"
+    stale_document = json.loads((root / SMOKE_PATH).read_text(encoding="utf-8"))
+    stale_document["deployment"]["deployment_nonce"] = "e" * 32
+    write_json(stale, stale_document)
+
+    assert discover_smoke_run(
+        root=root,
+        evidence_path=EVIDENCE_PATH,
+        smoke_root=Path("tests/reports/production_smoke"),
+    ) == SMOKE_PATH
 
 
 @pytest.mark.parametrize(

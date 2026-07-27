@@ -12,6 +12,7 @@ import sys
 import tempfile
 import urllib.error
 import urllib.request
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from typing import Any, Sequence
@@ -213,6 +214,9 @@ def deployment_evidence(
     status: str,
     expected_paths: int,
     digest: str,
+    manifest_name: str,
+    manifest_digest: str,
+    manifest_bytes: int,
     approved_items: int = 0,
     evidence_path: Path | None = None,
     deployment_type: str | None = None,
@@ -220,7 +224,10 @@ def deployment_evidence(
     exact_krea2_namespace: bool | None = None,
     impact_reload: bool | None = None,
     queue_empty: bool | None = None,
+    deployed_at_utc: str | None = None,
+    deployment_nonce: str | None = None,
 ) -> dict[str, Any]:
+    successful_apply = applied and status == "passed"
     if (
         status not in {"passed", "failed", "dry-run"}
         or type(approved_items) is not int
@@ -228,11 +235,27 @@ def deployment_evidence(
         or type(expected_paths) is not int
         or expected_paths < 0
         or not re.fullmatch(r"[0-9a-f]{64}", digest)
+        or not SAFE_DEPLOYMENT_ID_RE.fullmatch(manifest_name)
+        or not re.fullmatch(r"[0-9a-f]{64}", manifest_digest)
+        or type(manifest_bytes) is not int
+        or manifest_bytes < 1
         or not SAFE_DEPLOYMENT_ID_RE.fullmatch(source.name)
         or IPV4_RE.search(source.name)
     ):
         raise ValueError("deployment evidence metadata is invalid")
-    successful_apply = applied and status == "passed"
+    if successful_apply:
+        if (
+            not isinstance(deployed_at_utc, str)
+            or not re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z",
+                deployed_at_utc,
+            )
+            or not isinstance(deployment_nonce, str)
+            or not re.fullmatch(r"[0-9a-f]{32}", deployment_nonce)
+        ):
+            raise ValueError("successful deployment evidence requires timing and nonce")
+    elif deployed_at_utc is not None or deployment_nonce is not None:
+        raise ValueError("non-applied evidence must not claim a deployment identity")
     if evidence_path is not None:
         deployment_id = deployment_id_from_evidence(evidence_path)
     else:
@@ -247,7 +270,7 @@ def deployment_evidence(
     if deployment_type not in {"production", "preview"}:
         raise ValueError("deployment_type must be production or preview")
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "deployment_id": deployment_id,
         "deployment_type": deployment_type,
         "status": status,
@@ -255,12 +278,25 @@ def deployment_evidence(
         "mode": "apply" if applied else "dry-run",
         "applied": successful_apply,
         "approved_items": approved_items,
+        "manifest": {
+            "name": manifest_name,
+            "sha256": manifest_digest,
+            "bytes": manifest_bytes,
+        },
         "artifact": {
             "name": source.name,
             "sha256": digest,
             "bytes": source.stat().st_size,
             "wildcard_path_count": expected_paths,
         },
+        "deployment": (
+            {
+                "nonce": deployment_nonce,
+                "completed_at_utc": deployed_at_utc,
+            }
+            if successful_apply
+            else None
+        ),
         "verification": {
             "checksum_match": successful_apply
             if checksum_match is None
@@ -380,6 +416,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     previous_namespace: set[str] | None = None
     expected: set[str] = set()
     local_digest = ""
+    manifest_digest = ""
+    manifest_bytes = 0
     approved_items = 0
     checksum_match = False
     exact_namespace = False
@@ -407,6 +445,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                 f"runtime artifact not found: {args.source}; build the selected artifact first"
             )
         approved_items = approved_manifest_item_count(args.manifest)
+        manifest_digest = sha256(args.manifest)
+        manifest_bytes = args.manifest.stat().st_size
         expected = runtime_paths(args.source)
         if len(expected) < 2:
             raise ValueError(f"deployment artifact has too few runtime paths: {len(expected)}")
@@ -440,6 +480,9 @@ def main(argv: Sequence[str] | None = None) -> int:
                         status="dry-run",
                         expected_paths=len(expected),
                         digest=local_digest,
+                        manifest_name=args.manifest.name,
+                        manifest_digest=manifest_digest,
+                        manifest_bytes=manifest_bytes,
                         approved_items=approved_items,
                         evidence_path=args.evidence,
                         checksum_match=False,
@@ -477,6 +520,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         if not queue_empty:
             raise RuntimeError("remote queue is not empty after refresh")
         if args.evidence:
+            deployed_at_utc = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
             atomic_write_evidence(
                 args.evidence,
                 deployment_evidence(
@@ -485,12 +529,17 @@ def main(argv: Sequence[str] | None = None) -> int:
                     status="passed",
                     expected_paths=len(expected),
                     digest=local_digest,
+                    manifest_name=args.manifest.name,
+                    manifest_digest=manifest_digest,
+                    manifest_bytes=manifest_bytes,
                     approved_items=approved_items,
                     evidence_path=args.evidence,
                     checksum_match=checksum_match,
                     exact_krea2_namespace=exact_namespace,
                     impact_reload=impact_reload,
                     queue_empty=queue_empty,
+                    deployed_at_utc=deployed_at_utc,
+                    deployment_nonce=uuid.uuid4().hex,
                 ),
             )
         return 0
@@ -541,6 +590,9 @@ def main(argv: Sequence[str] | None = None) -> int:
                         status="failed",
                         expected_paths=len(expected),
                         digest=local_digest,
+                        manifest_name=args.manifest.name,
+                        manifest_digest=manifest_digest,
+                        manifest_bytes=manifest_bytes,
                         approved_items=approved_items,
                         evidence_path=args.evidence,
                         checksum_match=checksum_match,

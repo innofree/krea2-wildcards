@@ -9,9 +9,11 @@ import tempfile
 import uuid
 from collections import defaultdict
 from pathlib import Path
+from pathlib import PurePosixPath
 from typing import Any
 
 from common import (
+    KEY_RE,
     VALID_STATUSES,
     dump_yaml,
     item_prompts,
@@ -20,6 +22,37 @@ from common import (
     nested_set_list,
     normalized_phrase,
 )
+
+
+def _validated_runtime_file(source_path: Path, item_id: str, value: Any) -> str:
+    if not isinstance(value, str) or "\\" in value:
+        raise ValueError(f"{source_path}: {item_id!r} has an invalid runtime.file")
+    pure = PurePosixPath(value)
+    if (
+        pure.is_absolute()
+        or len(pure.parts) < 2
+        or pure.parts[0] != "krea2"
+        or any(part in {"", ".", ".."} or not KEY_RE.fullmatch(part) for part in pure.parts[:-1])
+        or pure.suffix != ".yaml"
+        or not KEY_RE.fullmatch(pure.stem)
+    ):
+        raise ValueError(f"{source_path}: {item_id!r} has an invalid runtime.file")
+    return pure.as_posix()
+
+
+def _validated_runtime_path(source_path: Path, item_id: str, value: Any) -> list[str]:
+    if (
+        not isinstance(value, list)
+        or len(value) < 2
+        or value[0] != "krea2"
+        or not all(
+            isinstance(part, str) and KEY_RE.fullmatch(part) for part in value
+        )
+        or value[-1] != item_id
+        or value[-1] == "all"
+    ):
+        raise ValueError(f"{source_path}: {item_id!r} has an invalid runtime.path")
+    return value
 
 
 def parse_args() -> argparse.Namespace:
@@ -51,6 +84,8 @@ def compile_catalog(
     aggregates: dict[tuple[str, tuple[str, ...]], list[str]] = defaultdict(list)
     included: list[dict[str, Any]] = []
     seen: dict[str, str] = {}
+    seen_runtime_paths: set[tuple[str, ...]] = set()
+    aggregate_files: dict[tuple[str, ...], str] = {}
 
     for source_path, item_id, item in iter_catalog_items(catalog_root):
         status = item_status(item)
@@ -60,18 +95,18 @@ def compile_catalog(
         runtime = item.get("runtime")
         if not prompts or not isinstance(runtime, dict):
             raise ValueError(f"{source_path}: eligible item {item_id!r} lacks prompts/runtime")
-        relative_file = runtime.get("file")
-        path_parts = runtime.get("path")
-        if not isinstance(relative_file, str) or not relative_file.endswith(".yaml"):
-            raise ValueError(f"{source_path}: {item_id!r} has an invalid runtime.file")
-        if (
-            not isinstance(path_parts, list)
-            or len(path_parts) < 2
-            or not all(isinstance(part, str) and part for part in path_parts)
-        ):
-            raise ValueError(f"{source_path}: {item_id!r} has an invalid runtime.path")
-        if path_parts[-1] != item_id:
-            raise ValueError(f"{source_path}: runtime path must end in {item_id!r}")
+        relative_file = _validated_runtime_file(
+            source_path, item_id, runtime.get("file")
+        )
+        path_parts = _validated_runtime_path(
+            source_path, item_id, runtime.get("path")
+        )
+        public_path = tuple(path_parts)
+        if public_path in seen_runtime_paths:
+            raise ValueError(
+                f"{source_path}: duplicate public runtime path {'/'.join(path_parts)!r}"
+            )
+        seen_runtime_paths.add(public_path)
 
         target = outputs.setdefault(relative_file, {})
         for prompt in prompts:
@@ -84,6 +119,12 @@ def compile_catalog(
         nested_set_list(target, path_parts, prompts)
 
         parent_path = tuple(path_parts[:-1])
+        aggregate_file = aggregate_files.setdefault(parent_path, relative_file)
+        if aggregate_file != relative_file:
+            raise ValueError(
+                f"{source_path}: aggregate runtime path {'/'.join(parent_path)!r} "
+                "is split across multiple files"
+            )
         aggregates[(relative_file, parent_path)].extend(prompts)
         included.append(
             {

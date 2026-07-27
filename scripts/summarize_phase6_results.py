@@ -14,6 +14,7 @@ from summarize_results import METRICS, parse_boolean, parse_metric
 
 
 MINIMUM_SEEDS = 3
+MINIMUM_SINGLE_AXIS_CASES = 96
 MINIMUM_PAIRWISE_CASES = 96
 MINIMUM_PRESETS = 100
 MINIMUM_RANDOM_SAMPLES = 20
@@ -207,20 +208,47 @@ def summarize(
         "seeds": sorted(seeds),
         "metrics": _averages(rows),
     }
+    if kind != "artist-abc":
+        profile_factors = {
+            row["factors"].get("prompt_profile_sha256") for row in rows
+        }
+        if (
+            len(profile_factors) != 1
+            or None in profile_factors
+            or not isinstance(next(iter(profile_factors)), str)
+            or not next(iter(profile_factors)).startswith("sha256_")
+            or len(next(iter(profile_factors))) != 71
+        ):
+            raise ValueError("matrix must use exactly one valid prompt profile digest")
+        common["prompt_profile_sha256"] = next(iter(profile_factors))[7:]
 
     if kind == "single-axis":
         axes = sorted({row["factors"].get("axis") for row in rows})
+        required_axes = {
+            "character_design",
+            "pose",
+            "lighting",
+            "background",
+            "linework_coloring",
+            "camera",
+        }
+        passed_item_ids = sorted(
+            case_rows[0]["factors"]["item_id"]
+            for case_rows in groups.values()
+            if _quality_passed(case_rows)
+        )
         valid = (
-            {"linework", "coloring"}.issubset(set(axes))
-            and len(groups) >= 4
+            required_axes == set(axes)
+            and len(groups) >= MINIMUM_SINGLE_AXIS_CASES
+            and len(passed_item_ids) == len(groups)
             and critical_failures == 0
-            and _quality_passed(rows)
         )
         common.update(
             {
                 "report_type": "single_axis_coverage",
                 "tested_axes": axes,
                 "total_cases": len(groups),
+                "passed_item_ids": passed_item_ids,
                 "critical_failures": critical_failures,
                 "complete": valid,
                 "status": "passed" if valid else "failed",
@@ -228,6 +256,9 @@ def summarize(
         )
     elif kind == "pairwise":
         pair_types = sorted({row["factors"].get("pair_type") for row in rows})
+        right_item_ids = sorted(
+            {row["factors"].get("right_item") for row in rows}
+        )
         valid = (
             len(groups) >= MINIMUM_PAIRWISE_CASES
             and len(pair_types) == 6
@@ -246,6 +277,33 @@ def summarize(
                         ).items()
                     )
                 ),
+                "total_cases": len(groups),
+                "right_item_ids": right_item_ids,
+                "critical_failures": critical_failures,
+                "complete": valid,
+                "status": "passed" if valid else "failed",
+            }
+        )
+    elif kind == "calibration":
+        required_modes = {
+            "single_axis",
+            "pairwise",
+            "preset_audit",
+            "random_utility",
+            "krea2_turbo_benchmark",
+        }
+        modes = sorted({row["mode"] for row in rows})
+        valid = (
+            len(rows) == 69
+            and len(groups) == 23
+            and set(modes) == required_modes
+            and critical_failures == 0
+            and all(_quality_passed(case_rows) for case_rows in groups.values())
+        )
+        common.update(
+            {
+                "report_type": "phase6_prompt_profile_calibration",
+                "modes": modes,
                 "total_cases": len(groups),
                 "critical_failures": critical_failures,
                 "complete": valid,
@@ -346,6 +404,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument(
         "kind",
         choices=(
+            "calibration",
             "single-axis",
             "pairwise",
             "presets",

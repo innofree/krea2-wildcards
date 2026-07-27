@@ -16,7 +16,7 @@ from typing import Any
 
 import yaml
 
-from common import load_yaml
+from common import canonical_prompt_sha256, load_yaml
 from validate_catalog_v2 import validate_catalog_v2
 
 
@@ -79,6 +79,7 @@ AUTO_MANIFESTS = (
     "build/generated-catalog-manifest.json",
 )
 KEY_PATTERN = re.compile(r"^[a-z][a-z0-9_]*$")
+SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
 
 
 class SyncError(ValueError):
@@ -785,6 +786,16 @@ def _evaluation_ref(
         "distinct_seed_count": tested_seeds,
         "decision": validation.get("status"),
     }
+    evaluated_prompt_sha256 = validation.get("evaluated_prompt_sha256")
+    if evaluated_prompt_sha256 is not None:
+        if (
+            not isinstance(evaluated_prompt_sha256, str)
+            or not SHA256_PATTERN.fullmatch(evaluated_prompt_sha256)
+        ):
+            raise SyncError(
+                f"{catalog_file}#{item_id}: invalid evaluated_prompt_sha256"
+            )
+        expected["evaluated_prompt_sha256"] = evaluated_prompt_sha256
     existing = state.evaluations.get(evaluation_id)
     if existing is not None and existing != expected:
         raise SyncError(f"evaluation ID collision for {evaluation_id!r}")
@@ -1090,6 +1101,22 @@ def _sync_to_stage(
                 raise SyncError(f"{context}.validation.status: expected a string")
             evaluation_ref: str | None = None
             if status in EVALUATION_REQUIRED:
+                if kind == "artist_signature":
+                    evaluated_prompt_sha256 = validation.get(
+                        "evaluated_prompt_sha256"
+                    )
+                    try:
+                        current_prompt_sha256 = canonical_prompt_sha256(
+                            legacy_item.get("prompt")
+                        )
+                    except ValueError as exc:
+                        raise SyncError(
+                            f"{context}: evaluated artist signature requires a canonical prompt"
+                        ) from exc
+                    if evaluated_prompt_sha256 != current_prompt_sha256:
+                        raise SyncError(
+                            f"{context}: evaluated_prompt_sha256 does not match current prompt"
+                        )
                 existing_evaluation_ref = existing.get("evaluation_ref") if existing else None
                 existing_evaluation = state.evaluations.get(existing_evaluation_ref)
                 existing_lifecycle = (
@@ -1102,6 +1129,8 @@ def _sync_to_stage(
                     and existing_lifecycle.get("current_status") == status
                     and existing_evaluation.get("distinct_seed_count")
                     == validation.get("tested_seeds")
+                    and existing_evaluation.get("evaluated_prompt_sha256")
+                    == validation.get("evaluated_prompt_sha256")
                 ):
                     evaluation_ref = existing_evaluation_ref
                 else:

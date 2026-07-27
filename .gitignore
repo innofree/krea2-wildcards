@@ -8,6 +8,15 @@ build/*
 !build/catalog-generation-manifest.json
 tests/prompt_matrix/*.csv
 tests/prompt_matrix/*.jsonl
+!tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl
+!tests/prompt_matrix/artist_visual_signature_retest_v0_8_2.jsonl
+!tests/prompt_matrix/artist_abc.jsonl
+!tests/prompt_matrix/phase6_calibration_v1.jsonl
+!tests/prompt_matrix/phase6_single_axis.jsonl
+!tests/prompt_matrix/phase6_pairwise.jsonl
+!tests/prompt_matrix/phase6_presets.jsonl
+!tests/prompt_matrix/phase6_random_utility.jsonl
+!tests/prompt_matrix/phase6_benchmark.jsonl
 tests/reports/**/*.png
 tests/reports/**/*.jpg
 tests/reports/**/*.jpeg

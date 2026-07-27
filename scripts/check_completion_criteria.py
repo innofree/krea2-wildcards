@@ -8,16 +8,24 @@ import hashlib
 import json
 import os
 import tempfile
+from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 from typing import Any, Callable
 
-from common import item_prompts, load_yaml, normalized_phrase
+from common import (
+    canonical_prompt_sha256,
+    item_prompts,
+    load_yaml,
+    normalized_phrase,
+)
+from export_phase6_matrix import PHASE6_PROFILE_SHA256
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = Path("tests/reports/completion_criteria.json")
 REPORT_TYPES = {
     "runtime_coverage",
+    "phase6_prompt_profile_calibration",
     "single_axis_coverage",
     "artist_abc_coverage",
     "pairwise_coverage",
@@ -49,7 +57,7 @@ CONTENT_SCALE_TARGETS: dict[str, tuple[tuple[str, ...], int]] = {
     "preset_items": (("presets.yaml",), 200),
 }
 TOTAL_LIBRARY_ITEMS = 3750
-MINIMUM_SINGLE_AXIS_CASES = 4
+MINIMUM_SINGLE_AXIS_CASES = 96
 MINIMUM_ARTIST_ABC_COUNT = 8
 MINIMUM_PAIRWISE_CASES = 96
 MINIMUM_PRESETS_TESTED = 100
@@ -198,6 +206,19 @@ def _approved_and_valid(item: dict[str, Any]) -> bool:
     return True
 
 
+def _artist_evaluation_matches_current_prompt(item: dict[str, Any]) -> bool:
+    validation = item.get("validation")
+    if not isinstance(validation, dict):
+        return False
+    digest = validation.get("evaluated_prompt_sha256")
+    if not isinstance(digest, str) or len(digest) != 64:
+        return False
+    try:
+        return digest == canonical_prompt_sha256(item.get("prompt"))
+    except ValueError:
+        return False
+
+
 def approved_runtime_catalog_inventory(root: Path) -> tuple[set[str], list[str]]:
     """Return approval-policy-valid runtime IDs and structural catalog problems."""
 
@@ -266,6 +287,7 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
         row
         for row in artist_items
         if _approved_and_valid(row[2])
+        and _artist_evaluation_matches_current_prompt(row[2])
         and (
             row[2].get("family") == "artist_signature"
             or (row[2].get("generation") or {}).get("kind") == "artist_signature"
@@ -289,7 +311,8 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
             len(approved_artists),
             {"minimum": 200, "approval_policy_valid": True},
             [_relative(artist_path, root)] if artist_path.is_file() else [],
-            "Count includes only canonical artist-signature items that satisfy every approval gate.",
+            "Count includes only canonical artist-signature items whose approval metrics and "
+            "evaluated prompt digest still match the current prompt body.",
         ),
     ]
     all_approved: list[dict[str, Any]] = []
@@ -604,6 +627,26 @@ def _structured_report_criteria(
             and report.get("complete") is True
         )
 
+    calibration_ok = any(
+        base(report)
+        and _phase6_evidence_fresh(root, report)
+        and report.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
+        and report.get("matrix_jobs") == 69
+        and report.get("distinct_seeds") == 3
+        and report.get("total_cases") == 23
+        and report.get("critical_failures") == 0
+        for _, report in reports["phase6_prompt_profile_calibration"]
+    )
+    passed_single_axis_items = {
+        item_id
+        for _, report in reports["single_axis_coverage"]
+        if base(report)
+        and _phase6_evidence_fresh(root, report)
+        and report.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
+        for item_id in report.get("passed_item_ids", [])
+        if isinstance(item_id, str)
+    }
+
     return [
         _report_gate(
             root,
@@ -615,6 +658,9 @@ def _structured_report_criteria(
                 "unresolved_wildcards": 0,
                 "syntax_errors": 0,
                 "all_expected_loaded_and_resolved": True,
+                "all_runtime_leaves_resolved": True,
+                "unexpected_runtime_leaf_paths": 0,
+                "impact_adapter_exact": True,
                 "prompt_logs_saved": True,
             },
             lambda r: base(r)
@@ -625,9 +671,20 @@ def _structured_report_criteria(
             and _is_number(r.get("wildcard_paths_expected"))
             and r.get("wildcard_paths_expected") > 0
             and r.get("wildcard_paths_resolved") == r.get("wildcard_paths_expected")
+            and r.get("all_runtime_leaves_resolved") is True
+            and r.get("unexpected_runtime_leaf_paths") == 0
+            and r.get("missing_runtime_leaf_paths") == 0
+            and _is_number(r.get("impact_paths_expected"))
+            and r.get("impact_paths_expected") == r.get("wildcard_paths_expected")
+            and r.get("impact_paths_resolved") == r.get("impact_paths_expected")
+            and r.get("impact_adapter_exact") is True
             and r.get("unresolved_wildcards") == 0
+            and r.get("final_prompt_unresolved_wildcards") == 0
             and r.get("yaml_syntax_errors") == 0
             and r.get("novelai_brace_conflicts") == 0
+            and r.get("novelai_bracket_conflicts") == 0
+            and r.get("final_prompt_brace_conflicts") == 0
+            and r.get("final_prompt_bracket_conflicts") == 0
             and r.get("catalog_runtime_separated") is True
             and r.get("final_prompt_logs_saved") is True,
         ),
@@ -638,16 +695,37 @@ def _structured_report_criteria(
             "single_axis_coverage",
             "coverage",
             {
-                "tested_axes_include": ["linework", "coloring"],
+                "tested_axes_include": [
+                    "background",
+                    "camera",
+                    "character_design",
+                    "lighting",
+                    "linework_coloring",
+                    "pose",
+                ],
                 "total_cases_minimum": MINIMUM_SINGLE_AXIS_CASES,
                 "critical_failures": 0,
+                "fresh_prompt_profile_calibration": True,
             },
             lambda r: base(r)
             and _phase6_evidence_fresh(root, r)
+            and calibration_ok
+            and r.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
             and isinstance(r.get("tested_axes"), list)
-            and {"linework", "coloring"}.issubset(set(r["tested_axes"]))
+            and {
+                "background",
+                "camera",
+                "character_design",
+                "lighting",
+                "linework_coloring",
+                "pose",
+            }
+            == set(r["tested_axes"])
             and _is_number(r.get("total_cases"))
             and r.get("total_cases") >= MINIMUM_SINGLE_AXIS_CASES
+            and isinstance(r.get("passed_item_ids"), list)
+            and len(r.get("passed_item_ids")) == r.get("total_cases")
+            and len(set(r.get("passed_item_ids"))) == r.get("total_cases")
             and r.get("critical_failures") == 0,
         ),
         _report_gate(
@@ -680,13 +758,19 @@ def _structured_report_criteria(
                 "required_pair_types": sorted(PAIRWISE_TYPES),
                 "total_cases_minimum": MINIMUM_PAIRWISE_CASES,
                 "critical_failures": 0,
+                "right_items_passed_single_axis": True,
+                "fresh_prompt_profile_calibration": True,
             },
             lambda r: base(r)
             and _phase6_evidence_fresh(root, r)
+            and calibration_ok
+            and r.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
             and isinstance(r.get("covered_pair_types"), list)
             and PAIRWISE_TYPES.issubset(set(r["covered_pair_types"]))
             and _is_number(r.get("total_cases"))
             and r.get("total_cases") >= MINIMUM_PAIRWISE_CASES
+            and isinstance(r.get("right_item_ids"), list)
+            and set(r.get("right_item_ids")) <= passed_single_axis_items
             and r.get("critical_failures") == 0,
         ),
         _report_gate(
@@ -698,6 +782,8 @@ def _structured_report_criteria(
             {"presets_tested_minimum": MINIMUM_PRESETS_TESTED, "critical_conflicts": 0},
             lambda r: base(r)
             and _phase6_evidence_fresh(root, r)
+            and calibration_ok
+            and r.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
             and _is_number(r.get("presets_tested"))
             and r.get("presets_tested") >= MINIMUM_PRESETS_TESTED
             and r.get("critical_conflicts") == 0,
@@ -714,6 +800,8 @@ def _structured_report_criteria(
             },
             lambda r: base(r)
             and _phase6_evidence_fresh(root, r)
+            and calibration_ok
+            and r.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
             and isinstance(r.get("sample_count"), int)
             and not isinstance(r.get("sample_count"), bool)
             and r.get("sample_count") >= MINIMUM_RANDOM_SAMPLES
@@ -740,6 +828,8 @@ def _structured_report_criteria(
             },
             lambda r: base(r)
             and _phase6_evidence_fresh(root, r)
+            and calibration_ok
+            and r.get("prompt_profile_sha256") == PHASE6_PROFILE_SHA256
             and "krea2" in str(r.get("model", "")).lower()
             and "turbo" in str(r.get("model", "")).lower()
             and isinstance(r.get("distinct_seeds"), int)
@@ -833,16 +923,31 @@ def _deployment_criteria(
             ):
                 candidates.append((path, report))
     expected_items = manifest.get("item_count") if isinstance(manifest, dict) else None
+    manifest_path = root / "wildcards-manifest.json"
+    manifest_sha256 = _sha256(manifest_path)
+    manifest_bytes = manifest_path.stat().st_size if manifest_path.is_file() else None
     artifact_path = root / PRODUCTION_ARTIFACT
     artifact_sha256 = _sha256(artifact_path)
     artifact_bytes = artifact_path.stat().st_size if artifact_path.is_file() else None
 
+    def utc_timestamp(value: Any) -> datetime | None:
+        if not isinstance(value, str) or not value.endswith("Z"):
+            return None
+        try:
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        return parsed if parsed.tzinfo == timezone.utc else None
+
     def deployment_valid(report: dict[str, Any]) -> bool:
         verification = report.get("verification")
         artifact = report.get("artifact")
+        recorded_manifest = report.get("manifest")
+        deployment = report.get("deployment")
         approved_items = report.get("approved_items")
         return (
-            type(expected_items) is int
+            report.get("schema_version") == 2
+            and type(expected_items) is int
             and expected_items > 0
             and type(approved_items) is int
             and approved_items == expected_items
@@ -850,11 +955,24 @@ def _deployment_criteria(
             and report.get("status") == "passed"
             and report.get("mode") == "apply"
             and report.get("applied") is True
+            and isinstance(recorded_manifest, dict)
+            and recorded_manifest.get("name") == manifest_path.name
+            and recorded_manifest.get("sha256") == manifest_sha256
+            and type(recorded_manifest.get("bytes")) is int
+            and recorded_manifest.get("bytes") == manifest_bytes
             and isinstance(artifact, dict)
             and artifact.get("name") == artifact_path.name
             and artifact.get("sha256") == artifact_sha256
             and type(artifact.get("bytes")) is int
             and artifact.get("bytes") == artifact_bytes
+            and isinstance(deployment, dict)
+            and isinstance(deployment.get("nonce"), str)
+            and len(deployment["nonce"]) == 32
+            and all(
+                character in "0123456789abcdef"
+                for character in deployment["nonce"]
+            )
+            and utc_timestamp(deployment.get("completed_at_utc")) is not None
             and isinstance(verification, dict)
             and verification.get("checksum_match") is True
             and verification.get("exact_krea2_namespace") is True
@@ -879,7 +997,9 @@ def _deployment_criteria(
             "mode": selected[1].get("mode"),
             "applied": selected[1].get("applied"),
             "approved_items": selected[1].get("approved_items"),
+            "manifest": selected[1].get("manifest"),
             "artifact": selected[1].get("artifact"),
+            "deployment": selected[1].get("deployment"),
             "verification": {
                 key: (selected[1].get("verification") or {}).get(key)
                 for key in (
@@ -902,6 +1022,7 @@ def _deployment_criteria(
         actual,
         {
             "approved_items_match_manifest": True,
+            "manifest_matches_current_approved_manifest": True,
             "deployment_type": "production",
             "status": "passed",
             "mode": "apply",
@@ -918,20 +1039,93 @@ def _deployment_criteria(
     smoke_valid = False
     smoke_seed_valid = False
     smoke_record_valid = False
+    smoke_digest_valid = False
+    smoke_binding_valid = False
+    smoke_chronology_valid = False
+    smoke_record_path: Path | None = None
     if valid_deployments:
         report = valid_deployments[-1][1]
         verification = report.get("verification", {})
         smoke = report.get("smoke")
         smoke_seed_valid = isinstance(smoke, dict) and type(smoke.get("seed")) is int
-        smoke_record_valid = (
+        smoke_record_path = (
+            _safe_repo_relative_file(root, smoke.get("run_record"))
+            if isinstance(smoke, dict)
+            else None
+        )
+        smoke_record_valid = smoke_record_path is not None
+        smoke_digest_valid = (
+            smoke_record_path is not None
+            and isinstance(smoke, dict)
+            and isinstance(smoke.get("run_record_sha256"), str)
+            and _sha256(smoke_record_path) == smoke.get("run_record_sha256")
+        )
+        run = _json_object(smoke_record_path) if smoke_record_path is not None else None
+        deployment = report.get("deployment")
+        artifact = report.get("artifact")
+        recorded_manifest = report.get("manifest")
+        expected_binding = (
+            {
+                "deployment_id": report.get("deployment_id"),
+                "deployment_nonce": deployment.get("nonce"),
+                "artifact_sha256": artifact.get("sha256"),
+                "manifest_sha256": recorded_manifest.get("sha256"),
+                "deployed_at_utc": deployment.get("completed_at_utc"),
+            }
+            if isinstance(deployment, dict)
+            and isinstance(artifact, dict)
+            and isinstance(recorded_manifest, dict)
+            else None
+        )
+        smoke_binding_valid = (
             isinstance(smoke, dict)
-            and _safe_repo_relative_file(root, smoke.get("run_record")) is not None
+            and isinstance(run, dict)
+            and expected_binding is not None
+            and run.get("deployment") == expected_binding
+            and smoke.get("deployment_id") == report.get("deployment_id")
+            and smoke.get("deployment_nonce") == deployment.get("nonce")
+            and smoke.get("artifact_sha256") == artifact.get("sha256")
+            and smoke.get("manifest_sha256") == recorded_manifest.get("sha256")
+            and run.get("seed") == smoke.get("seed")
+            and run.get("remote") == "private_comfyui"
+            and isinstance(run.get("resolved_prompt"), str)
+            and bool(run["resolved_prompt"].strip())
+            and isinstance(run.get("images"), list)
+            and bool(run["images"])
+        )
+        deployed_at = (
+            utc_timestamp(deployment.get("completed_at_utc"))
+            if isinstance(deployment, dict)
+            else None
+        )
+        started_at = (
+            utc_timestamp(run.get("started_at_utc"))
+            if isinstance(run, dict)
+            else None
+        )
+        completed_at = (
+            utc_timestamp(run.get("completed_at_utc")) if isinstance(run, dict) else None
+        )
+        smoke_chronology_valid = (
+            deployed_at is not None
+            and started_at is not None
+            and completed_at is not None
+            and deployed_at <= started_at <= completed_at
+            and isinstance(smoke, dict)
+            and smoke.get("started_at_utc") == run.get("started_at_utc")
+            and smoke.get("completed_at_utc") == run.get("completed_at_utc")
         )
         smoke_valid = (
             verification.get("smoke_completed") is True
             and smoke_seed_valid
             and smoke_record_valid
+            and smoke_digest_valid
+            and smoke_binding_valid
+            and smoke_chronology_valid
         )
+    smoke_evidence = list(evidence)
+    if smoke_record_path is not None:
+        smoke_evidence.append(_relative(smoke_record_path, root))
     smoke = _criterion(
         "production_smoke_test",
         "deployment",
@@ -948,10 +1142,20 @@ def _deployment_criteria(
             ),
             "seed_valid": smoke_seed_valid,
             "run_record_valid": smoke_record_valid,
+            "run_record_sha256_valid": smoke_digest_valid,
+            "deployment_binding_valid": smoke_binding_valid,
+            "post_deployment_chronology_valid": smoke_chronology_valid,
         },
-        {"smoke_completed": True, "seed_recorded": True, "run_record_exists": True},
-        evidence,
-        "Smoke evidence must belong to a valid current production deployment and reference a local run record.",
+        {
+            "smoke_completed": True,
+            "seed_recorded": True,
+            "run_record_exists": True,
+            "run_record_sha256_matches": True,
+            "deployment_id_nonce_and_artifact_match": True,
+            "smoke_executed_after_deployment": True,
+        },
+        smoke_evidence,
+        "Smoke evidence must cryptographically belong to the current deployment and execute after it.",
     )
     return [deploy, smoke]
 

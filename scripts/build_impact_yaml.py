@@ -5,7 +5,7 @@ import argparse
 from collections.abc import Iterable
 from pathlib import Path
 
-from common import dump_yaml, iter_leaf_lists, load_yaml
+from common import KEY_RE, dump_yaml, iter_leaf_lists, load_yaml
 
 
 DEFAULT_SOURCE = Path("build/preview-wildcards")
@@ -38,7 +38,12 @@ def impact_compatible_document(
         if not isinstance(data, dict) or list(data) != ["krea2"]:
             raise ValueError(f"{source}: canonical runtime must contain only the krea2 root")
         for parts, values in iter_leaf_lists(data):
-            if not parts or parts[0] != "krea2" or len(parts) < 2:
+            if (
+                not parts
+                or parts[0] != "krea2"
+                or len(parts) < 2
+                or any(not KEY_RE.fullmatch(part) for part in parts)
+            ):
                 raise ValueError(f"invalid canonical runtime path: {'/'.join(parts)}")
             relative_path = "/".join(parts[1:])
             if relative_path in flattened:

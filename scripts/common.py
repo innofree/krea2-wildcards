@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import re
 from collections.abc import Iterator
 from pathlib import Path
@@ -93,6 +94,14 @@ def canonical_id(value: str) -> str:
 
 def normalized_phrase(value: str) -> str:
     return re.sub(r"\s+", " ", value.strip().lower().rstrip(".,;:"))
+
+
+def canonical_prompt_sha256(value: Any) -> str:
+    """Hash the exact parsed catalog prompt body without normalization."""
+
+    if not isinstance(value, str) or not value:
+        raise ValueError("canonical prompt must be a non-empty string")
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
 def iter_catalog_files(root: Path) -> Iterator[Path]:

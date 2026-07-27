@@ -1,7 +1,8 @@
 REMOTE_QUEUE_DEPTH ?= 32
+REMOTE_BATCH_SIZE ?= 1
 
 .PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix artist-signature-illustrated-calibration-matrix artist-signature-calibration-v0-8-2-matrix artist-signature-v0-8-2-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-illustrated-calibration review-artist-signature-illustrated-calibration remote-artist-signature-calibration-v0-8-2 review-artist-signature-calibration-v0-8-2 remote-artist-signature-v0-8-2 review-artist-signature-v0-8-2 score-artist-signature-v0-8-2 apply-artist-signature-v0-8-2 remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest remote-artist-signature-retest-v0-8-2 combine-artist-signature-retest-v0-8-2 review-artist-signature-retest-v0-8-2 score-artist-signature-retest-v0-8-2 apply-artist-signature-retest-v0-8-2
-.PHONY: runtime-audit phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
+.PHONY: runtime-audit phase6-calibration-matrix phase6-calibration-gate remote-phase6-calibration review-phase6-calibration score-phase6-calibration phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
 
 preview:
@@ -45,16 +46,16 @@ artist-native-matrix:
 	python3 scripts/export_artist_native_matrix.py --output tests/prompt_matrix/artist_native_name.jsonl
 
 artist-signature-matrix:
-	python3 scripts/export_artist_visual_signature_matrix.py --output tests/prompt_matrix/artist_visual_signature.jsonl
+	python3 scripts/export_artist_visual_signature_matrix.py --omit-prompt-digest --output tests/prompt_matrix/artist_visual_signature.jsonl
 
 artist-signature-illustrated-calibration-matrix:
-	python3 scripts/export_artist_visual_signature_matrix.py --limit-signatures 5 --output tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl
+	python3 scripts/export_artist_visual_signature_matrix.py --omit-prompt-digest --limit-signatures 5 --output tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl
 
 artist-signature-calibration-v0-8-2-matrix:
-	python3 scripts/export_artist_visual_signature_matrix.py --status generated --seed 1001 --seed 2002 --seed 3003 --limit-signatures 5 --output tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl
+	python3 scripts/export_artist_visual_signature_matrix.py --omit-prompt-digest --status generated --seed 1001 --seed 2002 --seed 3003 --limit-signatures 5 --output tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl
 
 artist-signature-v0-8-2-matrix:
-	python3 scripts/export_artist_visual_signature_matrix.py --status generated --seed 1001 --seed 2002 --seed 3003 --output tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl
+	python3 scripts/export_artist_visual_signature_matrix.py --omit-prompt-digest --status generated --seed 1001 --seed 2002 --seed 3003 --output tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl
 
 completion:
 	python3 scripts/check_completion_criteria.py
@@ -95,14 +96,17 @@ deploy-production:
 	python3 scripts/deploy_remote_wildcards.py --evidence tests/reports/deployments/production_v1.json --apply
 
 remote-production-smoke:
-	python3 scripts/run_remote_benchmark.py --style-id crystal_iris_pastel --seed 6006 --output tests/reports/production_smoke_v1 --submit
+	python3 scripts/run_remote_benchmark.py --style-id crystal_iris_pastel --seed 6006 --output tests/reports/production_smoke_v1 --deployment-evidence tests/reports/deployments/production_v1.json --submit
 
 finalize-production-deployment:
-	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-run tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json
+	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-root tests/reports/production_smoke_v1
 
-finish-production: deploy-production
-	python3 scripts/run_remote_benchmark.py --style-id crystal_iris_pastel --seed 6006 --output tests/reports/production_smoke_v1 --submit
-	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-run tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json
+finish-production:
+	@if python3 scripts/finalize_production_deployment.py --quiet --evidence tests/reports/deployments/production_v1.json --smoke-root tests/reports/production_smoke_v1; then \
+		echo "Reusing current production deployment and smoke evidence."; \
+	else \
+		$(MAKE) deploy-production remote-production-smoke finalize-production-deployment; \
+	fi
 	python3 scripts/check_completion_criteria.py --strict
 
 remote-smoke:
@@ -124,19 +128,19 @@ review-style-screen:
 	python3 scripts/build_contact_sheets.py tests/reports/expansion_style_refill_v0_10_2/scorecard.csv --catalog catalog/style_expansion.yaml --expected-seeds 3 --styles-per-sheet 10 --overwrite
 
 remote-artist-native-dry-run: artist-native-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --batch-size $(REMOTE_BATCH_SIZE)
 
 remote-artist-native: artist-native-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --output tests/reports/artist_native_screen_v0_7 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_native_name.jsonl --output tests/reports/artist_native_screen_v0_7 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-native:
 	python3 scripts/build_artist_native_contact_sheets.py tests/reports/artist_native_screen_v0_7/scorecard.csv --overwrite
 
 remote-artist-signature-dry-run: artist-signature-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature.jsonl
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature.jsonl --batch-size $(REMOTE_BATCH_SIZE)
 
 remote-artist-signature: artist-signature-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature.jsonl --output tests/reports/artist_signature_screen_v0_8 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature.jsonl --output tests/reports/artist_signature_screen_v0_8 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-signature:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_screen_v0_8/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature.jsonl --expected-seeds 3 --cases-per-sheet 10 --overwrite
@@ -150,19 +154,19 @@ apply-artist-signature-screen: score-artist-signature-screen
 	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_screen_v0_8/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_screen_v0_8 --from-status generated --apply
 
 remote-artist-signature-illustrated-calibration: artist-signature-illustrated-calibration-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl --output tests/reports/artist_signature_illustrated_calibration_v0_8_1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl --output tests/reports/artist_signature_illustrated_calibration_v0_8_1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-signature-illustrated-calibration:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_illustrated_calibration_v0_8_1/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl --expected-seeds 3 --cases-per-sheet 5 --overwrite
 
 remote-artist-signature-calibration-v0-8-2: artist-signature-calibration-v0-8-2-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl --output tests/reports/artist_signature_calibration_v0_8_2 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl --output tests/reports/artist_signature_calibration_v0_8_2 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-signature-calibration-v0-8-2:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_calibration_v0_8_2/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl --expected-seeds 3 --cases-per-sheet 5 --overwrite
 
 remote-artist-signature-v0-8-2: artist-signature-v0-8-2-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl --output tests/reports/artist_signature_screen_v0_8_2 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl --output tests/reports/artist_signature_screen_v0_8_2 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-signature-v0-8-2:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_screen_v0_8_2/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl --expected-seeds 3 --cases-per-sheet 10 --overwrite
@@ -170,16 +174,17 @@ review-artist-signature-v0-8-2:
 score-artist-signature-v0-8-2:
 	python3 scripts/merge_visual_reviews.py tests/reports/artist_signature_screen_v0_8_2/review_part_a.yaml tests/reports/artist_signature_screen_v0_8_2/review_part_b.yaml tests/reports/artist_signature_screen_v0_8_2/review_part_c.yaml --expected-scorecard tests/reports/artist_signature_screen_v0_8_2/scorecard.csv --output tests/reports/artist_signature_screen_v0_8_2/review.yaml --overwrite
 	python3 scripts/apply_visual_review.py tests/reports/artist_signature_screen_v0_8_2/scorecard.csv tests/reports/artist_signature_screen_v0_8_2/review.yaml --output tests/reports/artist_signature_screen_v0_8_2/scored.csv --overwrite
-	python3 scripts/summarize_results.py tests/reports/artist_signature_screen_v0_8_2/scored.csv --output tests/reports/artist_signature_screen_v0_8_2/summary.json
+	python3 scripts/bind_artist_prompt_evidence.py tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl --catalog catalog/artists.yaml --output tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json
+	python3 scripts/summarize_results.py tests/reports/artist_signature_screen_v0_8_2/scored.csv --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --output tests/reports/artist_signature_screen_v0_8_2/summary.json
 
 apply-artist-signature-v0-8-2: score-artist-signature-v0-8-2
-	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_screen_v0_8_2/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_screen_v0_8_2 --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation rejected --minimum-recommendation testing=200 --apply
+	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_screen_v0_8_2/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --evaluation-id artist_signature_screen_v0_8_2 --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation rejected --minimum-recommendation testing=200 --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 
 remote-artist-signature-retest:
 	python3 scripts/export_artist_visual_signature_matrix.py --status testing --seed 4004 --seed 5005 --output tests/prompt_matrix/artist_visual_signature_retest.jsonl
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_retest.jsonl --output tests/reports/artist_signature_retest_v0_8 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_retest.jsonl --output tests/reports/artist_signature_retest_v0_8 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 combine-artist-signature-retest:
 	python3 scripts/select_scorecard_styles.py tests/reports/artist_signature_screen_v0_8/scorecard.csv tests/reports/artist_signature_retest_v0_8/scorecard.csv --output tests/reports/artist_signature_combined_v0_8/pilot_scorecard.csv --overwrite
@@ -198,7 +203,7 @@ apply-artist-signature-retest: score-artist-signature-retest
 
 remote-artist-signature-retest-v0-8-2:
 	python3 scripts/export_artist_visual_signature_matrix.py --status testing --seed 4004 --seed 5005 --output tests/prompt_matrix/artist_visual_signature_retest_v0_8_2.jsonl
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_retest_v0_8_2.jsonl --output tests/reports/artist_signature_retest_v0_8_2 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_retest_v0_8_2.jsonl --output tests/reports/artist_signature_retest_v0_8_2 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 combine-artist-signature-retest-v0-8-2:
 	python3 scripts/select_scorecard_styles.py tests/reports/artist_signature_screen_v0_8_2/scorecard.csv tests/reports/artist_signature_retest_v0_8_2/scorecard.csv --output tests/reports/artist_signature_combined_v0_8_2/pilot_scorecard.csv --overwrite
@@ -210,15 +215,33 @@ review-artist-signature-retest-v0-8-2: combine-artist-signature-retest-v0-8-2
 score-artist-signature-retest-v0-8-2:
 	python3 scripts/merge_visual_reviews.py tests/reports/artist_signature_combined_v0_8_2/review_part_a.yaml tests/reports/artist_signature_combined_v0_8_2/review_part_b.yaml tests/reports/artist_signature_combined_v0_8_2/review_part_c.yaml --expected-scorecard tests/reports/artist_signature_combined_v0_8_2/scorecard.csv --output tests/reports/artist_signature_combined_v0_8_2/review.yaml --overwrite
 	python3 scripts/apply_visual_review.py tests/reports/artist_signature_combined_v0_8_2/scorecard.csv tests/reports/artist_signature_combined_v0_8_2/review.yaml --output tests/reports/artist_signature_combined_v0_8_2/scored.csv --overwrite
-	python3 scripts/summarize_results.py tests/reports/artist_signature_combined_v0_8_2/scored.csv --output tests/reports/artist_signature_combined_v0_8_2/summary.json
+	python3 scripts/bind_artist_prompt_evidence.py tests/prompt_matrix/artist_visual_signature_v0_8_2.jsonl --catalog catalog/artists.yaml --output tests/reports/artist_signature_combined_v0_8_2/prompt_binding.json
+	python3 scripts/summarize_results.py tests/reports/artist_signature_combined_v0_8_2/scored.csv --prompt-binding tests/reports/artist_signature_combined_v0_8_2/prompt_binding.json --output tests/reports/artist_signature_combined_v0_8_2/summary.json
 
 apply-artist-signature-retest-v0-8-2: score-artist-signature-retest-v0-8-2
-	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_combined_v0_8_2/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_retest_v0_8_2 --from-status testing --require-exact-source-set --require-tested-seeds 5 --allow-recommendation approved --allow-recommendation rejected --minimum-recommendation approved=200 --apply
+	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_combined_v0_8_2/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_combined_v0_8_2/prompt_binding.json --evaluation-id artist_signature_retest_v0_8_2 --from-status testing --require-exact-source-set --require-tested-seeds 5 --allow-recommendation approved --allow-recommendation rejected --minimum-recommendation approved=200 --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 
 runtime-audit: impact-production
 	python3 scripts/audit_runtime_coverage.py --prompt-log tests/reports/phase6_benchmark_v1/runs/KB000001/run.json --overwrite
+
+phase6-calibration-matrix:
+	python3 scripts/export_phase6_matrix.py calibration --output tests/prompt_matrix/phase6_calibration_v1.jsonl
+
+remote-phase6-calibration: phase6-calibration-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_calibration_v1.jsonl --output tests/reports/phase6_calibration_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+
+review-phase6-calibration:
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_calibration_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_calibration_v1.jsonl --expected-seeds 3 --cases-per-sheet 8 --overwrite
+
+score-phase6-calibration:
+	python3 scripts/merge_visual_reviews.py tests/reports/phase6_calibration_v1/review_part_a.yaml tests/reports/phase6_calibration_v1/review_part_b.yaml tests/reports/phase6_calibration_v1/review_part_c.yaml --expected-scorecard tests/reports/phase6_calibration_v1/scorecard.csv --output tests/reports/phase6_calibration_v1/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/phase6_calibration_v1/scorecard.csv tests/reports/phase6_calibration_v1/review.yaml --output tests/reports/phase6_calibration_v1/scored.csv --overwrite
+	python3 scripts/summarize_phase6_results.py calibration tests/reports/phase6_calibration_v1/scored.csv --matrix tests/prompt_matrix/phase6_calibration_v1.jsonl --output tests/reports/completion/phase6_calibration.json --overwrite
+
+phase6-calibration-gate:
+	python3 scripts/check_phase6_calibration.py
 
 artist-abc-map:
 	python3 scripts/select_artist_abc_candidates.py --output tests/prompt_matrix/artist_abc_signature_map.yaml --overwrite
@@ -227,10 +250,10 @@ artist-abc-matrix: artist-abc-map
 	python3 scripts/export_artist_abc_matrix.py --signature-map tests/prompt_matrix/artist_abc_signature_map.yaml --output tests/prompt_matrix/artist_abc.jsonl
 
 remote-artist-abc-dry-run: artist-abc-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_abc.jsonl
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_abc.jsonl --batch-size $(REMOTE_BATCH_SIZE)
 
 remote-artist-abc: artist-abc-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_abc.jsonl --output tests/reports/artist_abc_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_abc.jsonl --output tests/reports/artist_abc_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-artist-abc:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_abc_v1/scorecard.csv --matrix tests/prompt_matrix/artist_abc.jsonl --expected-seeds 3 --overwrite
@@ -242,8 +265,8 @@ score-artist-abc:
 phase6-single-axis-matrix:
 	python3 scripts/export_phase6_matrix.py single-axis --output tests/prompt_matrix/phase6_single_axis.jsonl
 
-phase6-pairwise-matrix:
-	python3 scripts/export_phase6_matrix.py pairwise --output tests/prompt_matrix/phase6_pairwise.jsonl
+phase6-pairwise-matrix: score-phase6-single-axis
+	python3 scripts/export_phase6_matrix.py pairwise --single-axis-report tests/reports/completion/single_axis.json --output tests/prompt_matrix/phase6_pairwise.jsonl
 
 phase6-presets-matrix:
 	python3 scripts/export_phase6_matrix.py presets --output tests/prompt_matrix/phase6_presets.jsonl
@@ -254,20 +277,20 @@ phase6-random-matrix:
 phase6-benchmark-matrix:
 	python3 scripts/export_phase6_matrix.py benchmark --output tests/prompt_matrix/phase6_benchmark.jsonl
 
-remote-phase6-single-axis: phase6-single-axis-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+remote-phase6-single-axis: phase6-calibration-gate phase6-single-axis-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
-remote-phase6-pairwise: phase6-pairwise-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/phase6_pairwise_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+remote-phase6-pairwise: phase6-calibration-gate phase6-pairwise-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/phase6_pairwise_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
-remote-phase6-presets: phase6-presets-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_presets.jsonl --output tests/reports/phase6_presets_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+remote-phase6-presets: phase6-calibration-gate phase6-presets-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_presets.jsonl --output tests/reports/phase6_presets_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
-remote-phase6-random: phase6-random-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_random_utility.jsonl --output tests/reports/phase6_random_utility_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+remote-phase6-random: phase6-calibration-gate phase6-random-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_random_utility.jsonl --output tests/reports/phase6_random_utility_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
-remote-phase6-benchmark: phase6-benchmark-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_benchmark.jsonl --output tests/reports/phase6_benchmark_v1 --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+remote-phase6-benchmark: phase6-calibration-gate phase6-benchmark-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_benchmark.jsonl --output tests/reports/phase6_benchmark_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-phase6-single-axis:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_single_axis_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_single_axis.jsonl --expected-seeds 3 --overwrite

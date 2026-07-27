@@ -8,11 +8,12 @@ from typing import Any
 
 import yaml
 
-from common import load_yaml
+from common import canonical_prompt_sha256, load_yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "catalog_v2"
+SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
 def _mapping(value: Any) -> Mapping[str, Any]:
@@ -385,6 +386,40 @@ def validate_catalog_v2(catalog_root: Path = DEFAULT_CATALOG) -> list[str]:
                 errors.append(f"{context}: evaluation item_ref does not link back to the item")
             if lifecycle and lifecycle.get("evaluation_ref") != evaluation_ref:
                 errors.append(f"{context}: lifecycle and item evaluation refs differ")
+            legacy = legacy_items.get(item_id)
+            if isinstance(legacy, Mapping):
+                validation = _mapping(legacy.get("validation"))
+                evaluated_prompt_sha256 = validation.get(
+                    "evaluated_prompt_sha256"
+                )
+                if (
+                    evaluated_prompt_sha256 is not None
+                    and evaluation.get("evaluated_prompt_sha256")
+                    != evaluated_prompt_sha256
+                ):
+                    errors.append(
+                        f"{context}: evaluation does not preserve evaluated_prompt_sha256"
+                    )
+            if kind == "artist_signature" and isinstance(legacy, Mapping):
+                try:
+                    current_prompt_sha256 = canonical_prompt_sha256(
+                        legacy.get("prompt")
+                    )
+                except ValueError:
+                    current_prompt_sha256 = None
+                if evaluated_prompt_sha256 != current_prompt_sha256:
+                    errors.append(
+                        f"{context}: evaluated artist prompt digest does not match "
+                        "the current legacy prompt"
+                    )
+                if (
+                    evaluation.get("evaluated_prompt_sha256")
+                    != evaluated_prompt_sha256
+                    and evaluated_prompt_sha256 is None
+                ):
+                    errors.append(
+                        f"{context}: evaluation does not preserve evaluated_prompt_sha256"
+                    )
 
         route_ref = item.get("runtime_route_ref")
         route_ok = False
@@ -476,6 +511,15 @@ def validate_catalog_v2(catalog_root: Path = DEFAULT_CATALOG) -> list[str]:
             )
         if not isinstance(evaluation.get("distinct_seed_count"), int) or evaluation["distinct_seed_count"] < 0:
             errors.append(f"evaluation {evaluation_id!r}: distinct_seed_count must be non-negative")
+        evaluated_prompt_sha256 = evaluation.get("evaluated_prompt_sha256")
+        if evaluated_prompt_sha256 is not None and (
+            not isinstance(evaluated_prompt_sha256, str)
+            or not SHA256_RE.fullmatch(evaluated_prompt_sha256)
+        ):
+            errors.append(
+                f"evaluation {evaluation_id!r}: evaluated_prompt_sha256 must be "
+                "64 lowercase hex characters"
+            )
 
     for lifecycle_id, raw_lifecycle in lifecycles.items():
         lifecycle = _mapping(raw_lifecycle)

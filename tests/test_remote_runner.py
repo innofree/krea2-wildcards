@@ -3,10 +3,15 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from run_remote_benchmark import (
     benchmark_prompt,
+    deployment_binding,
     prepare_workflow,
     resolved_benchmark_prompt,
+    reusable_smoke_run,
+    smoke_run_directory,
 )
 from run_remote_pilot import PILOT_TEMPLATES, pilot_jobs, write_scorecard
 
@@ -99,3 +104,84 @@ def test_existing_scorecard_is_preserved_without_explicit_overwrite(tmp_path: Pa
     scorecard.write_text("manually scored\n", encoding="utf-8")
     write_scorecard(scorecard)
     assert scorecard.read_text(encoding="utf-8") == "manually scored\n"
+
+
+def test_production_smoke_directory_and_reuse_are_bound_to_deployment(
+    tmp_path: Path, monkeypatch
+) -> None:
+    monkeypatch.chdir(tmp_path)
+    binding = {
+        "deployment_id": "production_v1",
+        "deployment_nonce": "d" * 32,
+        "artifact_sha256": "a" * 64,
+        "manifest_sha256": "b" * 64,
+        "deployed_at_utc": "2026-07-27T12:00:00Z",
+    }
+    run_dir = smoke_run_directory(
+        Path("tests/reports/production_smoke"), "crystal_iris_pastel", 6006, binding
+    )
+    assert run_dir.name.endswith("production_v1_dddddddddddd")
+    image = run_dir / "image_01.png"
+    image.parent.mkdir(parents=True)
+    image.write_bytes(b"image")
+    (run_dir / "run.json").write_text(
+        json.dumps(
+            {
+                "style_id": "crystal_iris_pastel",
+                "seed": 6006,
+                "remote": "private_comfyui",
+                "deployment": binding,
+                "images": [image.as_posix()],
+                "started_at_utc": "2026-07-27T12:00:01Z",
+                "completed_at_utc": "2026-07-27T12:00:02Z",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    assert reusable_smoke_run(
+        run_dir,
+        style_id="crystal_iris_pastel",
+        seed=6006,
+        binding=binding,
+    )
+    changed = dict(binding, artifact_sha256="c" * 64)
+    assert not reusable_smoke_run(
+        run_dir,
+        style_id="crystal_iris_pastel",
+        seed=6006,
+        binding=changed,
+    )
+
+
+def test_deployment_binding_rejects_nonproduction_or_incomplete_evidence(
+    tmp_path: Path,
+) -> None:
+    path = tmp_path / "deployment.json"
+    document = {
+        "schema_version": 2,
+        "deployment_id": "production_v1",
+        "deployment_type": "production",
+        "status": "passed",
+        "mode": "apply",
+        "applied": True,
+        "manifest": {"sha256": "b" * 64},
+        "artifact": {"sha256": "a" * 64},
+        "deployment": {
+            "nonce": "d" * 32,
+            "completed_at_utc": "2026-07-27T12:00:00Z",
+        },
+        "verification": {
+            "checksum_match": True,
+            "exact_krea2_namespace": True,
+            "impact_reload": True,
+            "queue_empty": True,
+        },
+    }
+    path.write_text(json.dumps(document), encoding="utf-8")
+    assert deployment_binding(path)["deployment_id"] == "production_v1"
+
+    document["verification"]["queue_empty"] = False
+    path.write_text(json.dumps(document), encoding="utf-8")
+    with pytest.raises(ValueError, match="not a passed production apply"):
+        deployment_binding(path)

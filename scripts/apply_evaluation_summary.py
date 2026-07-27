@@ -3,11 +3,16 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import tempfile
 from pathlib import Path
 from typing import Any
 
-from common import dump_yaml, load_yaml
+from bind_artist_prompt_evidence import (
+    file_sha256,
+    load_validated_binding_document,
+)
+from common import canonical_prompt_sha256, dump_yaml, load_yaml
 
 
 PERSISTED_METRICS = (
@@ -17,6 +22,47 @@ PERSISTED_METRICS = (
     "compatibility",
 )
 ALLOWED_RECOMMENDATIONS = {"generated", "testing", "approved", "rejected"}
+SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+
+
+def validated_prompt_digest(
+    item: dict[str, Any], result: dict[str, Any], *, style_id: str
+) -> str:
+    digest = result.get("evaluated_prompt_sha256")
+    if not isinstance(digest, str) or not SHA256_RE.fullmatch(digest):
+        raise ValueError(
+            f"summary style {style_id!r} is missing a valid evaluated_prompt_sha256"
+        )
+    try:
+        current_digest = canonical_prompt_sha256(item.get("prompt"))
+    except ValueError as exc:
+        raise ValueError(
+            f"catalog style {style_id!r} is missing a canonical prompt body"
+        ) from exc
+    if digest != current_digest:
+        raise ValueError(
+            f"summary style {style_id!r} evaluated_prompt_sha256 is stale"
+        )
+    return digest
+
+
+def validate_summary_prompt_binding(
+    summary: dict[str, Any], prompt_bindings: dict[str, str]
+) -> None:
+    styles = summary.get("styles")
+    if not isinstance(styles, list) or not styles:
+        raise ValueError("summary styles are required for prompt binding")
+    for result in styles:
+        if not isinstance(result, dict) or not isinstance(result.get("style_id"), str):
+            raise ValueError("summary style entries must be mappings with style_id")
+        style_id = result["style_id"]
+        bound_digest = prompt_bindings.get(style_id)
+        if bound_digest is None:
+            raise ValueError(f"summary style {style_id!r} is absent from prompt binding")
+        if result.get("evaluated_prompt_sha256") != bound_digest:
+            raise ValueError(
+                f"summary style {style_id!r} does not match prompt binding"
+            )
 
 
 def validate_transition_gate(
@@ -45,6 +91,10 @@ def validate_transition_gate(
         if style_id in summary_ids:
             raise ValueError(f"duplicate summary style: {style_id}")
         summary_ids.add(style_id)
+        item = items.get(style_id)
+        if not isinstance(item, dict):
+            raise ValueError(f"summary style is missing from catalog: {style_id}")
+        validated_prompt_digest(item, result, style_id=style_id)
         if (
             required_tested_seeds is not None
             and result.get("tested_seeds") != required_tested_seeds
@@ -109,6 +159,7 @@ def update_catalog(
     if not isinstance(items, dict) or not isinstance(styles, list) or not styles:
         raise ValueError("catalog items and summary styles are required")
     seen: set[str] = set()
+    pending: list[tuple[dict[str, Any], dict[str, Any]]] = []
     for result in styles:
         if not isinstance(result, dict) or not isinstance(result.get("style_id"), str):
             raise ValueError("summary style entries must be mappings with style_id")
@@ -120,6 +171,9 @@ def update_catalog(
         if not isinstance(item, dict) or not isinstance(item.get("validation"), dict):
             raise ValueError(f"summary style is missing from catalog: {style_id}")
         validation = item["validation"]
+        evaluated_prompt_sha256 = validated_prompt_digest(
+            item, result, style_id=style_id
+        )
         current_status = validation.get("status")
         if current_status not in allowed_from:
             raise ValueError(
@@ -141,15 +195,17 @@ def update_catalog(
             raise ValueError(
                 f"summary style {style_id!r} has invalid evaluation values"
             )
-        validation.update(
-            {
-                "tested_seeds": tested_seeds,
-                "status": recommended,
-                "last_evaluation": evaluation_id,
-                **{metric: averages[metric] for metric in PERSISTED_METRICS},
-                "critical_failures": critical_failures,
-            }
-        )
+        values = {
+            "tested_seeds": tested_seeds,
+            "status": recommended,
+            "last_evaluation": evaluation_id,
+            "evaluated_prompt_sha256": evaluated_prompt_sha256,
+            **{metric: averages[metric] for metric in PERSISTED_METRICS},
+            "critical_failures": critical_failures,
+        }
+        pending.append((validation, values))
+    for validation, values in pending:
+        validation.update(values)
     return len(seen)
 
 
@@ -187,12 +243,33 @@ def main() -> int:
         metavar="STATUS=COUNT",
     )
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument(
+        "--prompt-binding",
+        type=Path,
+        help="validated immutable-matrix to catalog prompt digest binding",
+    )
     args = parser.parse_args()
     try:
-        catalog = load_yaml(args.catalog)
         summary = load_yaml(args.summary)
-        if not isinstance(catalog, dict) or not isinstance(summary, dict):
-            raise ValueError("catalog and summary must be mappings")
+        if not isinstance(summary, dict):
+            raise ValueError("summary must be a mapping")
+        bound_catalog_sha256: str | None = None
+        if args.prompt_binding is not None:
+            binding = load_validated_binding_document(
+                args.prompt_binding,
+                expected_catalog=args.catalog,
+            )
+            prompt_bindings = dict(binding["styles"])
+            bound_catalog_sha256 = binding["catalog"]["sha256"]
+            validate_summary_prompt_binding(summary, prompt_bindings)
+        catalog = load_yaml(args.catalog)
+        if not isinstance(catalog, dict):
+            raise ValueError("catalog must be a mapping")
+        if (
+            bound_catalog_sha256 is not None
+            and file_sha256(args.catalog) != bound_catalog_sha256
+        ):
+            raise ValueError("prompt binding catalog changed before evaluation apply")
         allowed_from = set(args.from_status or ["generated"])
         minimum_recommendations: dict[str, int] = {}
         for value in args.minimum_recommendation or []:
@@ -226,6 +303,11 @@ def main() -> int:
             allowed_from,
         )
         if args.apply:
+            if (
+                bound_catalog_sha256 is not None
+                and file_sha256(args.catalog) != bound_catalog_sha256
+            ):
+                raise ValueError("prompt binding catalog changed before atomic write")
             atomic_dump_yaml(catalog, args.catalog)
             print(
                 f"Applied evaluation {args.evaluation_id} to {count} catalog style(s)."

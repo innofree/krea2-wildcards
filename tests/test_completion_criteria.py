@@ -11,6 +11,7 @@ import yaml
 
 from check_completion_criteria import PAIRWISE_TYPES, collect_completion
 from common import item_prompts, load_yaml, normalized_phrase
+from export_phase6_matrix import PHASE6_PROFILE_SHA256
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/check_completion_criteria.py"
@@ -29,8 +30,9 @@ def write_yaml(path: Path, value: object) -> None:
 def approved_item(
     item_id: str, *, family: str, runtime_file: str, kind: str
 ) -> dict[str, object]:
+    prompt = f"A complete visual prompt for {item_id}."
     return {
-        "prompts": [f"A complete visual prompt for {item_id}."],
+        "prompt": prompt,
         "family": family,
         "runtime": {"file": runtime_file, "path": ["krea2", "test", item_id]},
         "generation": {"kind": kind},
@@ -42,6 +44,9 @@ def approved_item(
             "stability": 3,
             "compatibility": 3,
             "critical_failures": 0,
+            "evaluated_prompt_sha256": hashlib.sha256(
+                prompt.encode("utf-8")
+            ).hexdigest(),
         },
     }
 
@@ -104,9 +109,11 @@ def complete_repository(root: Path) -> None:
     items = [
         {"id": key, "status": "approved"} for key in [*styles, *approved_artist_ids]
     ]
+    manifest_path = root / "wildcards-manifest.json"
     write_json(
-        root / "wildcards-manifest.json",
+        manifest_path,
         {
+            "schema_version": 1,
             "included_statuses": ["approved"],
             "item_count": 350,
             "prompt_count": 350,
@@ -175,6 +182,11 @@ def complete_repository(root: Path) -> None:
         },
     )
     common = {"schema_version": 1, "status": "passed", "complete": True}
+    phase6_common = {
+        **common,
+        "prompt_profile_sha256": PHASE6_PROFILE_SHA256,
+    }
+    single_axis_items = [f"single_axis_item_{index:03d}" for index in range(96)]
     prompt_log = root / "tests/reports/runtime_prompt/run.json"
     write_json(prompt_log, {"seed": 6006})
     reports = {
@@ -202,17 +214,43 @@ def complete_repository(root: Path) -> None:
             "runtime_files_loaded": 1,
             "wildcard_paths_expected": 350,
             "wildcard_paths_resolved": 350,
+            "all_runtime_leaves_resolved": True,
+            "unexpected_runtime_leaf_paths": 0,
+            "missing_runtime_leaf_paths": 0,
+            "impact_paths_expected": 350,
+            "impact_paths_resolved": 350,
+            "impact_adapter_exact": True,
             "unresolved_wildcards": 0,
+            "final_prompt_unresolved_wildcards": 0,
             "yaml_syntax_errors": 0,
             "novelai_brace_conflicts": 0,
+            "novelai_bracket_conflicts": 0,
+            "final_prompt_brace_conflicts": 0,
+            "final_prompt_bracket_conflicts": 0,
             "catalog_runtime_separated": True,
             "final_prompt_logs_saved": True,
         },
         "single.json": {
-            **common,
+            **phase6_common,
             "report_type": "single_axis_coverage",
-            "tested_axes": ["linework", "coloring"],
-            "total_cases": 4,
+            "tested_axes": [
+                "background",
+                "camera",
+                "character_design",
+                "lighting",
+                "linework_coloring",
+                "pose",
+            ],
+            "total_cases": 96,
+            "passed_item_ids": single_axis_items,
+            "critical_failures": 0,
+        },
+        "calibration.json": {
+            **phase6_common,
+            "report_type": "phase6_prompt_profile_calibration",
+            "matrix_jobs": 69,
+            "distinct_seeds": 3,
+            "total_cases": 23,
             "critical_failures": 0,
         },
         "abc.json": {
@@ -224,27 +262,28 @@ def complete_repository(root: Path) -> None:
             "critical_failures": 0,
         },
         "pairwise.json": {
-            **common,
+            **phase6_common,
             "report_type": "pairwise_coverage",
             "covered_pair_types": sorted(PAIRWISE_TYPES),
             "total_cases": 96,
+            "right_item_ids": single_axis_items,
             "critical_failures": 0,
         },
         "presets.json": {
-            **common,
+            **phase6_common,
             "report_type": "preset_conflict_audit",
             "presets_tested": 100,
             "critical_conflicts": 0,
         },
         "random.json": {
-            **common,
+            **phase6_common,
             "report_type": "random_utility",
             "sample_count": 20,
             "usable_count": 15,
             "utility_rate": 0.75,
         },
         "benchmark.json": {
-            **common,
+            **phase6_common,
             "report_type": "krea2_turbo_benchmark",
             "model": "krea2_turbo_mxfp8",
             "distinct_seeds": 5,
@@ -271,21 +310,56 @@ def complete_repository(root: Path) -> None:
             )
         write_json(root / "tests/reports/completion" / name, report)
     smoke_path = root / "tests/reports/production_smoke/runs/test/run.json"
-    write_json(smoke_path, {"seed": 6006})
+    deployment_nonce = "d" * 32
+    deployed_at = "2026-07-27T12:00:00Z"
+    started_at = "2026-07-27T12:00:01Z"
+    completed_at = "2026-07-27T12:00:02Z"
+    manifest_digest = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+    artifact_digest = hashlib.sha256(production_bytes).hexdigest()
+    deployment_binding = {
+        "deployment_id": "production_v1",
+        "deployment_nonce": deployment_nonce,
+        "artifact_sha256": artifact_digest,
+        "manifest_sha256": manifest_digest,
+        "deployed_at_utc": deployed_at,
+    }
+    write_json(
+        smoke_path,
+        {
+            "schema_version": 2,
+            "seed": 6006,
+            "remote": "private_comfyui",
+            "resolved_prompt": "A resolved adult portrait with clean illustrated detail.",
+            "images": ["tests/reports/production_smoke/runs/test/image_01.png"],
+            "started_at_utc": started_at,
+            "completed_at_utc": completed_at,
+            "deployment": deployment_binding,
+        },
+    )
     write_json(
         root / "tests/reports/deployments/production_v1.json",
         {
+            "schema_version": 2,
             "deployment_id": "production_v1",
             "deployment_type": "production",
             "status": "passed",
             "mode": "apply",
             "applied": True,
             "approved_items": 350,
+            "manifest": {
+                "name": "wildcards-manifest.json",
+                "sha256": manifest_digest,
+                "bytes": manifest_path.stat().st_size,
+            },
             "artifact": {
                 "name": "krea2_complete_pack.yaml",
-                "sha256": hashlib.sha256(production_bytes).hexdigest(),
+                "sha256": artifact_digest,
                 "bytes": len(production_bytes),
                 "wildcard_path_count": 351,
+            },
+            "deployment": {
+                "nonce": deployment_nonce,
+                "completed_at_utc": deployed_at,
             },
             "verification": {
                 "checksum_match": True,
@@ -297,6 +371,13 @@ def complete_repository(root: Path) -> None:
             "smoke": {
                 "seed": 6006,
                 "run_record": "tests/reports/production_smoke/runs/test/run.json",
+                "run_record_sha256": hashlib.sha256(smoke_path.read_bytes()).hexdigest(),
+                "deployment_id": "production_v1",
+                "deployment_nonce": deployment_nonce,
+                "artifact_sha256": artifact_digest,
+                "manifest_sha256": manifest_digest,
+                "started_at_utc": started_at,
+                "completed_at_utc": completed_at,
             },
         },
     )
@@ -335,6 +416,36 @@ def test_manifest_requires_exact_approval_policy_valid_catalog_item_ids(
     actual = criteria["production_runtime_manifest"]["actual"]
     assert actual["missing_catalog_item_ids"] == ["artist_199"]
     assert actual["unexpected_manifest_item_ids"] == ["unexpected_item"]
+
+
+def test_artist_prompt_mutation_invalidates_approval_completion(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    artists_path = tmp_path / "catalog/artists.yaml"
+    artists = yaml.safe_load(artists_path.read_text(encoding="utf-8"))
+    artists["items"]["artist_0"]["prompt"] += " Mutated after evaluation."
+    write_yaml(artists_path, artists)
+
+    criterion = by_id(collect_completion(tmp_path))[
+        "approved_canonical_artist_signatures"
+    ]
+
+    assert criterion["complete"] is False
+    assert criterion["actual"] == 199
+
+
+def test_two_hundred_matching_artist_prompt_digests_pass_artist_gate(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+
+    criterion = by_id(collect_completion(tmp_path))[
+        "approved_canonical_artist_signatures"
+    ]
+
+    assert criterion["complete"] is True
+    assert criterion["actual"] == 200
 
 
 def test_predeploy_excludes_only_deployment_and_smoke(tmp_path: Path) -> None:
@@ -415,6 +526,67 @@ def test_production_artifact_change_invalidates_deployment_and_smoke(
     criteria = by_id(collect_completion(tmp_path))
     assert criteria["production_deployment"]["complete"] is False
     assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_production_manifest_change_invalidates_deployment_and_smoke(
+    tmp_path: Path,
+) -> None:
+    complete_repository(tmp_path)
+    manifest = tmp_path / "wildcards-manifest.json"
+    manifest.write_text(manifest.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is False
+    assert criteria["production_smoke_test"]["complete"] is False
+
+
+@pytest.mark.parametrize(
+    ("target", "field", "value"),
+    [
+        ("smoke", "artifact_sha256", "e" * 64),
+        ("smoke", "deployment_id", "another_deployment"),
+        ("run_binding", "deployment_nonce", "e" * 32),
+        ("run", "started_at_utc", "2026-07-27T11:59:59Z"),
+    ],
+)
+def test_smoke_binding_digest_and_chronology_are_fail_closed(
+    tmp_path: Path, target: str, field: str, value: str
+) -> None:
+    complete_repository(tmp_path)
+    evidence_path = tmp_path / "tests/reports/deployments/production_v1.json"
+    run_path = tmp_path / "tests/reports/production_smoke/runs/test/run.json"
+    evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+    run = json.loads(run_path.read_text(encoding="utf-8"))
+    if target == "smoke":
+        evidence["smoke"][field] = value
+    elif target == "run_binding":
+        run["deployment"][field] = value
+        write_json(run_path, run)
+        evidence["smoke"]["run_record_sha256"] = hashlib.sha256(
+            run_path.read_bytes()
+        ).hexdigest()
+    else:
+        run[field] = value
+        write_json(run_path, run)
+        evidence["smoke"]["run_record_sha256"] = hashlib.sha256(
+            run_path.read_bytes()
+        ).hexdigest()
+        evidence["smoke"][field] = value
+    write_json(evidence_path, evidence)
+
+    criteria = by_id(collect_completion(tmp_path))
+    assert criteria["production_deployment"]["complete"] is True
+    assert criteria["production_smoke_test"]["complete"] is False
+
+
+def test_smoke_run_record_mutation_invalidates_record_digest(tmp_path: Path) -> None:
+    complete_repository(tmp_path)
+    run_path = tmp_path / "tests/reports/production_smoke/runs/test/run.json"
+    run_path.write_text(run_path.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+
+    criterion = by_id(collect_completion(tmp_path))["production_smoke_test"]
+    assert criterion["complete"] is False
+    assert criterion["actual"]["run_record_sha256_valid"] is False
 
 
 def test_smoke_path_traversal_cannot_pass_even_when_target_exists(

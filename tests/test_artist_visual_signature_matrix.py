@@ -47,8 +47,7 @@ def clean_prompt() -> str:
     return (
         "An adult portrait uses narrow architectural lines, a softly rounded face, layered irises, "
         "natural long-limbed proportions, a restrained blue and clay palette, clean two-step "
-        "shading, centered full-length framing, and sparse geometric accents. "
-        f"{CATALOG_QUALITY_SUFFIX}"
+        "shading, centered full-length framing, and sparse geometric accents."
     )
 
 
@@ -78,7 +77,14 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
             "light_modeling",
             "framing_language",
             "ornament_language",
+            "evaluated_prompt_sha256",
         }
+        assert row["factors"]["evaluated_prompt_sha256"] == (
+            "sha256_"
+            + hashlib.sha256(
+                catalog["items"][row["style_id"]]["prompt"].encode("utf-8")
+            ).hexdigest()
+        )
     assert len({row["test_id"] for row in rows}) == 900
     assert all(row["test_id"].startswith("VS") for row in rows)
     for row in rows:
@@ -110,6 +116,51 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
         assert "@" not in prompt and "__" not in prompt and "::" not in prompt
         assert all(token not in prompt for token in ("{", "}", "[", "]"))
         assert not ARTIST_REFERENCE_RE.search(prompt)
+
+
+def test_real_catalog_prompts_are_the_exact_evaluated_signature_bodies() -> None:
+    catalog = yaml.safe_load(
+        (ROOT / "catalog/artists.yaml").read_text(encoding="utf-8")
+    )["items"]
+    rows = signature_rows(ROOT / "catalog/artists.yaml")
+    row_by_style = {row["style_id"]: row for row in rows}
+
+    assert len(row_by_style) == 300
+    for style_id, item in catalog.items():
+        catalog_prompt = item["prompt"]
+        evaluated_prompt = row_by_style[style_id]["prompt"]
+        assert CATALOG_QUALITY_SUFFIX not in catalog_prompt
+        assert (
+            f"Every listed property must be visibly expressed: {catalog_prompt} "
+            in evaluated_prompt
+        )
+        assert evaluated_prompt.count(catalog_prompt) == 1
+        assert (
+            row_by_style[style_id]["factors"]["evaluated_prompt_sha256"]
+            == "sha256_"
+            + hashlib.sha256(catalog_prompt.encode("utf-8")).hexdigest()
+        )
+
+
+def test_legacy_matrix_can_omit_prompt_digests_without_changing_other_factors() -> None:
+    rows = signature_rows(
+        ROOT / "catalog/artists.yaml",
+        seeds=(1001,),
+        limit_signatures=1,
+        include_prompt_digest=False,
+    )
+
+    assert len(rows) == 1
+    assert set(rows[0]["factors"]) == {
+        "line_language",
+        "face_design",
+        "eye_design",
+        "body_design",
+        "palette_language",
+        "light_modeling",
+        "framing_language",
+        "ornament_language",
+    }
 
 
 def test_signature_brief_precedes_fixed_scene_for_prompt_priority(
@@ -227,6 +278,21 @@ def test_export_rejects_named_or_model_specific_prompt_syntax(
     with pytest.raises(
         ValueError, match="artist-name reference|unresolved wildcard|emphasis syntax"
     ):
+        signature_rows(catalog)
+
+
+def test_export_rejects_legacy_realistic_quality_suffix(tmp_path: Path) -> None:
+    catalog = tmp_path / "artists.yaml"
+    write_catalog(
+        catalog,
+        {
+            "artist_signature_legacy": signature_item(
+                "generated", f"{clean_prompt()} {CATALOG_QUALITY_SUFFIX}"
+            )
+        },
+    )
+
+    with pytest.raises(ValueError, match="unvalidated realistic quality suffix"):
         signature_rows(catalog)
 
 

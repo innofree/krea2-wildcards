@@ -22,16 +22,18 @@
 
 96 GB VRAM 생성 노드의 queue 용량을 활용하기 위해 resolved prompt matrix 실행은
 기본 최대 32개 in-flight job을 사용한다. `REMOTE_QUEUE_DEPTH`로 낮추거나 높일 수
-있으며 runner는 1~256 범위만 허용한다.
+있으며 runner는 1~256 범위만 허용한다. Seed별 이미지와 해시를 1:1로 보존하기
+위해 `REMOTE_BATCH_SIZE=1`을 유지하고, 처리량은 서로 다른 prompt/seed job의 동시
+queue로 확보한다.
 
 ```bash
-REMOTE_QUEUE_DEPTH=32 make remote-phase6-pairwise
+REMOTE_BATCH_SIZE=1 REMOTE_QUEUE_DEPTH=32 make remote-phase6-pairwise
 ```
 
 대량 제출 전에는 `/queue`가 비어 있는지 한 번 확인하고, 이후 이 matrix가 제출한
 prompt ID만 수집한다. 외부 작업을 발견하더라도 취소하거나 재정렬하지 않으며,
-각 결과는 기존과 동일하게 개별 `run.json`과 1024×1024 PNG로 검증한다. Queue
-depth는 report manifest와 새 run metadata에 기록한다.
+각 결과는 기존과 동일하게 개별 `run.json`과 1024×1024 PNG로 검증한다. Batch
+size와 queue depth는 report manifest와 새 run metadata에 기록한다.
 
 ## 로컬 구축 절차
 
@@ -178,7 +180,8 @@ style 150개와 canonical artist 300명의 3-seed native 관찰을 확보했으�
 5. canonical artist 300명의 native-name 반응을 seed 3개로 관찰하고 각 8축 시각 특성을
    이름 없는 자연어 시그니처로 작성한다.
 6. 시그니처 후보를 5-seed 승인하고 대표 8명은 native/signature/hybrid A/B/C로 비교한다.
-7. 단일축·pairwise·preset·random utility·Turbo benchmark 후 strict 완료 판정을 수행한다.
+7. 69장 prompt-profile calibration을 통과시킨 뒤, pairwise RHS 96개 실제 catalog
+   항목의 단일축 검증과 pairwise·preset·random utility·Turbo benchmark를 수행한다.
 8. 최종 approved-only production을 빌드·배포하고 smoke/queue/checksum/namespace를 확인한다.
 
 5단계의 공식 결과는 900/900 run, 300명 × seed `[1001, 2002, 3003]`, 1024×1024이며

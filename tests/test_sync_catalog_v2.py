@@ -282,8 +282,16 @@ def test_sync_adds_evaluation_only_on_required_status_and_preserves_history(
     catalog_path = repo / "catalog/style_atomics.yaml"
     catalog = _read_yaml(catalog_path)
     validation = catalog["items"]["atomic_001"]["validation"]
+    evaluated_prompt_sha256 = hashlib.sha256(
+        catalog["items"]["atomic_001"]["prompt"].encode("utf-8")
+    ).hexdigest()
     validation.update(
-        {"status": "testing", "tested_seeds": 3, "last_evaluation": "atomic_pilot_v0_1"}
+        {
+            "status": "testing",
+            "tested_seeds": 3,
+            "last_evaluation": "atomic_pilot_v0_1",
+            "evaluated_prompt_sha256": evaluated_prompt_sha256,
+        }
     )
     _write_yaml(catalog_path, catalog)
     _refresh_manifest(repo, blueprint, manifest, 1)
@@ -306,6 +314,10 @@ def test_sync_adds_evaluation_only_on_required_status_and_preserves_history(
         "testing",
     ]
     assert lifecycle["evaluation_ref"] == item["evaluation_ref"]
+    evaluation = _read_yaml(repo / "catalog_v2/lifecycle/evaluations.yaml")[
+        "entries"
+    ][item["evaluation_ref"]]
+    assert evaluation["evaluated_prompt_sha256"] == evaluated_prompt_sha256
     assert validate_catalog_v2(repo / "catalog_v2") == []
 
     idempotent = sync_catalog_v2(

@@ -200,3 +200,51 @@ def test_incomplete_row_prevents_all_averaging(tmp_path: Path) -> None:
     assert result.returncode == 1
     assert "prompt_efficiency" in result.stdout
     assert not output.exists()
+
+
+def test_evaluated_prompt_digest_is_preserved_per_style(tmp_path: Path) -> None:
+    digest = "a" * 64
+    rows = [
+        scorecard(
+            seed,
+            factors_json=json.dumps(
+                {"evaluated_prompt_sha256": f"sha256_{digest}"}
+            ),
+        )
+        for seed in range(1, 4)
+    ]
+
+    result, output = run_summary(tmp_path, rows)
+
+    assert result.returncode == 0, result.stderr or result.stdout
+    summary = json.loads(output.read_text(encoding="utf-8"))["styles"][0]
+    assert summary["evaluated_prompt_sha256"] == digest
+
+
+def test_evaluated_prompt_digest_must_cover_every_seed_consistently(
+    tmp_path: Path,
+) -> None:
+    rows = [
+        scorecard(
+            1,
+            factors_json=json.dumps(
+                {"evaluated_prompt_sha256": f"sha256_{'a' * 64}"}
+            ),
+        ),
+        scorecard(2),
+        scorecard(
+            3,
+            factors_json=json.dumps(
+                {"evaluated_prompt_sha256": f"sha256_{'b' * 64}"}
+            ),
+        ),
+    ]
+
+    result, output = run_summary(tmp_path, rows)
+
+    assert result.returncode == 1
+    assert (
+        "incomplete evaluated_prompt_sha256 coverage" in result.stdout
+        or "inconsistent evaluated_prompt_sha256 values" in result.stdout
+    )
+    assert not output.exists()
