@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000016",
+  "style_id": "pairwise_artist_signature_camera_composition_001",
+  "label": "pairwise_artist_signature_camera_composition_001",
+  "mode": "pairwise",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "710ed9b1-d2e2-4797-8021-9c75cfa5fa54",
+  "resolved_prompt": "An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, hard-edged two-value cel blocks, centered emblematic framing with face-to-hands hierarchy, and sparse floral traces and quiet border motifs. Combine it coherently with this second visual direction: Photograph an adult subject using chest-up framing that keeps both shoulders and the upper arm gesture readable from a clean side camera position that preserves the facial profile and body line. The view uses a classic wide field of view that includes context while keeping facial proportions natural and asymmetric placement with generous negative space and one clear visual counterweight. Resolve both directions on exactly one adult subject. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "4be860b24e624eafa8d88124d837af0101d81fcb674a5a6a11f6bd93240d1ccf",
+  "workflow_sha256": "0aba76671d2a2a83a761767a7637d96a51807becf2faa4ed298c4834a99467e8",
+  "factors": {
+    "pair_type": "artist_signature_camera_composition",
+    "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+    "right_item": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "e1911c19c56c7a21eb9acc8c8b0097a3e7fe274e83b29cba84663b8ef2647c01",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

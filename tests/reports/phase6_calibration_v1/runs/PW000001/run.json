@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000001",
+  "style_id": "pairwise_style_pack_character_design_001",
+  "label": "pairwise_style_pack_character_design_001",
+  "mode": "pairwise",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "e58f61fe-dbe5-43f1-a6fb-1947994daba5",
+  "resolved_prompt": "Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: An adult character has an asymmetric urban silhouette with offset layers and a clear uninterrupted body line, a diamond-shaped adult face with defined cheek planes and a compact chin, and grounded adult proportions with a broad torso, sturdy limbs, and stable weight distribution. The design is unified by subtle botanical seam curves and leaflike closures used as controlled accents. Resolve both directions on exactly one adult subject. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "7972b811a74a9a849784c830828570f16f16225adf36910e61fd944bc42f2c35",
+  "workflow_sha256": "a314ce949020199896e249a647e1fd45d126fde5abac20a938d612049601df81",
+  "factors": {
+    "pair_type": "style_pack_character_design",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "1643d846fb63d449ba2b11f3350d2eabac1742412e68a88e89dded7aea04dac6",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

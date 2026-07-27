@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "RU000011",
+  "style_id": "random_utility_004",
+  "label": "random_utility_004",
+  "mode": "random_utility",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "391e7869-ef8d-4240-913c-18b99e1f6ec0",
+  "resolved_prompt": "Apply this name-free visual treatment: An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, translucent glaze, reflected color, and open penumbrae, a strong vertical frame with a low visual anchor, and sparse floral traces and quiet border motifs. Use it to render this validated scene preset: An adult stands frontally with level shoulders and loosely clasped hands in a quiet pale-stone museum hall with deep openings and sparse displays, wearing a belted midi dress with a clean cropped outer layer, with a calm attentive look with a level chin and focused eyes. Use a wide view with the subject on a third and a clear depth path and a large diffused key blended with ambient light. Keep the combined direction coherent. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "1bf1244cf38b9218b6c449e81731570ec13d1f2c4e18688f4b6f2c7a916647cd",
+  "workflow_sha256": "822f9389d601c7a2d6dd56da61c02ef1d88372b1880201ef30252e9c4ba718d8",
+  "factors": {
+    "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+    "artist_signature": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "7c5501dfae9cad6731d41f0c47c8d393ab2d774e5cb868b83c12f7315916a15c",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

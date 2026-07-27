@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "RU000007",
+  "style_id": "random_utility_003",
+  "label": "random_utility_003",
+  "mode": "random_utility",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "70636141-cbf4-4b7b-8676-84daf9089417",
+  "resolved_prompt": "Apply this name-free visual treatment: An adult portrait uses lace-fine tapered lines with sparse inner marks, a compact oval face with a soft jaw and small nose, rounded eyes, radial irises, and soft lower gradients, a balanced figure with narrow shoulders and precise hands, nocturnal indigo, cool cyan, and measured magenta, broad blended value planes and rounded volume, centered emblematic framing with face-to-hands hierarchy, and restrained textile patterns around the silhouette. Use it to render this validated scene preset: An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, wide-leg trousers, and high-neck base, with a quiet reflective look with soft eyes and a relaxed mouth. Use eye-level thigh-up framing from a three-quarter position and cool overcast light with restrained warm facial fill. Keep the combined direction coherent. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "7f75804ccf84e47048c6ded8e61137f9b9fb02eec493d9407500e89408c44b11",
+  "workflow_sha256": "c6ddff40ba01ad3d5a23fda746e3299bc370120a58b69285222115f10d2b9339",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+    "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f21a7c3cd67a19e4611aea7f97d8a807d41352933bbe7398db8b52fbde839c62",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

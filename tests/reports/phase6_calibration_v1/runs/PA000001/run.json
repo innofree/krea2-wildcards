@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000001",
+  "style_id": "preset_audit_001",
+  "label": "preset_audit_001",
+  "mode": "preset_audit",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "cc03dc2f-1435-479b-9c74-72511557379f",
+  "resolved_prompt": "An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, wide-leg trousers, and high-neck base, with a calm attentive look with a level chin and focused eyes. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "899dc84b1079148075ae5c1f2caa7409f54474094a755216949a42e3f9deb800",
+  "workflow_sha256": "9d182c0d0b7efda3b956d57e2dc40a21ddceac86ce97d4f649b360cec54a6b0f",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "cc4b30df9970b673ba2710f1118380ce941ab866f68dc47bb64e5248597508fd",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

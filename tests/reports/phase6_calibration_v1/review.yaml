@@ -1,0 +1,389 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/phase6_calibration_v1/review_part_a.yaml
+  - tests/reports/phase6_calibration_v1/review_part_b.yaml
+  - tests/reports/phase6_calibration_v1/review_part_c.yaml
+styles:
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Across all seeds, a complete adult figure remains centered against large rising diagonal beams with
+      a stable amber-lit side, blue-shadowed side, crisp separated shadow edges, matte dark midtones,
+      and restrained ceremonial glow. The strong colored split overrides the nominal neutral-light baseline
+      but faithfully realizes the benchmark pack without anatomy, framing, text, or generation failures.
+    recommendation: testing
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      All three seeds preserve one polished adult, angular jewel-toned construction, rounded facial forms,
+      crisp graphic blocks, and floral border details. The requested chest-up/profile camera is only partial,
+      seed 3003 becomes frontal, and every image favors centered framed symmetry over the requested generous
+      asymmetric negative space and counterweight.
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 4
+      stability: 2
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: true
+    notes: >-
+      Deep garnet, ink blue, forest, dark neutrals, fine angular garment divisions, gold accents, and
+      floral borders are strongly visible. However, seeds 1001 and 2002 each render a two-person diptych
+      despite the exactly-one-adult instruction, while seed 3003 renders one subject, creating a severe
+      subject-count failure and major structural instability.
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 2
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Each seed coherently combines a coastal overlook, rocks, low vegetation, broad horizon, atmospheric
+      depth, and a single adult with monumental amber-blue diagonal planes. The environment and style
+      are stable and distinctive, but the subject is so distant and deeply silhouetted that the requested
+      coherent face, eyes, and hands are not readable.
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Three seeds retain one adult, asymmetric wrap-like clothing, a broad grounded upper-body silhouette,
+      hard amber-blue divisions, and stable editorial lighting. The diamond facial structure, sturdy full-body
+      proportions, botanical seam curves, and leaflike closures are weak or absent, and dark silhouette
+      treatment obscures face and hand detail in multiple seeds.
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 2
+      composition_quality: 4
+      compatibility: 2
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The set consistently uses one adult against bold amber and blue geometric beams with clean shadow
+      shapes. The broad frontal three-quarter window source does not keep both eyes readable, the warm
+      accent becomes a dominant beam rather than a small background practical, and the subject remains
+      an underexposed silhouette, so the two lighting directions are not coherently resolved.
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three seeds show exactly one clearly adult full figure with both feet grounded, level frontal
+      posture, direct gaze, one hand at the collar and the other near the hip, while amber-blue rising
+      beams and crisp separated shadows preserve the selected style pack. The pose, styling, anatomy,
+      and composition remain coherent across seeds, with only modest facial shadow loss.
+    recommendation: testing
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      All three seeds consistently show one adult turning toward the camera on a rocky coastal overlook
+      in a collarless jacket and wide trousers, but they use full-length monochrome framing instead of
+      the requested thigh-up view and accurate neutral-daylight skin color.
+    recommendation: testing
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The covered arcade, wrap top, tapered trousers, turned stance, quiet expression, and warm low light
+      are recognizable in all seeds, yet framing varies from thigh-up to full body and never delivers
+      the specified compressed chest-up portrait.
+    recommendation: testing
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The three outputs preserve the warm modern library, overshirt over a column dress, separated arms,
+      and paused step, but the first two are full-body rather than waist-up and seed 3003 crops the head
+      while also weakening cross-seed composition stability.
+    recommendation: testing
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Rooftop skyline, wrap top, tapered trousers, one hand at the waist, and low-angle light remain visible,
+      but seed 1001 removes the entire head and the other seeds shift to centered monochrome views rather
+      than a stable wide subject-on-a-third composition.
+    recommendation: testing
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 2
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The transit concourse, longline vest, fitted top, pleated skirt, waist hand, and warm light are
+      consistent, but all three chest-up crops cut away most or all of the face and eyes, preventing the
+      requested quiet expression and coherent adult portrait from reading.
+    recommendation: testing
+  random_utility_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      All seeds show the library pause, overshirt and column dress, visible separated hands, near-monochrome
+      palette, tapered face, deep almond eyes, crisp edges, and compressed framing; seed 1001 is more
+      photographic than the two drawn outputs and geometric accents remain understated.
+    recommendation: testing
+  random_utility_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The three full-length arcade scenes coherently combine a three-quarter reflective pose, tailored
+      coat, grounded compact figure, oval face, cool indigo-cyan-magenta color, luminous glaze, centered
+      hierarchy, and restrained drifting particles with clear anatomy.
+    recommendation: testing
+  random_utility_003:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      All three seeds stably reproduce the coastal overlook, turned thigh-up figure, collarless suit,
+      cool overcast light, and quiet expression, but they collapse into photography and omit the lace
+      line work, radial eyes, neon magenta-cyan treatment, painterly planes, emblematic hierarchy, and
+      textile echo.
+    recommendation: testing
+  random_utility_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Three stable museum scenes preserve the frontal composed adult, loosely clasped hands, belted midi
+      layer, pale architectural depth, elongated vertical figure, deep jewel palette, luminous modeling,
+      and sparse floral traces, with only mild underemphasis of the large layered-eye cue.
+    recommendation: testing
+  random_utility_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The three seeds consistently deliver one full-length adult in a stone courtyard with a collarless
+      jacket, wide trousers, monochrome diffuse values, crisp silhouette, and clear hands and feet, but
+      the stance is mostly frontal rather than contrapposto and the requested textile echo is absent.
+    recommendation: testing
+  single_axis_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three seeds clearly establish a coastal overlook with weathered foreground rock, low vegetation,
+      a broad ocean horizon, and readable foreground-to-distance layering around one complete adult subject.
+      The monochrome treatment suppresses the requested controlled color accent, but depth separation,
+      still air, crisp near detail, and softened distance remain stable.
+    recommendation: testing
+  single_axis_camera_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 2
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The three outputs consistently use a close upper-body crop and retain both hands, but the crop cuts
+      off the top half of the face in every seed. They do not deliver a clean facial profile, classic
+      wide contextual view, asymmetric negative space, or a visual counterweight, so the requested camera
+      construction is not usable despite otherwise coherent anatomy.
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      All seeds produce one anatomically coherent adult with a somewhat broad grounded build, but the
+      clothing remains a generic symmetric studio outfit. The specified offset urban layers, uninterrupted
+      asymmetric body line, strongly diamond-shaped face, botanical seam curves, and leaflike closures
+      are absent, while pose angle and silhouette also vary across seeds.
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Every seed shows one full adult under a coherent cool frontal-three-quarter field with readable
+      facial structure, crisp shaped shadows, reflected floor light, and a controlled warm practical accent
+      behind the figure. Practical placement and pose shift modestly, but the cool-key versus warm-accent
+      lighting identity remains strong and compatible.
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The three mid-thigh portraits consistently use angular faceted modeling, measured silhouette edges,
+      broad blended planes, coherent faces, and readable hands. However, the palette collapses into gray-brown
+      or grayscale instead of deep jewel color, and a controlled shadow-side rim accent is not independently
+      visible, leaving two defining color-finish cues unmet.
+    recommendation: testing
+  single_axis_pose_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      All three seeds repeat the requested evenly weighted frontal stance with level shoulders, grounded
+      feet, one hand at the collar, the other at the hip, a level chin, direct calm gaze, and controlled
+      forward energy. Head, hands, feet, joints, and garment construction remain clear with no meaningful
+      pose drift or conflict.
+    recommendation: testing

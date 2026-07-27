@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "RU000006",
+  "style_id": "random_utility_002",
+  "label": "random_utility_002",
+  "mode": "random_utility",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "0ee44ce4-bfaf-4eb7-9e31-879e6fa36d4d",
+  "resolved_prompt": "Apply this name-free visual treatment: An adult portrait uses lace-fine tapered lines with sparse inner marks, a compact oval face with a soft jaw and small nose, rounded eyes, radial irises, and soft lower gradients, a grounded figure with sturdy limbs and clear hands, nocturnal indigo, cool cyan, and measured magenta, translucent glaze, reflected color, and open penumbrae, centered emblematic framing with face-to-hands hierarchy, and drifting particles away from facial features. Use it to render this validated scene preset: An adult stands three-quarters, one hand at the waist and one lowered in a covered market arcade with repeated bays and a clear central passage, wearing a tailored long coat, fine knit top, and straight trousers, with a quiet reflective look with soft eyes and a relaxed mouth. Use eye-level full-length framing with visible feet and ample headroom and a large diffused key blended with ambient light. Keep the combined direction coherent. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "8572d88fc9adf21daf12ebf9c1206a129f8a7a405cccb61fb80ead286c22d691",
+  "workflow_sha256": "d6cffbe76c1662d1296c720f3a7fe8c3df9a3752c0e5260b291e09c736da2460",
+  "factors": {
+    "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+    "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "de6f5d1faefc2b2ffa848c23c17de1e720ae36ebb25832fdf471b632df6e6020",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

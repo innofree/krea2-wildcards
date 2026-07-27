@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000009",
+  "style_id": "pairwise_style_pack_lighting_001",
+  "label": "pairwise_style_pack_lighting_001",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "0ed6b8e9-2b4b-4ff6-bb09-e9f671cc9494",
+  "resolved_prompt": "Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Resolve both directions on exactly one adult subject. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "d8949093096be50ded1b75ea6defeca9608c93e1518fcc39670afa124d7758e4",
+  "workflow_sha256": "104379a9157bd02b621cfa4047a4c67e95519a1d374173de47dc41670cb91be1",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "7899551d06f735c9f94dfd86ca4b28a95bf484d446b61486b169b0f62b4069df",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1131,6 +1131,21 @@ Turbo benchmark 생성 경로를 모두 포함하는 23 case × 3 seed, 총 69�
 수행한다. 모든 case가 품질 gate를 통과하고 현재 prompt-profile SHA-256이 matrix,
 scored review, summary에 동일하게 기록되어야 이후 대량 target을 실행할 수 있다.
 
+초기 `phase6_positive_profile_v2` calibration은 69/69개 1024×1024 PNG와
+서로 다른 image hash를 생성했고, 동일 명령 재실행에서 `complete=69`,
+`pending=0`을 확인했다. matrix SHA-256은
+`b6c694463fa46132307e191540e4c828ed8f08016bdcfddbedd94764891669a8`이다.
+23개 case 전수 contact-sheet 리뷰 결과는 통과 8개, 미달 15개였고, pairwise
+coloring 한 case에서 exactly-one 지시를 어긴 2-person diptych가 발생했다.
+주요 미달 원인은 camera face crop과 negative-space 미반영, character design
+세부 누락, 조명 silhouette로 인한 얼굴 판독성 저하, preset framing drift,
+random utility의 visual-signature·pose·textile 속성 누락이었다. 실패 summary는
+`status=failed`, `complete=false`이며 calibration gate가 후속 대량 제출을
+의도대로 차단했다. 이 점수와 이미지는 수정하지 않고 v2 실패 근거로 보존한다.
+후속 profile은 정확히 한 인물과 얼굴·눈·양손 판독성, 명시적 camera framing,
+단일-view 구성, 핵심 축의 구체적 가시 위치를 긍정형 자연어로 강화한 새 버전으로
+고정하고, 기존과 겹치지 않는 새 3-seed 69장 calibration을 다시 통과해야 한다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.

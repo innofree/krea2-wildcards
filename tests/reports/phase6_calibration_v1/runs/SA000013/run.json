@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000013",
+  "style_id": "single_axis_linework_coloring_001",
+  "label": "single_axis_linework_coloring_001",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "df11471a-7245-46a0-a145-7e72048a583a",
+  "resolved_prompt": "Apply exactly this linework_coloring direction as the sole changing axis: An adult subject is defined by angular precise lines with measured corners and clean garment construction, filled with deep jewel color separated by dark neutrals and small high-value accents, and modeled through broad blended planes that round the figure while keeping silhouette edges clear. The finish adds a controlled rim accent that separates only the shadow-side silhouette. Show exactly one adult woman in a balanced standing character portrait, wearing a plain long-sleeve top. Use an eye-level mid-thigh frame, broad neutral diffused lighting, and an uncluttered warm-grey studio ground, with her face, eyes, and both hands readable. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "359a53a7ac5181434c170a6d8d574720e5966c7cfa0ee54a7ac66a1e6a18428a",
+  "workflow_sha256": "345ec05f69d277d6bfb3083b6af1872b835b0e48348f83d4e3d882c233293b4f",
+  "factors": {
+    "axis": "linework_coloring",
+    "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "9f6ddd98ec8f296c727dc0cc082174cf25f1c658cbf7517430aa3a302beff934",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

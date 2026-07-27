@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000004",
+  "style_id": "single_axis_pose_001",
+  "label": "single_axis_pose_001",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "7be6dfb6-b9c0-4945-8343-fad2fb099f91",
+  "resolved_prompt": "Apply exactly this pose direction as the sole changing axis: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with one hand near the collar while the other anchors gently at the hip. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "06f9d089300000598685dd9f1e5a255521353dd352592be95c451089aa13921c",
+  "workflow_sha256": "a98c4c3668f74ff03011140f94172d6c715290cde141fdd8d13bde6892aaaa4c",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2d9fd78492eb00b2492dcbae237d7f5b412c9e7212cd45899fc170c0dfc30e75",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

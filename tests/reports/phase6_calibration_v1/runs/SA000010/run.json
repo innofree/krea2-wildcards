@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000010",
+  "style_id": "single_axis_background_001",
+  "label": "single_axis_background_001",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "a3a06d71-71c7-4bad-a695-d6cec727e6b3",
+  "resolved_prompt": "Apply exactly this background direction as the sole changing axis: An adult subject stands in a coastal overlook with weathered stone, low vegetation, and a broad distant horizon, with clear foreground, middle-distance, and background layers with no object merging into the subject, clear still air with crisp nearby edges and gently softened distant detail, and deep neutral surroundings lifted by one controlled color accent away from the face. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "19b8f6685eba36d0beb3010d4728b99929cf8c5c5fa7450405b7255a9d4eea9d",
+  "workflow_sha256": "cd87585437de3e1c74aab1a73ff43bd0faf308fbe60b8109a4e591aa840a4f7a",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+    "prompt_profile_sha256": "sha256_40f81a2623b29d7d4fa1b2e4cd326172b669aff3666dd9ccb54fbb6187910d57"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "c5f14a3cffbb439f7eed19d9d240aa67be3c54f3810e2d1be1295fa4f7a5f2fc",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
