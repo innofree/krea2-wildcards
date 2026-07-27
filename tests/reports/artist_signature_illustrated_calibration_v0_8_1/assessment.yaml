@@ -1,0 +1,23 @@
+schema_version: 1
+assessment: artist_signature_illustrated_calibration_v0_8_1
+purpose: Test whether an illustrated finish removes the photographic bias before another full screen.
+matrix:
+  path: tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl
+  sha256: b0267998c6bcfeb92b746c19f6429b577eeff7c569d6ec281736f32366485fe8
+report:
+  manifest_sha256: 7b2b9cb9c10c0447d638b790bcf42a28096748a08f551ca1f5f3ba11a050324d
+  scorecard_sha256: c85171f1ada1efe7843496826cb2da459b83390d7c61d28afe746f8811418fcf
+review:
+  contact_sheet: review/prompt_matrix_visual_signature_001.png
+  contact_sheet_sha256: 710197ced29d6be00fc414bdc4c84af94cba1bef1462dfdac8c7ac6d460c64ec
+  manifest_sha256: a2d60b199970cdca2ae88b521594374c76467544816d6dde94f72c954f90c5a0
+  reviewed_cases: 5
+  seeds_per_case: 3
+  total_images: 15
+verdict:
+  status: fail_distinctiveness
+  two_dimensional_medium: pass
+  cross_signature_distinctiveness: fail
+  three_seed_stability: pass
+finding: The full-length neutral scene produced stable two-dimensional images but reduced the five signatures to nearly identical simple figures, suppressing face, eye, palette, shading, composition, and motif differences.
+decision: Do not run the 300-signature screen or change catalog status; move the signature brief first, enlarge the face, release signature-controlled styling axes, and recalibrate as v0.8.2.

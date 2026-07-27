@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/artist_visual_signature_illustrated_calibration.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "cases_per_sheet": 5,
+  "case_count": 5,
+  "style_count": 5,
+  "image_count": 15,
+  "sheet_count": 1,
+  "modes": {
+    "visual_signature": {
+      "case_count": 5,
+      "image_count": 15,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/artist_signature_illustrated_calibration_v0_8_1/review/prompt_matrix_visual_signature_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "visual_signature",
+      "sheet_index": 1,
+      "path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/review/prompt_matrix_visual_signature_001.png",
+      "case_count": 5,
+      "image_count": 15
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {},
+      "items": [
+        {
+          "test_id": "VS000001",
+          "seed": 1001,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000001/image_01.png"
+        },
+        {
+          "test_id": "VS000002",
+          "seed": 2002,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000002/image_01.png"
+        },
+        {
+          "test_id": "VS000003",
+          "seed": 3003,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {},
+      "items": [
+        {
+          "test_id": "VS000004",
+          "seed": 1001,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000004/image_01.png"
+        },
+        {
+          "test_id": "VS000005",
+          "seed": 2002,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000005/image_01.png"
+        },
+        {
+          "test_id": "VS000006",
+          "seed": 3003,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {},
+      "items": [
+        {
+          "test_id": "VS000007",
+          "seed": 1001,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000007/image_01.png"
+        },
+        {
+          "test_id": "VS000008",
+          "seed": 2002,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000008/image_01.png"
+        },
+        {
+          "test_id": "VS000009",
+          "seed": 3003,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {},
+      "items": [
+        {
+          "test_id": "VS000010",
+          "seed": 1001,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000010/image_01.png"
+        },
+        {
+          "test_id": "VS000011",
+          "seed": 2002,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000011/image_01.png"
+        },
+        {
+          "test_id": "VS000012",
+          "seed": 3003,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {},
+      "items": [
+        {
+          "test_id": "VS000013",
+          "seed": 1001,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000013/image_01.png"
+        },
+        {
+          "test_id": "VS000014",
+          "seed": 2002,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000014/image_01.png"
+        },
+        {
+          "test_id": "VS000015",
+          "seed": 3003,
+          "image_path": "tests/reports/artist_signature_illustrated_calibration_v0_8_1/runs/VS000015/image_01.png"
+        }
+      ]
+    }
+  ]
+}

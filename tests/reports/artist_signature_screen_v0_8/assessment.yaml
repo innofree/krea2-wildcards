@@ -1,0 +1,34 @@
+schema_version: 1
+assessment: artist_signature_screen_v0_8
+purpose: Preserve the original three-seed screen as a diagnostic failure without changing catalog lifecycle status.
+matrix:
+  path: tests/prompt_matrix/artist_visual_signature.jsonl
+  sha256: 535e0c71a0c6d131030038434264b5fca0bb9aa2a7224691888e22d2d0717a1d
+report:
+  manifest_sha256: 1374283ba53c4fe8ed8487395ec818acc1886d935933d400351aab9b3481eecd
+  scorecard_sha256: 32bdb73142a83d739e290f0aa68e2b06c6afba2346c16c794b212ee52560aecb
+  review_sha256: b4c4acaace2e85ada35c279fd5058a6d87f5768eabe632d624f9106b4f006449
+  scored_sha256: 1eab01b106d8302e39b63e37e77c19ebd90c265d4bdc70149a3b7bf926fa195d
+  summary_sha256: 6e3704fd21e403b633fb993227dc8d1d7e80129891e22f99312c95442af378c0
+review:
+  manifest_sha256: ef2b0e4f5f426235e55896ec3359f64f8eb7705211e5d2e1977cc1cea533d4d7
+  reviewed_styles: 300
+  seeds_per_style: 3
+  total_images: 900
+  contact_sheets: 30
+results:
+  recommended_testing: 65
+  recommended_rejected: 235
+  recommended_approved: 0
+  styles_with_critical_failure: 24
+  mean_prompt_adherence: 2.96
+  mean_style_fidelity: 2.02
+  mean_distinctiveness: 1.26
+verdict:
+  status: fail_wrapper_wide
+  two_dimensional_medium: fail
+  signature_fidelity: fail
+  signature_distinctiveness: fail
+  catalog_apply_performed: false
+finding: The realistic benchmark finish overrode the requested two-dimensional line, eye, color, and motif decisions, producing a common photographic rendering across most signatures.
+decision: Preserve all evidence, leave all 300 catalog entries generated, and replace the benchmark wrapper before another full screen.
