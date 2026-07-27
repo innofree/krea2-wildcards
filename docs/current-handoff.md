@@ -18,43 +18,44 @@
 ## Current checkpoint
 
 - Branch: `main`
-- Last committed checkpoint: `adc7d7d`
-- 기존 artist signature screen은 300 signatures x 3 seeds, 총 900개 run을 완료했다.
-- 기존 screen의 contact sheet 30개에 대한 분할 시각 리뷰 3개가 완료되어 아직
-  커밋되지 않은 report 디렉터리에 있다.
-- 기존 screen은 사실적인 공통 사진 표현이 강하고 요청한 2D 선화, 눈, 채색,
-  장식 축의 발현이 약했다. 이 결과는 실패 진단 증거로 보존하고 점수를 높여
-  해석하지 않는다.
-- illustrated repair calibration은 5 signatures x 3 seeds, 총 15개 run을 완료했다.
+- Last committed checkpoint: `5422fa5`
+- 기존 v0.8 300-signature screen과 v0.8.1 illustrated calibration은 실패 진단
+  증거와 assessment를 포함해 커밋했다. 두 결과 모두 catalog status에 적용하지 않았다.
+- v0.8.2 wrapper는 signature 문두 배치, mid-thigh face 확대, signature-controlled
+  lighting/composition/ornament를 사용한다.
+- v0.8.2 calibration은 5 signatures x 3 seeds, 15개 run과 35/35 feature coverage를
+  완료했고 contact sheet 시각 판정에서 full screen 진행 기준을 통과했다.
+- v0.8.2 300 signatures x 3 seeds full screen이 versioned report 경로에서 실행 중이다.
+- 원격 생성은 최대 queue depth를 `REMOTE_QUEUE_DEPTH`로 관리하며 향후 기본값은 32다.
+  시작 전 empty-queue guard와 개별 run 검증은 그대로 유지한다.
+- 현재 완료 기준 감사는 4/16이다. 남은 항목은 artist approval, Phase 6 생성 증거,
+  production build/runtime audit/deploy/smoke 계열이다.
 - report 이미지 파일은 Git ignore 대상이며, manifest, scorecard, review, summary 같은
   소형 증거만 의도적으로 커밋한다.
 
 ## Uncommitted evidence
 
-- `tests/reports/artist_signature_screen_v0_8/`
-  - `manifest.json`
-  - `scorecard.csv`
-  - `review_part_a.yaml`
-  - `review_part_b.yaml`
-  - `review_part_c.yaml`
-- `tests/reports/artist_signature_illustrated_calibration_v0_8_1/`
-  - 15개의 검증된 run과 `manifest.json`, `scorecard.csv`
+- `tests/reports/artist_signature_screen_v0_8_2/`
+  - 실행 중인 full screen의 검증된 partial runs
+- `tests/reports/completion_criteria.json`
+  - 중간 완료 기준 감사로 갱신된 파일
 
-위 디렉터리를 삭제하거나 기존 screen 위에 새 결과를 덮어쓰지 않는다.
+실행 중인 report를 삭제하거나 기존 versioned screen 위에 다른 matrix 결과를
+덮어쓰지 않는다.
 
 ## Exact next actions
 
-1. `make review-artist-signature-illustrated-calibration`을 실행한다.
-2. 생성된 calibration contact sheet를 직접 확인한다.
-3. 2D illustration 표현과 signature별 시각 축 차이가 충분하면 versioned v0.8.1
-   full screen target을 추가하고 300 signatures x 3 seeds를 새 report 경로에 실행한다.
-4. calibration이 여전히 사실적이거나 축 차이가 약하면 full screen을 제출하지 않고
-   prompt wrapper만 수정한 뒤 소규모 calibration을 반복한다.
-5. 기존 v0.8 분할 리뷰는 merge/score하여 실패 진단 summary로 보존하되, repaired
-   screen 전에 catalog status를 변경하지 않는다.
-6. repaired 3-seed screen을 통과한 signature만 seeds 4004/5005로 확장하고, 정확히
-   5-seed 종합 리뷰를 거쳐 최소 200개를 `approved`로 승격한다.
-7. 이후 `plan.md` 순서대로 A/B/C, single-axis, pairwise, preset, random, benchmark,
+1. 현재 full-screen 프로세스 상태와 원격 큐를 먼저 확인한다. 실행 중이면 중복
+   제출하지 않고 완료까지 관찰한다.
+2. 프로세스가 중단됐고 원격 큐가 비어 있을 때만
+   `make remote-artist-signature-v0-8-2`로 검증된 run을 resume한다.
+3. 900/900 완료 후 `make review-artist-signature-v0-8-2`로 contact sheet 30개를
+   만들고 3개 review part로 나눠 실제 이미지를 평가한다.
+4. `make score-artist-signature-v0-8-2` 후 `testing >= 200` 게이트를 통과한 경우에만
+   `make apply-artist-signature-v0-8-2`를 실행한다.
+5. testing 항목만 seeds 4004/5005로 확장하고, 정확히 5-seed 종합 리뷰 후
+   `approved >= 200` 게이트를 통과한 경우에만 final catalog apply를 실행한다.
+6. 이후 `plan.md` 순서대로 A/B/C, single-axis, pairwise, preset, random, benchmark,
    release, runtime audit, predeploy, deploy, smoke, final strict 검증을 완료한다.
 
 원격 실행이 필요한 셸에서는 `.env` 값을 표시하지 않고 다음처럼 현재 프로세스에만
