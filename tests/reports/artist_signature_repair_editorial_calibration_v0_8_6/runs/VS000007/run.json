@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000007",
+  "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+  "label": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+  "mode": "visual_signature",
+  "seed": 9101,
+  "remote": "private_comfyui",
+  "prompt_id": "0748eb20-b696-4231-af94-bdeabe3d5ae7",
+  "resolved_prompt": "Create a clean hand-drawn 2D editorial illustration. This exact visual signature controls the rendering: An adult portrait uses lace-fine tapered lines with sparse inner marks, a compact oval face with a soft jaw and small nose, rounded eyes, radial irises, and soft lower gradients, a balanced figure with narrow shoulders and precise hands, nocturnal indigo, cool cyan, and measured magenta, broad blended value planes and rounded volume, spacious asymmetric framing and quiet directional flow, and precise geometric insets and corner accents. Render distinct visible cues: line=lace tapered on contours and seams; face=compact oval on jaw and cheeks; eyes=rounded radial in irises and lids; body=balanced narrow in the silhouette; palette=nocturnal neon in broad color fields; light=broad painterly in face and garment shadows; framing=spacious asymmetric through placement and negative space; ornament=geometric inset as repeated garment trim and a flat decorative outer border behind the figure. An adult fashion model holds a balanced full-length contrapposto pose on a spacious warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, eye-level head-to-toe framing, fixed camera position, and generous negative space around the complete silhouette remain unchanged. Keep exactly one complete adult figure with coherent illustrated anatomy and fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "edb0809b4a5622bee95a578f6b3a971d969a57a80edc23d153a844465680f828",
+  "workflow_sha256": "ea2e725d110311d1bc27c60db113fdc08471a5ba5d76d420a4d0466bc27c513d",
+  "factors": {
+    "body_design": "balanced_narrow",
+    "eye_design": "rounded_radial",
+    "face_design": "compact_oval",
+    "framing_language": "spacious_asymmetric",
+    "light_modeling": "broad_painterly",
+    "line_language": "lace_tapered",
+    "ornament_language": "geometric_inset",
+    "palette_language": "nocturnal_neon",
+    "evaluated_prompt_sha256": "sha256_98d01491f20b39750dc3b48e9e844170d146884a27305dce820072f719f18ffb",
+    "benchmark_profile": "artist_visual_signature_repair_editorial_calibration_v0_8_6",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bf1b7e22fffd828f2886ca8c37e60bef9408cd110f23c5050c9d289dec33d7cf",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

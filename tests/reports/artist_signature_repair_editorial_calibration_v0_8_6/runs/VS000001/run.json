@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000001",
+  "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+  "label": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+  "mode": "visual_signature",
+  "seed": 9101,
+  "remote": "private_comfyui",
+  "prompt_id": "8626cd8f-e3aa-4d00-b220-8e641fa86716",
+  "resolved_prompt": "Create a clean hand-drawn 2D editorial illustration. This exact visual signature controls the rendering: An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, hard-edged two-value cel blocks, layered intimate framing and a close foreground accent, and sparse floral traces and quiet border motifs. Render distinct visible cues: line=angular architectural on contours and seams; face=rounded soft on jaw and cheeks; eyes=layered large in irises and lids; body=elongated graceful in the silhouette; palette=deep jewel in broad color fields; light=crisp graphic in face and garment shadows; framing=layered intimate through placement and negative space; ornament=floral trace as repeated garment trim and a flat decorative outer border behind the figure. An adult fashion model holds a balanced full-length contrapposto pose on a spacious warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, eye-level head-to-toe framing, fixed camera position, and generous negative space around the complete silhouette remain unchanged. Keep exactly one complete adult figure with coherent illustrated anatomy and fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "43961a8a36522e082e40b500f9644e48b58c634ceab2cec6a31ca8129e6bd5f5",
+  "workflow_sha256": "b963b8f4d5a22852e5b0c8499d532e8bc46779b411c6c90ad0a096d6e1f36d75",
+  "factors": {
+    "body_design": "elongated_graceful",
+    "eye_design": "layered_large",
+    "face_design": "rounded_soft",
+    "framing_language": "layered_intimate",
+    "light_modeling": "crisp_graphic",
+    "line_language": "angular_architectural",
+    "ornament_language": "floral_trace",
+    "palette_language": "deep_jewel",
+    "evaluated_prompt_sha256": "sha256_e227834f4c8d157c3e4ce061f921b5f6d46dd5a8a0f2738f28c5cb657374b416",
+    "benchmark_profile": "artist_visual_signature_repair_editorial_calibration_v0_8_6",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "dd10f4a78c889bad6c2eeca809400c19aacd6ba6ed479d9b24b091e4fd5e8bbc",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

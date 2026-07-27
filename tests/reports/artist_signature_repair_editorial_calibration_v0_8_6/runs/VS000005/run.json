@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000005",
+  "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+  "label": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+  "mode": "visual_signature",
+  "seed": 9202,
+  "remote": "private_comfyui",
+  "prompt_id": "07627d77-c943-4e9d-841f-c76bb33616ea",
+  "resolved_prompt": "Create a clean hand-drawn 2D editorial illustration. This exact visual signature controls the rendering: An adult portrait uses dry broken lines with confident accents, an angular face with a firm jaw and planar cheeks, large layered irises, tapered lashes, and paired catchlights, an athletic figure with stable joints and firm hands, sunlit terracotta, sand, olive, cream, and brown, translucent glaze, reflected color, and open penumbrae, a strong vertical frame with a low visual anchor, and precise geometric insets and corner accents. Render distinct visible cues: line=dry broken on contours and seams; face=angular planar on jaw and cheeks; eyes=layered large in irises and lids; body=broad athletic in the silhouette; palette=sunlit earth in broad color fields; light=luminous glaze in face and garment shadows; framing=vertical heroic through placement and negative space; ornament=geometric inset as repeated garment trim and a flat decorative outer border behind the figure. An adult fashion model holds a balanced full-length contrapposto pose on a spacious warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, eye-level head-to-toe framing, fixed camera position, and generous negative space around the complete silhouette remain unchanged. Keep exactly one complete adult figure with coherent illustrated anatomy and fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "f4962bbaa50d0f28a19bb06e33f779640baa62db8654ca1cf56eed38ceba6999",
+  "workflow_sha256": "b5f97f52e2c923f3f3accd0223844253de07f5d71d50e9dad9cba603872f43e6",
+  "factors": {
+    "body_design": "broad_athletic",
+    "eye_design": "layered_large",
+    "face_design": "angular_planar",
+    "framing_language": "vertical_heroic",
+    "light_modeling": "luminous_glaze",
+    "line_language": "dry_broken",
+    "ornament_language": "geometric_inset",
+    "palette_language": "sunlit_earth",
+    "evaluated_prompt_sha256": "sha256_88d7316feef254cde5ebf031a4264344aa2b6a51696f295fb11cf83d20030ca8",
+    "benchmark_profile": "artist_visual_signature_repair_editorial_calibration_v0_8_6",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2283ebee225fcd47b6ab756e0118dbedca294220a355ed04555f8d005b12b8e2",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

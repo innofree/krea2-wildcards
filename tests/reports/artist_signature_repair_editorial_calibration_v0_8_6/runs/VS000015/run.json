@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000015",
+  "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+  "label": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+  "mode": "visual_signature",
+  "seed": 9303,
+  "remote": "private_comfyui",
+  "prompt_id": "32b527f9-5781-4c7c-b484-05e5ecaca8e7",
+  "resolved_prompt": "Create a clean hand-drawn 2D editorial illustration. This exact visual signature controls the rendering: An adult portrait uses supple ribbon lines with focal swells, an angular face with a firm jaw and planar cheeks, narrow dark-rimmed eyes and single catchlights, an elongated figure with graceful limbs and tapered hands, pale mineral blue, ivory, coral, and charcoal, soft two-step values and gentle facial transitions, centered emblematic framing with face-to-hands hierarchy, and restrained textile patterns around the silhouette. Render distinct visible cues: line=supple ribbon on contours and seams; face=angular planar on jaw and cheeks; eyes=narrow focused in irises and lids; body=elongated graceful in the silhouette; palette=mineral pastel in broad color fields; light=soft two step in face and garment shadows; framing=centered emblematic through placement and negative space; ornament=textile echo as repeated garment trim and a flat decorative outer border behind the figure. An adult fashion model holds a balanced full-length contrapposto pose on a spacious warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, eye-level head-to-toe framing, fixed camera position, and generous negative space around the complete silhouette remain unchanged. Keep exactly one complete adult figure with coherent illustrated anatomy and fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "39fa23d05329275b6a538108346455bfcb459e1d192c4ebf60bf003ed4b84f28",
+  "workflow_sha256": "5ade259d9bef09cab6d651ee806c5f3522db1f8bea9c03af88ae71ba3c61041b",
+  "factors": {
+    "body_design": "elongated_graceful",
+    "eye_design": "narrow_focused",
+    "face_design": "angular_planar",
+    "framing_language": "centered_emblematic",
+    "light_modeling": "soft_two_step",
+    "line_language": "supple_ribbon",
+    "ornament_language": "textile_echo",
+    "palette_language": "mineral_pastel",
+    "evaluated_prompt_sha256": "sha256_52de7a4b81a5bf2a0dc748ddb610992359dcc9abee33b7b3472d310e9c73c1f7",
+    "benchmark_profile": "artist_visual_signature_repair_editorial_calibration_v0_8_6",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "0547a17da8255c1fa6e7a9495c4dff7bab08da62f1c8d07e9b50cbcfc956009d",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
