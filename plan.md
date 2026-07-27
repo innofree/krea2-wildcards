@@ -1238,6 +1238,10 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    검증된 editorial scene 문장을 변경하지 않고, feature token을 자연어의 구체적인
    framing 배치와 garment-plus-border ornament 지시로 번역해 나머지 축 가시성만
    보강한다.
+   실제 v0.8.7은 단일 full-length 구도와 critical failure 0을 유지하면서
+   `testing 3 / rejected 2`로 개선되었다. v0.8.8은 같은 editorial scene과 전체
+   feature 번역을 고정하고, 실패한 `layered_intimate`의 배경 종이 레이어 및
+   `dry_broken`·`luminous_glaze`의 표면 표현만 더 강한 자연어로 보강한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.
