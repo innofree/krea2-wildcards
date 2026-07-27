@@ -1,0 +1,30 @@
+schema_version: 1
+review_id: expansion_style_refill_retest_v0_10_1_part_a
+reviewer_scope:
+  - style_pack.png
+styles:
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_etched_accent_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Seeds 4004 and 5005 fully maintain the official screen: one natural adult before solid crossed amber-orange and cobalt chalk slabs, with dry texture, black nocturnal space, one overhead path, and fine bright slab and floor edges; hands, fabric, and proportions remain coherent."
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_etched_accent_complete_style:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Both extension seeds match the prior three with one realistic adult, two crossed transparent amber-blue glass slabs, thick refractive rims, deep black space, an overhead light path, and etched panel and floor seams without reflection, text, or anatomy failures."
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_crisp_cut_complete_style:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Seeds 4004 and 5005 preserve one natural adult, coarse emerald fibers, calm spacing, and a hard metallic-gold frame, but both omit the prior screen's broad garnet field, so the requested jewel-color strategy no longer survives the five-seed extension."
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_etched_accent_complete_style:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Both new seeds retain one coherent adult, visible emerald paper fibers, calm haze, gold framing, and a fine outer frame line, but the broad garnet field is absent in both, weakening the compound color and surface signature versus the official screen."
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_lost_and_found_complete_style:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 2, character_quality: 5, composition_quality: 4, compatibility: 5, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Seed 5005 keeps the garnet band aligned behind the adult, but seed 4004 removes that band and renders the entire outfit garnet instead, so the sleeve-and-trouser lost-edge mechanism and emerald-garnet relationship fail to repeat across the two new seeds."

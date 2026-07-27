@@ -1,0 +1,164 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/expansion_style_refill_retest_v0_10_1/review_part_a.yaml
+  - tests/reports/expansion_style_refill_retest_v0_10_1/review_part_b.yaml
+styles:
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 fully maintain the official screen: one natural adult before solid crossed amber-orange
+      and cobalt chalk slabs, with dry texture, black nocturnal space, one overhead path, and fine bright
+      slab and floor edges; hands, fabric, and proportions remain coherent.
+    recommendation: testing
+  style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds match the prior three with one realistic adult, two crossed transparent amber-blue
+      glass slabs, thick refractive rims, deep black space, an overhead light path, and etched panel and
+      floor seams without reflection, text, or anatomy failures.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve one natural adult, coarse emerald fibers, calm spacing, and a hard
+      metallic-gold frame, but both omit the prior screen's broad garnet field, so the requested jewel-color
+      strategy no longer survives the five-seed extension.
+    recommendation: rejected
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_etched_accent_complete_style:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Both new seeds retain one coherent adult, visible emerald paper fibers, calm haze, gold framing,
+      and a fine outer frame line, but the broad garnet field is absent in both, weakening the compound
+      color and surface signature versus the official screen.
+    recommendation: rejected
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_lost_and_found_complete_style:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 2
+      character_quality: 5
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Seed 5005 keeps the garnet band aligned behind the adult, but seed 4004 removes that band and renders
+      the entire outfit garnet instead, so the sleeve-and-trouser lost-edge mechanism and emerald-garnet
+      relationship fail to repeat across the two new seeds.
+    recommendation: rejected
+  style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_selective_taper_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve one sharply rendered adult, coherent hands and fabric, emerald and
+      garnet fibrous paper, a thick metallic-gold frame that softly recedes, and the calm depth established
+      by the prior three seeds.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both extension seeds retain one natural adult before thick powder-blue and ivory chalk, black side
+      panels, a narrow overhead path, and hard silhouette and floor boundaries without text or anatomy
+      defects.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 consistently show one realistic adult, a dry powder-blue and ivory chalk mural,
+      deep-black flanks, and one broad circular nonfigurative halo with a softly diffused boundary.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_crisp_cut_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Both new seeds maintain one well-proportioned adult, mirror-bright blue-blush-ivory satin, exactly
+      three fully visible white panels with black gaps, and firm figure and floor-shadow separation matching
+      the prior screen.
+    recommendation: testing
+  style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_soft_bleed_complete_style:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Seeds 4004 and 5005 preserve one coherent adult, reflective pastel satin folds, calm open haze,
+      and a wide powder-blue oval glow with a soft nonfigurative boundary and no content regression.
+    recommendation: testing

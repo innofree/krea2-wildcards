@@ -419,7 +419,16 @@ v0.10.1 공식 screen은 20개 × 3-seed의 60장을 모두 완료했다. Run, P
 분할 전수 리뷰에서 10개가 `testing`, 10개가 `rejected`, 집계 critical failure는 0건이었다.
 탈락은 주로 화면에 드러나지 않은 etched/lost-and-found/selective-taper edge 지시와
 한 seed에서 성인이 두 명으로 갈라진 ceremonial soft-bleed였다. 통과 10개만 두 추가
-seed로 연장하고, style 150 목표에 부족한 최소 두 개는 다음 targeted refill에서 보충한다.
+seed로 연장했다. 새 20장은 모두 기술 검증을 통과했으며 기존 3-seed와 합친 정확한
+5-seed 집계에서 8개가 `approved`, fibrous crisp/etched 두 개가 garnet field 불안정으로
+`rejected`가 됐다. Style pack 승인은 146개이며 목표까지 네 개가 남았다.
+
+v0.10.2는 여덟 개 실패 항목만 다시 연다. Fibrous 두 항목은 emerald 상단 2/3과 garnet
+하단 1/3을 고정하고, geometric 두 항목은 원기둥이 아닌 정확히 세 개의 평면 ivory
+doorway로 바꾼다. Chalk etched는 분리 불가능한 단일 직사각 mural과 연속 engraved border,
+satin etched 두 항목은 화면에서 확인 가능한 연속 luminous engraved channel, selective
+taper는 curtain 바깥 1/3의 세부가 사라지는 강한 defocus로 표현한다. 대표 다섯 항목의
+3-seed calibration을 통과한 뒤에만 여덟 항목의 공식 screen을 실행한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
