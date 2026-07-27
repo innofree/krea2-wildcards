@@ -16,6 +16,8 @@ from export_artist_visual_signature_matrix import (
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
+    SINGLE_VIEW_CALIBRATION_PROFILE,
+    SINGLE_VIEW_CALIBRATION_SEEDS,
     signature_rows,
     write_immutable_jsonl,
 )
@@ -346,6 +348,57 @@ def test_framing_calibration_profile_is_short_framing_first_and_exact(
             benchmark_profile=FRAMING_CALIBRATION_PROFILE,
             limit_signatures=5,
             require_candidate_count=5,
+        )
+
+
+def test_single_view_calibration_forbids_turnarounds_and_strengthens_axes(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_single_view_{index}": "generated" for index in range(1, 7)},
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=SINGLE_VIEW_CALIBRATION_SEEDS,
+        benchmark_profile=SINGLE_VIEW_CALIBRATION_PROFILE,
+        limit_signatures=5,
+        require_candidate_count=6,
+        require_signature_count=5,
+    )
+
+    assert len(rows) == 15
+    assert len({row["style_id"] for row in rows}) == 5
+    assert {row["seed"] for row in rows} == set(SINGLE_VIEW_CALIBRATION_SEEDS)
+    for row in rows:
+        body = items[row["style_id"]]["prompt"]
+        prompt = row["prompt"]
+        assert row["factors"]["benchmark_profile"] == SINGLE_VIEW_CALIBRATION_PROFILE
+        assert row["factors"]["benchmark_stage"] == "calibration"
+        assert prompt.startswith("Full-body single-view, camera far back.")
+        assert prompt.count(body) == 1
+        assert len(prompt) <= 1500
+        assert len(prompt.split()) <= 210
+        assert "exactly one adult woman once" in prompt
+        assert "no duplicate, lineup, alternate view" in prompt
+        assert "turnaround" in prompt
+        assert "Make each cue bold and independent" in prompt
+        assert "repeated garment motif and flat outer border" in prompt
+        assert "one full silhouette, face, eyes, hands" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/single_view_calibration.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == SINGLE_VIEW_CALIBRATION_PROFILE
+    assert binding["benchmark_stage"] == "calibration"
+
+    with pytest.raises(ValueError, match="single-view calibration profile requires seeds"):
+        signature_rows(
+            catalog,
+            seeds=(8101, 8202, 9999),
+            benchmark_profile=SINGLE_VIEW_CALIBRATION_PROFILE,
+            limit_signatures=5,
+            require_candidate_count=6,
         )
 
 

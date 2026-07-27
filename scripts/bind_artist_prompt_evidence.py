@@ -22,6 +22,8 @@ from export_artist_visual_signature_matrix import (
     REPAIR_ILLUSTRATED_BENCHMARK_FINISH,
     REPAIR_SEEDS,
     RETEST_SEEDS,
+    SINGLE_VIEW_CALIBRATION_PROFILE,
+    SINGLE_VIEW_CALIBRATION_SEEDS,
     prompt_for_profile,
 )
 
@@ -126,6 +128,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         elif row_profile in {
             REPAIR_BENCHMARK_PROFILE,
             FRAMING_CALIBRATION_PROFILE,
+            SINGLE_VIEW_CALIBRATION_PROFILE,
         }:
             profile = row_profile
             stage = factors.get("benchmark_stage")
@@ -158,6 +161,13 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
                 raise ValueError(
                     f"matrix line {line_number}: framing calibration profile has "
                     "an invalid seed"
+                )
+        elif profile == SINGLE_VIEW_CALIBRATION_PROFILE:
+            seed = row.get("seed")
+            if type(seed) is not int or seed not in SINGLE_VIEW_CALIBRATION_SEEDS:
+                raise ValueError(
+                    f"matrix line {line_number}: single-view calibration profile "
+                    "has an invalid seed"
                 )
         else:
             seed = row.get("seed")
@@ -199,6 +209,8 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             )
         elif profile == FRAMING_CALIBRATION_PROFILE:
             expected_seeds = set(FRAMING_CALIBRATION_SEEDS)
+        elif profile == SINGLE_VIEW_CALIBRATION_PROFILE:
+            expected_seeds = set(SINGLE_VIEW_CALIBRATION_SEEDS)
         else:
             continue
         if seeds != expected_seeds:
@@ -227,6 +239,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
     versioned_profiles = {
         REPAIR_BENCHMARK_PROFILE,
         FRAMING_CALIBRATION_PROFILE,
+        SINGLE_VIEW_CALIBRATION_PROFILE,
     }
     if len(matrix_profiles) == 1 and matrix_profiles <= versioned_profiles:
         document["benchmark_profile"] = next(iter(matrix_profiles))

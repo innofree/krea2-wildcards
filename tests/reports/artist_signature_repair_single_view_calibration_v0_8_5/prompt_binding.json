@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "artifact_type": "artist_prompt_evidence_binding",
+  "source_matrix": {
+    "path": "tests/prompt_matrix/artist_visual_signature_repair_single_view_calibration_v0_8_5.jsonl",
+    "sha256": "faee21e640e98dc1fd0cdc7a6a7a4529921463938e43cb7c0a0ab516ba6a79ad",
+    "row_count": 15
+  },
+  "catalog": {
+    "path": "catalog/artists.yaml",
+    "sha256": "f8fee2ea9632307f3c778ad8888dda9820771063ed509951083b6e95bcdb4e37"
+  },
+  "style_count": 5,
+  "style_row_counts": {
+    "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature": 3,
+    "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature": 3,
+    "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature": 3,
+    "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature": 3,
+    "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature": 3
+  },
+  "styles": {
+    "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature": "e227834f4c8d157c3e4ce061f921b5f6d46dd5a8a0f2738f28c5cb657374b416",
+    "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature": "88d7316feef254cde5ebf031a4264344aa2b6a51696f295fb11cf83d20030ca8",
+    "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature": "98d01491f20b39750dc3b48e9e844170d146884a27305dce820072f719f18ffb",
+    "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature": "2f9fa30c89ed725bde94ca0948742f8e722658d5ac73dc1fd8066a3e31989920",
+    "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature": "52de7a4b81a5bf2a0dc748ddb610992359dcc9abee33b7b3472d310e9c73c1f7"
+  },
+  "binding_sha256": "650dcf2feaac5262ddbbd35b7b4b8e7a9f69e1c45bd600677b789a12b519d31d",
+  "benchmark_profile": "artist_visual_signature_repair_single_view_calibration_v0_8_5",
+  "benchmark_stage": "calibration"
+}
