@@ -428,7 +428,11 @@ v0.10.2는 여덟 개 실패 항목만 다시 연다. Fibrous 두 항목은 emer
 doorway로 바꾼다. Chalk etched는 분리 불가능한 단일 직사각 mural과 연속 engraved border,
 satin etched 두 항목은 화면에서 확인 가능한 연속 luminous engraved channel, selective
 taper는 curtain 바깥 1/3의 세부가 사라지는 강한 defocus로 표현한다. 대표 다섯 항목의
-3-seed calibration을 통과한 뒤에만 여덟 항목의 공식 screen을 실행한다.
+3-seed calibration을 통과한 뒤에만 여덟 항목의 공식 screen을 실행한다. Calibration
+15장은 모두 기술적으로 성공했고 geometric doorway, fibrous color field, 단일 chalk mural
+대표 세 개는 통과했다. Satin engraved channel과 strong defocus 대표는 요구한 edge 효과가
+보이지 않아 탈락했다. 성공 계열의 companion을 합치면 다섯 승인 후보가 남으므로 공식
+여덟 항목 screen은 진행하되, 실패한 satin 두 계열은 승격 기대치에서 제외한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
