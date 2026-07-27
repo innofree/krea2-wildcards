@@ -2,12 +2,15 @@
 from __future__ import annotations
 
 import argparse
+import json
+import os
 import re
+import tempfile
 from pathlib import Path
 from typing import Any, Iterable
 
 from common import load_yaml
-from export_artist_native_matrix import validate_seeds, write_jsonl
+from export_artist_native_matrix import validate_seeds
 from run_remote_prompt_matrix import STYLE_ID_RE, validate_job
 
 
@@ -22,23 +25,51 @@ CATALOG_QUALITY_SUFFIX = (
     "cinematic depth, and no text, logos, or watermarks."
 )
 ILLUSTRATED_BENCHMARK_FINISH = (
-    "Render the result as an unmistakably hand-drawn two-dimensional illustration with visible "
-    "designed contours, stylized local color shapes, coherent illustrated anatomy, readable "
-    "hands, clean garment shapes, controlled depth, and no text, logos, or watermarks."
+    "Make the requested contour character, face geometry, eye construction, body silhouette, "
+    "local-color palette, shadow-edge treatment, composition, and recurring motifs each "
+    "unmistakably legible at contact-sheet scale. Finish this as a clearly hand-drawn "
+    "two-dimensional character-design illustration with coherent illustrated anatomy, readable hands, "
+    "clean garment shapes, and no text, logos, or watermarks."
 )
 FIXED_SCENE = (
-    "Create a polished two-dimensional character illustration of exactly one adult woman in a "
-    "balanced standing pose, wearing a plain fitted "
-    "long-sleeve top and straight trousers on an uncluttered warm-grey studio cyclorama. "
-    "Use an eye-level full-length camera and broad neutral diffused lighting, with her head, "
-    "both hands, and both feet fully visible. Keep the scene visually simple so the requested "
-    "line, face, eye, body, palette, shading, composition, and motif decisions remain obvious."
+    "Create exactly one adult woman as a standing character-design portrait framed from "
+    "mid-thigh upward at eye level. Keep her face and both eyes large enough to inspect, and show "
+    "both complete hands clearly near the torso. Give her a simple long-sleeve garment with broad "
+    "readable surfaces for the requested palette and ornament, against a quiet uncluttered studio "
+    "ground. These neutral content anchors keep the subject, "
+    "garment, camera distance, and background content comparable across seeds while the primary "
+    "visual signature controls silhouette, placement, negative space, light and shadow, and "
+    "ornament."
 )
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
     re.IGNORECASE,
 )
 WILDCARD_RE = re.compile(r"__[A-Za-z0-9][A-Za-z0-9_./-]*__")
+
+
+def write_immutable_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
+    content = "".join(
+        json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n"
+        for row in rows
+    )
+    if path.exists():
+        if path.read_text(encoding="utf-8") != content:
+            raise ValueError(
+                f"refusing to overwrite a different versioned prompt matrix: {path}"
+            )
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f".{path.name}.", dir=path.parent
+    )
+    os.close(descriptor)
+    temporary = Path(temporary_name)
+    try:
+        temporary.write_text(content, encoding="utf-8", newline="\n")
+        os.replace(temporary, path)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def validate_statuses(statuses: Iterable[str]) -> tuple[str, ...]:
@@ -110,6 +141,91 @@ def validate_signature_item(style_id: str, item: Any) -> tuple[str, str]:
     return status, signature_body(item.get("prompt"), style_id=style_id)
 
 
+def signature_feature_vector(item: dict[str, Any]) -> frozenset[str]:
+    feature_axes = item["feature_axes"]
+    tokens: set[str] = set()
+    for axis, values in sorted(feature_axes.items()):
+        if not isinstance(axis, str) or not axis:
+            raise ValueError("artist signature feature axis must have a non-empty name")
+        if (
+            not isinstance(values, list)
+            or not values
+            or not all(isinstance(value, str) and value for value in values)
+        ):
+            raise ValueError(
+                f"artist signature feature axis {axis!r} must contain non-empty strings"
+            )
+        tokens.update(f"{axis}:{value}" for value in values)
+    return frozenset(tokens)
+
+
+def select_diverse_signatures(
+    candidates: list[tuple[str, str, frozenset[str]]],
+    limit: int,
+) -> list[tuple[str, str, frozenset[str]]]:
+    if limit == 1:
+        return [candidates[0]]
+    selected = [candidates[0]]
+    remaining = candidates[1:]
+    while len(selected) < limit:
+        covered = frozenset().union(*(candidate[2] for candidate in selected))
+
+        def rank(
+            candidate: tuple[str, str, frozenset[str]],
+        ) -> tuple[int, int, int, str]:
+            vector = candidate[2]
+            distances = [len(vector.symmetric_difference(item[2])) for item in selected]
+            return (
+                -min(distances),
+                -len(vector - covered),
+                -sum(distances),
+                candidate[0],
+            )
+
+        chosen = min(remaining, key=rank)
+        selected.append(chosen)
+        remaining.remove(chosen)
+
+    def score(
+        selection: list[tuple[str, str, frozenset[str]]],
+    ) -> tuple[int, int, int]:
+        coverage = frozenset().union(*(candidate[2] for candidate in selection))
+        distances = [
+            len(left[2].symmetric_difference(right[2]))
+            for index, left in enumerate(selection)
+            for right in selection[index + 1 :]
+        ]
+        return len(coverage), min(distances, default=0), sum(distances)
+
+    while True:
+        current_score = score(selected)
+        selected_ids = {candidate[0] for candidate in selected}
+        best_score = current_score
+        best_selection: list[tuple[str, str, frozenset[str]]] | None = None
+        best_ids: tuple[str, ...] | None = None
+        for index in range(len(selected)):
+            for candidate in candidates:
+                if candidate[0] in selected_ids:
+                    continue
+                trial = selected.copy()
+                trial[index] = candidate
+                trial_score = score(trial)
+                trial_ids = tuple(sorted(item[0] for item in trial))
+                if trial_score > best_score or (
+                    trial_score == best_score
+                    and best_selection is not None
+                    and best_ids is not None
+                    and trial_ids < best_ids
+                ):
+                    best_score = trial_score
+                    best_selection = trial
+                    best_ids = trial_ids
+        if best_selection is None or best_score <= current_score:
+            break
+        selected = best_selection
+    return sorted(selected, key=lambda candidate: candidate[0])
+
+
 def signature_rows(
     catalog_path: Path,
     seeds: Iterable[int] = DEFAULT_SEEDS,
@@ -124,12 +240,12 @@ def signature_rows(
     if not isinstance(items, dict):
         raise ValueError("artist signature catalog must contain an items mapping")
 
-    selected: list[tuple[str, str]] = []
+    selected: list[tuple[str, str, frozenset[str]]] = []
     for style_id in sorted(items):
         if signature_status(style_id, items[style_id]) not in status_values:
             continue
         _, body = validate_signature_item(style_id, items[style_id])
-        selected.append((style_id, body))
+        selected.append((style_id, body, signature_feature_vector(items[style_id])))
     if not selected:
         raise ValueError("no artist signatures matched the requested statuses")
     if limit_signatures is not None:
@@ -137,19 +253,17 @@ def signature_rows(
             raise ValueError("limit_signatures must be a positive integer")
         if limit_signatures > len(selected):
             raise ValueError("limit_signatures exceeds the selected signature count")
-        if limit_signatures == 1:
-            selected = [selected[0]]
-        else:
-            indexes = [
-                (index * (len(selected) - 1)) // (limit_signatures - 1)
-                for index in range(limit_signatures)
-            ]
-            selected = [selected[index] for index in indexes]
+        selected = select_diverse_signatures(selected, limit_signatures)
 
     rows: list[dict[str, Any]] = []
-    for style_id, body in selected:
+    for style_id, body, _ in selected:
+        factors = {
+            axis: values[0]
+            for axis, values in sorted(items[style_id]["feature_axes"].items())
+        }
         prompt = (
-            f"{FIXED_SCENE} Apply these observable visual properties: {body} "
+            f"Treat this visual signature as the controlling design brief. Every listed property "
+            f"must be visibly expressed: {body} {FIXED_SCENE} "
             f"{ILLUSTRATED_BENCHMARK_FINISH}"
         )
         for seed in seed_values:
@@ -161,6 +275,7 @@ def signature_rows(
                 "mode": "visual_signature",
                 "seed": seed,
                 "prompt": prompt,
+                "factors": factors,
             }
             validate_job(row, len(rows) + 1)
             rows.append(row)
@@ -203,7 +318,7 @@ def main() -> int:
             statuses=statuses,
             limit_signatures=args.limit_signatures,
         )
-        write_jsonl(args.output, rows)
+        write_immutable_jsonl(args.output, rows)
         print(
             f"Wrote {len(rows)} resolved prompt(s): "
             f"{len({row['style_id'] for row in rows})} visual signature(s) x "

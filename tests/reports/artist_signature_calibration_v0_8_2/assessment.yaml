@@ -1,0 +1,46 @@
+schema_version: 1
+assessment: artist_signature_calibration_v0_8_2
+matrix:
+  path: tests/prompt_matrix/artist_visual_signature_calibration_v0_8_2.jsonl
+  sha256: 71a4b4d721a0b3cc0f70457a34061d01f77495ff42937e04710bdc449a892e97
+report:
+  manifest_sha256: 16c5209e59b3406fed20c19591cbc67691cc363f974173eb079f61cc5549f371
+  scorecard_sha256: d926de6956c6be57576e7024c09a92e93e20ed021755a13a1d8f0e5b8174811c
+review:
+  contact_sheet: review/prompt_matrix_visual_signature_001.png
+  contact_sheet_sha256: ecaaf66d1ac45fde20efb37e6caae73e74c534b9d283e7cc522136481c7b9a11
+  manifest_sha256: 464778ee206dde8e3d9397d21793557811469dbce4d137b9b36d3391d37d5a9d
+  reviewed_cases: 5
+  seeds_per_case: 3
+  total_images: 15
+feature_coverage:
+  total_distinct_axis_values: 35
+  line_language: 5
+  face_design: 4
+  eye_design: 4
+  body_design: 4
+  palette_language: 5
+  light_modeling: 5
+  framing_language: 4
+  ornament_language: 4
+verdict:
+  status: pass_for_full_screen
+  two_dimensional_medium: pass
+  cross_signature_distinctiveness: pass
+  three_seed_stability: pass
+  contact_sheet_legibility: pass
+observations:
+  - case: case_001
+    finding: Deep jewel color blocking, floral framing, and graphic contour hierarchy are visible across all seeds.
+  - case: case_002
+    finding: Monochrome measured contours, mature facial planes, and restrained soft values remain stable.
+  - case: case_003
+    finding: Sunlit earth color, angular planes, broad light shapes, and sparse particles are visibly distinct.
+  - case: case_004
+    finding: Nocturnal blue textile treatment and tapered decorative line language remain recognizable.
+  - case: case_005
+    finding: Mineral pastel blocks, planar facial design, narrow eyes, and asymmetric value shapes are distinct.
+limitations:
+  - Mid-thigh framing does not expose lower-leg or foot design; later body-axis tests retain full-body coverage.
+  - Some eye construction and ornament details remain subtler than palette and shading differences.
+decision: Proceed with the versioned 300-signature, three-seed v0.8.2 screen without changing catalog lifecycle status.

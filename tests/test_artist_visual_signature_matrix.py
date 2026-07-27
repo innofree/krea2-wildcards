@@ -68,16 +68,40 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
     assert {row["style_id"] for row in rows} == generated
     assert {row["seed"] for row in rows} == {1001, 2002, 3003}
     assert {row["mode"] for row in rows} == {"visual_signature"}
+    for row in rows:
+        assert set(row["factors"]) == {
+            "line_language",
+            "face_design",
+            "eye_design",
+            "body_design",
+            "palette_language",
+            "light_modeling",
+            "framing_language",
+            "ornament_language",
+        }
     assert len({row["test_id"] for row in rows}) == 900
     assert all(row["test_id"].startswith("VS") for row in rows)
     for row in rows:
         prompt = row["prompt"]
         assert "exactly one adult woman" in prompt
-        assert "warm-grey studio cyclorama" in prompt
-        assert "eye-level full-length camera" in prompt
-        assert "polished two-dimensional character illustration" in prompt
-        assert "unmistakably hand-drawn two-dimensional illustration" in prompt
-        assert "visible designed contours" in prompt
+        assert (
+            "standing character-design portrait framed from mid-thigh upward" in prompt
+        )
+        assert "show both complete hands clearly" in prompt
+        assert (
+            "broad readable surfaces for the requested palette and ornament" in prompt
+        )
+        assert "quiet uncluttered studio ground" in prompt
+        assert "face and both eyes large enough" in prompt
+        assert "visual signature controls silhouette" in prompt
+        assert (
+            "clearly hand-drawn two-dimensional character-design illustration" in prompt
+        )
+        assert "unmistakably legible at contact-sheet scale" in prompt
+        assert "contour character" in prompt
+        assert "eye construction" in prompt
+        assert "composition" in prompt
+        assert "recurring motifs" in prompt
         assert "coherent illustrated anatomy" in prompt
         assert "clean garment shapes" in prompt
         assert "no text, logos, or watermarks" in prompt
@@ -86,6 +110,23 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix() -> None:
         assert "@" not in prompt and "__" not in prompt and "::" not in prompt
         assert all(token not in prompt for token in ("{", "}", "[", "]"))
         assert not ARTIST_REFERENCE_RE.search(prompt)
+
+
+def test_signature_brief_precedes_fixed_scene_for_prompt_priority(
+    tmp_path: Path,
+) -> None:
+    catalog = tmp_path / "artists.yaml"
+    prompt = clean_prompt()
+    write_catalog(
+        catalog,
+        {"artist_signature_generated": signature_item("generated", prompt)},
+    )
+
+    [row] = signature_rows(catalog, seeds=(1001,))
+
+    assert row["prompt"].index("narrow architectural lines") < row["prompt"].index(
+        "Create exactly one adult woman"
+    )
 
 
 def test_status_and_extension_seed_filters_select_actual_catalog_ids(
@@ -119,13 +160,41 @@ def test_status_and_extension_seed_filters_select_actual_catalog_ids(
     assert rows[0]["style_id"] == "artist_signature_approved"
 
 
-def test_evenly_spaced_calibration_subset_is_deterministic() -> None:
+def test_diverse_calibration_subset_is_deterministic() -> None:
     rows = signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
 
     assert len(rows) == 15
     assert len({row["style_id"] for row in rows}) == 5
     assert {row["seed"] for row in rows} == {1001, 2002, 3003}
     assert rows == signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+
+
+def test_calibration_subset_maximizes_feature_axis_coverage() -> None:
+    catalog = yaml.safe_load(
+        (ROOT / "catalog/artists.yaml").read_text(encoding="utf-8")
+    )["items"]
+    rows = signature_rows(ROOT / "catalog/artists.yaml", limit_signatures=5)
+    style_ids = list(dict.fromkeys(row["style_id"] for row in rows))
+
+    coverage = {
+        axis: {
+            value
+            for style_id in style_ids
+            for value in catalog[style_id]["feature_axes"][axis]
+        }
+        for axis in next(iter(catalog.values()))["feature_axes"]
+    }
+    assert {axis: len(values) for axis, values in coverage.items()} == {
+        "line_language": 5,
+        "face_design": 4,
+        "eye_design": 4,
+        "body_design": 4,
+        "palette_language": 5,
+        "light_modeling": 5,
+        "framing_language": 4,
+        "ornament_language": 4,
+    }
+    assert sum(len(values) for values in coverage.values()) == 35
 
 
 @pytest.mark.parametrize("limit", [0, -1, 301])
@@ -196,6 +265,31 @@ def test_cli_is_byte_deterministic_and_defaults_to_900_rows(tmp_path: Path) -> N
         hashlib.sha256(outputs[0].read_bytes()).hexdigest()
         == hashlib.sha256(outputs[1].read_bytes()).hexdigest()
     )
+
+
+def test_cli_refuses_to_replace_a_different_matrix(tmp_path: Path) -> None:
+    output = tmp_path / "existing.jsonl"
+    original = '{"preserved":true}\n'
+    output.write_text(original, encoding="utf-8")
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts/export_artist_visual_signature_matrix.py"),
+            "--limit-signatures",
+            "1",
+            "--output",
+            str(output),
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 1
+    assert "refusing to overwrite a different versioned prompt matrix" in result.stdout
+    assert output.read_text(encoding="utf-8") == original
 
 
 def test_cli_accepts_repeated_statuses_and_extension_seeds(tmp_path: Path) -> None:

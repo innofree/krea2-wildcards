@@ -19,6 +19,85 @@ PERSISTED_METRICS = (
 ALLOWED_RECOMMENDATIONS = {"generated", "testing", "approved", "rejected"}
 
 
+def validate_transition_gate(
+    catalog: dict[str, Any],
+    summary: dict[str, Any],
+    allowed_from: set[str],
+    *,
+    require_exact_source_set: bool = False,
+    required_tested_seeds: int | None = None,
+    allowed_recommendations: set[str] | None = None,
+    minimum_recommendations: dict[str, int] | None = None,
+) -> dict[str, int]:
+    items = catalog.get("items")
+    styles = summary.get("styles")
+    if not isinstance(items, dict) or not isinstance(styles, list) or not styles:
+        raise ValueError("catalog items and summary styles are required")
+    if summary.get("style_count") not in (None, len(styles)):
+        raise ValueError("summary style_count does not match summary styles")
+
+    summary_ids: set[str] = set()
+    recommendation_counts: dict[str, int] = {}
+    for result in styles:
+        if not isinstance(result, dict) or not isinstance(result.get("style_id"), str):
+            raise ValueError("summary style entries must be mappings with style_id")
+        style_id = result["style_id"]
+        if style_id in summary_ids:
+            raise ValueError(f"duplicate summary style: {style_id}")
+        summary_ids.add(style_id)
+        if (
+            required_tested_seeds is not None
+            and result.get("tested_seeds") != required_tested_seeds
+        ):
+            raise ValueError(
+                f"summary style {style_id!r} must have exactly "
+                f"{required_tested_seeds} tested seeds"
+            )
+        recommendation = result.get("recommended_status")
+        if recommendation not in ALLOWED_RECOMMENDATIONS:
+            raise ValueError(f"summary style {style_id!r} has invalid recommendation")
+        if (
+            allowed_recommendations is not None
+            and recommendation not in allowed_recommendations
+        ):
+            raise ValueError(
+                f"summary style {style_id!r} has disallowed recommendation "
+                f"{recommendation!r}"
+            )
+        recommendation_counts[recommendation] = (
+            recommendation_counts.get(recommendation, 0) + 1
+        )
+
+    if require_exact_source_set:
+        source_ids = {
+            style_id
+            for style_id, item in items.items()
+            if isinstance(item, dict)
+            and isinstance(item.get("validation"), dict)
+            and item["validation"].get("status") in allowed_from
+        }
+        if summary_ids != source_ids:
+            missing = len(source_ids - summary_ids)
+            unexpected = len(summary_ids - source_ids)
+            raise ValueError(
+                "summary styles do not exactly match catalog source statuses "
+                f"(missing={missing}, unexpected={unexpected})"
+            )
+
+    for recommendation, minimum in (minimum_recommendations or {}).items():
+        if recommendation not in ALLOWED_RECOMMENDATIONS:
+            raise ValueError(f"invalid minimum recommendation status: {recommendation}")
+        if not isinstance(minimum, int) or minimum < 0:
+            raise ValueError("minimum recommendation count must be non-negative")
+        actual = recommendation_counts.get(recommendation, 0)
+        if actual < minimum:
+            raise ValueError(
+                f"summary recommends {actual} {recommendation} style(s); "
+                f"minimum is {minimum}"
+            )
+    return recommendation_counts
+
+
 def update_catalog(
     catalog: dict[str, Any],
     summary: dict[str, Any],
@@ -59,7 +138,9 @@ def update_catalog(
             or critical_failures < 0
             or not isinstance(averages, dict)
         ):
-            raise ValueError(f"summary style {style_id!r} has invalid evaluation values")
+            raise ValueError(
+                f"summary style {style_id!r} has invalid evaluation values"
+            )
         validation.update(
             {
                 "tested_seeds": tested_seeds,
@@ -84,11 +165,27 @@ def atomic_dump_yaml(document: dict[str, Any], path: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Apply validated evaluation status to a catalog")
+    parser = argparse.ArgumentParser(
+        description="Apply validated evaluation status to a catalog"
+    )
     parser.add_argument("summary", type=Path)
     parser.add_argument("--catalog", type=Path, default=Path("catalog/art_styles.yaml"))
     parser.add_argument("--evaluation-id", required=True)
     parser.add_argument("--from-status", action="append", default=None)
+    parser.add_argument("--require-exact-source-set", action="store_true")
+    parser.add_argument("--require-tested-seeds", type=int)
+    parser.add_argument(
+        "--allow-recommendation",
+        action="append",
+        choices=sorted(ALLOWED_RECOMMENDATIONS),
+        default=None,
+    )
+    parser.add_argument(
+        "--minimum-recommendation",
+        action="append",
+        default=None,
+        metavar="STATUS=COUNT",
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
     try:
@@ -96,17 +193,47 @@ def main() -> int:
         summary = load_yaml(args.summary)
         if not isinstance(catalog, dict) or not isinstance(summary, dict):
             raise ValueError("catalog and summary must be mappings")
+        allowed_from = set(args.from_status or ["generated"])
+        minimum_recommendations: dict[str, int] = {}
+        for value in args.minimum_recommendation or []:
+            status, separator, count = value.partition("=")
+            if (
+                not separator
+                or status not in ALLOWED_RECOMMENDATIONS
+                or not count.isdigit()
+            ):
+                raise ValueError("minimum recommendation must use STATUS=COUNT")
+            if status in minimum_recommendations:
+                raise ValueError(f"duplicate minimum recommendation: {status}")
+            minimum_recommendations[status] = int(count)
+        validate_transition_gate(
+            catalog,
+            summary,
+            allowed_from,
+            require_exact_source_set=args.require_exact_source_set,
+            required_tested_seeds=args.require_tested_seeds,
+            allowed_recommendations=(
+                set(args.allow_recommendation)
+                if args.allow_recommendation is not None
+                else None
+            ),
+            minimum_recommendations=minimum_recommendations,
+        )
         count = update_catalog(
             catalog,
             summary,
             args.evaluation_id,
-            set(args.from_status or ["generated"]),
+            allowed_from,
         )
         if args.apply:
             atomic_dump_yaml(catalog, args.catalog)
-            print(f"Applied evaluation {args.evaluation_id} to {count} catalog style(s).")
+            print(
+                f"Applied evaluation {args.evaluation_id} to {count} catalog style(s)."
+            )
         else:
-            print(f"DRY RUN: evaluation {args.evaluation_id} would update {count} catalog style(s).")
+            print(
+                f"DRY RUN: evaluation {args.evaluation_id} would update {count} catalog style(s)."
+            )
         return 0
     except (KeyError, OSError, TypeError, ValueError) as exc:
         print(f"ERROR: {exc}")
