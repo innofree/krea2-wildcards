@@ -20,6 +20,7 @@ DEFAULT_SEEDS = (1001, 2002, 3003)
 REPAIR_SEEDS = (6101, 6202, 6303)
 FRAMING_CALIBRATION_SEEDS = (7101, 7202, 7303)
 SINGLE_VIEW_CALIBRATION_SEEDS = (8101, 8202, 8303)
+EDITORIAL_CALIBRATION_SEEDS = (9101, 9202, 9303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
@@ -31,12 +32,16 @@ FRAMING_CALIBRATION_PROFILE = (
 SINGLE_VIEW_CALIBRATION_PROFILE = (
     "artist_visual_signature_repair_single_view_calibration_v0_8_5"
 )
+EDITORIAL_CALIBRATION_PROFILE = (
+    "artist_visual_signature_repair_editorial_calibration_v0_8_6"
+)
 BENCHMARK_PROFILES = frozenset(
     {
         LEGACY_BENCHMARK_PROFILE,
         REPAIR_BENCHMARK_PROFILE,
         FRAMING_CALIBRATION_PROFILE,
         SINGLE_VIEW_CALIBRATION_PROFILE,
+        EDITORIAL_CALIBRATION_PROFILE,
     }
 )
 REPAIR_SIGNATURE_COUNT = 115
@@ -116,6 +121,21 @@ SINGLE_VIEW_CALIBRATION_CLOSE = (
     "border behind her. Close, intimate, layered, or foreground means background layout only, "
     "never crop. Clean hand-drawn 2D, simple sleeves, quiet studio, coherent anatomy and fingers; "
     "one full silhouette, face, eyes, hands; no text, logos, or watermarks."
+)
+EDITORIAL_CALIBRATION_SCENE = (
+    "An adult fashion model holds a balanced full-length contrapposto pose on a spacious "
+    "warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, "
+    "with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, "
+    "eye-level head-to-toe framing, fixed camera position, and generous negative space around "
+    "the complete silhouette remain unchanged. Keep exactly one complete adult figure with "
+    "coherent illustrated anatomy and fingers, and no text, logos, or watermarks."
+)
+EDITORIAL_CALIBRATION_LEDGER = (
+    "Render distinct visible cues: line={line} on contours and seams; face={face} on jaw and "
+    "cheeks; eyes={eyes} in irises and lids; body={body} in the silhouette; palette={palette} "
+    "in broad color fields; light={light} in face and garment shadows; framing={framing} through "
+    "placement and negative space; ornament={ornament} as repeated garment trim and a flat "
+    "decorative outer border behind the figure."
 )
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
@@ -212,12 +232,48 @@ def single_view_calibration_axis_ledger(feature_axes: Any) -> str:
     )
 
 
+def editorial_calibration_axis_ledger(feature_axes: Any) -> str:
+    if not isinstance(feature_axes, dict):
+        raise ValueError("editorial calibration profile requires feature axes")
+
+    def cue(axis: str) -> str:
+        values = feature_axes.get(axis)
+        if (
+            not isinstance(values, list)
+            or not values
+            or not isinstance(values[0], str)
+            or not values[0]
+        ):
+            raise ValueError(
+                f"editorial calibration profile is missing feature axis {axis}"
+            )
+        return values[0].replace("_", " ")
+
+    return EDITORIAL_CALIBRATION_LEDGER.format(
+        line=cue("line_language"),
+        face=cue("face_design"),
+        eyes=cue("eye_design"),
+        body=cue("body_design"),
+        palette=cue("palette_language"),
+        light=cue("light_modeling"),
+        framing=cue("framing_language"),
+        ornament=cue("ornament_language"),
+    )
+
+
 def prompt_for_profile(
     body: str,
     benchmark_profile: str,
     *,
     feature_axes: Any = None,
 ) -> str:
+    if benchmark_profile == EDITORIAL_CALIBRATION_PROFILE:
+        return (
+            "Create a clean hand-drawn 2D editorial illustration. "
+            f"This exact visual signature controls the rendering: {body} "
+            f"{editorial_calibration_axis_ledger(feature_axes)} "
+            f"{EDITORIAL_CALIBRATION_SCENE}"
+        )
     if benchmark_profile == SINGLE_VIEW_CALIBRATION_PROFILE:
         return (
             f"{SINGLE_VIEW_CALIBRATION_OPEN} "
@@ -499,6 +555,27 @@ def signature_rows(
             )
         if require_signature_count is None:
             require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
+    elif benchmark_profile == EDITORIAL_CALIBRATION_PROFILE:
+        if seed_values != EDITORIAL_CALIBRATION_SEEDS:
+            raise ValueError(
+                "editorial calibration profile requires seeds "
+                + ", ".join(str(seed) for seed in EDITORIAL_CALIBRATION_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "editorial calibration profile requires exactly status generated"
+            )
+        if limit_signatures != FRAMING_CALIBRATION_SIGNATURE_COUNT:
+            raise ValueError(
+                "editorial calibration profile requires exactly "
+                f"{FRAMING_CALIBRATION_SIGNATURE_COUNT} limited signatures"
+            )
+        if require_candidate_count is None:
+            raise ValueError(
+                "editorial calibration profile requires an exact pre-limit candidate count"
+            )
+        if require_signature_count is None:
+            require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -549,6 +626,7 @@ def signature_rows(
             REPAIR_BENCHMARK_PROFILE,
             FRAMING_CALIBRATION_PROFILE,
             SINGLE_VIEW_CALIBRATION_PROFILE,
+            EDITORIAL_CALIBRATION_PROFILE,
         }:
             factors["benchmark_profile"] = benchmark_profile
             factors["benchmark_stage"] = (
@@ -635,7 +713,11 @@ def main() -> int:
                 else (
                     SINGLE_VIEW_CALIBRATION_SEEDS
                     if args.benchmark_profile == SINGLE_VIEW_CALIBRATION_PROFILE
-                    else DEFAULT_SEEDS
+                    else (
+                        EDITORIAL_CALIBRATION_SEEDS
+                        if args.benchmark_profile == EDITORIAL_CALIBRATION_PROFILE
+                        else DEFAULT_SEEDS
+                    )
                 )
             )
         )

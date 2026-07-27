@@ -12,6 +12,8 @@ from typing import Any
 
 from common import canonical_prompt_sha256, load_yaml
 from export_artist_visual_signature_matrix import (
+    EDITORIAL_CALIBRATION_PROFILE,
+    EDITORIAL_CALIBRATION_SEEDS,
     FIXED_SCENE,
     FRAMING_CALIBRATION_PROFILE,
     FRAMING_CALIBRATION_SEEDS,
@@ -129,6 +131,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             REPAIR_BENCHMARK_PROFILE,
             FRAMING_CALIBRATION_PROFILE,
             SINGLE_VIEW_CALIBRATION_PROFILE,
+            EDITORIAL_CALIBRATION_PROFILE,
         }:
             profile = row_profile
             stage = factors.get("benchmark_stage")
@@ -167,6 +170,13 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             if type(seed) is not int or seed not in SINGLE_VIEW_CALIBRATION_SEEDS:
                 raise ValueError(
                     f"matrix line {line_number}: single-view calibration profile "
+                    "has an invalid seed"
+                )
+        elif profile == EDITORIAL_CALIBRATION_PROFILE:
+            seed = row.get("seed")
+            if type(seed) is not int or seed not in EDITORIAL_CALIBRATION_SEEDS:
+                raise ValueError(
+                    f"matrix line {line_number}: editorial calibration profile "
                     "has an invalid seed"
                 )
         else:
@@ -211,6 +221,8 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             expected_seeds = set(FRAMING_CALIBRATION_SEEDS)
         elif profile == SINGLE_VIEW_CALIBRATION_PROFILE:
             expected_seeds = set(SINGLE_VIEW_CALIBRATION_SEEDS)
+        elif profile == EDITORIAL_CALIBRATION_PROFILE:
+            expected_seeds = set(EDITORIAL_CALIBRATION_SEEDS)
         else:
             continue
         if seeds != expected_seeds:
@@ -240,6 +252,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         REPAIR_BENCHMARK_PROFILE,
         FRAMING_CALIBRATION_PROFILE,
         SINGLE_VIEW_CALIBRATION_PROFILE,
+        EDITORIAL_CALIBRATION_PROFILE,
     }
     if len(matrix_profiles) == 1 and matrix_profiles <= versioned_profiles:
         document["benchmark_profile"] = next(iter(matrix_profiles))

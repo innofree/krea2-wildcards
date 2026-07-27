@@ -11,6 +11,8 @@ from bind_artist_prompt_evidence import atomic_write_json, build_binding
 from common import canonical_prompt_sha256
 from export_artist_testing_retest_matrix import retest_rows
 from export_artist_visual_signature_matrix import (
+    EDITORIAL_CALIBRATION_PROFILE,
+    EDITORIAL_CALIBRATION_SEEDS,
     FRAMING_CALIBRATION_PROFILE,
     FRAMING_CALIBRATION_SEEDS,
     LEGACY_BENCHMARK_PROFILE,
@@ -397,6 +399,55 @@ def test_single_view_calibration_forbids_turnarounds_and_strengthens_axes(
             catalog,
             seeds=(8101, 8202, 9999),
             benchmark_profile=SINGLE_VIEW_CALIBRATION_PROFILE,
+            limit_signatures=5,
+            require_candidate_count=6,
+        )
+
+
+def test_editorial_calibration_uses_proven_positive_head_to_toe_anchors(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_editorial_{index}": "generated" for index in range(1, 7)},
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=EDITORIAL_CALIBRATION_SEEDS,
+        benchmark_profile=EDITORIAL_CALIBRATION_PROFILE,
+        limit_signatures=5,
+        require_candidate_count=6,
+        require_signature_count=5,
+    )
+
+    assert len(rows) == 15
+    assert {row["seed"] for row in rows} == set(EDITORIAL_CALIBRATION_SEEDS)
+    for row in rows:
+        body = items[row["style_id"]]["prompt"]
+        prompt = row["prompt"]
+        assert row["factors"]["benchmark_profile"] == EDITORIAL_CALIBRATION_PROFILE
+        assert row["factors"]["benchmark_stage"] == "calibration"
+        assert prompt.startswith("Create a clean hand-drawn 2D editorial illustration.")
+        assert prompt.count(body) == 1
+        assert "balanced full-length contrapposto pose" in prompt
+        assert "eye-level head-to-toe framing" in prompt
+        assert "generous negative space around the complete silhouette" in prompt
+        assert "both hands and both feet clearly visible" in prompt
+        assert "Render distinct visible cues" in prompt
+        assert "flat decorative outer border behind the figure" in prompt
+        assert "exactly one complete adult figure" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/editorial_calibration.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == EDITORIAL_CALIBRATION_PROFILE
+    assert binding["benchmark_stage"] == "calibration"
+
+    with pytest.raises(ValueError, match="editorial calibration profile requires seeds"):
+        signature_rows(
+            catalog,
+            seeds=(9101, 9202, 9999),
+            benchmark_profile=EDITORIAL_CALIBRATION_PROFILE,
             limit_signatures=5,
             require_candidate_count=6,
         )
