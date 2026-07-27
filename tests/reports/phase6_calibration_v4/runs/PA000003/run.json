@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000003",
+  "style_id": "preset_audit_001",
+  "label": "preset_audit_001",
+  "mode": "preset_audit",
+  "seed": 33003,
+  "remote": "private_comfyui",
+  "prompt_id": "9f9974dd-995d-497c-880f-4190cdd65b46",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Let the figure fill most of the canvas from crown to thighs. Place the lower image edge visibly through the middle of both thighs, keeping the complete crown, face, and both described hand gestures inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, light color, and accurate skin tone. An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, wide-leg trousers, and high-neck base, with a calm attentive look with a level chin and focused eyes. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "5c666b83b1dd99edab3f1f6a14bb616daf47a9c03c44377b4b021b86c8cfe2c0",
+  "workflow_sha256": "2f8082076d364c4768433c28c897c416ec157cc1177cc57689b2c693e521379d",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_87303dceaf175859b04061b3d1489f8ea4ec88ad50100759f92ccbaa20be6ab3"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "19cbac2649fcfb3cfe0c61d67b67f13d3b3f197c31e6c1f3d40e34f4b18892d8",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,172 @@
+schema_version: 1
+styles:
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three seeds preserve a visible strip above the complete crown, readable eyes, a
+      turned single adult, coastal rocks and horizon, collarless jacket, wide trousers, and
+      stable anatomy, but the lower edge includes nearly the full legs instead of cutting
+      visibly through mid-thigh and the scene remains monochrome rather than accurate daylight
+      skin color.
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Complete crowns, both eyes, wrap tops, upper-arm gestures, quiet expressions, warm light,
+      and the covered arcade are clear and stable, but each lower edge falls around the waist
+      or hips instead of literally through the upper torso below the chest.
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every seed keeps background above the complete crown and ends immediately below the
+      waist with both separated hand gestures visible; the warm library, overshirt, column
+      dress, attentive face, and low warm illumination remain coherent without v3 regression.
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      The three wide rooftop views retain crown and foot margins, readable faces and hands,
+      full figures, distant skylines, wrap tops, tapered trousers, three-quarter waist-hand
+      poses, gentle smiles, and consistent warm low-angle light with no visible regression.
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All seeds preserve the repaired crown, eyes, transit concourse, vest, fitted top,
+      pleated skirt, three-quarter waist-hand pose, quiet expression, and warm light, but the
+      lower boundary reaches the thighs rather than passing through the upper torso below the
+      chest.
+  random_utility_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      The reinforced ledger now produces three stable hand-drawn monochrome illustrations
+      with precise contours, tapered high faces, deep almond eyes, two-step values, library
+      scenes, separated hands, and bold garment plus border geometry, but the crop continues
+      to the hips instead of below the chest and the figures remain centered rather than in
+      broad asymmetric side space.
+  random_utility_002:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three seeds show complete crowns and feet with generous margins, one coherent
+      three-quarter adult in the arcade, waist and lowered hands, tailored coats, fine
+      illustrated contours, compact oval faces, nocturnal neon glaze, centered emblem borders,
+      and visible particle fields without regression.
+  random_utility_003:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      V4 repairs the hand-drawn painterly medium, compact turned figure, coastal scene,
+      centered emblem border, and extensive garment plus outer-border textile bands across
+      all seeds, but each image shows the complete feet instead of ending at mid-thigh and the
+      eyes and dark-blue palette lack the requested obvious radial and bright neon accents.
+  random_utility_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      The three clean editorial illustrations preserve full crown-to-feet margins, readable
+      clasped hands, museum depth, belted midi layers, rounded faces, large eyes, elongated
+      limbs, garnet-blue-forest-gold fields, translucent modeling, upright borders, and
+      repeated floral lines; only the requested subject-on-a-third placement remains mild.
+  random_utility_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every seed now strongly preserves the full-length crown and shoe margins, monochrome
+      hand-drawn medium, precise tapered contours, high-cheekbone almond-eyed face, grounded
+      figure, diffuse values, courtyard, vertical anchor, and textile bands on both garment
+      and border, but the stance remains stiff and frontal instead of a visibly balanced
+      contrapposto.

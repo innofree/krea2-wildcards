@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000005",
+  "style_id": "preset_audit_002",
+  "label": "preset_audit_002",
+  "mode": "preset_audit",
+  "seed": 32002,
+  "remote": "private_comfyui",
+  "prompt_id": "cc960ac5-aafd-4abd-8938-5ed4d5aecaa1",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Let the head and upper torso fill most of the canvas. Place the lower image edge through the upper torso below the chest, with the complete crown, chin, both shoulders, and described upper-arm gesture inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, light color, and accurate skin tone. An adult turns through the torso while looking back toward the camera in a covered market arcade with repeated bays and a clear central passage, wearing a structured wrap top, tapered trousers, and simple accessories, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "27799ebd24441b9ea8cbb1ff0a2df6867b2ca9212d83816442c46e78130b99b7",
+  "workflow_sha256": "610d87969bb5729f25988f98db8efcf84b19a6636cf911cc992742a2d3c802f3",
+  "factors": {
+    "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_87303dceaf175859b04061b3d1489f8ea4ec88ad50100759f92ccbaa20be6ab3"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "4c2e49d62763a952bff979a0b1845177d11292c2faef9dd8726cad731397d3b3",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

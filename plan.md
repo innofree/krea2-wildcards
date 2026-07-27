@@ -1160,6 +1160,21 @@ v4는 승인된 artist-signature의 8축 visibility ledger를 조합 경로에�
 camera landmark와 light source의 우선순위를 문장 선두에서 단일 구체 장면으로
 고정하며, 기존과 겹치지 않는 다음 3-seed calibration을 사용한다.
 
+`phase6_positive_profile_v4`는 새 seed `[31001, 32002, 33003]`으로
+69/69개 1024×1024 PNG와 고유 image hash를 생성했고, 재실행에서
+`complete=69`, `pending=0`을 확인했다. matrix SHA-256은
+`9db35968fb9497574e076a690f5523901455935505006f17d9ef7749b5b87e95`이다.
+v4 review는 통과 11개, 미달 12개, critical failure 0이었다. 8축 visibility
+ledger는 artist-signature의 ornament, textile, palette와 single-view 구성을
+실제로 복구했고 character design도 통과시켰다. 남은 실패는 camera의 정확한 하단
+경계와 비대칭 배치, pose의 발·지지 다리 또는 contrapposto, cool key와 warm
+practical의 색 분리, benchmark의 diagonal division·matte grain·glint
+가시성이다. v4 summary는 `status=failed`, `complete=false`로 보존한다.
+v5는 통과한 ledger를 유지하면서 마지막 문장에 framing을 다시 고정하고, pose와
+character 조합은 full-length, lighting 조합은 눈과 광원 색이 읽히는 waist-up
+구도로 분기한다. lighting 및 benchmark는 이전에 통과한 짧은 v2 장면 구조를
+재사용하되 새 profile SHA와 겹치지 않는 새 3-seed로 전체 69장을 다시 검증한다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000014",
+  "style_id": "preset_audit_005",
+  "label": "preset_audit_005",
+  "mode": "preset_audit",
+  "seed": 32002,
+  "remote": "private_comfyui",
+  "prompt_id": "ea19ded1-3017-47ed-a8ce-c6a4daa2d6a2",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Let the head and upper torso fill most of the canvas. Place the lower image edge through the upper torso below the chest, with the complete crown, chin, both shoulders, and described upper-arm gesture inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, light color, and accurate skin tone. An adult stands three-quarters, one hand at the waist and one lowered in a spacious transit concourse with repeated columns and distant entries, wearing a longline vest, fitted top, and mid-calf pleated skirt, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "8edfe192931810279be7de7fe8110f30bec05a71ab790d73a663415fbe6dab80",
+  "workflow_sha256": "ae54771df2065eab764298cb7e30d668d50f597f274d106151fc571bc0cd28a9",
+  "factors": {
+    "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_87303dceaf175859b04061b3d1489f8ea4ec88ad50100759f92ccbaa20be6ab3"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2e7d142bae6145db05183b86ad789ae05770670d4535f929458abb5549c753ea",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
