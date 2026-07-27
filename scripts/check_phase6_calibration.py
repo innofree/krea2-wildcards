@@ -7,7 +7,11 @@ import json
 from pathlib import Path
 from typing import Any
 
-from export_phase6_matrix import PHASE6_PROFILE_FACTOR, PHASE6_PROFILE_SHA256
+from export_phase6_matrix import (
+    CALIBRATION_SEEDS,
+    PHASE6_PROFILE_FACTOR,
+    PHASE6_PROFILE_SHA256,
+)
 from run_remote_prompt_matrix import load_jobs
 
 
@@ -63,11 +67,11 @@ def validate_report(path: Path) -> dict[str, Any]:
     jobs = load_jobs(matrix)
     if len(jobs) != 69:
         raise ValueError("calibration matrix must contain exactly 69 jobs")
-    if {job["seed"] for job in jobs} != {1001, 2002, 3003}:
+    if {job["seed"] for job in jobs} != set(CALIBRATION_SEEDS):
         raise ValueError("calibration matrix must use the exact three screening seeds")
-    if {
-        job["factors"].get("prompt_profile_sha256") for job in jobs
-    } != {PHASE6_PROFILE_FACTOR}:
+    if {job["factors"].get("prompt_profile_sha256") for job in jobs} != {
+        PHASE6_PROFILE_FACTOR
+    }:
         raise ValueError("calibration matrix prompt profile is stale")
     return document
 

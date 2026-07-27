@@ -14,12 +14,18 @@ from run_remote_prompt_matrix import validate_job
 
 
 DEFAULT_SEEDS = (1001, 2002, 3003)
+CALIBRATION_SEEDS = (21001, 22002, 23003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
+SUBJECT_CONTRACT = (
+    "Compose one continuous single-view vertical image centered on exactly one clearly adult "
+    "woman as the only figure. Every visible face, body, and hand belongs to this same woman. "
+    "Keep a clean margin above her complete crown and keep both eyes clearly readable."
+)
 FINISH = (
-    "Make every requested visual direction plainly legible without replacing the selected medium "
-    "with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, "
-    "hands, joints, garment construction, and spatial relationships. Preserve the requested line, "
-    "color, surface, lighting, and composition cues, with no text, logos, or watermarks."
+    "Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, "
+    "lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, "
+    "joints, garment construction, and spatial relationships coherent. Finish the single scene "
+    "cleanly with text-free, logo-free, watermark-free imagery."
 )
 FIXED_SCENE = (
     "Depict exactly one adult woman standing naturally on an uncluttered warm-grey studio "
@@ -28,9 +34,10 @@ FIXED_SCENE = (
 )
 SINGLE_AXIS_ANCHORS = {
     "character_design": (
-        "Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve "
-        "top and straight trousers. Use an eye-level full-length camera, broad neutral diffused "
-        "lighting, and an uncluttered warm-grey studio cyclorama."
+        "Show the described adult design in a balanced standing pose. Dress her in a complete "
+        "front-readable outfit that visibly carries every named layer, seam, closure, silhouette, "
+        "and proportion cue. Use an eye-level full-length camera, broad neutral diffused lighting, "
+        "and an uncluttered warm-grey studio cyclorama."
     ),
     "pose": (
         "Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an "
@@ -48,14 +55,15 @@ SINGLE_AXIS_ANCHORS = {
         "diffused lighting, with her head, both hands, and both feet visible."
     ),
     "linework_coloring": (
-        "Show exactly one adult woman in a balanced standing character portrait, wearing a plain "
-        "long-sleeve top. Use an eye-level mid-thigh frame, broad neutral diffused lighting, and "
-        "an uncluttered warm-grey studio ground, with her face, eyes, and both hands readable."
+        "Render the adult as a clearly drawn editorial character illustration whose named line "
+        "quality and color treatment cover the face, hair, clothing, and silhouette. Use an "
+        "eye-level mid-thigh frame, broad neutral diffused lighting, and an uncluttered warm-grey "
+        "studio ground, with her face, eyes, and both hands readable."
     ),
     "camera": (
-        "Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve "
-        "top and straight trousers under broad neutral diffused lighting on an uncluttered "
-        "warm-grey studio cyclorama. Keep her head and both hands visible."
+        "Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad "
+        "neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named "
+        "camera boundary, view position, field of view, placement, and negative space as literal."
     ),
 }
 PHASE6_PROFILE_SHA256 = hashlib.sha256(
@@ -63,8 +71,9 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
         {
             "finish": FINISH,
             "fixed_scene": FIXED_SCENE,
+            "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v2",
+            "version": "phase6_positive_profile_v3",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -158,6 +167,47 @@ def _prompt_body(value: str) -> str:
     return value.strip().rstrip(".,;:")
 
 
+def _framing_contract(value: str) -> str:
+    lowered = value.lower()
+    if "chest-up" in lowered:
+        return (
+            "Frame literally from the complete crown through the upper torso, with the chin, "
+            "both shoulders, and the described upper-arm gesture inside the image."
+        )
+    if "waist-up" in lowered:
+        return (
+            "Frame literally from the complete crown through just below the waist, keeping both "
+            "described hand gestures inside the image."
+        )
+    if "mid-thigh" in lowered or "thigh-up" in lowered:
+        return (
+            "Frame literally from the complete crown through mid-thigh, keeping the face and "
+            "both described hand gestures inside the image."
+        )
+    if "full-length" in lowered:
+        return (
+            "Frame literally from the complete crown through both feet, with generous visible "
+            "margin above the head and below the shoes."
+        )
+    if "wide view" in lowered:
+        return (
+            "Use the requested wide environmental view with the complete crown and complete "
+            "figure inside the canvas while the subject remains large enough for the face and "
+            "hands to be readable."
+        )
+    return (
+        "Keep the complete crown, both eyes, and every body landmark named by the requested "
+        "camera direction inside the image."
+    )
+
+
+def _profiled_prompt(value: str, focus: str) -> str:
+    return (
+        f"{SUBJECT_CONTRACT} {_framing_contract(value)} {focus} "
+        f"{value.strip().rstrip('.,;:')}. {FINISH}"
+    )
+
+
 def _select(
     paths: Iterable[Path],
     *,
@@ -232,12 +282,40 @@ def single_axis_rows(
         )
         anchor = SINGLE_AXIS_ANCHORS[right_family]
         for index, (item_id, prompt) in enumerate(selected, start=1):
+            focus = {
+                "character_design": (
+                    "The character design is the measured axis: make its named face geometry, "
+                    "body proportions, garment silhouette, seams, and closures visibly explicit."
+                ),
+                "pose": (
+                    "The pose is the measured axis: make the named hand placement, shoulder line, "
+                    "gaze, leg support, and weight distribution visibly explicit."
+                ),
+                "lighting": (
+                    "The lighting is the measured axis: keep both eyes readable and make every "
+                    "named source direction, shadow edge, reflected fill, and accent distinguishable."
+                ),
+                "background": (
+                    "The background is the measured axis: keep the subject large and readable "
+                    "while every named foreground, middle-distance, horizon, and atmosphere layer "
+                    "remains distinct."
+                ),
+                "linework_coloring": (
+                    "Linework and coloring are the measured axis: make the named contour geometry, "
+                    "palette families, value planes, and edge accent plainly visible across the figure."
+                ),
+                "camera": (
+                    "The camera is the measured axis: obey its crop boundary, camera position, field "
+                    "of view, subject placement, and negative-space relationship exactly."
+                ),
+            }[right_family]
             cases.append(
                 {
                     "style_id": f"single_axis_{right_family}_{index:03d}",
-                    "prompt": (
+                    "prompt": _profiled_prompt(
                         f"Apply exactly this {right_family} direction as the sole changing axis: "
-                        f"{prompt}. {anchor} {FINISH}"
+                        f"{prompt}. {anchor}",
+                        focus,
                     ),
                     "factors": {"axis": right_family, "item_id": item_id},
                 }
@@ -270,12 +348,41 @@ def pairwise_rows(
         for index, ((left_id, left_prompt), (right_id, right_prompt)) in enumerate(
             zip(left, right, strict=True), start=1
         ):
+            focus = {
+                "character_design": (
+                    "The second character-design direction is the measured axis. Put its named "
+                    "face geometry, proportions, layers, seams, and closures on the visible subject."
+                ),
+                "pose": (
+                    "The second pose direction is the measured axis. Make its named hand placement, "
+                    "gaze, shoulder line, leg support, and weight distribution unambiguous."
+                ),
+                "lighting": (
+                    "The second lighting direction is the measured axis. Keep both eyes readable "
+                    "and give its named key source, shadow structure, reflected fill, and practical "
+                    "accent separate visible roles."
+                ),
+                "background": (
+                    "The second background direction is the measured axis. Keep the complete subject "
+                    "large enough to read while its foreground, middle-distance, horizon, and "
+                    "atmosphere remain visibly separated."
+                ),
+                "linework_coloring": (
+                    "The second line-and-color direction is the measured axis. Render its named "
+                    "contours, jewel palette, value planes, and rim accent across one continuous figure."
+                ),
+                "camera": (
+                    "The second camera direction is the measured axis. Obey its literal crop, side "
+                    "view, field of view, asymmetric placement, and negative-space counterweight."
+                ),
+            }[right_family]
             cases.append(
                 {
                     "style_id": f"pairwise_{pair_type}_{index:03d}",
-                    "prompt": (
+                    "prompt": _profiled_prompt(
                         f"{left_prompt}. Combine it coherently with this second visual direction: "
-                        f"{right_prompt}. Resolve both directions on exactly one adult subject. {FINISH}"
+                        f"{right_prompt}. Resolve both directions on the same adult subject",
+                        focus,
                     ),
                     "factors": {
                         "pair_type": pair_type,
@@ -310,7 +417,12 @@ def preset_rows(
     cases = [
         {
             "style_id": f"preset_audit_{index:03d}",
-            "prompt": f"{prompt} {FINISH}",
+            "prompt": _profiled_prompt(
+                prompt,
+                "Treat the validated preset as an exact scene contract: visibly preserve its named "
+                "pose, hand placement, location, garment pieces, expression, camera boundary, "
+                "perspective, and lighting.",
+            ),
             "factors": {"preset": preset_id},
         }
         for index, (preset_id, prompt) in enumerate(presets, start=1)
@@ -356,9 +468,12 @@ def random_utility_rows(
         cases.append(
             {
                 "style_id": f"random_utility_{index:03d}",
-                "prompt": (
+                "prompt": _profiled_prompt(
                     f"Apply this name-free visual treatment: {signature}. Use it to render this "
-                    f"validated scene preset: {preset}. Keep the combined direction coherent. {FINISH}"
+                    f"validated scene preset: {preset}. Keep the combined direction coherent",
+                    "Make the name-free visual treatment the unmistakable rendering language across "
+                    "the face, eyes, hair, clothing, silhouette, palette, shading, composition, and "
+                    "motif placement while keeping the validated scene readable.",
                 ),
                 "factors": {"preset": preset_id, "artist_signature": signature_id},
             }
@@ -377,14 +492,20 @@ def benchmark_rows(seeds: Iterable[int] = BENCHMARK_SEEDS) -> list[dict[str, Any
     cases = [
         {
             "style_id": "krea2_turbo_benchmark",
-            "prompt": f"{prompt}. {FIXED_SCENE} {FINISH}",
+            "prompt": _profiled_prompt(
+                f"{prompt}. {FIXED_SCENE}",
+                "Make the selected style pack visible across the subject and backdrop while keeping "
+                "the fixed studio scene and the complete adult figure easy to inspect.",
+            ),
             "factors": {"style_pack": style_id},
         }
     ]
     return _rows(cases, seeds, prefix="KB", mode="krea2_turbo_benchmark")
 
 
-def calibration_rows(seeds: Iterable[int] = DEFAULT_SEEDS) -> list[dict[str, Any]]:
+def calibration_rows(
+    seeds: Iterable[int] = CALIBRATION_SEEDS,
+) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
     rows = [
         *single_axis_rows(seed_values, cases_per_axis=1),
@@ -444,9 +565,14 @@ def main() -> int:
     parser.add_argument("--single-axis-report", type=Path)
     args = parser.parse_args()
     try:
-        seeds = args.seed or (
-            BENCHMARK_SEEDS if args.kind == "benchmark" else DEFAULT_SEEDS
-        )
+        if args.seed:
+            seeds = args.seed
+        elif args.kind == "benchmark":
+            seeds = BENCHMARK_SEEDS
+        elif args.kind == "calibration":
+            seeds = CALIBRATION_SEEDS
+        else:
+            seeds = DEFAULT_SEEDS
         if args.kind == "calibration":
             rows = calibration_rows(seeds)
         elif args.kind == "single-axis":

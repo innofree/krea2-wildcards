@@ -7,7 +7,11 @@ from pathlib import Path
 import pytest
 
 import check_phase6_calibration as gate
-from export_phase6_matrix import PHASE6_PROFILE_FACTOR, PHASE6_PROFILE_SHA256
+from export_phase6_matrix import (
+    CALIBRATION_SEEDS,
+    PHASE6_PROFILE_FACTOR,
+    PHASE6_PROFILE_SHA256,
+)
 
 
 def write_fixture(root: Path) -> Path:
@@ -19,7 +23,7 @@ def write_fixture(root: Path) -> Path:
     report.parent.mkdir(parents=True)
     rows = []
     for case in range(1, 24):
-        for seed_index, seed in enumerate((1001, 2002, 3003), start=1):
+        for seed_index, seed in enumerate(CALIBRATION_SEEDS, start=1):
             rows.append(
                 {
                     "schema_version": 1,

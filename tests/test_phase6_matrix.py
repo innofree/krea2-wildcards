@@ -8,6 +8,7 @@ import pytest
 import yaml
 
 from export_phase6_matrix import (
+    CALIBRATION_SEEDS,
     PAIRWISE_SPECS,
     PHASE6_PROFILE_FACTOR,
     benchmark_rows,
@@ -78,8 +79,7 @@ def test_single_axis_matrix_covers_pairwise_rhs_catalog_items_at_three_seeds(
         by_case[row["style_id"]].add(row["prompt"])
     assert all(len(prompts) == 1 for prompts in by_case.values())
     assert all(
-        row["factors"]["prompt_profile_sha256"] == PHASE6_PROFILE_FACTOR
-        for row in rows
+        row["factors"]["prompt_profile_sha256"] == PHASE6_PROFILE_FACTOR for row in rows
     )
     assert all("Preserve realistic skin texture" not in row["prompt"] for row in rows)
 
@@ -96,8 +96,7 @@ def test_pairwise_matrix_covers_six_types_with_sixteen_cases_each(
     counts = Counter(row["factors"]["pair_type"] for row in rows)
     assert counts == {spec[0]: 16 * 3 for spec in PAIRWISE_SPECS}
     assert all(
-        row["factors"]["prompt_profile_sha256"] == PHASE6_PROFILE_FACTOR
-        for row in rows
+        row["factors"]["prompt_profile_sha256"] == PHASE6_PROFILE_FACTOR for row in rows
     )
 
 
@@ -154,7 +153,7 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert len(rows) == 69
     assert len({row["test_id"] for row in rows}) == 69
     assert len({(row["style_id"], row["mode"]) for row in rows}) == 23
-    assert {row["seed"] for row in rows} == {1001, 2002, 3003}
+    assert {row["seed"] for row in rows} == set(CALIBRATION_SEEDS)
     assert {row["mode"] for row in rows} == {
         "single_axis",
         "pairwise",
@@ -162,7 +161,10 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
         "random_utility",
         "krea2_turbo_benchmark",
     }
-    assert {
-        row["factors"]["prompt_profile_sha256"] for row in rows
-    } == {PHASE6_PROFILE_FACTOR}
+    assert {row["factors"]["prompt_profile_sha256"] for row in rows} == {
+        PHASE6_PROFILE_FACTOR
+    }
+    assert all(
+        "one continuous single-view vertical image" in row["prompt"] for row in rows
+    )
     assert all("Preserve realistic skin texture" not in row["prompt"] for row in rows)
