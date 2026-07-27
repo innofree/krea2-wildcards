@@ -1,0 +1,514 @@
+schema_version: 1
+review_id: artist_signature_screen_v0_8_2_part_a
+reviewer_scope:
+  - prompt_matrix_visual_signature_001.png
+  - prompt_matrix_visual_signature_002.png
+  - prompt_matrix_visual_signature_003.png
+  - prompt_matrix_visual_signature_004.png
+  - prompt_matrix_visual_signature_005.png
+  - prompt_matrix_visual_signature_006.png
+  - prompt_matrix_visual_signature_007.png
+  - prompt_matrix_visual_signature_008.png
+  - prompt_matrix_visual_signature_009.png
+  - prompt_matrix_visual_signature_010.png
+styles:
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; centered floral borders and hard cel blocks recur, although layered iris detail is understated and border placement shifts."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops recur but hide the eyes and body, and floral tracing appears only in seed 3003."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops recur but hide the eyes and body, and the requested geometric inset is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops recur but hide the eyes and body, and the requested particle drift is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops recur but hide the eyes and body, and the requested textile echo is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center portraits recur, while floral tracing is inconsistent and layered iris detail stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center portraits recur, while the requested geometric inset is absent and layered iris detail stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center portraits recur, while the requested particle drift is absent and layered iris detail stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center portraits recur, while the requested textile echo is absent and layered iris detail stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; centered floral borders recur, while luminous glazing and layered iris detail remain understated."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; centered geometric borders remain strong and stable, while luminous glazing remains understated."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; top cropping weakens centered emblematic framing, and only sparse particles appear."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; top cropping weakens centered emblematic framing, and the requested textile echo is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops hide much of the face, eyes, and body, while floral detail appears mainly in seed 1001."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops hide much of the face, eyes, and body, and the requested geometric inset is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops hide much of the face, eyes, and body, and the requested particle drift is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 2, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; intimate crops hide much of the face, eyes, and body, and the requested textile echo is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center framing recurs and floral marks appear in two seeds, while luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center framing recurs, while geometric insets are absent and luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center framing and sparse particles recur, while luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; spacious off-center framing recurs, while textile echoes are absent and luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; vertical floral framing recurs, while luminous glazing and layered iris detail stay subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; a vertical stance recurs, while geometric insets are absent and luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; a vertical stance and sparse particles recur, while luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces, elongated proportions, and angular simplified drawing remain visible; a vertical stance recurs, while textile echoes are absent and luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered floral borders recur, while the body remains compact rather than balanced-narrow and glazing stays flat."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered geometric borders remain strong, while the body stays compact rather than balanced-narrow and glazing is subtle."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered framing remains stable, while the body is compact, particle drift is absent, and glazing stays flat."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered framing varies by seed, while the body is compact and the requested textile echo is absent."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; an intimate floral portrait recurs, while the body axis is largely hidden and luminous glazing stays subtle."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate portrait framing recurs, while geometric insets are absent and the body remains compact."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate portrait framing recurs, while particle drift is absent and the body remains compact."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate portrait framing recurs, while textile echoes are absent and the body remains compact."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; spacious intent is visible, while floral tracing is absent, the body remains compact, and glazing stays flat."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; geometric framing appears only in seed 1001, while the body remains compact and spacious asymmetry varies."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; spacious intent is visible, while particle drift is absent, the body remains compact, and glazing stays flat."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; spacious intent is visible, while textile echoes are absent, the body remains compact, and glazing stays flat."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; vertical floral borders remain strong, while the body stays compact rather than narrow and glazing is subtle."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; a vertical stance recurs, while geometric insets are absent and both the narrow-body and glaze axes weaken."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; a vertical stance recurs, while particle drift is absent and both the narrow-body and glaze axes weaken."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; a vertical stance recurs, while textile echoes are absent and both the narrow-body and glaze axes weaken."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered floral ornaments and soft two-step shading recur, while the body remains compact rather than narrow."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered geometric borders and soft two-step shading remain strong, while the body remains broader than requested."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered soft shading is stable, while particles appear mainly in seed 2002 and the body remains broad."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; centered soft shading is stable, while textile echoes are replaced by side borders in two seeds and vanish in the third."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate framing and soft shading recur, while floral detail appears mainly at the seed 3003 collar and the body stays broad."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate framing and soft shading recur, while geometric insets are absent and the body stays broad."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate framing and soft shading recur, while particle drift appears mainly in seed 2002 and the body stays broad."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; intimate framing and soft shading recur, while textile echoes are absent and the body stays broad."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Across three seeds, deep-jewel color blocking, rounded adult faces with narrow focused eyes, and angular simplified drawing remain visible; soft two-step shading recurs, while vertical-heroic framing and textile echoes remain weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered floral borders and broad painterly grayscale remain distinctive, with only modest facial-age variation."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered grayscale drawing remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered grayscale drawing and particle drift remain clear, with only modest particle-density variation."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; textile pattern is visible in two seeds but disappears in seed 3003, alongside moderate face and tone variation."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and floral garment marks recur, while foreground layering remains weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop recurs, while geometric insets are absent and foreground layering remains weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and sparse particles recur, while particle density and foreground layering vary."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and tonal textile contrast recur, while foreground layering remains weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing and floral marks appear in two seeds, while the third seed becomes plain."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing remains stable, while particle drift appears mainly in seed 2002."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; off-center intent weakens toward centered portraits, and the requested textile echo is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and floral garments recur in two seeds, while seed 3003 is largely plain."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation remains stable, while only seed 3003 shows faint particle drift."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation remains stable, while textile echoes are absent and seed 2002 shifts skin tone."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; crisp graphic grayscale and vertical framing remain stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; crisp graphic grayscale and vertical framing remain stable, with sparse particles strongest in seed 2002."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered floral frames and soft two-step grayscale remain strong and stable across all seeds."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered soft two-step grayscale remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered soft two-step grayscale remains stable, while the requested particle drift is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered soft two-step grayscale remains stable, while textile pattern is only faintly visible in seed 2002."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and soft two-step grayscale recur, while floral tracing and foreground layering remain weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and soft two-step grayscale recur, while geometric insets and foreground layering remain absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and soft two-step grayscale recur, while sparse particles appear mainly in seed 2002."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and soft two-step grayscale recur, while textile echoes and foreground layering remain absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing recurs, while floral tracing is faint and concentrated in seed 1001."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing remains stable, while particle drift appears mainly in seed 2002."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious intent weakens toward centered portraits, and the requested textile echo is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and soft shading recur, while floral tracing fades substantially in seed 3003."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and soft shading remain stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation, soft shading, and particle drift remain clear across all three seeds."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and soft shading remain stable, while the requested textile echo is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered floral frames and velvety diffuse grayscale remain strong and stable across all seeds."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered velvety grayscale remains stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered velvety grayscale remains stable, while the requested particle drift is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; centered velvety grayscale remains stable, while the requested textile echo is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and velvety grayscale recur, while floral tracing is faint and foreground layering remains weak."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and velvety grayscale recur, while geometric insets and foreground layering remain absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and velvety grayscale recur, while particle drift and foreground layering remain absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; an intimate crop and velvety grayscale recur, while textile echoes are absent and seed 2002 shifts skin tone."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing and velvety grayscale recur, while floral detail fades in seed 3003."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing and velvety grayscale remain stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing and velvety grayscale remain stable, while the requested particle drift is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; spacious off-center framing and velvety grayscale remain stable, while the requested textile echo is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and velvety grayscale recur, while floral detail is strongest in seed 1001."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and velvety grayscale remain stable, while the requested geometric inset is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and velvety grayscale remain stable, while the requested particle drift is absent."
+  artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "Across three seeds, crisp measured contours, tapered adult faces, deep almond eyes, compact grounded proportions, and monochrome rendering remain visible; a vertical presentation and velvety grayscale remain stable, while the requested textile echo is absent."

@@ -1,0 +1,1548 @@
+schema_version: 1
+review_id: artist_signature_screen_v0_8_2_part_b
+reviewer_scope:
+- prompt_matrix_visual_signature_011.png
+- prompt_matrix_visual_signature_012.png
+- prompt_matrix_visual_signature_013.png
+- prompt_matrix_visual_signature_014.png
+- prompt_matrix_visual_signature_015.png
+- prompt_matrix_visual_signature_016.png
+- prompt_matrix_visual_signature_017.png
+- prompt_matrix_visual_signature_018.png
+- prompt_matrix_visual_signature_019.png
+- prompt_matrix_visual_signature_020.png
+styles:
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; floral accents are visible but vary in density across
+      seeds, the centered face-to-hands hierarchy is stable, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; geometric garment insets are visible across the set,
+      the centered face-to-hands hierarchy is stable, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; sparse particles remain visible across the set, the
+      centered face-to-hands hierarchy is stable, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; textile patterning is clearly visible across the
+      set, the centered face-to-hands hierarchy is stable, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; floral accents are visible but vary in density across
+      seeds, the requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested precise geometric insets are not clearly
+      established, the requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; sparse particles remain visible across the set, the
+      requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested textile echo is not clearly established,
+      the requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; floral accents are visible but vary in density across
+      seeds, the requested spacious asymmetry remains weak, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested precise geometric insets are not clearly
+      established, the requested spacious asymmetry remains weak, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; particles appear sparsely in only one or two seeds,
+      the requested spacious asymmetry remains weak, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested textile echo is not clearly established,
+      the requested spacious asymmetry remains weak, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; floral accents are visible but vary in density across
+      seeds, the upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested precise geometric insets are not clearly
+      established, the upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains
+      weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; sparse particles remain visible across the set, the
+      upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and broad painterly value blocks are consistently visible; the requested textile echo is not clearly established,
+      the upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; floral accents are visible but vary in
+      density across seeds, the requested layered foreground depth is not established, while layered iris structure remains
+      weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; the requested precise geometric insets
+      are not clearly established, the requested layered foreground depth is not established, while layered iris structure
+      remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; particles appear sparsely in only one
+      or two seeds, the requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; the requested textile echo is not clearly
+      established, the requested layered foreground depth is not established, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; the requested precise geometric insets
+      are not clearly established, the requested spacious asymmetry remains weak, while layered iris structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; floral accents are visible but vary in
+      density across seeds, the upright crop is stable but the low heroic anchor is only partial, while layered iris structure
+      remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; the requested precise geometric insets
+      are not clearly established, the upright crop is stable but the low heroic anchor is only partial, while layered iris
+      structure remains weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; particles appear sparsely in only one
+      or two seeds, the upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains
+      weak.
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, dry-edged contours, angular planar faces, broad builds, and the terracotta-olive palette remain
+      stable, and the requested luminous glazing remains close to flat value blocks; the requested textile echo is not clearly
+      established, the upright crop is stable but the low heroic anchor is only partial, while layered iris structure remains
+      weak.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; floral accents are visible but vary in density across seeds,
+      the requested layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; a geometric inset is only weakly suggested in one seed, the
+      requested layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; particles appear sparsely in only one or two seeds, the requested
+      layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; the requested textile echo is not clearly established, the requested
+      layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; the requested floral traces are not clearly legible, the requested
+      spacious asymmetry remains weak, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; floral accents are visible but vary in density across seeds,
+      the upright crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly
+      by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; the requested precise geometric insets are not clearly established,
+      the upright crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly
+      by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; particles appear sparsely in only one or two seeds, the upright
+      crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and soft two-step values remain visible; the requested textile echo is not clearly established, the upright
+      crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; floral accents are visible but vary in density across seeds,
+      the centered face-to-hands hierarchy is stable, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested precise geometric insets are not clearly
+      established, the centered face-to-hands hierarchy is stable, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; particles appear sparsely in only one or two seeds, the
+      centered face-to-hands hierarchy is stable, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; textile patterning appears in only one or two seeds, the
+      centered face-to-hands hierarchy is stable, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; floral accents are visible but vary in density across seeds,
+      the requested layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested precise geometric insets are not clearly
+      established, the requested layered foreground depth is not established, while line weight and facial age vary modestly
+      by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested particle drift is not legible, the requested
+      layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested textile echo is not clearly established,
+      the requested layered foreground depth is not established, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; floral accents are visible but vary in density across seeds,
+      the requested spacious asymmetry remains weak, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested precise geometric insets are not clearly
+      established, the requested spacious asymmetry remains weak, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested particle drift is not legible, the requested
+      spacious asymmetry remains weak, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested textile echo is not clearly established,
+      the requested spacious asymmetry remains weak, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; floral accents are visible but vary in density across seeds,
+      the upright crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly
+      by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested precise geometric insets are not clearly
+      established, the upright crop is stable but the low heroic anchor is only partial, while line weight and facial age
+      vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested particle drift is not legible, the upright
+      crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly by seed.
+  ? artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, dry contours, compact oval faces, almond eyes, narrow balanced builds, and the terracotta palette
+      remain stable, and diffuse velvety modeling remains visible; the requested textile echo is not clearly established,
+      the upright crop is stable but the low heroic anchor is only partial, while line weight and facial age vary modestly
+      by seed.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; floral accents are visible but vary in density
+      across seeds, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; the requested precise geometric insets are not
+      clearly established, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; particles appear sparsely in only one or two
+      seeds, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; textile patterning is clearly visible across
+      the set, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; floral accents are visible but vary in density
+      across seeds, the requested layered foreground depth is not established, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and painterly color fields are inconsistent and often flatten into simple cel blocks; the requested
+      precise geometric insets are not clearly established, the requested layered foreground depth is not established, while
+      the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and painterly color fields are inconsistent and often flatten into simple cel blocks; the requested
+      particle drift is not legible, the requested layered foreground depth is not established, while the requested radial
+      iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; textile patterning is clearly visible across
+      the set, the requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; floral accents are visible but vary in density
+      across seeds, the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and painterly color fields are inconsistent and often flatten into simple cel blocks; the requested
+      precise geometric insets are not clearly established, the requested spacious asymmetry remains weak, while the requested
+      radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and painterly color fields are inconsistent and often flatten into simple cel blocks; the requested
+      particle drift is not legible, the requested spacious asymmetry remains weak, while the requested radial iris detail
+      remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and broad painterly color fields remain visible; textile patterning appears in only one or two
+      seeds, the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density
+      across seeds, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not
+      clearly established, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested particle drift is not legible, the
+      centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; textile patterning appears in only one or two seeds,
+      the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density
+      across seeds, the requested layered foreground depth is not established, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not
+      clearly established, the requested layered foreground depth is not established, while the requested radial iris detail
+      remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested particle drift is not legible, the
+      requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested textile echo is not clearly established,
+      the requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density
+      across seeds, the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not
+      clearly established, the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested particle drift is not legible, the
+      requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; textile patterning appears in only one or two seeds,
+      the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, narrow balanced builds, and the indigo-cyan-magenta
+      palette remain stable, and crisp graphic color blocks remain stable; the requested floral traces are not clearly legible,
+      the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density across seeds,
+      the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not clearly
+      established, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; particles appear sparsely in only one or two seeds, the
+      centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested textile echo is not clearly established,
+      the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested floral traces are not clearly legible, the
+      requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not clearly
+      established, the requested layered foreground depth is not established, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; particles appear sparsely in only one or two seeds, the
+      requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested textile echo is not clearly established,
+      the requested layered foreground depth is not established, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density across seeds,
+      the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not clearly
+      established, the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; particles appear sparsely in only one or two seeds, the
+      requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested textile echo is not clearly established,
+      the requested spacious asymmetry remains weak, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; floral accents are visible but vary in density across seeds,
+      the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested precise geometric insets are not clearly
+      established, the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris detail
+      remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; particles appear sparsely in only one or two seeds, the
+      upright crop is stable but the low heroic anchor is only partial, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and crisp graphic color blocks remain stable; the requested textile echo is not clearly established,
+      the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; floral accents are visible but vary in
+      density across seeds, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and luminous glazing is inconsistent and often resolves as flat color; the requested precise geometric
+      insets are not clearly established, the centered face-to-hands hierarchy is stable, while the requested radial iris
+      detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; particles appear sparsely in only one
+      or two seeds, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; textile patterning is clearly visible
+      across the set, the centered face-to-hands hierarchy is stable, while the requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; floral accents are visible but vary in
+      density across seeds, the requested spacious asymmetry remains weak, while the requested radial iris detail remains
+      weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; floral accents are visible but vary in
+      density across seeds, the upright crop is stable but the low heroic anchor is only partial, while the requested radial
+      iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and luminous glazing is inconsistent and often resolves as flat color; the requested precise geometric
+      insets are not clearly established, the upright crop is stable but the low heroic anchor is only partial, while the
+      requested radial iris detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: rejected
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and luminous glazing is inconsistent and often resolves as flat color; particles appear sparsely in only
+      one or two seeds, the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris
+      detail remains weak.
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Across three seeds, fine tapered outlines, compact oval faces, grounded builds, and the indigo-cyan-magenta palette
+      remain stable, and glazed surface color and reflected accents remain visible; textile patterning appears in only one
+      or two seeds, the upright crop is stable but the low heroic anchor is only partial, while the requested radial iris
+      detail remains weak.
