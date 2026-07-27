@@ -1,0 +1,3178 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/artist_visual_signature_retest_v0_8_8.jsonl",
+  "matrix_sha256": "a88015e81b0875410c0bffe807e11987d887175f41cbf57b7816e983a2fea584",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 450,
+  "completed_count": 450,
+  "style_count": 225,
+  "modes": {
+    "visual_signature": 450
+  },
+  "seeds": [
+    4004,
+    5005
+  ],
+  "scorecard": "tests/reports/artist_signature_retest_v0_8_8/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "VSRT000001",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000001/run.json"
+    },
+    {
+      "test_id": "VSRT000002",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000002/run.json"
+    },
+    {
+      "test_id": "VSRT000003",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000003/run.json"
+    },
+    {
+      "test_id": "VSRT000004",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000004/run.json"
+    },
+    {
+      "test_id": "VSRT000005",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000005/run.json"
+    },
+    {
+      "test_id": "VSRT000006",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000006/run.json"
+    },
+    {
+      "test_id": "VSRT000007",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000007/run.json"
+    },
+    {
+      "test_id": "VSRT000008",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000008/run.json"
+    },
+    {
+      "test_id": "VSRT000009",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000009/run.json"
+    },
+    {
+      "test_id": "VSRT000010",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000010/run.json"
+    },
+    {
+      "test_id": "VSRT000011",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000011/run.json"
+    },
+    {
+      "test_id": "VSRT000012",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000012/run.json"
+    },
+    {
+      "test_id": "VSRT000013",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000013/run.json"
+    },
+    {
+      "test_id": "VSRT000014",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000014/run.json"
+    },
+    {
+      "test_id": "VSRT000015",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000015/run.json"
+    },
+    {
+      "test_id": "VSRT000016",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000016/run.json"
+    },
+    {
+      "test_id": "VSRT000017",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000017/run.json"
+    },
+    {
+      "test_id": "VSRT000018",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000018/run.json"
+    },
+    {
+      "test_id": "VSRT000019",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000019/run.json"
+    },
+    {
+      "test_id": "VSRT000020",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000020/run.json"
+    },
+    {
+      "test_id": "VSRT000021",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000021/run.json"
+    },
+    {
+      "test_id": "VSRT000022",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000022/run.json"
+    },
+    {
+      "test_id": "VSRT000023",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000023/run.json"
+    },
+    {
+      "test_id": "VSRT000024",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000024/run.json"
+    },
+    {
+      "test_id": "VSRT000025",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000025/run.json"
+    },
+    {
+      "test_id": "VSRT000026",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000026/run.json"
+    },
+    {
+      "test_id": "VSRT000027",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000027/run.json"
+    },
+    {
+      "test_id": "VSRT000028",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000028/run.json"
+    },
+    {
+      "test_id": "VSRT000029",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000029/run.json"
+    },
+    {
+      "test_id": "VSRT000030",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000030/run.json"
+    },
+    {
+      "test_id": "VSRT000031",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000031/run.json"
+    },
+    {
+      "test_id": "VSRT000032",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000032/run.json"
+    },
+    {
+      "test_id": "VSRT000033",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000033/run.json"
+    },
+    {
+      "test_id": "VSRT000034",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000034/run.json"
+    },
+    {
+      "test_id": "VSRT000035",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000035/run.json"
+    },
+    {
+      "test_id": "VSRT000036",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000036/run.json"
+    },
+    {
+      "test_id": "VSRT000037",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000037/run.json"
+    },
+    {
+      "test_id": "VSRT000038",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000038/run.json"
+    },
+    {
+      "test_id": "VSRT000039",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000039/run.json"
+    },
+    {
+      "test_id": "VSRT000040",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000040/run.json"
+    },
+    {
+      "test_id": "VSRT000041",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000041/run.json"
+    },
+    {
+      "test_id": "VSRT000042",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000042/run.json"
+    },
+    {
+      "test_id": "VSRT000043",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000043/run.json"
+    },
+    {
+      "test_id": "VSRT000044",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000044/run.json"
+    },
+    {
+      "test_id": "VSRT000045",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000045/run.json"
+    },
+    {
+      "test_id": "VSRT000046",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000046/run.json"
+    },
+    {
+      "test_id": "VSRT000047",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000047/run.json"
+    },
+    {
+      "test_id": "VSRT000048",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000048/run.json"
+    },
+    {
+      "test_id": "VSRT000049",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000049/run.json"
+    },
+    {
+      "test_id": "VSRT000050",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000050/run.json"
+    },
+    {
+      "test_id": "VSRT000051",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000051/run.json"
+    },
+    {
+      "test_id": "VSRT000052",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000052/run.json"
+    },
+    {
+      "test_id": "VSRT000053",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000053/run.json"
+    },
+    {
+      "test_id": "VSRT000054",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000054/run.json"
+    },
+    {
+      "test_id": "VSRT000055",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000055/run.json"
+    },
+    {
+      "test_id": "VSRT000056",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000056/run.json"
+    },
+    {
+      "test_id": "VSRT000057",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000057/run.json"
+    },
+    {
+      "test_id": "VSRT000058",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000058/run.json"
+    },
+    {
+      "test_id": "VSRT000059",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000059/run.json"
+    },
+    {
+      "test_id": "VSRT000060",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000060/run.json"
+    },
+    {
+      "test_id": "VSRT000061",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000061/run.json"
+    },
+    {
+      "test_id": "VSRT000062",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000062/run.json"
+    },
+    {
+      "test_id": "VSRT000063",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000063/run.json"
+    },
+    {
+      "test_id": "VSRT000064",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000064/run.json"
+    },
+    {
+      "test_id": "VSRT000065",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000065/run.json"
+    },
+    {
+      "test_id": "VSRT000066",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000066/run.json"
+    },
+    {
+      "test_id": "VSRT000067",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000067/run.json"
+    },
+    {
+      "test_id": "VSRT000068",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000068/run.json"
+    },
+    {
+      "test_id": "VSRT000069",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000069/run.json"
+    },
+    {
+      "test_id": "VSRT000070",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000070/run.json"
+    },
+    {
+      "test_id": "VSRT000071",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000071/run.json"
+    },
+    {
+      "test_id": "VSRT000072",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000072/run.json"
+    },
+    {
+      "test_id": "VSRT000073",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000073/run.json"
+    },
+    {
+      "test_id": "VSRT000074",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000074/run.json"
+    },
+    {
+      "test_id": "VSRT000075",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000075/run.json"
+    },
+    {
+      "test_id": "VSRT000076",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000076/run.json"
+    },
+    {
+      "test_id": "VSRT000077",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000077/run.json"
+    },
+    {
+      "test_id": "VSRT000078",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000078/run.json"
+    },
+    {
+      "test_id": "VSRT000079",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000079/run.json"
+    },
+    {
+      "test_id": "VSRT000080",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000080/run.json"
+    },
+    {
+      "test_id": "VSRT000081",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000081/run.json"
+    },
+    {
+      "test_id": "VSRT000082",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000082/run.json"
+    },
+    {
+      "test_id": "VSRT000083",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000083/run.json"
+    },
+    {
+      "test_id": "VSRT000084",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000084/run.json"
+    },
+    {
+      "test_id": "VSRT000085",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000085/run.json"
+    },
+    {
+      "test_id": "VSRT000086",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000086/run.json"
+    },
+    {
+      "test_id": "VSRT000087",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000087/run.json"
+    },
+    {
+      "test_id": "VSRT000088",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000088/run.json"
+    },
+    {
+      "test_id": "VSRT000089",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000089/run.json"
+    },
+    {
+      "test_id": "VSRT000090",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000090/run.json"
+    },
+    {
+      "test_id": "VSRT000091",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000091/run.json"
+    },
+    {
+      "test_id": "VSRT000092",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000092/run.json"
+    },
+    {
+      "test_id": "VSRT000093",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000093/run.json"
+    },
+    {
+      "test_id": "VSRT000094",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000094/run.json"
+    },
+    {
+      "test_id": "VSRT000095",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000095/run.json"
+    },
+    {
+      "test_id": "VSRT000096",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000096/run.json"
+    },
+    {
+      "test_id": "VSRT000097",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000097/run.json"
+    },
+    {
+      "test_id": "VSRT000098",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000098/run.json"
+    },
+    {
+      "test_id": "VSRT000099",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000099/run.json"
+    },
+    {
+      "test_id": "VSRT000100",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000100/run.json"
+    },
+    {
+      "test_id": "VSRT000101",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000101/run.json"
+    },
+    {
+      "test_id": "VSRT000102",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000102/run.json"
+    },
+    {
+      "test_id": "VSRT000103",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000103/run.json"
+    },
+    {
+      "test_id": "VSRT000104",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000104/run.json"
+    },
+    {
+      "test_id": "VSRT000105",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000105/run.json"
+    },
+    {
+      "test_id": "VSRT000106",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000106/run.json"
+    },
+    {
+      "test_id": "VSRT000107",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000107/run.json"
+    },
+    {
+      "test_id": "VSRT000108",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000108/run.json"
+    },
+    {
+      "test_id": "VSRT000109",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000109/run.json"
+    },
+    {
+      "test_id": "VSRT000110",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_crisp_graphic_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000110/run.json"
+    },
+    {
+      "test_id": "VSRT000111",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000111/run.json"
+    },
+    {
+      "test_id": "VSRT000112",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000112/run.json"
+    },
+    {
+      "test_id": "VSRT000113",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000113/run.json"
+    },
+    {
+      "test_id": "VSRT000114",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000114/run.json"
+    },
+    {
+      "test_id": "VSRT000115",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000115/run.json"
+    },
+    {
+      "test_id": "VSRT000116",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000116/run.json"
+    },
+    {
+      "test_id": "VSRT000117",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000117/run.json"
+    },
+    {
+      "test_id": "VSRT000118",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000118/run.json"
+    },
+    {
+      "test_id": "VSRT000119",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000119/run.json"
+    },
+    {
+      "test_id": "VSRT000120",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000120/run.json"
+    },
+    {
+      "test_id": "VSRT000121",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000121/run.json"
+    },
+    {
+      "test_id": "VSRT000122",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000122/run.json"
+    },
+    {
+      "test_id": "VSRT000123",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000123/run.json"
+    },
+    {
+      "test_id": "VSRT000124",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000124/run.json"
+    },
+    {
+      "test_id": "VSRT000125",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000125/run.json"
+    },
+    {
+      "test_id": "VSRT000126",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000126/run.json"
+    },
+    {
+      "test_id": "VSRT000127",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000127/run.json"
+    },
+    {
+      "test_id": "VSRT000128",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000128/run.json"
+    },
+    {
+      "test_id": "VSRT000129",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000129/run.json"
+    },
+    {
+      "test_id": "VSRT000130",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000130/run.json"
+    },
+    {
+      "test_id": "VSRT000131",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000131/run.json"
+    },
+    {
+      "test_id": "VSRT000132",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000132/run.json"
+    },
+    {
+      "test_id": "VSRT000133",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000133/run.json"
+    },
+    {
+      "test_id": "VSRT000134",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000134/run.json"
+    },
+    {
+      "test_id": "VSRT000135",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000135/run.json"
+    },
+    {
+      "test_id": "VSRT000136",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000136/run.json"
+    },
+    {
+      "test_id": "VSRT000137",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000137/run.json"
+    },
+    {
+      "test_id": "VSRT000138",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000138/run.json"
+    },
+    {
+      "test_id": "VSRT000139",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000139/run.json"
+    },
+    {
+      "test_id": "VSRT000140",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000140/run.json"
+    },
+    {
+      "test_id": "VSRT000141",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000141/run.json"
+    },
+    {
+      "test_id": "VSRT000142",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000142/run.json"
+    },
+    {
+      "test_id": "VSRT000143",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000143/run.json"
+    },
+    {
+      "test_id": "VSRT000144",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000144/run.json"
+    },
+    {
+      "test_id": "VSRT000145",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000145/run.json"
+    },
+    {
+      "test_id": "VSRT000146",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000146/run.json"
+    },
+    {
+      "test_id": "VSRT000147",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000147/run.json"
+    },
+    {
+      "test_id": "VSRT000148",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000148/run.json"
+    },
+    {
+      "test_id": "VSRT000149",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000149/run.json"
+    },
+    {
+      "test_id": "VSRT000150",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000150/run.json"
+    },
+    {
+      "test_id": "VSRT000151",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000151/run.json"
+    },
+    {
+      "test_id": "VSRT000152",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000152/run.json"
+    },
+    {
+      "test_id": "VSRT000153",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000153/run.json"
+    },
+    {
+      "test_id": "VSRT000154",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000154/run.json"
+    },
+    {
+      "test_id": "VSRT000155",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000155/run.json"
+    },
+    {
+      "test_id": "VSRT000156",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000156/run.json"
+    },
+    {
+      "test_id": "VSRT000157",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000157/run.json"
+    },
+    {
+      "test_id": "VSRT000158",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000158/run.json"
+    },
+    {
+      "test_id": "VSRT000159",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000159/run.json"
+    },
+    {
+      "test_id": "VSRT000160",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000160/run.json"
+    },
+    {
+      "test_id": "VSRT000161",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000161/run.json"
+    },
+    {
+      "test_id": "VSRT000162",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000162/run.json"
+    },
+    {
+      "test_id": "VSRT000163",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000163/run.json"
+    },
+    {
+      "test_id": "VSRT000164",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000164/run.json"
+    },
+    {
+      "test_id": "VSRT000165",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000165/run.json"
+    },
+    {
+      "test_id": "VSRT000166",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000166/run.json"
+    },
+    {
+      "test_id": "VSRT000167",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000167/run.json"
+    },
+    {
+      "test_id": "VSRT000168",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000168/run.json"
+    },
+    {
+      "test_id": "VSRT000169",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000169/run.json"
+    },
+    {
+      "test_id": "VSRT000170",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000170/run.json"
+    },
+    {
+      "test_id": "VSRT000171",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000171/run.json"
+    },
+    {
+      "test_id": "VSRT000172",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000172/run.json"
+    },
+    {
+      "test_id": "VSRT000173",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000173/run.json"
+    },
+    {
+      "test_id": "VSRT000174",
+      "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000174/run.json"
+    },
+    {
+      "test_id": "VSRT000175",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000175/run.json"
+    },
+    {
+      "test_id": "VSRT000176",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000176/run.json"
+    },
+    {
+      "test_id": "VSRT000177",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000177/run.json"
+    },
+    {
+      "test_id": "VSRT000178",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000178/run.json"
+    },
+    {
+      "test_id": "VSRT000179",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000179/run.json"
+    },
+    {
+      "test_id": "VSRT000180",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000180/run.json"
+    },
+    {
+      "test_id": "VSRT000181",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000181/run.json"
+    },
+    {
+      "test_id": "VSRT000182",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000182/run.json"
+    },
+    {
+      "test_id": "VSRT000183",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000183/run.json"
+    },
+    {
+      "test_id": "VSRT000184",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000184/run.json"
+    },
+    {
+      "test_id": "VSRT000185",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000185/run.json"
+    },
+    {
+      "test_id": "VSRT000186",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000186/run.json"
+    },
+    {
+      "test_id": "VSRT000187",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000187/run.json"
+    },
+    {
+      "test_id": "VSRT000188",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000188/run.json"
+    },
+    {
+      "test_id": "VSRT000189",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000189/run.json"
+    },
+    {
+      "test_id": "VSRT000190",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000190/run.json"
+    },
+    {
+      "test_id": "VSRT000191",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000191/run.json"
+    },
+    {
+      "test_id": "VSRT000192",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000192/run.json"
+    },
+    {
+      "test_id": "VSRT000193",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000193/run.json"
+    },
+    {
+      "test_id": "VSRT000194",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000194/run.json"
+    },
+    {
+      "test_id": "VSRT000195",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000195/run.json"
+    },
+    {
+      "test_id": "VSRT000196",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000196/run.json"
+    },
+    {
+      "test_id": "VSRT000197",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000197/run.json"
+    },
+    {
+      "test_id": "VSRT000198",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000198/run.json"
+    },
+    {
+      "test_id": "VSRT000199",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000199/run.json"
+    },
+    {
+      "test_id": "VSRT000200",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000200/run.json"
+    },
+    {
+      "test_id": "VSRT000201",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000201/run.json"
+    },
+    {
+      "test_id": "VSRT000202",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000202/run.json"
+    },
+    {
+      "test_id": "VSRT000203",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000203/run.json"
+    },
+    {
+      "test_id": "VSRT000204",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000204/run.json"
+    },
+    {
+      "test_id": "VSRT000205",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000205/run.json"
+    },
+    {
+      "test_id": "VSRT000206",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000206/run.json"
+    },
+    {
+      "test_id": "VSRT000207",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000207/run.json"
+    },
+    {
+      "test_id": "VSRT000208",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000208/run.json"
+    },
+    {
+      "test_id": "VSRT000209",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000209/run.json"
+    },
+    {
+      "test_id": "VSRT000210",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000210/run.json"
+    },
+    {
+      "test_id": "VSRT000211",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000211/run.json"
+    },
+    {
+      "test_id": "VSRT000212",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000212/run.json"
+    },
+    {
+      "test_id": "VSRT000213",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000213/run.json"
+    },
+    {
+      "test_id": "VSRT000214",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000214/run.json"
+    },
+    {
+      "test_id": "VSRT000215",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000215/run.json"
+    },
+    {
+      "test_id": "VSRT000216",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000216/run.json"
+    },
+    {
+      "test_id": "VSRT000217",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000217/run.json"
+    },
+    {
+      "test_id": "VSRT000218",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000218/run.json"
+    },
+    {
+      "test_id": "VSRT000219",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000219/run.json"
+    },
+    {
+      "test_id": "VSRT000220",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000220/run.json"
+    },
+    {
+      "test_id": "VSRT000221",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000221/run.json"
+    },
+    {
+      "test_id": "VSRT000222",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000222/run.json"
+    },
+    {
+      "test_id": "VSRT000223",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000223/run.json"
+    },
+    {
+      "test_id": "VSRT000224",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000224/run.json"
+    },
+    {
+      "test_id": "VSRT000225",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000225/run.json"
+    },
+    {
+      "test_id": "VSRT000226",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000226/run.json"
+    },
+    {
+      "test_id": "VSRT000227",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000227/run.json"
+    },
+    {
+      "test_id": "VSRT000228",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000228/run.json"
+    },
+    {
+      "test_id": "VSRT000229",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000229/run.json"
+    },
+    {
+      "test_id": "VSRT000230",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000230/run.json"
+    },
+    {
+      "test_id": "VSRT000231",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000231/run.json"
+    },
+    {
+      "test_id": "VSRT000232",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000232/run.json"
+    },
+    {
+      "test_id": "VSRT000233",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000233/run.json"
+    },
+    {
+      "test_id": "VSRT000234",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000234/run.json"
+    },
+    {
+      "test_id": "VSRT000235",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000235/run.json"
+    },
+    {
+      "test_id": "VSRT000236",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000236/run.json"
+    },
+    {
+      "test_id": "VSRT000237",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000237/run.json"
+    },
+    {
+      "test_id": "VSRT000238",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000238/run.json"
+    },
+    {
+      "test_id": "VSRT000239",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000239/run.json"
+    },
+    {
+      "test_id": "VSRT000240",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000240/run.json"
+    },
+    {
+      "test_id": "VSRT000241",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000241/run.json"
+    },
+    {
+      "test_id": "VSRT000242",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000242/run.json"
+    },
+    {
+      "test_id": "VSRT000243",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000243/run.json"
+    },
+    {
+      "test_id": "VSRT000244",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000244/run.json"
+    },
+    {
+      "test_id": "VSRT000245",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000245/run.json"
+    },
+    {
+      "test_id": "VSRT000246",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000246/run.json"
+    },
+    {
+      "test_id": "VSRT000247",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000247/run.json"
+    },
+    {
+      "test_id": "VSRT000248",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000248/run.json"
+    },
+    {
+      "test_id": "VSRT000249",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000249/run.json"
+    },
+    {
+      "test_id": "VSRT000250",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000250/run.json"
+    },
+    {
+      "test_id": "VSRT000251",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000251/run.json"
+    },
+    {
+      "test_id": "VSRT000252",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000252/run.json"
+    },
+    {
+      "test_id": "VSRT000253",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000253/run.json"
+    },
+    {
+      "test_id": "VSRT000254",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000254/run.json"
+    },
+    {
+      "test_id": "VSRT000255",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000255/run.json"
+    },
+    {
+      "test_id": "VSRT000256",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000256/run.json"
+    },
+    {
+      "test_id": "VSRT000257",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000257/run.json"
+    },
+    {
+      "test_id": "VSRT000258",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000258/run.json"
+    },
+    {
+      "test_id": "VSRT000259",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000259/run.json"
+    },
+    {
+      "test_id": "VSRT000260",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000260/run.json"
+    },
+    {
+      "test_id": "VSRT000261",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000261/run.json"
+    },
+    {
+      "test_id": "VSRT000262",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000262/run.json"
+    },
+    {
+      "test_id": "VSRT000263",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000263/run.json"
+    },
+    {
+      "test_id": "VSRT000264",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000264/run.json"
+    },
+    {
+      "test_id": "VSRT000265",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000265/run.json"
+    },
+    {
+      "test_id": "VSRT000266",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000266/run.json"
+    },
+    {
+      "test_id": "VSRT000267",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000267/run.json"
+    },
+    {
+      "test_id": "VSRT000268",
+      "style_id": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000268/run.json"
+    },
+    {
+      "test_id": "VSRT000269",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000269/run.json"
+    },
+    {
+      "test_id": "VSRT000270",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000270/run.json"
+    },
+    {
+      "test_id": "VSRT000271",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000271/run.json"
+    },
+    {
+      "test_id": "VSRT000272",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000272/run.json"
+    },
+    {
+      "test_id": "VSRT000273",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000273/run.json"
+    },
+    {
+      "test_id": "VSRT000274",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000274/run.json"
+    },
+    {
+      "test_id": "VSRT000275",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000275/run.json"
+    },
+    {
+      "test_id": "VSRT000276",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000276/run.json"
+    },
+    {
+      "test_id": "VSRT000277",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000277/run.json"
+    },
+    {
+      "test_id": "VSRT000278",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000278/run.json"
+    },
+    {
+      "test_id": "VSRT000279",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000279/run.json"
+    },
+    {
+      "test_id": "VSRT000280",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000280/run.json"
+    },
+    {
+      "test_id": "VSRT000281",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000281/run.json"
+    },
+    {
+      "test_id": "VSRT000282",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000282/run.json"
+    },
+    {
+      "test_id": "VSRT000283",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000283/run.json"
+    },
+    {
+      "test_id": "VSRT000284",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000284/run.json"
+    },
+    {
+      "test_id": "VSRT000285",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000285/run.json"
+    },
+    {
+      "test_id": "VSRT000286",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000286/run.json"
+    },
+    {
+      "test_id": "VSRT000287",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000287/run.json"
+    },
+    {
+      "test_id": "VSRT000288",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000288/run.json"
+    },
+    {
+      "test_id": "VSRT000289",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000289/run.json"
+    },
+    {
+      "test_id": "VSRT000290",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000290/run.json"
+    },
+    {
+      "test_id": "VSRT000291",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000291/run.json"
+    },
+    {
+      "test_id": "VSRT000292",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000292/run.json"
+    },
+    {
+      "test_id": "VSRT000293",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000293/run.json"
+    },
+    {
+      "test_id": "VSRT000294",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000294/run.json"
+    },
+    {
+      "test_id": "VSRT000295",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000295/run.json"
+    },
+    {
+      "test_id": "VSRT000296",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000296/run.json"
+    },
+    {
+      "test_id": "VSRT000297",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000297/run.json"
+    },
+    {
+      "test_id": "VSRT000298",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000298/run.json"
+    },
+    {
+      "test_id": "VSRT000299",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000299/run.json"
+    },
+    {
+      "test_id": "VSRT000300",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000300/run.json"
+    },
+    {
+      "test_id": "VSRT000301",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000301/run.json"
+    },
+    {
+      "test_id": "VSRT000302",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000302/run.json"
+    },
+    {
+      "test_id": "VSRT000303",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000303/run.json"
+    },
+    {
+      "test_id": "VSRT000304",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000304/run.json"
+    },
+    {
+      "test_id": "VSRT000305",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000305/run.json"
+    },
+    {
+      "test_id": "VSRT000306",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000306/run.json"
+    },
+    {
+      "test_id": "VSRT000307",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000307/run.json"
+    },
+    {
+      "test_id": "VSRT000308",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000308/run.json"
+    },
+    {
+      "test_id": "VSRT000309",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000309/run.json"
+    },
+    {
+      "test_id": "VSRT000310",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000310/run.json"
+    },
+    {
+      "test_id": "VSRT000311",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000311/run.json"
+    },
+    {
+      "test_id": "VSRT000312",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000312/run.json"
+    },
+    {
+      "test_id": "VSRT000313",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000313/run.json"
+    },
+    {
+      "test_id": "VSRT000314",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000314/run.json"
+    },
+    {
+      "test_id": "VSRT000315",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000315/run.json"
+    },
+    {
+      "test_id": "VSRT000316",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000316/run.json"
+    },
+    {
+      "test_id": "VSRT000317",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000317/run.json"
+    },
+    {
+      "test_id": "VSRT000318",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000318/run.json"
+    },
+    {
+      "test_id": "VSRT000319",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000319/run.json"
+    },
+    {
+      "test_id": "VSRT000320",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000320/run.json"
+    },
+    {
+      "test_id": "VSRT000321",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000321/run.json"
+    },
+    {
+      "test_id": "VSRT000322",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000322/run.json"
+    },
+    {
+      "test_id": "VSRT000323",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000323/run.json"
+    },
+    {
+      "test_id": "VSRT000324",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000324/run.json"
+    },
+    {
+      "test_id": "VSRT000325",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000325/run.json"
+    },
+    {
+      "test_id": "VSRT000326",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000326/run.json"
+    },
+    {
+      "test_id": "VSRT000327",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000327/run.json"
+    },
+    {
+      "test_id": "VSRT000328",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000328/run.json"
+    },
+    {
+      "test_id": "VSRT000329",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000329/run.json"
+    },
+    {
+      "test_id": "VSRT000330",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000330/run.json"
+    },
+    {
+      "test_id": "VSRT000331",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000331/run.json"
+    },
+    {
+      "test_id": "VSRT000332",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000332/run.json"
+    },
+    {
+      "test_id": "VSRT000333",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000333/run.json"
+    },
+    {
+      "test_id": "VSRT000334",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000334/run.json"
+    },
+    {
+      "test_id": "VSRT000335",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000335/run.json"
+    },
+    {
+      "test_id": "VSRT000336",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000336/run.json"
+    },
+    {
+      "test_id": "VSRT000337",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000337/run.json"
+    },
+    {
+      "test_id": "VSRT000338",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000338/run.json"
+    },
+    {
+      "test_id": "VSRT000339",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000339/run.json"
+    },
+    {
+      "test_id": "VSRT000340",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000340/run.json"
+    },
+    {
+      "test_id": "VSRT000341",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000341/run.json"
+    },
+    {
+      "test_id": "VSRT000342",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000342/run.json"
+    },
+    {
+      "test_id": "VSRT000343",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000343/run.json"
+    },
+    {
+      "test_id": "VSRT000344",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000344/run.json"
+    },
+    {
+      "test_id": "VSRT000345",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000345/run.json"
+    },
+    {
+      "test_id": "VSRT000346",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_deep_jewel_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000346/run.json"
+    },
+    {
+      "test_id": "VSRT000347",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000347/run.json"
+    },
+    {
+      "test_id": "VSRT000348",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000348/run.json"
+    },
+    {
+      "test_id": "VSRT000349",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000349/run.json"
+    },
+    {
+      "test_id": "VSRT000350",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000350/run.json"
+    },
+    {
+      "test_id": "VSRT000351",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000351/run.json"
+    },
+    {
+      "test_id": "VSRT000352",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000352/run.json"
+    },
+    {
+      "test_id": "VSRT000353",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000353/run.json"
+    },
+    {
+      "test_id": "VSRT000354",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000354/run.json"
+    },
+    {
+      "test_id": "VSRT000355",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000355/run.json"
+    },
+    {
+      "test_id": "VSRT000356",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000356/run.json"
+    },
+    {
+      "test_id": "VSRT000357",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000357/run.json"
+    },
+    {
+      "test_id": "VSRT000358",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000358/run.json"
+    },
+    {
+      "test_id": "VSRT000359",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000359/run.json"
+    },
+    {
+      "test_id": "VSRT000360",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000360/run.json"
+    },
+    {
+      "test_id": "VSRT000361",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000361/run.json"
+    },
+    {
+      "test_id": "VSRT000362",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000362/run.json"
+    },
+    {
+      "test_id": "VSRT000363",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000363/run.json"
+    },
+    {
+      "test_id": "VSRT000364",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000364/run.json"
+    },
+    {
+      "test_id": "VSRT000365",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000365/run.json"
+    },
+    {
+      "test_id": "VSRT000366",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000366/run.json"
+    },
+    {
+      "test_id": "VSRT000367",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000367/run.json"
+    },
+    {
+      "test_id": "VSRT000368",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000368/run.json"
+    },
+    {
+      "test_id": "VSRT000369",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000369/run.json"
+    },
+    {
+      "test_id": "VSRT000370",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000370/run.json"
+    },
+    {
+      "test_id": "VSRT000371",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000371/run.json"
+    },
+    {
+      "test_id": "VSRT000372",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000372/run.json"
+    },
+    {
+      "test_id": "VSRT000373",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000373/run.json"
+    },
+    {
+      "test_id": "VSRT000374",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000374/run.json"
+    },
+    {
+      "test_id": "VSRT000375",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000375/run.json"
+    },
+    {
+      "test_id": "VSRT000376",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000376/run.json"
+    },
+    {
+      "test_id": "VSRT000377",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000377/run.json"
+    },
+    {
+      "test_id": "VSRT000378",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000378/run.json"
+    },
+    {
+      "test_id": "VSRT000379",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000379/run.json"
+    },
+    {
+      "test_id": "VSRT000380",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000380/run.json"
+    },
+    {
+      "test_id": "VSRT000381",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000381/run.json"
+    },
+    {
+      "test_id": "VSRT000382",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000382/run.json"
+    },
+    {
+      "test_id": "VSRT000383",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000383/run.json"
+    },
+    {
+      "test_id": "VSRT000384",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000384/run.json"
+    },
+    {
+      "test_id": "VSRT000385",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000385/run.json"
+    },
+    {
+      "test_id": "VSRT000386",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000386/run.json"
+    },
+    {
+      "test_id": "VSRT000387",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000387/run.json"
+    },
+    {
+      "test_id": "VSRT000388",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000388/run.json"
+    },
+    {
+      "test_id": "VSRT000389",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000389/run.json"
+    },
+    {
+      "test_id": "VSRT000390",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000390/run.json"
+    },
+    {
+      "test_id": "VSRT000391",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000391/run.json"
+    },
+    {
+      "test_id": "VSRT000392",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000392/run.json"
+    },
+    {
+      "test_id": "VSRT000393",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000393/run.json"
+    },
+    {
+      "test_id": "VSRT000394",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000394/run.json"
+    },
+    {
+      "test_id": "VSRT000395",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000395/run.json"
+    },
+    {
+      "test_id": "VSRT000396",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000396/run.json"
+    },
+    {
+      "test_id": "VSRT000397",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000397/run.json"
+    },
+    {
+      "test_id": "VSRT000398",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000398/run.json"
+    },
+    {
+      "test_id": "VSRT000399",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000399/run.json"
+    },
+    {
+      "test_id": "VSRT000400",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000400/run.json"
+    },
+    {
+      "test_id": "VSRT000401",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000401/run.json"
+    },
+    {
+      "test_id": "VSRT000402",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000402/run.json"
+    },
+    {
+      "test_id": "VSRT000403",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000403/run.json"
+    },
+    {
+      "test_id": "VSRT000404",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000404/run.json"
+    },
+    {
+      "test_id": "VSRT000405",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000405/run.json"
+    },
+    {
+      "test_id": "VSRT000406",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000406/run.json"
+    },
+    {
+      "test_id": "VSRT000407",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000407/run.json"
+    },
+    {
+      "test_id": "VSRT000408",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000408/run.json"
+    },
+    {
+      "test_id": "VSRT000409",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000409/run.json"
+    },
+    {
+      "test_id": "VSRT000410",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000410/run.json"
+    },
+    {
+      "test_id": "VSRT000411",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000411/run.json"
+    },
+    {
+      "test_id": "VSRT000412",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000412/run.json"
+    },
+    {
+      "test_id": "VSRT000413",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000413/run.json"
+    },
+    {
+      "test_id": "VSRT000414",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000414/run.json"
+    },
+    {
+      "test_id": "VSRT000415",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000415/run.json"
+    },
+    {
+      "test_id": "VSRT000416",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000416/run.json"
+    },
+    {
+      "test_id": "VSRT000417",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000417/run.json"
+    },
+    {
+      "test_id": "VSRT000418",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000418/run.json"
+    },
+    {
+      "test_id": "VSRT000419",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000419/run.json"
+    },
+    {
+      "test_id": "VSRT000420",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000420/run.json"
+    },
+    {
+      "test_id": "VSRT000421",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000421/run.json"
+    },
+    {
+      "test_id": "VSRT000422",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000422/run.json"
+    },
+    {
+      "test_id": "VSRT000423",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000423/run.json"
+    },
+    {
+      "test_id": "VSRT000424",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000424/run.json"
+    },
+    {
+      "test_id": "VSRT000425",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000425/run.json"
+    },
+    {
+      "test_id": "VSRT000426",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000426/run.json"
+    },
+    {
+      "test_id": "VSRT000427",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000427/run.json"
+    },
+    {
+      "test_id": "VSRT000428",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000428/run.json"
+    },
+    {
+      "test_id": "VSRT000429",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000429/run.json"
+    },
+    {
+      "test_id": "VSRT000430",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000430/run.json"
+    },
+    {
+      "test_id": "VSRT000431",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000431/run.json"
+    },
+    {
+      "test_id": "VSRT000432",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000432/run.json"
+    },
+    {
+      "test_id": "VSRT000433",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000433/run.json"
+    },
+    {
+      "test_id": "VSRT000434",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000434/run.json"
+    },
+    {
+      "test_id": "VSRT000435",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000435/run.json"
+    },
+    {
+      "test_id": "VSRT000436",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000436/run.json"
+    },
+    {
+      "test_id": "VSRT000437",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000437/run.json"
+    },
+    {
+      "test_id": "VSRT000438",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000438/run.json"
+    },
+    {
+      "test_id": "VSRT000439",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000439/run.json"
+    },
+    {
+      "test_id": "VSRT000440",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000440/run.json"
+    },
+    {
+      "test_id": "VSRT000441",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000441/run.json"
+    },
+    {
+      "test_id": "VSRT000442",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000442/run.json"
+    },
+    {
+      "test_id": "VSRT000443",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000443/run.json"
+    },
+    {
+      "test_id": "VSRT000444",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000444/run.json"
+    },
+    {
+      "test_id": "VSRT000445",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000445/run.json"
+    },
+    {
+      "test_id": "VSRT000446",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000446/run.json"
+    },
+    {
+      "test_id": "VSRT000447",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000447/run.json"
+    },
+    {
+      "test_id": "VSRT000448",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000448/run.json"
+    },
+    {
+      "test_id": "VSRT000449",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 4004,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000449/run.json"
+    },
+    {
+      "test_id": "VSRT000450",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 5005,
+      "run": "tests/reports/artist_signature_retest_v0_8_8/runs/VSRT000450/run.json"
+    }
+  ]
+}

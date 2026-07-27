@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "test_id": "VSRT000100",
+  "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+  "label": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_floral_trace_complete_signature",
+  "mode": "visual_signature",
+  "seed": 5005,
+  "remote": "private_comfyui",
+  "prompt_id": "fd5d2b18-a381-49b9-88a3-b466e2580ecc",
+  "resolved_prompt": "Treat this visual signature as the controlling design brief. Every listed property must be visibly expressed: An adult portrait uses crisp narrow lines with measured corners, a tapered face with high cheekbones, deep-set almond eyes, light lashes, and small catchlights, a grounded figure with sturdy limbs and clear hands, near-monochrome color, a quiet tint, and a pale accent, broad blended value planes and rounded volume, a strong vertical frame with a low visual anchor, and sparse floral traces and quiet border motifs. Create exactly one adult woman as a standing character-design portrait framed from mid-thigh upward at eye level. Keep her face and both eyes large enough to inspect, and show both complete hands clearly near the torso. Give her a simple long-sleeve garment with broad readable surfaces for the requested palette and ornament, against a quiet uncluttered studio ground. These neutral content anchors keep the subject, garment, camera distance, and background content comparable across seeds while the primary visual signature controls silhouette, placement, negative space, light and shadow, and ornament. Make the requested contour character, face geometry, eye construction, body silhouette, local-color palette, shadow-edge treatment, composition, and recurring motifs each unmistakably legible at contact-sheet scale. Finish this as a clearly hand-drawn two-dimensional character-design illustration with coherent illustrated anatomy, readable hands, clean garment shapes, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "21b4f28d022ee552a989a2b9ed0419388cf57e21f7539eb1dd1480306c6bcfc5",
+  "workflow_sha256": "2d06a954695dc29c65ed5de288d1756b4e33814cf0d343bd4f6e6282263bfe18",
+  "factors": {
+    "body_design": "compact_grounded",
+    "eye_design": "almond_deep",
+    "face_design": "tapered_high",
+    "framing_language": "vertical_heroic",
+    "light_modeling": "broad_painterly",
+    "line_language": "crisp_measured",
+    "ornament_language": "floral_trace",
+    "palette_language": "monochrome_tint",
+    "evaluated_prompt_sha256": "sha256_d9d7016823b423c9df14295336f66a0ed57d848a20f427fb599926d498f068b2"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f384fa9458c6004f552377e863e7e140d9856fb473145dc962d2d238b1017e6f",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

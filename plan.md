@@ -1259,7 +1259,23 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    통과했다. 따라서 `testing >= 200` gate를 충족해 5-seed retest로 이동한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
-   확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.
+   확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다. 기존 3-seed
+   pilot의 통과 판정과 점수는 immutable 근거로 보존하고, retest review는 신규 두
+   seed가 같은 profile의 시각 언어·품질·안정성을 유지하는지 회귀 여부를 판정한다.
+   신규 seed가 pilot 품질 범위를 유지하면 기존 대표 metric을 5-seed 판정에
+   유지하며, 실제 fidelity/adherence/stability/compatibility 하락이나 critical
+   failure가 관찰된 항목만 `rejected`로 판정한다. 이 단계에서 변경 없는 과거
+   pilot을 새 기준으로 소급 재심사하거나 최소 수량을 위해 점수를 완화하지 않는다.
+   실제 retest는 현재 `testing` 225개에 seed `[4004, 5005]`를 추가해 450개
+   extension job을 완료했다. 모든 결과는 1024×1024 PNG, remote success,
+   고유 image hash였고 matrix SHA-256은
+   `a88015e81b0875410c0bffe807e11987d887175f41cbf57b7816e983a2fea584`로
+   고정되었다. 동일 명령 재실행은 `complete=450`, `pending=0`이었다. 기존
+   675개 pilot row와 결합한 225개 × 5-seed = 1,125개 이미지 전수 review 결과는
+   `approved 224 / rejected 1 / critical failure 0`이었다. 유일한 실제 회귀는
+   한 항목의 seed 5005에서 기존 textile echo가 plain two-tone garment로
+   사라진 경우였다. 225개 evaluation 적용 후 동일 명령 재실행은 lifecycle
+   transition 0건이었고 v2 reference closure 및 lifecycle 검증을 통과했다.
 
 모든 원격 matrix는 `batch_size=1`, 기본 `queue_depth=32`를 유지한다. 시작 전
 원격 큐가 비어 있는지 검사하고, 이 계획이 제출하지 않은 작업은 취소·재정렬·삭제하지

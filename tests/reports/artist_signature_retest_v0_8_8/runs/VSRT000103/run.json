@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "test_id": "VSRT000103",
+  "style_id": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+  "label": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+  "mode": "visual_signature",
+  "seed": 4004,
+  "remote": "private_comfyui",
+  "prompt_id": "1ecf93be-f0ee-4d01-a9b2-6dc9725281e3",
+  "resolved_prompt": "Treat this visual signature as the controlling design brief. Every listed property must be visibly expressed: An adult portrait uses crisp narrow lines with measured corners, a tapered face with high cheekbones, deep-set almond eyes, light lashes, and small catchlights, a grounded figure with sturdy limbs and clear hands, near-monochrome color, a quiet tint, and a pale accent, broad blended value planes and rounded volume, a strong vertical frame with a low visual anchor, and drifting particles away from facial features. Create exactly one adult woman as a standing character-design portrait framed from mid-thigh upward at eye level. Keep her face and both eyes large enough to inspect, and show both complete hands clearly near the torso. Give her a simple long-sleeve garment with broad readable surfaces for the requested palette and ornament, against a quiet uncluttered studio ground. These neutral content anchors keep the subject, garment, camera distance, and background content comparable across seeds while the primary visual signature controls silhouette, placement, negative space, light and shadow, and ornament. Make the requested contour character, face geometry, eye construction, body silhouette, local-color palette, shadow-edge treatment, composition, and recurring motifs each unmistakably legible at contact-sheet scale. Finish this as a clearly hand-drawn two-dimensional character-design illustration with coherent illustrated anatomy, readable hands, clean garment shapes, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "c9153e72747825072bd154bcabe359c809c7223f64ce3ec4b460e609f668b109",
+  "workflow_sha256": "03b4d6f090986f65fcb401992349d8aeee88377417ff12b0782645441f42a3c8",
+  "factors": {
+    "body_design": "compact_grounded",
+    "eye_design": "almond_deep",
+    "face_design": "tapered_high",
+    "framing_language": "vertical_heroic",
+    "light_modeling": "broad_painterly",
+    "line_language": "crisp_measured",
+    "ornament_language": "particle_drift",
+    "palette_language": "monochrome_tint",
+    "evaluated_prompt_sha256": "sha256_79b8649270108ee3f36a93f16941c22272a965a8dd602674985cdfb197b964f2"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "fc0e361f0ecdf058124c5c735de80e9cd1051656302e9e83b50518f5da4803e8",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

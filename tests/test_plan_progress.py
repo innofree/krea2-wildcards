@@ -20,5 +20,6 @@ def test_plan_progress_tracks_catalog_targets() -> None:
     assert targets["preset_items"]["target"] == 200
     assert targets["total_library_items"]["target"] == 3750
     assert targets["approved_art_styles"]["current"] >= 21
+    assert targets["approved_artist_signatures"]["current"] >= 200
     assert targets["total_library_items"]["current"] >= 50
-    assert not progress["complete"]
+    assert progress["complete"]
