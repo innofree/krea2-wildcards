@@ -20,6 +20,19 @@
 `/history?max_items=1` 또는 작업 제출로 받은 `prompt_id`의
 `/history/{prompt_id}`만 조회한다.
 
+96 GB VRAM 생성 노드의 queue 용량을 활용하기 위해 resolved prompt matrix 실행은
+기본 최대 32개 in-flight job을 사용한다. `REMOTE_QUEUE_DEPTH`로 낮추거나 높일 수
+있으며 runner는 1~256 범위만 허용한다.
+
+```bash
+REMOTE_QUEUE_DEPTH=32 make remote-phase6-pairwise
+```
+
+대량 제출 전에는 `/queue`가 비어 있는지 한 번 확인하고, 이후 이 matrix가 제출한
+prompt ID만 수집한다. 외부 작업을 발견하더라도 취소하거나 재정렬하지 않으며,
+각 결과는 기존과 동일하게 개별 `run.json`과 1024×1024 PNG로 검증한다. Queue
+depth는 report manifest와 새 run metadata에 기록한다.
+
 ## 로컬 구축 절차
 
 개발 의존성을 설치하고 preview runtime을 만든 뒤 정적 검사를 실행했다.
