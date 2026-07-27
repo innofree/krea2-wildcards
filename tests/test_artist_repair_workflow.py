@@ -1,0 +1,611 @@
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+
+import pytest
+import yaml
+
+from bind_artist_prompt_evidence import atomic_write_json, build_binding
+from common import canonical_prompt_sha256
+from export_artist_testing_retest_matrix import retest_rows
+from export_artist_visual_signature_matrix import (
+    LEGACY_BENCHMARK_PROFILE,
+    REPAIR_BENCHMARK_PROFILE,
+    REPAIR_SEEDS,
+    signature_rows,
+    write_immutable_jsonl,
+)
+from prepare_artist_repair_result import build_accumulation_summary
+from prepare_artist_screen_repair_lifecycle import build_lifecycle_summary
+from select_artist_testing_pilot import (
+    build_pilot_rows,
+    validate_extension_rows,
+)
+from summarize_results import METRICS
+
+
+def artist_item(status: str, index: int) -> dict[str, object]:
+    axes = {
+        "line_language": [f"line_{index}"],
+        "face_design": [f"face_{index}"],
+        "eye_design": [f"eye_{index}"],
+        "body_design": [f"body_{index}"],
+        "palette_language": [f"palette_{index}"],
+        "light_modeling": [f"light_{index}"],
+        "framing_language": [f"framing_{index}"],
+        "ornament_language": [f"ornament_{index}"],
+    }
+    return {
+        "family": "artist_signature",
+        "visual_axes": list(axes),
+        "feature_axes": axes,
+        "prompt": (
+            f"An adult portrait uses exact contour family {index}, clear face geometry, "
+            "layered eye construction, coherent anatomy, separated colors, graphic shadow "
+            "edges, balanced placement, and repeating garment motifs."
+        ),
+        "validation": {"status": status, "tested_seeds": 0},
+        "generation": {"kind": "artist_signature"},
+    }
+
+
+def write_catalog(
+    root: Path, statuses: dict[str, str]
+) -> tuple[Path, dict[str, dict[str, object]]]:
+    items = {
+        style_id: artist_item(status, index)
+        for index, (style_id, status) in enumerate(sorted(statuses.items()), start=1)
+    }
+    path = root / "catalog/artists.yaml"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        yaml.safe_dump({"items": items}, sort_keys=False),
+        encoding="utf-8",
+    )
+    return path, items
+
+
+def summary_style(
+    style_id: str,
+    item: dict[str, object],
+    recommendation: str,
+) -> dict[str, object]:
+    return {
+        "style_id": style_id,
+        "sample_count": 3,
+        "tested_seeds": 3,
+        "averages": {
+            "prompt_adherence": 4,
+            "style_fidelity": 4,
+            "stability": 4,
+            "character_quality": 4,
+            "composition_quality": 4,
+            "compatibility": 4,
+            "distinctiveness": 4,
+            "prompt_efficiency": 4,
+        },
+        "critical_failures": 0,
+        "recommended_status": recommendation,
+        "evaluated_prompt_sha256": canonical_prompt_sha256(item["prompt"]),
+    }
+
+
+def write_summary(path: Path, styles: list[dict[str, object]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(
+            {"schema_version": 1, "style_count": len(styles), "styles": styles},
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
+def create_binding(
+    root: Path,
+    catalog: Path,
+    matrix_name: str,
+    *,
+    profile: str = LEGACY_BENCHMARK_PROFILE,
+    statuses: tuple[str, ...] = ("generated",),
+    count: int,
+) -> tuple[Path, list[dict[str, object]]]:
+    seeds = REPAIR_SEEDS if profile == REPAIR_BENCHMARK_PROFILE else (1001, 2002, 3003)
+    rows = signature_rows(
+        catalog,
+        seeds=seeds,
+        statuses=statuses,
+        include_prompt_digest=profile == REPAIR_BENCHMARK_PROFILE,
+        benchmark_profile=profile,
+        require_signature_count=count,
+    )
+    matrix = root / f"tests/prompt_matrix/{matrix_name}.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = root / f"tests/reports/{matrix_name}/prompt_binding.json"
+    atomic_write_json(binding, build_binding(matrix, catalog, root=root))
+    return binding, rows
+
+
+def test_screen_lifecycle_defers_only_rejected_and_records_source_hashes(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {"artist_one": "generated", "artist_two": "generated", "artist_three": "generated"},
+    )
+    binding, _ = create_binding(
+        tmp_path, catalog, "legacy", count=3
+    )
+    source = tmp_path / "tests/reports/legacy/summary.json"
+    write_summary(
+        source,
+        [
+            summary_style("artist_one", items["artist_one"], "testing"),
+            summary_style("artist_two", items["artist_two"], "testing"),
+            summary_style("artist_three", items["artist_three"], "rejected"),
+        ],
+    )
+
+    first = build_lifecycle_summary(
+        source,
+        binding,
+        catalog,
+        root=tmp_path,
+        expected_testing=2,
+        expected_rejected=1,
+    )
+    second = build_lifecycle_summary(
+        source,
+        binding,
+        catalog,
+        root=tmp_path,
+        expected_testing=2,
+        expected_rejected=1,
+    )
+
+    assert first == second
+    assert first["repair_lifecycle"]["original_recommendation_counts"] == {
+        "rejected": 1,
+        "testing": 2,
+    }
+    assert first["repair_lifecycle"]["transformed_recommendation_counts"] == {
+        "generated": 1,
+        "testing": 2,
+    }
+    assert {
+        item["style_id"]: item["recommended_status"] for item in first["styles"]
+    } == {
+        "artist_one": "testing",
+        "artist_three": "generated",
+        "artist_two": "testing",
+    }
+    assert len(first["repair_lifecycle"]["source_summary"]["sha256"]) == 64
+    assert len(first["repair_lifecycle"]["source_binding"]["sha256"]) == 64
+
+
+def test_screen_lifecycle_rejects_wrong_counts_and_catalog_prompt_drift(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path, {"artist_one": "generated", "artist_two": "generated"}
+    )
+    binding, _ = create_binding(tmp_path, catalog, "legacy", count=2)
+    source = tmp_path / "tests/reports/legacy/summary.json"
+    write_summary(
+        source,
+        [
+            summary_style("artist_one", items["artist_one"], "testing"),
+            summary_style("artist_two", items["artist_two"], "rejected"),
+        ],
+    )
+
+    with pytest.raises(ValueError, match="minimum is 2"):
+        build_lifecycle_summary(
+            source,
+            binding,
+            catalog,
+            root=tmp_path,
+            expected_testing=2,
+            expected_rejected=0,
+        )
+
+    changed = yaml.safe_load(catalog.read_text(encoding="utf-8"))
+    changed["items"]["artist_two"]["prompt"] += " Drifted."
+    catalog.write_text(yaml.safe_dump(changed, sort_keys=False), encoding="utf-8")
+    with pytest.raises(ValueError, match="resolved prompt does not exactly bind"):
+        build_lifecycle_summary(
+            source,
+            binding,
+            catalog,
+            root=tmp_path,
+            expected_testing=1,
+            expected_rejected=1,
+        )
+
+
+def test_repair_profile_uses_exact_three_seeds_digest_and_axis_ledger(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(tmp_path, {"artist_repair": "generated"})
+    rows = signature_rows(
+        catalog,
+        seeds=REPAIR_SEEDS,
+        benchmark_profile=REPAIR_BENCHMARK_PROFILE,
+        require_signature_count=1,
+    )
+
+    assert len(rows) == 3
+    assert {row["seed"] for row in rows} == set(REPAIR_SEEDS)
+    for row in rows:
+        factors = row["factors"]
+        assert factors["benchmark_profile"] == REPAIR_BENCHMARK_PROFILE
+        assert factors["benchmark_stage"] == "pilot"
+        assert factors["evaluated_prompt_sha256"] == (
+            "sha256_" + canonical_prompt_sha256(items["artist_repair"]["prompt"])
+        )
+        prompt = row["prompt"]
+        assert prompt.count(items["artist_repair"]["prompt"]) == 1
+        assert "outer contour and garment seams" in prompt
+        assert "jaw, cheeks, and nose" in prompt
+        assert "hair and accessories away from fully exposed eyes" in prompt
+        assert "shoulder and torso silhouette" in prompt
+        assert "broad garment and background regions" in prompt
+        assert "shadow edges and highlights on the face" in prompt
+        assert "head, face, and both hands uncropped" in prompt
+        assert "repeating broad garment motif" in prompt
+        assert "outer-border motif" in prompt
+        assert "leaving the head, face, eyes" in prompt
+        assert "line 1" in prompt
+        assert "ornament 1" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/repair.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == REPAIR_BENCHMARK_PROFILE
+    assert binding["benchmark_stage"] == "pilot"
+
+    tampered = [dict(row) for row in rows]
+    tampered[0] = {**tampered[0], "factors": dict(tampered[0]["factors"])}
+    tampered[0]["factors"]["benchmark_profile"] = "unknown_profile"
+    bad = tmp_path / "tests/prompt_matrix/bad.jsonl"
+    write_immutable_jsonl(bad, tampered)
+    with pytest.raises(ValueError, match="unsupported benchmark_profile"):
+        build_binding(bad, catalog, root=tmp_path)
+
+
+def test_repair_accumulation_preserves_failures_and_enforces_total_gate(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {
+            "artist_existing_one": "testing",
+            "artist_existing_two": "testing",
+            "artist_repair_one": "generated",
+            "artist_repair_two": "generated",
+        },
+    )
+    binding, _ = create_binding(
+        tmp_path,
+        catalog,
+        "repair",
+        profile=REPAIR_BENCHMARK_PROFILE,
+        count=2,
+    )
+    source = tmp_path / "tests/reports/repair/raw_summary.json"
+    write_summary(
+        source,
+        [
+            summary_style("artist_repair_one", items["artist_repair_one"], "testing"),
+            summary_style("artist_repair_two", items["artist_repair_two"], "rejected"),
+        ],
+    )
+
+    document = build_accumulation_summary(
+        source,
+        binding,
+        catalog,
+        root=tmp_path,
+        expected_existing_testing=2,
+        expected_repair_candidates=2,
+        minimum_cumulative_testing=3,
+    )
+    assert document["repair_accumulation"]["cumulative_testing_after_apply"] == 3
+    assert {
+        item["style_id"]: item["recommended_status"] for item in document["styles"]
+    } == {
+        "artist_repair_one": "testing",
+        "artist_repair_two": "generated",
+    }
+
+    write_summary(
+        source,
+        [
+            summary_style("artist_repair_one", items["artist_repair_one"], "rejected"),
+            summary_style("artist_repair_two", items["artist_repair_two"], "rejected"),
+        ],
+    )
+    with pytest.raises(ValueError, match="cumulative testing styles"):
+        build_accumulation_summary(
+            source,
+            binding,
+            catalog,
+            root=tmp_path,
+            expected_existing_testing=2,
+            expected_repair_candidates=2,
+            minimum_cumulative_testing=3,
+        )
+
+
+SCORE_FIELDS = [
+    "test_id",
+    "style_id",
+    "seed",
+    "factors_json",
+    "image_path",
+    *METRICS,
+    "critical_failure",
+]
+
+
+def score_rows(matrix_rows: list[dict[str, object]]) -> list[dict[str, str]]:
+    return [
+        {
+            "test_id": str(row["test_id"]),
+            "style_id": str(row["style_id"]),
+            "seed": str(row["seed"]),
+            "factors_json": json.dumps(row["factors"], sort_keys=True),
+            "image_path": f"runs/{row['test_id']}/output.png",
+            **{metric: "4" for metric in METRICS},
+            "critical_failure": "false",
+        }
+        for row in matrix_rows
+    ]
+
+
+def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=SCORE_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def pilot_fixture(
+    tmp_path: Path,
+) -> tuple[Path, Path, Path, Path, Path]:
+    catalog, _ = write_catalog(
+        tmp_path, {"artist_legacy": "generated", "artist_repair": "generated"}
+    )
+    legacy_binding, legacy_matrix = create_binding(
+        tmp_path, catalog, "legacy", count=2
+    )
+    lifecycle = yaml.safe_load(catalog.read_text(encoding="utf-8"))
+    lifecycle["items"]["artist_legacy"]["validation"]["status"] = "testing"
+    catalog.write_text(yaml.safe_dump(lifecycle, sort_keys=False), encoding="utf-8")
+    repair_binding, repair_matrix = create_binding(
+        tmp_path,
+        catalog,
+        "repair",
+        profile=REPAIR_BENCHMARK_PROFILE,
+        count=1,
+    )
+    lifecycle["items"]["artist_repair"]["validation"]["status"] = "testing"
+    catalog.write_text(yaml.safe_dump(lifecycle, sort_keys=False), encoding="utf-8")
+    legacy_scored = tmp_path / "tests/reports/legacy/scored.csv"
+    repair_scored = tmp_path / "tests/reports/repair/scored.csv"
+    write_csv(legacy_scored, score_rows(legacy_matrix))
+    write_csv(repair_scored, score_rows(repair_matrix))
+    return catalog, legacy_binding, repair_binding, legacy_scored, repair_scored
+
+
+def test_testing_pilot_prefers_repair_scores_and_validates_exact_five_seeds(
+    tmp_path: Path,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(tmp_path)
+    )
+    fields, pilot, current = build_pilot_rows(
+        legacy_scored,
+        repair_scored,
+        legacy_binding,
+        repair_binding,
+        catalog,
+        root=tmp_path,
+        minimum_testing_count=2,
+    )
+    by_style = {
+        style_id: {int(row["seed"]) for row in pilot if row["style_id"] == style_id}
+        for style_id in current
+    }
+    assert by_style == {
+        "artist_legacy": {1001, 2002, 3003},
+        "artist_repair": set(REPAIR_SEEDS),
+    }
+
+    pilot_path = tmp_path / "tests/reports/combined/pilot_scorecard.csv"
+    write_csv(pilot_path, pilot)
+    extension_matrix_rows = retest_rows(pilot_path, catalog)
+    extension_matrix = tmp_path / "tests/prompt_matrix/retest.jsonl"
+    write_immutable_jsonl(extension_matrix, extension_matrix_rows)
+    extension = score_rows(extension_matrix_rows)
+    extension_path = tmp_path / "tests/reports/retest/scorecard.csv"
+    write_csv(extension_path, extension)
+    combined = validate_extension_rows(
+        extension_path,
+        fields,
+        current,
+        pilot,
+        matrix_path=extension_matrix,
+    )
+    assert len(combined) == 10
+    assert all(
+        len({int(row["seed"]) for row in combined if row["style_id"] == style_id})
+        == 5
+        for style_id in current
+    )
+
+
+def test_testing_pilot_and_extension_fail_closed_on_drift_or_profile_mismatch(
+    tmp_path: Path,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(tmp_path)
+    )
+    repair_rows = list(csv.DictReader(repair_scored.open(encoding="utf-8")))
+    repair_rows[0]["factors_json"] = json.dumps(
+        {
+            **json.loads(repair_rows[0]["factors_json"]),
+            "evaluated_prompt_sha256": "sha256_" + "0" * 64,
+        }
+    )
+    write_csv(repair_scored, repair_rows)
+    with pytest.raises(ValueError, match="factors do not match bound matrix"):
+        build_pilot_rows(
+            legacy_scored,
+            repair_scored,
+            legacy_binding,
+            repair_binding,
+            catalog,
+            root=tmp_path,
+            minimum_testing_count=2,
+        )
+
+    _, _, _, legacy_scored, repair_scored = pilot_fixture(tmp_path / "fresh")
+    fresh = tmp_path / "fresh"
+    fresh_catalog = fresh / "catalog/artists.yaml"
+    fields, pilot, current = build_pilot_rows(
+        legacy_scored,
+        repair_scored,
+        fresh / "tests/reports/legacy/prompt_binding.json",
+        fresh / "tests/reports/repair/prompt_binding.json",
+        fresh_catalog,
+        root=fresh,
+        minimum_testing_count=2,
+    )
+    pilot_path = fresh / "tests/reports/combined/pilot_scorecard.csv"
+    write_csv(pilot_path, pilot)
+    extension = score_rows(retest_rows(pilot_path, fresh_catalog))
+    repair_extension = next(
+        row for row in extension if row["style_id"] == "artist_repair"
+    )
+    payload = json.loads(repair_extension["factors_json"])
+    del payload["benchmark_profile"]
+    repair_extension["factors_json"] = json.dumps(payload)
+    extension_path = fresh / "tests/reports/retest/scorecard.csv"
+    write_csv(extension_path, extension)
+    with pytest.raises(ValueError, match="pilot/extension profile mismatch"):
+        validate_extension_rows(extension_path, fields, current, pilot)
+
+
+def test_testing_pilot_rejects_missing_rows_and_current_status_set_drift(
+    tmp_path: Path,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(tmp_path)
+    )
+    repair_rows = list(csv.DictReader(repair_scored.open(encoding="utf-8")))
+    write_csv(repair_scored, repair_rows[:-1])
+    with pytest.raises(ValueError, match="does not contain exact seeds"):
+        build_pilot_rows(
+            legacy_scored,
+            repair_scored,
+            legacy_binding,
+            repair_binding,
+            catalog,
+            root=tmp_path,
+            minimum_testing_count=2,
+        )
+
+    catalog_document = yaml.safe_load(catalog.read_text(encoding="utf-8"))
+    catalog_document["items"]["artist_repair"]["validation"]["status"] = "generated"
+    catalog.write_text(
+        yaml.safe_dump(catalog_document, sort_keys=False),
+        encoding="utf-8",
+    )
+    with pytest.raises(ValueError, match="at least 2 testing styles"):
+        build_pilot_rows(
+            legacy_scored,
+            repair_scored,
+            legacy_binding,
+            repair_binding,
+            catalog,
+            root=tmp_path,
+            minimum_testing_count=2,
+        )
+
+
+def test_five_seed_combiner_rejects_duplicate_or_missing_extension_seed(
+    tmp_path: Path,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(tmp_path)
+    )
+    fields, pilot, current = build_pilot_rows(
+        legacy_scored,
+        repair_scored,
+        legacy_binding,
+        repair_binding,
+        catalog,
+        root=tmp_path,
+        minimum_testing_count=2,
+    )
+    pilot_path = tmp_path / "tests/reports/combined/pilot_scorecard.csv"
+    write_csv(pilot_path, pilot)
+    extension = score_rows(retest_rows(pilot_path, catalog))
+    extension[-1]["seed"] = extension[-2]["seed"]
+    extension_path = tmp_path / "tests/reports/retest/scorecard.csv"
+    write_csv(extension_path, extension)
+
+    with pytest.raises(ValueError, match="duplicate style and seed"):
+        validate_extension_rows(extension_path, fields, current, pilot)
+
+
+@pytest.mark.parametrize(
+    ("style_id", "mutation", "message"),
+    (
+        ("artist_legacy", "seed", "exact profile seeds"),
+        ("artist_repair", "seed", "exact profile seeds"),
+        ("artist_repair", "stage", "invalid benchmark stage"),
+        ("artist_repair", "digest", "stale prompt digest"),
+        ("artist_repair", "missing_digest", "missing its prompt digest"),
+    ),
+)
+def test_retest_exporter_revalidates_canonical_pilot_evidence(
+    tmp_path: Path,
+    style_id: str,
+    mutation: str,
+    message: str,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(tmp_path)
+    )
+    _, pilot, _ = build_pilot_rows(
+        legacy_scored,
+        repair_scored,
+        legacy_binding,
+        repair_binding,
+        catalog,
+        root=tmp_path,
+        minimum_testing_count=2,
+    )
+    target = next(row for row in pilot if row["style_id"] == style_id)
+    if mutation == "seed":
+        target["seed"] = "7777"
+    else:
+        payload = json.loads(target["factors_json"])
+        if mutation == "stage":
+            payload["benchmark_stage"] = "extension"
+        elif mutation == "digest":
+            payload["evaluated_prompt_sha256"] = "sha256_" + "0" * 64
+        else:
+            del payload["evaluated_prompt_sha256"]
+        target["factors_json"] = json.dumps(payload, sort_keys=True)
+    pilot_path = tmp_path / "tests/reports/combined/pilot_scorecard.csv"
+    write_csv(pilot_path, pilot)
+
+    with pytest.raises(ValueError, match=message):
+        retest_rows(pilot_path, catalog)

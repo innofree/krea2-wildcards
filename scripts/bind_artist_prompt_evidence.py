@@ -14,6 +14,13 @@ from common import canonical_prompt_sha256, load_yaml
 from export_artist_visual_signature_matrix import (
     FIXED_SCENE,
     ILLUSTRATED_BENCHMARK_FINISH,
+    LEGACY_BENCHMARK_PROFILE,
+    REPAIR_BENCHMARK_PROFILE,
+    REPAIR_FIXED_SCENE,
+    REPAIR_ILLUSTRATED_BENCHMARK_FINISH,
+    REPAIR_SEEDS,
+    RETEST_SEEDS,
+    prompt_for_profile,
 )
 
 
@@ -24,6 +31,13 @@ PROMPT_PREFIX = (
     "must be visibly expressed: "
 )
 PROMPT_SUFFIX = f" {FIXED_SCENE} {ILLUSTRATED_BENCHMARK_FINISH}"
+REPAIR_PROMPT_PREFIX = (
+    "Treat this visual signature as the controlling design brief. Every listed property "
+    "must be visibly and independently expressed without merging one visual axis into another: "
+)
+REPAIR_PROMPT_SUFFIX = (
+    f" {REPAIR_FIXED_SCENE} {REPAIR_ILLUSTRATED_BENCHMARK_FINISH}"
+)
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -67,6 +81,9 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
     style_rows: dict[str, int] = {}
     seen_test_ids: set[str] = set()
     row_count = 0
+    matrix_profiles: set[str] = set()
+    repair_stages: set[str] = set()
+    grouped_seeds: dict[tuple[str, str, str], set[int]] = {}
     for line_number, line in enumerate(
         matrix.read_text(encoding="utf-8").splitlines(), start=1
     ):
@@ -93,13 +110,59 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             )
         body = item.get("prompt")
         digest = canonical_prompt_sha256(body)
-        expected_prompt = f"{PROMPT_PREFIX}{body}{PROMPT_SUFFIX}"
+        factors = row.get("factors")
+        if not isinstance(factors, dict):
+            raise ValueError(f"matrix line {line_number}: factors must be an object")
+        row_profile = factors.get("benchmark_profile")
+        if row_profile is None:
+            profile = LEGACY_BENCHMARK_PROFILE
+            if "benchmark_stage" in factors:
+                raise ValueError(
+                    f"matrix line {line_number}: legacy profile cannot declare benchmark_stage"
+                )
+            stage = "legacy"
+        elif row_profile == REPAIR_BENCHMARK_PROFILE:
+            profile = row_profile
+            stage = factors.get("benchmark_stage")
+            if stage not in {"pilot", "extension"}:
+                raise ValueError(
+                    f"matrix line {line_number}: repair profile requires a valid "
+                    "benchmark_stage"
+                )
+            repair_stages.add(stage)
+        else:
+            raise ValueError(
+                f"matrix line {line_number}: unsupported benchmark_profile"
+            )
+        matrix_profiles.add(profile)
+        if profile == REPAIR_BENCHMARK_PROFILE:
+            seed = row.get("seed")
+            expected_seeds = REPAIR_SEEDS if stage == "pilot" else RETEST_SEEDS
+            if type(seed) is not int or seed not in expected_seeds:
+                raise ValueError(
+                    f"matrix line {line_number}: repair profile has an invalid seed"
+                )
+        else:
+            seed = row.get("seed")
+            if type(seed) is not int:
+                raise ValueError(f"matrix line {line_number}: seed must be an integer")
+        identity = (profile, stage, style_id)
+        style_seed_set = grouped_seeds.setdefault(identity, set())
+        if seed in style_seed_set:
+            raise ValueError(
+                f"matrix line {line_number}: duplicate style/profile/stage seed"
+            )
+        style_seed_set.add(seed)
+        expected_prompt = prompt_for_profile(
+            body,
+            profile,
+            feature_axes=item.get("feature_axes"),
+        )
         if prompt != expected_prompt:
             raise ValueError(
                 f"matrix line {line_number}: resolved prompt does not exactly bind "
                 f"the current catalog body for {style_id!r}"
             )
-        factors = row.get("factors")
         if isinstance(factors, dict) and "evaluated_prompt_sha256" in factors:
             if factors["evaluated_prompt_sha256"] != f"sha256_{digest}":
                 raise ValueError(
@@ -112,6 +175,15 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         row_count += 1
     if not row_count:
         raise ValueError("artist prompt matrix contains no rows")
+    for (profile, stage, style_id), seeds in grouped_seeds.items():
+        if profile != REPAIR_BENCHMARK_PROFILE:
+            continue
+        expected_seeds = set(REPAIR_SEEDS if stage == "pilot" else RETEST_SEEDS)
+        if seeds != expected_seeds:
+            raise ValueError(
+                f"repair profile style {style_id!r} does not contain the exact "
+                f"{stage} seeds"
+            )
 
     document: dict[str, Any] = {
         "schema_version": 1,
@@ -130,6 +202,17 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         "styles": dict(sorted(style_digests.items())),
     }
     document["binding_sha256"] = payload_sha256(document)
+    if matrix_profiles == {REPAIR_BENCHMARK_PROFILE}:
+        document["benchmark_profile"] = REPAIR_BENCHMARK_PROFILE
+        if len(repair_stages) == 1:
+            document["benchmark_stage"] = next(iter(repair_stages))
+        else:
+            document["benchmark_stages"] = sorted(repair_stages)
+        document["binding_sha256"] = payload_sha256(document)
+    elif REPAIR_BENCHMARK_PROFILE in matrix_profiles:
+        document["benchmark_profiles"] = sorted(matrix_profiles)
+        document["repair_benchmark_stages"] = sorted(repair_stages)
+        document["binding_sha256"] = payload_sha256(document)
     return document
 
 

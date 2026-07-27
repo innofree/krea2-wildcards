@@ -130,6 +130,53 @@ def write_standalone_scorecard(path: Path, rows: list[dict[str, str]]) -> None:
         writer.writerows(rows)
 
 
+def write_mixed_artist_standalone_fixture(
+    root: Path,
+) -> tuple[Path, list[dict[str, str]]]:
+    scorecard = root / "tests/reports/mixed_artist_fixture/scorecard.csv"
+    scorecard.parent.mkdir(parents=True)
+    rows: list[dict[str, str]] = []
+    profiles = (
+        ("artist_legacy", (1001, 2002, 3003, 4004, 5005), None),
+        (
+            "artist_repair",
+            (6101, 6202, 6303, 4004, 5005),
+            "artist_visual_signature_repair_v0_8_3",
+        ),
+    )
+    for style_id, seeds, profile in profiles:
+        for seed in seeds:
+            image = scorecard.parent / "images" / f"{style_id}_{seed}.png"
+            image.parent.mkdir(parents=True, exist_ok=True)
+            image.write_bytes(b"fixture image")
+            factors = {
+                "line_language": "crisp_measured",
+            }
+            if profile is not None:
+                factors["evaluated_prompt_sha256"] = "sha256_" + "a" * 64
+                factors["benchmark_profile"] = profile
+                factors["benchmark_stage"] = (
+                    "pilot" if seed in {6101, 6202, 6303} else "extension"
+                )
+            elif seed in {4004, 5005}:
+                factors["evaluated_prompt_sha256"] = "sha256_" + "a" * 64
+            rows.append(
+                {
+                    "test_id": f"MIXED{len(rows) + 1:03d}",
+                    "style_id": style_id,
+                    "mode": "visual_signature",
+                    "seed": str(seed),
+                    "image_path": image.relative_to(root).as_posix(),
+                    "factors_json": json.dumps(factors, sort_keys=True),
+                    "prompt": "MUST_NOT_PERSIST",
+                    "label": "Private Label",
+                    "endpoint": "MUST_NOT_PERSIST",
+                }
+            )
+    write_standalone_scorecard(scorecard, rows)
+    return scorecard, rows
+
+
 def nested_keys(value: object) -> set[str]:
     if isinstance(value, dict):
         return set(value) | set().union(*(nested_keys(item) for item in value.values()))
@@ -451,4 +498,115 @@ def test_scorecard_only_rejects_malformed_unsafe_or_inconsistent_factors(
     inconsistent[1]["factors_json"] = json.dumps({"camera": "low_angle"})
     write_standalone_scorecard(scorecard, inconsistent)
     with pytest.raises(ValueError, match="factors must remain constant"):
+        matrix_sheets.load_standalone_scorecard(scorecard, expected_seeds=5)
+
+
+def test_scorecard_only_accepts_exact_mixed_artist_profiles_and_stages(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    scorecard, _ = write_mixed_artist_standalone_fixture(tmp_path)
+    output = scorecard.parent / "review"
+    monkeypatch.setattr(matrix_sheets, "ROOT", tmp_path)
+
+    def fake_render(
+        _: str, rows: list[dict[str, Any]], sheet: Path, expected_seeds: int
+    ) -> None:
+        assert len(rows) == 10
+        assert expected_seeds == 5
+        sheet.write_bytes(b"sheet")
+
+    monkeypatch.setattr(matrix_sheets, "render_sheet", fake_render)
+    document = matrix_sheets.build_review(
+        scorecard,
+        None,
+        output,
+        expected_seeds=5,
+        cases_per_sheet=10,
+        overwrite=False,
+    )
+
+    assert document["seeds"] == [1001, 2002, 3003, 4004, 5005, 6101, 6202, 6303]
+    cases = {case["style_id"]: case for case in document["cases"]}
+    assert "benchmark_stages" not in cases["artist_legacy"]
+    assert (
+        cases["artist_legacy"]["factors"]["evaluated_prompt_sha256"]
+        == "sha256_" + "a" * 64
+    )
+    repair = cases["artist_repair"]
+    assert repair["benchmark_stages"] == ["extension", "pilot"]
+    assert "benchmark_stage" not in repair["factors"]
+    assert repair["factors"]["evaluated_prompt_sha256"] == "sha256_" + "a" * 64
+    assert {
+        (item["seed"], item["benchmark_stage"]) for item in repair["items"]
+    } == {
+        (6101, "pilot"),
+        (6202, "pilot"),
+        (6303, "pilot"),
+        (4004, "extension"),
+        (5005, "extension"),
+    }
+
+
+@pytest.mark.parametrize(
+    ("mutation", "message"),
+    (
+        ("digest", "may vary only benchmark_stage"),
+        ("stage", "expected 'pilot'"),
+        ("seed", "does not contain its exact 5-seed set"),
+        ("missing_digest", "missing a valid evaluated prompt digest"),
+    ),
+)
+def test_scorecard_only_mixed_artist_profiles_fail_closed(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    mutation: str,
+    message: str,
+) -> None:
+    scorecard, rows = write_mixed_artist_standalone_fixture(tmp_path)
+    monkeypatch.setattr(matrix_sheets, "ROOT", tmp_path)
+    repair_rows = [row for row in rows if row["style_id"] == "artist_repair"]
+    target = next(row for row in repair_rows if row["seed"] == "6202")
+    factors = json.loads(target["factors_json"])
+    if mutation == "digest":
+        factors["evaluated_prompt_sha256"] = "sha256_" + "b" * 64
+        target["factors_json"] = json.dumps(factors, sort_keys=True)
+    elif mutation == "stage":
+        factors["benchmark_stage"] = "extension"
+        target["factors_json"] = json.dumps(factors, sort_keys=True)
+    elif mutation == "seed":
+        target["seed"] = "7777"
+    else:
+        del factors["evaluated_prompt_sha256"]
+        target["factors_json"] = json.dumps(factors, sort_keys=True)
+    write_standalone_scorecard(scorecard, rows)
+
+    with pytest.raises(ValueError, match=message):
+        matrix_sheets.load_standalone_scorecard(scorecard, expected_seeds=5)
+
+
+@pytest.mark.parametrize("mutation", ("missing", "mismatch"))
+def test_scorecard_only_mixed_legacy_extension_digest_fails_closed(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    mutation: str,
+) -> None:
+    scorecard, rows = write_mixed_artist_standalone_fixture(tmp_path)
+    monkeypatch.setattr(matrix_sheets, "ROOT", tmp_path)
+    target = next(
+        row
+        for row in rows
+        if row["style_id"] == "artist_legacy" and row["seed"] == "4004"
+    )
+    factors = json.loads(target["factors_json"])
+    if mutation == "missing":
+        del factors["evaluated_prompt_sha256"]
+    else:
+        factors["evaluated_prompt_sha256"] = "sha256_" + "b" * 64
+    target["factors_json"] = json.dumps(factors, sort_keys=True)
+    write_standalone_scorecard(scorecard, rows)
+
+    with pytest.raises(
+        ValueError,
+        match="legacy extension prompt digests must be valid and identical",
+    ):
         matrix_sheets.load_standalone_scorecard(scorecard, expected_seeds=5)

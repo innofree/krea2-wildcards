@@ -4,6 +4,7 @@ REMOTE_BATCH_SIZE ?= 1
 .PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix artist-signature-illustrated-calibration-matrix artist-signature-calibration-v0-8-2-matrix artist-signature-v0-8-2-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-illustrated-calibration review-artist-signature-illustrated-calibration remote-artist-signature-calibration-v0-8-2 review-artist-signature-calibration-v0-8-2 remote-artist-signature-v0-8-2 review-artist-signature-v0-8-2 score-artist-signature-v0-8-2 apply-artist-signature-v0-8-2 remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest remote-artist-signature-retest-v0-8-2 combine-artist-signature-retest-v0-8-2 review-artist-signature-retest-v0-8-2 score-artist-signature-retest-v0-8-2 apply-artist-signature-retest-v0-8-2
 .PHONY: runtime-audit phase6-calibration-matrix phase6-calibration-gate remote-phase6-calibration review-phase6-calibration score-phase6-calibration phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
+.PHONY: prepare-artist-signature-repair-v0-8-3 apply-artist-signature-repair-lifecycle-v0-8-3 artist-signature-repair-v0-8-3-matrix remote-artist-signature-repair-v0-8-3 review-artist-signature-repair-v0-8-3 score-artist-signature-repair-v0-8-3 apply-artist-signature-repair-v0-8-3 artist-signature-testing-pilot-v0-8-3 artist-signature-retest-v0-8-3-matrix remote-artist-signature-retest-v0-8-3 combine-artist-signature-retest-v0-8-3 review-artist-signature-retest-v0-8-3 score-artist-signature-retest-v0-8-3 apply-artist-signature-retest-v0-8-3
 
 preview:
 	python3 scripts/build_runtime_yaml.py --include-status generated --include-status testing --include-status approved --output build/preview-wildcards
@@ -179,6 +180,76 @@ score-artist-signature-v0-8-2:
 
 apply-artist-signature-v0-8-2: score-artist-signature-v0-8-2
 	python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_screen_v0_8_2/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --evaluation-id artist_signature_screen_v0_8_2 --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation rejected --minimum-recommendation testing=200 --apply
+	python3 scripts/sync_catalog_v2.py --apply
+	python3 scripts/validate_catalog_v2.py
+
+prepare-artist-signature-repair-v0-8-3:
+	python3 scripts/prepare_artist_screen_repair_lifecycle.py tests/reports/artist_signature_screen_v0_8_2/summary.json --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --catalog catalog/artists.yaml --output tests/reports/artist_signature_repair_lifecycle_v0_8_3/summary.json
+
+apply-artist-signature-repair-lifecycle-v0-8-3:
+	@if python3 scripts/check_evaluation_applied.py tests/reports/artist_signature_repair_lifecycle_v0_8_3/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_screen_v0_8_2_deferred_repair; then \
+		echo "Reusing the applied v0.8.2 deferred-repair lifecycle."; \
+	else \
+		$(MAKE) prepare-artist-signature-repair-v0-8-3 && \
+		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_repair_lifecycle_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --evaluation-id artist_signature_screen_v0_8_2_deferred_repair --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation generated --minimum-recommendation testing=185 --apply; \
+	fi
+	python3 scripts/sync_catalog_v2.py --apply
+	python3 scripts/validate_catalog_v2.py
+
+artist-signature-repair-v0-8-3-matrix:
+	python3 scripts/export_artist_visual_signature_matrix.py --benchmark-profile artist_visual_signature_repair_v0_8_3 --status generated --seed 6101 --seed 6202 --seed 6303 --require-signatures 115 --output tests/prompt_matrix/artist_visual_signature_repair_v0_8_3.jsonl
+
+remote-artist-signature-repair-v0-8-3: artist-signature-repair-v0-8-3-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_repair_v0_8_3.jsonl --output tests/reports/artist_signature_repair_v0_8_3 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+
+review-artist-signature-repair-v0-8-3:
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_repair_v0_8_3/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_repair_v0_8_3.jsonl --expected-seeds 3 --cases-per-sheet 10 --overwrite
+
+score-artist-signature-repair-v0-8-3:
+	python3 scripts/merge_visual_reviews.py tests/reports/artist_signature_repair_v0_8_3/review_part_a.yaml tests/reports/artist_signature_repair_v0_8_3/review_part_b.yaml tests/reports/artist_signature_repair_v0_8_3/review_part_c.yaml --expected-scorecard tests/reports/artist_signature_repair_v0_8_3/scorecard.csv --output tests/reports/artist_signature_repair_v0_8_3/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/artist_signature_repair_v0_8_3/scorecard.csv tests/reports/artist_signature_repair_v0_8_3/review.yaml --output tests/reports/artist_signature_repair_v0_8_3/scored.csv --overwrite
+	python3 scripts/bind_artist_prompt_evidence.py tests/prompt_matrix/artist_visual_signature_repair_v0_8_3.jsonl --catalog catalog/artists.yaml --output tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json
+	python3 scripts/summarize_results.py tests/reports/artist_signature_repair_v0_8_3/scored.csv --prompt-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --output tests/reports/artist_signature_repair_v0_8_3/raw_summary.json
+	python3 scripts/prepare_artist_repair_result.py tests/reports/artist_signature_repair_v0_8_3/raw_summary.json --prompt-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --catalog catalog/artists.yaml --output tests/reports/artist_signature_repair_v0_8_3/summary.json
+
+apply-artist-signature-repair-v0-8-3:
+	@if python3 scripts/check_evaluation_applied.py tests/reports/artist_signature_repair_v0_8_3/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_repair_v0_8_3; then \
+		echo "Reusing the applied v0.8.3 repair evaluation."; \
+	else \
+		$(MAKE) score-artist-signature-repair-v0-8-3 && \
+		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_repair_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --evaluation-id artist_signature_repair_v0_8_3 --from-status generated --require-exact-source-set --require-tested-seeds 3 --allow-recommendation testing --allow-recommendation generated --minimum-recommendation testing=15 --apply; \
+	fi
+	python3 scripts/sync_catalog_v2.py --apply
+	python3 scripts/validate_catalog_v2.py
+
+artist-signature-testing-pilot-v0-8-3:
+	python3 scripts/select_artist_testing_pilot.py tests/reports/artist_signature_screen_v0_8_2/scored.csv tests/reports/artist_signature_repair_v0_8_3/scored.csv --legacy-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --repair-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --catalog catalog/artists.yaml --output tests/reports/artist_signature_combined_v0_8_3/pilot_scorecard.csv --overwrite
+
+artist-signature-retest-v0-8-3-matrix: artist-signature-testing-pilot-v0-8-3
+	python3 scripts/export_artist_testing_retest_matrix.py tests/reports/artist_signature_combined_v0_8_3/pilot_scorecard.csv --catalog catalog/artists.yaml --output tests/prompt_matrix/artist_visual_signature_retest_v0_8_3.jsonl
+
+remote-artist-signature-retest-v0-8-3: artist-signature-retest-v0-8-3-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_retest_v0_8_3.jsonl --output tests/reports/artist_signature_retest_v0_8_3 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+
+combine-artist-signature-retest-v0-8-3:
+	python3 scripts/select_artist_testing_pilot.py tests/reports/artist_signature_screen_v0_8_2/scored.csv tests/reports/artist_signature_repair_v0_8_3/scored.csv --legacy-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --repair-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --catalog catalog/artists.yaml --output tests/reports/artist_signature_combined_v0_8_3/pilot_scorecard.csv --extension-scorecard tests/reports/artist_signature_retest_v0_8_3/scorecard.csv --extension-matrix tests/prompt_matrix/artist_visual_signature_retest_v0_8_3.jsonl --combined-output tests/reports/artist_signature_combined_v0_8_3/scorecard.csv --overwrite
+
+review-artist-signature-retest-v0-8-3: combine-artist-signature-retest-v0-8-3
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_combined_v0_8_3/scorecard.csv --expected-seeds 5 --cases-per-sheet 10 --overwrite
+
+score-artist-signature-retest-v0-8-3:
+	python3 scripts/merge_visual_reviews.py tests/reports/artist_signature_combined_v0_8_3/review_part_a.yaml tests/reports/artist_signature_combined_v0_8_3/review_part_b.yaml tests/reports/artist_signature_combined_v0_8_3/review_part_c.yaml --expected-scorecard tests/reports/artist_signature_combined_v0_8_3/scorecard.csv --output tests/reports/artist_signature_combined_v0_8_3/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/artist_signature_combined_v0_8_3/scorecard.csv tests/reports/artist_signature_combined_v0_8_3/review.yaml --output tests/reports/artist_signature_combined_v0_8_3/scored.csv --overwrite
+	python3 scripts/bind_artist_prompt_evidence.py tests/prompt_matrix/artist_visual_signature_retest_v0_8_3.jsonl --catalog catalog/artists.yaml --output tests/reports/artist_signature_combined_v0_8_3/prompt_binding.json
+	python3 scripts/summarize_results.py tests/reports/artist_signature_combined_v0_8_3/scored.csv --prompt-binding tests/reports/artist_signature_combined_v0_8_3/prompt_binding.json --output tests/reports/artist_signature_combined_v0_8_3/summary.json
+
+apply-artist-signature-retest-v0-8-3:
+	@if python3 scripts/check_evaluation_applied.py tests/reports/artist_signature_combined_v0_8_3/summary.json --catalog catalog/artists.yaml --evaluation-id artist_signature_retest_v0_8_3; then \
+		echo "Reusing the applied v0.8.3 five-seed retest evaluation."; \
+	else \
+		$(MAKE) score-artist-signature-retest-v0-8-3 && \
+		python3 scripts/apply_evaluation_summary.py tests/reports/artist_signature_combined_v0_8_3/summary.json --catalog catalog/artists.yaml --prompt-binding tests/reports/artist_signature_combined_v0_8_3/prompt_binding.json --evaluation-id artist_signature_retest_v0_8_3 --from-status testing --require-exact-source-set --require-tested-seeds 5 --allow-recommendation approved --allow-recommendation rejected --minimum-recommendation approved=200 --apply; \
+	fi
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
 

@@ -10,7 +10,7 @@
 | HTTP 및 API | `/`, `/system_stats`, `/object_info`, `/queue` 응답 정상 |
 | ComfyUI | `0.28.0` |
 | Python / PyTorch | `3.13.13` / `2.12.0+cu130` |
-| GPU | NVIDIA RTX PRO 6000 Blackwell Max-Q, VRAM 약 95 GiB |
+| GPU | NVIDIA RTX PRO 6000, VRAM 96 GB급 |
 | 큐 | 확인 당시 실행 및 대기 항목 없음 |
 | Krea 2 checkpoint | 9개 확인, 공식 Turbo MXFP8 및 NVFP4 포함 |
 | wildcard 노드 | `ImpactWildcardProcessor`, `easy wildcards`, `easy wildcardsMatrix` 확인 |
@@ -20,11 +20,11 @@
 `/history?max_items=1` 또는 작업 제출로 받은 `prompt_id`의
 `/history/{prompt_id}`만 조회한다.
 
-96 GB VRAM 생성 노드의 queue 용량을 활용하기 위해 resolved prompt matrix 실행은
-기본 최대 32개 in-flight job을 사용한다. `REMOTE_QUEUE_DEPTH`로 낮추거나 높일 수
-있으며 runner는 1~256 범위만 허용한다. Seed별 이미지와 해시를 1:1로 보존하기
-위해 `REMOTE_BATCH_SIZE=1`을 유지하고, 처리량은 서로 다른 prompt/seed job의 동시
-queue로 확보한다.
+NVIDIA RTX PRO 6000 96 GB급 생성 노드의 queue 용량을 활용하기 위해 resolved
+prompt matrix 실행은 기본 최대 32개 in-flight job을 사용한다.
+`REMOTE_QUEUE_DEPTH`로 낮추거나 높일 수 있으며 runner는 1~256 범위만 허용한다.
+Seed별 이미지와 해시를 1:1로 보존하기 위해 `REMOTE_BATCH_SIZE=1`을 유지하고,
+처리량은 서로 다른 prompt/seed job의 동시 queue로 확보한다.
 
 ```bash
 REMOTE_BATCH_SIZE=1 REMOTE_QUEUE_DEPTH=32 make remote-phase6-pairwise
@@ -187,21 +187,36 @@ style 150개와 canonical artist 300명의 3-seed native 관찰을 확보했으�
 5단계의 공식 결과는 900/900 run, 300명 × seed `[1001, 2002, 3003]`, 1024×1024이며
 관찰 병합 후 stable 172명, unstable 128명으로 분류됐다. 관찰 YAML과 registry에는 작가
 이름을 반복하지 않고 보이는 8축 특성만 저장한다. 6단계의 3-seed visual-signature screen은
-아래 target으로 resume 가능하며, 통과 후보만 seed `4004`, `5005`를 추가한다.
+v0.8.2에서 900/900장을 완료했다. 전수 판정은 `testing` 185개, `rejected` 115개,
+critical failure 0개이며, 최소 `testing >= 200` catalog 적용 gate는 의도대로 변경 없이
+거부됐다. v0.8.2 matrix, run, 이미지 hash, review, scorecard, binding, summary는
+복구 실행과 별개의 원본 근거로 보존한다.
 
 ```bash
-make remote-artist-signature-dry-run
-make remote-artist-signature
-make review-artist-signature
-make apply-artist-signature-screen
-make remote-artist-signature-retest
-make review-artist-signature-retest
-make apply-artist-signature-retest
+make prepare-artist-signature-repair-v0-8-3
+make apply-artist-signature-repair-lifecycle-v0-8-3
+make artist-signature-repair-v0-8-3-matrix
+make remote-artist-signature-repair-v0-8-3
+make review-artist-signature-repair-v0-8-3
+make score-artist-signature-repair-v0-8-3
+make apply-artist-signature-repair-v0-8-3
 ```
 
-Screen review는 세 분할 review 파일을 exact coverage로 병합한 뒤 3-seed 결과를
-`testing/rejected`에만 반영한다. Retest review는 통과 후보의 기존 세 seed와 새
-`4004/5005`를 결합해 모든 후보가 동일한 정확한 5-seed 집합을 갖는지 검사한다.
+Repair lifecycle은 v0.8.2 통과 185개를 그대로 보존하고 미통과 115개만
+`generated`로 유예한다. 이 115개에만 v0.8.3 positive wrapper와 새 seed
+`[6101, 6202, 6303]`을 적용하므로 원격 실행량은 정확히 345 job이다. Repair
+실패 항목은 `generated`로 유지하며, 이전 점수를 완화하거나 원본 screen 근거를
+수정하지 않는다.
+
+기존 통과분과 repair 신규 통과분의 합이 `testing >= 200`일 때만 retest로
+진행한다. Retest는 각 항목이 통과한 원래 prompt profile을 그대로 선택하고 새
+seed `4004/5005`를 추가한다. 기존 세 seed와 결합해 항목별로 정확히 서로 다른
+5개 seed를 검증하며, 이 종합 판정에서만 `approved` 승격을 허용한다.
+
+모든 repair/retest 원격 실행은 `batch_size=1`, 기본 `queue_depth=32`를 사용한다.
+대량 job을 넣기 전에 큐가 비어 있는지 검사하며, 기존 또는 다른 사용자의 작업을
+취소·재정렬·삭제하지 않는다.
+
 최종 production 이후에는 아래 순서로 redacted 배포 증거와 별도 smoke를 확정한다.
 
 ```bash

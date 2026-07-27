@@ -18,16 +18,23 @@
 ## Current checkpoint
 
 - Branch: `main`
-- Last committed checkpoint: `5422fa5`
+- Last committed checkpoint: `8f97223`
 - 기존 v0.8 300-signature screen과 v0.8.1 illustrated calibration은 실패 진단
   증거와 assessment를 포함해 커밋했다. 두 결과 모두 catalog status에 적용하지 않았다.
 - v0.8.2 wrapper는 signature 문두 배치, mid-thigh face 확대, signature-controlled
   lighting/composition/ornament를 사용한다.
 - v0.8.2 calibration은 5 signatures x 3 seeds, 15개 run과 35/35 feature coverage를
   완료했고 contact sheet 시각 판정에서 full screen 진행 기준을 통과했다.
-- v0.8.2 300 signatures x 3 seeds full screen이 versioned report 경로에서 실행 중이다.
-- 원격 생성은 최대 queue depth를 `REMOTE_QUEUE_DEPTH`로 관리하며 향후 기본값은 32다.
-  시작 전 empty-queue guard와 개별 run 검증은 그대로 유지한다.
+- v0.8.2 300 signatures x 3 seeds full screen은 900/900장의 검증된 1024×1024
+  결과를 완료했다. 전수 시각 판정은 `testing` 185개, `rejected` 115개,
+  critical failure 0개다.
+- 최소 `testing >= 200` 적용 gate는 catalog를 변경하지 않고 의도대로 거부됐다.
+  v0.8.2 matrix, run, 이미지 hash, review, scorecard, binding, summary는 후속
+  결과로 덮어쓰지 않는 원본 근거다.
+- 원격 생성 노드는 NVIDIA RTX PRO 6000 96GB를 사용한다. Seed와 이미지를 1:1로
+  보존하기 위해 `batch_size=1`, 서로 다른 job의 병렬 처리를 위해 기본
+  `queue_depth=32`를 사용한다. 시작 전 empty-queue guard와 개별 run 검증은
+  그대로 유지한다.
 - 현재 완료 기준 감사는 4/16이다. 남은 항목은 artist approval, Phase 6 생성 증거,
   production build/runtime audit/deploy/smoke 계열이다.
 - report 이미지 파일은 Git ignore 대상이며, manifest, scorecard, review, summary 같은
@@ -35,27 +42,29 @@
 
 ## Uncommitted evidence
 
-- `tests/reports/artist_signature_screen_v0_8_2/`
-  - 실행 중인 full screen의 검증된 partial runs
 - `tests/reports/completion_criteria.json`
   - 중간 완료 기준 감사로 갱신된 파일
 
-실행 중인 report를 삭제하거나 기존 versioned screen 위에 다른 matrix 결과를
-덮어쓰지 않는다.
+v0.8.2 원본 report를 삭제하거나 기존 versioned screen 위에 repair matrix 결과를
+덮어쓰지 않는다. Repair와 retest는 각각 새 versioned report 경로를 사용한다.
 
 ## Exact next actions
 
-1. 현재 full-screen 프로세스 상태와 원격 큐를 먼저 확인한다. 실행 중이면 중복
-   제출하지 않고 완료까지 관찰한다.
-2. 프로세스가 중단됐고 원격 큐가 비어 있을 때만
-   `make remote-artist-signature-v0-8-2`로 검증된 run을 resume한다.
-3. 900/900 완료 후 `make review-artist-signature-v0-8-2`로 contact sheet 30개를
-   만들고 3개 review part로 나눠 실제 이미지를 평가한다.
-4. `make score-artist-signature-v0-8-2` 후 `testing >= 200` 게이트를 통과한 경우에만
-   `make apply-artist-signature-v0-8-2`를 실행한다.
-5. testing 항목만 seeds 4004/5005로 확장하고, 정확히 5-seed 종합 리뷰 후
-   `approved >= 200` 게이트를 통과한 경우에만 final catalog apply를 실행한다.
-6. 이후 `plan.md` 순서대로 A/B/C, single-axis, pairwise, preset, random, benchmark,
+1. v0.8.2의 185개 통과 근거는 보존하고, 미통과 115개만 최종 `rejected` 대신
+   `generated`로 유예하는 versioned lifecycle summary를 검증·적용한다.
+2. 유예된 115개만 v0.8.3 positive repair wrapper와 새 seed
+   `6101/6202/6303`으로 실행한다. 예상량은 115 × 3 = 345 job이다.
+3. v0.8.3 결과도 전수 review하고, 실패 항목은 `generated`로 유지한다. 원본
+   score를 완화하거나 v0.8.2 근거를 수정하지 않는다.
+4. 기존 185개와 v0.8.3 신규 통과분의 합이 `testing >= 200`일 때만 retest
+   pilot을 만든다.
+5. 각 testing 항목은 자신이 통과한 원래 prompt profile을 유지한 채 seed
+   `4004/5005`를 추가한다. 기존 3개와 합친 정확한 5-seed 종합 리뷰 후
+   `approved >= 200` gate를 통과한 경우에만 final catalog apply를 실행한다.
+6. 모든 원격 실행은 `batch_size=1`, 기본 `queue_depth=32`로 수행하고 시작 전
+   empty-queue guard를 확인한다. 기존 또는 다른 사용자의 작업을 취소·재정렬·삭제하지
+   않는다.
+7. 이후 `plan.md` 순서대로 A/B/C, single-axis, pairwise, preset, random, benchmark,
    release, runtime audit, predeploy, deploy, smoke, final strict 검증을 완료한다.
 
 원격 실행이 필요한 셸에서는 `.env` 값을 표시하지 않고 다음처럼 현재 프로세스에만

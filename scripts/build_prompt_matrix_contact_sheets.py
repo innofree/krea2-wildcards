@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import shutil
 import subprocess
 import tempfile
@@ -23,12 +24,20 @@ from run_remote_prompt_matrix import (
     load_jobs,
     redact_error,
 )
+from export_artist_visual_signature_matrix import (
+    LEGACY_BENCHMARK_PROFILE,
+    REPAIR_BENCHMARK_PROFILE,
+    REPAIR_SEEDS,
+    RETEST_SEEDS,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EXPECTED_SEEDS = 3
 DEFAULT_CASES_PER_SHEET = 10
 MANIFEST_KIND = "resolved_prompt_matrix_contact_sheet_review"
+LEGACY_PILOT_SEEDS = (1001, 2002, 3003)
+PROMPT_DIGEST_RE = re.compile(r"^sha256_[0-9a-f]{64}$")
 
 
 def repo_relative(path: Path) -> str:
@@ -221,6 +230,139 @@ def _standalone_factors(raw_value: str, *, line_number: int) -> dict[str, str]:
     return _clean_factors(value, line_number=line_number)
 
 
+def _profile_seed_stages(
+    profile: str,
+    *,
+    expected_seeds: int,
+) -> dict[int, str | None]:
+    if profile == REPAIR_BENCHMARK_PROFILE:
+        pilot_seeds = REPAIR_SEEDS
+        pilot_stage = "pilot"
+    elif profile == LEGACY_BENCHMARK_PROFILE:
+        pilot_seeds = LEGACY_PILOT_SEEDS
+        pilot_stage = None
+    else:
+        raise ValueError(f"unsupported mixed benchmark profile: {profile}")
+
+    if expected_seeds == len(pilot_seeds):
+        return {seed: pilot_stage for seed in pilot_seeds}
+    if expected_seeds == len(RETEST_SEEDS):
+        extension_stage = (
+            "extension" if profile == REPAIR_BENCHMARK_PROFILE else None
+        )
+        return {seed: extension_stage for seed in RETEST_SEEDS}
+    if expected_seeds == len(pilot_seeds) + len(RETEST_SEEDS):
+        expected = {seed: pilot_stage for seed in pilot_seeds}
+        extension_stage = (
+            "extension" if profile == REPAIR_BENCHMARK_PROFILE else None
+        )
+        expected.update({seed: extension_stage for seed in RETEST_SEEDS})
+        return expected
+    raise ValueError(
+        "mixed artist benchmark scorecards require exact two-, three-, or "
+        "five-seed profile sets"
+    )
+
+
+def _mixed_artist_case_factors(
+    rows: list[dict[str, Any]],
+    *,
+    expected_seeds: int,
+) -> tuple[dict[tuple[str, str], dict[str, str]], tuple[int, ...]]:
+    by_case: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        by_case[(row["mode"], row["style_id"])].append(row)
+
+    factors_by_case: dict[tuple[str, str], dict[str, str]] = {}
+    all_seeds: set[int] = set()
+    for case, case_rows in sorted(by_case.items()):
+        if len(case_rows) != expected_seeds:
+            raise ValueError(
+                f"expected exactly {expected_seeds} seeds for every style/mode; "
+                f"incomplete case: {case[0]}/{case[1]}"
+            )
+        profiles = {
+            row["factors"].get(
+                "benchmark_profile",
+                LEGACY_BENCHMARK_PROFILE,
+            )
+            for row in case_rows
+        }
+        if len(profiles) != 1:
+            raise ValueError(
+                f"mixed benchmark profiles within style/mode: {case[0]}/{case[1]}"
+            )
+        profile = next(iter(profiles))
+        expected = _profile_seed_stages(profile, expected_seeds=expected_seeds)
+        actual_seeds = {row["seed"] for row in case_rows}
+        if actual_seeds != set(expected):
+            raise ValueError(
+                f"{profile} case {case[0]}/{case[1]} does not contain its exact "
+                f"{expected_seeds}-seed set"
+            )
+
+        normalized: list[dict[str, str]] = []
+        legacy_extension_digests: set[str] = set()
+        legacy_pilot_digests: set[str] = set()
+        for row in case_rows:
+            factors = dict(row["factors"])
+            stage = factors.pop("benchmark_stage", None)
+            expected_stage = expected[row["seed"]]
+            if stage != expected_stage:
+                raise ValueError(
+                    f"{profile} seed {row['seed']} has benchmark_stage "
+                    f"{stage!r}; expected {expected_stage!r}"
+                )
+            digest = factors.pop("evaluated_prompt_sha256", None)
+            if profile == REPAIR_BENCHMARK_PROFILE:
+                if (
+                    not isinstance(digest, str)
+                    or not PROMPT_DIGEST_RE.fullmatch(digest)
+                ):
+                    raise ValueError(
+                        f"{profile} case {case[0]}/{case[1]} is missing a valid "
+                        "evaluated prompt digest"
+                    )
+                factors["evaluated_prompt_sha256"] = digest
+            elif row["seed"] in RETEST_SEEDS:
+                if (
+                    not isinstance(digest, str)
+                    or not PROMPT_DIGEST_RE.fullmatch(digest)
+                ):
+                    raise ValueError(
+                        "legacy extension prompt digests must be valid and identical"
+                    )
+                legacy_extension_digests.add(digest)
+            elif digest is not None:
+                if not isinstance(digest, str) or not PROMPT_DIGEST_RE.fullmatch(
+                    digest
+                ):
+                    raise ValueError(
+                        "legacy pilot prompt digests must be absent or valid"
+                    )
+                legacy_pilot_digests.add(digest)
+            normalized.append(factors)
+        if any(factors != normalized[0] for factors in normalized[1:]):
+            raise ValueError(
+                f"{profile} case {case[0]}/{case[1]} may vary only "
+                "benchmark_stage across seeds"
+            )
+        if profile == LEGACY_BENCHMARK_PROFILE:
+            if len(legacy_extension_digests) != 1:
+                raise ValueError(
+                    "legacy extension prompt digests must be valid and identical"
+                )
+            extension_digest = next(iter(legacy_extension_digests))
+            if legacy_pilot_digests not in (set(), {extension_digest}):
+                raise ValueError(
+                    "legacy pilot prompt digests do not match the extension"
+                )
+            normalized[0]["evaluated_prompt_sha256"] = extension_digest
+        factors_by_case[case] = normalized[0]
+        all_seeds.update(actual_seeds)
+    return factors_by_case, tuple(sorted(all_seeds))
+
+
 def load_standalone_scorecard(
     path: Path, *, expected_seeds: int
 ) -> tuple[
@@ -230,7 +372,6 @@ def load_standalone_scorecard(
 ]:
     rows: list[dict[str, Any]] = []
     seen_case_seeds: set[tuple[str, str, int]] = set()
-    factors_by_case: dict[tuple[str, str], dict[str, str]] = {}
     with path.open("r", encoding="utf-8", newline="") as handle:
         reader = csv.DictReader(handle)
         required = {
@@ -257,12 +398,6 @@ def load_standalone_scorecard(
             factors = _standalone_factors(
                 raw.get("factors_json") or "", line_number=line_number
             )
-            previous = factors_by_case.setdefault(case, factors)
-            if previous != factors:
-                raise ValueError(
-                    f"line {line_number}: factors must remain constant across seeds "
-                    "for every style/mode"
-                )
             image, image_path = _scorecard_image(
                 (raw.get("image_path") or "").strip(), line_number=line_number
             )
@@ -281,7 +416,25 @@ def load_standalone_scorecard(
 
     if not rows:
         raise ValueError("scorecard contains no matrix rows")
-    seeds = validate_seed_sets(rows, expected_seeds)
+    has_repair_profile = any(
+        row["factors"].get("benchmark_profile") == REPAIR_BENCHMARK_PROFILE
+        for row in rows
+    )
+    if has_repair_profile:
+        factors_by_case, seeds = _mixed_artist_case_factors(
+            rows,
+            expected_seeds=expected_seeds,
+        )
+    else:
+        factors_by_case = {}
+        for row in rows:
+            case = (row["mode"], row["style_id"])
+            previous = factors_by_case.setdefault(case, row["factors"])
+            if previous != row["factors"]:
+                raise ValueError(
+                    "factors must remain constant across seeds for every style/mode"
+                )
+        seeds = validate_seed_sets(rows, expected_seeds)
     return rows, factors_by_case, seeds
 
 
@@ -416,22 +569,29 @@ def manifest_document(
     cases = []
     for case in sorted(aliases):
         mode, style_id = case
-        cases.append(
-            {
-                "alias": aliases[case],
-                "style_id": style_id,
-                "mode": mode,
-                "factors": dict(sorted(factors_by_case[case].items())),
-                "items": [
-                    {
-                        "test_id": row["test_id"],
-                        "seed": row["seed"],
-                        "image_path": row["image_path"],
-                    }
-                    for row in sorted(by_case[case], key=lambda item: item["seed"])
-                ],
+        items = []
+        benchmark_stages: set[str] = set()
+        for row in sorted(by_case[case], key=lambda item: item["seed"]):
+            item = {
+                "test_id": row["test_id"],
+                "seed": row["seed"],
+                "image_path": row["image_path"],
             }
-        )
+            benchmark_stage = row["factors"].get("benchmark_stage")
+            if isinstance(benchmark_stage, str):
+                item["benchmark_stage"] = benchmark_stage
+                benchmark_stages.add(benchmark_stage)
+            items.append(item)
+        case_document = {
+            "alias": aliases[case],
+            "style_id": style_id,
+            "mode": mode,
+            "factors": dict(sorted(factors_by_case[case].items())),
+            "items": items,
+        }
+        if benchmark_stages:
+            case_document["benchmark_stages"] = sorted(benchmark_stages)
+        cases.append(case_document)
 
     return {
         "schema_version": 1,

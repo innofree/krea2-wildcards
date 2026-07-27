@@ -17,9 +17,17 @@ from run_remote_prompt_matrix import STYLE_ID_RE, validate_job
 DEFAULT_CATALOG = Path("catalog/artists.yaml")
 DEFAULT_OUTPUT = Path("tests/prompt_matrix/artist_visual_signature.jsonl")
 DEFAULT_SEEDS = (1001, 2002, 3003)
+REPAIR_SEEDS = (6101, 6202, 6303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
+LEGACY_BENCHMARK_PROFILE = "artist_visual_signature_v0_8_2"
+REPAIR_BENCHMARK_PROFILE = "artist_visual_signature_repair_v0_8_3"
+BENCHMARK_PROFILES = frozenset(
+    {LEGACY_BENCHMARK_PROFILE, REPAIR_BENCHMARK_PROFILE}
+)
+REPAIR_SIGNATURE_COUNT = 115
+RETEST_SEEDS = (4004, 5005)
 CATALOG_QUALITY_SUFFIX = (
     "Preserve realistic skin texture, coherent hands, believable fabric, natural proportions, "
     "cinematic depth, and no text, logos, or watermarks."
@@ -31,6 +39,15 @@ ILLUSTRATED_BENCHMARK_FINISH = (
     "two-dimensional character-design illustration with coherent illustrated anatomy, readable hands, "
     "clean garment shapes, and no text, logos, or watermarks."
 )
+REPAIR_ILLUSTRATED_BENCHMARK_FINISH = (
+    "Make all eight requested axes independently legible without allowing one axis to substitute "
+    "for another: contour and line language, face geometry, accessory-free eye construction, "
+    "body silhouette and anatomy, local-color palette, light and shadow-edge treatment across "
+    "the face, sleeves, garment folds, and ground, framing with negative space, and recurring "
+    "ornament motifs in both garment and outer-border regions. Finish this as an unmistakably "
+    "hand-drawn two-dimensional character-design illustration with clean garment surfaces, "
+    "coherent illustrated anatomy, readable fingers, and no text, logos, or watermarks."
+)
 FIXED_SCENE = (
     "Create exactly one adult woman as a standing character-design portrait framed from "
     "mid-thigh upward at eye level. Keep her face and both eyes large enough to inspect, and show "
@@ -41,11 +58,81 @@ FIXED_SCENE = (
     "visual signature controls silhouette, placement, negative space, light and shadow, and "
     "ornament."
 )
+REPAIR_FIXED_SCENE = (
+    "Create exactly one adult woman as a standing character-design portrait framed from "
+    "mid-thigh upward at eye level, with the lower image edge crossing both thighs at mid-thigh "
+    "and breathing room around the top of the head, elbows, and both complete hands. Present an "
+    "accessory-free, completely exposed face and eye area, with hair and ornament arranged "
+    "outside it, so the full iris, pupil, lids, lashes, and face geometry remain large and clear. "
+    "Keep clear space around both hands so every finger remains readable. Give her a simple "
+    "long-sleeve garment with broad readable "
+    "surfaces for palette and garment-level motifs against a quiet uncluttered studio ground. "
+    "If the requested framing language suggests a layered or intimate crop, express it through "
+    "placement, negative space, and non-occluding foreground layers while leaving the head, face, "
+    "eyes, forearms, and hands fully inside the frame. "
+    "These neutral anchors keep subject, garment, camera distance, and background content "
+    "comparable while the requested signature controls the eight visual axes."
+)
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
     re.IGNORECASE,
 )
 WILDCARD_RE = re.compile(r"__[A-Za-z0-9][A-Za-z0-9_./-]*__")
+
+
+def repair_axis_ledger(feature_axes: Any) -> str:
+    if not isinstance(feature_axes, dict):
+        raise ValueError("repair benchmark profile requires feature axes")
+
+    def cue(axis: str) -> str:
+        values = feature_axes.get(axis)
+        if (
+            not isinstance(values, list)
+            or not values
+            or not isinstance(values[0], str)
+            or not values[0]
+        ):
+            raise ValueError(f"repair benchmark profile is missing feature axis {axis}")
+        return values[0].replace("_", " ")
+
+    return (
+        "Use this eight-axis visibility ledger: "
+        f"line—show {cue('line_language')} through the outer contour and garment seams; "
+        f"face—show {cue('face_design')} through the jaw, cheeks, and nose; "
+        f"eyes—keep hair and accessories away from fully exposed eyes and show {cue('eye_design')} "
+        "in the iris, pupil, lids, and lashes; "
+        f"body—show {cue('body_design')} through the shoulder and torso silhouette; "
+        f"palette—separate broad garment and background regions using {cue('palette_language')}; "
+        f"light—show {cue('light_modeling')} through shadow edges and highlights on the face, "
+        "sleeves, garment folds, and ground; "
+        f"framing—show {cue('framing_language')} through placement, negative space, and foreground "
+        "layering while keeping the head, face, and both hands uncropped; "
+        f"ornament—show {cue('ornament_language')} in two clear locations, as a repeating broad "
+        "garment motif and as an outer-border motif."
+    )
+
+
+def prompt_for_profile(
+    body: str,
+    benchmark_profile: str,
+    *,
+    feature_axes: Any = None,
+) -> str:
+    if benchmark_profile == REPAIR_BENCHMARK_PROFILE:
+        return (
+            "Treat this visual signature as the controlling design brief. Every listed "
+            "property must be visibly and independently expressed without merging one visual "
+            f"axis into another: {body} {repair_axis_ledger(feature_axes)} "
+            f"{REPAIR_FIXED_SCENE} "
+            f"{REPAIR_ILLUSTRATED_BENCHMARK_FINISH}"
+        )
+    if benchmark_profile == LEGACY_BENCHMARK_PROFILE:
+        return (
+            "Treat this visual signature as the controlling design brief. Every listed "
+            f"property must be visibly expressed: {body} {FIXED_SCENE} "
+            f"{ILLUSTRATED_BENCHMARK_FINISH}"
+        )
+    raise ValueError(f"unsupported benchmark profile: {benchmark_profile}")
 
 
 def write_immutable_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
@@ -235,9 +322,27 @@ def signature_rows(
     statuses: Iterable[str] = DEFAULT_STATUSES,
     limit_signatures: int | None = None,
     include_prompt_digest: bool = True,
+    benchmark_profile: str = LEGACY_BENCHMARK_PROFILE,
+    require_signature_count: int | None = None,
 ) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
     status_values = validate_statuses(statuses)
+    if benchmark_profile not in BENCHMARK_PROFILES:
+        raise ValueError(f"unsupported benchmark profile: {benchmark_profile}")
+    if benchmark_profile == REPAIR_BENCHMARK_PROFILE:
+        if seed_values != REPAIR_SEEDS:
+            raise ValueError(
+                "repair benchmark profile requires seeds "
+                + ", ".join(str(seed) for seed in REPAIR_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "repair benchmark profile requires exactly status generated"
+            )
+        if limit_signatures is not None:
+            raise ValueError("repair benchmark profile cannot limit signatures")
+        if require_signature_count is None:
+            require_signature_count = REPAIR_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -257,6 +362,14 @@ def signature_rows(
         if limit_signatures > len(selected):
             raise ValueError("limit_signatures exceeds the selected signature count")
         selected = select_diverse_signatures(selected, limit_signatures)
+    if require_signature_count is not None:
+        if type(require_signature_count) is not int or require_signature_count < 1:
+            raise ValueError("require_signature_count must be a positive integer")
+        if len(selected) != require_signature_count:
+            raise ValueError(
+                f"selected {len(selected)} artist signature(s); "
+                f"required exactly {require_signature_count}"
+            )
 
     rows: list[dict[str, Any]] = []
     for style_id, body, _ in selected:
@@ -268,10 +381,13 @@ def signature_rows(
             factors["evaluated_prompt_sha256"] = (
                 "sha256_" + canonical_prompt_sha256(items[style_id]["prompt"])
             )
-        prompt = (
-            f"Treat this visual signature as the controlling design brief. Every listed property "
-            f"must be visibly expressed: {body} {FIXED_SCENE} "
-            f"{ILLUSTRATED_BENCHMARK_FINISH}"
+        if benchmark_profile == REPAIR_BENCHMARK_PROFILE:
+            factors["benchmark_profile"] = benchmark_profile
+            factors["benchmark_stage"] = "pilot"
+        prompt = prompt_for_profile(
+            body,
+            benchmark_profile,
+            feature_axes=items[style_id]["feature_axes"],
         )
         for seed in seed_values:
             row = {
@@ -319,10 +435,26 @@ def main() -> int:
         action="store_true",
         help="reproduce a legacy immutable matrix that predates prompt digest binding",
     )
+    parser.add_argument(
+        "--benchmark-profile",
+        choices=sorted(BENCHMARK_PROFILES),
+        default=LEGACY_BENCHMARK_PROFILE,
+        help="versioned prompt wrapper profile (default preserves v0.8.2 matrices)",
+    )
+    parser.add_argument(
+        "--require-signatures",
+        type=int,
+        help="require the selected catalog status set to contain exactly this many signatures",
+    )
     args = parser.parse_args()
 
     try:
-        seeds = validate_seeds(args.seed or DEFAULT_SEEDS)
+        default_seeds = (
+            REPAIR_SEEDS
+            if args.benchmark_profile == REPAIR_BENCHMARK_PROFILE
+            else DEFAULT_SEEDS
+        )
+        seeds = validate_seeds(args.seed or default_seeds)
         statuses = validate_statuses(args.status or DEFAULT_STATUSES)
         rows = signature_rows(
             args.catalog,
@@ -330,6 +462,8 @@ def main() -> int:
             statuses=statuses,
             limit_signatures=args.limit_signatures,
             include_prompt_digest=not args.omit_prompt_digest,
+            benchmark_profile=args.benchmark_profile,
+            require_signature_count=args.require_signatures,
         )
         write_immutable_jsonl(args.output, rows)
         print(

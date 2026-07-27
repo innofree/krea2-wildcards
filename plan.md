@@ -1192,6 +1192,33 @@ evaluation:
     recommended_mode: "visual_signature"
 ```
 
+#### 6.2.1 시각 시그니처 screen 복구 및 5-seed gate
+
+v0.8.2 시각 시그니처 full screen은 300개 × seed
+`[1001, 2002, 3003]`, 총 900장을 완료했다. 실제 이미지 판정 결과는
+`testing` 185개, `rejected` 115개, critical failure 0개였다. 최소
+`testing >= 200` 적용 gate는 의도대로 catalog 변경 전에 실행을 거부했으며,
+이 screen의 matrix, 개별 run, 이미지 hash, review, scorecard, binding과 summary는
+후속 wrapper 결과로 덮어쓰지 않는 원본 근거로 보존한다.
+
+최소 수량을 점수 완화나 임의 승격으로 맞추지 않는다. 다음 복구 절차를 적용한다.
+
+1. v0.8.2 통과 185개는 `testing` 근거로 보존한다.
+2. 미통과 115개만 최종 `rejected`로 확정하지 않고 `generated` 상태로 유예한다.
+3. 유예된 115개에만 별도 v0.8.3 positive repair wrapper를 적용하고, 새 seed
+   `[6101, 6202, 6303]`으로 345개 job을 실행한다.
+4. v0.8.3에서도 통과하지 못한 항목은 `generated`로 유지한다. 원본 판정이나
+   score를 수정해 통과로 간주하지 않는다.
+5. v0.8.2 통과분과 v0.8.3 신규 통과분의 합이 `testing >= 200`일 때만 다음
+   retest 단계로 진행한다.
+6. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
+   기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
+   확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.
+
+모든 원격 matrix는 `batch_size=1`, 기본 `queue_depth=32`를 유지한다. 시작 전
+원격 큐가 비어 있는지 검사하고, 이 계획이 제출하지 않은 작업은 취소·재정렬·삭제하지
+않는다.
+
 ### 6.3 조합 테스트
 
 단일 축 테스트를 통과한 항목에 대해 조합 테스트를 수행한다.
