@@ -1228,6 +1228,11 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    critical-failure image 6으로 전체 확장을 거부했다. 후속 v0.8.5는
    `single-view illustration`과 no-lineup/turnaround/panel 제약을 사용하며 다시
    5개 × 새 3-seed calibration을 통과해야 한다.
+   실제 v0.8.5는 부정 목록의 `turnaround/crop` 개념이 이미지에 역으로 활성화되어
+   상반신 크롭과 배경 인물 실루엣을 만들었고 `testing 0 / rejected 5`,
+   critical-failure image 3으로 거부했다. v0.8.6은 부정 개념 목록을 제거하고
+   기존 5-seed 결과로 검증된 `full-length editorial`, `eye-level head-to-toe`,
+   `generous negative space around the complete silhouette` 긍정 구도만 사용한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.

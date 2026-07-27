@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/artist_visual_signature_repair_single_view_calibration_v0_8_5.jsonl",
+  "matrix_sha256": "faee21e640e98dc1fd0cdc7a6a7a4529921463938e43cb7c0a0ab516ba6a79ad",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 15,
+  "completed_count": 15,
+  "style_count": 5,
+  "modes": {
+    "visual_signature": 15
+  },
+  "seeds": [
+    8101,
+    8202,
+    8303
+  ],
+  "scorecard": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "VS000001",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8101,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000001/run.json"
+    },
+    {
+      "test_id": "VS000002",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8202,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000002/run.json"
+    },
+    {
+      "test_id": "VS000003",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8303,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000003/run.json"
+    },
+    {
+      "test_id": "VS000004",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8101,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000004/run.json"
+    },
+    {
+      "test_id": "VS000005",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8202,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000005/run.json"
+    },
+    {
+      "test_id": "VS000006",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8303,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000006/run.json"
+    },
+    {
+      "test_id": "VS000007",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8101,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000007/run.json"
+    },
+    {
+      "test_id": "VS000008",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8202,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000008/run.json"
+    },
+    {
+      "test_id": "VS000009",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8303,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000009/run.json"
+    },
+    {
+      "test_id": "VS000010",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8101,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000010/run.json"
+    },
+    {
+      "test_id": "VS000011",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8202,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000011/run.json"
+    },
+    {
+      "test_id": "VS000012",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8303,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000012/run.json"
+    },
+    {
+      "test_id": "VS000013",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8101,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000013/run.json"
+    },
+    {
+      "test_id": "VS000014",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8202,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000014/run.json"
+    },
+    {
+      "test_id": "VS000015",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "seed": 8303,
+      "run": "tests/reports/artist_signature_repair_single_view_calibration_v0_8_5/runs/VS000015/run.json"
+    }
+  ]
+}

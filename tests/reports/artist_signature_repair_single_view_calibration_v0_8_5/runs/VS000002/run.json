@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000002",
+  "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+  "label": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+  "mode": "visual_signature",
+  "seed": 8202,
+  "remote": "private_comfyui",
+  "prompt_id": "0856fc65-0782-43cc-841f-47e358e03317",
+  "resolved_prompt": "Full-body single-view, camera far back. Show exactly one adult woman once in one scene; no duplicate, lineup, alternate view, front-back pair, turnaround, inset, or panel. Keep her hair-to-shoes silhouette inside the square canvas with margins. Face and eyes forward, both hands whole. Nothing touches an edge. Never zoom, crop, or occlude. Controlling visual signature: An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, hard-edged two-value cel blocks, layered intimate framing and a close foreground accent, and sparse floral traces and quiet border motifs. Make each cue bold and independent: line=angular architectural; face=rounded soft; eyes=layered large; body=elongated graceful; palette=deep jewel; light=crisp graphic; framing=layered intimate; ornament=floral trace. Place them respectively on contours and seams; face; irises and lids; silhouette; broad fields; clear shadows; placement and negative space; repeated garment motif and flat outer border behind her. Close, intimate, layered, or foreground means background layout only, never crop. Clean hand-drawn 2D, simple sleeves, quiet studio, coherent anatomy and fingers; one full silhouette, face, eyes, hands; no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "3920285e8bdc061fcd879c5b3c51e8f1b21dabc30731ae79f32f5eaae51d3fcf",
+  "workflow_sha256": "544a68ec1a10efc5c46619640fc21bbcaedb96883cb022ff4841975de96df8da",
+  "factors": {
+    "body_design": "elongated_graceful",
+    "eye_design": "layered_large",
+    "face_design": "rounded_soft",
+    "framing_language": "layered_intimate",
+    "light_modeling": "crisp_graphic",
+    "line_language": "angular_architectural",
+    "ornament_language": "floral_trace",
+    "palette_language": "deep_jewel",
+    "evaluated_prompt_sha256": "sha256_e227834f4c8d157c3e4ce061f921b5f6d46dd5a8a0f2738f28c5cb657374b416",
+    "benchmark_profile": "artist_visual_signature_repair_single_view_calibration_v0_8_5",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f39e05a14463992c6c19e1360911e2b3a2b62b09d24694447727c98a49a703cd",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,46 @@
+schema_version: 1
+review_method: direct_original_contact_sheet_visual_review
+reviewer_scope:
+  - prompt_matrix_visual_signature_001.png
+styles:
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 2, compatibility: 3, distinctiveness: 4, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The three seeds now contain one view and show strong deep-jewel floral garment and border
+      treatment, but every result cuts off the whole face, eyes, lower legs, and shoes. The
+      requested hair-to-shoes single-view composition therefore fails despite improved ornament.
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 3, stability: 2, character_quality: 4, composition_quality: 2, compatibility: 3, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Seed 8202 alone shows a complete figure; seed 8101 loses the head and feet, and seed 8303
+      loses the lower body. Warm earth color and broad anatomy recur, but geometric inset,
+      luminous glaze, and exact head-to-toe framing do not remain stable.
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 2, stability: 3, character_quality: 4, composition_quality: 2, compatibility: 3, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      All three images crop the face and lower legs, and seed 8303 turns the subject away. Blue
+      painterly treatment is stable, while radial eyes, nocturnal neon, asymmetry, geometric
+      inset, and the complete single front-facing figure are not independently visible.
+  artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 1, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 1, compatibility: 2, distinctiveness: 3, prompt_efficiency: 1}
+    critical_failure: true
+    recommendation: rejected
+    notes: >-
+      Every seed adds one or two large background human silhouettes behind the foreground woman,
+      creating a critical multiple-subject failure, and all three crop substantial body regions.
+      Jewel color and ornamental trim appear, but particle drift and full single-figure framing
+      do not.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 2, compatibility: 3, distinctiveness: 4, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Mineral color and dense textile echo are strong and stable, but all three seeds cut off the
+      head, face, eyes, lower legs, and shoes. The result is a torso fashion detail rather than
+      the required complete single-view silhouette.

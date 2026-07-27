@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000011",
+  "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+  "label": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+  "mode": "visual_signature",
+  "seed": 8202,
+  "remote": "private_comfyui",
+  "prompt_id": "903b148f-ddad-4e8b-88a2-a16991b2ba82",
+  "resolved_prompt": "Full-body single-view, camera far back. Show exactly one adult woman once in one scene; no duplicate, lineup, alternate view, front-back pair, turnaround, inset, or panel. Keep her hair-to-shoes silhouette inside the square canvas with margins. Face and eyes forward, both hands whole. Nothing touches an edge. Never zoom, crop, or occlude. Controlling visual signature: An adult portrait uses rounded linework with reinforced features, a tapered face with high cheekbones, rounded eyes, radial irises, and soft lower gradients, an athletic figure with stable joints and firm hands, deep garnet, ink blue, forest, and restrained gold, velvety diffuse values and soft contact shadows, centered emblematic framing with face-to-hands hierarchy, and drifting particles away from facial features. Make each cue bold and independent: line=rounded continuous; face=tapered high; eyes=rounded radial; body=broad athletic; palette=deep jewel; light=velvety diffuse; framing=centered emblematic; ornament=particle drift. Place them respectively on contours and seams; face; irises and lids; silhouette; broad fields; clear shadows; placement and negative space; repeated garment motif and flat outer border behind her. Close, intimate, layered, or foreground means background layout only, never crop. Clean hand-drawn 2D, simple sleeves, quiet studio, coherent anatomy and fingers; one full silhouette, face, eyes, hands; no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "876d6966cf2883f475b41e04b35af6dd2f28756ccb61de5495e628bbbebdc063",
+  "workflow_sha256": "89a148d1841a647da709aab160cb6a1ecddcd431c610dd996188b45e26e92309",
+  "factors": {
+    "body_design": "broad_athletic",
+    "eye_design": "rounded_radial",
+    "face_design": "tapered_high",
+    "framing_language": "centered_emblematic",
+    "light_modeling": "velvety_diffuse",
+    "line_language": "rounded_continuous",
+    "ornament_language": "particle_drift",
+    "palette_language": "deep_jewel",
+    "evaluated_prompt_sha256": "sha256_2f9fa30c89ed725bde94ca0948742f8e722658d5ac73dc1fd8066a3e31989920",
+    "benchmark_profile": "artist_visual_signature_repair_single_view_calibration_v0_8_5",
+    "benchmark_stage": "calibration"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "ca1cf9eb8137f53ea21efa2cd2beb230316071930aed831da3474ce7f2b61ddb",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
