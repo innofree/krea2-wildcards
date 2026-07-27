@@ -11,6 +11,7 @@ from export_phase6_matrix import (
     CALIBRATION_SEEDS,
     PAIRWISE_SPECS,
     PHASE6_PROFILE_FACTOR,
+    PROVEN_VISIBILITY_FINISH,
     benchmark_rows,
     calibration_rows,
     pairwise_rows,
@@ -165,7 +166,8 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert len(rows) == 69
     assert len({row["test_id"] for row in rows}) == 69
     assert len({(row["style_id"], row["mode"]) for row in rows}) == 23
-    assert {row["seed"] for row in rows} == set(CALIBRATION_SEEDS)
+    assert CALIBRATION_SEEDS == (41001, 42002, 43003)
+    assert {row["seed"] for row in rows} == {41001, 42002, 43003}
     assert {row["mode"] for row in rows} == {
         "single_axis",
         "pairwise",
@@ -176,7 +178,50 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert {row["factors"]["prompt_profile_sha256"] for row in rows} == {
         PHASE6_PROFILE_FACTOR
     }
-    assert all(
-        "one continuous single-view vertical image" in row["prompt"] for row in rows
-    )
+    assert all("exactly one" in row["prompt"] for row in rows)
     assert all("Preserve realistic skin texture" not in row["prompt"] for row in rows)
+
+    by_style = {row["style_id"]: row["prompt"] for row in rows}
+    assert PROVEN_VISIBILITY_FINISH in by_style["single_axis_lighting_001"]
+    pose = by_style["pairwise_style_pack_pose_001"]
+    assert PROVEN_VISIBILITY_FINISH in pose
+    assert "both supporting legs, and both feet visible" in pose
+    assert "Final camera lock—frame literally" in pose
+    assert "mid-thigh inspection" not in pose
+    assert PROVEN_VISIBILITY_FINISH in by_style["krea2_turbo_benchmark"]
+
+    camera = by_style["pairwise_artist_signature_camera_composition_001"]
+    assert "these eight cues" in camera
+    assert "framing language—" in camera
+    assert "full-length figure" not in camera
+    assert "complete figure" not in camera
+    assert "Final camera lock—" in camera
+    assert camera.rfind("Final camera lock—") > camera.rfind("framing language—")
+
+    lighting = by_style["pairwise_style_pack_lighting_001"]
+    assert "final illumination blueprint" in lighting
+    assert "separate small background practical" in lighting
+    assert lighting.rfind("Final camera lock—") > lighting.rfind(
+        "final illumination blueprint"
+    )
+
+    coloring = by_style["pairwise_artist_signature_coloring_001"]
+    assert "these eight cues" in coloring
+    assert "Final camera lock—frame literally" in coloring
+
+    preset = by_style["preset_audit_001"]
+    assert "camera boundary, which controls where lower garment pieces" in preset
+    assert preset.rfind("Final camera lock—") > preset.rfind("natural skin hue")
+
+    random_close = by_style["random_utility_001"]
+    for conflict in (
+        "full-length figure",
+        "complete figure",
+        "full-body stance",
+        "full-body silhouette",
+    ):
+        assert conflict not in random_close
+    assert "these eight cues" in random_close
+    assert random_close.rfind("Final camera lock—") > random_close.rfind(
+        "outer-border ornament"
+    )
