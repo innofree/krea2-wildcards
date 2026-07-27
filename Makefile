@@ -5,6 +5,7 @@ REMOTE_BATCH_SIZE ?= 1
 .PHONY: runtime-audit phase6-calibration-matrix phase6-calibration-gate remote-phase6-calibration review-phase6-calibration score-phase6-calibration phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
 .PHONY: prepare-artist-signature-repair-v0-8-3 apply-artist-signature-repair-lifecycle-v0-8-3 artist-signature-repair-v0-8-3-matrix remote-artist-signature-repair-v0-8-3 review-artist-signature-repair-v0-8-3 score-artist-signature-repair-v0-8-3 apply-artist-signature-repair-v0-8-3 artist-signature-testing-pilot-v0-8-3 artist-signature-retest-v0-8-3-matrix remote-artist-signature-retest-v0-8-3 combine-artist-signature-retest-v0-8-3 review-artist-signature-retest-v0-8-3 score-artist-signature-retest-v0-8-3 apply-artist-signature-retest-v0-8-3
+.PHONY: artist-signature-repair-framing-calibration-v0-8-4-matrix remote-artist-signature-repair-framing-calibration-v0-8-4 review-artist-signature-repair-framing-calibration-v0-8-4 score-artist-signature-repair-framing-calibration-v0-8-4
 
 preview:
 	python3 scripts/build_runtime_yaml.py --include-status generated --include-status testing --include-status approved --output build/preview-wildcards
@@ -223,6 +224,20 @@ apply-artist-signature-repair-v0-8-3:
 	python3 scripts/refresh_generation_manifest.py catalog/artists.yaml --apply
 	python3 scripts/sync_catalog_v2.py --apply
 	python3 scripts/validate_catalog_v2.py
+
+artist-signature-repair-framing-calibration-v0-8-4-matrix:
+	python3 scripts/export_artist_visual_signature_matrix.py --benchmark-profile artist_visual_signature_repair_framing_calibration_v0_8_4 --status generated --seed 7101 --seed 7202 --seed 7303 --limit-signatures 5 --require-candidates 115 --require-signatures 5 --output tests/prompt_matrix/artist_visual_signature_repair_framing_calibration_v0_8_4.jsonl
+
+remote-artist-signature-repair-framing-calibration-v0-8-4: artist-signature-repair-framing-calibration-v0-8-4-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/artist_visual_signature_repair_framing_calibration_v0_8_4.jsonl --output tests/reports/artist_signature_repair_framing_calibration_v0_8_4 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+
+review-artist-signature-repair-framing-calibration-v0-8-4:
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_signature_repair_framing_calibration_v0_8_4/scorecard.csv --matrix tests/prompt_matrix/artist_visual_signature_repair_framing_calibration_v0_8_4.jsonl --expected-seeds 3 --cases-per-sheet 5 --overwrite
+
+score-artist-signature-repair-framing-calibration-v0-8-4:
+	python3 scripts/apply_visual_review.py tests/reports/artist_signature_repair_framing_calibration_v0_8_4/scorecard.csv tests/reports/artist_signature_repair_framing_calibration_v0_8_4/review.yaml --output tests/reports/artist_signature_repair_framing_calibration_v0_8_4/scored.csv --overwrite
+	python3 scripts/bind_artist_prompt_evidence.py tests/prompt_matrix/artist_visual_signature_repair_framing_calibration_v0_8_4.jsonl --catalog catalog/artists.yaml --output tests/reports/artist_signature_repair_framing_calibration_v0_8_4/prompt_binding.json
+	python3 scripts/summarize_results.py tests/reports/artist_signature_repair_framing_calibration_v0_8_4/scored.csv --prompt-binding tests/reports/artist_signature_repair_framing_calibration_v0_8_4/prompt_binding.json --output tests/reports/artist_signature_repair_framing_calibration_v0_8_4/summary.json
 
 artist-signature-testing-pilot-v0-8-3:
 	python3 scripts/select_artist_testing_pilot.py tests/reports/artist_signature_screen_v0_8_2/scored.csv tests/reports/artist_signature_repair_v0_8_3/scored.csv --legacy-binding tests/reports/artist_signature_screen_v0_8_2/prompt_binding.json --repair-binding tests/reports/artist_signature_repair_v0_8_3/prompt_binding.json --catalog catalog/artists.yaml --output tests/reports/artist_signature_combined_v0_8_3/pilot_scorecard.csv --overwrite

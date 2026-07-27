@@ -1212,7 +1212,18 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
 5. 각 repair 반복의 실제 통과분은 `testing`으로 누적하고 실패분은 `generated`로
    유지한다. 누적 적용은 최소 수량과 무관하게 증거대로 수행하되, v0.8.2 통과분과
    repair 신규 통과분의 합이 `testing >= 200`일 때만 다음 retest 단계로 진행한다.
-6. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
+6. v0.8.3의 115개 × 3-seed 실제 판정은 얼굴·눈의 반복 크롭으로
+   `testing 0 / generated 유지 115 / critical 0`이었다. 이 실패 matrix, 이미지,
+   review, score 및 catalog 적용 근거는 변경하지 않고 보존한다.
+7. 다음 전체 실행 전 v0.8.4 framing-first wrapper를 서로 다른 5개 signature와
+   새 seed `[7101, 7202, 7303]`에 먼저 적용한다. wrapper는 정확한 catalog prompt
+   본문을 한 번만 포함하고, full-body·camera-far-back·hair-to-shoes margin 지시를
+   맨 앞에 배치하며 1,400자와 공백 기준 200단어를 넘지 않는다.
+8. v0.8.4 calibration의 15개 이미지 모두에서 머리·얼굴·눈·양손·발이 프레임 안에
+   보여야 한다. 하나라도 top/head/face crop이 있으면 전체 115개로 확장하지 않고
+   wrapper를 다시 versioning한다. 이 crop gate와 8축 품질 gate를 모두 통과한
+   profile만 잔여 `generated` 전체에 서로 다른 새 3개 seed로 실행한다.
+9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.
 

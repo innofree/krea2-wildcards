@@ -11,6 +11,8 @@ from bind_artist_prompt_evidence import atomic_write_json, build_binding
 from common import canonical_prompt_sha256
 from export_artist_testing_retest_matrix import retest_rows
 from export_artist_visual_signature_matrix import (
+    FRAMING_CALIBRATION_PROFILE,
+    FRAMING_CALIBRATION_SEEDS,
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
@@ -274,6 +276,77 @@ def test_repair_profile_uses_exact_three_seeds_digest_and_axis_ledger(
     write_immutable_jsonl(bad, tampered)
     with pytest.raises(ValueError, match="unsupported benchmark_profile"):
         build_binding(bad, catalog, root=tmp_path)
+
+
+def test_framing_calibration_profile_is_short_framing_first_and_exact(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_calibration_{index}": "generated" for index in range(1, 7)},
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=FRAMING_CALIBRATION_SEEDS,
+        benchmark_profile=FRAMING_CALIBRATION_PROFILE,
+        limit_signatures=5,
+        require_candidate_count=6,
+        require_signature_count=5,
+    )
+    selected = {row["style_id"] for row in rows}
+
+    assert len(rows) == 15
+    assert len(selected) == 5
+    assert {row["seed"] for row in rows} == set(FRAMING_CALIBRATION_SEEDS)
+    for row in rows:
+        body = items[row["style_id"]]["prompt"]
+        factors = row["factors"]
+        prompt = row["prompt"]
+        assert factors["benchmark_profile"] == FRAMING_CALIBRATION_PROFILE
+        assert factors["benchmark_stage"] == "calibration"
+        assert factors["evaluated_prompt_sha256"] == (
+            "sha256_" + canonical_prompt_sha256(body)
+        )
+        assert prompt.startswith("Full-body character sheet, camera far back.")
+        assert prompt.count(body) == 1
+        assert len(prompt) <= 1400
+        assert len(prompt.split()) <= 200
+        assert "complete hair-to-shoes silhouette" in prompt
+        assert "Never zoom, crop" in prompt
+        assert "framing=framing" in prompt
+        assert "outer border" in prompt
+        assert "full silhouette, face, eyes, hands visible" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/framing_calibration.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == FRAMING_CALIBRATION_PROFILE
+    assert binding["benchmark_stage"] == "calibration"
+
+    with pytest.raises(ValueError, match="requires seeds"):
+        signature_rows(
+            catalog,
+            seeds=(7101, 7202, 9999),
+            benchmark_profile=FRAMING_CALIBRATION_PROFILE,
+            limit_signatures=5,
+            require_candidate_count=6,
+        )
+    with pytest.raises(ValueError, match="exactly 5 limited"):
+        signature_rows(
+            catalog,
+            seeds=FRAMING_CALIBRATION_SEEDS,
+            benchmark_profile=FRAMING_CALIBRATION_PROFILE,
+            limit_signatures=4,
+            require_candidate_count=6,
+        )
+    with pytest.raises(ValueError, match="required exactly 5 before limiting"):
+        signature_rows(
+            catalog,
+            seeds=FRAMING_CALIBRATION_SEEDS,
+            benchmark_profile=FRAMING_CALIBRATION_PROFILE,
+            limit_signatures=5,
+            require_candidate_count=5,
+        )
 
 
 def test_repair_accumulation_preserves_failures_and_enforces_total_gate(

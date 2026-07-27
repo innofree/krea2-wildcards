@@ -13,6 +13,8 @@ from typing import Any
 from common import canonical_prompt_sha256, load_yaml
 from export_artist_visual_signature_matrix import (
     FIXED_SCENE,
+    FRAMING_CALIBRATION_PROFILE,
+    FRAMING_CALIBRATION_SEEDS,
     ILLUSTRATED_BENCHMARK_FINISH,
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
@@ -121,12 +123,20 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
                     f"matrix line {line_number}: legacy profile cannot declare benchmark_stage"
                 )
             stage = "legacy"
-        elif row_profile == REPAIR_BENCHMARK_PROFILE:
+        elif row_profile in {
+            REPAIR_BENCHMARK_PROFILE,
+            FRAMING_CALIBRATION_PROFILE,
+        }:
             profile = row_profile
             stage = factors.get("benchmark_stage")
-            if stage not in {"pilot", "extension"}:
+            valid_stages = (
+                {"pilot", "extension"}
+                if profile == REPAIR_BENCHMARK_PROFILE
+                else {"calibration"}
+            )
+            if stage not in valid_stages:
                 raise ValueError(
-                    f"matrix line {line_number}: repair profile requires a valid "
+                    f"matrix line {line_number}: benchmark profile requires a valid "
                     "benchmark_stage"
                 )
             repair_stages.add(stage)
@@ -141,6 +151,13 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             if type(seed) is not int or seed not in expected_seeds:
                 raise ValueError(
                     f"matrix line {line_number}: repair profile has an invalid seed"
+                )
+        elif profile == FRAMING_CALIBRATION_PROFILE:
+            seed = row.get("seed")
+            if type(seed) is not int or seed not in FRAMING_CALIBRATION_SEEDS:
+                raise ValueError(
+                    f"matrix line {line_number}: framing calibration profile has "
+                    "an invalid seed"
                 )
         else:
             seed = row.get("seed")
@@ -176,12 +193,17 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
     if not row_count:
         raise ValueError("artist prompt matrix contains no rows")
     for (profile, stage, style_id), seeds in grouped_seeds.items():
-        if profile != REPAIR_BENCHMARK_PROFILE:
+        if profile == REPAIR_BENCHMARK_PROFILE:
+            expected_seeds = set(
+                REPAIR_SEEDS if stage == "pilot" else RETEST_SEEDS
+            )
+        elif profile == FRAMING_CALIBRATION_PROFILE:
+            expected_seeds = set(FRAMING_CALIBRATION_SEEDS)
+        else:
             continue
-        expected_seeds = set(REPAIR_SEEDS if stage == "pilot" else RETEST_SEEDS)
         if seeds != expected_seeds:
             raise ValueError(
-                f"repair profile style {style_id!r} does not contain the exact "
+                f"benchmark profile style {style_id!r} does not contain the exact "
                 f"{stage} seeds"
             )
 
@@ -202,14 +224,18 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         "styles": dict(sorted(style_digests.items())),
     }
     document["binding_sha256"] = payload_sha256(document)
-    if matrix_profiles == {REPAIR_BENCHMARK_PROFILE}:
-        document["benchmark_profile"] = REPAIR_BENCHMARK_PROFILE
+    versioned_profiles = {
+        REPAIR_BENCHMARK_PROFILE,
+        FRAMING_CALIBRATION_PROFILE,
+    }
+    if len(matrix_profiles) == 1 and matrix_profiles <= versioned_profiles:
+        document["benchmark_profile"] = next(iter(matrix_profiles))
         if len(repair_stages) == 1:
             document["benchmark_stage"] = next(iter(repair_stages))
         else:
             document["benchmark_stages"] = sorted(repair_stages)
         document["binding_sha256"] = payload_sha256(document)
-    elif REPAIR_BENCHMARK_PROFILE in matrix_profiles:
+    elif matrix_profiles & versioned_profiles:
         document["benchmark_profiles"] = sorted(matrix_profiles)
         document["repair_benchmark_stages"] = sorted(repair_stages)
         document["binding_sha256"] = payload_sha256(document)

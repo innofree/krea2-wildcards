@@ -18,15 +18,24 @@ DEFAULT_CATALOG = Path("catalog/artists.yaml")
 DEFAULT_OUTPUT = Path("tests/prompt_matrix/artist_visual_signature.jsonl")
 DEFAULT_SEEDS = (1001, 2002, 3003)
 REPAIR_SEEDS = (6101, 6202, 6303)
+FRAMING_CALIBRATION_SEEDS = (7101, 7202, 7303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
 LEGACY_BENCHMARK_PROFILE = "artist_visual_signature_v0_8_2"
 REPAIR_BENCHMARK_PROFILE = "artist_visual_signature_repair_v0_8_3"
+FRAMING_CALIBRATION_PROFILE = (
+    "artist_visual_signature_repair_framing_calibration_v0_8_4"
+)
 BENCHMARK_PROFILES = frozenset(
-    {LEGACY_BENCHMARK_PROFILE, REPAIR_BENCHMARK_PROFILE}
+    {
+        LEGACY_BENCHMARK_PROFILE,
+        REPAIR_BENCHMARK_PROFILE,
+        FRAMING_CALIBRATION_PROFILE,
+    }
 )
 REPAIR_SIGNATURE_COUNT = 115
+FRAMING_CALIBRATION_SIGNATURE_COUNT = 5
 RETEST_SEEDS = (4004, 5005)
 CATALOG_QUALITY_SUFFIX = (
     "Preserve realistic skin texture, coherent hands, believable fabric, natural proportions, "
@@ -73,6 +82,21 @@ REPAIR_FIXED_SCENE = (
     "These neutral anchors keep subject, garment, camera distance, and background content "
     "comparable while the requested signature controls the eight visual axes."
 )
+FRAMING_CALIBRATION_OPEN = (
+    "Full-body character sheet, camera far back. Exactly one adult woman stands centered. Keep "
+    "her complete hair-to-shoes silhouette inside the square canvas with clear margins. Face "
+    "and eyes forward; show both whole hands. Nothing touches an edge. Never zoom, crop, "
+    "occlude, or cut her body."
+)
+FRAMING_CALIBRATION_CLOSE = (
+    "Independently render line={line}; face={face}; eyes={eyes}; body={body}; "
+    "palette={palette}; light={light}; framing={framing}; ornament={ornament}. Place these on "
+    "contours and seams, face, irises and lids, silhouette, broad fields, shadows, negative "
+    "space, and garment plus flat outer border, respectively. Treat close, intimate, layered, "
+    "or foreground only as layout behind her, never crop or occlusion. Clean hand-drawn 2D, "
+    "simple long sleeves, quiet studio, coherent anatomy and fingers; full silhouette, face, "
+    "eyes, hands visible; no text, logos, or watermarks."
+)
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
     re.IGNORECASE,
@@ -112,12 +136,45 @@ def repair_axis_ledger(feature_axes: Any) -> str:
     )
 
 
+def framing_calibration_axis_ledger(feature_axes: Any) -> str:
+    if not isinstance(feature_axes, dict):
+        raise ValueError("framing calibration profile requires feature axes")
+
+    def cue(axis: str) -> str:
+        values = feature_axes.get(axis)
+        if (
+            not isinstance(values, list)
+            or not values
+            or not isinstance(values[0], str)
+            or not values[0]
+        ):
+            raise ValueError(f"framing calibration profile is missing feature axis {axis}")
+        return values[0].replace("_", " ")
+
+    return FRAMING_CALIBRATION_CLOSE.format(
+        line=cue("line_language"),
+        face=cue("face_design"),
+        eyes=cue("eye_design"),
+        body=cue("body_design"),
+        palette=cue("palette_language"),
+        light=cue("light_modeling"),
+        framing=cue("framing_language"),
+        ornament=cue("ornament_language"),
+    )
+
+
 def prompt_for_profile(
     body: str,
     benchmark_profile: str,
     *,
     feature_axes: Any = None,
 ) -> str:
+    if benchmark_profile == FRAMING_CALIBRATION_PROFILE:
+        return (
+            f"{FRAMING_CALIBRATION_OPEN} "
+            f"Controlling visual signature: {body} "
+            f"{framing_calibration_axis_ledger(feature_axes)}"
+        )
     if benchmark_profile == REPAIR_BENCHMARK_PROFILE:
         return (
             "Treat this visual signature as the controlling design brief. Every listed "
@@ -323,6 +380,7 @@ def signature_rows(
     limit_signatures: int | None = None,
     include_prompt_digest: bool = True,
     benchmark_profile: str = LEGACY_BENCHMARK_PROFILE,
+    require_candidate_count: int | None = None,
     require_signature_count: int | None = None,
 ) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
@@ -343,6 +401,27 @@ def signature_rows(
             raise ValueError("repair benchmark profile cannot limit signatures")
         if require_signature_count is None:
             require_signature_count = REPAIR_SIGNATURE_COUNT
+    elif benchmark_profile == FRAMING_CALIBRATION_PROFILE:
+        if seed_values != FRAMING_CALIBRATION_SEEDS:
+            raise ValueError(
+                "framing calibration profile requires seeds "
+                + ", ".join(str(seed) for seed in FRAMING_CALIBRATION_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "framing calibration profile requires exactly status generated"
+            )
+        if limit_signatures != FRAMING_CALIBRATION_SIGNATURE_COUNT:
+            raise ValueError(
+                "framing calibration profile requires exactly "
+                f"{FRAMING_CALIBRATION_SIGNATURE_COUNT} limited signatures"
+            )
+        if require_candidate_count is None:
+            raise ValueError(
+                "framing calibration profile requires an exact pre-limit candidate count"
+            )
+        if require_signature_count is None:
+            require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -356,6 +435,14 @@ def signature_rows(
         selected.append((style_id, body, signature_feature_vector(items[style_id])))
     if not selected:
         raise ValueError("no artist signatures matched the requested statuses")
+    if require_candidate_count is not None:
+        if type(require_candidate_count) is not int or require_candidate_count < 1:
+            raise ValueError("require_candidate_count must be a positive integer")
+        if len(selected) != require_candidate_count:
+            raise ValueError(
+                f"selected {len(selected)} artist signature candidate(s); "
+                f"required exactly {require_candidate_count} before limiting"
+            )
     if limit_signatures is not None:
         if type(limit_signatures) is not int or limit_signatures < 1:
             raise ValueError("limit_signatures must be a positive integer")
@@ -381,9 +468,16 @@ def signature_rows(
             factors["evaluated_prompt_sha256"] = (
                 "sha256_" + canonical_prompt_sha256(items[style_id]["prompt"])
             )
-        if benchmark_profile == REPAIR_BENCHMARK_PROFILE:
+        if benchmark_profile in {
+            REPAIR_BENCHMARK_PROFILE,
+            FRAMING_CALIBRATION_PROFILE,
+        }:
             factors["benchmark_profile"] = benchmark_profile
-            factors["benchmark_stage"] = "pilot"
+            factors["benchmark_stage"] = (
+                "pilot"
+                if benchmark_profile == REPAIR_BENCHMARK_PROFILE
+                else "calibration"
+            )
         prompt = prompt_for_profile(
             body,
             benchmark_profile,
@@ -442,6 +536,11 @@ def main() -> int:
         help="versioned prompt wrapper profile (default preserves v0.8.2 matrices)",
     )
     parser.add_argument(
+        "--require-candidates",
+        type=int,
+        help="require the status-filtered pool to contain exactly this many signatures",
+    )
+    parser.add_argument(
         "--require-signatures",
         type=int,
         help="require the selected catalog status set to contain exactly this many signatures",
@@ -452,7 +551,11 @@ def main() -> int:
         default_seeds = (
             REPAIR_SEEDS
             if args.benchmark_profile == REPAIR_BENCHMARK_PROFILE
-            else DEFAULT_SEEDS
+            else (
+                FRAMING_CALIBRATION_SEEDS
+                if args.benchmark_profile == FRAMING_CALIBRATION_PROFILE
+                else DEFAULT_SEEDS
+            )
         )
         seeds = validate_seeds(args.seed or default_seeds)
         statuses = validate_statuses(args.status or DEFAULT_STATUSES)
@@ -463,6 +566,7 @@ def main() -> int:
             limit_signatures=args.limit_signatures,
             include_prompt_digest=not args.omit_prompt_digest,
             benchmark_profile=args.benchmark_profile,
+            require_candidate_count=args.require_candidates,
             require_signature_count=args.require_signatures,
         )
         write_immutable_jsonl(args.output, rows)
