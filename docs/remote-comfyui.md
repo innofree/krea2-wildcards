@@ -177,8 +177,31 @@ style 150개와 canonical artist 300명의 3-seed native 관찰을 확보했으�
 make remote-artist-signature-dry-run
 make remote-artist-signature
 make review-artist-signature
+make apply-artist-signature-screen
 make remote-artist-signature-retest
+make review-artist-signature-retest
+make apply-artist-signature-retest
 ```
+
+Screen review는 세 분할 review 파일을 exact coverage로 병합한 뒤 3-seed 결과를
+`testing/rejected`에만 반영한다. Retest review는 통과 후보의 기존 세 seed와 새
+`4004/5005`를 결합해 모든 후보가 동일한 정확한 5-seed 집합을 갖는지 검사한다.
+최종 production 이후에는 아래 순서로 redacted 배포 증거와 별도 smoke를 확정한다.
+
+```bash
+make release
+make deploy-production
+make remote-production-smoke
+make finalize-production-deployment
+make runtime-audit
+make completion-strict
+```
+
+Dry-run과 실제 production evidence는 서로 다른 파일을 사용하므로 dry-run이 성공한
+실배포 기록을 덮어쓰지 않는다. 배포는 checksum, exact `krea2` namespace, Impact reload,
+빈 큐를 기록하되 서버 주소·계정·원격 홈 경로는 기록하지 않는다. Smoke finalizer도
+현재 approved-only manifest와 artifact checksum을 다시 대조한 뒤 run의 상대 경로와
+seed만 deployment evidence에 추가한다.
 
 ### 최소 baseline workflow
 

@@ -46,8 +46,17 @@ def test_deployment_is_dry_run_by_default_and_apply_is_explicit() -> None:
     apply = run_release.release_stages("apply")[-1]
 
     assert dry_run.name == "deployment_dry-run"
-    assert dry_run.argv == ("python3", "scripts/deploy_remote_wildcards.py")
+    assert dry_run.argv == (
+        "python3",
+        "scripts/deploy_remote_wildcards.py",
+        "--evidence",
+        "tests/reports/deployments/production_v1-dry-run.json",
+    )
     assert apply.name == "deployment_apply"
+    assert apply.argv[-3:-1] == (
+        "--evidence",
+        "tests/reports/deployments/production_v1.json",
+    )
     assert apply.argv[-1] == "--apply"
 
 

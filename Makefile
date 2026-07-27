@@ -1,4 +1,4 @@
-.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix completion completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
+.PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix completion completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest
 .PHONY: runtime-audit phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc
 
@@ -73,10 +73,16 @@ deploy-preview: preview
 	python3 scripts/deploy_remote_wildcards.py --source build/impact-wildcards/krea2_complete_pack.yaml --evidence tests/reports/deployments/expansion_preview_v0_10_2-apply.json --apply
 
 deploy-production-dry-run: impact-production
-	python3 scripts/deploy_remote_wildcards.py
+	python3 scripts/deploy_remote_wildcards.py --evidence tests/reports/deployments/production_v1-dry-run.json
 
 deploy-production: impact-production
-	python3 scripts/deploy_remote_wildcards.py --apply
+	python3 scripts/deploy_remote_wildcards.py --evidence tests/reports/deployments/production_v1.json --apply
+
+remote-production-smoke:
+	python3 scripts/run_remote_benchmark.py --style-id crystal_iris_pastel --seed 6006 --output tests/reports/production_smoke_v1 --submit
+
+finalize-production-deployment:
+	python3 scripts/finalize_production_deployment.py --evidence tests/reports/deployments/production_v1.json --smoke-run tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006/run.json
 
 remote-smoke:
 	python3 scripts/run_remote_benchmark.py --submit

@@ -22,6 +22,12 @@ PRODUCTION_MANIFEST = Path("wildcards-manifest.json")
 PRODUCTION_RUNTIME_ROOT = Path("wildcards")
 PRODUCTION_IMPACT = Path("build/impact-production/krea2_complete_pack.yaml")
 PROGRESS_REPORT = Path("tests/reports/plan_progress.json")
+PRODUCTION_DEPLOYMENT_EVIDENCE = Path(
+    "tests/reports/deployments/production_v1.json"
+)
+PRODUCTION_DRY_RUN_EVIDENCE = Path(
+    "tests/reports/deployments/production_v1-dry-run.json"
+)
 
 
 @dataclass(frozen=True)
@@ -124,7 +130,17 @@ def release_stages(deployment: str = "none") -> tuple[Stage, ...]:
         ),
     ]
     if deployment != "none":
-        argv = ["python3", "scripts/deploy_remote_wildcards.py"]
+        evidence = (
+            PRODUCTION_DEPLOYMENT_EVIDENCE
+            if deployment == "apply"
+            else PRODUCTION_DRY_RUN_EVIDENCE
+        )
+        argv = [
+            "python3",
+            "scripts/deploy_remote_wildcards.py",
+            "--evidence",
+            str(evidence),
+        ]
         if deployment == "apply":
             argv.append("--apply")
         stages.append(Stage(f"deployment_{deployment}", tuple(argv)))
