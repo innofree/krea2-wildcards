@@ -1,0 +1,1797 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/artist_signature_repair_v0_8_3/review_part_a.yaml
+  - tests/reports/artist_signature_repair_v0_8_3/review_part_b.yaml
+  - tests/reports/artist_signature_repair_v0_8_3/review_part_c.yaml
+styles:
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      All three seeds retain crisp deep-jewel blocks and abundant floral garment or border traces, but
+      the face and exposed layered eyes are entirely outside the tight torso crop and elongated body design
+      cannot be assessed.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The three seeds consistently show clean angular color blocking and usable hands, yet every face
+      and eye is cropped out and the requested geometric inset is reduced to an inconsistent blue shape
+      rather than garment-plus-border ornament.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Deep-jewel panels, crisp edges, and the close torso treatment are stable, but all three seeds omit
+      the face, layered eyes, and particle drift while revealing too little of the elongated figure.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Angular deep-jewel blocks and textile-like cuff or hem motifs are legible across the set, but the
+      severe torso crop removes every eye and face and prevents the elongated body axis from reading.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The centered clasped-hand silhouette and deep-jewel panels are stable, but the face and eyes remain
+      above frame in every seed, luminous glazing is minimal, and no recognizable particle field is present.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      A centered pose, deep-jewel palette, and repeated gold textile bands on sleeves and outer borders
+      form a coherent signature, but all faces and layered eyes are cropped away and the luminous model
+      is weak.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Floral tracing is strong on garments and peripheral layers in all three seeds and the deep-jewel
+      scheme is distinctive, but every composition cuts off the face and eyes and luminous modeling remains
+      largely flat.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Geometric cuffs or outer-frame strips recur beside clear deep-jewel blocking, yet all three intimate
+      crops exclude the face and exposed eyes and only a small portion of the elongated body is visible.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The simple deep-jewel dress and angular sleeve divisions remain stable, but all faces and layered
+      eyes are out of frame, particle ornament is absent, and neither luminous glaze nor layered framing
+      is clearly expressed.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Gold textile bands and deep-jewel angular blocks recur with sound hands, but every seed hides the
+      face and eyes above the crop and the claimed luminous glaze is not visually independent from flat
+      color.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Centered hands and a balanced narrow deep-jewel silhouette are consistent, but all three heads are
+      cut above the eyes, particle drift is absent, and luminous modeling is not distinct.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The centered narrow figure, jewel palette, and repeated textile cuffs and side borders are stable,
+      but the narrow focused eyes and rounded face are cropped out across all seeds and glazing remains
+      faint.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Asymmetric floral garment panels and outer foliage are strong and consistent in the deep-jewel palette,
+      but the top crop removes the eyes in each seed and the luminous light axis is understated.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Geometric corner and garment insets create a recognizable asymmetric jewel-toned design, but only
+      seed 6202 exposes the full face while the other two crop the focused eyes and the light remains
+      flat.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The balanced narrow figure and deep-jewel blocks remain usable, but only the middle seed shows a
+      complete face, the other eyes are cropped, and no particle ornament establishes the requested signature.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile cuffs and a side-border echo recur with stable jewel blocks and a narrow silhouette, but
+      two seeds crop the eyes, the framing is more centered than spacious-asymmetric, and glaze is weak.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Strong geometric sleeve and border structures support a vertical jewel-toned silhouette, but only
+      seed 6202 includes the full face and its glasses obstruct the requested accessory-free focused eyes
+      while the other seeds crop them.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      A vertical narrow figure and jewel palette recur, but the two outer seeds crop the eyes, the middle
+      face is covered by glasses, and particle drift is absent in all three.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile hem, cuff, and outer-border motifs support a coherent vertical deep-jewel treatment, but
+      two seeds crop the focused eyes and the middle seed adds glasses that block the accessory-free eye
+      design.
+    recommendation: rejected
+  ? artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The three images maintain a vertical narrow jewel silhouette with textile cuffs or side borders
+      and restrained two-step shading, but the outer seeds crop the eyes and the middle seed obscures
+      them with glasses.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Dry painterly edges, sunlit earth planes, broad garments, and geometric sleeve bands recur strongly,
+      but only the middle seed shows the angular face and layered eyes while both outer seeds crop them.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Broad painterly earth shapes and extensive textile bands on sleeves and garment borders are stable,
+      but the outer two crops remove the eyes and the athletic body design is softened into a loose dress.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Asymmetric geometric bands, angular earth-color planes, and dry painterly light are visible throughout,
+      but the layered eyes appear completely only in seed 6202 and the broad athletic body remains ambiguous.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Sunlit earth color and broad shadow shapes are consistent, but the outer crops remove the layered
+      eyes, particle drift is absent, and the plain centered garments do not establish spacious asymmetric
+      framing.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Large asymmetric textile swirls, dry earth-color planes, and broad painterly lighting form a strong
+      repeatable look, but only the middle seed fully exposes the face and eyes and the body reads as
+      loose rather than athletic.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Floral linework spreads clearly across garments in every seed over a stable earth palette, but all
+      layered eyes are cropped out, the broad athletic form is hidden, and luminous glazing is not evident.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Geometric cuff and vertical inset patterns recur with warm earth blocks, but only the middle seed
+      exposes the angular face and eyes, the body is not convincingly athletic, and glaze remains weak.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Warm block shadows and a broad simple garment remain stable, but the eyes are cropped in every seed,
+      particle drift is missing, and neither luminous glaze nor layered framing separates itself visually.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Bold textile swirls and border repeats produce a stable distinctive earth-toned garment system,
+      but all three crops omit the layered eyes and the broad athletic body and luminous glaze remain
+      underdefined.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      An asymmetric geometric side band and warm angular lighting are visible, but only seed 6202 shows
+      the complete face and eyes while the two outer seeds crop them and the broad body axis remains muted.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Vertical warm silhouettes and repeated geometric sleeve insets give the set a clear dry graphic
+      identity, but only the middle seed contains the full angular face and layered eyes and glaze remains
+      slight.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The vertical earth-toned garment and strong planar shadows are consistent, but the outer seeds crop
+      the eyes, particle ornament is absent, and the body and luminous axes are generic.
+    recommendation: rejected
+  ? artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Large textile swirls, sleeve bands, and warm planar shadows are stable along a vertical figure,
+      but only the middle seed exposes the full face and layered eyes and the athletic body design remains
+      loose.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Blue painterly blocks and geometric hem or border details recur cleanly, but every compact face
+      and rounded eye is cropped out, the palette lacks a clear neon accent, and the balanced body is
+      only partly visible.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The narrow blue garment and soft painterly values are stable, but all faces and radial eyes are
+      outside frame, particle drift is absent, and the nominal nocturnal-neon palette reads as plain blue.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Blue geometric garment insets recur with usable narrow figures, but every seed crops the oval face
+      and rounded eyes, the layouts are not convincingly spacious, and neon color is missing.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      A balanced blue silhouette and painterly surface remain stable, but all eyes and most faces are
+      cropped, particle drift and neon accents are absent, and the composition stays centered rather than
+      spacious-asymmetric.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Crisp cyan geometric trims and occasional magenta accents create a distinctive nocturnal garment
+      treatment, but every rounded eye and compact face is cropped away and the three inset layouts vary
+      substantially.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Crisp blue and small magenta accents recur, but all faces and radial eyes are cropped, particle
+      drift is effectively absent apart from faint seed-6303 specks, and framing lacks deliberate layers.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Dense blue textile repeats, crisp cyan borders, and restrained magenta edges are distinctive and
+      stable across the garments, but all compact faces and rounded eyes remain above frame and the body
+      is only torso-visible.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The cyan-magenta geometric garment bands and dark palette are clear in all seeds, but every crop
+      removes the eyes and most of the compact face; spacing is torso-centered rather than spacious asymmetric,
+      and lace-tapered linework is weak.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The three figures are stable and the blue nocturnal palette persists, but particle drift is absent,
+      the arrangement is centered, and all eyes and facial structure are cropped away; the otherwise plain
+      garments read generically.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Repeated textile strips and panels make the nocturnal garments distinctive and seed-stable, but
+      the compact face and radial eyes are entirely above the crop in every seed; the centered torso framing
+      also loses the requested spacious asymmetry.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Floral garment traces are conspicuous across all seeds and the compact silhouettes fit the palette,
+      but ornament density and placement vary substantially; all eyes are cropped out and no non-occluding
+      layered-intimate depth is established.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Cuff and hem geometry appears in two seeds and the grounded blue form is stable, while one seed
+      is nearly undecorated; all three omit the eyes and upper face, and the flat centered crop does not
+      express layered intimacy.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile echoes are readable on sleeves and side borders in two seeds, with compact forms and dark
+      cyan color held consistently; the third seed reduces them to cuffs, every eye region is cropped,
+      and layered framing is absent.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The first and third seeds carry strong geometric borders but the middle garment is almost plain;
+      all faces stop below the eyes, and the similarly centered torso crops do not provide spacious asymmetric
+      placement.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Compact blue silhouettes and clean contours remain stable, but no particle drift or outer-border
+      ornament is visible; centered crops remove all eyes and compact facial structure, leaving a generic
+      result without spacious asymmetry.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile motifs cover useful garment and side-border areas in all seeds, though their scale changes
+      markedly; the crop excludes every eye region and stays centered, so neither the compact face nor
+      spacious asymmetric framing can be judged.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Large centered geometric emblems, sleeve borders, and the nocturnal palette are strongly maintained
+      across seeds, but illumination remains mostly flat; every frame cuts off the radial eyes and upper
+      compact face despite the stable emblematic torso composition.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Bold geometric garment fields survive all seeds and retain a dark jewel-like palette, but the designs
+      shift from central panel to shoulder and hem; the eye regions are always cropped, luminous glaze
+      is weak, and the low heroic anchor is not visible.
+    recommendation: rejected
+  ? artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The blue compact figures are stable, but particle drift and a luminous glaze are not visibly expressed;
+      all three crops remove the eyes and upper face, and the near-identical centered torso framing cannot
+      establish vertical heroic scale.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Monochrome rendering and crisp geometric bands are consistent and distinctive, but the bodies read
+      more balanced than broad athletic; all layered eyes and rounded-soft upper faces are cropped, while
+      the symmetric torso placement defeats spacious asymmetry.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      High-contrast textile echoes on sleeves and lower panels remain legible across the monochrome set,
+      with rounded contours and stable figures; the eyes and most facial evidence are cropped from every
+      seed, and framing remains centered rather than spacious asymmetric.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Monochrome geometry is visible in every seed, but its placement changes from side block to hem and
+      sleeve; the broad build is weak, all layered eyes are outside the crop, and the centered flat presentation
+      lacks spacious asymmetry and clear two-step light.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Bold textile echoes and restrained grayscale distinguish all three garments, although pattern placement
+      varies; upper faces and layered eyes are consistently cropped, broad athletic anatomy is muted,
+      and neither spacious asymmetry nor two-step lighting is clear.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Cyan geometric sleeve and hem insets remain visible with smooth diffuse modeling and stable broad
+      silhouettes, but the neon accent is subdued; every seed crops away the eyes and rounded-soft face,
+      and framing is centrally compressed.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Broad blue figures and diffuse flat shading are stable, but all three garments are nearly undecorated
+      and show no particle drift; the upper face and eyes are cropped in every seed, with no spacious
+      asymmetric framing or distinctive signature remaining.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Dense textile sleeve patterns and the cool nocturnal palette provide a coherent seed-stable identity,
+      but every upper face and layered eye region is cropped; the bodies stay centered and the velvety
+      illumination is subtle rather than defining.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Geometric accents appear strongly in two seeds but almost disappear in the middle seed; all eyes
+      and rounded-soft upper faces are cropped, while the waist-level framing removes the low anchor needed
+      for a vertical heroic read.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The broad blue silhouette and diffuse treatment remain stable, but particle drift is absent and
+      the palette is minimally neon; all eye regions are outside the frame and the torso crop provides
+      neither garment-border ornament nor vertical heroic scale.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile-rich sleeves and lower panels are conspicuous and consistent against the blue palette, but
+      every seed excludes the eyes and rounded face; the straight-on torso framing also loses the low
+      viewpoint and extended vertical field.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Deep burgundy, blue, and green color blocking is stable around a centered figure, but there is no
+      particle drift or outer-border ornament; all radial eyes and tapered upper faces are cropped, and
+      the illumination is flat rather than velvety.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The deep jewel blocks and broad figure remain stable, but no particles, garment-border ornament,
+      or layered depth are present; all three frames remove the radial eyes and most of the tapered face,
+      leaving a generic centered torso.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Floral traces cover garment and sleeve regions in all seeds and the deep palette is clear, though
+      the flower placement changes; every eye region is cropped, tapered facial structure is mostly missing,
+      and the frame lacks a low heroic anchor.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The palette and broad silhouette hold across seeds, but particles and garment-border ornament are
+      absent; only the middle seed reveals the full face, while the other two crop the eyes, and the framing
+      shifts too much to sustain a heroic signature.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile borders are visible in all seeds and jewel color blocking remains recognizable, but their
+      placement is inconsistent; only the middle seed exposes the radial eyes, the other faces are cropped,
+      and vertical heroic framing is not sustained.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Pale mineral color and broad centered silhouettes remain stable with bright value blocks, but no
+      particles or outer-border ornament appear; every frame cuts above the mouth or neck, eliminating
+      radial eyes and tapered-face evidence.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Pale coral-blue textile fields spread across sleeves, hems, and outer borders and the centered palette
+      is distinctive, but motif scale varies sharply; all radial eyes and upper tapered faces are cropped,
+      preventing complete eight-axis verification.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Mineral pastel blocks and clean rounded contours are stable, but particle drift and border ornament
+      are absent; every face is cropped above the mouth and the centered figures leave little negative
+      space or asymmetric structure.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      High-contrast textile echoes remain prominent across sleeve and garment edges in the pale mineral
+      palette, but all three eye regions and tapered upper faces are cropped; composition stays centered
+      instead of spacious asymmetric.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The pale palette, simple contours, and broad form are stable, but no particle drift or garment-border
+      detail is visible; every eye and upper face is cropped, while the mid-body framing lacks the low
+      anchor and height of a heroic composition.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Large pale textile scrolls and sleeve borders make the three seeds distinctive, although their location
+      shifts; all radial eyes and tapered upper faces remain outside the frame, and no low-angle vertical
+      heroic structure is shown.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Terracotta-ochre geometry, sleeve bands, and centered garment panels are consistent and distinctive
+      under soft diffuse light, but all three crops remove the radial eyes and most of the tapered face,
+      leaving a major signature axis unverifiable.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Earth-tone geometric sleeve and hem borders are maintained across seeds with soft broad shading,
+      but the flat background provides no layered depth; every frame crops the eyes and upper tapered
+      face despite ample garment detail.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Earth textile motifs cover sleeves and garment panels in each seed and the diffuse palette is clear,
+      though motifs vary from border work to a dominant floral field; all eyes are cropped and no layered-intimate
+      framing is visible.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 3
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Geometric sleeve ornament and sunlit earth color remain present, but only the middle seed shows
+      the full face and radial eyes; the other two crop them away, and the viewpoint and body extent vary
+      too much for stable vertical heroic framing.
+    recommendation: rejected
+  ? artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile borders and earth colors are clear in every seed with stable soft figure rendering, but
+      all three eye regions and tapered upper faces are cropped; the straight-on torso framing also lacks
+      vertical heroic scale.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 4
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Elongated pale-blue silhouettes and broad value strokes are stable around a centered figure, but
+      particle drift and garment-border ornament are absent; all narrow eyes and angular facial planes
+      are cropped out, leaving little distinctive ribbon line language.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Coral-black textile sleeves and outer borders strongly distinguish the mineral-pastel garments,
+      but their placement and contrast shift across seeds; only the middle seed exposes part of the narrow
+      eyes, while the other two crop all facial evidence.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Supple contours, mineral pastel paint, elongated torsos, and floral garment marks repeat clearly,
+      but every crop removes the eyes and most facial structure and leaves no framing breathing room.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The pastel blocks and elongated garment are stable, yet the geometric inset is mostly reduced to
+      plain color blocking and all three frames crop out the requested angular face and narrow exposed
+      eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Broad mineral-pastel modeling and supple edge work remain consistent, but particle drift is absent,
+      the background is empty, and the torso crops hide the face and narrow-eye design.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Bold textile motifs on sleeves and borders give all seeds a recognizable ornamental signature, but
+      the close crops consistently exclude eyes and most faces and do not preserve the requested head-and-hand
+      space.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Elongated silhouettes and asymmetric coral, black, and pale-blue panels are stable, but spacious
+      framing never appears, eyes are cropped away, and only one seed hints at geometric ornament.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The mineral palette and broad planar light are coherent, but there are no peripheral particles,
+      little meaningful asymmetrical negative space, and the repeated torso crop removes the face and
+      focused eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile bands and high-contrast sleeve ornament remain distinctive across seeds with supple painted
+      edges, but the composition is tight rather than spacious and the eye and face axes are not visible.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Upright elongated bodies and broad pastel planes are stable, but the framing reads as cropped torso
+      rather than a complete heroic portrait, with no particles and no visible narrow eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Repeated sleeve borders make the textile echo and vertical garment read strongly, while the head
+      is cut off in every seed and the angular face and narrow focused gaze cannot be assessed.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Crisp central silhouettes and pale-blue coral blocks are legible, but particle drift is missing,
+      centered emblems are weak, and severe upper-body cropping removes both facial and eye evidence.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Crisp textile borders and centered elongated garments create a consistent graphic identity, but
+      the ornament varies sharply in strength and all three images crop the eyes and most of the head.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Fine floral traces, crisp color divisions, and mineral pastels are visible in all seeds, but the
+      layered-intimate treatment becomes an excessive crop that erases the angular face and focused eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Geometric hems and inset panels are crisp and repeat across the three dresses, though their shapes
+      vary; the frame still cuts off eyes and face and provides none of the specified breathing room.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Graphic edge control and the mineral palette are stable, but particles and layered outer framing
+      are absent and the close torso views provide no evidence for the requested face or eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      One seed has a clear woven side border while the others collapse textile echo into plain blocks;
+      all retain the same cropped torso layout with the narrow eyes and angular face missing.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The crisp pastel figure treatment is consistent, but geometric insets are effectively absent, the
+      figure fills the square rather than using spacious asymmetry, and face and eyes remain cropped.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Asymmetric coral and black blocks survive consistently, but the particle field is absent, negative
+      space is minimal, and the crops hide the face and focused eye construction.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      A side textile panel appears strongly in only one seed and disappears into plain blocks in the others;
+      the framing is neither spacious nor face-complete, despite stable graphic coloring.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The vertical garment and crisp pastel planes are coherent, but the heroic composition is reduced
+      to a cropped bust, with no particles and no visible angular face or narrow eyes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Vertical silhouettes and graphic textile fragments are visible in two seeds, but the ornamental
+      treatment is inconsistent and the framing cuts off the eyes, head, and much of the intended heroic
+      context.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Soft two-step pale-blue shading and centered elongated torsos are stable, but there is no particle
+      drift or emblematic focal ornament and the face and eyes are cropped from all outputs.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Broad woven borders and centered dress silhouettes form a strong repeatable motif, but the framing
+      systematically truncates heads and eyes and the soft light is partly overwhelmed by graphic black
+      panels.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Floral sprays, soft pale-blue modeling, and elongated garments are attractive and consistent, but
+      the intimate framing crops every eye line and leaves the angular face axis unobservable.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Geometric hems and sleeve facets are clearly separated from soft pastel shading across seeds, yet
+      the tight repeated crops exclude the narrow eyes and most facial planes and violate the repair framing.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Supple silhouette edges and soft pastel steps remain stable, but no particle ornament or outer layer
+      is visible and the torso-only view removes the face and focused eye axis.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Textile stripes and sleeve motifs provide a bold recurring signature over the soft palette, but
+      all three compositions are cropped above the eyes and lack the requested non-occluding outer frame.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_floral_trace_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Asymmetric floral traces and mineral pastel dress panels repeat clearly, but the figures occupy
+      nearly the full frame and the eye and angular-face requirements are lost above the crop.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Soft pastel panels are stable and some asymmetric geometry appears, but the specified inset ornament
+      is inconsistent, the frame is tight, and eyes and facial planes are absent.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The soft mineral palette and simple elongated figures remain usable, but particle drift, spacious
+      negative space, angular faces, and exposed narrow eyes are all missing.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Large textile and floral-like border motifs create a distinctive asymmetrical garment treatment
+      in every seed, while the close crop still erases eyes and faces and prevents spacious framing.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The upright elongated dress and soft two-step illumination are stable, but no particle drift is
+      rendered and the headless torso crops fail the heroic framing, angular face, and eye axes.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      One seed carries a strong textile side flourish and another a narrow border, but the third loses
+      it; all remain over-cropped with no visible narrow eyes or complete heroic figure.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_geometric_inset_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Diffuse mineral-pastel surfaces are consistent and two seeds show geometric bands, but the ornament
+      does not persist, framing is excessively close, and the angular face and focused eyes are unavailable.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_particle_drift_complete_signature
+  : metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      Velvety diffuse garment shading is stable, but particle drift and outer-border detail are missing,
+      and the repeated torso crop completely removes the requested facial and eye evidence.
+    recommendation: rejected
+  ? artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature
+  : metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 3
+      composition_quality: 2
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      High-contrast textile sleeves and borders repeat strongly over diffuse pastel bodies, but every
+      seed cuts off the eyes and head and the layered framing never becomes a non-occluding outer structure.
+    recommendation: rejected

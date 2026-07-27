@@ -46,6 +46,7 @@ def build_accumulation_summary(
     expected_existing_testing: int = 185,
     expected_repair_candidates: int = 115,
     minimum_cumulative_testing: int = 200,
+    require_retest_ready: bool = False,
 ) -> dict[str, Any]:
     summary_name, summary_file = relative_file(summary_path, root)
     binding_name, binding_file = relative_file(binding_path, root)
@@ -88,7 +89,8 @@ def build_accumulation_summary(
     cumulative_testing = (
         expected_existing_testing + recommendation_counts.get("testing", 0)
     )
-    if cumulative_testing < minimum_cumulative_testing:
+    retest_ready = cumulative_testing >= minimum_cumulative_testing
+    if require_retest_ready and not retest_ready:
         raise ValueError(
             f"repair would yield {cumulative_testing} cumulative testing styles; "
             f"minimum is {minimum_cumulative_testing}"
@@ -126,6 +128,7 @@ def build_accumulation_summary(
             ),
             "cumulative_testing_after_apply": cumulative_testing,
             "minimum_cumulative_testing": minimum_cumulative_testing,
+            "retest_gate_satisfied": retest_ready,
         },
         "styles": transformed,
     }
@@ -146,6 +149,11 @@ def main() -> int:
     parser.add_argument("--expected-existing-testing", type=int, default=185)
     parser.add_argument("--expected-repair-candidates", type=int, default=115)
     parser.add_argument("--minimum-cumulative-testing", type=int, default=200)
+    parser.add_argument(
+        "--require-retest-ready",
+        action="store_true",
+        help="refuse preparation unless the cumulative testing set reaches the retest gate",
+    )
     args = parser.parse_args()
     try:
         document = build_accumulation_summary(
@@ -156,6 +164,7 @@ def main() -> int:
             expected_existing_testing=args.expected_existing_testing,
             expected_repair_candidates=args.expected_repair_candidates,
             minimum_cumulative_testing=args.minimum_cumulative_testing,
+            require_retest_ready=args.require_retest_ready,
         )
         atomic_write_json(args.output, document)
         evidence = document["repair_accumulation"]

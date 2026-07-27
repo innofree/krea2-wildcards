@@ -1,0 +1,4841 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/artist_signature_repair_v0_8_3/scorecard.csv",
+  "matrix": "tests/prompt_matrix/artist_visual_signature_repair_v0_8_3.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    6101,
+    6202,
+    6303
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 115,
+  "style_count": 115,
+  "image_count": 345,
+  "sheet_count": 12,
+  "modes": {
+    "visual_signature": {
+      "case_count": 115,
+      "image_count": 345,
+      "sheet_count": 12,
+      "sheets": [
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_001.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_002.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_003.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_004.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_005.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_006.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_007.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_008.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_009.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_010.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_011.png",
+        "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_012.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "visual_signature",
+      "sheet_index": 1,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_001.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 2,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_002.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 3,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_003.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 4,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_004.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 5,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_005.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 6,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_006.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 7,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_007.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 8,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_008.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 9,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_009.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 10,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_010.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 11,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_011.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "visual_signature",
+      "sheet_index": 12,
+      "path": "tests/reports/artist_signature_repair_v0_8_3/review/prompt_matrix_visual_signature_012.png",
+      "case_count": 5,
+      "image_count": 15
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_e227834f4c8d157c3e4ce061f921b5f6d46dd5a8a0f2738f28c5cb657374b416",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "angular_architectural",
+        "ornament_language": "floral_trace",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000001",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000001/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000002",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000002/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000003",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000003/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_391aeeaac3a69ef2c72e1429584db61942a9c79796ad38b01efc68ef4076ce2a",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "angular_architectural",
+        "ornament_language": "geometric_inset",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000004",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000004/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000005",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000005/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000006",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000006/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_522e468ad9de0b855cd35d4992043bdab2e12b3934679266a2ed5eaa025e6e1a",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000007",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000007/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000008",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000008/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000009",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000009/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_56dece4f9dcc42563ed8afbe774966ffb52e6bdbd915416df1af1e0391258cf9",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000010",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000010/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000011",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000011/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000012",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000012/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_b42b9ec70e02b832e3471c94be34ce7455659bd46a9a8513f9792b641681d274",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000013",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000013/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000014",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000014/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000015",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000015/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_1c2ac8d6480de44e3a1ddda20e8bb7555a65ca76b70e32b861677727db0e5763",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000016",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000016/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000017",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000017/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000018",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000018/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_8ab98aeac200760c01b03104437ef8f51d4fbe3c8e64699b2b3516d50b40e04c",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "floral_trace",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000019",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000019/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000020",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000020/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000021",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000021/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_335df62af54f342426f69bac771d761401c9aa3479bb10b206ce67900734cb37",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "geometric_inset",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000022",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000022/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000023",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000023/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000024",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000024/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_68bec1906627b0f2758259d54c28277da366ad52e07810e6a89365da92aa0982",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000025",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000025/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000026",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000026/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000027",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000027/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_658e05f65e68e547b15b7612046bc8a43fe4870cda13ff798d62554df9d8bddb",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000028",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000028/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000029",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000029/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000030",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000030/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_cc216e6782e3edf386d35182d87c4119fb6fcf510d592870bfb97cd4acd7d0f6",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000031",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000031/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000032",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000032/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000033",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000033/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_36895745ed4dae3d5ce01d767ecc03d1a6a4490523806ea3bd4083b592cf5949",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000034",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000034/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000035",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000035/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000036",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000036/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_1bf4c2bbe5a16968388f983f38f2673456072cd98841c17311d2fe10dbfabbb2",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "floral_trace",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000037",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000037/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000038",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000038/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000039",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000039/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_479135c500c086b6e2b8aaf268bc5880b54ae880b151b2dc0c5d2b0dab6e7311",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "geometric_inset",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000040",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000040/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000041",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000041/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000042",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000042/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_3a0fe01cb8f183b82cf541cf77d4d08a6a2d7bb425fbaadc44f1eb714dc27a64",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000043",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000043/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000044",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000044/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000045",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000045/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_ddd632f6053039e6889e30ba581d9b231c78c52a9f7bea3e59983e1e16bf7faf",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000046",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000046/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000047",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000047/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000048",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000048/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_d562bd550493a3fa90dad2e570c69c72a7fbc90a2fbe338e4e78e749066e3eee",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "geometric_inset",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000049",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000049/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000050",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000050/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000051",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000051/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_74036d4dc3925e1e050db17fb15a3ca53c2f476170e8e4c30cb275cc13ebf82f",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000052",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000052/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000053",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000053/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000054",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000054/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_61499a47b4ef834ab7d49747714f86a2c1bd03496ae31abe985704b12bc72712",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000055",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000055/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000056",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000056/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000057",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000057/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_42b6c53365623840a574e825d869bf7e647bb96b8772aa00331c018538f13fa3",
+        "eye_design": "narrow_focused",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "soft_two_step",
+        "line_language": "angular_architectural",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000058",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000058/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000059",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000059/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000060",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000060/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_021",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_0ba918c1df045f856900924572e60e915024552ffe24f975ff74d9ca4e09315e",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "dry_broken",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000061",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000061/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000062",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000062/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000063",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000063/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_022",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_7786ba4198894bfbee18a6aefa6d38631683bec66670a45151d9cbadc9a40a56",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "dry_broken",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000064",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000064/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000065",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000065/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000066",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000066/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_023",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_31fcaf4b6b6aa842a77c93b283510b07dc3ddc6f6bbb20e5213056e20edefb78",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "dry_broken",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000067",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000067/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000068",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000068/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000069",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000069/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_024",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_8a3ca20da41f8ea5e7b488109bd5c1996213c6463e34e7c316af66f3e59f3a9c",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "dry_broken",
+        "ornament_language": "particle_drift",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000070",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000070/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000071",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000071/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000072",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000072/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_025",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_016ece87b6c7228914e5591806b3831edf12742a30a26d4806ee1ac230b146fc",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "dry_broken",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000073",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000073/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000074",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000074/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000075",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000075/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_026",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_54a9b739bc313503024d15f4739a5e0bebbf10a6e630f6e4ba9832feae63cd12",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "floral_trace",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000076",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000076/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000077",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000077/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000078",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000078/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_027",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_88ae2fdb979c131091e1048080a79ff86b36a7bbd7893a78e4d3e4239567bbf7",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000079",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000079/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000080",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000080/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000081",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000081/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_028",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_5adb6166fbd52fa326071b930ac1b9d0a3b00d2f4dea35c274dad4bee79e5af5",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "particle_drift",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000082",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000082/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000083",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000083/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000084",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000084/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_029",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_6975578493c9733a4dacd9f6f608a8ed0b0be5fc6b38962a99134b07c72ec66b",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000085",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000085/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000086",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000086/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000087",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000087/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_030",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_1c36bd0d960974f4499d640d025aa01397278836076ee1091516c6bd54e2a84b",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000088",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000088/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000089",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000089/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000090",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000090/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_031",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_88d7316feef254cde5ebf031a4264344aa2b6a51696f295fb11cf83d20030ca8",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000091",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000091/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000092",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000092/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000093",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000093/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_032",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_b5f6c1e6d52207add312029771b1a5fc486d5771c2660ceb4613d973d7931da6",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "particle_drift",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000094",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000094/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000095",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000095/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000096",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000096/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_033",
+      "style_id": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_fa53e166a515aed72c82817bd7b5c2a8dc2c3d1cad244ccd00563f139cbe2efc",
+        "eye_design": "layered_large",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "dry_broken",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000097",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000097/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000098",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000098/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000099",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000099/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_034",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_d0f22bf4928d3e897d066e8f76686a45ab62b220a5322808b81b952d64e5d493",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000100",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000100/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000101",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000101/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000102",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000102/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_035",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_cf1779aacecd21af0c249416e826cbf522b3887723439c2e1d6c4d20c16dabef",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000103",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000103/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000104",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000104/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000105",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000105/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_036",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_98d01491f20b39750dc3b48e9e844170d146884a27305dce820072f719f18ffb",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000106",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000106/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000107",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000107/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000108",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000108/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_037",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_c0ed3077ed56786029f36248d17b32d1f7e6ad00a3e82cad2a6c766af65baa31",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000109",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000109/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000110",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000110/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000111",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000111/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_038",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_191f743341b91a7e98b9f40f57084377425d4448fa4d0f0b47f44f75c0d1b953",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000112",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000112/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000113",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000113/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000114",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000114/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_039",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_dc96af2b4fb1388f26155abf013d43c8724699ee8a4ec536e12e62d08882813a",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000115",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000115/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000116",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000116/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000117",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000117/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_040",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_20a7b58224d8cd61d5ca404c9f768320765772dc4947fa78ccebf286483dd74d",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000118",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000118/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000119",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000119/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000120",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000120/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_041",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_6e1724f5400dee5b1d577e43aa2537ed09ccaa18ae10822ba5de2f6dc7be1334",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000121",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000121/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000122",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000122/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000123",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000123/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_042",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_0ffb91a6a5ed300ef3fd03848d4067c19bf1ee8ccc441a346791cacb318de087",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000124",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000124/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000125",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000125/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000126",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000126/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_043",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "balanced_narrow",
+        "evaluated_prompt_sha256": "sha256_253404fb8a0397af316d75d2cf92573e4e0dd412177ee38b8763d64fd2336ef2",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000127",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000127/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000128",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000128/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000129",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000129/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_044",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_4d4bc2be061a6247929276de5acc766e14fedff0489226c16d93607762042061",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "floral_trace",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000130",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000130/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000131",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000131/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000132",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000132/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_045",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_0bc2cb3eb287b441e789ee2a62049b9674309937f1a551e90d0a4cdacd4f6932",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000133",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000133/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000134",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000134/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000135",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000135/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_046",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_e4aa44eea18db489e7d24652c7ef0d2d9c41cbd49dea3fffc3e005ff2f0a44c6",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000136",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000136/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000137",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000137/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000138",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000138/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_047",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_986f633a9b7cb4aae51ba74a2adcbb60822b2591efaa9cdd3ddd784374806bfb",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000139",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000139/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000140",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000140/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000141",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000141/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_048",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_547217d0acd92b792ebbe140834656476c4dfa8e3186f52c7bcb09b9e4c75826",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000142",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000142/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000143",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000143/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000144",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000144/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_049",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_72400163445c96fcd0ef6ff66b01a3dc626e51cbe25a269704eb46616fb28a1a",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "lace_tapered",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000145",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000145/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000146",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000146/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000147",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000147/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_050",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_39418d4cd9d4e6d79915e6bf2b4e9b9438f3013292b15a03de6c6084c0d7a1bc",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000148",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000148/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000149",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000149/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000150",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000150/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_051",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_c49724949cebbca975d9d859654457bb195ef994ebe644d8762dcc52942b9a7e",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "lace_tapered",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000151",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000151/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000152",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000152/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000153",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000153/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_052",
+      "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "compact_grounded",
+        "evaluated_prompt_sha256": "sha256_c4cfbb0b335b07b25ffebc61994947885f42f6b229c94afac0a1ff111cd2999c",
+        "eye_design": "rounded_radial",
+        "face_design": "compact_oval",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "lace_tapered",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000154",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000154/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000155",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000155/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000156",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000156/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_053",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_9094b0cf1e0d9262ab6ace41a653f6118e83563dff27d34065d8a2440509ffe0",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "monochrome_tint"
+      },
+      "items": [
+        {
+          "test_id": "VS000157",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000157/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000158",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000158/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000159",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000159/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_054",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_72ddc0503a7dc7d3d85fd9b14cc710fba34e64e438d809045542352acb4c6b3c",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "monochrome_tint"
+      },
+      "items": [
+        {
+          "test_id": "VS000160",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000160/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000161",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000161/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000162",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000162/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_055",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_50ae4e5edff677ec88a9decd3b6d4c3f2a58d80b89a0425e59ac8f6c7a8e8183",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "monochrome_tint"
+      },
+      "items": [
+        {
+          "test_id": "VS000163",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000163/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000164",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000164/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000165",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000165/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_056",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_monochrome_tint_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_7739686576347da08aacd74e0b7875274db0805b23cf6b034e766a5ea7944b82",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "monochrome_tint"
+      },
+      "items": [
+        {
+          "test_id": "VS000166",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000166/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000167",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000167/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000168",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000168/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_057",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_a64dd759a094eb614abe196612501885458039d6c532e6c1c4eec413b3533557",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000169",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000169/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000170",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000170/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000171",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000171/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_058",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_9926737d79b02a5e898492d6ad0b37eb2ba06a6351b3af56ea10823ffb73f382",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000172",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000172/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000173",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000173/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000174",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000174/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_059",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_f1ce4aa6b37683381de73914caee5985b82dacb2bebe216541ea6f5419bfebba",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000175",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000175/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000176",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000176/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000177",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000177/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_060",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_d7600edee86abe5ba31c0a311f81389dbb11bb6c678872428e898dff213dd51a",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000178",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000178/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000179",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000179/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000180",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000180/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_061",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_f4e4860312ca88fa2acdb346106210a76932e9f2837056074f47e30f5e6c34c3",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000181",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000181/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000182",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000182/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000183",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000183/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_062",
+      "style_id": "artist_signature_rounded_continuous_rounded_soft_layered_large_broad_athletic_nocturnal_neon_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_65166233daebe476818b6d684d9dc0ddf5f5121fb5e7b90ddc069a810e177ce7",
+        "eye_design": "layered_large",
+        "face_design": "rounded_soft",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "nocturnal_neon"
+      },
+      "items": [
+        {
+          "test_id": "VS000184",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000184/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000185",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000185/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000186",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000186/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_063",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_2f9fa30c89ed725bde94ca0948742f8e722658d5ac73dc1fd8066a3e31989920",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000187",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000187/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000188",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000188/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000189",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000189/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_064",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_de944d0b411d0112f38b828c498fc0cdc9a0fd73ff31469398391aebba300ec2",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000190",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000190/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000191",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000191/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000192",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000192/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_065",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_7f60ab21b4b6f57d8b0a1a63e2ee0603c63c5044046290047133c0383654d6f1",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "floral_trace",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000193",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000193/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000194",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000194/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000195",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000195/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_066",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_3b5f301965a5413c8b4800cf65334fe71e5a745f7ce914709fa95a8770b89637",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000196",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000196/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000197",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000197/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000198",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000198/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_067",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_6160d7f76534e48a01e3dcd1ed72e9400a07d9fe993c0b151a41de141db59e2a",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "deep_jewel"
+      },
+      "items": [
+        {
+          "test_id": "VS000199",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000199/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000200",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000200/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000201",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000201/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_068",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_7ec722aba0245f87403731de4acb79885a6a1285d43da28c44a32bbdf29639a7",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000202",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000202/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000203",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000203/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000204",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000204/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_069",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_da0c8e81519554bf258e93d2591973026a537c1196aaa72b313b54dd5715f17d",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000205",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000205/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000206",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000206/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000207",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000207/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_070",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_2bf29659bca4dd3dbcbee3b51530c329b05f43a583877690e307c35691c669b7",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000208",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000208/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000209",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000209/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000210",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000210/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_071",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_98632909189b1e24feb587dfb0849b01c02a6b39bcdd2194a80aa5020300f8e6",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000211",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000211/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000212",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000212/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000213",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000213/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_072",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_4ad17b1ba1a459ba80b4ae3fc714a3141e1ece66562fb54f88e933b386f5f931",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000214",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000214/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000215",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000215/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000216",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000216/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_073",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_mineral_pastel_luminous_glaze_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_e8f0c973f3eb79ee092f7c9ba4cb70b7b3243b042eba8225a980437e7f3efb86",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "luminous_glaze",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000217",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000217/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000218",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000218/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000219",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000219/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_074",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_506211a482f5ca41e663ef5b7a4a686ce82f306c7d8094362c857b794115829b",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000220",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000220/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000221",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000221/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000222",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000222/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_075",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_e6d4e7652fc72ed6b71f66c512eef0911c2c0d5d50250920b28f4b3b5aba8d57",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000223",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000223/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000224",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000224/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000225",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000225/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_076",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_f789b8fe834a5a1ba998938e83a2dbf4685824fe49ac73b0a58e982439b57aca",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000226",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000226/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000227",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000227/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000228",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000228/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_077",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_5a16880ec24130cc15cbe4cea132798e034d2dee37548d41c6abeae4483d5613",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "geometric_inset",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000229",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000229/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000230",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000230/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000231",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000231/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_078",
+      "style_id": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "broad_athletic",
+        "evaluated_prompt_sha256": "sha256_470a7a538188c438aea78bed6c79bd5f82124c5e4ac61914fe49f19a6fe4c34c",
+        "eye_design": "rounded_radial",
+        "face_design": "tapered_high",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "rounded_continuous",
+        "ornament_language": "textile_echo",
+        "palette_language": "sunlit_earth"
+      },
+      "items": [
+        {
+          "test_id": "VS000232",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000232/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000233",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000233/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000234",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000234/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_079",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_5ed177663b59a278ee45c41de7bd3903ef483e3de92257c8783c9bc863b95bed",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000235",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000235/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000236",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000236/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000237",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000237/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_080",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_71b1cc688db9a231d5e01ce0c1a75167652a251d3946580d20c66ff633d33fda",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000238",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000238/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000239",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000239/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000240",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000240/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_081",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_7558483b967f4d811a2f6aec0583b67e31b27f411dee8ac89282ae6cb1b0ac93",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "floral_trace",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000241",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000241/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000242",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000242/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000243",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000243/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_082",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_fa72bfda4e7313b2a42d6f4b9bff70bf86431e0849d46e431a70430f062f682b",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000244",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000244/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000245",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000245/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000246",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000246/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_083",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_6057b75bef0631d52c5aef69fd3e278993878affc9b158e653cbb52b62d307c8",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000247",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000247/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000248",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000248/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000249",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000249/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_084",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_1bd57fbdad29b130a7cd88eec510e709dc1b4aaed8b00908333c2bcefb4c97b1",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000250",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000250/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000251",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000251/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000252",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000252/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_085",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_82db8f3623ce6f451279bf8d2889cc6ed7ade523a64534e365497e84c088ea7b",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000253",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000253/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000254",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000254/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000255",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000255/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_086",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_55dc2c7b82ae3e3fb6d218cba7d6fbe2f992479d08cc0773ffbe4e676f0a1d4a",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000256",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000256/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000257",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000257/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000258",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000258/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_087",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_2bf508cf567bd00a75e525b4027c5caf58e9aab82348aa8c0b58fdfdd1e09ad6",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000259",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000259/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000260",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000260/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000261",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000261/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_088",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_891bc28df4ed19ce9df18a67fd03cdaf97631916e1b96308a95249a30e286ea5",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000262",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000262/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000263",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000263/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000264",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000264/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_089",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_4fcaa867f6b0f3dca5b42c458a2593903bfd256f8ab327ec15d5c357fe7e9c66",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "broad_painterly",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000265",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000265/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000266",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000266/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000267",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000267/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_090",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_182c02da7d2a3718875eb750c21ca9e9f07ea6eff212373635e5a866da7717dc",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000268",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000268/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000269",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000269/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000270",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000270/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_091",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_d53a5b2b19e7d9d11e7ceeafd48b6a157afb8834dec79fa08fce19a2b303b826",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000271",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000271/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000272",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000272/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000273",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000273/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_092",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_8d3336810edf185afff956194be120a309c9586eece142c2fce95619425c81a6",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "floral_trace",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000274",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000274/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000275",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000275/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000276",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000276/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_093",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_a0a24486f3dcf6b5fe3775ff74c6a6604e683277b8994678c256f80b16eab4f2",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000277",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000277/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000278",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000278/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000279",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000279/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_094",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_b79f06f3b71eaba862ac6dbc9d820f619f1820110a0ce9e3be8ace50e1955e6b",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000280",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000280/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000281",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000281/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000282",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000282/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_095",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_4b6155a5fc01a691074e93c04f546a89d4213329b80450e3bac13a3b7385f289",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000283",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000283/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000284",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000284/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000285",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000285/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_096",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_913fece03a1a89ea475f86f472aabd3a47ce8f0990f046715315012218652843",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000286",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000286/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000287",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000287/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000288",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000288/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_097",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_a6bb8a7e83acc980b5506fb84c1489e0c94b152d0618be4bde568fcf91f592f0",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000289",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000289/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000290",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000290/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000291",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000291/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_098",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_f803d7e2cf90b70abf4db59b64c80412616091878fe69425bf733f8fd818e5de",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000292",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000292/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000293",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000293/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000294",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000294/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_099",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_8ed8976e85478feda4dd6daabecf7427b775841e4afffdb34c90e7511f4719f0",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000295",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000295/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000296",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000296/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000297",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000297/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_100",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_5d72f6bd3ebedb91eca91cdc8e75b1861ec11c707a18988dd4d32930c281884a",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "crisp_graphic",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000298",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000298/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000299",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000299/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000300",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000300/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_101",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_041e1de32e5d1b0d67ec500c1b961d2d96b2c7ab03278b1b470a33f5c6e00577",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000301",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000301/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000302",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000302/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000303",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000303/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_102",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_52de7a4b81a5bf2a0dc748ddb610992359dcc9abee33b7b3472d310e9c73c1f7",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "centered_emblematic",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000304",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000304/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000305",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000305/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000306",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000306/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_103",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_1342043916db646d4d1515059d161adbc232351407e9c479b77c90db7b3293d4",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "floral_trace",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000307",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000307/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000308",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000308/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000309",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000309/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_104",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_8aa79b2dbb8f33c05acea60804fbc8c35e0780e7f04d383db3543e0626f0fe3a",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000310",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000310/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000311",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000311/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000312",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000312/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_105",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_f2781ce045b08a481fdb1efd32766806083a1e26d76da4a39d68b5d2e4e8eea8",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000313",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000313/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000314",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000314/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000315",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000315/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_106",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_2581b28940b8a10edfd6f963b5b350a170a383244bfa5282e1da884e203f800f",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000316",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000316/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000317",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000317/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000318",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000318/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_107",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_floral_trace_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_c3e10be1a2cdf6d0529492aa6dabbbcd56585b880434b30a4841c5087f3354a7",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "floral_trace",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000319",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000319/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000320",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000320/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000321",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000321/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_108",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_d6fe65743f8d0a42f290910b768eb23cea8d6916a401af8a9b76a21f52f94684",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000322",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000322/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000323",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000323/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000324",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000324/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_109",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_d26b5393564c462dc42cc094fc18eff9ed7f65c45312fc725971f63912a4d56f",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000325",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000325/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000326",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000326/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000327",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000327/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_110",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_c587edb58d85092e1c355bd35da3b85ce1a10f5cfc8ed12ae2793142bdc77a42",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "spacious_asymmetric",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000328",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000328/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000329",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000329/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000330",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000330/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_111",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_3d75ac2f82451e3fc78396c46c3f76cb870c1aebdb21b64a2b85a4f3e18ae9bb",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000331",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000331/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000332",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000332/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000333",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000333/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_112",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_2b2c0e9af192f8d37a181bbc73ac4829f5b0e5dad93754ac998bbd8cdedb71e8",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "vertical_heroic",
+        "light_modeling": "soft_two_step",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000334",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000334/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000335",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000335/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000336",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000336/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_113",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_geometric_inset_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_c4e69fbd33741ce980ecadc8c403db2aa1c449b56e2432a8e983c66193f0fcd9",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "supple_ribbon",
+        "ornament_language": "geometric_inset",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000337",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000337/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000338",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000338/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000339",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000339/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_114",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_particle_drift_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_2cc8fa924993039bb645539ee2599e486eab1c32ded8fd9f6a131dbb3d94fa5f",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "supple_ribbon",
+        "ornament_language": "particle_drift",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000340",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000340/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000341",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000341/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000342",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000342/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    },
+    {
+      "alias": "case_115",
+      "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+      "mode": "visual_signature",
+      "factors": {
+        "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+        "benchmark_stage": "pilot",
+        "body_design": "elongated_graceful",
+        "evaluated_prompt_sha256": "sha256_7dd2a34b8320ff9f162c3c5c018dd72030f5c1f930dcd420d80bc09025037056",
+        "eye_design": "narrow_focused",
+        "face_design": "angular_planar",
+        "framing_language": "layered_intimate",
+        "light_modeling": "velvety_diffuse",
+        "line_language": "supple_ribbon",
+        "ornament_language": "textile_echo",
+        "palette_language": "mineral_pastel"
+      },
+      "items": [
+        {
+          "test_id": "VS000343",
+          "seed": 6101,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000343/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000344",
+          "seed": 6202,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000344/image_01.png",
+          "benchmark_stage": "pilot"
+        },
+        {
+          "test_id": "VS000345",
+          "seed": 6303,
+          "image_path": "tests/reports/artist_signature_repair_v0_8_3/runs/VS000345/image_01.png",
+          "benchmark_stage": "pilot"
+        }
+      ],
+      "benchmark_stages": [
+        "pilot"
+      ]
+    }
+  ]
+}

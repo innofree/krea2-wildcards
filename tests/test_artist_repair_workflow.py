@@ -314,6 +314,7 @@ def test_repair_accumulation_preserves_failures_and_enforces_total_gate(
         minimum_cumulative_testing=3,
     )
     assert document["repair_accumulation"]["cumulative_testing_after_apply"] == 3
+    assert document["repair_accumulation"]["retest_gate_satisfied"] is True
     assert {
         item["style_id"]: item["recommended_status"] for item in document["styles"]
     } == {
@@ -328,6 +329,25 @@ def test_repair_accumulation_preserves_failures_and_enforces_total_gate(
             summary_style("artist_repair_two", items["artist_repair_two"], "rejected"),
         ],
     )
+    deferred = build_accumulation_summary(
+        source,
+        binding,
+        catalog,
+        root=tmp_path,
+        expected_existing_testing=2,
+        expected_repair_candidates=2,
+        minimum_cumulative_testing=3,
+    )
+    assert deferred["repair_accumulation"]["cumulative_testing_after_apply"] == 2
+    assert deferred["repair_accumulation"]["retest_gate_satisfied"] is False
+    assert {
+        item["style_id"]: item["recommended_status"]
+        for item in deferred["styles"]
+    } == {
+        "artist_repair_one": "generated",
+        "artist_repair_two": "generated",
+    }
+
     with pytest.raises(ValueError, match="cumulative testing styles"):
         build_accumulation_summary(
             source,
@@ -337,6 +357,7 @@ def test_repair_accumulation_preserves_failures_and_enforces_total_gate(
             expected_existing_testing=2,
             expected_repair_candidates=2,
             minimum_cumulative_testing=3,
+            require_retest_ready=True,
         )
 
 

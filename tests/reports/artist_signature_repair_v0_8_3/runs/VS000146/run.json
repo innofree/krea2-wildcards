@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000146",
+  "style_id": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+  "label": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature",
+  "mode": "visual_signature",
+  "seed": 6202,
+  "remote": "private_comfyui",
+  "prompt_id": "f2bab498-4dfc-4fac-8d28-2056780ccf86",
+  "resolved_prompt": "Treat this visual signature as the controlling design brief. Every listed property must be visibly and independently expressed without merging one visual axis into another: An adult portrait uses lace-fine tapered lines with sparse inner marks, a compact oval face with a soft jaw and small nose, rounded eyes, radial irises, and soft lower gradients, a grounded figure with sturdy limbs and clear hands, nocturnal indigo, cool cyan, and measured magenta, hard-edged two-value cel blocks, spacious asymmetric framing and quiet directional flow, and restrained textile patterns around the silhouette. Use this eight-axis visibility ledger: line—show lace tapered through the outer contour and garment seams; face—show compact oval through the jaw, cheeks, and nose; eyes—keep hair and accessories away from fully exposed eyes and show rounded radial in the iris, pupil, lids, and lashes; body—show compact grounded through the shoulder and torso silhouette; palette—separate broad garment and background regions using nocturnal neon; light—show crisp graphic through shadow edges and highlights on the face, sleeves, garment folds, and ground; framing—show spacious asymmetric through placement, negative space, and foreground layering while keeping the head, face, and both hands uncropped; ornament—show textile echo in two clear locations, as a repeating broad garment motif and as an outer-border motif. Create exactly one adult woman as a standing character-design portrait framed from mid-thigh upward at eye level, with the lower image edge crossing both thighs at mid-thigh and breathing room around the top of the head, elbows, and both complete hands. Present an accessory-free, completely exposed face and eye area, with hair and ornament arranged outside it, so the full iris, pupil, lids, lashes, and face geometry remain large and clear. Keep clear space around both hands so every finger remains readable. Give her a simple long-sleeve garment with broad readable surfaces for palette and garment-level motifs against a quiet uncluttered studio ground. If the requested framing language suggests a layered or intimate crop, express it through placement, negative space, and non-occluding foreground layers while leaving the head, face, eyes, forearms, and hands fully inside the frame. These neutral anchors keep subject, garment, camera distance, and background content comparable while the requested signature controls the eight visual axes. Make all eight requested axes independently legible without allowing one axis to substitute for another: contour and line language, face geometry, accessory-free eye construction, body silhouette and anatomy, local-color palette, light and shadow-edge treatment across the face, sleeves, garment folds, and ground, framing with negative space, and recurring ornament motifs in both garment and outer-border regions. Finish this as an unmistakably hand-drawn two-dimensional character-design illustration with clean garment surfaces, coherent illustrated anatomy, readable fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "e51c38f92ccc3c85c0f7c3492ca4d44c6ee70386789581e6bb7e5505c14fc18c",
+  "workflow_sha256": "5efdb30984d7cfdda54ae4d2d4abc7e650df886a6ad7d0b6e90868d8da811239",
+  "factors": {
+    "body_design": "compact_grounded",
+    "eye_design": "rounded_radial",
+    "face_design": "compact_oval",
+    "framing_language": "spacious_asymmetric",
+    "light_modeling": "crisp_graphic",
+    "line_language": "lace_tapered",
+    "ornament_language": "textile_echo",
+    "palette_language": "nocturnal_neon",
+    "evaluated_prompt_sha256": "sha256_72400163445c96fcd0ef6ff66b01a3dc626e51cbe25a269704eb46616fb28a1a",
+    "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+    "benchmark_stage": "pilot"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "251a5419feda96f2283813f49bc0dccf6f3f0b8cb4bd0aa92e251627a6a879c1",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

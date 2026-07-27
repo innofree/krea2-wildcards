@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000328",
+  "style_id": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+  "label": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature",
+  "mode": "visual_signature",
+  "seed": 6101,
+  "remote": "private_comfyui",
+  "prompt_id": "3bbfddbe-f91b-4919-9527-0c71ffbacfe8",
+  "resolved_prompt": "Treat this visual signature as the controlling design brief. Every listed property must be visibly and independently expressed without merging one visual axis into another: An adult portrait uses supple ribbon lines with focal swells, an angular face with a firm jaw and planar cheeks, narrow dark-rimmed eyes and single catchlights, an elongated figure with graceful limbs and tapered hands, pale mineral blue, ivory, coral, and charcoal, soft two-step values and gentle facial transitions, spacious asymmetric framing and quiet directional flow, and restrained textile patterns around the silhouette. Use this eight-axis visibility ledger: line—show supple ribbon through the outer contour and garment seams; face—show angular planar through the jaw, cheeks, and nose; eyes—keep hair and accessories away from fully exposed eyes and show narrow focused in the iris, pupil, lids, and lashes; body—show elongated graceful through the shoulder and torso silhouette; palette—separate broad garment and background regions using mineral pastel; light—show soft two step through shadow edges and highlights on the face, sleeves, garment folds, and ground; framing—show spacious asymmetric through placement, negative space, and foreground layering while keeping the head, face, and both hands uncropped; ornament—show textile echo in two clear locations, as a repeating broad garment motif and as an outer-border motif. Create exactly one adult woman as a standing character-design portrait framed from mid-thigh upward at eye level, with the lower image edge crossing both thighs at mid-thigh and breathing room around the top of the head, elbows, and both complete hands. Present an accessory-free, completely exposed face and eye area, with hair and ornament arranged outside it, so the full iris, pupil, lids, lashes, and face geometry remain large and clear. Keep clear space around both hands so every finger remains readable. Give her a simple long-sleeve garment with broad readable surfaces for palette and garment-level motifs against a quiet uncluttered studio ground. If the requested framing language suggests a layered or intimate crop, express it through placement, negative space, and non-occluding foreground layers while leaving the head, face, eyes, forearms, and hands fully inside the frame. These neutral anchors keep subject, garment, camera distance, and background content comparable while the requested signature controls the eight visual axes. Make all eight requested axes independently legible without allowing one axis to substitute for another: contour and line language, face geometry, accessory-free eye construction, body silhouette and anatomy, local-color palette, light and shadow-edge treatment across the face, sleeves, garment folds, and ground, framing with negative space, and recurring ornament motifs in both garment and outer-border regions. Finish this as an unmistakably hand-drawn two-dimensional character-design illustration with clean garment surfaces, coherent illustrated anatomy, readable fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "cfdc712ad7139147d09ede073facc0e505aca87c6f7c2169434eaaa0a1e0289f",
+  "workflow_sha256": "a84ac3b556758530a7295d7cce5013a1972e33b6ae02af7beccb51f45656fac5",
+  "factors": {
+    "body_design": "elongated_graceful",
+    "eye_design": "narrow_focused",
+    "face_design": "angular_planar",
+    "framing_language": "spacious_asymmetric",
+    "light_modeling": "soft_two_step",
+    "line_language": "supple_ribbon",
+    "ornament_language": "textile_echo",
+    "palette_language": "mineral_pastel",
+    "evaluated_prompt_sha256": "sha256_c587edb58d85092e1c355bd35da3b85ce1a10f5cfc8ed12ae2793142bdc77a42",
+    "benchmark_profile": "artist_visual_signature_repair_v0_8_3",
+    "benchmark_stage": "pilot"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "1ad99fefac7c013f0015da26131851e5ab78bd01aae78984c667a5dd30086114",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
