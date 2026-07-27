@@ -1175,6 +1175,30 @@ character 조합은 full-length, lighting 조합은 눈과 광원 색이 읽히�
 구도로 분기한다. lighting 및 benchmark는 이전에 통과한 짧은 v2 장면 구조를
 재사용하되 새 profile SHA와 겹치지 않는 새 3-seed로 전체 69장을 다시 검증한다.
 
+`phase6_positive_profile_v5`는 새 seed `[41001, 42002, 43003]`으로
+69/69개 1024×1024 PNG와 고유 image hash를 생성했고, 재실행에서
+`complete=69`, `pending=0`을 확인했다. matrix SHA-256은
+`a4aae946eaed19abb1e4394d3aca885667c62fffd2f4cc7c1fcca1ee35d4fae1`이다.
+v5 review는 통과 13개, 미달 10개, critical failure 0이었다. 짧은 v2 구조를
+되살린 single-axis lighting과 benchmark는 세 seed 모두 통과했고, pairwise
+camera는 chest-up profile·asymmetric negative space·counterweight를, pairwise
+pose는 full-length·발·지지 다리를 복구했다. scale-aware ledger도 close/thigh
+조합의 full-body 문구 충돌을 제거했다. 남은 실패는 single-axis photoreal
+camera가 frontal-centered로 회귀한 1개, style pack의 광원 표현이 measured
+lighting을 덮는 pairwise 1개, 그리고 preset/random에서 하의 단어가 exact crop을
+넓히거나 wide/full 구도를 잘라낸 7개와 contrapposto를 직립시킨 1개다. v5
+summary는 `status=failed`, `complete=false`로 보존한다.
+
+v6는 성공한 v5 경로를 그대로 유지하고 세 경로만 구조적으로 수정한다.
+single-axis camera는 모든 camera 항목에 동일한 2D storyboard baseline을 적용해
+측정 축 외 스타일을 고정한다. pairwise lighting은 style pack의 구조·안료·표면·
+분위기·edge를 feature axis에서 다시 합성해 기존 광원 문구를 제거하고, 오른쪽
+lighting만 실제 광원을 공급하게 한다. preset/random은 camera scale에 맞춰
+out-of-frame 하의 명칭을 prompt 본문에서 제거하거나 보이는 상단 부분으로
+변환하며, contrapposto preset은 signature의 body cue 자체를 지지 다리·굽힌
+무릎·counter-tilt와 양립하도록 변환한다. 기존과 겹치지 않는 새 3-seed로 69장
+전체 calibration을 다시 통과해야 한다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000001",
+  "style_id": "preset_audit_001",
+  "label": "preset_audit_001",
+  "mode": "preset_audit",
+  "seed": 41001,
+  "remote": "private_comfyui",
+  "prompt_id": "54c1765b-4728-49aa-a201-705c8485abc4",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve the garment pieces visible within the requested camera boundary, which controls where lower garment pieces continue beyond the canvas. Keep visible skin in a natural skin hue. An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, wide-leg trousers, and high-neck base, with a calm attentive look with a level chin and focused eyes. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the figure fill most of the canvas from the complete crown to a lower image edge visibly intersecting the middle of both thighs, with the face and both described hand gestures inside while the knees, calves, shoes, and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "33f2e4124faa3793943027a53305716facdd3dff536ee1f242408c7b382d3b29",
+  "workflow_sha256": "a02c22a7a606d6d9b0d4fa2671d765d8d67ef50475df55d7c83983881c4df333",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2b15cf02b8604f263da4c8176aa97e5ccf0480e0ab2158ab744f16002d4d01ca",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

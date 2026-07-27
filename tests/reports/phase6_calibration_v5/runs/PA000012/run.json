@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000012",
+  "style_id": "preset_audit_004",
+  "label": "preset_audit_004",
+  "mode": "preset_audit",
+  "seed": 43003,
+  "remote": "private_comfyui",
+  "prompt_id": "693aaaa3-bd92-448f-8a2e-3276f68c27d7",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve the garment pieces visible within the requested camera boundary, which controls where lower garment pieces continue beyond the canvas. Keep visible skin in a natural skin hue. An adult stands three-quarters, one hand at the waist and one lowered in a rooftop terrace with a low parapet, simple forms, and a distant skyline, wearing a structured wrap top, tapered trousers, and simple accessories, with a subtle closed-mouth smile with gentle warmth. Use a wide view with the subject on a third and a clear depth path and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—use the requested wide environmental view with the complete crown and complete figure inside the canvas, a clear depth path, and the subject large enough for the face and hands to remain readable.",
+  "resolved_prompt_sha256": "0944d1911c3fdca3917075e04e2fbaf4f3a9f25fde5b8a251bf48957ac05911e",
+  "workflow_sha256": "db14b45eb3f378fd6dc7ef6c371f4d859f1b33ce1170f471e38c2a64ceb7bf25",
+  "factors": {
+    "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "5ca84e24e990782b220feea6bb0df5dd794985d925367d5a2510846a9a7f956f",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000005",
+  "style_id": "preset_audit_002",
+  "label": "preset_audit_002",
+  "mode": "preset_audit",
+  "seed": 42002,
+  "remote": "private_comfyui",
+  "prompt_id": "49f7a4d9-a2ed-4b49-8e56-5baf1883ad94",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve the garment pieces visible within the requested camera boundary, which controls where lower garment pieces continue beyond the canvas. Keep visible skin in a natural skin hue. An adult turns through the torso while looking back toward the camera in a covered market arcade with repeated bays and a clear central passage, wearing a structured wrap top, tapered trousers, and simple accessories, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the head and upper torso fill most of the canvas from the complete crown to a lower edge crossing the upper torso below the chest, with the chin, both shoulders, and described upper-arm gesture inside while the hips and legs continue beyond the canvas.",
+  "resolved_prompt_sha256": "a84f74401551ed5bb0db2162bddca50f99e1af944e917dffe68edca891628b2f",
+  "workflow_sha256": "9fd7a453ea6f494ca530d5c95bace15c7464e71bc1e42aa18482cd14ff1cace1",
+  "factors": {
+    "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "d5f4dabc59c3b2fb3a9e289a45169e5fffae814f46b5779b6eb477124a15b9ea",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

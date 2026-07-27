@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000007",
+  "style_id": "single_axis_lighting_001",
+  "label": "single_axis_lighting_001",
+  "mode": "single_axis",
+  "seed": 41001,
+  "remote": "private_comfyui",
+  "prompt_id": "04021ce8-dbca-4cf3-938e-bbf90918043b",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "ffb85981501769012e4e7c44e9dae845c240c3c2ccb44e975230484dd39eeab0",
+  "workflow_sha256": "ed89fed8daf93f62c8abab7e41764df1efc778cde5ad7dd4e9914d1425c93277",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "96d1b0e0ba5461aae6c3d90166c6d3658341b40bd7c93cbc37f9fcaf7e5fbd28",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

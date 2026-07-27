@@ -1,0 +1,37 @@
+schema_version: 1
+styles:
+  single_axis_background_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three v5 seeds keep the complete adult and generous margins against clearly separated weathered-rock foregrounds, coastal vegetation, open water, and softened distant horizons. The depth structure is stable and readable, while the persistent grayscale rendering still omits the requested controlled color accent away from the face."
+  single_axis_camera_001:
+    metrics: {prompt_adherence: 2, style_fidelity: 2, stability: 5, character_quality: 4, composition_quality: 3, compatibility: 3, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: testing
+    notes: "The final camera lock consistently preserves the complete crown and chest-up boundary, but every seed is a centered frontal portrait. None shows the required clean side profile, asymmetric placement, generous negative space, clear counterweight, or readable upper-arm gesture, so the stable crop does not repair the measured camera direction."
+  single_axis_character_design_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds preserve complete grounded adults with broad sturdy proportions, offset wrap layers, uninterrupted asymmetric drape lines, and repeated front-readable botanical seam and leaf details tied to visible closures. Face specifics vary modestly, but cheek definition, compact chins, garment construction, and the repaired character-design identity remain coherent."
+  single_axis_lighting_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "The restored short prompt repairs the lighting axis in every seed: one complete adult receives a broad cool frontal-three-quarter key, both eyes stay readable, crisp controlled shadows and floor reflection remain clear, and a distinct small warm practical glows behind the figure. Source role, color separation, and framing are highly stable."
+  single_axis_linework_coloring_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three mid-thigh editorial illustrations retain complete crowns, readable faces and hands, angular measured construction, broad faceted planes, deep emerald, navy, and burgundy jewel families, dark neutral separation, and restrained bright edge accents. Gesture and color balance vary slightly without weakening the repaired line-color signature."
+  single_axis_pose_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed shows one complete frontal adult with level shoulders and chin, calm direct eye contact, evenly grounded feet, one hand at the collar, and the other at the hip. Full margins, hands, feet, joints, and controlled forward posture remain stable with no v5 regression."
+  krea2_turbo_benchmark:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "The restored short benchmark prompt repairs the style pack across all seeds: a complete adult stands within large rising diagonal amber and blue beams, with a stable warm-cool split across subject and backdrop, matte dark midtones, crisp separated silhouettes and floor shadows, and restrained luminous ceremonial accents. The neutral studio anchor remains subordinate to the distinctive treatment."

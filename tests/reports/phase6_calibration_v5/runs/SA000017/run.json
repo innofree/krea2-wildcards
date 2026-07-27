@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000017",
+  "style_id": "single_axis_camera_001",
+  "label": "single_axis_camera_001",
+  "mode": "single_axis",
+  "seed": 42002,
+  "remote": "private_comfyui",
+  "prompt_id": "9617d582-9610-49c3-8f17-51c3097575c7",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, facial profile, and visible profile eye clearly readable. The camera is the measured axis: obey its crop boundary, camera position, field of view, subject placement, and negative-space relationship exactly. Apply exactly this camera direction as the sole changing axis: Photograph an adult subject using chest-up framing that keeps both shoulders and the upper arm gesture readable from a clean side camera position that preserves the facial profile and body line. The view uses a classic wide field of view that includes context while keeping facial proportions natural and asymmetric placement with generous negative space and one clear visual counterweight. Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named camera boundary, view position, field of view, placement, and negative space as literal. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the head and upper torso fill most of the canvas from the complete crown to a lower edge crossing the upper torso below the chest, with the chin, both shoulders, and described upper-arm gesture inside while the hips and legs continue beyond the canvas.",
+  "resolved_prompt_sha256": "b42678b4bb64bff5fd155704e5c92f5c2fff6a56b457fdd31d1f7bff657cb23a",
+  "workflow_sha256": "1534e4f0dde47b3859fc7d4803a52b820463826a7542a94a3039344a6ae7a55c",
+  "factors": {
+    "axis": "camera",
+    "item_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2995027b9f782cfbd133ea79182c690035aeb26a492c475627edf1169f7a83fe",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

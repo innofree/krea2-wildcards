@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000015",
+  "style_id": "preset_audit_005",
+  "label": "preset_audit_005",
+  "mode": "preset_audit",
+  "seed": 43003,
+  "remote": "private_comfyui",
+  "prompt_id": "66639aba-5bb8-4b4a-98f6-51207b589dd6",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve the garment pieces visible within the requested camera boundary, which controls where lower garment pieces continue beyond the canvas. Keep visible skin in a natural skin hue. An adult stands three-quarters, one hand at the waist and one lowered in a spacious transit concourse with repeated columns and distant entries, wearing a longline vest, fitted top, and mid-calf pleated skirt, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the head and upper torso fill most of the canvas from the complete crown to a lower edge crossing the upper torso below the chest, with the chin, both shoulders, and described upper-arm gesture inside while the hips and legs continue beyond the canvas.",
+  "resolved_prompt_sha256": "88de7fda7ef632fa5229ea543fdf6f06afb5c2219f01927c039cbd3bd7d2edf3",
+  "workflow_sha256": "1eb8ea49ca83b8e152f31d5d62e3461c159764b359b3ab25b57f0a4b9d34b9ea",
+  "factors": {
+    "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "ce7509e56e204920ca96fb008ed21c48cd2e3d13446267a2adbf7c9e26c300a3",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,407 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/phase6_calibration_v5/review_part_a.yaml
+  - tests/reports/phase6_calibration_v5/review_part_b.yaml
+  - tests/reports/phase6_calibration_v5/review_part_c.yaml
+styles:
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      The restored short benchmark prompt repairs the style pack across all seeds: a complete adult stands
+      within large rising diagonal amber and blue beams, with a stable warm-cool split across subject
+      and backdrop, matte dark midtones, crisp separated silhouettes and floor shadows, and restrained
+      luminous ceremonial accents. The neutral studio anchor remains subordinate to the distinctive treatment.
+    recommendation: testing
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three seeds contain exactly one chest-up adult in a clean side profile with the complete crown,
+      visible profile eye, shoulders, and upper-arm gesture intact. Asymmetric subject placement, generous
+      directional negative space, and a clear border or color-field counterweight now coexist with the
+      rounded face, jewel palette, flat two-value illustration, floral garment lines, and emblem border;
+      the centered frontal views and crown crop from v4 are absent.
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Every seed presents exactly one complete crown-to-feet adult in front of a floral emblem border,
+      with readable face, eyes, tapered hands, elongated proportions, precise modular contours, and large
+      garnet, ink-blue, forest, black, and gold fields. Hard graphic value planes and repeated floral
+      ornament remain coherent across garment and border, so the v4 signature-ledger success is preserved
+      without a framing or duplicate-subject regression.
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three seeds show exactly one large mid-thigh adult against weathered stone, low coastal vegetation,
+      sea, and a broad horizon. Foreground, middle distance, and softened atmospheric background remain
+      cleanly separated while warm-cool split modeling preserves the first style; near-profile turns in
+      seeds 41001 and 43003 reduce two-eye readability, but the measured background axis remains stable
+      and plainly resolved.
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Each seed contains one grounded full-length adult with visible hands and feet, a broad stable silhouette,
+      and large asymmetric offset garment layers crossed by sweeping front-readable seam curves. The amber-blue
+      matte treatment is coherent and the full-length lock improves proportion evidence, although the
+      diamond face and leaflike closures remain understated and seed 43003 clips the top of the tall hairstyle.
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Every seed contains one coherent waist-up adult with the complete crown, both eyes, and both hand
+      gestures readable, repairing the v4 side-silhouette regression. The measured source roles still
+      fail: seeds 41001 and 42002 use warm facial illumination without a distinct small background practical,
+      while seed 43003 again turns the warm accent into a dominant broad beam; the cool key, reflected
+      fill, and separate small warm practical are therefore not stably distinguished.
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three seeds now preserve exactly one complete crown-to-feet adult in a frontal evenly weighted
+      stance with both feet grounded, level shoulders, direct gaze, one hand at the collar, and the other
+      near the hip. The supporting legs and foot placement are plainly verifiable in every image while
+      crisp amber-blue diagonal illumination remains stable, so the universal mid-thigh crop that caused
+      the v4 pose failure is fully repaired.
+    recommendation: testing
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      All three seeds retain one coherent adult, complete crowns, readable eyes, turned coastal subjects,
+      collarless jackets, wide trousers, weathered stone, low plants, and broad horizons. However, seeds
+      41001 and 42002 show the complete legs and feet and seed 43003 reaches approximately the knees rather
+      than intersecting both thighs at mid-thigh; all three also remain monochrome despite the explicit
+      natural skin hue and neutral daylight color directions.
+    recommendation: testing
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The covered arcade, repeated bays, wrap top, warm low-angle light, quiet expression, complete crown,
+      readable eyes, and coherent hands remain stable. Every seed nevertheless continues through the waist
+      or hips with both hands visible instead of ending across the upper torso below the chest, so the
+      final literal chest-up camera lock is not satisfied.
+    recommendation: testing
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All seeds preserve background above the complete crown, focused eyes, two separated readable hand
+      gestures, a warm modern library, structured overshirt and column dress, attentive expression, and
+      warm soft light. Their lower edges remain close to the requested waist-up boundary without showing
+      thighs or feet, so this path continues to meet the strict gate.
+    recommendation: testing
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The rooftop, distant skyline, wrap top, waist hand, lowered hand, gentle smile, crown margin, and
+      warm low-angle light are readable and stable. All three seeds are centered, tight thigh-level portraits
+      with the feet and lower legs outside the canvas rather than wide environmental views with a complete
+      figure on one third; seeds 41001 and 42002 are also monochrome despite the natural-color direction.
+    recommendation: testing
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      Each seed keeps a complete crown, readable eyes and hands, the transit concourse, longline vest,
+      fitted top, pleated skirt, quiet expression, and warm light with stable anatomy. The lower edge
+      still crosses the skirt around mid-thigh instead of the upper torso below the chest, so none of
+      the three images obeys the final chest-up lock.
+    recommendation: testing
+  random_utility_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      All seeds consistently render one clean hand-drawn monochrome adult in the library with precise
+      tapered contours, high narrow faces, deep almond eyes, soft value steps, coherent hands, and geometric
+      panels on garment and border. The lower edge remains around the waist or hips instead of below the
+      chest, and the subjects stay near the center without the required broad open side region and opposite-side
+      counterweight.
+    recommendation: testing
+  random_utility_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The three seeds preserve one complete crown-to-feet figure with visible margins, a covered arcade,
+      waist and lowered hand pose, tailored coat, crisp illustrated contours, compact face, dark-blue
+      fields, conspicuous cyan and magenta neon, translucent color, emblematic framing, and particle fields.
+      The requested radial iris spokes remain weak at full-length face scale, but the combined scene and
+      signature otherwise meet the strict gate.
+    recommendation: testing
+  random_utility_003:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      V5 clearly restores large dark-blue fields and distinct cyan and magenta accents while retaining
+      the hand-drawn painterly treatment, compact turned adult, coastal overlook, narrow silhouette, and
+      extensive woven garment bands. Seeds 41001 and 42002 extend close to the knees rather than ending
+      at mid-thigh, seed 43003 omits the outer ornament border, and none of the three enlarged faces shows
+      the explicitly requested radial iris spokes.
+    recommendation: testing
+  random_utility_004:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The museum setting, frontal clasped-hand pose, rounded face, long silhouette, garnet, ink-blue,
+      forest and gold fields, modular contours, and fine floral language remain distinctive and coherent.
+      All three images crop away the feet and lower legs and center the subject instead of showing a complete
+      figure on one third in a wide view; garment and outer-border floral placement also varies by seed.
+    recommendation: testing
+  random_utility_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Every seed strongly preserves full crown and shoe margins, the monochrome hand-drawn treatment,
+      precise tapered contours, high-cheekbone almond-eyed face, diffuse values, open stone courtyard,
+      upright border, and woven bands on garment and outer frame. The added structural pose instruction
+      is still ignored: both knees remain essentially straight with level hips and shoulders, producing
+      a stiff frontal stance instead of visible contrapposto.
+    recommendation: testing
+  single_axis_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three v5 seeds keep the complete adult and generous margins against clearly separated weathered-rock
+      foregrounds, coastal vegetation, open water, and softened distant horizons. The depth structure
+      is stable and readable, while the persistent grayscale rendering still omits the requested controlled
+      color accent away from the face.
+    recommendation: testing
+  single_axis_camera_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 2
+      stability: 5
+      character_quality: 4
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: >-
+      The final camera lock consistently preserves the complete crown and chest-up boundary, but every
+      seed is a centered frontal portrait. None shows the required clean side profile, asymmetric placement,
+      generous negative space, clear counterweight, or readable upper-arm gesture, so the stable crop
+      does not repair the measured camera direction.
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All seeds preserve complete grounded adults with broad sturdy proportions, offset wrap layers, uninterrupted
+      asymmetric drape lines, and repeated front-readable botanical seam and leaf details tied to visible
+      closures. Face specifics vary modestly, but cheek definition, compact chins, garment construction,
+      and the repaired character-design identity remain coherent.
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      The restored short prompt repairs the lighting axis in every seed: one complete adult receives a
+      broad cool frontal-three-quarter key, both eyes stay readable, crisp controlled shadows and floor
+      reflection remain clear, and a distinct small warm practical glows behind the figure. Source role,
+      color separation, and framing are highly stable.
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three mid-thigh editorial illustrations retain complete crowns, readable faces and hands, angular
+      measured construction, broad faceted planes, deep emerald, navy, and burgundy jewel families, dark
+      neutral separation, and restrained bright edge accents. Gesture and color balance vary slightly
+      without weakening the repaired line-color signature.
+    recommendation: testing
+  single_axis_pose_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      Every seed shows one complete frontal adult with level shoulders and chin, calm direct eye contact,
+      evenly grounded feet, one hand at the collar, and the other at the hip. Full margins, hands, feet,
+      joints, and controlled forward posture remain stable with no v5 regression.
+    recommendation: testing
