@@ -1242,6 +1242,10 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    `testing 3 / rejected 2`로 개선되었다. v0.8.8은 같은 editorial scene과 전체
    feature 번역을 고정하고, 실패한 `layered_intimate`의 배경 종이 레이어 및
    `dry_broken`·`luminous_glaze`의 표면 표현만 더 강한 자연어로 보강한다.
+   실제 v0.8.8은 대표 5개 × 3-seed 전부에서 단일 head-to-toe figure, 8축 점수,
+   critical failure 0을 만족해 `testing 5 / rejected 0` calibration gate를
+   통과했다. 이 wrapper를 immutable full-screen profile로 고정하고, calibration과
+   겹치지 않는 새 3개 seed로 잔여 `generated` 115개 전체를 실행한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.

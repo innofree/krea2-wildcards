@@ -1,0 +1,47 @@
+schema_version: 1
+review_method: direct_original_contact_sheet_and_source_image_visual_review
+reviewer_scope:
+  - prompt_matrix_visual_signature_001.png
+  - runs/VS000001/image_01.png
+  - runs/VS000004/image_01.png
+styles:
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three seeds preserve a complete single elongated figure with rounded facial geometry,
+      large readable eyes, deep-jewel graphic blocks, floral garment lines, and several obvious
+      overlapping paper panels across the background. Every axis is visible without crop.
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Original-resolution inspection shows broken dry-brush marks along sleeves, trousers, and
+      ground, angular faces with layered eyes, broad stable anatomy, earth color, reflected glaze
+      highlights, a tall low-anchored layout, and geometric side borders in every seed.
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three complete figures consistently retain fine tapered lines, compact oval faces, rounded
+      eyes, narrow bodies, nocturnal blue and neon accents, painterly values, asymmetric open
+      space, and large geometric border panels.
+  artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_deep_jewel_velvety_diffuse_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All seeds show one full broad figure with rounded contours, tapered high-cheek faces,
+      radial eyes, deep jewel fields, velvety diffuse values, centered emblematic borders, and a
+      clearly repeated drifting-particle field.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Each seed is a complete elongated single figure with flowing outlined contours, angular
+      faces, focused eyes, mineral pastel two-step rendering, centered placement, and prominent
+      repeated textile motifs on garment and nested outer frame.
