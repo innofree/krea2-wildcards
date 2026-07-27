@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "test_id": "VS000051",
+  "style_id": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+  "label": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature",
+  "mode": "visual_signature",
+  "seed": 13303,
+  "remote": "private_comfyui",
+  "prompt_id": "e1530ca0-4bf4-45d4-8e09-29554e227174",
+  "resolved_prompt": "Create a clean hand-drawn 2D editorial illustration. This exact visual signature controls the rendering: An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, narrow dark-rimmed eyes and single catchlights, a balanced figure with narrow shoulders and precise hands, deep garnet, ink blue, forest, and restrained gold, translucent glaze, reflected color, and open penumbrae, a strong vertical frame with a low visual anchor, and precise geometric insets and corner accents. Make these eight cues bold and unmistakable: line language—straight modular contours and evenly spaced seams; face design—full rounded cheeks and a short nose; eye design—narrow dark-rimmed eyes with one catchlight; body design—a balanced narrow full-body silhouette; palette language—large garnet, ink-blue, forest, and gold fields; light modeling—strong translucent colored glaze, reflected color, and open penumbrae across face, sleeves, trousers, and ground; framing language—a tall upright border with a low visual anchor; ornament language—bold repeated geometric panels. Draw face and eye details crisply within the full-length figure. Put the ornament on both the garment and outer border. Keep the complete figure in front of every decorative framing element. An adult fashion model holds a balanced full-length contrapposto pose on a spacious warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, eye-level head-to-toe framing, fixed camera position, and generous negative space around the complete silhouette remain unchanged. Keep exactly one complete adult figure with coherent illustrated anatomy and fingers, and no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "9d21f4338bec2b161e462b6ab414237ebdb6507ffaef38e75fea97c003e9c59a",
+  "workflow_sha256": "76b9094b8680819d9b6f56ee3b22ded8125c0b1efe3b234e03aff21efbf60be9",
+  "factors": {
+    "body_design": "balanced_narrow",
+    "eye_design": "narrow_focused",
+    "face_design": "rounded_soft",
+    "framing_language": "vertical_heroic",
+    "light_modeling": "luminous_glaze",
+    "line_language": "angular_architectural",
+    "ornament_language": "geometric_inset",
+    "palette_language": "deep_jewel",
+    "evaluated_prompt_sha256": "sha256_d562bd550493a3fa90dad2e570c69c72a7fbc90a2fbe338e4e78e749066e3eee",
+    "benchmark_profile": "artist_visual_signature_repair_reinforced_axis_v0_8_8",
+    "benchmark_stage": "pilot"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "7968e52eac5401fa6c8a4ae25943226d3a9d5b1ce1fc29f9b591021987b55173",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

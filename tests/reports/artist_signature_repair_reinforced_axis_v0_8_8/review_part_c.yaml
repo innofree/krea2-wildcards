@@ -1,0 +1,288 @@
+schema_version: 1
+review_id: artist_signature_repair_reinforced_axis_v0_8_8_part_c
+reviewer_scope:
+  - prompt_matrix_visual_signature_009.png
+  - prompt_matrix_visual_signature_010.png
+  - prompt_matrix_visual_signature_011.png
+  - prompt_matrix_visual_signature_012.png
+styles:
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The mineral-pastel painterly treatment, angular face, narrow gaze, floral traces, and
+      layered paper ground are clear, but seed 13101 crops the elongated figure below the knees.
+      The required complete hair-to-shoes silhouette therefore does not survive all three seeds.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three seeds retain one complete elongated figure with angular facial planes and focused
+      eyes, while soft ribbon contours, mineral color masses, broad painted shadows, layered
+      background panels, and repeated geometric insets remain independently readable.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The three full figures consistently show the elongated body, planar face, narrow eyes,
+      mineral palette, painterly values, and layered flat background. Large abstract panels
+      replace the requested visible field of drifting particles, so the ornament axis is absent.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every seed keeps the full single figure and exposes the angular face and narrow eyes.
+      Mineral-blue painterly planes, flowing contours, nested paper layers, and dense repeated
+      woven bands form separate, stable framing and ornament cues.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three complete elongated figures remain offset within broad quiet side space, with angular
+      faces, focused eyes, mineral fields, broad painterly shadows, and flowing seams. Repeated
+      geometric side panels remain clear without obscuring the spacious asymmetric layout.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The mineral palette, planar face, focused eyes, and painterly elongated design remain
+      recognizable, but seed 13101 crops both lower legs and every seed omits the requested
+      drifting-particle field. Two independently required conditions fail.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three full silhouettes preserve flowing edges, angular faces, narrow eyes, graceful
+      proportions, mineral pastels, and broad painted shadows. Open asymmetric placement stays
+      distinct from the strong woven side borders repeated across seeds.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The complete figures consistently carry the tall upright silhouette, low anchor, angular
+      face, focused eyes, mineral blocks, and broad painterly shadow masses. No seed renders a
+      visible drifting-particle field, leaving the eighth axis unfulfilled.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Each seed presents one complete tall figure with graceful ribbon-like contour, angular face,
+      focused gaze, mineral-pastel masses, and broad painted shading. Upright low-anchored framing
+      and repeated woven bands remain clearly separate and stable.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      All figures are complete and centered inside strong emblem borders with crisp two-value
+      mineral planes, flowing outlines, angular faces, and narrow eyes. The corner discs and solid
+      border shapes never become the requested field of drifting particles.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three head-to-toe figures preserve the elongated graphic silhouette, angular face, narrow
+      gaze, mineral palette, and hard-edged shadows. Centered emblem shapes and woven bands on
+      both garment and border are prominent, coherent, and independently legible.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Crisp mineral planes, angular faces, focused eyes, floral linework, and overlapping paper
+      layers are strongly visible. However, the lower legs and shoes are cropped in the reviewed
+      outputs, so the required complete figure is not maintained across the seed set.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every seed shows a full graceful figure with ribbon contours, angular cheeks, narrow eyes,
+      mineral pastel blocks, and crisp cel-like shade divisions. Large layered panels and smaller
+      repeated geometric insets remain separately identifiable behind the subject.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The three complete figures consistently display supple outlines, planar faces, focused eyes,
+      elongated bodies, mineral colors, crisp shading, and stacked flat panels. The backgrounds
+      contain only large blocks rather than a visible drifting-particle field.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three full figures retain angular facial construction, narrow focused eyes, elongated
+      anatomy, mineral fields, and hard graphic shadows. Multiple paper-like layers and dense
+      woven border repetitions are independently visible and highly distinctive.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Complete single figures consistently show graceful outlines, angular faces, narrow eyes,
+      mineral color blocks, and crisp binary shade edges. Broad open central space and repeated
+      geometric side insets remain stable without competing for the same cue.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The full elongated figures, angular faces, focused eyes, mineral palette, crisp shadows, and
+      generous asymmetric negative space remain coherent across seeds. The bare background
+      contains no repeated particles, so ornament is not independently rendered.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Each full figure clearly retains flowing contour taper, angular facial planes, focused eyes,
+      elongated proportions, mineral pastels, and crisp shade blocks. Spacious placement and
+      repeated woven edge bands are visually separate and stable in all seeds.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      All seeds keep a complete tall low-anchored figure with focused eyes, planar face, elongated
+      shape, mineral fields, and crisp shadow divisions. The quiet field omits drifting particles
+      entirely, so the ornament cue fails despite sound framing.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three complete upright figures preserve supple outlines, angular faces, narrow gazes,
+      graceful proportions, mineral fields, and crisp two-value shadows. The low visual anchor
+      and repeating woven side and garment bands are strong independent signals.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The centered full figures, angular faces, narrow eyes, elongated bodies, mineral palette,
+      and soft two-step values are stable inside bold emblems. Sparse solid corner motifs do not
+      form the requested visible drifting-particle field.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All seeds preserve a complete elongated single figure with flowing outlined contours,
+      angular faces, focused eyes, mineral pastel two-step rendering, centered placement, and
+      prominent repeated textile motifs on the garment and nested outer frame.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Angular faces, narrow eyes, mineral two-step surfaces, floral traces, and overlapping paper
+      layers remain readable, but the reviewed figures are cropped before the shoes. The strict
+      complete head-to-toe requirement therefore fails across the seed set.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Each seed retains a full elongated figure with ribbon contours, angular cheeks, focused
+      eyes, mineral colors, and gentle two-step modeling. Broad overlapping panels and smaller
+      repeated geometric insets remain clear as independent layout and ornament axes.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Full figures consistently retain the planar face, focused eyes, graceful silhouette,
+      mineral palette, soft value steps, and overlapping background layers. No seed contains a
+      visible field of drifting particles, so the ornament axis is missing.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 5, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Layered woven rectangles, mineral two-step color, angular faces, and narrow eyes are highly
+      distinctive, but at least the 13101 result crops the figure below the knees and the other
+      close compositions do not reliably preserve shoe margins. Full framing is not seed-stable.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three complete graceful figures retain supple contours, planar faces, focused eyes, mineral
+      pastels, and gentle two-step shadows. Broad asymmetric open space stays separate from the
+      fine floral traces repeated on garments and peripheral edges.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three head-to-toe figures show flowing outlines, angular faces, narrow focused eyes,
+      elongated anatomy, mineral color, and soft two-step modeling. Open asymmetric placement
+      and repeated geometric edge panels remain stable and independently legible.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 2, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 3, compatibility: 4, distinctiveness: 2, prompt_efficiency: 2}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      Mineral two-step rendering, angular faces, narrow eyes, and elongated bodies remain clear,
+      but seed 13101 crops the lower body and all three backgrounds omit the drifting-particle
+      field. The full framing and ornament requirements both fail.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Each seed keeps a complete elongated figure with ribbon contours, angular face, focused
+      eyes, mineral pastels, and soft stepped modeling. Spacious offset placement remains distinct
+      from the strong woven side bands and garment trim.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      All three complete figures show the tall low-anchored layout, angular faces, narrow gazes,
+      elongated proportions, mineral blocks, and soft two-step light. The empty field provides no
+      visible drifting particles, leaving ornament unrendered.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_soft_two_step_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three complete tall figures retain flowing contours, angular cheeks, focused eyes, graceful
+      anatomy, mineral color, and soft value transitions. The upright low anchor and repeated
+      textile borders and garment bands are both explicit and stable.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every seed shows one complete elongated figure with supple outlines, angular face, focused
+      eyes, mineral fields, and soft contact shadows. Large overlapping panels and repeated
+      geometric insets are separately visible, although the diffuse finish is only moderate.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: >-
+      The full figures preserve supple edges, planar faces, focused eyes, elongated bodies,
+      mineral pastels, diffuse values, and layered background slabs. No seed renders the required
+      drifting particles, so the ornament cue remains absent.
+  artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All seeds keep one full graceful figure with flowing contours, angular faces, narrow eyes,
+      mineral color masses, and usable diffuse shading. Overlapping background panels and dense
+      repeated woven borders remain separately recognizable and highly distinctive.

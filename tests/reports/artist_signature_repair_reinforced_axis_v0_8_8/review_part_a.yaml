@@ -1,0 +1,209 @@
+schema_version: 1
+review_id: artist_signature_repair_reinforced_axis_v0_8_8_part_a
+review_method: direct_original_contact_sheet_and_source_image_visual_review
+reviewer_scope:
+  - prompt_matrix_visual_signature_001.png
+  - prompt_matrix_visual_signature_002.png
+  - prompt_matrix_visual_signature_003.png
+  - prompt_matrix_visual_signature_004.png
+styles:
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds show one uncropped elongated figure with modular angular contours, a rounded face, large layered eyes, deep-jewel blocks, crisp graphic light, overlapping intimate panels, and clear floral tracing."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Each seed preserves the complete narrow elongated model, rounded face and readable layered eyes while deep-jewel geometric panels, hard color divisions, and nested architectural framing make every requested axis visible."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The three figures are complete and stable with angular jewel blocks and layered backing panels, but none contains a visible drifting-particle field, so the ornament axis is not independently expressed."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds retain a single head-to-toe graceful figure, rounded face, layered eyes, crisp jewel fields, and strongly repeated woven bands across both clothing and overlapping outer frames."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Complete centered figures and jewel color blocking are stable, but the first two seeds have no emblem border and all three omit the requested particle drift, leaving two signature axes inconsistent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Three complete centered silhouettes consistently combine rounded faces, layered eyes, jewel-toned translucent modeling, emblematic side borders, and repeated textile bands on sleeves, hems, and frames."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed contains one full elongated figure with a rounded face and layered eyes, reflected jewel accents, floral garment lines, and several floral panels layered behind the silhouette."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three full figures retain the rounded-face and layered-eye design against overlapping jewel geometric insets, with angular modular contours and visible colored reflection across the clothing."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The elongated complete figures, layered jewel panels, and colored facial accents remain coherent, but no seed shows a recognizable particle field and the ornament axis is absent."
+  artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds present one complete graceful figure with readable layered eyes, angular jewel divisions, soft reflected color, and dense textile repeats spanning the garment and multiple inset frames."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "All three figures are complete and centered, but round eyeglasses obstruct the requested narrow focused eyes in every seed and particle drift is also absent."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_centered_emblematic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Centered complete figures, jewel glazing, and repeated textile frames are strong across the set, but round glasses consistently replace and obscure the specified unobstructed narrow focused eye design."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Three full figures retain spacious floral side fields, narrow proportions, and luminous jewel accents, but every face has round glasses that prevent the narrow focused eye axis from reading independently."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The complete figures and asymmetric geometric jewel borders are consistent, yet all seeds add round glasses and the requested unobstructed narrow dark-rimmed eyes cannot be verified."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Balanced head-to-toe silhouettes are stable, but all eyes are covered by round glasses, no particles appear, and the mostly blank centered fields do not sustain the asymmetric framing axis."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Textile bands, lateral patterned fields, jewel color, and complete narrow figures are clear in all seeds, but the repeated round glasses suppress the required narrow focused eyes."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Vertical complete figures and geometric jewel side columns are stable and legible, but each seed renders round glasses instead of unobstructed narrow focused eyes."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The complete vertical silhouettes and jewel fields remain usable, but glasses obscure the narrow eye design and all three neutral backgrounds lack the specified drifting particles."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Repeated woven side bands, vertical full figures, and deep-jewel accents are highly consistent, but round glasses appear in all seeds and defeat the narrow focused eye requirement."
+  artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "All three images have complete vertical figures, restrained two-step jewel color, and strong textile echoes, but their round glasses obscure the requested narrow focused eyes."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed shows one complete broad figure with broken dry edges, an angular planar face, layered eyes, sunlit earth paint, overlapping inset panels, and a prominent geometric chest ornament."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three complete athletic figures consistently retain dry painterly contours, planar faces, layered dark eyes, earth color, and dense textile frames arranged in overlapping intimate layers."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds preserve a complete broad earth-toned model with dry planar rendering, layered eyes, generous asymmetric open space, and large geometric side insets."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Three coherent full figures preserve earth color and broad painterly shading, but the spacious neutral fields contain no visible drifting particles and the ornament axis is missing."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_spacious_asymmetric_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Complete broad figures, angular faces, layered eyes, dry earth paint, spacious lateral placement, and tall repeated textile side bands remain independently visible in every seed."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_floral_trace_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Each complete athletic figure combines broken planar lines, layered eyes, earth color, warm reflected glaze, floral garment marks, and multiple floral frames nested behind the body."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three seeds retain a single uncropped broad model, dry angular facial planes and layered eyes, reflected earth light, and several overlapping geometric inset frames."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The three complete figures show stable dry earth contours and soft reflected light, but neither drifting particles nor layered intimate framing appears with enough specificity."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every full figure has coherent broad anatomy, dry angular planes, layered eyes, warm reflected earth color, and densely repeated textile frames in a layered intimate arrangement."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Three complete broad figures retain broken planar drawing, layered eyes, glazed earth light, generous negative space, and clear asymmetric geometric side columns."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three head-to-toe figures read as tall and broad with dry angular faces, layered eyes, sunlit earth glazing, and repeated geometric columns reinforcing the vertical framing."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The vertical full figures, earth palette, and planar glazed shading are stable, but no seed contains the requested particle drift and the surrounding fields remain generic."
+  artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_luminous_glaze_vertical_heroic_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Complete vertical figures, dry angular planes, layered eyes, reflected earth light, and repeated textile side bands are present across the set, with extra garment motifs in the middle seed."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The complete narrow figures and nocturnal painterly color are stable, but the first seed lacks the layered geometric frame that is prominent in the other two, so all eight axes do not survive across three seeds."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "All three complete figures retain compact oval faces and nocturnal blue values, but particle drift and layered intimate framing are absent from every neutral background."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Every seed shows a complete balanced narrow figure with tapered linework, compact oval face, rounded dark irises, nocturnal neon accents, soft painterly values, open space, and asymmetric geometric side panels."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_spacious_asymmetric_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "The complete narrow silhouettes and nocturnal blue rendering remain coherent, but all three spacious fields omit the particle ornament and have little intentional asymmetry."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_geometric_inset_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "Three full narrow figures consistently preserve compact oval faces, rounded irises, tapered neon outlines, crisp dark fields, geometric garment details, and several layered inset frames."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_particle_drift_complete_signature:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: rejected
+    notes: "Complete compact figures and crisp nocturnal outlines are stable, but every background is plain and neither particle drift nor layered inset framing is visibly expressed."
+  artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_layered_intimate_textile_echo_complete_signature:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All seeds show one uncropped narrow figure with compact oval face, rounded dark irises, tapered neon linework, crisp nocturnal fields, and repeated textile bands across clothing and overlapping outer frames."

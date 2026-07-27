@@ -132,6 +132,9 @@ def write_standalone_scorecard(path: Path, rows: list[dict[str, str]]) -> None:
 
 def write_mixed_artist_standalone_fixture(
     root: Path,
+    *,
+    repair_profile: str = "artist_visual_signature_repair_v0_8_3",
+    repair_pilot_seeds: tuple[int, int, int] = (6101, 6202, 6303),
 ) -> tuple[Path, list[dict[str, str]]]:
     scorecard = root / "tests/reports/mixed_artist_fixture/scorecard.csv"
     scorecard.parent.mkdir(parents=True)
@@ -140,8 +143,8 @@ def write_mixed_artist_standalone_fixture(
         ("artist_legacy", (1001, 2002, 3003, 4004, 5005), None),
         (
             "artist_repair",
-            (6101, 6202, 6303, 4004, 5005),
-            "artist_visual_signature_repair_v0_8_3",
+            (*repair_pilot_seeds, 4004, 5005),
+            repair_profile,
         ),
     )
     for style_id, seeds, profile in profiles:
@@ -156,7 +159,7 @@ def write_mixed_artist_standalone_fixture(
                 factors["evaluated_prompt_sha256"] = "sha256_" + "a" * 64
                 factors["benchmark_profile"] = profile
                 factors["benchmark_stage"] = (
-                    "pilot" if seed in {6101, 6202, 6303} else "extension"
+                    "pilot" if seed in set(repair_pilot_seeds) else "extension"
                 )
             elif seed in {4004, 5005}:
                 factors["evaluated_prompt_sha256"] = "sha256_" + "a" * 64
@@ -542,6 +545,49 @@ def test_scorecard_only_accepts_exact_mixed_artist_profiles_and_stages(
         (6101, "pilot"),
         (6202, "pilot"),
         (6303, "pilot"),
+        (4004, "extension"),
+        (5005, "extension"),
+    }
+
+
+def test_scorecard_only_accepts_reinforced_axis_repair_profile(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    scorecard, _ = write_mixed_artist_standalone_fixture(
+        tmp_path,
+        repair_profile=(
+            "artist_visual_signature_repair_reinforced_axis_v0_8_8"
+        ),
+        repair_pilot_seeds=(13101, 13202, 13303),
+    )
+    output = scorecard.parent / "review"
+    monkeypatch.setattr(matrix_sheets, "ROOT", tmp_path)
+
+    def fake_render(
+        _: str, rows: list[dict[str, Any]], sheet: Path, expected_seeds: int
+    ) -> None:
+        assert len(rows) == 10
+        assert expected_seeds == 5
+        sheet.write_bytes(b"sheet")
+
+    monkeypatch.setattr(matrix_sheets, "render_sheet", fake_render)
+    document = matrix_sheets.build_review(
+        scorecard,
+        None,
+        output,
+        expected_seeds=5,
+        cases_per_sheet=10,
+        overwrite=False,
+    )
+    repair = next(
+        case for case in document["cases"] if case["style_id"] == "artist_repair"
+    )
+    assert {
+        (item["seed"], item["benchmark_stage"]) for item in repair["items"]
+    } == {
+        (13101, "pilot"),
+        (13202, "pilot"),
+        (13303, "pilot"),
         (4004, "extension"),
         (5005, "extension"),
     }

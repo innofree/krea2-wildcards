@@ -125,12 +125,16 @@ def create_binding(
     statuses: tuple[str, ...] = ("generated",),
     count: int,
 ) -> tuple[Path, list[dict[str, object]]]:
-    seeds = REPAIR_SEEDS if profile == REPAIR_BENCHMARK_PROFILE else (1001, 2002, 3003)
+    seeds = {
+        REPAIR_BENCHMARK_PROFILE: REPAIR_SEEDS,
+        REINFORCED_AXIS_REPAIR_PROFILE: REINFORCED_AXIS_REPAIR_SEEDS,
+    }.get(profile, (1001, 2002, 3003))
     rows = signature_rows(
         catalog,
         seeds=seeds,
         statuses=statuses,
-        include_prompt_digest=profile == REPAIR_BENCHMARK_PROFILE,
+        include_prompt_digest=profile
+        in {REPAIR_BENCHMARK_PROFILE, REINFORCED_AXIS_REPAIR_PROFILE},
         benchmark_profile=profile,
         require_signature_count=count,
     )
@@ -763,10 +767,29 @@ def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
 
 def pilot_fixture(
     tmp_path: Path,
+    *,
+    repair_profile: str = REPAIR_BENCHMARK_PROFILE,
 ) -> tuple[Path, Path, Path, Path, Path]:
-    catalog, _ = write_catalog(
+    catalog, items = write_catalog(
         tmp_path, {"artist_legacy": "generated", "artist_repair": "generated"}
     )
+    if repair_profile == REINFORCED_AXIS_REPAIR_PROFILE:
+        supported_axes = {
+            "line_language": ["dry_broken"],
+            "face_design": ["angular_planar"],
+            "eye_design": ["layered_large"],
+            "body_design": ["broad_athletic"],
+            "palette_language": ["sunlit_earth"],
+            "light_modeling": ["luminous_glaze"],
+            "framing_language": ["layered_intimate"],
+            "ornament_language": ["geometric_inset"],
+        }
+        items["artist_repair"]["feature_axes"] = supported_axes
+        items["artist_repair"]["visual_axes"] = list(supported_axes)
+        catalog.write_text(
+            yaml.safe_dump({"items": items}, sort_keys=False),
+            encoding="utf-8",
+        )
     legacy_binding, legacy_matrix = create_binding(
         tmp_path, catalog, "legacy", count=2
     )
@@ -777,7 +800,7 @@ def pilot_fixture(
         tmp_path,
         catalog,
         "repair",
-        profile=REPAIR_BENCHMARK_PROFILE,
+        profile=repair_profile,
         count=1,
     )
     lifecycle["items"]["artist_repair"]["validation"]["status"] = "testing"
@@ -834,6 +857,66 @@ def test_testing_pilot_prefers_repair_scores_and_validates_exact_five_seeds(
         == 5
         for style_id in current
     )
+
+
+def test_testing_pilot_supports_reinforced_axis_repair_profile(
+    tmp_path: Path,
+) -> None:
+    catalog, legacy_binding, repair_binding, legacy_scored, repair_scored = (
+        pilot_fixture(
+            tmp_path,
+            repair_profile=REINFORCED_AXIS_REPAIR_PROFILE,
+        )
+    )
+    fields, pilot, current = build_pilot_rows(
+        legacy_scored,
+        repair_scored,
+        legacy_binding,
+        repair_binding,
+        catalog,
+        root=tmp_path,
+        minimum_testing_count=2,
+    )
+    repair_pilot = [
+        row for row in pilot if row["style_id"] == "artist_repair"
+    ]
+    assert {int(row["seed"]) for row in repair_pilot} == set(
+        REINFORCED_AXIS_REPAIR_SEEDS
+    )
+    assert {
+        json.loads(row["factors_json"])["benchmark_profile"]
+        for row in repair_pilot
+    } == {REINFORCED_AXIS_REPAIR_PROFILE}
+
+    pilot_path = tmp_path / "tests/reports/combined/pilot_scorecard.csv"
+    write_csv(pilot_path, pilot)
+    extension_matrix_rows = retest_rows(pilot_path, catalog)
+    repair_extension = [
+        row
+        for row in extension_matrix_rows
+        if row["style_id"] == "artist_repair"
+    ]
+    assert {row["seed"] for row in repair_extension} == {4004, 5005}
+    assert {
+        (
+            row["factors"]["benchmark_profile"],
+            row["factors"]["benchmark_stage"],
+        )
+        for row in repair_extension
+    } == {(REINFORCED_AXIS_REPAIR_PROFILE, "extension")}
+
+    extension_matrix = tmp_path / "tests/prompt_matrix/retest.jsonl"
+    write_immutable_jsonl(extension_matrix, extension_matrix_rows)
+    extension_path = tmp_path / "tests/reports/retest/scorecard.csv"
+    write_csv(extension_path, score_rows(extension_matrix_rows))
+    combined = validate_extension_rows(
+        extension_path,
+        fields,
+        current,
+        pilot,
+        matrix_path=extension_matrix,
+    )
+    assert len(combined) == 10
 
 
 def test_testing_pilot_and_extension_fail_closed_on_drift_or_profile_mismatch(

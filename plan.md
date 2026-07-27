@@ -1245,7 +1245,18 @@ v0.8.2 시각 시그니처 full screen은 300개 × seed
    실제 v0.8.8은 대표 5개 × 3-seed 전부에서 단일 head-to-toe figure, 8축 점수,
    critical failure 0을 만족해 `testing 5 / rejected 0` calibration gate를
    통과했다. 이 wrapper를 immutable full-screen profile로 고정하고, calibration과
-   겹치지 않는 새 3개 seed로 잔여 `generated` 115개 전체를 실행한다.
+   겹치지 않는 새 3개 seed로 잔여 `generated` 115개 전체를 실행한다. 실제
+   full-screen은 seed `[13101, 13202, 13303]`, 115개 × 3-seed = 345개 job을
+   `batch_size=1`, `queue_depth=32`로 완료했다. 345개 모두 1024×1024 PNG,
+   remote success, 서로 다른 image hash를 가졌고 matrix SHA-256은
+   `cf153c27a9b4446449b9108dd908dac1c1ed5d9ccc2b791bc94e584bab2081d2`로
+   고정되었다. 동일 명령 재실행에서도 `complete=345`, `pending=0`이 확인되어
+   중복 제출 없는 resume 조건을 통과했다. 12개 contact sheet 전수 리뷰 결과는
+   `testing 40 / rejected 75 / critical failure 0`이었다. 복구 정책에 따라 실패
+   75개는 `generated`로 유지하고 통과 40개만 `testing`으로 적용해 누적
+   `testing 225 / generated 75`를 달성했다. 동일 evaluation 재적용은 catalog
+   변경 0건으로 idempotence를 확인했고, v2 reference closure와 lifecycle 검증도
+   통과했다. 따라서 `testing >= 200` gate를 충족해 5-seed retest로 이동한다.
 9. retest matrix는 각 항목이 통과한 원래 prompt profile을 그대로 사용한다.
    기존 세 seed에 `[4004, 5005]`를 추가해 항목별로 정확히 서로 다른 5개 seed를
    확보하고, 5-seed 종합 판정 후에만 `approved` 승격을 허용한다.

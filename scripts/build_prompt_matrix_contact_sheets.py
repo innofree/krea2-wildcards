@@ -28,6 +28,8 @@ from export_artist_visual_signature_matrix import (
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE,
+    REINFORCED_AXIS_REPAIR_SEEDS,
     RETEST_SEEDS,
 )
 
@@ -38,6 +40,12 @@ DEFAULT_CASES_PER_SHEET = 10
 MANIFEST_KIND = "resolved_prompt_matrix_contact_sheet_review"
 LEGACY_PILOT_SEEDS = (1001, 2002, 3003)
 PROMPT_DIGEST_RE = re.compile(r"^sha256_[0-9a-f]{64}$")
+REPAIR_PROFILES = frozenset(
+    {
+        REPAIR_BENCHMARK_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
+    }
+)
 
 
 def repo_relative(path: Path) -> str:
@@ -238,6 +246,9 @@ def _profile_seed_stages(
     if profile == REPAIR_BENCHMARK_PROFILE:
         pilot_seeds = REPAIR_SEEDS
         pilot_stage = "pilot"
+    elif profile == REINFORCED_AXIS_REPAIR_PROFILE:
+        pilot_seeds = REINFORCED_AXIS_REPAIR_SEEDS
+        pilot_stage = "pilot"
     elif profile == LEGACY_BENCHMARK_PROFILE:
         pilot_seeds = LEGACY_PILOT_SEEDS
         pilot_stage = None
@@ -248,13 +259,13 @@ def _profile_seed_stages(
         return {seed: pilot_stage for seed in pilot_seeds}
     if expected_seeds == len(RETEST_SEEDS):
         extension_stage = (
-            "extension" if profile == REPAIR_BENCHMARK_PROFILE else None
+            "extension" if profile in REPAIR_PROFILES else None
         )
         return {seed: extension_stage for seed in RETEST_SEEDS}
     if expected_seeds == len(pilot_seeds) + len(RETEST_SEEDS):
         expected = {seed: pilot_stage for seed in pilot_seeds}
         extension_stage = (
-            "extension" if profile == REPAIR_BENCHMARK_PROFILE else None
+            "extension" if profile in REPAIR_PROFILES else None
         )
         expected.update({seed: extension_stage for seed in RETEST_SEEDS})
         return expected
@@ -314,7 +325,7 @@ def _mixed_artist_case_factors(
                     f"{stage!r}; expected {expected_stage!r}"
                 )
             digest = factors.pop("evaluated_prompt_sha256", None)
-            if profile == REPAIR_BENCHMARK_PROFILE:
+            if profile in REPAIR_PROFILES:
                 if (
                     not isinstance(digest, str)
                     or not PROMPT_DIGEST_RE.fullmatch(digest)
@@ -417,7 +428,7 @@ def load_standalone_scorecard(
     if not rows:
         raise ValueError("scorecard contains no matrix rows")
     has_repair_profile = any(
-        row["factors"].get("benchmark_profile") == REPAIR_BENCHMARK_PROFILE
+        row["factors"].get("benchmark_profile") in REPAIR_PROFILES
         for row in rows
     )
     if has_repair_profile:

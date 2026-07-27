@@ -22,12 +22,24 @@ from export_artist_visual_signature_matrix import (
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE,
+    REINFORCED_AXIS_REPAIR_SEEDS,
     RETEST_SEEDS,
 )
 from summarize_results import METRICS, parse_evaluated_prompt_sha256
 
 
 LEGACY_SEEDS = (1001, 2002, 3003)
+REPAIR_PROFILES = frozenset(
+    {
+        REPAIR_BENCHMARK_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
+    }
+)
+REPAIR_PROFILE_SEEDS = {
+    REPAIR_BENCHMARK_PROFILE: REPAIR_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE: REINFORCED_AXIS_REPAIR_SEEDS,
+}
 
 
 def load_binding_against_current_prompts(
@@ -264,7 +276,8 @@ def build_pilot_rows(
     repair_binding = load_binding_against_current_prompts(
         repair_binding_path, catalog_path, root=root
     )
-    if repair_binding.get("benchmark_profile") != REPAIR_BENCHMARK_PROFILE:
+    repair_profile = repair_binding.get("benchmark_profile")
+    if repair_profile not in REPAIR_PROFILES:
         raise ValueError("repair prompt binding has the wrong benchmark profile")
     legacy_fields, legacy_rows = validate_source(
         legacy_scored,
@@ -285,8 +298,8 @@ def build_pilot_rows(
             style_id: canonical_prompt_sha256(item.get("prompt"))
             for style_id, item in load_yaml(catalog_path)["items"].items()
         },
-        expected_seeds=REPAIR_SEEDS,
-        expected_profile=REPAIR_BENCHMARK_PROFILE,
+        expected_seeds=REPAIR_PROFILE_SEEDS[repair_profile],
+        expected_profile=repair_profile,
         expected_stage="pilot",
         expected_matrix_rows=bound_matrix_rows(repair_binding, root=root),
     )
@@ -375,7 +388,7 @@ def validate_extension_rows(
         profile = row_factors.get("benchmark_profile", LEGACY_BENCHMARK_PROFILE)
         if profile != pilot_profiles[style_id]:
             raise ValueError(f"{path}:{row_number}: pilot/extension profile mismatch")
-        expected_stage = "extension" if profile == REPAIR_BENCHMARK_PROFILE else None
+        expected_stage = "extension" if profile in REPAIR_PROFILES else None
         if row_factors.get("benchmark_stage") != expected_stage:
             raise ValueError(f"{path}:{row_number}: extension stage mismatch")
         digest = parse_evaluated_prompt_sha256(row, row_number=row_number)
@@ -406,8 +419,8 @@ def validate_extension_rows(
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Select the canonical three-seed artist pilot from v0.8.2 and v0.8.3 "
-            "scored evidence for the exact current testing set"
+            "Select the canonical three-seed artist pilot from v0.8.2 and the "
+            "current repair profile's scored evidence for the exact testing set"
         )
     )
     parser.add_argument("legacy_scored", type=Path)

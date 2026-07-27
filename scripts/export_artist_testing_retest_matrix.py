@@ -11,6 +11,8 @@ from export_artist_visual_signature_matrix import (
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE,
+    REINFORCED_AXIS_REPAIR_SEEDS,
     RETEST_SEEDS,
     prompt_for_profile,
     validate_signature_item,
@@ -26,6 +28,16 @@ from summarize_results import parse_evaluated_prompt_sha256
 
 
 LEGACY_PILOT_SEEDS = (1001, 2002, 3003)
+REPAIR_PROFILES = frozenset(
+    {
+        REPAIR_BENCHMARK_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
+    }
+)
+REPAIR_PROFILE_SEEDS = {
+    REPAIR_BENCHMARK_PROFILE: REPAIR_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE: REINFORCED_AXIS_REPAIR_SEEDS,
+}
 
 
 def retest_rows(
@@ -70,11 +82,12 @@ def retest_rows(
         if profile not in {
             LEGACY_BENCHMARK_PROFILE,
             REPAIR_BENCHMARK_PROFILE,
+            REINFORCED_AXIS_REPAIR_PROFILE,
         }:
             raise ValueError(f"pilot style {style_id!r} has an unsupported profile")
         expected_pilot_seeds = (
-            REPAIR_SEEDS
-            if profile == REPAIR_BENCHMARK_PROFILE
+            REPAIR_PROFILE_SEEDS[profile]
+            if profile in REPAIR_PROFILES
             else LEGACY_PILOT_SEEDS
         )
         if source_seeds != set(expected_pilot_seeds):
@@ -88,7 +101,7 @@ def retest_rows(
                 context=f"pilot:{style_id}:{row_number}",
             )
             expected_stage = (
-                "pilot" if profile == REPAIR_BENCHMARK_PROFILE else None
+                "pilot" if profile in REPAIR_PROFILES else None
             )
             if source_factors.get("benchmark_stage") != expected_stage:
                 raise ValueError(
@@ -98,7 +111,7 @@ def retest_rows(
                 source_row,
                 row_number=row_number,
             )
-            if profile == REPAIR_BENCHMARK_PROFILE and digest is None:
+            if profile in REPAIR_PROFILES and digest is None:
                 raise ValueError(
                     f"repair pilot style {style_id!r} is missing its prompt digest"
                 )
@@ -114,7 +127,7 @@ def retest_rows(
         row_factors["evaluated_prompt_sha256"] = (
             "sha256_" + canonical_prompt_sha256(body)
         )
-        if profile == REPAIR_BENCHMARK_PROFILE:
+        if profile in REPAIR_PROFILES:
             row_factors["benchmark_profile"] = profile
             row_factors["benchmark_stage"] = "extension"
         prompt = prompt_for_profile(
@@ -142,7 +155,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Export two extension seeds using each current testing style's canonical "
-            "v0.8.2 or v0.8.3 pilot profile"
+            "legacy or current repair pilot profile"
         )
     )
     parser.add_argument("pilot_scorecard", type=Path)
