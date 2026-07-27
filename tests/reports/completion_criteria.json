@@ -3,8 +3,8 @@
   "complete": false,
   "summary": {
     "criteria": 16,
-    "complete": 4,
-    "remaining": 12
+    "complete": 5,
+    "remaining": 11
   },
   "criteria": [
     {
@@ -213,14 +213,15 @@
     {
       "id": "approved_style_packs",
       "category": "content",
-      "complete": false,
-      "actual": 21,
+      "complete": true,
+      "actual": 150,
       "target": {
         "minimum": 150,
         "approval_policy_valid": true
       },
       "evidence": [
-        "catalog/art_styles.yaml"
+        "catalog/art_styles.yaml",
+        "catalog/style_expansion.yaml"
       ],
       "message": "Count includes only approval-policy-valid complete style runtime entries."
     },
@@ -297,11 +298,11 @@
       "category": "quality",
       "complete": true,
       "actual": {
-        "approved_items": 21,
-        "evaluated_items": 21,
+        "approved_items": 150,
+        "evaluated_items": 150,
         "missing_metrics": 0,
-        "prompt_adherence": 4.133,
-        "stability": 5.0
+        "prompt_adherence": 4.124,
+        "stability": 4.503
       },
       "target": {
         "prompt_adherence_minimum": 4,

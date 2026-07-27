@@ -154,7 +154,8 @@ An adult woman stands in a relaxed three-quarter pose against a neutral studio b
 
 완료된 연결·배포·smoke·기존 스타일 검증과 3,700개 정적 확장 이후의 순서다.
 보안 정리, template 검토, exact content build, schema-v2 projection이 끝났으므로 다음
-이미지 실행은 bounded expansion pilot이다.
+이미지 실행은 bounded expansion pilot이다. 2026-07-27 기준 1~4단계가 완료되어 승인
+style 150개를 확보했으며, 현재 실행 단계는 5번 canonical artist native 관찰이다.
 
 1. 5축 style/8축 artist 마이그레이션과 prompt 교정을 반영한 preview를 v0.7 증거로 배포한다.
 2. 신규 5축 스타일 팩 150개를 seed 3개씩 실행하고 contact sheet로 전수 검토한다.
@@ -291,6 +292,11 @@ identity를 기록한다. tag identity 자체는 시각 특성 증거가 아니�
 native Krea 관찰 전까지 pending이다. `run_remote_prompt_matrix.py`는 완전히 해석된 JSONL만
 받고 wildcard·접속정보를 거부하며, 기본은 offline dry-run이다. submit 시 각 job 전후로
 빈 큐를 확인하고 1024×1024 PNG, 비식별 run record, scorecard, manifest를 검증한다.
+Native scorecard의 `artist_###` ID는 runtime catalog ID와 의도적으로 다르므로 전용
+`build_artist_native_contact_sheets.py`가 matrix와 exact coverage를 결합한다. Review
+manifest와 contact-sheet label에는 canonical name이나 prompt를 복사하지 않고 비식별
+artist/test ID, seed, 저장소 상대 이미지 경로만 남긴다. 기본 300명 × 3-seed는 10명씩
+30개 sheet로 분할하며 `make review-artist-native`로 생성한다.
 
 v0.6 preview의 한 장 canary는 wildcard resolution, 1인 전신 framing, scene control을
 통과했다. 이어 서로 다른 조합 5개를 seed 3개씩 실행했으나, 15장 대부분이 거의 동일한
@@ -432,7 +438,11 @@ taper는 curtain 바깥 1/3의 세부가 사라지는 강한 defocus로 표현�
 15장은 모두 기술적으로 성공했고 geometric doorway, fibrous color field, 단일 chalk mural
 대표 세 개는 통과했다. Satin engraved channel과 strong defocus 대표는 요구한 edge 효과가
 보이지 않아 탈락했다. 성공 계열의 companion을 합치면 다섯 승인 후보가 남으므로 공식
-여덟 항목 screen은 진행하되, 실패한 satin 두 계열은 승격 기대치에서 제외한다.
+여덟 항목 screen은 진행하되, 실패한 satin 두 계열은 승격 기대치에서 제외한다. 공식
+24장도 모두 1024 × 1024로 완료됐고 4개가 `testing`, 4개가 `rejected`였다. Geometric
+doorway 두 개와 fibrous color-field 두 개만 seed 4004/5005의 8장으로 연장했으며, 기존
+3-seed와 합친 정확한 5-seed 집계에서 네 개 모두 `approved`, critical failure 0건을
+유지했다. 기존 146개와 합쳐 승인 style pack은 정확히 150개로 계획 기준을 충족한다.
 
 실행 순서는 다음 자동 게이트로 고정한다.
 
