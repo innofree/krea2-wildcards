@@ -1,20 +1,53 @@
 from __future__ import annotations
 
+import json
+import subprocess
 from pathlib import Path, PurePosixPath
 
 import pytest
 
+import deploy_remote_wildcards as deploy
 from build_impact_yaml import impact_compatible_document
-from common import iter_leaf_lists, item_status, iter_catalog_items, load_yaml
+from common import dump_yaml, iter_leaf_lists, item_status, iter_catalog_items, load_yaml
 from deploy_remote_wildcards import (
+    DEFAULT_SOURCE,
+    approved_manifest_item_count,
     atomic_write_evidence,
     deployment_evidence,
+    deployment_id_from_evidence,
     krea2_namespace,
+    remote_queue_empty,
     rsync_command,
 )
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def write_approved_manifest(path: Path, item_count: int = 2) -> None:
+    items = [
+        {
+            "id": f"approved_{index}",
+            "status": "approved",
+            "runtime_file": "krea2/style/complete_pack.yaml",
+            "runtime_path": f"krea2/style/complete_pack/approved_{index}",
+            "prompt_count": 1,
+        }
+        for index in range(1, item_count + 1)
+    ]
+    path.write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "included_statuses": ["approved"],
+                "item_count": item_count,
+                "prompt_count": item_count,
+                "files": ["krea2/style/complete_pack.yaml"],
+                "items": items,
+            }
+        ),
+        encoding="utf-8",
+    )
 
 
 def test_preview_has_expected_remote_paths(tmp_path: Path) -> None:
@@ -154,6 +187,8 @@ def test_deployment_evidence_is_redacted_and_written_atomically(tmp_path: Path) 
         status="passed",
         expected_paths=42,
         digest="a" * 64,
+        approved_items=21,
+        evidence_path=Path("tests/reports/deployments/test-preview.json"),
     )
     output = Path("tests/reports/deployments/test-preview.json")
 
@@ -172,8 +207,188 @@ def test_deployment_evidence_is_redacted_and_written_atomically(tmp_path: Path) 
     assert "api" not in raw.lower()
     assert str(tmp_path) not in raw
     assert not list((tmp_path / output.parent).glob(".test-preview.json.*"))
+    assert document["schema_version"] == 1
+    assert document["deployment_id"] == "test-preview"
+    assert document["deployment_type"] == "preview"
+    assert document["approved_items"] == 21
+    assert document["verification"] == {
+        "checksum_match": True,
+        "exact_krea2_namespace": True,
+        "impact_reload": True,
+        "smoke_completed": False,
+        "queue_empty": True,
+    }
+    assert document["smoke"] is None
 
 
 def test_deployment_evidence_rejects_absolute_path(tmp_path: Path) -> None:
     with pytest.raises(ValueError, match="must remain relative"):
         atomic_write_evidence(tmp_path / "outside.json", {})
+
+
+def test_deployment_id_rejects_unsafe_relative_filename() -> None:
+    assert (
+        deployment_id_from_evidence(
+            Path("tests/reports/deployments/production_v2.json")
+        )
+        == "production_v2"
+    )
+    with pytest.raises(ValueError, match="must remain relative"):
+        deployment_id_from_evidence(Path("tests/reports/deployments/bad name.json"))
+
+
+@pytest.mark.parametrize(
+    "mutation",
+    ["non_approved", "stale_items", "stale_prompts", "duplicate_id"],
+)
+def test_manifest_must_be_current_approved_only(
+    tmp_path: Path, mutation: str
+) -> None:
+    manifest = tmp_path / "wildcards-manifest.json"
+    write_approved_manifest(manifest)
+    document = json.loads(manifest.read_text(encoding="utf-8"))
+    if mutation == "non_approved":
+        document["included_statuses"] = ["testing", "approved"]
+    elif mutation == "stale_items":
+        document["item_count"] = 3
+    elif mutation == "stale_prompts":
+        document["prompt_count"] = 3
+    else:
+        document["items"][1]["id"] = document["items"][0]["id"]
+    manifest.write_text(json.dumps(document), encoding="utf-8")
+
+    with pytest.raises(ValueError):
+        approved_manifest_item_count(manifest)
+
+
+def test_dry_run_evidence_is_non_applied_and_cannot_pass_production(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.chdir(tmp_path)
+    DEFAULT_SOURCE.parent.mkdir(parents=True)
+    DEFAULT_SOURCE.write_text("krea2: {}\n", encoding="utf-8")
+
+    document = deployment_evidence(
+        DEFAULT_SOURCE,
+        applied=False,
+        status="dry-run",
+        expected_paths=2,
+        digest="b" * 64,
+        approved_items=2,
+        evidence_path=Path("tests/reports/deployments/production_dry_run.json"),
+        checksum_match=False,
+        exact_krea2_namespace=False,
+        impact_reload=False,
+        queue_empty=False,
+    )
+
+    assert document["deployment_type"] == "production"
+    assert document["status"] == "dry-run"
+    assert document["mode"] == "dry-run"
+    assert document["applied"] is False
+    assert not any(document["verification"].values())
+    assert document["smoke"] is None
+
+
+def test_remote_queue_requires_empty_running_and_pending_lists(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(
+        deploy,
+        "get_json",
+        lambda _url: {"queue_running": [], "queue_pending": []},
+    )
+    assert remote_queue_empty("private_api") is True
+
+    monkeypatch.setattr(
+        deploy,
+        "get_json",
+        lambda _url: {"queue_running": [["job"]], "queue_pending": []},
+    )
+    assert remote_queue_empty("private_api") is False
+
+
+def test_apply_writes_completion_compatible_evidence_after_queue_check(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.chdir(tmp_path)
+    DEFAULT_SOURCE.parent.mkdir(parents=True)
+    dump_yaml(
+        {
+            "krea2": {
+                "style/complete_pack/approved_one": ["First approved treatment."],
+                "style/complete_pack/approved_two": ["Second approved treatment."],
+            }
+        },
+        DEFAULT_SOURCE,
+    )
+    manifest = Path("wildcards-manifest.json")
+    write_approved_manifest(manifest)
+    evidence = Path("tests/reports/deployments/production_test.json")
+    events: list[str] = []
+
+    monkeypatch.setattr(
+        deploy,
+        "run",
+        lambda command: subprocess.CompletedProcess(command, 0, "", ""),
+    )
+    monkeypatch.setattr(
+        deploy,
+        "remote_krea2_namespace",
+        lambda _api: events.append("preflight") or set(),
+    )
+    monkeypatch.setattr(
+        deploy,
+        "remote_sha256",
+        lambda _target, _path: deploy.sha256(DEFAULT_SOURCE),
+    )
+    monkeypatch.setattr(deploy, "refresh", lambda _api: events.append("reload"))
+    monkeypatch.setattr(
+        deploy,
+        "verify_remote_paths",
+        lambda _api, _expected: events.append("namespace") or (set(), set()),
+    )
+    monkeypatch.setattr(
+        deploy,
+        "remote_queue_empty",
+        lambda _api: events.append("queue") or True,
+    )
+
+    result = deploy.main(
+        [
+            "--source",
+            str(DEFAULT_SOURCE),
+            "--manifest",
+            str(manifest),
+            "--ssh-target",
+            "ssh_alias",
+            "--remote-dir",
+            "wildcard_store",
+            "--api-url",
+            "private_api",
+            "--evidence",
+            str(evidence),
+            "--apply",
+        ]
+    )
+
+    assert result == 0
+    assert events == ["preflight", "reload", "namespace", "queue"]
+    document = json.loads(evidence.read_text(encoding="utf-8"))
+    assert document["deployment_id"] == "production_test"
+    assert document["deployment_type"] == "production"
+    assert document["status"] == "passed"
+    assert document["applied"] is True
+    assert document["approved_items"] == 2
+    assert document["verification"] == {
+        "checksum_match": True,
+        "exact_krea2_namespace": True,
+        "impact_reload": True,
+        "queue_empty": True,
+        "smoke_completed": False,
+    }
+    assert document["smoke"] is None
+    raw = evidence.read_text(encoding="utf-8")
+    assert "ssh_alias" not in raw
+    assert "wildcard_store" not in raw
+    assert "private_api" not in raw

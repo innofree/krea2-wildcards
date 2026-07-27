@@ -22,7 +22,9 @@ MODES = ("native_name", "visual_signature", "hybrid")
 MODE_CODES = {"native_name": "N", "visual_signature": "S", "hybrid": "H"}
 STYLE_CONDITION_MARKER = " Style condition: "
 SIGNATURE_MAP_KIND = "artist_abc_signature_map"
-NAME_REFERENCE_RE = re.compile(r"\b(?:in the style of|artist reference|artwork by)\b", re.I)
+NAME_REFERENCE_RE = re.compile(
+    r"\b(?:in the style of|artist reference|artwork by)\b", re.I
+)
 
 
 def _normalized_words(value: str) -> str:
@@ -140,7 +142,9 @@ def load_signature_map(
     if not isinstance(document, dict):
         raise ValueError("signature map must be a mapping")
     if set(document) != {"schema_version", "kind", "artists"}:
-        raise ValueError("signature map must contain only schema_version, kind, and artists")
+        raise ValueError(
+            "signature map must contain only schema_version, kind, and artists"
+        )
     if document.get("schema_version") != 1:
         raise ValueError("signature map schema_version must be 1")
     if document.get("kind") != SIGNATURE_MAP_KIND:
@@ -159,7 +163,9 @@ def load_signature_map(
         if not isinstance(artist_id, str) or not ARTIST_ID_RE.fullmatch(artist_id):
             raise ValueError(f"invalid signature-map artist ID: {artist_id!r}")
         if artist_id not in registry:
-            raise ValueError(f"signature-map artist is absent from registry: {artist_id}")
+            raise ValueError(
+                f"signature-map artist is absent from registry: {artist_id}"
+            )
         if not isinstance(entry, dict) or set(entry) != {"signature_prompt"}:
             raise ValueError(
                 f"signature-map entry must contain only signature_prompt: {artist_id}"
@@ -201,7 +207,10 @@ def validate_matrix(
         for seed in seeds
     }
     actual = {(row["style_id"], row["mode"], row["seed"]) for row in rows}
-    if actual != expected or len(rows) != EXPECTED_ARTISTS * len(MODES) * EXPECTED_SEEDS:
+    if (
+        actual != expected
+        or len(rows) != EXPECTED_ARTISTS * len(MODES) * EXPECTED_SEEDS
+    ):
         raise ValueError("artist A/B/C matrix does not have exact 8x3x3 coverage")
     if len({row["test_id"] for row in rows}) != len(rows):
         raise ValueError("artist A/B/C matrix contains duplicate deterministic IDs")
@@ -224,7 +233,9 @@ def artist_abc_rows(
     signatures = load_signature_map(signature_map_path, registry)
     missing_signatures = sorted(set(selected) - set(signatures))
     if missing_signatures:
-        raise ValueError(f"selected artist lacks a name-free signature: {missing_signatures}")
+        raise ValueError(
+            f"selected artist lacks a name-free signature: {missing_signatures}"
+        )
 
     rows: list[dict[str, Any]] = []
     for artist_id in selected:
@@ -252,7 +263,8 @@ def artist_abc_rows(
 def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     content = "".join(
-        json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n" for row in rows
+        json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n"
+        for row in rows
     )
     path.write_text(content, encoding="utf-8", newline="\n")
 
@@ -263,15 +275,23 @@ def main() -> int:
     )
     parser.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY)
     parser.add_argument("--signature-map", type=Path, required=True)
-    parser.add_argument("--artist", action="append", required=True)
+    parser.add_argument(
+        "--artist",
+        action="append",
+        help="explicit artist_### selection; omit to use all eight signature-map entries",
+    )
     parser.add_argument("--seed", action="append", type=int, default=None)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
+        artist_ids = args.artist
+        if artist_ids is None:
+            registry = load_registry(args.registry)
+            artist_ids = sorted(load_signature_map(args.signature_map, registry))
         rows = artist_abc_rows(
             args.registry,
             args.signature_map,
-            args.artist,
+            artist_ids,
             args.seed or DEFAULT_SEEDS,
         )
         write_jsonl(args.output, rows)

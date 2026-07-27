@@ -34,7 +34,9 @@ def fixture_registry(path: Path) -> None:
         }
         for index, artist_id in enumerate(ARTIST_IDS, start=1)
     }
-    path.write_text(yaml.safe_dump({"artists": artists}, sort_keys=False), encoding="utf-8")
+    path.write_text(
+        yaml.safe_dump({"artists": artists}, sort_keys=False), encoding="utf-8"
+    )
 
 
 def fixture_signature_map(path: Path, *, omit: str | None = None) -> dict[str, str]:
@@ -120,7 +122,11 @@ def test_output_is_byte_deterministic_across_selection_order(tmp_path: Path) -> 
                 str(signature_map),
                 "--output",
                 str(output),
-                *[argument for artist in selection for argument in ("--artist", artist)],
+                *[
+                    argument
+                    for artist in selection
+                    for argument in ("--artist", artist)
+                ],
             ],
             cwd=ROOT,
             capture_output=True,
@@ -133,6 +139,29 @@ def test_output_is_byte_deterministic_across_selection_order(tmp_path: Path) -> 
         outputs.append(output)
     hashes = [hashlib.sha256(path.read_bytes()).hexdigest() for path in outputs]
     assert hashes[0] == hashes[1]
+
+
+def test_cli_infers_exact_selection_from_signature_map(tmp_path: Path) -> None:
+    registry, signature_map, _ = fixtures(tmp_path)
+    output = tmp_path / "inferred.jsonl"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts/export_artist_abc_matrix.py"),
+            "--registry",
+            str(registry),
+            "--signature-map",
+            str(signature_map),
+            "--output",
+            str(output),
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout or result.stderr
+    assert len(output.read_text(encoding="utf-8").splitlines()) == 72
 
 
 def test_selection_and_signature_coverage_are_strict(tmp_path: Path) -> None:
@@ -151,7 +180,10 @@ def test_selection_and_signature_coverage_are_strict(tmp_path: Path) -> None:
     ("signature", "message"),
     [
         ("Use reference name 001 with thin lines and muted color.", "artist identity"),
-        ("Use __private/style__ with thin lines and muted color.", "unresolved wildcard"),
+        (
+            "Use __private/style__ with thin lines and muted color.",
+            "unresolved wildcard",
+        ),
         ("Fetch http://private.invalid then use thin lines.", "connection data"),
         ("Create artwork by a named painter with thin lines.", "name-free"),
     ],
@@ -164,7 +196,9 @@ def test_signature_map_rejects_names_wildcards_and_endpoints(
     registry, signature_map, _ = fixtures(tmp_path)
     document = yaml.safe_load(signature_map.read_text(encoding="utf-8"))
     document["artists"]["artist_001"]["signature_prompt"] = signature
-    signature_map.write_text(yaml.safe_dump(document, sort_keys=False), encoding="utf-8")
+    signature_map.write_text(
+        yaml.safe_dump(document, sort_keys=False), encoding="utf-8"
+    )
     with pytest.raises(ValueError, match=message):
         artist_abc_rows(registry, signature_map, ARTIST_IDS)
 
@@ -184,4 +218,7 @@ def test_jsonl_rows_contain_only_generic_runner_fields(tmp_path: Path) -> None:
     }
     assert all(set(row) == allowed for row in rows)
     assert all(row["label"].startswith("artist_") for row in rows)
-    assert all(json.loads(json.dumps(row))["factors"]["artist"] == row["style_id"] for row in rows)
+    assert all(
+        json.loads(json.dumps(row))["factors"]["artist"] == row["style_id"]
+        for row in rows
+    )

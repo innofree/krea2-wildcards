@@ -6,9 +6,9 @@ wildcard YAML로 컴파일하는 프로젝트입니다. 원본 조사 데이터�
 
 현재 카탈로그는 계획 수량 3,750개를 모두 보유합니다. 기존 완성형 스타일 팩 50개와
 source-grounded expansion blueprint에서 결정적으로 생성한 13개 분류 3,700개로
-구성됩니다. 기존 스타일 중 21개는 5개 seed 검증을 통과해 `approved`, 효과가 부족한
-29개는 `rejected`, 신규 3,700개는 이미지 검증 전 `generated`입니다. 따라서 preview는
-3,721개를 제공하지만 production은 승인된 21개만 포함합니다.
+구성됩니다. 다단계 5-seed 검증을 거친 style pack 150개는 `approved`, 효과가 부족한
+50개는 `rejected`, 나머지 3,550개는 이미지 검증 전 또는 진행 중인 `generated`입니다.
+따라서 현재 preview는 3,700개를 제공하고 production build는 승인된 150개만 포함합니다.
 
 ## 빠른 시작
 
@@ -35,7 +35,7 @@ pytest
 python3 scripts/build_runtime_yaml.py --output wildcards
 ```
 
-현재는 승인된 21개 항목만 production runtime에 포함됩니다. 승인 항목이 전혀 없는
+현재는 승인된 150개 항목만 production runtime에 포함됩니다. 승인 항목이 전혀 없는
 catalog에서는 위 명령이 빈 배포를 실수로 만드는 대신 실패합니다.
 
 전체 로컬 릴리스 게이트와 승인 전용 artifact 증거는 한 명령으로 재현할 수 있습니다.
@@ -92,4 +92,7 @@ Impact adapter는 canonical runtime 디렉터리의 모든 YAML을 단일 호환
 
 검증은 대표 후보에 seed 3개 이상을 쓰는 pilot과 seed 5개 이상을 쓰는 승인
 판정으로 나눕니다. 3-seed 결과만으로는 자동 요약 도구도 `approved`를 추천하지
-않습니다. 현재 승인된 21개 후보는 family-compatible scene에서 5-seed 검증을 완료했습니다.
+않습니다. 현재 승인된 style pack 150개는 family-compatible scene에서 5-seed 검증을
+완료했습니다. 별도의 canonical artist 300명 native 관찰도 3-seed 900장으로 완료했으며,
+172명은 안정적 관찰, 128명은 불안정 관찰로 분리했습니다. name-free artist signature는
+3-seed 선별과 추가 2-seed 승인 절차를 진행한 뒤에만 production에 포함됩니다.

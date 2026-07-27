@@ -48,6 +48,12 @@ CONTENT_SCALE_TARGETS: dict[str, tuple[tuple[str, ...], int]] = {
     "preset_items": (("presets.yaml",), 200),
 }
 TOTAL_LIBRARY_ITEMS = 3750
+MINIMUM_SINGLE_AXIS_CASES = 4
+MINIMUM_ARTIST_ABC_COUNT = 8
+MINIMUM_PAIRWISE_CASES = 96
+MINIMUM_PRESETS_TESTED = 100
+MINIMUM_RANDOM_SAMPLES = 20
+MINIMUM_BENCHMARK_SEEDS = 5
 
 
 def _is_number(value: Any) -> bool:
@@ -126,11 +132,19 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
     catalog = root / "catalog"
     style_paths = [catalog / "art_styles.yaml", catalog / "style_expansion.yaml"]
     artist_path = catalog / "artists.yaml"
-    style_items = [(path, key, item) for path in style_paths for key, item in _catalog_items(path).items()]
-    artist_items = [(artist_path, key, item) for key, item in _catalog_items(artist_path).items()]
+    style_items = [
+        (path, key, item)
+        for path in style_paths
+        for key, item in _catalog_items(path).items()
+    ]
+    artist_items = [
+        (artist_path, key, item) for key, item in _catalog_items(artist_path).items()
+    ]
 
     approved_styles = [
-        row for row in style_items if row[2].get("family") == "style_pack" and _approved_and_valid(row[2])
+        row
+        for row in style_items
+        if row[2].get("family") == "style_pack" and _approved_and_valid(row[2])
     ]
     # Legacy style packs use named visual families; their runtime route is canonical.
     approved_styles += [
@@ -138,7 +152,8 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
         for row in style_items
         if row not in approved_styles
         and _approved_and_valid(row[2])
-        and (row[2].get("runtime") or {}).get("file") == "krea2/style/complete_pack.yaml"
+        and (row[2].get("runtime") or {}).get("file")
+        == "krea2/style/complete_pack.yaml"
     ]
     approved_artists = [
         row
@@ -156,9 +171,8 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
             len(approved_styles) >= 150,
             len(approved_styles),
             {"minimum": 150, "approval_policy_valid": True},
-            [_relative(path, root) for path, _, _ in approved_styles] or [
-                _relative(path, root) for path in style_paths if path.is_file()
-            ],
+            [_relative(path, root) for path, _, _ in approved_styles]
+            or [_relative(path, root) for path in style_paths if path.is_file()],
             "Count includes only approval-policy-valid complete style runtime entries.",
         ),
         _criterion(
@@ -205,7 +219,9 @@ def _content_scale_criterion(root: Path) -> dict[str, Any]:
         for target_id, (_catalog_names, minimum) in CONTENT_SCALE_TARGETS.items()
     }
     targets["total_library_items"] = TOTAL_LIBRARY_ITEMS
-    complete = all(actual[target_id] >= minimum for target_id, minimum in targets.items())
+    complete = all(
+        actual[target_id] >= minimum for target_id, minimum in targets.items()
+    )
     return _criterion(
         "content_scale_targets",
         "content",
@@ -236,7 +252,9 @@ def _quality_metric_criterion(
         "approved_items": len(approved_items),
         "evaluated_items": len(adherence),
         "missing_metrics": missing,
-        "prompt_adherence": round(sum(adherence) / len(adherence), 3) if adherence else None,
+        "prompt_adherence": round(sum(adherence) / len(adherence), 3)
+        if adherence
+        else None,
         "stability": round(sum(stability) / len(stability), 3) if stability else None,
     }
     complete = (
@@ -251,7 +269,11 @@ def _quality_metric_criterion(
         complete,
         averages,
         {"prompt_adherence_minimum": 4, "stability_minimum": 3, "missing_metrics": 0},
-        ["catalog/art_styles.yaml", "catalog/style_expansion.yaml", "catalog/artists.yaml"],
+        [
+            "catalog/art_styles.yaml",
+            "catalog/style_expansion.yaml",
+            "catalog/artists.yaml",
+        ],
         "Averages are computed directly from every catalog entry whose status is approved.",
     )
 
@@ -270,7 +292,8 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
         if not isinstance(items, list) or not items:
             problems.append("manifest has no items")
         elif manifest.get("item_count") != len(items) or any(
-            not isinstance(item, dict) or item.get("status") != "approved" for item in items
+            not isinstance(item, dict) or item.get("status") != "approved"
+            for item in items
         ):
             problems.append("manifest items are inconsistent")
         if not isinstance(files, list) or not files:
@@ -281,7 +304,11 @@ def _manifest_criterion(root: Path) -> tuple[dict[str, Any], dict[str, Any] | No
                     problems.append("invalid runtime file")
                     continue
                 pure = PurePosixPath(raw)
-                if pure.is_absolute() or ".." in pure.parts or not (root / "wildcards" / pure).is_file():
+                if (
+                    pure.is_absolute()
+                    or ".." in pure.parts
+                    or not (root / "wildcards" / pure).is_file()
+                ):
                     problems.append("missing or unsafe runtime file")
     actual = {
         "item_count": manifest.get("item_count") if manifest else None,
@@ -330,7 +357,9 @@ def _release_criterion(root: Path, manifest: dict[str, Any] | None) -> dict[str,
             passed = {
                 item.get("name")
                 for item in outcomes
-                if isinstance(item, dict) and item.get("status") == "passed" and item.get("returncode") == 0
+                if isinstance(item, dict)
+                and item.get("status") == "passed"
+                and item.get("returncode") == 0
             }
         production = report.get("production")
         production_matches = (
@@ -340,13 +369,26 @@ def _release_criterion(root: Path, manifest: dict[str, Any] | None) -> dict[str,
             and production.get("prompt_count") == manifest.get("prompt_count")
         )
     missing = sorted(required - passed)
-    complete = bool(report) and report.get("status") == "passed" and not missing and production_matches
+    complete = (
+        bool(report)
+        and report.get("status") == "passed"
+        and not missing
+        and production_matches
+    )
     return _criterion(
         "release_functional_gates",
         "functional",
         complete,
-        {"passed_stages": sorted(passed & required), "missing_stages": missing, "production_matches_manifest": production_matches},
-        {"required_stages": sorted(required), "release_status": "passed", "production_matches_manifest": True},
+        {
+            "passed_stages": sorted(passed & required),
+            "missing_stages": missing,
+            "production_matches_manifest": production_matches,
+        },
+        {
+            "required_stages": sorted(required),
+            "release_status": "passed",
+            "production_matches_manifest": True,
+        },
         [_relative(path, root)] if path.is_file() else [],
         "Sensitive-data checks remain external; all deterministic build, lint, test, and schema gates are required.",
     )
@@ -423,7 +465,12 @@ def _structured_report_criteria(
             "runtime_coverage",
             "runtime_resolution_coverage",
             "functional",
-            {"unresolved_wildcards": 0, "syntax_errors": 0, "all_expected_loaded_and_resolved": True, "prompt_logs_saved": True},
+            {
+                "unresolved_wildcards": 0,
+                "syntax_errors": 0,
+                "all_expected_loaded_and_resolved": True,
+                "prompt_logs_saved": True,
+            },
             lambda r: base(r)
             and _is_number(r.get("runtime_files_expected"))
             and r.get("runtime_files_expected") > 0
@@ -443,12 +490,16 @@ def _structured_report_criteria(
             "single_axis_coverage",
             "single_axis_coverage",
             "coverage",
-            {"tested_axes_include": ["linework", "coloring"], "total_cases_minimum": 2, "critical_failures": 0},
+            {
+                "tested_axes_include": ["linework", "coloring"],
+                "total_cases_minimum": MINIMUM_SINGLE_AXIS_CASES,
+                "critical_failures": 0,
+            },
             lambda r: base(r)
             and isinstance(r.get("tested_axes"), list)
             and {"linework", "coloring"}.issubset(set(r["tested_axes"]))
             and _is_number(r.get("total_cases"))
-            and r.get("total_cases") >= 2
+            and r.get("total_cases") >= MINIMUM_SINGLE_AXIS_CASES
             and r.get("critical_failures") == 0,
         ),
         _report_gate(
@@ -457,12 +508,16 @@ def _structured_report_criteria(
             "artist_abc_coverage",
             "artist_abc_coverage",
             "coverage",
-            {"modes": ["native_name", "visual_signature", "hybrid"], "artist_count_minimum": 1, "recommendations_complete": True},
+            {
+                "modes": ["native_name", "visual_signature", "hybrid"],
+                "artist_count_minimum": MINIMUM_ARTIST_ABC_COUNT,
+                "recommendations_complete": True,
+            },
             lambda r: base(r)
             and isinstance(r.get("modes"), list)
             and {"native_name", "visual_signature", "hybrid"}.issubset(set(r["modes"]))
             and _is_number(r.get("artist_count"))
-            and r.get("artist_count") > 0
+            and r.get("artist_count") >= MINIMUM_ARTIST_ABC_COUNT
             and r.get("recommended_modes_recorded") == r.get("artist_count")
             and r.get("critical_failures") == 0,
         ),
@@ -472,12 +527,16 @@ def _structured_report_criteria(
             "pairwise_coverage",
             "pairwise_combination_coverage",
             "coverage",
-            {"required_pair_types": sorted(PAIRWISE_TYPES), "critical_failures": 0},
+            {
+                "required_pair_types": sorted(PAIRWISE_TYPES),
+                "total_cases_minimum": MINIMUM_PAIRWISE_CASES,
+                "critical_failures": 0,
+            },
             lambda r: base(r)
             and isinstance(r.get("covered_pair_types"), list)
             and PAIRWISE_TYPES.issubset(set(r["covered_pair_types"]))
             and _is_number(r.get("total_cases"))
-            and r.get("total_cases") >= len(PAIRWISE_TYPES)
+            and r.get("total_cases") >= MINIMUM_PAIRWISE_CASES
             and r.get("critical_failures") == 0,
         ),
         _report_gate(
@@ -486,10 +545,10 @@ def _structured_report_criteria(
             "preset_conflict_audit",
             "preset_critical_conflicts",
             "quality",
-            {"presets_tested_minimum": 1, "critical_conflicts": 0},
+            {"presets_tested_minimum": MINIMUM_PRESETS_TESTED, "critical_conflicts": 0},
             lambda r: base(r)
             and _is_number(r.get("presets_tested"))
-            and r.get("presets_tested") > 0
+            and r.get("presets_tested") >= MINIMUM_PRESETS_TESTED
             and r.get("critical_conflicts") == 0,
         ),
         _report_gate(
@@ -498,16 +557,22 @@ def _structured_report_criteria(
             "random_utility",
             "random_generation_utility_rate",
             "quality",
-            {"sample_count_minimum": 1, "measured_utility_rate": True},
+            {
+                "sample_count_minimum": MINIMUM_RANDOM_SAMPLES,
+                "measured_utility_rate": True,
+            },
             lambda r: base(r)
             and isinstance(r.get("sample_count"), int)
             and not isinstance(r.get("sample_count"), bool)
-            and r.get("sample_count") > 0
+            and r.get("sample_count") >= MINIMUM_RANDOM_SAMPLES
             and isinstance(r.get("usable_count"), int)
             and 0 <= r.get("usable_count") <= r.get("sample_count")
             and _is_number(r.get("utility_rate"))
             and 0 <= r.get("utility_rate") <= 1
-            and abs(r.get("utility_rate") - r.get("usable_count") / r.get("sample_count")) <= 0.001,
+            and abs(
+                r.get("utility_rate") - r.get("usable_count") / r.get("sample_count")
+            )
+            <= 0.001,
         ),
         _report_gate(
             root,
@@ -515,14 +580,19 @@ def _structured_report_criteria(
             "krea2_turbo_benchmark",
             "krea2_turbo_benchmark",
             "benchmark",
-            {"model": "krea2_turbo", "distinct_seeds_minimum": 3, "sample_count_minimum": 1, "metrics_recorded": True},
+            {
+                "model": "krea2_turbo",
+                "distinct_seeds_minimum": MINIMUM_BENCHMARK_SEEDS,
+                "sample_count_minimum": MINIMUM_BENCHMARK_SEEDS,
+                "metrics_recorded": True,
+            },
             lambda r: base(r)
             and "krea2" in str(r.get("model", "")).lower()
             and "turbo" in str(r.get("model", "")).lower()
             and isinstance(r.get("distinct_seeds"), int)
-            and r.get("distinct_seeds") >= 3
+            and r.get("distinct_seeds") >= MINIMUM_BENCHMARK_SEEDS
             and isinstance(r.get("sample_count"), int)
-            and r.get("sample_count") > 0
+            and r.get("sample_count") >= MINIMUM_BENCHMARK_SEEDS
             and isinstance(r.get("metrics"), dict)
             and bool(r.get("metrics")),
         ),
@@ -542,7 +612,12 @@ def _duplicate_criterion(root: Path) -> dict[str, Any]:
             exact = duplicates.get("exact_duplicates")
             near = duplicates.get("near_duplicates")
             total = catalog.get("total_items")
-            if isinstance(exact, int) and isinstance(near, int) and isinstance(total, int) and total > 0:
+            if (
+                isinstance(exact, int)
+                and isinstance(near, int)
+                and isinstance(total, int)
+                and total > 0
+            ):
                 duplicates_count = exact + near
                 rate = duplicates_count / total
     current_total = sum(
@@ -566,7 +641,9 @@ def _duplicate_criterion(root: Path) -> dict[str, Any]:
     )
 
 
-def _deployment_criteria(root: Path, manifest: dict[str, Any] | None) -> list[dict[str, Any]]:
+def _deployment_criteria(
+    root: Path, manifest: dict[str, Any] | None
+) -> list[dict[str, Any]]:
     deployment_root = root / "tests/reports/deployments"
     candidates: list[tuple[Path, dict[str, Any]]] = []
     if deployment_root.is_dir():
@@ -593,8 +670,14 @@ def _deployment_criteria(root: Path, manifest: dict[str, Any] | None) -> list[di
             and verification.get("queue_empty") is True
         )
 
-    valid_deployments = [(path, report) for path, report in candidates if deployment_valid(report)]
-    selected = valid_deployments[-1] if valid_deployments else (candidates[-1] if candidates else None)
+    valid_deployments = [
+        (path, report) for path, report in candidates if deployment_valid(report)
+    ]
+    selected = (
+        valid_deployments[-1]
+        if valid_deployments
+        else (candidates[-1] if candidates else None)
+    )
     evidence = [_relative(selected[0], root)] if selected else []
     actual = (
         {
@@ -622,7 +705,13 @@ def _deployment_criteria(root: Path, manifest: dict[str, Any] | None) -> list[di
         "deployment",
         bool(valid_deployments),
         actual,
-        {"approved_items_match_manifest": True, "checksum_match": True, "exact_namespace": True, "impact_reload": True, "queue_empty": True},
+        {
+            "approved_items_match_manifest": True,
+            "checksum_match": True,
+            "exact_namespace": True,
+            "impact_reload": True,
+            "queue_empty": True,
+        },
         evidence,
         "Only production-labelled evidence matching the current approved-only manifest may pass.",
     )
@@ -687,17 +776,25 @@ def _atomic_write_json(path: Path, document: dict[str, Any]) -> None:
     os.close(descriptor)
     temp = Path(temp_name)
     try:
-        temp.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temp.write_text(
+            json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
         os.replace(temp, path)
     finally:
         temp.unlink(missing_ok=True)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Write a machine-readable plan.md completion report")
+    parser = argparse.ArgumentParser(
+        description="Write a machine-readable plan.md completion report"
+    )
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--strict", action="store_true", help="return nonzero until every criterion passes")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="return nonzero until every criterion passes",
+    )
     args = parser.parse_args()
     root = args.root.resolve()
     output = args.output if args.output.is_absolute() else root / args.output

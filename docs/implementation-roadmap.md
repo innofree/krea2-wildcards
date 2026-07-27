@@ -132,15 +132,14 @@ advances bounded candidate tranches without promoting untested content.
 
 ## Expected evaluation volume
 
-The completion criteria still require 12 more approved style packs and 200 approved artist visual
-signatures. Remaining style work uses bounded failure-specific retry tranches at three seeds;
-pilot-pass candidates receive two additional distinct seeds. Canonical artist work
-starts with 300 native-name candidates at three seeds (900 observation images), followed by authored,
-name-free eight-axis signatures and five-seed approval runs for at least 200 effective candidates.
-No three-seed item can enter production.
+The 150 approved style-pack criterion is complete. The remaining content approval criterion is 200
+artist visual signatures. Canonical artist native observation already covers 300 identities at three
+seeds (900 images); the active name-free candidate screen also covers 300 signatures at three seeds,
+and pilot-pass candidates receive two additional distinct seeds. At least 200 effective candidates
+must pass the combined five-seed score before production. No three-seed item can enter production.
 
-Representative Phase 6 evidence is kept separate from lifecycle approval: fixed-scene single-axis
-comparisons, an 8-artist native/signature/hybrid A/B/C matrix, pairwise coverage of all six required
-combination types, at least 100 preset conflict checks, measured random utility, and a Krea2 Turbo
-benchmark. Batches remain resumable and queue-guarded so individual failures do not invalidate
-completed evidence.
+Representative Phase 6 evidence is kept separate from lifecycle approval: four fixed-scene
+single-axis cases, an 8-artist native/signature/hybrid A/B/C matrix, 16 pairwise cases for each of
+the six required combination types (96 total), 100 preset conflict checks, 20 measured random-utility
+samples, and a five-seed Krea2 Turbo benchmark. Every image batch uses at least three distinct seeds,
+remains resumable, and is queue-guarded so individual failures do not invalidate completed evidence.

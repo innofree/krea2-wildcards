@@ -5,6 +5,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
 import yaml
 
 from check_completion_criteria import PAIRWISE_TYPES, collect_completion
@@ -23,7 +24,9 @@ def write_yaml(path: Path, value: object) -> None:
     path.write_text(yaml.safe_dump(value, sort_keys=False), encoding="utf-8")
 
 
-def approved_item(item_id: str, *, family: str, runtime_file: str, kind: str) -> dict[str, object]:
+def approved_item(
+    item_id: str, *, family: str, runtime_file: str, kind: str
+) -> dict[str, object]:
     return {
         "family": family,
         "runtime": {"file": runtime_file, "path": ["krea2", "test", item_id]},
@@ -43,13 +46,19 @@ def approved_item(item_id: str, *, family: str, runtime_file: str, kind: str) ->
 def complete_repository(root: Path) -> None:
     styles = {
         f"style_{index}": approved_item(
-            f"style_{index}", family="style_pack", runtime_file="krea2/style/complete_pack.yaml", kind="style_pack"
+            f"style_{index}",
+            family="style_pack",
+            runtime_file="krea2/style/complete_pack.yaml",
+            kind="style_pack",
         )
         for index in range(150)
     }
     artists = {
         f"artist_{index}": approved_item(
-            f"artist_{index}", family="artist_signature", runtime_file="krea2/artist_signature/modern.yaml", kind="artist_signature"
+            f"artist_{index}",
+            family="artist_signature",
+            runtime_file="krea2/artist_signature/modern.yaml",
+            kind="artist_signature",
         )
         for index in range(200)
     }
@@ -81,41 +90,119 @@ def complete_repository(root: Path) -> None:
         )
     runtime = root / "wildcards/krea2/style/complete_pack.yaml"
     runtime.parent.mkdir(parents=True, exist_ok=True)
-    runtime.write_text("krea2:\n  style:\n    complete_pack:\n      all: [test]\n", encoding="utf-8")
+    runtime.write_text(
+        "krea2:\n  style:\n    complete_pack:\n      all: [test]\n", encoding="utf-8"
+    )
     approved_artist_ids = [
-        key for key, item in artists.items() if (item.get("validation") or {}).get("status") == "approved"
+        key
+        for key, item in artists.items()
+        if (item.get("validation") or {}).get("status") == "approved"
     ]
     items = [
-        {"id": key, "status": "approved"}
-        for key in [*styles, *approved_artist_ids]
+        {"id": key, "status": "approved"} for key in [*styles, *approved_artist_ids]
     ]
     write_json(
         root / "wildcards-manifest.json",
-        {"included_statuses": ["approved"], "item_count": 350, "prompt_count": 350, "files": ["krea2/style/complete_pack.yaml"], "items": items},
+        {
+            "included_statuses": ["approved"],
+            "item_count": 350,
+            "prompt_count": 350,
+            "files": ["krea2/style/complete_pack.yaml"],
+            "items": items,
+        },
     )
     stages = [
-        "catalog_generation", "catalog_normalization", "catalog_duplicates", "catalog_conflicts",
-        "catalog_v2_sync", "catalog_schema_v2", "sensitive_worktree", "sensitive_history",
-        "preview_build", "preview_runtime_lint",
-        "test_suite", "production_build", "production_runtime_lint", "production_impact_build", "plan_progress",
+        "catalog_generation",
+        "catalog_normalization",
+        "catalog_duplicates",
+        "catalog_conflicts",
+        "catalog_v2_sync",
+        "catalog_schema_v2",
+        "sensitive_worktree",
+        "sensitive_history",
+        "preview_build",
+        "preview_runtime_lint",
+        "test_suite",
+        "production_build",
+        "production_runtime_lint",
+        "production_impact_build",
+        "plan_progress",
     ]
     write_json(
         root / "tests/reports/releases/latest.json",
-        {"status": "passed", "outcomes": [{"name": name, "status": "passed", "returncode": 0} for name in stages], "production": {"item_count": 350, "prompt_count": 350}},
+        {
+            "status": "passed",
+            "outcomes": [
+                {"name": name, "status": "passed", "returncode": 0} for name in stages
+            ],
+            "production": {"item_count": 350, "prompt_count": 350},
+        },
     )
     write_json(
         root / "tests/reports/static_audit_v0_5.json",
-        {"catalog": {"total_items": 3750}, "duplicates": {"exact_duplicates": 5, "near_duplicates": 5}},
+        {
+            "catalog": {"total_items": 3750},
+            "duplicates": {"exact_duplicates": 5, "near_duplicates": 5},
+        },
     )
     common = {"schema_version": 1, "status": "passed", "complete": True}
     reports = {
-        "runtime.json": {**common, "report_type": "runtime_coverage", "runtime_files_expected": 1, "runtime_files_loaded": 1, "wildcard_paths_expected": 350, "wildcard_paths_resolved": 350, "unresolved_wildcards": 0, "yaml_syntax_errors": 0, "novelai_brace_conflicts": 0, "catalog_runtime_separated": True, "final_prompt_logs_saved": True},
-        "single.json": {**common, "report_type": "single_axis_coverage", "tested_axes": ["linework", "coloring"], "total_cases": 2, "critical_failures": 0},
-        "abc.json": {**common, "report_type": "artist_abc_coverage", "modes": ["native_name", "visual_signature", "hybrid"], "artist_count": 2, "recommended_modes_recorded": 2, "critical_failures": 0},
-        "pairwise.json": {**common, "report_type": "pairwise_coverage", "covered_pair_types": sorted(PAIRWISE_TYPES), "total_cases": 6, "critical_failures": 0},
-        "presets.json": {**common, "report_type": "preset_conflict_audit", "presets_tested": 100, "critical_conflicts": 0},
-        "random.json": {**common, "report_type": "random_utility", "sample_count": 20, "usable_count": 15, "utility_rate": 0.75},
-        "benchmark.json": {**common, "report_type": "krea2_turbo_benchmark", "model": "krea2_turbo_mxfp8", "distinct_seeds": 5, "sample_count": 350, "metrics": {"prompt_adherence": 4.1}},
+        "runtime.json": {
+            **common,
+            "report_type": "runtime_coverage",
+            "runtime_files_expected": 1,
+            "runtime_files_loaded": 1,
+            "wildcard_paths_expected": 350,
+            "wildcard_paths_resolved": 350,
+            "unresolved_wildcards": 0,
+            "yaml_syntax_errors": 0,
+            "novelai_brace_conflicts": 0,
+            "catalog_runtime_separated": True,
+            "final_prompt_logs_saved": True,
+        },
+        "single.json": {
+            **common,
+            "report_type": "single_axis_coverage",
+            "tested_axes": ["linework", "coloring"],
+            "total_cases": 4,
+            "critical_failures": 0,
+        },
+        "abc.json": {
+            **common,
+            "report_type": "artist_abc_coverage",
+            "modes": ["native_name", "visual_signature", "hybrid"],
+            "artist_count": 8,
+            "recommended_modes_recorded": 8,
+            "critical_failures": 0,
+        },
+        "pairwise.json": {
+            **common,
+            "report_type": "pairwise_coverage",
+            "covered_pair_types": sorted(PAIRWISE_TYPES),
+            "total_cases": 96,
+            "critical_failures": 0,
+        },
+        "presets.json": {
+            **common,
+            "report_type": "preset_conflict_audit",
+            "presets_tested": 100,
+            "critical_conflicts": 0,
+        },
+        "random.json": {
+            **common,
+            "report_type": "random_utility",
+            "sample_count": 20,
+            "usable_count": 15,
+            "utility_rate": 0.75,
+        },
+        "benchmark.json": {
+            **common,
+            "report_type": "krea2_turbo_benchmark",
+            "model": "krea2_turbo_mxfp8",
+            "distinct_seeds": 5,
+            "sample_count": 350,
+            "metrics": {"prompt_adherence": 4.1},
+        },
     }
     for name, report in reports.items():
         write_json(root / "tests/reports/completion" / name, report)
@@ -123,7 +210,22 @@ def complete_repository(root: Path) -> None:
     write_json(smoke_path, {"seed": 6006})
     write_json(
         root / "tests/reports/deployments/production_v1.json",
-        {"deployment_id": "production_v1", "status": "passed", "approved_items": 350, "verification": {"checksum_match": True, "exact_krea2_namespace": True, "impact_reload": True, "smoke_completed": True, "queue_empty": True}, "smoke": {"seed": 6006, "run_record": "tests/reports/production_smoke/runs/test/run.json"}},
+        {
+            "deployment_id": "production_v1",
+            "status": "passed",
+            "approved_items": 350,
+            "verification": {
+                "checksum_match": True,
+                "exact_krea2_namespace": True,
+                "impact_reload": True,
+                "smoke_completed": True,
+                "queue_empty": True,
+            },
+            "smoke": {
+                "seed": 6006,
+                "run_record": "tests/reports/production_smoke/runs/test/run.json",
+            },
+        },
     )
 
 
@@ -131,7 +233,9 @@ def by_id(result: dict[str, object]) -> dict[str, dict[str, object]]:
     return {item["id"]: item for item in result["criteria"]}  # type: ignore[index]
 
 
-def test_collect_completion_accepts_only_complete_cross_checked_evidence(tmp_path: Path) -> None:
+def test_collect_completion_accepts_only_complete_cross_checked_evidence(
+    tmp_path: Path,
+) -> None:
     complete_repository(tmp_path)
     result = collect_completion(tmp_path)
 
@@ -158,7 +262,9 @@ def test_missing_and_stale_evidence_cannot_pass(tmp_path: Path) -> None:
     assert criteria["production_smoke_test"]["complete"] is False
 
 
-def test_non_strict_writes_incomplete_report_and_only_strict_fails(tmp_path: Path) -> None:
+def test_non_strict_writes_incomplete_report_and_only_strict_fails(
+    tmp_path: Path,
+) -> None:
     output = tmp_path / "result.json"
     normal = subprocess.run(
         [sys.executable, str(SCRIPT), "--root", str(tmp_path), "--output", str(output)],
@@ -167,7 +273,15 @@ def test_non_strict_writes_incomplete_report_and_only_strict_fails(tmp_path: Pat
         text=True,
     )
     strict = subprocess.run(
-        [sys.executable, str(SCRIPT), "--root", str(tmp_path), "--output", str(output), "--strict"],
+        [
+            sys.executable,
+            str(SCRIPT),
+            "--root",
+            str(tmp_path),
+            "--output",
+            str(output),
+            "--strict",
+        ],
         check=False,
         capture_output=True,
         text=True,
@@ -230,3 +344,34 @@ def test_malformed_recognized_report_is_incomplete_not_fatal(tmp_path: Path) -> 
 
     criterion = by_id(collect_completion(tmp_path))["pairwise_combination_coverage"]
     assert criterion["complete"] is False
+
+
+@pytest.mark.parametrize(
+    ("filename", "field", "value", "criterion_id"),
+    [
+        ("single.json", "total_cases", 3, "single_axis_coverage"),
+        ("abc.json", "artist_count", 7, "artist_abc_coverage"),
+        ("pairwise.json", "total_cases", 95, "pairwise_combination_coverage"),
+        ("presets.json", "presets_tested", 99, "preset_critical_conflicts"),
+        ("random.json", "sample_count", 19, "random_generation_utility_rate"),
+        ("benchmark.json", "distinct_seeds", 4, "krea2_turbo_benchmark"),
+    ],
+)
+def test_representative_phase6_minimums_are_enforced(
+    tmp_path: Path,
+    filename: str,
+    field: str,
+    value: int,
+    criterion_id: str,
+) -> None:
+    complete_repository(tmp_path)
+    path = tmp_path / "tests/reports/completion" / filename
+    report = json.loads(path.read_text(encoding="utf-8"))
+    report[field] = value
+    if filename == "random.json":
+        report["usable_count"] = min(report["usable_count"], value)
+        report["utility_rate"] = report["usable_count"] / value
+    if filename == "abc.json":
+        report["recommended_modes_recorded"] = value
+    write_json(path, report)
+    assert by_id(collect_completion(tmp_path))[criterion_id]["complete"] is False
