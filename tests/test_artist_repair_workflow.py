@@ -11,6 +11,8 @@ from bind_artist_prompt_evidence import atomic_write_json, build_binding
 from common import canonical_prompt_sha256
 from export_artist_testing_retest_matrix import retest_rows
 from export_artist_visual_signature_matrix import (
+    AXIS_CALIBRATION_PROFILE,
+    AXIS_CALIBRATION_SEEDS,
     EDITORIAL_CALIBRATION_PROFILE,
     EDITORIAL_CALIBRATION_SEEDS,
     FRAMING_CALIBRATION_PROFILE,
@@ -448,6 +450,77 @@ def test_editorial_calibration_uses_proven_positive_head_to_toe_anchors(
             catalog,
             seeds=(9101, 9202, 9999),
             benchmark_profile=EDITORIAL_CALIBRATION_PROFILE,
+            limit_signatures=5,
+            require_candidate_count=6,
+        )
+
+
+def test_axis_calibration_translates_feature_tokens_into_visible_directions(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_axis_{index}": "generated" for index in range(1, 7)},
+    )
+    supported_axes = {
+        "line_language": ["dry_broken"],
+        "face_design": ["angular_planar"],
+        "eye_design": ["layered_large"],
+        "body_design": ["broad_athletic"],
+        "palette_language": ["sunlit_earth"],
+        "light_modeling": ["luminous_glaze"],
+        "framing_language": ["spacious_asymmetric"],
+        "ornament_language": ["geometric_inset"],
+    }
+    for item in items.values():
+        item["feature_axes"] = supported_axes
+        item["visual_axes"] = list(supported_axes)
+    catalog.write_text(
+        yaml.safe_dump({"items": items}, sort_keys=False),
+        encoding="utf-8",
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=AXIS_CALIBRATION_SEEDS,
+        benchmark_profile=AXIS_CALIBRATION_PROFILE,
+        limit_signatures=5,
+        require_candidate_count=6,
+        require_signature_count=5,
+    )
+
+    assert len(rows) == 15
+    assert {row["seed"] for row in rows} == set(AXIS_CALIBRATION_SEEDS)
+    for row in rows:
+        prompt = row["prompt"]
+        assert row["factors"]["benchmark_profile"] == AXIS_CALIBRATION_PROFILE
+        assert row["factors"]["benchmark_stage"] == "calibration"
+        assert "clearly broken dry-brush contour segments" in prompt
+        assert "a firm jaw and planar cheeks" in prompt
+        assert "large layered irises and paired catchlights" in prompt
+        assert "broad shoulders and athletic stable limbs" in prompt
+        assert "clay, sand, olive, cream, and warm brown fields" in prompt
+        assert "translucent highlights and open reflected shadows" in prompt
+        assert "an off-center figure with broad open side space" in prompt
+        assert "bold repeated geometric panels" in prompt
+        assert "Put the ornament on both the garment and outer border" in prompt
+        assert "eye-level head-to-toe framing" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/axis_calibration.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == AXIS_CALIBRATION_PROFILE
+    assert binding["benchmark_stage"] == "calibration"
+
+    with pytest.raises(ValueError, match="unsupported feature axis line_language"):
+        items["artist_axis_1"]["feature_axes"]["line_language"] = ["unknown_line"]
+        catalog.write_text(
+            yaml.safe_dump({"items": items}, sort_keys=False),
+            encoding="utf-8",
+        )
+        signature_rows(
+            catalog,
+            seeds=AXIS_CALIBRATION_SEEDS,
+            benchmark_profile=AXIS_CALIBRATION_PROFILE,
             limit_signatures=5,
             require_candidate_count=6,
         )

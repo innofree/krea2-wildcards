@@ -21,6 +21,7 @@ REPAIR_SEEDS = (6101, 6202, 6303)
 FRAMING_CALIBRATION_SEEDS = (7101, 7202, 7303)
 SINGLE_VIEW_CALIBRATION_SEEDS = (8101, 8202, 8303)
 EDITORIAL_CALIBRATION_SEEDS = (9101, 9202, 9303)
+AXIS_CALIBRATION_SEEDS = (11101, 11202, 11303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
@@ -35,6 +36,7 @@ SINGLE_VIEW_CALIBRATION_PROFILE = (
 EDITORIAL_CALIBRATION_PROFILE = (
     "artist_visual_signature_repair_editorial_calibration_v0_8_6"
 )
+AXIS_CALIBRATION_PROFILE = "artist_visual_signature_repair_axis_calibration_v0_8_7"
 BENCHMARK_PROFILES = frozenset(
     {
         LEGACY_BENCHMARK_PROFILE,
@@ -42,6 +44,7 @@ BENCHMARK_PROFILES = frozenset(
         FRAMING_CALIBRATION_PROFILE,
         SINGLE_VIEW_CALIBRATION_PROFILE,
         EDITORIAL_CALIBRATION_PROFILE,
+        AXIS_CALIBRATION_PROFILE,
     }
 )
 REPAIR_SIGNATURE_COUNT = 115
@@ -137,6 +140,60 @@ EDITORIAL_CALIBRATION_LEDGER = (
     "placement and negative space; ornament={ornament} as repeated garment trim and a flat "
     "decorative outer border behind the figure."
 )
+AXIS_VISIBILITY_PHRASES = {
+    "line_language": {
+        "angular_architectural": "straight modular contours and evenly spaced seams",
+        "crisp_measured": "precise controlled contours with measured taper",
+        "dry_broken": "clearly broken dry-brush contour segments",
+        "lace_tapered": "fine lace-like contours with sharp taper",
+        "rounded_continuous": "smooth rounded uninterrupted contours",
+        "supple_ribbon": "flowing pressure-sensitive ribbon contours",
+    },
+    "face_design": {
+        "angular_planar": "a firm jaw and planar cheeks",
+        "compact_oval": "a short compact oval face",
+        "rounded_soft": "full rounded cheeks and a short nose",
+        "tapered_high": "a tapered jaw and high cheekbones",
+    },
+    "eye_design": {
+        "almond_deep": "deep almond eyes with heavy upper rims",
+        "layered_large": "large layered irises and paired catchlights",
+        "narrow_focused": "narrow dark-rimmed eyes with one catchlight",
+        "rounded_radial": "round eyes with visible radial irises",
+    },
+    "body_design": {
+        "balanced_narrow": "a balanced narrow full-body silhouette",
+        "broad_athletic": "broad shoulders and athletic stable limbs",
+        "compact_grounded": "a compact grounded full-body stance",
+        "elongated_graceful": "elongated graceful limbs and tapered hands",
+    },
+    "palette_language": {
+        "deep_jewel": "large garnet, ink-blue, forest, and gold fields",
+        "mineral_pastel": "large mineral-blue, ivory, coral, and charcoal fields",
+        "monochrome_tint": "one dominant tint with restrained value shifts",
+        "nocturnal_neon": "dark nocturnal blue with bright neon accents",
+        "sunlit_earth": "clay, sand, olive, cream, and warm brown fields",
+    },
+    "light_modeling": {
+        "broad_painterly": "broad visible painterly light and shadow masses",
+        "crisp_graphic": "hard-edged two-value cel light and shadow",
+        "luminous_glaze": "translucent highlights and open reflected shadows",
+        "soft_two_step": "two soft value steps with gentle face transitions",
+        "velvety_diffuse": "velvety diffuse values and soft contact shadows",
+    },
+    "framing_language": {
+        "centered_emblematic": "a centered figure inside an emblem-like border",
+        "layered_intimate": "overlapping flat paper layers behind the figure",
+        "spacious_asymmetric": "an off-center figure with broad open side space",
+        "vertical_heroic": "a tall upright border with a low visual anchor",
+    },
+    "ornament_language": {
+        "floral_trace": "repeated fine floral lines",
+        "geometric_inset": "bold repeated geometric panels",
+        "particle_drift": "a visible field of drifting particles",
+        "textile_echo": "repeated textile bands and woven motifs",
+    },
+}
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
     re.IGNORECASE,
@@ -261,12 +318,50 @@ def editorial_calibration_axis_ledger(feature_axes: Any) -> str:
     )
 
 
+def axis_visibility_ledger(feature_axes: Any) -> str:
+    if not isinstance(feature_axes, dict):
+        raise ValueError("axis calibration profile requires feature axes")
+    rendered: list[str] = []
+    for axis in (
+        "line_language",
+        "face_design",
+        "eye_design",
+        "body_design",
+        "palette_language",
+        "light_modeling",
+        "framing_language",
+        "ornament_language",
+    ):
+        values = feature_axes.get(axis)
+        value = values[0] if isinstance(values, list) and values else None
+        phrase = AXIS_VISIBILITY_PHRASES[axis].get(value)
+        if not isinstance(value, str) or phrase is None:
+            raise ValueError(
+                f"axis calibration profile has an unsupported feature axis {axis}"
+            )
+        rendered.append(f"{axis.replace('_', ' ')}—{phrase}")
+    return (
+        "Make these eight cues unmistakable: "
+        + "; ".join(rendered)
+        + ". Draw face and eye details crisply within the full-length figure. Put the ornament "
+        "on both the garment and outer border. Keep the complete figure in front of every "
+        "decorative framing element."
+    )
+
+
 def prompt_for_profile(
     body: str,
     benchmark_profile: str,
     *,
     feature_axes: Any = None,
 ) -> str:
+    if benchmark_profile == AXIS_CALIBRATION_PROFILE:
+        return (
+            "Create a clean hand-drawn 2D editorial illustration. "
+            f"This exact visual signature controls the rendering: {body} "
+            f"{axis_visibility_ledger(feature_axes)} "
+            f"{EDITORIAL_CALIBRATION_SCENE}"
+        )
     if benchmark_profile == EDITORIAL_CALIBRATION_PROFILE:
         return (
             "Create a clean hand-drawn 2D editorial illustration. "
@@ -576,6 +671,27 @@ def signature_rows(
             )
         if require_signature_count is None:
             require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
+    elif benchmark_profile == AXIS_CALIBRATION_PROFILE:
+        if seed_values != AXIS_CALIBRATION_SEEDS:
+            raise ValueError(
+                "axis calibration profile requires seeds "
+                + ", ".join(str(seed) for seed in AXIS_CALIBRATION_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "axis calibration profile requires exactly status generated"
+            )
+        if limit_signatures != FRAMING_CALIBRATION_SIGNATURE_COUNT:
+            raise ValueError(
+                "axis calibration profile requires exactly "
+                f"{FRAMING_CALIBRATION_SIGNATURE_COUNT} limited signatures"
+            )
+        if require_candidate_count is None:
+            raise ValueError(
+                "axis calibration profile requires an exact pre-limit candidate count"
+            )
+        if require_signature_count is None:
+            require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -627,6 +743,7 @@ def signature_rows(
             FRAMING_CALIBRATION_PROFILE,
             SINGLE_VIEW_CALIBRATION_PROFILE,
             EDITORIAL_CALIBRATION_PROFILE,
+            AXIS_CALIBRATION_PROFILE,
         }:
             factors["benchmark_profile"] = benchmark_profile
             factors["benchmark_stage"] = (
@@ -716,7 +833,11 @@ def main() -> int:
                     else (
                         EDITORIAL_CALIBRATION_SEEDS
                         if args.benchmark_profile == EDITORIAL_CALIBRATION_PROFILE
-                        else DEFAULT_SEEDS
+                        else (
+                            AXIS_CALIBRATION_SEEDS
+                            if args.benchmark_profile == AXIS_CALIBRATION_PROFILE
+                            else DEFAULT_SEEDS
+                        )
                     )
                 )
             )
