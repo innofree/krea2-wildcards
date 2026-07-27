@@ -21,11 +21,23 @@ from export_phase6_matrix import (
 
 
 def _item(item_id: str, family: str, *, status: str = "generated") -> dict[str, object]:
-    return {
+    item: dict[str, object] = {
         "family": family,
         "prompt": f"Observable visual direction for {item_id}.",
         "validation": {"status": status},
     }
+    if family == "artist_signature":
+        item["feature_axes"] = {
+            "line_language": ["crisp_measured"],
+            "face_design": ["compact_oval"],
+            "eye_design": ["almond_deep"],
+            "body_design": ["compact_grounded"],
+            "palette_language": ["deep_jewel"],
+            "light_modeling": ["soft_two_step"],
+            "framing_language": ["spacious_asymmetric"],
+            "ornament_language": ["textile_echo"],
+        }
+    return item
 
 
 def _write_catalog(

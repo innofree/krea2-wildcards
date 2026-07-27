@@ -9,17 +9,28 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from common import load_yaml
+from export_artist_visual_signature_matrix import reinforced_axis_visibility_ledger
 from export_artist_native_matrix import validate_seeds, write_jsonl
 from run_remote_prompt_matrix import validate_job
 
 
 DEFAULT_SEEDS = (1001, 2002, 3003)
-CALIBRATION_SEEDS = (21001, 22002, 23003)
+CALIBRATION_SEEDS = (31001, 32002, 33003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
 SUBJECT_CONTRACT = (
     "Compose one continuous single-view vertical image built around exactly one clearly adult "
     "woman as the only figure. Every visible face, body, and hand belongs to this same woman. "
-    "Keep a clean margin above her complete crown and keep both eyes clearly readable."
+    "Place a clearly visible strip of background above her entire hairstyle, and keep her complete "
+    "crown, face, and both eyes clearly readable."
+)
+SIGNATURE_OPEN = (
+    "Create a clean hand-drawn two-dimensional editorial illustration. The exact name-free "
+    "signature controls the visible medium, face, eyes, silhouette, palette, light, composition, "
+    "and ornament."
+)
+PHASE6_PROFILE_ALGORITHM = (
+    "positive-subject-v4|literal-lower-frame-v4|right-axis-authority-v4|"
+    "reinforced-signature-ledger-v0.8.8"
 )
 FINISH = (
     "Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, "
@@ -71,9 +82,11 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
         {
             "finish": FINISH,
             "fixed_scene": FIXED_SCENE,
+            "profile_algorithm": PHASE6_PROFILE_ALGORITHM,
+            "signature_open": SIGNATURE_OPEN,
             "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v3",
+            "version": "phase6_positive_profile_v4",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -171,18 +184,21 @@ def _framing_contract(value: str) -> str:
     lowered = value.lower()
     if "chest-up" in lowered:
         return (
-            "Frame literally from the complete crown through the upper torso, with the chin, "
-            "both shoulders, and the described upper-arm gesture inside the image."
+            "Let the head and upper torso fill most of the canvas. Place the lower image edge "
+            "through the upper torso below the chest, with the complete crown, chin, both "
+            "shoulders, and described upper-arm gesture inside the image."
         )
     if "waist-up" in lowered:
         return (
-            "Frame literally from the complete crown through just below the waist, keeping both "
-            "described hand gestures inside the image."
+            "Let the upper body fill most of the canvas. Place the lower image edge through the "
+            "garment immediately below the waist, keeping the complete crown and both described "
+            "hand gestures inside the image."
         )
     if "mid-thigh" in lowered or "thigh-up" in lowered:
         return (
-            "Frame literally from the complete crown through mid-thigh, keeping the face and "
-            "both described hand gestures inside the image."
+            "Let the figure fill most of the canvas from crown to thighs. Place the lower image "
+            "edge visibly through the middle of both thighs, keeping the complete crown, face, "
+            "and both described hand gestures inside the image."
         )
     if "full-length" in lowered:
         return (
@@ -196,8 +212,9 @@ def _framing_contract(value: str) -> str:
             "hands to be readable."
         )
     return (
-        "Keep the complete crown, both eyes, and every body landmark named by the requested "
-        "camera direction inside the image."
+        "Use an eye-level mid-thigh inspection frame. Let the figure fill most of the canvas, "
+        "with the lower edge crossing both thighs and the complete crown, both eyes, shoulders, "
+        "and visible hand gestures inside the image."
     )
 
 
@@ -285,15 +302,17 @@ def single_axis_rows(
             focus = {
                 "character_design": (
                     "The character design is the measured axis: make its named face geometry, "
-                    "body proportions, garment silhouette, seams, and closures visibly explicit."
+                    "body proportions, and large asymmetric garment layers visibly explicit. Place "
+                    "the named seam curves and closures as repeated, front-readable clothing details."
                 ),
                 "pose": (
                     "The pose is the measured axis: make the named hand placement, shoulder line, "
                     "gaze, leg support, and weight distribution visibly explicit."
                 ),
                 "lighting": (
-                    "The lighting is the measured axis: keep both eyes readable and make every "
-                    "named source direction, shadow edge, reflected fill, and accent distinguishable."
+                    "The lighting is the measured axis: keep both eyes readable, render every named "
+                    "light color as visible colored illumination, and give every named source size, "
+                    "direction, shadow edge, reflected fill, and practical accent a distinct role."
                 ),
                 "background": (
                     "The background is the measured axis: keep the subject large and readable "
@@ -332,6 +351,7 @@ def pairwise_rows(
     if cases_per_type < 1:
         raise ValueError("cases_per_type must be at least 1")
     cases: list[dict[str, Any]] = []
+    signature_items = _catalog_items(Path("catalog/artists.yaml"))
     for pair_type, left_paths, left_family, right_path, right_family in PAIRWISE_SPECS:
         left = _select(
             (Path(path) for path in left_paths),
@@ -351,16 +371,20 @@ def pairwise_rows(
             focus = {
                 "character_design": (
                     "The second character-design direction is the measured axis. Put its named "
-                    "face geometry, proportions, layers, seams, and closures on the visible subject."
+                    "face geometry and proportions on the visible subject. Translate its silhouette "
+                    "and layers into large asymmetric garment shapes, and repeat its seam curves and "
+                    "closures as front-readable clothing details."
                 ),
                 "pose": (
                     "The second pose direction is the measured axis. Make its named hand placement, "
                     "gaze, shoulder line, leg support, and weight distribution unambiguous."
                 ),
                 "lighting": (
-                    "The second lighting direction is the measured axis. Keep both eyes readable "
-                    "and give its named key source, shadow structure, reflected fill, and practical "
-                    "accent separate visible roles."
+                    "The second lighting direction has authority over every source shape and "
+                    "direction. Keep both eyes lit and readable; render each named light color "
+                    "visibly; give its key, shadow structure, reflected fill, and small practical "
+                    "accent separate roles. Carry the first style through surface and color rather "
+                    "than replacing this measured lighting geometry."
                 ),
                 "background": (
                     "The second background direction is the measured axis. Keep the complete subject "
@@ -376,11 +400,24 @@ def pairwise_rows(
                     "view, field of view, asymmetric placement, and negative-space counterweight."
                 ),
             }[right_family]
+            signature_ledger = (
+                reinforced_axis_visibility_ledger(
+                    signature_items[left_id].get("feature_axes")
+                )
+                if left_family == "artist_signature"
+                else ""
+            )
+            left_direction = (
+                f"{SIGNATURE_OPEN} {signature_ledger}"
+                if signature_ledger
+                else left_prompt
+            )
             cases.append(
                 {
                     "style_id": f"pairwise_{pair_type}_{index:03d}",
                     "prompt": _profiled_prompt(
-                        f"{left_prompt}. Combine it coherently with this second visual direction: "
+                        f"{left_direction}. "
+                        "Combine it coherently with this second visual direction: "
                         f"{right_prompt}. Resolve both directions on the same adult subject",
                         focus,
                     ),
@@ -421,7 +458,7 @@ def preset_rows(
                 prompt,
                 "Treat the validated preset as an exact scene contract: visibly preserve its named "
                 "pose, hand placement, location, garment pieces, expression, camera boundary, "
-                "perspective, and lighting.",
+                "perspective, light color, and accurate skin tone.",
             ),
             "factors": {"preset": preset_id},
         }
@@ -450,6 +487,7 @@ def random_utility_rows(
         (
             item_id,
             _prompt_body(_prompt(item_id, item)),
+            reinforced_axis_visibility_ledger(item.get("feature_axes")),
         )
         for item_id, item in _catalog_items(Path("catalog/artists.yaml")).items()
         if item.get("family") == "artist_signature" and _status(item) == "approved"
@@ -462,14 +500,16 @@ def random_utility_rows(
     chosen_presets = chooser.sample(presets, sample_count)
     chosen_signatures = chooser.sample(signatures, sample_count)
     cases = []
-    for index, ((preset_id, preset), (signature_id, signature)) in enumerate(
-        zip(chosen_presets, chosen_signatures, strict=True), start=1
-    ):
+    for index, (
+        (preset_id, preset),
+        (signature_id, _signature, signature_ledger),
+    ) in enumerate(zip(chosen_presets, chosen_signatures, strict=True), start=1):
         cases.append(
             {
                 "style_id": f"random_utility_{index:03d}",
                 "prompt": _profiled_prompt(
-                    f"Apply this name-free visual treatment: {signature}. Use it to render this "
+                    f"{SIGNATURE_OPEN} Apply this name-free visual treatment: "
+                    f"{signature_ledger} Use it to render this "
                     f"validated scene preset: {preset}. Keep the combined direction coherent",
                     "Make the name-free visual treatment the unmistakable rendering language across "
                     "the face, eyes, hair, clothing, silhouette, palette, shading, composition, and "
@@ -494,8 +534,10 @@ def benchmark_rows(seeds: Iterable[int] = BENCHMARK_SEEDS) -> list[dict[str, Any
             "style_id": "krea2_turbo_benchmark",
             "prompt": _profiled_prompt(
                 f"{prompt}. {FIXED_SCENE}",
-                "Make the selected style pack visible across the subject and backdrop while keeping "
-                "the fixed studio scene and the complete adult figure easy to inspect.",
+                "The selected style pack has priority over the neutral studio anchors. Put every "
+                "named diagonal or upward division visibly behind and across the subject, preserve "
+                "its named warm-cool split and surface texture, and place its named glints and hard "
+                "edge treatment where they remain easy to inspect.",
             ),
             "factors": {"style_pack": style_id},
         }

@@ -437,18 +437,18 @@ runtime-audit: impact-production
 	python3 scripts/audit_runtime_coverage.py --prompt-log tests/reports/phase6_benchmark_v1/runs/KB000001/run.json --overwrite
 
 phase6-calibration-matrix:
-	python3 scripts/export_phase6_matrix.py calibration --output tests/prompt_matrix/phase6_calibration_v3.jsonl
+	python3 scripts/export_phase6_matrix.py calibration --output tests/prompt_matrix/phase6_calibration_v4.jsonl
 
 remote-phase6-calibration: phase6-calibration-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_calibration_v3.jsonl --output tests/reports/phase6_calibration_v3 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_calibration_v4.jsonl --output tests/reports/phase6_calibration_v4 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-phase6-calibration:
-	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_calibration_v3/scorecard.csv --matrix tests/prompt_matrix/phase6_calibration_v3.jsonl --expected-seeds 3 --cases-per-sheet 8 --overwrite
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_calibration_v4/scorecard.csv --matrix tests/prompt_matrix/phase6_calibration_v4.jsonl --expected-seeds 3 --cases-per-sheet 8 --overwrite
 
 score-phase6-calibration:
-	python3 scripts/merge_visual_reviews.py tests/reports/phase6_calibration_v3/review_part_a.yaml tests/reports/phase6_calibration_v3/review_part_b.yaml tests/reports/phase6_calibration_v3/review_part_c.yaml --expected-scorecard tests/reports/phase6_calibration_v3/scorecard.csv --output tests/reports/phase6_calibration_v3/review.yaml --overwrite
-	python3 scripts/apply_visual_review.py tests/reports/phase6_calibration_v3/scorecard.csv tests/reports/phase6_calibration_v3/review.yaml --output tests/reports/phase6_calibration_v3/scored.csv --overwrite
-	python3 scripts/summarize_phase6_results.py calibration tests/reports/phase6_calibration_v3/scored.csv --matrix tests/prompt_matrix/phase6_calibration_v3.jsonl --output tests/reports/completion/phase6_calibration.json --overwrite
+	python3 scripts/merge_visual_reviews.py tests/reports/phase6_calibration_v4/review_part_a.yaml tests/reports/phase6_calibration_v4/review_part_b.yaml tests/reports/phase6_calibration_v4/review_part_c.yaml --expected-scorecard tests/reports/phase6_calibration_v4/scorecard.csv --output tests/reports/phase6_calibration_v4/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/phase6_calibration_v4/scorecard.csv tests/reports/phase6_calibration_v4/review.yaml --output tests/reports/phase6_calibration_v4/scored.csv --overwrite
+	python3 scripts/summarize_phase6_results.py calibration tests/reports/phase6_calibration_v4/scored.csv --matrix tests/prompt_matrix/phase6_calibration_v4.jsonl --output tests/reports/completion/phase6_calibration.json --overwrite
 
 phase6-calibration-gate:
 	python3 scripts/check_phase6_calibration.py
