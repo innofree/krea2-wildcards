@@ -1,0 +1,5444 @@
+{
+  "schema_version": 1,
+  "kind": "artist_native_name_contact_sheet_review",
+  "scorecard": "tests/reports/artist_native_screen_v0_7/scorecard.csv",
+  "matrix": "tests/prompt_matrix/artist_native_name.jsonl",
+  "family": "artist_native_name",
+  "expected_seeds_per_artist": 3,
+  "artist_count": 300,
+  "image_count": 900,
+  "sheets": [
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_001.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_002.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_003.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_004.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_005.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_006.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_007.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_008.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_009.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_010.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_011.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_012.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_013.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_014.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_015.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_016.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_017.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_018.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_019.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_020.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_021.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_022.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_023.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_024.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_025.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_026.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_027.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_028.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_029.png",
+    "tests/reports/artist_native_screen_v0_7/review/artist_native_name_030.png"
+  ],
+  "items": [
+    {
+      "test_id": "AN000001",
+      "artist_id": "artist_001",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000001/image_01.png"
+    },
+    {
+      "test_id": "AN000002",
+      "artist_id": "artist_001",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000002/image_01.png"
+    },
+    {
+      "test_id": "AN000003",
+      "artist_id": "artist_001",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000003/image_01.png"
+    },
+    {
+      "test_id": "AN000004",
+      "artist_id": "artist_002",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000004/image_01.png"
+    },
+    {
+      "test_id": "AN000005",
+      "artist_id": "artist_002",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000005/image_01.png"
+    },
+    {
+      "test_id": "AN000006",
+      "artist_id": "artist_002",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000006/image_01.png"
+    },
+    {
+      "test_id": "AN000007",
+      "artist_id": "artist_003",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000007/image_01.png"
+    },
+    {
+      "test_id": "AN000008",
+      "artist_id": "artist_003",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000008/image_01.png"
+    },
+    {
+      "test_id": "AN000009",
+      "artist_id": "artist_003",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000009/image_01.png"
+    },
+    {
+      "test_id": "AN000010",
+      "artist_id": "artist_004",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000010/image_01.png"
+    },
+    {
+      "test_id": "AN000011",
+      "artist_id": "artist_004",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000011/image_01.png"
+    },
+    {
+      "test_id": "AN000012",
+      "artist_id": "artist_004",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000012/image_01.png"
+    },
+    {
+      "test_id": "AN000013",
+      "artist_id": "artist_005",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000013/image_01.png"
+    },
+    {
+      "test_id": "AN000014",
+      "artist_id": "artist_005",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000014/image_01.png"
+    },
+    {
+      "test_id": "AN000015",
+      "artist_id": "artist_005",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000015/image_01.png"
+    },
+    {
+      "test_id": "AN000016",
+      "artist_id": "artist_006",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000016/image_01.png"
+    },
+    {
+      "test_id": "AN000017",
+      "artist_id": "artist_006",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000017/image_01.png"
+    },
+    {
+      "test_id": "AN000018",
+      "artist_id": "artist_006",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000018/image_01.png"
+    },
+    {
+      "test_id": "AN000019",
+      "artist_id": "artist_007",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000019/image_01.png"
+    },
+    {
+      "test_id": "AN000020",
+      "artist_id": "artist_007",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000020/image_01.png"
+    },
+    {
+      "test_id": "AN000021",
+      "artist_id": "artist_007",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000021/image_01.png"
+    },
+    {
+      "test_id": "AN000022",
+      "artist_id": "artist_008",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000022/image_01.png"
+    },
+    {
+      "test_id": "AN000023",
+      "artist_id": "artist_008",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000023/image_01.png"
+    },
+    {
+      "test_id": "AN000024",
+      "artist_id": "artist_008",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000024/image_01.png"
+    },
+    {
+      "test_id": "AN000025",
+      "artist_id": "artist_009",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000025/image_01.png"
+    },
+    {
+      "test_id": "AN000026",
+      "artist_id": "artist_009",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000026/image_01.png"
+    },
+    {
+      "test_id": "AN000027",
+      "artist_id": "artist_009",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000027/image_01.png"
+    },
+    {
+      "test_id": "AN000028",
+      "artist_id": "artist_010",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000028/image_01.png"
+    },
+    {
+      "test_id": "AN000029",
+      "artist_id": "artist_010",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000029/image_01.png"
+    },
+    {
+      "test_id": "AN000030",
+      "artist_id": "artist_010",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000030/image_01.png"
+    },
+    {
+      "test_id": "AN000031",
+      "artist_id": "artist_011",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000031/image_01.png"
+    },
+    {
+      "test_id": "AN000032",
+      "artist_id": "artist_011",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000032/image_01.png"
+    },
+    {
+      "test_id": "AN000033",
+      "artist_id": "artist_011",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000033/image_01.png"
+    },
+    {
+      "test_id": "AN000034",
+      "artist_id": "artist_012",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000034/image_01.png"
+    },
+    {
+      "test_id": "AN000035",
+      "artist_id": "artist_012",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000035/image_01.png"
+    },
+    {
+      "test_id": "AN000036",
+      "artist_id": "artist_012",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000036/image_01.png"
+    },
+    {
+      "test_id": "AN000037",
+      "artist_id": "artist_013",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000037/image_01.png"
+    },
+    {
+      "test_id": "AN000038",
+      "artist_id": "artist_013",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000038/image_01.png"
+    },
+    {
+      "test_id": "AN000039",
+      "artist_id": "artist_013",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000039/image_01.png"
+    },
+    {
+      "test_id": "AN000040",
+      "artist_id": "artist_014",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000040/image_01.png"
+    },
+    {
+      "test_id": "AN000041",
+      "artist_id": "artist_014",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000041/image_01.png"
+    },
+    {
+      "test_id": "AN000042",
+      "artist_id": "artist_014",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000042/image_01.png"
+    },
+    {
+      "test_id": "AN000043",
+      "artist_id": "artist_015",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000043/image_01.png"
+    },
+    {
+      "test_id": "AN000044",
+      "artist_id": "artist_015",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000044/image_01.png"
+    },
+    {
+      "test_id": "AN000045",
+      "artist_id": "artist_015",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000045/image_01.png"
+    },
+    {
+      "test_id": "AN000046",
+      "artist_id": "artist_016",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000046/image_01.png"
+    },
+    {
+      "test_id": "AN000047",
+      "artist_id": "artist_016",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000047/image_01.png"
+    },
+    {
+      "test_id": "AN000048",
+      "artist_id": "artist_016",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000048/image_01.png"
+    },
+    {
+      "test_id": "AN000049",
+      "artist_id": "artist_017",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000049/image_01.png"
+    },
+    {
+      "test_id": "AN000050",
+      "artist_id": "artist_017",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000050/image_01.png"
+    },
+    {
+      "test_id": "AN000051",
+      "artist_id": "artist_017",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000051/image_01.png"
+    },
+    {
+      "test_id": "AN000052",
+      "artist_id": "artist_018",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000052/image_01.png"
+    },
+    {
+      "test_id": "AN000053",
+      "artist_id": "artist_018",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000053/image_01.png"
+    },
+    {
+      "test_id": "AN000054",
+      "artist_id": "artist_018",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000054/image_01.png"
+    },
+    {
+      "test_id": "AN000055",
+      "artist_id": "artist_019",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000055/image_01.png"
+    },
+    {
+      "test_id": "AN000056",
+      "artist_id": "artist_019",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000056/image_01.png"
+    },
+    {
+      "test_id": "AN000057",
+      "artist_id": "artist_019",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000057/image_01.png"
+    },
+    {
+      "test_id": "AN000058",
+      "artist_id": "artist_020",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000058/image_01.png"
+    },
+    {
+      "test_id": "AN000059",
+      "artist_id": "artist_020",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000059/image_01.png"
+    },
+    {
+      "test_id": "AN000060",
+      "artist_id": "artist_020",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000060/image_01.png"
+    },
+    {
+      "test_id": "AN000061",
+      "artist_id": "artist_021",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000061/image_01.png"
+    },
+    {
+      "test_id": "AN000062",
+      "artist_id": "artist_021",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000062/image_01.png"
+    },
+    {
+      "test_id": "AN000063",
+      "artist_id": "artist_021",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000063/image_01.png"
+    },
+    {
+      "test_id": "AN000064",
+      "artist_id": "artist_022",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000064/image_01.png"
+    },
+    {
+      "test_id": "AN000065",
+      "artist_id": "artist_022",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000065/image_01.png"
+    },
+    {
+      "test_id": "AN000066",
+      "artist_id": "artist_022",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000066/image_01.png"
+    },
+    {
+      "test_id": "AN000067",
+      "artist_id": "artist_023",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000067/image_01.png"
+    },
+    {
+      "test_id": "AN000068",
+      "artist_id": "artist_023",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000068/image_01.png"
+    },
+    {
+      "test_id": "AN000069",
+      "artist_id": "artist_023",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000069/image_01.png"
+    },
+    {
+      "test_id": "AN000070",
+      "artist_id": "artist_024",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000070/image_01.png"
+    },
+    {
+      "test_id": "AN000071",
+      "artist_id": "artist_024",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000071/image_01.png"
+    },
+    {
+      "test_id": "AN000072",
+      "artist_id": "artist_024",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000072/image_01.png"
+    },
+    {
+      "test_id": "AN000073",
+      "artist_id": "artist_025",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000073/image_01.png"
+    },
+    {
+      "test_id": "AN000074",
+      "artist_id": "artist_025",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000074/image_01.png"
+    },
+    {
+      "test_id": "AN000075",
+      "artist_id": "artist_025",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000075/image_01.png"
+    },
+    {
+      "test_id": "AN000076",
+      "artist_id": "artist_026",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000076/image_01.png"
+    },
+    {
+      "test_id": "AN000077",
+      "artist_id": "artist_026",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000077/image_01.png"
+    },
+    {
+      "test_id": "AN000078",
+      "artist_id": "artist_026",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000078/image_01.png"
+    },
+    {
+      "test_id": "AN000079",
+      "artist_id": "artist_027",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000079/image_01.png"
+    },
+    {
+      "test_id": "AN000080",
+      "artist_id": "artist_027",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000080/image_01.png"
+    },
+    {
+      "test_id": "AN000081",
+      "artist_id": "artist_027",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000081/image_01.png"
+    },
+    {
+      "test_id": "AN000082",
+      "artist_id": "artist_028",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000082/image_01.png"
+    },
+    {
+      "test_id": "AN000083",
+      "artist_id": "artist_028",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000083/image_01.png"
+    },
+    {
+      "test_id": "AN000084",
+      "artist_id": "artist_028",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000084/image_01.png"
+    },
+    {
+      "test_id": "AN000085",
+      "artist_id": "artist_029",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000085/image_01.png"
+    },
+    {
+      "test_id": "AN000086",
+      "artist_id": "artist_029",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000086/image_01.png"
+    },
+    {
+      "test_id": "AN000087",
+      "artist_id": "artist_029",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000087/image_01.png"
+    },
+    {
+      "test_id": "AN000088",
+      "artist_id": "artist_030",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000088/image_01.png"
+    },
+    {
+      "test_id": "AN000089",
+      "artist_id": "artist_030",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000089/image_01.png"
+    },
+    {
+      "test_id": "AN000090",
+      "artist_id": "artist_030",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000090/image_01.png"
+    },
+    {
+      "test_id": "AN000091",
+      "artist_id": "artist_031",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000091/image_01.png"
+    },
+    {
+      "test_id": "AN000092",
+      "artist_id": "artist_031",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000092/image_01.png"
+    },
+    {
+      "test_id": "AN000093",
+      "artist_id": "artist_031",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000093/image_01.png"
+    },
+    {
+      "test_id": "AN000094",
+      "artist_id": "artist_032",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000094/image_01.png"
+    },
+    {
+      "test_id": "AN000095",
+      "artist_id": "artist_032",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000095/image_01.png"
+    },
+    {
+      "test_id": "AN000096",
+      "artist_id": "artist_032",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000096/image_01.png"
+    },
+    {
+      "test_id": "AN000097",
+      "artist_id": "artist_033",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000097/image_01.png"
+    },
+    {
+      "test_id": "AN000098",
+      "artist_id": "artist_033",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000098/image_01.png"
+    },
+    {
+      "test_id": "AN000099",
+      "artist_id": "artist_033",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000099/image_01.png"
+    },
+    {
+      "test_id": "AN000100",
+      "artist_id": "artist_034",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000100/image_01.png"
+    },
+    {
+      "test_id": "AN000101",
+      "artist_id": "artist_034",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000101/image_01.png"
+    },
+    {
+      "test_id": "AN000102",
+      "artist_id": "artist_034",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000102/image_01.png"
+    },
+    {
+      "test_id": "AN000103",
+      "artist_id": "artist_035",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000103/image_01.png"
+    },
+    {
+      "test_id": "AN000104",
+      "artist_id": "artist_035",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000104/image_01.png"
+    },
+    {
+      "test_id": "AN000105",
+      "artist_id": "artist_035",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000105/image_01.png"
+    },
+    {
+      "test_id": "AN000106",
+      "artist_id": "artist_036",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000106/image_01.png"
+    },
+    {
+      "test_id": "AN000107",
+      "artist_id": "artist_036",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000107/image_01.png"
+    },
+    {
+      "test_id": "AN000108",
+      "artist_id": "artist_036",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000108/image_01.png"
+    },
+    {
+      "test_id": "AN000109",
+      "artist_id": "artist_037",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000109/image_01.png"
+    },
+    {
+      "test_id": "AN000110",
+      "artist_id": "artist_037",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000110/image_01.png"
+    },
+    {
+      "test_id": "AN000111",
+      "artist_id": "artist_037",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000111/image_01.png"
+    },
+    {
+      "test_id": "AN000112",
+      "artist_id": "artist_038",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000112/image_01.png"
+    },
+    {
+      "test_id": "AN000113",
+      "artist_id": "artist_038",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000113/image_01.png"
+    },
+    {
+      "test_id": "AN000114",
+      "artist_id": "artist_038",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000114/image_01.png"
+    },
+    {
+      "test_id": "AN000115",
+      "artist_id": "artist_039",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000115/image_01.png"
+    },
+    {
+      "test_id": "AN000116",
+      "artist_id": "artist_039",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000116/image_01.png"
+    },
+    {
+      "test_id": "AN000117",
+      "artist_id": "artist_039",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000117/image_01.png"
+    },
+    {
+      "test_id": "AN000118",
+      "artist_id": "artist_040",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000118/image_01.png"
+    },
+    {
+      "test_id": "AN000119",
+      "artist_id": "artist_040",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000119/image_01.png"
+    },
+    {
+      "test_id": "AN000120",
+      "artist_id": "artist_040",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000120/image_01.png"
+    },
+    {
+      "test_id": "AN000121",
+      "artist_id": "artist_041",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000121/image_01.png"
+    },
+    {
+      "test_id": "AN000122",
+      "artist_id": "artist_041",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000122/image_01.png"
+    },
+    {
+      "test_id": "AN000123",
+      "artist_id": "artist_041",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000123/image_01.png"
+    },
+    {
+      "test_id": "AN000124",
+      "artist_id": "artist_042",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000124/image_01.png"
+    },
+    {
+      "test_id": "AN000125",
+      "artist_id": "artist_042",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000125/image_01.png"
+    },
+    {
+      "test_id": "AN000126",
+      "artist_id": "artist_042",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000126/image_01.png"
+    },
+    {
+      "test_id": "AN000127",
+      "artist_id": "artist_043",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000127/image_01.png"
+    },
+    {
+      "test_id": "AN000128",
+      "artist_id": "artist_043",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000128/image_01.png"
+    },
+    {
+      "test_id": "AN000129",
+      "artist_id": "artist_043",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000129/image_01.png"
+    },
+    {
+      "test_id": "AN000130",
+      "artist_id": "artist_044",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000130/image_01.png"
+    },
+    {
+      "test_id": "AN000131",
+      "artist_id": "artist_044",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000131/image_01.png"
+    },
+    {
+      "test_id": "AN000132",
+      "artist_id": "artist_044",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000132/image_01.png"
+    },
+    {
+      "test_id": "AN000133",
+      "artist_id": "artist_045",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000133/image_01.png"
+    },
+    {
+      "test_id": "AN000134",
+      "artist_id": "artist_045",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000134/image_01.png"
+    },
+    {
+      "test_id": "AN000135",
+      "artist_id": "artist_045",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000135/image_01.png"
+    },
+    {
+      "test_id": "AN000136",
+      "artist_id": "artist_046",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000136/image_01.png"
+    },
+    {
+      "test_id": "AN000137",
+      "artist_id": "artist_046",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000137/image_01.png"
+    },
+    {
+      "test_id": "AN000138",
+      "artist_id": "artist_046",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000138/image_01.png"
+    },
+    {
+      "test_id": "AN000139",
+      "artist_id": "artist_047",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000139/image_01.png"
+    },
+    {
+      "test_id": "AN000140",
+      "artist_id": "artist_047",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000140/image_01.png"
+    },
+    {
+      "test_id": "AN000141",
+      "artist_id": "artist_047",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000141/image_01.png"
+    },
+    {
+      "test_id": "AN000142",
+      "artist_id": "artist_048",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000142/image_01.png"
+    },
+    {
+      "test_id": "AN000143",
+      "artist_id": "artist_048",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000143/image_01.png"
+    },
+    {
+      "test_id": "AN000144",
+      "artist_id": "artist_048",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000144/image_01.png"
+    },
+    {
+      "test_id": "AN000145",
+      "artist_id": "artist_049",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000145/image_01.png"
+    },
+    {
+      "test_id": "AN000146",
+      "artist_id": "artist_049",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000146/image_01.png"
+    },
+    {
+      "test_id": "AN000147",
+      "artist_id": "artist_049",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000147/image_01.png"
+    },
+    {
+      "test_id": "AN000148",
+      "artist_id": "artist_050",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000148/image_01.png"
+    },
+    {
+      "test_id": "AN000149",
+      "artist_id": "artist_050",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000149/image_01.png"
+    },
+    {
+      "test_id": "AN000150",
+      "artist_id": "artist_050",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000150/image_01.png"
+    },
+    {
+      "test_id": "AN000151",
+      "artist_id": "artist_051",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000151/image_01.png"
+    },
+    {
+      "test_id": "AN000152",
+      "artist_id": "artist_051",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000152/image_01.png"
+    },
+    {
+      "test_id": "AN000153",
+      "artist_id": "artist_051",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000153/image_01.png"
+    },
+    {
+      "test_id": "AN000154",
+      "artist_id": "artist_052",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000154/image_01.png"
+    },
+    {
+      "test_id": "AN000155",
+      "artist_id": "artist_052",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000155/image_01.png"
+    },
+    {
+      "test_id": "AN000156",
+      "artist_id": "artist_052",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000156/image_01.png"
+    },
+    {
+      "test_id": "AN000157",
+      "artist_id": "artist_053",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000157/image_01.png"
+    },
+    {
+      "test_id": "AN000158",
+      "artist_id": "artist_053",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000158/image_01.png"
+    },
+    {
+      "test_id": "AN000159",
+      "artist_id": "artist_053",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000159/image_01.png"
+    },
+    {
+      "test_id": "AN000160",
+      "artist_id": "artist_054",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000160/image_01.png"
+    },
+    {
+      "test_id": "AN000161",
+      "artist_id": "artist_054",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000161/image_01.png"
+    },
+    {
+      "test_id": "AN000162",
+      "artist_id": "artist_054",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000162/image_01.png"
+    },
+    {
+      "test_id": "AN000163",
+      "artist_id": "artist_055",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000163/image_01.png"
+    },
+    {
+      "test_id": "AN000164",
+      "artist_id": "artist_055",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000164/image_01.png"
+    },
+    {
+      "test_id": "AN000165",
+      "artist_id": "artist_055",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000165/image_01.png"
+    },
+    {
+      "test_id": "AN000166",
+      "artist_id": "artist_056",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000166/image_01.png"
+    },
+    {
+      "test_id": "AN000167",
+      "artist_id": "artist_056",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000167/image_01.png"
+    },
+    {
+      "test_id": "AN000168",
+      "artist_id": "artist_056",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000168/image_01.png"
+    },
+    {
+      "test_id": "AN000169",
+      "artist_id": "artist_057",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000169/image_01.png"
+    },
+    {
+      "test_id": "AN000170",
+      "artist_id": "artist_057",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000170/image_01.png"
+    },
+    {
+      "test_id": "AN000171",
+      "artist_id": "artist_057",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000171/image_01.png"
+    },
+    {
+      "test_id": "AN000172",
+      "artist_id": "artist_058",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000172/image_01.png"
+    },
+    {
+      "test_id": "AN000173",
+      "artist_id": "artist_058",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000173/image_01.png"
+    },
+    {
+      "test_id": "AN000174",
+      "artist_id": "artist_058",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000174/image_01.png"
+    },
+    {
+      "test_id": "AN000175",
+      "artist_id": "artist_059",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000175/image_01.png"
+    },
+    {
+      "test_id": "AN000176",
+      "artist_id": "artist_059",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000176/image_01.png"
+    },
+    {
+      "test_id": "AN000177",
+      "artist_id": "artist_059",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000177/image_01.png"
+    },
+    {
+      "test_id": "AN000178",
+      "artist_id": "artist_060",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000178/image_01.png"
+    },
+    {
+      "test_id": "AN000179",
+      "artist_id": "artist_060",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000179/image_01.png"
+    },
+    {
+      "test_id": "AN000180",
+      "artist_id": "artist_060",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000180/image_01.png"
+    },
+    {
+      "test_id": "AN000181",
+      "artist_id": "artist_061",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000181/image_01.png"
+    },
+    {
+      "test_id": "AN000182",
+      "artist_id": "artist_061",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000182/image_01.png"
+    },
+    {
+      "test_id": "AN000183",
+      "artist_id": "artist_061",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000183/image_01.png"
+    },
+    {
+      "test_id": "AN000184",
+      "artist_id": "artist_062",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000184/image_01.png"
+    },
+    {
+      "test_id": "AN000185",
+      "artist_id": "artist_062",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000185/image_01.png"
+    },
+    {
+      "test_id": "AN000186",
+      "artist_id": "artist_062",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000186/image_01.png"
+    },
+    {
+      "test_id": "AN000187",
+      "artist_id": "artist_063",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000187/image_01.png"
+    },
+    {
+      "test_id": "AN000188",
+      "artist_id": "artist_063",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000188/image_01.png"
+    },
+    {
+      "test_id": "AN000189",
+      "artist_id": "artist_063",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000189/image_01.png"
+    },
+    {
+      "test_id": "AN000190",
+      "artist_id": "artist_064",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000190/image_01.png"
+    },
+    {
+      "test_id": "AN000191",
+      "artist_id": "artist_064",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000191/image_01.png"
+    },
+    {
+      "test_id": "AN000192",
+      "artist_id": "artist_064",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000192/image_01.png"
+    },
+    {
+      "test_id": "AN000193",
+      "artist_id": "artist_065",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000193/image_01.png"
+    },
+    {
+      "test_id": "AN000194",
+      "artist_id": "artist_065",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000194/image_01.png"
+    },
+    {
+      "test_id": "AN000195",
+      "artist_id": "artist_065",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000195/image_01.png"
+    },
+    {
+      "test_id": "AN000196",
+      "artist_id": "artist_066",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000196/image_01.png"
+    },
+    {
+      "test_id": "AN000197",
+      "artist_id": "artist_066",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000197/image_01.png"
+    },
+    {
+      "test_id": "AN000198",
+      "artist_id": "artist_066",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000198/image_01.png"
+    },
+    {
+      "test_id": "AN000199",
+      "artist_id": "artist_067",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000199/image_01.png"
+    },
+    {
+      "test_id": "AN000200",
+      "artist_id": "artist_067",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000200/image_01.png"
+    },
+    {
+      "test_id": "AN000201",
+      "artist_id": "artist_067",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000201/image_01.png"
+    },
+    {
+      "test_id": "AN000202",
+      "artist_id": "artist_068",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000202/image_01.png"
+    },
+    {
+      "test_id": "AN000203",
+      "artist_id": "artist_068",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000203/image_01.png"
+    },
+    {
+      "test_id": "AN000204",
+      "artist_id": "artist_068",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000204/image_01.png"
+    },
+    {
+      "test_id": "AN000205",
+      "artist_id": "artist_069",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000205/image_01.png"
+    },
+    {
+      "test_id": "AN000206",
+      "artist_id": "artist_069",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000206/image_01.png"
+    },
+    {
+      "test_id": "AN000207",
+      "artist_id": "artist_069",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000207/image_01.png"
+    },
+    {
+      "test_id": "AN000208",
+      "artist_id": "artist_070",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000208/image_01.png"
+    },
+    {
+      "test_id": "AN000209",
+      "artist_id": "artist_070",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000209/image_01.png"
+    },
+    {
+      "test_id": "AN000210",
+      "artist_id": "artist_070",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000210/image_01.png"
+    },
+    {
+      "test_id": "AN000211",
+      "artist_id": "artist_071",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000211/image_01.png"
+    },
+    {
+      "test_id": "AN000212",
+      "artist_id": "artist_071",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000212/image_01.png"
+    },
+    {
+      "test_id": "AN000213",
+      "artist_id": "artist_071",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000213/image_01.png"
+    },
+    {
+      "test_id": "AN000214",
+      "artist_id": "artist_072",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000214/image_01.png"
+    },
+    {
+      "test_id": "AN000215",
+      "artist_id": "artist_072",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000215/image_01.png"
+    },
+    {
+      "test_id": "AN000216",
+      "artist_id": "artist_072",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000216/image_01.png"
+    },
+    {
+      "test_id": "AN000217",
+      "artist_id": "artist_073",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000217/image_01.png"
+    },
+    {
+      "test_id": "AN000218",
+      "artist_id": "artist_073",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000218/image_01.png"
+    },
+    {
+      "test_id": "AN000219",
+      "artist_id": "artist_073",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000219/image_01.png"
+    },
+    {
+      "test_id": "AN000220",
+      "artist_id": "artist_074",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000220/image_01.png"
+    },
+    {
+      "test_id": "AN000221",
+      "artist_id": "artist_074",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000221/image_01.png"
+    },
+    {
+      "test_id": "AN000222",
+      "artist_id": "artist_074",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000222/image_01.png"
+    },
+    {
+      "test_id": "AN000223",
+      "artist_id": "artist_075",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000223/image_01.png"
+    },
+    {
+      "test_id": "AN000224",
+      "artist_id": "artist_075",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000224/image_01.png"
+    },
+    {
+      "test_id": "AN000225",
+      "artist_id": "artist_075",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000225/image_01.png"
+    },
+    {
+      "test_id": "AN000226",
+      "artist_id": "artist_076",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000226/image_01.png"
+    },
+    {
+      "test_id": "AN000227",
+      "artist_id": "artist_076",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000227/image_01.png"
+    },
+    {
+      "test_id": "AN000228",
+      "artist_id": "artist_076",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000228/image_01.png"
+    },
+    {
+      "test_id": "AN000229",
+      "artist_id": "artist_077",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000229/image_01.png"
+    },
+    {
+      "test_id": "AN000230",
+      "artist_id": "artist_077",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000230/image_01.png"
+    },
+    {
+      "test_id": "AN000231",
+      "artist_id": "artist_077",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000231/image_01.png"
+    },
+    {
+      "test_id": "AN000232",
+      "artist_id": "artist_078",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000232/image_01.png"
+    },
+    {
+      "test_id": "AN000233",
+      "artist_id": "artist_078",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000233/image_01.png"
+    },
+    {
+      "test_id": "AN000234",
+      "artist_id": "artist_078",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000234/image_01.png"
+    },
+    {
+      "test_id": "AN000235",
+      "artist_id": "artist_079",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000235/image_01.png"
+    },
+    {
+      "test_id": "AN000236",
+      "artist_id": "artist_079",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000236/image_01.png"
+    },
+    {
+      "test_id": "AN000237",
+      "artist_id": "artist_079",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000237/image_01.png"
+    },
+    {
+      "test_id": "AN000238",
+      "artist_id": "artist_080",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000238/image_01.png"
+    },
+    {
+      "test_id": "AN000239",
+      "artist_id": "artist_080",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000239/image_01.png"
+    },
+    {
+      "test_id": "AN000240",
+      "artist_id": "artist_080",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000240/image_01.png"
+    },
+    {
+      "test_id": "AN000241",
+      "artist_id": "artist_081",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000241/image_01.png"
+    },
+    {
+      "test_id": "AN000242",
+      "artist_id": "artist_081",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000242/image_01.png"
+    },
+    {
+      "test_id": "AN000243",
+      "artist_id": "artist_081",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000243/image_01.png"
+    },
+    {
+      "test_id": "AN000244",
+      "artist_id": "artist_082",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000244/image_01.png"
+    },
+    {
+      "test_id": "AN000245",
+      "artist_id": "artist_082",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000245/image_01.png"
+    },
+    {
+      "test_id": "AN000246",
+      "artist_id": "artist_082",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000246/image_01.png"
+    },
+    {
+      "test_id": "AN000247",
+      "artist_id": "artist_083",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000247/image_01.png"
+    },
+    {
+      "test_id": "AN000248",
+      "artist_id": "artist_083",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000248/image_01.png"
+    },
+    {
+      "test_id": "AN000249",
+      "artist_id": "artist_083",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000249/image_01.png"
+    },
+    {
+      "test_id": "AN000250",
+      "artist_id": "artist_084",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000250/image_01.png"
+    },
+    {
+      "test_id": "AN000251",
+      "artist_id": "artist_084",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000251/image_01.png"
+    },
+    {
+      "test_id": "AN000252",
+      "artist_id": "artist_084",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000252/image_01.png"
+    },
+    {
+      "test_id": "AN000253",
+      "artist_id": "artist_085",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000253/image_01.png"
+    },
+    {
+      "test_id": "AN000254",
+      "artist_id": "artist_085",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000254/image_01.png"
+    },
+    {
+      "test_id": "AN000255",
+      "artist_id": "artist_085",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000255/image_01.png"
+    },
+    {
+      "test_id": "AN000256",
+      "artist_id": "artist_086",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000256/image_01.png"
+    },
+    {
+      "test_id": "AN000257",
+      "artist_id": "artist_086",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000257/image_01.png"
+    },
+    {
+      "test_id": "AN000258",
+      "artist_id": "artist_086",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000258/image_01.png"
+    },
+    {
+      "test_id": "AN000259",
+      "artist_id": "artist_087",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000259/image_01.png"
+    },
+    {
+      "test_id": "AN000260",
+      "artist_id": "artist_087",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000260/image_01.png"
+    },
+    {
+      "test_id": "AN000261",
+      "artist_id": "artist_087",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000261/image_01.png"
+    },
+    {
+      "test_id": "AN000262",
+      "artist_id": "artist_088",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000262/image_01.png"
+    },
+    {
+      "test_id": "AN000263",
+      "artist_id": "artist_088",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000263/image_01.png"
+    },
+    {
+      "test_id": "AN000264",
+      "artist_id": "artist_088",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000264/image_01.png"
+    },
+    {
+      "test_id": "AN000265",
+      "artist_id": "artist_089",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000265/image_01.png"
+    },
+    {
+      "test_id": "AN000266",
+      "artist_id": "artist_089",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000266/image_01.png"
+    },
+    {
+      "test_id": "AN000267",
+      "artist_id": "artist_089",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000267/image_01.png"
+    },
+    {
+      "test_id": "AN000268",
+      "artist_id": "artist_090",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000268/image_01.png"
+    },
+    {
+      "test_id": "AN000269",
+      "artist_id": "artist_090",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000269/image_01.png"
+    },
+    {
+      "test_id": "AN000270",
+      "artist_id": "artist_090",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000270/image_01.png"
+    },
+    {
+      "test_id": "AN000271",
+      "artist_id": "artist_091",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000271/image_01.png"
+    },
+    {
+      "test_id": "AN000272",
+      "artist_id": "artist_091",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000272/image_01.png"
+    },
+    {
+      "test_id": "AN000273",
+      "artist_id": "artist_091",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000273/image_01.png"
+    },
+    {
+      "test_id": "AN000274",
+      "artist_id": "artist_092",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000274/image_01.png"
+    },
+    {
+      "test_id": "AN000275",
+      "artist_id": "artist_092",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000275/image_01.png"
+    },
+    {
+      "test_id": "AN000276",
+      "artist_id": "artist_092",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000276/image_01.png"
+    },
+    {
+      "test_id": "AN000277",
+      "artist_id": "artist_093",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000277/image_01.png"
+    },
+    {
+      "test_id": "AN000278",
+      "artist_id": "artist_093",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000278/image_01.png"
+    },
+    {
+      "test_id": "AN000279",
+      "artist_id": "artist_093",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000279/image_01.png"
+    },
+    {
+      "test_id": "AN000280",
+      "artist_id": "artist_094",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000280/image_01.png"
+    },
+    {
+      "test_id": "AN000281",
+      "artist_id": "artist_094",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000281/image_01.png"
+    },
+    {
+      "test_id": "AN000282",
+      "artist_id": "artist_094",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000282/image_01.png"
+    },
+    {
+      "test_id": "AN000283",
+      "artist_id": "artist_095",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000283/image_01.png"
+    },
+    {
+      "test_id": "AN000284",
+      "artist_id": "artist_095",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000284/image_01.png"
+    },
+    {
+      "test_id": "AN000285",
+      "artist_id": "artist_095",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000285/image_01.png"
+    },
+    {
+      "test_id": "AN000286",
+      "artist_id": "artist_096",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000286/image_01.png"
+    },
+    {
+      "test_id": "AN000287",
+      "artist_id": "artist_096",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000287/image_01.png"
+    },
+    {
+      "test_id": "AN000288",
+      "artist_id": "artist_096",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000288/image_01.png"
+    },
+    {
+      "test_id": "AN000289",
+      "artist_id": "artist_097",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000289/image_01.png"
+    },
+    {
+      "test_id": "AN000290",
+      "artist_id": "artist_097",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000290/image_01.png"
+    },
+    {
+      "test_id": "AN000291",
+      "artist_id": "artist_097",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000291/image_01.png"
+    },
+    {
+      "test_id": "AN000292",
+      "artist_id": "artist_098",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000292/image_01.png"
+    },
+    {
+      "test_id": "AN000293",
+      "artist_id": "artist_098",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000293/image_01.png"
+    },
+    {
+      "test_id": "AN000294",
+      "artist_id": "artist_098",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000294/image_01.png"
+    },
+    {
+      "test_id": "AN000295",
+      "artist_id": "artist_099",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000295/image_01.png"
+    },
+    {
+      "test_id": "AN000296",
+      "artist_id": "artist_099",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000296/image_01.png"
+    },
+    {
+      "test_id": "AN000297",
+      "artist_id": "artist_099",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000297/image_01.png"
+    },
+    {
+      "test_id": "AN000298",
+      "artist_id": "artist_100",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000298/image_01.png"
+    },
+    {
+      "test_id": "AN000299",
+      "artist_id": "artist_100",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000299/image_01.png"
+    },
+    {
+      "test_id": "AN000300",
+      "artist_id": "artist_100",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000300/image_01.png"
+    },
+    {
+      "test_id": "AN000301",
+      "artist_id": "artist_101",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000301/image_01.png"
+    },
+    {
+      "test_id": "AN000302",
+      "artist_id": "artist_101",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000302/image_01.png"
+    },
+    {
+      "test_id": "AN000303",
+      "artist_id": "artist_101",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000303/image_01.png"
+    },
+    {
+      "test_id": "AN000304",
+      "artist_id": "artist_102",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000304/image_01.png"
+    },
+    {
+      "test_id": "AN000305",
+      "artist_id": "artist_102",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000305/image_01.png"
+    },
+    {
+      "test_id": "AN000306",
+      "artist_id": "artist_102",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000306/image_01.png"
+    },
+    {
+      "test_id": "AN000307",
+      "artist_id": "artist_103",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000307/image_01.png"
+    },
+    {
+      "test_id": "AN000308",
+      "artist_id": "artist_103",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000308/image_01.png"
+    },
+    {
+      "test_id": "AN000309",
+      "artist_id": "artist_103",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000309/image_01.png"
+    },
+    {
+      "test_id": "AN000310",
+      "artist_id": "artist_104",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000310/image_01.png"
+    },
+    {
+      "test_id": "AN000311",
+      "artist_id": "artist_104",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000311/image_01.png"
+    },
+    {
+      "test_id": "AN000312",
+      "artist_id": "artist_104",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000312/image_01.png"
+    },
+    {
+      "test_id": "AN000313",
+      "artist_id": "artist_105",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000313/image_01.png"
+    },
+    {
+      "test_id": "AN000314",
+      "artist_id": "artist_105",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000314/image_01.png"
+    },
+    {
+      "test_id": "AN000315",
+      "artist_id": "artist_105",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000315/image_01.png"
+    },
+    {
+      "test_id": "AN000316",
+      "artist_id": "artist_106",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000316/image_01.png"
+    },
+    {
+      "test_id": "AN000317",
+      "artist_id": "artist_106",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000317/image_01.png"
+    },
+    {
+      "test_id": "AN000318",
+      "artist_id": "artist_106",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000318/image_01.png"
+    },
+    {
+      "test_id": "AN000319",
+      "artist_id": "artist_107",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000319/image_01.png"
+    },
+    {
+      "test_id": "AN000320",
+      "artist_id": "artist_107",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000320/image_01.png"
+    },
+    {
+      "test_id": "AN000321",
+      "artist_id": "artist_107",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000321/image_01.png"
+    },
+    {
+      "test_id": "AN000322",
+      "artist_id": "artist_108",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000322/image_01.png"
+    },
+    {
+      "test_id": "AN000323",
+      "artist_id": "artist_108",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000323/image_01.png"
+    },
+    {
+      "test_id": "AN000324",
+      "artist_id": "artist_108",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000324/image_01.png"
+    },
+    {
+      "test_id": "AN000325",
+      "artist_id": "artist_109",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000325/image_01.png"
+    },
+    {
+      "test_id": "AN000326",
+      "artist_id": "artist_109",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000326/image_01.png"
+    },
+    {
+      "test_id": "AN000327",
+      "artist_id": "artist_109",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000327/image_01.png"
+    },
+    {
+      "test_id": "AN000328",
+      "artist_id": "artist_110",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000328/image_01.png"
+    },
+    {
+      "test_id": "AN000329",
+      "artist_id": "artist_110",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000329/image_01.png"
+    },
+    {
+      "test_id": "AN000330",
+      "artist_id": "artist_110",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000330/image_01.png"
+    },
+    {
+      "test_id": "AN000331",
+      "artist_id": "artist_111",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000331/image_01.png"
+    },
+    {
+      "test_id": "AN000332",
+      "artist_id": "artist_111",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000332/image_01.png"
+    },
+    {
+      "test_id": "AN000333",
+      "artist_id": "artist_111",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000333/image_01.png"
+    },
+    {
+      "test_id": "AN000334",
+      "artist_id": "artist_112",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000334/image_01.png"
+    },
+    {
+      "test_id": "AN000335",
+      "artist_id": "artist_112",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000335/image_01.png"
+    },
+    {
+      "test_id": "AN000336",
+      "artist_id": "artist_112",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000336/image_01.png"
+    },
+    {
+      "test_id": "AN000337",
+      "artist_id": "artist_113",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000337/image_01.png"
+    },
+    {
+      "test_id": "AN000338",
+      "artist_id": "artist_113",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000338/image_01.png"
+    },
+    {
+      "test_id": "AN000339",
+      "artist_id": "artist_113",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000339/image_01.png"
+    },
+    {
+      "test_id": "AN000340",
+      "artist_id": "artist_114",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000340/image_01.png"
+    },
+    {
+      "test_id": "AN000341",
+      "artist_id": "artist_114",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000341/image_01.png"
+    },
+    {
+      "test_id": "AN000342",
+      "artist_id": "artist_114",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000342/image_01.png"
+    },
+    {
+      "test_id": "AN000343",
+      "artist_id": "artist_115",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000343/image_01.png"
+    },
+    {
+      "test_id": "AN000344",
+      "artist_id": "artist_115",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000344/image_01.png"
+    },
+    {
+      "test_id": "AN000345",
+      "artist_id": "artist_115",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000345/image_01.png"
+    },
+    {
+      "test_id": "AN000346",
+      "artist_id": "artist_116",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000346/image_01.png"
+    },
+    {
+      "test_id": "AN000347",
+      "artist_id": "artist_116",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000347/image_01.png"
+    },
+    {
+      "test_id": "AN000348",
+      "artist_id": "artist_116",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000348/image_01.png"
+    },
+    {
+      "test_id": "AN000349",
+      "artist_id": "artist_117",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000349/image_01.png"
+    },
+    {
+      "test_id": "AN000350",
+      "artist_id": "artist_117",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000350/image_01.png"
+    },
+    {
+      "test_id": "AN000351",
+      "artist_id": "artist_117",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000351/image_01.png"
+    },
+    {
+      "test_id": "AN000352",
+      "artist_id": "artist_118",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000352/image_01.png"
+    },
+    {
+      "test_id": "AN000353",
+      "artist_id": "artist_118",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000353/image_01.png"
+    },
+    {
+      "test_id": "AN000354",
+      "artist_id": "artist_118",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000354/image_01.png"
+    },
+    {
+      "test_id": "AN000355",
+      "artist_id": "artist_119",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000355/image_01.png"
+    },
+    {
+      "test_id": "AN000356",
+      "artist_id": "artist_119",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000356/image_01.png"
+    },
+    {
+      "test_id": "AN000357",
+      "artist_id": "artist_119",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000357/image_01.png"
+    },
+    {
+      "test_id": "AN000358",
+      "artist_id": "artist_120",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000358/image_01.png"
+    },
+    {
+      "test_id": "AN000359",
+      "artist_id": "artist_120",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000359/image_01.png"
+    },
+    {
+      "test_id": "AN000360",
+      "artist_id": "artist_120",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000360/image_01.png"
+    },
+    {
+      "test_id": "AN000361",
+      "artist_id": "artist_121",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000361/image_01.png"
+    },
+    {
+      "test_id": "AN000362",
+      "artist_id": "artist_121",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000362/image_01.png"
+    },
+    {
+      "test_id": "AN000363",
+      "artist_id": "artist_121",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000363/image_01.png"
+    },
+    {
+      "test_id": "AN000364",
+      "artist_id": "artist_122",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000364/image_01.png"
+    },
+    {
+      "test_id": "AN000365",
+      "artist_id": "artist_122",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000365/image_01.png"
+    },
+    {
+      "test_id": "AN000366",
+      "artist_id": "artist_122",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000366/image_01.png"
+    },
+    {
+      "test_id": "AN000367",
+      "artist_id": "artist_123",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000367/image_01.png"
+    },
+    {
+      "test_id": "AN000368",
+      "artist_id": "artist_123",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000368/image_01.png"
+    },
+    {
+      "test_id": "AN000369",
+      "artist_id": "artist_123",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000369/image_01.png"
+    },
+    {
+      "test_id": "AN000370",
+      "artist_id": "artist_124",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000370/image_01.png"
+    },
+    {
+      "test_id": "AN000371",
+      "artist_id": "artist_124",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000371/image_01.png"
+    },
+    {
+      "test_id": "AN000372",
+      "artist_id": "artist_124",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000372/image_01.png"
+    },
+    {
+      "test_id": "AN000373",
+      "artist_id": "artist_125",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000373/image_01.png"
+    },
+    {
+      "test_id": "AN000374",
+      "artist_id": "artist_125",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000374/image_01.png"
+    },
+    {
+      "test_id": "AN000375",
+      "artist_id": "artist_125",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000375/image_01.png"
+    },
+    {
+      "test_id": "AN000376",
+      "artist_id": "artist_126",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000376/image_01.png"
+    },
+    {
+      "test_id": "AN000377",
+      "artist_id": "artist_126",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000377/image_01.png"
+    },
+    {
+      "test_id": "AN000378",
+      "artist_id": "artist_126",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000378/image_01.png"
+    },
+    {
+      "test_id": "AN000379",
+      "artist_id": "artist_127",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000379/image_01.png"
+    },
+    {
+      "test_id": "AN000380",
+      "artist_id": "artist_127",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000380/image_01.png"
+    },
+    {
+      "test_id": "AN000381",
+      "artist_id": "artist_127",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000381/image_01.png"
+    },
+    {
+      "test_id": "AN000382",
+      "artist_id": "artist_128",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000382/image_01.png"
+    },
+    {
+      "test_id": "AN000383",
+      "artist_id": "artist_128",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000383/image_01.png"
+    },
+    {
+      "test_id": "AN000384",
+      "artist_id": "artist_128",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000384/image_01.png"
+    },
+    {
+      "test_id": "AN000385",
+      "artist_id": "artist_129",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000385/image_01.png"
+    },
+    {
+      "test_id": "AN000386",
+      "artist_id": "artist_129",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000386/image_01.png"
+    },
+    {
+      "test_id": "AN000387",
+      "artist_id": "artist_129",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000387/image_01.png"
+    },
+    {
+      "test_id": "AN000388",
+      "artist_id": "artist_130",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000388/image_01.png"
+    },
+    {
+      "test_id": "AN000389",
+      "artist_id": "artist_130",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000389/image_01.png"
+    },
+    {
+      "test_id": "AN000390",
+      "artist_id": "artist_130",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000390/image_01.png"
+    },
+    {
+      "test_id": "AN000391",
+      "artist_id": "artist_131",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000391/image_01.png"
+    },
+    {
+      "test_id": "AN000392",
+      "artist_id": "artist_131",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000392/image_01.png"
+    },
+    {
+      "test_id": "AN000393",
+      "artist_id": "artist_131",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000393/image_01.png"
+    },
+    {
+      "test_id": "AN000394",
+      "artist_id": "artist_132",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000394/image_01.png"
+    },
+    {
+      "test_id": "AN000395",
+      "artist_id": "artist_132",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000395/image_01.png"
+    },
+    {
+      "test_id": "AN000396",
+      "artist_id": "artist_132",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000396/image_01.png"
+    },
+    {
+      "test_id": "AN000397",
+      "artist_id": "artist_133",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000397/image_01.png"
+    },
+    {
+      "test_id": "AN000398",
+      "artist_id": "artist_133",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000398/image_01.png"
+    },
+    {
+      "test_id": "AN000399",
+      "artist_id": "artist_133",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000399/image_01.png"
+    },
+    {
+      "test_id": "AN000400",
+      "artist_id": "artist_134",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000400/image_01.png"
+    },
+    {
+      "test_id": "AN000401",
+      "artist_id": "artist_134",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000401/image_01.png"
+    },
+    {
+      "test_id": "AN000402",
+      "artist_id": "artist_134",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000402/image_01.png"
+    },
+    {
+      "test_id": "AN000403",
+      "artist_id": "artist_135",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000403/image_01.png"
+    },
+    {
+      "test_id": "AN000404",
+      "artist_id": "artist_135",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000404/image_01.png"
+    },
+    {
+      "test_id": "AN000405",
+      "artist_id": "artist_135",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000405/image_01.png"
+    },
+    {
+      "test_id": "AN000406",
+      "artist_id": "artist_136",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000406/image_01.png"
+    },
+    {
+      "test_id": "AN000407",
+      "artist_id": "artist_136",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000407/image_01.png"
+    },
+    {
+      "test_id": "AN000408",
+      "artist_id": "artist_136",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000408/image_01.png"
+    },
+    {
+      "test_id": "AN000409",
+      "artist_id": "artist_137",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000409/image_01.png"
+    },
+    {
+      "test_id": "AN000410",
+      "artist_id": "artist_137",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000410/image_01.png"
+    },
+    {
+      "test_id": "AN000411",
+      "artist_id": "artist_137",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000411/image_01.png"
+    },
+    {
+      "test_id": "AN000412",
+      "artist_id": "artist_138",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000412/image_01.png"
+    },
+    {
+      "test_id": "AN000413",
+      "artist_id": "artist_138",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000413/image_01.png"
+    },
+    {
+      "test_id": "AN000414",
+      "artist_id": "artist_138",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000414/image_01.png"
+    },
+    {
+      "test_id": "AN000415",
+      "artist_id": "artist_139",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000415/image_01.png"
+    },
+    {
+      "test_id": "AN000416",
+      "artist_id": "artist_139",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000416/image_01.png"
+    },
+    {
+      "test_id": "AN000417",
+      "artist_id": "artist_139",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000417/image_01.png"
+    },
+    {
+      "test_id": "AN000418",
+      "artist_id": "artist_140",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000418/image_01.png"
+    },
+    {
+      "test_id": "AN000419",
+      "artist_id": "artist_140",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000419/image_01.png"
+    },
+    {
+      "test_id": "AN000420",
+      "artist_id": "artist_140",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000420/image_01.png"
+    },
+    {
+      "test_id": "AN000421",
+      "artist_id": "artist_141",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000421/image_01.png"
+    },
+    {
+      "test_id": "AN000422",
+      "artist_id": "artist_141",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000422/image_01.png"
+    },
+    {
+      "test_id": "AN000423",
+      "artist_id": "artist_141",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000423/image_01.png"
+    },
+    {
+      "test_id": "AN000424",
+      "artist_id": "artist_142",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000424/image_01.png"
+    },
+    {
+      "test_id": "AN000425",
+      "artist_id": "artist_142",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000425/image_01.png"
+    },
+    {
+      "test_id": "AN000426",
+      "artist_id": "artist_142",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000426/image_01.png"
+    },
+    {
+      "test_id": "AN000427",
+      "artist_id": "artist_143",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000427/image_01.png"
+    },
+    {
+      "test_id": "AN000428",
+      "artist_id": "artist_143",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000428/image_01.png"
+    },
+    {
+      "test_id": "AN000429",
+      "artist_id": "artist_143",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000429/image_01.png"
+    },
+    {
+      "test_id": "AN000430",
+      "artist_id": "artist_144",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000430/image_01.png"
+    },
+    {
+      "test_id": "AN000431",
+      "artist_id": "artist_144",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000431/image_01.png"
+    },
+    {
+      "test_id": "AN000432",
+      "artist_id": "artist_144",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000432/image_01.png"
+    },
+    {
+      "test_id": "AN000433",
+      "artist_id": "artist_145",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000433/image_01.png"
+    },
+    {
+      "test_id": "AN000434",
+      "artist_id": "artist_145",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000434/image_01.png"
+    },
+    {
+      "test_id": "AN000435",
+      "artist_id": "artist_145",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000435/image_01.png"
+    },
+    {
+      "test_id": "AN000436",
+      "artist_id": "artist_146",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000436/image_01.png"
+    },
+    {
+      "test_id": "AN000437",
+      "artist_id": "artist_146",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000437/image_01.png"
+    },
+    {
+      "test_id": "AN000438",
+      "artist_id": "artist_146",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000438/image_01.png"
+    },
+    {
+      "test_id": "AN000439",
+      "artist_id": "artist_147",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000439/image_01.png"
+    },
+    {
+      "test_id": "AN000440",
+      "artist_id": "artist_147",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000440/image_01.png"
+    },
+    {
+      "test_id": "AN000441",
+      "artist_id": "artist_147",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000441/image_01.png"
+    },
+    {
+      "test_id": "AN000442",
+      "artist_id": "artist_148",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000442/image_01.png"
+    },
+    {
+      "test_id": "AN000443",
+      "artist_id": "artist_148",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000443/image_01.png"
+    },
+    {
+      "test_id": "AN000444",
+      "artist_id": "artist_148",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000444/image_01.png"
+    },
+    {
+      "test_id": "AN000445",
+      "artist_id": "artist_149",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000445/image_01.png"
+    },
+    {
+      "test_id": "AN000446",
+      "artist_id": "artist_149",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000446/image_01.png"
+    },
+    {
+      "test_id": "AN000447",
+      "artist_id": "artist_149",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000447/image_01.png"
+    },
+    {
+      "test_id": "AN000448",
+      "artist_id": "artist_150",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000448/image_01.png"
+    },
+    {
+      "test_id": "AN000449",
+      "artist_id": "artist_150",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000449/image_01.png"
+    },
+    {
+      "test_id": "AN000450",
+      "artist_id": "artist_150",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000450/image_01.png"
+    },
+    {
+      "test_id": "AN000451",
+      "artist_id": "artist_151",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000451/image_01.png"
+    },
+    {
+      "test_id": "AN000452",
+      "artist_id": "artist_151",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000452/image_01.png"
+    },
+    {
+      "test_id": "AN000453",
+      "artist_id": "artist_151",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000453/image_01.png"
+    },
+    {
+      "test_id": "AN000454",
+      "artist_id": "artist_152",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000454/image_01.png"
+    },
+    {
+      "test_id": "AN000455",
+      "artist_id": "artist_152",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000455/image_01.png"
+    },
+    {
+      "test_id": "AN000456",
+      "artist_id": "artist_152",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000456/image_01.png"
+    },
+    {
+      "test_id": "AN000457",
+      "artist_id": "artist_153",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000457/image_01.png"
+    },
+    {
+      "test_id": "AN000458",
+      "artist_id": "artist_153",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000458/image_01.png"
+    },
+    {
+      "test_id": "AN000459",
+      "artist_id": "artist_153",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000459/image_01.png"
+    },
+    {
+      "test_id": "AN000460",
+      "artist_id": "artist_154",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000460/image_01.png"
+    },
+    {
+      "test_id": "AN000461",
+      "artist_id": "artist_154",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000461/image_01.png"
+    },
+    {
+      "test_id": "AN000462",
+      "artist_id": "artist_154",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000462/image_01.png"
+    },
+    {
+      "test_id": "AN000463",
+      "artist_id": "artist_155",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000463/image_01.png"
+    },
+    {
+      "test_id": "AN000464",
+      "artist_id": "artist_155",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000464/image_01.png"
+    },
+    {
+      "test_id": "AN000465",
+      "artist_id": "artist_155",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000465/image_01.png"
+    },
+    {
+      "test_id": "AN000466",
+      "artist_id": "artist_156",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000466/image_01.png"
+    },
+    {
+      "test_id": "AN000467",
+      "artist_id": "artist_156",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000467/image_01.png"
+    },
+    {
+      "test_id": "AN000468",
+      "artist_id": "artist_156",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000468/image_01.png"
+    },
+    {
+      "test_id": "AN000469",
+      "artist_id": "artist_157",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000469/image_01.png"
+    },
+    {
+      "test_id": "AN000470",
+      "artist_id": "artist_157",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000470/image_01.png"
+    },
+    {
+      "test_id": "AN000471",
+      "artist_id": "artist_157",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000471/image_01.png"
+    },
+    {
+      "test_id": "AN000472",
+      "artist_id": "artist_158",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000472/image_01.png"
+    },
+    {
+      "test_id": "AN000473",
+      "artist_id": "artist_158",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000473/image_01.png"
+    },
+    {
+      "test_id": "AN000474",
+      "artist_id": "artist_158",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000474/image_01.png"
+    },
+    {
+      "test_id": "AN000475",
+      "artist_id": "artist_159",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000475/image_01.png"
+    },
+    {
+      "test_id": "AN000476",
+      "artist_id": "artist_159",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000476/image_01.png"
+    },
+    {
+      "test_id": "AN000477",
+      "artist_id": "artist_159",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000477/image_01.png"
+    },
+    {
+      "test_id": "AN000478",
+      "artist_id": "artist_160",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000478/image_01.png"
+    },
+    {
+      "test_id": "AN000479",
+      "artist_id": "artist_160",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000479/image_01.png"
+    },
+    {
+      "test_id": "AN000480",
+      "artist_id": "artist_160",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000480/image_01.png"
+    },
+    {
+      "test_id": "AN000481",
+      "artist_id": "artist_161",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000481/image_01.png"
+    },
+    {
+      "test_id": "AN000482",
+      "artist_id": "artist_161",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000482/image_01.png"
+    },
+    {
+      "test_id": "AN000483",
+      "artist_id": "artist_161",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000483/image_01.png"
+    },
+    {
+      "test_id": "AN000484",
+      "artist_id": "artist_162",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000484/image_01.png"
+    },
+    {
+      "test_id": "AN000485",
+      "artist_id": "artist_162",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000485/image_01.png"
+    },
+    {
+      "test_id": "AN000486",
+      "artist_id": "artist_162",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000486/image_01.png"
+    },
+    {
+      "test_id": "AN000487",
+      "artist_id": "artist_163",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000487/image_01.png"
+    },
+    {
+      "test_id": "AN000488",
+      "artist_id": "artist_163",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000488/image_01.png"
+    },
+    {
+      "test_id": "AN000489",
+      "artist_id": "artist_163",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000489/image_01.png"
+    },
+    {
+      "test_id": "AN000490",
+      "artist_id": "artist_164",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000490/image_01.png"
+    },
+    {
+      "test_id": "AN000491",
+      "artist_id": "artist_164",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000491/image_01.png"
+    },
+    {
+      "test_id": "AN000492",
+      "artist_id": "artist_164",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000492/image_01.png"
+    },
+    {
+      "test_id": "AN000493",
+      "artist_id": "artist_165",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000493/image_01.png"
+    },
+    {
+      "test_id": "AN000494",
+      "artist_id": "artist_165",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000494/image_01.png"
+    },
+    {
+      "test_id": "AN000495",
+      "artist_id": "artist_165",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000495/image_01.png"
+    },
+    {
+      "test_id": "AN000496",
+      "artist_id": "artist_166",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000496/image_01.png"
+    },
+    {
+      "test_id": "AN000497",
+      "artist_id": "artist_166",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000497/image_01.png"
+    },
+    {
+      "test_id": "AN000498",
+      "artist_id": "artist_166",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000498/image_01.png"
+    },
+    {
+      "test_id": "AN000499",
+      "artist_id": "artist_167",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000499/image_01.png"
+    },
+    {
+      "test_id": "AN000500",
+      "artist_id": "artist_167",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000500/image_01.png"
+    },
+    {
+      "test_id": "AN000501",
+      "artist_id": "artist_167",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000501/image_01.png"
+    },
+    {
+      "test_id": "AN000502",
+      "artist_id": "artist_168",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000502/image_01.png"
+    },
+    {
+      "test_id": "AN000503",
+      "artist_id": "artist_168",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000503/image_01.png"
+    },
+    {
+      "test_id": "AN000504",
+      "artist_id": "artist_168",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000504/image_01.png"
+    },
+    {
+      "test_id": "AN000505",
+      "artist_id": "artist_169",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000505/image_01.png"
+    },
+    {
+      "test_id": "AN000506",
+      "artist_id": "artist_169",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000506/image_01.png"
+    },
+    {
+      "test_id": "AN000507",
+      "artist_id": "artist_169",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000507/image_01.png"
+    },
+    {
+      "test_id": "AN000508",
+      "artist_id": "artist_170",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000508/image_01.png"
+    },
+    {
+      "test_id": "AN000509",
+      "artist_id": "artist_170",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000509/image_01.png"
+    },
+    {
+      "test_id": "AN000510",
+      "artist_id": "artist_170",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000510/image_01.png"
+    },
+    {
+      "test_id": "AN000511",
+      "artist_id": "artist_171",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000511/image_01.png"
+    },
+    {
+      "test_id": "AN000512",
+      "artist_id": "artist_171",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000512/image_01.png"
+    },
+    {
+      "test_id": "AN000513",
+      "artist_id": "artist_171",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000513/image_01.png"
+    },
+    {
+      "test_id": "AN000514",
+      "artist_id": "artist_172",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000514/image_01.png"
+    },
+    {
+      "test_id": "AN000515",
+      "artist_id": "artist_172",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000515/image_01.png"
+    },
+    {
+      "test_id": "AN000516",
+      "artist_id": "artist_172",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000516/image_01.png"
+    },
+    {
+      "test_id": "AN000517",
+      "artist_id": "artist_173",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000517/image_01.png"
+    },
+    {
+      "test_id": "AN000518",
+      "artist_id": "artist_173",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000518/image_01.png"
+    },
+    {
+      "test_id": "AN000519",
+      "artist_id": "artist_173",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000519/image_01.png"
+    },
+    {
+      "test_id": "AN000520",
+      "artist_id": "artist_174",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000520/image_01.png"
+    },
+    {
+      "test_id": "AN000521",
+      "artist_id": "artist_174",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000521/image_01.png"
+    },
+    {
+      "test_id": "AN000522",
+      "artist_id": "artist_174",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000522/image_01.png"
+    },
+    {
+      "test_id": "AN000523",
+      "artist_id": "artist_175",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000523/image_01.png"
+    },
+    {
+      "test_id": "AN000524",
+      "artist_id": "artist_175",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000524/image_01.png"
+    },
+    {
+      "test_id": "AN000525",
+      "artist_id": "artist_175",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000525/image_01.png"
+    },
+    {
+      "test_id": "AN000526",
+      "artist_id": "artist_176",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000526/image_01.png"
+    },
+    {
+      "test_id": "AN000527",
+      "artist_id": "artist_176",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000527/image_01.png"
+    },
+    {
+      "test_id": "AN000528",
+      "artist_id": "artist_176",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000528/image_01.png"
+    },
+    {
+      "test_id": "AN000529",
+      "artist_id": "artist_177",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000529/image_01.png"
+    },
+    {
+      "test_id": "AN000530",
+      "artist_id": "artist_177",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000530/image_01.png"
+    },
+    {
+      "test_id": "AN000531",
+      "artist_id": "artist_177",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000531/image_01.png"
+    },
+    {
+      "test_id": "AN000532",
+      "artist_id": "artist_178",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000532/image_01.png"
+    },
+    {
+      "test_id": "AN000533",
+      "artist_id": "artist_178",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000533/image_01.png"
+    },
+    {
+      "test_id": "AN000534",
+      "artist_id": "artist_178",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000534/image_01.png"
+    },
+    {
+      "test_id": "AN000535",
+      "artist_id": "artist_179",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000535/image_01.png"
+    },
+    {
+      "test_id": "AN000536",
+      "artist_id": "artist_179",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000536/image_01.png"
+    },
+    {
+      "test_id": "AN000537",
+      "artist_id": "artist_179",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000537/image_01.png"
+    },
+    {
+      "test_id": "AN000538",
+      "artist_id": "artist_180",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000538/image_01.png"
+    },
+    {
+      "test_id": "AN000539",
+      "artist_id": "artist_180",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000539/image_01.png"
+    },
+    {
+      "test_id": "AN000540",
+      "artist_id": "artist_180",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000540/image_01.png"
+    },
+    {
+      "test_id": "AN000541",
+      "artist_id": "artist_181",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000541/image_01.png"
+    },
+    {
+      "test_id": "AN000542",
+      "artist_id": "artist_181",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000542/image_01.png"
+    },
+    {
+      "test_id": "AN000543",
+      "artist_id": "artist_181",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000543/image_01.png"
+    },
+    {
+      "test_id": "AN000544",
+      "artist_id": "artist_182",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000544/image_01.png"
+    },
+    {
+      "test_id": "AN000545",
+      "artist_id": "artist_182",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000545/image_01.png"
+    },
+    {
+      "test_id": "AN000546",
+      "artist_id": "artist_182",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000546/image_01.png"
+    },
+    {
+      "test_id": "AN000547",
+      "artist_id": "artist_183",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000547/image_01.png"
+    },
+    {
+      "test_id": "AN000548",
+      "artist_id": "artist_183",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000548/image_01.png"
+    },
+    {
+      "test_id": "AN000549",
+      "artist_id": "artist_183",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000549/image_01.png"
+    },
+    {
+      "test_id": "AN000550",
+      "artist_id": "artist_184",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000550/image_01.png"
+    },
+    {
+      "test_id": "AN000551",
+      "artist_id": "artist_184",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000551/image_01.png"
+    },
+    {
+      "test_id": "AN000552",
+      "artist_id": "artist_184",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000552/image_01.png"
+    },
+    {
+      "test_id": "AN000553",
+      "artist_id": "artist_185",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000553/image_01.png"
+    },
+    {
+      "test_id": "AN000554",
+      "artist_id": "artist_185",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000554/image_01.png"
+    },
+    {
+      "test_id": "AN000555",
+      "artist_id": "artist_185",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000555/image_01.png"
+    },
+    {
+      "test_id": "AN000556",
+      "artist_id": "artist_186",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000556/image_01.png"
+    },
+    {
+      "test_id": "AN000557",
+      "artist_id": "artist_186",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000557/image_01.png"
+    },
+    {
+      "test_id": "AN000558",
+      "artist_id": "artist_186",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000558/image_01.png"
+    },
+    {
+      "test_id": "AN000559",
+      "artist_id": "artist_187",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000559/image_01.png"
+    },
+    {
+      "test_id": "AN000560",
+      "artist_id": "artist_187",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000560/image_01.png"
+    },
+    {
+      "test_id": "AN000561",
+      "artist_id": "artist_187",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000561/image_01.png"
+    },
+    {
+      "test_id": "AN000562",
+      "artist_id": "artist_188",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000562/image_01.png"
+    },
+    {
+      "test_id": "AN000563",
+      "artist_id": "artist_188",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000563/image_01.png"
+    },
+    {
+      "test_id": "AN000564",
+      "artist_id": "artist_188",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000564/image_01.png"
+    },
+    {
+      "test_id": "AN000565",
+      "artist_id": "artist_189",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000565/image_01.png"
+    },
+    {
+      "test_id": "AN000566",
+      "artist_id": "artist_189",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000566/image_01.png"
+    },
+    {
+      "test_id": "AN000567",
+      "artist_id": "artist_189",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000567/image_01.png"
+    },
+    {
+      "test_id": "AN000568",
+      "artist_id": "artist_190",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000568/image_01.png"
+    },
+    {
+      "test_id": "AN000569",
+      "artist_id": "artist_190",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000569/image_01.png"
+    },
+    {
+      "test_id": "AN000570",
+      "artist_id": "artist_190",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000570/image_01.png"
+    },
+    {
+      "test_id": "AN000571",
+      "artist_id": "artist_191",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000571/image_01.png"
+    },
+    {
+      "test_id": "AN000572",
+      "artist_id": "artist_191",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000572/image_01.png"
+    },
+    {
+      "test_id": "AN000573",
+      "artist_id": "artist_191",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000573/image_01.png"
+    },
+    {
+      "test_id": "AN000574",
+      "artist_id": "artist_192",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000574/image_01.png"
+    },
+    {
+      "test_id": "AN000575",
+      "artist_id": "artist_192",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000575/image_01.png"
+    },
+    {
+      "test_id": "AN000576",
+      "artist_id": "artist_192",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000576/image_01.png"
+    },
+    {
+      "test_id": "AN000577",
+      "artist_id": "artist_193",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000577/image_01.png"
+    },
+    {
+      "test_id": "AN000578",
+      "artist_id": "artist_193",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000578/image_01.png"
+    },
+    {
+      "test_id": "AN000579",
+      "artist_id": "artist_193",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000579/image_01.png"
+    },
+    {
+      "test_id": "AN000580",
+      "artist_id": "artist_194",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000580/image_01.png"
+    },
+    {
+      "test_id": "AN000581",
+      "artist_id": "artist_194",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000581/image_01.png"
+    },
+    {
+      "test_id": "AN000582",
+      "artist_id": "artist_194",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000582/image_01.png"
+    },
+    {
+      "test_id": "AN000583",
+      "artist_id": "artist_195",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000583/image_01.png"
+    },
+    {
+      "test_id": "AN000584",
+      "artist_id": "artist_195",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000584/image_01.png"
+    },
+    {
+      "test_id": "AN000585",
+      "artist_id": "artist_195",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000585/image_01.png"
+    },
+    {
+      "test_id": "AN000586",
+      "artist_id": "artist_196",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000586/image_01.png"
+    },
+    {
+      "test_id": "AN000587",
+      "artist_id": "artist_196",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000587/image_01.png"
+    },
+    {
+      "test_id": "AN000588",
+      "artist_id": "artist_196",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000588/image_01.png"
+    },
+    {
+      "test_id": "AN000589",
+      "artist_id": "artist_197",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000589/image_01.png"
+    },
+    {
+      "test_id": "AN000590",
+      "artist_id": "artist_197",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000590/image_01.png"
+    },
+    {
+      "test_id": "AN000591",
+      "artist_id": "artist_197",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000591/image_01.png"
+    },
+    {
+      "test_id": "AN000592",
+      "artist_id": "artist_198",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000592/image_01.png"
+    },
+    {
+      "test_id": "AN000593",
+      "artist_id": "artist_198",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000593/image_01.png"
+    },
+    {
+      "test_id": "AN000594",
+      "artist_id": "artist_198",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000594/image_01.png"
+    },
+    {
+      "test_id": "AN000595",
+      "artist_id": "artist_199",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000595/image_01.png"
+    },
+    {
+      "test_id": "AN000596",
+      "artist_id": "artist_199",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000596/image_01.png"
+    },
+    {
+      "test_id": "AN000597",
+      "artist_id": "artist_199",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000597/image_01.png"
+    },
+    {
+      "test_id": "AN000598",
+      "artist_id": "artist_200",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000598/image_01.png"
+    },
+    {
+      "test_id": "AN000599",
+      "artist_id": "artist_200",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000599/image_01.png"
+    },
+    {
+      "test_id": "AN000600",
+      "artist_id": "artist_200",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000600/image_01.png"
+    },
+    {
+      "test_id": "AN000601",
+      "artist_id": "artist_201",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000601/image_01.png"
+    },
+    {
+      "test_id": "AN000602",
+      "artist_id": "artist_201",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000602/image_01.png"
+    },
+    {
+      "test_id": "AN000603",
+      "artist_id": "artist_201",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000603/image_01.png"
+    },
+    {
+      "test_id": "AN000604",
+      "artist_id": "artist_202",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000604/image_01.png"
+    },
+    {
+      "test_id": "AN000605",
+      "artist_id": "artist_202",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000605/image_01.png"
+    },
+    {
+      "test_id": "AN000606",
+      "artist_id": "artist_202",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000606/image_01.png"
+    },
+    {
+      "test_id": "AN000607",
+      "artist_id": "artist_203",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000607/image_01.png"
+    },
+    {
+      "test_id": "AN000608",
+      "artist_id": "artist_203",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000608/image_01.png"
+    },
+    {
+      "test_id": "AN000609",
+      "artist_id": "artist_203",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000609/image_01.png"
+    },
+    {
+      "test_id": "AN000610",
+      "artist_id": "artist_204",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000610/image_01.png"
+    },
+    {
+      "test_id": "AN000611",
+      "artist_id": "artist_204",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000611/image_01.png"
+    },
+    {
+      "test_id": "AN000612",
+      "artist_id": "artist_204",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000612/image_01.png"
+    },
+    {
+      "test_id": "AN000613",
+      "artist_id": "artist_205",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000613/image_01.png"
+    },
+    {
+      "test_id": "AN000614",
+      "artist_id": "artist_205",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000614/image_01.png"
+    },
+    {
+      "test_id": "AN000615",
+      "artist_id": "artist_205",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000615/image_01.png"
+    },
+    {
+      "test_id": "AN000616",
+      "artist_id": "artist_206",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000616/image_01.png"
+    },
+    {
+      "test_id": "AN000617",
+      "artist_id": "artist_206",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000617/image_01.png"
+    },
+    {
+      "test_id": "AN000618",
+      "artist_id": "artist_206",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000618/image_01.png"
+    },
+    {
+      "test_id": "AN000619",
+      "artist_id": "artist_207",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000619/image_01.png"
+    },
+    {
+      "test_id": "AN000620",
+      "artist_id": "artist_207",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000620/image_01.png"
+    },
+    {
+      "test_id": "AN000621",
+      "artist_id": "artist_207",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000621/image_01.png"
+    },
+    {
+      "test_id": "AN000622",
+      "artist_id": "artist_208",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000622/image_01.png"
+    },
+    {
+      "test_id": "AN000623",
+      "artist_id": "artist_208",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000623/image_01.png"
+    },
+    {
+      "test_id": "AN000624",
+      "artist_id": "artist_208",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000624/image_01.png"
+    },
+    {
+      "test_id": "AN000625",
+      "artist_id": "artist_209",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000625/image_01.png"
+    },
+    {
+      "test_id": "AN000626",
+      "artist_id": "artist_209",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000626/image_01.png"
+    },
+    {
+      "test_id": "AN000627",
+      "artist_id": "artist_209",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000627/image_01.png"
+    },
+    {
+      "test_id": "AN000628",
+      "artist_id": "artist_210",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000628/image_01.png"
+    },
+    {
+      "test_id": "AN000629",
+      "artist_id": "artist_210",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000629/image_01.png"
+    },
+    {
+      "test_id": "AN000630",
+      "artist_id": "artist_210",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000630/image_01.png"
+    },
+    {
+      "test_id": "AN000631",
+      "artist_id": "artist_211",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000631/image_01.png"
+    },
+    {
+      "test_id": "AN000632",
+      "artist_id": "artist_211",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000632/image_01.png"
+    },
+    {
+      "test_id": "AN000633",
+      "artist_id": "artist_211",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000633/image_01.png"
+    },
+    {
+      "test_id": "AN000634",
+      "artist_id": "artist_212",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000634/image_01.png"
+    },
+    {
+      "test_id": "AN000635",
+      "artist_id": "artist_212",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000635/image_01.png"
+    },
+    {
+      "test_id": "AN000636",
+      "artist_id": "artist_212",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000636/image_01.png"
+    },
+    {
+      "test_id": "AN000637",
+      "artist_id": "artist_213",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000637/image_01.png"
+    },
+    {
+      "test_id": "AN000638",
+      "artist_id": "artist_213",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000638/image_01.png"
+    },
+    {
+      "test_id": "AN000639",
+      "artist_id": "artist_213",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000639/image_01.png"
+    },
+    {
+      "test_id": "AN000640",
+      "artist_id": "artist_214",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000640/image_01.png"
+    },
+    {
+      "test_id": "AN000641",
+      "artist_id": "artist_214",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000641/image_01.png"
+    },
+    {
+      "test_id": "AN000642",
+      "artist_id": "artist_214",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000642/image_01.png"
+    },
+    {
+      "test_id": "AN000643",
+      "artist_id": "artist_215",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000643/image_01.png"
+    },
+    {
+      "test_id": "AN000644",
+      "artist_id": "artist_215",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000644/image_01.png"
+    },
+    {
+      "test_id": "AN000645",
+      "artist_id": "artist_215",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000645/image_01.png"
+    },
+    {
+      "test_id": "AN000646",
+      "artist_id": "artist_216",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000646/image_01.png"
+    },
+    {
+      "test_id": "AN000647",
+      "artist_id": "artist_216",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000647/image_01.png"
+    },
+    {
+      "test_id": "AN000648",
+      "artist_id": "artist_216",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000648/image_01.png"
+    },
+    {
+      "test_id": "AN000649",
+      "artist_id": "artist_217",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000649/image_01.png"
+    },
+    {
+      "test_id": "AN000650",
+      "artist_id": "artist_217",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000650/image_01.png"
+    },
+    {
+      "test_id": "AN000651",
+      "artist_id": "artist_217",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000651/image_01.png"
+    },
+    {
+      "test_id": "AN000652",
+      "artist_id": "artist_218",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000652/image_01.png"
+    },
+    {
+      "test_id": "AN000653",
+      "artist_id": "artist_218",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000653/image_01.png"
+    },
+    {
+      "test_id": "AN000654",
+      "artist_id": "artist_218",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000654/image_01.png"
+    },
+    {
+      "test_id": "AN000655",
+      "artist_id": "artist_219",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000655/image_01.png"
+    },
+    {
+      "test_id": "AN000656",
+      "artist_id": "artist_219",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000656/image_01.png"
+    },
+    {
+      "test_id": "AN000657",
+      "artist_id": "artist_219",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000657/image_01.png"
+    },
+    {
+      "test_id": "AN000658",
+      "artist_id": "artist_220",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000658/image_01.png"
+    },
+    {
+      "test_id": "AN000659",
+      "artist_id": "artist_220",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000659/image_01.png"
+    },
+    {
+      "test_id": "AN000660",
+      "artist_id": "artist_220",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000660/image_01.png"
+    },
+    {
+      "test_id": "AN000661",
+      "artist_id": "artist_221",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000661/image_01.png"
+    },
+    {
+      "test_id": "AN000662",
+      "artist_id": "artist_221",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000662/image_01.png"
+    },
+    {
+      "test_id": "AN000663",
+      "artist_id": "artist_221",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000663/image_01.png"
+    },
+    {
+      "test_id": "AN000664",
+      "artist_id": "artist_222",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000664/image_01.png"
+    },
+    {
+      "test_id": "AN000665",
+      "artist_id": "artist_222",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000665/image_01.png"
+    },
+    {
+      "test_id": "AN000666",
+      "artist_id": "artist_222",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000666/image_01.png"
+    },
+    {
+      "test_id": "AN000667",
+      "artist_id": "artist_223",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000667/image_01.png"
+    },
+    {
+      "test_id": "AN000668",
+      "artist_id": "artist_223",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000668/image_01.png"
+    },
+    {
+      "test_id": "AN000669",
+      "artist_id": "artist_223",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000669/image_01.png"
+    },
+    {
+      "test_id": "AN000670",
+      "artist_id": "artist_224",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000670/image_01.png"
+    },
+    {
+      "test_id": "AN000671",
+      "artist_id": "artist_224",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000671/image_01.png"
+    },
+    {
+      "test_id": "AN000672",
+      "artist_id": "artist_224",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000672/image_01.png"
+    },
+    {
+      "test_id": "AN000673",
+      "artist_id": "artist_225",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000673/image_01.png"
+    },
+    {
+      "test_id": "AN000674",
+      "artist_id": "artist_225",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000674/image_01.png"
+    },
+    {
+      "test_id": "AN000675",
+      "artist_id": "artist_225",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000675/image_01.png"
+    },
+    {
+      "test_id": "AN000676",
+      "artist_id": "artist_226",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000676/image_01.png"
+    },
+    {
+      "test_id": "AN000677",
+      "artist_id": "artist_226",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000677/image_01.png"
+    },
+    {
+      "test_id": "AN000678",
+      "artist_id": "artist_226",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000678/image_01.png"
+    },
+    {
+      "test_id": "AN000679",
+      "artist_id": "artist_227",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000679/image_01.png"
+    },
+    {
+      "test_id": "AN000680",
+      "artist_id": "artist_227",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000680/image_01.png"
+    },
+    {
+      "test_id": "AN000681",
+      "artist_id": "artist_227",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000681/image_01.png"
+    },
+    {
+      "test_id": "AN000682",
+      "artist_id": "artist_228",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000682/image_01.png"
+    },
+    {
+      "test_id": "AN000683",
+      "artist_id": "artist_228",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000683/image_01.png"
+    },
+    {
+      "test_id": "AN000684",
+      "artist_id": "artist_228",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000684/image_01.png"
+    },
+    {
+      "test_id": "AN000685",
+      "artist_id": "artist_229",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000685/image_01.png"
+    },
+    {
+      "test_id": "AN000686",
+      "artist_id": "artist_229",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000686/image_01.png"
+    },
+    {
+      "test_id": "AN000687",
+      "artist_id": "artist_229",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000687/image_01.png"
+    },
+    {
+      "test_id": "AN000688",
+      "artist_id": "artist_230",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000688/image_01.png"
+    },
+    {
+      "test_id": "AN000689",
+      "artist_id": "artist_230",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000689/image_01.png"
+    },
+    {
+      "test_id": "AN000690",
+      "artist_id": "artist_230",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000690/image_01.png"
+    },
+    {
+      "test_id": "AN000691",
+      "artist_id": "artist_231",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000691/image_01.png"
+    },
+    {
+      "test_id": "AN000692",
+      "artist_id": "artist_231",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000692/image_01.png"
+    },
+    {
+      "test_id": "AN000693",
+      "artist_id": "artist_231",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000693/image_01.png"
+    },
+    {
+      "test_id": "AN000694",
+      "artist_id": "artist_232",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000694/image_01.png"
+    },
+    {
+      "test_id": "AN000695",
+      "artist_id": "artist_232",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000695/image_01.png"
+    },
+    {
+      "test_id": "AN000696",
+      "artist_id": "artist_232",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000696/image_01.png"
+    },
+    {
+      "test_id": "AN000697",
+      "artist_id": "artist_233",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000697/image_01.png"
+    },
+    {
+      "test_id": "AN000698",
+      "artist_id": "artist_233",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000698/image_01.png"
+    },
+    {
+      "test_id": "AN000699",
+      "artist_id": "artist_233",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000699/image_01.png"
+    },
+    {
+      "test_id": "AN000700",
+      "artist_id": "artist_234",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000700/image_01.png"
+    },
+    {
+      "test_id": "AN000701",
+      "artist_id": "artist_234",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000701/image_01.png"
+    },
+    {
+      "test_id": "AN000702",
+      "artist_id": "artist_234",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000702/image_01.png"
+    },
+    {
+      "test_id": "AN000703",
+      "artist_id": "artist_235",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000703/image_01.png"
+    },
+    {
+      "test_id": "AN000704",
+      "artist_id": "artist_235",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000704/image_01.png"
+    },
+    {
+      "test_id": "AN000705",
+      "artist_id": "artist_235",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000705/image_01.png"
+    },
+    {
+      "test_id": "AN000706",
+      "artist_id": "artist_236",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000706/image_01.png"
+    },
+    {
+      "test_id": "AN000707",
+      "artist_id": "artist_236",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000707/image_01.png"
+    },
+    {
+      "test_id": "AN000708",
+      "artist_id": "artist_236",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000708/image_01.png"
+    },
+    {
+      "test_id": "AN000709",
+      "artist_id": "artist_237",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000709/image_01.png"
+    },
+    {
+      "test_id": "AN000710",
+      "artist_id": "artist_237",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000710/image_01.png"
+    },
+    {
+      "test_id": "AN000711",
+      "artist_id": "artist_237",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000711/image_01.png"
+    },
+    {
+      "test_id": "AN000712",
+      "artist_id": "artist_238",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000712/image_01.png"
+    },
+    {
+      "test_id": "AN000713",
+      "artist_id": "artist_238",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000713/image_01.png"
+    },
+    {
+      "test_id": "AN000714",
+      "artist_id": "artist_238",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000714/image_01.png"
+    },
+    {
+      "test_id": "AN000715",
+      "artist_id": "artist_239",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000715/image_01.png"
+    },
+    {
+      "test_id": "AN000716",
+      "artist_id": "artist_239",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000716/image_01.png"
+    },
+    {
+      "test_id": "AN000717",
+      "artist_id": "artist_239",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000717/image_01.png"
+    },
+    {
+      "test_id": "AN000718",
+      "artist_id": "artist_240",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000718/image_01.png"
+    },
+    {
+      "test_id": "AN000719",
+      "artist_id": "artist_240",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000719/image_01.png"
+    },
+    {
+      "test_id": "AN000720",
+      "artist_id": "artist_240",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000720/image_01.png"
+    },
+    {
+      "test_id": "AN000721",
+      "artist_id": "artist_241",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000721/image_01.png"
+    },
+    {
+      "test_id": "AN000722",
+      "artist_id": "artist_241",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000722/image_01.png"
+    },
+    {
+      "test_id": "AN000723",
+      "artist_id": "artist_241",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000723/image_01.png"
+    },
+    {
+      "test_id": "AN000724",
+      "artist_id": "artist_242",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000724/image_01.png"
+    },
+    {
+      "test_id": "AN000725",
+      "artist_id": "artist_242",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000725/image_01.png"
+    },
+    {
+      "test_id": "AN000726",
+      "artist_id": "artist_242",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000726/image_01.png"
+    },
+    {
+      "test_id": "AN000727",
+      "artist_id": "artist_243",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000727/image_01.png"
+    },
+    {
+      "test_id": "AN000728",
+      "artist_id": "artist_243",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000728/image_01.png"
+    },
+    {
+      "test_id": "AN000729",
+      "artist_id": "artist_243",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000729/image_01.png"
+    },
+    {
+      "test_id": "AN000730",
+      "artist_id": "artist_244",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000730/image_01.png"
+    },
+    {
+      "test_id": "AN000731",
+      "artist_id": "artist_244",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000731/image_01.png"
+    },
+    {
+      "test_id": "AN000732",
+      "artist_id": "artist_244",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000732/image_01.png"
+    },
+    {
+      "test_id": "AN000733",
+      "artist_id": "artist_245",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000733/image_01.png"
+    },
+    {
+      "test_id": "AN000734",
+      "artist_id": "artist_245",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000734/image_01.png"
+    },
+    {
+      "test_id": "AN000735",
+      "artist_id": "artist_245",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000735/image_01.png"
+    },
+    {
+      "test_id": "AN000736",
+      "artist_id": "artist_246",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000736/image_01.png"
+    },
+    {
+      "test_id": "AN000737",
+      "artist_id": "artist_246",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000737/image_01.png"
+    },
+    {
+      "test_id": "AN000738",
+      "artist_id": "artist_246",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000738/image_01.png"
+    },
+    {
+      "test_id": "AN000739",
+      "artist_id": "artist_247",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000739/image_01.png"
+    },
+    {
+      "test_id": "AN000740",
+      "artist_id": "artist_247",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000740/image_01.png"
+    },
+    {
+      "test_id": "AN000741",
+      "artist_id": "artist_247",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000741/image_01.png"
+    },
+    {
+      "test_id": "AN000742",
+      "artist_id": "artist_248",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000742/image_01.png"
+    },
+    {
+      "test_id": "AN000743",
+      "artist_id": "artist_248",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000743/image_01.png"
+    },
+    {
+      "test_id": "AN000744",
+      "artist_id": "artist_248",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000744/image_01.png"
+    },
+    {
+      "test_id": "AN000745",
+      "artist_id": "artist_249",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000745/image_01.png"
+    },
+    {
+      "test_id": "AN000746",
+      "artist_id": "artist_249",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000746/image_01.png"
+    },
+    {
+      "test_id": "AN000747",
+      "artist_id": "artist_249",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000747/image_01.png"
+    },
+    {
+      "test_id": "AN000748",
+      "artist_id": "artist_250",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000748/image_01.png"
+    },
+    {
+      "test_id": "AN000749",
+      "artist_id": "artist_250",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000749/image_01.png"
+    },
+    {
+      "test_id": "AN000750",
+      "artist_id": "artist_250",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000750/image_01.png"
+    },
+    {
+      "test_id": "AN000751",
+      "artist_id": "artist_251",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000751/image_01.png"
+    },
+    {
+      "test_id": "AN000752",
+      "artist_id": "artist_251",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000752/image_01.png"
+    },
+    {
+      "test_id": "AN000753",
+      "artist_id": "artist_251",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000753/image_01.png"
+    },
+    {
+      "test_id": "AN000754",
+      "artist_id": "artist_252",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000754/image_01.png"
+    },
+    {
+      "test_id": "AN000755",
+      "artist_id": "artist_252",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000755/image_01.png"
+    },
+    {
+      "test_id": "AN000756",
+      "artist_id": "artist_252",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000756/image_01.png"
+    },
+    {
+      "test_id": "AN000757",
+      "artist_id": "artist_253",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000757/image_01.png"
+    },
+    {
+      "test_id": "AN000758",
+      "artist_id": "artist_253",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000758/image_01.png"
+    },
+    {
+      "test_id": "AN000759",
+      "artist_id": "artist_253",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000759/image_01.png"
+    },
+    {
+      "test_id": "AN000760",
+      "artist_id": "artist_254",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000760/image_01.png"
+    },
+    {
+      "test_id": "AN000761",
+      "artist_id": "artist_254",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000761/image_01.png"
+    },
+    {
+      "test_id": "AN000762",
+      "artist_id": "artist_254",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000762/image_01.png"
+    },
+    {
+      "test_id": "AN000763",
+      "artist_id": "artist_255",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000763/image_01.png"
+    },
+    {
+      "test_id": "AN000764",
+      "artist_id": "artist_255",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000764/image_01.png"
+    },
+    {
+      "test_id": "AN000765",
+      "artist_id": "artist_255",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000765/image_01.png"
+    },
+    {
+      "test_id": "AN000766",
+      "artist_id": "artist_256",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000766/image_01.png"
+    },
+    {
+      "test_id": "AN000767",
+      "artist_id": "artist_256",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000767/image_01.png"
+    },
+    {
+      "test_id": "AN000768",
+      "artist_id": "artist_256",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000768/image_01.png"
+    },
+    {
+      "test_id": "AN000769",
+      "artist_id": "artist_257",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000769/image_01.png"
+    },
+    {
+      "test_id": "AN000770",
+      "artist_id": "artist_257",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000770/image_01.png"
+    },
+    {
+      "test_id": "AN000771",
+      "artist_id": "artist_257",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000771/image_01.png"
+    },
+    {
+      "test_id": "AN000772",
+      "artist_id": "artist_258",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000772/image_01.png"
+    },
+    {
+      "test_id": "AN000773",
+      "artist_id": "artist_258",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000773/image_01.png"
+    },
+    {
+      "test_id": "AN000774",
+      "artist_id": "artist_258",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000774/image_01.png"
+    },
+    {
+      "test_id": "AN000775",
+      "artist_id": "artist_259",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000775/image_01.png"
+    },
+    {
+      "test_id": "AN000776",
+      "artist_id": "artist_259",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000776/image_01.png"
+    },
+    {
+      "test_id": "AN000777",
+      "artist_id": "artist_259",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000777/image_01.png"
+    },
+    {
+      "test_id": "AN000778",
+      "artist_id": "artist_260",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000778/image_01.png"
+    },
+    {
+      "test_id": "AN000779",
+      "artist_id": "artist_260",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000779/image_01.png"
+    },
+    {
+      "test_id": "AN000780",
+      "artist_id": "artist_260",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000780/image_01.png"
+    },
+    {
+      "test_id": "AN000781",
+      "artist_id": "artist_261",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000781/image_01.png"
+    },
+    {
+      "test_id": "AN000782",
+      "artist_id": "artist_261",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000782/image_01.png"
+    },
+    {
+      "test_id": "AN000783",
+      "artist_id": "artist_261",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000783/image_01.png"
+    },
+    {
+      "test_id": "AN000784",
+      "artist_id": "artist_262",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000784/image_01.png"
+    },
+    {
+      "test_id": "AN000785",
+      "artist_id": "artist_262",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000785/image_01.png"
+    },
+    {
+      "test_id": "AN000786",
+      "artist_id": "artist_262",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000786/image_01.png"
+    },
+    {
+      "test_id": "AN000787",
+      "artist_id": "artist_263",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000787/image_01.png"
+    },
+    {
+      "test_id": "AN000788",
+      "artist_id": "artist_263",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000788/image_01.png"
+    },
+    {
+      "test_id": "AN000789",
+      "artist_id": "artist_263",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000789/image_01.png"
+    },
+    {
+      "test_id": "AN000790",
+      "artist_id": "artist_264",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000790/image_01.png"
+    },
+    {
+      "test_id": "AN000791",
+      "artist_id": "artist_264",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000791/image_01.png"
+    },
+    {
+      "test_id": "AN000792",
+      "artist_id": "artist_264",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000792/image_01.png"
+    },
+    {
+      "test_id": "AN000793",
+      "artist_id": "artist_265",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000793/image_01.png"
+    },
+    {
+      "test_id": "AN000794",
+      "artist_id": "artist_265",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000794/image_01.png"
+    },
+    {
+      "test_id": "AN000795",
+      "artist_id": "artist_265",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000795/image_01.png"
+    },
+    {
+      "test_id": "AN000796",
+      "artist_id": "artist_266",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000796/image_01.png"
+    },
+    {
+      "test_id": "AN000797",
+      "artist_id": "artist_266",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000797/image_01.png"
+    },
+    {
+      "test_id": "AN000798",
+      "artist_id": "artist_266",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000798/image_01.png"
+    },
+    {
+      "test_id": "AN000799",
+      "artist_id": "artist_267",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000799/image_01.png"
+    },
+    {
+      "test_id": "AN000800",
+      "artist_id": "artist_267",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000800/image_01.png"
+    },
+    {
+      "test_id": "AN000801",
+      "artist_id": "artist_267",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000801/image_01.png"
+    },
+    {
+      "test_id": "AN000802",
+      "artist_id": "artist_268",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000802/image_01.png"
+    },
+    {
+      "test_id": "AN000803",
+      "artist_id": "artist_268",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000803/image_01.png"
+    },
+    {
+      "test_id": "AN000804",
+      "artist_id": "artist_268",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000804/image_01.png"
+    },
+    {
+      "test_id": "AN000805",
+      "artist_id": "artist_269",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000805/image_01.png"
+    },
+    {
+      "test_id": "AN000806",
+      "artist_id": "artist_269",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000806/image_01.png"
+    },
+    {
+      "test_id": "AN000807",
+      "artist_id": "artist_269",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000807/image_01.png"
+    },
+    {
+      "test_id": "AN000808",
+      "artist_id": "artist_270",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000808/image_01.png"
+    },
+    {
+      "test_id": "AN000809",
+      "artist_id": "artist_270",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000809/image_01.png"
+    },
+    {
+      "test_id": "AN000810",
+      "artist_id": "artist_270",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000810/image_01.png"
+    },
+    {
+      "test_id": "AN000811",
+      "artist_id": "artist_271",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000811/image_01.png"
+    },
+    {
+      "test_id": "AN000812",
+      "artist_id": "artist_271",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000812/image_01.png"
+    },
+    {
+      "test_id": "AN000813",
+      "artist_id": "artist_271",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000813/image_01.png"
+    },
+    {
+      "test_id": "AN000814",
+      "artist_id": "artist_272",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000814/image_01.png"
+    },
+    {
+      "test_id": "AN000815",
+      "artist_id": "artist_272",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000815/image_01.png"
+    },
+    {
+      "test_id": "AN000816",
+      "artist_id": "artist_272",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000816/image_01.png"
+    },
+    {
+      "test_id": "AN000817",
+      "artist_id": "artist_273",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000817/image_01.png"
+    },
+    {
+      "test_id": "AN000818",
+      "artist_id": "artist_273",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000818/image_01.png"
+    },
+    {
+      "test_id": "AN000819",
+      "artist_id": "artist_273",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000819/image_01.png"
+    },
+    {
+      "test_id": "AN000820",
+      "artist_id": "artist_274",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000820/image_01.png"
+    },
+    {
+      "test_id": "AN000821",
+      "artist_id": "artist_274",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000821/image_01.png"
+    },
+    {
+      "test_id": "AN000822",
+      "artist_id": "artist_274",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000822/image_01.png"
+    },
+    {
+      "test_id": "AN000823",
+      "artist_id": "artist_275",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000823/image_01.png"
+    },
+    {
+      "test_id": "AN000824",
+      "artist_id": "artist_275",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000824/image_01.png"
+    },
+    {
+      "test_id": "AN000825",
+      "artist_id": "artist_275",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000825/image_01.png"
+    },
+    {
+      "test_id": "AN000826",
+      "artist_id": "artist_276",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000826/image_01.png"
+    },
+    {
+      "test_id": "AN000827",
+      "artist_id": "artist_276",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000827/image_01.png"
+    },
+    {
+      "test_id": "AN000828",
+      "artist_id": "artist_276",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000828/image_01.png"
+    },
+    {
+      "test_id": "AN000829",
+      "artist_id": "artist_277",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000829/image_01.png"
+    },
+    {
+      "test_id": "AN000830",
+      "artist_id": "artist_277",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000830/image_01.png"
+    },
+    {
+      "test_id": "AN000831",
+      "artist_id": "artist_277",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000831/image_01.png"
+    },
+    {
+      "test_id": "AN000832",
+      "artist_id": "artist_278",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000832/image_01.png"
+    },
+    {
+      "test_id": "AN000833",
+      "artist_id": "artist_278",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000833/image_01.png"
+    },
+    {
+      "test_id": "AN000834",
+      "artist_id": "artist_278",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000834/image_01.png"
+    },
+    {
+      "test_id": "AN000835",
+      "artist_id": "artist_279",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000835/image_01.png"
+    },
+    {
+      "test_id": "AN000836",
+      "artist_id": "artist_279",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000836/image_01.png"
+    },
+    {
+      "test_id": "AN000837",
+      "artist_id": "artist_279",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000837/image_01.png"
+    },
+    {
+      "test_id": "AN000838",
+      "artist_id": "artist_280",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000838/image_01.png"
+    },
+    {
+      "test_id": "AN000839",
+      "artist_id": "artist_280",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000839/image_01.png"
+    },
+    {
+      "test_id": "AN000840",
+      "artist_id": "artist_280",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000840/image_01.png"
+    },
+    {
+      "test_id": "AN000841",
+      "artist_id": "artist_281",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000841/image_01.png"
+    },
+    {
+      "test_id": "AN000842",
+      "artist_id": "artist_281",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000842/image_01.png"
+    },
+    {
+      "test_id": "AN000843",
+      "artist_id": "artist_281",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000843/image_01.png"
+    },
+    {
+      "test_id": "AN000844",
+      "artist_id": "artist_282",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000844/image_01.png"
+    },
+    {
+      "test_id": "AN000845",
+      "artist_id": "artist_282",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000845/image_01.png"
+    },
+    {
+      "test_id": "AN000846",
+      "artist_id": "artist_282",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000846/image_01.png"
+    },
+    {
+      "test_id": "AN000847",
+      "artist_id": "artist_283",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000847/image_01.png"
+    },
+    {
+      "test_id": "AN000848",
+      "artist_id": "artist_283",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000848/image_01.png"
+    },
+    {
+      "test_id": "AN000849",
+      "artist_id": "artist_283",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000849/image_01.png"
+    },
+    {
+      "test_id": "AN000850",
+      "artist_id": "artist_284",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000850/image_01.png"
+    },
+    {
+      "test_id": "AN000851",
+      "artist_id": "artist_284",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000851/image_01.png"
+    },
+    {
+      "test_id": "AN000852",
+      "artist_id": "artist_284",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000852/image_01.png"
+    },
+    {
+      "test_id": "AN000853",
+      "artist_id": "artist_285",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000853/image_01.png"
+    },
+    {
+      "test_id": "AN000854",
+      "artist_id": "artist_285",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000854/image_01.png"
+    },
+    {
+      "test_id": "AN000855",
+      "artist_id": "artist_285",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000855/image_01.png"
+    },
+    {
+      "test_id": "AN000856",
+      "artist_id": "artist_286",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000856/image_01.png"
+    },
+    {
+      "test_id": "AN000857",
+      "artist_id": "artist_286",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000857/image_01.png"
+    },
+    {
+      "test_id": "AN000858",
+      "artist_id": "artist_286",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000858/image_01.png"
+    },
+    {
+      "test_id": "AN000859",
+      "artist_id": "artist_287",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000859/image_01.png"
+    },
+    {
+      "test_id": "AN000860",
+      "artist_id": "artist_287",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000860/image_01.png"
+    },
+    {
+      "test_id": "AN000861",
+      "artist_id": "artist_287",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000861/image_01.png"
+    },
+    {
+      "test_id": "AN000862",
+      "artist_id": "artist_288",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000862/image_01.png"
+    },
+    {
+      "test_id": "AN000863",
+      "artist_id": "artist_288",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000863/image_01.png"
+    },
+    {
+      "test_id": "AN000864",
+      "artist_id": "artist_288",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000864/image_01.png"
+    },
+    {
+      "test_id": "AN000865",
+      "artist_id": "artist_289",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000865/image_01.png"
+    },
+    {
+      "test_id": "AN000866",
+      "artist_id": "artist_289",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000866/image_01.png"
+    },
+    {
+      "test_id": "AN000867",
+      "artist_id": "artist_289",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000867/image_01.png"
+    },
+    {
+      "test_id": "AN000868",
+      "artist_id": "artist_290",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000868/image_01.png"
+    },
+    {
+      "test_id": "AN000869",
+      "artist_id": "artist_290",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000869/image_01.png"
+    },
+    {
+      "test_id": "AN000870",
+      "artist_id": "artist_290",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000870/image_01.png"
+    },
+    {
+      "test_id": "AN000871",
+      "artist_id": "artist_291",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000871/image_01.png"
+    },
+    {
+      "test_id": "AN000872",
+      "artist_id": "artist_291",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000872/image_01.png"
+    },
+    {
+      "test_id": "AN000873",
+      "artist_id": "artist_291",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000873/image_01.png"
+    },
+    {
+      "test_id": "AN000874",
+      "artist_id": "artist_292",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000874/image_01.png"
+    },
+    {
+      "test_id": "AN000875",
+      "artist_id": "artist_292",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000875/image_01.png"
+    },
+    {
+      "test_id": "AN000876",
+      "artist_id": "artist_292",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000876/image_01.png"
+    },
+    {
+      "test_id": "AN000877",
+      "artist_id": "artist_293",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000877/image_01.png"
+    },
+    {
+      "test_id": "AN000878",
+      "artist_id": "artist_293",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000878/image_01.png"
+    },
+    {
+      "test_id": "AN000879",
+      "artist_id": "artist_293",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000879/image_01.png"
+    },
+    {
+      "test_id": "AN000880",
+      "artist_id": "artist_294",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000880/image_01.png"
+    },
+    {
+      "test_id": "AN000881",
+      "artist_id": "artist_294",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000881/image_01.png"
+    },
+    {
+      "test_id": "AN000882",
+      "artist_id": "artist_294",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000882/image_01.png"
+    },
+    {
+      "test_id": "AN000883",
+      "artist_id": "artist_295",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000883/image_01.png"
+    },
+    {
+      "test_id": "AN000884",
+      "artist_id": "artist_295",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000884/image_01.png"
+    },
+    {
+      "test_id": "AN000885",
+      "artist_id": "artist_295",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000885/image_01.png"
+    },
+    {
+      "test_id": "AN000886",
+      "artist_id": "artist_296",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000886/image_01.png"
+    },
+    {
+      "test_id": "AN000887",
+      "artist_id": "artist_296",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000887/image_01.png"
+    },
+    {
+      "test_id": "AN000888",
+      "artist_id": "artist_296",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000888/image_01.png"
+    },
+    {
+      "test_id": "AN000889",
+      "artist_id": "artist_297",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000889/image_01.png"
+    },
+    {
+      "test_id": "AN000890",
+      "artist_id": "artist_297",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000890/image_01.png"
+    },
+    {
+      "test_id": "AN000891",
+      "artist_id": "artist_297",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000891/image_01.png"
+    },
+    {
+      "test_id": "AN000892",
+      "artist_id": "artist_298",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000892/image_01.png"
+    },
+    {
+      "test_id": "AN000893",
+      "artist_id": "artist_298",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000893/image_01.png"
+    },
+    {
+      "test_id": "AN000894",
+      "artist_id": "artist_298",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000894/image_01.png"
+    },
+    {
+      "test_id": "AN000895",
+      "artist_id": "artist_299",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000895/image_01.png"
+    },
+    {
+      "test_id": "AN000896",
+      "artist_id": "artist_299",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000896/image_01.png"
+    },
+    {
+      "test_id": "AN000897",
+      "artist_id": "artist_299",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000897/image_01.png"
+    },
+    {
+      "test_id": "AN000898",
+      "artist_id": "artist_300",
+      "seed": 1001,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000898/image_01.png"
+    },
+    {
+      "test_id": "AN000899",
+      "artist_id": "artist_300",
+      "seed": 2002,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000899/image_01.png"
+    },
+    {
+      "test_id": "AN000900",
+      "artist_id": "artist_300",
+      "seed": 3003,
+      "image_path": "tests/reports/artist_native_screen_v0_7/runs/AN000900/image_01.png"
+    }
+  ]
+}

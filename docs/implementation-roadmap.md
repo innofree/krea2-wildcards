@@ -17,7 +17,7 @@ report.
 
 | Target | Current | Required |
 | --- | ---: | ---: |
-| Approved style packs | 138 | 150 |
+| Approved style packs | 150 | 150 |
 | Approved artist visual signatures | 0 | 200 |
 | Character-design items | 400 | 400 |
 | Pose and camera items | 600 | 600 |
@@ -26,11 +26,11 @@ report.
 | Total catalog items | 3,750 | 3,750 |
 
 The initial five styles completed five-seed family-compatible evaluation and production deployment.
-Subsequent v0.7 through v0.9.4 screens and two-seed extensions raised the catalog to 138 approved
-style packs. Twelve additional approvals remain before the 150-style completion criterion.
+Subsequent bounded screens and two-seed extensions raised the catalog to exactly 150 approved style
+packs. Every approval has five distinct seeds and zero critical failures.
 The 3,700 expansion entries are intentionally `generated`: exact content counts are complete, but
 none is eligible for production until the three-seed screen and five-distinct-seed approval gate.
-The strict completion evaluator currently passes 4 of 16 cross-checked criteria. It counts every
+The strict completion evaluator currently passes 5 of 16 cross-checked criteria. It counts every
 initial-scale category directly, requires the release security stages, rejects stale duplicate and
 deployment evidence, and cannot treat a three-seed item as approved.
 
@@ -73,11 +73,10 @@ The 45-style, three-seed screen and the 16-style extension are independently ver
 The 16 candidates completed seeds 4004 and 5005 and were approved only after five-seed aggregation;
 no item was approved from only three seeds.
 
-The v0.7 expansion and v0.8 refill cycles raised the approved style-pack total to 117. The remaining
-54 rejected candidates use a persistent retry prompt profile. Representative v0.9.3 calibration
-covered the last weak surface treatments, and the separate v0.9.4 official screen advanced 22 of
-54 candidates to testing. Their two-seed extension produced exactly five distinct seeds per style:
-21 were approved and one was rejected after its halo became unstable. The total is now 138.
+The v0.7 expansion and later refill cycles raised the approved style-pack total to 150. The final
+v0.10.2 official screen kept four candidates in testing and rejected four; its two-seed extension
+produced exactly five distinct seeds for all four candidates, and all four passed with zero critical
+failures. Rejected alternatives remain quarantined and cannot enter the approved-only runtime.
 
 The first expansion attempt exposed two invalid experimental designs. Twenty images made with a
 multi-subject/crop-conflicting template are quarantined as invalid-template evidence. A later
@@ -106,11 +105,12 @@ registered and referenced by the expansion blueprints.
 
 A pinned CC0 Anima tagger-artifact snapshot now supplies 300 deterministic canonical artist tag
 identities and post-count evidence. Identity evidence is deliberately separated from style evidence:
-all registry signatures remain pending until native Krea observation. The candidate signature
-structure has exactly eight axes—linework, face, eyes, body, palette, light/shading, framing, and
-ornament—and no source tag is treated as proof of those visual properties. A generic resolved-prompt
-runner and a 300-artist × 3-seed native-name matrix provide queue-guarded, resumable observation
-without storing server or account data.
+no source tag is treated as proof of visual properties. The queue-guarded 300-artist × 3-seed
+native-name matrix completed 900 verified 1024×1024 runs. Thirty contact sheets were reviewed in
+three exact partitions, then merged and checked against the full identity deny-list. All 300 registry
+records now contain name-free observations on exactly eight axes—linework, face, eyes, body, palette,
+light/shading, framing, and ornament. Of these, 172 were stable across the three seeds and 128 were
+conservatively marked unstable. No server or account data is stored in the evidence.
 
 ### E. Atomic content expansion
 

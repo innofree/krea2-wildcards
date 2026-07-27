@@ -1,0 +1,6327 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/artist_native_name.jsonl",
+  "matrix_sha256": "11d5afda1d1d048047c96f00a4281f15e81e447c14ba47c519b18042ad64e9cc",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "job_count": 900,
+  "completed_count": 900,
+  "style_count": 300,
+  "modes": {
+    "native_name": 900
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/artist_native_screen_v0_7/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "AN000001",
+      "style_id": "artist_001",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000001/run.json"
+    },
+    {
+      "test_id": "AN000002",
+      "style_id": "artist_001",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000002/run.json"
+    },
+    {
+      "test_id": "AN000003",
+      "style_id": "artist_001",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000003/run.json"
+    },
+    {
+      "test_id": "AN000004",
+      "style_id": "artist_002",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000004/run.json"
+    },
+    {
+      "test_id": "AN000005",
+      "style_id": "artist_002",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000005/run.json"
+    },
+    {
+      "test_id": "AN000006",
+      "style_id": "artist_002",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000006/run.json"
+    },
+    {
+      "test_id": "AN000007",
+      "style_id": "artist_003",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000007/run.json"
+    },
+    {
+      "test_id": "AN000008",
+      "style_id": "artist_003",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000008/run.json"
+    },
+    {
+      "test_id": "AN000009",
+      "style_id": "artist_003",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000009/run.json"
+    },
+    {
+      "test_id": "AN000010",
+      "style_id": "artist_004",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000010/run.json"
+    },
+    {
+      "test_id": "AN000011",
+      "style_id": "artist_004",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000011/run.json"
+    },
+    {
+      "test_id": "AN000012",
+      "style_id": "artist_004",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000012/run.json"
+    },
+    {
+      "test_id": "AN000013",
+      "style_id": "artist_005",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000013/run.json"
+    },
+    {
+      "test_id": "AN000014",
+      "style_id": "artist_005",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000014/run.json"
+    },
+    {
+      "test_id": "AN000015",
+      "style_id": "artist_005",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000015/run.json"
+    },
+    {
+      "test_id": "AN000016",
+      "style_id": "artist_006",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000016/run.json"
+    },
+    {
+      "test_id": "AN000017",
+      "style_id": "artist_006",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000017/run.json"
+    },
+    {
+      "test_id": "AN000018",
+      "style_id": "artist_006",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000018/run.json"
+    },
+    {
+      "test_id": "AN000019",
+      "style_id": "artist_007",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000019/run.json"
+    },
+    {
+      "test_id": "AN000020",
+      "style_id": "artist_007",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000020/run.json"
+    },
+    {
+      "test_id": "AN000021",
+      "style_id": "artist_007",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000021/run.json"
+    },
+    {
+      "test_id": "AN000022",
+      "style_id": "artist_008",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000022/run.json"
+    },
+    {
+      "test_id": "AN000023",
+      "style_id": "artist_008",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000023/run.json"
+    },
+    {
+      "test_id": "AN000024",
+      "style_id": "artist_008",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000024/run.json"
+    },
+    {
+      "test_id": "AN000025",
+      "style_id": "artist_009",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000025/run.json"
+    },
+    {
+      "test_id": "AN000026",
+      "style_id": "artist_009",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000026/run.json"
+    },
+    {
+      "test_id": "AN000027",
+      "style_id": "artist_009",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000027/run.json"
+    },
+    {
+      "test_id": "AN000028",
+      "style_id": "artist_010",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000028/run.json"
+    },
+    {
+      "test_id": "AN000029",
+      "style_id": "artist_010",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000029/run.json"
+    },
+    {
+      "test_id": "AN000030",
+      "style_id": "artist_010",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000030/run.json"
+    },
+    {
+      "test_id": "AN000031",
+      "style_id": "artist_011",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000031/run.json"
+    },
+    {
+      "test_id": "AN000032",
+      "style_id": "artist_011",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000032/run.json"
+    },
+    {
+      "test_id": "AN000033",
+      "style_id": "artist_011",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000033/run.json"
+    },
+    {
+      "test_id": "AN000034",
+      "style_id": "artist_012",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000034/run.json"
+    },
+    {
+      "test_id": "AN000035",
+      "style_id": "artist_012",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000035/run.json"
+    },
+    {
+      "test_id": "AN000036",
+      "style_id": "artist_012",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000036/run.json"
+    },
+    {
+      "test_id": "AN000037",
+      "style_id": "artist_013",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000037/run.json"
+    },
+    {
+      "test_id": "AN000038",
+      "style_id": "artist_013",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000038/run.json"
+    },
+    {
+      "test_id": "AN000039",
+      "style_id": "artist_013",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000039/run.json"
+    },
+    {
+      "test_id": "AN000040",
+      "style_id": "artist_014",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000040/run.json"
+    },
+    {
+      "test_id": "AN000041",
+      "style_id": "artist_014",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000041/run.json"
+    },
+    {
+      "test_id": "AN000042",
+      "style_id": "artist_014",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000042/run.json"
+    },
+    {
+      "test_id": "AN000043",
+      "style_id": "artist_015",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000043/run.json"
+    },
+    {
+      "test_id": "AN000044",
+      "style_id": "artist_015",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000044/run.json"
+    },
+    {
+      "test_id": "AN000045",
+      "style_id": "artist_015",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000045/run.json"
+    },
+    {
+      "test_id": "AN000046",
+      "style_id": "artist_016",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000046/run.json"
+    },
+    {
+      "test_id": "AN000047",
+      "style_id": "artist_016",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000047/run.json"
+    },
+    {
+      "test_id": "AN000048",
+      "style_id": "artist_016",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000048/run.json"
+    },
+    {
+      "test_id": "AN000049",
+      "style_id": "artist_017",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000049/run.json"
+    },
+    {
+      "test_id": "AN000050",
+      "style_id": "artist_017",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000050/run.json"
+    },
+    {
+      "test_id": "AN000051",
+      "style_id": "artist_017",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000051/run.json"
+    },
+    {
+      "test_id": "AN000052",
+      "style_id": "artist_018",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000052/run.json"
+    },
+    {
+      "test_id": "AN000053",
+      "style_id": "artist_018",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000053/run.json"
+    },
+    {
+      "test_id": "AN000054",
+      "style_id": "artist_018",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000054/run.json"
+    },
+    {
+      "test_id": "AN000055",
+      "style_id": "artist_019",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000055/run.json"
+    },
+    {
+      "test_id": "AN000056",
+      "style_id": "artist_019",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000056/run.json"
+    },
+    {
+      "test_id": "AN000057",
+      "style_id": "artist_019",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000057/run.json"
+    },
+    {
+      "test_id": "AN000058",
+      "style_id": "artist_020",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000058/run.json"
+    },
+    {
+      "test_id": "AN000059",
+      "style_id": "artist_020",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000059/run.json"
+    },
+    {
+      "test_id": "AN000060",
+      "style_id": "artist_020",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000060/run.json"
+    },
+    {
+      "test_id": "AN000061",
+      "style_id": "artist_021",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000061/run.json"
+    },
+    {
+      "test_id": "AN000062",
+      "style_id": "artist_021",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000062/run.json"
+    },
+    {
+      "test_id": "AN000063",
+      "style_id": "artist_021",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000063/run.json"
+    },
+    {
+      "test_id": "AN000064",
+      "style_id": "artist_022",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000064/run.json"
+    },
+    {
+      "test_id": "AN000065",
+      "style_id": "artist_022",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000065/run.json"
+    },
+    {
+      "test_id": "AN000066",
+      "style_id": "artist_022",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000066/run.json"
+    },
+    {
+      "test_id": "AN000067",
+      "style_id": "artist_023",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000067/run.json"
+    },
+    {
+      "test_id": "AN000068",
+      "style_id": "artist_023",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000068/run.json"
+    },
+    {
+      "test_id": "AN000069",
+      "style_id": "artist_023",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000069/run.json"
+    },
+    {
+      "test_id": "AN000070",
+      "style_id": "artist_024",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000070/run.json"
+    },
+    {
+      "test_id": "AN000071",
+      "style_id": "artist_024",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000071/run.json"
+    },
+    {
+      "test_id": "AN000072",
+      "style_id": "artist_024",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000072/run.json"
+    },
+    {
+      "test_id": "AN000073",
+      "style_id": "artist_025",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000073/run.json"
+    },
+    {
+      "test_id": "AN000074",
+      "style_id": "artist_025",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000074/run.json"
+    },
+    {
+      "test_id": "AN000075",
+      "style_id": "artist_025",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000075/run.json"
+    },
+    {
+      "test_id": "AN000076",
+      "style_id": "artist_026",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000076/run.json"
+    },
+    {
+      "test_id": "AN000077",
+      "style_id": "artist_026",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000077/run.json"
+    },
+    {
+      "test_id": "AN000078",
+      "style_id": "artist_026",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000078/run.json"
+    },
+    {
+      "test_id": "AN000079",
+      "style_id": "artist_027",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000079/run.json"
+    },
+    {
+      "test_id": "AN000080",
+      "style_id": "artist_027",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000080/run.json"
+    },
+    {
+      "test_id": "AN000081",
+      "style_id": "artist_027",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000081/run.json"
+    },
+    {
+      "test_id": "AN000082",
+      "style_id": "artist_028",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000082/run.json"
+    },
+    {
+      "test_id": "AN000083",
+      "style_id": "artist_028",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000083/run.json"
+    },
+    {
+      "test_id": "AN000084",
+      "style_id": "artist_028",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000084/run.json"
+    },
+    {
+      "test_id": "AN000085",
+      "style_id": "artist_029",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000085/run.json"
+    },
+    {
+      "test_id": "AN000086",
+      "style_id": "artist_029",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000086/run.json"
+    },
+    {
+      "test_id": "AN000087",
+      "style_id": "artist_029",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000087/run.json"
+    },
+    {
+      "test_id": "AN000088",
+      "style_id": "artist_030",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000088/run.json"
+    },
+    {
+      "test_id": "AN000089",
+      "style_id": "artist_030",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000089/run.json"
+    },
+    {
+      "test_id": "AN000090",
+      "style_id": "artist_030",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000090/run.json"
+    },
+    {
+      "test_id": "AN000091",
+      "style_id": "artist_031",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000091/run.json"
+    },
+    {
+      "test_id": "AN000092",
+      "style_id": "artist_031",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000092/run.json"
+    },
+    {
+      "test_id": "AN000093",
+      "style_id": "artist_031",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000093/run.json"
+    },
+    {
+      "test_id": "AN000094",
+      "style_id": "artist_032",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000094/run.json"
+    },
+    {
+      "test_id": "AN000095",
+      "style_id": "artist_032",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000095/run.json"
+    },
+    {
+      "test_id": "AN000096",
+      "style_id": "artist_032",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000096/run.json"
+    },
+    {
+      "test_id": "AN000097",
+      "style_id": "artist_033",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000097/run.json"
+    },
+    {
+      "test_id": "AN000098",
+      "style_id": "artist_033",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000098/run.json"
+    },
+    {
+      "test_id": "AN000099",
+      "style_id": "artist_033",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000099/run.json"
+    },
+    {
+      "test_id": "AN000100",
+      "style_id": "artist_034",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000100/run.json"
+    },
+    {
+      "test_id": "AN000101",
+      "style_id": "artist_034",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000101/run.json"
+    },
+    {
+      "test_id": "AN000102",
+      "style_id": "artist_034",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000102/run.json"
+    },
+    {
+      "test_id": "AN000103",
+      "style_id": "artist_035",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000103/run.json"
+    },
+    {
+      "test_id": "AN000104",
+      "style_id": "artist_035",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000104/run.json"
+    },
+    {
+      "test_id": "AN000105",
+      "style_id": "artist_035",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000105/run.json"
+    },
+    {
+      "test_id": "AN000106",
+      "style_id": "artist_036",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000106/run.json"
+    },
+    {
+      "test_id": "AN000107",
+      "style_id": "artist_036",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000107/run.json"
+    },
+    {
+      "test_id": "AN000108",
+      "style_id": "artist_036",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000108/run.json"
+    },
+    {
+      "test_id": "AN000109",
+      "style_id": "artist_037",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000109/run.json"
+    },
+    {
+      "test_id": "AN000110",
+      "style_id": "artist_037",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000110/run.json"
+    },
+    {
+      "test_id": "AN000111",
+      "style_id": "artist_037",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000111/run.json"
+    },
+    {
+      "test_id": "AN000112",
+      "style_id": "artist_038",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000112/run.json"
+    },
+    {
+      "test_id": "AN000113",
+      "style_id": "artist_038",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000113/run.json"
+    },
+    {
+      "test_id": "AN000114",
+      "style_id": "artist_038",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000114/run.json"
+    },
+    {
+      "test_id": "AN000115",
+      "style_id": "artist_039",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000115/run.json"
+    },
+    {
+      "test_id": "AN000116",
+      "style_id": "artist_039",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000116/run.json"
+    },
+    {
+      "test_id": "AN000117",
+      "style_id": "artist_039",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000117/run.json"
+    },
+    {
+      "test_id": "AN000118",
+      "style_id": "artist_040",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000118/run.json"
+    },
+    {
+      "test_id": "AN000119",
+      "style_id": "artist_040",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000119/run.json"
+    },
+    {
+      "test_id": "AN000120",
+      "style_id": "artist_040",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000120/run.json"
+    },
+    {
+      "test_id": "AN000121",
+      "style_id": "artist_041",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000121/run.json"
+    },
+    {
+      "test_id": "AN000122",
+      "style_id": "artist_041",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000122/run.json"
+    },
+    {
+      "test_id": "AN000123",
+      "style_id": "artist_041",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000123/run.json"
+    },
+    {
+      "test_id": "AN000124",
+      "style_id": "artist_042",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000124/run.json"
+    },
+    {
+      "test_id": "AN000125",
+      "style_id": "artist_042",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000125/run.json"
+    },
+    {
+      "test_id": "AN000126",
+      "style_id": "artist_042",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000126/run.json"
+    },
+    {
+      "test_id": "AN000127",
+      "style_id": "artist_043",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000127/run.json"
+    },
+    {
+      "test_id": "AN000128",
+      "style_id": "artist_043",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000128/run.json"
+    },
+    {
+      "test_id": "AN000129",
+      "style_id": "artist_043",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000129/run.json"
+    },
+    {
+      "test_id": "AN000130",
+      "style_id": "artist_044",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000130/run.json"
+    },
+    {
+      "test_id": "AN000131",
+      "style_id": "artist_044",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000131/run.json"
+    },
+    {
+      "test_id": "AN000132",
+      "style_id": "artist_044",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000132/run.json"
+    },
+    {
+      "test_id": "AN000133",
+      "style_id": "artist_045",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000133/run.json"
+    },
+    {
+      "test_id": "AN000134",
+      "style_id": "artist_045",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000134/run.json"
+    },
+    {
+      "test_id": "AN000135",
+      "style_id": "artist_045",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000135/run.json"
+    },
+    {
+      "test_id": "AN000136",
+      "style_id": "artist_046",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000136/run.json"
+    },
+    {
+      "test_id": "AN000137",
+      "style_id": "artist_046",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000137/run.json"
+    },
+    {
+      "test_id": "AN000138",
+      "style_id": "artist_046",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000138/run.json"
+    },
+    {
+      "test_id": "AN000139",
+      "style_id": "artist_047",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000139/run.json"
+    },
+    {
+      "test_id": "AN000140",
+      "style_id": "artist_047",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000140/run.json"
+    },
+    {
+      "test_id": "AN000141",
+      "style_id": "artist_047",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000141/run.json"
+    },
+    {
+      "test_id": "AN000142",
+      "style_id": "artist_048",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000142/run.json"
+    },
+    {
+      "test_id": "AN000143",
+      "style_id": "artist_048",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000143/run.json"
+    },
+    {
+      "test_id": "AN000144",
+      "style_id": "artist_048",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000144/run.json"
+    },
+    {
+      "test_id": "AN000145",
+      "style_id": "artist_049",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000145/run.json"
+    },
+    {
+      "test_id": "AN000146",
+      "style_id": "artist_049",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000146/run.json"
+    },
+    {
+      "test_id": "AN000147",
+      "style_id": "artist_049",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000147/run.json"
+    },
+    {
+      "test_id": "AN000148",
+      "style_id": "artist_050",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000148/run.json"
+    },
+    {
+      "test_id": "AN000149",
+      "style_id": "artist_050",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000149/run.json"
+    },
+    {
+      "test_id": "AN000150",
+      "style_id": "artist_050",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000150/run.json"
+    },
+    {
+      "test_id": "AN000151",
+      "style_id": "artist_051",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000151/run.json"
+    },
+    {
+      "test_id": "AN000152",
+      "style_id": "artist_051",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000152/run.json"
+    },
+    {
+      "test_id": "AN000153",
+      "style_id": "artist_051",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000153/run.json"
+    },
+    {
+      "test_id": "AN000154",
+      "style_id": "artist_052",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000154/run.json"
+    },
+    {
+      "test_id": "AN000155",
+      "style_id": "artist_052",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000155/run.json"
+    },
+    {
+      "test_id": "AN000156",
+      "style_id": "artist_052",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000156/run.json"
+    },
+    {
+      "test_id": "AN000157",
+      "style_id": "artist_053",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000157/run.json"
+    },
+    {
+      "test_id": "AN000158",
+      "style_id": "artist_053",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000158/run.json"
+    },
+    {
+      "test_id": "AN000159",
+      "style_id": "artist_053",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000159/run.json"
+    },
+    {
+      "test_id": "AN000160",
+      "style_id": "artist_054",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000160/run.json"
+    },
+    {
+      "test_id": "AN000161",
+      "style_id": "artist_054",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000161/run.json"
+    },
+    {
+      "test_id": "AN000162",
+      "style_id": "artist_054",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000162/run.json"
+    },
+    {
+      "test_id": "AN000163",
+      "style_id": "artist_055",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000163/run.json"
+    },
+    {
+      "test_id": "AN000164",
+      "style_id": "artist_055",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000164/run.json"
+    },
+    {
+      "test_id": "AN000165",
+      "style_id": "artist_055",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000165/run.json"
+    },
+    {
+      "test_id": "AN000166",
+      "style_id": "artist_056",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000166/run.json"
+    },
+    {
+      "test_id": "AN000167",
+      "style_id": "artist_056",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000167/run.json"
+    },
+    {
+      "test_id": "AN000168",
+      "style_id": "artist_056",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000168/run.json"
+    },
+    {
+      "test_id": "AN000169",
+      "style_id": "artist_057",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000169/run.json"
+    },
+    {
+      "test_id": "AN000170",
+      "style_id": "artist_057",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000170/run.json"
+    },
+    {
+      "test_id": "AN000171",
+      "style_id": "artist_057",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000171/run.json"
+    },
+    {
+      "test_id": "AN000172",
+      "style_id": "artist_058",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000172/run.json"
+    },
+    {
+      "test_id": "AN000173",
+      "style_id": "artist_058",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000173/run.json"
+    },
+    {
+      "test_id": "AN000174",
+      "style_id": "artist_058",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000174/run.json"
+    },
+    {
+      "test_id": "AN000175",
+      "style_id": "artist_059",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000175/run.json"
+    },
+    {
+      "test_id": "AN000176",
+      "style_id": "artist_059",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000176/run.json"
+    },
+    {
+      "test_id": "AN000177",
+      "style_id": "artist_059",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000177/run.json"
+    },
+    {
+      "test_id": "AN000178",
+      "style_id": "artist_060",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000178/run.json"
+    },
+    {
+      "test_id": "AN000179",
+      "style_id": "artist_060",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000179/run.json"
+    },
+    {
+      "test_id": "AN000180",
+      "style_id": "artist_060",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000180/run.json"
+    },
+    {
+      "test_id": "AN000181",
+      "style_id": "artist_061",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000181/run.json"
+    },
+    {
+      "test_id": "AN000182",
+      "style_id": "artist_061",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000182/run.json"
+    },
+    {
+      "test_id": "AN000183",
+      "style_id": "artist_061",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000183/run.json"
+    },
+    {
+      "test_id": "AN000184",
+      "style_id": "artist_062",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000184/run.json"
+    },
+    {
+      "test_id": "AN000185",
+      "style_id": "artist_062",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000185/run.json"
+    },
+    {
+      "test_id": "AN000186",
+      "style_id": "artist_062",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000186/run.json"
+    },
+    {
+      "test_id": "AN000187",
+      "style_id": "artist_063",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000187/run.json"
+    },
+    {
+      "test_id": "AN000188",
+      "style_id": "artist_063",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000188/run.json"
+    },
+    {
+      "test_id": "AN000189",
+      "style_id": "artist_063",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000189/run.json"
+    },
+    {
+      "test_id": "AN000190",
+      "style_id": "artist_064",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000190/run.json"
+    },
+    {
+      "test_id": "AN000191",
+      "style_id": "artist_064",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000191/run.json"
+    },
+    {
+      "test_id": "AN000192",
+      "style_id": "artist_064",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000192/run.json"
+    },
+    {
+      "test_id": "AN000193",
+      "style_id": "artist_065",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000193/run.json"
+    },
+    {
+      "test_id": "AN000194",
+      "style_id": "artist_065",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000194/run.json"
+    },
+    {
+      "test_id": "AN000195",
+      "style_id": "artist_065",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000195/run.json"
+    },
+    {
+      "test_id": "AN000196",
+      "style_id": "artist_066",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000196/run.json"
+    },
+    {
+      "test_id": "AN000197",
+      "style_id": "artist_066",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000197/run.json"
+    },
+    {
+      "test_id": "AN000198",
+      "style_id": "artist_066",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000198/run.json"
+    },
+    {
+      "test_id": "AN000199",
+      "style_id": "artist_067",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000199/run.json"
+    },
+    {
+      "test_id": "AN000200",
+      "style_id": "artist_067",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000200/run.json"
+    },
+    {
+      "test_id": "AN000201",
+      "style_id": "artist_067",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000201/run.json"
+    },
+    {
+      "test_id": "AN000202",
+      "style_id": "artist_068",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000202/run.json"
+    },
+    {
+      "test_id": "AN000203",
+      "style_id": "artist_068",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000203/run.json"
+    },
+    {
+      "test_id": "AN000204",
+      "style_id": "artist_068",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000204/run.json"
+    },
+    {
+      "test_id": "AN000205",
+      "style_id": "artist_069",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000205/run.json"
+    },
+    {
+      "test_id": "AN000206",
+      "style_id": "artist_069",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000206/run.json"
+    },
+    {
+      "test_id": "AN000207",
+      "style_id": "artist_069",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000207/run.json"
+    },
+    {
+      "test_id": "AN000208",
+      "style_id": "artist_070",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000208/run.json"
+    },
+    {
+      "test_id": "AN000209",
+      "style_id": "artist_070",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000209/run.json"
+    },
+    {
+      "test_id": "AN000210",
+      "style_id": "artist_070",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000210/run.json"
+    },
+    {
+      "test_id": "AN000211",
+      "style_id": "artist_071",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000211/run.json"
+    },
+    {
+      "test_id": "AN000212",
+      "style_id": "artist_071",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000212/run.json"
+    },
+    {
+      "test_id": "AN000213",
+      "style_id": "artist_071",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000213/run.json"
+    },
+    {
+      "test_id": "AN000214",
+      "style_id": "artist_072",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000214/run.json"
+    },
+    {
+      "test_id": "AN000215",
+      "style_id": "artist_072",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000215/run.json"
+    },
+    {
+      "test_id": "AN000216",
+      "style_id": "artist_072",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000216/run.json"
+    },
+    {
+      "test_id": "AN000217",
+      "style_id": "artist_073",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000217/run.json"
+    },
+    {
+      "test_id": "AN000218",
+      "style_id": "artist_073",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000218/run.json"
+    },
+    {
+      "test_id": "AN000219",
+      "style_id": "artist_073",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000219/run.json"
+    },
+    {
+      "test_id": "AN000220",
+      "style_id": "artist_074",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000220/run.json"
+    },
+    {
+      "test_id": "AN000221",
+      "style_id": "artist_074",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000221/run.json"
+    },
+    {
+      "test_id": "AN000222",
+      "style_id": "artist_074",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000222/run.json"
+    },
+    {
+      "test_id": "AN000223",
+      "style_id": "artist_075",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000223/run.json"
+    },
+    {
+      "test_id": "AN000224",
+      "style_id": "artist_075",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000224/run.json"
+    },
+    {
+      "test_id": "AN000225",
+      "style_id": "artist_075",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000225/run.json"
+    },
+    {
+      "test_id": "AN000226",
+      "style_id": "artist_076",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000226/run.json"
+    },
+    {
+      "test_id": "AN000227",
+      "style_id": "artist_076",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000227/run.json"
+    },
+    {
+      "test_id": "AN000228",
+      "style_id": "artist_076",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000228/run.json"
+    },
+    {
+      "test_id": "AN000229",
+      "style_id": "artist_077",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000229/run.json"
+    },
+    {
+      "test_id": "AN000230",
+      "style_id": "artist_077",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000230/run.json"
+    },
+    {
+      "test_id": "AN000231",
+      "style_id": "artist_077",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000231/run.json"
+    },
+    {
+      "test_id": "AN000232",
+      "style_id": "artist_078",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000232/run.json"
+    },
+    {
+      "test_id": "AN000233",
+      "style_id": "artist_078",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000233/run.json"
+    },
+    {
+      "test_id": "AN000234",
+      "style_id": "artist_078",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000234/run.json"
+    },
+    {
+      "test_id": "AN000235",
+      "style_id": "artist_079",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000235/run.json"
+    },
+    {
+      "test_id": "AN000236",
+      "style_id": "artist_079",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000236/run.json"
+    },
+    {
+      "test_id": "AN000237",
+      "style_id": "artist_079",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000237/run.json"
+    },
+    {
+      "test_id": "AN000238",
+      "style_id": "artist_080",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000238/run.json"
+    },
+    {
+      "test_id": "AN000239",
+      "style_id": "artist_080",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000239/run.json"
+    },
+    {
+      "test_id": "AN000240",
+      "style_id": "artist_080",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000240/run.json"
+    },
+    {
+      "test_id": "AN000241",
+      "style_id": "artist_081",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000241/run.json"
+    },
+    {
+      "test_id": "AN000242",
+      "style_id": "artist_081",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000242/run.json"
+    },
+    {
+      "test_id": "AN000243",
+      "style_id": "artist_081",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000243/run.json"
+    },
+    {
+      "test_id": "AN000244",
+      "style_id": "artist_082",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000244/run.json"
+    },
+    {
+      "test_id": "AN000245",
+      "style_id": "artist_082",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000245/run.json"
+    },
+    {
+      "test_id": "AN000246",
+      "style_id": "artist_082",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000246/run.json"
+    },
+    {
+      "test_id": "AN000247",
+      "style_id": "artist_083",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000247/run.json"
+    },
+    {
+      "test_id": "AN000248",
+      "style_id": "artist_083",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000248/run.json"
+    },
+    {
+      "test_id": "AN000249",
+      "style_id": "artist_083",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000249/run.json"
+    },
+    {
+      "test_id": "AN000250",
+      "style_id": "artist_084",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000250/run.json"
+    },
+    {
+      "test_id": "AN000251",
+      "style_id": "artist_084",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000251/run.json"
+    },
+    {
+      "test_id": "AN000252",
+      "style_id": "artist_084",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000252/run.json"
+    },
+    {
+      "test_id": "AN000253",
+      "style_id": "artist_085",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000253/run.json"
+    },
+    {
+      "test_id": "AN000254",
+      "style_id": "artist_085",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000254/run.json"
+    },
+    {
+      "test_id": "AN000255",
+      "style_id": "artist_085",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000255/run.json"
+    },
+    {
+      "test_id": "AN000256",
+      "style_id": "artist_086",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000256/run.json"
+    },
+    {
+      "test_id": "AN000257",
+      "style_id": "artist_086",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000257/run.json"
+    },
+    {
+      "test_id": "AN000258",
+      "style_id": "artist_086",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000258/run.json"
+    },
+    {
+      "test_id": "AN000259",
+      "style_id": "artist_087",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000259/run.json"
+    },
+    {
+      "test_id": "AN000260",
+      "style_id": "artist_087",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000260/run.json"
+    },
+    {
+      "test_id": "AN000261",
+      "style_id": "artist_087",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000261/run.json"
+    },
+    {
+      "test_id": "AN000262",
+      "style_id": "artist_088",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000262/run.json"
+    },
+    {
+      "test_id": "AN000263",
+      "style_id": "artist_088",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000263/run.json"
+    },
+    {
+      "test_id": "AN000264",
+      "style_id": "artist_088",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000264/run.json"
+    },
+    {
+      "test_id": "AN000265",
+      "style_id": "artist_089",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000265/run.json"
+    },
+    {
+      "test_id": "AN000266",
+      "style_id": "artist_089",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000266/run.json"
+    },
+    {
+      "test_id": "AN000267",
+      "style_id": "artist_089",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000267/run.json"
+    },
+    {
+      "test_id": "AN000268",
+      "style_id": "artist_090",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000268/run.json"
+    },
+    {
+      "test_id": "AN000269",
+      "style_id": "artist_090",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000269/run.json"
+    },
+    {
+      "test_id": "AN000270",
+      "style_id": "artist_090",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000270/run.json"
+    },
+    {
+      "test_id": "AN000271",
+      "style_id": "artist_091",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000271/run.json"
+    },
+    {
+      "test_id": "AN000272",
+      "style_id": "artist_091",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000272/run.json"
+    },
+    {
+      "test_id": "AN000273",
+      "style_id": "artist_091",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000273/run.json"
+    },
+    {
+      "test_id": "AN000274",
+      "style_id": "artist_092",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000274/run.json"
+    },
+    {
+      "test_id": "AN000275",
+      "style_id": "artist_092",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000275/run.json"
+    },
+    {
+      "test_id": "AN000276",
+      "style_id": "artist_092",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000276/run.json"
+    },
+    {
+      "test_id": "AN000277",
+      "style_id": "artist_093",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000277/run.json"
+    },
+    {
+      "test_id": "AN000278",
+      "style_id": "artist_093",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000278/run.json"
+    },
+    {
+      "test_id": "AN000279",
+      "style_id": "artist_093",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000279/run.json"
+    },
+    {
+      "test_id": "AN000280",
+      "style_id": "artist_094",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000280/run.json"
+    },
+    {
+      "test_id": "AN000281",
+      "style_id": "artist_094",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000281/run.json"
+    },
+    {
+      "test_id": "AN000282",
+      "style_id": "artist_094",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000282/run.json"
+    },
+    {
+      "test_id": "AN000283",
+      "style_id": "artist_095",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000283/run.json"
+    },
+    {
+      "test_id": "AN000284",
+      "style_id": "artist_095",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000284/run.json"
+    },
+    {
+      "test_id": "AN000285",
+      "style_id": "artist_095",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000285/run.json"
+    },
+    {
+      "test_id": "AN000286",
+      "style_id": "artist_096",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000286/run.json"
+    },
+    {
+      "test_id": "AN000287",
+      "style_id": "artist_096",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000287/run.json"
+    },
+    {
+      "test_id": "AN000288",
+      "style_id": "artist_096",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000288/run.json"
+    },
+    {
+      "test_id": "AN000289",
+      "style_id": "artist_097",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000289/run.json"
+    },
+    {
+      "test_id": "AN000290",
+      "style_id": "artist_097",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000290/run.json"
+    },
+    {
+      "test_id": "AN000291",
+      "style_id": "artist_097",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000291/run.json"
+    },
+    {
+      "test_id": "AN000292",
+      "style_id": "artist_098",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000292/run.json"
+    },
+    {
+      "test_id": "AN000293",
+      "style_id": "artist_098",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000293/run.json"
+    },
+    {
+      "test_id": "AN000294",
+      "style_id": "artist_098",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000294/run.json"
+    },
+    {
+      "test_id": "AN000295",
+      "style_id": "artist_099",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000295/run.json"
+    },
+    {
+      "test_id": "AN000296",
+      "style_id": "artist_099",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000296/run.json"
+    },
+    {
+      "test_id": "AN000297",
+      "style_id": "artist_099",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000297/run.json"
+    },
+    {
+      "test_id": "AN000298",
+      "style_id": "artist_100",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000298/run.json"
+    },
+    {
+      "test_id": "AN000299",
+      "style_id": "artist_100",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000299/run.json"
+    },
+    {
+      "test_id": "AN000300",
+      "style_id": "artist_100",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000300/run.json"
+    },
+    {
+      "test_id": "AN000301",
+      "style_id": "artist_101",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000301/run.json"
+    },
+    {
+      "test_id": "AN000302",
+      "style_id": "artist_101",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000302/run.json"
+    },
+    {
+      "test_id": "AN000303",
+      "style_id": "artist_101",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000303/run.json"
+    },
+    {
+      "test_id": "AN000304",
+      "style_id": "artist_102",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000304/run.json"
+    },
+    {
+      "test_id": "AN000305",
+      "style_id": "artist_102",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000305/run.json"
+    },
+    {
+      "test_id": "AN000306",
+      "style_id": "artist_102",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000306/run.json"
+    },
+    {
+      "test_id": "AN000307",
+      "style_id": "artist_103",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000307/run.json"
+    },
+    {
+      "test_id": "AN000308",
+      "style_id": "artist_103",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000308/run.json"
+    },
+    {
+      "test_id": "AN000309",
+      "style_id": "artist_103",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000309/run.json"
+    },
+    {
+      "test_id": "AN000310",
+      "style_id": "artist_104",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000310/run.json"
+    },
+    {
+      "test_id": "AN000311",
+      "style_id": "artist_104",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000311/run.json"
+    },
+    {
+      "test_id": "AN000312",
+      "style_id": "artist_104",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000312/run.json"
+    },
+    {
+      "test_id": "AN000313",
+      "style_id": "artist_105",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000313/run.json"
+    },
+    {
+      "test_id": "AN000314",
+      "style_id": "artist_105",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000314/run.json"
+    },
+    {
+      "test_id": "AN000315",
+      "style_id": "artist_105",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000315/run.json"
+    },
+    {
+      "test_id": "AN000316",
+      "style_id": "artist_106",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000316/run.json"
+    },
+    {
+      "test_id": "AN000317",
+      "style_id": "artist_106",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000317/run.json"
+    },
+    {
+      "test_id": "AN000318",
+      "style_id": "artist_106",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000318/run.json"
+    },
+    {
+      "test_id": "AN000319",
+      "style_id": "artist_107",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000319/run.json"
+    },
+    {
+      "test_id": "AN000320",
+      "style_id": "artist_107",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000320/run.json"
+    },
+    {
+      "test_id": "AN000321",
+      "style_id": "artist_107",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000321/run.json"
+    },
+    {
+      "test_id": "AN000322",
+      "style_id": "artist_108",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000322/run.json"
+    },
+    {
+      "test_id": "AN000323",
+      "style_id": "artist_108",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000323/run.json"
+    },
+    {
+      "test_id": "AN000324",
+      "style_id": "artist_108",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000324/run.json"
+    },
+    {
+      "test_id": "AN000325",
+      "style_id": "artist_109",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000325/run.json"
+    },
+    {
+      "test_id": "AN000326",
+      "style_id": "artist_109",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000326/run.json"
+    },
+    {
+      "test_id": "AN000327",
+      "style_id": "artist_109",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000327/run.json"
+    },
+    {
+      "test_id": "AN000328",
+      "style_id": "artist_110",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000328/run.json"
+    },
+    {
+      "test_id": "AN000329",
+      "style_id": "artist_110",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000329/run.json"
+    },
+    {
+      "test_id": "AN000330",
+      "style_id": "artist_110",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000330/run.json"
+    },
+    {
+      "test_id": "AN000331",
+      "style_id": "artist_111",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000331/run.json"
+    },
+    {
+      "test_id": "AN000332",
+      "style_id": "artist_111",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000332/run.json"
+    },
+    {
+      "test_id": "AN000333",
+      "style_id": "artist_111",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000333/run.json"
+    },
+    {
+      "test_id": "AN000334",
+      "style_id": "artist_112",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000334/run.json"
+    },
+    {
+      "test_id": "AN000335",
+      "style_id": "artist_112",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000335/run.json"
+    },
+    {
+      "test_id": "AN000336",
+      "style_id": "artist_112",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000336/run.json"
+    },
+    {
+      "test_id": "AN000337",
+      "style_id": "artist_113",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000337/run.json"
+    },
+    {
+      "test_id": "AN000338",
+      "style_id": "artist_113",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000338/run.json"
+    },
+    {
+      "test_id": "AN000339",
+      "style_id": "artist_113",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000339/run.json"
+    },
+    {
+      "test_id": "AN000340",
+      "style_id": "artist_114",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000340/run.json"
+    },
+    {
+      "test_id": "AN000341",
+      "style_id": "artist_114",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000341/run.json"
+    },
+    {
+      "test_id": "AN000342",
+      "style_id": "artist_114",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000342/run.json"
+    },
+    {
+      "test_id": "AN000343",
+      "style_id": "artist_115",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000343/run.json"
+    },
+    {
+      "test_id": "AN000344",
+      "style_id": "artist_115",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000344/run.json"
+    },
+    {
+      "test_id": "AN000345",
+      "style_id": "artist_115",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000345/run.json"
+    },
+    {
+      "test_id": "AN000346",
+      "style_id": "artist_116",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000346/run.json"
+    },
+    {
+      "test_id": "AN000347",
+      "style_id": "artist_116",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000347/run.json"
+    },
+    {
+      "test_id": "AN000348",
+      "style_id": "artist_116",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000348/run.json"
+    },
+    {
+      "test_id": "AN000349",
+      "style_id": "artist_117",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000349/run.json"
+    },
+    {
+      "test_id": "AN000350",
+      "style_id": "artist_117",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000350/run.json"
+    },
+    {
+      "test_id": "AN000351",
+      "style_id": "artist_117",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000351/run.json"
+    },
+    {
+      "test_id": "AN000352",
+      "style_id": "artist_118",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000352/run.json"
+    },
+    {
+      "test_id": "AN000353",
+      "style_id": "artist_118",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000353/run.json"
+    },
+    {
+      "test_id": "AN000354",
+      "style_id": "artist_118",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000354/run.json"
+    },
+    {
+      "test_id": "AN000355",
+      "style_id": "artist_119",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000355/run.json"
+    },
+    {
+      "test_id": "AN000356",
+      "style_id": "artist_119",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000356/run.json"
+    },
+    {
+      "test_id": "AN000357",
+      "style_id": "artist_119",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000357/run.json"
+    },
+    {
+      "test_id": "AN000358",
+      "style_id": "artist_120",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000358/run.json"
+    },
+    {
+      "test_id": "AN000359",
+      "style_id": "artist_120",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000359/run.json"
+    },
+    {
+      "test_id": "AN000360",
+      "style_id": "artist_120",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000360/run.json"
+    },
+    {
+      "test_id": "AN000361",
+      "style_id": "artist_121",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000361/run.json"
+    },
+    {
+      "test_id": "AN000362",
+      "style_id": "artist_121",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000362/run.json"
+    },
+    {
+      "test_id": "AN000363",
+      "style_id": "artist_121",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000363/run.json"
+    },
+    {
+      "test_id": "AN000364",
+      "style_id": "artist_122",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000364/run.json"
+    },
+    {
+      "test_id": "AN000365",
+      "style_id": "artist_122",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000365/run.json"
+    },
+    {
+      "test_id": "AN000366",
+      "style_id": "artist_122",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000366/run.json"
+    },
+    {
+      "test_id": "AN000367",
+      "style_id": "artist_123",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000367/run.json"
+    },
+    {
+      "test_id": "AN000368",
+      "style_id": "artist_123",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000368/run.json"
+    },
+    {
+      "test_id": "AN000369",
+      "style_id": "artist_123",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000369/run.json"
+    },
+    {
+      "test_id": "AN000370",
+      "style_id": "artist_124",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000370/run.json"
+    },
+    {
+      "test_id": "AN000371",
+      "style_id": "artist_124",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000371/run.json"
+    },
+    {
+      "test_id": "AN000372",
+      "style_id": "artist_124",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000372/run.json"
+    },
+    {
+      "test_id": "AN000373",
+      "style_id": "artist_125",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000373/run.json"
+    },
+    {
+      "test_id": "AN000374",
+      "style_id": "artist_125",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000374/run.json"
+    },
+    {
+      "test_id": "AN000375",
+      "style_id": "artist_125",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000375/run.json"
+    },
+    {
+      "test_id": "AN000376",
+      "style_id": "artist_126",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000376/run.json"
+    },
+    {
+      "test_id": "AN000377",
+      "style_id": "artist_126",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000377/run.json"
+    },
+    {
+      "test_id": "AN000378",
+      "style_id": "artist_126",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000378/run.json"
+    },
+    {
+      "test_id": "AN000379",
+      "style_id": "artist_127",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000379/run.json"
+    },
+    {
+      "test_id": "AN000380",
+      "style_id": "artist_127",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000380/run.json"
+    },
+    {
+      "test_id": "AN000381",
+      "style_id": "artist_127",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000381/run.json"
+    },
+    {
+      "test_id": "AN000382",
+      "style_id": "artist_128",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000382/run.json"
+    },
+    {
+      "test_id": "AN000383",
+      "style_id": "artist_128",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000383/run.json"
+    },
+    {
+      "test_id": "AN000384",
+      "style_id": "artist_128",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000384/run.json"
+    },
+    {
+      "test_id": "AN000385",
+      "style_id": "artist_129",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000385/run.json"
+    },
+    {
+      "test_id": "AN000386",
+      "style_id": "artist_129",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000386/run.json"
+    },
+    {
+      "test_id": "AN000387",
+      "style_id": "artist_129",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000387/run.json"
+    },
+    {
+      "test_id": "AN000388",
+      "style_id": "artist_130",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000388/run.json"
+    },
+    {
+      "test_id": "AN000389",
+      "style_id": "artist_130",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000389/run.json"
+    },
+    {
+      "test_id": "AN000390",
+      "style_id": "artist_130",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000390/run.json"
+    },
+    {
+      "test_id": "AN000391",
+      "style_id": "artist_131",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000391/run.json"
+    },
+    {
+      "test_id": "AN000392",
+      "style_id": "artist_131",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000392/run.json"
+    },
+    {
+      "test_id": "AN000393",
+      "style_id": "artist_131",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000393/run.json"
+    },
+    {
+      "test_id": "AN000394",
+      "style_id": "artist_132",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000394/run.json"
+    },
+    {
+      "test_id": "AN000395",
+      "style_id": "artist_132",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000395/run.json"
+    },
+    {
+      "test_id": "AN000396",
+      "style_id": "artist_132",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000396/run.json"
+    },
+    {
+      "test_id": "AN000397",
+      "style_id": "artist_133",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000397/run.json"
+    },
+    {
+      "test_id": "AN000398",
+      "style_id": "artist_133",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000398/run.json"
+    },
+    {
+      "test_id": "AN000399",
+      "style_id": "artist_133",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000399/run.json"
+    },
+    {
+      "test_id": "AN000400",
+      "style_id": "artist_134",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000400/run.json"
+    },
+    {
+      "test_id": "AN000401",
+      "style_id": "artist_134",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000401/run.json"
+    },
+    {
+      "test_id": "AN000402",
+      "style_id": "artist_134",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000402/run.json"
+    },
+    {
+      "test_id": "AN000403",
+      "style_id": "artist_135",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000403/run.json"
+    },
+    {
+      "test_id": "AN000404",
+      "style_id": "artist_135",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000404/run.json"
+    },
+    {
+      "test_id": "AN000405",
+      "style_id": "artist_135",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000405/run.json"
+    },
+    {
+      "test_id": "AN000406",
+      "style_id": "artist_136",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000406/run.json"
+    },
+    {
+      "test_id": "AN000407",
+      "style_id": "artist_136",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000407/run.json"
+    },
+    {
+      "test_id": "AN000408",
+      "style_id": "artist_136",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000408/run.json"
+    },
+    {
+      "test_id": "AN000409",
+      "style_id": "artist_137",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000409/run.json"
+    },
+    {
+      "test_id": "AN000410",
+      "style_id": "artist_137",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000410/run.json"
+    },
+    {
+      "test_id": "AN000411",
+      "style_id": "artist_137",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000411/run.json"
+    },
+    {
+      "test_id": "AN000412",
+      "style_id": "artist_138",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000412/run.json"
+    },
+    {
+      "test_id": "AN000413",
+      "style_id": "artist_138",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000413/run.json"
+    },
+    {
+      "test_id": "AN000414",
+      "style_id": "artist_138",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000414/run.json"
+    },
+    {
+      "test_id": "AN000415",
+      "style_id": "artist_139",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000415/run.json"
+    },
+    {
+      "test_id": "AN000416",
+      "style_id": "artist_139",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000416/run.json"
+    },
+    {
+      "test_id": "AN000417",
+      "style_id": "artist_139",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000417/run.json"
+    },
+    {
+      "test_id": "AN000418",
+      "style_id": "artist_140",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000418/run.json"
+    },
+    {
+      "test_id": "AN000419",
+      "style_id": "artist_140",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000419/run.json"
+    },
+    {
+      "test_id": "AN000420",
+      "style_id": "artist_140",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000420/run.json"
+    },
+    {
+      "test_id": "AN000421",
+      "style_id": "artist_141",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000421/run.json"
+    },
+    {
+      "test_id": "AN000422",
+      "style_id": "artist_141",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000422/run.json"
+    },
+    {
+      "test_id": "AN000423",
+      "style_id": "artist_141",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000423/run.json"
+    },
+    {
+      "test_id": "AN000424",
+      "style_id": "artist_142",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000424/run.json"
+    },
+    {
+      "test_id": "AN000425",
+      "style_id": "artist_142",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000425/run.json"
+    },
+    {
+      "test_id": "AN000426",
+      "style_id": "artist_142",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000426/run.json"
+    },
+    {
+      "test_id": "AN000427",
+      "style_id": "artist_143",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000427/run.json"
+    },
+    {
+      "test_id": "AN000428",
+      "style_id": "artist_143",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000428/run.json"
+    },
+    {
+      "test_id": "AN000429",
+      "style_id": "artist_143",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000429/run.json"
+    },
+    {
+      "test_id": "AN000430",
+      "style_id": "artist_144",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000430/run.json"
+    },
+    {
+      "test_id": "AN000431",
+      "style_id": "artist_144",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000431/run.json"
+    },
+    {
+      "test_id": "AN000432",
+      "style_id": "artist_144",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000432/run.json"
+    },
+    {
+      "test_id": "AN000433",
+      "style_id": "artist_145",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000433/run.json"
+    },
+    {
+      "test_id": "AN000434",
+      "style_id": "artist_145",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000434/run.json"
+    },
+    {
+      "test_id": "AN000435",
+      "style_id": "artist_145",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000435/run.json"
+    },
+    {
+      "test_id": "AN000436",
+      "style_id": "artist_146",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000436/run.json"
+    },
+    {
+      "test_id": "AN000437",
+      "style_id": "artist_146",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000437/run.json"
+    },
+    {
+      "test_id": "AN000438",
+      "style_id": "artist_146",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000438/run.json"
+    },
+    {
+      "test_id": "AN000439",
+      "style_id": "artist_147",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000439/run.json"
+    },
+    {
+      "test_id": "AN000440",
+      "style_id": "artist_147",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000440/run.json"
+    },
+    {
+      "test_id": "AN000441",
+      "style_id": "artist_147",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000441/run.json"
+    },
+    {
+      "test_id": "AN000442",
+      "style_id": "artist_148",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000442/run.json"
+    },
+    {
+      "test_id": "AN000443",
+      "style_id": "artist_148",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000443/run.json"
+    },
+    {
+      "test_id": "AN000444",
+      "style_id": "artist_148",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000444/run.json"
+    },
+    {
+      "test_id": "AN000445",
+      "style_id": "artist_149",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000445/run.json"
+    },
+    {
+      "test_id": "AN000446",
+      "style_id": "artist_149",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000446/run.json"
+    },
+    {
+      "test_id": "AN000447",
+      "style_id": "artist_149",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000447/run.json"
+    },
+    {
+      "test_id": "AN000448",
+      "style_id": "artist_150",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000448/run.json"
+    },
+    {
+      "test_id": "AN000449",
+      "style_id": "artist_150",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000449/run.json"
+    },
+    {
+      "test_id": "AN000450",
+      "style_id": "artist_150",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000450/run.json"
+    },
+    {
+      "test_id": "AN000451",
+      "style_id": "artist_151",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000451/run.json"
+    },
+    {
+      "test_id": "AN000452",
+      "style_id": "artist_151",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000452/run.json"
+    },
+    {
+      "test_id": "AN000453",
+      "style_id": "artist_151",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000453/run.json"
+    },
+    {
+      "test_id": "AN000454",
+      "style_id": "artist_152",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000454/run.json"
+    },
+    {
+      "test_id": "AN000455",
+      "style_id": "artist_152",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000455/run.json"
+    },
+    {
+      "test_id": "AN000456",
+      "style_id": "artist_152",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000456/run.json"
+    },
+    {
+      "test_id": "AN000457",
+      "style_id": "artist_153",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000457/run.json"
+    },
+    {
+      "test_id": "AN000458",
+      "style_id": "artist_153",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000458/run.json"
+    },
+    {
+      "test_id": "AN000459",
+      "style_id": "artist_153",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000459/run.json"
+    },
+    {
+      "test_id": "AN000460",
+      "style_id": "artist_154",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000460/run.json"
+    },
+    {
+      "test_id": "AN000461",
+      "style_id": "artist_154",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000461/run.json"
+    },
+    {
+      "test_id": "AN000462",
+      "style_id": "artist_154",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000462/run.json"
+    },
+    {
+      "test_id": "AN000463",
+      "style_id": "artist_155",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000463/run.json"
+    },
+    {
+      "test_id": "AN000464",
+      "style_id": "artist_155",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000464/run.json"
+    },
+    {
+      "test_id": "AN000465",
+      "style_id": "artist_155",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000465/run.json"
+    },
+    {
+      "test_id": "AN000466",
+      "style_id": "artist_156",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000466/run.json"
+    },
+    {
+      "test_id": "AN000467",
+      "style_id": "artist_156",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000467/run.json"
+    },
+    {
+      "test_id": "AN000468",
+      "style_id": "artist_156",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000468/run.json"
+    },
+    {
+      "test_id": "AN000469",
+      "style_id": "artist_157",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000469/run.json"
+    },
+    {
+      "test_id": "AN000470",
+      "style_id": "artist_157",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000470/run.json"
+    },
+    {
+      "test_id": "AN000471",
+      "style_id": "artist_157",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000471/run.json"
+    },
+    {
+      "test_id": "AN000472",
+      "style_id": "artist_158",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000472/run.json"
+    },
+    {
+      "test_id": "AN000473",
+      "style_id": "artist_158",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000473/run.json"
+    },
+    {
+      "test_id": "AN000474",
+      "style_id": "artist_158",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000474/run.json"
+    },
+    {
+      "test_id": "AN000475",
+      "style_id": "artist_159",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000475/run.json"
+    },
+    {
+      "test_id": "AN000476",
+      "style_id": "artist_159",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000476/run.json"
+    },
+    {
+      "test_id": "AN000477",
+      "style_id": "artist_159",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000477/run.json"
+    },
+    {
+      "test_id": "AN000478",
+      "style_id": "artist_160",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000478/run.json"
+    },
+    {
+      "test_id": "AN000479",
+      "style_id": "artist_160",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000479/run.json"
+    },
+    {
+      "test_id": "AN000480",
+      "style_id": "artist_160",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000480/run.json"
+    },
+    {
+      "test_id": "AN000481",
+      "style_id": "artist_161",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000481/run.json"
+    },
+    {
+      "test_id": "AN000482",
+      "style_id": "artist_161",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000482/run.json"
+    },
+    {
+      "test_id": "AN000483",
+      "style_id": "artist_161",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000483/run.json"
+    },
+    {
+      "test_id": "AN000484",
+      "style_id": "artist_162",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000484/run.json"
+    },
+    {
+      "test_id": "AN000485",
+      "style_id": "artist_162",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000485/run.json"
+    },
+    {
+      "test_id": "AN000486",
+      "style_id": "artist_162",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000486/run.json"
+    },
+    {
+      "test_id": "AN000487",
+      "style_id": "artist_163",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000487/run.json"
+    },
+    {
+      "test_id": "AN000488",
+      "style_id": "artist_163",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000488/run.json"
+    },
+    {
+      "test_id": "AN000489",
+      "style_id": "artist_163",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000489/run.json"
+    },
+    {
+      "test_id": "AN000490",
+      "style_id": "artist_164",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000490/run.json"
+    },
+    {
+      "test_id": "AN000491",
+      "style_id": "artist_164",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000491/run.json"
+    },
+    {
+      "test_id": "AN000492",
+      "style_id": "artist_164",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000492/run.json"
+    },
+    {
+      "test_id": "AN000493",
+      "style_id": "artist_165",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000493/run.json"
+    },
+    {
+      "test_id": "AN000494",
+      "style_id": "artist_165",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000494/run.json"
+    },
+    {
+      "test_id": "AN000495",
+      "style_id": "artist_165",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000495/run.json"
+    },
+    {
+      "test_id": "AN000496",
+      "style_id": "artist_166",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000496/run.json"
+    },
+    {
+      "test_id": "AN000497",
+      "style_id": "artist_166",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000497/run.json"
+    },
+    {
+      "test_id": "AN000498",
+      "style_id": "artist_166",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000498/run.json"
+    },
+    {
+      "test_id": "AN000499",
+      "style_id": "artist_167",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000499/run.json"
+    },
+    {
+      "test_id": "AN000500",
+      "style_id": "artist_167",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000500/run.json"
+    },
+    {
+      "test_id": "AN000501",
+      "style_id": "artist_167",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000501/run.json"
+    },
+    {
+      "test_id": "AN000502",
+      "style_id": "artist_168",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000502/run.json"
+    },
+    {
+      "test_id": "AN000503",
+      "style_id": "artist_168",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000503/run.json"
+    },
+    {
+      "test_id": "AN000504",
+      "style_id": "artist_168",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000504/run.json"
+    },
+    {
+      "test_id": "AN000505",
+      "style_id": "artist_169",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000505/run.json"
+    },
+    {
+      "test_id": "AN000506",
+      "style_id": "artist_169",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000506/run.json"
+    },
+    {
+      "test_id": "AN000507",
+      "style_id": "artist_169",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000507/run.json"
+    },
+    {
+      "test_id": "AN000508",
+      "style_id": "artist_170",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000508/run.json"
+    },
+    {
+      "test_id": "AN000509",
+      "style_id": "artist_170",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000509/run.json"
+    },
+    {
+      "test_id": "AN000510",
+      "style_id": "artist_170",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000510/run.json"
+    },
+    {
+      "test_id": "AN000511",
+      "style_id": "artist_171",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000511/run.json"
+    },
+    {
+      "test_id": "AN000512",
+      "style_id": "artist_171",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000512/run.json"
+    },
+    {
+      "test_id": "AN000513",
+      "style_id": "artist_171",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000513/run.json"
+    },
+    {
+      "test_id": "AN000514",
+      "style_id": "artist_172",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000514/run.json"
+    },
+    {
+      "test_id": "AN000515",
+      "style_id": "artist_172",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000515/run.json"
+    },
+    {
+      "test_id": "AN000516",
+      "style_id": "artist_172",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000516/run.json"
+    },
+    {
+      "test_id": "AN000517",
+      "style_id": "artist_173",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000517/run.json"
+    },
+    {
+      "test_id": "AN000518",
+      "style_id": "artist_173",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000518/run.json"
+    },
+    {
+      "test_id": "AN000519",
+      "style_id": "artist_173",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000519/run.json"
+    },
+    {
+      "test_id": "AN000520",
+      "style_id": "artist_174",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000520/run.json"
+    },
+    {
+      "test_id": "AN000521",
+      "style_id": "artist_174",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000521/run.json"
+    },
+    {
+      "test_id": "AN000522",
+      "style_id": "artist_174",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000522/run.json"
+    },
+    {
+      "test_id": "AN000523",
+      "style_id": "artist_175",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000523/run.json"
+    },
+    {
+      "test_id": "AN000524",
+      "style_id": "artist_175",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000524/run.json"
+    },
+    {
+      "test_id": "AN000525",
+      "style_id": "artist_175",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000525/run.json"
+    },
+    {
+      "test_id": "AN000526",
+      "style_id": "artist_176",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000526/run.json"
+    },
+    {
+      "test_id": "AN000527",
+      "style_id": "artist_176",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000527/run.json"
+    },
+    {
+      "test_id": "AN000528",
+      "style_id": "artist_176",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000528/run.json"
+    },
+    {
+      "test_id": "AN000529",
+      "style_id": "artist_177",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000529/run.json"
+    },
+    {
+      "test_id": "AN000530",
+      "style_id": "artist_177",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000530/run.json"
+    },
+    {
+      "test_id": "AN000531",
+      "style_id": "artist_177",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000531/run.json"
+    },
+    {
+      "test_id": "AN000532",
+      "style_id": "artist_178",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000532/run.json"
+    },
+    {
+      "test_id": "AN000533",
+      "style_id": "artist_178",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000533/run.json"
+    },
+    {
+      "test_id": "AN000534",
+      "style_id": "artist_178",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000534/run.json"
+    },
+    {
+      "test_id": "AN000535",
+      "style_id": "artist_179",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000535/run.json"
+    },
+    {
+      "test_id": "AN000536",
+      "style_id": "artist_179",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000536/run.json"
+    },
+    {
+      "test_id": "AN000537",
+      "style_id": "artist_179",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000537/run.json"
+    },
+    {
+      "test_id": "AN000538",
+      "style_id": "artist_180",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000538/run.json"
+    },
+    {
+      "test_id": "AN000539",
+      "style_id": "artist_180",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000539/run.json"
+    },
+    {
+      "test_id": "AN000540",
+      "style_id": "artist_180",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000540/run.json"
+    },
+    {
+      "test_id": "AN000541",
+      "style_id": "artist_181",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000541/run.json"
+    },
+    {
+      "test_id": "AN000542",
+      "style_id": "artist_181",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000542/run.json"
+    },
+    {
+      "test_id": "AN000543",
+      "style_id": "artist_181",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000543/run.json"
+    },
+    {
+      "test_id": "AN000544",
+      "style_id": "artist_182",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000544/run.json"
+    },
+    {
+      "test_id": "AN000545",
+      "style_id": "artist_182",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000545/run.json"
+    },
+    {
+      "test_id": "AN000546",
+      "style_id": "artist_182",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000546/run.json"
+    },
+    {
+      "test_id": "AN000547",
+      "style_id": "artist_183",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000547/run.json"
+    },
+    {
+      "test_id": "AN000548",
+      "style_id": "artist_183",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000548/run.json"
+    },
+    {
+      "test_id": "AN000549",
+      "style_id": "artist_183",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000549/run.json"
+    },
+    {
+      "test_id": "AN000550",
+      "style_id": "artist_184",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000550/run.json"
+    },
+    {
+      "test_id": "AN000551",
+      "style_id": "artist_184",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000551/run.json"
+    },
+    {
+      "test_id": "AN000552",
+      "style_id": "artist_184",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000552/run.json"
+    },
+    {
+      "test_id": "AN000553",
+      "style_id": "artist_185",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000553/run.json"
+    },
+    {
+      "test_id": "AN000554",
+      "style_id": "artist_185",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000554/run.json"
+    },
+    {
+      "test_id": "AN000555",
+      "style_id": "artist_185",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000555/run.json"
+    },
+    {
+      "test_id": "AN000556",
+      "style_id": "artist_186",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000556/run.json"
+    },
+    {
+      "test_id": "AN000557",
+      "style_id": "artist_186",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000557/run.json"
+    },
+    {
+      "test_id": "AN000558",
+      "style_id": "artist_186",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000558/run.json"
+    },
+    {
+      "test_id": "AN000559",
+      "style_id": "artist_187",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000559/run.json"
+    },
+    {
+      "test_id": "AN000560",
+      "style_id": "artist_187",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000560/run.json"
+    },
+    {
+      "test_id": "AN000561",
+      "style_id": "artist_187",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000561/run.json"
+    },
+    {
+      "test_id": "AN000562",
+      "style_id": "artist_188",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000562/run.json"
+    },
+    {
+      "test_id": "AN000563",
+      "style_id": "artist_188",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000563/run.json"
+    },
+    {
+      "test_id": "AN000564",
+      "style_id": "artist_188",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000564/run.json"
+    },
+    {
+      "test_id": "AN000565",
+      "style_id": "artist_189",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000565/run.json"
+    },
+    {
+      "test_id": "AN000566",
+      "style_id": "artist_189",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000566/run.json"
+    },
+    {
+      "test_id": "AN000567",
+      "style_id": "artist_189",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000567/run.json"
+    },
+    {
+      "test_id": "AN000568",
+      "style_id": "artist_190",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000568/run.json"
+    },
+    {
+      "test_id": "AN000569",
+      "style_id": "artist_190",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000569/run.json"
+    },
+    {
+      "test_id": "AN000570",
+      "style_id": "artist_190",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000570/run.json"
+    },
+    {
+      "test_id": "AN000571",
+      "style_id": "artist_191",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000571/run.json"
+    },
+    {
+      "test_id": "AN000572",
+      "style_id": "artist_191",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000572/run.json"
+    },
+    {
+      "test_id": "AN000573",
+      "style_id": "artist_191",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000573/run.json"
+    },
+    {
+      "test_id": "AN000574",
+      "style_id": "artist_192",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000574/run.json"
+    },
+    {
+      "test_id": "AN000575",
+      "style_id": "artist_192",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000575/run.json"
+    },
+    {
+      "test_id": "AN000576",
+      "style_id": "artist_192",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000576/run.json"
+    },
+    {
+      "test_id": "AN000577",
+      "style_id": "artist_193",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000577/run.json"
+    },
+    {
+      "test_id": "AN000578",
+      "style_id": "artist_193",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000578/run.json"
+    },
+    {
+      "test_id": "AN000579",
+      "style_id": "artist_193",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000579/run.json"
+    },
+    {
+      "test_id": "AN000580",
+      "style_id": "artist_194",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000580/run.json"
+    },
+    {
+      "test_id": "AN000581",
+      "style_id": "artist_194",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000581/run.json"
+    },
+    {
+      "test_id": "AN000582",
+      "style_id": "artist_194",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000582/run.json"
+    },
+    {
+      "test_id": "AN000583",
+      "style_id": "artist_195",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000583/run.json"
+    },
+    {
+      "test_id": "AN000584",
+      "style_id": "artist_195",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000584/run.json"
+    },
+    {
+      "test_id": "AN000585",
+      "style_id": "artist_195",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000585/run.json"
+    },
+    {
+      "test_id": "AN000586",
+      "style_id": "artist_196",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000586/run.json"
+    },
+    {
+      "test_id": "AN000587",
+      "style_id": "artist_196",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000587/run.json"
+    },
+    {
+      "test_id": "AN000588",
+      "style_id": "artist_196",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000588/run.json"
+    },
+    {
+      "test_id": "AN000589",
+      "style_id": "artist_197",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000589/run.json"
+    },
+    {
+      "test_id": "AN000590",
+      "style_id": "artist_197",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000590/run.json"
+    },
+    {
+      "test_id": "AN000591",
+      "style_id": "artist_197",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000591/run.json"
+    },
+    {
+      "test_id": "AN000592",
+      "style_id": "artist_198",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000592/run.json"
+    },
+    {
+      "test_id": "AN000593",
+      "style_id": "artist_198",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000593/run.json"
+    },
+    {
+      "test_id": "AN000594",
+      "style_id": "artist_198",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000594/run.json"
+    },
+    {
+      "test_id": "AN000595",
+      "style_id": "artist_199",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000595/run.json"
+    },
+    {
+      "test_id": "AN000596",
+      "style_id": "artist_199",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000596/run.json"
+    },
+    {
+      "test_id": "AN000597",
+      "style_id": "artist_199",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000597/run.json"
+    },
+    {
+      "test_id": "AN000598",
+      "style_id": "artist_200",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000598/run.json"
+    },
+    {
+      "test_id": "AN000599",
+      "style_id": "artist_200",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000599/run.json"
+    },
+    {
+      "test_id": "AN000600",
+      "style_id": "artist_200",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000600/run.json"
+    },
+    {
+      "test_id": "AN000601",
+      "style_id": "artist_201",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000601/run.json"
+    },
+    {
+      "test_id": "AN000602",
+      "style_id": "artist_201",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000602/run.json"
+    },
+    {
+      "test_id": "AN000603",
+      "style_id": "artist_201",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000603/run.json"
+    },
+    {
+      "test_id": "AN000604",
+      "style_id": "artist_202",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000604/run.json"
+    },
+    {
+      "test_id": "AN000605",
+      "style_id": "artist_202",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000605/run.json"
+    },
+    {
+      "test_id": "AN000606",
+      "style_id": "artist_202",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000606/run.json"
+    },
+    {
+      "test_id": "AN000607",
+      "style_id": "artist_203",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000607/run.json"
+    },
+    {
+      "test_id": "AN000608",
+      "style_id": "artist_203",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000608/run.json"
+    },
+    {
+      "test_id": "AN000609",
+      "style_id": "artist_203",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000609/run.json"
+    },
+    {
+      "test_id": "AN000610",
+      "style_id": "artist_204",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000610/run.json"
+    },
+    {
+      "test_id": "AN000611",
+      "style_id": "artist_204",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000611/run.json"
+    },
+    {
+      "test_id": "AN000612",
+      "style_id": "artist_204",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000612/run.json"
+    },
+    {
+      "test_id": "AN000613",
+      "style_id": "artist_205",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000613/run.json"
+    },
+    {
+      "test_id": "AN000614",
+      "style_id": "artist_205",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000614/run.json"
+    },
+    {
+      "test_id": "AN000615",
+      "style_id": "artist_205",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000615/run.json"
+    },
+    {
+      "test_id": "AN000616",
+      "style_id": "artist_206",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000616/run.json"
+    },
+    {
+      "test_id": "AN000617",
+      "style_id": "artist_206",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000617/run.json"
+    },
+    {
+      "test_id": "AN000618",
+      "style_id": "artist_206",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000618/run.json"
+    },
+    {
+      "test_id": "AN000619",
+      "style_id": "artist_207",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000619/run.json"
+    },
+    {
+      "test_id": "AN000620",
+      "style_id": "artist_207",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000620/run.json"
+    },
+    {
+      "test_id": "AN000621",
+      "style_id": "artist_207",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000621/run.json"
+    },
+    {
+      "test_id": "AN000622",
+      "style_id": "artist_208",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000622/run.json"
+    },
+    {
+      "test_id": "AN000623",
+      "style_id": "artist_208",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000623/run.json"
+    },
+    {
+      "test_id": "AN000624",
+      "style_id": "artist_208",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000624/run.json"
+    },
+    {
+      "test_id": "AN000625",
+      "style_id": "artist_209",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000625/run.json"
+    },
+    {
+      "test_id": "AN000626",
+      "style_id": "artist_209",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000626/run.json"
+    },
+    {
+      "test_id": "AN000627",
+      "style_id": "artist_209",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000627/run.json"
+    },
+    {
+      "test_id": "AN000628",
+      "style_id": "artist_210",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000628/run.json"
+    },
+    {
+      "test_id": "AN000629",
+      "style_id": "artist_210",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000629/run.json"
+    },
+    {
+      "test_id": "AN000630",
+      "style_id": "artist_210",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000630/run.json"
+    },
+    {
+      "test_id": "AN000631",
+      "style_id": "artist_211",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000631/run.json"
+    },
+    {
+      "test_id": "AN000632",
+      "style_id": "artist_211",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000632/run.json"
+    },
+    {
+      "test_id": "AN000633",
+      "style_id": "artist_211",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000633/run.json"
+    },
+    {
+      "test_id": "AN000634",
+      "style_id": "artist_212",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000634/run.json"
+    },
+    {
+      "test_id": "AN000635",
+      "style_id": "artist_212",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000635/run.json"
+    },
+    {
+      "test_id": "AN000636",
+      "style_id": "artist_212",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000636/run.json"
+    },
+    {
+      "test_id": "AN000637",
+      "style_id": "artist_213",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000637/run.json"
+    },
+    {
+      "test_id": "AN000638",
+      "style_id": "artist_213",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000638/run.json"
+    },
+    {
+      "test_id": "AN000639",
+      "style_id": "artist_213",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000639/run.json"
+    },
+    {
+      "test_id": "AN000640",
+      "style_id": "artist_214",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000640/run.json"
+    },
+    {
+      "test_id": "AN000641",
+      "style_id": "artist_214",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000641/run.json"
+    },
+    {
+      "test_id": "AN000642",
+      "style_id": "artist_214",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000642/run.json"
+    },
+    {
+      "test_id": "AN000643",
+      "style_id": "artist_215",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000643/run.json"
+    },
+    {
+      "test_id": "AN000644",
+      "style_id": "artist_215",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000644/run.json"
+    },
+    {
+      "test_id": "AN000645",
+      "style_id": "artist_215",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000645/run.json"
+    },
+    {
+      "test_id": "AN000646",
+      "style_id": "artist_216",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000646/run.json"
+    },
+    {
+      "test_id": "AN000647",
+      "style_id": "artist_216",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000647/run.json"
+    },
+    {
+      "test_id": "AN000648",
+      "style_id": "artist_216",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000648/run.json"
+    },
+    {
+      "test_id": "AN000649",
+      "style_id": "artist_217",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000649/run.json"
+    },
+    {
+      "test_id": "AN000650",
+      "style_id": "artist_217",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000650/run.json"
+    },
+    {
+      "test_id": "AN000651",
+      "style_id": "artist_217",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000651/run.json"
+    },
+    {
+      "test_id": "AN000652",
+      "style_id": "artist_218",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000652/run.json"
+    },
+    {
+      "test_id": "AN000653",
+      "style_id": "artist_218",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000653/run.json"
+    },
+    {
+      "test_id": "AN000654",
+      "style_id": "artist_218",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000654/run.json"
+    },
+    {
+      "test_id": "AN000655",
+      "style_id": "artist_219",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000655/run.json"
+    },
+    {
+      "test_id": "AN000656",
+      "style_id": "artist_219",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000656/run.json"
+    },
+    {
+      "test_id": "AN000657",
+      "style_id": "artist_219",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000657/run.json"
+    },
+    {
+      "test_id": "AN000658",
+      "style_id": "artist_220",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000658/run.json"
+    },
+    {
+      "test_id": "AN000659",
+      "style_id": "artist_220",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000659/run.json"
+    },
+    {
+      "test_id": "AN000660",
+      "style_id": "artist_220",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000660/run.json"
+    },
+    {
+      "test_id": "AN000661",
+      "style_id": "artist_221",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000661/run.json"
+    },
+    {
+      "test_id": "AN000662",
+      "style_id": "artist_221",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000662/run.json"
+    },
+    {
+      "test_id": "AN000663",
+      "style_id": "artist_221",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000663/run.json"
+    },
+    {
+      "test_id": "AN000664",
+      "style_id": "artist_222",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000664/run.json"
+    },
+    {
+      "test_id": "AN000665",
+      "style_id": "artist_222",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000665/run.json"
+    },
+    {
+      "test_id": "AN000666",
+      "style_id": "artist_222",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000666/run.json"
+    },
+    {
+      "test_id": "AN000667",
+      "style_id": "artist_223",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000667/run.json"
+    },
+    {
+      "test_id": "AN000668",
+      "style_id": "artist_223",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000668/run.json"
+    },
+    {
+      "test_id": "AN000669",
+      "style_id": "artist_223",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000669/run.json"
+    },
+    {
+      "test_id": "AN000670",
+      "style_id": "artist_224",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000670/run.json"
+    },
+    {
+      "test_id": "AN000671",
+      "style_id": "artist_224",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000671/run.json"
+    },
+    {
+      "test_id": "AN000672",
+      "style_id": "artist_224",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000672/run.json"
+    },
+    {
+      "test_id": "AN000673",
+      "style_id": "artist_225",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000673/run.json"
+    },
+    {
+      "test_id": "AN000674",
+      "style_id": "artist_225",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000674/run.json"
+    },
+    {
+      "test_id": "AN000675",
+      "style_id": "artist_225",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000675/run.json"
+    },
+    {
+      "test_id": "AN000676",
+      "style_id": "artist_226",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000676/run.json"
+    },
+    {
+      "test_id": "AN000677",
+      "style_id": "artist_226",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000677/run.json"
+    },
+    {
+      "test_id": "AN000678",
+      "style_id": "artist_226",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000678/run.json"
+    },
+    {
+      "test_id": "AN000679",
+      "style_id": "artist_227",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000679/run.json"
+    },
+    {
+      "test_id": "AN000680",
+      "style_id": "artist_227",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000680/run.json"
+    },
+    {
+      "test_id": "AN000681",
+      "style_id": "artist_227",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000681/run.json"
+    },
+    {
+      "test_id": "AN000682",
+      "style_id": "artist_228",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000682/run.json"
+    },
+    {
+      "test_id": "AN000683",
+      "style_id": "artist_228",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000683/run.json"
+    },
+    {
+      "test_id": "AN000684",
+      "style_id": "artist_228",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000684/run.json"
+    },
+    {
+      "test_id": "AN000685",
+      "style_id": "artist_229",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000685/run.json"
+    },
+    {
+      "test_id": "AN000686",
+      "style_id": "artist_229",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000686/run.json"
+    },
+    {
+      "test_id": "AN000687",
+      "style_id": "artist_229",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000687/run.json"
+    },
+    {
+      "test_id": "AN000688",
+      "style_id": "artist_230",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000688/run.json"
+    },
+    {
+      "test_id": "AN000689",
+      "style_id": "artist_230",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000689/run.json"
+    },
+    {
+      "test_id": "AN000690",
+      "style_id": "artist_230",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000690/run.json"
+    },
+    {
+      "test_id": "AN000691",
+      "style_id": "artist_231",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000691/run.json"
+    },
+    {
+      "test_id": "AN000692",
+      "style_id": "artist_231",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000692/run.json"
+    },
+    {
+      "test_id": "AN000693",
+      "style_id": "artist_231",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000693/run.json"
+    },
+    {
+      "test_id": "AN000694",
+      "style_id": "artist_232",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000694/run.json"
+    },
+    {
+      "test_id": "AN000695",
+      "style_id": "artist_232",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000695/run.json"
+    },
+    {
+      "test_id": "AN000696",
+      "style_id": "artist_232",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000696/run.json"
+    },
+    {
+      "test_id": "AN000697",
+      "style_id": "artist_233",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000697/run.json"
+    },
+    {
+      "test_id": "AN000698",
+      "style_id": "artist_233",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000698/run.json"
+    },
+    {
+      "test_id": "AN000699",
+      "style_id": "artist_233",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000699/run.json"
+    },
+    {
+      "test_id": "AN000700",
+      "style_id": "artist_234",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000700/run.json"
+    },
+    {
+      "test_id": "AN000701",
+      "style_id": "artist_234",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000701/run.json"
+    },
+    {
+      "test_id": "AN000702",
+      "style_id": "artist_234",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000702/run.json"
+    },
+    {
+      "test_id": "AN000703",
+      "style_id": "artist_235",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000703/run.json"
+    },
+    {
+      "test_id": "AN000704",
+      "style_id": "artist_235",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000704/run.json"
+    },
+    {
+      "test_id": "AN000705",
+      "style_id": "artist_235",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000705/run.json"
+    },
+    {
+      "test_id": "AN000706",
+      "style_id": "artist_236",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000706/run.json"
+    },
+    {
+      "test_id": "AN000707",
+      "style_id": "artist_236",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000707/run.json"
+    },
+    {
+      "test_id": "AN000708",
+      "style_id": "artist_236",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000708/run.json"
+    },
+    {
+      "test_id": "AN000709",
+      "style_id": "artist_237",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000709/run.json"
+    },
+    {
+      "test_id": "AN000710",
+      "style_id": "artist_237",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000710/run.json"
+    },
+    {
+      "test_id": "AN000711",
+      "style_id": "artist_237",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000711/run.json"
+    },
+    {
+      "test_id": "AN000712",
+      "style_id": "artist_238",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000712/run.json"
+    },
+    {
+      "test_id": "AN000713",
+      "style_id": "artist_238",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000713/run.json"
+    },
+    {
+      "test_id": "AN000714",
+      "style_id": "artist_238",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000714/run.json"
+    },
+    {
+      "test_id": "AN000715",
+      "style_id": "artist_239",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000715/run.json"
+    },
+    {
+      "test_id": "AN000716",
+      "style_id": "artist_239",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000716/run.json"
+    },
+    {
+      "test_id": "AN000717",
+      "style_id": "artist_239",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000717/run.json"
+    },
+    {
+      "test_id": "AN000718",
+      "style_id": "artist_240",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000718/run.json"
+    },
+    {
+      "test_id": "AN000719",
+      "style_id": "artist_240",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000719/run.json"
+    },
+    {
+      "test_id": "AN000720",
+      "style_id": "artist_240",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000720/run.json"
+    },
+    {
+      "test_id": "AN000721",
+      "style_id": "artist_241",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000721/run.json"
+    },
+    {
+      "test_id": "AN000722",
+      "style_id": "artist_241",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000722/run.json"
+    },
+    {
+      "test_id": "AN000723",
+      "style_id": "artist_241",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000723/run.json"
+    },
+    {
+      "test_id": "AN000724",
+      "style_id": "artist_242",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000724/run.json"
+    },
+    {
+      "test_id": "AN000725",
+      "style_id": "artist_242",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000725/run.json"
+    },
+    {
+      "test_id": "AN000726",
+      "style_id": "artist_242",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000726/run.json"
+    },
+    {
+      "test_id": "AN000727",
+      "style_id": "artist_243",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000727/run.json"
+    },
+    {
+      "test_id": "AN000728",
+      "style_id": "artist_243",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000728/run.json"
+    },
+    {
+      "test_id": "AN000729",
+      "style_id": "artist_243",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000729/run.json"
+    },
+    {
+      "test_id": "AN000730",
+      "style_id": "artist_244",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000730/run.json"
+    },
+    {
+      "test_id": "AN000731",
+      "style_id": "artist_244",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000731/run.json"
+    },
+    {
+      "test_id": "AN000732",
+      "style_id": "artist_244",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000732/run.json"
+    },
+    {
+      "test_id": "AN000733",
+      "style_id": "artist_245",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000733/run.json"
+    },
+    {
+      "test_id": "AN000734",
+      "style_id": "artist_245",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000734/run.json"
+    },
+    {
+      "test_id": "AN000735",
+      "style_id": "artist_245",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000735/run.json"
+    },
+    {
+      "test_id": "AN000736",
+      "style_id": "artist_246",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000736/run.json"
+    },
+    {
+      "test_id": "AN000737",
+      "style_id": "artist_246",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000737/run.json"
+    },
+    {
+      "test_id": "AN000738",
+      "style_id": "artist_246",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000738/run.json"
+    },
+    {
+      "test_id": "AN000739",
+      "style_id": "artist_247",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000739/run.json"
+    },
+    {
+      "test_id": "AN000740",
+      "style_id": "artist_247",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000740/run.json"
+    },
+    {
+      "test_id": "AN000741",
+      "style_id": "artist_247",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000741/run.json"
+    },
+    {
+      "test_id": "AN000742",
+      "style_id": "artist_248",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000742/run.json"
+    },
+    {
+      "test_id": "AN000743",
+      "style_id": "artist_248",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000743/run.json"
+    },
+    {
+      "test_id": "AN000744",
+      "style_id": "artist_248",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000744/run.json"
+    },
+    {
+      "test_id": "AN000745",
+      "style_id": "artist_249",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000745/run.json"
+    },
+    {
+      "test_id": "AN000746",
+      "style_id": "artist_249",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000746/run.json"
+    },
+    {
+      "test_id": "AN000747",
+      "style_id": "artist_249",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000747/run.json"
+    },
+    {
+      "test_id": "AN000748",
+      "style_id": "artist_250",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000748/run.json"
+    },
+    {
+      "test_id": "AN000749",
+      "style_id": "artist_250",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000749/run.json"
+    },
+    {
+      "test_id": "AN000750",
+      "style_id": "artist_250",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000750/run.json"
+    },
+    {
+      "test_id": "AN000751",
+      "style_id": "artist_251",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000751/run.json"
+    },
+    {
+      "test_id": "AN000752",
+      "style_id": "artist_251",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000752/run.json"
+    },
+    {
+      "test_id": "AN000753",
+      "style_id": "artist_251",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000753/run.json"
+    },
+    {
+      "test_id": "AN000754",
+      "style_id": "artist_252",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000754/run.json"
+    },
+    {
+      "test_id": "AN000755",
+      "style_id": "artist_252",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000755/run.json"
+    },
+    {
+      "test_id": "AN000756",
+      "style_id": "artist_252",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000756/run.json"
+    },
+    {
+      "test_id": "AN000757",
+      "style_id": "artist_253",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000757/run.json"
+    },
+    {
+      "test_id": "AN000758",
+      "style_id": "artist_253",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000758/run.json"
+    },
+    {
+      "test_id": "AN000759",
+      "style_id": "artist_253",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000759/run.json"
+    },
+    {
+      "test_id": "AN000760",
+      "style_id": "artist_254",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000760/run.json"
+    },
+    {
+      "test_id": "AN000761",
+      "style_id": "artist_254",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000761/run.json"
+    },
+    {
+      "test_id": "AN000762",
+      "style_id": "artist_254",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000762/run.json"
+    },
+    {
+      "test_id": "AN000763",
+      "style_id": "artist_255",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000763/run.json"
+    },
+    {
+      "test_id": "AN000764",
+      "style_id": "artist_255",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000764/run.json"
+    },
+    {
+      "test_id": "AN000765",
+      "style_id": "artist_255",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000765/run.json"
+    },
+    {
+      "test_id": "AN000766",
+      "style_id": "artist_256",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000766/run.json"
+    },
+    {
+      "test_id": "AN000767",
+      "style_id": "artist_256",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000767/run.json"
+    },
+    {
+      "test_id": "AN000768",
+      "style_id": "artist_256",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000768/run.json"
+    },
+    {
+      "test_id": "AN000769",
+      "style_id": "artist_257",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000769/run.json"
+    },
+    {
+      "test_id": "AN000770",
+      "style_id": "artist_257",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000770/run.json"
+    },
+    {
+      "test_id": "AN000771",
+      "style_id": "artist_257",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000771/run.json"
+    },
+    {
+      "test_id": "AN000772",
+      "style_id": "artist_258",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000772/run.json"
+    },
+    {
+      "test_id": "AN000773",
+      "style_id": "artist_258",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000773/run.json"
+    },
+    {
+      "test_id": "AN000774",
+      "style_id": "artist_258",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000774/run.json"
+    },
+    {
+      "test_id": "AN000775",
+      "style_id": "artist_259",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000775/run.json"
+    },
+    {
+      "test_id": "AN000776",
+      "style_id": "artist_259",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000776/run.json"
+    },
+    {
+      "test_id": "AN000777",
+      "style_id": "artist_259",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000777/run.json"
+    },
+    {
+      "test_id": "AN000778",
+      "style_id": "artist_260",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000778/run.json"
+    },
+    {
+      "test_id": "AN000779",
+      "style_id": "artist_260",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000779/run.json"
+    },
+    {
+      "test_id": "AN000780",
+      "style_id": "artist_260",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000780/run.json"
+    },
+    {
+      "test_id": "AN000781",
+      "style_id": "artist_261",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000781/run.json"
+    },
+    {
+      "test_id": "AN000782",
+      "style_id": "artist_261",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000782/run.json"
+    },
+    {
+      "test_id": "AN000783",
+      "style_id": "artist_261",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000783/run.json"
+    },
+    {
+      "test_id": "AN000784",
+      "style_id": "artist_262",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000784/run.json"
+    },
+    {
+      "test_id": "AN000785",
+      "style_id": "artist_262",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000785/run.json"
+    },
+    {
+      "test_id": "AN000786",
+      "style_id": "artist_262",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000786/run.json"
+    },
+    {
+      "test_id": "AN000787",
+      "style_id": "artist_263",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000787/run.json"
+    },
+    {
+      "test_id": "AN000788",
+      "style_id": "artist_263",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000788/run.json"
+    },
+    {
+      "test_id": "AN000789",
+      "style_id": "artist_263",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000789/run.json"
+    },
+    {
+      "test_id": "AN000790",
+      "style_id": "artist_264",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000790/run.json"
+    },
+    {
+      "test_id": "AN000791",
+      "style_id": "artist_264",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000791/run.json"
+    },
+    {
+      "test_id": "AN000792",
+      "style_id": "artist_264",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000792/run.json"
+    },
+    {
+      "test_id": "AN000793",
+      "style_id": "artist_265",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000793/run.json"
+    },
+    {
+      "test_id": "AN000794",
+      "style_id": "artist_265",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000794/run.json"
+    },
+    {
+      "test_id": "AN000795",
+      "style_id": "artist_265",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000795/run.json"
+    },
+    {
+      "test_id": "AN000796",
+      "style_id": "artist_266",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000796/run.json"
+    },
+    {
+      "test_id": "AN000797",
+      "style_id": "artist_266",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000797/run.json"
+    },
+    {
+      "test_id": "AN000798",
+      "style_id": "artist_266",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000798/run.json"
+    },
+    {
+      "test_id": "AN000799",
+      "style_id": "artist_267",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000799/run.json"
+    },
+    {
+      "test_id": "AN000800",
+      "style_id": "artist_267",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000800/run.json"
+    },
+    {
+      "test_id": "AN000801",
+      "style_id": "artist_267",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000801/run.json"
+    },
+    {
+      "test_id": "AN000802",
+      "style_id": "artist_268",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000802/run.json"
+    },
+    {
+      "test_id": "AN000803",
+      "style_id": "artist_268",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000803/run.json"
+    },
+    {
+      "test_id": "AN000804",
+      "style_id": "artist_268",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000804/run.json"
+    },
+    {
+      "test_id": "AN000805",
+      "style_id": "artist_269",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000805/run.json"
+    },
+    {
+      "test_id": "AN000806",
+      "style_id": "artist_269",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000806/run.json"
+    },
+    {
+      "test_id": "AN000807",
+      "style_id": "artist_269",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000807/run.json"
+    },
+    {
+      "test_id": "AN000808",
+      "style_id": "artist_270",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000808/run.json"
+    },
+    {
+      "test_id": "AN000809",
+      "style_id": "artist_270",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000809/run.json"
+    },
+    {
+      "test_id": "AN000810",
+      "style_id": "artist_270",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000810/run.json"
+    },
+    {
+      "test_id": "AN000811",
+      "style_id": "artist_271",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000811/run.json"
+    },
+    {
+      "test_id": "AN000812",
+      "style_id": "artist_271",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000812/run.json"
+    },
+    {
+      "test_id": "AN000813",
+      "style_id": "artist_271",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000813/run.json"
+    },
+    {
+      "test_id": "AN000814",
+      "style_id": "artist_272",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000814/run.json"
+    },
+    {
+      "test_id": "AN000815",
+      "style_id": "artist_272",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000815/run.json"
+    },
+    {
+      "test_id": "AN000816",
+      "style_id": "artist_272",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000816/run.json"
+    },
+    {
+      "test_id": "AN000817",
+      "style_id": "artist_273",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000817/run.json"
+    },
+    {
+      "test_id": "AN000818",
+      "style_id": "artist_273",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000818/run.json"
+    },
+    {
+      "test_id": "AN000819",
+      "style_id": "artist_273",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000819/run.json"
+    },
+    {
+      "test_id": "AN000820",
+      "style_id": "artist_274",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000820/run.json"
+    },
+    {
+      "test_id": "AN000821",
+      "style_id": "artist_274",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000821/run.json"
+    },
+    {
+      "test_id": "AN000822",
+      "style_id": "artist_274",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000822/run.json"
+    },
+    {
+      "test_id": "AN000823",
+      "style_id": "artist_275",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000823/run.json"
+    },
+    {
+      "test_id": "AN000824",
+      "style_id": "artist_275",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000824/run.json"
+    },
+    {
+      "test_id": "AN000825",
+      "style_id": "artist_275",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000825/run.json"
+    },
+    {
+      "test_id": "AN000826",
+      "style_id": "artist_276",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000826/run.json"
+    },
+    {
+      "test_id": "AN000827",
+      "style_id": "artist_276",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000827/run.json"
+    },
+    {
+      "test_id": "AN000828",
+      "style_id": "artist_276",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000828/run.json"
+    },
+    {
+      "test_id": "AN000829",
+      "style_id": "artist_277",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000829/run.json"
+    },
+    {
+      "test_id": "AN000830",
+      "style_id": "artist_277",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000830/run.json"
+    },
+    {
+      "test_id": "AN000831",
+      "style_id": "artist_277",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000831/run.json"
+    },
+    {
+      "test_id": "AN000832",
+      "style_id": "artist_278",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000832/run.json"
+    },
+    {
+      "test_id": "AN000833",
+      "style_id": "artist_278",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000833/run.json"
+    },
+    {
+      "test_id": "AN000834",
+      "style_id": "artist_278",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000834/run.json"
+    },
+    {
+      "test_id": "AN000835",
+      "style_id": "artist_279",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000835/run.json"
+    },
+    {
+      "test_id": "AN000836",
+      "style_id": "artist_279",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000836/run.json"
+    },
+    {
+      "test_id": "AN000837",
+      "style_id": "artist_279",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000837/run.json"
+    },
+    {
+      "test_id": "AN000838",
+      "style_id": "artist_280",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000838/run.json"
+    },
+    {
+      "test_id": "AN000839",
+      "style_id": "artist_280",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000839/run.json"
+    },
+    {
+      "test_id": "AN000840",
+      "style_id": "artist_280",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000840/run.json"
+    },
+    {
+      "test_id": "AN000841",
+      "style_id": "artist_281",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000841/run.json"
+    },
+    {
+      "test_id": "AN000842",
+      "style_id": "artist_281",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000842/run.json"
+    },
+    {
+      "test_id": "AN000843",
+      "style_id": "artist_281",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000843/run.json"
+    },
+    {
+      "test_id": "AN000844",
+      "style_id": "artist_282",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000844/run.json"
+    },
+    {
+      "test_id": "AN000845",
+      "style_id": "artist_282",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000845/run.json"
+    },
+    {
+      "test_id": "AN000846",
+      "style_id": "artist_282",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000846/run.json"
+    },
+    {
+      "test_id": "AN000847",
+      "style_id": "artist_283",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000847/run.json"
+    },
+    {
+      "test_id": "AN000848",
+      "style_id": "artist_283",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000848/run.json"
+    },
+    {
+      "test_id": "AN000849",
+      "style_id": "artist_283",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000849/run.json"
+    },
+    {
+      "test_id": "AN000850",
+      "style_id": "artist_284",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000850/run.json"
+    },
+    {
+      "test_id": "AN000851",
+      "style_id": "artist_284",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000851/run.json"
+    },
+    {
+      "test_id": "AN000852",
+      "style_id": "artist_284",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000852/run.json"
+    },
+    {
+      "test_id": "AN000853",
+      "style_id": "artist_285",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000853/run.json"
+    },
+    {
+      "test_id": "AN000854",
+      "style_id": "artist_285",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000854/run.json"
+    },
+    {
+      "test_id": "AN000855",
+      "style_id": "artist_285",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000855/run.json"
+    },
+    {
+      "test_id": "AN000856",
+      "style_id": "artist_286",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000856/run.json"
+    },
+    {
+      "test_id": "AN000857",
+      "style_id": "artist_286",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000857/run.json"
+    },
+    {
+      "test_id": "AN000858",
+      "style_id": "artist_286",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000858/run.json"
+    },
+    {
+      "test_id": "AN000859",
+      "style_id": "artist_287",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000859/run.json"
+    },
+    {
+      "test_id": "AN000860",
+      "style_id": "artist_287",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000860/run.json"
+    },
+    {
+      "test_id": "AN000861",
+      "style_id": "artist_287",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000861/run.json"
+    },
+    {
+      "test_id": "AN000862",
+      "style_id": "artist_288",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000862/run.json"
+    },
+    {
+      "test_id": "AN000863",
+      "style_id": "artist_288",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000863/run.json"
+    },
+    {
+      "test_id": "AN000864",
+      "style_id": "artist_288",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000864/run.json"
+    },
+    {
+      "test_id": "AN000865",
+      "style_id": "artist_289",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000865/run.json"
+    },
+    {
+      "test_id": "AN000866",
+      "style_id": "artist_289",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000866/run.json"
+    },
+    {
+      "test_id": "AN000867",
+      "style_id": "artist_289",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000867/run.json"
+    },
+    {
+      "test_id": "AN000868",
+      "style_id": "artist_290",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000868/run.json"
+    },
+    {
+      "test_id": "AN000869",
+      "style_id": "artist_290",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000869/run.json"
+    },
+    {
+      "test_id": "AN000870",
+      "style_id": "artist_290",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000870/run.json"
+    },
+    {
+      "test_id": "AN000871",
+      "style_id": "artist_291",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000871/run.json"
+    },
+    {
+      "test_id": "AN000872",
+      "style_id": "artist_291",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000872/run.json"
+    },
+    {
+      "test_id": "AN000873",
+      "style_id": "artist_291",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000873/run.json"
+    },
+    {
+      "test_id": "AN000874",
+      "style_id": "artist_292",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000874/run.json"
+    },
+    {
+      "test_id": "AN000875",
+      "style_id": "artist_292",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000875/run.json"
+    },
+    {
+      "test_id": "AN000876",
+      "style_id": "artist_292",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000876/run.json"
+    },
+    {
+      "test_id": "AN000877",
+      "style_id": "artist_293",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000877/run.json"
+    },
+    {
+      "test_id": "AN000878",
+      "style_id": "artist_293",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000878/run.json"
+    },
+    {
+      "test_id": "AN000879",
+      "style_id": "artist_293",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000879/run.json"
+    },
+    {
+      "test_id": "AN000880",
+      "style_id": "artist_294",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000880/run.json"
+    },
+    {
+      "test_id": "AN000881",
+      "style_id": "artist_294",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000881/run.json"
+    },
+    {
+      "test_id": "AN000882",
+      "style_id": "artist_294",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000882/run.json"
+    },
+    {
+      "test_id": "AN000883",
+      "style_id": "artist_295",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000883/run.json"
+    },
+    {
+      "test_id": "AN000884",
+      "style_id": "artist_295",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000884/run.json"
+    },
+    {
+      "test_id": "AN000885",
+      "style_id": "artist_295",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000885/run.json"
+    },
+    {
+      "test_id": "AN000886",
+      "style_id": "artist_296",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000886/run.json"
+    },
+    {
+      "test_id": "AN000887",
+      "style_id": "artist_296",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000887/run.json"
+    },
+    {
+      "test_id": "AN000888",
+      "style_id": "artist_296",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000888/run.json"
+    },
+    {
+      "test_id": "AN000889",
+      "style_id": "artist_297",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000889/run.json"
+    },
+    {
+      "test_id": "AN000890",
+      "style_id": "artist_297",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000890/run.json"
+    },
+    {
+      "test_id": "AN000891",
+      "style_id": "artist_297",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000891/run.json"
+    },
+    {
+      "test_id": "AN000892",
+      "style_id": "artist_298",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000892/run.json"
+    },
+    {
+      "test_id": "AN000893",
+      "style_id": "artist_298",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000893/run.json"
+    },
+    {
+      "test_id": "AN000894",
+      "style_id": "artist_298",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000894/run.json"
+    },
+    {
+      "test_id": "AN000895",
+      "style_id": "artist_299",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000895/run.json"
+    },
+    {
+      "test_id": "AN000896",
+      "style_id": "artist_299",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000896/run.json"
+    },
+    {
+      "test_id": "AN000897",
+      "style_id": "artist_299",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000897/run.json"
+    },
+    {
+      "test_id": "AN000898",
+      "style_id": "artist_300",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000898/run.json"
+    },
+    {
+      "test_id": "AN000899",
+      "style_id": "artist_300",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000899/run.json"
+    },
+    {
+      "test_id": "AN000900",
+      "style_id": "artist_300",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_screen_v0_7/runs/AN000900/run.json"
+    }
+  ]
+}

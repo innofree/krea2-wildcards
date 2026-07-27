@@ -154,8 +154,9 @@ An adult woman stands in a relaxed three-quarter pose against a neutral studio b
 
 완료된 연결·배포·smoke·기존 스타일 검증과 3,700개 정적 확장 이후의 순서다.
 보안 정리, template 검토, exact content build, schema-v2 projection이 끝났으므로 다음
-이미지 실행은 bounded expansion pilot이다. 2026-07-27 기준 1~4단계가 완료되어 승인
-style 150개를 확보했으며, 현재 실행 단계는 5번 canonical artist native 관찰이다.
+이미지 실행은 bounded expansion pilot이다. 2026-07-27 기준 1~5단계가 완료되어 승인
+style 150개와 canonical artist 300명의 3-seed native 관찰을 확보했으며, 현재 실행 단계는
+6번 name-free visual signature 선별이다.
 
 1. 5축 style/8축 artist 마이그레이션과 prompt 교정을 반영한 preview를 v0.7 증거로 배포한다.
 2. 신규 5축 스타일 팩 150개를 seed 3개씩 실행하고 contact sheet로 전수 검토한다.
@@ -166,6 +167,18 @@ style 150개를 확보했으며, 현재 실행 단계는 5번 canonical artist n
 6. 시그니처 후보를 5-seed 승인하고 대표 8명은 native/signature/hybrid A/B/C로 비교한다.
 7. 단일축·pairwise·preset·random utility·Turbo benchmark 후 strict 완료 판정을 수행한다.
 8. 최종 approved-only production을 빌드·배포하고 smoke/queue/checksum/namespace를 확인한다.
+
+5단계의 공식 결과는 900/900 run, 300명 × seed `[1001, 2002, 3003]`, 1024×1024이며
+관찰 병합 후 stable 172명, unstable 128명으로 분류됐다. 관찰 YAML과 registry에는 작가
+이름을 반복하지 않고 보이는 8축 특성만 저장한다. 6단계의 3-seed visual-signature screen은
+아래 target으로 resume 가능하며, 통과 후보만 seed `4004`, `5005`를 추가한다.
+
+```bash
+make remote-artist-signature-dry-run
+make remote-artist-signature
+make review-artist-signature
+make remote-artist-signature-retest
+```
 
 ### 최소 baseline workflow
 
