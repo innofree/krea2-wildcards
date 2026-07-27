@@ -1,0 +1,44 @@
+schema_version: 1
+artists:
+  artist_001:
+    modes:
+      native_name:
+        metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 2, prompt_efficiency: 5}
+        critical_failure: false
+        notes: "All three native-name seeds produce clean, centered full-length photographic portraits with restrained warm-gray clothing, diffuse studio light, natural anatomy, and no ornament. The treatment is highly stable and matches this artist's observed native response, but it is visually generic and offers little artist-specific distinction."
+      visual_signature:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 3, prompt_efficiency: 4}
+        critical_failure: false
+        notes: "The three signature-only images directly preserve soft photographic edges, realistic adult faces and eyes, subdued beige-gray color, unadorned clothing, centered full-body framing, and gentle floor shadows. Facial identity shifts somewhat between seeds, but the complete visual treatment remains coherent and usable."
+      hybrid:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 3, prompt_efficiency: 3}
+        critical_failure: false
+        notes: "The hybrid set repeats the intended restrained studio-photographic signature across all seeds with especially consistent subject type, neutral palette, full-length composition, and soft diffuse modeling. The native name adds no visible gain over the signature-only prompt, so the longer hybrid wording lowers prompt economy."
+  artist_006:
+    modes:
+      native_name:
+        metrics: {prompt_adherence: 3, style_fidelity: 1, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 1, prompt_efficiency: 2}
+        critical_failure: false
+        notes: "All three native-name images are stable, anatomically sound studio photographs, but they omit the intended rounded simplified illustration, softly textured contours, flat painterly tones, and gently drawn facial features. The short name condition is therefore ineffective for artist identity despite strong base-scene compliance."
+      visual_signature:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+        critical_failure: false
+        notes: "Every signature-only seed uses rounded lightly textured contours, a friendly simplified face, small dark eyes, straight stylized limbs, muted warm grays, broad flat shading, and a centered full figure. Faint watercolor-like ground variation does not obscure the subject, and the three outputs are highly consistent."
+      hybrid:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 3}
+        critical_failure: false
+        notes: "The hybrid results preserve the same soft simplified illustration, upright silhouette, muted palette, painterly ground, and clean full-body readability across all seeds. They do not show a meaningful fidelity improvement over visual-signature-only output, making the additional native-name token redundant."
+  artist_030:
+    modes:
+      native_name:
+        metrics: {prompt_adherence: 3, style_fidelity: 1, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 1, prompt_efficiency: 2}
+        critical_failure: false
+        notes: "The native-name seeds are clean and compositionally stable, but all remain ordinary warm-color studio photographs rather than the intended neutral grayscale photographic identity. Natural anatomy and full framing succeed, while the defining monochrome palette and tonal signature fail to appear."
+      visual_signature:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+        critical_failure: false
+        notes: "All three signature-only images consistently render a natural adult in a quiet upright pose using smooth photographic edges, restrained grayscale facial detail, small realistic eyes, neutral monochrome clothing and ground, soft directional modeling, and centered full-body framing."
+      hybrid:
+        metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 3}
+        critical_failure: false
+        notes: "The hybrid set matches the complete monochrome photographic signature in every seed, with stable grayscale tone, natural proportions, soft directional shadow, plain clothing, and clear full-length framing. Its output is essentially equivalent to signature-only mode, so the added name reduces efficiency without improving fidelity."

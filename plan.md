@@ -1192,6 +1192,19 @@ evaluation:
     recommended_mode: "visual_signature"
 ```
 
+실제 A/B/C 비교는 서로 다른 내부 작가 8개에 `native_name`,
+`visual_signature`, `hybrid` 세 모드와 seed `[1001, 2002, 3003]`를
+교차해 72개 job으로 수행했다. `batch_size=1`, `queue_depth=32`로 생성한
+72개 결과는 모두 1024×1024 PNG와 고유 image hash를 가졌고, 동일 명령
+재실행에서 `complete=72`, `pending=0`이었다. matrix SHA-256은
+`502894078f3399c633aa81eb6e84fab24dfcd95d2afebe8e6bdb311cf5ab20f9`로
+고정했다. 세 partition의 contact-sheet 리뷰를 중복·누락 검증 후 병합한 결과
+critical failure 0, 8개 작가 모두 세 모드 coverage와 recommendation 기록을
+완료해 `artist_abc_coverage` gate를 통과했다. 기계적 추천은
+`visual_signature` 7개, `hybrid` 1개였으며, 육안 판정에서는 한 작가가 세 모드
+모두 목표 identity를 충분히 재현하지 못했다. 따라서 이 gate는 모드 비교
+coverage를 증명하며 개별 저충실도 모드를 별도 승인한 것으로 해석하지 않는다.
+
 #### 6.2.1 시각 시그니처 screen 복구 및 5-seed gate
 
 v0.8.2 시각 시그니처 full screen은 300개 × seed

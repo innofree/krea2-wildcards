@@ -469,6 +469,7 @@ review-artist-abc:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/artist_abc_v1/scorecard.csv --matrix tests/prompt_matrix/artist_abc.jsonl --expected-seeds 3 --overwrite
 
 score-artist-abc:
+	python3 scripts/merge_artist_abc_reviews.py tests/reports/artist_abc_v1/review_part_a.yaml tests/reports/artist_abc_v1/review_part_b.yaml tests/reports/artist_abc_v1/review_part_c.yaml --expected-scorecard tests/reports/artist_abc_v1/scorecard.csv --output tests/reports/artist_abc_v1/review.yaml --overwrite
 	python3 scripts/apply_artist_abc_review.py tests/reports/artist_abc_v1/scorecard.csv tests/reports/artist_abc_v1/review.yaml --output tests/reports/artist_abc_v1/scored.csv --overwrite
 	python3 scripts/summarize_phase6_results.py artist-abc tests/reports/artist_abc_v1/scored.csv --matrix tests/prompt_matrix/artist_abc.jsonl --output tests/reports/completion/artist_abc.json --overwrite
 

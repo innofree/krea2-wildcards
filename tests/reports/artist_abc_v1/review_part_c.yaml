@@ -1,0 +1,99 @@
+schema_version: 1
+artists:
+  artist_141:
+    modes:
+      native_name:
+        metrics:
+          prompt_adherence: 4
+          style_fidelity: 2
+          stability: 5
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 5
+          distinctiveness: 2
+          prompt_efficiency: 3
+        critical_failure: false
+        notes: >-
+          All three seeds follow the full-length gray studio brief with clean adult anatomy,
+          but the native name alone produces generic photoreal portraits rather than the
+          intended compact cel-drawn face, large dark eyes, and tapered graphic contours.
+      visual_signature:
+        metrics:
+          prompt_adherence: 5
+          style_fidelity: 5
+          stability: 5
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 5
+          distinctiveness: 4
+          prompt_efficiency: 4
+        critical_failure: false
+        notes: >-
+          The three seeds consistently render a centered full figure with long slim legs,
+          narrow shoulders, compact pointed-chin face, large restrained eyes, even dark
+          contours, muted charcoal-taupe color, and softly graded flat cel shading.
+      hybrid:
+        metrics:
+          prompt_adherence: 5
+          style_fidelity: 5
+          stability: 5
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 5
+          distinctiveness: 4
+          prompt_efficiency: 3
+        critical_failure: false
+        notes: >-
+          All three hybrid seeds preserve the same strong cel-drawn identity, full-body scale,
+          large gentle eyes, compact face, elongated proportions, dark tapered outlines, and
+          muted studio palette, though the added native name yields no visible gain over the
+          name-free signature.
+  artist_163:
+    modes:
+      native_name:
+        metrics:
+          prompt_adherence: 4
+          style_fidelity: 1
+          stability: 3
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 5
+          distinctiveness: 1
+          prompt_efficiency: 2
+        critical_failure: false
+        notes: >-
+          The native-name seeds obey the centered full-length studio scene and remain
+          anatomically usable, but they resolve as generic photography, one seed turns nearly
+          monochrome, and none displays the intended broad cartoon face or dominant glossy eyes.
+      visual_signature:
+        metrics:
+          prompt_adherence: 2
+          style_fidelity: 1
+          stability: 4
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 4
+          distinctiveness: 1
+          prompt_efficiency: 1
+        critical_failure: false
+        notes: >-
+          All three seeds are coherent centered studio photographs with muted charcoal and
+          brown clothing, but they ignore the defining smooth drawn contour, broad rounded
+          face, tiny features, very large glossy blue-gray eyes, curvy idealization, and soft
+          cel-gradient treatment.
+      hybrid:
+        metrics:
+          prompt_adherence: 2
+          style_fidelity: 1
+          stability: 4
+          character_quality: 4
+          composition_quality: 5
+          compatibility: 4
+          distinctiveness: 1
+          prompt_efficiency: 1
+        critical_failure: false
+        notes: >-
+          Combining the name and signature still gives three stable generic photographs;
+          full-length framing and muted color survive, but the broad stylized face, oversized
+          glossy eyes, clean contour art, curvy proportions, and cel-rendered volume remain
+          absent, so the longer prompt adds no identity benefit.

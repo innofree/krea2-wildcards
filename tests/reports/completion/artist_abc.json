@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "complete": true,
+  "matrix_jobs": 72,
+  "distinct_seeds": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "metrics": {
+    "prompt_adherence": 4.25,
+    "style_fidelity": 3.667,
+    "stability": 4.667,
+    "character_quality": 4.125,
+    "composition_quality": 5.0,
+    "compatibility": 4.625,
+    "distinctiveness": 2.625,
+    "prompt_efficiency": 3.042
+  },
+  "report_type": "artist_abc_coverage",
+  "modes": [
+    "hybrid",
+    "native_name",
+    "visual_signature"
+  ],
+  "artist_count": 8,
+  "recommended_modes_recorded": 8,
+  "recommended_modes": {
+    "artist_001": "hybrid",
+    "artist_006": "visual_signature",
+    "artist_030": "visual_signature",
+    "artist_091": "visual_signature",
+    "artist_116": "visual_signature",
+    "artist_117": "visual_signature",
+    "artist_141": "visual_signature",
+    "artist_163": "visual_signature"
+  },
+  "critical_failures": 0,
+  "matrix_path": "tests/prompt_matrix/artist_abc.jsonl",
+  "matrix_sha256": "502894078f3399c633aa81eb6e84fab24dfcd95d2afebe8e6bdb311cf5ab20f9",
+  "scored_path": "tests/reports/artist_abc_v1/scored.csv",
+  "scored_sha256": "cb52494d764f17e8d53a4db5396282773e52391e1428566c9a55eccd93e97cd8"
+}
