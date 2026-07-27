@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000007",
+  "style_id": "pairwise_style_pack_lighting_001",
+  "label": "pairwise_style_pack_lighting_001",
+  "mode": "pairwise",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "d0479f92-ed4b-430b-a04e-6fa2453aec98",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Keep the complete crown, both eyes, and every body landmark named by the requested camera direction inside the image. The second lighting direction is the measured axis. Keep both eyes readable and give its named key source, shadow structure, reflected fill, and practical accent separate visible roles. Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "31b18797124f67fd50409e758a0aa90ebeef0665a774592558cc464a254deaed",
+  "workflow_sha256": "f36d9ae76941c69a100243f9181960b3ebd973199835f2e108bdf3a030c9ef4a",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "8de0d84b9c4d75b9414e64bac09b976f85b2121089cbc09c32361bb869ee53ed",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

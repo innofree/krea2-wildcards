@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000010",
+  "style_id": "single_axis_background_001",
+  "label": "single_axis_background_001",
+  "mode": "single_axis",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "0563f185-2e4a-4f73-b19e-52d7baf49f8d",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through both feet, with generous visible margin above the head and below the shoes. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a coastal overlook with weathered stone, low vegetation, and a broad distant horizon, with clear foreground, middle-distance, and background layers with no object merging into the subject, clear still air with crisp nearby edges and gently softened distant detail, and deep neutral surroundings lifted by one controlled color accent away from the face. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "ff428013acd8e51175aac97071f5666b35afda05c19d186ce9132484c0d4f507",
+  "workflow_sha256": "037185e5ab23a23e5b7c05d6eda612246429592ef5ed8d994cc7e0d3a9e01dc4",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "4c772f3a4a86efc85d33dc82e6fd39ec08f000c68767c96e8e7f756f2f350c76",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

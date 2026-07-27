@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000016",
+  "style_id": "pairwise_artist_signature_camera_composition_001",
+  "label": "pairwise_artist_signature_camera_composition_001",
+  "mode": "pairwise",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "92f3fd4a-e5ab-4ada-a318-81e23f14dc17",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through the upper torso, with the chin, both shoulders, and the described upper-arm gesture inside the image. The second camera direction is the measured axis. Obey its literal crop, side view, field of view, asymmetric placement, and negative-space counterweight. An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, hard-edged two-value cel blocks, centered emblematic framing with face-to-hands hierarchy, and sparse floral traces and quiet border motifs. Combine it coherently with this second visual direction: Photograph an adult subject using chest-up framing that keeps both shoulders and the upper arm gesture readable from a clean side camera position that preserves the facial profile and body line. The view uses a classic wide field of view that includes context while keeping facial proportions natural and asymmetric placement with generous negative space and one clear visual counterweight. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "a0d1b55531f6134c637a2ba85abbb9f3bc7f2b25956210348bf307e559c87640",
+  "workflow_sha256": "91891289d230ed5ae46f389f8f6112183b0346ba7ca77c808a57a8925ce18952",
+  "factors": {
+    "pair_type": "artist_signature_camera_composition",
+    "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+    "right_item": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a9ad2bb5a3268662111e354c313c1841050b3d91b919e62ad775d83415f9eaa0",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

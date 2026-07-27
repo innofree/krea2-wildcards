@@ -1146,6 +1146,20 @@ random utility의 visual-signature·pose·textile 속성 누락이었다. 실패
 단일-view 구성, 핵심 축의 구체적 가시 위치를 긍정형 자연어로 강화한 새 버전으로
 고정하고, 기존과 겹치지 않는 새 3-seed 69장 calibration을 다시 통과해야 한다.
 
+`phase6_positive_profile_v3`는 새 seed `[21001, 22002, 23003]`으로 분리해
+69/69개 1024×1024 PNG와 고유 image hash를 생성했고, 재실행에서
+`complete=69`, `pending=0`을 확인했다. matrix SHA-256은
+`132e3eec92458973eb920a16f43abf1957050c5a84e604883e022dadd480a2d3`이다.
+v3 review는 통과 11개, 미달 12개, critical failure 0으로 v2의 duplicate
+diptych와 대부분의 crown/eyes crop을 해소했다. single-axis camera와
+linework/coloring, pairwise coloring·background·pose도 복구됐으나, 정확한
+하단 crop 경계, artist-signature 가시성, lighting 우선순위, character garment
+cue가 남았고 benchmark lighting은 회귀했다. v3 summary도
+`status=failed`, `complete=false`로 보존하며 대량 제출을 계속 차단한다.
+v4는 승인된 artist-signature의 8축 visibility ledger를 조합 경로에도 적용하고,
+camera landmark와 light source의 우선순위를 문장 선두에서 단일 구체 장면으로
+고정하며, 기존과 겹치지 않는 다음 3-seed calibration을 사용한다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.

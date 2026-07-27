@@ -1,0 +1,80 @@
+schema_version: 1
+styles:
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 4
+      stability: 2
+      character_quality: 3
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: "Every seed contains exactly one adult and retains the jewel-toned graphic garment, floral border, rounded face, and visible hand gesture. Seeds 21001 and 22002 remain centered three-quarter views rather than clean side profiles with generous asymmetric negative space, while seed 23003 is an extreme crop that removes the crown and both eyes; the measured camera axis and framing stability therefore remain poor."
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "The prior diptych failure is repaired: all three seeds show exactly one continuous adult figure with deep garnet, ink blue, forest, black, restrained gold, precise angular garment divisions, blended value planes, clear silhouette edges, and readable hands. Seed 23003 crops away the crown and eyes, reducing framing stability, but the measured line-and-color axis remains strongly legible in every image."
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "All three seeds contain one large readable adult with complete crown, visible eyes and hands, split warm-cool modeling, and a coherent coastal overlook of weathered stone, low vegetation, sea, and distant horizon. Foreground, middle distance, and softened background remain clearly separated; the lower figure is cropped rather than complete, but the measured background axis is stable and plainly resolved."
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: "Each seed has exactly one adult with readable crown, eyes, and hands, a broad sturdy torso, stable weight, offset wrap layers, uninterrupted silhouette, and warm-cool angular light. The requested diamond face and defined compact chin do not remain evident, and botanical seam curves and leaflike closures are not given distinct visible locations, so the measured character-design axis is only partially realized."
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 2
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 2
+      distinctiveness: 4
+      prompt_efficiency: 2
+    critical_failure: false
+    notes: "Exactly one coherent adult appears in each seed with clean clothing and strong blue-amber shadow geometry. The subjects turn into side or near-profile views so both eyes are not consistently readable, the face remains heavily underexposed, and the requested small warm practical is replaced by a dominant warm beam; the broad frontal three-quarter key and style-pack lighting are not compatibly separated."
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 3
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "All seeds preserve one adult, direct level gaze, readable eyes, level shoulders, one hand at the collar, the other near the hip, and crisp amber-blue rising planes. Seeds 21001 and 23003 clearly show the grounded frontal stance and both feet, while seed 22002 crops below the waist so foot placement and even weight cannot be verified, lowering stability without erasing the measured pose across the set."
+    recommendation: testing

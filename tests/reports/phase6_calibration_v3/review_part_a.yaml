@@ -1,0 +1,37 @@
+schema_version: 1
+styles:
+  single_axis_background_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three new seeds retain one complete adult against clearly separated weathered rock, low vegetation, ocean, and distant-horizon layers, with ample margins and crisp-to-soft depth progression. The result is consistently grayscale and still omits the requested controlled color accent, but the coastal background direction remains otherwise legible and stable."
+  single_axis_camera_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "The v3 repair succeeds: every seed keeps the complete crown and upper torso, uses a clean profile or strong three-quarter side view, preserves the facial and body line, and turns the raised arm into a clear counterweight against useful negative space. Placement and gesture vary, and a literal wide environmental field is understated, but the prior destructive face crop and centered non-profile failure are gone."
+  single_axis_character_design_001:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 3, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "The v3 images improve substantially with complete grounded adults, broad sturdy proportions, long offset-looking garment layers, visible closures, and one seed showing clear botanical leaf accents. However, botanical seams and leaflike closures disappear in two seeds, silhouettes remain mostly symmetrical, and the specified diamond face geometry is not consistently explicit, so the repair is incomplete."
+  single_axis_lighting_001:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "The three full-length images consistently show a broad frontal-three-quarter source, readable eyes, clean directional modeling, reflected floor light, and controlled shadows. They are entirely grayscale and contain neither a cool key nor a small warm practical background accent, removing two defining lighting cues that were visible in the earlier calibration."
+  single_axis_linework_coloring_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    recommendation: testing
+    notes: "The v3 repair succeeds across all seeds: angular measured contours and faceted blended planes cover the face and clothing, deep emerald, navy, and burgundy fields separate against dark neutrals, both hands remain readable, and controlled bright edge accents appear on the shadow-side silhouette. Crop and gesture vary slightly while the line-color identity stays strong."
+  single_axis_pose_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    recommendation: testing
+    notes: "Each seed cleanly repeats the complete frontal adult, level shoulders and chin, direct gaze, even grounded weight, one hand at the collar, and the other at the hip. Full crown, hands, feet, joints, and calm forward posture are stable with generous margins and no compositional or anatomy regression."
+  krea2_turbo_benchmark:
+    metrics: {prompt_adherence: 3, style_fidelity: 3, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 3}
+    critical_failure: false
+    recommendation: testing
+    notes: "All three benchmark seeds preserve a complete centered adult, stable amber-versus-blue side lighting, matte subdued surfaces, and hard separated silhouette edges. The backdrop is a plain gradient without the requested repeated diagonal divisions, upward beams, rising forms, or ceremonial glints, so the revised framing prompt improves inspectability but materially weakens the full style-pack signature."

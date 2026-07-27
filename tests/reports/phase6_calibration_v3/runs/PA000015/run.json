@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000015",
+  "style_id": "preset_audit_005",
+  "label": "preset_audit_005",
+  "mode": "preset_audit",
+  "seed": 23003,
+  "remote": "private_comfyui",
+  "prompt_id": "8f9129f4-a491-43b6-8f2e-4329c12a467f",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through the upper torso, with the chin, both shoulders, and the described upper-arm gesture inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, and lighting. An adult stands three-quarters, one hand at the waist and one lowered in a spacious transit concourse with repeated columns and distant entries, wearing a longline vest, fitted top, and mid-calf pleated skirt, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "e205132c6a5809c6daf94689a08310054644fb38d73e9fe484d7e7981366a07a",
+  "workflow_sha256": "14c8cf07879dc1fd2b77ab6334c18861fd216b8a7b63e8d0d139e3d4be7c3a32",
+  "factors": {
+    "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "e9353e2bdecb0c3e12787983c7f91b46f3b2022866930be0cee7319b3b6c65ba",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

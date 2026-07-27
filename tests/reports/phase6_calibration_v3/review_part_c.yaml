@@ -1,0 +1,169 @@
+schema_version: 1
+styles:
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three seeds now preserve one complete crown with margin, readable eyes, both hands,
+      the coastal overlook, turned torso, collarless suit, and stable adult anatomy, but the
+      images continue through most or all of the legs rather than stopping literally at
+      mid-thigh and remain monochrome instead of accurate neutral-daylight skin color.
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Complete crowns, both eyes, wrap garments, raised arm gestures, warm low light, and the
+      covered arcade are clear in every seed, but the literal upper-torso boundary is missed:
+      all three extend through the waist or mid-thigh instead of producing a compressed
+      chest-up portrait.
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      The three seeds keep a clean margin over the complete crown and frame through just below
+      the waist with both separated hand gestures visible; the warm modern library, overshirt,
+      column dress, attentive expression, and low warm light remain stable and coherent.
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Every wide rooftop seed includes the complete crown, readable face and hands, full figure
+      and feet, skyline depth, wrap top, tapered trousers, three-quarter stance, waist hand,
+      lowered hand, and warm low sun; one monochrome seed mildly reduces color stability.
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      The v3 set fully repairs the crown and face crop while preserving the transit concourse,
+      vest, fitted top, pleated skirt, quiet expression, waist hand, lowered hand, and warm
+      light, but each image continues below the waist toward the knees rather than ending
+      literally at the upper torso.
+  random_utility_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All seeds now use a stable crisp monochrome illustration with tapered high faces,
+      deep-set almond eyes, measured two-step planes, clear separated hands, overshirts, and
+      library geometry, with complete crowns and eyes; however, the crop reaches the hips or
+      mid-thigh rather than the literal upper-torso boundary.
+  random_utility_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Three seeds preserve complete crowns, generous head and shoe margins, full figures,
+      three-quarter waist-hand poses, tailored coats, arcade depth, compact oval faces,
+      cool indigo-cyan-magenta glaze, centered hierarchy, and restrained peripheral particles
+      without anatomy or framing failure.
+  random_utility_003:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 2
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 2
+      prompt_efficiency: 2
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Literal crown-to-mid-thigh framing, readable eyes and hands, the coastal turn, collarless
+      suit, broad horizon, and cool overcast scene are consistently repaired, but all three
+      remain generic photography with no lace-tapered drawing, radial eyes, neon magenta-cyan
+      palette, painterly planes, emblematic hierarchy, or textile echo.
+  random_utility_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      All three wide museum scenes retain complete crowns and feet, readable clasped hands,
+      frontal elongated figures, belted midi layers, pale architectural depth, deep jewel
+      color, luminous glaze, vertical anchoring, and floral traces with stable clean anatomy.
+  random_utility_005:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Complete crowns, eyes, hands, feet, generous full-length margins, stone courtyards,
+      collarless jackets, wide trousers, crisp monochrome values, tapered faces, and vertical
+      grounding remain stable, but the pose is stiff and frontal rather than clear balanced
+      contrapposto and no restrained textile pattern is visible around the silhouette.

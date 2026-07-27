@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000002",
+  "style_id": "preset_audit_001",
+  "label": "preset_audit_001",
+  "mode": "preset_audit",
+  "seed": 22002,
+  "remote": "private_comfyui",
+  "prompt_id": "46ef69b7-17c9-45cc-a2a5-dc61549630a7",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through mid-thigh, keeping the face and both described hand gestures inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, and lighting. An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, wide-leg trousers, and high-neck base, with a calm attentive look with a level chin and focused eyes. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "11343c203dc3624ce4944c3b042c390717be62dab80345955fa924765828f4e4",
+  "workflow_sha256": "e5d6fad84cf4b718cdf0fff35b7f6138850d765f47f149850f14af23112e3de5",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bc7a5d4aa201e5ff048506809f9289fa65d694b365dfa5ab21e077c4c1837079",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000005",
+  "style_id": "preset_audit_002",
+  "label": "preset_audit_002",
+  "mode": "preset_audit",
+  "seed": 22002,
+  "remote": "private_comfyui",
+  "prompt_id": "0e01d299-f40c-4a5c-933e-23a3c10db8c0",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through the upper torso, with the chin, both shoulders, and the described upper-arm gesture inside the image. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, and lighting. An adult turns through the torso while looking back toward the camera in a covered market arcade with repeated bays and a clear central passage, wearing a structured wrap top, tapered trousers, and simple accessories, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "198a58ba39fbbc6c136b8bcc8e3a65d7f55a7681d71b2680cb85280e7374fcdc",
+  "workflow_sha256": "7469aef1cfc9d133ffa8be460021975a3b2db27a9fbc47ec60c784d0c9787f46",
+  "factors": {
+    "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "cf1de272ac19d827eed4e0138f23ae77a81b1cf507a74c28a439c2091abe8656",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

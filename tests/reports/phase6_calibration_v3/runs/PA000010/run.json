@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000010",
+  "style_id": "preset_audit_004",
+  "label": "preset_audit_004",
+  "mode": "preset_audit",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "8a0d441d-4311-4a1e-bf64-ebd03179fa15",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Use the requested wide environmental view with the complete crown and complete figure inside the canvas while the subject remains large enough for the face and hands to be readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, garment pieces, expression, camera boundary, perspective, and lighting. An adult stands three-quarters, one hand at the waist and one lowered in a rooftop terrace with a low parapet, simple forms, and a distant skyline, wearing a structured wrap top, tapered trousers, and simple accessories, with a subtle closed-mouth smile with gentle warmth. Use a wide view with the subject on a third and a clear depth path and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "539b64b3a74f7c8ae8cbe851207c95493ad277c4043794d2d77221d959990ff5",
+  "workflow_sha256": "902eebc0a4cf381d8c6be24bf22dd556c4cb0ca76b75ccccce2bd8a17fb74fd7",
+  "factors": {
+    "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "709238a6bfa8436f5b1375867c8ae14e427132c55bcae4942cde6ef44f3f48a6",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

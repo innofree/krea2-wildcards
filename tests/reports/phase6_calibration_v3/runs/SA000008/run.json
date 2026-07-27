@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000008",
+  "style_id": "single_axis_lighting_001",
+  "label": "single_axis_lighting_001",
+  "mode": "single_axis",
+  "seed": 22002,
+  "remote": "private_comfyui",
+  "prompt_id": "963db217-47e8-4612-958e-a36c98cd5b5e",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Frame literally from the complete crown through both feet, with generous visible margin above the head and below the shoes. The lighting is the measured axis: keep both eyes readable and make every named source direction, shadow edge, reflected fill, and accent distinguishable. Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "f46f17311d649e1ec6edd147496f458276d69a2443e5fe17359e001a6d35f140",
+  "workflow_sha256": "44d9f54bf2760841efd8df07c4a889742824aa298445e10d1006a1d1c03af836",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "dffe62958827f2cb5bce2069e983af4de1e17c8513d93be6877b6f0499e877ad",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

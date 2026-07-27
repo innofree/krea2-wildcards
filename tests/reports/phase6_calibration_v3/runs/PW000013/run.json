@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000013",
+  "style_id": "pairwise_artist_signature_coloring_001",
+  "label": "pairwise_artist_signature_coloring_001",
+  "mode": "pairwise",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "c0adf22b-5d33-4930-adf1-7285cfe03c16",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Keep the complete crown, both eyes, and every body landmark named by the requested camera direction inside the image. The second line-and-color direction is the measured axis. Render its named contours, jewel palette, value planes, and rim accent across one continuous figure. An adult portrait uses angular architectural lines with even spacing, a rounded face with full cheeks and short nose, large layered irises, tapered lashes, and paired catchlights, an elongated figure with graceful limbs and tapered hands, deep garnet, ink blue, forest, and restrained gold, hard-edged two-value cel blocks, centered emblematic framing with face-to-hands hierarchy, and sparse floral traces and quiet border motifs. Combine it coherently with this second visual direction: An adult subject is defined by angular precise lines with measured corners and clean garment construction, filled with deep jewel color separated by dark neutrals and small high-value accents, and modeled through broad blended planes that round the figure while keeping silhouette edges clear. The finish adds a controlled rim accent that separates only the shadow-side silhouette. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "772cbc007b49d411b731ac0a013384b45cf012662f70da47692eb3e6252feace",
+  "workflow_sha256": "22a1e0ca090834f4116b55b2ac5b5c037ab710bd997dc2b854e1815d1693c02e",
+  "factors": {
+    "pair_type": "artist_signature_coloring",
+    "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+    "right_item": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "647a32d519ab43a4d469c2cbb29432b98eeba6792e86e488a51e0afff94ab668",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

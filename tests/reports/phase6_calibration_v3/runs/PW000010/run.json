@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000010",
+  "style_id": "pairwise_style_pack_background_001",
+  "label": "pairwise_style_pack_background_001",
+  "mode": "pairwise",
+  "seed": 21001,
+  "remote": "private_comfyui",
+  "prompt_id": "6ff3f490-aaf1-4507-b075-f46fdbe478b2",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Keep the complete crown, both eyes, and every body landmark named by the requested camera direction inside the image. The second background direction is the measured axis. Keep the complete subject large enough to read while its foreground, middle-distance, horizon, and atmosphere remain visibly separated. Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: An adult subject stands in a coastal overlook with weathered stone, low vegetation, and a broad distant horizon, with clear foreground, middle-distance, and background layers with no object merging into the subject, clear still air with crisp nearby edges and gently softened distant detail, and deep neutral surroundings lifted by one controlled color accent away from the face. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "26142dc5509682e01559e8587252a92e3071f6c1b75d5df1ef5a8a582a94c767",
+  "workflow_sha256": "b70efcbb18e272ca90c8170a7b661e227e035d0b291a2bda509403fee97ae0a1",
+  "factors": {
+    "pair_type": "style_pack_background",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a24f0ec5e387c8405d8dee464e126eb198dfe1efcac994fc3537734da80f8aa4",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

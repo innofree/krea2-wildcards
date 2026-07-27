@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000006",
+  "style_id": "pairwise_style_pack_pose_001",
+  "label": "pairwise_style_pack_pose_001",
+  "mode": "pairwise",
+  "seed": 23003,
+  "remote": "private_comfyui",
+  "prompt_id": "39246ac3-88f8-4ce1-8886-a096ab87e05d",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Keep a clean margin above her complete crown and keep both eyes clearly readable. Keep the complete crown, both eyes, and every body landmark named by the requested camera direction inside the image. The second pose direction is the measured axis. Make its named hand placement, gaze, shoulder line, leg support, and weight distribution unambiguous. Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with one hand near the collar while the other anchors gently at the hip. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys controlled forward energy carried through the spine and supporting leg. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery.",
+  "resolved_prompt_sha256": "0ac7593ce55831fc33446403dfe7158a3b1cd521671ac18d3c42b42f4f614427",
+  "workflow_sha256": "f8c169ed79578ab1068160b49f02bfef931e3543eabe5bdd51b64b58f267a25e",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_22fb490efbc48833db7afb837df6023a2ca5dc44b4e86b1afd6a47390a0daa5c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "601b461ee642aa7addbf3c97767c36f3cfa1f8bd6dc89e1497ce89fa18f6a781",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
