@@ -22,6 +22,7 @@ FRAMING_CALIBRATION_SEEDS = (7101, 7202, 7303)
 SINGLE_VIEW_CALIBRATION_SEEDS = (8101, 8202, 8303)
 EDITORIAL_CALIBRATION_SEEDS = (9101, 9202, 9303)
 AXIS_CALIBRATION_SEEDS = (11101, 11202, 11303)
+REINFORCED_AXIS_CALIBRATION_SEEDS = (12101, 12202, 12303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
@@ -37,6 +38,9 @@ EDITORIAL_CALIBRATION_PROFILE = (
     "artist_visual_signature_repair_editorial_calibration_v0_8_6"
 )
 AXIS_CALIBRATION_PROFILE = "artist_visual_signature_repair_axis_calibration_v0_8_7"
+REINFORCED_AXIS_CALIBRATION_PROFILE = (
+    "artist_visual_signature_repair_reinforced_axis_calibration_v0_8_8"
+)
 BENCHMARK_PROFILES = frozenset(
     {
         LEGACY_BENCHMARK_PROFILE,
@@ -45,6 +49,7 @@ BENCHMARK_PROFILES = frozenset(
         SINGLE_VIEW_CALIBRATION_PROFILE,
         EDITORIAL_CALIBRATION_PROFILE,
         AXIS_CALIBRATION_PROFILE,
+        REINFORCED_AXIS_CALIBRATION_PROFILE,
     }
 )
 REPAIR_SIGNATURE_COUNT = 115
@@ -193,6 +198,19 @@ AXIS_VISIBILITY_PHRASES = {
         "particle_drift": "a visible field of drifting particles",
         "textile_echo": "repeated textile bands and woven motifs",
     },
+}
+REINFORCED_AXIS_VISIBILITY_PHRASES = {
+    ("line_language", "dry_broken"): (
+        "bold broken dry-brush contours with visible gaps around the entire silhouette and seams"
+    ),
+    ("light_modeling", "luminous_glaze"): (
+        "strong translucent colored glaze, reflected color, and open penumbrae across face, "
+        "sleeves, trousers, and ground"
+    ),
+    ("framing_language", "layered_intimate"): (
+        "many large overlapping paper panels clearly visible across the full background behind "
+        "the figure"
+    ),
 }
 ARTIST_REFERENCE_RE = re.compile(
     r"\bartist(?:'s)?\b|\bin\s+the\s+style\s+of\b|\binfluenced\s+by\b|\bstyle\s+by\b",
@@ -349,12 +367,53 @@ def axis_visibility_ledger(feature_axes: Any) -> str:
     )
 
 
+def reinforced_axis_visibility_ledger(feature_axes: Any) -> str:
+    if not isinstance(feature_axes, dict):
+        raise ValueError("reinforced axis calibration profile requires feature axes")
+    rendered: list[str] = []
+    for axis in (
+        "line_language",
+        "face_design",
+        "eye_design",
+        "body_design",
+        "palette_language",
+        "light_modeling",
+        "framing_language",
+        "ornament_language",
+    ):
+        values = feature_axes.get(axis)
+        value = values[0] if isinstance(values, list) and values else None
+        phrase = REINFORCED_AXIS_VISIBILITY_PHRASES.get(
+            (axis, value),
+            AXIS_VISIBILITY_PHRASES[axis].get(value),
+        )
+        if not isinstance(value, str) or phrase is None:
+            raise ValueError(
+                f"reinforced axis calibration profile has an unsupported feature axis {axis}"
+            )
+        rendered.append(f"{axis.replace('_', ' ')}—{phrase}")
+    return (
+        "Make these eight cues bold and unmistakable: "
+        + "; ".join(rendered)
+        + ". Draw face and eye details crisply within the full-length figure. Put the ornament "
+        "on both the garment and outer border. Keep the complete figure in front of every "
+        "decorative framing element."
+    )
+
+
 def prompt_for_profile(
     body: str,
     benchmark_profile: str,
     *,
     feature_axes: Any = None,
 ) -> str:
+    if benchmark_profile == REINFORCED_AXIS_CALIBRATION_PROFILE:
+        return (
+            "Create a clean hand-drawn 2D editorial illustration. "
+            f"This exact visual signature controls the rendering: {body} "
+            f"{reinforced_axis_visibility_ledger(feature_axes)} "
+            f"{EDITORIAL_CALIBRATION_SCENE}"
+        )
     if benchmark_profile == AXIS_CALIBRATION_PROFILE:
         return (
             "Create a clean hand-drawn 2D editorial illustration. "
@@ -692,6 +751,28 @@ def signature_rows(
             )
         if require_signature_count is None:
             require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
+    elif benchmark_profile == REINFORCED_AXIS_CALIBRATION_PROFILE:
+        if seed_values != REINFORCED_AXIS_CALIBRATION_SEEDS:
+            raise ValueError(
+                "reinforced axis calibration profile requires seeds "
+                + ", ".join(str(seed) for seed in REINFORCED_AXIS_CALIBRATION_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "reinforced axis calibration profile requires exactly status generated"
+            )
+        if limit_signatures != FRAMING_CALIBRATION_SIGNATURE_COUNT:
+            raise ValueError(
+                "reinforced axis calibration profile requires exactly "
+                f"{FRAMING_CALIBRATION_SIGNATURE_COUNT} limited signatures"
+            )
+        if require_candidate_count is None:
+            raise ValueError(
+                "reinforced axis calibration profile requires an exact pre-limit "
+                "candidate count"
+            )
+        if require_signature_count is None:
+            require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -744,6 +825,7 @@ def signature_rows(
             SINGLE_VIEW_CALIBRATION_PROFILE,
             EDITORIAL_CALIBRATION_PROFILE,
             AXIS_CALIBRATION_PROFILE,
+            REINFORCED_AXIS_CALIBRATION_PROFILE,
         }:
             factors["benchmark_profile"] = benchmark_profile
             factors["benchmark_stage"] = (
@@ -836,7 +918,12 @@ def main() -> int:
                         else (
                             AXIS_CALIBRATION_SEEDS
                             if args.benchmark_profile == AXIS_CALIBRATION_PROFILE
-                            else DEFAULT_SEEDS
+                            else (
+                                REINFORCED_AXIS_CALIBRATION_SEEDS
+                                if args.benchmark_profile
+                                == REINFORCED_AXIS_CALIBRATION_PROFILE
+                                else DEFAULT_SEEDS
+                            )
                         )
                     )
                 )

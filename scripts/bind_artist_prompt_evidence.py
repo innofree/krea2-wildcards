@@ -25,6 +25,8 @@ from export_artist_visual_signature_matrix import (
     REPAIR_FIXED_SCENE,
     REPAIR_ILLUSTRATED_BENCHMARK_FINISH,
     REPAIR_SEEDS,
+    REINFORCED_AXIS_CALIBRATION_PROFILE,
+    REINFORCED_AXIS_CALIBRATION_SEEDS,
     RETEST_SEEDS,
     SINGLE_VIEW_CALIBRATION_PROFILE,
     SINGLE_VIEW_CALIBRATION_SEEDS,
@@ -135,6 +137,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             SINGLE_VIEW_CALIBRATION_PROFILE,
             EDITORIAL_CALIBRATION_PROFILE,
             AXIS_CALIBRATION_PROFILE,
+            REINFORCED_AXIS_CALIBRATION_PROFILE,
         }:
             profile = row_profile
             stage = factors.get("benchmark_stage")
@@ -189,6 +192,16 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
                     f"matrix line {line_number}: axis calibration profile has "
                     "an invalid seed"
                 )
+        elif profile == REINFORCED_AXIS_CALIBRATION_PROFILE:
+            seed = row.get("seed")
+            if (
+                type(seed) is not int
+                or seed not in REINFORCED_AXIS_CALIBRATION_SEEDS
+            ):
+                raise ValueError(
+                    f"matrix line {line_number}: reinforced axis calibration "
+                    "profile has an invalid seed"
+                )
         else:
             seed = row.get("seed")
             if type(seed) is not int:
@@ -235,6 +248,8 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             expected_seeds = set(EDITORIAL_CALIBRATION_SEEDS)
         elif profile == AXIS_CALIBRATION_PROFILE:
             expected_seeds = set(AXIS_CALIBRATION_SEEDS)
+        elif profile == REINFORCED_AXIS_CALIBRATION_PROFILE:
+            expected_seeds = set(REINFORCED_AXIS_CALIBRATION_SEEDS)
         else:
             continue
         if seeds != expected_seeds:
@@ -266,6 +281,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         SINGLE_VIEW_CALIBRATION_PROFILE,
         EDITORIAL_CALIBRATION_PROFILE,
         AXIS_CALIBRATION_PROFILE,
+        REINFORCED_AXIS_CALIBRATION_PROFILE,
     }
     if len(matrix_profiles) == 1 and matrix_profiles <= versioned_profiles:
         document["benchmark_profile"] = next(iter(matrix_profiles))

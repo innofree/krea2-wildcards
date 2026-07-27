@@ -20,6 +20,8 @@ from export_artist_visual_signature_matrix import (
     LEGACY_BENCHMARK_PROFILE,
     REPAIR_BENCHMARK_PROFILE,
     REPAIR_SEEDS,
+    REINFORCED_AXIS_CALIBRATION_PROFILE,
+    REINFORCED_AXIS_CALIBRATION_SEEDS,
     SINGLE_VIEW_CALIBRATION_PROFILE,
     SINGLE_VIEW_CALIBRATION_SEEDS,
     signature_rows,
@@ -524,6 +526,64 @@ def test_axis_calibration_translates_feature_tokens_into_visible_directions(
             limit_signatures=5,
             require_candidate_count=6,
         )
+
+
+def test_reinforced_axis_calibration_changes_only_failed_visual_cues(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_reinforced_{index}": "generated" for index in range(1, 7)},
+    )
+    supported_axes = {
+        "line_language": ["dry_broken"],
+        "face_design": ["angular_planar"],
+        "eye_design": ["layered_large"],
+        "body_design": ["broad_athletic"],
+        "palette_language": ["sunlit_earth"],
+        "light_modeling": ["luminous_glaze"],
+        "framing_language": ["layered_intimate"],
+        "ornament_language": ["geometric_inset"],
+    }
+    for item in items.values():
+        item["feature_axes"] = supported_axes
+        item["visual_axes"] = list(supported_axes)
+    catalog.write_text(
+        yaml.safe_dump({"items": items}, sort_keys=False),
+        encoding="utf-8",
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=REINFORCED_AXIS_CALIBRATION_SEEDS,
+        benchmark_profile=REINFORCED_AXIS_CALIBRATION_PROFILE,
+        limit_signatures=5,
+        require_candidate_count=6,
+        require_signature_count=5,
+    )
+
+    assert len(rows) == 15
+    assert {row["seed"] for row in rows} == set(
+        REINFORCED_AXIS_CALIBRATION_SEEDS
+    )
+    for row in rows:
+        prompt = row["prompt"]
+        assert (
+            row["factors"]["benchmark_profile"]
+            == REINFORCED_AXIS_CALIBRATION_PROFILE
+        )
+        assert "bold broken dry-brush contours with visible gaps" in prompt
+        assert "strong translucent colored glaze, reflected color" in prompt
+        assert "many large overlapping paper panels clearly visible" in prompt
+        assert "a firm jaw and planar cheeks" in prompt
+        assert "large layered irises and paired catchlights" in prompt
+        assert "bold repeated geometric panels" in prompt
+        assert "balanced full-length contrapposto pose" in prompt
+
+    matrix = tmp_path / "tests/prompt_matrix/reinforced_axis_calibration.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == REINFORCED_AXIS_CALIBRATION_PROFILE
+    assert binding["benchmark_stage"] == "calibration"
 
 
 def test_repair_accumulation_preserves_failures_and_enforces_total_gate(
