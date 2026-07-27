@@ -17,7 +17,7 @@ DEFAULT_SEEDS = (1001, 2002, 3003)
 CALIBRATION_SEEDS = (21001, 22002, 23003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
 SUBJECT_CONTRACT = (
-    "Compose one continuous single-view vertical image centered on exactly one clearly adult "
+    "Compose one continuous single-view vertical image built around exactly one clearly adult "
     "woman as the only figure. Every visible face, body, and hand belongs to this same woman. "
     "Keep a clean margin above her complete crown and keep both eyes clearly readable."
 )
