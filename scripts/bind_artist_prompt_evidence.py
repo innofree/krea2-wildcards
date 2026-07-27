@@ -27,6 +27,8 @@ from export_artist_visual_signature_matrix import (
     REPAIR_SEEDS,
     REINFORCED_AXIS_CALIBRATION_PROFILE,
     REINFORCED_AXIS_CALIBRATION_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE,
+    REINFORCED_AXIS_REPAIR_SEEDS,
     RETEST_SEEDS,
     SINGLE_VIEW_CALIBRATION_PROFILE,
     SINGLE_VIEW_CALIBRATION_SEEDS,
@@ -138,12 +140,14 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             EDITORIAL_CALIBRATION_PROFILE,
             AXIS_CALIBRATION_PROFILE,
             REINFORCED_AXIS_CALIBRATION_PROFILE,
+            REINFORCED_AXIS_REPAIR_PROFILE,
         }:
             profile = row_profile
             stage = factors.get("benchmark_stage")
             valid_stages = (
                 {"pilot", "extension"}
-                if profile == REPAIR_BENCHMARK_PROFILE
+                if profile
+                in {REPAIR_BENCHMARK_PROFILE, REINFORCED_AXIS_REPAIR_PROFILE}
                 else {"calibration"}
             )
             if stage not in valid_stages:
@@ -163,6 +167,18 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             if type(seed) is not int or seed not in expected_seeds:
                 raise ValueError(
                     f"matrix line {line_number}: repair profile has an invalid seed"
+                )
+        elif profile == REINFORCED_AXIS_REPAIR_PROFILE:
+            seed = row.get("seed")
+            expected_seeds = (
+                REINFORCED_AXIS_REPAIR_SEEDS
+                if stage == "pilot"
+                else RETEST_SEEDS
+            )
+            if type(seed) is not int or seed not in expected_seeds:
+                raise ValueError(
+                    f"matrix line {line_number}: reinforced axis repair profile "
+                    "has an invalid seed"
                 )
         elif profile == FRAMING_CALIBRATION_PROFILE:
             seed = row.get("seed")
@@ -240,6 +256,12 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
             expected_seeds = set(
                 REPAIR_SEEDS if stage == "pilot" else RETEST_SEEDS
             )
+        elif profile == REINFORCED_AXIS_REPAIR_PROFILE:
+            expected_seeds = set(
+                REINFORCED_AXIS_REPAIR_SEEDS
+                if stage == "pilot"
+                else RETEST_SEEDS
+            )
         elif profile == FRAMING_CALIBRATION_PROFILE:
             expected_seeds = set(FRAMING_CALIBRATION_SEEDS)
         elif profile == SINGLE_VIEW_CALIBRATION_PROFILE:
@@ -282,6 +304,7 @@ def build_binding(matrix_path: Path, catalog_path: Path, *, root: Path = ROOT) -
         EDITORIAL_CALIBRATION_PROFILE,
         AXIS_CALIBRATION_PROFILE,
         REINFORCED_AXIS_CALIBRATION_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
     }
     if len(matrix_profiles) == 1 and matrix_profiles <= versioned_profiles:
         document["benchmark_profile"] = next(iter(matrix_profiles))

@@ -22,6 +22,8 @@ from export_artist_visual_signature_matrix import (
     REPAIR_SEEDS,
     REINFORCED_AXIS_CALIBRATION_PROFILE,
     REINFORCED_AXIS_CALIBRATION_SEEDS,
+    REINFORCED_AXIS_REPAIR_PROFILE,
+    REINFORCED_AXIS_REPAIR_SEEDS,
     SINGLE_VIEW_CALIBRATION_PROFILE,
     SINGLE_VIEW_CALIBRATION_SEEDS,
     signature_rows,
@@ -584,6 +586,60 @@ def test_reinforced_axis_calibration_changes_only_failed_visual_cues(
     binding = build_binding(matrix, catalog, root=tmp_path)
     assert binding["benchmark_profile"] == REINFORCED_AXIS_CALIBRATION_PROFILE
     assert binding["benchmark_stage"] == "calibration"
+
+
+def test_reinforced_axis_full_repair_is_exact_and_uses_distinct_pilot_seeds(
+    tmp_path: Path,
+) -> None:
+    catalog, items = write_catalog(
+        tmp_path,
+        {f"artist_full_repair_{index}": "generated" for index in range(1, 3)},
+    )
+    supported_axes = {
+        "line_language": ["dry_broken"],
+        "face_design": ["angular_planar"],
+        "eye_design": ["layered_large"],
+        "body_design": ["broad_athletic"],
+        "palette_language": ["sunlit_earth"],
+        "light_modeling": ["luminous_glaze"],
+        "framing_language": ["layered_intimate"],
+        "ornament_language": ["geometric_inset"],
+    }
+    for item in items.values():
+        item["feature_axes"] = supported_axes
+        item["visual_axes"] = list(supported_axes)
+    catalog.write_text(
+        yaml.safe_dump({"items": items}, sort_keys=False),
+        encoding="utf-8",
+    )
+    rows = signature_rows(
+        catalog,
+        seeds=REINFORCED_AXIS_REPAIR_SEEDS,
+        benchmark_profile=REINFORCED_AXIS_REPAIR_PROFILE,
+        require_signature_count=2,
+    )
+
+    assert len(rows) == 6
+    assert {row["seed"] for row in rows} == set(REINFORCED_AXIS_REPAIR_SEEDS)
+    for row in rows:
+        assert row["factors"]["benchmark_profile"] == REINFORCED_AXIS_REPAIR_PROFILE
+        assert row["factors"]["benchmark_stage"] == "pilot"
+        assert "balanced full-length contrapposto pose" in row["prompt"]
+        assert "bold broken dry-brush contours with visible gaps" in row["prompt"]
+
+    matrix = tmp_path / "tests/prompt_matrix/full_repair.jsonl"
+    write_immutable_jsonl(matrix, rows)
+    binding = build_binding(matrix, catalog, root=tmp_path)
+    assert binding["benchmark_profile"] == REINFORCED_AXIS_REPAIR_PROFILE
+    assert binding["benchmark_stage"] == "pilot"
+
+    with pytest.raises(ValueError, match="reinforced axis repair profile requires seeds"):
+        signature_rows(
+            catalog,
+            seeds=REINFORCED_AXIS_CALIBRATION_SEEDS,
+            benchmark_profile=REINFORCED_AXIS_REPAIR_PROFILE,
+            require_signature_count=2,
+        )
 
 
 def test_repair_accumulation_preserves_failures_and_enforces_total_gate(

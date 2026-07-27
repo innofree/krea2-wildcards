@@ -18,6 +18,7 @@ from bind_artist_prompt_evidence import (
     relative_file,
 )
 from common import load_yaml
+from export_artist_visual_signature_matrix import REPAIR_BENCHMARK_PROFILE
 
 
 ARTIFACT_TYPE = "artist_repair_accumulation_summary"
@@ -47,6 +48,7 @@ def build_accumulation_summary(
     expected_repair_candidates: int = 115,
     minimum_cumulative_testing: int = 200,
     require_retest_ready: bool = False,
+    expected_benchmark_profile: str = REPAIR_BENCHMARK_PROFILE,
 ) -> dict[str, Any]:
     summary_name, summary_file = relative_file(summary_path, root)
     binding_name, binding_file = relative_file(binding_path, root)
@@ -69,8 +71,10 @@ def build_accumulation_summary(
             "catalog is not at the exact v0.8.3 repair source lifecycle: "
             f"expected {expected_status_counts}, got {dict(status_counts)}"
         )
-    if binding.get("benchmark_profile") != "artist_visual_signature_repair_v0_8_3":
-        raise ValueError("repair result requires a v0.8.3 repair prompt binding")
+    if binding.get("benchmark_profile") != expected_benchmark_profile:
+        raise ValueError(
+            "repair result requires the expected repair prompt binding profile"
+        )
     prompt_bindings = dict(binding["styles"])
     validate_summary_prompt_binding(summary, prompt_bindings)
     recommendation_counts = validate_transition_gate(
@@ -110,6 +114,7 @@ def build_accumulation_summary(
         "repair_accumulation": {
             "artifact_type": ARTIFACT_TYPE,
             "policy": "repair_pass_to_testing_and_failure_remains_generated",
+            "benchmark_profile": expected_benchmark_profile,
             "source_summary": {
                 "path": summary_name,
                 "sha256": file_sha256(summary_file),
@@ -150,6 +155,11 @@ def main() -> int:
     parser.add_argument("--expected-repair-candidates", type=int, default=115)
     parser.add_argument("--minimum-cumulative-testing", type=int, default=200)
     parser.add_argument(
+        "--benchmark-profile",
+        default=REPAIR_BENCHMARK_PROFILE,
+        help="exact versioned repair profile required by the prompt binding",
+    )
+    parser.add_argument(
         "--require-retest-ready",
         action="store_true",
         help="refuse preparation unless the cumulative testing set reaches the retest gate",
@@ -165,6 +175,7 @@ def main() -> int:
             expected_repair_candidates=args.expected_repair_candidates,
             minimum_cumulative_testing=args.minimum_cumulative_testing,
             require_retest_ready=args.require_retest_ready,
+            expected_benchmark_profile=args.benchmark_profile,
         )
         atomic_write_json(args.output, document)
         evidence = document["repair_accumulation"]

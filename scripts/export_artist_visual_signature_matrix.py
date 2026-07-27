@@ -23,6 +23,7 @@ SINGLE_VIEW_CALIBRATION_SEEDS = (8101, 8202, 8303)
 EDITORIAL_CALIBRATION_SEEDS = (9101, 9202, 9303)
 AXIS_CALIBRATION_SEEDS = (11101, 11202, 11303)
 REINFORCED_AXIS_CALIBRATION_SEEDS = (12101, 12202, 12303)
+REINFORCED_AXIS_REPAIR_SEEDS = (13101, 13202, 13303)
 DEFAULT_STATUSES = ("generated",)
 ALLOWED_STATUSES = frozenset({"generated", "testing", "approved"})
 EXPECTED_VISUAL_AXES = 8
@@ -41,6 +42,9 @@ AXIS_CALIBRATION_PROFILE = "artist_visual_signature_repair_axis_calibration_v0_8
 REINFORCED_AXIS_CALIBRATION_PROFILE = (
     "artist_visual_signature_repair_reinforced_axis_calibration_v0_8_8"
 )
+REINFORCED_AXIS_REPAIR_PROFILE = (
+    "artist_visual_signature_repair_reinforced_axis_v0_8_8"
+)
 BENCHMARK_PROFILES = frozenset(
     {
         LEGACY_BENCHMARK_PROFILE,
@@ -50,6 +54,7 @@ BENCHMARK_PROFILES = frozenset(
         EDITORIAL_CALIBRATION_PROFILE,
         AXIS_CALIBRATION_PROFILE,
         REINFORCED_AXIS_CALIBRATION_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
     }
 )
 REPAIR_SIGNATURE_COUNT = 115
@@ -407,7 +412,10 @@ def prompt_for_profile(
     *,
     feature_axes: Any = None,
 ) -> str:
-    if benchmark_profile == REINFORCED_AXIS_CALIBRATION_PROFILE:
+    if benchmark_profile in {
+        REINFORCED_AXIS_CALIBRATION_PROFILE,
+        REINFORCED_AXIS_REPAIR_PROFILE,
+    }:
         return (
             "Create a clean hand-drawn 2D editorial illustration. "
             f"This exact visual signature controls the rendering: {body} "
@@ -773,6 +781,22 @@ def signature_rows(
             )
         if require_signature_count is None:
             require_signature_count = FRAMING_CALIBRATION_SIGNATURE_COUNT
+    elif benchmark_profile == REINFORCED_AXIS_REPAIR_PROFILE:
+        if seed_values != REINFORCED_AXIS_REPAIR_SEEDS:
+            raise ValueError(
+                "reinforced axis repair profile requires seeds "
+                + ", ".join(str(seed) for seed in REINFORCED_AXIS_REPAIR_SEEDS)
+            )
+        if status_values != ("generated",):
+            raise ValueError(
+                "reinforced axis repair profile requires exactly status generated"
+            )
+        if limit_signatures is not None:
+            raise ValueError(
+                "reinforced axis repair profile cannot limit signatures"
+            )
+        if require_signature_count is None:
+            require_signature_count = REPAIR_SIGNATURE_COUNT
     document = load_yaml(catalog_path)
     items = document.get("items") if isinstance(document, dict) else None
     if not isinstance(items, dict):
@@ -826,11 +850,13 @@ def signature_rows(
             EDITORIAL_CALIBRATION_PROFILE,
             AXIS_CALIBRATION_PROFILE,
             REINFORCED_AXIS_CALIBRATION_PROFILE,
+            REINFORCED_AXIS_REPAIR_PROFILE,
         }:
             factors["benchmark_profile"] = benchmark_profile
             factors["benchmark_stage"] = (
                 "pilot"
-                if benchmark_profile == REPAIR_BENCHMARK_PROFILE
+                if benchmark_profile
+                in {REPAIR_BENCHMARK_PROFILE, REINFORCED_AXIS_REPAIR_PROFILE}
                 else "calibration"
             )
         prompt = prompt_for_profile(
@@ -922,7 +948,12 @@ def main() -> int:
                                 REINFORCED_AXIS_CALIBRATION_SEEDS
                                 if args.benchmark_profile
                                 == REINFORCED_AXIS_CALIBRATION_PROFILE
-                                else DEFAULT_SEEDS
+                                else (
+                                    REINFORCED_AXIS_REPAIR_SEEDS
+                                    if args.benchmark_profile
+                                    == REINFORCED_AXIS_REPAIR_PROFILE
+                                    else DEFAULT_SEEDS
+                                )
                             )
                         )
                     )
