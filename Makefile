@@ -2,7 +2,7 @@ REMOTE_QUEUE_DEPTH ?= 32
 REMOTE_BATCH_SIZE ?= 1
 
 .PHONY: preview production impact-production expansion-dry-run expansion-apply catalog-v2-dry-run catalog-v2-apply check matrix artist-native-matrix artist-signature-matrix artist-signature-illustrated-calibration-matrix artist-signature-calibration-v0-8-2-matrix artist-signature-v0-8-2-matrix completion completion-predeploy-strict completion-strict progress test release release-deploy-dry-run release-deploy deploy-preview-dry-run deploy-preview deploy-production-dry-run deploy-production remote-production-smoke finalize-production-deployment finish-production remote-smoke remote-pilot remote-style-refill-calibration remote-generated-screen remote-testing-retest review-style-screen remote-artist-native-dry-run remote-artist-native review-artist-native remote-artist-signature-dry-run remote-artist-signature review-artist-signature score-artist-signature-screen apply-artist-signature-screen remote-artist-signature-illustrated-calibration review-artist-signature-illustrated-calibration remote-artist-signature-calibration-v0-8-2 review-artist-signature-calibration-v0-8-2 remote-artist-signature-v0-8-2 review-artist-signature-v0-8-2 score-artist-signature-v0-8-2 apply-artist-signature-v0-8-2 remote-artist-signature-retest combine-artist-signature-retest review-artist-signature-retest score-artist-signature-retest apply-artist-signature-retest remote-artist-signature-retest-v0-8-2 combine-artist-signature-retest-v0-8-2 review-artist-signature-retest-v0-8-2 score-artist-signature-retest-v0-8-2 apply-artist-signature-retest-v0-8-2
-.PHONY: phase7-axis-matrix phase7-axis-calibration
+.PHONY: phase7-axis-matrix phase7-axis-calibration remote-phase7-axis phase7-axis-stage-a phase7-axis-sheets
 .PHONY: runtime-audit phase6-calibration-matrix phase6-calibration-gate remote-phase6-calibration review-phase6-calibration score-phase6-calibration phase6-single-axis-matrix phase6-pairwise-matrix phase6-presets-matrix phase6-random-matrix phase6-benchmark-matrix remote-phase6-single-axis remote-phase6-pairwise remote-phase6-presets remote-phase6-random remote-phase6-benchmark review-phase6-single-axis review-phase6-pairwise review-phase6-presets review-phase6-random review-phase6-benchmark score-phase6-single-axis score-phase6-pairwise score-phase6-presets score-phase6-random score-phase6-benchmark
 .PHONY: artist-abc-map artist-abc-matrix remote-artist-abc-dry-run remote-artist-abc review-artist-abc score-artist-abc
 .PHONY: prepare-artist-signature-repair-v0-8-3 apply-artist-signature-repair-lifecycle-v0-8-3 artist-signature-repair-v0-8-3-matrix remote-artist-signature-repair-v0-8-3 review-artist-signature-repair-v0-8-3 score-artist-signature-repair-v0-8-3 apply-artist-signature-repair-v0-8-3 artist-signature-testing-pilot-v0-8-3 artist-signature-retest-v0-8-3-matrix remote-artist-signature-retest-v0-8-3 combine-artist-signature-retest-v0-8-3 review-artist-signature-retest-v0-8-3 score-artist-signature-retest-v0-8-3 apply-artist-signature-retest-v0-8-3
@@ -503,6 +503,27 @@ phase7-axis-calibration:
 	python3 scripts/export_phase7_matrix.py $(AXIS) --calibration --limit $(or $(LIMIT),1) \
 		--output tests/prompt_matrix/phase7_$(AXIS)_calibration.jsonl \
 		--binding-output tests/reports/phase7_$(AXIS)_calibration_v1/prompt_binding.json
+
+remote-phase7-axis: phase7-axis-matrix
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase7_$(AXIS).jsonl --output tests/reports/phase7_$(AXIS)_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+
+# Stage A is the deterministic prefilter: no model call, fails the axis if any
+# item has a missing seed, failed job, wrong resolution, seed-identical output,
+# or a flat degenerate frame.
+phase7-axis-stage-a:
+	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-stage-a AXIS=camera" && exit 1)
+	python3 scripts/audit_phase7_stage_a.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
+		--run-state tests/reports/phase7_$(AXIS)_v1/run-state.json \
+		--axis $(AXIS) --expected-seeds $(or $(EXPECTED_SEEDS),3) \
+		--output tests/reports/completion/phase7_$(AXIS)_stage_a.json
+
+# Stage B batches the surviving frames into 10-item contact sheets so one review
+# call covers ten items instead of one image.
+phase7-axis-sheets: phase7-axis-stage-a
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
+		--matrix tests/prompt_matrix/phase7_$(AXIS).jsonl \
+		--output tests/reports/phase7_$(AXIS)_v1/review \
+		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet 10 --overwrite
 
 remote-phase6-single-axis: phase6-calibration-gate phase6-single-axis-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v6 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit

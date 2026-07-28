@@ -1571,17 +1571,28 @@ Phase 6의 수동 contact-sheet 리뷰를 10,125장에 그대로 적용할 수 �
 
 **Stage A. 결정론적 prefilter (모델 호출 없음)**
 
-`run-state.json`과 PNG를 직접 검사한다. seed 전수 완료, 1024×1024 정확 일치, 같은
-항목의 seed 간 `image_sha256` 상이, 균일·저엔트로피 degenerate 이미지 배제. 여기서
-걸린 항목은 모델 리뷰로 보내지 않는다.
+`scripts/audit_phase7_stage_a.py`가 `scorecard.csv`와 `run-state.json`, PNG를 직접
+검사한다. seed 전수 완료, job 성공, 1024×1024 정확 일치, 같은 항목의 seed 간
+`image_sha256` 상이, 균일·저엔트로피 degenerate 프레임 배제. 걸린 항목은 모델
+리뷰로 보내지 않는다.
+
+임계값은 luminance stddev 4.0, luminance level 8개다. Phase 6 single-axis v6의
+실제 288장으로 검증했고 96/96 항목이 통과했다. 실제 프레임의 최저값은 stddev
+25.35, level 184개로 임계값 대비 각각 6.3배와 23배 여유가 있어 정상 출력에서
+오탐이 발생하지 않는다.
 
 **Stage B. contact sheet 배치 리뷰**
 
 한 항목의 seed를 인접 배치하고 시트당 10개 항목 30셀로 묶는다. 시트 1장이 모델
 호출 1회이고 항목 10개의 판정을 한 번에 반환한다. 축 하나가 15~50장이므로 축별
-리뷰가 독립 배치로 끝나고, 338장을 한 컨텍스트에 담지 않는다. 판정 기준은 Phase 6
+리뷰가 독립 배치로 끝나고, 336장을 한 컨텍스트에 담지 않는다. 판정 기준은 Phase 6
 리뷰에서 이미 언어화된 항목을 그대로 쓴다. 단일 성인 1인, 얼굴·양눈·양손 판독성,
 framing contract 준수, 측정 축 속성의 가시적 반영, critical failure 유무.
+
+배치 인프라는 신규 구현이 아니다. `build_prompt_matrix_contact_sheets.py`가 이미
+`--cases-per-sheet 10`, `--expected-seeds 3`으로 `(mode, style_id)` 그룹화와 리뷰
+스켈레톤 생성을 지원한다. Phase 7 행의 `mode`가 `mass_axis_<axis>`이므로 축마다
+독립된 시트 계열이 생성된다.
 
 **Stage C. 개별 확대 확인**
 
@@ -1589,9 +1600,27 @@ Stage B에서 borderline으로 표시된 항목만 전체 해상도로 1 seed �
 수의 5% 이하로 상한을 둔다. 상한을 넘으면 해당 축은 anchor 문제로 판단하고 승격을
 중단한다.
 
-축별 판정은 `scorecard.csv`로 디스크에 남기고 `summarize_results.py`에 넣어
-`recommended_status`를 기존 정책 경로로 계산한다. 리뷰 결과가 파일에 남으므로 축
-단위로 중단하고 재개할 수 있다.
+기존 승격 경로에 그대로 접속한다. 자동화는 사람이 채우던 `review.yaml` 위치만
+대체하고, 그 뒤 단계는 바뀌지 않는다.
+
+```text
+remote 실행  → run-state.json + scorecard.csv (metric 공란)
+Stage A      → phase7_<axis>_stage_a.json      (모델 호출 없음)
+Stage B / C  → review.yaml                     (배치 리뷰가 사람 리뷰를 대체)
+apply_visual_review.py     → scored.csv
+summarize_results.py       → summary.json      (recommended_status)
+apply_evaluation_summary.py → catalog          (--require-tested-seeds 3)
+```
+
+각 단계 산출물이 디스크에 남으므로 축 단위로 중단하고 재개할 수 있다.
+
+Make 타깃은 축을 인자로 받는다.
+
+```bash
+make remote-phase7-axis AXIS=camera
+make phase7-axis-stage-a AXIS=camera
+make phase7-axis-sheets  AXIS=camera
+```
 
 토큰 예산은 Stage B 338장 약 1.5M, Stage C 상한 약 0.7M으로 전체 2.2M 이내다.
 장당 개별 리뷰는 약 21M이므로 배치가 약 10배를 줄인다.
