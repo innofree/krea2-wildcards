@@ -1,0 +1,3031 @@
+schema_version: 1
+review_method: phase7_spread_contact_sheet_batch_review
+notes: 250 items reviewed across 25 spread contact sheets at 10 items and 3 seeds per sheet, with Stage
+  C full-resolution escalation on three overhead_skylight low_bounce items.
+styles:
+  lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_001: cool key with warm practical visible at right, crisp floor shadow, frontal three-quarter
+      direction legible'
+  lighting_broad_window_frontal_three_quarter_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_002: frontal three-quarter key with crisp shadow on the wall, warm-neutral late-gold
+      tone'
+  lighting_broad_window_frontal_three_quarter_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_003: frontal three-quarter neutral daylight with crisp shadow; seed 3003 is notably darker
+      and cooler'
+  lighting_broad_window_frontal_three_quarter_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_004: frontal three-quarter warm key with crisp shadow; seed 3003 darker'
+  lighting_broad_window_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_005: cool key on the subject with a visible warm practical and soft feathered falloff'
+  lighting_broad_window_frontal_three_quarter_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_006: frontal three-quarter feathered soft light with late-gold tone'
+  lighting_broad_window_frontal_three_quarter_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_007: frontal three-quarter feathered soft neutral daylight, even and consistent'
+  lighting_broad_window_frontal_three_quarter_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_008: feathered soft frontal three-quarter light; warm key muted toward neutral'
+  lighting_broad_window_frontal_three_quarter_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_009: cool key on the subject with a visible warm practical, medium-defined shadow'
+  lighting_broad_window_frontal_three_quarter_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_010: frontal three-quarter late-gold light with medium-defined shadow'
+  lighting_broad_window_frontal_three_quarter_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_011: frontal three-quarter medium-defined neutral daylight, even and stable'
+  lighting_broad_window_frontal_three_quarter_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_012: frontal three-quarter medium-defined light; warm key muted toward neutral'
+  lighting_broad_window_frontal_three_quarter_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_013: cool key clearly on the subject with a visible warm practical on seed 3003'
+  lighting_broad_window_frontal_three_quarter_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_014: frontal three-quarter mixed edge light with late-gold tone'
+  lighting_broad_window_frontal_three_quarter_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_015: frontal three-quarter mixed edge light under even neutral daylight'
+  lighting_broad_window_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_016: frontal three-quarter mixed edge light; warm key muted'
+  lighting_broad_window_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_017: strong cool key on the subject with warm practical accent and clear side sculpting'
+  lighting_broad_window_side_sculpting_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_018: crisp controlled side sculpting with late-gold tone'
+  lighting_broad_window_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_019: crisp controlled side sculpting under neutral daylight'
+  lighting_broad_window_side_sculpting_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_020: crisp controlled side sculpting with a clear shadow side; warm key cool fill split
+      mild'
+  lighting_broad_window_side_sculpting_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_021: enveloping diffuse side sculpting with a visible warm practical and cool balance'
+  lighting_broad_window_side_sculpting_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_022: enveloping diffuse side sculpting with late-gold tone'
+  lighting_broad_window_side_sculpting_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_023: enveloping diffuse side sculpting under neutral daylight'
+  lighting_broad_window_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_024: enveloping diffuse side sculpting; warm key cool fill split muted'
+  lighting_broad_window_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_025: feathered soft side sculpting with cool key and clearly visible warm practical'
+  lighting_broad_window_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_026: late-gold tonality with feathered soft falloff and no hard shadow, side sculpting
+      from the left'
+  lighting_broad_window_side_sculpting_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_027: soft feathered neutral daylight; side sculpting is mild, which the feathered quality
+      explains'
+  lighting_broad_window_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_028: warm key not expressed; frame reads neutral-cool despite the warm key and cool fill
+      pairing'
+  lighting_broad_window_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_029: cool key clearly on the subject with warm practical floor spill and clear side sculpting'
+  lighting_broad_window_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_030: late-gold tone with medium-defined side sculpting'
+  lighting_broad_window_side_sculpting_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_031: even neutral daylight; medium-defined side sculpting is present but shallow'
+  lighting_broad_window_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_032: medium-defined side sculpting present; warm key muted toward neutral'
+  lighting_broad_window_side_sculpting_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_033: strong cool key on the subject with a clearly visible warm practical and side sculpting'
+  lighting_broad_window_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_034: late-gold side sculpting with mixed edge quality'
+  lighting_broad_window_side_sculpting_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_035: mixed edge side sculpting under neutral daylight'
+  lighting_broad_window_side_sculpting_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_036: clear side sculpting with mixed edge quality; warm key muted'
+  lighting_cloud_scattered_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_037: the cloud-scattered source is over-literalised into a visible sky backdrop on seed
+      2002, breaking the uncluttered cyclorama'
+  lighting_cloud_scattered_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_038: crisp controlled diagonal shadow with late-gold tone from a back edge source'
+  lighting_cloud_scattered_back_edge_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_039: back edge source under crisp controlled neutral daylight'
+  lighting_cloud_scattered_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_040: back edge source with a cool cast on seed 2002 and warmer balance on the others'
+  lighting_cloud_scattered_back_edge_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_041: cool key with visible warm practicals; the scattered source shows as atmospheric
+      haze'
+  lighting_cloud_scattered_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_042: back edge source with enveloping late-gold falloff'
+  lighting_cloud_scattered_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_043: back edge enveloping diffuse light, cooler on seed 2002'
+  lighting_cloud_scattered_back_edge_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_044: cool key with visible warm practical and scattered haze from the back edge source'
+  lighting_cloud_scattered_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_045: back edge medium-defined light with late-gold tone'
+  lighting_cloud_scattered_back_edge_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_046: back edge medium-defined light under neutral daylight'
+  lighting_cloud_scattered_back_edge_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_047: back edge medium-defined light; warm key cool fill split muted'
+  lighting_cloud_scattered_back_edge_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_048: back edge mixed edge light with late-gold tone'
+  lighting_cloud_scattered_back_edge_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_049: back edge mixed edge light under neutral daylight'
+  lighting_cloud_scattered_back_edge_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_050: back edge mixed edge light; warm key cool fill split muted'
+  lighting_cloud_scattered_low_bounce_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_051: cool key with warm practical accent and crisp controlled floor shadow'
+  lighting_cloud_scattered_low_bounce_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_052: crisp diagonal wall shadow clearly present with warm-neutral tone'
+  lighting_cloud_scattered_low_bounce_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_053: strong crisp diagonal wall shadow under neutral daylight'
+  lighting_cloud_scattered_low_bounce_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_054: crisp controlled wall shadows with warm-neutral balance'
+  lighting_cloud_scattered_low_bounce_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_055: cool enveloping key with warm practical accent clearly present'
+  lighting_cloud_scattered_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_056: enveloping diffuse late-gold light with a soft wall shadow'
+  lighting_cloud_scattered_low_bounce_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_057: cloud-scattered low bounce reads as even enveloping neutral daylight'
+  lighting_cloud_scattered_low_bounce_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_058: enveloping diffuse low bounce reads even; warm key muted'
+  lighting_cloud_scattered_low_bounce_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_059: cool feathered key with warm practical accent clearly present'
+  lighting_cloud_scattered_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_060: feathered late-gold light with a clear diagonal shaft on seed 2002'
+  lighting_cloud_scattered_low_bounce_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_061: feathered soft low bounce reads as even neutral daylight'
+  lighting_cloud_scattered_low_bounce_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_062: feathered soft low bounce reads even; warm key muted'
+  lighting_cloud_scattered_low_bounce_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_063: cool key with a visible warm practical and medium-defined shadow'
+  lighting_cloud_scattered_low_bounce_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_064: low bounce with medium-defined shadow and late-gold tone'
+  lighting_cloud_scattered_low_bounce_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_065: low bounce with medium-defined shadow under neutral daylight'
+  lighting_cloud_scattered_low_bounce_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_066: low bounce medium-defined light; warm key muted'
+  lighting_cloud_scattered_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_067: cool key with a visible warm practical and mixed edge quality'
+  lighting_cloud_scattered_low_bounce_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_068: low bounce mixed edge light with clear late-gold tone'
+  lighting_cloud_scattered_low_bounce_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_069: low bounce mixed edge light under neutral daylight'
+  lighting_cloud_scattered_low_bounce_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_070: low bounce mixed edge light; warm key muted'
+  lighting_cloud_scattered_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_071: crisp controlled side sculpting with cool key and visible warm practical'
+  lighting_cloud_scattered_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_072: crisp controlled side sculpting under neutral daylight'
+  lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_073: focused beam absent; enveloping diffuse frontal light shows no beam boundary'
+  lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_074: focused beam absent; frontal enveloping diffuse light reads flat'
+  lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_075: focused beam absent under neutral daylight; frame reads broadly even'
+  lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_076: focused beam not expressed; illumination reads broadly diffuse with no beam boundary'
+  lighting_focused_beam_frontal_three_quarter_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_077: cool key on the subject with a visible warm practical and warm floor pool'
+  lighting_focused_beam_frontal_three_quarter_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_078: focused beam not expressed; illumination reads flat and broad with no beam boundary'
+  lighting_focused_beam_frontal_three_quarter_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_079: focused beam not expressed; even broad illumination with no beam boundary'
+  lighting_focused_beam_frontal_three_quarter_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_080: focused beam not expressed; only a faint directional gradient under even light'
+  lighting_focused_beam_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_081: focused beam absent and the warm key cool fill split appears on seed 2002 only,
+      so seeds disagree'
+  lighting_focused_beam_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_082: high-side beam with crisp edge, cool key on the subject and warm practical floor
+      pool'
+  lighting_focused_beam_high_side_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_083: high-side crisp controlled beam with late-gold tone and clear modelling'
+  lighting_focused_beam_high_side_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_084: focused beam absent under neutral daylight; frame reads broadly even'
+  lighting_focused_beam_high_side_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_085: high-side crisp beam with dark shadow side and warm key cool fill hint'
+  lighting_focused_beam_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_086: high-side source with a clear cool key and warm practical split'
+  lighting_focused_beam_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_087: high-side source with a visible wall pool and late-gold tone'
+  lighting_focused_beam_high_side_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_088: focused beam absent under neutral daylight; frame reads broadly even'
+  lighting_focused_beam_high_side_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_089: neither the focused beam nor the warm key cool fill split is expressed; frame reads
+      flat neutral'
+  lighting_focused_beam_high_side_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_090: high-side feathered beam with cool key on the subject and warm practical accent'
+  lighting_focused_beam_high_side_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_091: high-side feathered beam with a visible wall pool and late-gold tone'
+  lighting_focused_beam_high_side_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_092: focused beam absent under neutral daylight; frame reads broadly even'
+  lighting_focused_beam_high_side_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_093: neither the focused beam nor the warm key cool fill split is expressed'
+  lighting_focused_beam_high_side_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_094: high-side beam with cool key on the subject and warm practical accent'
+  lighting_focused_beam_high_side_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_095: high-side medium-defined beam with late-gold tone'
+  lighting_focused_beam_high_side_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_096: focused beam absent under neutral daylight; frame reads broadly even'
+  lighting_focused_beam_high_side_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_097: high-side medium-defined beam with a clear shadow side'
+  lighting_focused_beam_high_side_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_098: high-side beam with cool key on the subject and warm practical floor spill'
+  lighting_focused_beam_high_side_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_099: high-side mixed edge beam with late-gold tone'
+  lighting_focused_beam_high_side_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_100: focused beam absent under neutral daylight; only a mild side gradient'
+  lighting_focused_beam_high_side_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_101: high-side beam with bright edge and deep body shadow, mixed edge quality legible'
+  lighting_focused_beam_side_sculpting_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_102: side sculpting and late-gold tone clear on seed 1001, flatter on the other seeds'
+  lighting_focused_beam_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_103: focused beam not expressed; only a mild side gradient under even neutral light'
+  lighting_focused_beam_side_sculpting_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_104: strong warm key and cool fill split across a clearly side-sculpted figure'
+  lighting_focused_beam_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_105: cool key strongly on the subject with warm practical floor spill and clear side
+      sculpting'
+  lighting_focused_beam_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_106: late-gold side sculpting with feathered falloff'
+  lighting_focused_beam_side_sculpting_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_107: focused beam absent under neutral daylight; frame reads flat and even'
+  lighting_focused_beam_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_108: focused beam and the warm key cool fill split are both absent; frame reads flat
+      neutral'
+  lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_109: diffused key with the softbox visible in frame, warm practical and cool key both
+      legible'
+  lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_110: frontal three-quarter diffused key with crisp controlled late-gold shadow'
+  lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_111: frontal three-quarter diffused key under neutral daylight'
+  lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_112: frontal three-quarter diffused key with crisp controlled shadow'
+  lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_113: diffused key with the softbox visible in frame plus a warm practical accent'
+  lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_114: frontal three-quarter enveloping diffuse key with late-gold tone'
+  lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_115: frontal three-quarter enveloping diffuse key under neutral daylight'
+  lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_116: frontal three-quarter enveloping diffuse key; warm key muted'
+  lighting_large_diffused_key_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_117: diffused key with the softbox visible in frame, cool key and warm practical both
+      legible'
+  lighting_large_diffused_key_frontal_three_quarter_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_118: frontal three-quarter feathered soft key with late-gold tone'
+  lighting_large_diffused_key_frontal_three_quarter_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_119: frontal three-quarter feathered soft key under neutral daylight'
+  lighting_large_diffused_key_frontal_three_quarter_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_120: frontal three-quarter feathered soft key; warm key muted'
+  lighting_large_diffused_key_frontal_three_quarter_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_121: diffused key with the softbox visible in frame plus cool key and warm practical'
+  lighting_large_diffused_key_frontal_three_quarter_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_122: frontal three-quarter mixed edge key with late-gold tone'
+  lighting_large_diffused_key_frontal_three_quarter_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_123: frontal three-quarter mixed edge key under neutral daylight'
+  lighting_large_diffused_key_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_124: frontal three-quarter mixed edge key; warm key muted'
+  lighting_large_diffused_key_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_125: diffused high-side key with the softbox visible in frame, cool key and warm practical
+      legible'
+  lighting_large_diffused_key_high_side_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_126: late-gold high-side key with crisp shadow; seed 3003 noticeably flatter'
+  lighting_large_diffused_key_high_side_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_127: even neutral daylight with a diffused key; crisp shadow is weak but inherent to
+      a diffused source'
+  lighting_large_diffused_key_high_side_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_128: high-side diffused key with clear side modelling; warm key is muted'
+  lighting_large_diffused_key_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_129: warm practical fixture visible in frame with a cool enveloping key'
+  lighting_large_diffused_key_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_130: large diffused high-side key with enveloping late-gold falloff'
+  lighting_large_diffused_key_high_side_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_131: large diffused high-side key reads as even neutral daylight'
+  lighting_large_diffused_key_high_side_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_132: high-side diffused key legible; warm key cool fill split muted'
+  lighting_large_diffused_key_high_side_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_133: warm practical fixture visible with a cool feathered high-side key'
+  lighting_large_diffused_key_high_side_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_134: feathered soft high-side key with late-gold tone'
+  lighting_large_diffused_key_high_side_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_135: feathered soft high-side key reads as even neutral daylight'
+  lighting_large_diffused_key_high_side_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_136: feathered soft high-side key; warm key muted and seed 3003 flatter'
+  lighting_large_diffused_key_high_side_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_137: cool key on the subject with a clearly visible warm practical'
+  lighting_large_diffused_key_high_side_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_138: high-side diffused key with medium-defined late-gold shadow'
+  lighting_large_diffused_key_high_side_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_139: high-side diffused key reads as even neutral daylight'
+  lighting_large_diffused_key_high_side_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_140: high-side medium-defined key; warm key muted toward neutral'
+  lighting_large_diffused_key_high_side_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_141: cool key on the subject with a clearly visible warm practical'
+  lighting_large_diffused_key_high_side_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_142: high-side mixed edge key with late-gold tone'
+  lighting_large_diffused_key_high_side_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_143: high-side mixed edge key reads as even neutral daylight'
+  lighting_large_diffused_key_high_side_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_144: high-side mixed edge key; warm key muted toward neutral'
+  lighting_low_horizon_source_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_145: low-horizon back edge with cool key, visible warm practical and crisp floor pool'
+  lighting_low_horizon_source_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_146: back edge crisp controlled light with late-gold tone'
+  lighting_low_horizon_source_back_edge_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_147: back edge crisp controlled neutral daylight with a clear floor shadow'
+  lighting_low_horizon_source_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_148: clear warm key and cool fill split from a crisp back edge source'
+  lighting_low_horizon_source_back_edge_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_149: back edge enveloping diffuse light with cool key and visible warm practical'
+  lighting_low_horizon_source_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_150: back edge enveloping diffuse light with late-gold tone'
+  lighting_low_horizon_source_back_edge_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_151: low-horizon back edge with bright floor pool, facial fill keeps the face readable'
+  lighting_low_horizon_source_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_152: low-horizon warm floor pool with back edge and cool fill on the torso'
+  lighting_low_horizon_source_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_153: low-horizon cool key with a clearly visible warm practical and floor pool'
+  lighting_low_horizon_source_back_edge_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_154: low-horizon feathered soft neutral light with a low floor pool'
+  lighting_low_horizon_source_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_155: clear warm key and cool fill split with a low-horizon floor pool'
+  lighting_low_horizon_source_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_156: low-horizon back edge with late-gold contrast and floor pool'
+  lighting_low_horizon_source_back_edge_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_157: low-horizon back edge with medium-defined shadow and floor pool'
+  lighting_low_horizon_source_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_158: cross-room low-horizon source with visible warm practical and cool key'
+  lighting_low_horizon_source_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_159: strong late-gold cross-room low-horizon light'
+  lighting_low_horizon_source_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_160: cross-room low-horizon source with a clear floor pool'
+  lighting_low_horizon_source_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_161: strong warm key and cool fill split from a cross-room low-horizon source'
+  lighting_low_horizon_source_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_162: cool key strongly on the subject with warm practical accent from a cross-room source'
+  lighting_low_horizon_source_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_163: strong late-gold cross-room low-horizon light with mixed edge quality'
+  lighting_low_horizon_source_cross_room_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_164: cross-room low-horizon source with a clear floor pool under neutral daylight'
+  lighting_low_horizon_source_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_165: cool key strongly on the subject with a visible warm practical from a high-side
+      low-horizon source'
+  lighting_low_horizon_source_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_166: high-side low-horizon source with enveloping late-gold falloff'
+  lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_167: low-horizon side sculpting with crisp controlled floor pool'
+  lighting_low_horizon_source_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_168: low-horizon side sculpting with floor pool; warm key cool fill muted'
+  lighting_low_horizon_source_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_169: cool key strongly on the subject with warm practical accent and side sculpting'
+  lighting_low_horizon_source_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_170: feathered soft side sculpting with clear late-gold tone'
+  lighting_low_horizon_source_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_171: clear warm key and cool fill split with feathered soft side sculpting'
+  lighting_low_horizon_source_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_172: cool key strongly on the subject with warm practical accent and side sculpting'
+  lighting_low_horizon_source_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_173: medium-defined side sculpting with late-gold tone'
+  lighting_low_horizon_source_side_sculpting_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_174: medium-defined side sculpting under neutral daylight'
+  lighting_low_horizon_source_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_175: clear warm key and cool fill split with medium-defined side sculpting'
+  lighting_low_horizon_source_side_sculpting_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_176: strong side sculpting with cool key and warm practical accent, consistent across
+      seeds'
+  lighting_low_horizon_source_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_177: strong late-gold side sculpting, consistent across seeds'
+  lighting_low_horizon_source_side_sculpting_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_178: low-horizon side sculpting with mixed edge quality under neutral daylight'
+  lighting_low_horizon_source_side_sculpting_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_179: clear warm key and cool fill split with strong side sculpting'
+  lighting_overhead_skylight_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_180: cross-room overhead reads dark and the face is washed and indistinct across all
+      three seeds'
+  lighting_overhead_skylight_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_181: cross-room overhead reads dark with a washed indistinct face on all three seeds'
+  lighting_overhead_skylight_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_182: cross-room overhead reads as even neutral daylight with the face readable'
+  lighting_overhead_skylight_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_183: cross-room overhead enveloping diffuse with readable face; warm key muted'
+  lighting_overhead_skylight_cross_room_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_184: cross-room overhead reads dark with a washed indistinct face across seeds'
+  lighting_overhead_skylight_cross_room_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_185: cross-room overhead feathered soft neutral daylight with the face readable'
+  lighting_overhead_skylight_cross_room_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_186: cross-room overhead feathered soft light, face readable; warm key muted'
+  lighting_overhead_skylight_cross_room_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_187: warm practical present but the face reads washed and indistinct across seeds'
+  lighting_overhead_skylight_cross_room_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_188: the face reads washed and indistinct on seeds 2002 and 3003'
+  lighting_overhead_skylight_cross_room_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_189: cross-room overhead medium-defined neutral daylight, face readable'
+  lighting_overhead_skylight_cross_room_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_190: cross-room overhead medium-defined light, face readable; warm key muted'
+  lighting_overhead_skylight_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_191: warm practical present but the face reads washed and indistinct across seeds'
+  lighting_overhead_skylight_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_192: seed 1001 is clean but the face reads washed on seeds 2002 and 3003'
+  lighting_overhead_skylight_cross_room_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_193: cross-room overhead mixed edge neutral daylight, face readable'
+  lighting_overhead_skylight_cross_room_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_194: cross-room overhead mixed edge light, face readable'
+  lighting_overhead_skylight_low_bounce_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_195: warm practical present but the face reads washed and indistinct across seeds'
+  lighting_overhead_skylight_low_bounce_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_196: the face reads washed and indistinct on seeds 1001 and 2002'
+  lighting_overhead_skylight_low_bounce_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_197: overhead low bounce crisp controlled neutral daylight, face readable'
+  lighting_overhead_skylight_low_bounce_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_198: the face reads washed and indistinct on seeds 1001 and 2002'
+  lighting_overhead_skylight_low_bounce_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_199: warm practical present but the face reads washed and indistinct across seeds'
+  lighting_overhead_skylight_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_200: Stage C at full resolution: face is readable but the lighting is entirely flat with
+      no directional cue, and both hands render malformed'
+  lighting_overhead_skylight_low_bounce_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_201: overhead skylight reads as even neutral daylight with soft enveloping falloff'
+  lighting_overhead_skylight_low_bounce_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_202: overhead low-bounce enveloping diffuse reads clearly; warm key is muted but present'
+  lighting_overhead_skylight_low_bounce_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_203: cool key with visible warm practical; overhead skylight direction reads lower than
+      named'
+  lighting_overhead_skylight_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_204: overhead low-bounce feathered soft light with warm-neutral late-gold tone'
+  lighting_overhead_skylight_low_bounce_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_205: even neutral daylight from overhead with soft low-bounce fill'
+  lighting_overhead_skylight_low_bounce_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_206: overhead low-bounce feathered soft light; warm key is muted'
+  lighting_overhead_skylight_low_bounce_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_207: warm practical and cool key present but the face reads washed and indistinct across
+      seeds'
+  lighting_overhead_skylight_low_bounce_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_208: overhead low-bounce medium-defined late-gold light, face readable'
+  lighting_overhead_skylight_low_bounce_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_209: overhead low bounce reads as even neutral daylight'
+  lighting_overhead_skylight_low_bounce_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_210: warm key not expressed and seed 2002 renders the face washed and indistinct'
+  lighting_overhead_skylight_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_211: warm practical visible but the face reads washed and indistinct across seeds'
+  lighting_overhead_skylight_low_bounce_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_212: overhead low bounce with mixed edge quality and late-gold tone'
+  lighting_overhead_skylight_low_bounce_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_213: overhead low bounce with mixed edge quality under neutral daylight, face readable'
+  lighting_overhead_skylight_low_bounce_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_214: overhead low bounce with mixed edge quality; warm key muted'
+  lighting_practical_cluster_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_215: back edge practical cluster with cool key and visible warm practical, face readable'
+  lighting_practical_cluster_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_216: back edge practical cluster with crisp controlled late-gold shadow'
+  lighting_practical_cluster_back_edge_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_217: back edge practical cluster with crisp controlled neutral daylight'
+  lighting_practical_cluster_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_218: warm key not expressed; a cool cast dominates the face and torso'
+  lighting_practical_cluster_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_219: back edge practical cluster with cool key and visible warm practical, face readable'
+  lighting_practical_cluster_back_edge_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_220: back edge practical cluster with feathered soft late-gold light'
+  lighting_practical_cluster_back_edge_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_221: back edge practical cluster with feathered soft neutral daylight'
+  lighting_practical_cluster_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_222: warm key not expressed; a cool cast dominates the face'
+  lighting_practical_cluster_back_edge_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_223: back edge practical cluster with cool key and visible warm practical, face readable'
+  lighting_practical_cluster_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_224: back edge practical cluster with medium-defined late-gold shadow'
+  lighting_practical_cluster_back_edge_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_225: back edge practical cluster with medium-defined neutral daylight'
+  lighting_practical_cluster_back_edge_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 3
+      character_quality: 2
+      composition_quality: 3
+      compatibility: 3
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: true
+    notes: 'case_226: very dark frame with cool cast dominating the face; warm key not expressed and face
+      readability marginal'
+  lighting_practical_cluster_back_edge_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_227: low-key frame with visible warm practical and cool key; face stays readable'
+  lighting_practical_cluster_back_edge_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_228: late-gold back edge with mixed edge quality legible across seeds'
+  lighting_practical_cluster_back_edge_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_229: warm key not expressed; cool cast dominates the face and torso'
+  lighting_practical_cluster_cross_room_crisp_controlled_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_230: cool key with visible warm practical and crisp controlled floor shadow'
+  lighting_practical_cluster_cross_room_crisp_controlled_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_231: cross-room practical cluster with crisp controlled shadow and late-gold tone'
+  lighting_practical_cluster_cross_room_crisp_controlled_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_232: cross-room practical cluster under neutral daylight with controlled shadow'
+  lighting_practical_cluster_cross_room_crisp_controlled_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_233: cross-room practical cluster with a clear warm key and cool fill split on seed 3003'
+  lighting_practical_cluster_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_234: cross-room practical cluster with visible warm practical and cool key, face readable'
+  lighting_practical_cluster_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_235: cross-room practical cluster with enveloping late-gold falloff'
+  lighting_practical_cluster_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_236: cross-room practical cluster under even neutral daylight'
+  lighting_practical_cluster_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_237: cross-room practical cluster with enveloping falloff; warm key muted and no visible
+      practical'
+  lighting_practical_cluster_cross_room_feathered_soft_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_238: cool key on the subject with a clearly visible warm practical'
+  lighting_practical_cluster_cross_room_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_239: cross-room practical cluster with feathered soft late-gold light'
+  lighting_practical_cluster_cross_room_feathered_soft_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_240: cross-room practical cluster with feathered soft neutral daylight'
+  lighting_practical_cluster_cross_room_feathered_soft_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_241: cross-room practical cluster with a clear warm key and cool fill split on seed 3003'
+  lighting_practical_cluster_cross_room_medium_defined_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_242: cross-room practical cluster with cool key and visible warm practical'
+  lighting_practical_cluster_cross_room_medium_defined_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_243: cross-room practical cluster with medium-defined late-gold shadow'
+  lighting_practical_cluster_cross_room_medium_defined_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_244: cross-room practical cluster with medium-defined neutral daylight'
+  lighting_practical_cluster_cross_room_medium_defined_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_245: cross-room practical cluster; cool fill clear on seed 2002, neutral on the others'
+  lighting_practical_cluster_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_246: cross-room practical cluster with cool key and visible warm practical, face readable'
+  lighting_practical_cluster_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_247: cross-room practical cluster with mixed edge quality and late-gold tone'
+  lighting_practical_cluster_cross_room_mixed_edge_neutral_daylight_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_248: cross-room practical cluster with mixed edge quality under neutral daylight'
+  lighting_practical_cluster_cross_room_mixed_edge_warm_key_cool_fill_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_249: cross-room practical cluster with a clear warm key and cool fill split on seed 3003'
+  lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_250: low bounce feathered soft late-gold light, matches the calibration render'

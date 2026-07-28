@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "stage": "final",
-  "complete": true,
+  "complete": false,
   "summary": {
     "criteria": 16,
-    "complete": 16,
-    "remaining": 0
+    "complete": 13,
+    "remaining": 3
   },
   "criteria": [
     {
@@ -13,10 +13,10 @@
       "category": "functional",
       "complete": true,
       "actual": {
-        "item_count": 374,
-        "prompt_count": 374,
-        "catalog_approved_runtime_item_count": 374,
-        "manifest_unique_item_id_count": 374,
+        "item_count": 585,
+        "prompt_count": 585,
+        "catalog_approved_runtime_item_count": 585,
+        "manifest_unique_item_id_count": 585,
         "catalog_item_ids_match": true,
         "missing_catalog_item_ids": [],
         "unexpected_manifest_item_ids": [],
@@ -37,7 +37,7 @@
     {
       "id": "release_functional_gates",
       "category": "functional",
-      "complete": true,
+      "complete": false,
       "actual": {
         "passed_stages": [
           "catalog_conflicts",
@@ -57,7 +57,7 @@
           "test_suite"
         ],
         "missing_stages": [],
-        "production_matches_manifest": true,
+        "production_matches_manifest": false,
         "manifest_catalog_item_ids_match": true
       },
       "target": {
@@ -346,11 +346,11 @@
       "category": "quality",
       "complete": true,
       "actual": {
-        "approved_items": 374,
-        "evaluated_items": 374,
+        "approved_items": 585,
+        "evaluated_items": 585,
         "missing_metrics": 0,
-        "prompt_adherence": 4.068,
-        "stability": 4.161
+        "prompt_adherence": 4.044,
+        "stability": 4.103
       },
       "target": {
         "prompt_adherence_minimum": 4,
@@ -389,7 +389,7 @@
     {
       "id": "production_deployment",
       "category": "deployment",
-      "complete": true,
+      "complete": false,
       "actual": {
         "deployment_id": "production_v1",
         "deployment_type": "production",
@@ -441,15 +441,15 @@
     {
       "id": "production_smoke_test",
       "category": "deployment",
-      "complete": true,
+      "complete": false,
       "actual": {
-        "deployment_valid": true,
-        "smoke_completed": true,
-        "seed_valid": true,
-        "run_record_valid": true,
-        "run_record_sha256_valid": true,
-        "deployment_binding_valid": true,
-        "post_deployment_chronology_valid": true
+        "deployment_valid": false,
+        "smoke_completed": false,
+        "seed_valid": false,
+        "run_record_valid": false,
+        "run_record_sha256_valid": false,
+        "deployment_binding_valid": false,
+        "post_deployment_chronology_valid": false
       },
       "target": {
         "smoke_completed": true,
@@ -460,8 +460,7 @@
         "smoke_executed_after_deployment": true
       },
       "evidence": [
-        "tests/reports/deployments/production_v1.json",
-        "tests/reports/production_smoke_v1/runs/crystal_iris_pastel_seed_6006_production_v1_463f91b6255d/run.json"
+        "tests/reports/deployments/production_v1.json"
       ],
       "message": "Smoke evidence must cryptographically belong to the current deployment and execute after it."
     }

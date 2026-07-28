@@ -1,0 +1,7016 @@
+{
+  "schema_version": 1,
+  "report_type": "phase7_stage_a_audit",
+  "axis": "lighting",
+  "scorecard": "tests/reports/phase7_lighting_v1/scorecard.csv",
+  "run_state": "tests/reports/phase7_lighting_v1/run-state.json",
+  "expected_seeds": 3,
+  "item_count": 250,
+  "passed_count": 250,
+  "failed_count": 0,
+  "failed_item_ids": [],
+  "status": "passed",
+  "complete": true,
+  "items": {
+    "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000001": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.737,
+          "luminance_levels": 253
+        },
+        "P7000002": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.897,
+          "luminance_levels": 225
+        },
+        "P7000003": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.279,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000004": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.352,
+          "luminance_levels": 214
+        },
+        "P7000005": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.345,
+          "luminance_levels": 223
+        },
+        "P7000006": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.785,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000007": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.393,
+          "luminance_levels": 232
+        },
+        "P7000008": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.108,
+          "luminance_levels": 234
+        },
+        "P7000009": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.804,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000010": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.395,
+          "luminance_levels": 225
+        },
+        "P7000011": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.108,
+          "luminance_levels": 225
+        },
+        "P7000012": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.179,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000013": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.127,
+          "luminance_levels": 245
+        },
+        "P7000014": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.814,
+          "luminance_levels": 219
+        },
+        "P7000015": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.425,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000016": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.382,
+          "luminance_levels": 214
+        },
+        "P7000017": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.041,
+          "luminance_levels": 216
+        },
+        "P7000018": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.875,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000019": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 25.094,
+          "luminance_levels": 229
+        },
+        "P7000020": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.057,
+          "luminance_levels": 236
+        },
+        "P7000021": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.87,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000022": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.172,
+          "luminance_levels": 213
+        },
+        "P7000023": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.43,
+          "luminance_levels": 216
+        },
+        "P7000024": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.094,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000025": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.388,
+          "luminance_levels": 254
+        },
+        "P7000026": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.857,
+          "luminance_levels": 232
+        },
+        "P7000027": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.065,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000028": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.015,
+          "luminance_levels": 207
+        },
+        "P7000029": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.597,
+          "luminance_levels": 216
+        },
+        "P7000030": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.249,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000031": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.799,
+          "luminance_levels": 213
+        },
+        "P7000032": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.582,
+          "luminance_levels": 216
+        },
+        "P7000033": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.339,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000034": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.411,
+          "luminance_levels": 204
+        },
+        "P7000035": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.712,
+          "luminance_levels": 213
+        },
+        "P7000036": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.304,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000037": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.236,
+          "luminance_levels": 197
+        },
+        "P7000038": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.637,
+          "luminance_levels": 225
+        },
+        "P7000039": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.813,
+          "luminance_levels": 192
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000040": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.822,
+          "luminance_levels": 211
+        },
+        "P7000041": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.441,
+          "luminance_levels": 223
+        },
+        "P7000042": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.658,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000043": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.116,
+          "luminance_levels": 217
+        },
+        "P7000044": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.162,
+          "luminance_levels": 225
+        },
+        "P7000045": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.883,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000046": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.954,
+          "luminance_levels": 205
+        },
+        "P7000047": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.819,
+          "luminance_levels": 212
+        },
+        "P7000048": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.445,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000049": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.003,
+          "luminance_levels": 239
+        },
+        "P7000050": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.001,
+          "luminance_levels": 241
+        },
+        "P7000051": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.89,
+          "luminance_levels": 248
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000052": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.375,
+          "luminance_levels": 237
+        },
+        "P7000053": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.364,
+          "luminance_levels": 225
+        },
+        "P7000054": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.689,
+          "luminance_levels": 222
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000055": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.303,
+          "luminance_levels": 250
+        },
+        "P7000056": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.445,
+          "luminance_levels": 244
+        },
+        "P7000057": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.339,
+          "luminance_levels": 236
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000058": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.066,
+          "luminance_levels": 220
+        },
+        "P7000059": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.888,
+          "luminance_levels": 221
+        },
+        "P7000060": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.435,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000061": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.869,
+          "luminance_levels": 223
+        },
+        "P7000062": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.109,
+          "luminance_levels": 227
+        },
+        "P7000063": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.563,
+          "luminance_levels": 222
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000064": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.277,
+          "luminance_levels": 216
+        },
+        "P7000065": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.882,
+          "luminance_levels": 233
+        },
+        "P7000066": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.043,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000067": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.917,
+          "luminance_levels": 236
+        },
+        "P7000068": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.736,
+          "luminance_levels": 238
+        },
+        "P7000069": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.445,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000070": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.783,
+          "luminance_levels": 213
+        },
+        "P7000071": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.548,
+          "luminance_levels": 218
+        },
+        "P7000072": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.173,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000073": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.774,
+          "luminance_levels": 228
+        },
+        "P7000074": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.635,
+          "luminance_levels": 201
+        },
+        "P7000075": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.153,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000076": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.885,
+          "luminance_levels": 210
+        },
+        "P7000077": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.569,
+          "luminance_levels": 221
+        },
+        "P7000078": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.308,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000079": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.196,
+          "luminance_levels": 238
+        },
+        "P7000080": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.528,
+          "luminance_levels": 238
+        },
+        "P7000081": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.603,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000082": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.912,
+          "luminance_levels": 225
+        },
+        "P7000083": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.441,
+          "luminance_levels": 212
+        },
+        "P7000084": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.584,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000085": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.199,
+          "luminance_levels": 198
+        },
+        "P7000086": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.591,
+          "luminance_levels": 200
+        },
+        "P7000087": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.461,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000088": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.007,
+          "luminance_levels": 215
+        },
+        "P7000089": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.348,
+          "luminance_levels": 212
+        },
+        "P7000090": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.173,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000091": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.047,
+          "luminance_levels": 232
+        },
+        "P7000092": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.475,
+          "luminance_levels": 233
+        },
+        "P7000093": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.187,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000094": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.409,
+          "luminance_levels": 212
+        },
+        "P7000095": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.905,
+          "luminance_levels": 212
+        },
+        "P7000096": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.738,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000097": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.85,
+          "luminance_levels": 252
+        },
+        "P7000098": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.947,
+          "luminance_levels": 202
+        },
+        "P7000099": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.566,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000100": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.515,
+          "luminance_levels": 224
+        },
+        "P7000101": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.53,
+          "luminance_levels": 226
+        },
+        "P7000102": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.282,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000103": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.951,
+          "luminance_levels": 236
+        },
+        "P7000104": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.063,
+          "luminance_levels": 234
+        },
+        "P7000105": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.432,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_broad_window_side_sculpting_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000106": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.218,
+          "luminance_levels": 213
+        },
+        "P7000107": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.164,
+          "luminance_levels": 212
+        },
+        "P7000108": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.495,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000109": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.931,
+          "luminance_levels": 255
+        },
+        "P7000110": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 52.954,
+          "luminance_levels": 250
+        },
+        "P7000111": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.298,
+          "luminance_levels": 250
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000112": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.657,
+          "luminance_levels": 226
+        },
+        "P7000113": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 52.527,
+          "luminance_levels": 230
+        },
+        "P7000114": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.678,
+          "luminance_levels": 240
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000115": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.25,
+          "luminance_levels": 247
+        },
+        "P7000116": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.042,
+          "luminance_levels": 234
+        },
+        "P7000117": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.937,
+          "luminance_levels": 240
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000118": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.269,
+          "luminance_levels": 235
+        },
+        "P7000119": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.636,
+          "luminance_levels": 232
+        },
+        "P7000120": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.881,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000121": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.983,
+          "luminance_levels": 252
+        },
+        "P7000122": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.704,
+          "luminance_levels": 246
+        },
+        "P7000123": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.187,
+          "luminance_levels": 246
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000124": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.578,
+          "luminance_levels": 229
+        },
+        "P7000125": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.554,
+          "luminance_levels": 237
+        },
+        "P7000126": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.487,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000127": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.193,
+          "luminance_levels": 232
+        },
+        "P7000128": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.936,
+          "luminance_levels": 228
+        },
+        "P7000129": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.028,
+          "luminance_levels": 236
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000130": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.947,
+          "luminance_levels": 255
+        },
+        "P7000131": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.356,
+          "luminance_levels": 245
+        },
+        "P7000132": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.703,
+          "luminance_levels": 243
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000133": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.984,
+          "luminance_levels": 217
+        },
+        "P7000134": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 49.412,
+          "luminance_levels": 227
+        },
+        "P7000135": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.358,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000136": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.617,
+          "luminance_levels": 240
+        },
+        "P7000137": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.879,
+          "luminance_levels": 228
+        },
+        "P7000138": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.577,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000139": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.946,
+          "luminance_levels": 227
+        },
+        "P7000140": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.115,
+          "luminance_levels": 226
+        },
+        "P7000141": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.192,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000142": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.667,
+          "luminance_levels": 232
+        },
+        "P7000143": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 50.928,
+          "luminance_levels": 226
+        },
+        "P7000144": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.301,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000145": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.375,
+          "luminance_levels": 243
+        },
+        "P7000146": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.786,
+          "luminance_levels": 239
+        },
+        "P7000147": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.332,
+          "luminance_levels": 237
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_back_edge_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000148": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.037,
+          "luminance_levels": 217
+        },
+        "P7000149": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.094,
+          "luminance_levels": 222
+        },
+        "P7000150": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.545,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000151": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.681,
+          "luminance_levels": 224
+        },
+        "P7000152": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.601,
+          "luminance_levels": 208
+        },
+        "P7000153": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.333,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000154": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.836,
+          "luminance_levels": 223
+        },
+        "P7000155": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.36,
+          "luminance_levels": 225
+        },
+        "P7000156": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.134,
+          "luminance_levels": 223
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000157": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.565,
+          "luminance_levels": 235
+        },
+        "P7000158": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.734,
+          "luminance_levels": 234
+        },
+        "P7000159": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.366,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000160": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.338,
+          "luminance_levels": 215
+        },
+        "P7000161": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.67,
+          "luminance_levels": 225
+        },
+        "P7000162": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.796,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000163": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.541,
+          "luminance_levels": 195
+        },
+        "P7000164": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.599,
+          "luminance_levels": 219
+        },
+        "P7000165": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.154,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000166": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.497,
+          "luminance_levels": 215
+        },
+        "P7000167": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.235,
+          "luminance_levels": 220
+        },
+        "P7000168": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.246,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000169": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.743,
+          "luminance_levels": 218
+        },
+        "P7000170": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.335,
+          "luminance_levels": 219
+        },
+        "P7000171": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.87,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000172": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.144,
+          "luminance_levels": 210
+        },
+        "P7000173": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.474,
+          "luminance_levels": 226
+        },
+        "P7000174": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.673,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000175": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.983,
+          "luminance_levels": 216
+        },
+        "P7000176": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.123,
+          "luminance_levels": 205
+        },
+        "P7000177": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.602,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000178": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.494,
+          "luminance_levels": 226
+        },
+        "P7000179": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 49.006,
+          "luminance_levels": 223
+        },
+        "P7000180": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.003,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000181": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.029,
+          "luminance_levels": 229
+        },
+        "P7000182": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.68,
+          "luminance_levels": 223
+        },
+        "P7000183": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.411,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000184": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.407,
+          "luminance_levels": 209
+        },
+        "P7000185": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.97,
+          "luminance_levels": 222
+        },
+        "P7000186": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.502,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000187": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.772,
+          "luminance_levels": 203
+        },
+        "P7000188": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.185,
+          "luminance_levels": 211
+        },
+        "P7000189": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.625,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000190": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.658,
+          "luminance_levels": 204
+        },
+        "P7000191": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.845,
+          "luminance_levels": 217
+        },
+        "P7000192": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.087,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000193": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.163,
+          "luminance_levels": 220
+        },
+        "P7000194": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.367,
+          "luminance_levels": 220
+        },
+        "P7000195": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.773,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000196": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.53,
+          "luminance_levels": 209
+        },
+        "P7000197": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.874,
+          "luminance_levels": 217
+        },
+        "P7000198": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.999,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000199": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.557,
+          "luminance_levels": 194
+        },
+        "P7000200": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.985,
+          "luminance_levels": 210
+        },
+        "P7000201": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.916,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000202": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.367,
+          "luminance_levels": 227
+        },
+        "P7000203": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.168,
+          "luminance_levels": 227
+        },
+        "P7000204": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.031,
+          "luminance_levels": 220
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000205": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.162,
+          "luminance_levels": 221
+        },
+        "P7000206": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.452,
+          "luminance_levels": 210
+        },
+        "P7000207": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.926,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_low_bounce_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000208": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.739,
+          "luminance_levels": 212
+        },
+        "P7000209": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.882,
+          "luminance_levels": 211
+        },
+        "P7000210": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.324,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000211": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.437,
+          "luminance_levels": 243
+        },
+        "P7000212": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.676,
+          "luminance_levels": 253
+        },
+        "P7000213": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.576,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_cloud_scattered_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000214": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.521,
+          "luminance_levels": 242
+        },
+        "P7000215": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.545,
+          "luminance_levels": 241
+        },
+        "P7000216": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.073,
+          "luminance_levels": 237
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000217": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.007,
+          "luminance_levels": 240
+        },
+        "P7000218": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.083,
+          "luminance_levels": 218
+        },
+        "P7000219": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.116,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000220": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.292,
+          "luminance_levels": 205
+        },
+        "P7000221": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.765,
+          "luminance_levels": 219
+        },
+        "P7000222": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.488,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000223": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 26.367,
+          "luminance_levels": 225
+        },
+        "P7000224": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.69,
+          "luminance_levels": 221
+        },
+        "P7000225": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 25.127,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000226": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.508,
+          "luminance_levels": 207
+        },
+        "P7000227": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.651,
+          "luminance_levels": 211
+        },
+        "P7000228": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.142,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000229": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.807,
+          "luminance_levels": 247
+        },
+        "P7000230": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.388,
+          "luminance_levels": 206
+        },
+        "P7000231": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.391,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000232": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.917,
+          "luminance_levels": 204
+        },
+        "P7000233": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.983,
+          "luminance_levels": 218
+        },
+        "P7000234": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.996,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000235": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 25.668,
+          "luminance_levels": 217
+        },
+        "P7000236": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.103,
+          "luminance_levels": 210
+        },
+        "P7000237": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 24.365,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000238": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.664,
+          "luminance_levels": 215
+        },
+        "P7000239": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.705,
+          "luminance_levels": 203
+        },
+        "P7000240": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.637,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000241": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.103,
+          "luminance_levels": 215
+        },
+        "P7000242": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.4,
+          "luminance_levels": 211
+        },
+        "P7000243": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.09,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000244": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.678,
+          "luminance_levels": 231
+        },
+        "P7000245": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.257,
+          "luminance_levels": 221
+        },
+        "P7000246": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.151,
+          "luminance_levels": 245
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000247": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.556,
+          "luminance_levels": 222
+        },
+        "P7000248": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.842,
+          "luminance_levels": 226
+        },
+        "P7000249": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.837,
+          "luminance_levels": 231
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000250": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.762,
+          "luminance_levels": 244
+        },
+        "P7000251": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.793,
+          "luminance_levels": 239
+        },
+        "P7000252": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.787,
+          "luminance_levels": 231
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000253": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.174,
+          "luminance_levels": 219
+        },
+        "P7000254": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.359,
+          "luminance_levels": 225
+        },
+        "P7000255": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.0,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000256": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.683,
+          "luminance_levels": 231
+        },
+        "P7000257": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.051,
+          "luminance_levels": 229
+        },
+        "P7000258": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.708,
+          "luminance_levels": 231
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000259": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.301,
+          "luminance_levels": 229
+        },
+        "P7000260": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.428,
+          "luminance_levels": 222
+        },
+        "P7000261": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.198,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000262": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.081,
+          "luminance_levels": 244
+        },
+        "P7000263": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.364,
+          "luminance_levels": 237
+        },
+        "P7000264": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.517,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000265": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.324,
+          "luminance_levels": 210
+        },
+        "P7000266": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.787,
+          "luminance_levels": 221
+        },
+        "P7000267": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.997,
+          "luminance_levels": 222
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000268": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.271,
+          "luminance_levels": 228
+        },
+        "P7000269": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.138,
+          "luminance_levels": 220
+        },
+        "P7000270": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.572,
+          "luminance_levels": 238
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000271": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.189,
+          "luminance_levels": 220
+        },
+        "P7000272": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.999,
+          "luminance_levels": 225
+        },
+        "P7000273": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.581,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000274": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.743,
+          "luminance_levels": 247
+        },
+        "P7000275": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.028,
+          "luminance_levels": 236
+        },
+        "P7000276": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.065,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000277": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.038,
+          "luminance_levels": 221
+        },
+        "P7000278": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.064,
+          "luminance_levels": 221
+        },
+        "P7000279": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.372,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000280": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.658,
+          "luminance_levels": 222
+        },
+        "P7000281": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.809,
+          "luminance_levels": 221
+        },
+        "P7000282": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.885,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000283": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.25,
+          "luminance_levels": 216
+        },
+        "P7000284": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.55,
+          "luminance_levels": 223
+        },
+        "P7000285": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.159,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000286": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.177,
+          "luminance_levels": 235
+        },
+        "P7000287": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.612,
+          "luminance_levels": 224
+        },
+        "P7000288": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.712,
+          "luminance_levels": 220
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000289": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.282,
+          "luminance_levels": 220
+        },
+        "P7000290": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.909,
+          "luminance_levels": 211
+        },
+        "P7000291": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.163,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000292": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.441,
+          "luminance_levels": 212
+        },
+        "P7000293": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.8,
+          "luminance_levels": 215
+        },
+        "P7000294": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.133,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000295": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.115,
+          "luminance_levels": 213
+        },
+        "P7000296": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.393,
+          "luminance_levels": 223
+        },
+        "P7000297": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.439,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000298": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.895,
+          "luminance_levels": 243
+        },
+        "P7000299": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.866,
+          "luminance_levels": 234
+        },
+        "P7000300": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.567,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_high_side_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000301": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.087,
+          "luminance_levels": 218
+        },
+        "P7000302": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.621,
+          "luminance_levels": 213
+        },
+        "P7000303": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.725,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000304": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.054,
+          "luminance_levels": 239
+        },
+        "P7000305": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.075,
+          "luminance_levels": 224
+        },
+        "P7000306": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.148,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000307": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.662,
+          "luminance_levels": 238
+        },
+        "P7000308": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.131,
+          "luminance_levels": 241
+        },
+        "P7000309": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.249,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000310": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.396,
+          "luminance_levels": 203
+        },
+        "P7000311": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.655,
+          "luminance_levels": 210
+        },
+        "P7000312": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.464,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000313": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.036,
+          "luminance_levels": 217
+        },
+        "P7000314": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.925,
+          "luminance_levels": 215
+        },
+        "P7000315": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.038,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000316": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.127,
+          "luminance_levels": 240
+        },
+        "P7000317": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.664,
+          "luminance_levels": 244
+        },
+        "P7000318": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.861,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000319": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.284,
+          "luminance_levels": 236
+        },
+        "P7000320": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.303,
+          "luminance_levels": 244
+        },
+        "P7000321": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.34,
+          "luminance_levels": 242
+        }
+      },
+      "reasons": []
+    },
+    "lighting_focused_beam_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000322": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.602,
+          "luminance_levels": 200
+        },
+        "P7000323": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.752,
+          "luminance_levels": 206
+        },
+        "P7000324": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.102,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000325": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 58.03,
+          "luminance_levels": 256
+        },
+        "P7000326": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 55.119,
+          "luminance_levels": 255
+        },
+        "P7000327": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.713,
+          "luminance_levels": 250
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000328": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.651,
+          "luminance_levels": 207
+        },
+        "P7000329": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.904,
+          "luminance_levels": 213
+        },
+        "P7000330": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.201,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000331": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 26.655,
+          "luminance_levels": 212
+        },
+        "P7000332": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.745,
+          "luminance_levels": 219
+        },
+        "P7000333": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.738,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000334": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.87,
+          "luminance_levels": 207
+        },
+        "P7000335": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.363,
+          "luminance_levels": 212
+        },
+        "P7000336": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.634,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000337": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 56.964,
+          "luminance_levels": 256
+        },
+        "P7000338": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.634,
+          "luminance_levels": 249
+        },
+        "P7000339": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.496,
+          "luminance_levels": 252
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000340": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.519,
+          "luminance_levels": 211
+        },
+        "P7000341": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.484,
+          "luminance_levels": 214
+        },
+        "P7000342": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.148,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000343": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 24.439,
+          "luminance_levels": 210
+        },
+        "P7000344": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.253,
+          "luminance_levels": 213
+        },
+        "P7000345": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.366,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000346": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.628,
+          "luminance_levels": 209
+        },
+        "P7000347": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.08,
+          "luminance_levels": 220
+        },
+        "P7000348": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.484,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000349": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 55.775,
+          "luminance_levels": 256
+        },
+        "P7000350": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.367,
+          "luminance_levels": 252
+        },
+        "P7000351": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.14,
+          "luminance_levels": 253
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000352": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.647,
+          "luminance_levels": 208
+        },
+        "P7000353": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.805,
+          "luminance_levels": 213
+        },
+        "P7000354": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.267,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000355": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 24.343,
+          "luminance_levels": 221
+        },
+        "P7000356": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.568,
+          "luminance_levels": 218
+        },
+        "P7000357": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.579,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000358": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.907,
+          "luminance_levels": 212
+        },
+        "P7000359": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.263,
+          "luminance_levels": 214
+        },
+        "P7000360": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.061,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000361": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 51.875,
+          "luminance_levels": 256
+        },
+        "P7000362": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.468,
+          "luminance_levels": 255
+        },
+        "P7000363": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.795,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000364": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.539,
+          "luminance_levels": 209
+        },
+        "P7000365": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.904,
+          "luminance_levels": 215
+        },
+        "P7000366": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.993,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000367": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.112,
+          "luminance_levels": 214
+        },
+        "P7000368": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.119,
+          "luminance_levels": 210
+        },
+        "P7000369": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.616,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_frontal_three_quarter_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000370": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.997,
+          "luminance_levels": 210
+        },
+        "P7000371": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.181,
+          "luminance_levels": 210
+        },
+        "P7000372": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.118,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000373": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 58.678,
+          "luminance_levels": 256
+        },
+        "P7000374": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.646,
+          "luminance_levels": 254
+        },
+        "P7000375": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.879,
+          "luminance_levels": 253
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000376": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.662,
+          "luminance_levels": 209
+        },
+        "P7000377": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.052,
+          "luminance_levels": 219
+        },
+        "P7000378": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.271,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000379": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.809,
+          "luminance_levels": 225
+        },
+        "P7000380": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.677,
+          "luminance_levels": 222
+        },
+        "P7000381": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.305,
+          "luminance_levels": 223
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000382": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.152,
+          "luminance_levels": 212
+        },
+        "P7000383": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.848,
+          "luminance_levels": 219
+        },
+        "P7000384": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.336,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000385": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.08,
+          "luminance_levels": 255
+        },
+        "P7000386": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.707,
+          "luminance_levels": 256
+        },
+        "P7000387": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.772,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000388": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.978,
+          "luminance_levels": 203
+        },
+        "P7000389": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.246,
+          "luminance_levels": 211
+        },
+        "P7000390": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.704,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000391": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.756,
+          "luminance_levels": 221
+        },
+        "P7000392": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.407,
+          "luminance_levels": 219
+        },
+        "P7000393": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.283,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000394": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.724,
+          "luminance_levels": 203
+        },
+        "P7000395": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.997,
+          "luminance_levels": 214
+        },
+        "P7000396": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.541,
+          "luminance_levels": 220
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000397": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.664,
+          "luminance_levels": 255
+        },
+        "P7000398": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.151,
+          "luminance_levels": 251
+        },
+        "P7000399": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.695,
+          "luminance_levels": 254
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000400": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.235,
+          "luminance_levels": 208
+        },
+        "P7000401": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.954,
+          "luminance_levels": 216
+        },
+        "P7000402": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.43,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000403": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.388,
+          "luminance_levels": 225
+        },
+        "P7000404": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.789,
+          "luminance_levels": 217
+        },
+        "P7000405": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.144,
+          "luminance_levels": 220
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000406": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.511,
+          "luminance_levels": 208
+        },
+        "P7000407": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.649,
+          "luminance_levels": 215
+        },
+        "P7000408": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.377,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000409": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.945,
+          "luminance_levels": 254
+        },
+        "P7000410": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.793,
+          "luminance_levels": 249
+        },
+        "P7000411": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.496,
+          "luminance_levels": 252
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000412": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.251,
+          "luminance_levels": 209
+        },
+        "P7000413": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.451,
+          "luminance_levels": 215
+        },
+        "P7000414": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.966,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000415": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.419,
+          "luminance_levels": 209
+        },
+        "P7000416": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.603,
+          "luminance_levels": 214
+        },
+        "P7000417": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.26,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000418": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.883,
+          "luminance_levels": 213
+        },
+        "P7000419": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.5,
+          "luminance_levels": 220
+        },
+        "P7000420": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.94,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000421": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.235,
+          "luminance_levels": 256
+        },
+        "P7000422": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.196,
+          "luminance_levels": 255
+        },
+        "P7000423": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.663,
+          "luminance_levels": 254
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000424": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.282,
+          "luminance_levels": 214
+        },
+        "P7000425": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.656,
+          "luminance_levels": 218
+        },
+        "P7000426": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.731,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000427": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.088,
+          "luminance_levels": 224
+        },
+        "P7000428": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.163,
+          "luminance_levels": 214
+        },
+        "P7000429": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.427,
+          "luminance_levels": 216
+        }
+      },
+      "reasons": []
+    },
+    "lighting_large_diffused_key_high_side_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000430": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.801,
+          "luminance_levels": 211
+        },
+        "P7000431": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.28,
+          "luminance_levels": 210
+        },
+        "P7000432": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.588,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000433": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.066,
+          "luminance_levels": 253
+        },
+        "P7000434": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.262,
+          "luminance_levels": 212
+        },
+        "P7000435": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.457,
+          "luminance_levels": 256
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000436": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.945,
+          "luminance_levels": 216
+        },
+        "P7000437": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.077,
+          "luminance_levels": 240
+        },
+        "P7000438": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.31,
+          "luminance_levels": 243
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000439": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.686,
+          "luminance_levels": 244
+        },
+        "P7000440": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.364,
+          "luminance_levels": 249
+        },
+        "P7000441": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.115,
+          "luminance_levels": 252
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000442": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.437,
+          "luminance_levels": 218
+        },
+        "P7000443": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.244,
+          "luminance_levels": 238
+        },
+        "P7000444": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.632,
+          "luminance_levels": 236
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000445": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.56,
+          "luminance_levels": 254
+        },
+        "P7000446": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.173,
+          "luminance_levels": 252
+        },
+        "P7000447": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.575,
+          "luminance_levels": 251
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000448": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.287,
+          "luminance_levels": 227
+        },
+        "P7000449": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.779,
+          "luminance_levels": 247
+        },
+        "P7000450": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.837,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000451": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.333,
+          "luminance_levels": 248
+        },
+        "P7000452": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.577,
+          "luminance_levels": 252
+        },
+        "P7000453": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.053,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000454": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.753,
+          "luminance_levels": 225
+        },
+        "P7000455": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.964,
+          "luminance_levels": 238
+        },
+        "P7000456": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.588,
+          "luminance_levels": 243
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000457": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.232,
+          "luminance_levels": 254
+        },
+        "P7000458": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.427,
+          "luminance_levels": 225
+        },
+        "P7000459": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.602,
+          "luminance_levels": 254
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000460": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.75,
+          "luminance_levels": 241
+        },
+        "P7000461": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.218,
+          "luminance_levels": 251
+        },
+        "P7000462": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.198,
+          "luminance_levels": 248
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000463": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.397,
+          "luminance_levels": 230
+        },
+        "P7000464": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.818,
+          "luminance_levels": 236
+        },
+        "P7000465": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.815,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000466": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.716,
+          "luminance_levels": 205
+        },
+        "P7000467": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.012,
+          "luminance_levels": 241
+        },
+        "P7000468": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.049,
+          "luminance_levels": 238
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_back_edge_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000469": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.229,
+          "luminance_levels": 237
+        },
+        "P7000470": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.081,
+          "luminance_levels": 241
+        },
+        "P7000471": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.548,
+          "luminance_levels": 248
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000472": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.423,
+          "luminance_levels": 255
+        },
+        "P7000473": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.502,
+          "luminance_levels": 255
+        },
+        "P7000474": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.184,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000475": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.566,
+          "luminance_levels": 233
+        },
+        "P7000476": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.898,
+          "luminance_levels": 244
+        },
+        "P7000477": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.994,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000478": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.24,
+          "luminance_levels": 243
+        },
+        "P7000479": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.794,
+          "luminance_levels": 244
+        },
+        "P7000480": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.618,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000481": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.567,
+          "luminance_levels": 231
+        },
+        "P7000482": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.629,
+          "luminance_levels": 232
+        },
+        "P7000483": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.561,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000484": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.148,
+          "luminance_levels": 253
+        },
+        "P7000485": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.235,
+          "luminance_levels": 254
+        },
+        "P7000486": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.986,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000487": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.558,
+          "luminance_levels": 231
+        },
+        "P7000488": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.153,
+          "luminance_levels": 238
+        },
+        "P7000489": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.814,
+          "luminance_levels": 240
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_cross_room_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000490": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.753,
+          "luminance_levels": 237
+        },
+        "P7000491": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.069,
+          "luminance_levels": 232
+        },
+        "P7000492": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.159,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_high_side_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000493": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.514,
+          "luminance_levels": 255
+        },
+        "P7000494": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.789,
+          "luminance_levels": 255
+        },
+        "P7000495": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.83,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_high_side_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000496": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.832,
+          "luminance_levels": 232
+        },
+        "P7000497": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.187,
+          "luminance_levels": 246
+        },
+        "P7000498": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.466,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000499": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.888,
+          "luminance_levels": 253
+        },
+        "P7000500": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.296,
+          "luminance_levels": 253
+        },
+        "P7000501": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.026,
+          "luminance_levels": 250
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000502": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.957,
+          "luminance_levels": 229
+        },
+        "P7000503": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.353,
+          "luminance_levels": 238
+        },
+        "P7000504": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.636,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000505": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.525,
+          "luminance_levels": 210
+        },
+        "P7000506": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.757,
+          "luminance_levels": 220
+        },
+        "P7000507": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.989,
+          "luminance_levels": 234
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000508": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.768,
+          "luminance_levels": 228
+        },
+        "P7000509": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.122,
+          "luminance_levels": 236
+        },
+        "P7000510": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.861,
+          "luminance_levels": 239
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000511": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.921,
+          "luminance_levels": 218
+        },
+        "P7000512": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.916,
+          "luminance_levels": 226
+        },
+        "P7000513": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.892,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000514": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.338,
+          "luminance_levels": 209
+        },
+        "P7000515": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.83,
+          "luminance_levels": 216
+        },
+        "P7000516": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.648,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000517": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.415,
+          "luminance_levels": 223
+        },
+        "P7000518": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.464,
+          "luminance_levels": 234
+        },
+        "P7000519": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.313,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000520": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.105,
+          "luminance_levels": 244
+        },
+        "P7000521": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.356,
+          "luminance_levels": 245
+        },
+        "P7000522": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.787,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000523": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.76,
+          "luminance_levels": 216
+        },
+        "P7000524": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.264,
+          "luminance_levels": 221
+        },
+        "P7000525": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.808,
+          "luminance_levels": 220
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000526": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.324,
+          "luminance_levels": 248
+        },
+        "P7000527": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.436,
+          "luminance_levels": 200
+        },
+        "P7000528": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.165,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000529": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.87,
+          "luminance_levels": 219
+        },
+        "P7000530": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.26,
+          "luminance_levels": 242
+        },
+        "P7000531": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.591,
+          "luminance_levels": 236
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000532": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.205,
+          "luminance_levels": 245
+        },
+        "P7000533": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.846,
+          "luminance_levels": 249
+        },
+        "P7000534": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.797,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_low_horizon_source_side_sculpting_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000535": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.79,
+          "luminance_levels": 202
+        },
+        "P7000536": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.336,
+          "luminance_levels": 223
+        },
+        "P7000537": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.751,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000538": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.532,
+          "luminance_levels": 229
+        },
+        "P7000539": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.242,
+          "luminance_levels": 230
+        },
+        "P7000540": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.958,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000541": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.924,
+          "luminance_levels": 233
+        },
+        "P7000542": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.439,
+          "luminance_levels": 234
+        },
+        "P7000543": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.055,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000544": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.714,
+          "luminance_levels": 230
+        },
+        "P7000545": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.873,
+          "luminance_levels": 231
+        },
+        "P7000546": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.961,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000547": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.523,
+          "luminance_levels": 224
+        },
+        "P7000548": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.083,
+          "luminance_levels": 222
+        },
+        "P7000549": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.74,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000550": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.754,
+          "luminance_levels": 231
+        },
+        "P7000551": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.124,
+          "luminance_levels": 227
+        },
+        "P7000552": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.563,
+          "luminance_levels": 240
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000553": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.564,
+          "luminance_levels": 229
+        },
+        "P7000554": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.593,
+          "luminance_levels": 228
+        },
+        "P7000555": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.583,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000556": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.442,
+          "luminance_levels": 236
+        },
+        "P7000557": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.789,
+          "luminance_levels": 223
+        },
+        "P7000558": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.238,
+          "luminance_levels": 236
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000559": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.32,
+          "luminance_levels": 234
+        },
+        "P7000560": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.913,
+          "luminance_levels": 227
+        },
+        "P7000561": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.689,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000562": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.408,
+          "luminance_levels": 220
+        },
+        "P7000563": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.644,
+          "luminance_levels": 234
+        },
+        "P7000564": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.35,
+          "luminance_levels": 237
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000565": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.215,
+          "luminance_levels": 228
+        },
+        "P7000566": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.376,
+          "luminance_levels": 233
+        },
+        "P7000567": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.064,
+          "luminance_levels": 238
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000568": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.508,
+          "luminance_levels": 227
+        },
+        "P7000569": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.454,
+          "luminance_levels": 202
+        },
+        "P7000570": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.471,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000571": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.468,
+          "luminance_levels": 220
+        },
+        "P7000572": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.336,
+          "luminance_levels": 228
+        },
+        "P7000573": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.159,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000574": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.27,
+          "luminance_levels": 226
+        },
+        "P7000575": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.322,
+          "luminance_levels": 229
+        },
+        "P7000576": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.634,
+          "luminance_levels": 232
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000577": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.934,
+          "luminance_levels": 228
+        },
+        "P7000578": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.611,
+          "luminance_levels": 233
+        },
+        "P7000579": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.749,
+          "luminance_levels": 231
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_cross_room_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000580": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.698,
+          "luminance_levels": 221
+        },
+        "P7000581": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.12,
+          "luminance_levels": 219
+        },
+        "P7000582": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.761,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000583": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.624,
+          "luminance_levels": 255
+        },
+        "P7000584": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.797,
+          "luminance_levels": 237
+        },
+        "P7000585": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.541,
+          "luminance_levels": 242
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000586": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.651,
+          "luminance_levels": 224
+        },
+        "P7000587": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.462,
+          "luminance_levels": 227
+        },
+        "P7000588": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.643,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000589": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.097,
+          "luminance_levels": 239
+        },
+        "P7000590": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.622,
+          "luminance_levels": 239
+        },
+        "P7000591": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.923,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000592": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.075,
+          "luminance_levels": 236
+        },
+        "P7000593": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.958,
+          "luminance_levels": 236
+        },
+        "P7000594": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.437,
+          "luminance_levels": 242
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000595": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.83,
+          "luminance_levels": 251
+        },
+        "P7000596": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.385,
+          "luminance_levels": 213
+        },
+        "P7000597": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.948,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000598": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.827,
+          "luminance_levels": 226
+        },
+        "P7000599": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.922,
+          "luminance_levels": 230
+        },
+        "P7000600": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.173,
+          "luminance_levels": 223
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000601": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.062,
+          "luminance_levels": 238
+        },
+        "P7000602": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.309,
+          "luminance_levels": 230
+        },
+        "P7000603": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.779,
+          "luminance_levels": 222
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000604": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.322,
+          "luminance_levels": 225
+        },
+        "P7000605": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.389,
+          "luminance_levels": 219
+        },
+        "P7000606": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.235,
+          "luminance_levels": 221
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000607": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.76,
+          "luminance_levels": 252
+        },
+        "P7000608": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.772,
+          "luminance_levels": 241
+        },
+        "P7000609": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.264,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000610": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.488,
+          "luminance_levels": 223
+        },
+        "P7000611": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.321,
+          "luminance_levels": 229
+        },
+        "P7000612": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.801,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000613": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 26.915,
+          "luminance_levels": 235
+        },
+        "P7000614": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.186,
+          "luminance_levels": 230
+        },
+        "P7000615": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.136,
+          "luminance_levels": 234
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000616": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.33,
+          "luminance_levels": 222
+        },
+        "P7000617": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.557,
+          "luminance_levels": 228
+        },
+        "P7000618": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.806,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000619": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.277,
+          "luminance_levels": 229
+        },
+        "P7000620": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.772,
+          "luminance_levels": 224
+        },
+        "P7000621": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.006,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000622": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.286,
+          "luminance_levels": 224
+        },
+        "P7000623": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.898,
+          "luminance_levels": 229
+        },
+        "P7000624": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.799,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000625": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 26.032,
+          "luminance_levels": 233
+        },
+        "P7000626": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.532,
+          "luminance_levels": 232
+        },
+        "P7000627": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.032,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000628": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.521,
+          "luminance_levels": 224
+        },
+        "P7000629": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.176,
+          "luminance_levels": 203
+        },
+        "P7000630": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.816,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000631": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.529,
+          "luminance_levels": 253
+        },
+        "P7000632": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.824,
+          "luminance_levels": 227
+        },
+        "P7000633": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.364,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000634": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.086,
+          "luminance_levels": 216
+        },
+        "P7000635": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.222,
+          "luminance_levels": 233
+        },
+        "P7000636": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.377,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000637": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.11,
+          "luminance_levels": 232
+        },
+        "P7000638": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.167,
+          "luminance_levels": 233
+        },
+        "P7000639": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.898,
+          "luminance_levels": 228
+        }
+      },
+      "reasons": []
+    },
+    "lighting_overhead_skylight_low_bounce_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000640": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.271,
+          "luminance_levels": 223
+        },
+        "P7000641": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.735,
+          "luminance_levels": 206
+        },
+        "P7000642": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.109,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000643": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.244,
+          "luminance_levels": 255
+        },
+        "P7000644": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.747,
+          "luminance_levels": 207
+        },
+        "P7000645": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.488,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000646": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.09,
+          "luminance_levels": 211
+        },
+        "P7000647": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.592,
+          "luminance_levels": 235
+        },
+        "P7000648": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.761,
+          "luminance_levels": 241
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000649": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.846,
+          "luminance_levels": 210
+        },
+        "P7000650": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.48,
+          "luminance_levels": 218
+        },
+        "P7000651": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.144,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000652": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.912,
+          "luminance_levels": 200
+        },
+        "P7000653": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 50.015,
+          "luminance_levels": 206
+        },
+        "P7000654": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.394,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000655": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.034,
+          "luminance_levels": 254
+        },
+        "P7000656": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.093,
+          "luminance_levels": 217
+        },
+        "P7000657": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.089,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000658": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.773,
+          "luminance_levels": 210
+        },
+        "P7000659": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.401,
+          "luminance_levels": 241
+        },
+        "P7000660": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.285,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000661": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.67,
+          "luminance_levels": 236
+        },
+        "P7000662": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.374,
+          "luminance_levels": 227
+        },
+        "P7000663": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.77,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000664": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.809,
+          "luminance_levels": 191
+        },
+        "P7000665": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.298,
+          "luminance_levels": 223
+        },
+        "P7000666": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.719,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000667": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.216,
+          "luminance_levels": 251
+        },
+        "P7000668": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.348,
+          "luminance_levels": 213
+        },
+        "P7000669": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.899,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000670": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.865,
+          "luminance_levels": 206
+        },
+        "P7000671": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.397,
+          "luminance_levels": 219
+        },
+        "P7000672": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.115,
+          "luminance_levels": 242
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000673": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.09,
+          "luminance_levels": 209
+        },
+        "P7000674": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.298,
+          "luminance_levels": 211
+        },
+        "P7000675": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.159,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000676": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.209,
+          "luminance_levels": 193
+        },
+        "P7000677": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.383,
+          "luminance_levels": 207
+        },
+        "P7000678": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.424,
+          "luminance_levels": 186
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000679": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.778,
+          "luminance_levels": 254
+        },
+        "P7000680": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.782,
+          "luminance_levels": 194
+        },
+        "P7000681": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.032,
+          "luminance_levels": 256
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000682": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.368,
+          "luminance_levels": 210
+        },
+        "P7000683": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.942,
+          "luminance_levels": 219
+        },
+        "P7000684": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.01,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_back_edge_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000685": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.503,
+          "luminance_levels": 203
+        },
+        "P7000686": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.573,
+          "luminance_levels": 203
+        },
+        "P7000687": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.51,
+          "luminance_levels": 188
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_crisp_controlled_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000688": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.877,
+          "luminance_levels": 256
+        },
+        "P7000689": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.114,
+          "luminance_levels": 218
+        },
+        "P7000690": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.715,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_crisp_controlled_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000691": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.196,
+          "luminance_levels": 214
+        },
+        "P7000692": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.493,
+          "luminance_levels": 219
+        },
+        "P7000693": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.217,
+          "luminance_levels": 243
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_crisp_controlled_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000694": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.351,
+          "luminance_levels": 209
+        },
+        "P7000695": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.502,
+          "luminance_levels": 210
+        },
+        "P7000696": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.384,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_crisp_controlled_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000697": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.449,
+          "luminance_levels": 192
+        },
+        "P7000698": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 45.284,
+          "luminance_levels": 209
+        },
+        "P7000699": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.611,
+          "luminance_levels": 188
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_enveloping_diffuse_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000700": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.266,
+          "luminance_levels": 256
+        },
+        "P7000701": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.478,
+          "luminance_levels": 244
+        },
+        "P7000702": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.463,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000703": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.92,
+          "luminance_levels": 202
+        },
+        "P7000704": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.589,
+          "luminance_levels": 202
+        },
+        "P7000705": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.278,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_enveloping_diffuse_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000706": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.64,
+          "luminance_levels": 214
+        },
+        "P7000707": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.903,
+          "luminance_levels": 212
+        },
+        "P7000708": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.244,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000709": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.652,
+          "luminance_levels": 202
+        },
+        "P7000710": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.422,
+          "luminance_levels": 211
+        },
+        "P7000711": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.64,
+          "luminance_levels": 192
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_feathered_soft_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000712": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.332,
+          "luminance_levels": 255
+        },
+        "P7000713": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.096,
+          "luminance_levels": 252
+        },
+        "P7000714": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.634,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000715": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.331,
+          "luminance_levels": 195
+        },
+        "P7000716": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.435,
+          "luminance_levels": 210
+        },
+        "P7000717": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.334,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_feathered_soft_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000718": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.362,
+          "luminance_levels": 215
+        },
+        "P7000719": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.913,
+          "luminance_levels": 212
+        },
+        "P7000720": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.457,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_feathered_soft_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000721": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.341,
+          "luminance_levels": 188
+        },
+        "P7000722": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.124,
+          "luminance_levels": 202
+        },
+        "P7000723": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.539,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_medium_defined_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000724": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.253,
+          "luminance_levels": 256
+        },
+        "P7000725": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.925,
+          "luminance_levels": 256
+        },
+        "P7000726": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.897,
+          "luminance_levels": 254
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_medium_defined_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000727": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.471,
+          "luminance_levels": 202
+        },
+        "P7000728": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.091,
+          "luminance_levels": 211
+        },
+        "P7000729": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.856,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_medium_defined_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000730": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.509,
+          "luminance_levels": 207
+        },
+        "P7000731": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.658,
+          "luminance_levels": 205
+        },
+        "P7000732": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.022,
+          "luminance_levels": 217
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_medium_defined_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000733": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.783,
+          "luminance_levels": 176
+        },
+        "P7000734": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 47.232,
+          "luminance_levels": 205
+        },
+        "P7000735": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.349,
+          "luminance_levels": 183
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_mixed_edge_cool_key_warm_practical_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000736": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.944,
+          "luminance_levels": 255
+        },
+        "P7000737": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.795,
+          "luminance_levels": 256
+        },
+        "P7000738": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.022,
+          "luminance_levels": 255
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_mixed_edge_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000739": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.749,
+          "luminance_levels": 197
+        },
+        "P7000740": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.909,
+          "luminance_levels": 211
+        },
+        "P7000741": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.46,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_mixed_edge_neutral_daylight_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000742": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.486,
+          "luminance_levels": 203
+        },
+        "P7000743": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.379,
+          "luminance_levels": 202
+        },
+        "P7000744": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.426,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_cross_room_mixed_edge_warm_key_cool_fill_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000745": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.765,
+          "luminance_levels": 173
+        },
+        "P7000746": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 46.7,
+          "luminance_levels": 204
+        },
+        "P7000747": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.14,
+          "luminance_levels": 188
+        }
+      },
+      "reasons": []
+    },
+    "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000748": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.522,
+          "luminance_levels": 199
+        },
+        "P7000749": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.432,
+          "luminance_levels": 210
+        },
+        "P7000750": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.568,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    }
+  }
+}

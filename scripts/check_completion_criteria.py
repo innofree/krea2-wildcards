@@ -17,6 +17,7 @@ from common import (
     item_prompts,
     load_yaml,
     normalized_phrase,
+    required_approval_seeds,
 )
 from export_phase6_matrix import PHASE6_PROFILE_SHA256
 
@@ -183,17 +184,60 @@ def _catalog_items(path: Path) -> dict[str, dict[str, Any]]:
     return {str(key): item for key, item in raw_items.items() if isinstance(item, dict)}
 
 
-def _approved_and_valid(item: dict[str, Any]) -> bool:
+REQUIRED_POLICY_KEYS = (
+    "minimum_approval_seeds",
+    "complete_scene_approval_seeds",
+    "minimum_prompt_adherence",
+    "minimum_style_fidelity",
+    "minimum_stability",
+    "minimum_compatibility",
+    "maximum_critical_failures",
+)
+
+
+def _approval_policy(root: Path = ROOT) -> dict[str, Any] | None:
+    """The catalog approval policy, or None when it is absent or malformed.
+
+    Returning None rather than raising keeps a non-strict run reporting an
+    incomplete report instead of crashing on an empty repository. Callers treat
+    None as fail-closed: no item can be approval-policy-valid without a policy.
+    """
+    path = root / "catalog" / "evaluation.yaml"
+    if not path.is_file():
+        return None
+    try:
+        document = load_yaml(path)
+    except (OSError, UnicodeError, ValueError):
+        return None
+    if not isinstance(document, dict):
+        return None
+    policy = document.get("approval_policy")
+    if not isinstance(policy, dict):
+        return None
+    if any(not _is_number(policy.get(key)) for key in REQUIRED_POLICY_KEYS):
+        return None
+    return policy
+
+
+def _approved_and_valid(item: dict[str, Any], policy: dict[str, Any] | None) -> bool:
+    """Whether an approved item still satisfies the catalog approval policy.
+
+    The seed floor is read from the policy rather than hardcoded, so the family
+    tier applies here too: complete-scene families still need 5 seeds while
+    atomic axis items clear at the lower baseline.
+    """
+    if policy is None:
+        return False
     validation = item.get("validation")
     if not isinstance(validation, dict) or validation.get("status") != "approved":
         return False
     requirements = {
-        "tested_seeds": (5, None),
-        "prompt_adherence": (4, None),
-        "style_fidelity": (3, None),
-        "stability": (3, None),
-        "compatibility": (3, None),
-        "critical_failures": (None, 0),
+        "tested_seeds": (required_approval_seeds(policy, item), None),
+        "prompt_adherence": (policy["minimum_prompt_adherence"], None),
+        "style_fidelity": (policy["minimum_style_fidelity"], None),
+        "stability": (policy["minimum_stability"], None),
+        "compatibility": (policy["minimum_compatibility"], None),
+        "critical_failures": (None, policy["maximum_critical_failures"]),
     }
     for key, (minimum, maximum) in requirements.items():
         value = validation.get(key)
@@ -224,9 +268,12 @@ def approved_runtime_catalog_inventory(root: Path) -> tuple[set[str], list[str]]
 
     approved_ids: set[str] = set()
     problems: list[str] = []
+    policy = _approval_policy(root)
+    if policy is None:
+        return approved_ids, ["missing or malformed catalog approval policy"]
     for path in sorted((root / "catalog").glob("*.yaml")):
         for item_id, item in _catalog_items(path).items():
-            if not _approved_and_valid(item):
+            if not _approved_and_valid(item, policy):
                 continue
             runtime = item.get("runtime")
             prompts = item_prompts(item)
@@ -257,6 +304,7 @@ def approved_runtime_catalog_inventory(root: Path) -> tuple[set[str], list[str]]
 
 
 def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    policy = _approval_policy(root)
     catalog = root / "catalog"
     style_paths = [catalog / "art_styles.yaml", catalog / "style_expansion.yaml"]
     artist_path = catalog / "artists.yaml"
@@ -272,21 +320,21 @@ def _content_criteria(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, 
     approved_styles = [
         row
         for row in style_items
-        if row[2].get("family") == "style_pack" and _approved_and_valid(row[2])
+        if row[2].get("family") == "style_pack" and _approved_and_valid(row[2], policy)
     ]
     # Legacy style packs use named visual families; their runtime route is canonical.
     approved_styles += [
         row
         for row in style_items
         if row not in approved_styles
-        and _approved_and_valid(row[2])
+        and _approved_and_valid(row[2], policy)
         and (row[2].get("runtime") or {}).get("file")
         == "krea2/style/complete_pack.yaml"
     ]
     approved_artists = [
         row
         for row in artist_items
-        if _approved_and_valid(row[2])
+        if _approved_and_valid(row[2], policy)
         and _artist_evaluation_matches_current_prompt(row[2])
         and (
             row[2].get("family") == "artist_signature"

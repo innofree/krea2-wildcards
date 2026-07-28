@@ -1787,7 +1787,52 @@ high_side`는 softbox가 프레임에 실제로 보일 정도로 축이 강하�
 노출을 실패로 볼지는 배치 review에서 판정하고, 임의로 통과시키지 않는다. seed 간
 기구 위치 변동도 stability 점수에 반영한다.
 
-### 7.7 축별 완료 gate
+### 7.7 lighting 축 v1 승격 결과
+
+750/750장 생성, Stage A 250/250 통과, binding 검증 통과 후 25장 spread 시트로 250개
+전수 배치 리뷰를 수행했다. 결과는 통과 211개, 미달 39개(16%)다.
+
+실패는 무작위가 아니라 특정 sub-attribute 조합에 집중된다.
+
+| 조합 | 미달/전체 | 비율 |
+| --- | --- | --- |
+| `focused_beam` + `neutral_daylight` | 9/9 | 100% |
+| `practical_cluster` + `back_edge` + `warm_key_cool_fill` | 4/4 | 100% |
+| `focused_beam` + `frontal_three_quarter` | 8/9 | 89% |
+| `focused_beam` 전체 | 18/36 | 50% |
+| `overhead_skylight` 전체 | 15/35 | 43% |
+| **전체** | **39/250** | **16%** |
+
+`focused_beam`은 beam 경계가 보이지 않고 평면적으로 렌더된다. 단 `high_side`나
+색온도 대비(`warm_key_cool_fill`, `cool_key_warm_practical`)와 결합하면 정상 표현된다.
+즉 실패 조건은 방향 대비와 색 대비가 모두 없는 경우다.
+`practical_cluster back_edge warm_key_cool_fill`은 warm key가 표현되지 않고 cool이
+얼굴을 지배한다.
+
+Stage C를 발동했다. `weak_face` 14개가 축 항목의 5% 상한을 넘겼으므로
+`overhead_skylight_low_bounce` 3개를 원해상도로 확인했다. 결과는 판정을 양방향으로
+교정했다.
+
+* `case_195`, `case_211`: 시트 판정이 맞았다. 얼굴이 해골처럼 렌더되고 눈이 검은
+  구멍이며 양손이 뭉개진다. character quality critical failure다.
+* `case_200`: 얼굴은 판독 가능했고 시트 판정이 틀렸다. 실제 문제는 방향성 조명이
+  전혀 없는 완전 평면 렌더와 손 붕괴였다. 판정을 `weak_axis`로 교정했다.
+
+즉 5% 초과는 anchor 문제가 아니라 `overhead_skylight_low_bounce` 계열(20개 중 8개
+미달)의 해부 품질 문제다. 따라서 축 전체를 중단하지 않고 해당 항목만 거부했다.
+
+승격은 정책이 계산했다. `weak_axis`는 `prompt_adherence` 3으로 최소 4에 미달하고,
+`weak_face`는 critical failure로 처리해 둘 다 `rejected`가 된다. `summarize_results.py`
+결과는 approved 211, rejected 39로 리뷰 판정과 정확히 일치했다.
+
+`catalog/lighting.yaml`은 blueprint 생성기가 관리하는 파일이라 상태 변경이 `make check`
+에서 `managed output changed outside the generator`로 차단됐다. 작가 파이프라인과 동일하게
+`refresh_generation_manifest.py`로 validation-only 변경을 manifest에 반영해야 한다. 이
+단계를 축별 gate에 포함한다.
+
+런타임은 374개에서 585개로 늘었고 `krea2/lighting/complete.yaml`이 추가됐다.
+
+### 7.8 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
@@ -1795,6 +1840,7 @@ high_side`는 softbox가 프레임에 실제로 보일 정도로 축이 강하�
 * `prompt_binding.json` 재유도 검증 통과
 * atomic axis는 `--require-tested-seeds 3`, complete-scene은 `5`를
   `--allow-recommendation`과 함께 명시한 승격 적용
+* `refresh_generation_manifest.py`로 validation-only 변경 반영
 * matrix SHA-256을 run manifest에 기록
 * production 런타임 재빌드 후 `manifest_catalog_item_ids_match`
 * `make check` 전체 통과

@@ -14,7 +14,9 @@ from common import item_prompts, load_yaml, normalized_phrase
 from export_phase6_matrix import PHASE6_PROFILE_SHA256
 
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/check_completion_criteria.py"
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPT = ROOT / "scripts/check_completion_criteria.py"
+REAL_EVALUATION = ROOT / "catalog/evaluation.yaml"
 
 
 def write_json(path: Path, value: object) -> None:
@@ -52,6 +54,13 @@ def approved_item(
 
 
 def complete_repository(root: Path) -> None:
+    # The completion gate reads the approval policy from the catalog rather than
+    # hardcoding a seed floor, so a synthetic repository must carry one. Copy the
+    # real policy so the fixture cannot drift from production behaviour.
+    write_yaml(
+        root / "catalog/evaluation.yaml",
+        {"approval_policy": load_yaml(REAL_EVALUATION)["approval_policy"]},
+    )
     styles = {
         f"style_{index}": approved_item(
             f"style_{index}",

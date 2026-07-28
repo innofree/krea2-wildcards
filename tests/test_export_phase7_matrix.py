@@ -69,9 +69,28 @@ def phase6_prompts(axis: str | None = None) -> dict[str, str]:
 
 
 def test_axis_coverage_matches_the_planned_counts() -> None:
+    """Axis population is the stable invariant, not the generated subset.
+
+    Promoting an axis empties its generated set, so counting only generated
+    items would break every time an axis lands.
+    """
     assert set(PHASE7_AXIS_CATALOGS) == set(EXPECTED_ITEM_COUNTS)
     for axis, expected in EXPECTED_ITEM_COUNTS.items():
-        assert len(select_axis_items(axis, statuses={"generated"})) == expected, axis
+        assert len(select_axis_items(axis)) == expected, axis
+
+
+def test_promoted_axes_have_no_generated_items_left() -> None:
+    """A promoted axis must be fully decided: nothing left in generated."""
+    promoted = {"lighting"}
+    for axis in promoted:
+        with pytest.raises(ValueError, match="no matching items"):
+            select_axis_items(axis, statuses={"generated"})
+        decided = select_axis_items(axis, statuses={"approved", "rejected"})
+        assert len(decided) == EXPECTED_ITEM_COUNTS[axis], axis
+
+    for axis in set(PHASE7_AXIS_CATALOGS) - promoted:
+        pending = select_axis_items(axis, statuses={"generated"})
+        assert len(pending) == EXPECTED_ITEM_COUNTS[axis], axis
 
 
 def test_proven_axis_prompts_are_identical_to_phase6() -> None:

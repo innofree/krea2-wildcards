@@ -5,12 +5,28 @@ import subprocess
 from pathlib import Path
 
 import pytest
+import yaml
 
 import run_release
+from common import load_yaml
 from run_release import CommandOutcome, Stage
 
 
+REAL_EVALUATION = Path(__file__).resolve().parents[1] / "catalog/evaluation.yaml"
+
+
 def write_approved_catalog(root: Path, item_id: str = "approved_style") -> None:
+    # The release gate reads the approval policy from the catalog instead of
+    # hardcoding a seed floor, so a synthetic repository must supply one.
+    evaluation = root / "catalog/evaluation.yaml"
+    evaluation.parent.mkdir(parents=True, exist_ok=True)
+    evaluation.write_text(
+        yaml.safe_dump(
+            {"approval_policy": load_yaml(REAL_EVALUATION)["approval_policy"]},
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
     catalog = {
         "items": {
             item_id: {
