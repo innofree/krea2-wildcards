@@ -136,6 +136,21 @@ def item_status(item: dict[str, Any]) -> str | None:
     return None
 
 
+def required_approval_seeds(policy: dict[str, Any], item: dict[str, Any]) -> int:
+    """Distinct seeds an item's family needs before it may become approved.
+
+    Complete-scene families drive every axis from one prompt, so they keep the
+    original 5-seed bar. Atomic axis families vary a single attribute against an
+    anchor scene that is already fixed, and use the lower baseline.
+    """
+    families = policy.get("complete_scene_families") or ()
+    if not isinstance(families, (list, tuple, set)):
+        raise ValueError("complete_scene_families must be a sequence")
+    if item.get("family") in set(families):
+        return int(policy["complete_scene_approval_seeds"])
+    return int(policy["minimum_approval_seeds"])
+
+
 def nested_set_list(root: dict[str, Any], keys: list[str], values: list[str]) -> None:
     cursor = root
     for key in keys[:-1]:

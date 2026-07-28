@@ -1504,6 +1504,103 @@ nonce와 artifact/manifest SHA-256 binding을 가진 run record를 남겼다. �
 
 ---
 
+## Phase 7. 대량 검증
+
+### 7.0 목표
+
+v1.0 런타임에는 complete-scene 항목 374개만 들어갔다. `wildcards-manifest.json`은
+`included_statuses: [approved]`이고 파일은 `krea2/style/complete_pack.yaml`과
+`krea2/artist_signature/modern.yaml` 2개뿐이다. atomic axis 항목은 런타임에 하나도
+없다. Phase 6은 축마다 16 case를 뽑은 표본 검증이었고, 통과한 개별 항목을
+`approved`로 승격시키지는 않았다.
+
+Phase 7의 목표는 `generated` 상태 3,325개를 축 단위로 승격시켜 런타임에 싣는
+것이다. 완료 시 런타임 항목은 374개에서 3,699개로 늘어난다.
+
+| 축                 | 항목  | seed | 이미지    | contact sheet |
+| ----------------- | --- | ---- | ------ | ------------- |
+| camera            | 250 | 3    | 750    | 25            |
+| lighting          | 250 | 3    | 750    | 25            |
+| background        | 400 | 3    | 1,200  | 40            |
+| character_design  | 400 | 3    | 1,200  | 40            |
+| pose              | 350 | 3    | 1,050  | 35            |
+| linework_coloring | 300 | 3    | 900    | 30            |
+| media_rendering   | 150 | 3    | 450    | 15            |
+| effect            | 200 | 3    | 600    | 20            |
+| hair_design       | 250 | 3    | 750    | 25            |
+| fashion           | 500 | 3    | 1,500  | 50            |
+| preset            | 200 | 3    | 600    | 20            |
+| artist_signature  | 75  | 5    | 375    | 13            |
+| **합계**            | **3,325** |  | **10,125** | **338**       |
+
+3-seed tier 없이 전부 5-seed로 진행하면 16,625장이 필요하다. tier 적용으로
+6,500장을 줄인다.
+
+### 7.1 실행 순서
+
+축마다 독립 release gate를 통과시켜 실패를 격리한다. Phase 6 single-axis가 anchor
+프롬프트를 이미 검증한 6개 축을 먼저 처리해 파이프라인을 확정하고, anchor가 없는
+4개 축은 각각 1 case × 3 seed anchor calibration을 먼저 통과시킨다.
+
+```text
+1. camera 250            (검증된 anchor, 파이프라인 확정)
+2. lighting 250
+3. background 400
+4. character_design 400
+5. pose 350
+6. linework_coloring 300     소계 1,950
+7. media_rendering 150   (신규 anchor, 최소 규모로 calibration)
+8. effect 200
+9. hair_design 250
+10. fashion 500              소계 1,100
+11. preset 200           (복합 항목, 충돌 위험 최대)
+12. artist_signature 75  (complete-scene, 5-seed)
+```
+
+### 7.2 배치 평가 설계
+
+Phase 6의 수동 contact-sheet 리뷰를 10,125장에 그대로 적용할 수 없다. 리뷰 비용을
+축 단위 배치로 고정하고 3단계로 escalation한다.
+
+**Stage A. 결정론적 prefilter (모델 호출 없음)**
+
+`run-state.json`과 PNG를 직접 검사한다. seed 전수 완료, 1024×1024 정확 일치, 같은
+항목의 seed 간 `image_sha256` 상이, 균일·저엔트로피 degenerate 이미지 배제. 여기서
+걸린 항목은 모델 리뷰로 보내지 않는다.
+
+**Stage B. contact sheet 배치 리뷰**
+
+한 항목의 seed를 인접 배치하고 시트당 10개 항목 30셀로 묶는다. 시트 1장이 모델
+호출 1회이고 항목 10개의 판정을 한 번에 반환한다. 축 하나가 15~50장이므로 축별
+리뷰가 독립 배치로 끝나고, 338장을 한 컨텍스트에 담지 않는다. 판정 기준은 Phase 6
+리뷰에서 이미 언어화된 항목을 그대로 쓴다. 단일 성인 1인, 얼굴·양눈·양손 판독성,
+framing contract 준수, 측정 축 속성의 가시적 반영, critical failure 유무.
+
+**Stage C. 개별 확대 확인**
+
+Stage B에서 borderline으로 표시된 항목만 전체 해상도로 1 seed 확인한다. 축별 항목
+수의 5% 이하로 상한을 둔다. 상한을 넘으면 해당 축은 anchor 문제로 판단하고 승격을
+중단한다.
+
+축별 판정은 `scorecard.csv`로 디스크에 남기고 `summarize_results.py`에 넣어
+`recommended_status`를 기존 정책 경로로 계산한다. 리뷰 결과가 파일에 남으므로 축
+단위로 중단하고 재개할 수 있다.
+
+토큰 예산은 Stage B 338장 약 1.5M, Stage C 상한 약 0.7M으로 전체 2.2M 이내다.
+장당 개별 리뷰는 약 21M이므로 배치가 약 10배를 줄인다.
+
+### 7.3 축별 완료 gate
+
+축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
+
+* Stage A 전수 통과, Stage C 상한 미초과
+* `--require-tested-seeds 3`과 `--allow-recommendation`을 명시한 승격 적용
+* production 런타임 재빌드 후 `manifest_catalog_item_ids_match`
+* `make check` 전체 통과
+* `runtime_coverage` unresolved wildcard 0건
+
+---
+
 ## 10. 평가 기준
 
 각 항목을 1점에서 5점으로 평가한다.
@@ -1523,20 +1620,35 @@ nonce와 artifact/manifest SHA-256 binding을 가진 run record를 남겼다. �
 
 ```yaml
 approval_policy:
-  minimum_pilot_seeds: 3
-  minimum_approval_seeds: 5
+  minimum_pilot_seeds: 2
+  minimum_approval_seeds: 3
   minimum_prompt_adherence: 4
   minimum_style_fidelity: 3
   minimum_stability: 3
   minimum_compatibility: 3
   maximum_critical_failures: 0
+  complete_scene_approval_seeds: 5
+  complete_scene_families: [artist_signature, style_pack, 그리고 10개 art style family]
 ```
+
+seed 기준은 두 단계로 나눈다. complete-scene family는 하나의 프롬프트로 모든 축을
+동시에 지시하므로 seed 간 분산이 크고, 기존 5-seed 기준을 그대로 유지한다. atomic
+axis family는 Phase 6에서 3-seed로 이미 검증된 anchor 장면에 단일 속성만 바꿔
+얹으므로 분산이 anchor에 의해 지배된다. 따라서 atomic axis는 3-seed 승인을
+기준으로 삼는다. 이 완화 없이는 3,325개 항목 승격에 16,625장이 필요해 실행이
+불가능하다.
+
+`scripts/summarize_results.py`는 family를 모르는 채 flat 정책으로 추천 상태만
+계산한다. 실제 tier 집행은 두 곳에서 이루어진다. `apply_evaluation_summary.py`
+호출마다 `--require-tested-seeds`와 `--allow-recommendation`을 명시하고,
+`tests/test_catalog.py`가 complete-scene family 승인 항목이 5-seed 미만으로
+내려가지 않는지 불변식으로 검사한다.
 
 ### 상태 정의
 
-Pilot 및 retest는 서로 다른 seed 3개 이상으로 진행한다. `approved` 승격은 서로
-다른 seed 5개 이상을 확보한 뒤에만 가능하며, 3-seed screening 결과는 점수 기준을
-통과하더라도 `testing`으로 유지한다.
+Pilot은 서로 다른 seed 2개 이상, atomic axis 승인은 3개 이상, complete-scene
+family 승인은 5개 이상으로 진행한다. 승인 seed 수에 미달하면서 점수 기준은
+통과한 결과는 `testing`으로 유지한다.
 
 | 상태         | 의미             |
 | ---------- | -------------- |

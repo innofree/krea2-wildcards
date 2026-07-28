@@ -4,7 +4,14 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from common import KEY_RE, VALID_STATUSES, item_prompts, iter_catalog_items, load_yaml
+from common import (
+    KEY_RE,
+    VALID_STATUSES,
+    item_prompts,
+    iter_catalog_items,
+    load_yaml,
+    required_approval_seeds,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,7 +94,9 @@ def test_approved_entries_require_real_evaluation() -> None:
         if item["validation"]["status"] != "approved":
             continue
         validation = item["validation"]
-        assert validation["tested_seeds"] >= evaluation["minimum_approval_seeds"], item_id
+        assert validation["tested_seeds"] >= required_approval_seeds(
+            evaluation, item
+        ), item_id
         assert validation["prompt_adherence"] >= evaluation["minimum_prompt_adherence"]
         assert validation["style_fidelity"] >= evaluation["minimum_style_fidelity"]
         assert validation["stability"] >= evaluation["minimum_stability"]
@@ -109,6 +118,47 @@ def test_screened_entries_match_quality_gate_status() -> None:
             and validation["critical_failures"] <= policy["maximum_critical_failures"]
         )
         assert (validation["status"] == "testing") is quality_passed, (source, item_id)
+
+
+def test_complete_scene_families_keep_the_five_seed_bar() -> None:
+    policy = load_yaml(CATALOG / "evaluation.yaml")["approval_policy"]
+    families = set(policy["complete_scene_families"])
+    assert policy["complete_scene_approval_seeds"] == 5
+    assert policy["minimum_approval_seeds"] < 5
+
+    compatibility = load_yaml(CATALOG / "compatibility.yaml")["style_families"]
+    assert set(compatibility) <= families, "every art style family must stay high-bar"
+    assert {"artist_signature", "style_pack"} <= families
+
+    seen: set[str] = set()
+    for source, item_id, item in iter_catalog_items(CATALOG):
+        if item.get("family") not in families:
+            continue
+        seen.add(item["family"])
+        if item["validation"]["status"] != "approved":
+            continue
+        assert required_approval_seeds(policy, item) == 5, item_id
+        assert item["validation"]["tested_seeds"] >= 5, (source, item_id)
+
+    assert seen == families, sorted(families - seen)
+
+
+def test_atomic_axis_families_use_the_lower_seed_bar() -> None:
+    policy = load_yaml(CATALOG / "evaluation.yaml")["approval_policy"]
+    families = set(policy["complete_scene_families"])
+    minimum = policy["minimum_approval_seeds"]
+    assert policy["minimum_pilot_seeds"] <= minimum
+
+    atomic = {
+        item["family"]
+        for _, _, item in iter_catalog_items(CATALOG)
+        if item.get("family") not in families
+    }
+    assert atomic, "expected atomic axis families to exist"
+    for _, item_id, item in iter_catalog_items(CATALOG):
+        if item.get("family") in families:
+            continue
+        assert required_approval_seeds(policy, item) == minimum, item_id
 
 
 def test_extension_retest_entries_are_approved_at_five_seeds() -> None:
