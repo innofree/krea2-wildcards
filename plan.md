@@ -1681,7 +1681,43 @@ run-state.json      →(digest)→   image_sha256
 커밋 대상은 `manifest.json`, `run-state.json`, `scorecard.csv`,
 `prompt_binding.json`, Stage A 보고서, review, summary다.
 
-### 7.5 축별 완료 gate
+### 7.5 camera 축 v1 차단 사유
+
+camera 축 750장 생성 후 축별 gate가 승격을 차단했다. 원인은 프롬프트 내부 모순이다.
+
+`export_phase6_matrix.py`의 camera 경로는 profile 항목에만
+`CAMERA_SUBJECT_CONTRACT`("complete crown, facial profile, and visible profile
+eye")를 적용하도록 되어 있고, 조건은 항목 본문에 리터럴 `clean profile`이 있는지
+검사한다. 그런데 카탈로그 본문은 `clean side camera position ... preserves the
+facial profile`이라고 쓰여 있어 그 문자열이 존재하지 않는다. 250개 camera 항목 중
+조건이 발동하는 항목은 0개다. 즉 `CAMERA_SUBJECT_CONTRACT`는 실질적으로 죽은 코드다.
+
+결과적으로 `clean_profile` 항목 42개가 모두 `SUBJECT_CONTRACT`의 "face, and both
+eyes clearly readable"을 받는다. profile 뷰는 눈이 하나만 보이므로 두 지시는 양립할
+수 없고, 생성은 정면으로 수렴한다.
+
+원해상도 확인 결과:
+
+| 항목 | 요청 | 결과 |
+| --- | --- | --- |
+| `camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space` | chest-up, profile, 비대칭 배치 | crop만 반영, 정면 얼굴, 중앙 배치 |
+| `camera_close_face_clean_profile_classic_wide_thirds_gaze_space` | close-face, profile, thirds 배치 | crop도 미반영(waist-up), 정면 얼굴 |
+
+이 결함은 Phase 6 증거에도 존재한다. `phase6_single_axis.jsonl`의 camera 16개 중
+profile 항목이 5개이고 5개 모두 동일하게 잘못된 contract를 받았는데, single-axis
+review는 96/96 통과로 기록됐다. 즉 표본 review가 이 모순을 잡지 못했다.
+
+`rear_three_quarter` 42개는 본문이 "face still readable through a natural turn"으로
+자체 완화하고 있어 hard conflict는 아니지만, "both eyes clearly readable"이 정면으로
+편향시키는 tension이 남는다. 이는 배치 review로 확인할 사항이다.
+
+수정 방향은 profile 판정을 실제 카탈로그 표현(`clean side camera position`,
+`facial profile`)에 맞추고 `CAMERA_SUBJECT_CONTRACT`를 적용하는 것이다. 다만 이
+수정은 camera 프롬프트를 Phase 6과 다르게 만들므로, camera는 검증된 anchor 축에서
+빠져 Phase 7 profile로 이동하고 자체 anchor calibration을 먼저 통과해야 한다.
+기존 Phase 6 digest는 그대로 보존한다.
+
+### 7.6 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
