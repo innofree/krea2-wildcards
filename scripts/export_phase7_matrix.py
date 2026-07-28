@@ -117,6 +117,7 @@ PHASE7_AXIS_CATALOGS = {
     "pose": "catalog/poses.yaml",
     "preset": "catalog/presets.yaml",
 }
+BINDING_ARTIFACT_TYPE = "phase7_axis_prompt_binding"
 PHASE7_PROFILE_ALGORITHM = (
     "phase7-mass-axis-v1|phase6-single-axis-prompt-reuse|"
     "item-id-keyed-rows-v1|per-item-prompt-digest-binding-v1"
@@ -245,7 +246,7 @@ def mass_axis_rows(
 
 
 def prompt_binding(axis: str, rows: list[dict[str, Any]]) -> dict[str, str]:
-    """style_id to prompt digest map, as apply_evaluation_summary expects."""
+    """style_id to catalog prompt digest map for one axis."""
     binding: dict[str, str] = {}
     for row in rows:
         digest = row["factors"]["evaluated_prompt_sha256"][7:]
@@ -257,12 +258,70 @@ def prompt_binding(axis: str, rows: list[dict[str, Any]]) -> dict[str, str]:
     return binding
 
 
+def payload_sha256(document: dict[str, Any]) -> str:
+    payload = {key: value for key, value in document.items() if key != "binding_sha256"}
+    return hashlib.sha256(
+        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+
+
+def binding_document(axis: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
+    """Phase 7's own prompt-binding record.
+
+    This is deliberately not the artist_prompt_evidence_binding artifact:
+    bind_artist_prompt_evidence.py reconstructs expected prompts with the artist
+    signature renderer, so it cannot validate axis rows. Phase 7 records its own
+    digests and verifies them by re-deriving from the exporter and catalog, and
+    apply_evaluation_summary.py still enforces the per-item digest independently.
+    """
+    binding = prompt_binding(axis, rows)
+    document: dict[str, Any] = {
+        "schema_version": 1,
+        "artifact_type": BINDING_ARTIFACT_TYPE,
+        "axis": axis,
+        "catalog": PHASE7_AXIS_CATALOGS[axis],
+        "prompt_profile_sha256": axis_profile_factor(axis)[7:],
+        "seeds": sorted({row["seed"] for row in rows}),
+        "row_count": len(rows),
+        "style_count": len(binding),
+        "styles": dict(sorted(binding.items())),
+    }
+    document["binding_sha256"] = payload_sha256(document)
+    return document
+
+
+def verify_binding(path: Path) -> dict[str, Any]:
+    """Re-derive a binding from the exporter and catalog, and compare."""
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(document, dict):
+        raise ValueError("prompt binding must be a JSON object")
+    if (
+        document.get("schema_version") != 1
+        or document.get("artifact_type") != BINDING_ARTIFACT_TYPE
+    ):
+        raise ValueError("prompt binding has invalid schema metadata")
+    if document.get("binding_sha256") != payload_sha256(document):
+        raise ValueError("prompt binding payload digest is stale")
+    axis = document.get("axis")
+    if axis not in PHASE7_AXIS_CATALOGS:
+        raise ValueError(f"prompt binding has an unsupported axis: {axis!r}")
+    seeds = document.get("seeds")
+    if not isinstance(seeds, list) or not seeds:
+        raise ValueError("prompt binding must record its seeds")
+    expected = binding_document(axis, mass_axis_rows(axis, seeds))
+    if document != expected:
+        raise ValueError(
+            f"prompt binding no longer matches the {axis} catalog or exporter"
+        )
+    return document
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Export a Phase 7 mass promotion matrix for one axis"
     )
     parser.add_argument("axis", choices=sorted(PHASE7_AXIS_CATALOGS))
-    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--binding-output", type=Path)
     parser.add_argument("--seed", action="append", type=int, default=None)
     parser.add_argument(
@@ -279,8 +338,24 @@ def main() -> int:
         action="store_true",
         help="use the Phase 7 calibration seeds instead of the promotion seeds",
     )
+    parser.add_argument(
+        "--verify-binding",
+        type=Path,
+        help="verify an existing binding against the exporter and catalog, then exit",
+    )
     args = parser.parse_args()
     try:
+        if args.verify_binding is not None:
+            document = verify_binding(args.verify_binding)
+            print(
+                f"Binding verified ({document['axis']}): "
+                f"{document['style_count']} item(s), "
+                f"{document['row_count']} row(s), "
+                f"seeds={document['seeds']}."
+            )
+            return 0
+        if args.output is None:
+            raise ValueError("--output is required unless --verify-binding is used")
         if args.seed:
             seeds = args.seed
         elif args.calibration:
@@ -293,16 +368,7 @@ def main() -> int:
         )
         write_jsonl(args.output, rows)
         if args.binding_output is not None:
-            binding = prompt_binding(args.axis, rows)
-            document = {
-                "schema_version": 1,
-                "kind": "phase7_axis_prompt_binding",
-                "axis": args.axis,
-                "catalog": PHASE7_AXIS_CATALOGS[args.axis],
-                "prompt_profile_sha256": axis_profile_factor(args.axis)[7:],
-                "style_count": len(binding),
-                "styles": dict(sorted(binding.items())),
-            }
+            document = binding_document(args.axis, rows)
             args.binding_output.parent.mkdir(parents=True, exist_ok=True)
             args.binding_output.write_text(
                 json.dumps(document, ensure_ascii=False, indent=2) + "\n",

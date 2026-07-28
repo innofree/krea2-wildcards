@@ -23,6 +23,11 @@ tests/prompt_matrix/*.jsonl
 !tests/prompt_matrix/phase6_presets.jsonl
 !tests/prompt_matrix/phase6_random_utility.jsonl
 !tests/prompt_matrix/phase6_benchmark.jsonl
+# Phase 7 per-image run records: ~10,453 files and 36 MB across the ten axes.
+# run-state.json already carries every resolved_prompt_sha256, workflow_sha256,
+# and image_sha256, and the matrix is deterministically re-exportable, so the
+# evidence chain stays verifiable without committing these.
+tests/reports/phase7_*/runs/
 tests/reports/**/*.png
 tests/reports/**/*.jpg
 tests/reports/**/*.jpeg

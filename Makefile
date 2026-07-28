@@ -512,6 +512,8 @@ remote-phase7-axis: phase7-axis-matrix
 # or a flat degenerate frame.
 phase7-axis-stage-a:
 	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-stage-a AXIS=camera" && exit 1)
+	python3 scripts/export_phase7_matrix.py $(AXIS) \
+		--verify-binding tests/reports/phase7_$(AXIS)_v1/prompt_binding.json
 	python3 scripts/audit_phase7_stage_a.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
 		--run-state tests/reports/phase7_$(AXIS)_v1/run-state.json \
 		--axis $(AXIS) --expected-seeds $(or $(EXPECTED_SEEDS),3) \

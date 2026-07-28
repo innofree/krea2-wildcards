@@ -17,9 +17,12 @@ from export_phase7_matrix import (
     PROVEN_AXES,
     axis_profile_factor,
     axis_seeds,
+    binding_document,
     mass_axis_rows,
+    payload_sha256,
     prompt_binding,
     select_axis_items,
+    verify_binding,
 )
 
 
@@ -174,6 +177,45 @@ def test_limit_supports_small_anchor_calibration_runs() -> None:
     rows = mass_axis_rows("fashion", (1001,), limit=2)
     assert len({row["style_id"] for row in rows}) == 2
     assert len(rows) == 2
+
+
+def test_binding_document_verifies_and_detects_tampering(tmp_path: Path) -> None:
+    rows = mass_axis_rows("media_rendering")
+    document = binding_document("media_rendering", rows)
+    assert document["artifact_type"] == "phase7_axis_prompt_binding"
+    assert document["style_count"] == EXPECTED_ITEM_COUNTS["media_rendering"]
+    assert document["row_count"] == len(rows)
+    assert document["seeds"] == sorted(DEFAULT_SEEDS)
+
+    path = tmp_path / "binding.json"
+    path.write_text(json.dumps(document), encoding="utf-8")
+    assert verify_binding(path) == document
+
+    # A naive edit breaks the recorded payload digest.
+    tampered = json.loads(json.dumps(document))
+    tampered["styles"][sorted(tampered["styles"])[0]] = "0" * 64
+    path.write_text(json.dumps(tampered), encoding="utf-8")
+    with pytest.raises(ValueError, match="payload digest is stale"):
+        verify_binding(path)
+
+    # Recomputing the digest still fails, because the binding is re-derived.
+    tampered["binding_sha256"] = payload_sha256(tampered)
+    path.write_text(json.dumps(tampered), encoding="utf-8")
+    with pytest.raises(ValueError, match="no longer matches"):
+        verify_binding(path)
+
+
+def test_binding_rejects_foreign_artifacts(tmp_path: Path) -> None:
+    """The artist binding artifact must not be accepted as a Phase 7 binding."""
+    path = tmp_path / "binding.json"
+    document = {
+        "schema_version": 1,
+        "artifact_type": "artist_prompt_evidence_binding",
+        "styles": {},
+    }
+    path.write_text(json.dumps(document), encoding="utf-8")
+    with pytest.raises(ValueError, match="invalid schema metadata"):
+        verify_binding(path)
 
 
 def test_unsupported_axis_is_rejected() -> None:

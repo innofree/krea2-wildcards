@@ -1631,10 +1631,34 @@ make phase7-axis-stage-a AXIS=camera
 make phase7-axis-sheets  AXIS=camera
 ```
 
+이 경로는 합성 입력으로 전 구간을 검증했다. 3-seed 결과가
+`recommended_status=approved`로 계산되고, `--require-tested-seeds 3`으로 카탈로그
+사본에 적용되며, 적용 후 카탈로그 프롬프트를 변조하면
+`evaluated_prompt_sha256 is stale`로 차단된다. 즉 항목별 digest 보호가 실제로
+작동한다.
+
+### 7.3 prompt binding
+
+`bind_artist_prompt_evidence.py`는 Phase 7에 쓸 수 없다. 이 스크립트는
+`prompt_for_profile()`로 artist signature renderer의 프롬프트를 재구성해 matrix 행과
+대조하므로, 다른 renderer로 만든 axis 행은 정의상 통과할 수 없다. 확인 결과 첫 행에서
+`resolved prompt does not exactly bind the current catalog body`로 거부된다.
+
+따라서 Phase 7은 `artifact_type: phase7_axis_prompt_binding`이라는 자체 레코드를
+사용하고, 두 계층으로 검증한다.
+
+1. `binding_sha256` payload digest — 단순 편집 탐지
+2. exporter와 카탈로그에서 재유도 후 전체 문서 비교 — payload digest를 다시 계산한
+   편집까지 탐지
+
+`make phase7-axis-stage-a`가 Stage A 전에 이 검증을 실행한다. 항목별 승격 보호는
+`apply_evaluation_summary.py`의 `validated_prompt_digest()`가 독립적으로 담당하므로
+binding 파일은 증거 기록이고 승격 gate의 유일한 방어선이 아니다.
+
 토큰 예산은 Stage B 350장 약 1.6M, Stage C 상한 약 0.7M으로 전체 2.3M 이내다.
 장당 개별 리뷰는 약 22M이므로 배치가 약 10배를 줄인다.
 
-### 7.3 matrix 산출물 취급
+### 7.4 matrix 산출물 취급
 
 Phase 6 matrix는 288행 규모라 저장소에 커밋했지만, Phase 7 matrix는 축 하나가 최대
 1,500행이고 10개 축 합계가 수십 MB다. `export_phase7_matrix.py`는 무작위 요소가
@@ -1643,12 +1667,28 @@ Phase 6 matrix는 288행 규모라 저장소에 커밋했지만, Phase 7 matrix�
 재export로 대조한다. 승격 증거의 무결성은 `prompt_binding.json`의 항목별 prompt
 digest가 담당한다.
 
-### 7.4 축별 완료 gate
+`tests/reports/phase7_*/runs/`의 이미지별 run record도 같은 이유로 커밋하지 않는다.
+축 전체로 약 10,453개 파일 36MB인데, `run-state.json`이 모든 job의
+`resolved_prompt_sha256`, `workflow_sha256`, `image_sha256`, `prompt_id`를 이미
+보유한다. 따라서 증거 체인은 다음과 같이 재구성 가능한 상태로 유지된다.
+
+```text
+exporter + catalog  →(결정론적)→ matrix
+matrix              →(digest)→   resolved_prompt_sha256 in run-state.json
+run-state.json      →(digest)→   image_sha256
+```
+
+커밋 대상은 `manifest.json`, `run-state.json`, `scorecard.csv`,
+`prompt_binding.json`, Stage A 보고서, review, summary다.
+
+### 7.5 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
 * Stage A 전수 통과, Stage C 상한 미초과
-* `--require-tested-seeds 3`과 `--allow-recommendation`을 명시한 승격 적용
+* `prompt_binding.json` 재유도 검증 통과
+* atomic axis는 `--require-tested-seeds 3`, complete-scene은 `5`를
+  `--allow-recommendation`과 함께 명시한 승격 적용
 * matrix SHA-256을 run manifest에 기록
 * production 런타임 재빌드 후 `manifest_catalog_item_ids_match`
 * `make check` 전체 통과
