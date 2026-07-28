@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "P7000082",
+  "style_id": "camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+  "label": "camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+  "mode": "mass_axis_camera",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "fc339159-974b-4bbb-ac28-6b5870fc22e2",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The camera is the measured axis: obey its crop boundary, camera position, field of view, subject placement, and negative-space relationship exactly. Render the camera test as one clean flat two-dimensional editorial storyboard frame with simple neutral colors, a plain warm-grey setting, and no decorative border. The requested viewpoint, crop, subject placement, open space, and counterweight are the only composition. Face the adult directly toward the camera at eye level with symmetrical shoulders and a frontal torso while preserving the requested crop and open side region. Apply exactly this camera direction as the sole changing axis: Show the adult subject in this storyboard using chest-up framing that keeps both shoulders and the upper arm gesture readable from an eye-level frontal camera position with undistorted facial alignment. The view uses a classic wide field of view that includes context while keeping facial proportions natural and rule-of-thirds placement with open space extending in the direction of the gaze. Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named camera boundary, view position, field of view, placement, and negative space as literal. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The requested camera position and asymmetric placement are the final composition blueprint; make the visible view angle, open side region, and separate counterweight unmistakable. Final camera lock—make a tight chest-up portrait. The complete crown stays inside the canvas with a narrow strip of background above it, and the lower edge cuts across the upper torso just below the chest. Keep the chin, both shoulders, and described upper-arm gesture inside. Do not show the waist, hips, thighs, knees, calves, shoes, or feet.",
+  "resolved_prompt_sha256": "3513c7775b9d4849a62b677a38bcf943cad55f09c36a274bf1a4c9375fe51a3d",
+  "workflow_sha256": "f0ad4efcb1dac94d355c970f4c1abf94f3f0ac537ef52a27e95b36388f0ae856",
+  "factors": {
+    "axis": "camera",
+    "item_id": "camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+    "evaluated_prompt_sha256": "sha256_d1bcfb47d66df770c8990b6c7f2beb8c931c9f02ac01b23173b0d4e4cc95fe6b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "902967f58f35b122ca2e6bebb75202e16a17d28540bd006ee5310d545b5530d2",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

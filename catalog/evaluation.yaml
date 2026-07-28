@@ -11,7 +11,8 @@ approval_policy:
   # Atomic axis items vary a single attribute against an anchor scene that
   # Phase 6 already validated at 3 seeds, so seed variance is dominated by the
   # fixed anchor rather than the item. Complete-scene families control every
-  # axis at once and keep the original 5-seed bar.
+  # axis at once and keep the original 5-seed bar. Presets belong here: a preset
+  # is a full scene contract, which is why Phase 6 audited them for conflicts.
   complete_scene_approval_seeds: 5
   complete_scene_families:
     - artist_signature
@@ -21,6 +22,7 @@ approval_policy:
     - graphic_action
     - ink_wash
     - luminous_game
+    - preset
     - refined_pastel
     - retro_cel
     - romantic_ornamental

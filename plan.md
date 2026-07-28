@@ -1530,9 +1530,14 @@ Phase 7의 목표는 `generated` 상태 3,325개 중 승격 가능한 3,301개�
 | hair_design       | 250       | 3    | 750       | 25            |
 | fashion           | 500       | 3    | 1,500     | 50            |
 | 소계 (atomic axis)  | **3,026** |      | **9,078** | **303**       |
-| preset            | 200       | 3    | 600       | 20            |
+| preset            | 200       | 5    | 1,000     | 34            |
 | artist_signature  | 75        | 5    | 375       | 13            |
-| **합계**            | **3,301** |      | **10,053** | **336**       |
+| **합계**            | **3,301** |      | **10,453** | **350**       |
+
+preset은 하나의 프롬프트가 pose·camera·조명·장소·표정을 동시에 지시하는 완전한 장면
+계약이다. Phase 6이 preset을 충돌 audit 대상으로 삼은 이유가 그것이므로, atomic
+axis의 3-seed가 아니라 complete-scene family의 5-seed 기준을 적용한다.
+`complete_scene_families`에 `preset`을 포함한다.
 
 pose는 350개 중 24개가 Phase 6의
 `single-axis-unstable-pose-exclusion`(`SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES`)으로
@@ -1541,7 +1546,7 @@ pose는 350개 중 24개가 Phase 6의
 판단이 필요하고, 이 결정은 Phase 7 범위 밖에 남긴다.
 
 3-seed tier 없이 전부 5-seed로 진행하면 16,505장이 필요하다. tier 적용으로
-6,452장을 줄인다.
+6,052장을 줄인다.
 
 ### 7.1 실행 순서
 
@@ -1560,9 +1565,13 @@ pose는 350개 중 24개가 Phase 6의
 8. effect 200
 9. hair_design 250
 10. fashion 500              소계 1,100
-11. preset 200           (복합 항목, 충돌 위험 최대)
+11. preset 200           (complete-scene, 5-seed, 충돌 위험 최대)
 12. artist_signature 75  (complete-scene, 5-seed)
 ```
+
+1번부터 11번까지는 `export_phase7_matrix.py`가 `--axis`로 처리한다. 12번
+artist_signature는 `export_artist_visual_signature_matrix.py` 계열의 repair·retest
+파이프라인이 이미 존재하므로 그 경로를 재사용하고, Phase 7 exporter에는 넣지 않는다.
 
 ### 7.2 배치 평가 설계
 
@@ -1585,7 +1594,7 @@ Phase 6의 수동 contact-sheet 리뷰를 10,125장에 그대로 적용할 수 �
 
 한 항목의 seed를 인접 배치하고 시트당 10개 항목 30셀로 묶는다. 시트 1장이 모델
 호출 1회이고 항목 10개의 판정을 한 번에 반환한다. 축 하나가 15~50장이므로 축별
-리뷰가 독립 배치로 끝나고, 336장을 한 컨텍스트에 담지 않는다. 판정 기준은 Phase 6
+리뷰가 독립 배치로 끝나고, 350장을 한 컨텍스트에 담지 않는다. 판정 기준은 Phase 6
 리뷰에서 이미 언어화된 항목을 그대로 쓴다. 단일 성인 1인, 얼굴·양눈·양손 판독성,
 framing contract 준수, 측정 축 속성의 가시적 반영, critical failure 유무.
 
@@ -1622,8 +1631,8 @@ make phase7-axis-stage-a AXIS=camera
 make phase7-axis-sheets  AXIS=camera
 ```
 
-토큰 예산은 Stage B 338장 약 1.5M, Stage C 상한 약 0.7M으로 전체 2.2M 이내다.
-장당 개별 리뷰는 약 21M이므로 배치가 약 10배를 줄인다.
+토큰 예산은 Stage B 350장 약 1.6M, Stage C 상한 약 0.7M으로 전체 2.3M 이내다.
+장당 개별 리뷰는 약 22M이므로 배치가 약 10배를 줄인다.
 
 ### 7.3 matrix 산출물 취급
 
@@ -1674,7 +1683,7 @@ approval_policy:
   minimum_compatibility: 3
   maximum_critical_failures: 0
   complete_scene_approval_seeds: 5
-  complete_scene_families: [artist_signature, style_pack, 그리고 10개 art style family]
+  complete_scene_families: [artist_signature, preset, style_pack, 그리고 10개 art style family]
 ```
 
 seed 기준은 두 단계로 나눈다. complete-scene family는 하나의 프롬프트로 모든 축을

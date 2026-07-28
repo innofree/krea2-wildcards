@@ -70,6 +70,13 @@ PRESET_COLOR_BASELINE = (
     "Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, "
     "and landscape."
 )
+PRESET_FOCUS = (
+    "Treat the validated preset as an exact scene contract: visibly preserve its "
+    "named pose, hand placement, location, expression, camera boundary, perspective, "
+    "light color, and accurate skin tone. Preserve only garment pieces visible "
+    "within the requested camera boundary. Preserve a named hand placement only "
+    "when it lies inside that boundary; otherwise preserve its upper-arm direction."
+)
 PROVEN_VISIBILITY_FINISH = (
     "Make every requested visual direction plainly legible without replacing the selected medium "
     "with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, "
@@ -1053,6 +1060,21 @@ def pairwise_rows(
     return rows
 
 
+def preset_prompt(prompt: str) -> str:
+    """Render the validated preset prompt for one catalog preset body.
+
+    Phase 7 reuses this so a preset promotion run submits the exact prompt the
+    Phase 6 preset conflict audit already passed.
+    """
+    scaled_prompt = _crop_aware_scene_body(prompt)
+    framing = _opening_framing_contract(prompt)
+    return _profiled_prompt(
+        f"{framing} {PRESET_COLOR_BASELINE} {scaled_prompt}",
+        PRESET_FOCUS,
+        framing_value=prompt,
+    )
+
+
 def preset_rows(
     seeds: Iterable[int] = DEFAULT_SEEDS, *, preset_count: int = 100
 ) -> list[dict[str, Any]]:
@@ -1064,20 +1086,10 @@ def preset_rows(
     )
     cases = []
     for index, (preset_id, prompt) in enumerate(presets, start=1):
-        scaled_prompt = _crop_aware_scene_body(prompt)
-        framing = _opening_framing_contract(prompt)
         cases.append(
             {
                 "style_id": f"preset_audit_{index:03d}",
-                "prompt": _profiled_prompt(
-                    f"{framing} {PRESET_COLOR_BASELINE} {scaled_prompt}",
-                    "Treat the validated preset as an exact scene contract: visibly preserve its "
-                    "named pose, hand placement, location, expression, camera boundary, perspective, "
-                    "light color, and accurate skin tone. Preserve only garment pieces visible "
-                    "within the requested camera boundary. Preserve a named hand placement only "
-                    "when it lies inside that boundary; otherwise preserve its upper-arm direction.",
-                    framing_value=prompt,
-                ),
+                "prompt": preset_prompt(prompt),
                 "factors": {"preset": preset_id},
             }
         )

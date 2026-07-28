@@ -8,11 +8,15 @@ import pytest
 from common import canonical_prompt_sha256, load_yaml
 from export_phase6_matrix import PHASE6_PROFILE_FACTOR, PHASE6_PROFILE_SHA256
 from export_phase7_matrix import (
+    COMPLETE_SCENE_AXES,
+    COMPLETE_SCENE_SEEDS,
+    DEFAULT_SEEDS,
     PHASE7_AXIS_ANCHORS,
     PHASE7_AXIS_CATALOGS,
     PHASE7_PROFILE_FACTOR,
     PROVEN_AXES,
     axis_profile_factor,
+    axis_seeds,
     mass_axis_rows,
     prompt_binding,
     select_axis_items,
@@ -20,7 +24,10 @@ from export_phase7_matrix import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PHASE6_SINGLE_AXIS = ROOT / "tests" / "prompt_matrix" / "phase6_single_axis.jsonl"
+PROMPT_MATRIX = ROOT / "tests" / "prompt_matrix"
+PHASE6_SINGLE_AXIS = PROMPT_MATRIX / "phase6_single_axis.jsonl"
+PHASE6_PRESETS = PROMPT_MATRIX / "phase6_presets.jsonl"
+EVALUATION = ROOT / "catalog" / "evaluation.yaml"
 EXPECTED_ITEM_COUNTS = {
     "background": 400,
     "camera": 250,
@@ -32,6 +39,7 @@ EXPECTED_ITEM_COUNTS = {
     "linework_coloring": 300,
     "media_rendering": 150,
     "pose": 326,
+    "preset": 200,
 }
 
 
@@ -65,6 +73,43 @@ def test_proven_axis_prompts_are_identical_to_phase6() -> None:
             compared += 1
             assert rendered[item_id] == prompt, (axis, item_id)
     assert compared == len(expected)
+
+
+def test_preset_prompts_are_identical_to_the_phase6_conflict_audit() -> None:
+    expected: dict[str, str] = {}
+    for line in PHASE6_PRESETS.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        expected[row["factors"]["preset"]] = row["prompt"]
+    assert len(expected) == 100
+
+    rendered = {row["style_id"]: row["prompt"] for row in mass_axis_rows("preset")}
+    assert set(expected) <= set(rendered)
+    for preset_id, prompt in expected.items():
+        assert rendered[preset_id] == prompt, preset_id
+
+
+def test_presets_stay_on_the_complete_scene_five_seed_bar() -> None:
+    """A preset is a full scene contract, so it must not drop to the 3-seed bar."""
+    policy = load_yaml(EVALUATION)["approval_policy"]
+    assert "preset" in policy["complete_scene_families"]
+    assert COMPLETE_SCENE_AXES == ("preset",)
+    assert len(COMPLETE_SCENE_SEEDS) == policy["complete_scene_approval_seeds"] == 5
+    assert axis_seeds("preset") == COMPLETE_SCENE_SEEDS
+
+    rows = mass_axis_rows("preset")
+    assert len({row["seed"] for row in rows}) == 5
+    assert len(rows) == EXPECTED_ITEM_COUNTS["preset"] * 5
+
+
+def test_atomic_axes_default_to_the_three_seed_bar() -> None:
+    policy = load_yaml(EVALUATION)["approval_policy"]
+    assert len(DEFAULT_SEEDS) == policy["minimum_approval_seeds"] == 3
+    for axis in PHASE7_AXIS_CATALOGS:
+        if axis in COMPLETE_SCENE_AXES:
+            continue
+        assert axis_seeds(axis) == DEFAULT_SEEDS, axis
 
 
 def test_proven_axes_keep_the_phase6_profile_digest() -> None:
@@ -133,6 +178,6 @@ def test_limit_supports_small_anchor_calibration_runs() -> None:
 
 def test_unsupported_axis_is_rejected() -> None:
     with pytest.raises(ValueError, match="unsupported axis"):
-        mass_axis_rows("preset")
+        mass_axis_rows("artist_signature")
     with pytest.raises(ValueError, match="unsupported axis"):
         axis_profile_factor("artist_signature")

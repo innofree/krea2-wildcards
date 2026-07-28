@@ -32,6 +32,7 @@ from export_phase6_matrix import (
     _prompt,
     _prompt_body,
     _status,
+    preset_prompt,
     single_axis_prompt,
 )
 from run_remote_prompt_matrix import validate_job
@@ -39,6 +40,10 @@ from run_remote_prompt_matrix import validate_job
 
 DEFAULT_SEEDS = (1001, 2002, 3003)
 CALIBRATION_SEEDS = (71001, 72002, 73003)
+# A preset is a full scene contract, so it stays on the complete-scene 5-seed
+# bar declared in catalog/evaluation.yaml.
+COMPLETE_SCENE_SEEDS = (1001, 2002, 3003, 4004, 5005)
+COMPLETE_SCENE_AXES = ("preset",)
 
 PROVEN_AXES = (
     "background",
@@ -47,6 +52,7 @@ PROVEN_AXES = (
     "lighting",
     "linework_coloring",
     "pose",
+    "preset",
 )
 PHASE7_AXIS_ANCHORS = {
     "fashion": (
@@ -109,6 +115,7 @@ PHASE7_AXIS_CATALOGS = {
     "linework_coloring": "catalog/linework_coloring.yaml",
     "media_rendering": "catalog/media_rendering.yaml",
     "pose": "catalog/poses.yaml",
+    "preset": "catalog/presets.yaml",
 }
 PHASE7_PROFILE_ALGORITHM = (
     "phase7-mass-axis-v1|phase6-single-axis-prompt-reuse|"
@@ -160,9 +167,18 @@ def phase7_axis_prompt(axis: str, prompt: str) -> str:
 
 
 def axis_prompt(axis: str, prompt: str) -> str:
+    if axis == "preset":
+        return preset_prompt(prompt)
     if axis in PROVEN_AXES:
         return single_axis_prompt(axis, prompt)
     return phase7_axis_prompt(axis, prompt)
+
+
+def axis_seeds(axis: str) -> tuple[int, ...]:
+    """Seed set an axis needs, following the catalog approval policy tiers."""
+    if axis in COMPLETE_SCENE_AXES:
+        return COMPLETE_SCENE_SEEDS
+    return DEFAULT_SEEDS
 
 
 def select_axis_items(
@@ -188,13 +204,15 @@ def select_axis_items(
 
 def mass_axis_rows(
     axis: str,
-    seeds: Iterable[int] = DEFAULT_SEEDS,
+    seeds: Iterable[int] | None = None,
     *,
     statuses: set[str] | None = None,
     limit: int | None = None,
 ) -> list[dict[str, Any]]:
     """One row per (item, seed) for a single axis, keyed by catalog item id."""
-    seed_values = validate_seeds(seeds)
+    if axis not in PHASE7_AXIS_CATALOGS:
+        raise ValueError(f"unsupported axis: {axis}")
+    seed_values = validate_seeds(axis_seeds(axis) if seeds is None else seeds)
     if limit is not None and limit < 1:
         raise ValueError("limit must be at least 1")
     items = select_axis_items(axis, statuses=statuses)
@@ -263,7 +281,12 @@ def main() -> int:
     )
     args = parser.parse_args()
     try:
-        seeds = args.seed or (CALIBRATION_SEEDS if args.calibration else DEFAULT_SEEDS)
+        if args.seed:
+            seeds = args.seed
+        elif args.calibration:
+            seeds = CALIBRATION_SEEDS
+        else:
+            seeds = axis_seeds(args.axis)
         statuses = set(args.status) if args.status else {"generated"}
         rows = mass_axis_rows(
             args.axis, seeds, statuses=statuses, limit=args.limit
