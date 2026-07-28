@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000235",
+  "style_id": "pairwise_artist_signature_coloring_015",
+  "label": "pairwise_artist_signature_coloring_015",
+  "mode": "pairwise",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "e6ee5a23-8e08-4069-b9c6-890cae6b8ecb",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second line-and-color direction is the measured axis. Render its named contours, jewel palette, value planes, and rim accent across one continuous figure. Create a clean hand-drawn two-dimensional editorial illustration. The exact name-free signature controls the visible medium, face, eyes, silhouette, palette, light, composition, and ornament. Make these eight cues bold and unmistakable: line language—flowing pressure-sensitive ribbon contours; face design—a firm jaw and planar cheeks; eye design—narrow dark-rimmed eyes with one catchlight; body design—elongated graceful limbs and tapered hands; palette language—large mineral-blue, ivory, coral, and charcoal fields; light modeling—hard-edged two-value cel light and shadow; framing language—an off-center figure with broad open side space; ornament language—bold repeated geometric panels. Draw face and eye details crisply within the full-length figure. Put the ornament on both the garment and outer border. Keep the complete figure in front of every decorative framing element. Combine it coherently with this second visual direction: An adult subject is defined by selective near-invisible edges completed by color boundaries and a few dark accents, filled with muted split-complementary color with balanced warm skin notes and cool surrounding fields, and modeled through transparent glazed shadows with visible local color and luminous overlap. The finish adds a controlled rim accent that separates only the shadow-side silhouette. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "80c1d03bf87ec757e26a0ce3cfda71aceb1184d79abc829184ac35ad1e732865",
+  "workflow_sha256": "e69fb8ab3ce5105defc3d221babf5962a8b592d1ad1e70d36054a8003cc8b63a",
+  "factors": {
+    "pair_type": "artist_signature_coloring",
+    "left_item": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_geometric_inset_complete_signature",
+    "right_item": "linework_coloring_selective_edge_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "b3691f43a981a6f34d8e9794768445439f14093ff6fdf51b480436326ea10249",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

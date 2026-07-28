@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000057",
+  "style_id": "single_axis_pose_003",
+  "label": "single_axis_pose_003",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "59c20adf-e8f1-4a02-a8bf-1760a7ca43e6",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a grounded forward step with a stable pelvis and controlled bend through both knees, with both hands lifted near the chest with relaxed palms and distinct finger spacing. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "6fd9c55d20e82b97c40b021a2a7d9e4677011babd4c20cf06e312be237953b54",
+  "workflow_sha256": "7030f44d03034f0cf7fc615c5d174de9fd3daf1e8a687af1c6ec63b29f034911",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_grounded_forward_step_hands_near_chest_three_quarter_near_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "d0f54864846387e8fc9c5fbb6338cbec816fd65d4a4c1d4624b4a6d14afb7239",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

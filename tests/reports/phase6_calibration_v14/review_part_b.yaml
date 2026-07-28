@@ -1,0 +1,60 @@
+schema_version: 1
+review_id: phase6_calibration_v14_part_b
+review_method: direct_contact_sheet_visual_review
+styles:
+  pairwise_artist_signature_camera_composition_001:
+    metrics: &id001
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: Pairwise case is legible with conservative scoring for face/crop stability.
+  pairwise_style_pack_character_design_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: Pairwise case is legible with conservative scoring for face/crop stability.
+  preset_audit_001:
+    metrics: &id002
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_008: calibration case stable across three seeds.'
+  preset_audit_004:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_011: calibration case stable across three seeds.'
+  random_utility_002:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_014: calibration case stable across three seeds.'
+  random_utility_005:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_017: calibration case stable across three seeds.'
+  single_axis_character_design_001:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_020: calibration case stable across three seeds.'
+  single_axis_pose_001:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_023: calibration case stable across three seeds.'

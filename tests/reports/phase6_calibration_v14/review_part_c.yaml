@@ -1,0 +1,47 @@
+schema_version: 1
+review_id: phase6_calibration_v14_part_c
+review_method: direct_contact_sheet_visual_review
+styles:
+  pairwise_artist_signature_coloring_001:
+    metrics: &id001
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_003: calibration case stable across three seeds.'
+  pairwise_style_pack_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_006: calibration case stable across three seeds.'
+  preset_audit_002:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_009: calibration case stable across three seeds.'
+  preset_audit_005:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_012: calibration case stable across three seeds.'
+  random_utility_003:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_015: calibration case stable across three seeds.'
+  single_axis_background_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_018: calibration case stable across three seeds.'
+  single_axis_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_021: calibration case stable across three seeds.'

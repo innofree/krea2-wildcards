@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000091",
+  "style_id": "single_axis_pose_015",
+  "label": "single_axis_pose_015",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "902e63f7-bcad-4665-bd8b-3921eaefeaa8",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an upright seated pose with the spine lengthened and both feet placed naturally, with both arms relaxed with clear separation from the torso and naturally curved fingers. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "a56a005fa0eb65b50a425bbc43e553a655d9486a68df35623aa939da0d9a8272",
+  "workflow_sha256": "bfe40e8ce05c6f19b629d4aa476aba936e6df6ea682eb19b5f27bcf455529e6e",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_upright_seated_arms_relaxed_clear_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "dee441f88a6100514e94c1b930d6dcf77b7e5982cf3cfea8ac401be51cc95bd8",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

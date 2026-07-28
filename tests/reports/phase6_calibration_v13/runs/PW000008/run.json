@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000008",
+  "style_id": "pairwise_style_pack_lighting_001",
+  "label": "pairwise_style_pack_lighting_001",
+  "mode": "pairwise",
+  "seed": 92002,
+  "remote": "private_comfyui",
+  "prompt_id": "84915556-6e7c-45dd-8f75-70c499ccd9c4",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second lighting direction has authority over every actual source shape, direction, and illumination color. Keep the face and requested visible eyes readable, and make each source named by that direction visibly distinct. Give its named reflected light or fill a separate readable role. Put its named practical on the back wall as one palm-sized warm amber lamp or glowing square, clearly separate from the subject and never expanded into a broad beam. Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment. Use a photorealistic adult editorial material treatment with angular graphic planes and repeated diagonal divisions around the subject; amber and blue pigment fields printed across clothing and backdrop; powdery matte grain with absorbed material highlights; upward set panels, rising decorative forms, and restrained metallic glints; and hard separated silhouette and graphic edges with few controlled breaks. Treat these as material, set, pigment, and graphic properties; the second lighting direction alone supplies every actual source and illumination color. Combine it coherently with this second visual direction: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The second lighting direction is the final illumination blueprint: all visible illumination comes only from its named sources, colors, and geometry. Its named reflected light or fill remains visibly separate from the key. Its named practical is drawn as one palm-sized warm amber lamp or glowing square on the back wall, separate from the subject and never expanded into a broad beam. The first style contributes shape, material palette, surface, atmosphere, and edge treatment. Final camera lock—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "4e199345b4c149bc71e8ddbd6a0a48eacf79ecd75aa7d4c2a389dd1a0a8d7306",
+  "workflow_sha256": "11ffdf0e90fa4184cfeb2483413cb4edaa8f99f7bd90fa0917f217fae875b8f1",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bd2f725c8989c34f04881b72f9b49f96ef4908284b433112917c4a6be4292f25",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

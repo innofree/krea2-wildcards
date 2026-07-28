@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000069",
+  "style_id": "single_axis_pose_007",
+  "label": "single_axis_pose_007",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "8291d0c2-ca39-4bf4-a3e2-39f4d1afab53",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a measured walking pause with one foot forward and the trailing heel lightly lifted, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "eeca0ed3b56d13b35ae4be9e0fcbbea5f76d6471cff93e3ea856dc2af996b04a",
+  "workflow_sha256": "5bfe9dad580879b01e1e365b4bba2964b0638322d1a41888ca7aede572bcbdca",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_measured_walking_pause_open_palms_extended_direct_level_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2f9fa25eaaa3821fed20ae1411b1b7dd927b7c32f0779a79b260e78be504ca3d",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000071",
+  "style_id": "single_axis_pose_008",
+  "label": "single_axis_pose_008",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "f12244dc-8703-46f6-ae0e-0a8ce2e1eda9",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a measured walking pause with one foot forward and the trailing heel lightly lifted, with one hand resting at the waist while the other hangs open and fully readable. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "ed7a78e3ff53f95181d3fad2121234e3573e8be4adf48be29039c52c8903afe5",
+  "workflow_sha256": "359e4cb901081a7c2ccbac8bf10b5b06af822d485e608b18a5440a539832c544",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_measured_walking_pause_waist_and_open_lowered_reflective_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "798e6f9e125f5861b66d64790d0f16d22668ccf31f31847c55b1839bb222f21c",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

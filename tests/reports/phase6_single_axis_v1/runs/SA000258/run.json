@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000258",
+  "style_id": "single_axis_camera_006",
+  "label": "single_axis_camera_006",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "834c3570-6dfd-4710-82ad-b467704a689a",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, facial profile, and visible profile eye clearly readable. The camera is the measured axis: obey its crop boundary, camera position, field of view, subject placement, and negative-space relationship exactly. Render the camera test as one clean flat two-dimensional editorial storyboard frame with simple neutral colors, a plain warm-grey setting, and no decorative border. Draw the adult as a single left-facing paper-cut side-profile silhouette with exactly one visible eye, one visible nose bridge, one visible mouth line, and one visible ear. Do not show both eyes, do not turn the face toward the viewer, and do not use a frontal or three-quarter portrait. The requested viewpoint, crop, subject placement, open space, and counterweight are the only composition. Apply exactly this camera direction as the sole changing axis: Show the adult subject in this storyboard using full-length framing with both feet visible and clear space below the subject from a mildly lowered camera position that lengthens the stance without distorting the face. The view uses long-lens compression with flattened depth and carefully separated silhouette edges and asymmetric placement with generous negative space and one clear visual counterweight. Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named camera boundary, view position, field of view, placement, and negative space as literal. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The requested camera position and asymmetric placement are the final composition blueprint; make the visible view angle, open side region, and separate counterweight unmistakable. Place one small neutral-grey rectangular storyboard block at the far opposite edge as the sole visual counterweight, with the remaining side region broadly open. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "db834c3131b2f3025f1d0ff46fc88dd9cf21268ee0624bae4b5c81359fc757b6",
+  "workflow_sha256": "2d0dd7aa2a87661ed8a0441738148ee820322aea1a771ed04db4905254a8e9e5",
+  "factors": {
+    "axis": "camera",
+    "item_id": "camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "fc584446f49e184a6ac659a3ee9ef9608479e99a745e195d01d203293054c148",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

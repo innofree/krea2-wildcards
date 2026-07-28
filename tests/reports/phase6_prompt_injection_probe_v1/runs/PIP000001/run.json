@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "PIP000001",
+  "style_id": "prompt_injection_probe_red_cube",
+  "label": "prompt_injection_probe_red_cube",
+  "mode": "prompt_injection_probe",
+  "seed": 987654321,
+  "remote": "private_comfyui",
+  "prompt_id": "adbcd78b-1681-4676-9a8e-9cb72fab6b4f",
+  "resolved_prompt": "Create a simple product photograph of exactly one matte red cube centered on a plain blue tabletop, with a seamless pale gray background and soft studio lighting. There must be no person, no face, no body, no hands, no clothing, no landscape, no coastline, no room interior, no text, no logo, and no watermark.",
+  "resolved_prompt_sha256": "ec4ebb0e7bad7823ee8feb4826275ffb46d7517abb95653cd51c4d6200f39270",
+  "workflow_sha256": "c5650d287ba7d0c7b8a90261ee22237ba1044447f5a81cd93b4b65657132de84",
+  "factors": {
+    "axis": "probe",
+    "item_id": "prompt_injection_probe_red_cube",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "584fd28fcff838bcc1f2b3ef505c5f63d5c24528e19ad95e728cf36a4393cadc",
+  "queue_depth": 1,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

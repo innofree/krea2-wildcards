@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000225",
+  "style_id": "single_axis_linework_coloring_011",
+  "label": "single_axis_linework_coloring_011",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "e9c0642e-339f-44ed-ae3c-d4c4f72d798a",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Linework and coloring are the measured axis: make the named contour geometry, palette families, value planes, and edge accent plainly visible across the figure. Apply exactly this linework_coloring direction as the sole changing axis: An adult subject is defined by fine tapered contours with subtle pressure variation and restrained inner detail, filled with limited two-tone color expanded through value steps and controlled transparency, and modeled through soft two-band shading with clean shadow shapes and lightly feathered transitions. The finish adds a controlled rim accent that separates only the shadow-side silhouette. Render the adult as a clearly drawn editorial character illustration whose named line quality and color treatment cover the face, hair, clothing, and silhouette. Use an eye-level mid-thigh frame, broad neutral diffused lighting, and an uncluttered warm-grey studio ground, with her face, eyes, and both hands readable. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—make a tight thigh-up portrait. Let the figure fill most of the canvas from the complete crown to a hard lower image edge cutting through the middle of both thighs. Keep the face and any explicitly named visible hand gesture inside. Do not show knees, calves, shoes, feet, floor under the feet, or the complete legs.",
+  "resolved_prompt_sha256": "ff74ea00fed3d3d8f7621e7ab87967b433d66285f021267ea668390c8316e0c5",
+  "workflow_sha256": "c2fa88c517ac3be91d5651bf698bede39d7acf47c03b44bc8431ede55c657eb5",
+  "factors": {
+    "axis": "linework_coloring",
+    "item_id": "linework_coloring_fine_tapered_limited_two_tone_soft_two_band_controlled_rim_complete_line_color",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "c25f9d5040df60e392e007bad80c4cccb0065f49e62713c64a519064779cfb4b",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

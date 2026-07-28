@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase6_benchmark_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase6_benchmark.jsonl",
+  "expected_seeds_per_case": 5,
+  "seeds": [
+    1001,
+    2002,
+    3003,
+    4004,
+    5005
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 1,
+  "style_count": 1,
+  "image_count": 5,
+  "sheet_count": 1,
+  "modes": {
+    "krea2_turbo_benchmark": {
+      "case_count": 1,
+      "image_count": 5,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_benchmark_v1/review/prompt_matrix_krea2_turbo_benchmark_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "krea2_turbo_benchmark",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_benchmark_v1/review/prompt_matrix_krea2_turbo_benchmark_001.png",
+      "case_count": 1,
+      "image_count": 5
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "factors": {
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+        "style_pack": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style"
+      },
+      "items": [
+        {
+          "test_id": "KB000001",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_benchmark_v1/runs/KB000001/image_01.png"
+        },
+        {
+          "test_id": "KB000002",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_benchmark_v1/runs/KB000002/image_01.png"
+        },
+        {
+          "test_id": "KB000003",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_benchmark_v1/runs/KB000003/image_01.png"
+        },
+        {
+          "test_id": "KB000004",
+          "seed": 4004,
+          "image_path": "tests/reports/phase6_benchmark_v1/runs/KB000004/image_01.png"
+        },
+        {
+          "test_id": "KB000005",
+          "seed": 5005,
+          "image_path": "tests/reports/phase6_benchmark_v1/runs/KB000005/image_01.png"
+        }
+      ]
+    }
+  ]
+}

@@ -36,20 +36,35 @@ SIGNATURE_OPEN = (
     "and ornament."
 )
 PHASE6_PROFILE_ALGORITHM = (
-    "positive-subject-v6.8|opening-terminal-camera-lock-v6.8|"
+    "positive-subject-v7.2|opening-terminal-camera-lock-v7.2|"
     "storyboard-camera-baseline-v6.5|lighting-neutral-style-synthesis-v6.5|"
     "conditional-lighting-authority-v6.5|crop-aware-scene-body-v6.5|"
     "scale-aware-signature-ledger-v6.7|random-scene-reconciliation-v6.8|"
+    "pose-body-state-anchor-v2|conditional-camera-storyboard-v2|"
+    "background-nonhuman-structure-anchor-v1|wide-environmental-framing-v1|"
+    "single-axis-unstable-pose-exclusion-v3|"
     "proven-short-paths-v2"
 )
+SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES = (
+    "pose_low_kneeling_low_crossed_forearm",
+    "pose_low_kneeling_loosely_clasped",
+)
+PAIRWISE_EXCLUDED_LEFT_ITEM_IDS_BY_TYPE: dict[str, frozenset[str]] = {
+    "style_pack_background": frozenset(
+        {
+            "style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_etched_accent_complete_style",
+        }
+    ),
+}
+PAIRWISE_EXCLUDED_LEFT_ITEM_PREFIXES_BY_TYPE: dict[str, tuple[str, ...]] = {
+    "style_pack_background": (
+        "style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper",
+    ),
+}
 CAMERA_STORYBOARD_BASELINE = (
     "Render the camera test as one clean flat two-dimensional editorial storyboard frame with "
-    "simple neutral colors, a plain warm-grey setting, and no decorative border. Draw the adult "
-    "as a single left-facing paper-cut side-profile silhouette with exactly one visible eye, one "
-    "visible nose bridge, one visible mouth line, and one visible ear. Do not show both eyes, do "
-    "not turn the face toward the viewer, and do not use a frontal or three-quarter portrait. The "
-    "requested viewpoint, crop, subject placement, open space, and counterweight are the only "
-    "composition."
+    "simple neutral colors, a plain warm-grey setting, and no decorative border. The requested "
+    "viewpoint, crop, subject placement, open space, and counterweight are the only composition."
 )
 PRESET_COLOR_BASELINE = (
     "Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, "
@@ -151,6 +166,7 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
             "camera_storyboard_baseline": CAMERA_STORYBOARD_BASELINE,
             "preset_color_baseline": PRESET_COLOR_BASELINE,
             "signature_open": SIGNATURE_OPEN,
+            "single_axis_excluded_item_prefixes": list(SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES),
             "style_pack_atmosphere": STYLE_PACK_ATMOSPHERE,
             "style_pack_color": STYLE_PACK_COLOR,
             "style_pack_edge": STYLE_PACK_EDGE,
@@ -158,7 +174,7 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
             "style_pack_surface": STYLE_PACK_SURFACE,
             "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v10",
+            "version": "phase6_positive_profile_v15",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -431,6 +447,93 @@ def _storyboard_camera_body(value: str) -> tuple[str, str]:
     return value, counterweight
 
 
+def _camera_storyboard_baseline(value: str) -> str:
+    lowered = value.lower()
+    clauses = [CAMERA_STORYBOARD_BASELINE]
+    if "clean profile" in lowered:
+        clauses.append(
+            "Draw the adult as one clean side-profile silhouette with exactly one visible eye, "
+            "one visible nose bridge, one visible mouth line, and one visible ear."
+        )
+    elif "rear three-quarter" in lowered:
+        clauses.append(
+            "Turn the adult away from the viewer into a rear three-quarter view, with the back "
+            "plane, one cheek edge, one ear or hair-side edge, and the far shoulder visibly offset."
+        )
+    elif "three-quarter front" in lowered:
+        clauses.append(
+            "Turn the adult into a clear three-quarter-front view with both shoulders visible at "
+            "different depths and the face angled rather than flattened into a side profile."
+        )
+    elif "eye-level front" in lowered:
+        clauses.append(
+            "Face the adult directly toward the camera at eye level with symmetrical shoulders and "
+            "a frontal torso while preserving the requested crop and open side region."
+        )
+    if "wide environmental" in lowered or "wide view" in lowered:
+        clauses.append(
+            "Make the setting visibly wide and environmental: shrink the complete figure, expose "
+            "large areas of floor and back wall, and place simple deep-focus rectangular set planes "
+            "or horizon bands around the figure."
+        )
+    return " ".join(clauses)
+
+
+def _background_axis_anchor(value: str) -> str:
+    return (
+        f"{SINGLE_AXIS_ANCHORS['background']} Build every foreground, middle-distance, "
+        "horizon, flanking, and repeated vertical feature from non-human architectural or "
+        "landscape objects such as empty railings, posts, planters, shelves, tree trunks, "
+        "window mullions, columns, benches, parapets, or wall openings. Keep the measured "
+        "adult as the only human-shaped figure in the scene."
+    )
+
+
+def _camera_axis_anchor(value: str) -> str:
+    lowered = value.lower()
+    if "wide environmental" in lowered or "wide view" in lowered:
+        return (
+            "Show the adult woman as a small complete figure inside a deliberately wide "
+            "environmental storyboard set. Use broad neutral diffused lighting, visible floor "
+            "planes, a stable horizon, side-wall or parapet masses, and distant rectangular "
+            "depth markers. Treat the named camera boundary, view position, field of view, "
+            "placement, and negative space as literal."
+        )
+    return SINGLE_AXIS_ANCHORS["camera"]
+
+
+def _pose_axis_anchor(value: str) -> str:
+    lowered = value.lower()
+    base = (
+        "Show exactly one adult woman in a plain long-sleeve top and straight trousers under "
+        "broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama."
+    )
+    if "low kneeling" in lowered:
+        return (
+            f"{base} Place both knees and both lower legs visibly on the studio floor, with the "
+            "hips low above the heels, the torso lifted upright, both hands visible, and enough "
+            "floor around the knees and feet to prove the body is kneeling. The pelvis is far "
+            "below normal standing hip height, both shins fold backward along the floor, and the "
+            "feet are tucked behind or beside the hips."
+        )
+    if "side-reclining" in lowered or "side reclining" in lowered:
+        return (
+            f"{base} Place the complete body horizontally on a simple low rectangular studio "
+            "platform, with one side of the torso supported, hips and legs extended along the "
+            "platform, the head, hands, knees, and feet all inside the frame, and the platform "
+            "edge clearly visible under the body. The body's long axis runs left-to-right across "
+            "the platform, with shoulders, hips, knees, and feet aligned close to horizontal and "
+            "the torso reclining less than thirty degrees above the platform."
+        )
+    if "upright seated" in lowered:
+        return (
+            f"{base} Seat her on a plain armless cube stool with the seat surface clearly visible "
+            "under the hips, spine upright, thighs projecting forward from the stool, knees bent, "
+            "both lower legs descending to the floor, and both feet visible."
+        )
+    return SINGLE_AXIS_ANCHORS["pose"]
+
+
 def _framing_contract(value: str) -> str:
     lowered = value.lower()
     if "chest-up" in lowered:
@@ -459,7 +562,7 @@ def _framing_contract(value: str) -> str:
             "Final camera lock—frame literally from the complete crown through both feet, with "
             "generous visible background margin above the hairstyle and below both shoes."
         )
-    if "wide view" in lowered:
+    if "wide view" in lowered or "wide environmental" in lowered:
         return (
             "Final camera lock—pull the camera far back, keep the complete crown, both shoes, and "
             "visible floor below both shoes inside the canvas, place the figure on one vertical "
@@ -569,7 +672,7 @@ def _framing_kind(value: str) -> str:
         return "mid-thigh"
     if "full-length" in lowered:
         return "full-length"
-    if "wide view" in lowered:
+    if "wide view" in lowered or "wide environmental" in lowered:
         return "wide"
     return "mid-thigh"
 
@@ -635,10 +738,21 @@ def _select(
     count: int,
     family: str,
     statuses: set[str] | None,
+    include_ids: set[str] | frozenset[str] | None = None,
+    exclude_ids: set[str] | frozenset[str] | None = None,
+    exclude_prefixes: tuple[str, ...] = (),
 ) -> list[tuple[str, str]]:
     selected: dict[str, str] = {}
+    included = set(include_ids) if include_ids is not None else None
+    excluded = set(exclude_ids or ())
     for path in paths:
         for item_id, item in _catalog_items(path).items():
+            if included is not None and item_id not in included:
+                continue
+            if item_id in excluded:
+                continue
+            if any(item_id.startswith(prefix) for prefix in exclude_prefixes):
+                continue
             if item.get("family") != family:
                 continue
             if statuses is not None and _status(item) not in statuses:
@@ -700,12 +814,23 @@ def single_axis_rows(
             count=cases_per_axis,
             family=right_family,
             statuses=None,
+            exclude_prefixes=(
+                SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES if right_family == "pose" else ()
+            ),
         )
-        anchor = SINGLE_AXIS_ANCHORS[right_family]
         for index, (item_id, prompt) in enumerate(selected, start=1):
             camera_counterweight = ""
             if right_family == "camera":
                 prompt, camera_counterweight = _storyboard_camera_body(prompt)
+            anchor = (
+                _pose_axis_anchor(prompt)
+                if right_family == "pose"
+                else _background_axis_anchor(prompt)
+                if right_family == "background"
+                else _camera_axis_anchor(prompt)
+                if right_family == "camera"
+                else SINGLE_AXIS_ANCHORS[right_family]
+            )
             focus = {
                 "character_design": (
                     "The character design is the measured axis: make its named face geometry, "
@@ -740,7 +865,7 @@ def single_axis_rows(
                 f"{prompt}. {anchor}"
             )
             if right_family == "camera":
-                value = f"{CAMERA_STORYBOARD_BASELINE} {value}"
+                value = f"{_camera_storyboard_baseline(prompt)} {value}"
             rendered_prompt = (
                 f"{value.rstrip('.,;:')}. {PROVEN_VISIBILITY_FINISH}"
                 if right_family == "lighting"
@@ -756,7 +881,7 @@ def single_axis_rows(
                     }[right_family],
                     subject_contract=(
                         CAMERA_SUBJECT_CONTRACT
-                        if right_family == "camera"
+                        if right_family == "camera" and "clean profile" in prompt.lower()
                         else SUBJECT_CONTRACT
                     ),
                     reconciliation=(
@@ -800,12 +925,17 @@ def pairwise_rows(
             count=cases_per_type,
             family=left_family,
             statuses={"approved"},
+            exclude_ids=PAIRWISE_EXCLUDED_LEFT_ITEM_IDS_BY_TYPE.get(pair_type),
+            exclude_prefixes=PAIRWISE_EXCLUDED_LEFT_ITEM_PREFIXES_BY_TYPE.get(
+                pair_type, ()
+            ),
         )
         right = _select(
             (Path(right_path),),
             count=cases_per_type,
             family=right_family,
             statuses=None,
+            include_ids=passed_single_axis_items,
         )
         for index, ((left_id, left_prompt), (right_id, right_prompt)) in enumerate(
             zip(left, right, strict=True), start=1

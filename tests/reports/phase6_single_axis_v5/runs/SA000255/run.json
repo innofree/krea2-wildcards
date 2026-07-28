@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000255",
+  "style_id": "single_axis_camera_005",
+  "label": "single_axis_camera_005",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "8b0484a1-ff16-4219-865a-6fb0d4fa43e8",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The camera is the measured axis: obey its crop boundary, camera position, field of view, subject placement, and negative-space relationship exactly. Render the camera test as one clean flat two-dimensional editorial storyboard frame with simple neutral colors, a plain warm-grey setting, and no decorative border. The requested viewpoint, crop, subject placement, open space, and counterweight are the only composition. Apply exactly this camera direction as the sole changing axis: Show the adult subject in this storyboard using full-length framing with both feet visible and clear space below the subject from a clean side camera position that preserves the facial profile and body line. The view uses gentle portrait compression with smooth feature spacing and a softly enlarged background and centered symmetry supported by balanced side masses and a stable horizon. Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named camera boundary, view position, field of view, placement, and negative space as literal. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The requested camera position and asymmetric placement are the final composition blueprint; make the visible view angle, open side region, and separate counterweight unmistakable. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "c0f74aa172129ee6e5d1030e55bac4a97fd3dc74c9c4294a9fdde07547f29420",
+  "workflow_sha256": "ec126369922ea06332479a382cfa1336f8d169eac7900810bda0e66de6970b4c",
+  "factors": {
+    "axis": "camera",
+    "item_id": "camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a59a93117753b4abde6460ce3ffe3464c32d3d13128e4dfe2d26671f5df9ae4b",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

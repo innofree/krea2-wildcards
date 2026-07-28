@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000081",
+  "style_id": "pairwise_style_pack_pose_011",
+  "label": "pairwise_style_pack_pose_011",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "52af3ce0-8667-4c1a-b1cc-5053dc4794f0",
+  "resolved_prompt": "Photorealistic adult editorial treatment: broad curved light paths, flowing shadows, and repeated organic shapes. Use garnet, sapphire, and emerald fields with restrained gold highlights, translucent color layers, luminous reflections, and crisp bright accents, upward beams, rising forms, and restrained ceremonial glints, and soft color bloom and halation outside a readable silhouette. Combine it coherently with this second visual direction: An adult subject holds a three-quarter standing turn with the torso open and the far shoulder gently receding, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "019e6c9808717ab6431e4701e39446d4156860d01c312da267ea858816aab622",
+  "workflow_sha256": "30a3a60f6290068841c744f6ad53b556fce31389b6675a6d3b29cd763cbae7fa",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_ceremonial_energy_soft_bleed_complete_style",
+    "right_item": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "33b0326c3a05e815749e36ea759d51f23e9a3d5c1df3afcf45968fa675e7adcc",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

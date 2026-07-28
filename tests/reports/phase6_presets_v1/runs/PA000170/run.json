@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000170",
+  "style_id": "preset_audit_057",
+  "label": "preset_audit_057",
+  "mode": "preset_audit",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "a3b9a7bd-7e8b-488c-a98d-570a2762e7cb",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult stands frontally with level shoulders and loosely clasped hands in a quiet pale-stone museum hall with deep openings and sparse displays, wearing a longline vest, fitted top, and mid-calf pleated skirt, with a calm attentive look with a level chin and focused eyes. Use eye-level full-length framing with visible feet and ample headroom and cool overcast light with restrained warm facial fill. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "51a0b68b9cef78ee2c88f810f2ed511987ed4f9ccd28c18c452df3a1b199475d",
+  "workflow_sha256": "507329aa6e33d2075e064b7598441e637c17a9f68fe6d3bab046959fc635111a",
+  "factors": {
+    "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f99ab2dc866e229d42a971a49b4c55f37a05b511e91dc66e80a0bb1ff209ef95",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

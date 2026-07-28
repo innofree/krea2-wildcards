@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000094",
+  "style_id": "single_axis_pose_016",
+  "label": "single_axis_pose_016",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "722a2174-b2f4-4998-86f5-afbe3409000f",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an upright seated pose with the spine lengthened and both feet placed naturally, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "0b3eb85146166a84d9b9fcfec2d9160013ef977d0dc66a52c80a6c84571b2248",
+  "workflow_sha256": "f04aa6eb625fe1ac66ee4ac717c56f03df5359111ca3424815aff03a0e5e55d2",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "74dc12a23b9b7a4c54c32adbeff8a17b0754bf589e9769d4fa2c5b70d689c749",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000190",
+  "style_id": "pairwise_style_pack_background_016",
+  "label": "pairwise_style_pack_background_016",
+  "mode": "pairwise",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "790b5c5c-b3b9-4299-8710-04e7b6335f8f",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second background direction is the measured axis. Keep the complete subject large enough to read while its foreground, middle-distance, horizon, and atmosphere remain visibly separated. Photorealistic adult editorial treatment: large circular light pools, rounded shadows, and bold silhouette spacing. Use an amber-lit side and blue-shadowed side across subject and backdrop, fine paper fibers in backdrop and shadows while skin and fabric stay clear, deep evening values, narrow light paths, and tense still space, and soft color bloom and halation outside a readable silhouette. Combine it coherently with this second visual direction: An adult subject stands in a clean transit concourse with repeated columns, matte flooring, and distant entrances, with repeated forms that reduce gradually in scale and establish an orderly recession, softly diffused ambient air with even visibility across the setting, and warm neutral surroundings with quiet cream, stone, wood, and muted brown relationships. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—use an eye-level mid-thigh inspection frame with the lower edge visibly intersecting both thighs and the complete crown, both eyes, shoulders, and visible hand gestures inside while the knees, calves, shoes, and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "87e4f274e9a9db5435a2c5db5b52a3236759f1db500821067c886d63bf12fbaf",
+  "workflow_sha256": "e633484d77de32fbea0ab2bfb6495cb08f1895276c470dd2ba324e11713f236c",
+  "factors": {
+    "pair_type": "style_pack_background",
+    "left_item": "style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_soft_bleed_complete_style",
+    "right_item": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "edb74772c601e8b2db09d13f2a3dc416a8eac3c1beee09ce3b7cef2556126f43",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

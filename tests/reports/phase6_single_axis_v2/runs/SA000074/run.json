@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000074",
+  "style_id": "single_axis_pose_009",
+  "label": "single_axis_pose_009",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "6821c613-4613-4db7-8950-976b431437ce",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a relaxed side-reclining pose with supported weight and a long uninterrupted torso line, with both arms relaxed with clear separation from the torso and naturally curved fingers. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Place the complete body horizontally on a simple low rectangular studio platform, with one side of the torso supported, hips and legs extended along the platform, the head, hands, knees, and feet all inside the frame, and the platform edge clearly visible under the body. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "04a13723487bd3fd8d7a28c29e803fd1f8e4243d72ff25f55f4d4f8c80d88f13",
+  "workflow_sha256": "fe80832b9f9ecf4f1ab9f76e37d562db7ed88409abfd9babd5638fb69aaef089",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_side_reclining_arms_relaxed_clear_lowered_reflective_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a595b939d924b09a4d6c302268f77ea4552ebf6faa4a83d498a668e197ba544e",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

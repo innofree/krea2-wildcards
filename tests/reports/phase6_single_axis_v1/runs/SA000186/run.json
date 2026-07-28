@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000186",
+  "style_id": "single_axis_background_014",
+  "label": "single_axis_background_014",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "68da11b4-9852-4639-a487-ed1123990885",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a stone courtyard with restrained planting, textured walls, and an open central area, with a visible path that leads gently from the lower frame toward the subject position, faint depth haze confined to distant layers while the subject plane remains clear, and deep neutral surroundings lifted by one controlled color accent away from the face. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "8596681f9019f57a69a8172dfc4b8ac6ccf02b0dbd186023edef3b9fa07d2c83",
+  "workflow_sha256": "7ad4329ea6ff9c0061a39ac99a1a588c4e22c613d67573c744d094fed33822a1",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_stone_courtyard_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "c7ad9af8cbcab24d6207cbc15f38484c6dea549e90559b08eb9b393318290490",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

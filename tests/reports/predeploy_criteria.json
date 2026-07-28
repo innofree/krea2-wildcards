@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "stage": "predeploy",
+  "complete": true,
+  "summary": {
+    "criteria": 14,
+    "complete": 14,
+    "remaining": 0
+  },
+  "criteria": [
+    {
+      "id": "production_runtime_manifest",
+      "category": "functional",
+      "complete": true,
+      "actual": {
+        "item_count": 374,
+        "prompt_count": 374,
+        "catalog_approved_runtime_item_count": 374,
+        "manifest_unique_item_id_count": 374,
+        "catalog_item_ids_match": true,
+        "missing_catalog_item_ids": [],
+        "unexpected_manifest_item_ids": [],
+        "problems": []
+      },
+      "target": {
+        "approved_only": true,
+        "consistent_counts": true,
+        "all_files_exist": true,
+        "catalog_item_ids_match_exactly": true,
+        "approval_policy_valid": true
+      },
+      "evidence": [
+        "wildcards-manifest.json"
+      ],
+      "message": "Production runtime must exactly contain every approval-policy-valid approved catalog runtime item."
+    },
+    {
+      "id": "release_functional_gates",
+      "category": "functional",
+      "complete": true,
+      "actual": {
+        "passed_stages": [
+          "catalog_conflicts",
+          "catalog_duplicates",
+          "catalog_generation",
+          "catalog_normalization",
+          "catalog_schema_v2",
+          "catalog_v2_sync",
+          "plan_progress",
+          "preview_build",
+          "preview_runtime_lint",
+          "production_build",
+          "production_impact_build",
+          "production_runtime_lint",
+          "sensitive_history",
+          "sensitive_worktree",
+          "test_suite"
+        ],
+        "missing_stages": [],
+        "production_matches_manifest": true,
+        "manifest_catalog_item_ids_match": true
+      },
+      "target": {
+        "required_stages": [
+          "catalog_conflicts",
+          "catalog_duplicates",
+          "catalog_generation",
+          "catalog_normalization",
+          "catalog_schema_v2",
+          "catalog_v2_sync",
+          "plan_progress",
+          "preview_build",
+          "preview_runtime_lint",
+          "production_build",
+          "production_impact_build",
+          "production_runtime_lint",
+          "sensitive_history",
+          "sensitive_worktree",
+          "test_suite"
+        ],
+        "release_status": "passed",
+        "production_matches_manifest": true,
+        "manifest_catalog_item_ids_match": true
+      },
+      "evidence": [
+        "tests/reports/releases/latest.json"
+      ],
+      "message": "Sensitive-data checks remain external; all deterministic build, lint, test, and schema gates are required."
+    },
+    {
+      "id": "runtime_resolution_coverage",
+      "category": "functional",
+      "complete": true,
+      "actual": {
+        "report_type": "runtime_coverage",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "unresolved_wildcards": 0,
+        "syntax_errors": 0,
+        "all_expected_loaded_and_resolved": true,
+        "all_runtime_leaves_resolved": true,
+        "unexpected_runtime_leaf_paths": 0,
+        "impact_adapter_exact": true,
+        "prompt_logs_saved": true
+      },
+      "evidence": [
+        "tests/reports/completion/runtime_coverage.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='runtime_coverage'."
+    },
+    {
+      "id": "single_axis_coverage",
+      "category": "coverage",
+      "complete": true,
+      "actual": {
+        "report_type": "single_axis_coverage",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "tested_axes_include": [
+          "background",
+          "camera",
+          "character_design",
+          "lighting",
+          "linework_coloring",
+          "pose"
+        ],
+        "total_cases_minimum": 96,
+        "critical_failures": 0,
+        "fresh_prompt_profile_calibration": true
+      },
+      "evidence": [
+        "tests/reports/completion/single_axis.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='single_axis_coverage'."
+    },
+    {
+      "id": "artist_abc_coverage",
+      "category": "coverage",
+      "complete": true,
+      "actual": {
+        "report_type": "artist_abc_coverage",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "modes": [
+          "native_name",
+          "visual_signature",
+          "hybrid"
+        ],
+        "artist_count_minimum": 8,
+        "recommendations_complete": true
+      },
+      "evidence": [
+        "tests/reports/completion/artist_abc.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='artist_abc_coverage'."
+    },
+    {
+      "id": "pairwise_combination_coverage",
+      "category": "coverage",
+      "complete": true,
+      "actual": {
+        "report_type": "pairwise_coverage",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "required_pair_types": [
+          "artist_signature_camera_composition",
+          "artist_signature_coloring",
+          "style_pack_background",
+          "style_pack_character_design",
+          "style_pack_lighting",
+          "style_pack_pose"
+        ],
+        "total_cases_minimum": 96,
+        "critical_failures": 0,
+        "right_items_passed_single_axis": true,
+        "fresh_prompt_profile_calibration": true
+      },
+      "evidence": [
+        "tests/reports/completion/pairwise.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='pairwise_coverage'."
+    },
+    {
+      "id": "preset_critical_conflicts",
+      "category": "quality",
+      "complete": true,
+      "actual": {
+        "report_type": "preset_conflict_audit",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "presets_tested_minimum": 100,
+        "critical_conflicts": 0
+      },
+      "evidence": [
+        "tests/reports/completion/presets.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='preset_conflict_audit'."
+    },
+    {
+      "id": "random_generation_utility_rate",
+      "category": "quality",
+      "complete": true,
+      "actual": {
+        "report_type": "random_utility",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "sample_count_minimum": 20,
+        "measured_utility_rate": true
+      },
+      "evidence": [
+        "tests/reports/completion/random_utility.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='random_utility'."
+    },
+    {
+      "id": "krea2_turbo_benchmark",
+      "category": "benchmark",
+      "complete": true,
+      "actual": {
+        "report_type": "krea2_turbo_benchmark",
+        "schema_version": 1,
+        "status": "passed",
+        "complete": true,
+        "valid": true
+      },
+      "target": {
+        "model": "krea2_turbo",
+        "distinct_seeds_minimum": 5,
+        "sample_count_minimum": 5,
+        "metrics_recorded": true
+      },
+      "evidence": [
+        "tests/reports/completion/benchmark.json"
+      ],
+      "message": "Requires a schema_version 1 tests/reports JSON object with report_type='krea2_turbo_benchmark'."
+    },
+    {
+      "id": "approved_style_packs",
+      "category": "content",
+      "complete": true,
+      "actual": 150,
+      "target": {
+        "minimum": 150,
+        "approval_policy_valid": true
+      },
+      "evidence": [
+        "catalog/art_styles.yaml",
+        "catalog/style_expansion.yaml"
+      ],
+      "message": "Count includes only approval-policy-valid complete style runtime entries."
+    },
+    {
+      "id": "approved_canonical_artist_signatures",
+      "category": "content",
+      "complete": true,
+      "actual": 224,
+      "target": {
+        "minimum": 200,
+        "approval_policy_valid": true
+      },
+      "evidence": [
+        "catalog/artists.yaml"
+      ],
+      "message": "Count includes only canonical artist-signature items whose approval metrics and evaluated prompt digest still match the current prompt body."
+    },
+    {
+      "id": "content_scale_targets",
+      "category": "content",
+      "complete": true,
+      "actual": {
+        "style_pack_items": 200,
+        "artist_signature_items": 300,
+        "media_rendering_items": 150,
+        "linework_coloring_items": 300,
+        "character_design_items": 400,
+        "hair_design_items": 250,
+        "fashion_items": 500,
+        "pose_items": 350,
+        "camera_items": 250,
+        "lighting_items": 250,
+        "background_items": 400,
+        "effect_items": 200,
+        "preset_items": 200,
+        "total_library_items": 3750
+      },
+      "target": {
+        "style_pack_items": 200,
+        "artist_signature_items": 300,
+        "media_rendering_items": 150,
+        "linework_coloring_items": 300,
+        "character_design_items": 400,
+        "hair_design_items": 250,
+        "fashion_items": 500,
+        "pose_items": 350,
+        "camera_items": 250,
+        "lighting_items": 250,
+        "background_items": 400,
+        "effect_items": 200,
+        "preset_items": 200,
+        "total_library_items": 3750
+      },
+      "evidence": [
+        "catalog/art_styles.yaml",
+        "catalog/artists.yaml",
+        "catalog/backgrounds.yaml",
+        "catalog/cameras.yaml",
+        "catalog/character_designs.yaml",
+        "catalog/effects.yaml",
+        "catalog/fashion.yaml",
+        "catalog/hair_designs.yaml",
+        "catalog/lighting.yaml",
+        "catalog/linework_coloring.yaml",
+        "catalog/media_rendering.yaml",
+        "catalog/poses.yaml",
+        "catalog/presets.yaml",
+        "catalog/style_expansion.yaml"
+      ],
+      "message": "Every initial-scale category target and the 3,750-item total are counted directly from catalog items."
+    },
+    {
+      "id": "approved_quality_averages",
+      "category": "quality",
+      "complete": true,
+      "actual": {
+        "approved_items": 374,
+        "evaluated_items": 374,
+        "missing_metrics": 0,
+        "prompt_adherence": 4.068,
+        "stability": 4.161
+      },
+      "target": {
+        "prompt_adherence_minimum": 4,
+        "stability_minimum": 3,
+        "missing_metrics": 0
+      },
+      "evidence": [
+        "catalog/art_styles.yaml",
+        "catalog/artists.yaml",
+        "catalog/style_expansion.yaml"
+      ],
+      "message": "Averages are computed directly from every catalog entry whose status is approved."
+    },
+    {
+      "id": "semantic_duplicate_rate",
+      "category": "quality",
+      "complete": true,
+      "actual": {
+        "duplicate_items_or_pairs": 0,
+        "catalog_items": 3750,
+        "current_catalog_items": 3750,
+        "catalog_count_matches": true,
+        "catalog_prompt_digest_matches": true,
+        "rate": 0.0
+      },
+      "target": {
+        "maximum_rate": 0.05,
+        "catalog_count_matches": true,
+        "catalog_prompt_digest_matches": true
+      },
+      "evidence": [
+        "tests/reports/static_audit_v0_5.json"
+      ],
+      "message": "Rate is derived from the committed static exact/near duplicate audit bound to the current prompt corpus."
+    }
+  ]
+}

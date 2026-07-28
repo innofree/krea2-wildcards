@@ -1,0 +1,586 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase6_random_utility_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase6_random_utility.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 20,
+  "style_count": 20,
+  "image_count": 60,
+  "sheet_count": 2,
+  "modes": {
+    "random_utility": {
+      "case_count": 20,
+      "image_count": 60,
+      "sheet_count": 2,
+      "sheets": [
+        "tests/reports/phase6_random_utility_v1/review/prompt_matrix_random_utility_001.png",
+        "tests/reports/phase6_random_utility_v1/review/prompt_matrix_random_utility_002.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "random_utility",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_random_utility_v1/review/prompt_matrix_random_utility_001.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "random_utility",
+      "sheet_index": 2,
+      "path": "tests/reports/phase6_random_utility_v1/review/prompt_matrix_random_utility_002.png",
+      "case_count": 10,
+      "image_count": 30
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000001",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000001/image_01.png"
+        },
+        {
+          "test_id": "RU000002",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000002/image_01.png"
+        },
+        {
+          "test_id": "RU000003",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000004",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000004/image_01.png"
+        },
+        {
+          "test_id": "RU000005",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000005/image_01.png"
+        },
+        {
+          "test_id": "RU000006",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_vertical_heroic_particle_drift_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000007",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000007/image_01.png"
+        },
+        {
+          "test_id": "RU000008",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000008/image_01.png"
+        },
+        {
+          "test_id": "RU000009",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_centered_emblematic_floral_trace_complete_signature",
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000010",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000010/image_01.png"
+        },
+        {
+          "test_id": "RU000011",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000011/image_01.png"
+        },
+        {
+          "test_id": "RU000012",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_crisp_graphic_vertical_heroic_floral_trace_complete_signature",
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000013",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000013/image_01.png"
+        },
+        {
+          "test_id": "RU000014",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000014/image_01.png"
+        },
+        {
+          "test_id": "RU000015",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "random_utility_006",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_luminous_glaze_layered_intimate_textile_echo_complete_signature",
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000016",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000016/image_01.png"
+        },
+        {
+          "test_id": "RU000017",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000017/image_01.png"
+        },
+        {
+          "test_id": "RU000018",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "random_utility_007",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_vertical_heroic_textile_echo_complete_signature",
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000019",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000019/image_01.png"
+        },
+        {
+          "test_id": "RU000020",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000020/image_01.png"
+        },
+        {
+          "test_id": "RU000021",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000021/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "random_utility_008",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_broad_painterly_vertical_heroic_textile_echo_complete_signature",
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000022",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000022/image_01.png"
+        },
+        {
+          "test_id": "RU000023",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000023/image_01.png"
+        },
+        {
+          "test_id": "RU000024",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000024/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "random_utility_009",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_layered_intimate_geometric_inset_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000025",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000025/image_01.png"
+        },
+        {
+          "test_id": "RU000026",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000026/image_01.png"
+        },
+        {
+          "test_id": "RU000027",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000027/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "random_utility_010",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_angular_architectural_rounded_soft_narrow_focused_balanced_narrow_deep_jewel_soft_two_step_centered_emblematic_particle_drift_complete_signature",
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000028",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000028/image_01.png"
+        },
+        {
+          "test_id": "RU000029",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000029/image_01.png"
+        },
+        {
+          "test_id": "RU000030",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000030/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "random_utility_011",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_crisp_graphic_centered_emblematic_particle_drift_complete_signature",
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000031",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000031/image_01.png"
+        },
+        {
+          "test_id": "RU000032",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000032/image_01.png"
+        },
+        {
+          "test_id": "RU000033",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000033/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "random_utility_012",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_spacious_asymmetric_particle_drift_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000034",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000034/image_01.png"
+        },
+        {
+          "test_id": "RU000035",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000035/image_01.png"
+        },
+        {
+          "test_id": "RU000036",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000036/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "random_utility_013",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_soft_two_step_vertical_heroic_textile_echo_complete_signature",
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000037",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000037/image_01.png"
+        },
+        {
+          "test_id": "RU000038",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000038/image_01.png"
+        },
+        {
+          "test_id": "RU000039",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000039/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "random_utility_014",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_crisp_graphic_spacious_asymmetric_floral_trace_complete_signature",
+        "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000040",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000040/image_01.png"
+        },
+        {
+          "test_id": "RU000041",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000041/image_01.png"
+        },
+        {
+          "test_id": "RU000042",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000042/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "random_utility_015",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_rounded_continuous_tapered_high_rounded_radial_broad_athletic_sunlit_earth_velvety_diffuse_centered_emblematic_particle_drift_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000043",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000043/image_01.png"
+        },
+        {
+          "test_id": "RU000044",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000044/image_01.png"
+        },
+        {
+          "test_id": "RU000045",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000045/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "random_utility_016",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_layered_intimate_geometric_inset_complete_signature",
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000046",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000046/image_01.png"
+        },
+        {
+          "test_id": "RU000047",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000047/image_01.png"
+        },
+        {
+          "test_id": "RU000048",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000048/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "random_utility_017",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_dry_broken_angular_planar_layered_large_broad_athletic_sunlit_earth_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000049",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000049/image_01.png"
+        },
+        {
+          "test_id": "RU000050",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000050/image_01.png"
+        },
+        {
+          "test_id": "RU000051",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000051/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "random_utility_018",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_broad_painterly_centered_emblematic_geometric_inset_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000052",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000052/image_01.png"
+        },
+        {
+          "test_id": "RU000053",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000053/image_01.png"
+        },
+        {
+          "test_id": "RU000054",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000054/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "random_utility_019",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_dry_broken_compact_oval_almond_deep_balanced_narrow_sunlit_earth_velvety_diffuse_layered_intimate_floral_trace_complete_signature",
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000055",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000055/image_01.png"
+        },
+        {
+          "test_id": "RU000056",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000056/image_01.png"
+        },
+        {
+          "test_id": "RU000057",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000057/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "random_utility_020",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_spacious_asymmetric_particle_drift_complete_signature",
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "RU000058",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000058/image_01.png"
+        },
+        {
+          "test_id": "RU000059",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000059/image_01.png"
+        },
+        {
+          "test_id": "RU000060",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_random_utility_v1/runs/RU000060/image_01.png"
+        }
+      ]
+    }
+  ]
+}

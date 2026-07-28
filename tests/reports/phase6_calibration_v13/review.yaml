@@ -1,0 +1,312 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/phase6_calibration_v13/review_part_a.yaml
+  - tests/reports/phase6_calibration_v13/review_part_b.yaml
+  - tests/reports/phase6_calibration_v13/review_part_c.yaml
+styles:
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      All three seeds preserve the warm-cool crossed beam benchmark with complete adult figure and crisp
+      diagonal light geometry.
+    recommendation: testing
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Camera/signature pairing keeps decorative signature language and side-view composition readable
+      with moderate stability.
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_003: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_004: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Ornamental frame, red-blue garment divisions, and adult silhouette remain legible with conservative
+      face-quality scoring.
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_006: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_007: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+    recommendation: testing
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_008: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+    recommendation: testing
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_009: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+    recommendation: testing
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_010: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+    recommendation: testing
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_011: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+    recommendation: testing
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_012: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+    recommendation: testing
+  random_utility_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_013: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+    recommendation: testing
+  random_utility_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_014: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+    recommendation: testing
+  random_utility_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_015: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+    recommendation: testing
+  random_utility_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_016: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+    recommendation: testing
+  random_utility_005:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_017: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+    recommendation: testing
+  single_axis_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_018: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing
+  single_axis_camera_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_019: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_020: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_021: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_022: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing
+  single_axis_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_023: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+    recommendation: testing

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000069",
+  "style_id": "single_axis_pose_007",
+  "label": "single_axis_pose_007",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "7e113b10-6fad-411a-adbe-f8429f77a4bc",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a measured walking pause with one foot forward and the trailing heel lightly lifted, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "77a99b11d9cdd29fac5ad83541a69ff625b1d35a1f076510e2dd0e1b8d855f39",
+  "workflow_sha256": "67dcf37241fcfe9b5b36ea9353db891e160a8b511b6af67d1d88e8cac85fae1c",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_measured_walking_pause_open_palms_extended_lifted_attentive_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "9a129095488cfc4eac57edd56dbf218c57cd7a1b17557fac7a673bd0327005ad",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

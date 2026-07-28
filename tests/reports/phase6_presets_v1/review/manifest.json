@@ -1,0 +1,2710 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase6_presets_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase6_presets.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 100,
+  "style_count": 100,
+  "image_count": 300,
+  "sheet_count": 10,
+  "modes": {
+    "preset_audit": {
+      "case_count": 100,
+      "image_count": 300,
+      "sheet_count": 10,
+      "sheets": [
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_001.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_002.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_003.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_004.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_005.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_006.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_007.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_008.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_009.png",
+        "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_010.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "preset_audit",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_001.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 2,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_002.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 3,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_003.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 4,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_004.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 5,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_005.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 6,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_006.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 7,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_007.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 8,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_008.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 9,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_009.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 10,
+      "path": "tests/reports/phase6_presets_v1/review/prompt_matrix_preset_audit_010.png",
+      "case_count": 10,
+      "image_count": 30
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000001",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000001/image_01.png"
+        },
+        {
+          "test_id": "PA000002",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000002/image_01.png"
+        },
+        {
+          "test_id": "PA000003",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000004",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000004/image_01.png"
+        },
+        {
+          "test_id": "PA000005",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000005/image_01.png"
+        },
+        {
+          "test_id": "PA000006",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000007",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000007/image_01.png"
+        },
+        {
+          "test_id": "PA000008",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000008/image_01.png"
+        },
+        {
+          "test_id": "PA000009",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000010",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000010/image_01.png"
+        },
+        {
+          "test_id": "PA000011",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000011/image_01.png"
+        },
+        {
+          "test_id": "PA000012",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000013",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000013/image_01.png"
+        },
+        {
+          "test_id": "PA000014",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000014/image_01.png"
+        },
+        {
+          "test_id": "PA000015",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "preset_audit_006",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000016",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000016/image_01.png"
+        },
+        {
+          "test_id": "PA000017",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000017/image_01.png"
+        },
+        {
+          "test_id": "PA000018",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "preset_audit_007",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000019",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000019/image_01.png"
+        },
+        {
+          "test_id": "PA000020",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000020/image_01.png"
+        },
+        {
+          "test_id": "PA000021",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000021/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "preset_audit_008",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000022",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000022/image_01.png"
+        },
+        {
+          "test_id": "PA000023",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000023/image_01.png"
+        },
+        {
+          "test_id": "PA000024",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000024/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "preset_audit_009",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000025",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000025/image_01.png"
+        },
+        {
+          "test_id": "PA000026",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000026/image_01.png"
+        },
+        {
+          "test_id": "PA000027",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000027/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "preset_audit_010",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000028",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000028/image_01.png"
+        },
+        {
+          "test_id": "PA000029",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000029/image_01.png"
+        },
+        {
+          "test_id": "PA000030",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000030/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "preset_audit_011",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000031",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000031/image_01.png"
+        },
+        {
+          "test_id": "PA000032",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000032/image_01.png"
+        },
+        {
+          "test_id": "PA000033",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000033/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "preset_audit_012",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000034",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000034/image_01.png"
+        },
+        {
+          "test_id": "PA000035",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000035/image_01.png"
+        },
+        {
+          "test_id": "PA000036",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000036/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "preset_audit_013",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000037",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000037/image_01.png"
+        },
+        {
+          "test_id": "PA000038",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000038/image_01.png"
+        },
+        {
+          "test_id": "PA000039",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000039/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "preset_audit_014",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000040",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000040/image_01.png"
+        },
+        {
+          "test_id": "PA000041",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000041/image_01.png"
+        },
+        {
+          "test_id": "PA000042",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000042/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "preset_audit_015",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000043",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000043/image_01.png"
+        },
+        {
+          "test_id": "PA000044",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000044/image_01.png"
+        },
+        {
+          "test_id": "PA000045",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000045/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "preset_audit_016",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000046",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000046/image_01.png"
+        },
+        {
+          "test_id": "PA000047",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000047/image_01.png"
+        },
+        {
+          "test_id": "PA000048",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000048/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "preset_audit_017",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000049",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000049/image_01.png"
+        },
+        {
+          "test_id": "PA000050",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000050/image_01.png"
+        },
+        {
+          "test_id": "PA000051",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000051/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "preset_audit_018",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000052",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000052/image_01.png"
+        },
+        {
+          "test_id": "PA000053",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000053/image_01.png"
+        },
+        {
+          "test_id": "PA000054",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000054/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "preset_audit_019",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000055",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000055/image_01.png"
+        },
+        {
+          "test_id": "PA000056",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000056/image_01.png"
+        },
+        {
+          "test_id": "PA000057",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000057/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "preset_audit_020",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000058",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000058/image_01.png"
+        },
+        {
+          "test_id": "PA000059",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000059/image_01.png"
+        },
+        {
+          "test_id": "PA000060",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000060/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_021",
+      "style_id": "preset_audit_021",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000061",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000061/image_01.png"
+        },
+        {
+          "test_id": "PA000062",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000062/image_01.png"
+        },
+        {
+          "test_id": "PA000063",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000063/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_022",
+      "style_id": "preset_audit_022",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000064",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000064/image_01.png"
+        },
+        {
+          "test_id": "PA000065",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000065/image_01.png"
+        },
+        {
+          "test_id": "PA000066",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000066/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_023",
+      "style_id": "preset_audit_023",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000067",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000067/image_01.png"
+        },
+        {
+          "test_id": "PA000068",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000068/image_01.png"
+        },
+        {
+          "test_id": "PA000069",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000069/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_024",
+      "style_id": "preset_audit_024",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000070",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000070/image_01.png"
+        },
+        {
+          "test_id": "PA000071",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000071/image_01.png"
+        },
+        {
+          "test_id": "PA000072",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000072/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_025",
+      "style_id": "preset_audit_025",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000073",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000073/image_01.png"
+        },
+        {
+          "test_id": "PA000074",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000074/image_01.png"
+        },
+        {
+          "test_id": "PA000075",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000075/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_026",
+      "style_id": "preset_audit_026",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000076",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000076/image_01.png"
+        },
+        {
+          "test_id": "PA000077",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000077/image_01.png"
+        },
+        {
+          "test_id": "PA000078",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000078/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_027",
+      "style_id": "preset_audit_027",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000079",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000079/image_01.png"
+        },
+        {
+          "test_id": "PA000080",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000080/image_01.png"
+        },
+        {
+          "test_id": "PA000081",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000081/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_028",
+      "style_id": "preset_audit_028",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000082",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000082/image_01.png"
+        },
+        {
+          "test_id": "PA000083",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000083/image_01.png"
+        },
+        {
+          "test_id": "PA000084",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000084/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_029",
+      "style_id": "preset_audit_029",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000085",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000085/image_01.png"
+        },
+        {
+          "test_id": "PA000086",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000086/image_01.png"
+        },
+        {
+          "test_id": "PA000087",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000087/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_030",
+      "style_id": "preset_audit_030",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000088",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000088/image_01.png"
+        },
+        {
+          "test_id": "PA000089",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000089/image_01.png"
+        },
+        {
+          "test_id": "PA000090",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000090/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_031",
+      "style_id": "preset_audit_031",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000091",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000091/image_01.png"
+        },
+        {
+          "test_id": "PA000092",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000092/image_01.png"
+        },
+        {
+          "test_id": "PA000093",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000093/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_032",
+      "style_id": "preset_audit_032",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000094",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000094/image_01.png"
+        },
+        {
+          "test_id": "PA000095",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000095/image_01.png"
+        },
+        {
+          "test_id": "PA000096",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000096/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_033",
+      "style_id": "preset_audit_033",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000097",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000097/image_01.png"
+        },
+        {
+          "test_id": "PA000098",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000098/image_01.png"
+        },
+        {
+          "test_id": "PA000099",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000099/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_034",
+      "style_id": "preset_audit_034",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000100",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000100/image_01.png"
+        },
+        {
+          "test_id": "PA000101",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000101/image_01.png"
+        },
+        {
+          "test_id": "PA000102",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000102/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_035",
+      "style_id": "preset_audit_035",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000103",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000103/image_01.png"
+        },
+        {
+          "test_id": "PA000104",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000104/image_01.png"
+        },
+        {
+          "test_id": "PA000105",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000105/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_036",
+      "style_id": "preset_audit_036",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000106",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000106/image_01.png"
+        },
+        {
+          "test_id": "PA000107",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000107/image_01.png"
+        },
+        {
+          "test_id": "PA000108",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000108/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_037",
+      "style_id": "preset_audit_037",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000109",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000109/image_01.png"
+        },
+        {
+          "test_id": "PA000110",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000110/image_01.png"
+        },
+        {
+          "test_id": "PA000111",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000111/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_038",
+      "style_id": "preset_audit_038",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000112",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000112/image_01.png"
+        },
+        {
+          "test_id": "PA000113",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000113/image_01.png"
+        },
+        {
+          "test_id": "PA000114",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000114/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_039",
+      "style_id": "preset_audit_039",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000115",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000115/image_01.png"
+        },
+        {
+          "test_id": "PA000116",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000116/image_01.png"
+        },
+        {
+          "test_id": "PA000117",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000117/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_040",
+      "style_id": "preset_audit_040",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000118",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000118/image_01.png"
+        },
+        {
+          "test_id": "PA000119",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000119/image_01.png"
+        },
+        {
+          "test_id": "PA000120",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000120/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_041",
+      "style_id": "preset_audit_041",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000121",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000121/image_01.png"
+        },
+        {
+          "test_id": "PA000122",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000122/image_01.png"
+        },
+        {
+          "test_id": "PA000123",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000123/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_042",
+      "style_id": "preset_audit_042",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000124",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000124/image_01.png"
+        },
+        {
+          "test_id": "PA000125",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000125/image_01.png"
+        },
+        {
+          "test_id": "PA000126",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000126/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_043",
+      "style_id": "preset_audit_043",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000127",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000127/image_01.png"
+        },
+        {
+          "test_id": "PA000128",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000128/image_01.png"
+        },
+        {
+          "test_id": "PA000129",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000129/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_044",
+      "style_id": "preset_audit_044",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000130",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000130/image_01.png"
+        },
+        {
+          "test_id": "PA000131",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000131/image_01.png"
+        },
+        {
+          "test_id": "PA000132",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000132/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_045",
+      "style_id": "preset_audit_045",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000133",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000133/image_01.png"
+        },
+        {
+          "test_id": "PA000134",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000134/image_01.png"
+        },
+        {
+          "test_id": "PA000135",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000135/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_046",
+      "style_id": "preset_audit_046",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000136",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000136/image_01.png"
+        },
+        {
+          "test_id": "PA000137",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000137/image_01.png"
+        },
+        {
+          "test_id": "PA000138",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000138/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_047",
+      "style_id": "preset_audit_047",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000139",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000139/image_01.png"
+        },
+        {
+          "test_id": "PA000140",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000140/image_01.png"
+        },
+        {
+          "test_id": "PA000141",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000141/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_048",
+      "style_id": "preset_audit_048",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000142",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000142/image_01.png"
+        },
+        {
+          "test_id": "PA000143",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000143/image_01.png"
+        },
+        {
+          "test_id": "PA000144",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000144/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_049",
+      "style_id": "preset_audit_049",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000145",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000145/image_01.png"
+        },
+        {
+          "test_id": "PA000146",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000146/image_01.png"
+        },
+        {
+          "test_id": "PA000147",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000147/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_050",
+      "style_id": "preset_audit_050",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000148",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000148/image_01.png"
+        },
+        {
+          "test_id": "PA000149",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000149/image_01.png"
+        },
+        {
+          "test_id": "PA000150",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000150/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_051",
+      "style_id": "preset_audit_051",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000151",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000151/image_01.png"
+        },
+        {
+          "test_id": "PA000152",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000152/image_01.png"
+        },
+        {
+          "test_id": "PA000153",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000153/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_052",
+      "style_id": "preset_audit_052",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000154",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000154/image_01.png"
+        },
+        {
+          "test_id": "PA000155",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000155/image_01.png"
+        },
+        {
+          "test_id": "PA000156",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000156/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_053",
+      "style_id": "preset_audit_053",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000157",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000157/image_01.png"
+        },
+        {
+          "test_id": "PA000158",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000158/image_01.png"
+        },
+        {
+          "test_id": "PA000159",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000159/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_054",
+      "style_id": "preset_audit_054",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000160",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000160/image_01.png"
+        },
+        {
+          "test_id": "PA000161",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000161/image_01.png"
+        },
+        {
+          "test_id": "PA000162",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000162/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_055",
+      "style_id": "preset_audit_055",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000163",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000163/image_01.png"
+        },
+        {
+          "test_id": "PA000164",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000164/image_01.png"
+        },
+        {
+          "test_id": "PA000165",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000165/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_056",
+      "style_id": "preset_audit_056",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000166",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000166/image_01.png"
+        },
+        {
+          "test_id": "PA000167",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000167/image_01.png"
+        },
+        {
+          "test_id": "PA000168",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000168/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_057",
+      "style_id": "preset_audit_057",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000169",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000169/image_01.png"
+        },
+        {
+          "test_id": "PA000170",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000170/image_01.png"
+        },
+        {
+          "test_id": "PA000171",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000171/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_058",
+      "style_id": "preset_audit_058",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000172",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000172/image_01.png"
+        },
+        {
+          "test_id": "PA000173",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000173/image_01.png"
+        },
+        {
+          "test_id": "PA000174",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000174/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_059",
+      "style_id": "preset_audit_059",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000175",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000175/image_01.png"
+        },
+        {
+          "test_id": "PA000176",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000176/image_01.png"
+        },
+        {
+          "test_id": "PA000177",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000177/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_060",
+      "style_id": "preset_audit_060",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000178",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000178/image_01.png"
+        },
+        {
+          "test_id": "PA000179",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000179/image_01.png"
+        },
+        {
+          "test_id": "PA000180",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000180/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_061",
+      "style_id": "preset_audit_061",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000181",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000181/image_01.png"
+        },
+        {
+          "test_id": "PA000182",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000182/image_01.png"
+        },
+        {
+          "test_id": "PA000183",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000183/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_062",
+      "style_id": "preset_audit_062",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000184",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000184/image_01.png"
+        },
+        {
+          "test_id": "PA000185",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000185/image_01.png"
+        },
+        {
+          "test_id": "PA000186",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000186/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_063",
+      "style_id": "preset_audit_063",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_waist_up_natural_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000187",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000187/image_01.png"
+        },
+        {
+          "test_id": "PA000188",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000188/image_01.png"
+        },
+        {
+          "test_id": "PA000189",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000189/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_064",
+      "style_id": "preset_audit_064",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000190",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000190/image_01.png"
+        },
+        {
+          "test_id": "PA000191",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000191/image_01.png"
+        },
+        {
+          "test_id": "PA000192",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000192/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_065",
+      "style_id": "preset_audit_065",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000193",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000193/image_01.png"
+        },
+        {
+          "test_id": "PA000194",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000194/image_01.png"
+        },
+        {
+          "test_id": "PA000195",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000195/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_066",
+      "style_id": "preset_audit_066",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000196",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000196/image_01.png"
+        },
+        {
+          "test_id": "PA000197",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000197/image_01.png"
+        },
+        {
+          "test_id": "PA000198",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000198/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_067",
+      "style_id": "preset_audit_067",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000199",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000199/image_01.png"
+        },
+        {
+          "test_id": "PA000200",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000200/image_01.png"
+        },
+        {
+          "test_id": "PA000201",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000201/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_068",
+      "style_id": "preset_audit_068",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000202",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000202/image_01.png"
+        },
+        {
+          "test_id": "PA000203",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000203/image_01.png"
+        },
+        {
+          "test_id": "PA000204",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000204/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_069",
+      "style_id": "preset_audit_069",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000205",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000205/image_01.png"
+        },
+        {
+          "test_id": "PA000206",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000206/image_01.png"
+        },
+        {
+          "test_id": "PA000207",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000207/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_070",
+      "style_id": "preset_audit_070",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000208",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000208/image_01.png"
+        },
+        {
+          "test_id": "PA000209",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000209/image_01.png"
+        },
+        {
+          "test_id": "PA000210",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000210/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_071",
+      "style_id": "preset_audit_071",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000211",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000211/image_01.png"
+        },
+        {
+          "test_id": "PA000212",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000212/image_01.png"
+        },
+        {
+          "test_id": "PA000213",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000213/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_072",
+      "style_id": "preset_audit_072",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000214",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000214/image_01.png"
+        },
+        {
+          "test_id": "PA000215",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000215/image_01.png"
+        },
+        {
+          "test_id": "PA000216",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000216/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_073",
+      "style_id": "preset_audit_073",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000217",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000217/image_01.png"
+        },
+        {
+          "test_id": "PA000218",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000218/image_01.png"
+        },
+        {
+          "test_id": "PA000219",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000219/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_074",
+      "style_id": "preset_audit_074",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000220",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000220/image_01.png"
+        },
+        {
+          "test_id": "PA000221",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000221/image_01.png"
+        },
+        {
+          "test_id": "PA000222",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000222/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_075",
+      "style_id": "preset_audit_075",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000223",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000223/image_01.png"
+        },
+        {
+          "test_id": "PA000224",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000224/image_01.png"
+        },
+        {
+          "test_id": "PA000225",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000225/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_076",
+      "style_id": "preset_audit_076",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000226",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000226/image_01.png"
+        },
+        {
+          "test_id": "PA000227",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000227/image_01.png"
+        },
+        {
+          "test_id": "PA000228",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000228/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_077",
+      "style_id": "preset_audit_077",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000229",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000229/image_01.png"
+        },
+        {
+          "test_id": "PA000230",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000230/image_01.png"
+        },
+        {
+          "test_id": "PA000231",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000231/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_078",
+      "style_id": "preset_audit_078",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000232",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000232/image_01.png"
+        },
+        {
+          "test_id": "PA000233",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000233/image_01.png"
+        },
+        {
+          "test_id": "PA000234",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000234/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_079",
+      "style_id": "preset_audit_079",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000235",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000235/image_01.png"
+        },
+        {
+          "test_id": "PA000236",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000236/image_01.png"
+        },
+        {
+          "test_id": "PA000237",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000237/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_080",
+      "style_id": "preset_audit_080",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000238",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000238/image_01.png"
+        },
+        {
+          "test_id": "PA000239",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000239/image_01.png"
+        },
+        {
+          "test_id": "PA000240",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000240/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_081",
+      "style_id": "preset_audit_081",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000241",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000241/image_01.png"
+        },
+        {
+          "test_id": "PA000242",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000242/image_01.png"
+        },
+        {
+          "test_id": "PA000243",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000243/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_082",
+      "style_id": "preset_audit_082",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000244",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000244/image_01.png"
+        },
+        {
+          "test_id": "PA000245",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000245/image_01.png"
+        },
+        {
+          "test_id": "PA000246",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000246/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_083",
+      "style_id": "preset_audit_083",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000247",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000247/image_01.png"
+        },
+        {
+          "test_id": "PA000248",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000248/image_01.png"
+        },
+        {
+          "test_id": "PA000249",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000249/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_084",
+      "style_id": "preset_audit_084",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000250",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000250/image_01.png"
+        },
+        {
+          "test_id": "PA000251",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000251/image_01.png"
+        },
+        {
+          "test_id": "PA000252",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000252/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_085",
+      "style_id": "preset_audit_085",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000253",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000253/image_01.png"
+        },
+        {
+          "test_id": "PA000254",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000254/image_01.png"
+        },
+        {
+          "test_id": "PA000255",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000255/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_086",
+      "style_id": "preset_audit_086",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000256",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000256/image_01.png"
+        },
+        {
+          "test_id": "PA000257",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000257/image_01.png"
+        },
+        {
+          "test_id": "PA000258",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000258/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_087",
+      "style_id": "preset_audit_087",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000259",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000259/image_01.png"
+        },
+        {
+          "test_id": "PA000260",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000260/image_01.png"
+        },
+        {
+          "test_id": "PA000261",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000261/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_088",
+      "style_id": "preset_audit_088",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000262",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000262/image_01.png"
+        },
+        {
+          "test_id": "PA000263",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000263/image_01.png"
+        },
+        {
+          "test_id": "PA000264",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000264/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_089",
+      "style_id": "preset_audit_089",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000265",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000265/image_01.png"
+        },
+        {
+          "test_id": "PA000266",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000266/image_01.png"
+        },
+        {
+          "test_id": "PA000267",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000267/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_090",
+      "style_id": "preset_audit_090",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000268",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000268/image_01.png"
+        },
+        {
+          "test_id": "PA000269",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000269/image_01.png"
+        },
+        {
+          "test_id": "PA000270",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000270/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_091",
+      "style_id": "preset_audit_091",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000271",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000271/image_01.png"
+        },
+        {
+          "test_id": "PA000272",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000272/image_01.png"
+        },
+        {
+          "test_id": "PA000273",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000273/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_092",
+      "style_id": "preset_audit_092",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000274",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000274/image_01.png"
+        },
+        {
+          "test_id": "PA000275",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000275/image_01.png"
+        },
+        {
+          "test_id": "PA000276",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000276/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_093",
+      "style_id": "preset_audit_093",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000277",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000277/image_01.png"
+        },
+        {
+          "test_id": "PA000278",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000278/image_01.png"
+        },
+        {
+          "test_id": "PA000279",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000279/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_094",
+      "style_id": "preset_audit_094",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000280",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000280/image_01.png"
+        },
+        {
+          "test_id": "PA000281",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000281/image_01.png"
+        },
+        {
+          "test_id": "PA000282",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000282/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_095",
+      "style_id": "preset_audit_095",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000283",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000283/image_01.png"
+        },
+        {
+          "test_id": "PA000284",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000284/image_01.png"
+        },
+        {
+          "test_id": "PA000285",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000285/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_096",
+      "style_id": "preset_audit_096",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000286",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000286/image_01.png"
+        },
+        {
+          "test_id": "PA000287",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000287/image_01.png"
+        },
+        {
+          "test_id": "PA000288",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000288/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_097",
+      "style_id": "preset_audit_097",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000289",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000289/image_01.png"
+        },
+        {
+          "test_id": "PA000290",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000290/image_01.png"
+        },
+        {
+          "test_id": "PA000291",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000291/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_098",
+      "style_id": "preset_audit_098",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000292",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000292/image_01.png"
+        },
+        {
+          "test_id": "PA000293",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000293/image_01.png"
+        },
+        {
+          "test_id": "PA000294",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000294/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_099",
+      "style_id": "preset_audit_099",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000295",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000295/image_01.png"
+        },
+        {
+          "test_id": "PA000296",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000296/image_01.png"
+        },
+        {
+          "test_id": "PA000297",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000297/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_100",
+      "style_id": "preset_audit_100",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "PA000298",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000298/image_01.png"
+        },
+        {
+          "test_id": "PA000299",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000299/image_01.png"
+        },
+        {
+          "test_id": "PA000300",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_presets_v1/runs/PA000300/image_01.png"
+        }
+      ]
+    }
+  ]
+}

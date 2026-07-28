@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000113",
+  "style_id": "single_axis_lighting_006",
+  "label": "single_axis_lighting_006",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "f0c05630-a492-4d54-9cef-ff4366675787",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a focused beam with a readable pool of light and protected surrounding values, arriving from high at one side with clear but gentle downward shadow direction. The image uses crisp controlled shadows with clean shapes and readable reflected light and neutral daylight balance with accurate skin undertones and quiet fabric color. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "ce4a427470ba273670bfdca1ec9bb949f6ba251f6de56712b360b6152940707f",
+  "workflow_sha256": "7a426f13ce7eefda04a54677d7bee13b04e08e1cced38dd0be4d87b4358794d3",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_focused_beam_high_side_crisp_controlled_neutral_daylight_complete_lighting",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "9b6847ca6e81e9e9ac1244a3efff92540ce5a0375064785da872184e70127b73",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000054",
+  "style_id": "pairwise_style_pack_pose_002",
+  "label": "pairwise_style_pack_pose_002",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "5015b772-e01f-4631-aca8-cd20dfed232f",
+  "resolved_prompt": "One adult full-length editorial photograph: thick chalk strokes and loose dry dust across the backdrop; two huge diagonal light slabs crossed behind the adult; amber and blue split across subject and set; a deep-black surround and one narrow light path; tack-sharp face and hands, defocused outer set border. Keep one human only, realistic skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks. Combine it coherently with this second visual direction: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "464d1389cb68c46054c4321178292553bf16e50faa4a56bfa996656a0a69ad31",
+  "workflow_sha256": "3bd00f6834e21f4b273c96d0ef4c754b04bc21ae4cd23018cc003d1d1895910a",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_selective_taper_complete_style",
+    "right_item": "pose_frontal_even_weight_open_palms_extended_lowered_reflective_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f20fd85eab254921af88a0493dd6baef7231a67dea2d0a2cf1bf84c91e113762",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000051",
+  "style_id": "single_axis_pose_001",
+  "label": "single_axis_pose_001",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "8e3f35ad-6045-4df8-85f5-3b7333862bd1",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with one hand near the collar while the other anchors gently at the hip. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "c5d1b6462415bc1f82733dbe8f9bf1b1df5da6fdd39555520d27ccc477bce2e7",
+  "workflow_sha256": "0a0abab54fc8df3dd098e4a8df0ae6e48939e8ab5d42e2d35dd3aafd53f72735",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "594ce52393e345193aba50a8d478eca11ad0a27d3f3ef53300db8b3094fadbce",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

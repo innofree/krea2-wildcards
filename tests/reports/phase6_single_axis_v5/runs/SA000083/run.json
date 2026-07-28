@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000083",
+  "style_id": "single_axis_pose_012",
+  "label": "single_axis_pose_012",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "9e0233ac-5768-4457-8dfb-e3b0403fcf11",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a three-quarter standing turn with the torso open and the far shoulder gently receding, with one hand resting at the waist while the other hangs open and fully readable. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "9c5e5a07d0dc72ae52286ff4ef64afc321ad439ae81c1ff9fd5fce24807dd5b9",
+  "workflow_sha256": "a3915157832d5af0612f389d4a0cc59f2ad8da38494e363b3d8697832ab58dd9",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_standing_three_quarter_waist_and_open_three_quarter_near_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "97c5173ed387fefed00696fa7582146a3c33b623a586f53abb2ffe51d81a4058",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

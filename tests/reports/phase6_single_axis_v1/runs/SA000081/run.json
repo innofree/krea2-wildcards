@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000081",
+  "style_id": "single_axis_pose_011",
+  "label": "single_axis_pose_011",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "af68af93-f6a4-4dc9-a3cc-49ab22928a35",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a three-quarter standing turn with the torso open and the far shoulder gently receding, with both hands lifted near the chest with relaxed palms and distinct finger spacing. The head and gaze are turned to the side with the gaze directed toward a distant point in the scene, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "6dbe29bce4b27d4d6f2f936339404ddb3b15552058ea95edd36547d1ca473e00",
+  "workflow_sha256": "2d1b11ee244ed7b22675f669498143bdcb94b5af6cfed7222d6ae817e8e03198",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_standing_three_quarter_hands_near_chest_side_distant_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "fb7eb672a559b67a802ebf3d31267902aeefa10d789aa7342702d7931fd95d97",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

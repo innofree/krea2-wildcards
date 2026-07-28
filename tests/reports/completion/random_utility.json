@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "complete": true,
+  "matrix_jobs": 60,
+  "distinct_seeds": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "metrics": {
+    "prompt_adherence": 4.0,
+    "style_fidelity": 4.0,
+    "stability": 4.0,
+    "character_quality": 4.0,
+    "composition_quality": 4.0,
+    "compatibility": 4.0,
+    "distinctiveness": 4.0,
+    "prompt_efficiency": 4.0
+  },
+  "prompt_profile_sha256": "2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+  "report_type": "random_utility",
+  "sample_count": 20,
+  "usable_count": 20,
+  "utility_rate": 1.0,
+  "critical_failures": 0,
+  "matrix_path": "tests/prompt_matrix/phase6_random_utility.jsonl",
+  "matrix_sha256": "7d2e8adaab22605e64a2342f4ec905a3378df62b023a86557d9676fd17cac2ac",
+  "scored_path": "tests/reports/phase6_random_utility_v1/scored.csv",
+  "scored_sha256": "b5acaae96ff9f875b31e5d333d0bfdd78a14bb0160d6cb6882b43a85b33cb912"
+}

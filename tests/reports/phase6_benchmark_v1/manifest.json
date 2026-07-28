@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_benchmark.jsonl",
+  "matrix_sha256": "5622d196b9629f15b05b1728b465619de2e34591f79ab59ce5737064a0d19de8",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 5,
+  "completed_count": 5,
+  "style_count": 1,
+  "modes": {
+    "krea2_turbo_benchmark": 5
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003,
+    4004,
+    5005
+  ],
+  "scorecard": "tests/reports/phase6_benchmark_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "KB000001",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 1001,
+      "run": "tests/reports/phase6_benchmark_v1/runs/KB000001/run.json"
+    },
+    {
+      "test_id": "KB000002",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 2002,
+      "run": "tests/reports/phase6_benchmark_v1/runs/KB000002/run.json"
+    },
+    {
+      "test_id": "KB000003",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 3003,
+      "run": "tests/reports/phase6_benchmark_v1/runs/KB000003/run.json"
+    },
+    {
+      "test_id": "KB000004",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 4004,
+      "run": "tests/reports/phase6_benchmark_v1/runs/KB000004/run.json"
+    },
+    {
+      "test_id": "KB000005",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 5005,
+      "run": "tests/reports/phase6_benchmark_v1/runs/KB000005/run.json"
+    }
+  ]
+}

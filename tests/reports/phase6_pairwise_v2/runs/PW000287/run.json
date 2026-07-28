@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000287",
+  "style_id": "pairwise_artist_signature_camera_composition_016",
+  "label": "pairwise_artist_signature_camera_composition_016",
+  "mode": "pairwise",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "147479c1-b625-4114-828a-87f04dc84ae1",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, facial profile, and visible profile eye clearly readable. The second camera direction is the measured axis. Obey its literal crop, side view, field of view, asymmetric placement, and negative-space counterweight. Create a clean hand-drawn two-dimensional editorial illustration. The exact name-free signature controls the visible medium, face, eyes, silhouette, palette, light, composition, and ornament. Make these eight cues bold and unmistakable: line language—flowing pressure-sensitive ribbon contours; face design—a firm jaw and planar cheeks; eye design—narrow dark-rimmed eyes with one catchlight; body design—elongated graceful limbs and tapered hands; palette language—large mineral-blue, ivory, coral, and charcoal fields; light modeling—velvety diffuse values and soft contact shadows; framing language—many large overlapping paper panels clearly visible across the full background behind the figure, expressed in the background while the measured camera controls subject placement; ornament language—repeated textile bands and woven motifs. Draw face and eye details crisply within the full-length figure. Put the ornament on both the garment and outer border. Keep the complete figure in front of every decorative framing element. Combine it coherently with this second visual direction: Photograph an adult subject using wide environmental framing with the adult subject occupying about one third of the image from a mildly lowered camera position that lengthens the stance without distorting the face. The view uses gentle portrait compression with smooth feature spacing and a softly enlarged background and rule-of-thirds placement with open space extending in the direction of the gaze. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—pull the camera far back, keep the complete crown, both shoes, and visible floor below both shoes inside the canvas, place the figure on one vertical third, and limit the complete figure to at most two-thirds of the canvas height.",
+  "resolved_prompt_sha256": "ce267069b6b0eaa55aa7a6ee7dc789f734a53b9e7d285fc127850b6552da776e",
+  "workflow_sha256": "969ff72b472e5702156770e62da417ef9dd4d7fdf031380e9e37c57c164790e2",
+  "factors": {
+    "pair_type": "artist_signature_camera_composition",
+    "left_item": "artist_signature_supple_ribbon_angular_planar_narrow_focused_elongated_graceful_mineral_pastel_velvety_diffuse_layered_intimate_textile_echo_complete_signature",
+    "right_item": "camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "4501ffa97c862ce62ce2337875e2d04a839d4bf417e3feb973828a1aba52688e",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

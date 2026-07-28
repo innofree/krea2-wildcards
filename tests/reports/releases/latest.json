@@ -1,19 +1,24 @@
 {
   "artifacts": [
     {
-      "bytes": 5717,
+      "bytes": 188218,
       "path": "wildcards-manifest.json",
-      "sha256": "e180ced337c1596807d34df25716daee47b0ba666d053c581e5be7eb104d3d85"
+      "sha256": "56fe9be3541b3da22da6eef7bbe13a1b54b4eb566a388d56921ef71267ac2f0c"
     },
     {
-      "bytes": 12530,
+      "bytes": 258341,
+      "path": "wildcards/krea2/artist_signature/modern.yaml",
+      "sha256": "f652cb490ea308034e225fcb05cbdc97b518fe76e1e7115384bbdfb73d3386c0"
+    },
+    {
+      "bytes": 163283,
       "path": "wildcards/krea2/style/complete_pack.yaml",
-      "sha256": "1ab18ddea62c2c6b7f723e5c7826ca374f886777f7686e2e39262208bb6de99a"
+      "sha256": "7901f8b54979950e68e21388ff939b017889cf7e58cfe9343e0e31c0f744285c"
     },
     {
-      "bytes": 12182,
+      "bytes": 409926,
       "path": "build/impact-production/krea2_complete_pack.yaml",
-      "sha256": "af5078e613455b3c214606fd47590cac9fce02eb525bede69597c329903b2f70"
+      "sha256": "d6262965c37dae2322666131dcef98979d65df4858cba57af6ec5220bce4a383"
     }
   ],
   "deployment": {
@@ -23,6 +28,17 @@
   },
   "failed_stage": null,
   "outcomes": [
+    {
+      "argv": [
+        "python3",
+        "scripts/generate_catalog_expansion.py",
+        "catalog/blueprints"
+      ],
+      "kind": "command",
+      "name": "catalog_generation",
+      "returncode": 0,
+      "status": "passed"
+    },
     {
       "argv": [
         "python3",
@@ -54,6 +70,16 @@
       ],
       "kind": "command",
       "name": "catalog_conflicts",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/sync_catalog_v2.py"
+      ],
+      "kind": "command",
+      "name": "catalog_v2_sync",
       "returncode": 0,
       "status": "passed"
     },
@@ -155,7 +181,7 @@
         "python3",
         "scripts/build_impact_yaml.py",
         "--source",
-        "wildcards/krea2/style/complete_pack.yaml",
+        "wildcards",
         "--output",
         "build/impact-production/krea2_complete_pack.yaml"
       ],
@@ -178,56 +204,133 @@
     }
   ],
   "plan_progress": {
-    "complete": false,
+    "complete": true,
     "targets": [
       {
-        "complete": false,
-        "current": 21,
+        "complete": true,
+        "current": 150,
         "id": "approved_art_styles",
-        "remaining": 129,
+        "remaining": 0,
         "target": 150
       },
       {
-        "complete": false,
-        "current": 0,
+        "complete": true,
+        "current": 224,
         "id": "approved_artist_signatures",
-        "remaining": 200,
+        "remaining": 0,
         "target": 200
       },
       {
-        "complete": false,
-        "current": 0,
+        "complete": true,
+        "current": 400,
         "id": "character_design_items",
-        "remaining": 300,
-        "target": 300
+        "remaining": 0,
+        "target": 400
       },
       {
-        "complete": false,
-        "current": 0,
+        "complete": true,
+        "current": 600,
         "id": "pose_camera_items",
-        "remaining": 300,
+        "remaining": 0,
         "target": 300
       },
       {
-        "complete": false,
-        "current": 0,
+        "complete": true,
+        "current": 650,
         "id": "lighting_background_items",
-        "remaining": 300,
+        "remaining": 0,
         "target": 300
       },
       {
-        "complete": false,
-        "current": 0,
+        "complete": true,
+        "current": 200,
         "id": "preset_items",
-        "remaining": 100,
-        "target": 100
+        "remaining": 0,
+        "target": 200
       },
       {
-        "complete": false,
-        "current": 50,
+        "complete": true,
+        "current": 200,
+        "id": "style_pack_items",
+        "remaining": 0,
+        "target": 200
+      },
+      {
+        "complete": true,
+        "current": 300,
+        "id": "artist_signature_items",
+        "remaining": 0,
+        "target": 300
+      },
+      {
+        "complete": true,
+        "current": 150,
+        "id": "media_rendering_items",
+        "remaining": 0,
+        "target": 150
+      },
+      {
+        "complete": true,
+        "current": 300,
+        "id": "linework_coloring_items",
+        "remaining": 0,
+        "target": 300
+      },
+      {
+        "complete": true,
+        "current": 250,
+        "id": "hair_design_items",
+        "remaining": 0,
+        "target": 250
+      },
+      {
+        "complete": true,
+        "current": 500,
+        "id": "fashion_items",
+        "remaining": 0,
+        "target": 500
+      },
+      {
+        "complete": true,
+        "current": 350,
+        "id": "pose_items",
+        "remaining": 0,
+        "target": 350
+      },
+      {
+        "complete": true,
+        "current": 250,
+        "id": "camera_items",
+        "remaining": 0,
+        "target": 250
+      },
+      {
+        "complete": true,
+        "current": 250,
+        "id": "lighting_items",
+        "remaining": 0,
+        "target": 250
+      },
+      {
+        "complete": true,
+        "current": 400,
+        "id": "background_items",
+        "remaining": 0,
+        "target": 400
+      },
+      {
+        "complete": true,
+        "current": 200,
+        "id": "effect_items",
+        "remaining": 0,
+        "target": 200
+      },
+      {
+        "complete": true,
+        "current": 3750,
         "id": "total_library_items",
-        "remaining": 2950,
-        "target": 3000
+        "remaining": 0,
+        "target": 3750
       }
     ]
   },
@@ -235,10 +338,14 @@
     "included_statuses": [
       "approved"
     ],
-    "item_count": 21,
-    "prompt_count": 21
+    "item_count": 374,
+    "prompt_count": 374,
+    "runtime_files": [
+      "krea2/artist_signature/modern.yaml",
+      "krea2/style/complete_pack.yaml"
+    ]
   },
-  "release_id": "28359e15e4d3d1201495",
+  "release_id": "e2f5b178f3de0fdaae58",
   "schema_version": 1,
   "status": "passed"
 }

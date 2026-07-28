@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000105",
+  "style_id": "single_axis_lighting_003",
+  "label": "single_axis_lighting_003",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "b9d7ddd1-ce71-43dd-b9a9-84691f1bde2f",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from the side to sculpt the cheek, neck, and garment folds. The image uses mixed edge quality with soft facial shadows and firmer garment shadows and late golden light with neutral readable shadows and restrained saturation. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "c250fd14f40f3b66208b87329a61ffc21216db4da950c81d750c69e32b66d812",
+  "workflow_sha256": "1f63d542422c5f9ca2dd078803050dd042cebc03aa54a66e984e176ad09c9ef1",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_broad_window_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting",
+    "prompt_profile_sha256": "sha256_ca0d4181c8c6b3a927677867fbdf47f00bbfad1c173c2d87c6aea93ccd97f4bd"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "f80eb2139beabee03247574d6b9104fcb6e55c03cdc92cbab606f8296f591e39",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

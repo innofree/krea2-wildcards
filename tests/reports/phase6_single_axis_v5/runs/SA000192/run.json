@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000192",
+  "style_id": "single_axis_background_016",
+  "label": "single_axis_background_016",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "95a8c204-8b5c-4cae-99a7-99003cf7ace4",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a clean transit concourse with repeated columns, matte flooring, and distant entrances, with repeated forms that reduce gradually in scale and establish an orderly recession, softly diffused ambient air with even visibility across the setting, and warm neutral surroundings with quiet cream, stone, wood, and muted brown relationships. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Build every foreground, middle-distance, horizon, flanking, and repeated vertical feature from non-human architectural or landscape objects such as empty railings, posts, planters, shelves, tree trunks, window mullions, columns, benches, parapets, or wall openings. Keep the measured adult as the only human-shaped figure in the scene. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "ec5b2960c9695ec65210a5231db60e2b15b93007c40467e164baf254c9769766",
+  "workflow_sha256": "c3264f1b18471691e00e932b41af188177aed4b524f65dea4716dbe800652a3d",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "b73a9e839cfb56d9f6c544f8ecca631c9ef9275fe3501a3278b4fae623a4a58a",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

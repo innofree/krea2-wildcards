@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_random_utility.jsonl",
+  "matrix_sha256": "7d2e8adaab22605e64a2342f4ec905a3378df62b023a86557d9676fd17cac2ac",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 60,
+  "completed_count": 60,
+  "style_count": 20,
+  "modes": {
+    "random_utility": 60
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/phase6_random_utility_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "RU000001",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000001/run.json"
+    },
+    {
+      "test_id": "RU000002",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000002/run.json"
+    },
+    {
+      "test_id": "RU000003",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000003/run.json"
+    },
+    {
+      "test_id": "RU000004",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000004/run.json"
+    },
+    {
+      "test_id": "RU000005",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000005/run.json"
+    },
+    {
+      "test_id": "RU000006",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000006/run.json"
+    },
+    {
+      "test_id": "RU000007",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000007/run.json"
+    },
+    {
+      "test_id": "RU000008",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000008/run.json"
+    },
+    {
+      "test_id": "RU000009",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000009/run.json"
+    },
+    {
+      "test_id": "RU000010",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000010/run.json"
+    },
+    {
+      "test_id": "RU000011",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000011/run.json"
+    },
+    {
+      "test_id": "RU000012",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000012/run.json"
+    },
+    {
+      "test_id": "RU000013",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000013/run.json"
+    },
+    {
+      "test_id": "RU000014",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000014/run.json"
+    },
+    {
+      "test_id": "RU000015",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000015/run.json"
+    },
+    {
+      "test_id": "RU000016",
+      "style_id": "random_utility_006",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000016/run.json"
+    },
+    {
+      "test_id": "RU000017",
+      "style_id": "random_utility_006",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000017/run.json"
+    },
+    {
+      "test_id": "RU000018",
+      "style_id": "random_utility_006",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000018/run.json"
+    },
+    {
+      "test_id": "RU000019",
+      "style_id": "random_utility_007",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000019/run.json"
+    },
+    {
+      "test_id": "RU000020",
+      "style_id": "random_utility_007",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000020/run.json"
+    },
+    {
+      "test_id": "RU000021",
+      "style_id": "random_utility_007",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000021/run.json"
+    },
+    {
+      "test_id": "RU000022",
+      "style_id": "random_utility_008",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000022/run.json"
+    },
+    {
+      "test_id": "RU000023",
+      "style_id": "random_utility_008",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000023/run.json"
+    },
+    {
+      "test_id": "RU000024",
+      "style_id": "random_utility_008",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000024/run.json"
+    },
+    {
+      "test_id": "RU000025",
+      "style_id": "random_utility_009",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000025/run.json"
+    },
+    {
+      "test_id": "RU000026",
+      "style_id": "random_utility_009",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000026/run.json"
+    },
+    {
+      "test_id": "RU000027",
+      "style_id": "random_utility_009",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000027/run.json"
+    },
+    {
+      "test_id": "RU000028",
+      "style_id": "random_utility_010",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000028/run.json"
+    },
+    {
+      "test_id": "RU000029",
+      "style_id": "random_utility_010",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000029/run.json"
+    },
+    {
+      "test_id": "RU000030",
+      "style_id": "random_utility_010",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000030/run.json"
+    },
+    {
+      "test_id": "RU000031",
+      "style_id": "random_utility_011",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000031/run.json"
+    },
+    {
+      "test_id": "RU000032",
+      "style_id": "random_utility_011",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000032/run.json"
+    },
+    {
+      "test_id": "RU000033",
+      "style_id": "random_utility_011",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000033/run.json"
+    },
+    {
+      "test_id": "RU000034",
+      "style_id": "random_utility_012",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000034/run.json"
+    },
+    {
+      "test_id": "RU000035",
+      "style_id": "random_utility_012",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000035/run.json"
+    },
+    {
+      "test_id": "RU000036",
+      "style_id": "random_utility_012",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000036/run.json"
+    },
+    {
+      "test_id": "RU000037",
+      "style_id": "random_utility_013",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000037/run.json"
+    },
+    {
+      "test_id": "RU000038",
+      "style_id": "random_utility_013",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000038/run.json"
+    },
+    {
+      "test_id": "RU000039",
+      "style_id": "random_utility_013",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000039/run.json"
+    },
+    {
+      "test_id": "RU000040",
+      "style_id": "random_utility_014",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000040/run.json"
+    },
+    {
+      "test_id": "RU000041",
+      "style_id": "random_utility_014",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000041/run.json"
+    },
+    {
+      "test_id": "RU000042",
+      "style_id": "random_utility_014",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000042/run.json"
+    },
+    {
+      "test_id": "RU000043",
+      "style_id": "random_utility_015",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000043/run.json"
+    },
+    {
+      "test_id": "RU000044",
+      "style_id": "random_utility_015",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000044/run.json"
+    },
+    {
+      "test_id": "RU000045",
+      "style_id": "random_utility_015",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000045/run.json"
+    },
+    {
+      "test_id": "RU000046",
+      "style_id": "random_utility_016",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000046/run.json"
+    },
+    {
+      "test_id": "RU000047",
+      "style_id": "random_utility_016",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000047/run.json"
+    },
+    {
+      "test_id": "RU000048",
+      "style_id": "random_utility_016",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000048/run.json"
+    },
+    {
+      "test_id": "RU000049",
+      "style_id": "random_utility_017",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000049/run.json"
+    },
+    {
+      "test_id": "RU000050",
+      "style_id": "random_utility_017",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000050/run.json"
+    },
+    {
+      "test_id": "RU000051",
+      "style_id": "random_utility_017",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000051/run.json"
+    },
+    {
+      "test_id": "RU000052",
+      "style_id": "random_utility_018",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000052/run.json"
+    },
+    {
+      "test_id": "RU000053",
+      "style_id": "random_utility_018",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000053/run.json"
+    },
+    {
+      "test_id": "RU000054",
+      "style_id": "random_utility_018",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000054/run.json"
+    },
+    {
+      "test_id": "RU000055",
+      "style_id": "random_utility_019",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000055/run.json"
+    },
+    {
+      "test_id": "RU000056",
+      "style_id": "random_utility_019",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000056/run.json"
+    },
+    {
+      "test_id": "RU000057",
+      "style_id": "random_utility_019",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000057/run.json"
+    },
+    {
+      "test_id": "RU000058",
+      "style_id": "random_utility_020",
+      "mode": "random_utility",
+      "seed": 1001,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000058/run.json"
+    },
+    {
+      "test_id": "RU000059",
+      "style_id": "random_utility_020",
+      "mode": "random_utility",
+      "seed": 2002,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000059/run.json"
+    },
+    {
+      "test_id": "RU000060",
+      "style_id": "random_utility_020",
+      "mode": "random_utility",
+      "seed": 3003,
+      "run": "tests/reports/phase6_random_utility_v1/runs/RU000060/run.json"
+    }
+  ]
+}

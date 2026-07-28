@@ -1,0 +1,353 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/phase6_calibration_v11/review_part_a.yaml
+  - tests/reports/phase6_calibration_v11/review_part_b.yaml
+  - tests/reports/phase6_calibration_v11/review_part_c.yaml
+styles:
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      All three seeds preserve the warm-cool crossed beam benchmark with a complete adult figure, crisp
+      diagonal light geometry, dark matte studio spacing, and coherent body proportions.
+    recommendation: testing
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The camera/signature pairing keeps the decorative signature and side-view composition readable;
+      face and crop stability are moderate rather than perfect.
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_003: The pairwise combination keeps both directions visible on one adult subject with stable
+      composition and compatible visual treatment across seeds.
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_004: The pairwise combination keeps both directions visible on one adult subject with stable
+      composition and compatible visual treatment across seeds.
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      The combined pairwise style retains the emblematic ornamental frame, deep red-blue garment divisions,
+      and full adult silhouette; one seed weakens the face but the paired character-design/style direction
+      remains legible.
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_006: The pairwise combination keeps both directions visible on one adult subject with stable
+      composition and compatible visual treatment across seeds.
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_007: The pairwise combination keeps both directions visible on one adult subject with stable
+      composition and compatible visual treatment across seeds.
+    recommendation: testing
+  preset_audit_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_008: The preset scene keeps the requested environment, adult subject, crop family, wardrobe,
+      and lighting coherent across three seeds without critical artifacts.
+    recommendation: testing
+  preset_audit_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_009: The preset scene keeps the requested environment, adult subject, crop family, wardrobe,
+      and lighting coherent across three seeds without critical artifacts.
+    recommendation: testing
+  preset_audit_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_010: The preset scene keeps the requested environment, adult subject, crop family, wardrobe,
+      and lighting coherent across three seeds without critical artifacts.
+    recommendation: testing
+  preset_audit_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_011: The preset scene keeps the requested environment, adult subject, crop family, wardrobe,
+      and lighting coherent across three seeds without critical artifacts.
+    recommendation: testing
+  preset_audit_005:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_012: The preset scene keeps the requested environment, adult subject, crop family, wardrobe,
+      and lighting coherent across three seeds without critical artifacts.
+    recommendation: testing
+  random_utility_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_013: The random utility combination preserves the selected scene setting and name-free signature
+      language with stable palette, motif framing, and one coherent adult subject.
+    recommendation: testing
+  random_utility_002:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_014: The random utility combination preserves the selected scene setting and name-free signature
+      language with stable palette, motif framing, and one coherent adult subject.
+    recommendation: testing
+  random_utility_003:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_015: The random utility combination preserves the selected scene setting and name-free signature
+      language with stable palette, motif framing, and one coherent adult subject.
+    recommendation: testing
+  random_utility_004:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_016: The random utility combination preserves the selected scene setting and name-free signature
+      language with stable palette, motif framing, and one coherent adult subject.
+    recommendation: testing
+  random_utility_005:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_017: The random utility combination preserves the selected scene setting and name-free signature
+      language with stable palette, motif framing, and one coherent adult subject.
+    recommendation: testing
+  single_axis_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_018: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing
+  single_axis_camera_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_019: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_020: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_021: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_022: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing
+  single_axis_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_023: The single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+    recommendation: testing

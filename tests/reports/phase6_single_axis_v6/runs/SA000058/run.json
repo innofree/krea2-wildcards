@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000058",
+  "style_id": "single_axis_pose_004",
+  "label": "single_axis_pose_004",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "cd9ba4db-6e63-478b-ba7c-4d998eb0a76d",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a grounded forward step with a stable pelvis and controlled bend through both knees, with both hands loosely clasped at mid-torso with visible fingers and relaxed wrists. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "056ad60c1a13e7f0e04151d55c544fa5174b0094fb10e62614edfc8bef387364",
+  "workflow_sha256": "5d8f8c4477085b14bf183d5f298d49f94b8fbc4319248b7f7d3cc79056a6e2f9",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_grounded_forward_step_loosely_clasped_three_quarter_near_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "1c7538e2e7d9acecc7b6d8f309ae44b1984a17ab7844ba79dd7aa1071ddd2452",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000072",
+  "style_id": "pairwise_style_pack_pose_008",
+  "label": "pairwise_style_pack_pose_008",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "05020baf-75ff-4910-8b3d-863f02e2a875",
+  "resolved_prompt": "Photorealistic adult editorial treatment: broad clean negative space with only two or three decisive set shapes. Use pale blush, powder blue, warm ivory, and small charcoal anchors, smooth tonal transitions and controlled satin sheen on lit surfaces, upward beams, rising forms, and restrained ceremonial glints, and sharp facial and hand edges tapering into soft peripheral boundaries. Fill the entire backdrop with broad mirror-bright satin folds; keep face and hands sharp while only backdrop edges blur; raise three narrow light beams behind the figure. Combine it coherently with this second visual direction: An adult subject holds a relaxed side-reclining pose with supported weight and a long uninterrupted torso line, with both arms relaxed with clear separation from the torso and naturally curved fingers. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys controlled forward energy carried through the spine and supporting leg. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "6979a50ef42152865ec9ac6f263bf1461907fd2997fa1ec7b20afac5b9a87826",
+  "workflow_sha256": "b75e908ecb5bbc6f7bad38a612c9fcb39e00b0326a5c3790f3dfd1fb5e54acb4",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_selective_taper_complete_style",
+    "right_item": "pose_side_reclining_arms_relaxed_clear_direct_level_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "14c4432d04ac2213b7de59d3f04ade72993405fd29cb2d97c46f027653a35698",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

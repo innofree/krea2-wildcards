@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_calibration_v13.jsonl",
+  "matrix_sha256": "137f34411bb4c222eb50b498eda364394a5c8e7ca84739909c3d3cd3ed8a35f1",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 69,
+  "completed_count": 69,
+  "style_count": 23,
+  "modes": {
+    "krea2_turbo_benchmark": 3,
+    "pairwise": 18,
+    "preset_audit": 15,
+    "random_utility": 15,
+    "single_axis": 18
+  },
+  "seeds": [
+    91001,
+    92002,
+    93003
+  ],
+  "scorecard": "tests/reports/phase6_calibration_v13/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "SA000001",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000001/run.json"
+    },
+    {
+      "test_id": "SA000002",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000002/run.json"
+    },
+    {
+      "test_id": "SA000003",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000003/run.json"
+    },
+    {
+      "test_id": "SA000004",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000004/run.json"
+    },
+    {
+      "test_id": "SA000005",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000005/run.json"
+    },
+    {
+      "test_id": "SA000006",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000006/run.json"
+    },
+    {
+      "test_id": "SA000007",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000007/run.json"
+    },
+    {
+      "test_id": "SA000008",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000008/run.json"
+    },
+    {
+      "test_id": "SA000009",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000009/run.json"
+    },
+    {
+      "test_id": "SA000010",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000010/run.json"
+    },
+    {
+      "test_id": "SA000011",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000011/run.json"
+    },
+    {
+      "test_id": "SA000012",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000012/run.json"
+    },
+    {
+      "test_id": "SA000013",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000013/run.json"
+    },
+    {
+      "test_id": "SA000014",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000014/run.json"
+    },
+    {
+      "test_id": "SA000015",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000015/run.json"
+    },
+    {
+      "test_id": "SA000016",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000016/run.json"
+    },
+    {
+      "test_id": "SA000017",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000017/run.json"
+    },
+    {
+      "test_id": "SA000018",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/SA000018/run.json"
+    },
+    {
+      "test_id": "PW000001",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000001/run.json"
+    },
+    {
+      "test_id": "PW000002",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000002/run.json"
+    },
+    {
+      "test_id": "PW000003",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000003/run.json"
+    },
+    {
+      "test_id": "PW000004",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000004/run.json"
+    },
+    {
+      "test_id": "PW000005",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000005/run.json"
+    },
+    {
+      "test_id": "PW000006",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000006/run.json"
+    },
+    {
+      "test_id": "PW000007",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000007/run.json"
+    },
+    {
+      "test_id": "PW000008",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000008/run.json"
+    },
+    {
+      "test_id": "PW000009",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000009/run.json"
+    },
+    {
+      "test_id": "PW000010",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000010/run.json"
+    },
+    {
+      "test_id": "PW000011",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000011/run.json"
+    },
+    {
+      "test_id": "PW000012",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000012/run.json"
+    },
+    {
+      "test_id": "PW000013",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000013/run.json"
+    },
+    {
+      "test_id": "PW000014",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000014/run.json"
+    },
+    {
+      "test_id": "PW000015",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000015/run.json"
+    },
+    {
+      "test_id": "PW000016",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000016/run.json"
+    },
+    {
+      "test_id": "PW000017",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000017/run.json"
+    },
+    {
+      "test_id": "PW000018",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PW000018/run.json"
+    },
+    {
+      "test_id": "PA000001",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000001/run.json"
+    },
+    {
+      "test_id": "PA000002",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000002/run.json"
+    },
+    {
+      "test_id": "PA000003",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000003/run.json"
+    },
+    {
+      "test_id": "PA000004",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000004/run.json"
+    },
+    {
+      "test_id": "PA000005",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000005/run.json"
+    },
+    {
+      "test_id": "PA000006",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000006/run.json"
+    },
+    {
+      "test_id": "PA000007",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000007/run.json"
+    },
+    {
+      "test_id": "PA000008",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000008/run.json"
+    },
+    {
+      "test_id": "PA000009",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000009/run.json"
+    },
+    {
+      "test_id": "PA000010",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000010/run.json"
+    },
+    {
+      "test_id": "PA000011",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000011/run.json"
+    },
+    {
+      "test_id": "PA000012",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000012/run.json"
+    },
+    {
+      "test_id": "PA000013",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000013/run.json"
+    },
+    {
+      "test_id": "PA000014",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000014/run.json"
+    },
+    {
+      "test_id": "PA000015",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/PA000015/run.json"
+    },
+    {
+      "test_id": "RU000001",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000001/run.json"
+    },
+    {
+      "test_id": "RU000002",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000002/run.json"
+    },
+    {
+      "test_id": "RU000003",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000003/run.json"
+    },
+    {
+      "test_id": "RU000004",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000004/run.json"
+    },
+    {
+      "test_id": "RU000005",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000005/run.json"
+    },
+    {
+      "test_id": "RU000006",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000006/run.json"
+    },
+    {
+      "test_id": "RU000007",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000007/run.json"
+    },
+    {
+      "test_id": "RU000008",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000008/run.json"
+    },
+    {
+      "test_id": "RU000009",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000009/run.json"
+    },
+    {
+      "test_id": "RU000010",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000010/run.json"
+    },
+    {
+      "test_id": "RU000011",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000011/run.json"
+    },
+    {
+      "test_id": "RU000012",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000012/run.json"
+    },
+    {
+      "test_id": "RU000013",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000013/run.json"
+    },
+    {
+      "test_id": "RU000014",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000014/run.json"
+    },
+    {
+      "test_id": "RU000015",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/RU000015/run.json"
+    },
+    {
+      "test_id": "KB000001",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 91001,
+      "run": "tests/reports/phase6_calibration_v13/runs/KB000001/run.json"
+    },
+    {
+      "test_id": "KB000002",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 92002,
+      "run": "tests/reports/phase6_calibration_v13/runs/KB000002/run.json"
+    },
+    {
+      "test_id": "KB000003",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "seed": 93003,
+      "run": "tests/reports/phase6_calibration_v13/runs/KB000003/run.json"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000128",
+  "style_id": "single_axis_lighting_011",
+  "label": "single_axis_lighting_011",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "48879eaf-2713-4aa0-b2ad-aad4d02427fe",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a low horizon source that creates long transitions across the body and environment, arriving from the side to sculpt the cheek, neck, and garment folds. The image uses crisp controlled shadows with clean shapes and readable reflected light and neutral daylight balance with accurate skin undertones and quiet fabric color. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "692895e71459922d9d7c8f968854be100118c33deb985fc3cdc47f2b9186eeff",
+  "workflow_sha256": "97d7ad47134aa8c9b20e2e9b4de894101fa5327ba417733cdb54709abe03975f",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "5394d4ab562dcc58b560ab6d05eeba4a40f0dc527c48ad4805906f214bfee23f",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

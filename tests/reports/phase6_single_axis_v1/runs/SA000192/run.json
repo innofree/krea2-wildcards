@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000192",
+  "style_id": "single_axis_background_016",
+  "label": "single_axis_background_016",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "eb567352-43e5-469c-a9d0-9883dae70d06",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a clean transit concourse with repeated columns, matte flooring, and distant entrances, with repeated forms that reduce gradually in scale and establish an orderly recession, softly diffused ambient air with even visibility across the setting, and warm neutral surroundings with quiet cream, stone, wood, and muted brown relationships. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "05f1ed384a85be077af1835a6a515c395c41331b02e0dc4b87fcb7cb69e46580",
+  "workflow_sha256": "479085ad91022afd9ab09d241cd53dd5690e2fb6178b833af159d6063fe2c2cb",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "d96f0347c89801b00b2dd3143c703d578a18af8d7b5ca13977ddc5cf271f695a",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

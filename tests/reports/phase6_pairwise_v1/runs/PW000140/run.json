@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000140",
+  "style_id": "pairwise_style_pack_lighting_015",
+  "label": "pairwise_style_pack_lighting_015",
+  "mode": "pairwise",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "da1de940-fec0-4c91-9094-037d409f4b65",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second lighting direction has authority over every actual source shape, direction, and illumination color. Keep the face and requested visible eyes readable, and make each source named by that direction visibly distinct. Give its named reflected light or fill a separate readable role. Put its named practical on the back wall as one palm-sized warm amber lamp or glowing square, clearly separate from the subject and never expanded into a broad beam. Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment. Use a photorealistic adult editorial material treatment with large circular set fields, rounded graphic shadows, and bold silhouette spacing; pale blush, powder blue, warm ivory, and charcoal pigment fields; translucent material layers and crisp bright surface accents; calm open spacing, low visual noise, and thin suspended haze; and soft pigment bloom beyond a readable silhouette. Treat these as material, set, pigment, and graphic properties; the second lighting direction alone supplies every actual source and illumination color. Combine it coherently with this second visual direction: Light an adult subject with a small cluster of practical sources with one dominant key and restrained secondary glows, traveling across the scene to create a gradual light-to-shadow progression. The image uses crisp controlled shadows with clean shapes and readable reflected light and a warm key balanced by cool fill with natural separation across the face. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The second lighting direction is the final illumination blueprint: all visible illumination comes only from its named sources, colors, and geometry. Its named reflected light or fill remains visibly separate from the key. Its named practical is drawn as one palm-sized warm amber lamp or glowing square on the back wall, separate from the subject and never expanded into a broad beam. The first style contributes shape, material palette, surface, atmosphere, and edge treatment. Final camera lock—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "81073f78b5aab489629b6d0a83183c503df100d282614fda851eccef9a228dec",
+  "workflow_sha256": "53674bada5b8a6a84b6e958a4b91690c9b5771362e549c799d21d89be6a1d8a8",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_rounded_graphic_low_contrast_pastel_glazed_luminous_contemplative_air_soft_bleed_complete_style",
+    "right_item": "lighting_practical_cluster_cross_room_crisp_controlled_warm_key_cool_fill_complete_lighting",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "1627a23653a9e53b4f2ac13ebc0d03a299c5b7523928d5ebb1ed36bd407a1eff",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

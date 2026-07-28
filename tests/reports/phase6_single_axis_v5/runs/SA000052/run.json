@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000052",
+  "style_id": "single_axis_pose_002",
+  "label": "single_axis_pose_002",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "6a8bae2a-e24c-4183-b7bb-10b5c8c574da",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "4f150d5818de729f587b4475b828acb5d265a4085ef728570bd39c9a32bba73b",
+  "workflow_sha256": "12c7ec927da5500f1c09c168ded9a4af72041a57ff1bd11c11a6f29fd6e21adc",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_frontal_even_weight_open_palms_extended_lowered_reflective_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "94ea2b3056af3f478d385c7edd3858beea92f32c80ad5f88e571013e0e040808",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

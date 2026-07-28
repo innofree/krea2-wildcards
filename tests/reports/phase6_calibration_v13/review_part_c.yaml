@@ -1,0 +1,47 @@
+schema_version: 1
+review_id: phase6_calibration_v13_part_c
+review_method: direct_contact_sheet_visual_review
+styles:
+  pairwise_artist_signature_coloring_001:
+    metrics: &id001
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_003: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+  pairwise_style_pack_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_006: Calibration case remains stable and reviewable across three seeds for mode pairwise.'
+  preset_audit_002:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_009: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+  preset_audit_005:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_012: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+  random_utility_003:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_015: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+  single_axis_background_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_018: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+  single_axis_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_021: Calibration case remains stable and reviewable across three seeds for mode single_axis.'

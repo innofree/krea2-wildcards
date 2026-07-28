@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000016",
+  "style_id": "pairwise_artist_signature_camera_composition_001",
+  "label": "pairwise_artist_signature_camera_composition_001",
+  "mode": "pairwise",
+  "seed": 91001,
+  "remote": "private_comfyui",
+  "prompt_id": "5be75158-34a5-4389-ac06-dea54e524531",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, facial profile, and visible profile eye clearly readable. The second camera direction is the measured axis. Obey its literal crop, side view, field of view, asymmetric placement, and negative-space counterweight. Create a clean hand-drawn two-dimensional editorial illustration. The exact name-free signature controls the visible medium, face, eyes, silhouette, palette, light, composition, and ornament. Make these eight cues bold and unmistakable: line language—straight modular contours and evenly spaced seams; face design—full rounded cheeks and a short nose; eye design—large layered irises and paired catchlights; body design—elongated graceful limbs and tapered hands; palette language—large garnet, ink-blue, forest, and gold fields; light modeling—hard-edged two-value cel light and shadow; framing language—a centered emblem-like outer border around the canvas, expressed in the background while the measured camera controls subject placement; ornament language—repeated fine floral lines. Draw face and eye details crisply within the chest-up figure. Put the ornament on both the garment and outer border. Keep the visible figure in front of every decorative framing element. Combine it coherently with this second visual direction: Photograph an adult subject using chest-up framing that keeps both shoulders and the upper arm gesture readable from a clean side camera position that preserves the facial profile and body line. The view uses a classic wide field of view that includes context while keeping facial proportions natural and asymmetric placement with generous negative space and one clear visual counterweight. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—make a tight chest-up portrait. The complete crown stays inside the canvas with a narrow strip of background above it, and the lower edge cuts across the upper torso just below the chest. Keep the chin, both shoulders, and described upper-arm gesture inside. Do not show the waist, hips, thighs, knees, calves, shoes, or feet.",
+  "resolved_prompt_sha256": "fe26015b8663fbceba52bf17860953a25e5c05f9017eac7ae9f8f7c20e7e14f5",
+  "workflow_sha256": "60ce5bdb381c26f8738f66b8bff230b877c35a766ae61e94971edef21f36ce9a",
+  "factors": {
+    "pair_type": "artist_signature_camera_composition",
+    "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+    "right_item": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "b59b89c246c62ffb22bc3b24dd9c8e455ce44834d25382b110688743af3e1a9f",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

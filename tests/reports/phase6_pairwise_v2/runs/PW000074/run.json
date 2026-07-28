@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000074",
+  "style_id": "pairwise_style_pack_pose_009",
+  "label": "pairwise_style_pack_pose_009",
+  "mode": "pairwise",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "cbd473e9-0e44-4a4f-ae1d-ef22e123c4cb",
+  "resolved_prompt": "Photorealistic adult editorial treatment: broad curved light paths, flowing shadows, and repeated organic shapes. Use garnet, sapphire, and emerald fields with restrained gold highlights, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and silhouette sections merging into the backdrop while focal edges stay firm. Combine it coherently with this second visual direction: An adult subject holds a relaxed side-reclining pose with supported weight and a long uninterrupted torso line, with both hands loosely clasped at mid-torso with visible fingers and relaxed wrists. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "0aabb41b56a2fe7820eba920afc665757ec1c1ca9c36c8204b5bf8b4d3ce5628",
+  "workflow_sha256": "7766ccd48b1271d45941d98f1b60614e5fde73108f7d40a376c5b96c6af7cd2f",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_organic_flowing_jewel_and_gold_chalk_matte_ceremonial_energy_lost_and_found_complete_style",
+    "right_item": "pose_side_reclining_loosely_clasped_lifted_attentive_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "620e8459304e39cdcd7a5a7c3becaacb9f943701d89ef58a823cb9e3212ac859",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

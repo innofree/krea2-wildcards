@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000117",
+  "style_id": "single_axis_lighting_007",
+  "label": "single_axis_lighting_007",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "08f1c75e-889e-49ce-b7b7-286cfc099067",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a focused beam with a readable pool of light and protected surrounding values, arriving from high at one side with clear but gentle downward shadow direction. The image uses mixed edge quality with soft facial shadows and firmer garment shadows and neutral daylight balance with accurate skin undertones and quiet fabric color. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "a0e515a90369365f03fdf62c242d2efc9dd5b2078dc4a6d9c489f0605db4c28f",
+  "workflow_sha256": "4ea77f675910d6432e5b01dbd0a35fb2a0f20a936b29714f729526fa71a4aa9c",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_focused_beam_high_side_mixed_edge_neutral_daylight_complete_lighting",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "47c5dbacfa1270b524e51e08bccc45a9852de2ffa50ef66a89d10b3c02e02f4e",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000135",
+  "style_id": "single_axis_lighting_013",
+  "label": "single_axis_lighting_013",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "436a3690-ddc4-429f-8490-c750b46a33ed",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with an overhead skylight-like source that opens the face and shoulders, rising as a restrained low bounce that opens deep facial and clothing shadows. The image uses enveloping diffuse light with open shadows and gentle local contrast and late golden light with neutral readable shadows and restrained saturation. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "99da7abc8ab358edd3a007b3d6d5cc4b34ed5f4eeffac46e4df290e35f23ff4b",
+  "workflow_sha256": "f0a31f89dc11a6b282b7bb97ab35bfb3fa24288a111dcaf89ce7e0b19c6ffb59",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_overhead_skylight_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "875970558e5d8d4ff9fd727c98f7ab73da4ed2f53101b467ec38b3657e756bc1",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

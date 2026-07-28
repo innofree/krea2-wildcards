@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000082",
+  "style_id": "single_axis_pose_012",
+  "label": "single_axis_pose_012",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "570657c6-07aa-4134-aaf4-3228642f6b7c",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a three-quarter standing turn with the torso open and the far shoulder gently receding, with one hand resting at the waist while the other hangs open and fully readable. The head and gaze are turned to the side with the gaze directed toward a distant point in the scene, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "84926ca971d9cdba65b04519d3a72bd9aa574dc496803d736e0b0daeed4c73e6",
+  "workflow_sha256": "59dc6d9e986d8bec94331fe928386d4872340acbc3fec56678b161853ecd4188",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_standing_three_quarter_waist_and_open_side_distant_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "6a4af6dc793e5b87afcf7ae9c8a2405354c17f209ab73af75e0d51fd165cf41b",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

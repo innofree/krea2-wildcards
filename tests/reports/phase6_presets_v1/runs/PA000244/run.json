@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000244",
+  "style_id": "preset_audit_082",
+  "label": "preset_audit_082",
+  "mode": "preset_audit",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "e4bcb316-d766-4eac-b69a-8ddb02be9544",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—pull the camera far back, keep the complete crown, both shoes, and visible floor below both shoes inside the canvas, place the figure on one vertical third, and limit the complete figure to at most two-thirds of the canvas height. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult pauses mid-step with separated arms and stable weight in an open stone courtyard with restrained planting and textured walls, wearing a tailored long coat, fine knit top, and straight trousers, with a quiet reflective look with soft eyes and a relaxed mouth. Use a wide view with the subject on a third and a clear depth path and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—pull the camera far back, keep the complete crown, both shoes, and visible floor below both shoes inside the canvas, place the figure on one vertical third, and limit the complete figure to at most two-thirds of the canvas height.",
+  "resolved_prompt_sha256": "730009aaa91ff40bb6692ac7e2a2c44fe619810c3a9269418583c8258f26f90f",
+  "workflow_sha256": "ee7cb2392f5ae4017431b140c5b82612e8e7db18df33683b575c8b5d1947d04c",
+  "factors": {
+    "preset": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "df2c177f27e3f29b9a1c36b741df72fbdee70f6064a554f977969ef179795faf",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

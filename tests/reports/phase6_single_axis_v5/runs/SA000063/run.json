@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000063",
+  "style_id": "single_axis_pose_005",
+  "label": "single_axis_pose_005",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "d5d9be61-272f-4a43-830d-c94dcaea7d44",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a low kneeling pose with balanced hips, a lifted torso, and visible lower-leg placement, with one hand near the collar while the other anchors gently at the hip. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Place both knees and both lower legs visibly on the studio floor, with the hips low above the heels, the torso lifted upright, both hands visible, and enough floor around the knees and feet to prove the body is kneeling. The pelvis is far below normal standing hip height, both shins fold backward along the floor, and the feet are tucked behind or beside the hips. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "44f8279cbc763a2b11448448764f6d9afd1471bb034613ea1d2c243b3188210b",
+  "workflow_sha256": "0205d3a7cc338d43abc48707b408d8928f8a4ab4a000b88afed841436023940d",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_low_kneeling_collar_and_hip_direct_level_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "3995e81fe7394127d50643e3bb0a2553d637863451c17c9e7512529352071cdd",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000018",
+  "style_id": "single_axis_character_design_006",
+  "label": "single_axis_character_design_006",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "b0cf370b-9e50-458a-b6ed-7f43c2303010",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The character design is the measured axis: make its named face geometry, body proportions, and large asymmetric garment layers visibly explicit. Place the named seam curves and closures as repeated, front-readable clothing details. Apply exactly this character_design direction as the sole changing axis: An adult character has a compact balanced silhouette with moderate limb length and a stable center of gravity, a square mature face with a strong jaw, broad brow, and restrained mouth, and agile medium-frame proportions with flexible posture and clear anatomical balance. The design is unified by practical modular panels, secure closures, and small functional details. Show the described adult design in a balanced standing pose. Dress her in a complete front-readable outfit that visibly carries every named layer, seam, closure, silhouette, and proportion cue. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "0256179ece3db07ae7571f4c728af9cdac728ebe35476e4fc4a21f6ffc8b1ded",
+  "workflow_sha256": "080e4b7b3b61026e7db8050acc4cc1cf1c0de84254e0f96d7d0beb9c390c9602",
+  "factors": {
+    "axis": "character_design",
+    "item_id": "character_design_compact_balanced_square_strong_jaw_agile_medium_frame_modular_utility_complete_character",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "e3b8c7e50b32c3e5e01a599a7b08e00fa2cdd13c8f4f0553836cfae095fd0449",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

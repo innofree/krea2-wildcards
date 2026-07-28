@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000086",
+  "style_id": "pairwise_style_pack_pose_013",
+  "label": "pairwise_style_pack_pose_013",
+  "mode": "pairwise",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "78e1467e-5b33-4734-b582-2cd3c35c343e",
+  "resolved_prompt": "Photorealistic adult editorial treatment: layered border motifs and repeated decorative shapes framing the subject. Use muted slate, clay, sage, and limestone with small pale highlights, fine paper fibers in backdrop and shadows while skin and fabric stay clear, calm open spacing, low visual noise, and thin suspended haze, and sharp facial and hand edges tapering into soft peripheral boundaries. Combine it coherently with this second visual direction: An adult subject holds an upright contrapposto stance with one relaxed knee and a naturally offset hip line, with both hands lifted near the chest with relaxed palms and distinct finger spacing. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys settled stillness with even weight transfer and no strained joints. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "725f0d3b8caffd2b34e2364c400acc9e7e53b410522b667e3ebbeb531982da1c",
+  "workflow_sha256": "e08a98f9bda2f6d25c1ff85fbcbbe53519bbf1361d59336b5b379c802f0d9029",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_ornamental_layered_mineral_muted_fibrous_paper_contemplative_air_selective_taper_complete_style",
+    "right_item": "pose_upright_contrapposto_hands_near_chest_lowered_reflective_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "9d0efb472fa052448df51c00586c8632845962f0478b530cefd1a0793eda19fc",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

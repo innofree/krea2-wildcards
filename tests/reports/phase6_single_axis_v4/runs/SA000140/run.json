@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000140",
+  "style_id": "single_axis_lighting_015",
+  "label": "single_axis_lighting_015",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "02b993a5-8983-41c9-84d4-3462217924e1",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a small cluster of practical sources with one dominant key and restrained secondary glows, traveling across the scene to create a gradual light-to-shadow progression. The image uses crisp controlled shadows with clean shapes and readable reflected light and a warm key balanced by cool fill with natural separation across the face. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "0e796a900798d9497f9e0ed173e9fb8979e03d3173770fa16c46a8ab0bc09670",
+  "workflow_sha256": "5f96e3aed148c3f1666b68445c03271a9dec52c5d66036c5d9befcfb90a05dfa",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_practical_cluster_cross_room_crisp_controlled_warm_key_cool_fill_complete_lighting",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "8c836a18c7644b4d0abcf8f5419bc3ae52a7e4e7a794724569f904715defbe82",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

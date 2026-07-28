@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000062",
+  "style_id": "single_axis_pose_005",
+  "label": "single_axis_pose_005",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "52ccbc36-f918-40b2-808e-86187d479011",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a grounded forward step with a stable pelvis and controlled bend through both knees, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "f769e52ab935a93b8512469a96d3a44422b2c21f5705e8bcc53a62ebac319a05",
+  "workflow_sha256": "2bd4ae7b20b3f233bbb1f604ec267394ec7bc849425f52737268fbbd5918b6ea",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_grounded_forward_step_open_palms_extended_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "b1b09143acce707880d512cea7afcb71880bda519227f0b74d7e9eca98420470",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

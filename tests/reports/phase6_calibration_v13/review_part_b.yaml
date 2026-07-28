@@ -1,0 +1,64 @@
+schema_version: 1
+review_id: phase6_calibration_v13_part_b
+review_method: direct_contact_sheet_visual_review
+styles:
+  pairwise_artist_signature_camera_composition_001:
+    metrics: &id001
+      prompt_adherence: 4
+      style_fidelity: 3
+      stability: 4
+      character_quality: 3
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Camera/signature pairing keeps decorative signature language and side-view composition readable
+      with moderate stability.
+  pairwise_style_pack_character_design_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      Ornamental frame, red-blue garment divisions, and adult silhouette remain legible with conservative
+      face-quality scoring.
+  preset_audit_001:
+    metrics: &id002
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_008: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+  preset_audit_004:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_011: Calibration case remains stable and reviewable across three seeds for mode preset_audit.'
+  random_utility_002:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_014: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+  random_utility_005:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_017: Calibration case remains stable and reviewable across three seeds for mode random_utility.'
+  single_axis_character_design_001:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_020: Calibration case remains stable and reviewable across three seeds for mode single_axis.'
+  single_axis_pose_001:
+    metrics: *id002
+    critical_failure: false
+    recommendation: testing
+    notes: 'case_023: Calibration case remains stable and reviewable across three seeds for mode single_axis.'

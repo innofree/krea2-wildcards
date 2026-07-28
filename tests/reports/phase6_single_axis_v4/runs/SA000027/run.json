@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000027",
+  "style_id": "single_axis_character_design_009",
+  "label": "single_axis_character_design_009",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "3e6e239b-4626-409e-ae06-b33c870fef32",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The character design is the measured axis: make its named face geometry, body proportions, and large asymmetric garment layers visibly explicit. Place the named seam curves and closures as repeated, front-readable clothing details. Apply exactly this character_design direction as the sole changing axis: An adult character has a narrow angular silhouette with long clean lines and sharply controlled joints, a heart-shaped adult face with high cheeks and a gently tapered chin, and statuesque adult proportions with an upright spine and measured limb length. The design is unified by practical modular panels, secure closures, and small functional details. Show the described adult design in a balanced standing pose. Dress her in a complete front-readable outfit that visibly carries every named layer, seam, closure, silhouette, and proportion cue. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "f8816fda018405b8a6fa310b015ffbbca2b985f744a248d4c9bad734c217963f",
+  "workflow_sha256": "0da260bc04c96a9d89efaa58d82a53cc6963b07f4c74ab55ab73bc0b6b43c9d7",
+  "factors": {
+    "axis": "character_design",
+    "item_id": "character_design_narrow_angular_heart_tapered_chin_statuesque_modular_utility_complete_character",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bf5435e6de32b48c4b41c853f37c27c785ecb256619d53e7877e4fa7e229bf0a",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

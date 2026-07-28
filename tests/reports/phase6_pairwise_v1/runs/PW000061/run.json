@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000061",
+  "style_id": "pairwise_style_pack_pose_005",
+  "label": "pairwise_style_pack_pose_005",
+  "mode": "pairwise",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "38716f53-b199-4bb7-930c-d811ac438726",
+  "resolved_prompt": "Photorealistic adult editorial treatment: long vertical set divisions, narrow rectangular shadows, and clean upright edges. Use exactly two dominant colors across clothing, light, shadow, and backdrop, smooth tonal transitions and controlled satin sheen on lit surfaces, calm open spacing, low visual noise, and thin suspended haze, and soft color bloom and halation outside a readable silhouette. Place three empty tall light panels; put glossy satin on clothing and panels; reserve broad unlit empty space; cast a wide colored halo beyond the silhouette. Combine it coherently with this second visual direction: An adult subject holds a grounded forward step with a stable pelvis and controlled bend through both knees, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "c2773b87776a2c7c67e7f13e69edce3f57405db7fb72c3ee6d5249c1ccc969ad",
+  "workflow_sha256": "5ff1de505ccb1dd36f8ab9bc28c89280a81589cc3269d787eeb9aa3a677f5945",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_geometric_slender_limited_duotone_satin_clean_contemplative_air_soft_bleed_complete_style",
+    "right_item": "pose_grounded_forward_step_open_palms_extended_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "cf6a70fdf660abd62b5fa025356672d02b1bccb050a80753245443980889616b",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

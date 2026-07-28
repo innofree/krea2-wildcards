@@ -1,0 +1,20 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+reviewer_parts:
+  - tests/reports/phase6_benchmark_v1/review_part_a.yaml
+styles:
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      case_001: v1 five-seed benchmark sheet keeps the adult subject, crossed warm/cool lighting, and
+      readable full-length framing stable.
+    recommendation: testing

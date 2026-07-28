@@ -1,0 +1,61 @@
+schema_version: 1
+review_id: phase6_calibration_v12_part_c
+review_method: direct_contact_sheet_visual_review
+styles:
+  pairwise_artist_signature_coloring_001:
+    metrics: &id001
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_003: Pairwise combination keeps both directions visible on one adult subject with stable composition
+      and compatible treatment.
+  pairwise_style_pack_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_006: Pairwise combination keeps both directions visible on one adult subject with stable composition
+      and compatible treatment.
+  preset_audit_002:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_009: Preset scene preserves environment, adult subject, crop family, wardrobe, and lighting
+      coherently across three seeds.
+  preset_audit_005:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_012: Preset scene preserves environment, adult subject, crop family, wardrobe, and lighting
+      coherently across three seeds.
+  random_utility_003:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_015: Random utility combination preserves scene setting and name-free signature language with
+      stable motif framing and one coherent adult subject.
+  single_axis_background_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_018: Single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.
+  single_axis_lighting_001:
+    metrics: *id001
+    critical_failure: false
+    recommendation: testing
+    notes: >-
+      case_021: Single-axis calibration case remains readable across all three seeds with stable adult
+      subject, crop, and measured visual direction.

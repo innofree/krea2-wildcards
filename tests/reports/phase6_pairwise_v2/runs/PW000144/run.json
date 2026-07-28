@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000144",
+  "style_id": "pairwise_style_pack_lighting_016",
+  "label": "pairwise_style_pack_lighting_016",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "0a0a986e-0bbb-4bd4-9c53-c9beb4768fd1",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second lighting direction has authority over every actual source shape, direction, and illumination color. Keep the face and requested visible eyes readable, and make each source named by that direction visibly distinct. Put its named practical on the back wall as one palm-sized warm amber lamp or glowing square, clearly separate from the subject and never expanded into a broad beam. Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment. Use a photorealistic adult editorial material treatment with large circular set fields, rounded graphic shadows, and bold silhouette spacing; amber and blue pigment fields printed across clothing and backdrop; fine paper fibers across backdrop and graphic shadow shapes; deep evening pigment values, narrow graphic paths, and tense still space; and soft pigment bloom beyond a readable silhouette. Treat these as material, set, pigment, and graphic properties; the second lighting direction alone supplies every actual source and illumination color. Combine it coherently with this second visual direction: Light an adult subject with a small cluster of practical sources with one dominant key and restrained secondary glows, rising as a restrained low bounce that opens deep facial and clothing shadows. The image uses feathered softness with broad penumbrae and smooth skin transitions and late golden light with neutral readable shadows and restrained saturation. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The second lighting direction is the final illumination blueprint: all visible illumination comes only from its named sources, colors, and geometry. Its named practical is drawn as one palm-sized warm amber lamp or glowing square on the back wall, separate from the subject and never expanded into a broad beam. The first style contributes shape, material palette, surface, atmosphere, and edge treatment. Final camera lock—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "9d2d2e94ec891af23887bf14fc7fd63742da1f84d04ba9795c7decebe9050062",
+  "workflow_sha256": "c6eaaab2e0732125e8275291ee88bd1a61293b01266b9a3b9ec2ae5f2e2906b9",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_soft_bleed_complete_style",
+    "right_item": "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "d48903c9ca7732d7607245100de600a8297ec847b1638942f9fb79faa10cbf85",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000062",
+  "style_id": "single_axis_pose_005",
+  "label": "single_axis_pose_005",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "bf1f9ae4-e89b-485f-8bf7-8d17286d923d",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a low kneeling pose with balanced hips, a lifted torso, and visible lower-leg placement, with one hand near the collar while the other anchors gently at the hip. The head and gaze are turned to the side with the gaze directed toward a distant point in the scene, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "0ce4fb38db7f43be8480896e00e22f9e0446badd02f46fe8898bb0831d214995",
+  "workflow_sha256": "6c0c0d71e2046320af1873c17657187f815ce6f7102cb713663572b10948c566",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_low_kneeling_collar_and_hip_side_distant_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a8a86c756e5288f76a9965264f7d86699c9ded0d9995c82eaf2e686a469f674b",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

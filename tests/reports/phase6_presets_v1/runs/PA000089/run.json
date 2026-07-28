@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000089",
+  "style_id": "preset_audit_030",
+  "label": "preset_audit_030",
+  "mode": "preset_audit",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "ce0312b1-6a8f-4f80-974c-745cf2a27e6d",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult holds a balanced contrapposto with both hands visible in a framed glasshouse walkway with controlled foliage and a clear path, wearing visible dress bodice ending below the waist, with a subtle closed-mouth smile with gentle warmth. Use waist-up natural perspective with complete visible hand gestures and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "c639695e8cbd4feec97ee30c5b187f0b5a349b935b17f0e836eaa2f58c2e8711",
+  "workflow_sha256": "cc0f59396b4f353950d8008f261e141777aeed7d6c1afca047e8cd2c494a4429",
+  "factors": {
+    "preset": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "7cc41eb64ad51d6d9f4f630e7234bedd70293db1f5d51c9ad3da850ca7c24a5c",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

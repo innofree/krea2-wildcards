@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000088",
+  "style_id": "single_axis_pose_014",
+  "label": "single_axis_pose_014",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "d3eeaf23-2fb7-4d7d-9440-a367221dc386",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an upright contrapposto stance with one relaxed knee and a naturally offset hip line, with both hands loosely clasped at mid-torso with visible fingers and relaxed wrists. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "8301ab13adb46b278c4e2b86b996ac87756828efe9eaf97b5b759e63a93cffd8",
+  "workflow_sha256": "b1cc5e994bcf2dd17b73387c1c17bea0837e60909f0d618852b2656e6e03369e",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_upright_contrapposto_loosely_clasped_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2771d36fdd771daf034482c14f0704ad6ed3d947a46c97e3012125a893d36261",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

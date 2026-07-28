@@ -1,0 +1,2045 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_pairwise.jsonl",
+  "matrix_sha256": "1152a7e3371af5caffcd753dfa9b138c5a33717b6c707ab4cf3a38a085df29cb",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 288,
+  "completed_count": 288,
+  "style_count": 96,
+  "modes": {
+    "pairwise": 288
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/phase6_pairwise_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "PW000001",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000001/run.json"
+    },
+    {
+      "test_id": "PW000002",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000002/run.json"
+    },
+    {
+      "test_id": "PW000003",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000003/run.json"
+    },
+    {
+      "test_id": "PW000004",
+      "style_id": "pairwise_style_pack_character_design_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000004/run.json"
+    },
+    {
+      "test_id": "PW000005",
+      "style_id": "pairwise_style_pack_character_design_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000005/run.json"
+    },
+    {
+      "test_id": "PW000006",
+      "style_id": "pairwise_style_pack_character_design_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000006/run.json"
+    },
+    {
+      "test_id": "PW000007",
+      "style_id": "pairwise_style_pack_character_design_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000007/run.json"
+    },
+    {
+      "test_id": "PW000008",
+      "style_id": "pairwise_style_pack_character_design_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000008/run.json"
+    },
+    {
+      "test_id": "PW000009",
+      "style_id": "pairwise_style_pack_character_design_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000009/run.json"
+    },
+    {
+      "test_id": "PW000010",
+      "style_id": "pairwise_style_pack_character_design_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000010/run.json"
+    },
+    {
+      "test_id": "PW000011",
+      "style_id": "pairwise_style_pack_character_design_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000011/run.json"
+    },
+    {
+      "test_id": "PW000012",
+      "style_id": "pairwise_style_pack_character_design_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000012/run.json"
+    },
+    {
+      "test_id": "PW000013",
+      "style_id": "pairwise_style_pack_character_design_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000013/run.json"
+    },
+    {
+      "test_id": "PW000014",
+      "style_id": "pairwise_style_pack_character_design_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000014/run.json"
+    },
+    {
+      "test_id": "PW000015",
+      "style_id": "pairwise_style_pack_character_design_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000015/run.json"
+    },
+    {
+      "test_id": "PW000016",
+      "style_id": "pairwise_style_pack_character_design_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000016/run.json"
+    },
+    {
+      "test_id": "PW000017",
+      "style_id": "pairwise_style_pack_character_design_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000017/run.json"
+    },
+    {
+      "test_id": "PW000018",
+      "style_id": "pairwise_style_pack_character_design_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000018/run.json"
+    },
+    {
+      "test_id": "PW000019",
+      "style_id": "pairwise_style_pack_character_design_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000019/run.json"
+    },
+    {
+      "test_id": "PW000020",
+      "style_id": "pairwise_style_pack_character_design_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000020/run.json"
+    },
+    {
+      "test_id": "PW000021",
+      "style_id": "pairwise_style_pack_character_design_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000021/run.json"
+    },
+    {
+      "test_id": "PW000022",
+      "style_id": "pairwise_style_pack_character_design_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000022/run.json"
+    },
+    {
+      "test_id": "PW000023",
+      "style_id": "pairwise_style_pack_character_design_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000023/run.json"
+    },
+    {
+      "test_id": "PW000024",
+      "style_id": "pairwise_style_pack_character_design_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000024/run.json"
+    },
+    {
+      "test_id": "PW000025",
+      "style_id": "pairwise_style_pack_character_design_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000025/run.json"
+    },
+    {
+      "test_id": "PW000026",
+      "style_id": "pairwise_style_pack_character_design_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000026/run.json"
+    },
+    {
+      "test_id": "PW000027",
+      "style_id": "pairwise_style_pack_character_design_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000027/run.json"
+    },
+    {
+      "test_id": "PW000028",
+      "style_id": "pairwise_style_pack_character_design_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000028/run.json"
+    },
+    {
+      "test_id": "PW000029",
+      "style_id": "pairwise_style_pack_character_design_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000029/run.json"
+    },
+    {
+      "test_id": "PW000030",
+      "style_id": "pairwise_style_pack_character_design_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000030/run.json"
+    },
+    {
+      "test_id": "PW000031",
+      "style_id": "pairwise_style_pack_character_design_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000031/run.json"
+    },
+    {
+      "test_id": "PW000032",
+      "style_id": "pairwise_style_pack_character_design_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000032/run.json"
+    },
+    {
+      "test_id": "PW000033",
+      "style_id": "pairwise_style_pack_character_design_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000033/run.json"
+    },
+    {
+      "test_id": "PW000034",
+      "style_id": "pairwise_style_pack_character_design_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000034/run.json"
+    },
+    {
+      "test_id": "PW000035",
+      "style_id": "pairwise_style_pack_character_design_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000035/run.json"
+    },
+    {
+      "test_id": "PW000036",
+      "style_id": "pairwise_style_pack_character_design_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000036/run.json"
+    },
+    {
+      "test_id": "PW000037",
+      "style_id": "pairwise_style_pack_character_design_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000037/run.json"
+    },
+    {
+      "test_id": "PW000038",
+      "style_id": "pairwise_style_pack_character_design_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000038/run.json"
+    },
+    {
+      "test_id": "PW000039",
+      "style_id": "pairwise_style_pack_character_design_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000039/run.json"
+    },
+    {
+      "test_id": "PW000040",
+      "style_id": "pairwise_style_pack_character_design_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000040/run.json"
+    },
+    {
+      "test_id": "PW000041",
+      "style_id": "pairwise_style_pack_character_design_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000041/run.json"
+    },
+    {
+      "test_id": "PW000042",
+      "style_id": "pairwise_style_pack_character_design_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000042/run.json"
+    },
+    {
+      "test_id": "PW000043",
+      "style_id": "pairwise_style_pack_character_design_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000043/run.json"
+    },
+    {
+      "test_id": "PW000044",
+      "style_id": "pairwise_style_pack_character_design_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000044/run.json"
+    },
+    {
+      "test_id": "PW000045",
+      "style_id": "pairwise_style_pack_character_design_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000045/run.json"
+    },
+    {
+      "test_id": "PW000046",
+      "style_id": "pairwise_style_pack_character_design_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000046/run.json"
+    },
+    {
+      "test_id": "PW000047",
+      "style_id": "pairwise_style_pack_character_design_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000047/run.json"
+    },
+    {
+      "test_id": "PW000048",
+      "style_id": "pairwise_style_pack_character_design_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000048/run.json"
+    },
+    {
+      "test_id": "PW000049",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000049/run.json"
+    },
+    {
+      "test_id": "PW000050",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000050/run.json"
+    },
+    {
+      "test_id": "PW000051",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000051/run.json"
+    },
+    {
+      "test_id": "PW000052",
+      "style_id": "pairwise_style_pack_pose_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000052/run.json"
+    },
+    {
+      "test_id": "PW000053",
+      "style_id": "pairwise_style_pack_pose_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000053/run.json"
+    },
+    {
+      "test_id": "PW000054",
+      "style_id": "pairwise_style_pack_pose_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000054/run.json"
+    },
+    {
+      "test_id": "PW000055",
+      "style_id": "pairwise_style_pack_pose_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000055/run.json"
+    },
+    {
+      "test_id": "PW000056",
+      "style_id": "pairwise_style_pack_pose_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000056/run.json"
+    },
+    {
+      "test_id": "PW000057",
+      "style_id": "pairwise_style_pack_pose_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000057/run.json"
+    },
+    {
+      "test_id": "PW000058",
+      "style_id": "pairwise_style_pack_pose_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000058/run.json"
+    },
+    {
+      "test_id": "PW000059",
+      "style_id": "pairwise_style_pack_pose_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000059/run.json"
+    },
+    {
+      "test_id": "PW000060",
+      "style_id": "pairwise_style_pack_pose_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000060/run.json"
+    },
+    {
+      "test_id": "PW000061",
+      "style_id": "pairwise_style_pack_pose_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000061/run.json"
+    },
+    {
+      "test_id": "PW000062",
+      "style_id": "pairwise_style_pack_pose_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000062/run.json"
+    },
+    {
+      "test_id": "PW000063",
+      "style_id": "pairwise_style_pack_pose_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000063/run.json"
+    },
+    {
+      "test_id": "PW000064",
+      "style_id": "pairwise_style_pack_pose_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000064/run.json"
+    },
+    {
+      "test_id": "PW000065",
+      "style_id": "pairwise_style_pack_pose_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000065/run.json"
+    },
+    {
+      "test_id": "PW000066",
+      "style_id": "pairwise_style_pack_pose_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000066/run.json"
+    },
+    {
+      "test_id": "PW000067",
+      "style_id": "pairwise_style_pack_pose_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000067/run.json"
+    },
+    {
+      "test_id": "PW000068",
+      "style_id": "pairwise_style_pack_pose_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000068/run.json"
+    },
+    {
+      "test_id": "PW000069",
+      "style_id": "pairwise_style_pack_pose_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000069/run.json"
+    },
+    {
+      "test_id": "PW000070",
+      "style_id": "pairwise_style_pack_pose_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000070/run.json"
+    },
+    {
+      "test_id": "PW000071",
+      "style_id": "pairwise_style_pack_pose_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000071/run.json"
+    },
+    {
+      "test_id": "PW000072",
+      "style_id": "pairwise_style_pack_pose_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000072/run.json"
+    },
+    {
+      "test_id": "PW000073",
+      "style_id": "pairwise_style_pack_pose_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000073/run.json"
+    },
+    {
+      "test_id": "PW000074",
+      "style_id": "pairwise_style_pack_pose_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000074/run.json"
+    },
+    {
+      "test_id": "PW000075",
+      "style_id": "pairwise_style_pack_pose_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000075/run.json"
+    },
+    {
+      "test_id": "PW000076",
+      "style_id": "pairwise_style_pack_pose_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000076/run.json"
+    },
+    {
+      "test_id": "PW000077",
+      "style_id": "pairwise_style_pack_pose_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000077/run.json"
+    },
+    {
+      "test_id": "PW000078",
+      "style_id": "pairwise_style_pack_pose_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000078/run.json"
+    },
+    {
+      "test_id": "PW000079",
+      "style_id": "pairwise_style_pack_pose_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000079/run.json"
+    },
+    {
+      "test_id": "PW000080",
+      "style_id": "pairwise_style_pack_pose_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000080/run.json"
+    },
+    {
+      "test_id": "PW000081",
+      "style_id": "pairwise_style_pack_pose_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000081/run.json"
+    },
+    {
+      "test_id": "PW000082",
+      "style_id": "pairwise_style_pack_pose_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000082/run.json"
+    },
+    {
+      "test_id": "PW000083",
+      "style_id": "pairwise_style_pack_pose_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000083/run.json"
+    },
+    {
+      "test_id": "PW000084",
+      "style_id": "pairwise_style_pack_pose_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000084/run.json"
+    },
+    {
+      "test_id": "PW000085",
+      "style_id": "pairwise_style_pack_pose_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000085/run.json"
+    },
+    {
+      "test_id": "PW000086",
+      "style_id": "pairwise_style_pack_pose_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000086/run.json"
+    },
+    {
+      "test_id": "PW000087",
+      "style_id": "pairwise_style_pack_pose_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000087/run.json"
+    },
+    {
+      "test_id": "PW000088",
+      "style_id": "pairwise_style_pack_pose_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000088/run.json"
+    },
+    {
+      "test_id": "PW000089",
+      "style_id": "pairwise_style_pack_pose_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000089/run.json"
+    },
+    {
+      "test_id": "PW000090",
+      "style_id": "pairwise_style_pack_pose_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000090/run.json"
+    },
+    {
+      "test_id": "PW000091",
+      "style_id": "pairwise_style_pack_pose_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000091/run.json"
+    },
+    {
+      "test_id": "PW000092",
+      "style_id": "pairwise_style_pack_pose_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000092/run.json"
+    },
+    {
+      "test_id": "PW000093",
+      "style_id": "pairwise_style_pack_pose_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000093/run.json"
+    },
+    {
+      "test_id": "PW000094",
+      "style_id": "pairwise_style_pack_pose_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000094/run.json"
+    },
+    {
+      "test_id": "PW000095",
+      "style_id": "pairwise_style_pack_pose_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000095/run.json"
+    },
+    {
+      "test_id": "PW000096",
+      "style_id": "pairwise_style_pack_pose_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000096/run.json"
+    },
+    {
+      "test_id": "PW000097",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000097/run.json"
+    },
+    {
+      "test_id": "PW000098",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000098/run.json"
+    },
+    {
+      "test_id": "PW000099",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000099/run.json"
+    },
+    {
+      "test_id": "PW000100",
+      "style_id": "pairwise_style_pack_lighting_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000100/run.json"
+    },
+    {
+      "test_id": "PW000101",
+      "style_id": "pairwise_style_pack_lighting_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000101/run.json"
+    },
+    {
+      "test_id": "PW000102",
+      "style_id": "pairwise_style_pack_lighting_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000102/run.json"
+    },
+    {
+      "test_id": "PW000103",
+      "style_id": "pairwise_style_pack_lighting_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000103/run.json"
+    },
+    {
+      "test_id": "PW000104",
+      "style_id": "pairwise_style_pack_lighting_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000104/run.json"
+    },
+    {
+      "test_id": "PW000105",
+      "style_id": "pairwise_style_pack_lighting_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000105/run.json"
+    },
+    {
+      "test_id": "PW000106",
+      "style_id": "pairwise_style_pack_lighting_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000106/run.json"
+    },
+    {
+      "test_id": "PW000107",
+      "style_id": "pairwise_style_pack_lighting_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000107/run.json"
+    },
+    {
+      "test_id": "PW000108",
+      "style_id": "pairwise_style_pack_lighting_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000108/run.json"
+    },
+    {
+      "test_id": "PW000109",
+      "style_id": "pairwise_style_pack_lighting_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000109/run.json"
+    },
+    {
+      "test_id": "PW000110",
+      "style_id": "pairwise_style_pack_lighting_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000110/run.json"
+    },
+    {
+      "test_id": "PW000111",
+      "style_id": "pairwise_style_pack_lighting_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000111/run.json"
+    },
+    {
+      "test_id": "PW000112",
+      "style_id": "pairwise_style_pack_lighting_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000112/run.json"
+    },
+    {
+      "test_id": "PW000113",
+      "style_id": "pairwise_style_pack_lighting_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000113/run.json"
+    },
+    {
+      "test_id": "PW000114",
+      "style_id": "pairwise_style_pack_lighting_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000114/run.json"
+    },
+    {
+      "test_id": "PW000115",
+      "style_id": "pairwise_style_pack_lighting_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000115/run.json"
+    },
+    {
+      "test_id": "PW000116",
+      "style_id": "pairwise_style_pack_lighting_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000116/run.json"
+    },
+    {
+      "test_id": "PW000117",
+      "style_id": "pairwise_style_pack_lighting_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000117/run.json"
+    },
+    {
+      "test_id": "PW000118",
+      "style_id": "pairwise_style_pack_lighting_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000118/run.json"
+    },
+    {
+      "test_id": "PW000119",
+      "style_id": "pairwise_style_pack_lighting_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000119/run.json"
+    },
+    {
+      "test_id": "PW000120",
+      "style_id": "pairwise_style_pack_lighting_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000120/run.json"
+    },
+    {
+      "test_id": "PW000121",
+      "style_id": "pairwise_style_pack_lighting_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000121/run.json"
+    },
+    {
+      "test_id": "PW000122",
+      "style_id": "pairwise_style_pack_lighting_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000122/run.json"
+    },
+    {
+      "test_id": "PW000123",
+      "style_id": "pairwise_style_pack_lighting_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000123/run.json"
+    },
+    {
+      "test_id": "PW000124",
+      "style_id": "pairwise_style_pack_lighting_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000124/run.json"
+    },
+    {
+      "test_id": "PW000125",
+      "style_id": "pairwise_style_pack_lighting_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000125/run.json"
+    },
+    {
+      "test_id": "PW000126",
+      "style_id": "pairwise_style_pack_lighting_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000126/run.json"
+    },
+    {
+      "test_id": "PW000127",
+      "style_id": "pairwise_style_pack_lighting_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000127/run.json"
+    },
+    {
+      "test_id": "PW000128",
+      "style_id": "pairwise_style_pack_lighting_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000128/run.json"
+    },
+    {
+      "test_id": "PW000129",
+      "style_id": "pairwise_style_pack_lighting_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000129/run.json"
+    },
+    {
+      "test_id": "PW000130",
+      "style_id": "pairwise_style_pack_lighting_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000130/run.json"
+    },
+    {
+      "test_id": "PW000131",
+      "style_id": "pairwise_style_pack_lighting_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000131/run.json"
+    },
+    {
+      "test_id": "PW000132",
+      "style_id": "pairwise_style_pack_lighting_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000132/run.json"
+    },
+    {
+      "test_id": "PW000133",
+      "style_id": "pairwise_style_pack_lighting_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000133/run.json"
+    },
+    {
+      "test_id": "PW000134",
+      "style_id": "pairwise_style_pack_lighting_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000134/run.json"
+    },
+    {
+      "test_id": "PW000135",
+      "style_id": "pairwise_style_pack_lighting_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000135/run.json"
+    },
+    {
+      "test_id": "PW000136",
+      "style_id": "pairwise_style_pack_lighting_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000136/run.json"
+    },
+    {
+      "test_id": "PW000137",
+      "style_id": "pairwise_style_pack_lighting_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000137/run.json"
+    },
+    {
+      "test_id": "PW000138",
+      "style_id": "pairwise_style_pack_lighting_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000138/run.json"
+    },
+    {
+      "test_id": "PW000139",
+      "style_id": "pairwise_style_pack_lighting_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000139/run.json"
+    },
+    {
+      "test_id": "PW000140",
+      "style_id": "pairwise_style_pack_lighting_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000140/run.json"
+    },
+    {
+      "test_id": "PW000141",
+      "style_id": "pairwise_style_pack_lighting_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000141/run.json"
+    },
+    {
+      "test_id": "PW000142",
+      "style_id": "pairwise_style_pack_lighting_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000142/run.json"
+    },
+    {
+      "test_id": "PW000143",
+      "style_id": "pairwise_style_pack_lighting_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000143/run.json"
+    },
+    {
+      "test_id": "PW000144",
+      "style_id": "pairwise_style_pack_lighting_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000144/run.json"
+    },
+    {
+      "test_id": "PW000145",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000145/run.json"
+    },
+    {
+      "test_id": "PW000146",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000146/run.json"
+    },
+    {
+      "test_id": "PW000147",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000147/run.json"
+    },
+    {
+      "test_id": "PW000148",
+      "style_id": "pairwise_style_pack_background_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000148/run.json"
+    },
+    {
+      "test_id": "PW000149",
+      "style_id": "pairwise_style_pack_background_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000149/run.json"
+    },
+    {
+      "test_id": "PW000150",
+      "style_id": "pairwise_style_pack_background_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000150/run.json"
+    },
+    {
+      "test_id": "PW000151",
+      "style_id": "pairwise_style_pack_background_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000151/run.json"
+    },
+    {
+      "test_id": "PW000152",
+      "style_id": "pairwise_style_pack_background_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000152/run.json"
+    },
+    {
+      "test_id": "PW000153",
+      "style_id": "pairwise_style_pack_background_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000153/run.json"
+    },
+    {
+      "test_id": "PW000154",
+      "style_id": "pairwise_style_pack_background_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000154/run.json"
+    },
+    {
+      "test_id": "PW000155",
+      "style_id": "pairwise_style_pack_background_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000155/run.json"
+    },
+    {
+      "test_id": "PW000156",
+      "style_id": "pairwise_style_pack_background_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000156/run.json"
+    },
+    {
+      "test_id": "PW000157",
+      "style_id": "pairwise_style_pack_background_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000157/run.json"
+    },
+    {
+      "test_id": "PW000158",
+      "style_id": "pairwise_style_pack_background_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000158/run.json"
+    },
+    {
+      "test_id": "PW000159",
+      "style_id": "pairwise_style_pack_background_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000159/run.json"
+    },
+    {
+      "test_id": "PW000160",
+      "style_id": "pairwise_style_pack_background_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000160/run.json"
+    },
+    {
+      "test_id": "PW000161",
+      "style_id": "pairwise_style_pack_background_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000161/run.json"
+    },
+    {
+      "test_id": "PW000162",
+      "style_id": "pairwise_style_pack_background_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000162/run.json"
+    },
+    {
+      "test_id": "PW000163",
+      "style_id": "pairwise_style_pack_background_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000163/run.json"
+    },
+    {
+      "test_id": "PW000164",
+      "style_id": "pairwise_style_pack_background_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000164/run.json"
+    },
+    {
+      "test_id": "PW000165",
+      "style_id": "pairwise_style_pack_background_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000165/run.json"
+    },
+    {
+      "test_id": "PW000166",
+      "style_id": "pairwise_style_pack_background_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000166/run.json"
+    },
+    {
+      "test_id": "PW000167",
+      "style_id": "pairwise_style_pack_background_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000167/run.json"
+    },
+    {
+      "test_id": "PW000168",
+      "style_id": "pairwise_style_pack_background_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000168/run.json"
+    },
+    {
+      "test_id": "PW000169",
+      "style_id": "pairwise_style_pack_background_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000169/run.json"
+    },
+    {
+      "test_id": "PW000170",
+      "style_id": "pairwise_style_pack_background_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000170/run.json"
+    },
+    {
+      "test_id": "PW000171",
+      "style_id": "pairwise_style_pack_background_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000171/run.json"
+    },
+    {
+      "test_id": "PW000172",
+      "style_id": "pairwise_style_pack_background_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000172/run.json"
+    },
+    {
+      "test_id": "PW000173",
+      "style_id": "pairwise_style_pack_background_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000173/run.json"
+    },
+    {
+      "test_id": "PW000174",
+      "style_id": "pairwise_style_pack_background_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000174/run.json"
+    },
+    {
+      "test_id": "PW000175",
+      "style_id": "pairwise_style_pack_background_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000175/run.json"
+    },
+    {
+      "test_id": "PW000176",
+      "style_id": "pairwise_style_pack_background_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000176/run.json"
+    },
+    {
+      "test_id": "PW000177",
+      "style_id": "pairwise_style_pack_background_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000177/run.json"
+    },
+    {
+      "test_id": "PW000178",
+      "style_id": "pairwise_style_pack_background_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000178/run.json"
+    },
+    {
+      "test_id": "PW000179",
+      "style_id": "pairwise_style_pack_background_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000179/run.json"
+    },
+    {
+      "test_id": "PW000180",
+      "style_id": "pairwise_style_pack_background_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000180/run.json"
+    },
+    {
+      "test_id": "PW000181",
+      "style_id": "pairwise_style_pack_background_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000181/run.json"
+    },
+    {
+      "test_id": "PW000182",
+      "style_id": "pairwise_style_pack_background_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000182/run.json"
+    },
+    {
+      "test_id": "PW000183",
+      "style_id": "pairwise_style_pack_background_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000183/run.json"
+    },
+    {
+      "test_id": "PW000184",
+      "style_id": "pairwise_style_pack_background_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000184/run.json"
+    },
+    {
+      "test_id": "PW000185",
+      "style_id": "pairwise_style_pack_background_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000185/run.json"
+    },
+    {
+      "test_id": "PW000186",
+      "style_id": "pairwise_style_pack_background_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000186/run.json"
+    },
+    {
+      "test_id": "PW000187",
+      "style_id": "pairwise_style_pack_background_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000187/run.json"
+    },
+    {
+      "test_id": "PW000188",
+      "style_id": "pairwise_style_pack_background_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000188/run.json"
+    },
+    {
+      "test_id": "PW000189",
+      "style_id": "pairwise_style_pack_background_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000189/run.json"
+    },
+    {
+      "test_id": "PW000190",
+      "style_id": "pairwise_style_pack_background_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000190/run.json"
+    },
+    {
+      "test_id": "PW000191",
+      "style_id": "pairwise_style_pack_background_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000191/run.json"
+    },
+    {
+      "test_id": "PW000192",
+      "style_id": "pairwise_style_pack_background_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000192/run.json"
+    },
+    {
+      "test_id": "PW000193",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000193/run.json"
+    },
+    {
+      "test_id": "PW000194",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000194/run.json"
+    },
+    {
+      "test_id": "PW000195",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000195/run.json"
+    },
+    {
+      "test_id": "PW000196",
+      "style_id": "pairwise_artist_signature_coloring_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000196/run.json"
+    },
+    {
+      "test_id": "PW000197",
+      "style_id": "pairwise_artist_signature_coloring_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000197/run.json"
+    },
+    {
+      "test_id": "PW000198",
+      "style_id": "pairwise_artist_signature_coloring_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000198/run.json"
+    },
+    {
+      "test_id": "PW000199",
+      "style_id": "pairwise_artist_signature_coloring_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000199/run.json"
+    },
+    {
+      "test_id": "PW000200",
+      "style_id": "pairwise_artist_signature_coloring_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000200/run.json"
+    },
+    {
+      "test_id": "PW000201",
+      "style_id": "pairwise_artist_signature_coloring_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000201/run.json"
+    },
+    {
+      "test_id": "PW000202",
+      "style_id": "pairwise_artist_signature_coloring_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000202/run.json"
+    },
+    {
+      "test_id": "PW000203",
+      "style_id": "pairwise_artist_signature_coloring_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000203/run.json"
+    },
+    {
+      "test_id": "PW000204",
+      "style_id": "pairwise_artist_signature_coloring_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000204/run.json"
+    },
+    {
+      "test_id": "PW000205",
+      "style_id": "pairwise_artist_signature_coloring_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000205/run.json"
+    },
+    {
+      "test_id": "PW000206",
+      "style_id": "pairwise_artist_signature_coloring_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000206/run.json"
+    },
+    {
+      "test_id": "PW000207",
+      "style_id": "pairwise_artist_signature_coloring_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000207/run.json"
+    },
+    {
+      "test_id": "PW000208",
+      "style_id": "pairwise_artist_signature_coloring_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000208/run.json"
+    },
+    {
+      "test_id": "PW000209",
+      "style_id": "pairwise_artist_signature_coloring_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000209/run.json"
+    },
+    {
+      "test_id": "PW000210",
+      "style_id": "pairwise_artist_signature_coloring_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000210/run.json"
+    },
+    {
+      "test_id": "PW000211",
+      "style_id": "pairwise_artist_signature_coloring_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000211/run.json"
+    },
+    {
+      "test_id": "PW000212",
+      "style_id": "pairwise_artist_signature_coloring_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000212/run.json"
+    },
+    {
+      "test_id": "PW000213",
+      "style_id": "pairwise_artist_signature_coloring_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000213/run.json"
+    },
+    {
+      "test_id": "PW000214",
+      "style_id": "pairwise_artist_signature_coloring_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000214/run.json"
+    },
+    {
+      "test_id": "PW000215",
+      "style_id": "pairwise_artist_signature_coloring_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000215/run.json"
+    },
+    {
+      "test_id": "PW000216",
+      "style_id": "pairwise_artist_signature_coloring_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000216/run.json"
+    },
+    {
+      "test_id": "PW000217",
+      "style_id": "pairwise_artist_signature_coloring_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000217/run.json"
+    },
+    {
+      "test_id": "PW000218",
+      "style_id": "pairwise_artist_signature_coloring_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000218/run.json"
+    },
+    {
+      "test_id": "PW000219",
+      "style_id": "pairwise_artist_signature_coloring_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000219/run.json"
+    },
+    {
+      "test_id": "PW000220",
+      "style_id": "pairwise_artist_signature_coloring_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000220/run.json"
+    },
+    {
+      "test_id": "PW000221",
+      "style_id": "pairwise_artist_signature_coloring_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000221/run.json"
+    },
+    {
+      "test_id": "PW000222",
+      "style_id": "pairwise_artist_signature_coloring_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000222/run.json"
+    },
+    {
+      "test_id": "PW000223",
+      "style_id": "pairwise_artist_signature_coloring_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000223/run.json"
+    },
+    {
+      "test_id": "PW000224",
+      "style_id": "pairwise_artist_signature_coloring_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000224/run.json"
+    },
+    {
+      "test_id": "PW000225",
+      "style_id": "pairwise_artist_signature_coloring_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000225/run.json"
+    },
+    {
+      "test_id": "PW000226",
+      "style_id": "pairwise_artist_signature_coloring_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000226/run.json"
+    },
+    {
+      "test_id": "PW000227",
+      "style_id": "pairwise_artist_signature_coloring_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000227/run.json"
+    },
+    {
+      "test_id": "PW000228",
+      "style_id": "pairwise_artist_signature_coloring_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000228/run.json"
+    },
+    {
+      "test_id": "PW000229",
+      "style_id": "pairwise_artist_signature_coloring_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000229/run.json"
+    },
+    {
+      "test_id": "PW000230",
+      "style_id": "pairwise_artist_signature_coloring_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000230/run.json"
+    },
+    {
+      "test_id": "PW000231",
+      "style_id": "pairwise_artist_signature_coloring_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000231/run.json"
+    },
+    {
+      "test_id": "PW000232",
+      "style_id": "pairwise_artist_signature_coloring_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000232/run.json"
+    },
+    {
+      "test_id": "PW000233",
+      "style_id": "pairwise_artist_signature_coloring_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000233/run.json"
+    },
+    {
+      "test_id": "PW000234",
+      "style_id": "pairwise_artist_signature_coloring_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000234/run.json"
+    },
+    {
+      "test_id": "PW000235",
+      "style_id": "pairwise_artist_signature_coloring_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000235/run.json"
+    },
+    {
+      "test_id": "PW000236",
+      "style_id": "pairwise_artist_signature_coloring_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000236/run.json"
+    },
+    {
+      "test_id": "PW000237",
+      "style_id": "pairwise_artist_signature_coloring_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000237/run.json"
+    },
+    {
+      "test_id": "PW000238",
+      "style_id": "pairwise_artist_signature_coloring_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000238/run.json"
+    },
+    {
+      "test_id": "PW000239",
+      "style_id": "pairwise_artist_signature_coloring_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000239/run.json"
+    },
+    {
+      "test_id": "PW000240",
+      "style_id": "pairwise_artist_signature_coloring_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000240/run.json"
+    },
+    {
+      "test_id": "PW000241",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000241/run.json"
+    },
+    {
+      "test_id": "PW000242",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000242/run.json"
+    },
+    {
+      "test_id": "PW000243",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000243/run.json"
+    },
+    {
+      "test_id": "PW000244",
+      "style_id": "pairwise_artist_signature_camera_composition_002",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000244/run.json"
+    },
+    {
+      "test_id": "PW000245",
+      "style_id": "pairwise_artist_signature_camera_composition_002",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000245/run.json"
+    },
+    {
+      "test_id": "PW000246",
+      "style_id": "pairwise_artist_signature_camera_composition_002",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000246/run.json"
+    },
+    {
+      "test_id": "PW000247",
+      "style_id": "pairwise_artist_signature_camera_composition_003",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000247/run.json"
+    },
+    {
+      "test_id": "PW000248",
+      "style_id": "pairwise_artist_signature_camera_composition_003",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000248/run.json"
+    },
+    {
+      "test_id": "PW000249",
+      "style_id": "pairwise_artist_signature_camera_composition_003",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000249/run.json"
+    },
+    {
+      "test_id": "PW000250",
+      "style_id": "pairwise_artist_signature_camera_composition_004",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000250/run.json"
+    },
+    {
+      "test_id": "PW000251",
+      "style_id": "pairwise_artist_signature_camera_composition_004",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000251/run.json"
+    },
+    {
+      "test_id": "PW000252",
+      "style_id": "pairwise_artist_signature_camera_composition_004",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000252/run.json"
+    },
+    {
+      "test_id": "PW000253",
+      "style_id": "pairwise_artist_signature_camera_composition_005",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000253/run.json"
+    },
+    {
+      "test_id": "PW000254",
+      "style_id": "pairwise_artist_signature_camera_composition_005",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000254/run.json"
+    },
+    {
+      "test_id": "PW000255",
+      "style_id": "pairwise_artist_signature_camera_composition_005",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000255/run.json"
+    },
+    {
+      "test_id": "PW000256",
+      "style_id": "pairwise_artist_signature_camera_composition_006",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000256/run.json"
+    },
+    {
+      "test_id": "PW000257",
+      "style_id": "pairwise_artist_signature_camera_composition_006",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000257/run.json"
+    },
+    {
+      "test_id": "PW000258",
+      "style_id": "pairwise_artist_signature_camera_composition_006",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000258/run.json"
+    },
+    {
+      "test_id": "PW000259",
+      "style_id": "pairwise_artist_signature_camera_composition_007",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000259/run.json"
+    },
+    {
+      "test_id": "PW000260",
+      "style_id": "pairwise_artist_signature_camera_composition_007",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000260/run.json"
+    },
+    {
+      "test_id": "PW000261",
+      "style_id": "pairwise_artist_signature_camera_composition_007",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000261/run.json"
+    },
+    {
+      "test_id": "PW000262",
+      "style_id": "pairwise_artist_signature_camera_composition_008",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000262/run.json"
+    },
+    {
+      "test_id": "PW000263",
+      "style_id": "pairwise_artist_signature_camera_composition_008",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000263/run.json"
+    },
+    {
+      "test_id": "PW000264",
+      "style_id": "pairwise_artist_signature_camera_composition_008",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000264/run.json"
+    },
+    {
+      "test_id": "PW000265",
+      "style_id": "pairwise_artist_signature_camera_composition_009",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000265/run.json"
+    },
+    {
+      "test_id": "PW000266",
+      "style_id": "pairwise_artist_signature_camera_composition_009",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000266/run.json"
+    },
+    {
+      "test_id": "PW000267",
+      "style_id": "pairwise_artist_signature_camera_composition_009",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000267/run.json"
+    },
+    {
+      "test_id": "PW000268",
+      "style_id": "pairwise_artist_signature_camera_composition_010",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000268/run.json"
+    },
+    {
+      "test_id": "PW000269",
+      "style_id": "pairwise_artist_signature_camera_composition_010",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000269/run.json"
+    },
+    {
+      "test_id": "PW000270",
+      "style_id": "pairwise_artist_signature_camera_composition_010",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000270/run.json"
+    },
+    {
+      "test_id": "PW000271",
+      "style_id": "pairwise_artist_signature_camera_composition_011",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000271/run.json"
+    },
+    {
+      "test_id": "PW000272",
+      "style_id": "pairwise_artist_signature_camera_composition_011",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000272/run.json"
+    },
+    {
+      "test_id": "PW000273",
+      "style_id": "pairwise_artist_signature_camera_composition_011",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000273/run.json"
+    },
+    {
+      "test_id": "PW000274",
+      "style_id": "pairwise_artist_signature_camera_composition_012",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000274/run.json"
+    },
+    {
+      "test_id": "PW000275",
+      "style_id": "pairwise_artist_signature_camera_composition_012",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000275/run.json"
+    },
+    {
+      "test_id": "PW000276",
+      "style_id": "pairwise_artist_signature_camera_composition_012",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000276/run.json"
+    },
+    {
+      "test_id": "PW000277",
+      "style_id": "pairwise_artist_signature_camera_composition_013",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000277/run.json"
+    },
+    {
+      "test_id": "PW000278",
+      "style_id": "pairwise_artist_signature_camera_composition_013",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000278/run.json"
+    },
+    {
+      "test_id": "PW000279",
+      "style_id": "pairwise_artist_signature_camera_composition_013",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000279/run.json"
+    },
+    {
+      "test_id": "PW000280",
+      "style_id": "pairwise_artist_signature_camera_composition_014",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000280/run.json"
+    },
+    {
+      "test_id": "PW000281",
+      "style_id": "pairwise_artist_signature_camera_composition_014",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000281/run.json"
+    },
+    {
+      "test_id": "PW000282",
+      "style_id": "pairwise_artist_signature_camera_composition_014",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000282/run.json"
+    },
+    {
+      "test_id": "PW000283",
+      "style_id": "pairwise_artist_signature_camera_composition_015",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000283/run.json"
+    },
+    {
+      "test_id": "PW000284",
+      "style_id": "pairwise_artist_signature_camera_composition_015",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000284/run.json"
+    },
+    {
+      "test_id": "PW000285",
+      "style_id": "pairwise_artist_signature_camera_composition_015",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000285/run.json"
+    },
+    {
+      "test_id": "PW000286",
+      "style_id": "pairwise_artist_signature_camera_composition_016",
+      "mode": "pairwise",
+      "seed": 1001,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000286/run.json"
+    },
+    {
+      "test_id": "PW000287",
+      "style_id": "pairwise_artist_signature_camera_composition_016",
+      "mode": "pairwise",
+      "seed": 2002,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000287/run.json"
+    },
+    {
+      "test_id": "PW000288",
+      "style_id": "pairwise_artist_signature_camera_composition_016",
+      "mode": "pairwise",
+      "seed": 3003,
+      "run": "tests/reports/phase6_pairwise_v1/runs/PW000288/run.json"
+    }
+  ]
+}

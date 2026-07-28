@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000169",
+  "style_id": "single_axis_background_009",
+  "label": "single_axis_background_009",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "da6b0799-3e09-4ce4-9b93-3fff12fef412",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a quiet museum hall with pale stone walls, deep doorways, and sparse display forms, with a moderately elevated horizon that reveals surface patterns without crowding the figure, faint depth haze confined to distant layers while the subject plane remains clear, and cool mineral surroundings with slate, blue-grey, soft green, and restrained silver notes. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Build every foreground, middle-distance, horizon, flanking, and repeated vertical feature from non-human architectural or landscape objects such as empty railings, posts, planters, shelves, tree trunks, window mullions, columns, benches, parapets, or wall openings. Keep the measured adult as the only human-shaped figure in the scene. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "d34477369c1cfbb5f87c793696f5f4e3add3948e4d722e406c5af9692310f00a",
+  "workflow_sha256": "cb5d822008a76162a958d26f7ff4e9a70b7d7610d3edcedf0aed1f4b52831e0c",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_museum_hall_elevated_horizon_faint_depth_haze_cool_mineral_complete_background",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "0226e3cb285b2209816e5cd26e863c84224936b27b5cb0d4058e84fc4bccfa0d",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

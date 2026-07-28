@@ -1,0 +1,2129 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_presets.jsonl",
+  "matrix_sha256": "dcd3bf6e6b2ec36ed1cac6c54f0897b15a91fb658f534c929a969fa067bdb45d",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 300,
+  "completed_count": 300,
+  "style_count": 100,
+  "modes": {
+    "preset_audit": 300
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/phase6_presets_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "PA000001",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000001/run.json"
+    },
+    {
+      "test_id": "PA000002",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000002/run.json"
+    },
+    {
+      "test_id": "PA000003",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000003/run.json"
+    },
+    {
+      "test_id": "PA000004",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000004/run.json"
+    },
+    {
+      "test_id": "PA000005",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000005/run.json"
+    },
+    {
+      "test_id": "PA000006",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000006/run.json"
+    },
+    {
+      "test_id": "PA000007",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000007/run.json"
+    },
+    {
+      "test_id": "PA000008",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000008/run.json"
+    },
+    {
+      "test_id": "PA000009",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000009/run.json"
+    },
+    {
+      "test_id": "PA000010",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000010/run.json"
+    },
+    {
+      "test_id": "PA000011",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000011/run.json"
+    },
+    {
+      "test_id": "PA000012",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000012/run.json"
+    },
+    {
+      "test_id": "PA000013",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000013/run.json"
+    },
+    {
+      "test_id": "PA000014",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000014/run.json"
+    },
+    {
+      "test_id": "PA000015",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000015/run.json"
+    },
+    {
+      "test_id": "PA000016",
+      "style_id": "preset_audit_006",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000016/run.json"
+    },
+    {
+      "test_id": "PA000017",
+      "style_id": "preset_audit_006",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000017/run.json"
+    },
+    {
+      "test_id": "PA000018",
+      "style_id": "preset_audit_006",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000018/run.json"
+    },
+    {
+      "test_id": "PA000019",
+      "style_id": "preset_audit_007",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000019/run.json"
+    },
+    {
+      "test_id": "PA000020",
+      "style_id": "preset_audit_007",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000020/run.json"
+    },
+    {
+      "test_id": "PA000021",
+      "style_id": "preset_audit_007",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000021/run.json"
+    },
+    {
+      "test_id": "PA000022",
+      "style_id": "preset_audit_008",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000022/run.json"
+    },
+    {
+      "test_id": "PA000023",
+      "style_id": "preset_audit_008",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000023/run.json"
+    },
+    {
+      "test_id": "PA000024",
+      "style_id": "preset_audit_008",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000024/run.json"
+    },
+    {
+      "test_id": "PA000025",
+      "style_id": "preset_audit_009",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000025/run.json"
+    },
+    {
+      "test_id": "PA000026",
+      "style_id": "preset_audit_009",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000026/run.json"
+    },
+    {
+      "test_id": "PA000027",
+      "style_id": "preset_audit_009",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000027/run.json"
+    },
+    {
+      "test_id": "PA000028",
+      "style_id": "preset_audit_010",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000028/run.json"
+    },
+    {
+      "test_id": "PA000029",
+      "style_id": "preset_audit_010",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000029/run.json"
+    },
+    {
+      "test_id": "PA000030",
+      "style_id": "preset_audit_010",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000030/run.json"
+    },
+    {
+      "test_id": "PA000031",
+      "style_id": "preset_audit_011",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000031/run.json"
+    },
+    {
+      "test_id": "PA000032",
+      "style_id": "preset_audit_011",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000032/run.json"
+    },
+    {
+      "test_id": "PA000033",
+      "style_id": "preset_audit_011",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000033/run.json"
+    },
+    {
+      "test_id": "PA000034",
+      "style_id": "preset_audit_012",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000034/run.json"
+    },
+    {
+      "test_id": "PA000035",
+      "style_id": "preset_audit_012",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000035/run.json"
+    },
+    {
+      "test_id": "PA000036",
+      "style_id": "preset_audit_012",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000036/run.json"
+    },
+    {
+      "test_id": "PA000037",
+      "style_id": "preset_audit_013",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000037/run.json"
+    },
+    {
+      "test_id": "PA000038",
+      "style_id": "preset_audit_013",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000038/run.json"
+    },
+    {
+      "test_id": "PA000039",
+      "style_id": "preset_audit_013",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000039/run.json"
+    },
+    {
+      "test_id": "PA000040",
+      "style_id": "preset_audit_014",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000040/run.json"
+    },
+    {
+      "test_id": "PA000041",
+      "style_id": "preset_audit_014",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000041/run.json"
+    },
+    {
+      "test_id": "PA000042",
+      "style_id": "preset_audit_014",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000042/run.json"
+    },
+    {
+      "test_id": "PA000043",
+      "style_id": "preset_audit_015",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000043/run.json"
+    },
+    {
+      "test_id": "PA000044",
+      "style_id": "preset_audit_015",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000044/run.json"
+    },
+    {
+      "test_id": "PA000045",
+      "style_id": "preset_audit_015",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000045/run.json"
+    },
+    {
+      "test_id": "PA000046",
+      "style_id": "preset_audit_016",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000046/run.json"
+    },
+    {
+      "test_id": "PA000047",
+      "style_id": "preset_audit_016",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000047/run.json"
+    },
+    {
+      "test_id": "PA000048",
+      "style_id": "preset_audit_016",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000048/run.json"
+    },
+    {
+      "test_id": "PA000049",
+      "style_id": "preset_audit_017",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000049/run.json"
+    },
+    {
+      "test_id": "PA000050",
+      "style_id": "preset_audit_017",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000050/run.json"
+    },
+    {
+      "test_id": "PA000051",
+      "style_id": "preset_audit_017",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000051/run.json"
+    },
+    {
+      "test_id": "PA000052",
+      "style_id": "preset_audit_018",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000052/run.json"
+    },
+    {
+      "test_id": "PA000053",
+      "style_id": "preset_audit_018",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000053/run.json"
+    },
+    {
+      "test_id": "PA000054",
+      "style_id": "preset_audit_018",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000054/run.json"
+    },
+    {
+      "test_id": "PA000055",
+      "style_id": "preset_audit_019",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000055/run.json"
+    },
+    {
+      "test_id": "PA000056",
+      "style_id": "preset_audit_019",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000056/run.json"
+    },
+    {
+      "test_id": "PA000057",
+      "style_id": "preset_audit_019",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000057/run.json"
+    },
+    {
+      "test_id": "PA000058",
+      "style_id": "preset_audit_020",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000058/run.json"
+    },
+    {
+      "test_id": "PA000059",
+      "style_id": "preset_audit_020",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000059/run.json"
+    },
+    {
+      "test_id": "PA000060",
+      "style_id": "preset_audit_020",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000060/run.json"
+    },
+    {
+      "test_id": "PA000061",
+      "style_id": "preset_audit_021",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000061/run.json"
+    },
+    {
+      "test_id": "PA000062",
+      "style_id": "preset_audit_021",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000062/run.json"
+    },
+    {
+      "test_id": "PA000063",
+      "style_id": "preset_audit_021",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000063/run.json"
+    },
+    {
+      "test_id": "PA000064",
+      "style_id": "preset_audit_022",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000064/run.json"
+    },
+    {
+      "test_id": "PA000065",
+      "style_id": "preset_audit_022",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000065/run.json"
+    },
+    {
+      "test_id": "PA000066",
+      "style_id": "preset_audit_022",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000066/run.json"
+    },
+    {
+      "test_id": "PA000067",
+      "style_id": "preset_audit_023",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000067/run.json"
+    },
+    {
+      "test_id": "PA000068",
+      "style_id": "preset_audit_023",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000068/run.json"
+    },
+    {
+      "test_id": "PA000069",
+      "style_id": "preset_audit_023",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000069/run.json"
+    },
+    {
+      "test_id": "PA000070",
+      "style_id": "preset_audit_024",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000070/run.json"
+    },
+    {
+      "test_id": "PA000071",
+      "style_id": "preset_audit_024",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000071/run.json"
+    },
+    {
+      "test_id": "PA000072",
+      "style_id": "preset_audit_024",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000072/run.json"
+    },
+    {
+      "test_id": "PA000073",
+      "style_id": "preset_audit_025",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000073/run.json"
+    },
+    {
+      "test_id": "PA000074",
+      "style_id": "preset_audit_025",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000074/run.json"
+    },
+    {
+      "test_id": "PA000075",
+      "style_id": "preset_audit_025",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000075/run.json"
+    },
+    {
+      "test_id": "PA000076",
+      "style_id": "preset_audit_026",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000076/run.json"
+    },
+    {
+      "test_id": "PA000077",
+      "style_id": "preset_audit_026",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000077/run.json"
+    },
+    {
+      "test_id": "PA000078",
+      "style_id": "preset_audit_026",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000078/run.json"
+    },
+    {
+      "test_id": "PA000079",
+      "style_id": "preset_audit_027",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000079/run.json"
+    },
+    {
+      "test_id": "PA000080",
+      "style_id": "preset_audit_027",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000080/run.json"
+    },
+    {
+      "test_id": "PA000081",
+      "style_id": "preset_audit_027",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000081/run.json"
+    },
+    {
+      "test_id": "PA000082",
+      "style_id": "preset_audit_028",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000082/run.json"
+    },
+    {
+      "test_id": "PA000083",
+      "style_id": "preset_audit_028",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000083/run.json"
+    },
+    {
+      "test_id": "PA000084",
+      "style_id": "preset_audit_028",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000084/run.json"
+    },
+    {
+      "test_id": "PA000085",
+      "style_id": "preset_audit_029",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000085/run.json"
+    },
+    {
+      "test_id": "PA000086",
+      "style_id": "preset_audit_029",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000086/run.json"
+    },
+    {
+      "test_id": "PA000087",
+      "style_id": "preset_audit_029",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000087/run.json"
+    },
+    {
+      "test_id": "PA000088",
+      "style_id": "preset_audit_030",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000088/run.json"
+    },
+    {
+      "test_id": "PA000089",
+      "style_id": "preset_audit_030",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000089/run.json"
+    },
+    {
+      "test_id": "PA000090",
+      "style_id": "preset_audit_030",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000090/run.json"
+    },
+    {
+      "test_id": "PA000091",
+      "style_id": "preset_audit_031",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000091/run.json"
+    },
+    {
+      "test_id": "PA000092",
+      "style_id": "preset_audit_031",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000092/run.json"
+    },
+    {
+      "test_id": "PA000093",
+      "style_id": "preset_audit_031",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000093/run.json"
+    },
+    {
+      "test_id": "PA000094",
+      "style_id": "preset_audit_032",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000094/run.json"
+    },
+    {
+      "test_id": "PA000095",
+      "style_id": "preset_audit_032",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000095/run.json"
+    },
+    {
+      "test_id": "PA000096",
+      "style_id": "preset_audit_032",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000096/run.json"
+    },
+    {
+      "test_id": "PA000097",
+      "style_id": "preset_audit_033",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000097/run.json"
+    },
+    {
+      "test_id": "PA000098",
+      "style_id": "preset_audit_033",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000098/run.json"
+    },
+    {
+      "test_id": "PA000099",
+      "style_id": "preset_audit_033",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000099/run.json"
+    },
+    {
+      "test_id": "PA000100",
+      "style_id": "preset_audit_034",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000100/run.json"
+    },
+    {
+      "test_id": "PA000101",
+      "style_id": "preset_audit_034",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000101/run.json"
+    },
+    {
+      "test_id": "PA000102",
+      "style_id": "preset_audit_034",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000102/run.json"
+    },
+    {
+      "test_id": "PA000103",
+      "style_id": "preset_audit_035",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000103/run.json"
+    },
+    {
+      "test_id": "PA000104",
+      "style_id": "preset_audit_035",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000104/run.json"
+    },
+    {
+      "test_id": "PA000105",
+      "style_id": "preset_audit_035",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000105/run.json"
+    },
+    {
+      "test_id": "PA000106",
+      "style_id": "preset_audit_036",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000106/run.json"
+    },
+    {
+      "test_id": "PA000107",
+      "style_id": "preset_audit_036",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000107/run.json"
+    },
+    {
+      "test_id": "PA000108",
+      "style_id": "preset_audit_036",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000108/run.json"
+    },
+    {
+      "test_id": "PA000109",
+      "style_id": "preset_audit_037",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000109/run.json"
+    },
+    {
+      "test_id": "PA000110",
+      "style_id": "preset_audit_037",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000110/run.json"
+    },
+    {
+      "test_id": "PA000111",
+      "style_id": "preset_audit_037",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000111/run.json"
+    },
+    {
+      "test_id": "PA000112",
+      "style_id": "preset_audit_038",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000112/run.json"
+    },
+    {
+      "test_id": "PA000113",
+      "style_id": "preset_audit_038",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000113/run.json"
+    },
+    {
+      "test_id": "PA000114",
+      "style_id": "preset_audit_038",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000114/run.json"
+    },
+    {
+      "test_id": "PA000115",
+      "style_id": "preset_audit_039",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000115/run.json"
+    },
+    {
+      "test_id": "PA000116",
+      "style_id": "preset_audit_039",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000116/run.json"
+    },
+    {
+      "test_id": "PA000117",
+      "style_id": "preset_audit_039",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000117/run.json"
+    },
+    {
+      "test_id": "PA000118",
+      "style_id": "preset_audit_040",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000118/run.json"
+    },
+    {
+      "test_id": "PA000119",
+      "style_id": "preset_audit_040",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000119/run.json"
+    },
+    {
+      "test_id": "PA000120",
+      "style_id": "preset_audit_040",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000120/run.json"
+    },
+    {
+      "test_id": "PA000121",
+      "style_id": "preset_audit_041",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000121/run.json"
+    },
+    {
+      "test_id": "PA000122",
+      "style_id": "preset_audit_041",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000122/run.json"
+    },
+    {
+      "test_id": "PA000123",
+      "style_id": "preset_audit_041",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000123/run.json"
+    },
+    {
+      "test_id": "PA000124",
+      "style_id": "preset_audit_042",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000124/run.json"
+    },
+    {
+      "test_id": "PA000125",
+      "style_id": "preset_audit_042",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000125/run.json"
+    },
+    {
+      "test_id": "PA000126",
+      "style_id": "preset_audit_042",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000126/run.json"
+    },
+    {
+      "test_id": "PA000127",
+      "style_id": "preset_audit_043",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000127/run.json"
+    },
+    {
+      "test_id": "PA000128",
+      "style_id": "preset_audit_043",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000128/run.json"
+    },
+    {
+      "test_id": "PA000129",
+      "style_id": "preset_audit_043",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000129/run.json"
+    },
+    {
+      "test_id": "PA000130",
+      "style_id": "preset_audit_044",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000130/run.json"
+    },
+    {
+      "test_id": "PA000131",
+      "style_id": "preset_audit_044",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000131/run.json"
+    },
+    {
+      "test_id": "PA000132",
+      "style_id": "preset_audit_044",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000132/run.json"
+    },
+    {
+      "test_id": "PA000133",
+      "style_id": "preset_audit_045",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000133/run.json"
+    },
+    {
+      "test_id": "PA000134",
+      "style_id": "preset_audit_045",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000134/run.json"
+    },
+    {
+      "test_id": "PA000135",
+      "style_id": "preset_audit_045",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000135/run.json"
+    },
+    {
+      "test_id": "PA000136",
+      "style_id": "preset_audit_046",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000136/run.json"
+    },
+    {
+      "test_id": "PA000137",
+      "style_id": "preset_audit_046",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000137/run.json"
+    },
+    {
+      "test_id": "PA000138",
+      "style_id": "preset_audit_046",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000138/run.json"
+    },
+    {
+      "test_id": "PA000139",
+      "style_id": "preset_audit_047",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000139/run.json"
+    },
+    {
+      "test_id": "PA000140",
+      "style_id": "preset_audit_047",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000140/run.json"
+    },
+    {
+      "test_id": "PA000141",
+      "style_id": "preset_audit_047",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000141/run.json"
+    },
+    {
+      "test_id": "PA000142",
+      "style_id": "preset_audit_048",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000142/run.json"
+    },
+    {
+      "test_id": "PA000143",
+      "style_id": "preset_audit_048",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000143/run.json"
+    },
+    {
+      "test_id": "PA000144",
+      "style_id": "preset_audit_048",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000144/run.json"
+    },
+    {
+      "test_id": "PA000145",
+      "style_id": "preset_audit_049",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000145/run.json"
+    },
+    {
+      "test_id": "PA000146",
+      "style_id": "preset_audit_049",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000146/run.json"
+    },
+    {
+      "test_id": "PA000147",
+      "style_id": "preset_audit_049",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000147/run.json"
+    },
+    {
+      "test_id": "PA000148",
+      "style_id": "preset_audit_050",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000148/run.json"
+    },
+    {
+      "test_id": "PA000149",
+      "style_id": "preset_audit_050",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000149/run.json"
+    },
+    {
+      "test_id": "PA000150",
+      "style_id": "preset_audit_050",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000150/run.json"
+    },
+    {
+      "test_id": "PA000151",
+      "style_id": "preset_audit_051",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000151/run.json"
+    },
+    {
+      "test_id": "PA000152",
+      "style_id": "preset_audit_051",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000152/run.json"
+    },
+    {
+      "test_id": "PA000153",
+      "style_id": "preset_audit_051",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000153/run.json"
+    },
+    {
+      "test_id": "PA000154",
+      "style_id": "preset_audit_052",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000154/run.json"
+    },
+    {
+      "test_id": "PA000155",
+      "style_id": "preset_audit_052",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000155/run.json"
+    },
+    {
+      "test_id": "PA000156",
+      "style_id": "preset_audit_052",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000156/run.json"
+    },
+    {
+      "test_id": "PA000157",
+      "style_id": "preset_audit_053",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000157/run.json"
+    },
+    {
+      "test_id": "PA000158",
+      "style_id": "preset_audit_053",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000158/run.json"
+    },
+    {
+      "test_id": "PA000159",
+      "style_id": "preset_audit_053",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000159/run.json"
+    },
+    {
+      "test_id": "PA000160",
+      "style_id": "preset_audit_054",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000160/run.json"
+    },
+    {
+      "test_id": "PA000161",
+      "style_id": "preset_audit_054",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000161/run.json"
+    },
+    {
+      "test_id": "PA000162",
+      "style_id": "preset_audit_054",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000162/run.json"
+    },
+    {
+      "test_id": "PA000163",
+      "style_id": "preset_audit_055",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000163/run.json"
+    },
+    {
+      "test_id": "PA000164",
+      "style_id": "preset_audit_055",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000164/run.json"
+    },
+    {
+      "test_id": "PA000165",
+      "style_id": "preset_audit_055",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000165/run.json"
+    },
+    {
+      "test_id": "PA000166",
+      "style_id": "preset_audit_056",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000166/run.json"
+    },
+    {
+      "test_id": "PA000167",
+      "style_id": "preset_audit_056",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000167/run.json"
+    },
+    {
+      "test_id": "PA000168",
+      "style_id": "preset_audit_056",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000168/run.json"
+    },
+    {
+      "test_id": "PA000169",
+      "style_id": "preset_audit_057",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000169/run.json"
+    },
+    {
+      "test_id": "PA000170",
+      "style_id": "preset_audit_057",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000170/run.json"
+    },
+    {
+      "test_id": "PA000171",
+      "style_id": "preset_audit_057",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000171/run.json"
+    },
+    {
+      "test_id": "PA000172",
+      "style_id": "preset_audit_058",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000172/run.json"
+    },
+    {
+      "test_id": "PA000173",
+      "style_id": "preset_audit_058",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000173/run.json"
+    },
+    {
+      "test_id": "PA000174",
+      "style_id": "preset_audit_058",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000174/run.json"
+    },
+    {
+      "test_id": "PA000175",
+      "style_id": "preset_audit_059",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000175/run.json"
+    },
+    {
+      "test_id": "PA000176",
+      "style_id": "preset_audit_059",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000176/run.json"
+    },
+    {
+      "test_id": "PA000177",
+      "style_id": "preset_audit_059",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000177/run.json"
+    },
+    {
+      "test_id": "PA000178",
+      "style_id": "preset_audit_060",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000178/run.json"
+    },
+    {
+      "test_id": "PA000179",
+      "style_id": "preset_audit_060",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000179/run.json"
+    },
+    {
+      "test_id": "PA000180",
+      "style_id": "preset_audit_060",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000180/run.json"
+    },
+    {
+      "test_id": "PA000181",
+      "style_id": "preset_audit_061",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000181/run.json"
+    },
+    {
+      "test_id": "PA000182",
+      "style_id": "preset_audit_061",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000182/run.json"
+    },
+    {
+      "test_id": "PA000183",
+      "style_id": "preset_audit_061",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000183/run.json"
+    },
+    {
+      "test_id": "PA000184",
+      "style_id": "preset_audit_062",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000184/run.json"
+    },
+    {
+      "test_id": "PA000185",
+      "style_id": "preset_audit_062",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000185/run.json"
+    },
+    {
+      "test_id": "PA000186",
+      "style_id": "preset_audit_062",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000186/run.json"
+    },
+    {
+      "test_id": "PA000187",
+      "style_id": "preset_audit_063",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000187/run.json"
+    },
+    {
+      "test_id": "PA000188",
+      "style_id": "preset_audit_063",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000188/run.json"
+    },
+    {
+      "test_id": "PA000189",
+      "style_id": "preset_audit_063",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000189/run.json"
+    },
+    {
+      "test_id": "PA000190",
+      "style_id": "preset_audit_064",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000190/run.json"
+    },
+    {
+      "test_id": "PA000191",
+      "style_id": "preset_audit_064",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000191/run.json"
+    },
+    {
+      "test_id": "PA000192",
+      "style_id": "preset_audit_064",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000192/run.json"
+    },
+    {
+      "test_id": "PA000193",
+      "style_id": "preset_audit_065",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000193/run.json"
+    },
+    {
+      "test_id": "PA000194",
+      "style_id": "preset_audit_065",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000194/run.json"
+    },
+    {
+      "test_id": "PA000195",
+      "style_id": "preset_audit_065",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000195/run.json"
+    },
+    {
+      "test_id": "PA000196",
+      "style_id": "preset_audit_066",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000196/run.json"
+    },
+    {
+      "test_id": "PA000197",
+      "style_id": "preset_audit_066",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000197/run.json"
+    },
+    {
+      "test_id": "PA000198",
+      "style_id": "preset_audit_066",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000198/run.json"
+    },
+    {
+      "test_id": "PA000199",
+      "style_id": "preset_audit_067",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000199/run.json"
+    },
+    {
+      "test_id": "PA000200",
+      "style_id": "preset_audit_067",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000200/run.json"
+    },
+    {
+      "test_id": "PA000201",
+      "style_id": "preset_audit_067",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000201/run.json"
+    },
+    {
+      "test_id": "PA000202",
+      "style_id": "preset_audit_068",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000202/run.json"
+    },
+    {
+      "test_id": "PA000203",
+      "style_id": "preset_audit_068",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000203/run.json"
+    },
+    {
+      "test_id": "PA000204",
+      "style_id": "preset_audit_068",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000204/run.json"
+    },
+    {
+      "test_id": "PA000205",
+      "style_id": "preset_audit_069",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000205/run.json"
+    },
+    {
+      "test_id": "PA000206",
+      "style_id": "preset_audit_069",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000206/run.json"
+    },
+    {
+      "test_id": "PA000207",
+      "style_id": "preset_audit_069",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000207/run.json"
+    },
+    {
+      "test_id": "PA000208",
+      "style_id": "preset_audit_070",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000208/run.json"
+    },
+    {
+      "test_id": "PA000209",
+      "style_id": "preset_audit_070",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000209/run.json"
+    },
+    {
+      "test_id": "PA000210",
+      "style_id": "preset_audit_070",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000210/run.json"
+    },
+    {
+      "test_id": "PA000211",
+      "style_id": "preset_audit_071",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000211/run.json"
+    },
+    {
+      "test_id": "PA000212",
+      "style_id": "preset_audit_071",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000212/run.json"
+    },
+    {
+      "test_id": "PA000213",
+      "style_id": "preset_audit_071",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000213/run.json"
+    },
+    {
+      "test_id": "PA000214",
+      "style_id": "preset_audit_072",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000214/run.json"
+    },
+    {
+      "test_id": "PA000215",
+      "style_id": "preset_audit_072",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000215/run.json"
+    },
+    {
+      "test_id": "PA000216",
+      "style_id": "preset_audit_072",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000216/run.json"
+    },
+    {
+      "test_id": "PA000217",
+      "style_id": "preset_audit_073",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000217/run.json"
+    },
+    {
+      "test_id": "PA000218",
+      "style_id": "preset_audit_073",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000218/run.json"
+    },
+    {
+      "test_id": "PA000219",
+      "style_id": "preset_audit_073",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000219/run.json"
+    },
+    {
+      "test_id": "PA000220",
+      "style_id": "preset_audit_074",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000220/run.json"
+    },
+    {
+      "test_id": "PA000221",
+      "style_id": "preset_audit_074",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000221/run.json"
+    },
+    {
+      "test_id": "PA000222",
+      "style_id": "preset_audit_074",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000222/run.json"
+    },
+    {
+      "test_id": "PA000223",
+      "style_id": "preset_audit_075",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000223/run.json"
+    },
+    {
+      "test_id": "PA000224",
+      "style_id": "preset_audit_075",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000224/run.json"
+    },
+    {
+      "test_id": "PA000225",
+      "style_id": "preset_audit_075",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000225/run.json"
+    },
+    {
+      "test_id": "PA000226",
+      "style_id": "preset_audit_076",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000226/run.json"
+    },
+    {
+      "test_id": "PA000227",
+      "style_id": "preset_audit_076",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000227/run.json"
+    },
+    {
+      "test_id": "PA000228",
+      "style_id": "preset_audit_076",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000228/run.json"
+    },
+    {
+      "test_id": "PA000229",
+      "style_id": "preset_audit_077",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000229/run.json"
+    },
+    {
+      "test_id": "PA000230",
+      "style_id": "preset_audit_077",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000230/run.json"
+    },
+    {
+      "test_id": "PA000231",
+      "style_id": "preset_audit_077",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000231/run.json"
+    },
+    {
+      "test_id": "PA000232",
+      "style_id": "preset_audit_078",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000232/run.json"
+    },
+    {
+      "test_id": "PA000233",
+      "style_id": "preset_audit_078",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000233/run.json"
+    },
+    {
+      "test_id": "PA000234",
+      "style_id": "preset_audit_078",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000234/run.json"
+    },
+    {
+      "test_id": "PA000235",
+      "style_id": "preset_audit_079",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000235/run.json"
+    },
+    {
+      "test_id": "PA000236",
+      "style_id": "preset_audit_079",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000236/run.json"
+    },
+    {
+      "test_id": "PA000237",
+      "style_id": "preset_audit_079",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000237/run.json"
+    },
+    {
+      "test_id": "PA000238",
+      "style_id": "preset_audit_080",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000238/run.json"
+    },
+    {
+      "test_id": "PA000239",
+      "style_id": "preset_audit_080",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000239/run.json"
+    },
+    {
+      "test_id": "PA000240",
+      "style_id": "preset_audit_080",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000240/run.json"
+    },
+    {
+      "test_id": "PA000241",
+      "style_id": "preset_audit_081",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000241/run.json"
+    },
+    {
+      "test_id": "PA000242",
+      "style_id": "preset_audit_081",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000242/run.json"
+    },
+    {
+      "test_id": "PA000243",
+      "style_id": "preset_audit_081",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000243/run.json"
+    },
+    {
+      "test_id": "PA000244",
+      "style_id": "preset_audit_082",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000244/run.json"
+    },
+    {
+      "test_id": "PA000245",
+      "style_id": "preset_audit_082",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000245/run.json"
+    },
+    {
+      "test_id": "PA000246",
+      "style_id": "preset_audit_082",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000246/run.json"
+    },
+    {
+      "test_id": "PA000247",
+      "style_id": "preset_audit_083",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000247/run.json"
+    },
+    {
+      "test_id": "PA000248",
+      "style_id": "preset_audit_083",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000248/run.json"
+    },
+    {
+      "test_id": "PA000249",
+      "style_id": "preset_audit_083",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000249/run.json"
+    },
+    {
+      "test_id": "PA000250",
+      "style_id": "preset_audit_084",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000250/run.json"
+    },
+    {
+      "test_id": "PA000251",
+      "style_id": "preset_audit_084",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000251/run.json"
+    },
+    {
+      "test_id": "PA000252",
+      "style_id": "preset_audit_084",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000252/run.json"
+    },
+    {
+      "test_id": "PA000253",
+      "style_id": "preset_audit_085",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000253/run.json"
+    },
+    {
+      "test_id": "PA000254",
+      "style_id": "preset_audit_085",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000254/run.json"
+    },
+    {
+      "test_id": "PA000255",
+      "style_id": "preset_audit_085",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000255/run.json"
+    },
+    {
+      "test_id": "PA000256",
+      "style_id": "preset_audit_086",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000256/run.json"
+    },
+    {
+      "test_id": "PA000257",
+      "style_id": "preset_audit_086",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000257/run.json"
+    },
+    {
+      "test_id": "PA000258",
+      "style_id": "preset_audit_086",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000258/run.json"
+    },
+    {
+      "test_id": "PA000259",
+      "style_id": "preset_audit_087",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000259/run.json"
+    },
+    {
+      "test_id": "PA000260",
+      "style_id": "preset_audit_087",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000260/run.json"
+    },
+    {
+      "test_id": "PA000261",
+      "style_id": "preset_audit_087",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000261/run.json"
+    },
+    {
+      "test_id": "PA000262",
+      "style_id": "preset_audit_088",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000262/run.json"
+    },
+    {
+      "test_id": "PA000263",
+      "style_id": "preset_audit_088",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000263/run.json"
+    },
+    {
+      "test_id": "PA000264",
+      "style_id": "preset_audit_088",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000264/run.json"
+    },
+    {
+      "test_id": "PA000265",
+      "style_id": "preset_audit_089",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000265/run.json"
+    },
+    {
+      "test_id": "PA000266",
+      "style_id": "preset_audit_089",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000266/run.json"
+    },
+    {
+      "test_id": "PA000267",
+      "style_id": "preset_audit_089",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000267/run.json"
+    },
+    {
+      "test_id": "PA000268",
+      "style_id": "preset_audit_090",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000268/run.json"
+    },
+    {
+      "test_id": "PA000269",
+      "style_id": "preset_audit_090",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000269/run.json"
+    },
+    {
+      "test_id": "PA000270",
+      "style_id": "preset_audit_090",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000270/run.json"
+    },
+    {
+      "test_id": "PA000271",
+      "style_id": "preset_audit_091",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000271/run.json"
+    },
+    {
+      "test_id": "PA000272",
+      "style_id": "preset_audit_091",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000272/run.json"
+    },
+    {
+      "test_id": "PA000273",
+      "style_id": "preset_audit_091",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000273/run.json"
+    },
+    {
+      "test_id": "PA000274",
+      "style_id": "preset_audit_092",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000274/run.json"
+    },
+    {
+      "test_id": "PA000275",
+      "style_id": "preset_audit_092",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000275/run.json"
+    },
+    {
+      "test_id": "PA000276",
+      "style_id": "preset_audit_092",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000276/run.json"
+    },
+    {
+      "test_id": "PA000277",
+      "style_id": "preset_audit_093",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000277/run.json"
+    },
+    {
+      "test_id": "PA000278",
+      "style_id": "preset_audit_093",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000278/run.json"
+    },
+    {
+      "test_id": "PA000279",
+      "style_id": "preset_audit_093",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000279/run.json"
+    },
+    {
+      "test_id": "PA000280",
+      "style_id": "preset_audit_094",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000280/run.json"
+    },
+    {
+      "test_id": "PA000281",
+      "style_id": "preset_audit_094",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000281/run.json"
+    },
+    {
+      "test_id": "PA000282",
+      "style_id": "preset_audit_094",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000282/run.json"
+    },
+    {
+      "test_id": "PA000283",
+      "style_id": "preset_audit_095",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000283/run.json"
+    },
+    {
+      "test_id": "PA000284",
+      "style_id": "preset_audit_095",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000284/run.json"
+    },
+    {
+      "test_id": "PA000285",
+      "style_id": "preset_audit_095",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000285/run.json"
+    },
+    {
+      "test_id": "PA000286",
+      "style_id": "preset_audit_096",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000286/run.json"
+    },
+    {
+      "test_id": "PA000287",
+      "style_id": "preset_audit_096",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000287/run.json"
+    },
+    {
+      "test_id": "PA000288",
+      "style_id": "preset_audit_096",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000288/run.json"
+    },
+    {
+      "test_id": "PA000289",
+      "style_id": "preset_audit_097",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000289/run.json"
+    },
+    {
+      "test_id": "PA000290",
+      "style_id": "preset_audit_097",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000290/run.json"
+    },
+    {
+      "test_id": "PA000291",
+      "style_id": "preset_audit_097",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000291/run.json"
+    },
+    {
+      "test_id": "PA000292",
+      "style_id": "preset_audit_098",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000292/run.json"
+    },
+    {
+      "test_id": "PA000293",
+      "style_id": "preset_audit_098",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000293/run.json"
+    },
+    {
+      "test_id": "PA000294",
+      "style_id": "preset_audit_098",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000294/run.json"
+    },
+    {
+      "test_id": "PA000295",
+      "style_id": "preset_audit_099",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000295/run.json"
+    },
+    {
+      "test_id": "PA000296",
+      "style_id": "preset_audit_099",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000296/run.json"
+    },
+    {
+      "test_id": "PA000297",
+      "style_id": "preset_audit_099",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000297/run.json"
+    },
+    {
+      "test_id": "PA000298",
+      "style_id": "preset_audit_100",
+      "mode": "preset_audit",
+      "seed": 1001,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000298/run.json"
+    },
+    {
+      "test_id": "PA000299",
+      "style_id": "preset_audit_100",
+      "mode": "preset_audit",
+      "seed": 2002,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000299/run.json"
+    },
+    {
+      "test_id": "PA000300",
+      "style_id": "preset_audit_100",
+      "mode": "preset_audit",
+      "seed": 3003,
+      "run": "tests/reports/phase6_presets_v1/runs/PA000300/run.json"
+    }
+  ]
+}

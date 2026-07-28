@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000078",
+  "style_id": "single_axis_pose_010",
+  "label": "single_axis_pose_010",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "14bf78ae-649b-432b-ac04-fc6a07369109",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a relaxed side-reclining pose with supported weight and a long uninterrupted torso line, with one forearm crossing the lower torso while the other hand remains visible at the side. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Show exactly one adult woman in a plain long-sleeve top and straight trousers under broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Place the complete body horizontally on a simple low rectangular studio platform, with one side of the torso supported, hips and legs extended along the platform, the head, hands, knees, and feet all inside the frame, and the platform edge clearly visible under the body. The body's long axis runs left-to-right across the platform, with shoulders, hips, knees, and feet aligned close to horizontal and the torso reclining less than thirty degrees above the platform. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "1c9c152c3c1ea65f0a3fe5ed6989b43b85d8553c5c99621a0eb4023c5c8257be",
+  "workflow_sha256": "6709c6f7e9980d53aa187a7e2a500be8d8b9f0041bbdf6edca88219928b4b2ce",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_side_reclining_low_crossed_forearm_lifted_attentive_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_ca0d4181c8c6b3a927677867fbdf47f00bbfad1c173c2d87c6aea93ccd97f4bd"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "28f411af9dd328edadcb889381cb9c4b4375a183700d8003616aaa67a2257c17",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

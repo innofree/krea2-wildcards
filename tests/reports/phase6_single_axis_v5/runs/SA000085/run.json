@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000085",
+  "style_id": "single_axis_pose_013",
+  "label": "single_axis_pose_013",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "0d06a985-08b4-4fbb-bb61-a9d0c66400df",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an upright contrapposto stance with one relaxed knee and a naturally offset hip line, with both hands lifted near the chest with relaxed palms and distinct finger spacing. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "61c67a7a48f62aff1f694c34b52c28a9fe290072f9d318f520498a651dfce3bc",
+  "workflow_sha256": "ff2ff3edde35261ab31f0a0888e135ba698f30b733ffb8bb485f4917e7fbdd94",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_upright_contrapposto_hands_near_chest_lowered_reflective_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a2468693a2fbb79e1e758f12ee3907351f463f58ab25383b638ab68992d806b9",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

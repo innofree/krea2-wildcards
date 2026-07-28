@@ -1,0 +1,2045 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase6_single_axis.jsonl",
+  "matrix_sha256": "256bd72ddd551db2e335b23cbd329fb158b54561d44767b01e465c6156b5cf05",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 288,
+  "completed_count": 288,
+  "style_count": 96,
+  "modes": {
+    "single_axis": 288
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/phase6_single_axis_v6/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "SA000001",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000001/run.json"
+    },
+    {
+      "test_id": "SA000002",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000002/run.json"
+    },
+    {
+      "test_id": "SA000003",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000003/run.json"
+    },
+    {
+      "test_id": "SA000004",
+      "style_id": "single_axis_character_design_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000004/run.json"
+    },
+    {
+      "test_id": "SA000005",
+      "style_id": "single_axis_character_design_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000005/run.json"
+    },
+    {
+      "test_id": "SA000006",
+      "style_id": "single_axis_character_design_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000006/run.json"
+    },
+    {
+      "test_id": "SA000007",
+      "style_id": "single_axis_character_design_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000007/run.json"
+    },
+    {
+      "test_id": "SA000008",
+      "style_id": "single_axis_character_design_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000008/run.json"
+    },
+    {
+      "test_id": "SA000009",
+      "style_id": "single_axis_character_design_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000009/run.json"
+    },
+    {
+      "test_id": "SA000010",
+      "style_id": "single_axis_character_design_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000010/run.json"
+    },
+    {
+      "test_id": "SA000011",
+      "style_id": "single_axis_character_design_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000011/run.json"
+    },
+    {
+      "test_id": "SA000012",
+      "style_id": "single_axis_character_design_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000012/run.json"
+    },
+    {
+      "test_id": "SA000013",
+      "style_id": "single_axis_character_design_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000013/run.json"
+    },
+    {
+      "test_id": "SA000014",
+      "style_id": "single_axis_character_design_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000014/run.json"
+    },
+    {
+      "test_id": "SA000015",
+      "style_id": "single_axis_character_design_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000015/run.json"
+    },
+    {
+      "test_id": "SA000016",
+      "style_id": "single_axis_character_design_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000016/run.json"
+    },
+    {
+      "test_id": "SA000017",
+      "style_id": "single_axis_character_design_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000017/run.json"
+    },
+    {
+      "test_id": "SA000018",
+      "style_id": "single_axis_character_design_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000018/run.json"
+    },
+    {
+      "test_id": "SA000019",
+      "style_id": "single_axis_character_design_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000019/run.json"
+    },
+    {
+      "test_id": "SA000020",
+      "style_id": "single_axis_character_design_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000020/run.json"
+    },
+    {
+      "test_id": "SA000021",
+      "style_id": "single_axis_character_design_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000021/run.json"
+    },
+    {
+      "test_id": "SA000022",
+      "style_id": "single_axis_character_design_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000022/run.json"
+    },
+    {
+      "test_id": "SA000023",
+      "style_id": "single_axis_character_design_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000023/run.json"
+    },
+    {
+      "test_id": "SA000024",
+      "style_id": "single_axis_character_design_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000024/run.json"
+    },
+    {
+      "test_id": "SA000025",
+      "style_id": "single_axis_character_design_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000025/run.json"
+    },
+    {
+      "test_id": "SA000026",
+      "style_id": "single_axis_character_design_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000026/run.json"
+    },
+    {
+      "test_id": "SA000027",
+      "style_id": "single_axis_character_design_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000027/run.json"
+    },
+    {
+      "test_id": "SA000028",
+      "style_id": "single_axis_character_design_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000028/run.json"
+    },
+    {
+      "test_id": "SA000029",
+      "style_id": "single_axis_character_design_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000029/run.json"
+    },
+    {
+      "test_id": "SA000030",
+      "style_id": "single_axis_character_design_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000030/run.json"
+    },
+    {
+      "test_id": "SA000031",
+      "style_id": "single_axis_character_design_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000031/run.json"
+    },
+    {
+      "test_id": "SA000032",
+      "style_id": "single_axis_character_design_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000032/run.json"
+    },
+    {
+      "test_id": "SA000033",
+      "style_id": "single_axis_character_design_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000033/run.json"
+    },
+    {
+      "test_id": "SA000034",
+      "style_id": "single_axis_character_design_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000034/run.json"
+    },
+    {
+      "test_id": "SA000035",
+      "style_id": "single_axis_character_design_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000035/run.json"
+    },
+    {
+      "test_id": "SA000036",
+      "style_id": "single_axis_character_design_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000036/run.json"
+    },
+    {
+      "test_id": "SA000037",
+      "style_id": "single_axis_character_design_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000037/run.json"
+    },
+    {
+      "test_id": "SA000038",
+      "style_id": "single_axis_character_design_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000038/run.json"
+    },
+    {
+      "test_id": "SA000039",
+      "style_id": "single_axis_character_design_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000039/run.json"
+    },
+    {
+      "test_id": "SA000040",
+      "style_id": "single_axis_character_design_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000040/run.json"
+    },
+    {
+      "test_id": "SA000041",
+      "style_id": "single_axis_character_design_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000041/run.json"
+    },
+    {
+      "test_id": "SA000042",
+      "style_id": "single_axis_character_design_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000042/run.json"
+    },
+    {
+      "test_id": "SA000043",
+      "style_id": "single_axis_character_design_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000043/run.json"
+    },
+    {
+      "test_id": "SA000044",
+      "style_id": "single_axis_character_design_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000044/run.json"
+    },
+    {
+      "test_id": "SA000045",
+      "style_id": "single_axis_character_design_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000045/run.json"
+    },
+    {
+      "test_id": "SA000046",
+      "style_id": "single_axis_character_design_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000046/run.json"
+    },
+    {
+      "test_id": "SA000047",
+      "style_id": "single_axis_character_design_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000047/run.json"
+    },
+    {
+      "test_id": "SA000048",
+      "style_id": "single_axis_character_design_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000048/run.json"
+    },
+    {
+      "test_id": "SA000049",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000049/run.json"
+    },
+    {
+      "test_id": "SA000050",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000050/run.json"
+    },
+    {
+      "test_id": "SA000051",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000051/run.json"
+    },
+    {
+      "test_id": "SA000052",
+      "style_id": "single_axis_pose_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000052/run.json"
+    },
+    {
+      "test_id": "SA000053",
+      "style_id": "single_axis_pose_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000053/run.json"
+    },
+    {
+      "test_id": "SA000054",
+      "style_id": "single_axis_pose_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000054/run.json"
+    },
+    {
+      "test_id": "SA000055",
+      "style_id": "single_axis_pose_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000055/run.json"
+    },
+    {
+      "test_id": "SA000056",
+      "style_id": "single_axis_pose_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000056/run.json"
+    },
+    {
+      "test_id": "SA000057",
+      "style_id": "single_axis_pose_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000057/run.json"
+    },
+    {
+      "test_id": "SA000058",
+      "style_id": "single_axis_pose_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000058/run.json"
+    },
+    {
+      "test_id": "SA000059",
+      "style_id": "single_axis_pose_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000059/run.json"
+    },
+    {
+      "test_id": "SA000060",
+      "style_id": "single_axis_pose_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000060/run.json"
+    },
+    {
+      "test_id": "SA000061",
+      "style_id": "single_axis_pose_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000061/run.json"
+    },
+    {
+      "test_id": "SA000062",
+      "style_id": "single_axis_pose_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000062/run.json"
+    },
+    {
+      "test_id": "SA000063",
+      "style_id": "single_axis_pose_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000063/run.json"
+    },
+    {
+      "test_id": "SA000064",
+      "style_id": "single_axis_pose_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000064/run.json"
+    },
+    {
+      "test_id": "SA000065",
+      "style_id": "single_axis_pose_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000065/run.json"
+    },
+    {
+      "test_id": "SA000066",
+      "style_id": "single_axis_pose_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000066/run.json"
+    },
+    {
+      "test_id": "SA000067",
+      "style_id": "single_axis_pose_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000067/run.json"
+    },
+    {
+      "test_id": "SA000068",
+      "style_id": "single_axis_pose_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000068/run.json"
+    },
+    {
+      "test_id": "SA000069",
+      "style_id": "single_axis_pose_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000069/run.json"
+    },
+    {
+      "test_id": "SA000070",
+      "style_id": "single_axis_pose_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000070/run.json"
+    },
+    {
+      "test_id": "SA000071",
+      "style_id": "single_axis_pose_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000071/run.json"
+    },
+    {
+      "test_id": "SA000072",
+      "style_id": "single_axis_pose_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000072/run.json"
+    },
+    {
+      "test_id": "SA000073",
+      "style_id": "single_axis_pose_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000073/run.json"
+    },
+    {
+      "test_id": "SA000074",
+      "style_id": "single_axis_pose_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000074/run.json"
+    },
+    {
+      "test_id": "SA000075",
+      "style_id": "single_axis_pose_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000075/run.json"
+    },
+    {
+      "test_id": "SA000076",
+      "style_id": "single_axis_pose_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000076/run.json"
+    },
+    {
+      "test_id": "SA000077",
+      "style_id": "single_axis_pose_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000077/run.json"
+    },
+    {
+      "test_id": "SA000078",
+      "style_id": "single_axis_pose_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000078/run.json"
+    },
+    {
+      "test_id": "SA000079",
+      "style_id": "single_axis_pose_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000079/run.json"
+    },
+    {
+      "test_id": "SA000080",
+      "style_id": "single_axis_pose_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000080/run.json"
+    },
+    {
+      "test_id": "SA000081",
+      "style_id": "single_axis_pose_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000081/run.json"
+    },
+    {
+      "test_id": "SA000082",
+      "style_id": "single_axis_pose_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000082/run.json"
+    },
+    {
+      "test_id": "SA000083",
+      "style_id": "single_axis_pose_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000083/run.json"
+    },
+    {
+      "test_id": "SA000084",
+      "style_id": "single_axis_pose_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000084/run.json"
+    },
+    {
+      "test_id": "SA000085",
+      "style_id": "single_axis_pose_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000085/run.json"
+    },
+    {
+      "test_id": "SA000086",
+      "style_id": "single_axis_pose_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000086/run.json"
+    },
+    {
+      "test_id": "SA000087",
+      "style_id": "single_axis_pose_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000087/run.json"
+    },
+    {
+      "test_id": "SA000088",
+      "style_id": "single_axis_pose_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000088/run.json"
+    },
+    {
+      "test_id": "SA000089",
+      "style_id": "single_axis_pose_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000089/run.json"
+    },
+    {
+      "test_id": "SA000090",
+      "style_id": "single_axis_pose_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000090/run.json"
+    },
+    {
+      "test_id": "SA000091",
+      "style_id": "single_axis_pose_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000091/run.json"
+    },
+    {
+      "test_id": "SA000092",
+      "style_id": "single_axis_pose_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000092/run.json"
+    },
+    {
+      "test_id": "SA000093",
+      "style_id": "single_axis_pose_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000093/run.json"
+    },
+    {
+      "test_id": "SA000094",
+      "style_id": "single_axis_pose_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000094/run.json"
+    },
+    {
+      "test_id": "SA000095",
+      "style_id": "single_axis_pose_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000095/run.json"
+    },
+    {
+      "test_id": "SA000096",
+      "style_id": "single_axis_pose_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000096/run.json"
+    },
+    {
+      "test_id": "SA000097",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000097/run.json"
+    },
+    {
+      "test_id": "SA000098",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000098/run.json"
+    },
+    {
+      "test_id": "SA000099",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000099/run.json"
+    },
+    {
+      "test_id": "SA000100",
+      "style_id": "single_axis_lighting_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000100/run.json"
+    },
+    {
+      "test_id": "SA000101",
+      "style_id": "single_axis_lighting_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000101/run.json"
+    },
+    {
+      "test_id": "SA000102",
+      "style_id": "single_axis_lighting_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000102/run.json"
+    },
+    {
+      "test_id": "SA000103",
+      "style_id": "single_axis_lighting_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000103/run.json"
+    },
+    {
+      "test_id": "SA000104",
+      "style_id": "single_axis_lighting_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000104/run.json"
+    },
+    {
+      "test_id": "SA000105",
+      "style_id": "single_axis_lighting_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000105/run.json"
+    },
+    {
+      "test_id": "SA000106",
+      "style_id": "single_axis_lighting_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000106/run.json"
+    },
+    {
+      "test_id": "SA000107",
+      "style_id": "single_axis_lighting_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000107/run.json"
+    },
+    {
+      "test_id": "SA000108",
+      "style_id": "single_axis_lighting_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000108/run.json"
+    },
+    {
+      "test_id": "SA000109",
+      "style_id": "single_axis_lighting_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000109/run.json"
+    },
+    {
+      "test_id": "SA000110",
+      "style_id": "single_axis_lighting_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000110/run.json"
+    },
+    {
+      "test_id": "SA000111",
+      "style_id": "single_axis_lighting_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000111/run.json"
+    },
+    {
+      "test_id": "SA000112",
+      "style_id": "single_axis_lighting_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000112/run.json"
+    },
+    {
+      "test_id": "SA000113",
+      "style_id": "single_axis_lighting_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000113/run.json"
+    },
+    {
+      "test_id": "SA000114",
+      "style_id": "single_axis_lighting_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000114/run.json"
+    },
+    {
+      "test_id": "SA000115",
+      "style_id": "single_axis_lighting_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000115/run.json"
+    },
+    {
+      "test_id": "SA000116",
+      "style_id": "single_axis_lighting_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000116/run.json"
+    },
+    {
+      "test_id": "SA000117",
+      "style_id": "single_axis_lighting_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000117/run.json"
+    },
+    {
+      "test_id": "SA000118",
+      "style_id": "single_axis_lighting_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000118/run.json"
+    },
+    {
+      "test_id": "SA000119",
+      "style_id": "single_axis_lighting_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000119/run.json"
+    },
+    {
+      "test_id": "SA000120",
+      "style_id": "single_axis_lighting_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000120/run.json"
+    },
+    {
+      "test_id": "SA000121",
+      "style_id": "single_axis_lighting_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000121/run.json"
+    },
+    {
+      "test_id": "SA000122",
+      "style_id": "single_axis_lighting_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000122/run.json"
+    },
+    {
+      "test_id": "SA000123",
+      "style_id": "single_axis_lighting_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000123/run.json"
+    },
+    {
+      "test_id": "SA000124",
+      "style_id": "single_axis_lighting_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000124/run.json"
+    },
+    {
+      "test_id": "SA000125",
+      "style_id": "single_axis_lighting_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000125/run.json"
+    },
+    {
+      "test_id": "SA000126",
+      "style_id": "single_axis_lighting_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000126/run.json"
+    },
+    {
+      "test_id": "SA000127",
+      "style_id": "single_axis_lighting_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000127/run.json"
+    },
+    {
+      "test_id": "SA000128",
+      "style_id": "single_axis_lighting_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000128/run.json"
+    },
+    {
+      "test_id": "SA000129",
+      "style_id": "single_axis_lighting_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000129/run.json"
+    },
+    {
+      "test_id": "SA000130",
+      "style_id": "single_axis_lighting_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000130/run.json"
+    },
+    {
+      "test_id": "SA000131",
+      "style_id": "single_axis_lighting_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000131/run.json"
+    },
+    {
+      "test_id": "SA000132",
+      "style_id": "single_axis_lighting_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000132/run.json"
+    },
+    {
+      "test_id": "SA000133",
+      "style_id": "single_axis_lighting_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000133/run.json"
+    },
+    {
+      "test_id": "SA000134",
+      "style_id": "single_axis_lighting_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000134/run.json"
+    },
+    {
+      "test_id": "SA000135",
+      "style_id": "single_axis_lighting_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000135/run.json"
+    },
+    {
+      "test_id": "SA000136",
+      "style_id": "single_axis_lighting_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000136/run.json"
+    },
+    {
+      "test_id": "SA000137",
+      "style_id": "single_axis_lighting_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000137/run.json"
+    },
+    {
+      "test_id": "SA000138",
+      "style_id": "single_axis_lighting_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000138/run.json"
+    },
+    {
+      "test_id": "SA000139",
+      "style_id": "single_axis_lighting_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000139/run.json"
+    },
+    {
+      "test_id": "SA000140",
+      "style_id": "single_axis_lighting_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000140/run.json"
+    },
+    {
+      "test_id": "SA000141",
+      "style_id": "single_axis_lighting_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000141/run.json"
+    },
+    {
+      "test_id": "SA000142",
+      "style_id": "single_axis_lighting_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000142/run.json"
+    },
+    {
+      "test_id": "SA000143",
+      "style_id": "single_axis_lighting_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000143/run.json"
+    },
+    {
+      "test_id": "SA000144",
+      "style_id": "single_axis_lighting_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000144/run.json"
+    },
+    {
+      "test_id": "SA000145",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000145/run.json"
+    },
+    {
+      "test_id": "SA000146",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000146/run.json"
+    },
+    {
+      "test_id": "SA000147",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000147/run.json"
+    },
+    {
+      "test_id": "SA000148",
+      "style_id": "single_axis_background_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000148/run.json"
+    },
+    {
+      "test_id": "SA000149",
+      "style_id": "single_axis_background_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000149/run.json"
+    },
+    {
+      "test_id": "SA000150",
+      "style_id": "single_axis_background_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000150/run.json"
+    },
+    {
+      "test_id": "SA000151",
+      "style_id": "single_axis_background_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000151/run.json"
+    },
+    {
+      "test_id": "SA000152",
+      "style_id": "single_axis_background_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000152/run.json"
+    },
+    {
+      "test_id": "SA000153",
+      "style_id": "single_axis_background_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000153/run.json"
+    },
+    {
+      "test_id": "SA000154",
+      "style_id": "single_axis_background_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000154/run.json"
+    },
+    {
+      "test_id": "SA000155",
+      "style_id": "single_axis_background_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000155/run.json"
+    },
+    {
+      "test_id": "SA000156",
+      "style_id": "single_axis_background_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000156/run.json"
+    },
+    {
+      "test_id": "SA000157",
+      "style_id": "single_axis_background_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000157/run.json"
+    },
+    {
+      "test_id": "SA000158",
+      "style_id": "single_axis_background_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000158/run.json"
+    },
+    {
+      "test_id": "SA000159",
+      "style_id": "single_axis_background_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000159/run.json"
+    },
+    {
+      "test_id": "SA000160",
+      "style_id": "single_axis_background_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000160/run.json"
+    },
+    {
+      "test_id": "SA000161",
+      "style_id": "single_axis_background_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000161/run.json"
+    },
+    {
+      "test_id": "SA000162",
+      "style_id": "single_axis_background_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000162/run.json"
+    },
+    {
+      "test_id": "SA000163",
+      "style_id": "single_axis_background_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000163/run.json"
+    },
+    {
+      "test_id": "SA000164",
+      "style_id": "single_axis_background_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000164/run.json"
+    },
+    {
+      "test_id": "SA000165",
+      "style_id": "single_axis_background_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000165/run.json"
+    },
+    {
+      "test_id": "SA000166",
+      "style_id": "single_axis_background_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000166/run.json"
+    },
+    {
+      "test_id": "SA000167",
+      "style_id": "single_axis_background_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000167/run.json"
+    },
+    {
+      "test_id": "SA000168",
+      "style_id": "single_axis_background_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000168/run.json"
+    },
+    {
+      "test_id": "SA000169",
+      "style_id": "single_axis_background_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000169/run.json"
+    },
+    {
+      "test_id": "SA000170",
+      "style_id": "single_axis_background_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000170/run.json"
+    },
+    {
+      "test_id": "SA000171",
+      "style_id": "single_axis_background_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000171/run.json"
+    },
+    {
+      "test_id": "SA000172",
+      "style_id": "single_axis_background_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000172/run.json"
+    },
+    {
+      "test_id": "SA000173",
+      "style_id": "single_axis_background_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000173/run.json"
+    },
+    {
+      "test_id": "SA000174",
+      "style_id": "single_axis_background_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000174/run.json"
+    },
+    {
+      "test_id": "SA000175",
+      "style_id": "single_axis_background_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000175/run.json"
+    },
+    {
+      "test_id": "SA000176",
+      "style_id": "single_axis_background_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000176/run.json"
+    },
+    {
+      "test_id": "SA000177",
+      "style_id": "single_axis_background_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000177/run.json"
+    },
+    {
+      "test_id": "SA000178",
+      "style_id": "single_axis_background_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000178/run.json"
+    },
+    {
+      "test_id": "SA000179",
+      "style_id": "single_axis_background_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000179/run.json"
+    },
+    {
+      "test_id": "SA000180",
+      "style_id": "single_axis_background_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000180/run.json"
+    },
+    {
+      "test_id": "SA000181",
+      "style_id": "single_axis_background_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000181/run.json"
+    },
+    {
+      "test_id": "SA000182",
+      "style_id": "single_axis_background_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000182/run.json"
+    },
+    {
+      "test_id": "SA000183",
+      "style_id": "single_axis_background_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000183/run.json"
+    },
+    {
+      "test_id": "SA000184",
+      "style_id": "single_axis_background_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000184/run.json"
+    },
+    {
+      "test_id": "SA000185",
+      "style_id": "single_axis_background_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000185/run.json"
+    },
+    {
+      "test_id": "SA000186",
+      "style_id": "single_axis_background_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000186/run.json"
+    },
+    {
+      "test_id": "SA000187",
+      "style_id": "single_axis_background_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000187/run.json"
+    },
+    {
+      "test_id": "SA000188",
+      "style_id": "single_axis_background_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000188/run.json"
+    },
+    {
+      "test_id": "SA000189",
+      "style_id": "single_axis_background_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000189/run.json"
+    },
+    {
+      "test_id": "SA000190",
+      "style_id": "single_axis_background_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000190/run.json"
+    },
+    {
+      "test_id": "SA000191",
+      "style_id": "single_axis_background_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000191/run.json"
+    },
+    {
+      "test_id": "SA000192",
+      "style_id": "single_axis_background_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000192/run.json"
+    },
+    {
+      "test_id": "SA000193",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000193/run.json"
+    },
+    {
+      "test_id": "SA000194",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000194/run.json"
+    },
+    {
+      "test_id": "SA000195",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000195/run.json"
+    },
+    {
+      "test_id": "SA000196",
+      "style_id": "single_axis_linework_coloring_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000196/run.json"
+    },
+    {
+      "test_id": "SA000197",
+      "style_id": "single_axis_linework_coloring_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000197/run.json"
+    },
+    {
+      "test_id": "SA000198",
+      "style_id": "single_axis_linework_coloring_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000198/run.json"
+    },
+    {
+      "test_id": "SA000199",
+      "style_id": "single_axis_linework_coloring_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000199/run.json"
+    },
+    {
+      "test_id": "SA000200",
+      "style_id": "single_axis_linework_coloring_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000200/run.json"
+    },
+    {
+      "test_id": "SA000201",
+      "style_id": "single_axis_linework_coloring_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000201/run.json"
+    },
+    {
+      "test_id": "SA000202",
+      "style_id": "single_axis_linework_coloring_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000202/run.json"
+    },
+    {
+      "test_id": "SA000203",
+      "style_id": "single_axis_linework_coloring_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000203/run.json"
+    },
+    {
+      "test_id": "SA000204",
+      "style_id": "single_axis_linework_coloring_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000204/run.json"
+    },
+    {
+      "test_id": "SA000205",
+      "style_id": "single_axis_linework_coloring_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000205/run.json"
+    },
+    {
+      "test_id": "SA000206",
+      "style_id": "single_axis_linework_coloring_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000206/run.json"
+    },
+    {
+      "test_id": "SA000207",
+      "style_id": "single_axis_linework_coloring_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000207/run.json"
+    },
+    {
+      "test_id": "SA000208",
+      "style_id": "single_axis_linework_coloring_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000208/run.json"
+    },
+    {
+      "test_id": "SA000209",
+      "style_id": "single_axis_linework_coloring_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000209/run.json"
+    },
+    {
+      "test_id": "SA000210",
+      "style_id": "single_axis_linework_coloring_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000210/run.json"
+    },
+    {
+      "test_id": "SA000211",
+      "style_id": "single_axis_linework_coloring_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000211/run.json"
+    },
+    {
+      "test_id": "SA000212",
+      "style_id": "single_axis_linework_coloring_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000212/run.json"
+    },
+    {
+      "test_id": "SA000213",
+      "style_id": "single_axis_linework_coloring_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000213/run.json"
+    },
+    {
+      "test_id": "SA000214",
+      "style_id": "single_axis_linework_coloring_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000214/run.json"
+    },
+    {
+      "test_id": "SA000215",
+      "style_id": "single_axis_linework_coloring_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000215/run.json"
+    },
+    {
+      "test_id": "SA000216",
+      "style_id": "single_axis_linework_coloring_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000216/run.json"
+    },
+    {
+      "test_id": "SA000217",
+      "style_id": "single_axis_linework_coloring_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000217/run.json"
+    },
+    {
+      "test_id": "SA000218",
+      "style_id": "single_axis_linework_coloring_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000218/run.json"
+    },
+    {
+      "test_id": "SA000219",
+      "style_id": "single_axis_linework_coloring_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000219/run.json"
+    },
+    {
+      "test_id": "SA000220",
+      "style_id": "single_axis_linework_coloring_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000220/run.json"
+    },
+    {
+      "test_id": "SA000221",
+      "style_id": "single_axis_linework_coloring_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000221/run.json"
+    },
+    {
+      "test_id": "SA000222",
+      "style_id": "single_axis_linework_coloring_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000222/run.json"
+    },
+    {
+      "test_id": "SA000223",
+      "style_id": "single_axis_linework_coloring_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000223/run.json"
+    },
+    {
+      "test_id": "SA000224",
+      "style_id": "single_axis_linework_coloring_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000224/run.json"
+    },
+    {
+      "test_id": "SA000225",
+      "style_id": "single_axis_linework_coloring_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000225/run.json"
+    },
+    {
+      "test_id": "SA000226",
+      "style_id": "single_axis_linework_coloring_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000226/run.json"
+    },
+    {
+      "test_id": "SA000227",
+      "style_id": "single_axis_linework_coloring_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000227/run.json"
+    },
+    {
+      "test_id": "SA000228",
+      "style_id": "single_axis_linework_coloring_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000228/run.json"
+    },
+    {
+      "test_id": "SA000229",
+      "style_id": "single_axis_linework_coloring_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000229/run.json"
+    },
+    {
+      "test_id": "SA000230",
+      "style_id": "single_axis_linework_coloring_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000230/run.json"
+    },
+    {
+      "test_id": "SA000231",
+      "style_id": "single_axis_linework_coloring_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000231/run.json"
+    },
+    {
+      "test_id": "SA000232",
+      "style_id": "single_axis_linework_coloring_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000232/run.json"
+    },
+    {
+      "test_id": "SA000233",
+      "style_id": "single_axis_linework_coloring_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000233/run.json"
+    },
+    {
+      "test_id": "SA000234",
+      "style_id": "single_axis_linework_coloring_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000234/run.json"
+    },
+    {
+      "test_id": "SA000235",
+      "style_id": "single_axis_linework_coloring_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000235/run.json"
+    },
+    {
+      "test_id": "SA000236",
+      "style_id": "single_axis_linework_coloring_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000236/run.json"
+    },
+    {
+      "test_id": "SA000237",
+      "style_id": "single_axis_linework_coloring_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000237/run.json"
+    },
+    {
+      "test_id": "SA000238",
+      "style_id": "single_axis_linework_coloring_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000238/run.json"
+    },
+    {
+      "test_id": "SA000239",
+      "style_id": "single_axis_linework_coloring_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000239/run.json"
+    },
+    {
+      "test_id": "SA000240",
+      "style_id": "single_axis_linework_coloring_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000240/run.json"
+    },
+    {
+      "test_id": "SA000241",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000241/run.json"
+    },
+    {
+      "test_id": "SA000242",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000242/run.json"
+    },
+    {
+      "test_id": "SA000243",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000243/run.json"
+    },
+    {
+      "test_id": "SA000244",
+      "style_id": "single_axis_camera_002",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000244/run.json"
+    },
+    {
+      "test_id": "SA000245",
+      "style_id": "single_axis_camera_002",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000245/run.json"
+    },
+    {
+      "test_id": "SA000246",
+      "style_id": "single_axis_camera_002",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000246/run.json"
+    },
+    {
+      "test_id": "SA000247",
+      "style_id": "single_axis_camera_003",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000247/run.json"
+    },
+    {
+      "test_id": "SA000248",
+      "style_id": "single_axis_camera_003",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000248/run.json"
+    },
+    {
+      "test_id": "SA000249",
+      "style_id": "single_axis_camera_003",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000249/run.json"
+    },
+    {
+      "test_id": "SA000250",
+      "style_id": "single_axis_camera_004",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000250/run.json"
+    },
+    {
+      "test_id": "SA000251",
+      "style_id": "single_axis_camera_004",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000251/run.json"
+    },
+    {
+      "test_id": "SA000252",
+      "style_id": "single_axis_camera_004",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000252/run.json"
+    },
+    {
+      "test_id": "SA000253",
+      "style_id": "single_axis_camera_005",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000253/run.json"
+    },
+    {
+      "test_id": "SA000254",
+      "style_id": "single_axis_camera_005",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000254/run.json"
+    },
+    {
+      "test_id": "SA000255",
+      "style_id": "single_axis_camera_005",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000255/run.json"
+    },
+    {
+      "test_id": "SA000256",
+      "style_id": "single_axis_camera_006",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000256/run.json"
+    },
+    {
+      "test_id": "SA000257",
+      "style_id": "single_axis_camera_006",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000257/run.json"
+    },
+    {
+      "test_id": "SA000258",
+      "style_id": "single_axis_camera_006",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000258/run.json"
+    },
+    {
+      "test_id": "SA000259",
+      "style_id": "single_axis_camera_007",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000259/run.json"
+    },
+    {
+      "test_id": "SA000260",
+      "style_id": "single_axis_camera_007",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000260/run.json"
+    },
+    {
+      "test_id": "SA000261",
+      "style_id": "single_axis_camera_007",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000261/run.json"
+    },
+    {
+      "test_id": "SA000262",
+      "style_id": "single_axis_camera_008",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000262/run.json"
+    },
+    {
+      "test_id": "SA000263",
+      "style_id": "single_axis_camera_008",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000263/run.json"
+    },
+    {
+      "test_id": "SA000264",
+      "style_id": "single_axis_camera_008",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000264/run.json"
+    },
+    {
+      "test_id": "SA000265",
+      "style_id": "single_axis_camera_009",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000265/run.json"
+    },
+    {
+      "test_id": "SA000266",
+      "style_id": "single_axis_camera_009",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000266/run.json"
+    },
+    {
+      "test_id": "SA000267",
+      "style_id": "single_axis_camera_009",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000267/run.json"
+    },
+    {
+      "test_id": "SA000268",
+      "style_id": "single_axis_camera_010",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000268/run.json"
+    },
+    {
+      "test_id": "SA000269",
+      "style_id": "single_axis_camera_010",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000269/run.json"
+    },
+    {
+      "test_id": "SA000270",
+      "style_id": "single_axis_camera_010",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000270/run.json"
+    },
+    {
+      "test_id": "SA000271",
+      "style_id": "single_axis_camera_011",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000271/run.json"
+    },
+    {
+      "test_id": "SA000272",
+      "style_id": "single_axis_camera_011",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000272/run.json"
+    },
+    {
+      "test_id": "SA000273",
+      "style_id": "single_axis_camera_011",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000273/run.json"
+    },
+    {
+      "test_id": "SA000274",
+      "style_id": "single_axis_camera_012",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000274/run.json"
+    },
+    {
+      "test_id": "SA000275",
+      "style_id": "single_axis_camera_012",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000275/run.json"
+    },
+    {
+      "test_id": "SA000276",
+      "style_id": "single_axis_camera_012",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000276/run.json"
+    },
+    {
+      "test_id": "SA000277",
+      "style_id": "single_axis_camera_013",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000277/run.json"
+    },
+    {
+      "test_id": "SA000278",
+      "style_id": "single_axis_camera_013",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000278/run.json"
+    },
+    {
+      "test_id": "SA000279",
+      "style_id": "single_axis_camera_013",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000279/run.json"
+    },
+    {
+      "test_id": "SA000280",
+      "style_id": "single_axis_camera_014",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000280/run.json"
+    },
+    {
+      "test_id": "SA000281",
+      "style_id": "single_axis_camera_014",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000281/run.json"
+    },
+    {
+      "test_id": "SA000282",
+      "style_id": "single_axis_camera_014",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000282/run.json"
+    },
+    {
+      "test_id": "SA000283",
+      "style_id": "single_axis_camera_015",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000283/run.json"
+    },
+    {
+      "test_id": "SA000284",
+      "style_id": "single_axis_camera_015",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000284/run.json"
+    },
+    {
+      "test_id": "SA000285",
+      "style_id": "single_axis_camera_015",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000285/run.json"
+    },
+    {
+      "test_id": "SA000286",
+      "style_id": "single_axis_camera_016",
+      "mode": "single_axis",
+      "seed": 1001,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000286/run.json"
+    },
+    {
+      "test_id": "SA000287",
+      "style_id": "single_axis_camera_016",
+      "mode": "single_axis",
+      "seed": 2002,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000287/run.json"
+    },
+    {
+      "test_id": "SA000288",
+      "style_id": "single_axis_camera_016",
+      "mode": "single_axis",
+      "seed": 3003,
+      "run": "tests/reports/phase6_single_axis_v6/runs/SA000288/run.json"
+    }
+  ]
+}

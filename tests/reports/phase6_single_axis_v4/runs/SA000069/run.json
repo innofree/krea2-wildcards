@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000069",
+  "style_id": "single_axis_pose_007",
+  "label": "single_axis_pose_007",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "651654f5-3158-4935-89de-dca33ca0d650",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a measured walking pause with one foot forward and the trailing heel lightly lifted, with one hand near the collar while the other anchors gently at the hip. The head and gaze are turned to the side with the gaze directed toward a distant point in the scene, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "d20ceee1ae47099d0ce12bc72e7d9ba61a64fa2ccf10d17ee818d7a7fbeb7838",
+  "workflow_sha256": "888c52c22ccfa2c1ee5fefde2373e35d80b0ee804fd816256611512646d9c1c7",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_measured_walking_pause_collar_and_hip_side_distant_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "509407235f532927765b362559c2c52276ab693a6c82c0909dd640718fe2c7c9",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

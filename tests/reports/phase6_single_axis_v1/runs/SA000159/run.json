@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000159",
+  "style_id": "single_axis_background_005",
+  "label": "single_axis_background_005",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "370df172-d8e1-4a40-8add-4f46c93b25b3",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a forest clearing with tall trunks, soft ground cover, and visible depth between trees, with clear foreground, middle-distance, and background layers with no object merging into the subject, crisp high-visibility depth with controlled contrast and no distracting glare, and natural green and earth relationships balanced by desaturated structural colors. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "8bb0fcfdc6bf7d26dfd15d6b0cb63ff130563194992265899f9105fbd23b887b",
+  "workflow_sha256": "c83e88d6fa21ba6d13dae509efc2dd9f9a892c1c4381fe15d639c09f677e18c9",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_forest_clearing_clear_depth_layers_crisp_visibility_natural_green_earth_complete_background",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "27dd060326b515b61753fb1d28835f43b7b1cd6ba1c6cae0c8c37e0597aecea0",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

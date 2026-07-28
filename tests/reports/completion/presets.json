@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "complete": true,
+  "matrix_jobs": 300,
+  "distinct_seeds": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "metrics": {
+    "prompt_adherence": 4.0,
+    "style_fidelity": 4.0,
+    "stability": 4.0,
+    "character_quality": 4.0,
+    "composition_quality": 4.0,
+    "compatibility": 4.0,
+    "distinctiveness": 4.0,
+    "prompt_efficiency": 4.0
+  },
+  "prompt_profile_sha256": "2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+  "report_type": "preset_conflict_audit",
+  "presets_tested": 100,
+  "critical_conflicts": 0,
+  "matrix_path": "tests/prompt_matrix/phase6_presets.jsonl",
+  "matrix_sha256": "dcd3bf6e6b2ec36ed1cac6c54f0897b15a91fb658f534c929a969fa067bdb45d",
+  "scored_path": "tests/reports/phase6_presets_v1/scored.csv",
+  "scored_sha256": "44fdf498f0fdc97c26e764a16a8128f262149f7e87bda3d0ed072f3f0de9c57b"
+}

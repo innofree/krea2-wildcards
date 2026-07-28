@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000095",
+  "style_id": "pairwise_style_pack_pose_016",
+  "label": "pairwise_style_pack_pose_016",
+  "mode": "pairwise",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "f241917a-9dd5-4e63-ac60-9401a950bf76",
+  "resolved_prompt": "Photorealistic adult editorial treatment: large circular light pools, rounded shadows, and bold silhouette spacing. Use an amber-lit side and blue-shadowed side across subject and backdrop, fine paper fibers in backdrop and shadows while skin and fabric stay clear, deep evening values, narrow light paths, and tense still space, and soft color bloom and halation outside a readable silhouette. Combine it coherently with this second visual direction: An adult subject holds an upright seated pose with the spine lengthened and both feet placed naturally, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys gentle transitional motion that keeps the torso stable and the limbs clearly separated. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "3fa97cc8b89b3e36e64887a7c4a49960ca26dc2b0b275712dd3971f33f41879e",
+  "workflow_sha256": "12a5c75ae3f209eac9868013445994f50ca6c32cdd9cc6b8021240e908d5a6ec",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_rounded_graphic_warm_cool_split_fibrous_paper_nocturnal_tension_soft_bleed_complete_style",
+    "right_item": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "cfb5aaf6e68a445b8669b2ca8f66ab96c85ae792d2fd7f691166371b9891e159",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

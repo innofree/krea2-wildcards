@@ -1,0 +1,2702 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase6_single_axis_v5/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase6_single_axis.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 96,
+  "style_count": 96,
+  "image_count": 288,
+  "sheet_count": 10,
+  "modes": {
+    "single_axis": {
+      "case_count": 96,
+      "image_count": 288,
+      "sheet_count": 10,
+      "sheets": [
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_001.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_002.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_003.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_004.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_005.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_006.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_007.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_008.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_009.png",
+        "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_010.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "single_axis",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_001.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 2,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_002.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 3,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_003.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 4,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_004.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 5,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_005.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 6,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_006.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 7,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_007.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 8,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_008.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 9,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_009.png",
+      "case_count": 10,
+      "image_count": 30
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 10,
+      "path": "tests/reports/phase6_single_axis_v5/review/prompt_matrix_single_axis_010.png",
+      "case_count": 6,
+      "image_count": 18
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000145",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000145/image_01.png"
+        },
+        {
+          "test_id": "SA000146",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000146/image_01.png"
+        },
+        {
+          "test_id": "SA000147",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000147/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "single_axis_background_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_coastal_overlook_elevated_horizon_soft_ambient_diffusion_cool_mineral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000148",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000148/image_01.png"
+        },
+        {
+          "test_id": "SA000149",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000149/image_01.png"
+        },
+        {
+          "test_id": "SA000150",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000150/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "single_axis_background_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_covered_market_centered_opening_faint_depth_haze_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000151",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000151/image_01.png"
+        },
+        {
+          "test_id": "SA000152",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000152/image_01.png"
+        },
+        {
+          "test_id": "SA000153",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000153/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "single_axis_background_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_covered_market_leading_path_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000154",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000154/image_01.png"
+        },
+        {
+          "test_id": "SA000155",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000155/image_01.png"
+        },
+        {
+          "test_id": "SA000156",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000156/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "single_axis_background_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_forest_clearing_clear_depth_layers_crisp_visibility_natural_green_earth_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000157",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000157/image_01.png"
+        },
+        {
+          "test_id": "SA000158",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000158/image_01.png"
+        },
+        {
+          "test_id": "SA000159",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000159/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "single_axis_background_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000160",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000160/image_01.png"
+        },
+        {
+          "test_id": "SA000161",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000161/image_01.png"
+        },
+        {
+          "test_id": "SA000162",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000162/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "single_axis_background_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_glasshouse_corridor_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000163",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000163/image_01.png"
+        },
+        {
+          "test_id": "SA000164",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000164/image_01.png"
+        },
+        {
+          "test_id": "SA000165",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000165/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "single_axis_background_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_library_room_open_gaze_side_crisp_visibility_natural_green_earth_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000166",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000166/image_01.png"
+        },
+        {
+          "test_id": "SA000167",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000167/image_01.png"
+        },
+        {
+          "test_id": "SA000168",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000168/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "single_axis_background_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_museum_hall_elevated_horizon_faint_depth_haze_cool_mineral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000169",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000169/image_01.png"
+        },
+        {
+          "test_id": "SA000170",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000170/image_01.png"
+        },
+        {
+          "test_id": "SA000171",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000171/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "single_axis_background_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_museum_hall_low_horizon_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000172",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000172/image_01.png"
+        },
+        {
+          "test_id": "SA000173",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000173/image_01.png"
+        },
+        {
+          "test_id": "SA000174",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000174/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "single_axis_background_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000175",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000175/image_01.png"
+        },
+        {
+          "test_id": "SA000176",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000176/image_01.png"
+        },
+        {
+          "test_id": "SA000177",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000177/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "single_axis_background_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_rooftop_terrace_flanking_verticals_faint_depth_haze_cool_mineral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000178",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000178/image_01.png"
+        },
+        {
+          "test_id": "SA000179",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000179/image_01.png"
+        },
+        {
+          "test_id": "SA000180",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000180/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "single_axis_background_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000181",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000181/image_01.png"
+        },
+        {
+          "test_id": "SA000182",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000182/image_01.png"
+        },
+        {
+          "test_id": "SA000183",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000183/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "single_axis_background_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_stone_courtyard_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000184",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000184/image_01.png"
+        },
+        {
+          "test_id": "SA000185",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000185/image_01.png"
+        },
+        {
+          "test_id": "SA000186",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000186/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "single_axis_background_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_transit_concourse_leading_path_clear_still_natural_green_earth_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000187",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000187/image_01.png"
+        },
+        {
+          "test_id": "SA000188",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000188/image_01.png"
+        },
+        {
+          "test_id": "SA000189",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000189/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "single_axis_background_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000190",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000190/image_01.png"
+        },
+        {
+          "test_id": "SA000191",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000191/image_01.png"
+        },
+        {
+          "test_id": "SA000192",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000192/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000241",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000241/image_01.png"
+        },
+        {
+          "test_id": "SA000242",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000242/image_01.png"
+        },
+        {
+          "test_id": "SA000243",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000243/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "single_axis_camera_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_chest_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000244",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000244/image_01.png"
+        },
+        {
+          "test_id": "SA000245",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000245/image_01.png"
+        },
+        {
+          "test_id": "SA000246",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000246/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "single_axis_camera_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_close_face_clean_profile_classic_wide_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000247",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000247/image_01.png"
+        },
+        {
+          "test_id": "SA000248",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000248/image_01.png"
+        },
+        {
+          "test_id": "SA000249",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000249/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "single_axis_camera_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_close_face_rear_three_quarter_long_compression_centered_symmetry_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000250",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000250/image_01.png"
+        },
+        {
+          "test_id": "SA000251",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000251/image_01.png"
+        },
+        {
+          "test_id": "SA000252",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000252/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_021",
+      "style_id": "single_axis_camera_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000253",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000253/image_01.png"
+        },
+        {
+          "test_id": "SA000254",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000254/image_01.png"
+        },
+        {
+          "test_id": "SA000255",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000255/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_022",
+      "style_id": "single_axis_camera_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000256",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000256/image_01.png"
+        },
+        {
+          "test_id": "SA000257",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000257/image_01.png"
+        },
+        {
+          "test_id": "SA000258",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000258/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_023",
+      "style_id": "single_axis_camera_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000259",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000259/image_01.png"
+        },
+        {
+          "test_id": "SA000260",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000260/image_01.png"
+        },
+        {
+          "test_id": "SA000261",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000261/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_024",
+      "style_id": "single_axis_camera_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_head_shoulders_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000262",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000262/image_01.png"
+        },
+        {
+          "test_id": "SA000263",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000263/image_01.png"
+        },
+        {
+          "test_id": "SA000264",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000264/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_025",
+      "style_id": "single_axis_camera_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_thigh_up_clean_profile_natural_perspective_diagonal_depth_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000265",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000265/image_01.png"
+        },
+        {
+          "test_id": "SA000266",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000266/image_01.png"
+        },
+        {
+          "test_id": "SA000267",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000267/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_026",
+      "style_id": "single_axis_camera_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_thigh_up_eye_level_front_natural_perspective_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000268",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000268/image_01.png"
+        },
+        {
+          "test_id": "SA000269",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000269/image_01.png"
+        },
+        {
+          "test_id": "SA000270",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000270/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_027",
+      "style_id": "single_axis_camera_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_vertical_full_scene_slight_high_portrait_compression_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000271",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000271/image_01.png"
+        },
+        {
+          "test_id": "SA000272",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000272/image_01.png"
+        },
+        {
+          "test_id": "SA000273",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000273/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_028",
+      "style_id": "single_axis_camera_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_vertical_full_scene_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000274",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000274/image_01.png"
+        },
+        {
+          "test_id": "SA000275",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000275/image_01.png"
+        },
+        {
+          "test_id": "SA000276",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000276/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_029",
+      "style_id": "single_axis_camera_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_waist_up_slight_high_long_compression_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000277",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000277/image_01.png"
+        },
+        {
+          "test_id": "SA000278",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000278/image_01.png"
+        },
+        {
+          "test_id": "SA000279",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000279/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_030",
+      "style_id": "single_axis_camera_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000280",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000280/image_01.png"
+        },
+        {
+          "test_id": "SA000281",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000281/image_01.png"
+        },
+        {
+          "test_id": "SA000282",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000282/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_031",
+      "style_id": "single_axis_camera_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_wide_environmental_slight_low_deep_focus_language_centered_symmetry_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000283",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000283/image_01.png"
+        },
+        {
+          "test_id": "SA000284",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000284/image_01.png"
+        },
+        {
+          "test_id": "SA000285",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000285/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_032",
+      "style_id": "single_axis_camera_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000286",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000286/image_01.png"
+        },
+        {
+          "test_id": "SA000287",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000287/image_01.png"
+        },
+        {
+          "test_id": "SA000288",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000288/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_033",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000001",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000001/image_01.png"
+        },
+        {
+          "test_id": "SA000002",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000002/image_01.png"
+        },
+        {
+          "test_id": "SA000003",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_034",
+      "style_id": "single_axis_character_design_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_asymmetric_urban_long_high_cheek_natural_balanced_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000004",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000004/image_01.png"
+        },
+        {
+          "test_id": "SA000005",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000005/image_01.png"
+        },
+        {
+          "test_id": "SA000006",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_035",
+      "style_id": "single_axis_character_design_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_broad_heroic_diamond_defined_compact_adult_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000007",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000007/image_01.png"
+        },
+        {
+          "test_id": "SA000008",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000008/image_01.png"
+        },
+        {
+          "test_id": "SA000009",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_036",
+      "style_id": "single_axis_character_design_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_broad_heroic_long_high_cheek_compact_adult_restrained_geometry_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000010",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000010/image_01.png"
+        },
+        {
+          "test_id": "SA000011",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000011/image_01.png"
+        },
+        {
+          "test_id": "SA000012",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_037",
+      "style_id": "single_axis_character_design_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_compact_balanced_oval_fine_jaw_grounded_broad_torso_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000013",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000013/image_01.png"
+        },
+        {
+          "test_id": "SA000014",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000014/image_01.png"
+        },
+        {
+          "test_id": "SA000015",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_038",
+      "style_id": "single_axis_character_design_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_compact_balanced_square_strong_jaw_agile_medium_frame_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000016",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000016/image_01.png"
+        },
+        {
+          "test_id": "SA000017",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000017/image_01.png"
+        },
+        {
+          "test_id": "SA000018",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_039",
+      "style_id": "single_axis_character_design_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_layered_regal_heart_tapered_chin_long_legged_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000019",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000019/image_01.png"
+        },
+        {
+          "test_id": "SA000020",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000020/image_01.png"
+        },
+        {
+          "test_id": "SA000021",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000021/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_040",
+      "style_id": "single_axis_character_design_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_layered_regal_round_soft_jaw_agile_medium_frame_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000022",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000022/image_01.png"
+        },
+        {
+          "test_id": "SA000023",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000023/image_01.png"
+        },
+        {
+          "test_id": "SA000024",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000024/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_041",
+      "style_id": "single_axis_character_design_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_narrow_angular_heart_tapered_chin_statuesque_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000025",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000025/image_01.png"
+        },
+        {
+          "test_id": "SA000026",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000026/image_01.png"
+        },
+        {
+          "test_id": "SA000027",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000027/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_042",
+      "style_id": "single_axis_character_design_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_narrow_angular_round_soft_jaw_grounded_broad_torso_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000028",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000028/image_01.png"
+        },
+        {
+          "test_id": "SA000029",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000029/image_01.png"
+        },
+        {
+          "test_id": "SA000030",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000030/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_043",
+      "style_id": "single_axis_character_design_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_practical_athletic_diamond_defined_statuesque_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000031",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000031/image_01.png"
+        },
+        {
+          "test_id": "SA000032",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000032/image_01.png"
+        },
+        {
+          "test_id": "SA000033",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000033/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_044",
+      "style_id": "single_axis_character_design_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_practical_athletic_rectangular_composed_natural_balanced_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000034",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000034/image_01.png"
+        },
+        {
+          "test_id": "SA000035",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000035/image_01.png"
+        },
+        {
+          "test_id": "SA000036",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000036/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_045",
+      "style_id": "single_axis_character_design_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_refined_elongated_round_soft_jaw_agile_medium_frame_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000037",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000037/image_01.png"
+        },
+        {
+          "test_id": "SA000038",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000038/image_01.png"
+        },
+        {
+          "test_id": "SA000039",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000039/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_046",
+      "style_id": "single_axis_character_design_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_refined_elongated_square_strong_jaw_natural_balanced_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000040",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000040/image_01.png"
+        },
+        {
+          "test_id": "SA000041",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000041/image_01.png"
+        },
+        {
+          "test_id": "SA000042",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000042/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_047",
+      "style_id": "single_axis_character_design_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_soft_rounded_round_soft_jaw_agile_medium_frame_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000043",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000043/image_01.png"
+        },
+        {
+          "test_id": "SA000044",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000044/image_01.png"
+        },
+        {
+          "test_id": "SA000045",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000045/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_048",
+      "style_id": "single_axis_character_design_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_soft_rounded_square_strong_jaw_statuesque_restrained_geometry_complete_character",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000046",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000046/image_01.png"
+        },
+        {
+          "test_id": "SA000047",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000047/image_01.png"
+        },
+        {
+          "test_id": "SA000048",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000048/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_049",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000097",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000097/image_01.png"
+        },
+        {
+          "test_id": "SA000098",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000098/image_01.png"
+        },
+        {
+          "test_id": "SA000099",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000099/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_050",
+      "style_id": "single_axis_lighting_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_broad_window_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000100",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000100/image_01.png"
+        },
+        {
+          "test_id": "SA000101",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000101/image_01.png"
+        },
+        {
+          "test_id": "SA000102",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000102/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_051",
+      "style_id": "single_axis_lighting_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_broad_window_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000103",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000103/image_01.png"
+        },
+        {
+          "test_id": "SA000104",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000104/image_01.png"
+        },
+        {
+          "test_id": "SA000105",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000105/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_052",
+      "style_id": "single_axis_lighting_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_cloud_scattered_back_edge_mixed_edge_warm_key_cool_fill_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000106",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000106/image_01.png"
+        },
+        {
+          "test_id": "SA000107",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000107/image_01.png"
+        },
+        {
+          "test_id": "SA000108",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000108/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_053",
+      "style_id": "single_axis_lighting_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_cloud_scattered_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000109",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000109/image_01.png"
+        },
+        {
+          "test_id": "SA000110",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000110/image_01.png"
+        },
+        {
+          "test_id": "SA000111",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000111/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_054",
+      "style_id": "single_axis_lighting_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_focused_beam_high_side_crisp_controlled_neutral_daylight_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000112",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000112/image_01.png"
+        },
+        {
+          "test_id": "SA000113",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000113/image_01.png"
+        },
+        {
+          "test_id": "SA000114",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000114/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_055",
+      "style_id": "single_axis_lighting_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_focused_beam_high_side_mixed_edge_neutral_daylight_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000115",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000115/image_01.png"
+        },
+        {
+          "test_id": "SA000116",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000116/image_01.png"
+        },
+        {
+          "test_id": "SA000117",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000117/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_056",
+      "style_id": "single_axis_lighting_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000118",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000118/image_01.png"
+        },
+        {
+          "test_id": "SA000119",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000119/image_01.png"
+        },
+        {
+          "test_id": "SA000120",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000120/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_057",
+      "style_id": "single_axis_lighting_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_large_diffused_key_high_side_feathered_soft_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000121",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000121/image_01.png"
+        },
+        {
+          "test_id": "SA000122",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000122/image_01.png"
+        },
+        {
+          "test_id": "SA000123",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000123/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_058",
+      "style_id": "single_axis_lighting_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_low_horizon_source_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000124",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000124/image_01.png"
+        },
+        {
+          "test_id": "SA000125",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000125/image_01.png"
+        },
+        {
+          "test_id": "SA000126",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000126/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_059",
+      "style_id": "single_axis_lighting_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_low_horizon_source_side_sculpting_crisp_controlled_neutral_daylight_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000127",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000127/image_01.png"
+        },
+        {
+          "test_id": "SA000128",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000128/image_01.png"
+        },
+        {
+          "test_id": "SA000129",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000129/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_060",
+      "style_id": "single_axis_lighting_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_overhead_skylight_cross_room_enveloping_diffuse_warm_key_cool_fill_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000130",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000130/image_01.png"
+        },
+        {
+          "test_id": "SA000131",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000131/image_01.png"
+        },
+        {
+          "test_id": "SA000132",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000132/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_061",
+      "style_id": "single_axis_lighting_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_overhead_skylight_low_bounce_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000133",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000133/image_01.png"
+        },
+        {
+          "test_id": "SA000134",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000134/image_01.png"
+        },
+        {
+          "test_id": "SA000135",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000135/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_062",
+      "style_id": "single_axis_lighting_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_practical_cluster_back_edge_crisp_controlled_late_gold_neutral_shadow_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000136",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000136/image_01.png"
+        },
+        {
+          "test_id": "SA000137",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000137/image_01.png"
+        },
+        {
+          "test_id": "SA000138",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000138/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_063",
+      "style_id": "single_axis_lighting_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_practical_cluster_cross_room_crisp_controlled_warm_key_cool_fill_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000139",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000139/image_01.png"
+        },
+        {
+          "test_id": "SA000140",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000140/image_01.png"
+        },
+        {
+          "test_id": "SA000141",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000141/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_064",
+      "style_id": "single_axis_lighting_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000142",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000142/image_01.png"
+        },
+        {
+          "test_id": "SA000143",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000143/image_01.png"
+        },
+        {
+          "test_id": "SA000144",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000144/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_065",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000193",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000193/image_01.png"
+        },
+        {
+          "test_id": "SA000194",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000194/image_01.png"
+        },
+        {
+          "test_id": "SA000195",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000195/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_066",
+      "style_id": "single_axis_linework_coloring_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_angular_precise_limited_two_tone_soft_two_band_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000196",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000196/image_01.png"
+        },
+        {
+          "test_id": "SA000197",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000197/image_01.png"
+        },
+        {
+          "test_id": "SA000198",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000198/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_067",
+      "style_id": "single_axis_linework_coloring_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_broad_blended_plane_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000199",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000199/image_01.png"
+        },
+        {
+          "test_id": "SA000200",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000200/image_01.png"
+        },
+        {
+          "test_id": "SA000201",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000201/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_068",
+      "style_id": "single_axis_linework_coloring_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_subtle_contact_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000202",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000202/image_01.png"
+        },
+        {
+          "test_id": "SA000203",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000203/image_01.png"
+        },
+        {
+          "test_id": "SA000204",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000204/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_069",
+      "style_id": "single_axis_linework_coloring_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_broken_dry_airy_pastel_fine_tonal_hatching_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000205",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000205/image_01.png"
+        },
+        {
+          "test_id": "SA000206",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000206/image_01.png"
+        },
+        {
+          "test_id": "SA000207",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000207/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_070",
+      "style_id": "single_axis_linework_coloring_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_broken_dry_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000208",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000208/image_01.png"
+        },
+        {
+          "test_id": "SA000209",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000209/image_01.png"
+        },
+        {
+          "test_id": "SA000210",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000210/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_071",
+      "style_id": "single_axis_linework_coloring_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_crisp_uniform_limited_two_tone_fine_tonal_hatching_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000211",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000211/image_01.png"
+        },
+        {
+          "test_id": "SA000212",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000212/image_01.png"
+        },
+        {
+          "test_id": "SA000213",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000213/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_072",
+      "style_id": "single_axis_linework_coloring_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_crisp_uniform_skin_centered_neutral_broad_blended_plane_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000214",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000214/image_01.png"
+        },
+        {
+          "test_id": "SA000215",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000215/image_01.png"
+        },
+        {
+          "test_id": "SA000216",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000216/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_073",
+      "style_id": "single_axis_linework_coloring_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_elastic_pressure_airy_pastel_subtle_contact_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000217",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000217/image_01.png"
+        },
+        {
+          "test_id": "SA000218",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000218/image_01.png"
+        },
+        {
+          "test_id": "SA000219",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000219/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_074",
+      "style_id": "single_axis_linework_coloring_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_elastic_pressure_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000220",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000220/image_01.png"
+        },
+        {
+          "test_id": "SA000221",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000221/image_01.png"
+        },
+        {
+          "test_id": "SA000222",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000222/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_075",
+      "style_id": "single_axis_linework_coloring_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_fine_tapered_limited_two_tone_soft_two_band_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000223",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000223/image_01.png"
+        },
+        {
+          "test_id": "SA000224",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000224/image_01.png"
+        },
+        {
+          "test_id": "SA000225",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000225/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_076",
+      "style_id": "single_axis_linework_coloring_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_fine_tapered_warm_earth_soft_two_band_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000226",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000226/image_01.png"
+        },
+        {
+          "test_id": "SA000227",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000227/image_01.png"
+        },
+        {
+          "test_id": "SA000228",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000228/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_077",
+      "style_id": "single_axis_linework_coloring_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_rounded_soft_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000229",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000229/image_01.png"
+        },
+        {
+          "test_id": "SA000230",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000230/image_01.png"
+        },
+        {
+          "test_id": "SA000231",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000231/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_078",
+      "style_id": "single_axis_linework_coloring_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_rounded_soft_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000232",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000232/image_01.png"
+        },
+        {
+          "test_id": "SA000233",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000233/image_01.png"
+        },
+        {
+          "test_id": "SA000234",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000234/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_079",
+      "style_id": "single_axis_linework_coloring_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_selective_edge_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000235",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000235/image_01.png"
+        },
+        {
+          "test_id": "SA000236",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000236/image_01.png"
+        },
+        {
+          "test_id": "SA000237",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000237/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_080",
+      "style_id": "single_axis_linework_coloring_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_selective_edge_warm_earth_transparent_glaze_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000238",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000238/image_01.png"
+        },
+        {
+          "test_id": "SA000239",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000239/image_01.png"
+        },
+        {
+          "test_id": "SA000240",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000240/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_081",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000049",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000049/image_01.png"
+        },
+        {
+          "test_id": "SA000050",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000050/image_01.png"
+        },
+        {
+          "test_id": "SA000051",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000051/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_082",
+      "style_id": "single_axis_pose_002",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_frontal_even_weight_open_palms_extended_lowered_reflective_settled_stillness_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000052",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000052/image_01.png"
+        },
+        {
+          "test_id": "SA000053",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000053/image_01.png"
+        },
+        {
+          "test_id": "SA000054",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000054/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_083",
+      "style_id": "single_axis_pose_003",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_grounded_forward_step_hands_near_chest_three_quarter_near_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000055",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000055/image_01.png"
+        },
+        {
+          "test_id": "SA000056",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000056/image_01.png"
+        },
+        {
+          "test_id": "SA000057",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000057/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_084",
+      "style_id": "single_axis_pose_004",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_grounded_forward_step_loosely_clasped_three_quarter_near_settled_stillness_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000058",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000058/image_01.png"
+        },
+        {
+          "test_id": "SA000059",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000059/image_01.png"
+        },
+        {
+          "test_id": "SA000060",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000060/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_085",
+      "style_id": "single_axis_pose_005",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_low_kneeling_collar_and_hip_direct_level_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000061",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000061/image_01.png"
+        },
+        {
+          "test_id": "SA000062",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000062/image_01.png"
+        },
+        {
+          "test_id": "SA000063",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000063/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_086",
+      "style_id": "single_axis_pose_006",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_low_kneeling_loosely_clasped_side_distant_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000064",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000064/image_01.png"
+        },
+        {
+          "test_id": "SA000065",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000065/image_01.png"
+        },
+        {
+          "test_id": "SA000066",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000066/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_087",
+      "style_id": "single_axis_pose_007",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_measured_walking_pause_open_palms_extended_direct_level_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000067",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000067/image_01.png"
+        },
+        {
+          "test_id": "SA000068",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000068/image_01.png"
+        },
+        {
+          "test_id": "SA000069",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000069/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_088",
+      "style_id": "single_axis_pose_008",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_measured_walking_pause_waist_and_open_lowered_reflective_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000070",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000070/image_01.png"
+        },
+        {
+          "test_id": "SA000071",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000071/image_01.png"
+        },
+        {
+          "test_id": "SA000072",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000072/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_089",
+      "style_id": "single_axis_pose_009",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_side_reclining_arms_relaxed_clear_three_quarter_near_poised_counterbalance_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000073",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000073/image_01.png"
+        },
+        {
+          "test_id": "SA000074",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000074/image_01.png"
+        },
+        {
+          "test_id": "SA000075",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000075/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_090",
+      "style_id": "single_axis_pose_010",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_side_reclining_low_crossed_forearm_side_distant_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000076",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000076/image_01.png"
+        },
+        {
+          "test_id": "SA000077",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000077/image_01.png"
+        },
+        {
+          "test_id": "SA000078",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000078/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_091",
+      "style_id": "single_axis_pose_011",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_standing_three_quarter_hands_near_chest_three_quarter_near_settled_stillness_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000079",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000079/image_01.png"
+        },
+        {
+          "test_id": "SA000080",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000080/image_01.png"
+        },
+        {
+          "test_id": "SA000081",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000081/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_092",
+      "style_id": "single_axis_pose_012",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_standing_three_quarter_waist_and_open_three_quarter_near_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000082",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000082/image_01.png"
+        },
+        {
+          "test_id": "SA000083",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000083/image_01.png"
+        },
+        {
+          "test_id": "SA000084",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000084/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_093",
+      "style_id": "single_axis_pose_013",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_upright_contrapposto_hands_near_chest_lowered_reflective_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000085",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000085/image_01.png"
+        },
+        {
+          "test_id": "SA000086",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000086/image_01.png"
+        },
+        {
+          "test_id": "SA000087",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000087/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_094",
+      "style_id": "single_axis_pose_014",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_upright_contrapposto_waist_and_open_three_quarter_near_poised_counterbalance_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000088",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000088/image_01.png"
+        },
+        {
+          "test_id": "SA000089",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000089/image_01.png"
+        },
+        {
+          "test_id": "SA000090",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000090/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_095",
+      "style_id": "single_axis_pose_015",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_upright_seated_loosely_clasped_side_distant_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000091",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000091/image_01.png"
+        },
+        {
+          "test_id": "SA000092",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000092/image_01.png"
+        },
+        {
+          "test_id": "SA000093",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000093/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_096",
+      "style_id": "single_axis_pose_016",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+      },
+      "items": [
+        {
+          "test_id": "SA000094",
+          "seed": 1001,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000094/image_01.png"
+        },
+        {
+          "test_id": "SA000095",
+          "seed": 2002,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000095/image_01.png"
+        },
+        {
+          "test_id": "SA000096",
+          "seed": 3003,
+          "image_path": "tests/reports/phase6_single_axis_v5/runs/SA000096/image_01.png"
+        }
+      ]
+    }
+  ]
+}

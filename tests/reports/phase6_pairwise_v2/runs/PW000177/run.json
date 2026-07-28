@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000177",
+  "style_id": "pairwise_style_pack_background_011",
+  "label": "pairwise_style_pack_background_011",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "076bec72-2b9c-45f0-8a11-2070f031b991",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second background direction is the measured axis. Keep the complete subject large enough to read while its foreground, middle-distance, horizon, and atmosphere remain visibly separated. Photorealistic adult editorial treatment: broad curved light paths, flowing shadows, and repeated organic shapes. Use garnet, sapphire, and emerald fields with restrained gold highlights, translucent color layers, luminous reflections, and crisp bright accents, calm open spacing, low visual noise, and thin suspended haze, and razor-thin highlights and fine contrast around the face and hands. Combine it coherently with this second visual direction: An adult subject stands in a riverbank path with layered reeds, a calm water plane, and a gently curving edge, with paired vertical forms that flank the subject while leaving the silhouette unobstructed, a few delicate suspended particles visible only where they cross the light, and natural green and earth relationships balanced by desaturated structural colors. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—use an eye-level mid-thigh inspection frame with the lower edge visibly intersecting both thighs and the complete crown, both eyes, shoulders, and visible hand gestures inside while the knees, calves, shoes, and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "41f291d4e6383a0de66772192b40e0b6c2ba12eef96cf789d6821c1185b2e8d8",
+  "workflow_sha256": "8916d374f50a75d5e8ee269475e88b9626f96d44edee3f67a790832f0ee7cb78",
+  "factors": {
+    "pair_type": "style_pack_background",
+    "left_item": "style_pack_expansion_organic_flowing_jewel_and_gold_glazed_luminous_contemplative_air_etched_accent_complete_style",
+    "right_item": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "7c2711f0d3537321fd0f854eb8d2da042c1200723eeea2808e52e7f0bfc8bc1c",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

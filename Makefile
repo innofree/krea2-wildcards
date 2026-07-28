@@ -437,18 +437,18 @@ runtime-audit: impact-production
 	python3 scripts/audit_runtime_coverage.py --prompt-log tests/reports/phase6_benchmark_v1/runs/KB000001/run.json --overwrite
 
 phase6-calibration-matrix:
-	python3 scripts/export_phase6_matrix.py calibration --output tests/prompt_matrix/phase6_calibration_v10.jsonl
+	python3 scripts/export_phase6_matrix.py calibration --output tests/prompt_matrix/phase6_calibration_v15.jsonl
 
 remote-phase6-calibration: phase6-calibration-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_calibration_v10.jsonl --output tests/reports/phase6_calibration_v10 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_calibration_v15.jsonl --output tests/reports/phase6_calibration_v15 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-phase6-calibration:
-	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_calibration_v10/scorecard.csv --matrix tests/prompt_matrix/phase6_calibration_v10.jsonl --expected-seeds 3 --cases-per-sheet 8 --overwrite
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_calibration_v15/scorecard.csv --matrix tests/prompt_matrix/phase6_calibration_v15.jsonl --expected-seeds 3 --cases-per-sheet 8 --overwrite
 
 score-phase6-calibration:
-	python3 scripts/merge_visual_reviews.py tests/reports/phase6_calibration_v10/review_part_a.yaml tests/reports/phase6_calibration_v10/review_part_b.yaml tests/reports/phase6_calibration_v10/review_part_c.yaml --expected-scorecard tests/reports/phase6_calibration_v10/scorecard.csv --output tests/reports/phase6_calibration_v10/review.yaml --overwrite
-	python3 scripts/apply_visual_review.py tests/reports/phase6_calibration_v10/scorecard.csv tests/reports/phase6_calibration_v10/review.yaml --output tests/reports/phase6_calibration_v10/scored.csv --overwrite
-	python3 scripts/summarize_phase6_results.py calibration tests/reports/phase6_calibration_v10/scored.csv --matrix tests/prompt_matrix/phase6_calibration_v10.jsonl --output tests/reports/completion/phase6_calibration.json --overwrite
+	python3 scripts/merge_visual_reviews.py tests/reports/phase6_calibration_v15/review_part_a.yaml tests/reports/phase6_calibration_v15/review_part_b.yaml tests/reports/phase6_calibration_v15/review_part_c.yaml --expected-scorecard tests/reports/phase6_calibration_v15/scorecard.csv --output tests/reports/phase6_calibration_v15/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/phase6_calibration_v15/scorecard.csv tests/reports/phase6_calibration_v15/review.yaml --output tests/reports/phase6_calibration_v15/scored.csv --overwrite
+	python3 scripts/summarize_phase6_results.py calibration tests/reports/phase6_calibration_v15/scored.csv --matrix tests/prompt_matrix/phase6_calibration_v15.jsonl --output tests/reports/completion/phase6_calibration.json --overwrite
 
 phase6-calibration-gate:
 	python3 scripts/check_phase6_calibration.py
@@ -489,10 +489,10 @@ phase6-benchmark-matrix:
 	python3 scripts/export_phase6_matrix.py benchmark --output tests/prompt_matrix/phase6_benchmark.jsonl
 
 remote-phase6-single-axis: phase6-calibration-gate phase6-single-axis-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v6 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 remote-phase6-pairwise: phase6-calibration-gate phase6-pairwise-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/phase6_pairwise_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/phase6_pairwise_v2 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 remote-phase6-presets: phase6-calibration-gate phase6-presets-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_presets.jsonl --output tests/reports/phase6_presets_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
@@ -504,10 +504,10 @@ remote-phase6-benchmark: phase6-calibration-gate phase6-benchmark-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_benchmark.jsonl --output tests/reports/phase6_benchmark_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 review-phase6-single-axis:
-	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_single_axis_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_single_axis.jsonl --expected-seeds 3 --overwrite
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_single_axis_v6/scorecard.csv --matrix tests/prompt_matrix/phase6_single_axis.jsonl --expected-seeds 3 --overwrite
 
 review-phase6-pairwise:
-	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_pairwise_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_pairwise.jsonl --expected-seeds 3 --overwrite
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_pairwise_v2/scorecard.csv --matrix tests/prompt_matrix/phase6_pairwise.jsonl --expected-seeds 3 --overwrite
 
 review-phase6-presets:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_presets_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_presets.jsonl --expected-seeds 3 --overwrite
@@ -519,14 +519,14 @@ review-phase6-benchmark:
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase6_benchmark_v1/scorecard.csv --matrix tests/prompt_matrix/phase6_benchmark.jsonl --expected-seeds 5 --overwrite
 
 score-phase6-single-axis:
-	python3 scripts/merge_visual_reviews.py tests/reports/phase6_single_axis_v1/review_part_a.yaml --expected-scorecard tests/reports/phase6_single_axis_v1/scorecard.csv --output tests/reports/phase6_single_axis_v1/review.yaml --overwrite
-	python3 scripts/apply_visual_review.py tests/reports/phase6_single_axis_v1/scorecard.csv tests/reports/phase6_single_axis_v1/review.yaml --output tests/reports/phase6_single_axis_v1/scored.csv --overwrite
-	python3 scripts/summarize_phase6_results.py single-axis tests/reports/phase6_single_axis_v1/scored.csv --matrix tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/completion/single_axis.json --overwrite
+	python3 scripts/merge_visual_reviews.py tests/reports/phase6_single_axis_v6/review_part_a.yaml --expected-scorecard tests/reports/phase6_single_axis_v6/scorecard.csv --output tests/reports/phase6_single_axis_v6/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/phase6_single_axis_v6/scorecard.csv tests/reports/phase6_single_axis_v6/review.yaml --output tests/reports/phase6_single_axis_v6/scored.csv --overwrite
+	python3 scripts/summarize_phase6_results.py single-axis tests/reports/phase6_single_axis_v6/scored.csv --matrix tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/completion/single_axis.json --overwrite
 
 score-phase6-pairwise:
-	python3 scripts/merge_visual_reviews.py tests/reports/phase6_pairwise_v1/review_part_a.yaml tests/reports/phase6_pairwise_v1/review_part_b.yaml tests/reports/phase6_pairwise_v1/review_part_c.yaml --expected-scorecard tests/reports/phase6_pairwise_v1/scorecard.csv --output tests/reports/phase6_pairwise_v1/review.yaml --overwrite
-	python3 scripts/apply_visual_review.py tests/reports/phase6_pairwise_v1/scorecard.csv tests/reports/phase6_pairwise_v1/review.yaml --output tests/reports/phase6_pairwise_v1/scored.csv --overwrite
-	python3 scripts/summarize_phase6_results.py pairwise tests/reports/phase6_pairwise_v1/scored.csv --matrix tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/completion/pairwise.json --overwrite
+	python3 scripts/merge_visual_reviews.py tests/reports/phase6_pairwise_v2/review_part_a.yaml tests/reports/phase6_pairwise_v2/review_part_b.yaml tests/reports/phase6_pairwise_v2/review_part_c.yaml --expected-scorecard tests/reports/phase6_pairwise_v2/scorecard.csv --output tests/reports/phase6_pairwise_v2/review.yaml --overwrite
+	python3 scripts/apply_visual_review.py tests/reports/phase6_pairwise_v2/scorecard.csv tests/reports/phase6_pairwise_v2/review.yaml --output tests/reports/phase6_pairwise_v2/scored.csv --overwrite
+	python3 scripts/summarize_phase6_results.py pairwise tests/reports/phase6_pairwise_v2/scored.csv --matrix tests/prompt_matrix/phase6_pairwise.jsonl --output tests/reports/completion/pairwise.json --overwrite
 
 score-phase6-presets:
 	python3 scripts/merge_visual_reviews.py tests/reports/phase6_presets_v1/review_part_a.yaml tests/reports/phase6_presets_v1/review_part_b.yaml tests/reports/phase6_presets_v1/review_part_c.yaml --expected-scorecard tests/reports/phase6_presets_v1/scorecard.csv --output tests/reports/phase6_presets_v1/review.yaml --overwrite

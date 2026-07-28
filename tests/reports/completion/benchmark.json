@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "complete": true,
+  "matrix_jobs": 5,
+  "distinct_seeds": 5,
+  "seeds": [
+    1001,
+    2002,
+    3003,
+    4004,
+    5005
+  ],
+  "metrics": {
+    "prompt_adherence": 4.0,
+    "style_fidelity": 4.0,
+    "stability": 5.0,
+    "character_quality": 4.0,
+    "composition_quality": 5.0,
+    "compatibility": 5.0,
+    "distinctiveness": 4.0,
+    "prompt_efficiency": 4.0
+  },
+  "prompt_profile_sha256": "2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+  "report_type": "krea2_turbo_benchmark",
+  "model": "krea2_turbo_mxfp8",
+  "sample_count": 5,
+  "critical_failures": 0,
+  "matrix_path": "tests/prompt_matrix/phase6_benchmark.jsonl",
+  "matrix_sha256": "5622d196b9629f15b05b1728b465619de2e34591f79ab59ce5737064a0d19de8",
+  "scored_path": "tests/reports/phase6_benchmark_v1/scored.csv",
+  "scored_sha256": "4b877dc336703915bb526f07ac13d05f1f5a900c8588ea54e92863b20595c452"
+}

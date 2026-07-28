@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000058",
+  "style_id": "single_axis_pose_004",
+  "label": "single_axis_pose_004",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "5a1aab21-6b91-42c4-a0bc-b65e85d75ce8",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a grounded forward step with a stable pelvis and controlled bend through both knees, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are aligned toward the camera with a level chin and calm direct eye contact, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "8cdef881242cd30e7e33882503cb5836f65ca56ad6448aa9fcc1ed28c3a000a9",
+  "workflow_sha256": "d624c545df6efc2e59616a1990dbcfd0f3e9fe8f56702a4ce4000025b13de59b",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_grounded_forward_step_open_palms_extended_direct_level_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_ca0d4181c8c6b3a927677867fbdf47f00bbfad1c173c2d87c6aea93ccd97f4bd"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "df0cd7953fbcd17b68710d4fe48d19c46030d224c1427249867a5a183729c1a7",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

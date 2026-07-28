@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000120",
+  "style_id": "single_axis_lighting_008",
+  "label": "single_axis_lighting_008",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "54ac91d8-8161-4aaf-aa48-a0d21fdfb702",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a large diffused key source with wide coverage and controlled spill, arriving from a frontal three-quarter direction that keeps both eyes readable. The image uses feathered softness with broad penumbrae and smooth skin transitions and a cool key balanced by a small warm practical accent in the background. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "de183de1a9240b24e21ff74d8ec281b5adafb09028ca9f908e6f415849aa2d92",
+  "workflow_sha256": "9ccda7eae88fc00eda996e2a6402f72b9e9c63036df3376e675ad988f893e752",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_large_diffused_key_frontal_three_quarter_feathered_soft_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "97da36cd5a0fc47f51c19aedf5009a6eaf19c7dec2b7bee6d5f50cfe2e15b4c0",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000100",
+  "style_id": "single_axis_lighting_002",
+  "label": "single_axis_lighting_002",
+  "mode": "single_axis",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "0ab9e995-9240-4d84-82d0-a9155c07020a",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from the side to sculpt the cheek, neck, and garment folds. The image uses crisp controlled shadows with clean shapes and readable reflected light and a cool key balanced by a small warm practical accent in the background. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "5c62d24d88bb573a7f40eb37a37ccaa0d8d918821ba0092ab1afee21089d1e70",
+  "workflow_sha256": "e23c60d915ee7a36ed90f237b2fe95b3bb80eaeca830ef0196616a75aa17de5e",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_broad_window_side_sculpting_crisp_controlled_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_3fb62c637e181b8c022f2813f00aa192b90982773203ca48b6b2da453fc2edf6"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "97bb4e9c4aa47fd28d5aa52ea22fdb13c784330b1525b8438147ecf6f02a1730",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

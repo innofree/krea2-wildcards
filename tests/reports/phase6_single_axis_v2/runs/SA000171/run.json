@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000171",
+  "style_id": "single_axis_background_009",
+  "label": "single_axis_background_009",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "6590dde0-e654-4d28-b622-27a1a33f6b93",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a quiet museum hall with pale stone walls, deep doorways, and sparse display forms, with a moderately elevated horizon that reveals surface patterns without crowding the figure, faint depth haze confined to distant layers while the subject plane remains clear, and cool mineral surroundings with slate, blue-grey, soft green, and restrained silver notes. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "938beaa768650330f627d0902bc5294b4703b0529c8fcca5a50b24c3a6739bb2",
+  "workflow_sha256": "068936d77c87b538e3c96ec67b09b19ae50784b3b732b4502f644f3a87bd22f5",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_museum_hall_elevated_horizon_faint_depth_haze_cool_mineral_complete_background",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "ab71bb68f2a5b5f9c77523ef1457eb6f88ab324423dbdec847dc2fac5e618760",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

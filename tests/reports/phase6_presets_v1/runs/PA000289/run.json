@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000289",
+  "style_id": "preset_audit_097",
+  "label": "preset_audit_097",
+  "mode": "preset_audit",
+  "seed": 1001,
+  "remote": "private_comfyui",
+  "prompt_id": "8b2baac7-e700-4172-957a-1643c87fa150",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—make a tight thigh-up portrait. Let the figure fill most of the canvas from the complete crown to a hard lower image edge cutting through the middle of both thighs. Keep the face and any explicitly named visible hand gesture inside. Do not show knees, calves, shoes, feet, floor under the feet, or the complete legs. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult stands frontally with level shoulders and loosely clasped hands in a spacious transit concourse with repeated columns and distant entries, wearing visible garment fabric intersected at mid-thigh by the lower image edge, fine knit top, and two broad upper-leg fabric panels intersected at mid-thigh by the lower image edge, with a subtle closed-mouth smile with gentle warmth. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—make a tight thigh-up portrait. Let the figure fill most of the canvas from the complete crown to a hard lower image edge cutting through the middle of both thighs. Keep the face and any explicitly named visible hand gesture inside. Do not show knees, calves, shoes, feet, floor under the feet, or the complete legs.",
+  "resolved_prompt_sha256": "3c5bd6ec97a769e1440dfead3b69f5f792eff76f608f5a85101a300b03c77776",
+  "workflow_sha256": "2a9760d4e116102da0b5c054c91d0bc17258c692f3893b8f3a8948c02c99b94f",
+  "factors": {
+    "preset": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "de0082188d9ba990612d53de9af31a87a62eff472678568e502f3b16f5a8a8fa",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

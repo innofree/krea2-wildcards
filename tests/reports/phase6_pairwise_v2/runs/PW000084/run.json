@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000084",
+  "style_id": "pairwise_style_pack_pose_012",
+  "label": "pairwise_style_pack_pose_012",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "bd56dabc-57be-4933-82a4-1ae3907dacb1",
+  "resolved_prompt": "Photorealistic adult editorial treatment: layered border motifs and repeated decorative shapes framing the subject. Use muted slate, clay, sage, and limestone with small pale highlights, powdery matte grain across midtones and backdrop with absorbed highlights, deep evening values, narrow light paths, and tense still space, and silhouette sections merging into the backdrop while focal edges stay firm. Combine it coherently with this second visual direction: An adult subject holds a three-quarter standing turn with the torso open and the far shoulder gently receding, with one hand resting at the waist while the other hangs open and fully readable. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "6aba97ca2cd61851754067d54a793901feef45f04b40c2f202ee7ac0884f3d4e",
+  "workflow_sha256": "2010c20f8369de235b701aa0f2134fef9046e69a46f5f910fa05098a76d297e1",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_ornamental_layered_mineral_muted_chalk_matte_nocturnal_tension_lost_and_found_complete_style",
+    "right_item": "pose_standing_three_quarter_waist_and_open_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "4df0953715cae849d8f4750fb77b04ee212d1e20d430294d5c7d7a403394b5a0",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

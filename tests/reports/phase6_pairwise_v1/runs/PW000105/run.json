@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000105",
+  "style_id": "pairwise_style_pack_lighting_003",
+  "label": "pairwise_style_pack_lighting_003",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "b454bdd3-dc0a-4f59-a33d-e80902861b35",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second lighting direction has authority over every actual source shape, direction, and illumination color. Keep the face and requested visible eyes readable, and make each source named by that direction visibly distinct. Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment. Use a photorealistic adult editorial material treatment with angular graphic planes and repeated diagonal divisions around the subject; amber and blue pigment fields printed across clothing and backdrop; translucent material layers and crisp bright surface accents; calm open spacing, low visual noise, and thin suspended haze; and short silhouette sections merging into the backdrop while focal edges stay firm. Treat these as material, set, pigment, and graphic properties; the second lighting direction alone supplies every actual source and illumination color. Combine it coherently with this second visual direction: Light an adult subject with a broad window-like source that produces one coherent field of illumination, arriving from the side to sculpt the cheek, neck, and garment folds. The image uses mixed edge quality with soft facial shadows and firmer garment shadows and late golden light with neutral readable shadows and restrained saturation. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. The second lighting direction is the final illumination blueprint: all visible illumination comes only from its named sources, colors, and geometry. The first style contributes shape, material palette, surface, atmosphere, and edge treatment. Final camera lock—let the upper body fill most of the canvas from the complete crown to a lower edge crossing the garment immediately below the waist, with both described hand gestures inside while the thighs and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "155724465f0585a03d63cc36d9f0d76a05c2fe34e37433e34d74d78f2e80981a",
+  "workflow_sha256": "bdfb4b66351afb18e1e8c13fda9bc7ca9985144baff507daef14390623edd1c3",
+  "factors": {
+    "pair_type": "style_pack_lighting",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_contemplative_air_lost_and_found_complete_style",
+    "right_item": "lighting_broad_window_side_sculpting_mixed_edge_late_gold_neutral_shadow_complete_lighting",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bfce8e3bb00fe63002b32972cb82a81175203b24e598bf36551de6abbb9795d5",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000128",
+  "style_id": "preset_audit_043",
+  "label": "preset_audit_043",
+  "mode": "preset_audit",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "11577f82-9009-44c4-875a-75b7fd5dc9de",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—make a tight chest-up portrait. The complete crown stays inside the canvas with a narrow strip of background above it, and the lower edge cuts across the upper torso just below the chest. Keep the chin, both shoulders, and described upper-arm gesture inside. Do not show the waist, hips, thighs, knees, calves, shoes, or feet. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult pauses during a walk with both separated upper-arm gestures visible in a modern library with warm shelves, broad aisles, and clear tables, wearing visible overshirt shoulders and dress bodice, with a composed expression with relaxed brows and steady eye contact. Use chest-up framing with gentle compression and soft background scale and a large diffused key blended with ambient light. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—make a tight chest-up portrait. The complete crown stays inside the canvas with a narrow strip of background above it, and the lower edge cuts across the upper torso just below the chest. Keep the chin, both shoulders, and described upper-arm gesture inside. Do not show the waist, hips, thighs, knees, calves, shoes, or feet.",
+  "resolved_prompt_sha256": "5f6cc2bb3a93361a72962f58b4d7562d79aee2ff95ec0472f5d03fdc0432cd19",
+  "workflow_sha256": "715b10249f2754153dd76bd4076878f5ed6a21a77f51d8b9d4b72294933b362f",
+  "factors": {
+    "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2d0d5f2989f4e2f85425821864ee9f0f72e445fe3a1a9d525f53534070a5d6a1",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

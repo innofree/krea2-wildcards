@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000054",
+  "style_id": "single_axis_pose_002",
+  "label": "single_axis_pose_002",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "b61d2538-c4e3-4c19-a154-c85a610dd484",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds an evenly weighted frontal stance with level shoulders and both feet clearly grounded, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are turned to the side with the gaze directed toward a distant point in the scene, and the posture conveys controlled forward energy carried through the spine and supporting leg. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "f905d733fc8fdd4b2badbd83ed642b36f533e0f649478529caf8e1c417ad751d",
+  "workflow_sha256": "50affdc97e5ccac39e80eb3f0e7f65ea7d07e6d4be2189bd923e06c3ecef173b",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_frontal_even_weight_open_palms_extended_side_distant_controlled_forward_energy_complete_pose",
+    "prompt_profile_sha256": "sha256_ca0d4181c8c6b3a927677867fbdf47f00bbfad1c173c2d87c6aea93ccd97f4bd"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bd8174880e3dd1d5dda83d900d527beec58b175abec7e858ede144a3032787c3",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

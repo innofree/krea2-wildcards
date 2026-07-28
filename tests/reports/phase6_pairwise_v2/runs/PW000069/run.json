@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000069",
+  "style_id": "pairwise_style_pack_pose_007",
+  "label": "pairwise_style_pack_pose_007",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "4f1cb7e9-3347-47bf-a37f-80cc92dfd896",
+  "resolved_prompt": "One adult full-length editorial photograph before one giant coarse handmade-paper panel with large rope-like visible fibers. Fill its upper two-thirds with solid emerald and its entire lower third with a broad solid garnet horizontal field, all enclosed by a thick metallic-gold frame. Keep calm open spacing and thin haze. Cut one bright continuous white engraved inset line around all four sides of the gold frame and continue it across the floor seam. Preserve natural unmarked skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks. Combine it coherently with this second visual direction: An adult subject holds a measured walking pause with one foot forward and the trailing heel lightly lifted, with both arms extended slightly away from the body with open palms and soft elbows. The head and gaze are lifted subtly with an attentive gaze above the camera line, and the posture conveys poised counterbalance between the shoulders, hips, and visible hand gesture. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "2daa1361d89f5d738accc74e5c4944e6fc3b7b4bb91e8db0b67c56fb43131259",
+  "workflow_sha256": "7826401e11ef922965dacf9e654349669e4d7ee215ea93e68faa662b4c7e220c",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_etched_accent_complete_style",
+    "right_item": "pose_measured_walking_pause_open_palms_extended_lifted_attentive_poised_counterbalance_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "fcc51be578598896bdea0ab1f340f5daae6cb88389bc10b2b2c6f3536c06f443",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

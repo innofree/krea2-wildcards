@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000182",
+  "style_id": "single_axis_background_013",
+  "label": "single_axis_background_013",
+  "mode": "single_axis",
+  "seed": 2002,
+  "remote": "private_comfyui",
+  "prompt_id": "ad75ac4a-f6d9-4f9c-b77f-dce32434c17e",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The background is the measured axis: keep the subject large and readable while every named foreground, middle-distance, horizon, and atmosphere layer remains distinct. Apply exactly this background direction as the sole changing axis: An adult subject stands in a rooftop terrace with a low parapet, simple seating forms, and a distant skyline, with an asymmetric open side that provides generous space in the direction of the gaze, softly diffused ambient air with even visibility across the setting, and warm neutral surroundings with quiet cream, stone, wood, and muted brown relationships. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera and broad neutral diffused lighting, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "819b43d25417b595fcb49f32ef721ad853f58cca68e389edecaedcaf05b4840e",
+  "workflow_sha256": "d4d1d0a362618ea711d01ad88f5df8601b6acf20aa464d500f42e18b8aa54471",
+  "factors": {
+    "axis": "background",
+    "item_id": "background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_warm_neutral_complete_background",
+    "prompt_profile_sha256": "sha256_36cc8a238d740d38dbba83fc28b506474d69a4ec35c601007ff01433a08e155b"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "2e806b12369c604d5094d3364fe0e6d5232eecec3f291c7604bb7ae047a97882",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

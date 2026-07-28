@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000075",
+  "style_id": "single_axis_pose_009",
+  "label": "single_axis_pose_009",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "375f112d-179d-402b-adca-aa95e94fed11",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The pose is the measured axis: make the named hand placement, shoulder line, gaze, leg support, and weight distribution visibly explicit. Apply exactly this pose direction as the sole changing axis: An adult subject holds a relaxed side-reclining pose with supported weight and a long uninterrupted torso line, with both arms relaxed with clear separation from the torso and naturally curved fingers. The head and gaze are lowered slightly with a reflective downward gaze and a relaxed jaw, and the posture conveys settled stillness with even weight transfer and no strained joints. Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an eye-level full-length camera, broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, with her head, both hands, and both feet visible. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "dec021244028f850c197a756d3e8afc168895be795fe0e0d9a6f920a5b8e682f",
+  "workflow_sha256": "2ee6e21820a353baafcd0c6b2d54c0efaa7a88244ec5a9097a37108054f2d835",
+  "factors": {
+    "axis": "pose",
+    "item_id": "pose_side_reclining_arms_relaxed_clear_lowered_reflective_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a2d5f8a18e6ab9838f4ac551f946e24e1b80c709129494c18e9f4c6f429f4a70",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

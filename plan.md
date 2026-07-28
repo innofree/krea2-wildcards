@@ -1235,6 +1235,20 @@ prompt efficiency 4.261이다. 이 v10 prompt-profile SHA-256
 `29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12`을 Phase 6
 대량 실행 기준으로 고정한다.
 
+v11부터 v15까지는 single-axis 대량 검증에서 발견된 회귀를 보정하기 위한 후속
+profile calibration이다. v11, v12, v13, v14는 모두 23 case × 3 seed = 69장
+calibration을 완료하고 contact-sheet review에서 통과했으나, 이후 full
+single-axis matrix에서 low-kneeling pose 계열이 seed 전반에서 standing pose로
+수렴하는 문제가 확인되었다. v15는 `single-axis-unstable-pose-exclusion-v3`을
+적용해 `pose_low_kneeling_low_crossed_forearm*` 및
+`pose_low_kneeling_loosely_clasped*`를 single-axis RHS selection에서 제외했다.
+v15 calibration은 seed `[91001, 92002, 93003]`으로 69/69개 1024×1024 PNG와
+고유 image hash를 생성했고, `batch_size=1`, `queue_depth=32`,
+`remote=private_comfyui` provenance를 유지했다. contact-sheet 전수 review는
+23/23 case 통과, critical failure 0이며
+`tests/reports/completion/phase6_calibration.json`은 `status=passed`,
+`complete=true`이다.
+
 민감정보와 보안 검토는 현재 Phase 6 생성 plan의 완료 gate에서 제외한다. 최종
 결과물 산출 후 별도 보안 검토 에이전트가 서버 주소, 계정 식별자, 계정 경로,
 비밀값, 배포 산출물 노출 여부를 독립 점검한다. 작업 중에는 로그와 커밋에
@@ -1270,6 +1284,16 @@ Pairwise의 오른쪽 축으로 사용될 character design, pose, lighting, back
 linework/coloring, camera catalog에서 각각 16개 실제 항목을 선택해 총 96 case를
 서로 다른 3개 seed로 먼저 검증한다. Pairwise matrix의 `right_item`은 이
 single-axis report에서 통과한 ID 집합의 부분집합이어야 한다.
+
+single-axis full matrix는 v1부터 v6까지 반복했다. v1은 96 case/288 image 중
+13 case가 실패했고, v2는 5 case, v3는 `single_axis_pose_006` 1 case,
+v4는 low-kneeling 변형 1 case, v5는 다른 low-kneeling 변형 1 case가 실패했다.
+각 실패 summary는 `tests/reports/completion/phase6_single_axis_v*_failed.json`에
+보존한다. v6는 v15 profile 기준으로 96 case × 3 seed = 288장 원격 생성을
+완료했고, 모든 PNG는 1024×1024, 고유 image hash, `remote=private_comfyui`,
+`queue_depth=32`였다. contact-sheet 10장 전수 review에서 96/96 case가 통과했고
+`tests/reports/completion/single_axis.json`은 `status=passed`,
+`complete=true`, `passed_item_ids=96`이다.
 
 ### 6.2 작가 스타일 A/B/C 테스트
 
@@ -1417,6 +1441,66 @@ artist signature × camera composition
 ```
 
 모든 전체 조합을 생성하지 않고 pairwise testing 방식으로 대표 조합을 선정한다.
+
+pairwise matrix는 single-axis 통과 ID만 RHS로 사용할 수 있도록 allow-list gate를
+적용한다. v1은 96 case × 3 seed = 288장 원격 생성과 PNG 검증을 완료했으나,
+`pairwise_style_pack_background_007`에서 left style pack의 giant fibrous-paper
+panel이 background axis를 압도해 adult subject가 누락되는 critical failure가
+발생했다. 실패 summary는
+`tests/reports/completion/phase6_pairwise_v1_failed.json`에 보존한다. v2는
+`style_pack_background` pair type에서
+`style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper*` 계열을 제외해
+동일 background case를 subject-safe style pack으로 교체했다. v2 원격 matrix는
+96 case × 3 seed = 288장, 1024×1024 PNG, 고유 image hash, `queue_depth=32`로
+완료했고, contact-sheet review에서 96/96 case가 통과했다.
+`tests/reports/completion/pairwise.json`은 `status=passed`, `complete=true`,
+`right_item_ids=96`이다.
+
+preset conflict audit v1은 100 preset case × 3 seed = 300장을
+`batch_size=1`, `queue_depth=32`, `remote=private_comfyui`로 완료했다.
+모든 결과는 1024×1024 PNG와 고유 image hash를 가졌고, contact-sheet 10장
+전수 review에서 critical conflict 0건으로 통과했다.
+`tests/reports/completion/presets.json`은 `report_type=preset_conflict_audit`,
+`presets_tested=100`, `status=passed`, `complete=true`이며 matrix SHA-256은
+`dcd3bf6e6b2ec36ed1cac6c54f0897b15a91fb658f534c929a969fa067bdb45d`이다.
+
+random utility v1은 20 random sample case × 3 seed = 60장을 동일한 원격
+provenance로 완료했다. contact-sheet 2장 전수 review 결과 sample 20/20이
+usable이고 critical failure 0건이었다.
+`tests/reports/completion/random_utility.json`은
+`report_type=random_utility`, `utility_rate=1.0`, `status=passed`,
+`complete=true`이며 matrix SHA-256은
+`7d2e8adaab22605e64a2342f4ec905a3378df62b023a86557d9676fd17cac2ac`이다.
+
+Krea2 Turbo benchmark v1은 benchmark case 1개를 seed
+`[1001, 2002, 3003, 4004, 5005]` 5개로 실행해 5/5장 1024×1024 PNG와 고유
+image hash를 생성했다. review 결과 critical failure 0건, stability 5.0,
+composition quality 5.0, compatibility 5.0으로 통과했다.
+`tests/reports/completion/benchmark.json`은
+`report_type=krea2_turbo_benchmark`, `model=krea2_turbo_mxfp8`,
+`status=passed`, `complete=true`이며 matrix SHA-256은
+`5622d196b9629f15b05b1728b465619de2e34591f79ab59ce5737064a0d19de8`이다.
+
+predeploy deterministic completion gate는 production runtime manifest 재생성,
+Impact-compatible production build, runtime coverage audit, release evidence,
+static duplicate audit digest 갱신 후 `tests/reports/completion_criteria.json`
+기준 14/14개 통과 상태가 되었다. 민감정보와 보안 검토는 위에서 명시한 대로
+최종 결과물 대상 별도 에이전트 범위에 남겨둔다.
+
+production deployment v1은 predeploy strict 14/14 통과 후 production artifact를
+원격 wildcard 경로에 backup suffix와 함께 적용했다. evidence에는 private remote
+marker만 남기고 실제 endpoint, 계정 식별자, 계정 경로는 기록하지 않았다.
+배포 산출물은 `build/impact-production/krea2_complete_pack.yaml`,
+artifact SHA-256은
+`d6262965c37dae2322666131dcef98979d65df4858cba57af6ec5220bce4a383`,
+artifact bytes는 409,926, wildcard path count는 376이다.
+`tests/reports/deployments/production_v1.json`은 `status=passed`, `mode=apply`,
+`applied=true`, `approved_items=374`이며 checksum match, exact krea2 namespace,
+ImpactWildcardProcessor reload, queue empty, smoke completed가 모두 true이다.
+post-deployment smoke는 `crystal_iris_pastel` seed 6006으로 완료했고 deployment
+nonce와 artifact/manifest SHA-256 binding을 가진 run record를 남겼다. 최종
+`tests/reports/completion_criteria.json`은 16/16개 criteria 통과,
+`complete=true` 상태다.
 
 ---
 

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000090",
+  "style_id": "pairwise_style_pack_pose_014",
+  "label": "pairwise_style_pack_pose_014",
+  "mode": "pairwise",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "95cb0657-87f0-4d6e-b9b9-853f1a3f7d64",
+  "resolved_prompt": "Photorealistic adult editorial treatment: layered border motifs and repeated decorative shapes framing the subject. Use muted slate, clay, sage, and limestone with small pale highlights, smooth tonal transitions and controlled satin sheen on lit surfaces, upward beams, rising forms, and restrained ceremonial glints, and razor-thin highlights and fine contrast around the face and hands. Combine it coherently with this second visual direction: An adult subject holds an upright contrapposto stance with one relaxed knee and a naturally offset hip line, with one hand resting at the waist while the other hangs open and fully readable. The head and gaze are turned three-quarters toward the near side with the eyes returning toward the camera, and the posture conveys settled stillness with even weight transfer and no strained joints. Resolve both directions on exactly one adult subject. Use eye-level full-length framing with the complete crown, both hand placements, both supporting legs, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "85a9958eccefec083af25489479348c21a188cf53508930589c9d42538a91f6a",
+  "workflow_sha256": "0017d032c34b09818ec702215686c9b207969640fb46447739d033ac938b1f6a",
+  "factors": {
+    "pair_type": "style_pack_pose",
+    "left_item": "style_pack_expansion_ornamental_layered_mineral_muted_satin_clean_ceremonial_energy_etched_accent_complete_style",
+    "right_item": "pose_upright_contrapposto_waist_and_open_three_quarter_near_settled_stillness_complete_pose",
+    "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "119177274647d42bab4ea2e64083b299b49f7f525c451f4ddbb2c78fa5934008",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

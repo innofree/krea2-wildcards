@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000126",
+  "style_id": "single_axis_lighting_010",
+  "label": "single_axis_lighting_010",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "738b21ff-75fb-43ba-a8a6-daaeb65b2b39",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with a low horizon source that creates long transitions across the body and environment, arriving from behind as a controlled edge light with a separate soft facial fill. The image uses enveloping diffuse light with open shadows and gentle local contrast and late golden light with neutral readable shadows and restrained saturation. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "832c3608a01b7f08bc12f5a93ced982eaca19d92964b6ee91a9144097d63c5e3",
+  "workflow_sha256": "5b7b8e3f004ffe5c5b287b8e51f08d8e8ade6eae19e5dafb69a69ca963192a96",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_low_horizon_source_back_edge_enveloping_diffuse_late_gold_neutral_shadow_complete_lighting",
+    "prompt_profile_sha256": "sha256_f4886b6d52ec044059235078e1c6127aeddeb8ad4dec1db521f7a2bad6760f0c"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "4be6091d4237769df9cdf57df638f239e625e38745bbeacb3966221ed0b42c1e",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

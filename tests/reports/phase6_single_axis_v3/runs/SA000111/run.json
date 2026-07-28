@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000111",
+  "style_id": "single_axis_lighting_005",
+  "label": "single_axis_lighting_005",
+  "mode": "single_axis",
+  "seed": 3003,
+  "remote": "private_comfyui",
+  "prompt_id": "99f0ec9e-e405-4d14-9d8c-53a76f496596",
+  "resolved_prompt": "Apply exactly this lighting direction as the sole changing axis: Light an adult subject with cloud-scattered daylight with broad ambient coverage and gentle directional cues, rising as a restrained low bounce that opens deep facial and clothing shadows. The image uses mixed edge quality with soft facial shadows and firmer garment shadows and a cool key balanced by a small warm practical accent in the background. Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral studio cyclorama, with her head, both hands, and both feet visible. Make every requested visual direction plainly legible without replacing the selected medium with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the requested line, color, surface, lighting, and composition cues, with no text, logos, or watermarks.",
+  "resolved_prompt_sha256": "1024aa4bfa136230a1a2bff0557108ac1529cab724dd4ac3b30e37c03a49681e",
+  "workflow_sha256": "72944eaec832fbc1830748606c32d599e20db0ff514e39269a081bafa8a8e172",
+  "factors": {
+    "axis": "lighting",
+    "item_id": "lighting_cloud_scattered_low_bounce_mixed_edge_cool_key_warm_practical_complete_lighting",
+    "prompt_profile_sha256": "sha256_ca0d4181c8c6b3a927677867fbdf47f00bbfad1c173c2d87c6aea93ccd97f4bd"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "10018f0a896117fc302257bfe1d88ee596619671e62315d8bde0578458519f4f",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
