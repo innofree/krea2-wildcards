@@ -1,9 +1,15 @@
 {
   "schema_version": 1,
-  "kind": "phase7_axis_prompt_binding",
+  "artifact_type": "phase7_axis_prompt_binding",
   "axis": "camera",
   "catalog": "catalog/cameras.yaml",
   "prompt_profile_sha256": "2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c",
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "row_count": 750,
   "style_count": 250,
   "styles": {
     "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera": "892681b47269ffab8449f3abcb997d94a0f96a51e9a6fb2bd2dd13613231af54",
@@ -256,5 +262,6 @@
     "camera_wide_environmental_slight_low_portrait_compression_centered_symmetry_complete_camera": "4d778d694b9c61df64a81be54783e2216f2aa137b56c8eb518ffa85e2b7320e9",
     "camera_wide_environmental_slight_low_portrait_compression_diagonal_depth_complete_camera": "516adea180a4fc569f6acc230bf1d9c3eaf2e95f8b3965dab7ec2914dac75dd2",
     "camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera": "93c70a6f4ef6a77eedfaf18dfeadb73fb3e3bc9958cd98ae2f10c61f10ae5003"
-  }
+  },
+  "binding_sha256": "36b7474753c9d72ca20c9bdeaa3d4b57324c95e07f27a7fbed2fc5e0635c6af6"
 }

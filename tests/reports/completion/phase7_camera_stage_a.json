@@ -1,0 +1,7016 @@
+{
+  "schema_version": 1,
+  "report_type": "phase7_stage_a_audit",
+  "axis": "camera",
+  "scorecard": "tests/reports/phase7_camera_v1/scorecard.csv",
+  "run_state": "tests/reports/phase7_camera_v1/run-state.json",
+  "expected_seeds": 3,
+  "item_count": 250,
+  "passed_count": 250,
+  "failed_count": 0,
+  "failed_item_ids": [],
+  "status": "passed",
+  "complete": true,
+  "items": {
+    "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000001": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.886,
+          "luminance_levels": 207
+        },
+        "P7000002": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.434,
+          "luminance_levels": 205
+        },
+        "P7000003": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.805,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000004": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.765,
+          "luminance_levels": 203
+        },
+        "P7000005": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.559,
+          "luminance_levels": 200
+        },
+        "P7000006": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.671,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000007": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.302,
+          "luminance_levels": 206
+        },
+        "P7000008": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.279,
+          "luminance_levels": 203
+        },
+        "P7000009": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.286,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000010": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.793,
+          "luminance_levels": 202
+        },
+        "P7000011": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.446,
+          "luminance_levels": 199
+        },
+        "P7000012": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.938,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000013": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.933,
+          "luminance_levels": 208
+        },
+        "P7000014": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.766,
+          "luminance_levels": 204
+        },
+        "P7000015": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.155,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000016": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.702,
+          "luminance_levels": 206
+        },
+        "P7000017": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.341,
+          "luminance_levels": 202
+        },
+        "P7000018": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.556,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000019": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.837,
+          "luminance_levels": 207
+        },
+        "P7000020": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.007,
+          "luminance_levels": 203
+        },
+        "P7000021": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.828,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000022": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.473,
+          "luminance_levels": 199
+        },
+        "P7000023": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.176,
+          "luminance_levels": 199
+        },
+        "P7000024": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.742,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000025": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.113,
+          "luminance_levels": 204
+        },
+        "P7000026": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.545,
+          "luminance_levels": 215
+        },
+        "P7000027": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.011,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000028": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.384,
+          "luminance_levels": 202
+        },
+        "P7000029": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.66,
+          "luminance_levels": 197
+        },
+        "P7000030": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 71.194,
+          "luminance_levels": 191
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000031": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.887,
+          "luminance_levels": 202
+        },
+        "P7000032": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.384,
+          "luminance_levels": 201
+        },
+        "P7000033": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 54.927,
+          "luminance_levels": 185
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000034": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.912,
+          "luminance_levels": 201
+        },
+        "P7000035": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.067,
+          "luminance_levels": 207
+        },
+        "P7000036": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 72.547,
+          "luminance_levels": 189
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000037": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.831,
+          "luminance_levels": 206
+        },
+        "P7000038": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.361,
+          "luminance_levels": 208
+        },
+        "P7000039": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.567,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000040": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.443,
+          "luminance_levels": 205
+        },
+        "P7000041": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.908,
+          "luminance_levels": 202
+        },
+        "P7000042": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.098,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000043": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.893,
+          "luminance_levels": 204
+        },
+        "P7000044": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.153,
+          "luminance_levels": 206
+        },
+        "P7000045": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.682,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000046": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.732,
+          "luminance_levels": 197
+        },
+        "P7000047": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.776,
+          "luminance_levels": 205
+        },
+        "P7000048": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.934,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000049": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.797,
+          "luminance_levels": 205
+        },
+        "P7000050": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.033,
+          "luminance_levels": 233
+        },
+        "P7000051": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.944,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000052": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.693,
+          "luminance_levels": 203
+        },
+        "P7000053": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.528,
+          "luminance_levels": 199
+        },
+        "P7000054": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.329,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000055": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.75,
+          "luminance_levels": 204
+        },
+        "P7000056": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.877,
+          "luminance_levels": 202
+        },
+        "P7000057": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.073,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000058": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.686,
+          "luminance_levels": 200
+        },
+        "P7000059": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.866,
+          "luminance_levels": 201
+        },
+        "P7000060": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.391,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000061": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.905,
+          "luminance_levels": 206
+        },
+        "P7000062": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.669,
+          "luminance_levels": 207
+        },
+        "P7000063": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.27,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000064": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.034,
+          "luminance_levels": 202
+        },
+        "P7000065": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.88,
+          "luminance_levels": 209
+        },
+        "P7000066": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.444,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000067": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.61,
+          "luminance_levels": 206
+        },
+        "P7000068": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.127,
+          "luminance_levels": 203
+        },
+        "P7000069": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.112,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_clean_profile_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000070": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.213,
+          "luminance_levels": 202
+        },
+        "P7000071": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.525,
+          "luminance_levels": 210
+        },
+        "P7000072": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.437,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000073": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.697,
+          "luminance_levels": 204
+        },
+        "P7000074": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.736,
+          "luminance_levels": 211
+        },
+        "P7000075": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.459,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000076": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.857,
+          "luminance_levels": 205
+        },
+        "P7000077": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.036,
+          "luminance_levels": 209
+        },
+        "P7000078": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.168,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000079": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.083,
+          "luminance_levels": 206
+        },
+        "P7000080": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.34,
+          "luminance_levels": 203
+        },
+        "P7000081": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.545,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000082": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.949,
+          "luminance_levels": 204
+        },
+        "P7000083": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.313,
+          "luminance_levels": 207
+        },
+        "P7000084": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.6,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000085": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.253,
+          "luminance_levels": 204
+        },
+        "P7000086": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.96,
+          "luminance_levels": 207
+        },
+        "P7000087": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.912,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000088": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.593,
+          "luminance_levels": 205
+        },
+        "P7000089": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.994,
+          "luminance_levels": 204
+        },
+        "P7000090": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.034,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000091": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.332,
+          "luminance_levels": 211
+        },
+        "P7000092": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.91,
+          "luminance_levels": 209
+        },
+        "P7000093": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.842,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_chest_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000094": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.07,
+          "luminance_levels": 204
+        },
+        "P7000095": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.868,
+          "luminance_levels": 206
+        },
+        "P7000096": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.748,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000097": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.613,
+          "luminance_levels": 215
+        },
+        "P7000098": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.217,
+          "luminance_levels": 228
+        },
+        "P7000099": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.921,
+          "luminance_levels": 231
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000100": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.764,
+          "luminance_levels": 206
+        },
+        "P7000101": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.414,
+          "luminance_levels": 211
+        },
+        "P7000102": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.424,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000103": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.877,
+          "luminance_levels": 192
+        },
+        "P7000104": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.002,
+          "luminance_levels": 193
+        },
+        "P7000105": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.464,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000106": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.344,
+          "luminance_levels": 196
+        },
+        "P7000107": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.131,
+          "luminance_levels": 208
+        },
+        "P7000108": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.277,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000109": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.622,
+          "luminance_levels": 199
+        },
+        "P7000110": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.572,
+          "luminance_levels": 204
+        },
+        "P7000111": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.935,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000112": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.556,
+          "luminance_levels": 197
+        },
+        "P7000113": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.846,
+          "luminance_levels": 203
+        },
+        "P7000114": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.412,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000115": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.238,
+          "luminance_levels": 210
+        },
+        "P7000116": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.737,
+          "luminance_levels": 205
+        },
+        "P7000117": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.513,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_clean_profile_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000118": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.234,
+          "luminance_levels": 204
+        },
+        "P7000119": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.049,
+          "luminance_levels": 201
+        },
+        "P7000120": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.968,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000121": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.877,
+          "luminance_levels": 206
+        },
+        "P7000122": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.877,
+          "luminance_levels": 206
+        },
+        "P7000123": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.76,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000124": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.635,
+          "luminance_levels": 204
+        },
+        "P7000125": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.282,
+          "luminance_levels": 197
+        },
+        "P7000126": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.387,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000127": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.193,
+          "luminance_levels": 204
+        },
+        "P7000128": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.249,
+          "luminance_levels": 202
+        },
+        "P7000129": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.253,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000130": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.823,
+          "luminance_levels": 205
+        },
+        "P7000131": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.189,
+          "luminance_levels": 201
+        },
+        "P7000132": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.102,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000133": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.275,
+          "luminance_levels": 201
+        },
+        "P7000134": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.166,
+          "luminance_levels": 203
+        },
+        "P7000135": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.304,
+          "luminance_levels": 182
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000136": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.506,
+          "luminance_levels": 207
+        },
+        "P7000137": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.626,
+          "luminance_levels": 204
+        },
+        "P7000138": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.367,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000139": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.226,
+          "luminance_levels": 204
+        },
+        "P7000140": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.908,
+          "luminance_levels": 211
+        },
+        "P7000141": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.805,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000142": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.068,
+          "luminance_levels": 203
+        },
+        "P7000143": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.755,
+          "luminance_levels": 209
+        },
+        "P7000144": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.016,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000145": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 62.799,
+          "luminance_levels": 185
+        },
+        "P7000146": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 62.542,
+          "luminance_levels": 185
+        },
+        "P7000147": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 61.28,
+          "luminance_levels": 180
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000148": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 67.934,
+          "luminance_levels": 184
+        },
+        "P7000149": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.843,
+          "luminance_levels": 192
+        },
+        "P7000150": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 64.763,
+          "luminance_levels": 185
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000151": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.408,
+          "luminance_levels": 185
+        },
+        "P7000152": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 71.718,
+          "luminance_levels": 191
+        },
+        "P7000153": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.21,
+          "luminance_levels": 188
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000154": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.944,
+          "luminance_levels": 183
+        },
+        "P7000155": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 70.119,
+          "luminance_levels": 192
+        },
+        "P7000156": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.527,
+          "luminance_levels": 183
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000157": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.763,
+          "luminance_levels": 200
+        },
+        "P7000158": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.607,
+          "luminance_levels": 200
+        },
+        "P7000159": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.14,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000160": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.261,
+          "luminance_levels": 204
+        },
+        "P7000161": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.571,
+          "luminance_levels": 196
+        },
+        "P7000162": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.252,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000163": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.158,
+          "luminance_levels": 207
+        },
+        "P7000164": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.933,
+          "luminance_levels": 208
+        },
+        "P7000165": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.076,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000166": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.675,
+          "luminance_levels": 206
+        },
+        "P7000167": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.078,
+          "luminance_levels": 205
+        },
+        "P7000168": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.154,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000169": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.421,
+          "luminance_levels": 202
+        },
+        "P7000170": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.966,
+          "luminance_levels": 209
+        },
+        "P7000171": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.884,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000172": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.294,
+          "luminance_levels": 207
+        },
+        "P7000173": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.166,
+          "luminance_levels": 204
+        },
+        "P7000174": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.164,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000175": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.449,
+          "luminance_levels": 204
+        },
+        "P7000176": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.204,
+          "luminance_levels": 205
+        },
+        "P7000177": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.686,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000178": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.515,
+          "luminance_levels": 204
+        },
+        "P7000179": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.751,
+          "luminance_levels": 200
+        },
+        "P7000180": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.132,
+          "luminance_levels": 195
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000181": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.478,
+          "luminance_levels": 218
+        },
+        "P7000182": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.589,
+          "luminance_levels": 204
+        },
+        "P7000183": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.604,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000184": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.747,
+          "luminance_levels": 204
+        },
+        "P7000185": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.671,
+          "luminance_levels": 203
+        },
+        "P7000186": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.32,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000187": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.691,
+          "luminance_levels": 197
+        },
+        "P7000188": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.497,
+          "luminance_levels": 201
+        },
+        "P7000189": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.398,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_close_face_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000190": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.78,
+          "luminance_levels": 199
+        },
+        "P7000191": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.369,
+          "luminance_levels": 199
+        },
+        "P7000192": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.866,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_clean_profile_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000193": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.585,
+          "luminance_levels": 235
+        },
+        "P7000194": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 26.113,
+          "luminance_levels": 231
+        },
+        "P7000195": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 63.603,
+          "luminance_levels": 246
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_clean_profile_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000196": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.58,
+          "luminance_levels": 208
+        },
+        "P7000197": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.993,
+          "luminance_levels": 206
+        },
+        "P7000198": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.48,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000199": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.443,
+          "luminance_levels": 197
+        },
+        "P7000200": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.952,
+          "luminance_levels": 207
+        },
+        "P7000201": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.614,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000202": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.85,
+          "luminance_levels": 209
+        },
+        "P7000203": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.139,
+          "luminance_levels": 208
+        },
+        "P7000204": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.861,
+          "luminance_levels": 214
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000205": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.673,
+          "luminance_levels": 220
+        },
+        "P7000206": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.6,
+          "luminance_levels": 211
+        },
+        "P7000207": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.279,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000208": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.139,
+          "luminance_levels": 221
+        },
+        "P7000209": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.884,
+          "luminance_levels": 212
+        },
+        "P7000210": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.778,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000211": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.587,
+          "luminance_levels": 213
+        },
+        "P7000212": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.856,
+          "luminance_levels": 207
+        },
+        "P7000213": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 66.994,
+          "luminance_levels": 233
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000214": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.427,
+          "luminance_levels": 217
+        },
+        "P7000215": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.167,
+          "luminance_levels": 214
+        },
+        "P7000216": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.091,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000217": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.375,
+          "luminance_levels": 216
+        },
+        "P7000218": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.225,
+          "luminance_levels": 208
+        },
+        "P7000219": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 70.671,
+          "luminance_levels": 239
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000220": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.69,
+          "luminance_levels": 210
+        },
+        "P7000221": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.533,
+          "luminance_levels": 208
+        },
+        "P7000222": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.587,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000223": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.392,
+          "luminance_levels": 210
+        },
+        "P7000224": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.823,
+          "luminance_levels": 213
+        },
+        "P7000225": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.618,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000226": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.816,
+          "luminance_levels": 210
+        },
+        "P7000227": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.222,
+          "luminance_levels": 210
+        },
+        "P7000228": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.827,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000229": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.237,
+          "luminance_levels": 211
+        },
+        "P7000230": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.084,
+          "luminance_levels": 210
+        },
+        "P7000231": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 71.066,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000232": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.423,
+          "luminance_levels": 204
+        },
+        "P7000233": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.682,
+          "luminance_levels": 207
+        },
+        "P7000234": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.507,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000235": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.446,
+          "luminance_levels": 210
+        },
+        "P7000236": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.067,
+          "luminance_levels": 208
+        },
+        "P7000237": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.233,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000238": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.308,
+          "luminance_levels": 208
+        },
+        "P7000239": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.249,
+          "luminance_levels": 210
+        },
+        "P7000240": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 73.151,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000241": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.341,
+          "luminance_levels": 207
+        },
+        "P7000242": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.187,
+          "luminance_levels": 211
+        },
+        "P7000243": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.818,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000244": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.632,
+          "luminance_levels": 207
+        },
+        "P7000245": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.416,
+          "luminance_levels": 207
+        },
+        "P7000246": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.094,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000247": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.84,
+          "luminance_levels": 203
+        },
+        "P7000248": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.485,
+          "luminance_levels": 211
+        },
+        "P7000249": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.7,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000250": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.607,
+          "luminance_levels": 215
+        },
+        "P7000251": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.464,
+          "luminance_levels": 207
+        },
+        "P7000252": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 79.897,
+          "luminance_levels": 237
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000253": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.213,
+          "luminance_levels": 186
+        },
+        "P7000254": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.649,
+          "luminance_levels": 182
+        },
+        "P7000255": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.697,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000256": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.607,
+          "luminance_levels": 201
+        },
+        "P7000257": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.235,
+          "luminance_levels": 212
+        },
+        "P7000258": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.779,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000259": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.39,
+          "luminance_levels": 195
+        },
+        "P7000260": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.991,
+          "luminance_levels": 207
+        },
+        "P7000261": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.505,
+          "luminance_levels": 192
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000262": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.953,
+          "luminance_levels": 208
+        },
+        "P7000263": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.063,
+          "luminance_levels": 209
+        },
+        "P7000264": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 72.618,
+          "luminance_levels": 244
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000265": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.901,
+          "luminance_levels": 205
+        },
+        "P7000266": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.644,
+          "luminance_levels": 211
+        },
+        "P7000267": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.791,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000268": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.602,
+          "luminance_levels": 203
+        },
+        "P7000269": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.827,
+          "luminance_levels": 212
+        },
+        "P7000270": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.704,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000271": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.162,
+          "luminance_levels": 210
+        },
+        "P7000272": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.709,
+          "luminance_levels": 207
+        },
+        "P7000273": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 73.5,
+          "luminance_levels": 253
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000274": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.263,
+          "luminance_levels": 203
+        },
+        "P7000275": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.751,
+          "luminance_levels": 210
+        },
+        "P7000276": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.565,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000277": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.937,
+          "luminance_levels": 209
+        },
+        "P7000278": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.191,
+          "luminance_levels": 211
+        },
+        "P7000279": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.01,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000280": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.988,
+          "luminance_levels": 207
+        },
+        "P7000281": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.35,
+          "luminance_levels": 204
+        },
+        "P7000282": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.158,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000283": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.808,
+          "luminance_levels": 210
+        },
+        "P7000284": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.785,
+          "luminance_levels": 211
+        },
+        "P7000285": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.472,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000286": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.791,
+          "luminance_levels": 202
+        },
+        "P7000287": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.696,
+          "luminance_levels": 193
+        },
+        "P7000288": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.551,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000289": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.483,
+          "luminance_levels": 203
+        },
+        "P7000290": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.568,
+          "luminance_levels": 194
+        },
+        "P7000291": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.305,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000292": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 62.517,
+          "luminance_levels": 191
+        },
+        "P7000293": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 60.322,
+          "luminance_levels": 193
+        },
+        "P7000294": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 60.481,
+          "luminance_levels": 185
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000295": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.233,
+          "luminance_levels": 185
+        },
+        "P7000296": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 66.109,
+          "luminance_levels": 192
+        },
+        "P7000297": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 69.151,
+          "luminance_levels": 188
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000298": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 67.618,
+          "luminance_levels": 189
+        },
+        "P7000299": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.133,
+          "luminance_levels": 197
+        },
+        "P7000300": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 64.502,
+          "luminance_levels": 184
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000301": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 64.966,
+          "luminance_levels": 184
+        },
+        "P7000302": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.433,
+          "luminance_levels": 191
+        },
+        "P7000303": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.935,
+          "luminance_levels": 190
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000304": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.04,
+          "luminance_levels": 201
+        },
+        "P7000305": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.138,
+          "luminance_levels": 195
+        },
+        "P7000306": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.965,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000307": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.623,
+          "luminance_levels": 197
+        },
+        "P7000308": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.533,
+          "luminance_levels": 195
+        },
+        "P7000309": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.359,
+          "luminance_levels": 184
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000310": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.022,
+          "luminance_levels": 201
+        },
+        "P7000311": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.102,
+          "luminance_levels": 201
+        },
+        "P7000312": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.574,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000313": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.289,
+          "luminance_levels": 206
+        },
+        "P7000314": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.019,
+          "luminance_levels": 201
+        },
+        "P7000315": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.323,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000316": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.263,
+          "luminance_levels": 215
+        },
+        "P7000317": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.035,
+          "luminance_levels": 215
+        },
+        "P7000318": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.501,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000319": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.438,
+          "luminance_levels": 200
+        },
+        "P7000320": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.683,
+          "luminance_levels": 193
+        },
+        "P7000321": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.786,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000322": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.563,
+          "luminance_levels": 201
+        },
+        "P7000323": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.851,
+          "luminance_levels": 200
+        },
+        "P7000324": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.695,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000325": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.172,
+          "luminance_levels": 202
+        },
+        "P7000326": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.865,
+          "luminance_levels": 196
+        },
+        "P7000327": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.138,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000328": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.671,
+          "luminance_levels": 206
+        },
+        "P7000329": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.655,
+          "luminance_levels": 197
+        },
+        "P7000330": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.614,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000331": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.884,
+          "luminance_levels": 204
+        },
+        "P7000332": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.263,
+          "luminance_levels": 193
+        },
+        "P7000333": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.683,
+          "luminance_levels": 193
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000334": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.384,
+          "luminance_levels": 206
+        },
+        "P7000335": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.649,
+          "luminance_levels": 199
+        },
+        "P7000336": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.916,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000337": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.836,
+          "luminance_levels": 204
+        },
+        "P7000338": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.876,
+          "luminance_levels": 199
+        },
+        "P7000339": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.394,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000340": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.97,
+          "luminance_levels": 236
+        },
+        "P7000341": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.624,
+          "luminance_levels": 240
+        },
+        "P7000342": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.47,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000343": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.526,
+          "luminance_levels": 200
+        },
+        "P7000344": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.873,
+          "luminance_levels": 225
+        },
+        "P7000345": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.005,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000346": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.761,
+          "luminance_levels": 202
+        },
+        "P7000347": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.052,
+          "luminance_levels": 225
+        },
+        "P7000348": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.738,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000349": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.504,
+          "luminance_levels": 204
+        },
+        "P7000350": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.647,
+          "luminance_levels": 233
+        },
+        "P7000351": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.3,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000352": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.05,
+          "luminance_levels": 233
+        },
+        "P7000353": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.761,
+          "luminance_levels": 226
+        },
+        "P7000354": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 58.014,
+          "luminance_levels": 240
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000355": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.687,
+          "luminance_levels": 198
+        },
+        "P7000356": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.546,
+          "luminance_levels": 233
+        },
+        "P7000357": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.745,
+          "luminance_levels": 221
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000358": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.521,
+          "luminance_levels": 201
+        },
+        "P7000359": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.969,
+          "luminance_levels": 228
+        },
+        "P7000360": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.663,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000361": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.41,
+          "luminance_levels": 214
+        },
+        "P7000362": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.068,
+          "luminance_levels": 222
+        },
+        "P7000363": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.061,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000364": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.863,
+          "luminance_levels": 216
+        },
+        "P7000365": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.125,
+          "luminance_levels": 228
+        },
+        "P7000366": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.369,
+          "luminance_levels": 225
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000367": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.166,
+          "luminance_levels": 201
+        },
+        "P7000368": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.121,
+          "luminance_levels": 204
+        },
+        "P7000369": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.418,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000370": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.454,
+          "luminance_levels": 201
+        },
+        "P7000371": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.668,
+          "luminance_levels": 215
+        },
+        "P7000372": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.655,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000373": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.156,
+          "luminance_levels": 199
+        },
+        "P7000374": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.102,
+          "luminance_levels": 222
+        },
+        "P7000375": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.488,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_head_shoulders_three_quarter_front_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000376": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.538,
+          "luminance_levels": 200
+        },
+        "P7000377": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.105,
+          "luminance_levels": 203
+        },
+        "P7000378": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.726,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000379": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.926,
+          "luminance_levels": 203
+        },
+        "P7000380": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.717,
+          "luminance_levels": 198
+        },
+        "P7000381": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 62.386,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000382": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.517,
+          "luminance_levels": 205
+        },
+        "P7000383": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.4,
+          "luminance_levels": 196
+        },
+        "P7000384": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.028,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000385": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.313,
+          "luminance_levels": 197
+        },
+        "P7000386": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.868,
+          "luminance_levels": 200
+        },
+        "P7000387": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.263,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000388": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.485,
+          "luminance_levels": 197
+        },
+        "P7000389": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.107,
+          "luminance_levels": 218
+        },
+        "P7000390": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.077,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000391": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 54.167,
+          "luminance_levels": 244
+        },
+        "P7000392": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.995,
+          "luminance_levels": 214
+        },
+        "P7000393": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 59.522,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000394": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.848,
+          "luminance_levels": 206
+        },
+        "P7000395": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.724,
+          "luminance_levels": 196
+        },
+        "P7000396": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.001,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_clean_profile_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000397": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.141,
+          "luminance_levels": 207
+        },
+        "P7000398": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.234,
+          "luminance_levels": 196
+        },
+        "P7000399": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.544,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000400": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.974,
+          "luminance_levels": 211
+        },
+        "P7000401": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.024,
+          "luminance_levels": 230
+        },
+        "P7000402": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 56.541,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000403": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.051,
+          "luminance_levels": 198
+        },
+        "P7000404": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.696,
+          "luminance_levels": 201
+        },
+        "P7000405": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.566,
+          "luminance_levels": 195
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000406": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.145,
+          "luminance_levels": 198
+        },
+        "P7000407": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.17,
+          "luminance_levels": 201
+        },
+        "P7000408": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.155,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000409": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.196,
+          "luminance_levels": 200
+        },
+        "P7000410": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.981,
+          "luminance_levels": 203
+        },
+        "P7000411": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.895,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000412": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.186,
+          "luminance_levels": 203
+        },
+        "P7000413": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.851,
+          "luminance_levels": 233
+        },
+        "P7000414": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 61.897,
+          "luminance_levels": 218
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000415": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.251,
+          "luminance_levels": 200
+        },
+        "P7000416": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.824,
+          "luminance_levels": 203
+        },
+        "P7000417": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.66,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000418": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.58,
+          "luminance_levels": 199
+        },
+        "P7000419": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.885,
+          "luminance_levels": 217
+        },
+        "P7000420": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.045,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000421": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.745,
+          "luminance_levels": 203
+        },
+        "P7000422": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.578,
+          "luminance_levels": 201
+        },
+        "P7000423": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.652,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000424": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.563,
+          "luminance_levels": 198
+        },
+        "P7000425": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.435,
+          "luminance_levels": 229
+        },
+        "P7000426": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 70.066,
+          "luminance_levels": 226
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000427": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.406,
+          "luminance_levels": 197
+        },
+        "P7000428": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.191,
+          "luminance_levels": 220
+        },
+        "P7000429": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.83,
+          "luminance_levels": 178
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000430": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 48.082,
+          "luminance_levels": 188
+        },
+        "P7000431": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.837,
+          "luminance_levels": 223
+        },
+        "P7000432": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.944,
+          "luminance_levels": 180
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000433": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.536,
+          "luminance_levels": 199
+        },
+        "P7000434": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.293,
+          "luminance_levels": 225
+        },
+        "P7000435": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.335,
+          "luminance_levels": 189
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000436": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.44,
+          "luminance_levels": 200
+        },
+        "P7000437": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.854,
+          "luminance_levels": 217
+        },
+        "P7000438": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 63.684,
+          "luminance_levels": 219
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000439": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.093,
+          "luminance_levels": 200
+        },
+        "P7000440": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.695,
+          "luminance_levels": 203
+        },
+        "P7000441": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.33,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000442": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.166,
+          "luminance_levels": 200
+        },
+        "P7000443": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.279,
+          "luminance_levels": 203
+        },
+        "P7000444": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.19,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000445": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.824,
+          "luminance_levels": 196
+        },
+        "P7000446": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.989,
+          "luminance_levels": 204
+        },
+        "P7000447": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.828,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000448": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.4,
+          "luminance_levels": 214
+        },
+        "P7000449": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.787,
+          "luminance_levels": 234
+        },
+        "P7000450": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 55.989,
+          "luminance_levels": 223
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000451": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.241,
+          "luminance_levels": 199
+        },
+        "P7000452": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.564,
+          "luminance_levels": 201
+        },
+        "P7000453": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.064,
+          "luminance_levels": 192
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000454": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.049,
+          "luminance_levels": 199
+        },
+        "P7000455": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.202,
+          "luminance_levels": 203
+        },
+        "P7000456": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.241,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000457": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.551,
+          "luminance_levels": 199
+        },
+        "P7000458": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.02,
+          "luminance_levels": 222
+        },
+        "P7000459": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.352,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000460": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.931,
+          "luminance_levels": 203
+        },
+        "P7000461": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.004,
+          "luminance_levels": 205
+        },
+        "P7000462": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 63.111,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000463": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.782,
+          "luminance_levels": 201
+        },
+        "P7000464": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.113,
+          "luminance_levels": 205
+        },
+        "P7000465": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.624,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000466": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.079,
+          "luminance_levels": 204
+        },
+        "P7000467": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.883,
+          "luminance_levels": 205
+        },
+        "P7000468": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.844,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_thigh_up_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000469": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.756,
+          "luminance_levels": 204
+        },
+        "P7000470": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.707,
+          "luminance_levels": 204
+        },
+        "P7000471": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.31,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000472": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.894,
+          "luminance_levels": 185
+        },
+        "P7000473": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.943,
+          "luminance_levels": 194
+        },
+        "P7000474": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 75.243,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000475": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 43.179,
+          "luminance_levels": 195
+        },
+        "P7000476": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.717,
+          "luminance_levels": 177
+        },
+        "P7000477": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.43,
+          "luminance_levels": 176
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000478": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.024,
+          "luminance_levels": 205
+        },
+        "P7000479": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 57.003,
+          "luminance_levels": 187
+        },
+        "P7000480": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.282,
+          "luminance_levels": 195
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000481": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.015,
+          "luminance_levels": 197
+        },
+        "P7000482": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.914,
+          "luminance_levels": 182
+        },
+        "P7000483": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.099,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000484": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.941,
+          "luminance_levels": 206
+        },
+        "P7000485": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.081,
+          "luminance_levels": 212
+        },
+        "P7000486": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.889,
+          "luminance_levels": 224
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000487": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.586,
+          "luminance_levels": 204
+        },
+        "P7000488": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.356,
+          "luminance_levels": 207
+        },
+        "P7000489": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.552,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000490": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.184,
+          "luminance_levels": 208
+        },
+        "P7000491": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.891,
+          "luminance_levels": 205
+        },
+        "P7000492": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 68.427,
+          "luminance_levels": 227
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000493": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.064,
+          "luminance_levels": 205
+        },
+        "P7000494": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.784,
+          "luminance_levels": 202
+        },
+        "P7000495": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.98,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000496": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.415,
+          "luminance_levels": 210
+        },
+        "P7000497": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.279,
+          "luminance_levels": 208
+        },
+        "P7000498": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.204,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_slight_high_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000499": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.633,
+          "luminance_levels": 205
+        },
+        "P7000500": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.44,
+          "luminance_levels": 210
+        },
+        "P7000501": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.964,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000502": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.247,
+          "luminance_levels": 221
+        },
+        "P7000503": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.285,
+          "luminance_levels": 229
+        },
+        "P7000504": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 57.557,
+          "luminance_levels": 237
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000505": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.15,
+          "luminance_levels": 211
+        },
+        "P7000506": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.452,
+          "luminance_levels": 210
+        },
+        "P7000507": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.392,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000508": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.346,
+          "luminance_levels": 206
+        },
+        "P7000509": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.461,
+          "luminance_levels": 209
+        },
+        "P7000510": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.309,
+          "luminance_levels": 212
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000511": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.995,
+          "luminance_levels": 210
+        },
+        "P7000512": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.991,
+          "luminance_levels": 209
+        },
+        "P7000513": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.634,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000514": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.554,
+          "luminance_levels": 209
+        },
+        "P7000515": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.713,
+          "luminance_levels": 231
+        },
+        "P7000516": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 63.263,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000517": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.082,
+          "luminance_levels": 212
+        },
+        "P7000518": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.6,
+          "luminance_levels": 208
+        },
+        "P7000519": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.841,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000520": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.886,
+          "luminance_levels": 208
+        },
+        "P7000521": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.103,
+          "luminance_levels": 202
+        },
+        "P7000522": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.147,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000523": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.2,
+          "luminance_levels": 207
+        },
+        "P7000524": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.176,
+          "luminance_levels": 210
+        },
+        "P7000525": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.692,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000526": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.043,
+          "luminance_levels": 229
+        },
+        "P7000527": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.055,
+          "luminance_levels": 221
+        },
+        "P7000528": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 61.341,
+          "luminance_levels": 235
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000529": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.756,
+          "luminance_levels": 196
+        },
+        "P7000530": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.816,
+          "luminance_levels": 212
+        },
+        "P7000531": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.159,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000532": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.564,
+          "luminance_levels": 208
+        },
+        "P7000533": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.011,
+          "luminance_levels": 205
+        },
+        "P7000534": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.112,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000535": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.02,
+          "luminance_levels": 206
+        },
+        "P7000536": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.213,
+          "luminance_levels": 217
+        },
+        "P7000537": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.59,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000538": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.226,
+          "luminance_levels": 213
+        },
+        "P7000539": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.539,
+          "luminance_levels": 233
+        },
+        "P7000540": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 58.342,
+          "luminance_levels": 229
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000541": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.389,
+          "luminance_levels": 210
+        },
+        "P7000542": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.62,
+          "luminance_levels": 207
+        },
+        "P7000543": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.032,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000544": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.619,
+          "luminance_levels": 212
+        },
+        "P7000545": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.794,
+          "luminance_levels": 205
+        },
+        "P7000546": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.924,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000547": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.503,
+          "luminance_levels": 208
+        },
+        "P7000548": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.882,
+          "luminance_levels": 211
+        },
+        "P7000549": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.796,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000550": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.671,
+          "luminance_levels": 212
+        },
+        "P7000551": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.784,
+          "luminance_levels": 230
+        },
+        "P7000552": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 56.436,
+          "luminance_levels": 234
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000553": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.74,
+          "luminance_levels": 214
+        },
+        "P7000554": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.52,
+          "luminance_levels": 224
+        },
+        "P7000555": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.382,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000556": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.575,
+          "luminance_levels": 207
+        },
+        "P7000557": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.865,
+          "luminance_levels": 212
+        },
+        "P7000558": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.666,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000559": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.135,
+          "luminance_levels": 206
+        },
+        "P7000560": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.5,
+          "luminance_levels": 228
+        },
+        "P7000561": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.87,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_vertical_full_scene_three_quarter_front_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000562": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.735,
+          "luminance_levels": 210
+        },
+        "P7000563": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.704,
+          "luminance_levels": 210
+        },
+        "P7000564": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.23,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000565": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.388,
+          "luminance_levels": 209
+        },
+        "P7000566": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.21,
+          "luminance_levels": 227
+        },
+        "P7000567": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.52,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000568": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.137,
+          "luminance_levels": 205
+        },
+        "P7000569": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.53,
+          "luminance_levels": 202
+        },
+        "P7000570": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.331,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000571": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.889,
+          "luminance_levels": 208
+        },
+        "P7000572": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.338,
+          "luminance_levels": 203
+        },
+        "P7000573": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.286,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000574": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.624,
+          "luminance_levels": 207
+        },
+        "P7000575": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.658,
+          "luminance_levels": 205
+        },
+        "P7000576": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.384,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000577": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.29,
+          "luminance_levels": 206
+        },
+        "P7000578": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.819,
+          "luminance_levels": 220
+        },
+        "P7000579": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 52.827,
+          "luminance_levels": 252
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000580": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.609,
+          "luminance_levels": 209
+        },
+        "P7000581": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.284,
+          "luminance_levels": 206
+        },
+        "P7000582": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.146,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000583": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.127,
+          "luminance_levels": 204
+        },
+        "P7000584": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.482,
+          "luminance_levels": 203
+        },
+        "P7000585": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.201,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000586": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.138,
+          "luminance_levels": 208
+        },
+        "P7000587": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.285,
+          "luminance_levels": 207
+        },
+        "P7000588": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.427,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000589": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.565,
+          "luminance_levels": 213
+        },
+        "P7000590": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.217,
+          "luminance_levels": 231
+        },
+        "P7000591": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.963,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000592": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 63.032,
+          "luminance_levels": 186
+        },
+        "P7000593": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.342,
+          "luminance_levels": 227
+        },
+        "P7000594": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 64.261,
+          "luminance_levels": 195
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000595": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 66.049,
+          "luminance_levels": 190
+        },
+        "P7000596": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.294,
+          "luminance_levels": 208
+        },
+        "P7000597": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 69.106,
+          "luminance_levels": 192
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000598": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 55.714,
+          "luminance_levels": 186
+        },
+        "P7000599": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.79,
+          "luminance_levels": 214
+        },
+        "P7000600": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.682,
+          "luminance_levels": 184
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000601": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.545,
+          "luminance_levels": 215
+        },
+        "P7000602": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.67,
+          "luminance_levels": 212
+        },
+        "P7000603": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.38,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000604": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.98,
+          "luminance_levels": 206
+        },
+        "P7000605": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.286,
+          "luminance_levels": 205
+        },
+        "P7000606": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.291,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000607": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.905,
+          "luminance_levels": 205
+        },
+        "P7000608": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.097,
+          "luminance_levels": 213
+        },
+        "P7000609": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.669,
+          "luminance_levels": 210
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000610": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.683,
+          "luminance_levels": 204
+        },
+        "P7000611": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.396,
+          "luminance_levels": 210
+        },
+        "P7000612": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.427,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000613": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.584,
+          "luminance_levels": 209
+        },
+        "P7000614": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.126,
+          "luminance_levels": 223
+        },
+        "P7000615": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.91,
+          "luminance_levels": 209
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000616": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.852,
+          "luminance_levels": 203
+        },
+        "P7000617": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.888,
+          "luminance_levels": 203
+        },
+        "P7000618": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.469,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000619": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.009,
+          "luminance_levels": 204
+        },
+        "P7000620": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.52,
+          "luminance_levels": 203
+        },
+        "P7000621": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.006,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000622": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.306,
+          "luminance_levels": 209
+        },
+        "P7000623": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.409,
+          "luminance_levels": 211
+        },
+        "P7000624": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.658,
+          "luminance_levels": 200
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000625": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.812,
+          "luminance_levels": 212
+        },
+        "P7000626": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.652,
+          "luminance_levels": 214
+        },
+        "P7000627": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 65.702,
+          "luminance_levels": 230
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000628": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.688,
+          "luminance_levels": 207
+        },
+        "P7000629": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.458,
+          "luminance_levels": 207
+        },
+        "P7000630": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.223,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000631": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.762,
+          "luminance_levels": 206
+        },
+        "P7000632": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.45,
+          "luminance_levels": 208
+        },
+        "P7000633": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.518,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_slight_high_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000634": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.306,
+          "luminance_levels": 201
+        },
+        "P7000635": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.446,
+          "luminance_levels": 207
+        },
+        "P7000636": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.298,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000637": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.336,
+          "luminance_levels": 222
+        },
+        "P7000638": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.171,
+          "luminance_levels": 230
+        },
+        "P7000639": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.87,
+          "luminance_levels": 205
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000640": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.643,
+          "luminance_levels": 204
+        },
+        "P7000641": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.789,
+          "luminance_levels": 205
+        },
+        "P7000642": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.656,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000643": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.521,
+          "luminance_levels": 208
+        },
+        "P7000644": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.32,
+          "luminance_levels": 205
+        },
+        "P7000645": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.387,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000646": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.962,
+          "luminance_levels": 210
+        },
+        "P7000647": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.897,
+          "luminance_levels": 241
+        },
+        "P7000648": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.168,
+          "luminance_levels": 221
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_natural_perspective_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000649": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.631,
+          "luminance_levels": 207
+        },
+        "P7000650": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.148,
+          "luminance_levels": 230
+        },
+        "P7000651": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.226,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000652": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.197,
+          "luminance_levels": 204
+        },
+        "P7000653": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.851,
+          "luminance_levels": 222
+        },
+        "P7000654": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.665,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "camera_waist_up_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000655": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.42,
+          "luminance_levels": 206
+        },
+        "P7000656": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.961,
+          "luminance_levels": 226
+        },
+        "P7000657": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.758,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000658": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.651,
+          "luminance_levels": 202
+        },
+        "P7000659": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.758,
+          "luminance_levels": 193
+        },
+        "P7000660": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.702,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000661": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.872,
+          "luminance_levels": 207
+        },
+        "P7000662": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.882,
+          "luminance_levels": 207
+        },
+        "P7000663": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.472,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000664": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.573,
+          "luminance_levels": 202
+        },
+        "P7000665": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.131,
+          "luminance_levels": 191
+        },
+        "P7000666": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.734,
+          "luminance_levels": 195
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000667": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.457,
+          "luminance_levels": 207
+        },
+        "P7000668": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.983,
+          "luminance_levels": 196
+        },
+        "P7000669": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.719,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000670": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.752,
+          "luminance_levels": 197
+        },
+        "P7000671": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.6,
+          "luminance_levels": 196
+        },
+        "P7000672": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.454,
+          "luminance_levels": 207
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000673": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.07,
+          "luminance_levels": 210
+        },
+        "P7000674": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.909,
+          "luminance_levels": 207
+        },
+        "P7000675": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.091,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000676": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.948,
+          "luminance_levels": 204
+        },
+        "P7000677": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.117,
+          "luminance_levels": 202
+        },
+        "P7000678": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.497,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_high_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000679": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.572,
+          "luminance_levels": 197
+        },
+        "P7000680": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.927,
+          "luminance_levels": 199
+        },
+        "P7000681": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.273,
+          "luminance_levels": 211
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_classic_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000682": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.163,
+          "luminance_levels": 188
+        },
+        "P7000683": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.877,
+          "luminance_levels": 211
+        },
+        "P7000684": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.21,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_classic_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000685": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.624,
+          "luminance_levels": 198
+        },
+        "P7000686": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.68,
+          "luminance_levels": 197
+        },
+        "P7000687": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.963,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_classic_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000688": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.304,
+          "luminance_levels": 201
+        },
+        "P7000689": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.568,
+          "luminance_levels": 194
+        },
+        "P7000690": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.448,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_classic_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000691": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.823,
+          "luminance_levels": 195
+        },
+        "P7000692": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.634,
+          "luminance_levels": 196
+        },
+        "P7000693": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.275,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000694": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.056,
+          "luminance_levels": 200
+        },
+        "P7000695": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.16,
+          "luminance_levels": 205
+        },
+        "P7000696": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 28.615,
+          "luminance_levels": 203
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_deep_focus_language_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000697": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.379,
+          "luminance_levels": 197
+        },
+        "P7000698": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 27.625,
+          "luminance_levels": 195
+        },
+        "P7000699": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.282,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_deep_focus_language_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000700": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.862,
+          "luminance_levels": 198
+        },
+        "P7000701": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.779,
+          "luminance_levels": 201
+        },
+        "P7000702": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.933,
+          "luminance_levels": 199
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_deep_focus_language_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000703": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.882,
+          "luminance_levels": 192
+        },
+        "P7000704": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.067,
+          "luminance_levels": 200
+        },
+        "P7000705": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.418,
+          "luminance_levels": 201
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_long_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000706": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.338,
+          "luminance_levels": 201
+        },
+        "P7000707": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.935,
+          "luminance_levels": 207
+        },
+        "P7000708": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.144,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_long_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000709": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.045,
+          "luminance_levels": 192
+        },
+        "P7000710": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 29.695,
+          "luminance_levels": 195
+        },
+        "P7000711": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.339,
+          "luminance_levels": 197
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_long_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000712": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 44.933,
+          "luminance_levels": 201
+        },
+        "P7000713": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.901,
+          "luminance_levels": 211
+        },
+        "P7000714": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.726,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_long_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000715": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.209,
+          "luminance_levels": 197
+        },
+        "P7000716": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.177,
+          "luminance_levels": 193
+        },
+        "P7000717": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.338,
+          "luminance_levels": 196
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_moderate_wide_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000718": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.565,
+          "luminance_levels": 195
+        },
+        "P7000719": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.2,
+          "luminance_levels": 205
+        },
+        "P7000720": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.483,
+          "luminance_levels": 206
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_moderate_wide_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000721": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.222,
+          "luminance_levels": 207
+        },
+        "P7000722": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.991,
+          "luminance_levels": 206
+        },
+        "P7000723": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.014,
+          "luminance_levels": 208
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_moderate_wide_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000724": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.289,
+          "luminance_levels": 209
+        },
+        "P7000725": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.561,
+          "luminance_levels": 204
+        },
+        "P7000726": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.204,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_moderate_wide_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000727": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.484,
+          "luminance_levels": 198
+        },
+        "P7000728": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.547,
+          "luminance_levels": 196
+        },
+        "P7000729": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 36.454,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_natural_perspective_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000730": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.154,
+          "luminance_levels": 201
+        },
+        "P7000731": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.398,
+          "luminance_levels": 206
+        },
+        "P7000732": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 31.758,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_natural_perspective_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000733": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.757,
+          "luminance_levels": 205
+        },
+        "P7000734": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.736,
+          "luminance_levels": 198
+        },
+        "P7000735": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.258,
+          "luminance_levels": 194
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_natural_perspective_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000736": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 38.311,
+          "luminance_levels": 200
+        },
+        "P7000737": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 33.776,
+          "luminance_levels": 195
+        },
+        "P7000738": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.333,
+          "luminance_levels": 204
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_portrait_compression_asymmetric_negative_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000739": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 42.375,
+          "luminance_levels": 193
+        },
+        "P7000740": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.44,
+          "luminance_levels": 193
+        },
+        "P7000741": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 34.837,
+          "luminance_levels": 198
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_portrait_compression_centered_symmetry_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000742": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.694,
+          "luminance_levels": 209
+        },
+        "P7000743": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.289,
+          "luminance_levels": 211
+        },
+        "P7000744": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 30.948,
+          "luminance_levels": 215
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_portrait_compression_diagonal_depth_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000745": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 41.05,
+          "luminance_levels": 200
+        },
+        "P7000746": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 39.459,
+          "luminance_levels": 202
+        },
+        "P7000747": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 37.351,
+          "luminance_levels": 202
+        }
+      },
+      "reasons": []
+    },
+    "camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera": {
+      "passed": true,
+      "seed_count": 3,
+      "frames": {
+        "P7000748": {
+          "seed": "1001",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 40.624,
+          "luminance_levels": 202
+        },
+        "P7000749": {
+          "seed": "2002",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 35.673,
+          "luminance_levels": 196
+        },
+        "P7000750": {
+          "seed": "3003",
+          "width": 1024,
+          "height": 1024,
+          "luminance_stddev": 32.901,
+          "luminance_levels": 213
+        }
+      },
+      "reasons": []
+    }
+  }
+}
