@@ -1711,11 +1711,49 @@ review는 96/96 통과로 기록됐다. 즉 표본 review가 이 모순을 잡�
 자체 완화하고 있어 hard conflict는 아니지만, "both eyes clearly readable"이 정면으로
 편향시키는 tension이 남는다. 이는 배치 review로 확인할 사항이다.
 
-수정 방향은 profile 판정을 실제 카탈로그 표현(`clean side camera position`,
-`facial profile`)에 맞추고 `CAMERA_SUBJECT_CONTRACT`를 적용하는 것이다. 다만 이
-수정은 camera 프롬프트를 Phase 6과 다르게 만들므로, camera는 검증된 anchor 축에서
-빠져 Phase 7 profile로 이동하고 자체 anchor calibration을 먼저 통과해야 한다.
-기존 Phase 6 digest는 그대로 보존한다.
+profile 판정을 실제 카탈로그 표현(`clean side camera position`, `facial profile`)에
+맞추고 `CAMERA_SUBJECT_CONTRACT`를 적용하는 1차 수정을 적용했다. 판정은 id 기준 42개와
+정확히 일치하고 과다 발동이 없으며, 나머지 208개 프롬프트는 byte 단위로 불변이다.
+camera는 이 수정으로 검증된 anchor 축에서 빠져 Phase 7 profile(`phase7_mass_axis_v2`)로
+이동했고 Phase 6 digest는 보존된다.
+
+**그러나 1차 수정만으로는 부족하다.** profile 항목 4개 × 3 seed = 12장 calibration
+결과 여전히 정면으로 렌더된다. 750장 재생성 전에 12장으로 확인해 차단했다.
+
+전체 프롬프트를 문장 단위로 분해하면 뒤쪽 지시가 3번 문장의 profile 요구를 덮는다.
+
+* `FINISH`: "keep the face, **eyes**, visible hands, joints..." — 복수 eyes
+* 종결 `Final camera lock—make a tight chest-up **portrait**` — view angle 미언급
+
+더 큰 결함은 종결 lock 자체다. `_framing_contract()`는 본문에서 crop 키워드를
+substring으로 찾고 실패하면 기본값 "eye-level mid-thigh inspection frame ... the
+complete crown, **both eyes**, shoulders..."로 떨어진다. camera 카탈로그의 8개 crop 중
+3개는 대응 분기가 없다.
+
+| crop | 항목 | 종결 lock |
+| --- | --- | --- |
+| `close_face` | 32 | 기본값 mid-thigh (오류) |
+| `head_shoulders` | 31 | 기본값 mid-thigh (오류) |
+| `vertical_full_scene` | 31 | 기본값 mid-thigh (오류) |
+| `chest_up`·`full_length`·`thigh_up`·`waist_up`·`wide_environmental` | 156 | 정상 |
+
+**250개 중 94개(38%)가 crop과 무관한 종결 lock을 받고, 그 94개 전부가 "both eyes"를
+요구한다.** v1에서 `camera_close_face_clean_profile_*`이 close-face가 아니라
+waist-up으로 렌더된 원인이 이것이다.
+
+이 결함은 camera에 국한된다. 다른 9개 축은 `SINGLE_AXIS_FRAMING`·
+`PHASE7_AXIS_FRAMING`의 고정 문자열을 넘기므로 전부 정상 매핑되고, preset은 200개 중
+0개가 기본값에 걸린다. camera만 항목 본문을 `framing_value`로 넘긴다.
+
+따라서 camera 승격은 다음을 요구한다.
+
+1. `close_face`, `head_shoulders`, `vertical_full_scene` 종결 lock 분기 추가
+2. 종결 lock과 `FINISH`를 view-aware로 만들어 profile 항목에서 "both eyes" 제거
+3. calibration 재통과 후 750장 재생성
+
+Phase 6 로직을 직접 수정하지 않고 Phase 7에서 override로 주입해야 하므로
+`_profiled_prompt()`에 framing contract override가 필요하다. 이는 artist signature가
+v0.8.3에서 v0.8.8까지 거친 것과 같은 수준의 반복 보정 작업이다.
 
 ### 7.6 축별 완료 gate
 

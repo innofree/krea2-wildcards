@@ -22,6 +22,7 @@ from typing import Any, Iterable
 from common import canonical_prompt_sha256, load_yaml
 from export_artist_native_matrix import validate_seeds, write_jsonl
 from export_phase6_matrix import (
+    CAMERA_SUBJECT_CONTRACT,
     FINISH,
     PHASE6_PROFILE_FACTOR,
     PHASE6_PROFILE_SHA256,
@@ -47,13 +48,19 @@ COMPLETE_SCENE_AXES = ("preset",)
 
 PROVEN_AXES = (
     "background",
-    "camera",
     "character_design",
     "lighting",
     "linework_coloring",
     "pose",
     "preset",
 )
+# camera is deliberately absent from PROVEN_AXES. Phase 6 selects
+# CAMERA_SUBJECT_CONTRACT by searching the body for the literal "clean profile",
+# which no catalog body contains -- every body reads "clean side camera position
+# ... preserves the facial profile". All 42 profile items were therefore told to
+# keep both eyes readable, which a profile view cannot satisfy, and generation
+# resolved the conflict frontally. See plan.md 7.5.
+CAMERA_PROFILE_MARKERS = ("clean side camera position", "facial profile")
 PHASE7_AXIS_ANCHORS = {
     "fashion": (
         "Show exactly one adult woman in a balanced standing pose with a simple "
@@ -119,18 +126,20 @@ PHASE7_AXIS_CATALOGS = {
 }
 BINDING_ARTIFACT_TYPE = "phase7_axis_prompt_binding"
 PHASE7_PROFILE_ALGORITHM = (
-    "phase7-mass-axis-v1|phase6-single-axis-prompt-reuse|"
-    "item-id-keyed-rows-v1|per-item-prompt-digest-binding-v1"
+    "phase7-mass-axis-v2|phase6-single-axis-prompt-reuse|"
+    "item-id-keyed-rows-v1|per-item-prompt-digest-binding-v1|"
+    "camera-profile-contract-repair-v1"
 )
 PHASE7_PROFILE_SHA256 = hashlib.sha256(
     json.dumps(
         {
+            "camera_profile_markers": list(CAMERA_PROFILE_MARKERS),
             "phase6_profile_sha256": PHASE6_PROFILE_SHA256,
             "phase7_axis_anchors": PHASE7_AXIS_ANCHORS,
             "phase7_axis_focus": PHASE7_AXIS_FOCUS,
             "phase7_axis_framing": PHASE7_AXIS_FRAMING,
             "profile_algorithm": PHASE7_PROFILE_ALGORITHM,
-            "version": "phase7_mass_axis_v1",
+            "version": "phase7_mass_axis_v2",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -147,7 +156,7 @@ def axis_profile_factor(axis: str) -> str:
     """
     if axis in PROVEN_AXES:
         return PHASE6_PROFILE_FACTOR
-    if axis in PHASE7_AXIS_ANCHORS:
+    if axis in PHASE7_AXIS_ANCHORS or axis == "camera":
         return PHASE7_PROFILE_FACTOR
     raise ValueError(f"unsupported axis: {axis}")
 
@@ -167,9 +176,30 @@ def phase7_axis_prompt(axis: str, prompt: str) -> str:
     )
 
 
+def wants_profile_contract(body: str) -> bool:
+    """Whether a camera body asks for a profile view, by its real phrasing."""
+    lowered = body.lower()
+    return any(marker in lowered for marker in CAMERA_PROFILE_MARKERS)
+
+
+def camera_prompt(prompt: str) -> str:
+    """Phase 6 camera construction with the profile contract actually applied."""
+    return single_axis_prompt(
+        "camera",
+        prompt,
+        subject_contract=(
+            CAMERA_SUBJECT_CONTRACT
+            if wants_profile_contract(prompt)
+            else SUBJECT_CONTRACT
+        ),
+    )
+
+
 def axis_prompt(axis: str, prompt: str) -> str:
     if axis == "preset":
         return preset_prompt(prompt)
+    if axis == "camera":
+        return camera_prompt(prompt)
     if axis in PROVEN_AXES:
         return single_axis_prompt(axis, prompt)
     return phase7_axis_prompt(axis, prompt)
@@ -183,7 +213,10 @@ def axis_seeds(axis: str) -> tuple[int, ...]:
 
 
 def select_axis_items(
-    axis: str, *, statuses: set[str] | None = None
+    axis: str,
+    *,
+    statuses: set[str] | None = None,
+    include_ids: set[str] | None = None,
 ) -> list[tuple[str, dict[str, Any]]]:
     """Every catalog item on one axis, id-sorted, with Phase 6 exclusions kept."""
     if axis not in PHASE7_AXIS_CATALOGS:
@@ -195,11 +228,17 @@ def select_axis_items(
             continue
         if statuses is not None and _status(item) not in statuses:
             continue
+        if include_ids is not None and item_id not in include_ids:
+            continue
         if any(item_id.startswith(prefix) for prefix in exclude):
             continue
         selected.append((item_id, item))
     if not selected:
         raise ValueError(f"axis {axis!r} has no matching items")
+    if include_ids is not None:
+        missing = sorted(include_ids - {item_id for item_id, _ in selected})
+        if missing:
+            raise ValueError(f"axis {axis!r} has no such item(s): {missing}")
     return sorted(selected, key=lambda entry: entry[0])
 
 
@@ -209,6 +248,7 @@ def mass_axis_rows(
     *,
     statuses: set[str] | None = None,
     limit: int | None = None,
+    include_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     """One row per (item, seed) for a single axis, keyed by catalog item id."""
     if axis not in PHASE7_AXIS_CATALOGS:
@@ -216,7 +256,7 @@ def mass_axis_rows(
     seed_values = validate_seeds(axis_seeds(axis) if seeds is None else seeds)
     if limit is not None and limit < 1:
         raise ValueError("limit must be at least 1")
-    items = select_axis_items(axis, statuses=statuses)
+    items = select_axis_items(axis, statuses=statuses, include_ids=include_ids)
     if limit is not None:
         items = items[:limit]
     profile_factor = axis_profile_factor(axis)
@@ -334,6 +374,12 @@ def main() -> int:
         "--limit", type=int, help="cap item count, for anchor calibration runs"
     )
     parser.add_argument(
+        "--include-id",
+        action="append",
+        default=None,
+        help="restrict to these catalog item ids, for targeted calibration",
+    )
+    parser.add_argument(
         "--calibration",
         action="store_true",
         help="use the Phase 7 calibration seeds instead of the promotion seeds",
@@ -364,7 +410,11 @@ def main() -> int:
             seeds = axis_seeds(args.axis)
         statuses = set(args.status) if args.status else {"generated"}
         rows = mass_axis_rows(
-            args.axis, seeds, statuses=statuses, limit=args.limit
+            args.axis,
+            seeds,
+            statuses=statuses,
+            limit=args.limit,
+            include_ids=set(args.include_id) if args.include_id else None,
         )
         write_jsonl(args.output, rows)
         if args.binding_output is not None:

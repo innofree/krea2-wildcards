@@ -840,11 +840,18 @@ def _rows(
     return rows
 
 
-def single_axis_prompt(axis: str, prompt: str) -> str:
+def single_axis_prompt(
+    axis: str, prompt: str, *, subject_contract: str | None = None
+) -> str:
     """Render the validated single-axis prompt for one catalog item body.
 
     Phase 7 reuses this so a mass promotion run submits the exact prompt the
     Phase 6 single-axis coverage gate already passed for that axis.
+
+    ``subject_contract`` overrides the contract selection. Phase 7 needs it
+    because the selection below looks for the literal "clean profile", which no
+    real camera catalog body contains, so profile items would otherwise be told
+    to keep both eyes readable. Leaving it None preserves Phase 6 exactly.
     """
     camera_counterweight = ""
     if axis == "camera":
@@ -866,15 +873,17 @@ def single_axis_prompt(axis: str, prompt: str) -> str:
         value = f"{_camera_storyboard_baseline(prompt)} {value}"
     if axis == "lighting":
         return f"{value.rstrip('.,;:')}. {PROVEN_VISIBILITY_FINISH}"
+    if subject_contract is None:
+        subject_contract = (
+            CAMERA_SUBJECT_CONTRACT
+            if axis == "camera" and "clean profile" in prompt.lower()
+            else SUBJECT_CONTRACT
+        )
     return _profiled_prompt(
         value,
         SINGLE_AXIS_FOCUS[axis],
         framing_value=prompt if axis == "camera" else SINGLE_AXIS_FRAMING[axis],
-        subject_contract=(
-            CAMERA_SUBJECT_CONTRACT
-            if axis == "camera" and "clean profile" in prompt.lower()
-            else SUBJECT_CONTRACT
-        ),
+        subject_contract=subject_contract,
         reconciliation=(
             "The requested camera position and asymmetric placement are the final "
             "composition blueprint; make the visible view angle, open side region, "
