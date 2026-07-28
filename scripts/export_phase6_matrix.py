@@ -155,6 +155,41 @@ SINGLE_AXIS_ANCHORS = {
         "camera boundary, view position, field of view, placement, and negative space as literal."
     ),
 }
+SINGLE_AXIS_FOCUS = {
+    "character_design": (
+        "The character design is the measured axis: make its named face geometry, "
+        "body proportions, and large asymmetric garment layers visibly explicit. Place "
+        "the named seam curves and closures as repeated, front-readable clothing details."
+    ),
+    "pose": (
+        "The pose is the measured axis: make the named hand placement, shoulder line, "
+        "gaze, leg support, and weight distribution visibly explicit."
+    ),
+    "lighting": (
+        "The lighting is the measured axis: keep both eyes readable, render every named "
+        "light color as visible colored illumination, and give every named source size, "
+        "direction, shadow edge, reflected fill, and practical accent a distinct role."
+    ),
+    "background": (
+        "The background is the measured axis: keep the subject large and readable "
+        "while every named foreground, middle-distance, horizon, and atmosphere layer "
+        "remains distinct."
+    ),
+    "linework_coloring": (
+        "Linework and coloring are the measured axis: make the named contour geometry, "
+        "palette families, value planes, and edge accent plainly visible across the figure."
+    ),
+    "camera": (
+        "The camera is the measured axis: obey its crop boundary, camera position, field "
+        "of view, subject placement, and negative-space relationship exactly."
+    ),
+}
+SINGLE_AXIS_FRAMING = {
+    "character_design": "Use an eye-level full-length camera.",
+    "pose": "Use an eye-level full-length camera.",
+    "background": "Use an eye-level full-length camera.",
+    "linework_coloring": "Use an eye-level mid-thigh camera.",
+}
 PHASE6_PROFILE_SHA256 = hashlib.sha256(
     json.dumps(
         {
@@ -798,6 +833,51 @@ def _rows(
     return rows
 
 
+def single_axis_prompt(axis: str, prompt: str) -> str:
+    """Render the validated single-axis prompt for one catalog item body.
+
+    Phase 7 reuses this so a mass promotion run submits the exact prompt the
+    Phase 6 single-axis coverage gate already passed for that axis.
+    """
+    camera_counterweight = ""
+    if axis == "camera":
+        prompt, camera_counterweight = _storyboard_camera_body(prompt)
+    anchor = (
+        _pose_axis_anchor(prompt)
+        if axis == "pose"
+        else _background_axis_anchor(prompt)
+        if axis == "background"
+        else _camera_axis_anchor(prompt)
+        if axis == "camera"
+        else SINGLE_AXIS_ANCHORS[axis]
+    )
+    value = (
+        f"Apply exactly this {axis} direction as the sole changing axis: "
+        f"{prompt}. {anchor}"
+    )
+    if axis == "camera":
+        value = f"{_camera_storyboard_baseline(prompt)} {value}"
+    if axis == "lighting":
+        return f"{value.rstrip('.,;:')}. {PROVEN_VISIBILITY_FINISH}"
+    return _profiled_prompt(
+        value,
+        SINGLE_AXIS_FOCUS[axis],
+        framing_value=prompt if axis == "camera" else SINGLE_AXIS_FRAMING[axis],
+        subject_contract=(
+            CAMERA_SUBJECT_CONTRACT
+            if axis == "camera" and "clean profile" in prompt.lower()
+            else SUBJECT_CONTRACT
+        ),
+        reconciliation=(
+            "The requested camera position and asymmetric placement are the final "
+            "composition blueprint; make the visible view angle, open side region, "
+            f"and separate counterweight unmistakable. {camera_counterweight}"
+            if axis == "camera"
+            else ""
+        ),
+    )
+
+
 def single_axis_rows(
     seeds: Iterable[int] = DEFAULT_SEEDS, *, cases_per_axis: int = 16
 ) -> list[dict[str, Any]]:
@@ -819,84 +899,10 @@ def single_axis_rows(
             ),
         )
         for index, (item_id, prompt) in enumerate(selected, start=1):
-            camera_counterweight = ""
-            if right_family == "camera":
-                prompt, camera_counterweight = _storyboard_camera_body(prompt)
-            anchor = (
-                _pose_axis_anchor(prompt)
-                if right_family == "pose"
-                else _background_axis_anchor(prompt)
-                if right_family == "background"
-                else _camera_axis_anchor(prompt)
-                if right_family == "camera"
-                else SINGLE_AXIS_ANCHORS[right_family]
-            )
-            focus = {
-                "character_design": (
-                    "The character design is the measured axis: make its named face geometry, "
-                    "body proportions, and large asymmetric garment layers visibly explicit. Place "
-                    "the named seam curves and closures as repeated, front-readable clothing details."
-                ),
-                "pose": (
-                    "The pose is the measured axis: make the named hand placement, shoulder line, "
-                    "gaze, leg support, and weight distribution visibly explicit."
-                ),
-                "lighting": (
-                    "The lighting is the measured axis: keep both eyes readable, render every named "
-                    "light color as visible colored illumination, and give every named source size, "
-                    "direction, shadow edge, reflected fill, and practical accent a distinct role."
-                ),
-                "background": (
-                    "The background is the measured axis: keep the subject large and readable "
-                    "while every named foreground, middle-distance, horizon, and atmosphere layer "
-                    "remains distinct."
-                ),
-                "linework_coloring": (
-                    "Linework and coloring are the measured axis: make the named contour geometry, "
-                    "palette families, value planes, and edge accent plainly visible across the figure."
-                ),
-                "camera": (
-                    "The camera is the measured axis: obey its crop boundary, camera position, field "
-                    "of view, subject placement, and negative-space relationship exactly."
-                ),
-            }[right_family]
-            value = (
-                f"Apply exactly this {right_family} direction as the sole changing axis: "
-                f"{prompt}. {anchor}"
-            )
-            if right_family == "camera":
-                value = f"{_camera_storyboard_baseline(prompt)} {value}"
-            rendered_prompt = (
-                f"{value.rstrip('.,;:')}. {PROVEN_VISIBILITY_FINISH}"
-                if right_family == "lighting"
-                else _profiled_prompt(
-                    value,
-                    focus,
-                    framing_value={
-                        "character_design": "Use an eye-level full-length camera.",
-                        "pose": "Use an eye-level full-length camera.",
-                        "background": "Use an eye-level full-length camera.",
-                        "linework_coloring": "Use an eye-level mid-thigh camera.",
-                        "camera": prompt,
-                    }[right_family],
-                    subject_contract=(
-                        CAMERA_SUBJECT_CONTRACT
-                        if right_family == "camera" and "clean profile" in prompt.lower()
-                        else SUBJECT_CONTRACT
-                    ),
-                    reconciliation=(
-                        "The requested camera position and asymmetric placement are the final "
-                        "composition blueprint; make the visible view angle, open side region, "
-                        f"and separate counterweight unmistakable. {camera_counterweight}"
-                        if right_family == "camera"
-                        else ""
-                    ),
-                )
-            )
             cases.append(
                 {
                     "style_id": f"single_axis_{right_family}_{index:03d}",
-                    "prompt": rendered_prompt,
+                    "prompt": single_axis_prompt(right_family, prompt),
                     "factors": {"axis": right_family, "item_id": item_id},
                 }
             )

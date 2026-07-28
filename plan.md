@@ -1514,27 +1514,34 @@ v1.0 런타임에는 complete-scene 항목 374개만 들어갔다. `wildcards-ma
 없다. Phase 6은 축마다 16 case를 뽑은 표본 검증이었고, 통과한 개별 항목을
 `approved`로 승격시키지는 않았다.
 
-Phase 7의 목표는 `generated` 상태 3,325개를 축 단위로 승격시켜 런타임에 싣는
-것이다. 완료 시 런타임 항목은 374개에서 3,699개로 늘어난다.
+Phase 7의 목표는 `generated` 상태 3,325개 중 승격 가능한 3,301개를 축 단위로
+승격시켜 런타임에 싣는 것이다. 완료 시 런타임 항목은 374개에서 3,675개로 늘어난다.
 
-| 축                 | 항목  | seed | 이미지    | contact sheet |
-| ----------------- | --- | ---- | ------ | ------------- |
-| camera            | 250 | 3    | 750    | 25            |
-| lighting          | 250 | 3    | 750    | 25            |
-| background        | 400 | 3    | 1,200  | 40            |
-| character_design  | 400 | 3    | 1,200  | 40            |
-| pose              | 350 | 3    | 1,050  | 35            |
-| linework_coloring | 300 | 3    | 900    | 30            |
-| media_rendering   | 150 | 3    | 450    | 15            |
-| effect            | 200 | 3    | 600    | 20            |
-| hair_design       | 250 | 3    | 750    | 25            |
-| fashion           | 500 | 3    | 1,500  | 50            |
-| preset            | 200 | 3    | 600    | 20            |
-| artist_signature  | 75  | 5    | 375    | 13            |
-| **합계**            | **3,325** |  | **10,125** | **338**       |
+| 축                 | 항목        | seed | 이미지       | contact sheet |
+| ----------------- | --------- | ---- | --------- | ------------- |
+| camera            | 250       | 3    | 750       | 25            |
+| lighting          | 250       | 3    | 750       | 25            |
+| background        | 400       | 3    | 1,200     | 40            |
+| character_design  | 400       | 3    | 1,200     | 40            |
+| pose              | 326       | 3    | 978       | 33            |
+| linework_coloring | 300       | 3    | 900       | 30            |
+| media_rendering   | 150       | 3    | 450       | 15            |
+| effect            | 200       | 3    | 600       | 20            |
+| hair_design       | 250       | 3    | 750       | 25            |
+| fashion           | 500       | 3    | 1,500     | 50            |
+| 소계 (atomic axis)  | **3,026** |      | **9,078** | **303**       |
+| preset            | 200       | 3    | 600       | 20            |
+| artist_signature  | 75        | 5    | 375       | 13            |
+| **합계**            | **3,301** |      | **10,053** | **336**       |
 
-3-seed tier 없이 전부 5-seed로 진행하면 16,625장이 필요하다. tier 적용으로
-6,500장을 줄인다.
+pose는 350개 중 24개가 Phase 6의
+`single-axis-unstable-pose-exclusion`(`SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES`)으로
+제외되어 승격 대상이 326개다. 제외된 24개는 anchor에서 불안정으로 판정된 항목이므로
+그대로 승격하지 않는다. 별도 pose anchor를 만들어 재검증하거나 `rejected`로 확정하는
+판단이 필요하고, 이 결정은 Phase 7 범위 밖에 남긴다.
+
+3-seed tier 없이 전부 5-seed로 진행하면 16,505장이 필요하다. tier 적용으로
+6,452장을 줄인다.
 
 ### 7.1 실행 순서
 
@@ -1547,8 +1554,8 @@ Phase 7의 목표는 `generated` 상태 3,325개를 축 단위로 승격시켜 �
 2. lighting 250
 3. background 400
 4. character_design 400
-5. pose 350
-6. linework_coloring 300     소계 1,950
+5. pose 326
+6. linework_coloring 300     소계 1,926
 7. media_rendering 150   (신규 anchor, 최소 규모로 calibration)
 8. effect 200
 9. hair_design 250
@@ -1589,12 +1596,22 @@ Stage B에서 borderline으로 표시된 항목만 전체 해상도로 1 seed �
 토큰 예산은 Stage B 338장 약 1.5M, Stage C 상한 약 0.7M으로 전체 2.2M 이내다.
 장당 개별 리뷰는 약 21M이므로 배치가 약 10배를 줄인다.
 
-### 7.3 축별 완료 gate
+### 7.3 matrix 산출물 취급
+
+Phase 6 matrix는 288행 규모라 저장소에 커밋했지만, Phase 7 matrix는 축 하나가 최대
+1,500행이고 10개 축 합계가 수십 MB다. `export_phase7_matrix.py`는 무작위 요소가
+없어 같은 카탈로그에서 같은 파일을 재생성하므로 matrix 자체는 커밋하지 않고 build
+산출물로 취급한다. 대신 run manifest에 matrix SHA-256을 기록하고, 검증이 필요할 때
+재export로 대조한다. 승격 증거의 무결성은 `prompt_binding.json`의 항목별 prompt
+digest가 담당한다.
+
+### 7.4 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
 * Stage A 전수 통과, Stage C 상한 미초과
 * `--require-tested-seeds 3`과 `--allow-recommendation`을 명시한 승격 적용
+* matrix SHA-256을 run manifest에 기록
 * production 런타임 재빌드 후 `manifest_catalog_item_ids_match`
 * `make check` 전체 통과
 * `runtime_coverage` unresolved wildcard 0건
