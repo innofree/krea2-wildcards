@@ -454,12 +454,33 @@ def assign_aliases(rows: list[dict[str, Any]]) -> dict[tuple[str, str], str]:
     return {case: f"case_{index:03d}" for index, case in enumerate(cases, start=1)}
 
 
+def _sheet_chunks(
+    cases: list[tuple[str, str]], *, cases_per_sheet: int, spread: bool
+) -> list[list[tuple[str, str]]]:
+    """Group cases into sheets.
+
+    Consecutive chunking is the default. ``spread`` strides across the sorted
+    list instead, because combinatorial catalogs sort near-duplicates next to
+    each other: the first Phase 7 camera sheet held ten chest_up clean_profile
+    variants, which makes an unresponsive axis look consistent rather than
+    broken. Striding puts visibly different items on the same sheet.
+    """
+    sheet_count = (len(cases) + cases_per_sheet - 1) // cases_per_sheet
+    if not spread:
+        return [
+            cases[start : start + cases_per_sheet]
+            for start in range(0, len(cases), cases_per_sheet)
+        ]
+    return [cases[index::sheet_count] for index in range(sheet_count)]
+
+
 def sheet_plan(
     rows: list[dict[str, Any]],
     aliases: dict[tuple[str, str], str],
     output: Path,
     *,
     cases_per_sheet: int,
+    spread_cases: bool = False,
 ) -> list[dict[str, Any]]:
     by_mode: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for case in sorted(aliases):
@@ -467,11 +488,11 @@ def sheet_plan(
 
     planned: list[dict[str, Any]] = []
     for mode, cases in sorted(by_mode.items()):
-        sheet_count = (len(cases) + cases_per_sheet - 1) // cases_per_sheet
-        for sheet_index, start in enumerate(
-            range(0, len(cases), cases_per_sheet), start=1
-        ):
-            chunk = cases[start : start + cases_per_sheet]
+        chunks = _sheet_chunks(
+            cases, cases_per_sheet=cases_per_sheet, spread=spread_cases
+        )
+        sheet_count = len(chunks)
+        for sheet_index, chunk in enumerate(chunks, start=1):
             selected = set(chunk)
             chunk_rows = [
                 {**row, "alias": aliases[(row["mode"], row["style_id"])]}
@@ -691,6 +712,7 @@ def build_review(
     expected_seeds: int,
     cases_per_sheet: int,
     overwrite: bool,
+    spread_cases: bool = False,
 ) -> dict[str, Any]:
     if expected_seeds < 1:
         raise ValueError("expected_seeds must be at least 1")
@@ -708,7 +730,13 @@ def build_review(
             scorecard, expected_seeds=expected_seeds
         )
     aliases = assign_aliases(rows)
-    planned = sheet_plan(rows, aliases, output, cases_per_sheet=cases_per_sheet)
+    planned = sheet_plan(
+        rows,
+        aliases,
+        output,
+        cases_per_sheet=cases_per_sheet,
+        spread_cases=spread_cases,
+    )
     planned_paths = {sheet["path"].resolve() for sheet in planned}
     previous_sheets = prepare_output(output, planned_paths, overwrite=overwrite)
     document = manifest_document(
@@ -767,6 +795,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--expected-seeds", type=int, default=DEFAULT_EXPECTED_SEEDS)
     parser.add_argument("--cases-per-sheet", type=int, default=DEFAULT_CASES_PER_SHEET)
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument(
+        "--spread-cases",
+        action="store_true",
+        help="stride cases across sheets so combinatorial near-duplicates "
+        "do not share a sheet",
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -782,6 +816,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             expected_seeds=args.expected_seeds,
             cases_per_sheet=args.cases_per_sheet,
             overwrite=args.overwrite,
+            spread_cases=args.spread_cases,
         )
         print(
             f"Built {document['sheet_count']} contact sheet(s) for "

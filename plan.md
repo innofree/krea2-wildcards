@@ -1603,6 +1603,12 @@ framing contract 준수, 측정 축 속성의 가시적 반영, critical failure
 스켈레톤 생성을 지원한다. Phase 7 행의 `mode`가 `mass_axis_<axis>`이므로 축마다
 독립된 시트 계열이 생성된다.
 
+단 시트 구성에 `--spread-cases`가 필요하다. 카탈로그가 조합형이라 알파벳 정렬 시
+near-duplicate가 인접한다. camera 첫 시트는 10개가 전부 `chest_up`+`clean_profile`
+변형이어서, 축이 반응하지 않아도 "일관적"으로 보이고 실패가 가려졌다. stride 배치는
+정렬 목록 전체를 걸쳐 뽑으므로 한 시트에 눈에 띄게 다른 항목이 모인다. 시트 수와
+항목 전수 보존은 동일하다.
+
 **Stage C. 개별 확대 확인**
 
 Stage B에서 borderline으로 표시된 항목만 전체 해상도로 1 seed 확인한다. 축별 항목
@@ -1755,7 +1761,33 @@ Phase 6 로직을 직접 수정하지 않고 Phase 7에서 override로 주입해
 `_profiled_prompt()`에 framing contract override가 필요하다. 이는 artist signature가
 v0.8.3에서 v0.8.8까지 거친 것과 같은 수준의 반복 보정 작업이다.
 
-### 7.6 축별 완료 gate
+### 7.6 lighting 축 calibration 통과
+
+camera 사례 이후, 축마다 본 실행 전에 4항목 × 3 seed = 12장 calibration을 먼저
+통과시킨다. 12장으로 750장을 지킨다.
+
+lighting은 구조적으로 camera와 다르다. `single_axis_prompt()`의 lighting 분기는
+`PROVEN_VISIBILITY_FINISH`로 조기 반환하므로 `_framing_contract()`를 거치지 않는다.
+따라서 camera를 망친 종결 lock과 crop 매핑 결함이 존재하지 않는다. 사전 점검 결과
+다른 9개 축과 preset 200개 모두 고정 framing 문자열을 사용해 기본값에 걸리지 않는다.
+
+Phase 6에서 실패 원인이던 조명-얼굴 판독성 충돌도 확인했다. `silhouette`, `backlit`,
+`rim` 표현은 250개 중 0개다. `behind`가 42개(`back_edge` 계열) 있으나 본문이
+"arriving from behind as a controlled edge light **with a separate soft facial
+fill**"로 얼굴 판독성을 자체 처리한다.
+
+calibration 4항목(`broad_window frontal_three_quarter`, `cloud_scattered
+back_edge`, `large_diffused_key high_side`, `practical_cluster low_bounce`)은
+12/12장이 key 방향, 색온도, 그림자 경도에서 눈에 보이게 구분됐다. `large_diffused_key
+high_side`는 softbox가 프레임에 실제로 보일 정도로 축이 강하게 반영됐다. 단일 성인
+1인, 얼굴·양눈·양손·양발 판독성, 전신 framing이 12/12 만족이다.
+
+미결 판정 기준 하나를 기록한다. `large_diffused_key` 계열은 조명 기구가 프레임에
+보인다. anchor의 "uncluttered neutral studio cyclorama"는 배경을 가리키므로 기구
+노출을 실패로 볼지는 배치 review에서 판정하고, 임의로 통과시키지 않는다. seed 간
+기구 위치 변동도 stability 점수에 반영한다.
+
+### 7.7 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

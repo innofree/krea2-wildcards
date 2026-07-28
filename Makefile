@@ -525,7 +525,7 @@ phase7-axis-sheets: phase7-axis-stage-a
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
 		--matrix tests/prompt_matrix/phase7_$(AXIS).jsonl \
 		--output tests/reports/phase7_$(AXIS)_v1/review \
-		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet 10 --overwrite
+		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet 10 --spread-cases --overwrite
 
 remote-phase6-single-axis: phase6-calibration-gate phase6-single-axis-matrix
 	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase6_single_axis.jsonl --output tests/reports/phase6_single_axis_v6 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit

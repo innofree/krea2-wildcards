@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase7_lighting_calibration.jsonl",
+  "matrix_sha256": "8cb40d1761fe3216394529d24ed0a116c56f22b67607e8e1eedf12ecfdd953d1",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 12,
+  "completed_count": 12,
+  "style_count": 4,
+  "modes": {
+    "mass_axis_lighting": 12
+  },
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "scorecard": "tests/reports/phase7_lighting_calibration_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 71001,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 72002,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 73003,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000003/run.json"
+    },
+    {
+      "test_id": "P7000004",
+      "style_id": "lighting_cloud_scattered_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 71001,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000004/run.json"
+    },
+    {
+      "test_id": "P7000005",
+      "style_id": "lighting_cloud_scattered_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 72002,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000005/run.json"
+    },
+    {
+      "test_id": "P7000006",
+      "style_id": "lighting_cloud_scattered_back_edge_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 73003,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000006/run.json"
+    },
+    {
+      "test_id": "P7000007",
+      "style_id": "lighting_large_diffused_key_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 71001,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000007/run.json"
+    },
+    {
+      "test_id": "P7000008",
+      "style_id": "lighting_large_diffused_key_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 72002,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000008/run.json"
+    },
+    {
+      "test_id": "P7000009",
+      "style_id": "lighting_large_diffused_key_high_side_crisp_controlled_cool_key_warm_practical_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 73003,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000009/run.json"
+    },
+    {
+      "test_id": "P7000010",
+      "style_id": "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 71001,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000010/run.json"
+    },
+    {
+      "test_id": "P7000011",
+      "style_id": "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 72002,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000011/run.json"
+    },
+    {
+      "test_id": "P7000012",
+      "style_id": "lighting_practical_cluster_low_bounce_feathered_soft_late_gold_neutral_shadow_complete_lighting",
+      "mode": "mass_axis_lighting",
+      "seed": 73003,
+      "run": "tests/reports/phase7_lighting_calibration_v1/runs/P7000012/run.json"
+    }
+  ]
+}
