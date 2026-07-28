@@ -1,0 +1,119 @@
+schema_version: 1
+styles:
+  single_axis_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All three v6 seeds retain exactly one complete adult with generous crown and shoe margins against
+      separated weathered stone, low coastal vegetation, open water, and softened distant horizon layers.
+      The background depth is readable and stable, although the controlled accent color away from the face
+      remains subtle rather than prominent.
+    recommendation: testing
+  single_axis_camera_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: >-
+      The v6 camera prompt repairs the chest-up boundary, complete crown margin, warm-grey field, and
+      visible opposite-side counterweight. However, only one seed reads as a clean side profile; the other
+      two remain frontal or three-quarter portraits, so the measured profile direction is not yet stable
+      enough for the strict calibration gate.
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      All seeds preserve one complete grounded adult with broad sturdy proportions, offset asymmetric
+      garment layers, front-readable seam curves, botanical closure accents, readable hands, and intact
+      crown-to-feet framing. Diamond-face specifics vary modestly, but the repaired character-design
+      identity remains coherent across seeds.
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      The short lighting prompt remains successful in all three seeds: one complete adult receives a broad
+      cool frontal-three-quarter key with readable eyes, crisp controlled shadows, reflected fill, and a
+      separate small warm practical accent behind the figure. Source role and color separation are stable.
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      Every seed keeps a coherent mid-thigh editorial illustration with complete crown, readable face and
+      hands, angular measured construction, broad faceted planes, deep emerald, navy, burgundy, and dark
+      neutral fields, plus restrained bright edge accents. Minor gesture changes do not weaken the line
+      and color signature.
+    recommendation: testing
+  single_axis_pose_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      All three seeds show one complete frontal adult with level shoulders, direct gaze, evenly grounded
+      feet, one hand near the collar, and the other near the hip. Hands, feet, joints, full margins, and
+      controlled forward posture remain stable with no v5 regression.
+    recommendation: testing
+  krea2_turbo_benchmark:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 5
+    critical_failure: false
+    notes: >-
+      All three benchmark seeds preserve one complete adult in a warm-grey studio with large rising
+      diagonal amber and blue beams, matte midtones, crisp separated silhouettes, controlled shadow edges,
+      and restrained ceremonial glints. The style-pack signature remains stronger than the neutral studio
+      base and the prompt stays efficient.
+    recommendation: testing

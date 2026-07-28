@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000001",
+  "style_id": "preset_audit_001",
+  "label": "preset_audit_001",
+  "mode": "preset_audit",
+  "seed": 71001,
+  "remote": "private_comfyui",
+  "prompt_id": "830fda02-8c9b-46e5-bf43-c80f1fd1fa86",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—let the figure fill most of the canvas from the complete crown to a lower image edge visibly intersecting the middle of both thighs, with the face and any explicitly named visible hand gesture inside while the knees, calves, shoes, and feet continue beyond the canvas. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult turns through the torso while looking back toward the camera in a coastal overlook with weathered stone, low plants, and a broad horizon, wearing a collarless jacket, two broad upper-leg fabric panels intersected at mid-thigh by the lower image edge, and high-neck base, with a calm attentive look with a level chin and focused eyes. Use eye-level thigh-up framing from a three-quarter position and broad neutral daylight with open shadows and accurate skin tone. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the figure fill most of the canvas from the complete crown to a lower image edge visibly intersecting the middle of both thighs, with the face and any explicitly named visible hand gesture inside while the knees, calves, shoes, and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "6426fbcd7651840147188b02662db4a59b3390e2a700c2c536f8e5191b3b641a",
+  "workflow_sha256": "710d9db6bced9fe53dc7ecac1273f61816b910e9e9bb0faeae6545d62716617a",
+  "factors": {
+    "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+    "prompt_profile_sha256": "sha256_d63e9201a3e7f6c81f99ae2e647f42dc61625244f880c103a363e6b6ba2be663"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "bc73244c7eb5cd7bc9972dd9e9f10c646d2494dbc05955c15a49c9c381045c5d",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

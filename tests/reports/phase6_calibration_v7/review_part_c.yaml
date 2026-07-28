@@ -1,0 +1,52 @@
+schema_version: 1
+styles:
+  preset_audit_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds retain the coastal overlook, turned gaze, collarless suit, weathered stone, low planting, broad horizon, natural daylight, readable eyes, and thigh-up framing without lower legs or feet."
+    recommendation: testing
+  preset_audit_002:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 3, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "The covered arcade, turned gaze, wrap-top shoulders and chest fabric, warm low-angle light, quiet expression, complete crown, readable eyes, and tight upper-body crop are stable. No legs or feet are visible, repairing the v6 compressed portrait failure."
+    recommendation: testing
+  preset_audit_003:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 5, distinctiveness: 3, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds preserve the modern library, structured overshirt and column-dress upper body, attentive expression, warm soft light, complete crown margin, focused eyes, and readable hand gestures near the waist-up boundary."
+    recommendation: testing
+  preset_audit_004:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "The rooftop terrace remains a stable wide environmental view with complete crown, both shoes, visible floor, skyline context, wrap top, waist and lowered hand placement, and warm low-angle light."
+    recommendation: testing
+  preset_audit_005:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 5, distinctiveness: 3, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "The transit concourse, vest neckline and lapels, fitted-top shoulders, quiet expression, warm light, complete crown, readable eyes, and tight upper-body crop are stable. The pleated skirt and legs are no longer visible, repairing the v6 camera-boundary failure."
+    recommendation: testing
+  random_utility_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds show a clean hand-drawn monochrome library portrait with tapered contours, high cheek structure, almond eyes, geometric panels, readable hands, crown margin, and an upper-body crop."
+    recommendation: testing
+  random_utility_002:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds preserve one complete arcade figure with tailored coat and trouser, crisp illustrated contours, dark-blue fields, cyan and magenta neon, translucent color, oval framing, and particle fields."
+    recommendation: testing
+  random_utility_003:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 4, character_quality: 4, composition_quality: 4, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "The coastal utility keeps a turned compact adult, dark-blue fields, cyan and magenta accents, painterly surfaces, ornate textile echo, and consistent thigh-up framing across seeds."
+    recommendation: testing
+  random_utility_004:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "The museum utility remains repaired: all seeds show a complete full-length figure with crown and shoe margins, subject placement near a third, pale museum depth, clasped hands, jewel fields, modular contours, and floral border language."
+    recommendation: testing
+  random_utility_005:
+    metrics: {prompt_adherence: 3, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds preserve the full crown-to-shoe view, monochrome hand-drawn treatment, high-cheekbone almond-eyed face, tapered contours, diffuse values, stone courtyard, upright border, and woven bands. The structural contrapposto is still not visible: knees, hips, shoulders, and heels read mostly straight and level."
+    recommendation: testing

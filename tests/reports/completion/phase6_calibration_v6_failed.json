@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "complete": false,
+  "matrix_jobs": 69,
+  "distinct_seeds": 3,
+  "seeds": [
+    51001,
+    52002,
+    53003
+  ],
+  "metrics": {
+    "prompt_adherence": 4.043,
+    "style_fidelity": 4.348,
+    "stability": 4.826,
+    "character_quality": 4.13,
+    "composition_quality": 4.609,
+    "compatibility": 4.609,
+    "distinctiveness": 4.174,
+    "prompt_efficiency": 4.043
+  },
+  "prompt_profile_sha256": "d82d3930c4a1f5e52c3c99eef597ff58aa6b409f71adeb49b3acdba1fcd75a44",
+  "report_type": "phase6_prompt_profile_calibration",
+  "modes": [
+    "krea2_turbo_benchmark",
+    "pairwise",
+    "preset_audit",
+    "random_utility",
+    "single_axis"
+  ],
+  "total_cases": 23,
+  "critical_failures": 0,
+  "matrix_path": "tests/prompt_matrix/phase6_calibration_v6.jsonl",
+  "matrix_sha256": "5417778d50a123973910bdd4a71184d681c94099383274cf3a15d7e9871eb154",
+  "scored_path": "tests/reports/phase6_calibration_v6/scored.csv",
+  "scored_sha256": "8e05dc335a49ad6e8585e686633c4756a7ceac579e5564e5758fe14b6bfb6e63"
+}

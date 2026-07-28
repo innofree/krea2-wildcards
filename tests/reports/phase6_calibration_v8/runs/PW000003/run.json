@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "test_id": "PW000003",
+  "style_id": "pairwise_style_pack_character_design_001",
+  "label": "pairwise_style_pack_character_design_001",
+  "mode": "pairwise",
+  "seed": 73003,
+  "remote": "private_comfyui",
+  "prompt_id": "a682e2b3-27b3-426a-a3bf-baa4eee5229f",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. The second character-design direction is the measured axis. Put its named face geometry and proportions on the visible subject. Translate its silhouette and layers into large asymmetric garment shapes, and repeat its seam curves and closures as front-readable clothing details. Photorealistic adult editorial treatment: angular shadow planes and repeated diagonal divisions around the subject. Use an amber-lit side and blue-shadowed side across subject and backdrop, powdery matte grain across midtones and backdrop with absorbed highlights, upward beams, rising forms, and restrained ceremonial glints, and hard separated silhouette and shadow edges with few controlled breaks. Combine it coherently with this second visual direction: An adult character has an asymmetric urban silhouette with offset layers and a clear uninterrupted body line, a diamond-shaped adult face with defined cheek planes and a compact chin, and grounded adult proportions with a broad torso, sturdy limbs, and stable weight distribution. The design is unified by subtle botanical seam curves and leaflike closures used as controlled accents. Resolve both directions on the same adult subject. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—frame literally from the complete crown through both feet, with generous visible background margin above the hairstyle and below both shoes.",
+  "resolved_prompt_sha256": "5d3a0e4ee77eebd19ed69a2ebd35f67fe32bbd13a2291d37364cdd6b55580760",
+  "workflow_sha256": "8ba74a6faaae0c55c4008121456e36483c6118a749a93e1e99c852a7861af3e6",
+  "factors": {
+    "pair_type": "style_pack_character_design",
+    "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+    "right_item": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+    "prompt_profile_sha256": "sha256_d63e9201a3e7f6c81f99ae2e647f42dc61625244f880c103a363e6b6ba2be663"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "d8b45c4c16cf2de623736e156895707a4b7519d7548caf6f29b5bbb23d000942",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

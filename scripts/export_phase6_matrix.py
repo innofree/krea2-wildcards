@@ -16,7 +16,7 @@ from run_remote_prompt_matrix import validate_job
 
 
 DEFAULT_SEEDS = (1001, 2002, 3003)
-CALIBRATION_SEEDS = (51001, 52002, 53003)
+CALIBRATION_SEEDS = (91001, 92002, 93003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
 SUBJECT_CONTRACT = (
     "Compose one continuous single-view vertical image built around exactly one clearly adult "
@@ -36,16 +36,20 @@ SIGNATURE_OPEN = (
     "and ornament."
 )
 PHASE6_PROFILE_ALGORITHM = (
-    "positive-subject-v6.4|opening-terminal-camera-lock-v6.4|"
-    "storyboard-camera-baseline-v6.4|lighting-neutral-style-synthesis-v6.4|"
-    "conditional-lighting-authority-v6.4|crop-aware-scene-body-v6.4|"
-    "scale-aware-signature-ledger-v6.4|random-scene-reconciliation-v6.4|"
+    "positive-subject-v6.8|opening-terminal-camera-lock-v6.8|"
+    "storyboard-camera-baseline-v6.5|lighting-neutral-style-synthesis-v6.5|"
+    "conditional-lighting-authority-v6.5|crop-aware-scene-body-v6.5|"
+    "scale-aware-signature-ledger-v6.7|random-scene-reconciliation-v6.8|"
     "proven-short-paths-v2"
 )
 CAMERA_STORYBOARD_BASELINE = (
     "Render the camera test as one clean flat two-dimensional editorial storyboard frame with "
-    "simple neutral colors, a plain warm-grey setting, and no decorative border. The requested "
-    "viewpoint, crop, subject placement, open space, and counterweight are the only composition."
+    "simple neutral colors, a plain warm-grey setting, and no decorative border. Draw the adult "
+    "as a single left-facing paper-cut side-profile silhouette with exactly one visible eye, one "
+    "visible nose bridge, one visible mouth line, and one visible ear. Do not show both eyes, do "
+    "not turn the face toward the viewer, and do not use a frontal or three-quarter portrait. The "
+    "requested viewpoint, crop, subject placement, open space, and counterweight are the only "
+    "composition."
 )
 PRESET_COLOR_BASELINE = (
     "Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, "
@@ -154,7 +158,7 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
             "style_pack_surface": STYLE_PACK_SURFACE,
             "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v6",
+            "version": "phase6_positive_profile_v10",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -288,7 +292,8 @@ def _lighting_axis_focus(value: str) -> str:
         )
     if any(word in lowered for word in ("practical", "lamp", "bulb")):
         clauses.append(
-            "Keep its named practical as a separate small background source with its requested color."
+            "Put its named practical on the back wall as one palm-sized warm amber lamp or glowing "
+            "square, clearly separate from the subject and never expanded into a broad beam."
         )
     clauses.append(
         "Carry the first style only through set shape, material color, surface, atmosphere, and edge treatment."
@@ -308,7 +313,8 @@ def _lighting_reconciliation(value: str) -> str:
         )
     if any(word in lowered for word in ("practical", "lamp", "bulb")):
         clauses.append(
-            "Its named practical remains one separate small background source rather than a broad beam."
+            "Its named practical is drawn as one palm-sized warm amber lamp or glowing square on "
+            "the back wall, separate from the subject and never expanded into a broad beam."
         )
     clauses.append(
         "The first style contributes shape, material palette, surface, atmosphere, and edge treatment."
@@ -337,6 +343,16 @@ def _crop_aware_scene_body(value: str) -> str:
             "stands three-quarters, one hand at the waist and one lowered",
             "stands three-quarters with one upper arm bending toward a hand that continues below "
             "the frame and the other arm descending beyond it",
+        )
+        value = value.replace(
+            "wearing a longline vest, fitted top, and pleated skirt",
+            "wearing only the visible vest neckline, vest lapels, fitted-top shoulders, and upper "
+            "chest fabric; the pleated skirt is outside the frame",
+        )
+        value = value.replace(
+            "wearing a wrapped top and tapered trousers",
+            "wearing only visible wrap-top shoulders, neckline, crossed chest fabric, and upper "
+            "sleeves; the trousers are outside the frame",
         )
     marker = ", wearing "
     if marker not in value:
@@ -419,10 +435,11 @@ def _framing_contract(value: str) -> str:
     lowered = value.lower()
     if "chest-up" in lowered:
         return (
-            "Final camera lock—let the head and upper torso fill most of the canvas from the "
-            "complete crown to a lower edge crossing the upper torso below the chest, with the "
-            "chin, both shoulders, and described upper-arm gesture inside while the hips and "
-            "legs continue beyond the canvas."
+            "Final camera lock—make a tight chest-up portrait. The complete crown stays inside "
+            "the canvas with a narrow strip of background above it, and the lower edge cuts across "
+            "the upper torso just below the chest. Keep the chin, both shoulders, and described "
+            "upper-arm gesture inside. Do not show the waist, hips, thighs, knees, calves, shoes, "
+            "or feet."
         )
     if "waist-up" in lowered:
         return (
@@ -432,10 +449,10 @@ def _framing_contract(value: str) -> str:
         )
     if "mid-thigh" in lowered or "thigh-up" in lowered:
         return (
-            "Final camera lock—let the figure fill most of the canvas from the complete crown to "
-            "a lower image edge visibly intersecting the middle of both thighs, with the face and "
-            "any explicitly named visible hand gesture inside while the knees, calves, shoes, and "
-            "feet continue beyond the canvas."
+            "Final camera lock—make a tight thigh-up portrait. Let the figure fill most of the "
+            "canvas from the complete crown to a hard lower image edge cutting through the middle "
+            "of both thighs. Keep the face and any explicitly named visible hand gesture inside. "
+            "Do not show knees, calves, shoes, feet, floor under the feet, or the complete legs."
         )
     if "full-length" in lowered:
         return (
@@ -492,8 +509,10 @@ def _signature_ledger_at_camera_scale(
     if "contrapposto" in scene_value.lower():
         value = value.replace(
             "a compact grounded full-body stance",
-            "a compact grounded contrapposto with one weight-bearing leg, one relaxed bent knee, "
-            "and counter-tilted hips and shoulders",
+            "an exaggerated fashion contrapposto silhouette with slim visible legs: one long "
+            "straight weight-bearing leg, the opposite knee visibly bent outward and crossing away "
+            "from the support leg, one heel lifted high, a diagonal hip line, an opposite diagonal "
+            "shoulder line, and a clear S-curve torso",
         )
     kind = _framing_kind(framing_value)
     if kind == "full-length" or kind == "wide":
@@ -555,6 +574,29 @@ def _framing_kind(value: str) -> str:
     return "mid-thigh"
 
 
+def _contrapposto_scene_body(value: str) -> str:
+    if "contrapposto" not in value.lower():
+        return value
+    value = value.replace(
+        "An adult holds a balanced contrapposto with both hands visible",
+        "An adult holds an exaggerated editorial fashion contrapposto with the entire body shaped "
+        "as a clear S-curve, weight entirely on the left straight leg, the right knee visibly bent "
+        "outward, the right heel lifted high with only the toe touching, hips slanting steeply "
+        "down to the right, shoulders slanting steeply down to the left, and both hands visible",
+    )
+    value = value.replace(
+        "wearing a collarless jacket, wide-leg trousers, and high-neck base",
+        "wearing a collarless jacket, slim ankle-length trousers that expose the leg angle, and "
+        "a high-neck base",
+    )
+    value = value.replace(
+        "Use eye-level full-length framing with visible feet and ample headroom",
+        "Use eye-level full-length framing with visible separated feet, ample headroom, and enough "
+        "floor below the shoes to see the lifted heel and toe-only contact",
+    )
+    return value
+
+
 def _random_utility_reconciliation(
     feature_axes: dict[str, Any],
     preset: str,
@@ -576,9 +618,13 @@ def _random_utility_reconciliation(
         )
     if "contrapposto" in preset.lower():
         clauses.append(
-            "Make the contrapposto structural: one straight weight-bearing leg, one relaxed bent "
-            "knee, clearly counter-tilted hips and shoulders, and a lifted free heel with its toe "
-            "angled outward."
+            "Make the pose unmistakably different from a straight frontal stance. Draw a clear "
+            "editorial fashion contrapposto: weight entirely on the left straight leg, right knee "
+            "bent outward with a visible triangular gap between the legs, right foot placed half "
+            "a shoe-length behind and to the side of the support foot, right heel lifted high off "
+            "the ground with only the toe touching, hips tilted steeply one way, shoulders tilted "
+            "steeply the opposite way, and the torso forming a visible S-curve. Keep trousers slim "
+            "enough that the bent knee and lifted heel are not hidden."
         )
     return " ".join(clauses)
 
@@ -942,7 +988,7 @@ def random_utility_rows(
     ) in enumerate(zip(chosen_presets, chosen_signatures, strict=True), start=1):
         if not isinstance(feature_axes, dict):
             raise ValueError("random utility signature is missing feature axes")
-        scaled_preset = _crop_aware_scene_body(preset)
+        scaled_preset = _contrapposto_scene_body(_crop_aware_scene_body(preset))
         scaled_ledger = _signature_ledger_at_camera_scale(
             signature_ledger,
             preset,

@@ -185,8 +185,8 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
     assert len(rows) == 69
     assert len({row["test_id"] for row in rows}) == 69
     assert len({(row["style_id"], row["mode"]) for row in rows}) == 23
-    assert CALIBRATION_SEEDS == (51001, 52002, 53003)
-    assert {row["seed"] for row in rows} == {51001, 52002, 53003}
+    assert CALIBRATION_SEEDS == (91001, 92002, 93003)
+    assert {row["seed"] for row in rows} == {91001, 92002, 93003}
     assert {row["mode"] for row in rows} == {
         "single_axis",
         "pairwise",
@@ -335,7 +335,7 @@ def test_lighting_style_synthesis_and_pose_ledger_remove_conflicts() -> None:
     complex_authority = _lighting_axis_focus(complex_light) + _lighting_reconciliation(
         complex_light
     )
-    assert "separate small background source" in complex_authority
+    assert "palm-sized warm amber lamp or glowing square" in complex_authority
     assert "reflected light or fill" in complex_authority
 
     artist = _item("artist_signature_001", "artist_signature", status="approved")
@@ -345,11 +345,12 @@ def test_lighting_style_synthesis_and_pose_ledger_remove_conflicts() -> None:
         "Use eye-level full-length framing.",
         scene_value="An adult holds a balanced contrapposto.",
     )
-    assert "compact grounded contrapposto" in aligned
+    assert "exaggerated fashion contrapposto" in aligned
     assert "compact grounded full-body stance" not in aligned
     pose_lock = _random_utility_reconciliation(
         artist["feature_axes"],
         "An adult holds a balanced contrapposto.",
     )
-    assert "lifted free heel" in pose_lock
-    assert "toe angled outward" in pose_lock
+    assert "right heel lifted high off the ground" in pose_lock
+    assert "Keep trousers slim enough" in pose_lock
+    assert "only the toe touching" in pose_lock

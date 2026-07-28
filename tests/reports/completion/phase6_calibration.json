@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "status": "failed",
-  "complete": false,
+  "status": "passed",
+  "complete": true,
   "matrix_jobs": 69,
   "distinct_seeds": 3,
   "seeds": [
-    41001,
-    42002,
-    43003
+    91001,
+    92002,
+    93003
   ],
   "metrics": {
-    "prompt_adherence": 3.739,
-    "style_fidelity": 4.261,
-    "stability": 4.783,
-    "character_quality": 4.087,
-    "composition_quality": 4.478,
-    "compatibility": 4.478,
-    "distinctiveness": 4.087,
-    "prompt_efficiency": 3.696
+    "prompt_adherence": 4.304,
+    "style_fidelity": 4.391,
+    "stability": 4.913,
+    "character_quality": 4.13,
+    "composition_quality": 4.652,
+    "compatibility": 4.696,
+    "distinctiveness": 4.217,
+    "prompt_efficiency": 4.261
   },
-  "prompt_profile_sha256": "c9216a29ba93433dc0892f38b99a11faa20dfbb49e8462be1ef731f598a8d52f",
+  "prompt_profile_sha256": "29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12",
   "report_type": "phase6_prompt_profile_calibration",
   "modes": [
     "krea2_turbo_benchmark",
@@ -30,8 +30,8 @@
   ],
   "total_cases": 23,
   "critical_failures": 0,
-  "matrix_path": "tests/prompt_matrix/phase6_calibration_v5.jsonl",
-  "matrix_sha256": "a4aae946eaed19abb1e4394d3aca885667c62fffd2f4cc7c1fcca1ee35d4fae1",
-  "scored_path": "tests/reports/phase6_calibration_v5/scored.csv",
-  "scored_sha256": "76f12f942ca928a993f2f3db3eadd400688e3e3dbb47a38ceda2ea53a001dc35"
+  "matrix_path": "tests/prompt_matrix/phase6_calibration_v10.jsonl",
+  "matrix_sha256": "ebfb89f25f579af0b5a6a56ebd072cf135423f16a929cc1b0a8af448c01cf823",
+  "scored_path": "tests/reports/phase6_calibration_v10/scored.csv",
+  "scored_sha256": "710482dfd0de4cf1ac1946bc4720153ba5c6f4ab31e443edb87007b867704aa2"
 }

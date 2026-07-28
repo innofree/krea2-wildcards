@@ -1,0 +1,32 @@
+schema_version: 1
+styles:
+  pairwise_artist_signature_camera_composition_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 4, character_quality: 5, composition_quality: 4, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All three seeds retain exactly one chest-up adult in side profile or near-profile with readable profile eye, shoulder line, generous directional space, and floral emblem counterweight. One seed is slightly more frontal, but the pair remains within the passing camera-composition envelope."
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "Every seed contains one complete crown-to-feet adult in front of a floral emblem border, with readable face, tapered hands, elongated proportions, modular contours, and large garnet, ink-blue, forest, black, and gold fields."
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds show exactly one mid-thigh adult at a coastal overlook with weathered stone, low vegetation, sea, broad horizon, and stable warm-cool split modeling. The background layers remain plainly separated."
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 4, compatibility: 5, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "Each seed contains one grounded full-length adult with visible hands and feet, broad stable proportions, asymmetric offset garment layers, and sweeping front-readable seam curves. The style material treatment stays coherent."
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 5, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "V7 repairs the pairwise lighting failure: all seeds keep one coherent waist-up adult with readable eyes and hands, visible amber-blue material fields, a distinct small warm wall lamp, and separated cool/warm illumination zones. Broad amber beams remain visually strong, but the small practical source is now explicit and separate."
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All three seeds preserve one complete crown-to-feet adult in a frontal evenly weighted stance with both feet grounded, level shoulders, direct gaze, one hand near the collar, and the other near the hip. The amber-blue diagonal treatment remains stable."
+    recommendation: testing

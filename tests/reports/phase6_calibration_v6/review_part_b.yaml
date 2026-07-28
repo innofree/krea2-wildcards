@@ -1,0 +1,80 @@
+schema_version: 1
+styles:
+  pairwise_artist_signature_camera_composition_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 4
+      character_quality: 5
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "All three seeds retain exactly one chest-up adult in a clean side profile with a readable profile eye, both shoulder lines, generous directional space, and a floral emblem or color-field counterweight. The jewel palette, rounded face, flat two-value illustration, modular garment contours, and repeated floral lines remain compatible with the measured camera, but seed 53003 clips the top of the hairstyle and the subject placement is only mildly asymmetric, producing a small regression from the fully intact v5 framing."
+    recommendation: testing
+  pairwise_artist_signature_coloring_001:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "Every seed contains exactly one complete crown-to-feet adult in front of a floral emblem border, with readable face, eyes, tapered hands, elongated proportions, precise modular contours, and large garnet, ink-blue, forest, black, and gold fields. Hard graphic value planes and repeated floral ornament remain coherent across the garment and border, preserving the v5 signature-ledger success without a framing or duplicate-subject regression."
+    recommendation: testing
+  pairwise_style_pack_background_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "All three seeds show exactly one large mid-thigh adult against weathered foreground stone, low coastal vegetation, sea, and a broad distant horizon. Foreground, middle distance, and softened atmosphere remain cleanly separated while the amber-blue split preserves the first style; every subject turns to a near-profile with only one eye clearly visible, but the measured background axis remains stable and plainly resolved without a v5-pass regression."
+    recommendation: testing
+  pairwise_style_pack_character_design_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 5
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "Each seed contains one grounded full-length adult with the complete crown, readable eyes, visible hands and feet, broad stable proportions, and large asymmetric offset garment layers crossed by sweeping front-readable seam curves. The amber-blue matte treatment remains coherent and all three camera locks are intact, improving v5 framing stability, although the diamond face and leaflike closures are still understated."
+    recommendation: testing
+  pairwise_style_pack_lighting_001:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 5
+      composition_quality: 5
+      compatibility: 3
+      distinctiveness: 4
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: "All three seeds consistently show one coherent waist-up adult with the complete crown, both eyes, and both hands readable, plus crisp angular set planes, amber-blue material fields, matte surface texture, and clean graphic edges. The v5 dominant warm beam is gone, but the actual facial illumination is neutral-to-warm rather than a visibly cool broad window key and none of the three backgrounds contains a separate small warm practical source; material color now overwhelms both named illumination colors, so the required source separation remains unverified."
+    recommendation: testing
+  pairwise_style_pack_pose_001:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 5
+      compatibility: 5
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: "All three seeds preserve exactly one complete crown-to-feet adult in a frontal evenly weighted stance with both feet grounded, level shoulders, direct gaze, one hand at the collar, and the other near the hip. Supporting legs and foot placement remain plainly verifiable while crisp amber-blue diagonal illumination is stable, so the v5 pose repair shows no regression."
+    recommendation: testing

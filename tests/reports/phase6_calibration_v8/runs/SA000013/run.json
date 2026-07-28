@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "test_id": "SA000013",
+  "style_id": "single_axis_linework_coloring_001",
+  "label": "single_axis_linework_coloring_001",
+  "mode": "single_axis",
+  "seed": 71001,
+  "remote": "private_comfyui",
+  "prompt_id": "a609c160-481f-4463-86c2-ebba9dd7e6ba",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Linework and coloring are the measured axis: make the named contour geometry, palette families, value planes, and edge accent plainly visible across the figure. Apply exactly this linework_coloring direction as the sole changing axis: An adult subject is defined by angular precise lines with measured corners and clean garment construction, filled with deep jewel color separated by dark neutrals and small high-value accents, and modeled through broad blended planes that round the figure while keeping silhouette edges clear. The finish adds a controlled rim accent that separates only the shadow-side silhouette. Render the adult as a clearly drawn editorial character illustration whose named line quality and color treatment cover the face, hair, clothing, and silhouette. Use an eye-level mid-thigh frame, broad neutral diffused lighting, and an uncluttered warm-grey studio ground, with her face, eyes, and both hands readable. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the figure fill most of the canvas from the complete crown to a lower image edge visibly intersecting the middle of both thighs, with the face and any explicitly named visible hand gesture inside while the knees, calves, shoes, and feet continue beyond the canvas.",
+  "resolved_prompt_sha256": "0479649d83a45dcb74d0c8eb45a2b1715a1a128bd78625922afdb412da970c5e",
+  "workflow_sha256": "35bafada55669885050e71f0e0414443da0f3a8e97124b4d563507bc5fc86431",
+  "factors": {
+    "axis": "linework_coloring",
+    "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+    "prompt_profile_sha256": "sha256_d63e9201a3e7f6c81f99ae2e647f42dc61625244f880c103a363e6b6ba2be663"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "191f1abdfd5b9b6235b7f0f714efaf393f3c0507fa147524bcf3cda37d1849bb",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}

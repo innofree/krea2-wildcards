@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase6_calibration_v9/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase6_calibration_v9.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    81001,
+    82002,
+    83003
+  ],
+  "cases_per_sheet": 8,
+  "case_count": 23,
+  "style_count": 23,
+  "image_count": 69,
+  "sheet_count": 5,
+  "modes": {
+    "krea2_turbo_benchmark": {
+      "case_count": 1,
+      "image_count": 3,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_calibration_v9/review/prompt_matrix_krea2_turbo_benchmark_001.png"
+      ]
+    },
+    "pairwise": {
+      "case_count": 6,
+      "image_count": 18,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_calibration_v9/review/prompt_matrix_pairwise_001.png"
+      ]
+    },
+    "preset_audit": {
+      "case_count": 5,
+      "image_count": 15,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_calibration_v9/review/prompt_matrix_preset_audit_001.png"
+      ]
+    },
+    "random_utility": {
+      "case_count": 5,
+      "image_count": 15,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_calibration_v9/review/prompt_matrix_random_utility_001.png"
+      ]
+    },
+    "single_axis": {
+      "case_count": 6,
+      "image_count": 18,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase6_calibration_v9/review/prompt_matrix_single_axis_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "krea2_turbo_benchmark",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_calibration_v9/review/prompt_matrix_krea2_turbo_benchmark_001.png",
+      "case_count": 1,
+      "image_count": 3
+    },
+    {
+      "mode": "pairwise",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_calibration_v9/review/prompt_matrix_pairwise_001.png",
+      "case_count": 6,
+      "image_count": 18
+    },
+    {
+      "mode": "preset_audit",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_calibration_v9/review/prompt_matrix_preset_audit_001.png",
+      "case_count": 5,
+      "image_count": 15
+    },
+    {
+      "mode": "random_utility",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_calibration_v9/review/prompt_matrix_random_utility_001.png",
+      "case_count": 5,
+      "image_count": 15
+    },
+    {
+      "mode": "single_axis",
+      "sheet_index": 1,
+      "path": "tests/reports/phase6_calibration_v9/review/prompt_matrix_single_axis_001.png",
+      "case_count": 6,
+      "image_count": 18
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "krea2_turbo_benchmark",
+      "mode": "krea2_turbo_benchmark",
+      "factors": {
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "style_pack": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style"
+      },
+      "items": [
+        {
+          "test_id": "KB000001",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/KB000001/image_01.png"
+        },
+        {
+          "test_id": "KB000002",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/KB000002/image_01.png"
+        },
+        {
+          "test_id": "KB000003",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/KB000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "pairwise_artist_signature_camera_composition_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+        "pair_type": "artist_signature_camera_composition",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera"
+      },
+      "items": [
+        {
+          "test_id": "PW000016",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000016/image_01.png"
+        },
+        {
+          "test_id": "PW000017",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000017/image_01.png"
+        },
+        {
+          "test_id": "PW000018",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "pairwise_artist_signature_coloring_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_crisp_graphic_centered_emblematic_floral_trace_complete_signature",
+        "pair_type": "artist_signature_coloring",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color"
+      },
+      "items": [
+        {
+          "test_id": "PW000013",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000013/image_01.png"
+        },
+        {
+          "test_id": "PW000014",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000014/image_01.png"
+        },
+        {
+          "test_id": "PW000015",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "pairwise_style_pack_background_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+        "pair_type": "style_pack_background",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background"
+      },
+      "items": [
+        {
+          "test_id": "PW000010",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000010/image_01.png"
+        },
+        {
+          "test_id": "PW000011",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000011/image_01.png"
+        },
+        {
+          "test_id": "PW000012",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "pairwise_style_pack_character_design_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+        "pair_type": "style_pack_character_design",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character"
+      },
+      "items": [
+        {
+          "test_id": "PW000001",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000001/image_01.png"
+        },
+        {
+          "test_id": "PW000002",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000002/image_01.png"
+        },
+        {
+          "test_id": "PW000003",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "pairwise_style_pack_lighting_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+        "pair_type": "style_pack_lighting",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting"
+      },
+      "items": [
+        {
+          "test_id": "PW000007",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000007/image_01.png"
+        },
+        {
+          "test_id": "PW000008",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000008/image_01.png"
+        },
+        {
+          "test_id": "PW000009",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "pairwise_style_pack_pose_001",
+      "mode": "pairwise",
+      "factors": {
+        "left_item": "style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_ceremonial_energy_crisp_cut_complete_style",
+        "pair_type": "style_pack_pose",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f",
+        "right_item": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose"
+      },
+      "items": [
+        {
+          "test_id": "PW000004",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000004/image_01.png"
+        },
+        {
+          "test_id": "PW000005",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000005/image_01.png"
+        },
+        {
+          "test_id": "PW000006",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PW000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "preset_audit_001",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "PA000001",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000001/image_01.png"
+        },
+        {
+          "test_id": "PA000002",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000002/image_01.png"
+        },
+        {
+          "test_id": "PA000003",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "preset_audit_002",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "PA000004",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000004/image_01.png"
+        },
+        {
+          "test_id": "PA000005",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000005/image_01.png"
+        },
+        {
+          "test_id": "PA000006",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "preset_audit_003",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "PA000007",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000007/image_01.png"
+        },
+        {
+          "test_id": "PA000008",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000008/image_01.png"
+        },
+        {
+          "test_id": "PA000009",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "preset_audit_004",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "PA000010",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000010/image_01.png"
+        },
+        {
+          "test_id": "PA000011",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000011/image_01.png"
+        },
+        {
+          "test_id": "PA000012",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "preset_audit_005",
+      "mode": "preset_audit",
+      "factors": {
+        "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "PA000013",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000013/image_01.png"
+        },
+        {
+          "test_id": "PA000014",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000014/image_01.png"
+        },
+        {
+          "test_id": "PA000015",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/PA000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "random_utility_001",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_soft_two_step_spacious_asymmetric_geometric_inset_complete_signature",
+        "preset": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "RU000001",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000001/image_01.png"
+        },
+        {
+          "test_id": "RU000002",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000002/image_01.png"
+        },
+        {
+          "test_id": "RU000003",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "random_utility_002",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_compact_grounded_nocturnal_neon_luminous_glaze_centered_emblematic_particle_drift_complete_signature",
+        "preset": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "RU000004",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000004/image_01.png"
+        },
+        {
+          "test_id": "RU000005",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000005/image_01.png"
+        },
+        {
+          "test_id": "RU000006",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "random_utility_003",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_lace_tapered_compact_oval_rounded_radial_balanced_narrow_nocturnal_neon_broad_painterly_centered_emblematic_textile_echo_complete_signature",
+        "preset": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "RU000007",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000007/image_01.png"
+        },
+        {
+          "test_id": "RU000008",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000008/image_01.png"
+        },
+        {
+          "test_id": "RU000009",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "random_utility_004",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_angular_architectural_rounded_soft_layered_large_elongated_graceful_deep_jewel_luminous_glaze_vertical_heroic_floral_trace_complete_signature",
+        "preset": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "RU000010",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000010/image_01.png"
+        },
+        {
+          "test_id": "RU000011",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000011/image_01.png"
+        },
+        {
+          "test_id": "RU000012",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "random_utility_005",
+      "mode": "random_utility",
+      "factors": {
+        "artist_signature": "artist_signature_crisp_measured_tapered_high_almond_deep_compact_grounded_monochrome_tint_velvety_diffuse_vertical_heroic_textile_echo_complete_signature",
+        "preset": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "RU000013",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000013/image_01.png"
+        },
+        {
+          "test_id": "RU000014",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000014/image_01.png"
+        },
+        {
+          "test_id": "RU000015",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/RU000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "single_axis_background_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "background",
+        "item_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000010",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000010/image_01.png"
+        },
+        {
+          "test_id": "SA000011",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000011/image_01.png"
+        },
+        {
+          "test_id": "SA000012",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "single_axis_camera_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "camera",
+        "item_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000016",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000016/image_01.png"
+        },
+        {
+          "test_id": "SA000017",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000017/image_01.png"
+        },
+        {
+          "test_id": "SA000018",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "single_axis_character_design_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "character_design",
+        "item_id": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000001",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000001/image_01.png"
+        },
+        {
+          "test_id": "SA000002",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000002/image_01.png"
+        },
+        {
+          "test_id": "SA000003",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_021",
+      "style_id": "single_axis_lighting_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "lighting",
+        "item_id": "lighting_broad_window_frontal_three_quarter_crisp_controlled_cool_key_warm_practical_complete_lighting",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000007",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000007/image_01.png"
+        },
+        {
+          "test_id": "SA000008",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000008/image_01.png"
+        },
+        {
+          "test_id": "SA000009",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_022",
+      "style_id": "single_axis_linework_coloring_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "linework_coloring",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000013",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000013/image_01.png"
+        },
+        {
+          "test_id": "SA000014",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000014/image_01.png"
+        },
+        {
+          "test_id": "SA000015",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_023",
+      "style_id": "single_axis_pose_001",
+      "mode": "single_axis",
+      "factors": {
+        "axis": "pose",
+        "item_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_c7dfd094ed217dbad70c8739e5b52666a75c22e3234e4797f0579fc59bae0e3f"
+      },
+      "items": [
+        {
+          "test_id": "SA000004",
+          "seed": 81001,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000004/image_01.png"
+        },
+        {
+          "test_id": "SA000005",
+          "seed": 82002,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000005/image_01.png"
+        },
+        {
+          "test_id": "SA000006",
+          "seed": 83003,
+          "image_path": "tests/reports/phase6_calibration_v9/runs/SA000006/image_01.png"
+        }
+      ]
+    }
+  ]
+}

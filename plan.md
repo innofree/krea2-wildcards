@@ -1199,6 +1199,47 @@ out-of-frame 하의 명칭을 prompt 본문에서 제거하거나 보이는 상�
 무릎·counter-tilt와 양립하도록 변환한다. 기존과 겹치지 않는 새 3-seed로 69장
 전체 calibration을 다시 통과해야 한다.
 
+`phase6_positive_profile_v6`는 seed `[51001, 52002, 53003]`으로 69/69개
+1024×1024 PNG와 고유 image hash를 생성했다. matrix SHA-256은
+`5417778d50a123973910bdd4a71184d681c94099383274cf3a15d7e9871eb154`이다.
+v6 review는 평균 prompt adherence 4.043, critical failure 0까지 개선됐으나
+case별 gate에서 5개가 남았다. 실패 항목은 single-axis camera profile 안정성,
+pairwise lighting의 실제 광원/재질색 분리, preset 002/005의 compressed
+portrait crop, random utility 005의 contrapposto였다. summary는
+`status=failed`, `complete=false`로 보존한다.
+
+`phase6_positive_profile_v7`는 seed `[61001, 62002, 63003]`으로 69/69개
+1024×1024 PNG와 고유 image hash를 생성했고 matrix SHA-256은
+`cd9340643afe36fa2c8086f0f40dcb6be8180075f3e4ddb331b6157f04604ab8`이다.
+camera, lighting, compressed portrait crop은 통과권으로 복구됐고 평균 prompt
+adherence는 4.261까지 상승했다. 단, random utility 005의 contrapposto가 여전히
+직립 정면 자세로 수렴해 summary는 `status=failed`, `complete=false`로 보존한다.
+
+v8과 v9는 동일한 23 case × 3 seed calibration 구조로 contrapposto를 더 강하게
+교정했다. v8은 seed `[71001, 72002, 73003]`, v9는 seed
+`[81001, 82002, 83003]`을 사용했으며 두 run 모두 69/69개 1024×1024 PNG와 고유
+image hash를 생성했다. v8은 contrapposto가 계속 직립으로 수렴했고, v9는
+contrapposto를 통과권으로 복구했지만 preset 001의 thigh-up crop이 seed 변경으로
+full-body에 가깝게 회귀했다. 두 run은 중간 probe로 보존하고, 후속 profile에서
+mid-thigh lock을 별도로 강화했다.
+
+`phase6_positive_profile_v10`는 seed `[91001, 92002, 93003]`으로 69/69개
+1024×1024 PNG와 고유 image hash를 생성했고, `batch_size=1`,
+`queue_depth=32` provenance를 유지했다. matrix SHA-256은
+`ebfb89f25f579af0b5a6a56ebd072cf135423f16a929cc1b0a8af448c01cf823`이며
+scored SHA-256은 `710482dfd0de4cf1ac1946bc4720153ba5c6f4ab31e443edb87007b867704aa2`이다.
+summary는 `status=passed`, `complete=true`, critical failure 0이고 평균 metrics는
+prompt adherence 4.304, style fidelity 4.391, stability 4.913, character quality
+4.130, composition quality 4.652, compatibility 4.696, distinctiveness 4.217,
+prompt efficiency 4.261이다. 이 v10 prompt-profile SHA-256
+`29968f454a9ced61b54391d7dc39c608797c65bd434b0dafe3f36a6a0797cf12`을 Phase 6
+대량 실행 기준으로 고정한다.
+
+민감정보와 보안 검토는 현재 Phase 6 생성 plan의 완료 gate에서 제외한다. 최종
+결과물 산출 후 별도 보안 검토 에이전트가 서버 주소, 계정 식별자, 계정 경로,
+비밀값, 배포 산출물 노출 여부를 독립 점검한다. 작업 중에는 로그와 커밋에
+비밀값을 쓰지 않는 기본 위생만 유지한다.
+
 ### 6.1 단일 축 테스트
 
 한 번에 하나의 속성만 변경한다.

@@ -1,0 +1,37 @@
+schema_version: 1
+styles:
+  single_axis_background_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 4, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All three seeds retain one complete adult with clear coastal overlook depth layers, weathered stone foreground, low vegetation, open water, distant horizon, and stable crown-to-feet framing."
+    recommendation: testing
+  single_axis_camera_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 4, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "The side-profile storyboard camera lock remains repaired: all seeds are tight chest-up left-facing profiles with one visible profile eye, complete crown margin, warm-grey open space, and an opposite-edge counterweight."
+    recommendation: testing
+  single_axis_character_design_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All three seeds keep one complete grounded adult with broad torso, sturdy limbs, offset asymmetric garment layers, front-readable seam curves, botanical closures, readable hands, and intact full-length framing."
+    recommendation: testing
+  single_axis_lighting_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "Every seed preserves a broad cool frontal-three-quarter key, readable eyes, crisp controlled shadows, reflected fill, and a small warm practical or warm background accent."
+    recommendation: testing
+  single_axis_linework_coloring_001:
+    metrics: {prompt_adherence: 4, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 5, prompt_efficiency: 4}
+    critical_failure: false
+    notes: "All seeds retain a coherent mid-thigh editorial illustration with complete crown, readable face and hands, angular measured contours, broad faceted planes, deep jewel color fields, dark neutral separation, and restrained edge accents."
+    recommendation: testing
+  single_axis_pose_001:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 5, distinctiveness: 4, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "All seeds show one complete frontal adult with level shoulders, direct gaze, both feet grounded, one hand near the collar, and the other near the hip."
+    recommendation: testing
+  krea2_turbo_benchmark:
+    metrics: {prompt_adherence: 5, style_fidelity: 5, stability: 5, character_quality: 4, composition_quality: 5, compatibility: 4, distinctiveness: 5, prompt_efficiency: 5}
+    critical_failure: false
+    notes: "All benchmark seeds preserve one full adult under crossed amber and blue beams with matte midtones, crisp silhouette separation, controlled shadows, and restrained ceremonial glints."
+    recommendation: testing

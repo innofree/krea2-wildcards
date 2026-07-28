@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "test_id": "PA000013",
+  "style_id": "preset_audit_005",
+  "label": "preset_audit_005",
+  "mode": "preset_audit",
+  "seed": 51001,
+  "remote": "private_comfyui",
+  "prompt_id": "463f02bd-f3f2-49cf-be41-774b957eaf6b",
+  "resolved_prompt": "Compose one continuous single-view vertical image built around exactly one clearly adult woman as the only figure. Every visible face, body, and hand belongs to this same woman. Place a clearly visible strip of background above her entire hairstyle, and keep her complete crown, face, and both eyes clearly readable. Treat the validated preset as an exact scene contract: visibly preserve its named pose, hand placement, location, expression, camera boundary, perspective, light color, and accurate skin tone. Preserve only garment pieces visible within the requested camera boundary. Preserve a named hand placement only when it lies inside that boundary; otherwise preserve its upper-arm direction. Opening camera contract—let the head and upper torso fill most of the canvas from the complete crown to a lower edge crossing the upper torso below the chest, with the chin, both shoulders, and described upper-arm gesture inside while the hips and legs continue beyond the canvas. Render a natural-color editorial photograph with visibly colored skin, clothing, architecture, and landscape. An adult stands three-quarters with one upper arm bending toward a hand that continues below the frame and the other arm descending beyond it in a spacious transit concourse with repeated columns and distant entries, wearing visible vest neckline, shoulders, and lapels and fitted top, with a quiet reflective look with soft eyes and a relaxed mouth. Use chest-up framing with gentle compression and soft background scale and warm low-angle light with soft transitions and neutral shadows. Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, lighting, or environment. Preserve the selected medium and keep the face, eyes, visible hands, joints, garment construction, and spatial relationships coherent. Finish the single scene cleanly with text-free, logo-free, watermark-free imagery. Final camera lock—let the head and upper torso fill most of the canvas from the complete crown to a lower edge crossing the upper torso below the chest, with the chin, both shoulders, and described upper-arm gesture inside while the hips and legs continue beyond the canvas.",
+  "resolved_prompt_sha256": "8f7eb79bd8cf9a9f3c831ad384bcc886d6b16af24e939c5293d9e7a1500226d8",
+  "workflow_sha256": "456970e1d8890d0e2c07cf174146b56df839f24a3d73a8484efe0a6fb9a3a39a",
+  "factors": {
+    "preset": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+    "prompt_profile_sha256": "sha256_d82d3930c4a1f5e52c3c99eef597ff58aa6b409f71adeb49b3acdba1fcd75a44"
+  },
+  "images": [
+    "image_01.png"
+  ],
+  "image_sha256": "a20c79331e8ddcaf1c4a5976973279239d9927804a8b0ba11c155c9cac9555b2",
+  "queue_depth": 32,
+  "batch_size": 1,
+  "status": "completed",
+  "remote_status": "success"
+}
