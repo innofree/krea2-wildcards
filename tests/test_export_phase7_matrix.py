@@ -81,7 +81,7 @@ def test_axis_coverage_matches_the_planned_counts() -> None:
 
 def test_promoted_axes_have_no_generated_items_left() -> None:
     """A promoted axis must be fully decided: nothing left in generated."""
-    promoted = {"lighting"}
+    promoted = {"lighting", "background"}
     for axis in promoted:
         with pytest.raises(ValueError, match="no matching items"):
             select_axis_items(axis, statuses={"generated"})

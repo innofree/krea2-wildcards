@@ -1,0 +1,4818 @@
+schema_version: 1
+review_method: phase7_spread_contact_sheet_batch_review
+notes: 400 items reviewed across 40 spread contact sheets at 10 items and 3 seeds per sheet, in four segments
+  of 50, 100, 100 and 150 items.
+styles:
+  background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_001: stone parapet, bench and sea horizon give three distinct depth layers under a neutral
+      palette'
+  background_coastal_overlook_clear_depth_layers_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 3
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_002: coastal depth layers are correct but the natural green earth palette is not expressed;
+      frame reads near monochrome'
+  background_coastal_overlook_clear_depth_layers_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_003: coastal depth layers with cool mineral palette and delicate particle haze'
+  background_coastal_overlook_clear_depth_layers_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_004: coastal depth layers with delicate particles under a deep neutral palette'
+  background_coastal_overlook_clear_depth_layers_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_005: coastal depth layers with delicate particles; green earth palette is muted but present
+      in the foreground vegetation'
+  background_coastal_overlook_clear_depth_layers_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_006: coastal depth layers with a clearly warm neutral cream palette and delicate particles'
+  background_coastal_overlook_clear_depth_layers_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_007: coastal depth layers with faint haze on the distant headland and cool mineral palette'
+  background_coastal_overlook_clear_depth_layers_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_008: coastal depth layers with faint haze under a deep neutral palette'
+  background_coastal_overlook_clear_depth_layers_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_009: coastal depth layers with faint haze; green earth reads muted, which suits a coastal
+      rock and sea scene'
+  background_coastal_overlook_clear_depth_layers_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_010: coastal depth layers with faint haze and a clearly warm neutral palette'
+  background_coastal_overlook_elevated_horizon_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_011: coastal overlook with a visibly elevated horizon and cool mineral palette'
+  background_coastal_overlook_elevated_horizon_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_012: coastal overlook with an elevated horizon under a deep neutral palette'
+  background_coastal_overlook_elevated_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_013: coastal overlook with an elevated horizon; green earth reads muted, consistent with
+      the coastal rock and sea family'
+  background_coastal_overlook_elevated_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_014: coastal overlook with an elevated horizon and clearly warm neutral palette'
+  background_coastal_overlook_elevated_horizon_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_015: coastal overlook with an elevated horizon, cool mineral palette and crisp visibility'
+  background_coastal_overlook_elevated_horizon_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_016: coastal overlook with an elevated horizon under a deep neutral palette, crisp visibility'
+  background_coastal_overlook_elevated_horizon_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_017: coastal overlook with an elevated horizon; green earth muted but present in the
+      foreground vegetation'
+  background_coastal_overlook_elevated_horizon_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_018: coastal overlook with an elevated horizon and clearly warm neutral palette'
+  background_coastal_overlook_elevated_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_019: coastal overlook with an elevated horizon and cool mineral palette'
+  background_coastal_overlook_elevated_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_020: coastal overlook with an elevated horizon under a deep neutral palette'
+  background_coastal_overlook_elevated_horizon_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_021: coastal overlook with an elevated horizon; green earth muted but vegetation present'
+  background_coastal_overlook_elevated_horizon_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_022: coastal overlook with an elevated horizon and clearly warm neutral palette'
+  background_coastal_overlook_elevated_horizon_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_023: coastal overlook with an elevated horizon, cool mineral palette and faint haze'
+  background_coastal_overlook_elevated_horizon_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_024: coastal overlook with an elevated horizon and faint haze, deep neutral palette'
+  background_coastal_overlook_elevated_horizon_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_025: coastal overlook with an elevated horizon and faint haze; green earth muted but
+      vegetation present'
+  background_coastal_overlook_elevated_horizon_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_026: coastal overlook with an elevated horizon and clearly warm neutral palette'
+  background_coastal_overlook_elevated_horizon_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_027: coastal overlook with an elevated horizon, cool palette and soft ambient light'
+  background_coastal_overlook_elevated_horizon_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_028: coastal overlook with an elevated horizon, deep neutral palette and soft ambient
+      light'
+  background_coastal_overlook_elevated_horizon_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_029: coastal overlook with an elevated horizon and soft ambient light; green earth muted
+      but vegetation present'
+  background_coastal_overlook_elevated_horizon_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_030: coastal overlook with an elevated horizon, warm neutral palette and soft ambient
+      light'
+  background_coastal_overlook_open_gaze_side_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_031: coastal overlook with an open gaze side toward the sea and cool mineral palette'
+  background_coastal_overlook_open_gaze_side_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_032: coastal overlook with an open gaze side under a deep neutral palette'
+  background_coastal_overlook_open_gaze_side_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_033: coastal overlook with an open gaze side; green earth muted but vegetation present'
+  background_coastal_overlook_open_gaze_side_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_034: coastal overlook with an open gaze side and clearly warm neutral palette'
+  background_coastal_overlook_open_gaze_side_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_035: coastal overlook with an open gaze side; green earth muted but vegetation present'
+  background_coastal_overlook_open_gaze_side_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_036: coastal overlook with an open gaze side and clearly warm neutral palette'
+  background_coastal_overlook_open_gaze_side_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_037: coastal overlook with an open gaze side, cool mineral palette and soft ambient light'
+  background_coastal_overlook_open_gaze_side_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_038: coastal overlook with an open gaze side, deep neutral palette and soft ambient light'
+  background_coastal_overlook_open_gaze_side_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_039: coastal overlook with an open gaze side, soft ambient light and green foreground
+      vegetation'
+  background_coastal_overlook_open_gaze_side_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_040: coastal overlook with an open gaze side and clearly warm neutral palette'
+  background_covered_market_centered_opening_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_041: covered arcade with receding stalls and a centered opening in a cool mineral palette'
+  background_covered_market_centered_opening_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_042: covered market arcade with receding stalls under a deep neutral palette'
+  background_covered_market_centered_opening_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_043: covered market arcade in clear green and olive earth tones'
+  background_covered_market_centered_opening_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_044: covered market arcade with a clearly warm neutral cream palette'
+  background_covered_market_centered_opening_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_045: covered market arcade with cool mineral palette under crisp visibility'
+  background_covered_market_centered_opening_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_046: covered market arcade under a deep neutral palette with crisp visibility'
+  background_covered_market_centered_opening_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_047: covered market arcade; earth tones read clearly while green is limited by the interior
+      scene'
+  background_covered_market_centered_opening_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_048: covered market arcade with a clearly warm neutral cream palette'
+  background_covered_market_centered_opening_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_049: covered market arcade with a clear cool mineral palette and delicate particles'
+  background_covered_market_centered_opening_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_050: covered market arcade with delicate particles under a deep neutral palette'
+  background_covered_market_centered_opening_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_051: covered market arcade with green painted surfaces and delicate particles'
+  background_covered_market_centered_opening_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_052: covered market arcade with a clearly warm neutral cream palette'
+  background_covered_market_centered_opening_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_053: covered market arcade with cool mineral palette and faint depth haze'
+  background_covered_market_centered_opening_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_054: covered market arcade with faint depth haze under a deep neutral palette'
+  background_covered_market_centered_opening_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_055: covered market arcade with green painted surfaces and faint depth haze'
+  background_covered_market_centered_opening_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_056: covered market arcade with a clearly warm neutral cream palette'
+  background_covered_market_centered_opening_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_057: covered market arcade with cool mineral palette and soft shadowless ambient light'
+  background_covered_market_centered_opening_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_058: covered market arcade with soft ambient light under a deep neutral palette'
+  background_covered_market_centered_opening_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_059: covered market arcade with clearly expressed green earth tones'
+  background_covered_market_centered_opening_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_060: covered market arcade with warm neutral cream palette and soft ambient light'
+  background_covered_market_elevated_horizon_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_061: covered market with an elevated roofline horizon and cool mineral palette'
+  background_covered_market_elevated_horizon_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_062: covered market with an elevated horizon under a deep neutral palette'
+  background_covered_market_elevated_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_063: covered market with an elevated horizon and clear green painted surfaces'
+  background_covered_market_elevated_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_064: covered market with an elevated horizon and clearly warm neutral palette'
+  background_covered_market_elevated_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_065: covered market with an elevated horizon and clear cool mineral palette'
+  background_covered_market_elevated_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_066: covered market with an elevated horizon under a deep neutral palette'
+  background_covered_market_elevated_horizon_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_067: covered market with an elevated horizon and clear cool mineral palette'
+  background_covered_market_elevated_horizon_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_068: covered market with an elevated horizon and faint haze, deep neutral palette'
+  background_covered_market_elevated_horizon_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_069: covered market with an elevated horizon and clear green painted surfaces'
+  background_covered_market_elevated_horizon_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_070: covered market with an elevated horizon and clearly warm neutral palette'
+  background_covered_market_leading_path_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_071: covered market with a clear leading path and cool mineral palette'
+  background_covered_market_leading_path_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_072: covered market with a leading path under a deep neutral palette'
+  background_covered_market_leading_path_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_073: covered market with a leading path and clear green planting'
+  background_covered_market_leading_path_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_074: covered market with a leading path in clearly warm neutral tones'
+  background_covered_market_leading_path_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_075: covered market with a leading path and clear cool mineral palette'
+  background_covered_market_leading_path_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_076: covered market with a leading path in warm neutral tones'
+  background_covered_market_leading_path_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_077: covered market with a leading path, cool palette and soft ambient light'
+  background_covered_market_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_078: covered market with a leading path, deep neutral palette and soft ambient light'
+  background_covered_market_leading_path_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_079: covered market with a leading path and clear green earth tones'
+  background_covered_market_leading_path_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_080: covered market with a leading path in clearly warm neutral tones'
+  background_forest_clearing_centered_opening_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_081: forest clearing with trunks, planters and a centered opening, cool palette'
+  background_forest_clearing_centered_opening_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_082: forest clearing with trunks and a centered opening, deep neutral palette'
+  background_forest_clearing_centered_opening_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_083: forest clearing with strongly expressed green earth palette'
+  background_forest_clearing_centered_opening_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_084: forest clearing with warm neutral tones and a centered opening'
+  background_forest_clearing_centered_opening_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_085: forest clearing with cool mineral palette and crisp nearby edges'
+  background_forest_clearing_centered_opening_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_086: forest clearing with a centered opening under a deep neutral palette'
+  background_forest_clearing_centered_opening_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_087: forest clearing with strongly expressed green earth palette'
+  background_forest_clearing_centered_opening_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_088: forest clearing with a centered opening in warm neutral tones'
+  background_forest_clearing_centered_opening_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_089: forest clearing with cool mineral palette and delicate particles'
+  background_forest_clearing_centered_opening_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_090: forest clearing with delicate particles under a deep neutral palette'
+  background_forest_clearing_centered_opening_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_091: forest clearing with strongly expressed green earth palette'
+  background_forest_clearing_centered_opening_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_092: forest clearing with warm neutral tones and delicate particles'
+  background_forest_clearing_centered_opening_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_093: forest clearing with cool mineral palette and faint depth haze'
+  background_forest_clearing_centered_opening_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_094: forest clearing with clearly visible haze under a deep neutral palette'
+  background_forest_clearing_centered_opening_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_095: forest clearing with strongly expressed green earth palette and faint haze'
+  background_forest_clearing_centered_opening_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_096: forest clearing with warm neutral tones and visible faint haze'
+  background_forest_clearing_centered_opening_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_097: forest clearing with cool mineral palette and soft ambient diffusion'
+  background_forest_clearing_centered_opening_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_098: forest clearing with soft ambient diffusion under a deep neutral palette'
+  background_forest_clearing_centered_opening_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_099: forest clearing with strongly expressed green earth palette'
+  background_forest_clearing_centered_opening_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_100: forest clearing with warm neutral tones and soft ambient diffusion'
+  background_forest_clearing_clear_depth_layers_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_101: forest clearing with distinct depth layers and cool mineral palette'
+  background_forest_clearing_clear_depth_layers_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_102: forest clearing with distinct depth layers, deep neutral palette'
+  background_forest_clearing_clear_depth_layers_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_103: forest clearing with distinct depth layers and strong green earth palette'
+  background_forest_clearing_clear_depth_layers_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_104: forest clearing with distinct depth layers in warm neutral tones'
+  background_forest_clearing_clear_depth_layers_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_105: forest clearing with distinct depth layers, cool palette and crisp visibility'
+  background_forest_clearing_clear_depth_layers_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_106: forest clearing with distinct depth layers, deep neutral palette'
+  background_forest_clearing_clear_depth_layers_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_107: forest clearing with distinct depth layers and strong green earth palette'
+  background_forest_clearing_clear_depth_layers_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_108: forest clearing with distinct depth layers in clearly warm neutral tones'
+  background_forest_clearing_clear_depth_layers_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_109: forest clearing with distinct depth layers and cool mineral palette'
+  background_forest_clearing_clear_depth_layers_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_110: forest clearing with distinct depth layers under a deep neutral palette'
+  background_forest_clearing_clear_depth_layers_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_111: forest clearing with distinct depth layers and strong green earth palette'
+  background_forest_clearing_clear_depth_layers_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_112: forest clearing with distinct depth layers in warm neutral tones'
+  background_forest_clearing_clear_depth_layers_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_113: forest clearing with distinct depth layers, cool palette and faint haze'
+  background_forest_clearing_clear_depth_layers_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_114: forest clearing with distinct depth layers, deep neutral palette'
+  background_forest_clearing_clear_depth_layers_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_115: forest clearing with distinct depth layers and strong green earth palette'
+  background_forest_clearing_clear_depth_layers_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_116: forest clearing with distinct depth layers and faint haze, warm tones'
+  background_forest_clearing_clear_depth_layers_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_117: forest clearing with distinct depth layers and soft ambient cool light'
+  background_forest_clearing_clear_depth_layers_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_118: forest clearing with distinct depth layers and soft ambient neutral light'
+  background_forest_clearing_clear_depth_layers_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_119: forest clearing with distinct depth layers and strong green earth palette'
+  background_forest_clearing_clear_depth_layers_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_120: forest clearing with distinct depth layers in warm neutral tones'
+  background_glasshouse_corridor_leading_path_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_121: glazed corridor with plants and railings forming a clear leading path'
+  background_glasshouse_corridor_leading_path_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_122: glasshouse corridor with railings forming a clear leading path'
+  background_glasshouse_corridor_leading_path_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_123: glasshouse corridor leading path with green vegetation throughout'
+  background_glasshouse_corridor_leading_path_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_124: glasshouse corridor leading path in warm neutral tones'
+  background_glasshouse_corridor_leading_path_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_125: glasshouse corridor leading path with cool mineral palette'
+  background_glasshouse_corridor_leading_path_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_126: glasshouse corridor leading path under a deep neutral palette'
+  background_glasshouse_corridor_leading_path_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_127: glasshouse corridor leading path with clear green vegetation'
+  background_glasshouse_corridor_leading_path_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_128: glasshouse corridor leading path in warm neutral tones'
+  background_glasshouse_corridor_leading_path_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_129: glasshouse corridor leading path with cool mineral palette'
+  background_glasshouse_corridor_leading_path_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_130: glasshouse corridor leading path under a deep neutral palette'
+  background_glasshouse_corridor_leading_path_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_131: glasshouse corridor leading path with clear green vegetation'
+  background_glasshouse_corridor_leading_path_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_132: glasshouse corridor leading path in warm neutral tones'
+  background_glasshouse_corridor_leading_path_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_133: glasshouse corridor leading path with clearly visible faint haze'
+  background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_134: glasshouse corridor leading path with faint haze, deep neutral palette'
+  background_glasshouse_corridor_leading_path_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_135: glasshouse corridor leading path with clear green vegetation'
+  background_glasshouse_corridor_leading_path_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_136: glasshouse corridor leading path with warm tones and faint haze'
+  background_glasshouse_corridor_leading_path_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_137: glasshouse corridor leading path with cool palette and soft ambient light'
+  background_glasshouse_corridor_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_138: glasshouse corridor leading path with soft ambient light, deep neutral palette'
+  background_glasshouse_corridor_leading_path_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_139: glasshouse corridor leading path with clear green vegetation'
+  background_glasshouse_corridor_leading_path_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_140: glasshouse corridor leading path in warm neutral tones'
+  background_glasshouse_corridor_repeated_recession_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_141: glasshouse corridor with clearly repeated structural bays receding'
+  background_glasshouse_corridor_repeated_recession_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_142: glasshouse corridor with repeated structural bays receding'
+  background_glasshouse_corridor_repeated_recession_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_143: glasshouse corridor with repeated bays receding and clear green vegetation'
+  background_glasshouse_corridor_repeated_recession_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_144: glasshouse corridor with repeated bays receding in warm neutral tones'
+  background_glasshouse_corridor_repeated_recession_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_145: glasshouse corridor with repeated bays receding and cool mineral palette'
+  background_glasshouse_corridor_repeated_recession_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_146: glasshouse corridor with repeated bays receding, deep neutral palette'
+  background_glasshouse_corridor_repeated_recession_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_147: glasshouse corridor with repeated bays receding and clear green vegetation'
+  background_glasshouse_corridor_repeated_recession_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_148: glasshouse corridor with repeated bays receding in warm neutral tones'
+  background_glasshouse_corridor_repeated_recession_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_149: glasshouse corridor with repeated bays receding and cool mineral palette'
+  background_glasshouse_corridor_repeated_recession_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_150: glasshouse corridor with repeated bays receding, deep neutral palette'
+  background_glasshouse_corridor_repeated_recession_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_151: glasshouse corridor with repeated bays receding and clear green vegetation'
+  background_glasshouse_corridor_repeated_recession_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_152: glasshouse corridor with repeated bays receding in warm neutral tones'
+  background_glasshouse_corridor_repeated_recession_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_153: glasshouse corridor with repeated bays receding and cool mineral palette'
+  background_glasshouse_corridor_repeated_recession_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_154: glasshouse corridor with repeated bays receding, deep neutral palette'
+  background_glasshouse_corridor_repeated_recession_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_155: glasshouse corridor with repeated bays receding and clear green vegetation'
+  background_glasshouse_corridor_repeated_recession_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_156: glasshouse corridor with repeated bays receding in warm neutral tones'
+  background_glasshouse_corridor_repeated_recession_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_157: glasshouse corridor with repeated bays receding and soft ambient cool light'
+  background_glasshouse_corridor_repeated_recession_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_158: glasshouse corridor with repeated bays receding, soft ambient neutral light'
+  background_glasshouse_corridor_repeated_recession_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_159: glasshouse corridor with repeated bays receding and clear green vegetation'
+  background_glasshouse_corridor_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_160: glasshouse corridor with repeated bays receding in warm neutral tones'
+  background_library_room_low_horizon_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_161: library shelves with a low horizon and cool mineral palette'
+  background_library_room_low_horizon_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_162: library shelves with a low horizon and deep neutral palette'
+  background_library_room_low_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_163: library shelves at a low horizon with green earth tones'
+  background_library_room_low_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_164: library shelves at a low horizon with warm neutral palette'
+  background_library_room_low_horizon_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_165: library shelves at a low horizon with cool mineral palette'
+  background_library_room_low_horizon_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_166: library shelves at a low horizon under a deep neutral palette'
+  background_library_room_low_horizon_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_167: library shelves at a low horizon with green earth tones'
+  background_library_room_low_horizon_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_168: library shelves at a low horizon in warm neutral tones'
+  background_library_room_low_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_169: library shelves at a low horizon with cool mineral palette'
+  background_library_room_low_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_170: library shelves at a low horizon under a deep neutral palette'
+  background_library_room_low_horizon_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_171: library shelves at a low horizon with green earth tones'
+  background_library_room_low_horizon_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_172: library shelves at a low horizon in warm neutral tones'
+  background_library_room_low_horizon_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_173: library shelves at a low horizon with cool mineral palette'
+  background_library_room_low_horizon_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_174: library shelves at a low horizon under a deep neutral palette'
+  background_library_room_low_horizon_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_175: library shelves at a low horizon with green earth tones'
+  background_library_room_low_horizon_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_176: library shelves at a low horizon in warm neutral tones'
+  background_library_room_low_horizon_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_177: library shelves at a low horizon with cool palette and soft ambient light'
+  background_library_room_low_horizon_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_178: library shelves at a low horizon with soft ambient light'
+  background_library_room_low_horizon_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_179: library shelves at a low horizon with green earth tones'
+  background_library_room_low_horizon_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_180: library shelves at a low horizon in warm neutral tones'
+  background_library_room_open_gaze_side_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_181: library shelves with an open gaze side and cool mineral palette'
+  background_library_room_open_gaze_side_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_182: library shelves with an open gaze side, deep neutral palette'
+  background_library_room_open_gaze_side_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_183: library shelves with an open gaze side and green earth tones'
+  background_library_room_open_gaze_side_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_184: library shelves with an open gaze side in warm neutral tones'
+  background_library_room_open_gaze_side_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_185: library shelves with an open gaze side and cool mineral palette'
+  background_library_room_open_gaze_side_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_186: library shelves with an open gaze side, deep neutral palette'
+  background_library_room_open_gaze_side_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_187: library shelves with an open gaze side and green planters'
+  background_library_room_open_gaze_side_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_188: library shelves with an open gaze side in warm neutral tones'
+  background_library_room_open_gaze_side_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_189: library shelves with an open gaze side and cool mineral palette'
+  background_library_room_open_gaze_side_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_190: library shelves with an open gaze side, deep neutral palette'
+  background_library_room_open_gaze_side_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_191: library shelves with an open gaze side and green planters'
+  background_library_room_open_gaze_side_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_192: library shelves with an open gaze side in warm neutral tones'
+  background_library_room_open_gaze_side_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_193: library shelves with an open gaze side and cool mineral palette'
+  background_library_room_open_gaze_side_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_194: library shelves with an open gaze side, deep neutral palette'
+  background_library_room_open_gaze_side_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_195: library shelves with an open gaze side and green earth tones'
+  background_library_room_open_gaze_side_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_196: library shelves with an open gaze side in warm neutral tones'
+  background_library_room_open_gaze_side_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_197: library shelves with an open gaze side and soft ambient cool light'
+  background_library_room_open_gaze_side_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_198: library shelves with an open gaze side and soft ambient neutral light'
+  background_library_room_open_gaze_side_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_199: library shelves with an open gaze side and green earth tones'
+  background_library_room_open_gaze_side_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_200: library shelves with an open gaze side in warm neutral tones'
+  background_museum_hall_elevated_horizon_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_201: stone museum hall with benches and plinths at an elevated horizon'
+  background_museum_hall_elevated_horizon_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_202: museum hall with benches and plinths at an elevated horizon'
+  background_museum_hall_elevated_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_203: museum hall at an elevated horizon with muted green palette'
+  background_museum_hall_elevated_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_204: museum hall at an elevated horizon with warm neutral palette'
+  background_museum_hall_elevated_horizon_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_205: museum hall at an elevated horizon with cool mineral palette'
+  background_museum_hall_elevated_horizon_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_206: museum hall at an elevated horizon under a deep neutral palette'
+  background_museum_hall_elevated_horizon_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_207: museum hall at an elevated horizon with muted green earth palette'
+  background_museum_hall_elevated_horizon_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_208: museum hall at an elevated horizon in warm neutral tones'
+  background_museum_hall_elevated_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_209: museum hall at an elevated horizon with cool mineral palette'
+  background_museum_hall_elevated_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_210: museum hall at an elevated horizon under a deep neutral palette'
+  background_museum_hall_elevated_horizon_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_211: museum hall at an elevated horizon with muted green earth palette'
+  background_museum_hall_elevated_horizon_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_212: museum hall at an elevated horizon in warm neutral tones'
+  background_museum_hall_elevated_horizon_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_213: museum hall at an elevated horizon with cool mineral palette'
+  background_museum_hall_elevated_horizon_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_214: museum hall at an elevated horizon under a deep neutral palette'
+  background_museum_hall_elevated_horizon_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_215: museum hall at an elevated horizon with muted green earth palette'
+  background_museum_hall_elevated_horizon_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_216: museum hall at an elevated horizon in warm neutral tones'
+  background_museum_hall_elevated_horizon_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_217: museum hall at an elevated horizon with cool palette and soft ambient light'
+  background_museum_hall_elevated_horizon_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_218: museum hall at an elevated horizon with soft ambient light'
+  background_museum_hall_elevated_horizon_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_219: museum hall at an elevated horizon with green accents'
+  background_museum_hall_elevated_horizon_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_220: museum hall at an elevated horizon in warm neutral tones'
+  background_museum_hall_low_horizon_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_221: museum hall at a low horizon with cool mineral palette'
+  background_museum_hall_low_horizon_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_222: museum hall at a low horizon under a deep neutral palette'
+  background_museum_hall_low_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_223: museum hall at a low horizon with muted green earth palette'
+  background_museum_hall_low_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_224: museum hall at a low horizon in warm neutral tones'
+  background_museum_hall_low_horizon_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_225: museum hall at a low horizon with cool mineral palette'
+  background_museum_hall_low_horizon_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_226: museum hall at a low horizon under a deep neutral palette'
+  background_museum_hall_low_horizon_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_227: museum hall at a low horizon with muted green earth palette'
+  background_museum_hall_low_horizon_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_228: museum hall at a low horizon in warm neutral tones'
+  background_museum_hall_low_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_229: museum hall at a low horizon with cool mineral palette'
+  background_museum_hall_low_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_230: museum hall at a low horizon under a deep neutral palette'
+  background_museum_hall_low_horizon_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_231: museum hall at a low horizon with green earth tones'
+  background_museum_hall_low_horizon_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_232: museum hall at a low horizon in warm neutral tones'
+  background_museum_hall_low_horizon_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_233: museum hall at a low horizon with cool mineral palette'
+  background_museum_hall_low_horizon_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_234: museum hall at a low horizon under a deep neutral palette'
+  background_museum_hall_low_horizon_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_235: museum hall at a low horizon with green earth tones'
+  background_museum_hall_low_horizon_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_236: museum hall at a low horizon in warm neutral tones'
+  background_museum_hall_low_horizon_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_237: museum hall at a low horizon with soft ambient cool light'
+  background_museum_hall_low_horizon_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_238: museum hall at a low horizon with soft ambient neutral light'
+  background_museum_hall_low_horizon_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_239: museum hall at a low horizon with green earth tones'
+  background_museum_hall_low_horizon_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_240: museum hall at a low horizon in warm neutral tones'
+  background_riverbank_path_clear_depth_layers_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_241: riverbank with reeds, water plane and gravel path in clear depth layers'
+  background_riverbank_path_clear_depth_layers_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_242: riverbank reeds and water plane in clear depth layers'
+  background_riverbank_path_clear_depth_layers_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_243: riverbank depth layers with green reeds and water plane'
+  background_riverbank_path_clear_depth_layers_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_244: riverbank depth layers with warm dry reeds'
+  background_riverbank_path_clear_depth_layers_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_245: riverbank depth layers with cool mineral palette and crisp edges'
+  background_riverbank_path_clear_depth_layers_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_246: riverbank reeds and water plane in clear depth layers, deep neutral palette'
+  background_riverbank_path_clear_depth_layers_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_247: riverbank depth layers with clear green reeds and water plane'
+  background_riverbank_path_clear_depth_layers_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_248: riverbank depth layers with warm dry reeds and water plane'
+  background_riverbank_path_clear_depth_layers_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_249: riverbank depth layers with cool mineral palette and delicate particles'
+  background_riverbank_path_clear_depth_layers_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_250: riverbank reeds and water plane with delicate particles, deep neutral palette'
+  background_riverbank_path_clear_depth_layers_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_251: riverbank depth layers with clear green reeds'
+  background_riverbank_path_clear_depth_layers_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_252: riverbank depth layers with warm reeds and water plane'
+  background_riverbank_path_clear_depth_layers_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_253: riverbank depth layers with cool mineral palette and faint haze'
+  background_riverbank_path_clear_depth_layers_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_254: riverbank depth layers with faint haze under a deep neutral palette'
+  background_riverbank_path_clear_depth_layers_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_255: riverbank depth layers with clear green reeds and faint haze'
+  background_riverbank_path_clear_depth_layers_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_256: riverbank depth layers with warm reeds and faint haze'
+  background_riverbank_path_clear_depth_layers_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_257: riverbank depth layers with cool palette and soft ambient diffusion'
+  background_riverbank_path_clear_depth_layers_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_258: riverbank depth layers with soft ambient diffusion, deep neutral palette'
+  background_riverbank_path_clear_depth_layers_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_259: riverbank depth layers with clear green reeds and water plane'
+  background_riverbank_path_clear_depth_layers_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_260: riverbank depth layers with warm reeds and soft ambient light'
+  background_riverbank_path_flanking_verticals_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_261: riverbank with paired vertical frames flanking the subject'
+  background_riverbank_path_flanking_verticals_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_262: riverbank with paired vertical frames flanking the subject'
+  background_riverbank_path_flanking_verticals_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_263: riverbank with flanking vertical frames and clear green reeds'
+  background_riverbank_path_flanking_verticals_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_264: riverbank with flanking vertical frames in warm neutral tones'
+  background_riverbank_path_flanking_verticals_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_265: riverbank with flanking vertical frames and delicate particles'
+  background_riverbank_path_flanking_verticals_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_266: riverbank with flanking vertical frames and delicate particles'
+  background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_267: riverbank with flanking vertical frames and clear green reeds'
+  background_riverbank_path_flanking_verticals_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_268: riverbank with flanking vertical frames in warm neutral tones'
+  background_riverbank_path_flanking_verticals_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_269: riverbank with flanking vertical frames and faint haze, deep neutral palette'
+  background_riverbank_path_flanking_verticals_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_270: riverbank with flanking vertical frames and clearly present green earth tones'
+  background_riverbank_path_repeated_recession_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_271: riverbank with repeated posts receding along the water, cool palette'
+  background_riverbank_path_repeated_recession_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_272: riverbank with repeated posts receding, deep neutral palette'
+  background_riverbank_path_repeated_recession_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_273: riverbank with repeated recession and clear green earth tones'
+  background_riverbank_path_repeated_recession_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_274: riverbank with repeated posts receding in warm neutral tones'
+  background_riverbank_path_repeated_recession_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_275: riverbank with repeated posts receding and cool mineral palette'
+  background_riverbank_path_repeated_recession_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_276: riverbank with repeated posts receding and faint haze, warm tones'
+  background_riverbank_path_repeated_recession_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_277: riverbank with repeated posts receding and soft ambient cool light'
+  background_riverbank_path_repeated_recession_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_278: riverbank with repeated posts receding and soft ambient neutral light'
+  background_riverbank_path_repeated_recession_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_279: riverbank with repeated posts receding and clear green reeds'
+  background_riverbank_path_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_280: riverbank with repeated posts receding in warm neutral tones'
+  background_rooftop_terrace_flanking_verticals_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_281: rooftop terrace with planters flanking the subject and a distant skyline'
+  background_rooftop_terrace_flanking_verticals_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_282: rooftop terrace with flanking planters and distant skyline'
+  background_rooftop_terrace_flanking_verticals_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_283: rooftop terrace with flanking green planters'
+  background_rooftop_terrace_flanking_verticals_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_284: rooftop terrace with flanking verticals in warm neutral tones'
+  background_rooftop_terrace_flanking_verticals_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_285: rooftop terrace with flanking verticals and cool mineral palette'
+  background_rooftop_terrace_flanking_verticals_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_286: rooftop terrace with flanking verticals under a deep neutral palette'
+  background_rooftop_terrace_flanking_verticals_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_287: rooftop terrace with flanking verticals and green planters'
+  background_rooftop_terrace_flanking_verticals_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_288: rooftop terrace with flanking verticals in warm neutral tones'
+  background_rooftop_terrace_flanking_verticals_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_289: rooftop terrace with flanking verticals and cool mineral palette'
+  background_rooftop_terrace_flanking_verticals_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_290: rooftop terrace with flanking verticals under a deep neutral palette'
+  background_rooftop_terrace_flanking_verticals_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_291: rooftop terrace with flanking verticals and green planters'
+  background_rooftop_terrace_flanking_verticals_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_292: rooftop terrace with flanking verticals in warm neutral tones'
+  background_rooftop_terrace_flanking_verticals_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_293: rooftop terrace with flanking verticals and a hazy distant skyline'
+  background_rooftop_terrace_flanking_verticals_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_294: rooftop terrace with flanking verticals and a hazy distant skyline'
+  background_rooftop_terrace_flanking_verticals_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_295: rooftop terrace with flanking verticals and green earth tones'
+  background_rooftop_terrace_flanking_verticals_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_296: rooftop terrace with flanking verticals in warm neutral tones'
+  background_rooftop_terrace_flanking_verticals_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_297: rooftop terrace with flanking verticals and soft ambient light'
+  background_rooftop_terrace_flanking_verticals_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_298: rooftop terrace with flanking verticals and soft ambient light'
+  background_rooftop_terrace_flanking_verticals_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_299: rooftop terrace with flanking verticals and clear green planters'
+  background_rooftop_terrace_flanking_verticals_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_300: rooftop terrace with flanking verticals in warm neutral tones'
+  background_rooftop_terrace_open_gaze_side_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_301: rooftop terrace with an open gaze side toward the skyline'
+  background_rooftop_terrace_open_gaze_side_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_302: rooftop terrace with an open gaze side under a deep neutral palette'
+  background_rooftop_terrace_open_gaze_side_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_303: rooftop terrace with an open gaze side and green planters'
+  background_rooftop_terrace_open_gaze_side_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_304: rooftop terrace with an open gaze side in warm neutral tones'
+  background_rooftop_terrace_open_gaze_side_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_305: rooftop terrace with an open gaze side and cool mineral palette'
+  background_rooftop_terrace_open_gaze_side_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_306: rooftop terrace with an open gaze side, deep neutral palette'
+  background_rooftop_terrace_open_gaze_side_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_307: rooftop terrace with an open gaze side and muted green tones'
+  background_rooftop_terrace_open_gaze_side_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_308: rooftop terrace with an open gaze side in warm neutral tones'
+  background_rooftop_terrace_open_gaze_side_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_309: rooftop terrace with an open gaze side and cool mineral palette'
+  background_rooftop_terrace_open_gaze_side_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_310: rooftop terrace with an open gaze side, deep neutral palette'
+  background_rooftop_terrace_open_gaze_side_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_311: rooftop terrace with an open gaze side and green planters'
+  background_rooftop_terrace_open_gaze_side_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_312: rooftop terrace with an open gaze side in warm neutral tones'
+  background_rooftop_terrace_open_gaze_side_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_313: rooftop terrace with an open gaze side and a hazy skyline'
+  background_rooftop_terrace_open_gaze_side_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_314: rooftop terrace with an open gaze side and faint haze'
+  background_rooftop_terrace_open_gaze_side_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_315: rooftop terrace with an open gaze side and green earth tones'
+  background_rooftop_terrace_open_gaze_side_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_316: rooftop terrace with an open gaze side in warm neutral tones'
+  background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_317: rooftop terrace with an open gaze side and soft ambient cool light'
+  background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_318: rooftop terrace with an open gaze side and soft ambient neutral light'
+  background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_319: rooftop terrace with an open gaze side and green planters'
+  background_rooftop_terrace_open_gaze_side_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_320: rooftop terrace with an open gaze side in warm neutral tones'
+  background_stone_courtyard_flanking_verticals_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_321: stone courtyard with flanking planters and benches, cool palette'
+  background_stone_courtyard_flanking_verticals_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_322: stone courtyard with flanking planters and benches'
+  background_stone_courtyard_flanking_verticals_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_323: stone courtyard with flanking verticals and green accents'
+  background_stone_courtyard_flanking_verticals_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_324: stone courtyard with flanking verticals in warm neutral tones'
+  background_stone_courtyard_flanking_verticals_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_325: stone courtyard with flanking verticals and cool mineral palette'
+  background_stone_courtyard_flanking_verticals_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_326: stone courtyard with flanking verticals under a deep neutral palette'
+  background_stone_courtyard_flanking_verticals_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_327: stone courtyard with flanking verticals and clear green foliage'
+  background_stone_courtyard_flanking_verticals_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_328: stone courtyard with flanking verticals in warm neutral tones'
+  background_stone_courtyard_flanking_verticals_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_329: stone courtyard with flanking verticals and cool mineral palette'
+  background_stone_courtyard_flanking_verticals_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_330: stone courtyard with flanking verticals under a deep neutral palette'
+  background_stone_courtyard_flanking_verticals_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_331: stone courtyard with flanking verticals and clear green foliage'
+  background_stone_courtyard_flanking_verticals_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_332: stone courtyard with flanking verticals in warm neutral tones'
+  background_stone_courtyard_flanking_verticals_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_333: stone courtyard with flanking verticals and cool mineral palette'
+  background_stone_courtyard_flanking_verticals_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_334: stone courtyard with flanking verticals and faint haze'
+  background_stone_courtyard_flanking_verticals_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_335: stone courtyard with flanking verticals and green foliage'
+  background_stone_courtyard_flanking_verticals_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_336: stone courtyard with flanking verticals in warm neutral tones'
+  background_stone_courtyard_flanking_verticals_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_337: stone courtyard with flanking verticals and cool green palette'
+  background_stone_courtyard_flanking_verticals_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_338: stone courtyard with flanking verticals and soft ambient light'
+  background_stone_courtyard_flanking_verticals_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_339: stone courtyard with flanking verticals and clear green foliage'
+  background_stone_courtyard_flanking_verticals_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_340: stone courtyard with flanking verticals in warm neutral tones'
+  background_stone_courtyard_leading_path_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_341: stone courtyard with a leading path and crisp visibility'
+  background_stone_courtyard_leading_path_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_342: stone courtyard with a leading path and crisp visibility'
+  background_stone_courtyard_leading_path_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_343: stone courtyard with a leading path and clear green moss'
+  background_stone_courtyard_leading_path_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_344: stone courtyard with a leading path and crisp visibility, warm tones'
+  background_stone_courtyard_leading_path_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_345: stone courtyard with a leading path and faint depth haze'
+  background_stone_courtyard_leading_path_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_346: stone courtyard with a leading path and faint depth haze'
+  background_stone_courtyard_leading_path_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_347: stone courtyard with a leading path and clear green moss'
+  background_stone_courtyard_leading_path_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_348: stone courtyard with a leading path and faint haze, warm tones'
+  background_stone_courtyard_leading_path_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_349: stone courtyard with a leading path and soft ambient light'
+  background_stone_courtyard_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_350: stone courtyard with a leading path and soft ambient light'
+  background_stone_courtyard_low_horizon_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_351: stone courtyard at a low horizon with green earth tones'
+  background_stone_courtyard_low_horizon_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_352: stone courtyard at a low horizon in warm neutral tones'
+  background_stone_courtyard_low_horizon_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_353: stone courtyard at a low horizon with cool mineral palette'
+  background_stone_courtyard_low_horizon_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_354: stone courtyard at a low horizon under a deep neutral palette'
+  background_stone_courtyard_low_horizon_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_355: stone courtyard at a low horizon with green earth tones'
+  background_stone_courtyard_low_horizon_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_356: stone courtyard at a low horizon in warm neutral tones'
+  background_stone_courtyard_low_horizon_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_357: stone courtyard at a low horizon with soft ambient cool light'
+  background_stone_courtyard_low_horizon_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_358: stone courtyard at a low horizon with soft ambient neutral light'
+  background_stone_courtyard_low_horizon_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_359: stone courtyard at a low horizon with green earth tones'
+  background_stone_courtyard_low_horizon_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_360: stone courtyard at a low horizon in warm neutral tones'
+  background_transit_concourse_centered_opening_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_361: transit concourse with columns and a centered opening under crisp visibility'
+  background_transit_concourse_centered_opening_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_362: transit concourse with columns and a centered opening'
+  background_transit_concourse_centered_opening_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_363: transit concourse centered opening with green earth tones'
+  background_transit_concourse_centered_opening_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_364: transit concourse centered opening in warm neutral tones'
+  background_transit_concourse_centered_opening_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_365: transit concourse centered opening with delicate particle haze'
+  background_transit_concourse_centered_opening_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_366: transit concourse with delicate particles and clearly present green earth tones'
+  background_transit_concourse_centered_opening_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_367: transit concourse with faint depth haze and cool mineral palette'
+  background_transit_concourse_centered_opening_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_368: transit concourse with faint depth haze under a deep neutral palette'
+  background_transit_concourse_centered_opening_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_369: transit concourse with faint depth haze and green earth tones'
+  background_transit_concourse_centered_opening_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_370: transit concourse with faint depth haze and warm neutral palette'
+  background_transit_concourse_leading_path_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_371: transit concourse with a leading path and cool mineral palette'
+  background_transit_concourse_leading_path_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_372: transit concourse with a clear leading path in diagonal floor lines, deep neutral
+      palette'
+  background_transit_concourse_leading_path_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_373: transit concourse with a leading path and green earth tones'
+  background_transit_concourse_leading_path_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_374: transit concourse with a leading path in warm neutral tones'
+  background_transit_concourse_leading_path_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_375: transit concourse with a leading path, cool mineral palette and crisp visibility'
+  background_transit_concourse_leading_path_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_376: transit concourse with a clear diagonal leading path, deep neutral palette'
+  background_transit_concourse_leading_path_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_377: transit concourse with a leading path and green earth tones'
+  background_transit_concourse_leading_path_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_378: transit concourse with a leading path in warm neutral tones'
+  background_transit_concourse_leading_path_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_379: transit concourse with a leading path under a deep neutral palette'
+  background_transit_concourse_leading_path_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_380: transit concourse with a leading path and soft ambient warm light'
+  background_transit_concourse_repeated_recession_clear_still_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_381: transit concourse with clearly repeated recession and cool mineral palette'
+  background_transit_concourse_repeated_recession_clear_still_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_382: transit concourse with repeated recession under a deep neutral palette'
+  background_transit_concourse_repeated_recession_clear_still_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_383: transit concourse with repeated recession and green earth tones'
+  background_transit_concourse_repeated_recession_clear_still_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_384: transit concourse with repeated recession in warm neutral tones'
+  background_transit_concourse_repeated_recession_crisp_visibility_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_385: transit concourse with repeated recession and crisp visibility'
+  background_transit_concourse_repeated_recession_crisp_visibility_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_386: transit concourse with repeated recession and crisp visibility'
+  background_transit_concourse_repeated_recession_crisp_visibility_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_387: transit concourse with repeated recession and green earth tones'
+  background_transit_concourse_repeated_recession_crisp_visibility_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_388: transit concourse with repeated recession in warm neutral tones'
+  background_transit_concourse_repeated_recession_delicate_particles_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_389: transit concourse with repeated recession and delicate particles'
+  background_transit_concourse_repeated_recession_delicate_particles_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_390: transit concourse with repeated recession and delicate particles'
+  background_transit_concourse_repeated_recession_delicate_particles_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_391: transit concourse with repeated recession and green earth tones'
+  background_transit_concourse_repeated_recession_delicate_particles_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_392: transit concourse with repeated recession in warm neutral tones'
+  background_transit_concourse_repeated_recession_faint_depth_haze_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_393: transit concourse with repeated recession and faint depth haze'
+  background_transit_concourse_repeated_recession_faint_depth_haze_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_394: transit concourse with repeated recession and faint depth haze'
+  background_transit_concourse_repeated_recession_faint_depth_haze_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_395: transit concourse with repeated recession and green earth tones'
+  background_transit_concourse_repeated_recession_faint_depth_haze_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_396: transit concourse with repeated recession and faint haze, warm tones'
+  background_transit_concourse_repeated_recession_soft_ambient_diffusion_cool_mineral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_397: transit concourse with repeated recession and soft ambient cool light'
+  background_transit_concourse_repeated_recession_soft_ambient_diffusion_deep_neutral_accent_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_398: transit concourse with repeated recession and soft ambient neutral light'
+  background_transit_concourse_repeated_recession_soft_ambient_diffusion_natural_green_earth_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_399: transit concourse with repeated recession and green earth tones'
+  background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'case_400: transit concourse with repeated recession in warm neutral tones'

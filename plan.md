@@ -1854,12 +1854,14 @@ repeated_recession`)은 12/12장이 장면 계열, depth 구조, 색 팔레트�
 `repeated_recession`은 열주의 반복 후퇴로 각각 명세대로 표현됐다. 12장 전부
 비인간 구조물만 사용하고 추가 인물이 없어 anchor 두 문장이 의도대로 작동했다.
 
-### 7.9 background 축 v1 진행 상태
+### 7.9 background 축 v1 승격 결과
 
-1,200/1,200장 생성, Stage A 400/400 통과, 40장 spread 시트 생성을 완료했다. 배치
-리뷰는 구간으로 나눠 진행한다. 1구간(시트 1~5) 50개, 2구간(시트 6~15) 100개를
-판정해 누적 150/400이고 통과 149, 미달 1로 통과율 99.3%다. lighting의 84.4%보다
-현저히 높다. 2구간은 100/100 전부 통과했다.
+1,200/1,200장 생성, Stage A 400/400 통과, 40장 spread 시트로 400개 전수 리뷰를
+완료했다. 결과는 통과 399, 미달 1로 통과율 99.75%다. lighting의 84.4%보다 현저히
+높다.
+
+리뷰는 네 구간으로 나눠 진행했다. 1구간 시트 1~5(50개), 2구간 시트 6~15(100개),
+3구간 시트 16~25(100개), 4구간 시트 26~40(150개)이며 2~4구간은 전부 100% 통과했다.
 
 유일한 미달은 `coastal_overlook_clear_depth_layers_clear_still_natural_green_earth`
 의 팔레트 미표현이다. 같은 `natural_green_earth` 팔레트를 쓰는 시트 3의 10개 항목이
@@ -1869,11 +1871,21 @@ repeated_recession`)은 12/12장이 장면 계열, depth 구조, 색 팔레트�
 암반과 바다가 지배하는 장면에 식생이 적어 장면 특성상 타당하므로, 녹색이 전경
 식생에 존재하는 경우는 통과로 판정하고 완전 무채색인 경우만 미달로 본다.
 
-150개 전부에서 anchor 두 문장이 작동했다. 구조물이 난간·기둥·벤치·화분·수목 같은
-비인간 객체로 한정되고 추가 인물이 없으며 피사체가 배경에 묻히지 않는다. depth
-sub-attribute도 구분된다. `elevated_horizon`은 수평선이 높게 앉고,
-`leading_path`는 바닥 대각선으로, `flanking_verticals`는 좌우 수직 쌍으로,
-`centered_opening`은 중앙 개구로 각각 나타난다.
+400개 전부에서 anchor 두 문장이 작동했다. 구조물이 난간·기둥·벤치·화분·수목 같은
+비인간 객체로 한정되고 추가 인물이 없으며 피사체가 배경에 묻히지 않는다.
+
+depth sub-attribute 7종이 모두 시각적으로 구분된다. `elevated_horizon`은 수평선이
+높게 앉고, `low_horizon`은 낮게 앉는다. `leading_path`는 바닥 대각선으로,
+`flanking_verticals`는 좌우 수직 쌍으로, `centered_opening`은 중앙 개구로,
+`repeated_recession`은 반복 구조물의 후퇴로, `open_gaze_side`는 한쪽이 열린 구성으로
+나타난다. atmosphere 5종(`clear_still`, `crisp_visibility`, `faint_depth_haze`,
+`delicate_particles`, `soft_ambient_diffusion`)과 palette 4종도 각각 분리된다.
+
+승격은 정책이 계산했다. `summarize_results.py` 결과가 approved 399, rejected 1로
+리뷰 판정과 정확히 일치했다. `refresh_generation_manifest.py`로 validation-only
+변경을 반영하고 런타임을 재빌드해 585개에서 984개로 늘었으며
+`krea2/environment/complete.yaml`이 추가됐다. runtime coverage는 988/988 경로
+통과다.
 
 **리뷰 판정은 `tests/reports/phase7_background_v1/review_parts/sNNN.json`에 시트
 단위로 영속화한다.** lighting 리뷰는 세션 임시 디렉터리에만 있어 세션이 끊기면
@@ -1882,8 +1894,9 @@ sub-attribute도 구분된다. `elevated_horizon`은 수평선이 높게 앉고,
 구간을 나누는 이유가 하나 더 있다. lighting에서 25시트를 연속 리뷰한 뒤 후반부
 `case_200`을 오판했고 Stage C가 이를 교정했다. 구간을 나누면 그런 오판 자체가 줄어든다.
 
-남은 25시트 250개는 후속 구간에서 진행한다. 완료 후
-`make phase7-axis-apply AXIS=background CATALOG=catalog/backgrounds.yaml`로 승격한다.
+구간 분할은 리뷰 품질에도 기여했다. lighting에서 25시트를 연속 리뷰한 뒤 후반부
+`case_200`을 오판했고 Stage C가 이를 교정했다. background는 구간을 나눠 400개를
+판정했고 Stage C 발동이 필요한 borderline이 나오지 않았다.
 
 ### 7.10 축별 완료 gate
 
