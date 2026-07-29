@@ -1898,7 +1898,47 @@ depth sub-attribute 7종이 모두 시각적으로 구분된다. `elevated_horiz
 `case_200`을 오판했고 Stage C가 이를 교정했다. background는 구간을 나눠 400개를
 판정했고 Stage C 발동이 필요한 borderline이 나오지 않았다.
 
-### 7.10 축별 완료 gate
+### 7.10 character_design 축 calibration과 시트 밀도
+
+사전 구조 점검은 통과했다. 종결 lock이 full-length로 정확히 매핑되고 기본값
+fallthrough가 400개 중 0개이며 위험 용어도 없다. 실루엣 8종이 각 50개로 균등하다.
+
+calibration 12장의 시트 판정에서는 `asymmetric_urban`, `compact_balanced`,
+`soft_rounded` 세 항목이 모두 유사한 베이지 드레이프 로브로 수렴해 보였고
+seam/closure 모티프가 전혀 보이지 않았다. 그러나 Stage C 원해상도 확인에서 판정이
+뒤집혔다.
+
+* `asymmetric_urban ... botanical_seams`: 비대칭 offset 레이어가 뚜렷하고, 가슴
+  중앙에 곡선 seam과 **잎 모양 클로저**가 명확히 존재한다.
+* `compact_balanced ... modular_utility`: 허리에 **사각 모듈형 탭 클로저**가 있고
+  각진 턱선도 구분된다.
+
+즉 seam/closure 모티프와 얼굴 기하는 정상 표현되지만 contact sheet 해상도로는
+판독할 수 없다. 원인을 측정으로 특정했다.
+
+| 시트 밀도 | 시트 높이 | 표시 배율 | 셀 폭 | 400개 시트 수 |
+| --- | --- | --- | --- | --- |
+| 10 항목 | 3,376px | 0.59 | 161px | 40 |
+| 8 항목 | 2,716px | 0.74 | 200px | 50 |
+| 6 항목 | 2,056px | 0.97 | 265px | 67 |
+| **5 항목** | **1,726px** | **1.00** | **272px** | **80** |
+| 4 항목 | 1,396px | 1.00 | 272px | 100 |
+
+시트 폭은 seed 3열로 고정이므로 셀 폭은 표시 축소에만 좌우된다. 5항목이 축소가
+사라지는 최대 밀도이고 셀 폭이 10항목의 1.7배다. 4항목으로 더 줄여도 셀은 커지지
+않고 시트 수만 늘어난다. 따라서 character_design은 `CASES_PER_SHEET=5`로 80시트를
+사용한다.
+
+lighting과 background는 측정 대상이 조명 방향·색온도·장면 구조처럼 큰 특징이어서
+10항목 시트로 충분했다. character_design은 seam과 클로저처럼 작은 특징이 판정
+대상이므로 밀도를 낮춘다. 축의 특징 크기에 따라 시트 밀도를 정한다.
+
+남은 위험 하나를 기록한다. 실루엣 8종 중 `practical_athletic`은 스포츠웨어로 명확히
+구분되고 `asymmetric_urban`도 비대칭이 뚜렷하지만, `compact_balanced`와
+`soft_rounded`는 원해상도에서도 일반적인 드레이프 형태로 수렴한다. 전수 리뷰에서
+실루엣별 통과율을 집계해 정책이 미달 항목을 거부하도록 한다.
+
+### 7.11 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

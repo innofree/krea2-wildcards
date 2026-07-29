@@ -525,7 +525,7 @@ phase7-axis-sheets: phase7-axis-stage-a
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
 		--matrix tests/prompt_matrix/phase7_$(AXIS).jsonl \
 		--output tests/reports/phase7_$(AXIS)_v1/review \
-		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet 10 --spread-cases --overwrite
+		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet $(or $(CASES_PER_SHEET),10) --spread-cases --overwrite
 
 # Turns a completed batch review into catalog approvals. The catalogs are
 # blueprint-managed, so refresh_generation_manifest.py must adopt the

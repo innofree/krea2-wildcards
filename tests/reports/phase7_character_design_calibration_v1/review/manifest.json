@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase7_character_design_calibration_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase7_character_design_calibration.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 4,
+  "style_count": 4,
+  "image_count": 12,
+  "sheet_count": 1,
+  "modes": {
+    "mass_axis_character_design": {
+      "case_count": 4,
+      "image_count": 12,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase7_character_design_calibration_v1/review/prompt_matrix_mass_axis_character_design_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "mass_axis_character_design",
+      "sheet_index": 1,
+      "path": "tests/reports/phase7_character_design_calibration_v1/review/prompt_matrix_mass_axis_character_design_001.png",
+      "case_count": 4,
+      "image_count": 12
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+      "mode": "mass_axis_character_design",
+      "factors": {
+        "axis": "character_design",
+        "evaluated_prompt_sha256": "sha256_636d05026e69e187c00c703f272ee78fdda3c3baa59f35f3db2e91a733211cd0",
+        "item_id": "character_design_asymmetric_urban_diamond_defined_grounded_broad_torso_botanical_seams_complete_character",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000001",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000001/image_01.png"
+        },
+        {
+          "test_id": "P7000002",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000002/image_01.png"
+        },
+        {
+          "test_id": "P7000003",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "character_design_compact_balanced_square_strong_jaw_agile_medium_frame_modular_utility_complete_character",
+      "mode": "mass_axis_character_design",
+      "factors": {
+        "axis": "character_design",
+        "evaluated_prompt_sha256": "sha256_072311731570825eed68e65271a77ec32a80bc67cf2f52970aa4c368fb330115",
+        "item_id": "character_design_compact_balanced_square_strong_jaw_agile_medium_frame_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000004",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000004/image_01.png"
+        },
+        {
+          "test_id": "P7000005",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000005/image_01.png"
+        },
+        {
+          "test_id": "P7000006",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "character_design_practical_athletic_diamond_defined_statuesque_modular_utility_complete_character",
+      "mode": "mass_axis_character_design",
+      "factors": {
+        "axis": "character_design",
+        "evaluated_prompt_sha256": "sha256_05c9cd9a1d4f12a22d488e31cfbfdd1cbd8369d0d8af03e7fdda082d45a111a4",
+        "item_id": "character_design_practical_athletic_diamond_defined_statuesque_modular_utility_complete_character",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000007",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000007/image_01.png"
+        },
+        {
+          "test_id": "P7000008",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000008/image_01.png"
+        },
+        {
+          "test_id": "P7000009",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "character_design_soft_rounded_square_strong_jaw_statuesque_restrained_geometry_complete_character",
+      "mode": "mass_axis_character_design",
+      "factors": {
+        "axis": "character_design",
+        "evaluated_prompt_sha256": "sha256_9ecc34d22f9e5de2852155acf1919ced0e446c91bbc9b5da6091460e9a91d636",
+        "item_id": "character_design_soft_rounded_square_strong_jaw_statuesque_restrained_geometry_complete_character",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000010",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000010/image_01.png"
+        },
+        {
+          "test_id": "P7000011",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000011/image_01.png"
+        },
+        {
+          "test_id": "P7000012",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_character_design_calibration_v1/runs/P7000012/image_01.png"
+        }
+      ]
+    }
+  ]
+}
