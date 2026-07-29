@@ -1945,17 +1945,31 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 `refined_elongated`+`grounded_broad_torso`와 `broad_heroic`+`compact_adult`는 실제
 렌더에서 수용 가능했으므로, 조합만으로 미달을 예측하지 않고 리뷰 판정을 따른다.
 
-### 7.11 character_design 1구간 리뷰 결과
+### 7.11 character_design 리뷰 진행 상태
 
-시트 1~10, 50개를 판정했다. 통과 40, 미달 10으로 통과율 80%다. **신호가 완전히
-분리됐다.** 미달 10건이 전부 `narrow_angular` 실루엣이고, 리뷰한
-`narrow_angular` 10개가 전부 미달이며, 나머지 4개 실루엣
-(`asymmetric_urban`, `broad_heroic`, `layered_regal`, `refined_elongated`)은 각
-10개씩 40개가 전부 통과했다.
+시트 1~20, 100개를 두 구간으로 판정했다. 1구간(시트 1~10) 50개는 통과 40·미달 10,
+2구간(시트 11~20) 50개는 **50/50 전부 통과**다. 누적 통과 90, 미달 10으로 90%다.
+
+**신호가 실루엣 단위로 완전히 분리된다.**
+
+| 실루엣 | 리뷰 | 미달 |
+| --- | --- | --- |
+| `asymmetric_urban` | 20 | 0 |
+| `broad_heroic` | 20 | 0 |
+| `layered_regal` | 20 | 0 |
+| `refined_elongated` | 20 | 0 |
+| `practical_athletic` | 10 | 0 |
+| **`narrow_angular`** | **10** | **10** |
 
 `narrow_angular`는 "좁고 각진 실루엣"을 요구하는데 렌더는 일관되게 넓은 wrap 형태로
 나온다. 축 전체에서 50개(12.5%)이므로 전수 리뷰가 끝나면 이만큼이 거부될 것으로
-보인다.
+보인다. 나머지 실루엣은 90개 전부 통과했다.
+
+calibration에서 우려했던 `compact_balanced`와 `soft_rounded`는 아직 리뷰 구간에
+등장하지 않았다. 각각 50개씩이므로 후속 구간에서 확인한다.
+
+`practical_athletic`은 calibration 예상대로 스포츠웨어로 명확히 구분되고, 모듈형 대비
+패널과 잎 자수 모티프까지 동시에 표현한다.
 
 5항목 시트 밀도 변경은 효과가 확인됐다. seam/closure 모티프를 시트에서 직접 판독할
 수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
