@@ -1832,7 +1832,52 @@ Stage C를 발동했다. `weak_face` 14개가 축 항목의 5% 상한을 넘겼�
 
 런타임은 374개에서 585개로 늘었고 `krea2/lighting/complete.yaml`이 추가됐다.
 
-### 7.8 축별 완료 gate
+### 7.8 background 축 calibration 통과
+
+사전 구조 점검에서 substring 스캔이 `crowd` 50개와 `silhouette` 50개를 위험으로
+표시했으나 실제 문장은 "without **crowd**ing the figure", "leaving the
+**silhouette** unobstructed"였다. 둘 다 피사체를 보호하는 문구이고 모순이 아니다.
+Phase 6 camera 버그가 발동하지 않는 substring 검사였던 것과 대칭으로, 이번에는
+과다 발동하는 substring 검사였다. 두 경우 모두 실제 문장을 읽어야 한다는 결론이
+같다.
+
+background는 `SINGLE_AXIS_FRAMING`이 `Use an eye-level full-length camera.`이므로
+종결 lock이 full-length로 정확히 매핑되고 기본값 fallthrough가 400개 중 0개다.
+`_background_axis_anchor()`가 두 문장을 추가해 Phase 6 pairwise v1의 실패
+(배경이 피사체를 압도)를 직접 방어한다. 구조물을 난간·기둥·벤치·화분·수목 같은
+비인간 객체로 한정하고, 측정 대상 성인을 유일한 인간 형상으로 고정한다.
+
+calibration 4항목(`coastal_overlook clear_depth_layers`, `glasshouse_corridor
+leading_path`, `riverbank_path flanking_verticals`, `transit_concourse
+repeated_recession`)은 12/12장이 장면 계열, depth 구조, 색 팔레트에서 명확히
+구분됐다. `flanking_verticals`는 수직 쌍이 피사체를 감싸는 형태로,
+`repeated_recession`은 열주의 반복 후퇴로 각각 명세대로 표현됐다. 12장 전부
+비인간 구조물만 사용하고 추가 인물이 없어 anchor 두 문장이 의도대로 작동했다.
+
+### 7.9 background 축 v1 진행 상태
+
+1,200/1,200장 생성, Stage A 400/400 통과, 40장 spread 시트 생성을 완료했다. 배치
+리뷰는 시트 5까지 50/400을 판정했고 통과 49, 미달 1로 통과율 98%다. lighting의
+84.4%보다 현저히 높다.
+
+유일한 미달은 `coastal_overlook_clear_depth_layers_clear_still_natural_green_earth`
+의 팔레트 미표현이다. 같은 `natural_green_earth` 팔레트를 쓰는 시트 3의 10개 항목이
+모두 정상 표현됐으므로 계열 문제가 아니라 개별 예외다.
+
+50개 전부에서 anchor 두 문장이 작동했다. 구조물이 난간·기둥·벤치·화분·수목 같은
+비인간 객체로 한정되고 추가 인물이 없으며 피사체가 배경에 묻히지 않는다.
+
+**리뷰 판정은 `tests/reports/phase7_background_v1/review_parts/sNNN.json`에 시트
+단위로 영속화한다.** lighting 리뷰는 세션 임시 디렉터리에만 있어 세션이 끊기면
+소실되는 구조였다. 저장소에 쌓으면 구간을 나눠 진행하고 재개할 수 있다.
+
+구간을 나누는 이유가 하나 더 있다. lighting에서 25시트를 연속 리뷰한 뒤 후반부
+`case_200`을 오판했고 Stage C가 이를 교정했다. 구간을 나누면 그런 오판 자체가 줄어든다.
+
+남은 35시트 350개는 후속 구간에서 진행한다. 완료 후
+`make phase7-axis-apply AXIS=background CATALOG=catalog/backgrounds.yaml`로 승격한다.
+
+### 7.10 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

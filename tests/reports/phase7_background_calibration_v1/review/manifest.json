@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase7_background_calibration_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase7_background_calibration.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 4,
+  "style_count": 4,
+  "image_count": 12,
+  "sheet_count": 1,
+  "modes": {
+    "mass_axis_background": {
+      "case_count": 4,
+      "image_count": 12,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase7_background_calibration_v1/review/prompt_matrix_mass_axis_background_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "mass_axis_background",
+      "sheet_index": 1,
+      "path": "tests/reports/phase7_background_calibration_v1/review/prompt_matrix_mass_axis_background_001.png",
+      "case_count": 4,
+      "image_count": 12
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "factors": {
+        "axis": "background",
+        "evaluated_prompt_sha256": "sha256_e0fa5f64ec16f8714c2fc9504437b427b79077db9966efa55ffabfc00aac5c45",
+        "item_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000001",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000001/image_01.png"
+        },
+        {
+          "test_id": "P7000002",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000002/image_01.png"
+        },
+        {
+          "test_id": "P7000003",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "factors": {
+        "axis": "background",
+        "evaluated_prompt_sha256": "sha256_c061fca2e58721c7937641f2415a2c2156f8f307e302ca9c0110622b88d96543",
+        "item_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000004",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000004/image_01.png"
+        },
+        {
+          "test_id": "P7000005",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000005/image_01.png"
+        },
+        {
+          "test_id": "P7000006",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+      "mode": "mass_axis_background",
+      "factors": {
+        "axis": "background",
+        "evaluated_prompt_sha256": "sha256_4cd3a038f2645f55614633431653f483161f6c21993353e7c2467c22b7d6d203",
+        "item_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000007",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000007/image_01.png"
+        },
+        {
+          "test_id": "P7000008",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000008/image_01.png"
+        },
+        {
+          "test_id": "P7000009",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+      "mode": "mass_axis_background",
+      "factors": {
+        "axis": "background",
+        "evaluated_prompt_sha256": "sha256_40f29347478c5f0a5650c72552d88bdf33f58d639d1e7e2f7f6198770e3c9d05",
+        "item_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000010",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000010/image_01.png"
+        },
+        {
+          "test_id": "P7000011",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000011/image_01.png"
+        },
+        {
+          "test_id": "P7000012",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_background_calibration_v1/runs/P7000012/image_01.png"
+        }
+      ]
+    }
+  ]
+}

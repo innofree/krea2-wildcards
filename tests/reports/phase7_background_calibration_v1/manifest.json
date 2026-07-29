@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase7_background_calibration.jsonl",
+  "matrix_sha256": "b9ca4bcce3e5c4ef58e7e9a68eb1ddfabb85c093f7bcd057ae21c51ae761d763",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 12,
+  "completed_count": 12,
+  "style_count": 4,
+  "modes": {
+    "mass_axis_background": 12
+  },
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "scorecard": "tests/reports/phase7_background_calibration_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 71001,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 72002,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "background_coastal_overlook_clear_depth_layers_clear_still_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 73003,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000003/run.json"
+    },
+    {
+      "test_id": "P7000004",
+      "style_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 71001,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000004/run.json"
+    },
+    {
+      "test_id": "P7000005",
+      "style_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 72002,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000005/run.json"
+    },
+    {
+      "test_id": "P7000006",
+      "style_id": "background_glasshouse_corridor_leading_path_faint_depth_haze_deep_neutral_accent_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 73003,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000006/run.json"
+    },
+    {
+      "test_id": "P7000007",
+      "style_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 71001,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000007/run.json"
+    },
+    {
+      "test_id": "P7000008",
+      "style_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 72002,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000008/run.json"
+    },
+    {
+      "test_id": "P7000009",
+      "style_id": "background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 73003,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000009/run.json"
+    },
+    {
+      "test_id": "P7000010",
+      "style_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 71001,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000010/run.json"
+    },
+    {
+      "test_id": "P7000011",
+      "style_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 72002,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000011/run.json"
+    },
+    {
+      "test_id": "P7000012",
+      "style_id": "background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+      "mode": "mass_axis_background",
+      "seed": 73003,
+      "run": "tests/reports/phase7_background_calibration_v1/runs/P7000012/run.json"
+    }
+  ]
+}
