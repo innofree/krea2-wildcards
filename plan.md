@@ -1947,33 +1947,35 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 
 ### 7.11 character_design 리뷰 진행 상태
 
-시트 1~30, 150개를 10시트 구간 세 번으로 판정했다. 1구간 통과 40·미달 10, 2구간
-**50/50 전부 통과**, 3구간 통과 45·미달 5다. 누적 통과 134, 미달 16으로 89%다.
+시트 1~40, **200개(축의 절반)** 를 10시트 구간 네 번으로 판정했다. 구간별 통과는
+40·50·45·46이고 누적 통과 180, 미달 20으로 90%다.
 
-**미달이 실루엣 두 종에만 집중된다.**
+**미달이 실루엣 두 종에만 집중된다. 8종 전부가 리뷰 구간에 등장했다.**
 
 | 실루엣 | 리뷰 | 미달 |
 | --- | --- | --- |
-| `asymmetric_urban` | 30 | 0 |
-| `layered_regal` | 30 | 0 |
+| `asymmetric_urban` | 40 | 0 |
+| `layered_regal` | 40 | 0 |
+| `practical_athletic` | 30 | 0 |
 | `refined_elongated` | 30 | 0 |
 | `broad_heroic` | 20 | 0 |
-| `practical_athletic` | 20 | 0 |
-| **`compact_balanced`** | **10** | **6** |
+| `soft_rounded` | 10 | 0 |
+| **`compact_balanced`** | **20** | **10** |
 | **`narrow_angular`** | **10** | **10** |
 
 `narrow_angular`는 10/10 전부 미달이다. "좁고 각진 실루엣"을 요구하는데 렌더는
 일관되게 넓은 wrap으로 나온다.
 
-`compact_balanced`는 10개 중 6개 미달로 **혼재**다. calibration 예상보다 나은
-결과다. 짧은 벨트 재킷 형태로 렌더될 때는 "compact balanced"로 읽혀 통과하고
-(`case_102`, `case_103`, `case_106`, `case_109`), 넓은 드레이프로 수렴할 때 미달이다.
+`compact_balanced`는 20개 중 10개 미달로 정확히 **혼재**다. 짧은 벨트 재킷 형태로
+렌더될 때는 "compact balanced"로 읽혀 통과하고, 넓은 드레이프로 수렴할 때 미달이다.
 따라서 실루엣 값 전체를 일괄 거부하지 않고 항목별 판정을 따른다.
 
-나머지 5개 실루엣은 130개 전부 통과했다. `practical_athletic`은 calibration 예상대로
-스포츠웨어로 명확히 구분되고, 모듈형 대비 패널과 잎 자수 모티프까지 동시에 표현한다.
+`soft_rounded`는 calibration 우려와 달리 **10/10 전부 통과**했다. 이 축의 기본
+수렴형이 부드러운 드레이프이고 `soft_rounded`가 요구하는 것이 바로 그것이어서,
+수렴이 오히려 명세와 일치한다. calibration 4항목 표본에서는 이 구분을 할 수 없었다.
 
-`soft_rounded`는 아직 등장하지 않았다. 50개이므로 후속 구간에서 확인한다.
+나머지 6개 실루엣은 170개 전부 통과했다. `practical_athletic`은 스포츠웨어로 명확히
+구분되면서 모듈형 대비 패널과 잎 자수 모티프까지 동시에 표현한다.
 
 5항목 시트 밀도 변경은 효과가 확인됐다. seam/closure 모티프를 시트에서 직접 판독할
 수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
