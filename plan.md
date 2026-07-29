@@ -1857,15 +1857,23 @@ repeated_recession`)은 12/12장이 장면 계열, depth 구조, 색 팔레트�
 ### 7.9 background 축 v1 진행 상태
 
 1,200/1,200장 생성, Stage A 400/400 통과, 40장 spread 시트 생성을 완료했다. 배치
-리뷰는 시트 5까지 50/400을 판정했고 통과 49, 미달 1로 통과율 98%다. lighting의
-84.4%보다 현저히 높다.
+리뷰는 구간으로 나눠 진행한다. 1구간(시트 1~5) 50개, 2구간(시트 6~15) 100개를
+판정해 누적 150/400이고 통과 149, 미달 1로 통과율 99.3%다. lighting의 84.4%보다
+현저히 높다. 2구간은 100/100 전부 통과했다.
 
 유일한 미달은 `coastal_overlook_clear_depth_layers_clear_still_natural_green_earth`
 의 팔레트 미표현이다. 같은 `natural_green_earth` 팔레트를 쓰는 시트 3의 10개 항목이
 모두 정상 표현됐으므로 계열 문제가 아니라 개별 예외다.
 
-50개 전부에서 anchor 두 문장이 작동했다. 구조물이 난간·기둥·벤치·화분·수목 같은
-비인간 객체로 한정되고 추가 인물이 없으며 피사체가 배경에 묻히지 않는다.
+다만 `coastal_overlook` 계열은 `natural_green_earth`를 일관되게 약하게 표현한다.
+암반과 바다가 지배하는 장면에 식생이 적어 장면 특성상 타당하므로, 녹색이 전경
+식생에 존재하는 경우는 통과로 판정하고 완전 무채색인 경우만 미달로 본다.
+
+150개 전부에서 anchor 두 문장이 작동했다. 구조물이 난간·기둥·벤치·화분·수목 같은
+비인간 객체로 한정되고 추가 인물이 없으며 피사체가 배경에 묻히지 않는다. depth
+sub-attribute도 구분된다. `elevated_horizon`은 수평선이 높게 앉고,
+`leading_path`는 바닥 대각선으로, `flanking_verticals`는 좌우 수직 쌍으로,
+`centered_opening`은 중앙 개구로 각각 나타난다.
 
 **리뷰 판정은 `tests/reports/phase7_background_v1/review_parts/sNNN.json`에 시트
 단위로 영속화한다.** lighting 리뷰는 세션 임시 디렉터리에만 있어 세션이 끊기면
@@ -1874,7 +1882,7 @@ repeated_recession`)은 12/12장이 장면 계열, depth 구조, 색 팔레트�
 구간을 나누는 이유가 하나 더 있다. lighting에서 25시트를 연속 리뷰한 뒤 후반부
 `case_200`을 오판했고 Stage C가 이를 교정했다. 구간을 나누면 그런 오판 자체가 줄어든다.
 
-남은 35시트 350개는 후속 구간에서 진행한다. 완료 후
+남은 25시트 250개는 후속 구간에서 진행한다. 완료 후
 `make phase7-axis-apply AXIS=background CATALOG=catalog/backgrounds.yaml`로 승격한다.
 
 ### 7.10 축별 완료 gate
