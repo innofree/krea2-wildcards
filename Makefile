@@ -521,11 +521,27 @@ phase7-axis-stage-a:
 
 # Stage B batches the surviving frames into 10-item contact sheets so one review
 # call covers ten items instead of one image.
+#
+# --spread-cases is not optional here. These catalogs are combinatorial, so their
+# item ids sort near-duplicates adjacently: on linework_coloring, consecutive
+# chunking puts a mean of 2.0 distinct contour+palette combinations on a sheet
+# and the worst sheet holds a single combination ten times. Passing that sheet
+# records ten verdicts having actually inspected one. Striding raises the mean to
+# 9.8 of 10. Consecutive chunking stays the script default so the committed
+# Phase 6 review manifests keep their layout, which is why the flag lives here.
+#
+# The crib pairs every alias with its catalog feature axes, in sheet order, so a
+# sheet verdict is made against the ground truth instead of against the
+# attribute a reviewer infers from an item's position.
 phase7-axis-sheets: phase7-axis-stage-a
+	@test -n "$(CATALOG)" || (echo "ERROR: set CATALOG, e.g. make phase7-axis-sheets AXIS=linework_coloring CATALOG=catalog/linework_coloring.yaml" && exit 1)
 	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
 		--matrix tests/prompt_matrix/phase7_$(AXIS).jsonl \
 		--output tests/reports/phase7_$(AXIS)_v1/review \
 		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet $(or $(CASES_PER_SHEET),10) --spread-cases --overwrite
+	python3 scripts/build_phase7_review_crib.py tests/reports/phase7_$(AXIS)_v1/review/manifest.json \
+		--catalog $(CATALOG) $(foreach axis,$(EXCLUDE_AXES),--exclude-axis $(axis)) \
+		--output tests/reports/phase7_$(AXIS)_v1/review/crib.txt
 
 # Turns a completed batch review into catalog approvals. The catalogs are
 # blueprint-managed, so refresh_generation_manifest.py must adopt the

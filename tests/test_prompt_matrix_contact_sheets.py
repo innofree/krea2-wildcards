@@ -656,3 +656,84 @@ def test_scorecard_only_mixed_legacy_extension_digest_fails_closed(
         match="legacy extension prompt digests must be valid and identical",
     ):
         matrix_sheets.load_standalone_scorecard(scorecard, expected_seeds=5)
+
+
+def _build_with_stub_render(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    *,
+    cases: tuple[tuple[str, str], ...],
+    cases_per_sheet: int,
+    spread_cases: bool,
+) -> tuple[dict[str, Any], list[tuple[str, list[dict[str, Any]]]]]:
+    matrix, scorecard, _ = write_fixture(tmp_path, cases=cases)
+    monkeypatch.setattr(matrix_sheets, "ROOT", tmp_path)
+    rendered: list[tuple[str, list[dict[str, Any]]]] = []
+
+    def fake_render(
+        title: str, rows: list[dict[str, Any]], sheet: Path, expected_seeds: int
+    ) -> None:
+        rendered.append((sheet.name, rows))
+        sheet.write_bytes(b"sheet")
+
+    monkeypatch.setattr(matrix_sheets, "render_sheet", fake_render)
+    document = matrix_sheets.build_review(
+        scorecard,
+        matrix,
+        scorecard.parent / "review",
+        expected_seeds=2,
+        cases_per_sheet=cases_per_sheet,
+        overwrite=False,
+        spread_cases=spread_cases,
+    )
+    return document, rendered
+
+
+def test_manifest_records_which_cases_each_sheet_holds(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """A per-sheet verdict has to name the cases it covers.
+
+    Aliases are numbered over the sorted case list before chunking, so under
+    --spread-cases a sheet holds a strided selection that the alias order alone
+    cannot reconstruct. Recording a verdict against the wrong case set is how a
+    sheet review silently approves items it never displayed.
+    """
+    cases = tuple(("native", f"style_{index:02d}") for index in range(1, 13))
+    document, rendered = _build_with_stub_render(
+        tmp_path, monkeypatch, cases=cases, cases_per_sheet=4, spread_cases=True
+    )
+
+    assert document["spread_cases"] is True
+    assert document["cases_per_sheet"] == 4
+    assert [sheet["case_aliases"] for sheet in document["sheets"]] == [
+        ["case_001", "case_004", "case_007", "case_010"],
+        ["case_002", "case_005", "case_008", "case_011"],
+        ["case_003", "case_006", "case_009", "case_012"],
+    ]
+
+    # The recorded aliases must be exactly what was drawn on that sheet.
+    by_name = {name: rows for name, rows in rendered}
+    for sheet in document["sheets"]:
+        drawn = {row["alias"] for row in by_name[Path(sheet["path"]).name]}
+        assert drawn == set(sheet["case_aliases"]), sheet["sheet_index"]
+
+
+def test_sheet_case_aliases_partition_every_case_exactly_once(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    cases = tuple(("native", f"style_{index:02d}") for index in range(1, 13))
+    for spread in (False, True):
+        document, _ = _build_with_stub_render(
+            tmp_path / f"spread_{spread}",
+            monkeypatch,
+            cases=cases,
+            cases_per_sheet=5,
+            spread_cases=spread,
+        )
+        assert document["spread_cases"] is spread
+        flat = [
+            alias for sheet in document["sheets"] for alias in sheet["case_aliases"]
+        ]
+        assert sorted(flat) == [case["alias"] for case in document["cases"]], spread
+        assert len(flat) == len(set(flat)) == document["case_count"], spread

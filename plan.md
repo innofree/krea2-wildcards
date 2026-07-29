@@ -2068,20 +2068,60 @@ anchor의 "clearly drawn editorial character illustration"도 작동해 사진�
 
 **판정 범위를 명시한다.** 이 축은 sub-attribute 4종의 크기가 크게 다르다.
 
-| sub-attribute | 크기 | 10항목 시트 판독 |
-| --- | --- | --- |
-| palette families | 큼 | 가능 |
-| value planes | 큼 | 가능 |
-| contour geometry | 중간 | 가능 |
-| **edge accent (rim)** | **작음** | **불가** |
+| sub-attribute | 카탈로그 축 | 크기 | 10항목 시트 판독 |
+| --- | --- | --- | --- |
+| palette families | `coloring` (7종) | 큼 | 가능 |
+| value planes | `shading` (6종) | 큼 | 가능 |
+| contour geometry | `linework` (8종) | 중간 | 가능 |
+| **edge accent** | `accent_light` (2종) | **작음** | **불가** |
 
 원해상도 확인 결과 `controlled_rim`은 1024px에서도 소매 외곽의 미묘한 밝은 엣지로만
 존재한다. 즉 5항목 시트로 밀도를 낮춰도 판독되지 않고 시트 수만 2배가 된다.
 character_design의 seam은 5항목에서 판독됐지만 rim은 어느 밀도에서도 판독되지 않는다.
 
+**측정 범위를 정확히 해 둔다.** `accent_light`는 값이 2종이고 각각 150개다. 원해상도로
+확인한 것은 `controlled_rim` 쪽이며, `reflected_color`(그림자에 반사색이 물드는 처리)는
+따로 측정하지 않았다. 후자가 시트에서 판독될 여지는 있으나 측정하지 않았으므로 축 전체를
+시트 판정에서 제외한 채로 두고, Stage C 표본에서 두 값을 각각 확인한다. 측정하지 않은
+것을 판독 가능하다고 기록하지 않는다.
+
 따라서 10항목 시트 30장을 사용하고, **시트 판정은 앞의 3종만 대상으로 한다.** edge
 accent는 시트 판정에서 제외하고 Stage C 표본으로 존재만 확인한다. 판독할 수 없는
 속성을 판정했다고 기록하지 않는다.
+
+**`--spread-cases`가 이 축에서 필수임을 정량 확인했다.** item_id 접두 4토큰(contour
+geometry + palette family)을 조합 키로 잡고 시트별 서로 다른 조합 수를 셌다.
+
+| 청킹 | 시트 수 | 시트당 distinct 조합 (평균) | 최소 |
+| --- | --- | --- | --- |
+| 연속(기본) | 30 | 2.0 | **1** |
+| `--spread-cases` | 30 | 9.8 | 9 |
+
+인접 항목 268/299쌍이 같은 접두를 공유한다. 즉 연속 청킹에서는 시트 하나가 사실상
+같은 조합 1~2종의 반복이고, 최악의 시트는 근접 중복 10장이다. 그런 시트를 통과시키면
+실제로 검증한 조합은 1종인데 10종을 판정했다고 기록하게 되고, 나머지 조합의 계통적
+실패는 승격 이후에 드러난다. 이는 오탐이 아니라 **미탐**이며 더 위험하다.
+`phase7-axis-sheets` 타깃에 `--spread-cases`가 이미 포함되어 있어 조합 키 기준
+distinct가 9.8/10으로 올라간다. 커밋된 Phase 6 review manifest의 레이아웃 보존을 위해
+연속 청킹이 스크립트 기본값으로 남아 있으므로, 이 플래그는 타깃에서 명시적으로 계속
+유지해야 한다.
+
+**여기서 review manifest의 실제 결함이 드러났다.** alias는 청킹 *이전* 정렬된 case
+목록에 번호를 매기므로, `--spread-cases`에서 시트는 stride 선택을 담게 되고 alias
+순서만으로는 시트 내용을 복원할 수 없다. 그런데 manifest는 시트별 case 목록도, spread
+사용 여부도 기록하지 않았다. 즉 시트 단위 판정을 기록하면서 그 판정이 어느 항목들을
+덮는지 manifest만으로 확인할 방법이 없었다. 시트별 `case_aliases`와 최상위
+`spread_cases`를 기록하도록 고쳤고, 기록된 alias가 실제로 그 시트에 그려진 것과 일치하며
+전체 case 집합을 정확히 분할한다는 불변식을 테스트로 고정했다.
+
+**`build_phase7_review_crib.py`를 추가했다.** manifest의 `case_aliases`를 권위로 삼아
+시트 순서대로 각 alias의 카탈로그 feature axes를 나열한다. montage 라벨에는 alias와
+시드만 들어가므로 속성은 카탈로그에서 와야 하고, 시트 위 위치로 속성을 추측하는 것은
+이미 이 phase에서 두 번 오판을 만들었다(pose `case_108`을 `low_kneeling`으로 봤으나
+실제로는 정상 렌더된 `measured_walking_pause`였다). 판독 불가 축은 `--exclude-axis`로
+**표시**하되 지우지 않는다. 지워 버리면 크립이 완결된 판정 체크리스트처럼 보이고, 아무도
+볼 수 없었던 속성이 승인으로 기록되는 경로가 된다. `case_aliases`가 없는 구
+manifest에서는 fail-closed로 거부한다.
 
 ### 7.14 codex 코드 감사 결과와 substring 오탐 규칙
 
@@ -2121,7 +2161,40 @@ linework_coloring의 `silhouette`은 "keeping **silhouette** edges clear", 그�
 외부 모델에 감사를 맡길 때도 개수가 아니라 문맥 문자열을 전달한다. 이번에 codex에
 개수만 준 것이 오탐의 직접 원인이었다.
 
-### 7.15 축별 완료 gate
+### 7.15 형제 값 판별 기준과 calibration 설계 공백
+
+codex에 두 번째 작업을 위임했다. 이번에는 개수가 아니라 4개 속성 23개 값의 **표준 문장
+전체**를 넘기고, 각 값에 대해 형제 값과 구별되는 검사 가능한 문장 하나와, 161px 셀에서
+구별되지 않는 형제 쌍을 요구했다. 텍스트 추론이므로 codex가 할 수 있는 일이고, 결과는
+제 시트 판정 기준을 인상에서 명시 기준으로 바꾼다.
+
+**결과가 §7.13의 가정과 충돌한다.** 나는 palette families, value planes, contour
+geometry 3종을 판독 가능으로 기록했으나, codex는 판정 수용력을 coloring > linework >
+accent_light > shading 순으로 매기고 **shading을 가장 약한 축**으로 본다. 제시된 붕괴 쌍:
+
+| 속성 | 붕괴 쌍 | 붕괴 내용 |
+| --- | --- | --- |
+| shading | `fine_tonal_hatching` / `broad_blended_plane` | 해칭이 다운스케일에서 연속 톤으로 뭉갬 |
+| shading | `soft_two_band` / `crisp_shape_shadow` | feathering이 사라져 깨끗한 그림자 형태만 남음 |
+| shading | `broad_blended_plane` / `transparent_glaze` | 투명 글레이즈가 일반 블렌딩으로 축소 |
+| shading | `broad_blended_plane` / `soft_two_band` | 2단 그림자가 일반 블렌딩으로 |
+| shading | `subtle_contact_shadow` / `crisp_shape_shadow` | 작은 접촉 그림자가 축소된 경계 그림자로 |
+| linework | `fine_tapered` / `crisp_uniform` | 테이퍼 끝점이 소실되어 균일선으로 |
+| linework | `angular_precise` / `crisp_uniform` | 둘 다 단정한 선화로 읽힘 |
+| coloring | `warm_earth` / `skin_centered_neutral` | 황토·크림·갈색이 피부 언더톤과 같은 난색 중성으로 |
+| coloring | `airy_pastel` / `limited_two_tone` | 창백한 저채도가 2색 구성처럼 보임 |
+
+**이건 이미지를 보지 않은 모델의 예측이므로 그대로 채택하지 않는다.** 그러나 제
+calibration의 실제 설계 공백을 정확히 짚었다. calibration 4항목은 **최대한 멀리 떨어진**
+조합을 골랐기 때문에 축이 반응하는지는 확인했지만 **형제 값끼리 구별되는지는 한 번도
+시험하지 않았다.** 시트 판정은 형제 구별 문제인데 calibration은 축 반응 문제만 검증한
+것이다. 이 구분을 이전 축들에서도 하지 않았다.
+
+따라서 이미지가 완성되면 시트 판정 범위를 확정하기 전에, 위 붕괴 쌍을 실제 프레임으로
+161px 나란히 놓고 확인한다. 확인 결과에 따라 §7.13의 3종 범위를 그대로 두거나 좁힌다.
+codex의 예측이 맞는지 틀리는지 어느 쪽이든 측정 결과를 기록한다.
+
+### 7.16 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

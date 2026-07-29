@@ -507,6 +507,7 @@ def sheet_plan(
                     "case_count": len(chunk),
                     "image_count": len(chunk_rows),
                     "path": output / f"prompt_matrix_{mode}_{sheet_index:03d}.png",
+                    "case_aliases": [aliases[case] for case in chunk],
                     "rows": chunk_rows,
                 }
             )
@@ -573,11 +574,17 @@ def manifest_document(
     *,
     expected_seeds: int,
     cases_per_sheet: int,
+    spread_cases: bool = False,
 ) -> dict[str, Any]:
     by_case: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         by_case[(row["mode"], row["style_id"])].append(row)
 
+    # case_aliases makes the manifest self-describing. Aliases are numbered over
+    # the sorted case list before chunking, so with --spread-cases a sheet holds
+    # a strided selection and its contents cannot be recovered from the alias
+    # order alone. A reviewer recording a per-sheet verdict has to know exactly
+    # which cases that verdict covers.
     sheets = [
         {
             "mode": sheet["mode"],
@@ -585,6 +592,7 @@ def manifest_document(
             "path": repo_relative(sheet["path"]),
             "case_count": sheet["case_count"],
             "image_count": sheet["image_count"],
+            "case_aliases": list(sheet["case_aliases"]),
         }
         for sheet in planned
     ]
@@ -633,6 +641,7 @@ def manifest_document(
         "expected_seeds_per_case": expected_seeds,
         "seeds": list(seeds),
         "cases_per_sheet": cases_per_sheet,
+        "spread_cases": spread_cases,
         "case_count": len(aliases),
         "style_count": len({row["style_id"] for row in rows}),
         "image_count": len(rows),
@@ -749,6 +758,7 @@ def build_review(
         seeds,
         expected_seeds=expected_seeds,
         cases_per_sheet=cases_per_sheet,
+        spread_cases=spread_cases,
     )
 
     output.parent.mkdir(parents=True, exist_ok=True)
