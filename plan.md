@@ -1992,7 +1992,7 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
 포켓·대비 패널이 명확히 보였고, 10항목 시트에서는 전혀 보이지 않던 특징이다.
 
-### 7.12 pose 축 calibration 통과
+### 7.12 pose 축 v1 승격 결과
 
 사전 구조 점검에서 잠재 모순을 찾았다. pose anchor는 전신 프레임과
 "both feet visible"을 요구하는데 카탈로그에 `seated` 44개와 `kneeling` 20개가 있다.
@@ -2013,7 +2013,42 @@ calibration 4항목은 12/12장이 포즈와 손 배치에서 명확히 구분�
 안에 보인다. 즉 모순이 해소된 상태로 생성된다.
 
 pose는 측정 대상이 사지 배치·스탠스·시선 같은 큰 신체 특징이므로
-character_design과 달리 10항목 시트로 충분하다. 326개를 33시트로 리뷰한다.
+character_design과 달리 10항목 시트로 충분하다. 326개를 33시트로 리뷰했다.
+
+전수 리뷰 결과는 통과 322, 미달 4로 **98.77%** 다. Phase 7에서 가장 높은 통과율이다.
+
+| 포즈 계열 | 항목 | 미달 | 통과율 |
+| --- | --- | --- | --- |
+| `frontal_even_weight` | 44 | 0 | 100% |
+| `measured_walking_pause` | 44 | 0 | 100% |
+| `side_reclining` | 44 | 0 | 100% |
+| `standing_three_quarter` | 44 | 0 | 100% |
+| `grounded_forward_step` | 43 | 0 | 100% |
+| `upright_*` | 87 | 0 | 100% |
+| **`low_kneeling`** | **20** | **4** | **80%** |
+
+6개 계열 282개가 전부 통과했다. 손 배치 7종
+(`collar_and_hip`, `waist_and_open`, `open_palms_extended`, `hands_near_chest`,
+`loosely_clasped`, `low_crossed_forearm`, `arms_relaxed_clear`)도 모두 구분된다.
+
+사전 점검에서 우려했던 두 계열이 오히려 완벽했다. `side_reclining` 44개는 낮은 판 위에
+누운 자세로 전부 표현됐고, `upright_seated` 항목은 의자에 앉아 무릎을 굽히고 양발이
+전신 프레임 안에 보이는 형태로 전부 렌더됐다. Phase 6의 착석 조정문이 실제 생성에서
+작동함을 326개 규모로 확인했다.
+
+미달 4건은 전부 `low_kneeling`이고 하위 패턴이 명확하다. `collar_and_hip`과 결합한
+12개는 12/12 통과했고(seed 3개 모두 무릎 착지), 미달은 `hands_near_chest`와 결합한
+8개 중 3개, 그리고 `collar_and_hip` 중 seed 1개만 표현된 1개다. 즉 손을 가슴 앞에
+모으는 지시가 무릎 착지 지시와 경쟁한다. 같은 항목의 seed 간에도 결과가 갈리므로 모델
+샘플링 분산이고, 항목별 판정을 따랐다.
+
+`poses.yaml`에는 `generated` 24개가 남는다. Phase 6이 불안정으로 제외한
+`pose_low_kneeling_low_crossed_forearm*`과 `pose_low_kneeling_loosely_clasped*`
+계열이며 matrix에 포함되지 않았으므로 판정 대상이 아니다. §7.0에 기록한 대로 별도
+판단으로 남긴다.
+
+런타임은 1,324개에서 1,646개로 늘었고 `krea2/pose/gesture.yaml`이 추가됐다.
+runtime coverage는 1,652/1,652 경로 통과다.
 
 ### 7.13 축별 완료 gate
 
