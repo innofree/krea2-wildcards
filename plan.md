@@ -1992,7 +1992,30 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
 포켓·대비 패널이 명확히 보였고, 10항목 시트에서는 전혀 보이지 않던 특징이다.
 
-### 7.12 축별 완료 gate
+### 7.12 pose 축 calibration 통과
+
+사전 구조 점검에서 잠재 모순을 찾았다. pose anchor는 전신 프레임과
+"both feet visible"을 요구하는데 카탈로그에 `seated` 44개와 `kneeling` 20개가 있다.
+착석·무릎 포즈는 발이 가려지거나 전신 lock과 충돌할 수 있다.
+
+그러나 Phase 6이 이미 방어하고 있었다. `_pose_axis_anchor()`가 착석 항목에
+"forward from the stool, knees bent, both lower legs descending to the floor, and
+both feet visible" 조정문을 삽입한다. 확인 결과 착석 44/44와 무릎 20/20 전부
+해당 조정문이 적용된다. 이것이 profile algorithm의 `pose-body-state-anchor-v2`다.
+
+calibration 4항목은 12/12장이 포즈와 손 배치에서 명확히 구분됐다.
+`frontal_even_weight`는 양발 균등 하중, `measured_walking_pause`는 한 발이 앞으로
+나간 보행 정지, `standing_three_quarter`는 3/4 스탠스, `upright_seated`는 의자에
+앉은 자세로 각각 나타났다. `collar_and_hip`과 `open_palms_extended` 손 배치도
+구분된다.
+
+착석 항목은 조정문대로 렌더됐다. 의자가 존재하고 무릎이 굽혀지며 양발이 전신 프레임
+안에 보인다. 즉 모순이 해소된 상태로 생성된다.
+
+pose는 측정 대상이 사지 배치·스탠스·시선 같은 큰 신체 특징이므로
+character_design과 달리 10항목 시트로 충분하다. 326개를 33시트로 리뷰한다.
+
+### 7.13 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

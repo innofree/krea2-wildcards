@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase7_pose_calibration.jsonl",
+  "matrix_sha256": "de8f09294284b060dadb39053c2c1a11c20beafdec251851c1811a831ba2c970",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 12,
+  "completed_count": 12,
+  "style_count": 4,
+  "modes": {
+    "mass_axis_pose": 12
+  },
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "scorecard": "tests/reports/phase7_pose_calibration_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 71001,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 72002,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 73003,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000003/run.json"
+    },
+    {
+      "test_id": "P7000004",
+      "style_id": "pose_measured_walking_pause_collar_and_hip_lifted_attentive_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 71001,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000004/run.json"
+    },
+    {
+      "test_id": "P7000005",
+      "style_id": "pose_measured_walking_pause_collar_and_hip_lifted_attentive_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 72002,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000005/run.json"
+    },
+    {
+      "test_id": "P7000006",
+      "style_id": "pose_measured_walking_pause_collar_and_hip_lifted_attentive_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 73003,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000006/run.json"
+    },
+    {
+      "test_id": "P7000007",
+      "style_id": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 71001,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000007/run.json"
+    },
+    {
+      "test_id": "P7000008",
+      "style_id": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 72002,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000008/run.json"
+    },
+    {
+      "test_id": "P7000009",
+      "style_id": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 73003,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000009/run.json"
+    },
+    {
+      "test_id": "P7000010",
+      "style_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 71001,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000010/run.json"
+    },
+    {
+      "test_id": "P7000011",
+      "style_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 72002,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000011/run.json"
+    },
+    {
+      "test_id": "P7000012",
+      "style_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "seed": 73003,
+      "run": "tests/reports/phase7_pose_calibration_v1/runs/P7000012/run.json"
+    }
+  ]
+}

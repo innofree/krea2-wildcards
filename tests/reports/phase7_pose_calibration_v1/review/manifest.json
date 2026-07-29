@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/phase7_pose_calibration_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/phase7_pose_calibration.jsonl",
+  "expected_seeds_per_case": 3,
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "cases_per_sheet": 10,
+  "case_count": 4,
+  "style_count": 4,
+  "image_count": 12,
+  "sheet_count": 1,
+  "modes": {
+    "mass_axis_pose": {
+      "case_count": 4,
+      "image_count": 12,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/phase7_pose_calibration_v1/review/prompt_matrix_mass_axis_pose_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "mass_axis_pose",
+      "sheet_index": 1,
+      "path": "tests/reports/phase7_pose_calibration_v1/review/prompt_matrix_mass_axis_pose_001.png",
+      "case_count": 4,
+      "image_count": 12
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "factors": {
+        "axis": "pose",
+        "evaluated_prompt_sha256": "sha256_8226023e51827f158f5c3e57a7e9162f90e83d03008e4406c69aa2bc9bd1cec2",
+        "item_id": "pose_frontal_even_weight_collar_and_hip_direct_level_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000001",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000001/image_01.png"
+        },
+        {
+          "test_id": "P7000002",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000002/image_01.png"
+        },
+        {
+          "test_id": "P7000003",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "pose_measured_walking_pause_collar_and_hip_lifted_attentive_controlled_forward_energy_complete_pose",
+      "mode": "mass_axis_pose",
+      "factors": {
+        "axis": "pose",
+        "evaluated_prompt_sha256": "sha256_2070c28502e62d614be6f19f60d5c47aa6ba4a5f591932c6bbc82e1ce2c98299",
+        "item_id": "pose_measured_walking_pause_collar_and_hip_lifted_attentive_controlled_forward_energy_complete_pose",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000004",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000004/image_01.png"
+        },
+        {
+          "test_id": "P7000005",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000005/image_01.png"
+        },
+        {
+          "test_id": "P7000006",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "factors": {
+        "axis": "pose",
+        "evaluated_prompt_sha256": "sha256_24ea88bfb46abbe41b6270f45c3e813370f02353d694c575fa4f3192f448de60",
+        "item_id": "pose_standing_three_quarter_open_palms_extended_direct_level_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000007",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000007/image_01.png"
+        },
+        {
+          "test_id": "P7000008",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000008/image_01.png"
+        },
+        {
+          "test_id": "P7000009",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+      "mode": "mass_axis_pose",
+      "factors": {
+        "axis": "pose",
+        "evaluated_prompt_sha256": "sha256_6af7b7c17c75df8bc2ff8be34a95258eb264da60413f3cbb9fad6adc50868e02",
+        "item_id": "pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+        "prompt_profile_sha256": "sha256_2d3383b40755af1dc967c1474a5870fde9eb5da707bffd707c965425c4d1fe9c"
+      },
+      "items": [
+        {
+          "test_id": "P7000010",
+          "seed": 71001,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000010/image_01.png"
+        },
+        {
+          "test_id": "P7000011",
+          "seed": 72002,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000011/image_01.png"
+        },
+        {
+          "test_id": "P7000012",
+          "seed": 73003,
+          "image_path": "tests/reports/phase7_pose_calibration_v1/runs/P7000012/image_01.png"
+        }
+      ]
+    }
+  ]
+}
