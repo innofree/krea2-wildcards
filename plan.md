@@ -1938,7 +1938,30 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 `soft_rounded`는 원해상도에서도 일반적인 드레이프 형태로 수렴한다. 전수 리뷰에서
 실루엣별 통과율을 집계해 정책이 미달 항목을 거부하도록 한다.
 
-### 7.11 축별 완료 gate
+카탈로그 자체의 내부 긴장도 측정했다. 실루엣과 비율이 서로 당기는 조합이 400개 중
+44개(11%)다. `narrow_angular`+`grounded_broad_torso` 9개,
+`refined_elongated`+`grounded_broad_torso` 9개, `broad_heroic`+`compact_adult` 10개,
+`compact_balanced`+`statuesque` 8개, `soft_rounded`+`statuesque` 8개다. 다만
+`refined_elongated`+`grounded_broad_torso`와 `broad_heroic`+`compact_adult`는 실제
+렌더에서 수용 가능했으므로, 조합만으로 미달을 예측하지 않고 리뷰 판정을 따른다.
+
+### 7.11 character_design 1구간 리뷰 결과
+
+시트 1~10, 50개를 판정했다. 통과 40, 미달 10으로 통과율 80%다. **신호가 완전히
+분리됐다.** 미달 10건이 전부 `narrow_angular` 실루엣이고, 리뷰한
+`narrow_angular` 10개가 전부 미달이며, 나머지 4개 실루엣
+(`asymmetric_urban`, `broad_heroic`, `layered_regal`, `refined_elongated`)은 각
+10개씩 40개가 전부 통과했다.
+
+`narrow_angular`는 "좁고 각진 실루엣"을 요구하는데 렌더는 일관되게 넓은 wrap 형태로
+나온다. 축 전체에서 50개(12.5%)이므로 전수 리뷰가 끝나면 이만큼이 거부될 것으로
+보인다.
+
+5항목 시트 밀도 변경은 효과가 확인됐다. seam/closure 모티프를 시트에서 직접 판독할
+수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
+포켓·대비 패널이 명확히 보였고, 10항목 시트에서는 전혀 보이지 않던 특징이다.
+
+### 7.12 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
