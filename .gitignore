@@ -32,3 +32,8 @@ tests/reports/**/*.png
 tests/reports/**/*.jpg
 tests/reports/**/*.jpeg
 tests/reports/**/*.webp
+
+# Transient codex/gstack skill scratch: gstack-paths resolves TMP_ROOT into the
+# repo, and codex stderr captures contain local account identifiers that
+# check_sensitive_data.py correctly refuses to commit.
+.gstack/

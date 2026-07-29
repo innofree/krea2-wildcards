@@ -2050,7 +2050,78 @@ character_design과 달리 10항목 시트로 충분하다. 326개를 33시트�
 런타임은 1,324개에서 1,646개로 늘었고 `krea2/pose/gesture.yaml`이 추가됐다.
 runtime coverage는 1,652/1,652 경로 통과다.
 
-### 7.13 축별 완료 gate
+### 7.13 linework_coloring 축 calibration과 판정 범위
+
+사전 구조 점검은 통과했다. 고정 framing이 `Use an eye-level mid-thigh camera.`이므로
+종결 lock이 thigh-up으로 정확히 매핑되고 기본값 fallthrough가 300개 중 0개다.
+
+substring 스캔이 `silhouette` 175건을 표시했으나 실제 문맥은 "keeping silhouette
+edges clear"와 "rim accent that separates only the shadow-side silhouette"였다. 둘 다
+측정 속성을 서술하는 문구이고 모순이 아니다. background에서 `crowd`가 "without
+crowding the figure"였던 것과 같은 오탐이다.
+
+calibration 4항목 12장은 Phase 7에서 가장 명확한 분리를 보였다. `angular_precise`는
+각진 색면과 측정된 코너로, `limited_two_tone`은 문자 그대로 2색으로,
+`warm_earth`+`transparent_glaze`는 올리브·황토의 투명 글레이즈로 각각 나타났다.
+anchor의 "clearly drawn editorial character illustration"도 작동해 사진이 아니라
+회화체로 렌더된다.
+
+**판정 범위를 명시한다.** 이 축은 sub-attribute 4종의 크기가 크게 다르다.
+
+| sub-attribute | 크기 | 10항목 시트 판독 |
+| --- | --- | --- |
+| palette families | 큼 | 가능 |
+| value planes | 큼 | 가능 |
+| contour geometry | 중간 | 가능 |
+| **edge accent (rim)** | **작음** | **불가** |
+
+원해상도 확인 결과 `controlled_rim`은 1024px에서도 소매 외곽의 미묘한 밝은 엣지로만
+존재한다. 즉 5항목 시트로 밀도를 낮춰도 판독되지 않고 시트 수만 2배가 된다.
+character_design의 seam은 5항목에서 판독됐지만 rim은 어느 밀도에서도 판독되지 않는다.
+
+따라서 10항목 시트 30장을 사용하고, **시트 판정은 앞의 3종만 대상으로 한다.** edge
+accent는 시트 판정에서 제외하고 Stage C 표본으로 존재만 확인한다. 판독할 수 없는
+속성을 판정했다고 기록하지 않는다.
+
+### 7.14 codex 코드 감사 결과와 substring 오탐 규칙
+
+남은 6개 축(linework_coloring, media_rendering, effect, hair_design, fashion,
+preset)에 camera와 같은 죽은 가드나 내부 모순이 더 있는지 외부 모델(codex)에 감사를
+맡겼다. codex의 bwrap 샌드박스가 이 환경에서 loopback을 만들지 못해 파일을 읽을 수
+없었으므로, 프롬프트 조립 구조·고정 framing 문자열·축별 용어 측정치·조립된 실제
+프롬프트를 추출해 인라인으로 전달했다. 샌드박스를 끄는 우회는 하지 않았다.
+
+**유효한 결과 — 죽은 가드 없음.** 8개 축의 고정 framing 문자열이 전부
+`_framing_contract()`의 실제 분기로 매핑되고 기본값 fallthrough가 0이다. camera만
+항목 본문을 `framing_value`로 넘기므로 camera에 국한된 결함이었음이 독립 확인됐다.
+기본값에 빠지려면 framing 문자열이 `full-length`, `waist-up`, `mid-thigh` 같은 인식
+토큰을 잃거나 matcher 키워드 집합이 바뀌어야 한다.
+
+**무효한 결과 — [P1] 2건과 [P2] 다수가 전부 substring 오탐이다.** 실제 문맥을 확인한
+결과는 다음과 같다.
+
+| 축 / 용어 | 실제 문장 | 판정 |
+| --- | --- | --- |
+| `hair_design` / `profile` 25 | "a tapered undercut with a compact side **profile**" — 헤어컷 측면 윤곽 형태 | 오탐 |
+| `effect` / `wide` 50 | "drifting upward in a slow **widening** path" — 효과 확산 경로 | 오탐 |
+| `effect` / `dense` 50 | "varied spacing and **no dense** overlap across the subject" — 보호 문구 | 오탐 |
+| `media_rendering` / `dense` 19 | "**dense** stippled marks" — 마크 텍스처 | 오탐 |
+| `fashion` / `wide` 50 | "sharply cut **wide-leg** trousers" — 의복 재단 | 오탐 |
+
+`effect`의 `dense`는 codex가 우려한 것과 정반대로 효과가 피사체를 덮지 않게 막는
+문구다.
+
+**규칙으로 고정한다. substring 개수만으로는 모순과 서술을 구분할 수 없다.** 이 세션에서
+같은 오탐이 세 번 나왔다. background의 `crowd`는 "without **crowd**ing the figure",
+linework_coloring의 `silhouette`은 "keeping **silhouette** edges clear", 그리고 이번
+감사의 5건이다. 반대로 camera의 실제 버그는 substring이 **존재하지 않아서** 가드가
+죽은 경우였다. 즉 이 검사는 양방향으로 신뢰할 수 없다.
+
+따라서 위험 용어 스캔은 후보 추출까지만 쓰고, 판정은 항상 해당 문장을 읽어서 한다.
+외부 모델에 감사를 맡길 때도 개수가 아니라 문맥 문자열을 전달한다. 이번에 codex에
+개수만 준 것이 오탐의 직접 원인이었다.
+
+### 7.15 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
