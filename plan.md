@@ -1945,37 +1945,48 @@ lighting과 background는 측정 대상이 조명 방향·색온도·장면 구�
 `refined_elongated`+`grounded_broad_torso`와 `broad_heroic`+`compact_adult`는 실제
 렌더에서 수용 가능했으므로, 조합만으로 미달을 예측하지 않고 리뷰 판정을 따른다.
 
-### 7.11 character_design 리뷰 진행 상태
+### 7.11 character_design 축 v1 승격 결과
 
-시트 1~40, **200개(축의 절반)** 를 10시트 구간 네 번으로 판정했다. 구간별 통과는
-40·50·45·46이고 누적 통과 180, 미달 20으로 90%다.
+80장 spread 시트로 400개 전수 리뷰를 완료했다. 10시트 구간 여덟 번으로 나눠 진행했고
+구간별 통과는 40·50·45·46·40·45·45·45다. 결과는 통과 340, 미달 60으로 85%다.
 
-**미달이 실루엣 두 종에만 집중된다. 8종 전부가 리뷰 구간에 등장했다.**
+**미달이 실루엣 두 종에만 집중되고, 나머지 6종은 완전 무결점이다.**
 
-| 실루엣 | 리뷰 | 미달 |
-| --- | --- | --- |
-| `asymmetric_urban` | 40 | 0 |
-| `layered_regal` | 40 | 0 |
-| `practical_athletic` | 30 | 0 |
-| `refined_elongated` | 30 | 0 |
-| `broad_heroic` | 20 | 0 |
-| `soft_rounded` | 10 | 0 |
-| **`compact_balanced`** | **20** | **10** |
-| **`narrow_angular`** | **10** | **10** |
+| 실루엣 | 항목 | 미달 | 통과율 |
+| --- | --- | --- | --- |
+| `asymmetric_urban` | 50 | 0 | 100% |
+| `broad_heroic` | 50 | 0 | 100% |
+| `layered_regal` | 50 | 0 | 100% |
+| `practical_athletic` | 50 | 0 | 100% |
+| `refined_elongated` | 50 | 0 | 100% |
+| `soft_rounded` | 50 | 0 | 100% |
+| **`compact_balanced`** | **50** | **10** | **80%** |
+| **`narrow_angular`** | **50** | **50** | **0%** |
 
-`narrow_angular`는 10/10 전부 미달이다. "좁고 각진 실루엣"을 요구하는데 렌더는
-일관되게 넓은 wrap으로 나온다.
+`narrow_angular`는 50/50 전부 미달이다. "좁고 각진 실루엣"을 요구하는데 렌더는 예외
+없이 넓은 wrap으로 나온다. 이 실루엣 값은 이 프롬프트 구조에서 표현되지 않는다.
 
-`compact_balanced`는 20개 중 10개 미달로 정확히 **혼재**다. 짧은 벨트 재킷 형태로
-렌더될 때는 "compact balanced"로 읽혀 통과하고, 넓은 드레이프로 수렴할 때 미달이다.
-따라서 실루엣 값 전체를 일괄 거부하지 않고 항목별 판정을 따른다.
+`compact_balanced`는 50개 중 10개 미달이고 미달 10건이 전부 시트 21~40 구간에
+몰려 있다. 짧은 벨트 재킷으로 렌더될 때 통과하고 넓은 드레이프로 수렴할 때 미달인데,
+같은 항목의 seed 간에도 두 결과가 나타나므로 항목 속성이 아니라 모델 샘플링 분산이다.
+따라서 실루엣 값 전체를 일괄 거부하지 않고 항목별 판정을 따랐다.
 
-`soft_rounded`는 calibration 우려와 달리 **10/10 전부 통과**했다. 이 축의 기본
+`soft_rounded`는 calibration 우려와 달리 **50/50 전부 통과**했다. 이 축의 기본
 수렴형이 부드러운 드레이프이고 `soft_rounded`가 요구하는 것이 바로 그것이어서,
-수렴이 오히려 명세와 일치한다. calibration 4항목 표본에서는 이 구분을 할 수 없었다.
+수렴이 오히려 명세와 일치한다. calibration 4항목 표본에서는 이 구분을 할 수 없었고
+전수 리뷰만이 판별할 수 있었다.
 
-나머지 6개 실루엣은 170개 전부 통과했다. `practical_athletic`은 스포츠웨어로 명확히
-구분되면서 모듈형 대비 패널과 잎 자수 모티프까지 동시에 표현한다.
+`practical_athletic`은 스포츠웨어로 명확히 구분되면서 모듈형 대비 패널과 잎 자수
+모티프를 동시에 표현한다. 실루엣과 모티프 sub-attribute가 경쟁하지 않고 합성된다.
+
+5항목 시트 밀도 결정이 이 결과를 가능하게 했다. `botanical_seams`의 잎 자수와
+`modular_utility`의 사각 탭·패치 포켓·대비 패널을 시트에서 직접 판독했고, 10항목
+시트에서는 전혀 보이지 않던 특징이다.
+
+승격은 정책이 계산했다. `summarize_results.py` 결과가 approved 340, rejected 60으로
+리뷰 판정과 정확히 일치했다. 런타임은 984개에서 1,324개로 늘었고
+`krea2/character/design_language.yaml`이 추가됐다. runtime coverage는 1,329/1,329
+경로 통과다.
 
 5항목 시트 밀도 변경은 효과가 확인됐다. seam/closure 모티프를 시트에서 직접 판독할
 수 있었다. `botanical_seams` 항목의 잎 자수와 `modular_utility` 항목의 사각 탭·패치
