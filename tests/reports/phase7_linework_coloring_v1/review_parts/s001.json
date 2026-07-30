@@ -1,0 +1,12 @@
+{
+  "case_001": ["pass", "angular_precise + deep_jewel + broad_blended_plane: angular color-block facets in true jewel saturation (green/maroon/navy), broad blended planes"],
+  "case_031": ["pass", "angular_precise + skin_centered_neutral + broad_blended_plane: neutral cream tones, angular facets on garment"],
+  "case_061": ["pass", "bold_outer_sparse_inner + cool_nocturne + transparent_glaze: cool blue-teal palette, glazed translucent look"],
+  "case_091": ["hold", "broken_dry + deep_jewel + crisp_shape_shadow: coloring fails -- garment renders flat black with no jewel saturation, confirmed at full resolution (see plan.md 7.18 deep_jewel x shading finding). linework/shading not independently readable on all-black fabric"],
+  "case_121": ["pass", "crisp_uniform + limited_two_tone + soft_two_band: two-tone contrast is weak across seeds but present; shading bands read correctly"],
+  "case_151": ["pass", "elastic_pressure + airy_pastel + broad_blended_plane: clear multi-hue pastel (pink/mint/lavender)"],
+  "case_181": ["pass", "elastic_pressure + warm_earth + fine_tonal_hatching: warm olive/brown coloring clear; hatching texture not clearly visible at sheet density but coloring/linework carry the verdict"],
+  "case_211": ["hold", "fine_tapered + skin_centered_neutral + subtle_contact_shadow: this is BOTH risk pairs flagged in plan.md 7.15 measurement (fine_tapered/crisp_uniform and subtle_contact_shadow/crisp_shape_shadow both collapse at 161px). Coloring (skin_centered_neutral) passes; linework and shading held for Stage C"],
+  "case_241": ["hold", "rounded_soft + deep_jewel + soft_two_band: coloring fails -- flat black, no jewel saturation, same deep_jewel x shading pattern as case_091"],
+  "case_271": ["hold", "selective_edge + deep_jewel + fine_tonal_hatching: coloring fails -- flat black at full resolution, confirmed. Fine hatch line texture on sleeves is visible (linework/shading legible) but coloring absent"]
+}

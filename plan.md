@@ -2199,6 +2199,28 @@ calibration의 실제 설계 공백을 정확히 짚었다. calibration 4항목�
 161px 나란히 놓고 확인한다. 확인 결과에 따라 §7.13의 3종 범위를 그대로 두거나 좁힌다.
 codex의 예측이 맞는지 틀리는지 어느 쪽이든 측정 결과를 기록한다.
 
+**측정 결과(생성 완료 후 8쌍 전수 실행).** codex의 "shading이 가장 약하다"는 축 단위
+예측은 너무 거칠었다. 실제로는 같은 축 안에서도 쌍마다 갈린다.
+
+| 쌍 | 결과 | 근거 |
+| --- | --- | --- |
+| shading `fine_tonal_hatching` / `broad_blended_plane` | **통과** | 해칭 대각선 질감이 161px에서도 뚜렷 |
+| shading `soft_two_band` / `crisp_shape_shadow` | **통과** | 각진 단단한 그림자 대 부드러운 패널이 명확히 갈림 |
+| shading `broad_blended_plane` / `transparent_glaze` | 경계 | 일부 표본은 갈리고 일부는 동일하게 보임 |
+| shading `subtle_contact_shadow` / `crisp_shape_shadow` | **붕괴** | 거의 동일한 각진 그림자로 렌더 |
+| linework `angular_precise` / `crisp_uniform` | **통과** | 각진 색면 패싯이 명확 |
+| linework `fine_tapered` / `crisp_uniform` | **붕괴** | 두 값 다 매끈한 윤곽으로 렌더, 이 항목들은 사진에 가까운 초상 프레임이라 삽화체 앵커도 약하게 나타남 |
+| coloring `warm_earth` / `skin_centered_neutral` | **통과** | 올리브·황토 대 크림·화이트 색조 계열이 뚜렷 |
+| coloring `airy_pastel` / `limited_two_tone` | 경계 | 다색조 파스텔의 흔적은 있으나 약함 |
+
+축을 통째로 배제하거나 포함하는 이분법은 틀렸다. §7.13의 3종 판정 범위(palette,
+value planes, contour geometry)는 유지하되, **위험 쌍 2개**를 시트 리뷰 지침에
+명시한다: `subtle_contact_shadow` vs `crisp_shape_shadow`(shading),
+`fine_tapered` vs `crisp_uniform`(linework). 리뷰 중 같은 시트에 이 쌍이 나타나
+구별이 안 되면 그 항목만 판정을 보류하고 Stage C로 넘긴다. 경계 쌍 2개
+(`broad_blended_plane`/`transparent_glaze`, `airy_pastel`/`limited_two_tone`)는
+판정하되 애매하면 관대하게 실패로 넘기지 않고 Stage C 표본에 추가한다.
+
 ### 7.16 프로브 최초 실행 결과 — 이미 승격한 pose 축에서 오승인 발견
 
 프로브를 linework_coloring에 쓰기 전에 pose 축으로 end-to-end 검증했다. 도구가 동작하는지
@@ -2306,7 +2328,50 @@ sub-attribute만 반박한다. 네 축의 큰 분류(조명 방향, 배경 장�
 4. pose `grounded_forward_step`/`measured_walking_pause`(§7.16)와 함께 위 항목을
    묶어 별도의 "sub-attribute 재검증" 트랙으로 진행한다.
 
-### 7.18 축별 완료 gate
+### 7.18 시트 1 리뷰 중 발견 — `deep_jewel`은 `broad_blended_plane`과만 채도를 유지한다
+
+시트 1(10항목)을 §7.15 위험 쌍 기준으로 판정하던 중, `deep_jewel` 항목 3개
+(case_091, case_241, case_271)가 전부 원해상도에서도 거의 순수 흑백으로 렌더된 것을
+발견했다. calibration과 case_001(§7.13에서 "각진 색면과 측정된 코너"로 기록한 바로 그
+항목)은 정상적으로 녹색·적갈색·남색 색면을 보였는데, 이 세 항목은 의상 전체가 검게
+뭉갰다.
+
+차이는 linework이 아니라 **짝지어진 shading 값**이었다. case_001은
+`broad_blended_plane`, 실패한 셋은 각각 `crisp_shape_shadow`, `soft_two_band`,
+`fine_tonal_hatching`이다. 조립된 프롬프트를 대조해 문구 결함이 아님을 확인했다 —
+"filled with deep jewel color separated by dark neutrals and small high-value
+accents" 절은 6개 항목 전부에서 완전히 동일하다. 즉 텍스트 문제가 아니라 렌더링
+경향이다.
+
+패턴을 검증하기 위해 미시험 shading 2종(`subtle_contact_shadow`, `transparent_glaze`)과
+`broad_blended_plane` 두 번째 표본을 추가로 확인했다. 결과는 6전 6패턴으로 갈렸다:
+
+| shading 값 | deep_jewel 표본 | 결과 |
+| --- | --- | --- |
+| `broad_blended_plane` | 2/2 | **채도 유지** |
+| `crisp_shape_shadow` | 1/1 | 흑백으로 붕괴 |
+| `soft_two_band` | 1/1 | 흑백으로 붕괴 |
+| `fine_tonal_hatching` | 1/1 | 흑백으로 붕괴 |
+| `subtle_contact_shadow` | 1/1 | 흑백으로 붕괴 |
+| `transparent_glaze` | 1/1 | 흑백으로 붕괴 |
+
+`deep_jewel`은 카탈로그에 43개, shading 6종에 고르게 분포한다
+(`broad_blended_plane` 8, 나머지 5종 합 35). 이 표본으로는 **`broad_blended_plane` 8개를
+제외한 최대 35개가 위험군**이다. n=1 표본이 대부분이므로 이것은 확정된 실패 카운트가
+아니라 위험 신호다.
+
+**칼리브레이션이 이걸 놓친 이유가 분명하다.** §7.13의 calibration 4항목 중 deep_jewel
+표본이 우연히 `broad_blended_plane`과 짝지어졌다 — 정확히 안전한 조합이었다. 형제 값
+붕괴(§7.15)와는 다른 종류의 공백이다: 이번엔 속성 자체(`deep_jewel`)가 다른 속성과의
+**조합에 따라** 렌더 여부가 갈린다. calibration은 조합 하나만 봤으니 이 갈림을 볼 수
+없었다.
+
+**처리.** case_091/241/271을 `coloring` 판정에서 hold로 표시하고 Stage C로 넘긴다.
+남은 29장 리뷰에서 `deep_jewel` + `broad_blended_plane`이 아닌 항목을 보면 같은 실패를
+예상하고 확인한다. 시트 리뷰가 끝나면 `deep_jewel`의 비-`broad_blended_plane` 35개
+전체를 전수 확인해 정확한 실패 수를 낸다.
+
+### 7.19 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 
