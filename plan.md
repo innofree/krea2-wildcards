@@ -2423,7 +2423,49 @@ shading과 17회 연속 안전하게 렌더됐다. §7.19에서 정밀화한 결
 
 세그먼트 1+2 누적: 200항목 중 pass 144, hold 56.
 
-### 7.21 축별 완료 gate
+### 7.21 시트 21~25 리뷰 중 정정 — `broad_blended_plane`도 안전하지 않다, 안전 조합은 `angular_precise`+`broad_blended_plane`뿐
+
+시트 21~25를 리뷰하던 중 case_235(`rounded_soft`+`deep_jewel`+`broad_blended_plane`)가
+원해상도에서 완전한 흑백으로 확인됐다. §7.18/§7.19는 "`broad_blended_plane` shading과
+짝지으면 `deep_jewel`이 채도를 유지한다"고 기록했는데, **이것은 틀렸다.** 지금까지
+안전하다고 검증한 두 표본(case_001, 그리고 전수 확인용 P7000001)이 우연히 둘 다
+`angular_precise` linework였다.
+
+즉시 반증을 찾기 위해 `broken_dry`+`deep_jewel`+`broad_blended_plane`과
+`selective_edge`+`deep_jewel`+`broad_blended_plane`을 원해상도로 추가 확인했다. **둘
+다 흑백으로 붕괴했다.** 안전한 shading 값과 짝지어도 linework이 `angular_precise`가
+아니면 무너진다는 뜻이다.
+
+**정정된 결론.** `deep_jewel`의 채도가 유지되는 조건은 shading이 아니라
+`linework=angular_precise` **그리고** `shading=broad_blended_plane` 두 조건의 동시
+충족이다. 카탈로그에서 이 조합은 43개 `deep_jewel` 항목 중 **2개뿐**이다
+(`angular_precise` linework은 6개 shading에 걸쳐 12개 있지만 그중 `broad_blended_plane`과
+짝지은 것은 2개). 나머지 41개는 위험군이다 — §7.19에서 "최대 35개"로 기록한 수치를
+**41개**로 정정한다.
+
+이 정정 자체가 §7.15/§7.17이 반복해서 지적한 규칙의 재확인이다: 최대한 떨어진
+calibration 표본, 그리고 시트 리뷰 중 확인한 소수 표본조차 우연히 안전한 조합
+하나만 볼 수 있고, 그 관측을 축이나 값 전체로 일반화하면 이런 정정이 필요해진다.
+실제 안전 여부는 "조합"으로 좁혀 검증해야 한다.
+
+review_parts에 이미 기록된 hold 판정(case_001/002/012 일부 pass 포함)은 재확인이
+필요하다 — 특히 case_001, case_002(둘 다 `angular_precise`+`broad_blended_plane`로
+정확히 안전 조합이므로 pass 유지)는 문제 없으나, 다른 pass 기록 중 `deep_jewel`이면서
+`broad_blended_plane`인 항목이 있었는지 세그먼트 1~2 노트를 재검토해야 한다. 검토
+결과는 §7.23에 기록한다.
+
+### 7.22 세그먼트 1~2 재검토 — `deep_jewel`+`broad_blended_plane` pass 기록 전수 확인
+
+§7.22 정정에 따라 세그먼트 1~2(시트 1~20) review_parts에서 `coloring=deep_jewel`이면서
+`shading=broad_blended_plane`으로 pass 처리된 항목이 있는지 크립과 대조했다.
+
+세그먼트 1~2의 크립을 확인한 결과 `deep_jewel`+`broad_blended_plane` 조합은 case_001과
+case_002 두 건뿐이었고 — 정확히 안전 조합(`angular_precise`+`broad_blended_plane`)과
+일치해 pass 기록이 맞다. 다른 `deep_jewel` 항목은 전부 비-`broad_blended_plane`
+shading이었고 이미 hold로 기록되어 있었다. **세그먼트 1~2에는 §7.22 정정으로 인한
+오기록이 없다.**
+
+### 7.23 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

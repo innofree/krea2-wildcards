@@ -1,0 +1,12 @@
+{
+  "case_025": ["pass", "angular_precise + muted_split_complement + soft_two_band: blue-grey against warm skin, consistent"],
+  "case_055": ["pass", "bold_outer_sparse_inner + cool_nocturne + fine_tonal_hatching: deep teal/navy clear, consistent"],
+  "case_085": ["pass", "broken_dry + airy_pastel + subtle_contact_shadow: pale pastel, consistent"],
+  "case_115": ["pass", "crisp_uniform + limited_two_tone + broad_blended_plane: weak two-tone signal, recurring caveat"],
+  "case_145": ["pass", "crisp_uniform + skin_centered_neutral + soft_two_band: grey/tan neutral tones, consistent"],
+  "case_175": ["pass", "elastic_pressure + skin_centered_neutral + fine_tonal_hatching: cream neutral tones, consistent"],
+  "case_205": ["hold", "fine_tapered + muted_split_complement + crisp_shape_shadow: fine_tapered risk-flagged linework held regardless. Coloring passes clearly"],
+  "case_235": ["hold", "rounded_soft + deep_jewel + broad_blended_plane: coloring fails -- flat black at full resolution (P7000703/image_01.png), CORRECTING the prior 7.18/7.19 characterization that broad_blended_plane shading alone is safe for deep_jewel. Two additional full-res spot checks confirm broken_dry+broad_blended_plane and selective_edge+broad_blended_plane ALSO collapse to black. The only confirmed-safe combination remains angular_precise+broad_blended_plane (2 of 43 deep_jewel items). See plan.md correction"],
+  "case_265": ["pass", "selective_edge + airy_pastel + broad_blended_plane: clear multi-hue pastel"],
+  "case_295": ["pass", "selective_edge + warm_earth + broad_blended_plane: olive/tan/cream tones, consistent"]
+}
