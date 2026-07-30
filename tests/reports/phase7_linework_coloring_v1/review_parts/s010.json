@@ -1,0 +1,12 @@
+{
+  "case_010": ["hold", "angular_precise + deep_jewel + subtle_contact_shadow: coloring fails -- flat black across all seeds"],
+  "case_040": ["pass", "bold_outer_sparse_inner + airy_pastel + broad_blended_plane: clear multi-hue pastel"],
+  "case_070": ["pass", "bold_outer_sparse_inner + limited_two_tone + soft_two_band: weak two-tone signal, recurring caveat"],
+  "case_100": ["pass", "broken_dry + muted_split_complement + broad_blended_plane: cool blue-grey against warm skin, consistent"],
+  "case_130": ["pass", "crisp_uniform + muted_split_complement + crisp_shape_shadow: cool blue-grey against warm skin, consistent"],
+  "case_160": ["pass", "elastic_pressure + airy_pastel + subtle_contact_shadow: clear multi-hue pastel"],
+  "case_190": ["hold", "fine_tapered + cool_nocturne + crisp_shape_shadow: coloring passes -- deep teal/navy blue-green clearly visible even with a non-safe (non-broad_blended_plane) shading value, unlike deep_jewel under the same condition. This is useful negative evidence: the coloring-collapse pattern in 7.18 appears specific to deep_jewel, not a general rule for saturated/dark palettes paired with non-broad_blended_plane shading. fine_tapered risk-flagged linework held regardless"],
+  "case_220": ["hold", "fine_tapered + warm_earth + soft_two_band: fine_tapered risk-flagged linework value, held regardless of sibling. Coloring passes clearly"],
+  "case_250": ["pass", "rounded_soft + limited_two_tone + subtle_contact_shadow: weak two-tone signal, recurring caveat"],
+  "case_280": ["pass", "selective_edge + muted_split_complement + transparent_glaze: cool tone against warm skin, consistent"]
+}

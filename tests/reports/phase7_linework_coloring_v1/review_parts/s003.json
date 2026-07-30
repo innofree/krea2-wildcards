@@ -1,0 +1,12 @@
+{
+  "case_003": ["hold", "angular_precise + deep_jewel + crisp_shape_shadow: coloring fails -- flat black. Notably this pairs deep_jewel with the SAME linework value (angular_precise) that rendered correctly in case_001/002 when shading was broad_blended_plane, so the failure tracks shading, not linework. 10th confirmation of the pattern"],
+  "case_033": ["pass", "angular_precise + skin_centered_neutral + crisp_shape_shadow: neutral cream tones clear, angular facets visible"],
+  "case_063": ["pass", "bold_outer_sparse_inner + limited_two_tone + broad_blended_plane: cream/beige, two-tone contrast weak (same recurring caveat as case_121/122/123)"],
+  "case_093": ["hold", "broken_dry + deep_jewel + fine_tonal_hatching: coloring fails -- flat black, same combo as case_092 sheet 2, 11th confirmation"],
+  "case_123": ["pass", "crisp_uniform + limited_two_tone + subtle_contact_shadow: grey/beige tones, two-tone contrast weak (same recurring caveat)"],
+  "case_153": ["pass", "elastic_pressure + airy_pastel + crisp_shape_shadow: clear multi-hue pastel"],
+  "case_183": ["pass", "elastic_pressure + warm_earth + soft_two_band: olive/tan tones clear"],
+  "case_213": ["hold", "fine_tapered + skin_centered_neutral + transparent_glaze: fine_tapered risk-flagged linework value, held regardless of sibling (same as case_212). Coloring passes"],
+  "case_243": ["hold", "rounded_soft + deep_jewel + subtle_contact_shadow: coloring fails -- flat black, 12th confirmation"],
+  "case_273": ["hold", "selective_edge + deep_jewel + subtle_contact_shadow: coloring fails -- flat black, verified at full resolution (P7000819/image_01.png), 13th confirmation. Note: the seed_3003 thumbnail on the sheet PNG shows a white vertical sliver artifact; the source frame itself is clean, so this is a montage/thumbnail rendering quirk, not a data defect -- same artifact seen on case_271 sheet 1"]
+}

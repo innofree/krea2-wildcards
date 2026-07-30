@@ -1,0 +1,12 @@
+{
+  "case_004": ["hold", "angular_precise + deep_jewel + crisp_shape_shadow: coloring fails -- flat black, 14th confirmation"],
+  "case_034": ["pass", "angular_precise + skin_centered_neutral + fine_tonal_hatching: cream/grey neutral tones clear"],
+  "case_064": ["pass", "bold_outer_sparse_inner + limited_two_tone + broad_blended_plane: weak two-tone signal, recurring caveat (6th observation of the same weak-signal pattern across cases 063/064/121-124)"],
+  "case_094": ["hold", "broken_dry + deep_jewel + soft_two_band: coloring fails -- flat black, 15th confirmation"],
+  "case_124": ["pass", "crisp_uniform + limited_two_tone + subtle_contact_shadow: verified full resolution (P7000372/image_01.png) -- garment renders as a near-single grey-taupe tone rather than two distinguishable hues. Same weak-signal pattern, not failing individually but flagging limited_two_tone itself as a secondary risk pattern alongside deep_jewel. Sheet PNG shows a white-sliver thumbnail artifact on the seed_3003 cell; confirmed cosmetic only (source frame is clean), same as case_271/case_273 -- not re-verifying further occurrences of this specific artifact"],
+  "case_154": ["pass", "elastic_pressure + airy_pastel + crisp_shape_shadow: clear multi-hue pastel"],
+  "case_184": ["pass", "elastic_pressure + warm_earth + subtle_contact_shadow: olive/brown tones clear"],
+  "case_214": ["hold", "fine_tapered + warm_earth + broad_blended_plane: fine_tapered risk-flagged linework value, held regardless of sibling. Coloring (warm_earth) passes clearly"],
+  "case_244": ["hold", "rounded_soft + deep_jewel + subtle_contact_shadow: coloring fails -- flat black, 16th confirmation"],
+  "case_274": ["pass", "selective_edge + muted_split_complement + crisp_shape_shadow: cool blue-grey garment against warm skin notes, matches muted split-complementary description"]
+}
