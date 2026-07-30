@@ -2009,6 +2009,11 @@ calibration 4항목은 12/12장이 포즈와 손 배치에서 명확히 구분�
 앉은 자세로 각각 나타났다. `collar_and_hip`과 `open_palms_extended` 손 배치도
 구분된다.
 
+> **정정(§7.16).** 위 `measured_walking_pause` 판정은 틀렸다. 하체 크롭으로 다시 보면
+> 발 오프셋은 미미하고 지시된 "들린 뒷꿈치"는 없다. 한계선상의 오프셋을 속성 구현으로
+> 받아들인 것이다. 같은 검사에서 `grounded_forward_step` 43개의 오승인도 드러났다.
+> 이 절의 승격 수치 322/326은 그만큼 과대평가다.
+
 착석 항목은 조정문대로 렌더됐다. 의자가 존재하고 무릎이 굽혀지며 양발이 전신 프레임
 안에 보인다. 즉 모순이 해소된 상태로 생성된다.
 
@@ -2194,7 +2199,114 @@ calibration의 실제 설계 공백을 정확히 짚었다. calibration 4항목�
 161px 나란히 놓고 확인한다. 확인 결과에 따라 §7.13의 3종 범위를 그대로 두거나 좁힌다.
 codex의 예측이 맞는지 틀리는지 어느 쪽이든 측정 결과를 기록한다.
 
-### 7.16 축별 완료 gate
+### 7.16 프로브 최초 실행 결과 — 이미 승격한 pose 축에서 오승인 발견
+
+프로브를 linework_coloring에 쓰기 전에 pose 축으로 end-to-end 검증했다. 도구가 동작하는지
+보려던 것이었는데, **이미 322/326(98.77%)으로 승격한 축에서 오승인을 찾았다.**
+
+먼저 도구가 신뢰할 수 있음을 대조로 확인했다. `side_reclining`은 받침대에 옆으로 누운
+자세로, `upright_seated`는 블록에 앉은 자세로 명확히 렌더된다. `arm_gesture` 3종
+(`hands_near_chest`, `loosely_clasped`, `open_palms_extended`)도 정확히 나타나고 시트
+크기에서도 판독된다. 즉 pose 축은 계통적으로 망가지지 않았고, 프로브가 모든 것을 같게
+보여주는 것도 아니다.
+
+그 위에서 확인된 사실:
+
+| 값 | 항목 수 | 현재 상태 | 측정 결과 |
+| --- | --- | --- | --- |
+| `grounded_forward_step` | 43 | 전부 approved | **정의 속성 부재.** 표본 8/8이 다리를 완전히 펴고 발을 모은 정자세. 지시는 "grounded forward step ... controlled bend through both knees"인데 걸음도 무릎 굽힘도 없다 |
+| `measured_walking_pause` | 44 | 전부 approved | **부분 부재.** 지시는 "one foot forward and the trailing heel lightly lifted". 표본 6/6에서 들린 뒷꿈치가 전혀 없고 발 오프셋은 미미하다 |
+| `upright_contrapposto` | 43 | 전부 approved | **미확정.** 무지 슬랙스가 골반선을 가려 프로브로 판정할 수 없다. 다른 검사가 필요하다 |
+| `head_gaze` 형제쌍 | 326 전체 | 전부 approved | **판독 실패(이미지 결함 아님).** `direct_level`과 `lifted_attentive`의 차이는 턱 각도 몇 도이고 512px에서는 보이지만 161px에서는 검출되지 않는다 |
+
+`grounded_forward_step` 8개 표본은 `motion_quality` 4종과 `arm_gesture` 3종에 걸쳐
+골랐으므로 특정 조합의 문제가 아니다. 하체 크롭으로 확대해 보면 세 값 모두 무릎이 펴져
+있고 양 뒷꿈치가 바닥에 붙어 있다.
+
+**원인은 카메라와 다르다.** 죽은 가드가 아니다. 같은 종결 lock("frame literally from the
+complete crown through both feet")에서 reclining과 seated가 정상 렌더되므로 lock이
+막는 것이 아니다. 전신 스튜디오 정면 인물이라는 강한 사전확률에 대해 "한 발 앞으로,
+무릎 살짝 굽힘, 뒷꿈치 들림" 같은 **미세한 하체 지시가 밀려나는** 것이고, 프롬프트에
+이를 보강하는 문구가 없다. 즉 모순이 아니라 강도 부족이다. 수리 방향도 가드 수정이
+아니라 본문 보강이다.
+
+**§7.12의 기록을 정정한다.** 거기서 `measured_walking_pause`가 "한 발이 앞으로 나간
+보행 정지"로 나타난다고 적었다. 원해상도 하체 크롭으로 다시 보면 발 오프셋은 미미하고
+들린 뒷꿈치는 없다. calibration에서 한계선상의 오프셋을 속성 구현으로 받아들인 것이다.
+
+**이 발견은 프로브를 만든 이유 자체를 입증한다.** calibration은 "축이 반응하는가"를 묻고
+시트 판정은 "형제 값과 구별되는가"를 묻는데, 두 질문의 차이가 87개 항목의 오승인과
+326개 항목의 근거 없는 sub-attribute 판정으로 나타났다. 지금까지 승격한 4개 축
+(lighting, background, character_design, pose) 모두 이 검사를 거치지 않았다.
+
+**되돌리기는 하지 않았다.** 현재 활성 과제는 linework_coloring이고, 승격된 축의 카탈로그와
+런타임을 되돌리는 것은 그 범위를 넘는다. 필요한 조치는 기록해 둔다.
+
+1. `grounded_forward_step` 43개를 `approved` → `generated`로 되돌리고 본문 보강 후 재생성
+2. `measured_walking_pause` 44개 동일 처리
+3. `upright_contrapposto` 43개를 별도 검사로 판정한 뒤 결정
+4. `head_gaze`는 시트 판정 대상에서 제외하고 Stage C 표본으로만 확인 — 승인 자체를
+   되돌릴 필요는 없으나 판정 근거가 없었음을 기록한다
+5. 나머지 3개 축(lighting, background, character_design)에도 프로브를 돌려 같은 종류의
+   오승인이 있는지 확인
+
+### 7.17 프로브를 승격된 3개 축에 확대 실행 — 검증 공백이 전 축에 걸쳐 있음을 확인
+
+pose에서 오승인을 찾은 후, linework_coloring에 쓰기 전에 나머지 승격 축
+lighting(211/250), background(399/400), character_design(340/400)에도 같은 프로브를
+돌렸다. 축마다 형제 쌍 2~3개, 161px(시트 밀도)로 5쌍씩 렌더했다. 결과는 세 축 모두에서
+pose와 같은 종류의 공백을 보였다.
+
+**통과한 것:**
+- lighting `color_balance` (`cool_key_warm_practical` vs `warm_key_cool_fill`): 좌측 열에
+  뚜렷한 따뜻한 실용광원이 보이고 우측은 차갑게 중성적이다. 161px에서도 구별된다.
+- background `spatial_layout` (`clear_depth_layers` vs `repeated_recession`):
+  `repeated_recession`의 반복되는 기둥 열이 뚜렷하다. 161px에서 구별된다.
+
+**161px에서 붕괴한 것:**
+- lighting `softness`: `feathered_soft` vs `enveloping_diffuse` — 둘 다 그냥 부드러운
+  전체 조명으로 보인다. (`crisp_controlled` vs `medium_defined`도 약한 신호였다.)
+- background `air_character`: `clear_still` vs `crisp_visibility`, `faint_depth_haze` vs
+  `delicate_particles` — 두 쌍 모두 거의 동일하게 렌더된다. 시험한 4개 값
+  (`soft_ambient_diffusion`은 미시험) 기준 승인 319/399가 이 축에 걸린다.
+- character_design `silhouette`: `narrow_angular` vs `compact_balanced` — 이미 알려진
+  실패(`narrow_angular` 50/50 rejected, plan.md 7.11)와 일치해 방법론을 교차 검증한다.
+
+**원해상도에서도 붕괴한 것(시트 밀도의 문제가 아니라 근본적):**
+- character_design `body_proportion`: `natural_balanced` vs `agile_medium_frame` — 풀샷
+  로브가 헐렁해 원해상도로도 체형이 드러나지 않는다. 승인 340/400 전부가 이 축을 갖는다.
+
+**존재는 하지만 프레임 크기 때문에 판독 불가능한 것:**
+- character_design `face_structure`: 얼굴을 원해상도로 크롭해 보면 `oval_fine_jaw`와
+  `heart_tapered_chin`의 턱선 차이가 실제로 보인다. 그러나 전신 프레임에서 얼굴은 셀
+  폭의 극히 일부이고 161px 셀에서는 20px 미만이다. 속성 자체는 존재하나 시트 판정
+  방식으로는 검증 불가능했다. 승인 340/400 전부가 해당한다.
+
+**규모.** character_design은 승인 340개 전부가 `face_structure`와 `body_proportion` 둘 다
+검증 불가능한 상태로 승인됐다 — 이 축의 개별 sub-attribute 판정 4종 중 2종이 사실상
+근거가 없다. background는 승인 399개 중 최소 319개가 `air_character`에서 같은 문제를
+갖는다. lighting은 `softness` 쪽 일부(정확한 노출은 미계산, `feathered_soft`+`enveloping_diffuse`
+승인 83개가 최소치)가 해당한다.
+
+**scope를 명확히 한다.** 이 프로브는 팔레트·전신 실루엣 등 큰 축이 아니라 세밀한
+sub-attribute만 반박한다. 네 축의 큰 분류(조명 방향, 배경 장소 유형, 캐릭터
+디자인 모티프 등)는 이 문제로 뒤집히지 않는다. 또한 프로브는 형제 쌍 표본이지
+전수 조사가 아니다 — 여기 기록된 숫자는 시험한 값에 대한 최소치다.
+
+**조치는 이번 세션에서 되돌리지 않는다.** linework_coloring이 활성 과제이고, 4개 축의
+검증 불가 sub-attribute를 전수 재검사·재생성하는 것은 별도 규모의 작업이다. 필요한
+후속 작업을 기록해 둔다.
+
+1. character_design `face_structure`, `body_proportion` — 두 축 다 시트 판독이 불가능한
+   원인이 다르다(프레임 크기 vs 의상 실루엣). 개별 근접 크롭 리뷰가 필요하고, 승인
+   철회 여부는 그 리뷰 이후에 결정한다.
+2. background `air_character` — 4/5 값 붕괴 확인, `soft_ambient_diffusion` 포함 5종 전체
+   근접 확대 재검사 필요.
+3. lighting `softness` — 형제 쌍 재검사로 어느 값이 실제로 구별되는지 확정.
+4. pose `grounded_forward_step`/`measured_walking_pause`(§7.16)와 함께 위 항목을
+   묶어 별도의 "sub-attribute 재검증" 트랙으로 진행한다.
+
+### 7.18 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

@@ -138,6 +138,13 @@ def render_probe(
                 link = temp / f"{index:02d}_{side}.png"
                 link.symlink_to(frames[item_id][seed_index][1])
                 inputs.append(str(link))
+        # A two-column montage at a small cell size is narrower than a verbose
+        # title, and montage silently clips the overflow rather than wrapping.
+        # The title carries which value is on which side, so losing its end makes
+        # the probe unreadable; scale the point size to the montage width.
+        title = f"{axis}: {left} | {right} @{cell}px"
+        montage_width = 2 * (cell + 12)
+        pointsize = max(7, min(16, (montage_width * 2) // max(len(title), 1)))
         result = subprocess.run(
             [
                 montage,
@@ -154,8 +161,10 @@ def render_probe(
                 "#1f1f1f",
                 "-fill",
                 "white",
+                "-pointsize",
+                str(pointsize),
                 "-title",
-                f"{axis}: {left} (left) vs {right} (right)  cell={cell}px",
+                title,
                 str(output),
             ],
             stdout=subprocess.PIPE,
