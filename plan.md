@@ -2492,7 +2492,30 @@ shading이었고 이미 hold로 기록되어 있었다. **세그먼트 1~2에는
 `apply_visual_review.py` 파이프라인으로 pass 221건을 승격하는 것이다. hold 79건은
 이번 판정에서 승인하지 않는다 — 다음 세션 또는 별도 재생성 작업으로 넘긴다.
 
-### 7.24 축별 완료 gate
+### 7.24 linework_coloring 축 v1 승격 결과
+
+`review_parts/s001.json`~`s030.json`(300항목, pass/hold + 근거)을 실제 승격 파이프라인
+형식으로 옮기는 변환기 `scripts/build_phase7_review_yaml.py`를 새로 작성했다. pass는
+정책 임계값을 통과하는 점수(4점 일괄)를, hold는 `style_fidelity`를
+`minimum_style_fidelity - 1`로 낮춘 점수를 부여해 `critical_failure`는 건드리지 않는다
+— 확인하지 못한 것을 확인된 결함처럼 과장하지 않으면서도 정책 기반 파생 로직
+(`summarize_results.py`)이 스스로 승인/거부를 가르게 한다. `apply_visual_review.py`의
+스키마와 end-to-end로 맞는지 테스트 7개로 고정했다.
+
+파이프라인 실행 결과 파생된 recommended_status는 정확히 예측한 대로 approved 221 /
+rejected 79였다(tested_seeds=3이 항상 성립하므로 "testing"은 나올 수 없다). 79개는
+"영구 배제"가 아니라 "이번 근거로는 승인 보류"다 — `deep_jewel` 41개는 확인된 결함,
+`fine_tapered` 38개는 판독 불가로 사유가 다르지만 둘 다 rejected로 기록되고, 근본
+원인이 해소되면 다음 evaluation-id로 다시 승격될 수 있다.
+
+`apply_evaluation_summary.py --allow-recommendation approved --allow-recommendation
+rejected --apply`로 카탈로그에 반영, `refresh_generation_manifest.py --apply`로
+blueprint 매니페스트를 채택했다. **linework_coloring: 221/300(73.7%) 승인.**
+
+`make impact-production`으로 런타임을 재빌드했다: 1646 → **1867 항목**(+221, approved
+수와 정확히 일치), 7개 파일.
+
+### 7.25 축별 완료 gate
 
 축 하나를 승격할 때마다 다음을 모두 통과해야 다음 축으로 넘어간다.
 

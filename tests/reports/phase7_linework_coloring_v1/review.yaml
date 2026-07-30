@@ -1,0 +1,4098 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+styles:
+  linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_001: angular_precise + deep_jewel + broad_blended_plane: angular color-block facets
+      in true jewel saturation (green/maroon/navy), broad blended planes
+  linework_coloring_angular_precise_deep_jewel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_002: angular_precise + deep_jewel + broad_blended_plane: jewel color blocking confirmed
+      (dark green/maroon/navy), same safe pairing as case_001
+  linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_003: angular_precise + deep_jewel + crisp_shape_shadow: coloring fails -- flat black.
+      Notably this pairs deep_jewel with the SAME linework value (angular_precise) that rendered correctly
+      in case_001/002 when shading was broad_blended_plane, so the failure tracks shading, not linework.
+      10th confirmation of the pattern
+  linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_004: angular_precise + deep_jewel + crisp_shape_shadow: coloring fails -- flat black,
+      14th confirmation
+  linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_005: angular_precise + deep_jewel + fine_tonal_hatching: coloring fails -- flat black,
+      17th confirmation
+  linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_006: angular_precise + deep_jewel + fine_tonal_hatching: coloring mostly fails -- dark/near-black
+      dominant, though seed_3003 shows a faint dark maroon hint at the skirt (a partial exception to the
+      otherwise near-total deep_jewel x non-broad_blended_plane collapse). Held rather than failed outright
+      given the partial signal
+  linework_coloring_angular_precise_deep_jewel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_007: angular_precise + deep_jewel + soft_two_band: coloring mostly fails -- seed_1001
+      shows a faint dark green/maroon hint, seeds 2002/3003 read as flat black. Same partial-exception
+      pattern as case_006
+  linework_coloring_angular_precise_deep_jewel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_008: angular_precise + deep_jewel + soft_two_band: coloring partially fails -- seed_1001
+      shows clear dark green/maroon jewel color blocking, seeds 2002/3003 read as flat black. Third occurrence
+      of this per-item partial-exception pattern (cases 006, 007, 008 all show exactly one of three seeds
+      retaining color); worth checking at Stage C whether this is seed-dependent rather than a total collapse
+  linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_009: angular_precise + deep_jewel + subtle_contact_shadow: coloring fails -- flat black
+      across all seeds
+  linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_010: angular_precise + deep_jewel + subtle_contact_shadow: coloring fails -- flat black
+      across all seeds
+  linework_coloring_angular_precise_deep_jewel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_011: angular_precise + deep_jewel + transparent_glaze: coloring fails -- flat
+      black'
+  linework_coloring_angular_precise_deep_jewel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_012: angular_precise + deep_jewel + transparent_glaze: coloring mostly fails -- seeds
+      1001/3003 show a faint dark green/navy hint, seed 2002 reads flat black. Fourth partial-exception
+      case (after 006/007/008), same seed-dependent pattern
+  linework_coloring_angular_precise_limited_two_tone_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_013: angular_precise + limited_two_tone + broad_blended_plane: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_014: angular_precise + limited_two_tone + broad_blended_plane: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_015: angular_precise + limited_two_tone + crisp_shape_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_016: angular_precise + limited_two_tone + crisp_shape_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_017: angular_precise + limited_two_tone + fine_tonal_hatching: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_018: angular_precise + limited_two_tone + fine_tonal_hatching: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_019: angular_precise + limited_two_tone + soft_two_band: weak two-tone signal, recurring
+      caveat
+  linework_coloring_angular_precise_limited_two_tone_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_020: angular_precise + limited_two_tone + soft_two_band: weak two-tone signal, recurring
+      caveat
+  linework_coloring_angular_precise_limited_two_tone_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_021: angular_precise + limited_two_tone + subtle_contact_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_022: angular_precise + limited_two_tone + subtle_contact_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_angular_precise_limited_two_tone_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_023: angular_precise + limited_two_tone + transparent_glaze: weak two-tone signal, recurring
+      caveat
+  linework_coloring_angular_precise_limited_two_tone_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_024: angular_precise + limited_two_tone + transparent_glaze: weak two-tone signal, recurring
+      caveat
+  linework_coloring_angular_precise_muted_split_complement_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_025: angular_precise + muted_split_complement + soft_two_band: blue-grey against warm
+      skin, consistent
+  linework_coloring_angular_precise_muted_split_complement_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_026: angular_precise + muted_split_complement + soft_two_band: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_angular_precise_muted_split_complement_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_027: angular_precise + muted_split_complement + subtle_contact_shadow: cool blue-grey
+      against warm skin, consistent
+  linework_coloring_angular_precise_muted_split_complement_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_028: angular_precise + muted_split_complement + subtle_contact_shadow: cool blue-grey
+      against warm skin, consistent
+  linework_coloring_angular_precise_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_029: angular_precise + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_angular_precise_muted_split_complement_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_030: angular_precise + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_angular_precise_skin_centered_neutral_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_031: angular_precise + skin_centered_neutral + broad_blended_plane: neutral cream tones,
+      angular facets on garment
+  linework_coloring_angular_precise_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_032: angular_precise + skin_centered_neutral + crisp_shape_shadow: neutral cream tones,
+      angular facets visible
+  linework_coloring_angular_precise_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_033: angular_precise + skin_centered_neutral + crisp_shape_shadow: neutral cream tones
+      clear, angular facets visible
+  linework_coloring_angular_precise_skin_centered_neutral_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_034: angular_precise + skin_centered_neutral + fine_tonal_hatching: cream/grey neutral
+      tones clear
+  linework_coloring_angular_precise_skin_centered_neutral_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_035: angular_precise + skin_centered_neutral + fine_tonal_hatching: cream neutral tones
+      clear
+  linework_coloring_angular_precise_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_036: angular_precise + skin_centered_neutral + soft_two_band: cream neutral tones
+      clear'
+  linework_coloring_angular_precise_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_037: angular_precise + skin_centered_neutral + transparent_glaze: cream neutral tones
+      clear
+  linework_coloring_angular_precise_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_038: angular_precise + skin_centered_neutral + transparent_glaze: cream neutral tones
+      clear
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_039: bold_outer_sparse_inner + airy_pastel + broad_blended_plane: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_040: bold_outer_sparse_inner + airy_pastel + broad_blended_plane: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_041: bold_outer_sparse_inner + airy_pastel + crisp_shape_shadow: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_042: bold_outer_sparse_inner + airy_pastel + crisp_shape_shadow: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_043: bold_outer_sparse_inner + airy_pastel + fine_tonal_hatching: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_044: bold_outer_sparse_inner + airy_pastel + fine_tonal_hatching: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_045: bold_outer_sparse_inner + airy_pastel + soft_two_band: clear multi-hue pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_046: bold_outer_sparse_inner + airy_pastel + soft_two_band: clear multi-hue pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_047: bold_outer_sparse_inner + airy_pastel + subtle_contact_shadow: clear multi-hue
+      pastel
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_048: bold_outer_sparse_inner + airy_pastel + subtle_contact_shadow: clear multi-hue
+      pastel
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_049: bold_outer_sparse_inner + airy_pastel + transparent_glaze: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_airy_pastel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_050: bold_outer_sparse_inner + airy_pastel + transparent_glaze: clear multi-hue
+      pastel'
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_051: bold_outer_sparse_inner + cool_nocturne + broad_blended_plane: deep teal, safe
+      shading pairing
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_052: bold_outer_sparse_inner + cool_nocturne + broad_blended_plane: deep teal, safe
+      shading pairing
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_053: bold_outer_sparse_inner + cool_nocturne + crisp_shape_shadow: deep teal/navy clear,
+      twenty-second confirmation with non-safe shading
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_054: bold_outer_sparse_inner + cool_nocturne + crisp_shape_shadow: deep teal/navy clear,
+      consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_055: bold_outer_sparse_inner + cool_nocturne + fine_tonal_hatching: deep teal/navy clear,
+      consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_056: bold_outer_sparse_inner + cool_nocturne + fine_tonal_hatching: deep teal clear,
+      consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_057: bold_outer_sparse_inner + cool_nocturne + soft_two_band: deep teal/navy clear,
+      consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_058: bold_outer_sparse_inner + cool_nocturne + soft_two_band: deep teal/navy clear,
+      consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_059: bold_outer_sparse_inner + cool_nocturne + subtle_contact_shadow: deep teal/navy
+      clear, consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_060: bold_outer_sparse_inner + cool_nocturne + subtle_contact_shadow: deep teal/navy
+      clear, consistent
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_061: bold_outer_sparse_inner + cool_nocturne + transparent_glaze: cool blue-teal palette,
+      glazed translucent look
+  linework_coloring_bold_outer_sparse_inner_cool_nocturne_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_062: bold_outer_sparse_inner + cool_nocturne + transparent_glaze: cool blue-teal palette
+      clear
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_063: bold_outer_sparse_inner + limited_two_tone + broad_blended_plane: cream/beige,
+      two-tone contrast weak (same recurring caveat as case_121/122/123)
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_064: bold_outer_sparse_inner + limited_two_tone + broad_blended_plane: weak two-tone
+      signal, recurring caveat (6th observation of the same weak-signal pattern across cases 063/064/121-124)
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_065: bold_outer_sparse_inner + limited_two_tone + crisp_shape_shadow: weak two-tone
+      signal, 7th observation of the recurring pattern
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_066: bold_outer_sparse_inner + limited_two_tone + crisp_shape_shadow: weak two-tone
+      signal but seed_3003 shows a visible pale-blue/white split -- somewhat better than the recurring
+      weak-signal cases
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_067: bold_outer_sparse_inner + limited_two_tone + fine_tonal_hatching: weak two-tone
+      signal, recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_068: bold_outer_sparse_inner + limited_two_tone + fine_tonal_hatching: weak two-tone
+      signal, recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_069: bold_outer_sparse_inner + limited_two_tone + soft_two_band: weak two-tone signal,
+      recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_070: bold_outer_sparse_inner + limited_two_tone + soft_two_band: weak two-tone signal,
+      recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_071: bold_outer_sparse_inner + limited_two_tone + subtle_contact_shadow: weak two-tone
+      signal, recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_072: bold_outer_sparse_inner + limited_two_tone + subtle_contact_shadow: weak two-tone
+      signal, recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_073: bold_outer_sparse_inner + limited_two_tone + transparent_glaze: weak two-tone signal,
+      recurring caveat
+  linework_coloring_bold_outer_sparse_inner_limited_two_tone_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_074: bold_outer_sparse_inner + limited_two_tone + transparent_glaze: weak two-tone signal,
+      recurring caveat
+  linework_coloring_bold_outer_sparse_inner_muted_split_complement_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_075: bold_outer_sparse_inner + muted_split_complement + transparent_glaze: cool blue-grey
+      against warm skin, consistent
+  linework_coloring_broken_dry_airy_pastel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_076: broken_dry + airy_pastel + broad_blended_plane: clear multi-hue pastel'
+  linework_coloring_broken_dry_airy_pastel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_077: broken_dry + airy_pastel + broad_blended_plane: clear multi-hue pastel'
+  linework_coloring_broken_dry_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_078: broken_dry + airy_pastel + crisp_shape_shadow: clear pastel (pale blue/cream)'
+  linework_coloring_broken_dry_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_079: broken_dry + airy_pastel + crisp_shape_shadow: clear pastel (pale blue/cream)'
+  linework_coloring_broken_dry_airy_pastel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_080: broken_dry + airy_pastel + fine_tonal_hatching: clear pale pastel'
+  linework_coloring_broken_dry_airy_pastel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_081: broken_dry + airy_pastel + fine_tonal_hatching: clear pale pastel'
+  linework_coloring_broken_dry_airy_pastel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_082: broken_dry + airy_pastel + soft_two_band: pale pastel, weak but visible'
+  linework_coloring_broken_dry_airy_pastel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_083: broken_dry + airy_pastel + soft_two_band: pale pastel, consistent'
+  linework_coloring_broken_dry_airy_pastel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_084: broken_dry + airy_pastel + subtle_contact_shadow: pale pastel, consistent'
+  linework_coloring_broken_dry_airy_pastel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_085: broken_dry + airy_pastel + subtle_contact_shadow: pale pastel, consistent'
+  linework_coloring_broken_dry_airy_pastel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_086: broken_dry + airy_pastel + transparent_glaze: pale pastel, consistent'
+  linework_coloring_broken_dry_airy_pastel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_087: broken_dry + airy_pastel + transparent_glaze: pale pastel, consistent'
+  linework_coloring_broken_dry_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_088: broken_dry + deep_jewel + broad_blended_plane: coloring fails -- flat black, matches
+      the earlier full-resolution spot check (P7000262) that established broad_blended_plane alone does
+      not save non-angular_precise linework
+  linework_coloring_broken_dry_deep_jewel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_089: broken_dry + deep_jewel + broad_blended_plane: coloring fails -- flat black, consistent
+      with broken_dry not being the safe linework value
+  linework_coloring_broken_dry_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_090: broken_dry + deep_jewel + crisp_shape_shadow: coloring fails -- flat black'
+  linework_coloring_broken_dry_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_091: broken_dry + deep_jewel + crisp_shape_shadow: coloring fails -- garment renders
+      flat black with no jewel saturation, confirmed at full resolution (see plan.md 7.18 deep_jewel x
+      shading finding). linework/shading not independently readable on all-black fabric
+  linework_coloring_broken_dry_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_092: broken_dry + deep_jewel + fine_tonal_hatching: coloring fails -- flat black/near-black
+      garment, 7th confirmation of the deep_jewel x non-broad_blended_plane collapse (plan.md 7.18)
+  linework_coloring_broken_dry_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_093: broken_dry + deep_jewel + fine_tonal_hatching: coloring fails -- flat black, same
+      combo as case_092 sheet 2, 11th confirmation
+  linework_coloring_broken_dry_deep_jewel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_094: broken_dry + deep_jewel + soft_two_band: coloring fails -- flat black, 15th confirmation
+  linework_coloring_broken_dry_deep_jewel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_095: broken_dry + deep_jewel + soft_two_band: coloring fails -- flat black, 18th confirmation
+  linework_coloring_broken_dry_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_096: broken_dry + deep_jewel + subtle_contact_shadow: coloring fails -- flat black,
+      consistent with the established pattern
+  linework_coloring_broken_dry_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_097: broken_dry + deep_jewel + subtle_contact_shadow: coloring fails -- flat black'
+  linework_coloring_broken_dry_deep_jewel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_098: broken_dry + deep_jewel + transparent_glaze: coloring fails -- flat black across
+      all seeds
+  linework_coloring_broken_dry_deep_jewel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_099: broken_dry + deep_jewel + transparent_glaze: coloring fails -- flat black'
+  linework_coloring_broken_dry_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_100: broken_dry + muted_split_complement + broad_blended_plane: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_101: broken_dry + muted_split_complement + broad_blended_plane: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_102: broken_dry + muted_split_complement + crisp_shape_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_103: broken_dry + muted_split_complement + crisp_shape_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_104: broken_dry + muted_split_complement + fine_tonal_hatching: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_105: broken_dry + muted_split_complement + fine_tonal_hatching: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_106: broken_dry + muted_split_complement + soft_two_band: cool blue-grey against warm
+      skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_107: broken_dry + muted_split_complement + soft_two_band: cool blue-grey against warm
+      skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_108: broken_dry + muted_split_complement + subtle_contact_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_109: broken_dry + muted_split_complement + subtle_contact_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_110: broken_dry + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_muted_split_complement_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_111: broken_dry + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_broken_dry_skin_centered_neutral_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_112: broken_dry + skin_centered_neutral + broad_blended_plane: tan/grey neutral tones,
+      consistent
+  linework_coloring_broken_dry_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_113: broken_dry + skin_centered_neutral + transparent_glaze: tan/grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_114: crisp_uniform + deep_jewel + crisp_shape_shadow: coloring fails -- flat black,
+      first deep_jewel item since sheet 9/10 and it reproduces the established collapse exactly as predicted
+  linework_coloring_crisp_uniform_limited_two_tone_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_115: crisp_uniform + limited_two_tone + broad_blended_plane: weak two-tone signal, recurring
+      caveat
+  linework_coloring_crisp_uniform_limited_two_tone_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_116: crisp_uniform + limited_two_tone + broad_blended_plane: weak two-tone signal, recurring
+      caveat
+  linework_coloring_crisp_uniform_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_117: crisp_uniform + limited_two_tone + crisp_shape_shadow: weak two-tone signal, recurring
+      caveat
+  linework_coloring_crisp_uniform_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_118: crisp_uniform + limited_two_tone + crisp_shape_shadow: weak two-tone signal, recurring
+      caveat. Sheet PNG shows the recurring white-sliver thumbnail artifact on the seed_3003 cell (4th
+      occurrence); cosmetic only per prior confirmations, not re-verified
+  linework_coloring_crisp_uniform_limited_two_tone_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_119: crisp_uniform + limited_two_tone + fine_tonal_hatching: weak two-tone signal, recurring
+      caveat
+  linework_coloring_crisp_uniform_limited_two_tone_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_120: crisp_uniform + limited_two_tone + fine_tonal_hatching: weak two-tone signal, recurring
+      caveat. Sheet PNG shows the recurring white-sliver thumbnail artifact on seed_3003 (5th occurrence);
+      cosmetic only, not re-verified
+  linework_coloring_crisp_uniform_limited_two_tone_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_121: crisp_uniform + limited_two_tone + soft_two_band: two-tone contrast is weak across
+      seeds but present; shading bands read correctly
+  linework_coloring_crisp_uniform_limited_two_tone_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_122: crisp_uniform + limited_two_tone + soft_two_band: two-tone contrast weak but present,
+      consistent with case_121 sheet 1 -- limited_two_tone renders as a subtle value split rather than
+      two distinct hues, worth a Stage C spot-check across the axis but not failing individual items on
+      this alone
+  linework_coloring_crisp_uniform_limited_two_tone_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_123: crisp_uniform + limited_two_tone + subtle_contact_shadow: grey/beige tones, two-tone
+      contrast weak (same recurring caveat)
+  linework_coloring_crisp_uniform_limited_two_tone_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_124: crisp_uniform + limited_two_tone + subtle_contact_shadow: verified full resolution
+      (P7000372/image_01.png) -- garment renders as a near-single grey-taupe tone rather than two distinguishable
+      hues. Same weak-signal pattern, not failing individually but flagging limited_two_tone itself as
+      a secondary risk pattern alongside deep_jewel. Sheet PNG shows a white-sliver thumbnail artifact
+      on the seed_3003 cell; confirmed cosmetic only (source frame is clean), same as case_271/case_273
+      -- not re-verifying further occurrences of this specific artifact
+  linework_coloring_crisp_uniform_limited_two_tone_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_125: crisp_uniform + limited_two_tone + transparent_glaze: weak two-tone signal, 8th
+      observation
+  linework_coloring_crisp_uniform_limited_two_tone_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_126: crisp_uniform + limited_two_tone + transparent_glaze: weak two-tone signal, recurring
+      caveat
+  linework_coloring_crisp_uniform_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_127: crisp_uniform + muted_split_complement + broad_blended_plane: cool blue-grey against
+      warm skin, matches description
+  linework_coloring_crisp_uniform_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_128: crisp_uniform + muted_split_complement + broad_blended_plane: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_129: crisp_uniform + muted_split_complement + crisp_shape_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_130: crisp_uniform + muted_split_complement + crisp_shape_shadow: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_131: crisp_uniform + muted_split_complement + fine_tonal_hatching: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_132: crisp_uniform + muted_split_complement + fine_tonal_hatching: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_133: crisp_uniform + muted_split_complement + soft_two_band: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_134: crisp_uniform + muted_split_complement + soft_two_band: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_135: crisp_uniform + muted_split_complement + subtle_contact_shadow: cool blue-grey
+      against warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_136: crisp_uniform + muted_split_complement + subtle_contact_shadow: cool blue-grey
+      against warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_137: crisp_uniform + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_muted_split_complement_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_138: crisp_uniform + muted_split_complement + transparent_glaze: cool blue-grey against
+      warm skin, consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_139: crisp_uniform + skin_centered_neutral + broad_blended_plane: tan/grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_140: crisp_uniform + skin_centered_neutral + broad_blended_plane: tan/grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_141: crisp_uniform + skin_centered_neutral + crisp_shape_shadow: tan/grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_142: crisp_uniform + skin_centered_neutral + crisp_shape_shadow: grey/tan neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_143: crisp_uniform + skin_centered_neutral + fine_tonal_hatching: grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_144: crisp_uniform + skin_centered_neutral + fine_tonal_hatching: grey/tan neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_145: crisp_uniform + skin_centered_neutral + soft_two_band: grey/tan neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_146: crisp_uniform + skin_centered_neutral + soft_two_band: cream/grey neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_147: crisp_uniform + skin_centered_neutral + subtle_contact_shadow: cream/grey neutral
+      tones, consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_148: crisp_uniform + skin_centered_neutral + subtle_contact_shadow: cream/tan/grey neutral
+      tones, consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_149: crisp_uniform + skin_centered_neutral + transparent_glaze: grey/tan neutral tones,
+      consistent
+  linework_coloring_crisp_uniform_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_150: crisp_uniform + skin_centered_neutral + transparent_glaze: cream/grey neutral tones,
+      consistent
+  linework_coloring_elastic_pressure_airy_pastel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_151: elastic_pressure + airy_pastel + broad_blended_plane: clear multi-hue pastel (pink/mint/lavender)
+  linework_coloring_elastic_pressure_airy_pastel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_152: elastic_pressure + airy_pastel + broad_blended_plane: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_153: elastic_pressure + airy_pastel + crisp_shape_shadow: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_154: elastic_pressure + airy_pastel + crisp_shape_shadow: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_155: elastic_pressure + airy_pastel + fine_tonal_hatching: clear multi-hue pastel across
+      seeds
+  linework_coloring_elastic_pressure_airy_pastel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_156: elastic_pressure + airy_pastel + fine_tonal_hatching: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_157: elastic_pressure + airy_pastel + soft_two_band: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_158: elastic_pressure + airy_pastel + soft_two_band: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_159: elastic_pressure + airy_pastel + subtle_contact_shadow: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_160: elastic_pressure + airy_pastel + subtle_contact_shadow: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_161: elastic_pressure + airy_pastel + transparent_glaze: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_airy_pastel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_162: elastic_pressure + airy_pastel + transparent_glaze: clear multi-hue pastel'
+  linework_coloring_elastic_pressure_cool_nocturne_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_163: elastic_pressure + cool_nocturne + broad_blended_plane: deep teal/navy, safe shading
+      pairing
+  linework_coloring_elastic_pressure_cool_nocturne_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_164: elastic_pressure + cool_nocturne + broad_blended_plane: deep teal/navy, safe shading
+      pairing
+  linework_coloring_elastic_pressure_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_165: elastic_pressure + cool_nocturne + crisp_shape_shadow: deep teal/navy clear, sixth
+      confirmation coloring survives non-safe shading for cool_nocturne
+  linework_coloring_elastic_pressure_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_166: elastic_pressure + cool_nocturne + crisp_shape_shadow: deep teal/navy clear, eighth
+      confirmation coloring survives non-safe shading for cool_nocturne
+  linework_coloring_elastic_pressure_cool_nocturne_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_167: elastic_pressure + cool_nocturne + fine_tonal_hatching: deep teal/navy clear, tenth
+      confirmation coloring survives non-safe shading for cool_nocturne
+  linework_coloring_elastic_pressure_cool_nocturne_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_168: elastic_pressure + cool_nocturne + fine_tonal_hatching: deep teal/navy clear, twelfth
+      confirmation
+  linework_coloring_elastic_pressure_cool_nocturne_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_169: elastic_pressure + cool_nocturne + soft_two_band: deep teal/navy clear, fourteenth
+      confirmation
+  linework_coloring_elastic_pressure_cool_nocturne_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_170: elastic_pressure + cool_nocturne + soft_two_band: deep teal/navy clear, sixteenth
+      confirmation
+  linework_coloring_elastic_pressure_cool_nocturne_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_171: elastic_pressure + cool_nocturne + subtle_contact_shadow: deep teal/navy clear,
+      eighteenth confirmation with non-safe shading
+  linework_coloring_elastic_pressure_cool_nocturne_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_172: elastic_pressure + cool_nocturne + subtle_contact_shadow: deep navy/teal clear,
+      twentieth confirmation
+  linework_coloring_elastic_pressure_cool_nocturne_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_173: elastic_pressure + cool_nocturne + transparent_glaze: deep teal/navy clear, twenty-third
+      confirmation
+  linework_coloring_elastic_pressure_cool_nocturne_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_174: elastic_pressure + cool_nocturne + transparent_glaze: deep teal/navy clear, consistent
+  linework_coloring_elastic_pressure_skin_centered_neutral_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_175: elastic_pressure + skin_centered_neutral + fine_tonal_hatching: cream neutral tones,
+      consistent
+  linework_coloring_elastic_pressure_warm_earth_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_176: elastic_pressure + warm_earth + broad_blended_plane: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_177: elastic_pressure + warm_earth + broad_blended_plane: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_178: elastic_pressure + warm_earth + crisp_shape_shadow: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_179: elastic_pressure + warm_earth + crisp_shape_shadow: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_180: elastic_pressure + warm_earth + fine_tonal_hatching: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_181: elastic_pressure + warm_earth + fine_tonal_hatching: warm olive/brown coloring
+      clear; hatching texture not clearly visible at sheet density but coloring/linework carry the verdict
+  linework_coloring_elastic_pressure_warm_earth_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_182: elastic_pressure + warm_earth + soft_two_band: warm olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_183: elastic_pressure + warm_earth + soft_two_band: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_184: elastic_pressure + warm_earth + subtle_contact_shadow: olive/brown tones
+      clear'
+  linework_coloring_elastic_pressure_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_185: elastic_pressure + warm_earth + subtle_contact_shadow: olive/brown tones
+      clear'
+  linework_coloring_elastic_pressure_warm_earth_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_186: elastic_pressure + warm_earth + transparent_glaze: olive/tan tones clear'
+  linework_coloring_elastic_pressure_warm_earth_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_187: elastic_pressure + warm_earth + transparent_glaze: olive tones clear'
+  linework_coloring_fine_tapered_cool_nocturne_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_188: fine_tapered + cool_nocturne + broad_blended_plane: coloring passes (deep indigo/navy
+      blue-black matches cool_nocturne description, and broad_blended_plane is the safe shading pairing).
+      fine_tapered is the risk-flagged linework value though, so linework is held regardless of the coloring
+      pass
+  linework_coloring_fine_tapered_cool_nocturne_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_189: fine_tapered + cool_nocturne + broad_blended_plane: coloring passes (deep indigo/navy,
+      safe shading pairing); fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_190: fine_tapered + cool_nocturne + crisp_shape_shadow: coloring passes -- deep teal/navy
+      blue-green clearly visible even with a non-safe (non-broad_blended_plane) shading value, unlike
+      deep_jewel under the same condition. This is useful negative evidence: the coloring-collapse pattern
+      in 7.18 appears specific to deep_jewel, not a general rule for saturated/dark palettes paired with
+      non-broad_blended_plane shading. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_191: fine_tapered + cool_nocturne + crisp_shape_shadow: coloring passes -- deep teal/navy
+      clearly visible with non-safe shading, second confirmation that the collapse is deep_jewel-specific
+      (after case_190). fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_192: fine_tapered + cool_nocturne + fine_tonal_hatching: coloring passes -- deep teal-green
+      clearly visible, third confirmation the collapse is deep_jewel-specific. fine_tapered risk-flagged
+      linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_193: fine_tapered + cool_nocturne + fine_tonal_hatching: coloring passes -- deep teal/navy
+      clearly visible, fourth confirmation the collapse is deep_jewel-specific. fine_tapered risk-flagged
+      linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_194: fine_tapered + cool_nocturne + soft_two_band: coloring passes -- deep teal/navy/purple
+      clearly visible, fifth confirmation the collapse is deep_jewel-specific. fine_tapered risk-flagged
+      linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_195: fine_tapered + cool_nocturne + soft_two_band: coloring passes -- deep teal/navy
+      clear, seventh confirmation. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_196: fine_tapered + cool_nocturne + subtle_contact_shadow: coloring passes -- deep teal/navy
+      clear, ninth confirmation. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_197: fine_tapered + cool_nocturne + subtle_contact_shadow: coloring passes -- deep teal/navy
+      clear, eleventh confirmation. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_198: fine_tapered + cool_nocturne + transparent_glaze: coloring passes -- deep teal/navy
+      clear, thirteenth confirmation. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_cool_nocturne_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_199: fine_tapered + cool_nocturne + transparent_glaze: coloring passes -- deep teal/navy
+      clear, fifteenth confirmation. fine_tapered risk-flagged linework held regardless
+  linework_coloring_fine_tapered_limited_two_tone_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_200: fine_tapered + limited_two_tone + soft_two_band: fine_tapered risk-flagged linework
+      held regardless. Coloring shows the recurring weak two-tone signal (cream/grey) -- passes coloring
+      on its own but the item is held overall for the linework reason
+  linework_coloring_fine_tapered_limited_two_tone_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_201: fine_tapered + limited_two_tone + soft_two_band: fine_tapered risk-flagged linework
+      held regardless. Coloring shows the recurring weak two-tone signal
+  linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_202: fine_tapered + muted_split_complement + broad_blended_plane: fine_tapered risk-flagged
+      linework held regardless. Coloring (blue-grey against warm skin) passes clearly
+  linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_203: fine_tapered + muted_split_complement + broad_blended_plane: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_204: fine_tapered + muted_split_complement + crisp_shape_shadow: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_205: fine_tapered + muted_split_complement + crisp_shape_shadow: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_206: fine_tapered + skin_centered_neutral + crisp_shape_shadow: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_207: fine_tapered + skin_centered_neutral + crisp_shape_shadow: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_208: fine_tapered + skin_centered_neutral + soft_two_band: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_209: fine_tapered + skin_centered_neutral + soft_two_band: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_210: fine_tapered + skin_centered_neutral + subtle_contact_shadow: fine_tapered risk-flagged
+      linework held regardless. Coloring passes clearly
+  linework_coloring_fine_tapered_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_211: fine_tapered + skin_centered_neutral + subtle_contact_shadow: this is BOTH risk
+      pairs flagged in plan.md 7.15 measurement (fine_tapered/crisp_uniform and subtle_contact_shadow/crisp_shape_shadow
+      both collapse at 161px). Coloring (skin_centered_neutral) passes; linework and shading held for
+      Stage C
+  linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_212: fine_tapered + skin_centered_neutral + transparent_glaze: fine_tapered is a risk-flagged
+      linework value (plan.md 7.15) -- the taper-endpoint signal is inherently subtle, not just a confusion
+      with crisp_uniform specifically, so held regardless of sibling. Coloring (skin_centered_neutral)
+      passes
+  linework_coloring_fine_tapered_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_213: fine_tapered + skin_centered_neutral + transparent_glaze: fine_tapered risk-flagged
+      linework value, held regardless of sibling (same as case_212). Coloring passes
+  linework_coloring_fine_tapered_warm_earth_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_214: fine_tapered + warm_earth + broad_blended_plane: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring (warm_earth) passes clearly
+  linework_coloring_fine_tapered_warm_earth_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_215: fine_tapered + warm_earth + broad_blended_plane: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_216: fine_tapered + warm_earth + crisp_shape_shadow: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_217: fine_tapered + warm_earth + crisp_shape_shadow: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring passes
+  linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_218: fine_tapered + warm_earth + fine_tonal_hatching: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring (warm_earth) passes clearly
+  linework_coloring_fine_tapered_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_219: fine_tapered + warm_earth + fine_tonal_hatching: fine_tapered risk-flagged linework
+      value, held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_220: fine_tapered + warm_earth + soft_two_band: fine_tapered risk-flagged linework value,
+      held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_221: fine_tapered + warm_earth + soft_two_band: fine_tapered risk-flagged linework value
+      held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_222: fine_tapered + warm_earth + subtle_contact_shadow: fine_tapered risk-flagged linework
+      value held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_223: fine_tapered + warm_earth + subtle_contact_shadow: fine_tapered risk-flagged linework
+      value held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_224: fine_tapered + warm_earth + transparent_glaze: fine_tapered risk-flagged linework
+      value held regardless of sibling. Coloring passes clearly
+  linework_coloring_fine_tapered_warm_earth_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_225: fine_tapered + warm_earth + transparent_glaze: fine_tapered risk-flagged linework
+      value held regardless of sibling. Coloring passes clearly
+  linework_coloring_rounded_soft_airy_pastel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_226: rounded_soft + airy_pastel + subtle_contact_shadow: clear multi-hue pastel (pink/lavender/white)
+  linework_coloring_rounded_soft_airy_pastel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_227: rounded_soft + airy_pastel + subtle_contact_shadow: clear pastel (pink)'
+  linework_coloring_rounded_soft_cool_nocturne_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_228: rounded_soft + cool_nocturne + broad_blended_plane: deep teal/navy, safe shading
+      pairing
+  linework_coloring_rounded_soft_cool_nocturne_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_229: rounded_soft + cool_nocturne + broad_blended_plane: deep teal/navy, safe shading
+      pairing
+  linework_coloring_rounded_soft_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_230: rounded_soft + cool_nocturne + crisp_shape_shadow: deep teal/navy clear with non-safe
+      shading, seventeenth confirmation
+  linework_coloring_rounded_soft_cool_nocturne_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_231: rounded_soft + cool_nocturne + soft_two_band: deep teal/navy clear, nineteenth
+      confirmation
+  linework_coloring_rounded_soft_cool_nocturne_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_232: rounded_soft + cool_nocturne + subtle_contact_shadow: deep teal/navy clear, twenty-first
+      confirmation
+  linework_coloring_rounded_soft_cool_nocturne_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_233: rounded_soft + cool_nocturne + subtle_contact_shadow: deep teal/navy clear, twenty-fourth
+      confirmation
+  linework_coloring_rounded_soft_cool_nocturne_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_234: rounded_soft + cool_nocturne + transparent_glaze: deep teal/navy clear, consistent'
+  linework_coloring_rounded_soft_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_235: rounded_soft + deep_jewel + broad_blended_plane: coloring fails -- flat black at
+      full resolution (P7000703/image_01.png), CORRECTING the prior 7.18/7.19 characterization that broad_blended_plane
+      shading alone is safe for deep_jewel. Two additional full-res spot checks confirm broken_dry+broad_blended_plane
+      and selective_edge+broad_blended_plane ALSO collapse to black. The only confirmed-safe combination
+      remains angular_precise+broad_blended_plane (2 of 43 deep_jewel items). See plan.md correction
+  linework_coloring_rounded_soft_deep_jewel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_236: rounded_soft + deep_jewel + broad_blended_plane: coloring fails -- dark/near-black
+      garment, confirms the 7.21 correction (rounded_soft linework does not pass even with broad_blended_plane
+      shading)
+  linework_coloring_rounded_soft_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_237: rounded_soft + deep_jewel + crisp_shape_shadow: coloring fails -- flat black, consistent
+      with rounded_soft not being the safe linework value
+  linework_coloring_rounded_soft_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_238: rounded_soft + deep_jewel + crisp_shape_shadow: coloring fails -- flat black'
+  linework_coloring_rounded_soft_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_239: rounded_soft + deep_jewel + fine_tonal_hatching: coloring fails -- flat black'
+  linework_coloring_rounded_soft_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_240: rounded_soft + deep_jewel + fine_tonal_hatching: coloring fails -- flat black'
+  linework_coloring_rounded_soft_deep_jewel_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_241: rounded_soft + deep_jewel + soft_two_band: coloring fails -- flat black, no jewel
+      saturation, same deep_jewel x shading pattern as case_091
+  linework_coloring_rounded_soft_deep_jewel_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_242: rounded_soft + deep_jewel + soft_two_band: coloring fails -- same combo and same
+      collapse as case_241 sheet 1, 8th confirmation
+  linework_coloring_rounded_soft_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_243: rounded_soft + deep_jewel + subtle_contact_shadow: coloring fails -- flat black,
+      12th confirmation
+  linework_coloring_rounded_soft_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_244: rounded_soft + deep_jewel + subtle_contact_shadow: coloring fails -- flat black,
+      16th confirmation
+  linework_coloring_rounded_soft_deep_jewel_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_245: rounded_soft + deep_jewel + transparent_glaze: coloring fails -- flat black, 19th
+      confirmation
+  linework_coloring_rounded_soft_deep_jewel_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_246: rounded_soft + deep_jewel + transparent_glaze: coloring fails -- flat black, consistent
+      with established pattern
+  linework_coloring_rounded_soft_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_247: rounded_soft + limited_two_tone + crisp_shape_shadow: weak two-tone signal, recurring
+      caveat; cross-seed tonal variety noted but not a strong within-image two-tone split
+  linework_coloring_rounded_soft_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_248: rounded_soft + limited_two_tone + crisp_shape_shadow: weak two-tone signal, recurring
+      caveat
+  linework_coloring_rounded_soft_limited_two_tone_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_249: rounded_soft + limited_two_tone + fine_tonal_hatching: weak two-tone signal, recurring
+      caveat
+  linework_coloring_rounded_soft_limited_two_tone_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_250: rounded_soft + limited_two_tone + subtle_contact_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_rounded_soft_limited_two_tone_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_251: rounded_soft + limited_two_tone + subtle_contact_shadow: weak two-tone signal,
+      recurring caveat
+  linework_coloring_rounded_soft_warm_earth_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_252: rounded_soft + warm_earth + broad_blended_plane: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_253: rounded_soft + warm_earth + broad_blended_plane: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_254: rounded_soft + warm_earth + crisp_shape_shadow: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_255: rounded_soft + warm_earth + crisp_shape_shadow: olive/tan tones, slightly cooler
+      in one seed but overall warm-leaning
+  linework_coloring_rounded_soft_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_256: rounded_soft + warm_earth + fine_tonal_hatching: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_257: rounded_soft + warm_earth + fine_tonal_hatching: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_258: rounded_soft + warm_earth + soft_two_band: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_259: rounded_soft + warm_earth + soft_two_band: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_260: rounded_soft + warm_earth + subtle_contact_shadow: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_261: rounded_soft + warm_earth + subtle_contact_shadow: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_262: rounded_soft + warm_earth + transparent_glaze: olive/tan tones clear'
+  linework_coloring_rounded_soft_warm_earth_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_263: rounded_soft + warm_earth + transparent_glaze: olive/tan tones clear'
+  linework_coloring_selective_edge_airy_pastel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_264: selective_edge + airy_pastel + broad_blended_plane: clear multi-hue pastel'
+  linework_coloring_selective_edge_airy_pastel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_265: selective_edge + airy_pastel + broad_blended_plane: clear multi-hue pastel'
+  linework_coloring_selective_edge_airy_pastel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_266: selective_edge + airy_pastel + fine_tonal_hatching: clear multi-hue pastel'
+  linework_coloring_selective_edge_airy_pastel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_267: selective_edge + airy_pastel + fine_tonal_hatching: clear multi-hue pastel'
+  linework_coloring_selective_edge_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_268: selective_edge + deep_jewel + broad_blended_plane: coloring fails -- flat black,
+      matches the earlier full-resolution spot check (P7000802)
+  linework_coloring_selective_edge_deep_jewel_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_269: selective_edge + deep_jewel + broad_blended_plane: coloring fails -- flat black,
+      consistent with the earlier spot check
+  linework_coloring_selective_edge_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_270: selective_edge + deep_jewel + fine_tonal_hatching: coloring fails -- flat
+      black'
+  linework_coloring_selective_edge_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_271: selective_edge + deep_jewel + fine_tonal_hatching: coloring fails -- flat black
+      at full resolution, confirmed. Fine hatch line texture on sleeves is visible (linework/shading legible)
+      but coloring absent
+  linework_coloring_selective_edge_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_272: selective_edge + deep_jewel + subtle_contact_shadow: coloring fails -- flat black,
+      9th confirmation of the deep_jewel x non-broad_blended_plane pattern
+  linework_coloring_selective_edge_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_273: selective_edge + deep_jewel + subtle_contact_shadow: coloring fails -- flat black,
+      verified at full resolution (P7000819/image_01.png), 13th confirmation. Note: the seed_3003 thumbnail
+      on the sheet PNG shows a white vertical sliver artifact; the source frame itself is clean, so this
+      is a montage/thumbnail rendering quirk, not a data defect -- same artifact seen on case_271 sheet
+      1
+  linework_coloring_selective_edge_muted_split_complement_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_274: selective_edge + muted_split_complement + crisp_shape_shadow: cool blue-grey garment
+      against warm skin notes, matches muted split-complementary description
+  linework_coloring_selective_edge_muted_split_complement_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_275: selective_edge + muted_split_complement + crisp_shape_shadow: cool blue-grey against
+      warm skin, consistent with case_274
+  linework_coloring_selective_edge_muted_split_complement_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_276: selective_edge + muted_split_complement + fine_tonal_hatching: cool blue-grey against
+      warm skin, consistent with prior muted_split_complement cases
+  linework_coloring_selective_edge_muted_split_complement_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_277: selective_edge + muted_split_complement + fine_tonal_hatching: cool tone against
+      warm skin, consistent
+  linework_coloring_selective_edge_muted_split_complement_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_278: selective_edge + muted_split_complement + soft_two_band: cool tone against warm
+      skin, consistent
+  linework_coloring_selective_edge_muted_split_complement_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_279: selective_edge + muted_split_complement + soft_two_band: cool tone against warm
+      skin, consistent
+  linework_coloring_selective_edge_muted_split_complement_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_280: selective_edge + muted_split_complement + transparent_glaze: cool tone against
+      warm skin, consistent
+  linework_coloring_selective_edge_muted_split_complement_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_281: selective_edge + muted_split_complement + transparent_glaze: cool tone against
+      warm skin, consistent
+  linework_coloring_selective_edge_skin_centered_neutral_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_282: selective_edge + skin_centered_neutral + broad_blended_plane: neutral cream/grey
+      tones overall, one seed shows a stark dark skirt contrast but reads as neutral-toned outfit
+  linework_coloring_selective_edge_skin_centered_neutral_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_283: selective_edge + skin_centered_neutral + broad_blended_plane: neutral cream/grey/brown
+      tones consistent
+  linework_coloring_selective_edge_skin_centered_neutral_crisp_shape_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_284: selective_edge + skin_centered_neutral + crisp_shape_shadow: neutral tones overall,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_crisp_shape_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_285: selective_edge + skin_centered_neutral + crisp_shape_shadow: neutral grey tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_286: selective_edge + skin_centered_neutral + fine_tonal_hatching: neutral grey tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_287: selective_edge + skin_centered_neutral + fine_tonal_hatching: neutral grey tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_288: selective_edge + skin_centered_neutral + soft_two_band: neutral tones, consistent'
+  linework_coloring_selective_edge_skin_centered_neutral_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_289: selective_edge + skin_centered_neutral + soft_two_band: neutral tones, consistent'
+  linework_coloring_selective_edge_skin_centered_neutral_subtle_contact_shadow_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_290: selective_edge + skin_centered_neutral + subtle_contact_shadow: neutral tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_subtle_contact_shadow_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_291: selective_edge + skin_centered_neutral + subtle_contact_shadow: neutral tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_transparent_glaze_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_292: selective_edge + skin_centered_neutral + transparent_glaze: neutral grey tones,
+      consistent
+  linework_coloring_selective_edge_skin_centered_neutral_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_293: selective_edge + skin_centered_neutral + transparent_glaze: neutral grey tones,
+      consistent
+  linework_coloring_selective_edge_warm_earth_broad_blended_plane_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_294: selective_edge + warm_earth + broad_blended_plane: olive/tan/cream tones, consistent
+  linework_coloring_selective_edge_warm_earth_broad_blended_plane_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_295: selective_edge + warm_earth + broad_blended_plane: olive/tan/cream tones, consistent
+  linework_coloring_selective_edge_warm_earth_fine_tonal_hatching_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_296: selective_edge + warm_earth + fine_tonal_hatching: olive/tan tones clear'
+  linework_coloring_selective_edge_warm_earth_fine_tonal_hatching_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_297: selective_edge + warm_earth + fine_tonal_hatching: olive/tan tones clear'
+  linework_coloring_selective_edge_warm_earth_soft_two_band_controlled_rim_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_298: selective_edge + warm_earth + soft_two_band: olive/tan/cream tones, consistent'
+  linework_coloring_selective_edge_warm_earth_soft_two_band_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_299: selective_edge + warm_earth + soft_two_band: olive/tan/cream tones, consistent'
+  linework_coloring_selective_edge_warm_earth_transparent_glaze_reflected_color_complete_line_color:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_300: selective_edge + warm_earth + transparent_glaze: olive/tan tones clear'
