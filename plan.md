@@ -2988,7 +2988,42 @@ chest-up/waist-up 크롭에서 프레임 밖 의류 보정을 한 번도 받지 
 177/200 승격도 그 상태로 진행됐다. 기존 테스트가 못 잡은 이유는 전부 손으로 쓴
 픽스처를 쓰기 때문이다 — 카탈로그와 독립적이라 같은 방향으로 같이 낡았다.
 
-**남은 것:** linework_coloring 300항목 3-seed(900장) 재검증 진행 중. camera·preset·
+**전수 확인 — 파일럿 결론이 300항목에서 재확인됐다.** linework_coloring 900장
+(300항목 × 3seed)을 앵커 rig로 재생성했다. Stage A 300/300 통과. `coloring` 축으로
+그룹한 채도 스크리닝은 **300개 중 이상치 0건**이다.
+
+| coloring | n | median | range |
+| --- | --- | --- | --- |
+| `airy_pastel` | 42 | 0.0839 | 0.0672 – 0.1085 |
+| `limited_two_tone` | 43 | 0.1378 | 0.1129 – 0.1931 |
+| `skin_centered_neutral` | 43 | 0.1448 | 0.1165 – 0.1713 |
+| `muted_split_complement` | 43 | 0.1550 | 0.1285 – 0.1986 |
+| `deep_jewel` | 43 | 0.1628 | **0.1107 – 0.2117** |
+| `cool_nocturne` | 43 | 0.1909 | 0.1663 – 0.2319 |
+| `warm_earth` | 43 | 0.2194 | 0.1838 – 0.2716 |
+
+deep_jewel의 **최소값 0.1107이 airy_pastel의 최대값 0.1085보다 높다.** 43개 중 어느
+것도 회색으로 무너지지 않았다. §7.18의 정확한 주장(shading에 따라 갈린다)을 그
+단위로 쪼개면 이렇다.
+
+| deep_jewel × shading | n | median | §7.18 판정 |
+| --- | --- | --- | --- |
+| `broad_blended_plane` | 8 | 0.1687 | 안전 |
+| `crisp_shape_shadow` | 7 | **0.1708** | 흑백 붕괴 |
+| `transparent_glaze` | 6 | 0.1618 | 흑백 붕괴 |
+| `fine_tonal_hatching` | 8 | 0.1593 | 흑백 붕괴 |
+| `soft_two_band` | 6 | 0.1572 | 흑백 붕괴 |
+| `subtle_contact_shadow` | 8 | 0.1541 | 흑백 붕괴 |
+
+중앙값 전체 폭이 0.1541–0.1708, 즉 10% 이내다. "안전"하다던 조합보다 "붕괴"한다던
+`crisp_shape_shadow`가 오히려 높다. **분기가 아니라 노이즈다.**
+
+**스크리닝 그룹 축을 잘못 잡으면 오탐이 난다.** 같은 데이터를 `shading`으로 그룹하면
+이상치 12건이 잡히는데, shading 그룹은 팔레트 7종을 섞으므로 `airy_pastel` 항목이
+채도 높은 팔레트가 지배하는 중앙값 아래로 떨어질 뿐이다. 채도 비교는 팔레트를
+정의하는 축(`coloring`)으로 그룹해야 한다.
+
+**남은 것:** linework_coloring 시트 30장 병렬 리뷰 진행 중. camera·preset·
 background·character_design·pose·lighting도 같은 결함 rig로 판정됐으므로 재검증
 대상이다. media_rendering(§7.29)·effect(§7.30) 차단 사유 중 "템플릿 보일러플레이트
 모순"은 이번 조각화로 해소됐으나, §7.29가 이미 그 수정만으로는 효과가 없었음을

@@ -9,9 +9,28 @@ export const meta = {
   ],
 }
 
-const axis = args?.axis
-const rev = args?.rev ?? 'v2'
-if (!axis) throw new Error('args.axis is required, e.g. {"axis":"linework_coloring","rev":"v2"}')
+// args can arrive as an object or as a JSON string depending on how the caller
+// passes it, and a bare axis name is convenient enough to accept too.
+function readArgs(raw) {
+  if (!raw) return {}
+  if (typeof raw !== 'string') return raw
+  const text = raw.trim()
+  if (!text.startsWith('{')) return { axis: text }
+  try {
+    return JSON.parse(text)
+  } catch {
+    return { axis: text }
+  }
+}
+
+const input = readArgs(args)
+const axis = input.axis
+const rev = input.rev ?? 'v2'
+if (!axis) {
+  throw new Error(
+    `args.axis is required, e.g. {"axis":"linework_coloring","rev":"v2"} -- received ${JSON.stringify(args)}`,
+  )
+}
 
 const reportDir = `tests/reports/phase7_${axis}_${rev}`
 const reviewDir = `${reportDir}/review`

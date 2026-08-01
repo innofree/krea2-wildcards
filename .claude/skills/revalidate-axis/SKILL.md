@@ -70,9 +70,15 @@ python3 scripts/screen_axis_saturation.py tests/reports/phase7_<axis>_v2/scoreca
 Only meaningful on axes with a `coloring` feature axis. It compares each item to
 its own palette group's median, which is the comparison plan.md 7.18 got wrong by
 judging absolute saturation: `airy_pastel` sits near 0.10 by design while
-`deep_jewel` sits near 0.20, so no single threshold separates a real collapse from
+`warm_earth` sits near 0.22, so no single threshold separates a real collapse from
 a muted palette. Outliers are a shortlist to open at full resolution, never a
 verdict.
+
+**Group by the axis that defines the palette.** On the linework_coloring v2 run,
+`--group-axis coloring` found 0 outliers across 300 items while `--group-axis
+shading` found 12 -- all of them `airy_pastel` items sitting below a median that
+the saturated palettes in the same shading group had pulled up. Grouping by
+anything other than the palette axis manufactures outliers.
 
 ### 5. Review the sheets — parallel
 
