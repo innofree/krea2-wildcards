@@ -36,9 +36,24 @@ for s in ('generated','approved','rejected'):
 
 ## Pipeline
 
-`REV=v2` throughout. It keeps this pass beside the original evidence instead of
-overwriting it — the v1 reports are the record of what the broken rig produced and
-are still referenced by plan.md and the Hub dataset.
+`REV=v2` throughout, UNLESS the axis already has a `_v2` report directory from
+before this rig existed — check first:
+
+```bash
+ls -d tests/reports/phase7_<axis>_v*
+```
+
+`camera` already went through two passes under the broken rig (plan.md 7.26-7.28:
+a termination-lock defect, then a repair and recalibration whose final promotion —
+144/250 — lives in `phase7_camera_v2/`, not `_v1`). Running this pipeline with
+`REV=v2` on camera hits `run_remote_prompt_matrix.py`'s "existing run state does
+not match this matrix execution" and refuses to proceed — the resume-mismatch
+check is what stops it from silently overwriting that history. Use `REV=v3` for
+camera. Every other axis's history stops at `_v1`, so `REV=v2` is free.
+
+Whatever `REV` you land on, it keeps this pass beside the original evidence
+instead of overwriting it — the earlier reports are the record of what the broken
+rig produced and are still referenced by plan.md and the Hub dataset.
 
 ```bash
 # 1. Export + generate. Serial and GPU-bound: the runner does an empty-queue
