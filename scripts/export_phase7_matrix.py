@@ -61,6 +61,17 @@ PROVEN_AXES = (
 # keep both eyes readable, which a profile view cannot satisfy, and generation
 # resolved the conflict frontally. See plan.md 7.5.
 CAMERA_PROFILE_MARKERS = ("clean side camera position", "facial profile")
+# `_framing_contract` in export_phase6_matrix.py has no branch for these three
+# crops, so all 94 camera items using one of them fall through to the generic
+# mid-thigh default, which demands "both eyes" regardless of the actual crop.
+# 8 of those 94 also want a profile view (close_face + clean_profile), so the
+# fallback directly contradicts CAMERA_SUBJECT_CONTRACT's single visible eye.
+# See plan.md 7.5.
+CAMERA_CROP_FRAMING_MARKERS = (
+    "close facial framing",
+    "head-and-shoulders framing",
+    "vertical full-scene framing",
+)
 PHASE7_AXIS_ANCHORS = {
     "fashion": (
         "Show her in a balanced standing pose with a simple "
@@ -111,6 +122,19 @@ PHASE7_AXIS_FRAMING = {
     "effect": "Use an eye-level full-length camera.",
     "media_rendering": "Use an eye-level mid-thigh camera.",
 }
+# Calibration (plan.md 7.29) showed the catalog body's own medium description
+# was not enough: every mark_making value rendered as the same generic
+# photographic portrait. Appended after the closing camera lock -- the true
+# end of the prompt, the position that reliably held the camera axis's
+# profile-view fix -- this reasserts the medium where recency gives it the
+# most weight.
+PHASE7_AXIS_SUFFIX = {
+    "media_rendering": (
+        "This must not read as a photograph anywhere on the figure: apply the "
+        "described medium's marks uniformly across skin, hair, and fabric, with "
+        "no photographic skin texture visible."
+    ),
+}
 PHASE7_AXIS_CATALOGS = {
     "background": "catalog/backgrounds.yaml",
     "camera": "catalog/cameras.yaml",
@@ -126,20 +150,29 @@ PHASE7_AXIS_CATALOGS = {
 }
 BINDING_ARTIFACT_TYPE = "phase7_axis_prompt_binding"
 PHASE7_PROFILE_ALGORITHM = (
-    "phase7-mass-axis-v2|phase6-single-axis-prompt-reuse|"
+    "phase7-mass-axis-v5|phase6-single-axis-prompt-reuse|"
     "item-id-keyed-rows-v1|per-item-prompt-digest-binding-v1|"
-    "camera-profile-contract-repair-v1|anchored-subject-identity-v1"
+    "camera-profile-contract-repair-v1|camera-crop-framing-repair-v1|"
+    "camera-profile-framing-suffix-repair-v1|axis-suffix-v1|"
+    "anchored-subject-identity-v1"
+)
+CAMERA_PROFILE_FRAMING_SUFFIX = (
+    "This is a strict side-profile view: only the near eye is visible, and "
+    "the far eye is fully hidden by the turn of the head."
 )
 PHASE7_PROFILE_SHA256 = hashlib.sha256(
     json.dumps(
         {
+            "camera_crop_framing_markers": list(CAMERA_CROP_FRAMING_MARKERS),
+            "camera_profile_framing_suffix": CAMERA_PROFILE_FRAMING_SUFFIX,
             "camera_profile_markers": list(CAMERA_PROFILE_MARKERS),
             "phase6_profile_sha256": PHASE6_PROFILE_SHA256,
             "phase7_axis_anchors": PHASE7_AXIS_ANCHORS,
             "phase7_axis_focus": PHASE7_AXIS_FOCUS,
             "phase7_axis_framing": PHASE7_AXIS_FRAMING,
+            "phase7_axis_suffix": PHASE7_AXIS_SUFFIX,
             "profile_algorithm": PHASE7_PROFILE_ALGORITHM,
-            "version": "phase7_mass_axis_v3",
+            "version": "phase7_mass_axis_v6",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -170,9 +203,11 @@ def phase7_axis_prompt(axis: str, prompt: str) -> str:
         f"{prompt}. {PHASE7_AXIS_ANCHORS[axis]}"
     )
     framing = _framing_contract(PHASE7_AXIS_FRAMING[axis])
+    suffix = PHASE7_AXIS_SUFFIX.get(axis, "")
+    tail = f"{framing} {suffix}".strip() if suffix else framing
     return (
         f"{SUBJECT_CONTRACT} {PHASE7_AXIS_FOCUS[axis]} "
-        f"{value.strip().rstrip('.,;:')}. {FINISH} {framing}"
+        f"{value.strip().rstrip('.,;:')}. {FINISH} {tail}"
     )
 
 
@@ -182,15 +217,55 @@ def wants_profile_contract(body: str) -> bool:
     return any(marker in lowered for marker in CAMERA_PROFILE_MARKERS)
 
 
+def camera_crop_framing_override(prompt: str, *, profile: bool) -> str | None:
+    """Closing camera lock for the three crops the Phase 6 contract can't map."""
+    lowered = prompt.lower()
+    eyes_clause = "the visible profile eye" if profile else "both eyes"
+    if "close facial framing" in lowered:
+        return (
+            "Final camera lock—make a tight close-face portrait cutting from just above "
+            f"the hairline to just below the chin. Keep the complete crown and {eyes_clause} "
+            "inside. Do not show the neck, shoulders, or anything below the jaw."
+        )
+    if "head-and-shoulders framing" in lowered:
+        return (
+            "Final camera lock—frame the head and shoulders, with a narrow strip of "
+            "background above the complete crown and a lower edge crossing just below both "
+            f"shoulders. Keep the face and {eyes_clause} inside. Do not show the chest, arms, "
+            "or hands."
+        )
+    if "vertical full-scene framing" in lowered:
+        return (
+            "Final camera lock—pull back to a vertical full-scene view keeping the complete "
+            f"crown, {eyes_clause}, both shoes, and visible floor below both shoes inside the "
+            "canvas."
+        )
+    return None
+
+
 def camera_prompt(prompt: str) -> str:
-    """Phase 6 camera construction with the profile contract actually applied."""
+    """Phase 6 camera construction with the profile contract actually applied.
+
+    A 12-shot recalibration (plan.md 7.26) showed the crop fix and an earlier
+    reconciliation sentence were enough for close-face and thigh-up profile
+    items (6/6 held the view) but not chest-up (5/6 still rendered frontal):
+    its closing lock has a correct crop-boundary branch but never reasserts
+    view direction, so the profile request decays by the end of the prompt.
+    ``framing_suffix`` reinforces it at the true end of the prompt for every
+    profile item, whatever its crop.
+    """
+    profile = wants_profile_contract(prompt)
     return single_axis_prompt(
         "camera",
         prompt,
-        subject_contract=(
-            CAMERA_SUBJECT_CONTRACT
-            if wants_profile_contract(prompt)
-            else SUBJECT_CONTRACT
+        subject_contract=CAMERA_SUBJECT_CONTRACT if profile else SUBJECT_CONTRACT,
+        framing_override=camera_crop_framing_override(prompt, profile=profile),
+        framing_suffix=CAMERA_PROFILE_FRAMING_SUFFIX if profile else "",
+        reconciliation_suffix=(
+            " For a profile camera position, only the near eye must stay visible and "
+            "readable; do not force the far eye into frame."
+            if profile
+            else ""
         ),
     )
 

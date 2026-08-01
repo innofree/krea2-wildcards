@@ -1,0 +1,274 @@
+schema_version: 2
+catalog: item_shard
+shard:
+  id: shard:style_pack:synced_009
+  kind: style_pack
+  sequence: 9
+  item_count: 15
+  maximum_items: 25
+items:
+- id: item:style_pack:atomic_starburst_midcentury
+  legacy_ref: catalog/art_styles.yaml#items/atomic_starburst_midcentury
+  feature_refs:
+    composition:
+    - feature:composition:confident_negative_space
+    eye: []
+    face: []
+    linework:
+    - feature:linework:flat_graphic_silhouette
+    rendering:
+    - feature:rendering:atomic_starburst_motif
+    - feature:rendering:warm_retro_palette
+    - feature:rendering:screenprint_grain
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:atomic_starburst_midcentury_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:atomic_starburst_midcentury
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:boomerang_pattern_midcentury
+  legacy_ref: catalog/art_styles.yaml#items/boomerang_pattern_midcentury
+  feature_refs:
+    composition:
+    - feature:composition:playful_asymmetry
+    eye: []
+    face: []
+    linework:
+    - feature:linework:flat_graphic_silhouette
+    rendering:
+    - feature:rendering:boomerang_pattern_motif
+    - feature:rendering:teal_and_mustard_palette
+    - feature:rendering:hard_flat_shading
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:boomerang_pattern_midcentury_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:boomerang_pattern_midcentury
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:champagne_metal_deco
+  legacy_ref: catalog/art_styles.yaml#items/champagne_metal_deco
+  feature_refs:
+    composition:
+    - feature:composition:restrained_composition
+    eye: []
+    face: []
+    linework:
+    - feature:linework:elongated_deco_silhouette
+    rendering:
+    - feature:rendering:minimal_deco_ornament
+    - feature:rendering:champagne_metallic_palette
+    - feature:rendering:soft_flat_shading
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:champagne_metal_deco_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:champagne_metal_deco
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:chevron_geometric_deco
+  legacy_ref: catalog/art_styles.yaml#items/chevron_geometric_deco
+  feature_refs:
+    composition:
+    - feature:composition:symmetrical_deco_composition
+    eye: []
+    face: []
+    linework:
+    - feature:linework:angular_deco_silhouette
+    - feature:linework:black_and_gold_linework
+    rendering:
+    - feature:rendering:chevron_patterning
+    - feature:rendering:sharp_color_blocking
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:chevron_geometric_deco_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:chevron_geometric_deco
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:chrome_bubble_y2k
+  legacy_ref: catalog/art_styles.yaml#items/chrome_bubble_y2k
+  feature_refs:
+    composition: []
+    eye: []
+    face:
+    - feature:face:chrome_reflective_surface
+    linework:
+    - feature:linework:rounded_bubble_silhouette
+    rendering:
+    - feature:rendering:cool_cyber_palette
+    - feature:rendering:soft_specular_highlights
+    - feature:rendering:playful_futurism
+  source_refs:
+  - source:internal:taxonomy_v1
+  lifecycle_ref: lifecycle:style_pack:chrome_bubble_y2k
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:cyber_optimism_y2k
+  legacy_ref: catalog/art_styles.yaml#items/cyber_optimism_y2k
+  feature_refs:
+    composition: []
+    eye: []
+    face: []
+    linework:
+    - feature:linework:sleek_futurist_silhouette
+    - feature:linework:crisp_specular_edges
+    rendering:
+    - feature:rendering:cyber_grid_accents
+    - feature:rendering:cool_metallic_palette
+    - feature:rendering:confident_futurism
+  source_refs:
+  - source:internal:taxonomy_v1
+  lifecycle_ref: lifecycle:style_pack:cyber_optimism_y2k
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:gilded_sunburst_deco
+  legacy_ref: catalog/art_styles.yaml#items/gilded_sunburst_deco
+  feature_refs:
+    composition: []
+    eye: []
+    face: []
+    linework:
+    - feature:linework:elongated_deco_silhouette
+    - feature:linework:gold_linework
+    rendering:
+    - feature:rendering:sunburst_radiance
+    - feature:rendering:jewel_flat_palette
+    - feature:rendering:poster_flat_lighting
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:gilded_sunburst_deco_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:gilded_sunburst_deco
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:graphic_silhouette_midcentury
+  legacy_ref: catalog/art_styles.yaml#items/graphic_silhouette_midcentury
+  feature_refs:
+    composition:
+    - feature:composition:poster_composition
+    eye: []
+    face: []
+    linework:
+    - feature:linework:bold_flat_silhouette
+    - feature:linework:minimal_interior_linework
+    rendering:
+    - feature:rendering:high_contrast_retro_palette
+    - feature:rendering:atomic_accent_shapes
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:graphic_silhouette_midcentury_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:graphic_silhouette_midcentury
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:holographic_iridescent_y2k
+  legacy_ref: catalog/art_styles.yaml#items/holographic_iridescent_y2k
+  feature_refs:
+    composition: []
+    eye: []
+    face:
+    - feature:face:holographic_surface_shimmer
+    linework:
+    - feature:linework:sleek_futurist_silhouette
+    rendering:
+    - feature:rendering:iridescent_oil_slick_palette
+    - feature:rendering:soft_gradient_lighting
+    - feature:rendering:optimistic_energy
+  source_refs:
+  - source:internal:taxonomy_v1
+  lifecycle_ref: lifecycle:style_pack:holographic_iridescent_y2k
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:lacquered_fan_deco
+  legacy_ref: catalog/art_styles.yaml#items/lacquered_fan_deco
+  feature_refs:
+    composition: []
+    eye: []
+    face:
+    - feature:face:lacquer_gloss_surface
+    linework:
+    - feature:linework:elongated_deco_silhouette
+    rendering:
+    - feature:rendering:fan_and_scallop_motif
+    - feature:rendering:deep_jewel_flat_palette
+    - feature:rendering:elegant_stillness
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:lacquered_fan_deco_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:lacquered_fan_deco
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:pastel_screenprint_midcentury
+  legacy_ref: catalog/art_styles.yaml#items/pastel_screenprint_midcentury
+  feature_refs:
+    composition:
+    - feature:composition:gentle_asymmetry
+    eye: []
+    face: []
+    linework:
+    - feature:linework:flat_graphic_silhouette
+    rendering:
+    - feature:rendering:soft_pastel_retro_palette
+    - feature:rendering:fine_screenprint_grain
+    - feature:rendering:rounded_atomic_shapes
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:pastel_screenprint_midcentury_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:pastel_screenprint_midcentury
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:pixel_glitch_y2k
+  legacy_ref: catalog/art_styles.yaml#items/pixel_glitch_y2k
+  feature_refs:
+    composition:
+    - feature:composition:digital_optimism_space
+    eye: []
+    face: []
+    linework:
+    - feature:linework:sleek_futurist_silhouette
+    rendering:
+    - feature:rendering:pixel_glitch_accents
+    - feature:rendering:cool_cyber_palette
+    - feature:rendering:scanline_texture
+  source_refs:
+  - source:internal:taxonomy_v1
+  lifecycle_ref: lifecycle:style_pack:pixel_glitch_y2k
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:stepped_skyline_deco
+  legacy_ref: catalog/art_styles.yaml#items/stepped_skyline_deco
+  feature_refs:
+    composition:
+    - feature:composition:architectural_composition
+    eye: []
+    face: []
+    linework:
+    - feature:linework:elongated_deco_silhouette
+    - feature:linework:crisp_linework
+    rendering:
+    - feature:rendering:stepped_ziggurat_backdrop
+    - feature:rendering:muted_metallic_palette
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:stepped_skyline_deco_art_style_new_families_v1_s3
+  lifecycle_ref: lifecycle:style_pack:stepped_skyline_deco
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:teak_and_teal_midcentury
+  legacy_ref: catalog/art_styles.yaml#items/teak_and_teal_midcentury
+  feature_refs:
+    composition:
+    - feature:composition:horizontal_composition
+    eye: []
+    face: []
+    linework:
+    - feature:linework:flat_graphic_silhouette
+    - feature:linework:confident_flat_linework
+    rendering:
+    - feature:rendering:warm_wood_tone_palette
+    - feature:rendering:teal_accent_color
+  source_refs:
+  - source:internal:taxonomy_v1
+  evaluation_ref: evaluation:style_pack:teak_and_teal_midcentury_art_style_new_families_v1_s5
+  lifecycle_ref: lifecycle:style_pack:teak_and_teal_midcentury
+  runtime_route_ref: runtime_route:style_pack:complete_pack
+- id: item:style_pack:translucent_plastic_y2k
+  legacy_ref: catalog/art_styles.yaml#items/translucent_plastic_y2k
+  feature_refs:
+    composition:
+    - feature:composition:playful_bubble_space
+    eye: []
+    face: []
+    linework:
+    - feature:linework:rounded_bubble_silhouette
+    rendering:
+    - feature:rendering:translucent_plastic_texture
+    - feature:rendering:bright_candy_palette
+    - feature:rendering:soft_internal_glow
+  source_refs:
+  - source:internal:taxonomy_v1
+  lifecycle_ref: lifecycle:style_pack:translucent_plastic_y2k
+  runtime_route_ref: runtime_route:style_pack:complete_pack

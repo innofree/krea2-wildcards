@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase7_media_rendering_calibration_v3.jsonl",
+  "matrix_sha256": "4e4034c84bfd22d652f18572949f7d0da32df09782b85dd7cd1957168662a311",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 3,
+  "batch_size": 1,
+  "job_count": 3,
+  "completed_count": 3,
+  "style_count": 3,
+  "modes": {
+    "mass_axis_media_rendering": 3
+  },
+  "seeds": [
+    71001
+  ],
+  "scorecard": "tests/reports/phase7_media_rendering_calibration_v3/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "media_rendering_carved_block_rough_mineral_ground_atmospheric_recession_absorbed_low_sheen_complete_media",
+      "mode": "mass_axis_media_rendering",
+      "seed": 71001,
+      "run": "tests/reports/phase7_media_rendering_calibration_v3/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "media_rendering_dense_stipple_cold_pressed_grain_atmospheric_recession_absorbed_low_sheen_complete_media",
+      "mode": "mass_axis_media_rendering",
+      "seed": 71001,
+      "run": "tests/reports/phase7_media_rendering_calibration_v3/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "media_rendering_fluid_ink_cold_pressed_grain_atmospheric_recession_pearlescent_soft_complete_media",
+      "mode": "mass_axis_media_rendering",
+      "seed": 71001,
+      "run": "tests/reports/phase7_media_rendering_calibration_v3/runs/P7000003/run.json"
+    }
+  ]
+}

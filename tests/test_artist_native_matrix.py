@@ -15,15 +15,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_registry_exports_exact_native_name_pilot_matrix() -> None:
-    rows = artist_rows(ROOT / "research/artist_registry.yaml")
+    # research/artist_registry.yaml now holds the original 300 (post_count-ranked,
+    # all Japanese/anime-tradition) plus a second batch of 40 Korean/Chinese
+    # candidates (artist_301-340, curated by researched nationality -- see
+    # plan.md 7.34) added later, so the registry is no longer exactly 300.
+    rows = artist_rows(ROOT / "research/artist_registry.yaml", expected_artists=340)
 
-    assert len(rows) == 900
-    assert len({row["style_id"] for row in rows}) == 300
+    assert len(rows) == 1020
+    assert len({row["style_id"] for row in rows}) == 340
     assert {row["seed"] for row in rows} == {1001, 2002, 3003}
     assert {row["mode"] for row in rows} == {"native_name"}
-    assert len({row["test_id"] for row in rows}) == 900
+    assert len({row["test_id"] for row in rows}) == 1020
     assert rows[0]["style_id"] == "artist_001"
-    assert rows[-1]["style_id"] == "artist_300"
+    assert rows[-1]["style_id"] == "artist_340"
     assert all("__" not in row["prompt"] for row in rows)
     assert all(row["label"] in row["prompt"] for row in rows)
     assert all("one adult woman" in row["prompt"] for row in rows)
@@ -39,6 +43,8 @@ def test_export_cli_is_byte_deterministic(tmp_path: Path) -> None:
                 str(ROOT / "scripts/export_artist_native_matrix.py"),
                 "--registry",
                 str(ROOT / "research/artist_registry.yaml"),
+                "--expected-artists",
+                "340",
                 "--output",
                 str(output),
                 "--seed",
@@ -52,10 +58,29 @@ def test_export_cli_is_byte_deterministic(tmp_path: Path) -> None:
             check=False,
         )
         assert result.returncode == 0, result.stdout or result.stderr
-        assert len(output.read_text(encoding="utf-8").splitlines()) == 600
+        assert len(output.read_text(encoding="utf-8").splitlines()) == 680
 
     hashes = [hashlib.sha256(path.read_bytes()).hexdigest() for path in outputs]
     assert hashes[0] == hashes[1]
+
+
+def test_artist_id_filter_scopes_to_a_targeted_batch() -> None:
+    rows = artist_rows(
+        ROOT / "research/artist_registry.yaml",
+        expected_artists=340,
+        include_ids={"artist_301", "artist_340"},
+    )
+    assert len(rows) == 6
+    assert {row["style_id"] for row in rows} == {"artist_301", "artist_340"}
+
+
+def test_artist_id_filter_rejects_unknown_ids() -> None:
+    with pytest.raises(ValueError, match="no such artist"):
+        artist_rows(
+            ROOT / "research/artist_registry.yaml",
+            expected_artists=340,
+            include_ids={"artist_999"},
+        )
 
 
 def test_export_rejects_duplicate_seeds_and_incomplete_registry(tmp_path: Path) -> None:
@@ -75,6 +100,8 @@ def test_exported_rows_are_valid_json_objects(tmp_path: Path) -> None:
         [
             sys.executable,
             str(ROOT / "scripts/export_artist_native_matrix.py"),
+            "--expected-artists",
+            "340",
             "--output",
             str(output),
             "--seed",
@@ -87,5 +114,5 @@ def test_exported_rows_are_valid_json_objects(tmp_path: Path) -> None:
     )
     assert result.returncode == 0
     rows = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()]
-    assert len(rows) == 300
+    assert len(rows) == 340
     assert all(row["schema_version"] == 1 for row in rows)

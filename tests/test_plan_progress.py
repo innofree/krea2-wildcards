@@ -31,10 +31,11 @@ def test_plan_progress_tracks_catalog_targets() -> None:
     # The two approval targets are what the fragmentation reset. Each verdict was
     # evidence about a prompt string the rewrite replaced, so both counts fell back
     # to what the hand-maintained catalog carries without any Phase 6/7 promotion:
-    # 21 art_style packs, and no artist signature at all. approved_art_styles had
-    # been sitting exactly on 150 as 21 art_styles + 129 style_expansion. Both stay
+    # 29 art_style packs, and no artist signature at all. approved_art_styles had
+    # been sitting exactly on 150 as 21 art_styles + 129 style_expansion, and the
+    # camera/preset merge added 8 more hand-maintained packs. Both targets stay
     # incomplete until a coverage gate runs against the new prompts.
-    assert targets["approved_art_styles"]["current"] == 21
+    assert targets["approved_art_styles"]["current"] == 29
     assert targets["approved_artist_signatures"]["current"] == 0
     assert not targets["approved_art_styles"]["complete"]
     assert not targets["approved_artist_signatures"]["complete"]

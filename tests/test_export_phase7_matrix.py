@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -16,6 +17,8 @@ from export_phase6_matrix import (
     single_axis_prompt,
 )
 from export_phase7_matrix import (
+    CAMERA_CROP_FRAMING_MARKERS,
+    CAMERA_PROFILE_FRAMING_SUFFIX,
     COMPLETE_SCENE_AXES,
     COMPLETE_SCENE_SEEDS,
     DEFAULT_SEEDS,
@@ -26,6 +29,7 @@ from export_phase7_matrix import (
     axis_profile_factor,
     axis_seeds,
     binding_document,
+    camera_crop_framing_override,
     camera_prompt,
     mass_axis_rows,
     payload_sha256,
@@ -212,21 +216,109 @@ def test_camera_moved_off_the_phase6_profile_digest() -> None:
     assert axis_profile_factor("camera") == PHASE7_PROFILE_FACTOR
 
 
-def test_the_camera_repair_only_changes_profile_items() -> None:
-    """Non-profile camera prompts must stay byte-identical to Phase 6."""
+def test_the_camera_repair_only_changes_prompts_it_must() -> None:
+    """Everything else must stay byte-identical to Phase 6.
+
+    That's profile items (wrong subject contract) plus close_face /
+    head_shoulders / vertical_full_scene items (no closing-lock branch, so
+    they got the generic mid-thigh lock regardless of crop or profile status).
+    94 items use one of those three crops and 42 want a profile view, with an
+    8-item overlap (close_face + clean_profile), so 128 items must change.
+    See plan.md 7.5.
+    """
     catalog = load_yaml(ROOT / PHASE7_AXIS_CATALOGS["camera"])["items"]
     profile_ids = {item_id for item_id in catalog if "clean_profile" in item_id}
+    broken_crop_ids = {
+        item_id
+        for item_id, item in catalog.items()
+        if item["feature_axes"]["framing"][0]
+        in {"close_face", "head_shoulders", "vertical_full_scene"}
+    }
+    assert len(broken_crop_ids) == 94
+    expected_changed = profile_ids | broken_crop_ids
+    assert len(expected_changed) == 128
+
     changed = 0
     for item_id, item in select_axis_items("camera"):
         body = _prompt_body(_prompt(item_id, item))
         repaired = camera_prompt(body)
         phase6 = single_axis_prompt("camera", body)
-        if item_id in profile_ids:
+        if item_id in expected_changed:
             assert repaired != phase6, item_id
             changed += 1
         else:
             assert repaired == phase6, item_id
-    assert changed == 42
+    assert changed == len(expected_changed)
+
+
+def test_camera_unmapped_crops_get_their_own_closing_lock() -> None:
+    """The three crops with no `_framing_contract` branch must no longer fall
+    back to the generic mid-thigh lock, whatever their camera position."""
+    catalog = load_yaml(ROOT / PHASE7_AXIS_CATALOGS["camera"])["items"]
+    counted = Counter()
+    for item_id, item in catalog.items():
+        crop = item["feature_axes"]["framing"][0]
+        if crop not in {"close_face", "head_shoulders", "vertical_full_scene"}:
+            continue
+        counted[crop] += 1
+        body = _prompt_body(_prompt(item_id, item))
+        rendered = camera_prompt(body)
+        assert "eye-level mid-thigh inspection frame" not in rendered, item_id
+        assert any(marker in rendered.lower() for marker in CAMERA_CROP_FRAMING_MARKERS)
+    assert counted == Counter(
+        {"close_face": 32, "head_shoulders": 31, "vertical_full_scene": 31}
+    )
+
+
+def test_camera_profile_closing_lock_no_longer_demands_two_eyes() -> None:
+    """The 8 items combining a profile view with an unmapped crop used to get
+    a closing lock demanding "both eyes", directly contradicting the profile
+    subject contract's single visible eye. See plan.md 7.5.
+    """
+    catalog = load_yaml(ROOT / PHASE7_AXIS_CATALOGS["camera"])["items"]
+    conflicted = [
+        item_id
+        for item_id, item in catalog.items()
+        if item["feature_axes"]["framing"][0] == "close_face"
+        and item["feature_axes"]["camera_position"][0] == "clean_profile"
+    ]
+    assert len(conflicted) == 8
+    for item_id in conflicted:
+        body = _prompt_body(_prompt(item_id, catalog[item_id]))
+        rendered = camera_prompt(body)
+        assert "both eyes" not in rendered, item_id
+
+
+def test_camera_profile_items_end_with_the_view_reinforcement_suffix() -> None:
+    """A 12-shot recalibration (plan.md 7.26) showed the crop fix plus an
+    earlier reconciliation sentence held the profile view for close-face and
+    thigh-up (6/6) but not chest-up (5/6 still rendered frontal): its closing
+    lock never reasserts view direction, so the request decays by the end of
+    the prompt. Every profile item must end with the reinforcement, whatever
+    its crop -- a second 6-shot recalibration on the two failing chest-up
+    items confirmed 6/6 held the profile after this landed.
+    """
+    catalog = load_yaml(ROOT / PHASE7_AXIS_CATALOGS["camera"])["items"]
+    profile_ids = {item_id for item_id in catalog if "clean_profile" in item_id}
+    for item_id, item in catalog.items():
+        body = _prompt_body(_prompt(item_id, item))
+        rendered = camera_prompt(body)
+        if item_id in profile_ids:
+            assert rendered.rstrip().endswith(CAMERA_PROFILE_FRAMING_SUFFIX), item_id
+        else:
+            assert CAMERA_PROFILE_FRAMING_SUFFIX not in rendered, item_id
+
+
+def test_camera_crop_framing_override_is_none_for_mapped_crops() -> None:
+    """The escape hatch must stay inert for the five crops Phase 6 already
+    mapped correctly, whatever the profile flag."""
+    for profile in (True, False):
+        assert (
+            camera_crop_framing_override(
+                "Photograph an adult subject using chest-up framing.", profile=profile
+            )
+            is None
+        )
 
 
 def test_new_axes_carry_a_separate_phase7_digest() -> None:

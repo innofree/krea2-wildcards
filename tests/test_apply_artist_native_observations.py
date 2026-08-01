@@ -94,7 +94,7 @@ def load_observations(
     artist_ids = validate_registry(registry, expected_artists=expected_artists)
     return load_merged_observations(
         observations_path,
-        expected_artist_ids=artist_ids,
+        registry_artist_ids=artist_ids,
         forbidden_names=forbidden_identity_names(registry),
     )
 
@@ -142,24 +142,44 @@ def test_applies_exact_axis_mapping_status_threshold_and_preserves_fields(
         assert "notes" not in updated["artists"][artist_id]
 
 
-def test_requires_exact_contiguous_registry_and_matching_observation_coverage(
-    tmp_path: Path,
-) -> None:
+def test_requires_exact_contiguous_registry(tmp_path: Path) -> None:
     registry = registry_document(artist_count=3)
     registry["artists"]["artist_004"] = registry["artists"].pop("artist_003")
     with pytest.raises(ValueError, match=r"missing=1, extra=1"):
         validate_registry(registry, expected_artists=3)
 
+
+def test_partial_observation_subset_is_allowed(tmp_path: Path) -> None:
     registry = registry_document(artist_count=3)
     merged = merged_document(artist_count=3)
     del merged["artists"]["artist_003"]
     merged["artist_count"] = 2
-    observations_path = tmp_path / "incomplete.yaml"
+    observations_path = tmp_path / "partial.yaml"
     dump_yaml(merged, observations_path)
-    with pytest.raises(ValueError, match="does not exactly match the registry"):
+
+    observations = load_merged_observations(
+        observations_path,
+        registry_artist_ids=validate_registry(registry, expected_artists=3),
+        forbidden_names=forbidden_identity_names(registry),
+    )
+
+    assert set(observations) == {"artist_001", "artist_002"}
+
+
+def test_observation_referencing_unknown_artist_id_is_rejected(
+    tmp_path: Path,
+) -> None:
+    registry = registry_document(artist_count=3)
+    merged = merged_document(artist_count=3)
+    merged["artists"]["artist_999"] = merged["artists"].pop("artist_003")
+    merged["artist_count"] = 3
+    observations_path = tmp_path / "unknown.yaml"
+    dump_yaml(merged, observations_path)
+
+    with pytest.raises(ValueError, match="not in the registry"):
         load_merged_observations(
             observations_path,
-            expected_artist_ids=validate_registry(registry, expected_artists=3),
+            registry_artist_ids=validate_registry(registry, expected_artists=3),
             forbidden_names=forbidden_identity_names(registry),
         )
 
@@ -253,7 +273,7 @@ def test_direct_merged_input_rejects_endpoint_and_canonical_identity(
     with pytest.raises(ValueError, match="forbidden"):
         load_merged_observations(
             path,
-            expected_artist_ids=validate_registry(registry, expected_artists=1),
+            registry_artist_ids=validate_registry(registry, expected_artists=1),
             forbidden_names=forbidden_identity_names(registry),
         )
 
@@ -266,7 +286,7 @@ def test_duplicate_yaml_key_and_extra_metadata_are_rejected(tmp_path: Path) -> N
     with pytest.raises(ValueError, match="invalid YAML"):
         load_merged_observations(
             duplicate,
-            expected_artist_ids=artist_ids,
+            registry_artist_ids=artist_ids,
             forbidden_names=forbidden_identity_names(registry),
         )
 
@@ -277,7 +297,7 @@ def test_duplicate_yaml_key_and_extra_metadata_are_rejected(tmp_path: Path) -> N
     with pytest.raises(ValueError, match="unexpected or missing metadata"):
         load_merged_observations(
             extra,
-            expected_artist_ids=artist_ids,
+            registry_artist_ids=artist_ids,
             forbidden_names=forbidden_identity_names(registry),
         )
 

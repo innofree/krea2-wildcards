@@ -1,0 +1,42 @@
+{
+  "case_001": [
+    "pass",
+    "true side profile, single eye visible, chest-up crop stable across all 3 seeds"
+  ],
+  "case_026": [
+    "pass",
+    "frontal eye-level view, chest-up crop consistent across seeds"
+  ],
+  "case_051": [
+    "hold",
+    "close_face crop too loose, shows shoulder/upper-arm same as head_shoulders, not tight head-only"
+  ],
+  "case_076": [
+    "hold",
+    "seed1 full-length but seed2/seed3 collapse to chest-up crop, major instability"
+  ],
+  "case_101": [
+    "pass",
+    "head_shoulders crop correct, turned mostly away with back of head/shoulder visible"
+  ],
+  "case_126": [
+    "pass",
+    "head_shoulders crop, slight turn toward camera, stable across seeds"
+  ],
+  "case_151": [
+    "hold",
+    "thigh_up mislabeled, crop stops at chest, no thigh visible, consistent but wrong crop"
+  ],
+  "case_176": [
+    "hold",
+    "severe cartoon/line-art artifacts, wrong crop (chest-up not vertical_full_scene), stray white bars"
+  ],
+  "case_201": [
+    "pass",
+    "waist_up crop with gesturing hands, consistent across seeds"
+  ],
+  "case_226": [
+    "pass",
+    "small figure pulled back with visible environment, consistent across seeds"
+  ]
+}

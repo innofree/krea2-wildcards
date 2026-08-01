@@ -1,0 +1,145 @@
+schema_version: 1
+review_method: family_contact_sheet_screen
+notes: 10 new items (art_deco 5, mid_century_modern 5) reviewed across 2 family contact
+  sheets at 3 seeds per item, plus full-resolution spot checks on gilded_sunburst_deco,
+  chevron_geometric_deco, and two mid_century_modern items.
+styles:
+  gilded_sunburst_deco:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Radiating gilded sunburst beading converging at the waist, marble lobby,
+      warm lamp light; stable across all 3 seeds.'
+  chevron_geometric_deco:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Clear angular chevron/zigzag beading pattern at full resolution, distinct
+      from the other four art_deco items; stable across all 3 seeds.'
+  lacquered_fan_deco:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Beaded gown and marble lobby render well; the fan/scallop motif and lacquer
+      gloss are present but subtler at this resolution than the other four -- distinctiveness
+      is the weakest of the five.'
+  stepped_skyline_deco:
+    metrics:
+      prompt_adherence: 3
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 3
+    critical_failure: false
+    notes: 'The family template fixes the marble-lobby background, so the described
+      stepped ziggurat skyline backdrop never appears -- a genuine mismatch between
+      this item concept and the family''s fixed-scene design. The gown and beading
+      still read as art_deco, but the item''s own distinguishing motif does not.'
+  champagne_metal_deco:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Warm champagne-toned beaded gown reads well; the "minimal ornament" restraint
+      makes it visually close to the other beaded-gown items, distinctiveness is
+      moderate.'
+  atomic_starburst_midcentury:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Clean flat graphic illustration with confident black contour lines over
+      a cream shirt-dress, mid-century living room background; stable across all
+      3 seeds.'
+  boomerang_pattern_midcentury:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Flat graphic style holds well; the boomerang/kidney-shape pattern itself
+      is not clearly visible on the plain shirt-dress at this resolution, so the
+      item reads close to atomic_starburst_midcentury.'
+  pastel_screenprint_midcentury:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 2
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Dusty-pink pastel palette holds at seeds 1001-3003 but drifts to near-white
+      with a pale mint side panel at seeds 4004-5005 -- the retest (5-seed) evidence
+      shows the described pastel palette is not stable across seeds, which is the
+      item''s core distinguishing claim. Flat graphic style itself remains intact.'
+  teak_and_teal_midcentury:
+    metrics:
+      prompt_adherence: 5
+      style_fidelity: 5
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 5
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Confident teal color block clearly distinct from the other mid_century_modern
+      items, flat graphic style intact, stable across all 3 seeds.'
+  graphic_silhouette_midcentury:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 5
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 3
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: 'Flat graphic style holds well; the cream palette and silhouette read
+      close to atomic_starburst_midcentury and boomerang_pattern_midcentury, distinctiveness
+      is the weakest of the five.'

@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/artist_native_name_kr_cn_v1.jsonl",
+  "matrix_sha256": "8a1dfc3721fc277d5d67f775969625ac0ea6c7d49ffcf81cc267bafbc55e4338",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 32,
+  "batch_size": 1,
+  "job_count": 120,
+  "completed_count": 120,
+  "style_count": 40,
+  "modes": {
+    "native_name": 120
+  },
+  "seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "scorecard": "tests/reports/artist_native_kr_cn_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "AN000001",
+      "style_id": "artist_301",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000001/run.json"
+    },
+    {
+      "test_id": "AN000002",
+      "style_id": "artist_301",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000002/run.json"
+    },
+    {
+      "test_id": "AN000003",
+      "style_id": "artist_301",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000003/run.json"
+    },
+    {
+      "test_id": "AN000004",
+      "style_id": "artist_302",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000004/run.json"
+    },
+    {
+      "test_id": "AN000005",
+      "style_id": "artist_302",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000005/run.json"
+    },
+    {
+      "test_id": "AN000006",
+      "style_id": "artist_302",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000006/run.json"
+    },
+    {
+      "test_id": "AN000007",
+      "style_id": "artist_303",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000007/run.json"
+    },
+    {
+      "test_id": "AN000008",
+      "style_id": "artist_303",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000008/run.json"
+    },
+    {
+      "test_id": "AN000009",
+      "style_id": "artist_303",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000009/run.json"
+    },
+    {
+      "test_id": "AN000010",
+      "style_id": "artist_304",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000010/run.json"
+    },
+    {
+      "test_id": "AN000011",
+      "style_id": "artist_304",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000011/run.json"
+    },
+    {
+      "test_id": "AN000012",
+      "style_id": "artist_304",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000012/run.json"
+    },
+    {
+      "test_id": "AN000013",
+      "style_id": "artist_305",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000013/run.json"
+    },
+    {
+      "test_id": "AN000014",
+      "style_id": "artist_305",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000014/run.json"
+    },
+    {
+      "test_id": "AN000015",
+      "style_id": "artist_305",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000015/run.json"
+    },
+    {
+      "test_id": "AN000016",
+      "style_id": "artist_306",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000016/run.json"
+    },
+    {
+      "test_id": "AN000017",
+      "style_id": "artist_306",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000017/run.json"
+    },
+    {
+      "test_id": "AN000018",
+      "style_id": "artist_306",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000018/run.json"
+    },
+    {
+      "test_id": "AN000019",
+      "style_id": "artist_307",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000019/run.json"
+    },
+    {
+      "test_id": "AN000020",
+      "style_id": "artist_307",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000020/run.json"
+    },
+    {
+      "test_id": "AN000021",
+      "style_id": "artist_307",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000021/run.json"
+    },
+    {
+      "test_id": "AN000022",
+      "style_id": "artist_308",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000022/run.json"
+    },
+    {
+      "test_id": "AN000023",
+      "style_id": "artist_308",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000023/run.json"
+    },
+    {
+      "test_id": "AN000024",
+      "style_id": "artist_308",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000024/run.json"
+    },
+    {
+      "test_id": "AN000025",
+      "style_id": "artist_309",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000025/run.json"
+    },
+    {
+      "test_id": "AN000026",
+      "style_id": "artist_309",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000026/run.json"
+    },
+    {
+      "test_id": "AN000027",
+      "style_id": "artist_309",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000027/run.json"
+    },
+    {
+      "test_id": "AN000028",
+      "style_id": "artist_310",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000028/run.json"
+    },
+    {
+      "test_id": "AN000029",
+      "style_id": "artist_310",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000029/run.json"
+    },
+    {
+      "test_id": "AN000030",
+      "style_id": "artist_310",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000030/run.json"
+    },
+    {
+      "test_id": "AN000031",
+      "style_id": "artist_311",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000031/run.json"
+    },
+    {
+      "test_id": "AN000032",
+      "style_id": "artist_311",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000032/run.json"
+    },
+    {
+      "test_id": "AN000033",
+      "style_id": "artist_311",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000033/run.json"
+    },
+    {
+      "test_id": "AN000034",
+      "style_id": "artist_312",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000034/run.json"
+    },
+    {
+      "test_id": "AN000035",
+      "style_id": "artist_312",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000035/run.json"
+    },
+    {
+      "test_id": "AN000036",
+      "style_id": "artist_312",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000036/run.json"
+    },
+    {
+      "test_id": "AN000037",
+      "style_id": "artist_313",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000037/run.json"
+    },
+    {
+      "test_id": "AN000038",
+      "style_id": "artist_313",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000038/run.json"
+    },
+    {
+      "test_id": "AN000039",
+      "style_id": "artist_313",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000039/run.json"
+    },
+    {
+      "test_id": "AN000040",
+      "style_id": "artist_314",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000040/run.json"
+    },
+    {
+      "test_id": "AN000041",
+      "style_id": "artist_314",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000041/run.json"
+    },
+    {
+      "test_id": "AN000042",
+      "style_id": "artist_314",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000042/run.json"
+    },
+    {
+      "test_id": "AN000043",
+      "style_id": "artist_315",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000043/run.json"
+    },
+    {
+      "test_id": "AN000044",
+      "style_id": "artist_315",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000044/run.json"
+    },
+    {
+      "test_id": "AN000045",
+      "style_id": "artist_315",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000045/run.json"
+    },
+    {
+      "test_id": "AN000046",
+      "style_id": "artist_316",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000046/run.json"
+    },
+    {
+      "test_id": "AN000047",
+      "style_id": "artist_316",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000047/run.json"
+    },
+    {
+      "test_id": "AN000048",
+      "style_id": "artist_316",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000048/run.json"
+    },
+    {
+      "test_id": "AN000049",
+      "style_id": "artist_317",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000049/run.json"
+    },
+    {
+      "test_id": "AN000050",
+      "style_id": "artist_317",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000050/run.json"
+    },
+    {
+      "test_id": "AN000051",
+      "style_id": "artist_317",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000051/run.json"
+    },
+    {
+      "test_id": "AN000052",
+      "style_id": "artist_318",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000052/run.json"
+    },
+    {
+      "test_id": "AN000053",
+      "style_id": "artist_318",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000053/run.json"
+    },
+    {
+      "test_id": "AN000054",
+      "style_id": "artist_318",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000054/run.json"
+    },
+    {
+      "test_id": "AN000055",
+      "style_id": "artist_319",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000055/run.json"
+    },
+    {
+      "test_id": "AN000056",
+      "style_id": "artist_319",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000056/run.json"
+    },
+    {
+      "test_id": "AN000057",
+      "style_id": "artist_319",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000057/run.json"
+    },
+    {
+      "test_id": "AN000058",
+      "style_id": "artist_320",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000058/run.json"
+    },
+    {
+      "test_id": "AN000059",
+      "style_id": "artist_320",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000059/run.json"
+    },
+    {
+      "test_id": "AN000060",
+      "style_id": "artist_320",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000060/run.json"
+    },
+    {
+      "test_id": "AN000061",
+      "style_id": "artist_321",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000061/run.json"
+    },
+    {
+      "test_id": "AN000062",
+      "style_id": "artist_321",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000062/run.json"
+    },
+    {
+      "test_id": "AN000063",
+      "style_id": "artist_321",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000063/run.json"
+    },
+    {
+      "test_id": "AN000064",
+      "style_id": "artist_322",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000064/run.json"
+    },
+    {
+      "test_id": "AN000065",
+      "style_id": "artist_322",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000065/run.json"
+    },
+    {
+      "test_id": "AN000066",
+      "style_id": "artist_322",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000066/run.json"
+    },
+    {
+      "test_id": "AN000067",
+      "style_id": "artist_323",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000067/run.json"
+    },
+    {
+      "test_id": "AN000068",
+      "style_id": "artist_323",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000068/run.json"
+    },
+    {
+      "test_id": "AN000069",
+      "style_id": "artist_323",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000069/run.json"
+    },
+    {
+      "test_id": "AN000070",
+      "style_id": "artist_324",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000070/run.json"
+    },
+    {
+      "test_id": "AN000071",
+      "style_id": "artist_324",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000071/run.json"
+    },
+    {
+      "test_id": "AN000072",
+      "style_id": "artist_324",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000072/run.json"
+    },
+    {
+      "test_id": "AN000073",
+      "style_id": "artist_325",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000073/run.json"
+    },
+    {
+      "test_id": "AN000074",
+      "style_id": "artist_325",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000074/run.json"
+    },
+    {
+      "test_id": "AN000075",
+      "style_id": "artist_325",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000075/run.json"
+    },
+    {
+      "test_id": "AN000076",
+      "style_id": "artist_326",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000076/run.json"
+    },
+    {
+      "test_id": "AN000077",
+      "style_id": "artist_326",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000077/run.json"
+    },
+    {
+      "test_id": "AN000078",
+      "style_id": "artist_326",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000078/run.json"
+    },
+    {
+      "test_id": "AN000079",
+      "style_id": "artist_327",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000079/run.json"
+    },
+    {
+      "test_id": "AN000080",
+      "style_id": "artist_327",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000080/run.json"
+    },
+    {
+      "test_id": "AN000081",
+      "style_id": "artist_327",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000081/run.json"
+    },
+    {
+      "test_id": "AN000082",
+      "style_id": "artist_328",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000082/run.json"
+    },
+    {
+      "test_id": "AN000083",
+      "style_id": "artist_328",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000083/run.json"
+    },
+    {
+      "test_id": "AN000084",
+      "style_id": "artist_328",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000084/run.json"
+    },
+    {
+      "test_id": "AN000085",
+      "style_id": "artist_329",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000085/run.json"
+    },
+    {
+      "test_id": "AN000086",
+      "style_id": "artist_329",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000086/run.json"
+    },
+    {
+      "test_id": "AN000087",
+      "style_id": "artist_329",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000087/run.json"
+    },
+    {
+      "test_id": "AN000088",
+      "style_id": "artist_330",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000088/run.json"
+    },
+    {
+      "test_id": "AN000089",
+      "style_id": "artist_330",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000089/run.json"
+    },
+    {
+      "test_id": "AN000090",
+      "style_id": "artist_330",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000090/run.json"
+    },
+    {
+      "test_id": "AN000091",
+      "style_id": "artist_331",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000091/run.json"
+    },
+    {
+      "test_id": "AN000092",
+      "style_id": "artist_331",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000092/run.json"
+    },
+    {
+      "test_id": "AN000093",
+      "style_id": "artist_331",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000093/run.json"
+    },
+    {
+      "test_id": "AN000094",
+      "style_id": "artist_332",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000094/run.json"
+    },
+    {
+      "test_id": "AN000095",
+      "style_id": "artist_332",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000095/run.json"
+    },
+    {
+      "test_id": "AN000096",
+      "style_id": "artist_332",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000096/run.json"
+    },
+    {
+      "test_id": "AN000097",
+      "style_id": "artist_333",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000097/run.json"
+    },
+    {
+      "test_id": "AN000098",
+      "style_id": "artist_333",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000098/run.json"
+    },
+    {
+      "test_id": "AN000099",
+      "style_id": "artist_333",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000099/run.json"
+    },
+    {
+      "test_id": "AN000100",
+      "style_id": "artist_334",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000100/run.json"
+    },
+    {
+      "test_id": "AN000101",
+      "style_id": "artist_334",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000101/run.json"
+    },
+    {
+      "test_id": "AN000102",
+      "style_id": "artist_334",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000102/run.json"
+    },
+    {
+      "test_id": "AN000103",
+      "style_id": "artist_335",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000103/run.json"
+    },
+    {
+      "test_id": "AN000104",
+      "style_id": "artist_335",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000104/run.json"
+    },
+    {
+      "test_id": "AN000105",
+      "style_id": "artist_335",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000105/run.json"
+    },
+    {
+      "test_id": "AN000106",
+      "style_id": "artist_336",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000106/run.json"
+    },
+    {
+      "test_id": "AN000107",
+      "style_id": "artist_336",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000107/run.json"
+    },
+    {
+      "test_id": "AN000108",
+      "style_id": "artist_336",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000108/run.json"
+    },
+    {
+      "test_id": "AN000109",
+      "style_id": "artist_337",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000109/run.json"
+    },
+    {
+      "test_id": "AN000110",
+      "style_id": "artist_337",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000110/run.json"
+    },
+    {
+      "test_id": "AN000111",
+      "style_id": "artist_337",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000111/run.json"
+    },
+    {
+      "test_id": "AN000112",
+      "style_id": "artist_338",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000112/run.json"
+    },
+    {
+      "test_id": "AN000113",
+      "style_id": "artist_338",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000113/run.json"
+    },
+    {
+      "test_id": "AN000114",
+      "style_id": "artist_338",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000114/run.json"
+    },
+    {
+      "test_id": "AN000115",
+      "style_id": "artist_339",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000115/run.json"
+    },
+    {
+      "test_id": "AN000116",
+      "style_id": "artist_339",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000116/run.json"
+    },
+    {
+      "test_id": "AN000117",
+      "style_id": "artist_339",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000117/run.json"
+    },
+    {
+      "test_id": "AN000118",
+      "style_id": "artist_340",
+      "mode": "native_name",
+      "seed": 1001,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000118/run.json"
+    },
+    {
+      "test_id": "AN000119",
+      "style_id": "artist_340",
+      "mode": "native_name",
+      "seed": 2002,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000119/run.json"
+    },
+    {
+      "test_id": "AN000120",
+      "style_id": "artist_340",
+      "mode": "native_name",
+      "seed": 3003,
+      "run": "tests/reports/artist_native_kr_cn_v1/runs/AN000120/run.json"
+    }
+  ]
+}

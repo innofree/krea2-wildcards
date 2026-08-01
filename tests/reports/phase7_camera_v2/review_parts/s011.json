@@ -1,0 +1,42 @@
+{
+  "case_011": [
+    "pass",
+    "True side profile, single eye, chest_up crop stable across all 3 seeds"
+  ],
+  "case_036": [
+    "hold",
+    "close_face crop too wide, shows shoulders/chest like chest_up, not tight hairline-to-chin"
+  ],
+  "case_061": [
+    "hold",
+    "close_face crop too wide (torso visible); look-back turn pose ok but framing fails"
+  ],
+  "case_086": [
+    "pass",
+    "full_length crop crown-to-feet, slight_low subtle, consistent across all 3 seeds"
+  ],
+  "case_111": [
+    "pass",
+    "head_shoulders crop correct, rear_three_quarter turn with back/shoulder visible, stable across seeds"
+  ],
+  "case_136": [
+    "hold",
+    "thigh_up mislabeled: crop shows only chest, no thighs/legs visible in any seed"
+  ],
+  "case_161": [
+    "pass",
+    "vertical_full_scene shows full body with floor visible, stable across seeds"
+  ],
+  "case_186": [
+    "hold",
+    "vertical_full_scene crop wrong: shows chest_up headshot only, no full body, all seeds"
+  ],
+  "case_211": [
+    "pass",
+    "waist_up crop correct, slight_high subtle, consistent across seeds"
+  ],
+  "case_236": [
+    "pass",
+    "wide_environmental: small figure, floor+props visible, consistent across seeds"
+  ]
+}

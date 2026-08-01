@@ -10,6 +10,10 @@ from validate_catalog_v2 import validate_catalog_v2
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# Mirrors catalog_v2/meta/schema.yaml's evaluation_required_statuses: a
+# freshly generated item carries no evaluation_ref until its status
+# requires one.
+EVALUATION_REQUIRED_STATUSES = {"testing", "approved", "limited", "rejected", "deprecated"}
 
 
 def _fixture_tree(tmp_path: Path) -> Path:
@@ -44,7 +48,7 @@ def _items(catalog: Path) -> dict[str, dict[str, Any]]:
     }
 
 
-def test_catalog_v2_migrates_all_50_styles_losslessly() -> None:
+def test_catalog_v2_migrates_all_style_packs_losslessly() -> None:
     catalog = ROOT / "catalog_v2"
     assert validate_catalog_v2(catalog) == []
 
@@ -87,13 +91,22 @@ def test_catalog_v2_migrates_all_50_styles_losslessly() -> None:
         ]
         assert sorted(projected_terms) == sorted(legacy["visual_axes"])
 
+        status = legacy["validation"]["status"]
         lifecycle = lifecycles[item["lifecycle_ref"]]
-        evaluation = evaluations[item["evaluation_ref"]]
         assert lifecycle["item_ref"] == item["id"]
-        assert lifecycle["current_status"] == legacy["validation"]["status"]
-        assert evaluation["item_ref"] == item["id"]
-        assert evaluation["distinct_seed_count"] == legacy["validation"]["tested_seeds"]
+        assert lifecycle["current_status"] == status
 
+        if status in EVALUATION_REQUIRED_STATUSES:
+            evaluation = evaluations[item["evaluation_ref"]]
+            assert evaluation["item_ref"] == item["id"]
+            assert evaluation["distinct_seed_count"] == legacy["validation"]["tested_seeds"]
+        else:
+            assert item.get("evaluation_ref") is None
+
+        # sync_catalog_v2.py assigns runtime_route_ref unconditionally (unlike
+        # evaluation_ref); runtime_route_required_statuses only governs
+        # whether validate_catalog_v2.py's per-item check treats it as
+        # mandatory, not whether sync actually sets it.
         assert item["runtime_route_ref"] == "runtime_route:style_pack:complete_pack"
         assert route["file"] == legacy["runtime"]["file"]
         assert [*route["path_prefix"], legacy_id] == legacy["runtime"]["path"]

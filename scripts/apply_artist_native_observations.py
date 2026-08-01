@@ -206,9 +206,17 @@ def _clean_merged_text(
 def load_merged_observations(
     path: Path,
     *,
-    expected_artist_ids: set[str],
+    registry_artist_ids: set[str],
     forbidden_names: tuple[str, ...],
 ) -> dict[str, dict[str, Any]]:
+    """Load a merged observation file scoped to any non-empty subset of the registry.
+
+    The original workflow observed all 300 artists in one pass, so this once
+    required exact coverage of the whole registry. Batches added later (e.g.
+    the 40 Korean/Chinese artists in plan.md 7.34) are observed on their own,
+    so this now only requires every observed id to actually exist in the
+    registry -- not that every registry id be observed in this one file.
+    """
     document = _load_yaml_mapping(path, source="merged observations")
     if set(document) != MERGED_FIELDS:
         raise ValueError("merged observations contain unexpected or missing metadata")
@@ -225,17 +233,19 @@ def load_merged_observations(
         artists
     ):
         raise ValueError("merged observations artist_count does not match artists")
-    if set(artists) != expected_artist_ids:
-        missing = expected_artist_ids - set(artists)
-        extra = set(artists) - expected_artist_ids
+    observation_ids = set(artists)
+    if not observation_ids:
+        raise ValueError("merged observations must cover at least one artist")
+    unknown = observation_ids - registry_artist_ids
+    if unknown:
         raise ValueError(
-            "merged observation coverage does not exactly match the registry; "
-            f"missing={len(missing)}, extra={len(extra)}"
+            f"merged observations reference artist id(s) not in the registry: "
+            f"{sorted(unknown)}"
         )
 
     forbidden_pattern = _forbidden_identity_pattern(forbidden_names)
     validated: dict[str, dict[str, Any]] = {}
-    for artist_id in sorted(expected_artist_ids):
+    for artist_id in sorted(observation_ids):
         raw = artists[artist_id]
         if not isinstance(raw, dict) or set(raw) != ENTRY_FIELDS:
             raise ValueError(
@@ -279,12 +289,13 @@ def apply_observations(
     registry: dict[str, Any], observations: dict[str, dict[str, Any]]
 ) -> tuple[dict[str, Any], dict[str, int]]:
     registry_ids = set(registry["artists"])
-    if set(observations) != registry_ids:
-        raise ValueError("observation coverage does not exactly match the registry")
+    observed_ids = set(observations)
+    if not observed_ids or not observed_ids <= registry_ids:
+        raise ValueError("observations must be a non-empty subset of the registry")
     updated = copy.deepcopy(registry)
     counts = {"stable": 0, "unstable": 0, "changed": 0}
 
-    for artist_id in sorted(registry_ids):
+    for artist_id in sorted(observed_ids):
         original_record = registry["artists"][artist_id]
         record = updated["artists"][artist_id]
         observation = observations[artist_id]
@@ -363,20 +374,26 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument(
         "--registry", type=Path, default=Path("research/artist_registry.yaml")
     )
+    parser.add_argument(
+        "--expected-artists",
+        type=int,
+        default=DEFAULT_EXPECTED_ARTISTS,
+        help="exact registry size required, for batches added after the original 300",
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args(argv)
 
     try:
         registry = _load_yaml_mapping(args.registry, source="artist registry")
-        artist_ids = validate_registry(registry)
+        artist_ids = validate_registry(registry, expected_artists=args.expected_artists)
         observations = load_merged_observations(
             args.observations,
-            expected_artist_ids=artist_ids,
+            registry_artist_ids=artist_ids,
             forbidden_names=forbidden_identity_names(registry),
         )
         updated, counts = apply_observations(registry, observations)
         summary = (
-            f"{len(artist_ids)} name-free artist observation(s); "
+            f"{len(observations)} name-free artist observation(s); "
             f"stable={counts['stable']}, unstable={counts['unstable']}, "
             f"changed={counts['changed']}"
         )

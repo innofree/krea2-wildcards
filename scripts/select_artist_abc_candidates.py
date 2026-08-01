@@ -38,7 +38,7 @@ def load_selection_inputs(
     artist_ids = validate_registry(registry, expected_artists=len(raw_artists))
     observations = load_merged_observations(
         observations_path,
-        expected_artist_ids=artist_ids,
+        registry_artist_ids=artist_ids,
         forbidden_names=forbidden_identity_names(registry),
     )
     return registry, observations

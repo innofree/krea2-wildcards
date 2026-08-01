@@ -15,6 +15,7 @@ approval_policy:
   # is a full scene contract, which is why Phase 6 audited them for conflicts.
   complete_scene_approval_seeds: 5
   complete_scene_families:
+    - art_deco
     - artist_signature
     - editorial_fashion
     - futuristic_neon
@@ -22,12 +23,14 @@ approval_policy:
     - graphic_action
     - ink_wash
     - luminous_game
+    - mid_century_modern
     - preset
     - refined_pastel
     - retro_cel
     - romantic_ornamental
     - style_pack
     - watercolor_story
+    - y2k_futurism
 score_range: [1, 5]
 metrics:
   - prompt_adherence

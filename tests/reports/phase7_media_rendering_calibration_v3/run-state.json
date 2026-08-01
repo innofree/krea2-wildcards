@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "remote_prompt_matrix_run_state",
+  "remote": "private_comfyui",
+  "run_id": "4daab48b-eb67-4820-920b-b98b9065d417",
+  "client_id": "29c9aa29-1638-4c47-ad71-8a7bb63a959c",
+  "matrix_sha256": "4e4034c84bfd22d652f18572949f7d0da32df09782b85dd7cd1957168662a311",
+  "workflow_source_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "queue_depth": 3,
+  "batch_size": 1,
+  "status": "completed",
+  "jobs": {
+    "P7000001": {
+      "resolved_prompt_sha256": "7d54a28dff5ec997bb98a4ed52f9abba9a11062a74d9fc5fd943f9410b346b3a",
+      "workflow_sha256": "ab676003babf60f3d2f2c3561e5ee233ae4602488ea48539c4bf26008f18a7c8",
+      "submission_status": "history",
+      "completion_status": "completed",
+      "prompt_id": "0074fe10-2991-4b53-8514-a5bfd4b51e9b",
+      "image_sha256": "6eee4d6a992581f1d78f320e64b96c3ba875fa562e3f7270f21883352e543d14",
+      "remote_status": "success"
+    },
+    "P7000002": {
+      "resolved_prompt_sha256": "c56277ff23815d955f4ec93aa00a110f9e9807600f363d2c431f18539d3223fe",
+      "workflow_sha256": "aee3155f72c25336ee9115c57035f1be7a6f02720dcea221fda9b4727e029a6d",
+      "submission_status": "history",
+      "completion_status": "completed",
+      "prompt_id": "4a53261f-419a-4133-8e8b-9e61019c923a",
+      "image_sha256": "e1cfb876dfcba175c8a57c8accad15a06868069425c2f2e03c4854b313a7f0ad",
+      "remote_status": "success"
+    },
+    "P7000003": {
+      "resolved_prompt_sha256": "1ace3f2d62e4294d55af7d12dcf07dfa6906aa45d1be20bb102da38e97c4d6a1",
+      "workflow_sha256": "533d02e7dc43b9d5da676a15fb18a2cbd1b4dc13773dd77de569694d85804770",
+      "submission_status": "history",
+      "completion_status": "completed",
+      "prompt_id": "eafd24e9-13c1-4496-b488-28ff2768d35f",
+      "image_sha256": "44e728a88f57973fef9378287db5d63548c90950af9e86f897b8140e8f982f25",
+      "remote_status": "success"
+    }
+  }
+}

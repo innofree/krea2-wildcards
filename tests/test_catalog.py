@@ -29,12 +29,31 @@ def test_initial_style_pack_count_and_schema() -> None:
     entries = list(iter_catalog_items(CATALOG))
     style_entries = [entry for entry in entries if entry[0].name == "art_styles.yaml"]
 
-    assert len(style_entries) == 50
+    assert len(style_entries) == 65
     assert {item["family"] for _, _, item in style_entries} == set(families)
 
     assert Counter(item["validation"]["status"] for _, _, item in style_entries) == {
-        "approved": 21,
-        "rejected": 29,
+        "approved": 29,
+        "rejected": 31,
+        "generated": 5,
+    }
+
+    # art_deco + mid_century_modern: reviewed together in one later session
+    # (art_style_new_families_v1), separately from the original 50-item
+    # pilot/screen/retest history below. y2k_futurism stayed "generated" --
+    # calibration showed its chrome/holographic surface treatment did not
+    # render, so it awaits a prompt fix before its own screen.
+    new_family_screened_ids = {
+        "gilded_sunburst_deco",
+        "chevron_geometric_deco",
+        "lacquered_fan_deco",
+        "stepped_skyline_deco",
+        "champagne_metal_deco",
+        "atomic_starburst_midcentury",
+        "boomerang_pattern_midcentury",
+        "pastel_screenprint_midcentury",
+        "teak_and_teal_midcentury",
+        "graphic_silhouette_midcentury",
     }
 
     for source_path, item_id, item in style_entries:
@@ -43,12 +62,23 @@ def test_initial_style_pack_count_and_schema() -> None:
         assert item["family"] in families
         assert set(item["source_refs"]) <= set(sources)
         assert item["validation"]["status"] in VALID_STATUSES
-        if item["validation"]["status"] == "approved":
+        if item_id in new_family_screened_ids:
+            assert item["validation"]["last_evaluation"] == "art_style_new_families_v1"
+            if item["validation"]["status"] == "approved":
+                assert item["validation"]["tested_seeds"] == 5
+            else:
+                assert item["validation"]["status"] == "rejected"
+                assert item["validation"]["tested_seeds"] in {3, 5}
+        elif item["validation"]["status"] == "approved":
             assert item["validation"]["tested_seeds"] == 5
             assert item["validation"]["last_evaluation"] in {
                 "family_retest_v0_2",
                 "style_retest_v0_4",
             }
+        elif item["validation"]["status"] == "generated":
+            # Not yet screened: no evaluation round has touched it.
+            assert item["validation"]["tested_seeds"] == 0
+            assert "last_evaluation" not in item["validation"]
         else:
             assert item["validation"]["tested_seeds"] == 3
             assert item["validation"]["last_evaluation"] == "style_screen_v0_3"

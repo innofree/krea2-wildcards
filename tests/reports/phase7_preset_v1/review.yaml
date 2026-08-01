@@ -1,0 +1,2587 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+styles:
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_001: Coastal cliffs, collarless jacket over cream skirt, three-quarter turn crown-to-thigh
+      crop, stable across 5 seeds
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_002: Same coastal thigh-up setup as case_001, collarless jacket/skirt, composed direct
+      expression, stable
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_003: Coastal thigh-up, collarless suit, quiet reflective mood, stable'
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_004: Coastal thigh-up crop reaches knee-length, collarless suit, subtle warmth, stable,
+      good baseline crop
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_005: coastal cliff overlook, collarless olive jacket, thigh-up three-quarter turn, stable
+      across all 5 seeds
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_006: coastal overlook, collarless jacket, thigh-up three-quarter, stable (one seed jacket
+      color shifts to black)
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_007: coastal overlook, collarless jacket, thigh-up three-quarter, stable'
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_008: coastal overlook, collarless jacket, thigh-up three-quarter, stable'
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_009: Coastal cliff, collarless jacket over white top, crown-to-thigh three-quarter crop,
+      stable across all 5 seeds
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_010: Coastal cliff, collarless jacket, thigh-up three-quarter crop achieved well, stable
+      across 5 seeds
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_011: Coastal thigh-up three-quarter crop correct, collarless jacket, stable across
+      seeds'
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_012: Coastal thigh-up three-quarter crop correct, collarless jacket, stable across
+      seeds'
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_013: Coastal cliff, collarless jacket, thigh-up three-quarter crop confirmed via zoom,
+      stable across 5 seeds.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_014: Coastal cliff, collarless jacket, thigh-up three-quarter framing matches, stable
+      across 5 seeds.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_015: Coastal cliff, collarless jacket, thigh-up three-quarter crop matches, stable.'
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_016: Coastal cliff, collarless jacket, thigh-up three-quarter crop matches, stable across
+      seeds.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_017: coastal cliff, collarless jacket, turned gaze, waist-up crop consistent across
+      all 5 seeds
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_018: coastal cliff, collarless jacket, waist-up, stable across all 5 seeds'
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_019: coastal cliff collarless jacket, waist-up, stable'
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_020: coastal cliff collarless jacket waist-up, stable'
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_021: Same coastal set, closer waist-up crop, warm sunset light correct, jacket/skirt
+      combo stable
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_022: Waist-up coastal, warm sun, one seed shows different hair/identity but wardrobe
+      and pose stable
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_023: Coastal waist-up, warm sun, subtle warmth expression, stable'
+  ? preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_024: Same coastal set but crop reads closer to waist-up than labeled thigh-up; overshirt/dress
+      silhouette barely differs from suit variant
+  ? preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_025: coastal overlook, warm low sun, cream column dress with sleeveless overshirt layer,
+      stable
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_026: covered arcade, tailored coat/trouser, eye-level full figure; desaturated tone
+      but coherent scene
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_027: covered arcade tailored coat/trouser, eye-level full figure, stable'
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_028: covered arcade coat/trouser, eye-level full figure, stable'
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_029: B&W arcade, coat+trouser, hand-on-hip, full figure eye-level, stable; monochrome
+      grading undercuts warm-fill lighting cue
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_030: Arcade, coat+trouser, full figure eye-level, hand on hip, stable across seeds'
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_031: Arcade full figure, coat+trouser, warmer color tones, stable eye-level crop'
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_032: Arcade full figure, coat+trouser, stable eye-level composition across seeds'
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_033: Arcade corridor, tailored coat over trouser, full-body eye-level, no artifact found
+      on closer inspection, stable.
+  preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_034: Arcade corridor, tailored coat+trouser, full-body eye-level, coherent and
+      stable.'
+  preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_035: Arcade corridor, tailored coat+trouser, full-body eye-level, stable and coherent.'
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_036: Arcade portrait-compressed crop, wrap top visible, tight consistent headshot framing
+      across seeds.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_037: covered arcade corridor, wrap top, portrait-compressed crop stable across
+      seeds'
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_038: arcade corridor, wrap top, portrait-compressed crop, stable'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_039: arcade wrap top, portrait crop, stable'
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_040: arcade wrap top portrait crop, stable'
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_041: Arcade colonnade, tight compressed portrait, wrap-style cardigan visible, cool
+      light with warm fill, consistent
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_042: Arcade compressed portrait, wrap cardigan, quiet reflective mood reads subtly,
+      consistent
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_043: Arcade compressed portrait, wrap cardigan, subtle warmth, stable'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_044: Arcade compressed portrait, wrap cardigan, diffused ambient light, attentive calm,
+      stable
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_045: covered arcade, wrap top v-neck, portrait-compressed headshot, consistent across
+      seeds
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_046: covered arcade, wrap top portrait-compressed, consistent across seeds'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_047: covered arcade wrap top portrait, consistent'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_048: covered arcade wrap top portrait, warm light, consistent'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_049: Arcade portrait crop, tan wrap top clearly visible, warm sunlit tone, consistent
+      across seeds
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_050: Arcade portrait, wrap top visible, quiet reflective mood plausible, consistent
+      across seeds
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_051: Belted midi layer renders as historical corset bodice+skirt; full-body not waist-up
+      crop; seed 3003 shows odd striped skirt
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_052: Belted midi layer again renders as corset bodice+skirt, full-body not waist-up
+      crop; wardrobe/framing mismatch
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_053: Wardrobe renders as historical corseted bodice + gathered skirt, no belt visible;
+      wrong category vs belted_midi_layer.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_054: Same historical corset-bodice dress recurs, no belt visible; garment category mismatch
+      vs belted_midi_layer.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_055: Historical corset-bodice dress again, no belt; wardrobe category mismatch vs belted_midi_layer.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_056: Historical corset-bodice dress recurs, no belt; wardrobe mismatch vs belted_midi_layer.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_057: bodice renders as historical corset/underskirt look, not a modern belted
+      midi layer'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_058: same corset/bodice-style garment instead of belted midi layer'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_059: corset/historical bodice again instead of belted midi layer'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_060: corset-style bodice persists; figure still fills frame, not clearly wide_environmental
+      scale
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_061: Glasshouse walkway, contrapposto pose touching frame, belted midi dress with cream
+      cardigan, wide crop, stable
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_062: Glasshouse wide shot, belted midi + cardigan, reflective mood, stable across
+      seeds'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_063: Glasshouse wide, belted midi, subtle warmth, stable'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_064: Glasshouse wide, belted midi, cool overcast warm fill, attentive calm, stable'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_065: glasshouse walkway, belted midi dress with cropped white layer, symmetric wide
+      shot, very stable
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_066: glasshouse belted midi dress, wide symmetric doorway shot, stable'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_067: glasshouse belted midi dress, wide doorway shot, stable'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_068: glasshouse belted midi dress, wide doorway shot, stable'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_069: Greenhouse doorway, white belted cropped jacket over tan midi skirt, wide shot,
+      stable across seeds
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_070: Greenhouse wide shot, belted midi jacket+skirt correctly rendered, stable across
+      seeds
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_071: Greenhouse wide shot, correct belted jacket+midi skirt, stable across seeds'
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_072: Greenhouse wide shot, correct belted jacket+skirt, arms-out pose, stable across
+      seeds
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_073: Doorway shot shows correct belted midi coat with visible belt; framing full-body,
+      moderate-wide but consistent with house style.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_074: Glasshouse doorway, belted midi coat correctly shown, full-body wide-environmental
+      framing, stable.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_075: Glasshouse doorway, belted midi coat correct, wide-environmental full-body framing,
+      stable.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_076: Library portrait-compressed, overshirt over column dress visible, tight consistent
+      crop across seeds.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_077: library, overshirt layered over column dress, portrait-compressed, consistent'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_078: library overshirt, portrait-compressed crop, consistent'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_079: library overshirt, portrait crop, stable'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_080: library overshirt portrait crop, stable'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_081: Library stacks, very tight compressed portrait, overshirt open over dress, cool
+      light, consistent
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_082: Library tight portrait, overshirt/dress, quiet reflective mood, consistent'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_083: Library tight portrait, overshirt/dress, subtle warmth, stable'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_084: Library tight portrait, overshirt/dress, diffused ambient light, attentive calm,
+      stable
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_085: modern library, tan overshirt over olive dress, portrait-compressed, consistent'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_086: library overshirt portrait, consistent framing and wardrobe'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_087: library overshirt portrait, consistent'
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_088: library overshirt, warm light portrait, consistent'
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_089: Library portrait, overshirt over column dress, warm tone, consistent framing and
+      wardrobe across seeds
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_090: Library portrait, overshirt over column dress, stable wardrobe and framing across
+      seeds
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_091: Library portrait, overshirt+column dress, stable across seeds'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_092: Library, wider waist-up crop, overshirt+column dress visible, stable across
+      seeds'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_093: Library waist-up, overshirt correctly layered over column dress, stable pose/scene
+      across seeds.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_094: Library waist-up, overshirt over column dress correct, stable across seeds.'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_095: Library waist-up, overshirt over column dress correct, stable across seeds.'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_096: Library waist-up, overshirt over dress correct, minor pose variation on one seed
+      but coherent.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_097: library, overshirt column dress, waist-up crop, stable across seeds'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_098: library overshirt column dress, waist-up, stable'
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_099: library overshirt dress, waist-up, stable'
+  preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_100: library overshirt dress waist-up, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_101: Museum hall doorway, small figure with lots of gallery space visible, belted midi
+      + cardigan, stable
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_102: Museum wide environmental, belted midi, composed direct gaze, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_103: Museum wide, belted midi, quiet reflective, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_104: Museum wide, belted midi, subtle warmth, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_105: quiet museum, belted midi dress with white jacket, wide environmental, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_106: museum belted midi with white jacket, wide shot, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_107: museum belted midi with jacket, wide shot, stable'
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_108: museum belted midi with jacket, wide shot, stable'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_109: Museum hallway, vest+pleated skirt, full figure eye-level, hands clasped, stable
+      across seeds
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_110: Museum hallway full figure, vest+pleated skirt, stable eye-level composition across
+      seeds
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_111: Museum hallway full figure, vest+pleated skirt, stable across seeds'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_112: Museum hallway full figure, vest+pleated skirt, stable across seeds'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_113: Museum doorway full-body, vest over pleated skirt clearly shown, stable eye-level
+      framing.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_114: Museum doorway full-body, vest+pleated skirt correct, stable eye-level crop.'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_115: Museum doorway full-body, vest+pleated skirt correct, stable eye-level crop.'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_116: Museum doorway full-body, vest+pleated skirt correct, stable eye-level crop.'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_117: museum doorway, vest+pleated skirt, full figure at eye level, stable'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_118: museum full figure, vest+pleated skirt, stable'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_119: museum full figure vest+skirt, stable'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_120: museum full figure vest+skirt, stable'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_121: Museum doorway, full crown-to-feet figure, cream vest over pleated skirt visible,
+      warm light, stable
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_122: Museum full-length, vest + pleated skirt, warm light, composed direct, stable'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_123: Museum full-length, vest + pleated skirt, quiet reflective, stable'
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_124: Museum full-length, vest + pleated skirt, subtle warmth, stable'
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_waist_up_natural_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_125: museum, sleeveless vest layer over dress, waist-up crop, stable pose/wardrobe across
+      seeds
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_126: vest wardrobe unstable: draped open vest in most seeds but seed 4004 renders a
+      structured collared jacket
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_127: same vest/jacket instability: seed 4004 shows a boxy collared jacket instead of
+      draped vest
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_128: vest/jacket instability persists: seed 4004 diverges to a structured collared jacket
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_129: Rooftop city view, waist-up crop, dark vest over skirt, stable; minor arm-pose
+      variance across seeds
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_130: Rooftop waist-up, vest over skirt, city backdrop, stable across seeds'
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_131: Rooftop waist-up, vest+skirt, city view, stable across seeds'
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_132: Rooftop waist-up, vest+skirt, city backdrop, stable across seeds'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_133: Rooftop thigh-up three-quarter, wrap top with tapered trousers visible; renders
+      monochrome, stable across seeds.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_134: Rooftop thigh-up, wrap top w/ tapered trousers, monochrome but stable and
+      coherent.'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_135: Rooftop thigh-up, wrap top w/ tapered trousers, monochrome but coherent and
+      stable.'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_136: Rooftop thigh-up, wrap top w/ tapered trousers, monochrome but stable, coherent
+      scene.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_137: rooftop, wrap top over skirt, thigh-up three-quarter crop; renders desaturated/grayscale
+      but stable
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_138: rooftop wrap top, thigh-up three-quarter, monochrome look but stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_139: rooftop wrap top, thigh-up three-quarter, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_140: rooftop wrap top thigh-up, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_141: Rooftop skyline, hands-on-hips pose, wrap top with cream sash, thigh-up three-quarter
+      crop, stable
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_142: Rooftop thigh-up, wrap top + sash, composed direct, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_143: Rooftop thigh-up, wrap top + sash, quiet reflective, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_144: Rooftop thigh-up, wrap top + sash, subtle warmth, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_145: rooftop terrace, warm sunset, wrap top with tapered trousers, thigh-up three-quarter,
+      stable
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_146: rooftop wrap top, tapered trousers, thigh-up three-quarter, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_147: rooftop wrap top thigh-up three-quarter, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_148: rooftop wrap top thigh-up three-quarter, stable'
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_149: Rooftop wide shot stable, but garment reads as structured two-tone blazer, not
+      a soft wrap top
+  preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_150: Rooftop wide shot stable, but wardrobe again reads as tailored blazer rather than
+      wrap top
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_151: Courtyard full figure, collarless suit with wide trousers, stable eye-level crop
+      across seeds
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_152: Courtyard suit stable across most seeds, but seed 3003 renders as blank/white
+      frame'
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_153: Stone courtyard full-body, jacket+wide-trouser suit look, no rendering artifact
+      found in closer check, stable.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_154: Stone courtyard full-body suit look, no blank-frame defect found on closer inspection,
+      stable.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_155: Stone courtyard full-body suit look, no artifact confirmed via zoom, stable.'
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_156: Stone courtyard full-body suit look, no blank-frame defect found on closer inspection,
+      stable.
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_157: stone courtyard, suit set, warm low-sun light, full figure, stable across
+      seeds'
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_158: courtyard suit, full figure, warm low sun, stable'
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_159: courtyard suit full figure, stable'
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_160: courtyard suit full figure, stable'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_161: Stone-wall setting, portrait_compressed crop hides trouser detail, coat collar
+      visible, coherent but wardrobe not fully confirmable
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_162: Stone courtyard now wide_environmental, tailored coat over trousers clearly visible,
+      walking pose, stable
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_163: Stone courtyard wide, tailored coat/trousers visible, walking pose, quiet reflective,
+      stable
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_164: Stone courtyard wide, tailored coat/trousers, walking pose, attentive calm,
+      stable'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_165: stone courtyard, tailored coat over trouser walking pose, wide shot, stable'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_166: stone courtyard tailored coat/trouser walking, wide shot, stable'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_167: stone courtyard coat/trouser walking, wide shot, stable'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_168: stone courtyard coat/trouser walking, wide shot; one seed rendered near-monochrome
+      but coherent
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_169: Courtyard walking, coat+trouser, wide garden shot; seed 5005 shifts to desaturated
+      tone vs others' color
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_170: Courtyard wide shot, coat+trouser walking pose, stable and coherent across
+      seeds'
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_171: Courtyard wide shot, coat+trouser walking, stable and coherent across seeds'
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_172: Courtyard wide shot, coat+trouser walking, stable and coherent across seeds'
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_173: Courtyard walking shot, tailored coat over trousers, wide-environmental framing
+      consistent, stable across seeds.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_174: Courtyard walking, tailored coat+trouser, wide-environmental framing, stable across
+      seeds.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_175: Courtyard walking, tailored coat+trouser, wide-environmental framing, stable across
+      seeds.
+  preset_transit_concourse_balanced_contrapposto_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_176: Transit concourse waist-up, high-neck two-tone jacket reads as collarless suit,
+      stable across seeds.
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_177: transit concourse, vest+pleated skirt, full figure eye-level, stable'
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_178: concourse vest+skirt, full figure eye-level, stable'
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_179: concourse vest+skirt full figure, stable'
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_180: concourse vest+skirt full figure, stable'
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_181: Transit concourse, waist-up frontal, overshirt open over long dress, daylight,
+      stable across seeds
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_182: Transit waist-up, overshirt/dress, composed direct, stable'
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_183: Transit waist-up, overshirt/dress, quiet reflective, stable'
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_184: Transit waist-up, overshirt/dress, subtle warmth, stable'
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_185: transit concourse, overshirt column dress, waist-up frontal, stable'
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_186: transit concourse overshirt dress, waist-up frontal, stable'
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_187: transit concourse portrait-compressed, tailored coat, tighter crop correctly vs
+      waist-up variant
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_188: transit concourse portrait-compressed, tailored coat, consistent tight crop'
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_189: Concourse portrait, dark cardigan, hands clasped, consistent tight crop matching
+      portrait_compressed label
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_190: Labeled thigh-up but renders as same tight compressed portrait as case_189; framing
+      falls short of label
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_191: Labeled thigh-up but renders as tight compressed portrait like other transit_concourse
+      cases; framing mismatch
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_192: Labeled thigh-up but same tight compressed-portrait crop as other transit_concourse
+      cases; framing mismatch
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_193: Transit concourse thigh-up crop shows plain sweater+skirt, no coat visible; wardrobe
+      misses tailored_coat_trouser.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_194: Transit concourse thigh-up again shows plain sweater+skirt, no visible coat; wardrobe
+      mismatch.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_195: Transit concourse thigh-up shows plain sweater+skirt again, no coat visible; wardrobe
+      mismatch.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_196: Transit concourse portrait-compressed, dark sleeveless vest top visible, stable
+      tight crop across seeds.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_197: tight portrait crop, vest visible, background indistinct from crop but consistent'
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_198: portrait-compressed vest crop, stable across seeds'
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_199: portrait vest crop, stable'
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_200: portrait vest crop, stable'

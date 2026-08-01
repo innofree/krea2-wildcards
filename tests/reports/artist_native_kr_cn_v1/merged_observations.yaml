@@ -1,0 +1,756 @@
+schema_version: 1
+kind: artist_native_observations
+artist_count: 40
+axis_order:
+  - linework
+  - face
+  - eyes
+  - body
+  - palette
+  - light_shading
+  - framing
+  - ornament
+artists:
+  artist_301:
+    axes:
+      linework: >-
+        Crisp, clean cel-style outlines with flat color fills; edges read as drawn/graphic rather than
+        photographic, unlike every other row in the set.
+      face: >-
+        Rounded, softened facial structure with a small chin and smooth, evenly toned cheeks; simplified
+        illustrated modeling rather than photographic detail.
+      eyes: >-
+        Large, rounded eyes with simplified highlight dots and a bright, cheerful expression; noticeably
+        larger and more stylized than any other row.
+      body: >-
+        Slim, evenly proportioned standing figure with relaxed arms at sides; simplified flat-illustration
+        anatomy rather than photographic musculature.
+      palette: >-
+        Warm, saturated skin tone with glossy dark brown hair and a muted olive-grey top; overall more
+        color-saturated than the photographic rows.
+      light_shading: >-
+        Flat, even cel-shading with almost no gradient; a single soft cast shadow beneath the feet, no
+        directional highlight modeling on the skin.
+      framing: >-
+        Full-length centered standing crop consistent across all three seeds, with slightly more headroom
+        above the hairline than other rows.
+      ornament: >-
+        No recurring accessory or jewelry; plain long-sleeve top and trousers, hair worn loose at chin
+        length in all three seeds.
+    confidence: 4
+    stable_across_seeds: true
+    notes: >-
+      The only row rendered in a flat illustrated style rather than a photographic one; all three seeds
+      share the same graphic linework, large-eyed face, and warm flat coloring, giving it a clearly distinct
+      visual identity.
+  artist_302:
+    axes:
+      linework: Soft photographic edges throughout; no drawn line, typical soft-focus studio-portrait
+        edge quality.
+      face: Oval, mature facial structure with a gently rounded jaw; proportions read as a generic adult
+        sitter.
+      eyes: Medium almond-shaped eyes with a calm, neutral expression, not emphasized in size or shape.
+      body: >-
+        Upright, centered full-length standing posture with arms relaxed at the sides; unremarkable standard
+        proportions.
+      palette: >-
+        Neutral warm-beige background with a muted taupe knit top and dark trousers; desaturated, low-contrast
+        tonal range.
+      light_shading: >-
+        Soft even frontal studio lighting with a faint shadow to one side and a light cast shadow on the
+        floor.
+      framing: >-
+        Full-length centered crop, camera roughly at chest height, consistent across all three seeds with
+        no quirks.
+      ornament: No recurring decorative motif; plain knit top and trousers repeated across all three seeds.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Reads as a generic photographic portrait template; the third seed skews slightly younger with straighter,
+      darker hair than the other two, but overall this row shows no distinctive identity beyond the shared
+      studio-portrait default look.
+  artist_303:
+    axes:
+      linework: >-
+        Soft photographic edge rendering with no visible drawn contour; typical of a neutral studio photograph.
+      face: Oval face with a soft jawline and even cheek volume; proportions are unremarkable and generic.
+      eyes: Medium, calm almond eyes with a mild, neutral expression across all three seeds.
+      body: >-
+        Centered, upright full-length standing pose, arms relaxed; standard adult proportions with no
+        distinguishing posture.
+      palette: Warm-beige neutral backdrop, muted grey-brown knit top, dark trousers; low saturation overall.
+      light_shading: >-
+        Soft frontal studio light with gentle falloff to one side and a faint floor shadow; no strong
+        directionality.
+      framing: Consistent full-length centered crop across seeds, no cropping oddities.
+      ornament: No recurring accessory or texture motif; plain top and trousers in all three seeds.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      A largely generic studio-portrait render; hair length is slightly shorter and blunter than in some
+      neighboring rows but this is a minor variation, not a strong distinguishing identity.
+  artist_304:
+    axes:
+      linework: Photographic soft-edge rendering, no drawn linework; consistent with a plain studio photograph.
+      face: Oval, mature facial structure with soft jaw contour; proportions read as generic and unremarkable.
+      eyes: Medium almond eyes, neutral and calm in expression, unremarkable in size or shape across seeds.
+      body: Upright centered standing full-length pose with relaxed arms; standard proportions.
+      palette: Neutral warm-beige backdrop with muted taupe knit top and dark trousers; desaturated tonal
+        range.
+      light_shading: Soft even frontal light, mild shadow to one side, faint floor cast shadow; no strong
+        directionality.
+      framing: Full-length centered crop consistent across all three seeds.
+      ornament: No recurring decorative motif or accessory; plain knit top and trousers throughout.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Another instance of the generic studio-portrait default; the third seed appears somewhat younger
+      with darker, straighter hair, matching a pattern seen broadly across this set rather than a row-specific
+      trait.
+  artist_305:
+    axes:
+      linework: Soft photographic edges with no drawn contour, typical plain-photograph rendering quality.
+      face: Oval mature face shape with soft jaw and even cheek volume; generic, unremarkable structure.
+      eyes: Medium almond eyes with a mild, neutral expression, not distinctive in shape or size.
+      body: Centered, upright full-length standing posture with relaxed arms; standard adult proportions.
+      palette: Warm-beige neutral background, muted grey-taupe top, dark trousers; low overall saturation.
+      light_shading: >-
+        Soft frontal studio lighting, gentle one-sided falloff, faint floor shadow; no strong directional
+        cues.
+      framing: Consistent full-length centered crop across all three seeds.
+      ornament: No recurring accessory or texture motif visible in any of the three seeds.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Essentially indistinguishable from the generic studio-portrait template shared by most rows in this
+      set; no distinctive identity markers are visible.
+  artist_306:
+    axes:
+      linework: Soft photographic edge quality with no drawn line; consistent with plain studio photography.
+      face: Oval face with soft jawline and even cheek shading; generic mature proportions.
+      eyes: Medium almond-shaped eyes, calm and neutral in expression across seeds.
+      body: Upright, centered full-length stance with relaxed arms; unremarkable standard proportions.
+      palette: Neutral warm-beige backdrop, muted taupe-grey knit top, dark trousers; desaturated overall
+        tone.
+      light_shading: Soft even frontal lighting with mild one-sided shadow and faint floor cast shadow.
+      framing: Full-length centered crop, consistent across all three seeds, no framing quirks.
+      ornament: No recurring decorative motif or accessory; plain top and trousers in all seeds.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      A hair part that sits slightly more to one side is the only minor deviation from the shared generic
+      template; otherwise indistinguishable from neighboring rows in this set.
+  artist_307:
+    axes:
+      linework: Photographic soft-edge rendering, no drawn contour; plain studio-photograph edge quality.
+      face: Oval mature face with soft jaw contour and even cheek volume; generic, unremarkable structure.
+      eyes: Medium almond eyes with calm, neutral expression, not distinctive across seeds.
+      body: Centered, upright full-length standing pose with relaxed arms; standard proportions.
+      palette: Warm-beige neutral background, muted grey-brown knit top, dark trousers; low saturation.
+      light_shading: Soft frontal studio light with gentle one-sided falloff and a faint floor shadow.
+      framing: Consistent full-length centered crop across all three seeds.
+      ornament: No recurring accessory or texture motif visible in any seed.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Follows the same generic studio-portrait default seen broadly across this set; the third seed again
+      trends slightly younger and darker-haired but this mirrors a set-wide seed pattern rather than a
+      distinct identity.
+  artist_308:
+    axes:
+      linework: Soft photographic edges throughout, no drawn linework; typical of a plain studio photograph.
+      face: Oval face with soft jawline and even cheek shading; generic mature proportions, unremarkable.
+      eyes: Medium almond-shaped eyes with a mild, neutral expression across all three seeds.
+      body: Upright, centered full-length standing posture with relaxed arms; standard adult proportions.
+      palette: Neutral warm-beige backdrop, muted taupe knit top, dark trousers; desaturated tonal range.
+      light_shading: >-
+        Soft even frontal lighting, gentle one-sided shadow, faint floor cast shadow; no strong directionality.
+      framing: Full-length centered crop consistent across all three seeds, no quirks.
+      ornament: No recurring decorative motif or accessory; plain top and trousers throughout.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Indistinguishable from the generic studio-portrait template shared by most rows in this set; no
+      row-specific distinguishing detail is visible.
+  artist_309:
+    axes:
+      linework: Photographic soft-edge rendering with no drawn contour; consistent plain studio-photograph
+        quality.
+      face: Oval, mature facial structure with soft jaw contour; generic and unremarkable proportions.
+      eyes: Medium almond eyes, calm and neutral in expression, unremarkable in shape or size.
+      body: Centered, upright full-length standing pose with relaxed arms; standard adult proportions.
+      palette: Warm-beige neutral background, muted grey-brown knit top, dark trousers; low overall saturation.
+      light_shading: Soft frontal studio lighting with gentle one-sided falloff and a faint floor shadow.
+      framing: Consistent full-length centered crop across all three seeds.
+      ornament: No recurring accessory or texture motif visible in any of the three seeds.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Matches the generic studio-portrait default seen across most of this set; hair falls slightly longer
+      at the shoulders in one seed but this is a minor, non-distinctive variation.
+  artist_310:
+    axes:
+      linework: Soft photographic edge quality with no drawn line; plain studio-photograph rendering throughout.
+      face: >-
+        Oval face with soft jawline and even cheek volume; generic mature proportions shared with most
+        other rows.
+      eyes: Medium almond-shaped eyes, calm and neutral expression, not distinctive across seeds.
+      body: Upright, centered full-length stance with relaxed arms; unremarkable standard proportions.
+      palette: Neutral warm-beige backdrop, muted taupe-grey knit top, dark trousers; desaturated overall
+        tone.
+      light_shading: Soft even frontal lighting with mild one-sided shadow and a faint floor cast shadow.
+      framing: Full-length centered crop, consistent across all three seeds, no framing quirks.
+      ornament: No recurring decorative motif or accessory; plain top and trousers in all seeds.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      A fully generic studio-portrait render indistinguishable from the shared default template seen across
+      most rows in this set; no distinct visual identity is apparent.
+  artist_311:
+    axes:
+      linework: Soft, fully photographic edges, no visible drawn line; hairline blends smoothly into the
+        backdrop.
+      face: Oval face with fuller cheeks and a softly rounded jaw, medium-set brow line.
+      eyes: Medium almond eyes, slightly downturned outer corners, calm and subdued expression.
+      body: Average slim build, straight shoulders, arms relaxed at sides in a stable centered stance.
+      palette: >-
+        Muted warm taupe top and trousers against ivory-beige backdrop; third seed reads noticeably cooler
+        and greyer than the other two.
+      light_shading: Soft frontal studio light, minimal contrast, faint downward shadow beneath the figure.
+      framing: Full-length centered front view, consistent head-to-toe crop across all three seeds.
+      ornament: No recurring decorative motif; plain crew-neck top, no visible jewelry or accessories.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Hair length and rounded face shape hold steady across seeds; main variation is a cooler, more desaturated
+      color cast in the third frame.
+  artist_312:
+    axes:
+      linework: >-
+        Soft photographic edges throughout, slightly flatter/higher-contrast processing than neighboring
+        rows.
+      face: Longer, narrower oval face with a pronounced chin and higher cheekbone line.
+      eyes: Narrow, evenly lidded eyes, level gaze, composed rather than smiling expression.
+      body: Slim build, upright posture, hands held straight down at sides.
+      palette: >-
+        Entire row reads more desaturated/near-monochrome than other rows, grey-brown top blending toward
+        the backdrop.
+      light_shading: Flat, even studio light with soft falloff, faint shadow at floor level.
+      framing: Full-length centered standing crop, consistent across all three seeds.
+      ornament: No recurring decorative motif visible.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      All three seeds share an unusually flat, near-monochrome color treatment and a composed, unsmiling
+      expression, distinct from the warmer tone of most other rows.
+  artist_313:
+    axes:
+      linework: Soft photographic rendering; hair strand edges read slightly more textured than average.
+      face: Slim, angular face with defined cheekbones and a narrower jaw.
+      eyes: Medium eyes with a faint upward lift at the outer corner, mild pleasant expression.
+      body: Slender build, relaxed standing pose, weight centered evenly.
+      palette: >-
+        Warm brown-toned hair against taupe clothing; middle seed noticeably greyer and cooler than the
+        other two.
+      light_shading: Soft even studio light, subtle shadow gradient across the backdrop.
+      framing: Full-length front-facing crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Facial proportions and hair texture stay consistent across seeds, though the middle frame shifts
+      toward a cooler, flatter color grade.
+  artist_314:
+    axes:
+      linework: Soft photographic edges, no drawn line quality; hair strands blend smoothly.
+      face: Rounded face with fuller lower cheeks and a softer jawline.
+      eyes: Medium rounded eyes, warm closed-mouth smile, friendly expression.
+      body: Average build, relaxed arms, stable centered stance.
+      palette: Warm taupe-brown palette held consistently across all three seeds.
+      light_shading: Soft frontal light, mild shadow beneath the figure.
+      framing: Full-length centered crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      One of the more consistently warm-toned rows, with a steady friendly expression and rounded face
+      shape held across all three seeds.
+  artist_315:
+    axes:
+      linework: Soft photographic edges, minimal texture detail rendered in the hair.
+      face: Oval-narrow face, moderate cheek fullness, softly pointed chin.
+      eyes: Medium eyes, gentle smile visible in two of the three frames.
+      body: Slender build, upright neutral stance, arms at sides.
+      palette: Warm taupe/beige tones, fairly uniform across all three seeds.
+      light_shading: Even soft studio light, faint shadow at the base of the figure.
+      framing: Full-length front-facing crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Expression and face shape are stable across seeds, though the render otherwise reads close to a
+      fairly generic default portrait with few standout traits.
+  artist_316:
+    axes:
+      linework: Soft photographic edges; hair shows slightly more visible wave texture than average.
+      face: Fuller, rounder face with a softer jaw and more cheek volume.
+      eyes: Brighter, slightly wider eyes than most other rows, with a visible subtle smile.
+      body: Average build, relaxed stance, slightly more open shoulder posture.
+      palette: Warm brown palette, fairly consistent across all three seeds.
+      light_shading: Soft even light, gentle shadow gradient on the backdrop.
+      framing: Full-length centered crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Brighter eyes and a visible smile recur across all three seeds, giving this row a slightly warmer,
+      more animated feel than neighboring rows.
+  artist_317:
+    axes:
+      linework: >-
+        Soft photographic edges; hair rendered as a sleek, blunt-cut bob with crisper edge definition
+        than most rows.
+      face: Narrower, more angular face with a defined jawline.
+      eyes: Narrow, composed eyes, neutral/serious expression held across all three seeds.
+      body: Slim build, straight posture, arms fully at sides.
+      palette: Middle seed reads distinctly more desaturated/grayscale than the flanking warm-toned seeds.
+      light_shading: Soft even light; middle frame shows a flatter, cooler shadow tone.
+      framing: Full-length centered crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      The sleek blunt-cut hair silhouette and composed neutral expression are the most consistent elements
+      across seeds; the middle seed's color grade diverges noticeably.
+  artist_318:
+    axes:
+      linework: Soft photographic edges, hair strand detail slightly softer/blurred at the tips.
+      face: Oval face, moderate cheek fullness, gentle rounded jaw.
+      eyes: Medium eyes with a soft warm smile visible in all three seeds.
+      body: Slender build, relaxed pose; one seed shows a slight head tilt.
+      palette: Warm taupe/brown tones, fairly consistent across seeds.
+      light_shading: Soft frontal studio light, mild shadow beneath the figure.
+      framing: Full-length centered crop; third seed shows a slight head tilt versus the other two.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      A gentle, consistent smile carries across all three seeds; framing is otherwise identical apart
+      from a minor head-tilt variation in the third frame.
+  artist_319:
+    axes:
+      linework: Soft photographic edges, minimal hair strand detail.
+      face: Rounded face with softer, slightly younger-looking skin texture than most other rows.
+      eyes: Medium eyes, calm closed-mouth expression.
+      body: Average slender build, relaxed centered stance.
+      palette: Warm taupe/brown tones, consistent across all three seeds.
+      light_shading: Soft even studio light, faint floor shadow.
+      framing: Full-length centered crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Skin rendering reads slightly smoother/younger than surrounding rows, but the overall composition
+      otherwise stays close to the shared default template.
+  artist_320:
+    axes:
+      linework: Soft photographic edges; hair shows a touch more visible layering/volume at the sides.
+      face: Oval face, moderate cheek fullness, composed poised expression.
+      eyes: Medium eyes, subtle closed-mouth smile held across all three seeds.
+      body: Slender build, notably straight/upright shoulder posture.
+      palette: Warm taupe/brown tones, consistent across all three seeds.
+      light_shading: Soft even studio light, faint floor shadow.
+      framing: Full-length centered crop, consistent across seeds.
+      ornament: No recurring decorative motif.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Posture reads slightly more upright and poised than other rows, held consistently across all three
+      seeds, though the overall look remains close to the shared default template.
+  artist_321:
+    axes:
+      linework: >-
+        Semi-illustrative render with smoothed cel-like shading on clothing folds and skin; edges are
+        softly rounded rather than sharp photographic detail, closer to a stylized 3D character render
+        than a photo.
+      face: >-
+        Rounded, youthful oval face with a small chin and softly modeled cheeks; proportions read slightly
+        idealized/illustrative rather than photo-real.
+      eyes: >-
+        Large, rounded eyes with visible painted catchlights and defined lash lines; noticeably more stylized
+        and expressive than a straight photographic eye.
+      body: >-
+        Slim, evenly proportioned standing figure with relaxed arms; posture is neutral and upright across
+        all three seeds.
+      palette: >-
+        Warm mid-brown hair, muted grey top and trousers; one seed sits on a warmer cream backdrop while
+        the other two use a cooler grey backdrop.
+      light_shading: >-
+        Soft, even frontal lighting with mild ambient shadow; one seed shows a stronger warm key light
+        and visible cast shadow on the floor.
+      framing: Full-length standing crop, centered, consistent with the set; no cropping quirks.
+      ornament: >-
+        Short layered bob with side-swept fringe recurring across all three seeds; no other decorative
+        motif.
+    confidence: 4
+    stable_across_seeds: true
+    notes: >-
+      Clearly reads as a more illustrative/rendered aesthetic rather than photographic, setting it apart
+      from most other rows in this sheet; the stylization is consistent across all three seeds.
+  artist_322:
+    axes:
+      linework: >-
+        Fully photographic soft edges throughout; no drawn or outlined linework anywhere on hair, face,
+        or clothing.
+      face: >-
+        Slim, elongated oval face with high cheekbones and a composed neutral expression; mature adult
+        proportions.
+      eyes: Medium, evenly set eyes with a calm, understated gaze; no exaggerated shape or expression.
+      body: >-
+        Slender, upright standing posture with arms relaxed at sides; proportions read as an ordinary
+        adult figure.
+      palette: >-
+        Desaturated warm sepia/taupe tone overall, dark center-parted hair, muted grey-brown top and trousers
+        matching flat shoes.
+      light_shading: Soft diffuse studio lighting from the front, minimal shadow, slightly warm overall
+        cast.
+      framing: >-
+        Full-length standing studio crop, centered, plain seamless backdrop; consistent across all three
+        seeds.
+      ornament: No recurring decorative motif; styling is plain and unadorned.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Reads as a generic, default studio portrait with a plain sepia cast; the three seeds are consistent
+      with each other but the look is not distinctive relative to other rows in this sheet.
+  artist_323:
+    axes:
+      linework: >-
+        Flat cel-shaded illustration style with visible clean outlines around hair, face, and clothing
+        edges; distinctly non-photographic, cartoon-like rendering.
+      face: >-
+        Small, rounded face with a small pointed chin and simplified flat shading, typical of a 2D illustrated
+        character.
+      eyes: >-
+        Rounded eyes with a clean outline and small highlight dot, a plain anime-adjacent illustrated
+        eye shape rather than photographic detail; not markedly larger than other cel-shaded rows in this
+        set.
+      body: Simplified, slightly elongated illustrated proportions; stance is stiff/neutral standing pose.
+      palette: >-
+        Flat matte brown hair, muted grey top and trousers rendered in flat color fills rather than photographic
+        gradients.
+      light_shading: >-
+        Minimal shading, mostly flat fill with a soft single-direction shadow under the figure; no complex
+        photographic light modeling.
+      framing: >-
+        Full-length standing crop, centered on a plain warm-grey backdrop, consistent with the rest of
+        the set.
+      ornament: >-
+        Hair styled center-parted with a low ponytail in two of the three seeds; no other recurring accessory.
+    confidence: 4
+    stable_across_seeds: true
+    notes: >-
+      A clearly flat, outlined illustration style, distinct from the photographic rendering used in most
+      other rows in this sheet, and consistent across all three seeds; comparable in kind to the illustrated
+      row observed in the previous sheet rather than uniquely more extreme.
+  artist_324:
+    axes:
+      linework: >-
+        Fully photographic soft edges; no visible drawn line, consistent with a straightforward studio
+        photo look.
+      face: Oval mature face with a calm, composed neutral expression and moderate cheekbone definition.
+      eyes: Medium-sized, evenly spaced eyes with a quiet, neutral gaze.
+      body: Slim upright standing posture, arms relaxed at sides, ordinary adult proportions.
+      palette: Sepia/warm taupe overall cast, dark hair tucked behind the ears, muted grey-brown top and
+        trousers.
+      light_shading: Soft frontal studio light, low contrast, gentle shadow beneath the figure.
+      framing: Full-length centered standing crop on a plain warm backdrop, consistent across seeds.
+      ornament: No recurring decorative motif; plain unadorned styling.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Another plain, generic-looking photographic studio portrait; consistent across its three seeds but
+      visually close to several neighboring rows with little distinguishing detail.
+  artist_325:
+    axes:
+      linework: Fully photographic soft edges throughout, no drawn line quality.
+      face: Oval mature face, slightly fuller cheeks, calm expression with a faint closed-mouth smile.
+      eyes: Medium eyes, softly set, mild warmth in expression.
+      body: Slim standing posture, arms at sides, ordinary proportions.
+      palette: Warm sepia/taupe cast, dark chin-length hair with a side part, muted grey-brown top and
+        trousers.
+      light_shading: Soft even studio light, low shadow contrast.
+      framing: Full-length centered standing crop on plain warm backdrop, consistent across seeds.
+      ornament: No recurring decorative motif beyond the plain chin-length hairstyle.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Consistent generic photographic studio look across seeds; face and styling closely resemble several
+      other rows in this sheet, limiting distinctiveness.
+  artist_326:
+    axes:
+      linework: Fully photographic soft edges, no drawn linework.
+      face: Oval mature face, composed neutral expression, moderate cheek fullness.
+      eyes: Medium, calm-set eyes with a neutral gaze.
+      body: Slim upright stance, arms relaxed, ordinary adult proportions.
+      palette: Sepia/taupe overall tone, dark chin-length hair, muted grey-brown top and trousers.
+      light_shading: Soft frontal light, minimal shadow, even exposure.
+      framing: Full-length centered standing crop, plain backdrop, consistent across seeds.
+      ornament: No recurring decorative motif; plain styling.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      A very generic, default-looking photographic studio portrait indistinguishable in most respects
+      from several neighboring rows; consistent across its own seeds but not visually distinctive.
+  artist_327:
+    axes:
+      linework: Fully photographic soft edges, no drawn line quality.
+      face: Oval mature face, neutral to faintly warm expression, moderate cheekbone definition.
+      eyes: Medium eyes, calm gaze, no exaggerated shape.
+      body: Slim standing posture, arms relaxed at sides, ordinary proportions.
+      palette: >-
+        Sepia/taupe cast, dark hair pulled back from the face, muted grey-brown top and trousers; one
+        seed appears slightly brighter/higher-key than the other two.
+      light_shading: Soft even studio lighting, low shadow contrast; brightness varies mildly between
+        seeds.
+      framing: Full-length centered standing crop on plain backdrop, consistent overall.
+      ornament: No recurring decorative motif beyond the pulled-back hairstyle.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Generic photographic studio portrait closely resembling several other rows; the only notable variation
+      is a brightness shift in one seed, not a distinct visual identity.
+  artist_328:
+    axes:
+      linework: Fully photographic soft edges, no drawn linework.
+      face: Oval mature face, calm composed expression, moderate cheek fullness.
+      eyes: Medium, evenly set eyes with a quiet expression.
+      body: Slim upright standing posture, arms at sides, ordinary proportions.
+      palette: Sepia/taupe overall tone, dark shoulder-length hair, muted grey-brown top and trousers.
+      light_shading: Soft frontal studio light, low shadow contrast, even exposure.
+      framing: Full-length centered standing crop on plain backdrop, consistent across seeds.
+      ornament: No recurring decorative motif; plain styling.
+    confidence: 1
+    stable_across_seeds: true
+    notes: >-
+      Another generic, default-feeling photographic studio portrait with little to distinguish it from
+      the cluster of similar rows in this sheet.
+  artist_329:
+    axes:
+      linework: Fully photographic soft edges, no drawn line quality.
+      face: Oval mature face, neutral warm expression, moderate cheekbone definition.
+      eyes: Medium eyes, calm gaze, unremarkable shape.
+      body: Slim standing posture, arms relaxed, ordinary adult proportions.
+      palette: >-
+        Sepia/taupe cast in two seeds and a fully desaturated black-and-white rendering in the third;
+        dark chin-length hair, muted grey-brown top and trousers.
+      light_shading: >-
+        Soft even studio lighting; the desaturated seed reads as lower-contrast greyscale rather than
+        a color/tone shift.
+      framing: Full-length centered standing crop on plain backdrop, consistent overall.
+      ornament: No recurring decorative motif beyond the plain chin-length hairstyle.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Generic photographic studio look; the main variation across seeds is a shift from warm sepia to
+      full greyscale in one image, otherwise closely resembling neighboring rows.
+  artist_330:
+    axes:
+      linework: Fully photographic soft edges, no drawn linework.
+      face: >-
+        Narrower, more angular face than the surrounding rows, with a longer chin and slightly hollowed
+        cheeks.
+      eyes: >-
+        Deeper-set eyes with a more pronounced brow shadow, giving a slightly more severe expression than
+        neighboring rows.
+      body: Slim, narrow-shouldered standing posture, arms relaxed at sides.
+      palette: >-
+        Warm sepia/taupe tone in two seeds and a fully desaturated greyscale rendering in the third; dark
+        wavy chin-length hair, muted grey-brown top and trousers.
+      light_shading: Soft frontal studio light with slightly deeper shadow modeling on the face than adjacent
+        rows.
+      framing: Full-length centered standing crop on plain backdrop, consistent with the rest of the sheet.
+      ornament: Visible wave/texture pattern in the hair recurring across all three seeds; no other accessory.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Facial structure and hair texture are subtly but noticeably different from the cluster of similar
+      photographic rows nearby, giving this row a mildly more distinct identity despite sharing the same
+      overall studio-photo treatment.
+  artist_331:
+    axes:
+      linework: >-
+        Soft photographic edges, smooth skin rendering, hair strands blend softly with no hard drawn outlines.
+      face: >-
+        Oval face, soft rounded jawline, moderate cheek fullness, calm closed-mouth expression held across
+        seeds.
+      eyes: Almond-shaped eyes, single-eyelid fold, dark iris, relaxed neutral forward gaze.
+      body: Slim-to-average build, upright relaxed standing posture, arms hanging naturally at the sides.
+      palette: >-
+        Warm greige knit top and trousers, medium warm skin tone, dark brown hair; one seed reads slightly
+        brighter/cooler.
+      light_shading: Soft diffused frontal studio light, faint floor shadow to one side, low overall contrast.
+      framing: >-
+        Full-length centered standing crop, feet near bottom edge, consistent headroom across all three
+        seeds.
+      ornament: No recurring decorative motif; plain crew-neck knit top and closed flat shoes.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Hairstyle, face shape and calm expression repeat closely across the three seeds; only exposure and
+      micro-pose shift slightly.
+  artist_332:
+    axes:
+      linework: Soft photographic rendering with smooth transitions at hairline and jaw, no visible drawn
+        line.
+      face: Slightly narrower face with more defined cheekbones, short blunt fringe framing the forehead.
+      eyes: Almond eyes with a touch more upper-lid crease, steady forward gaze, faint closed smile.
+      body: Average slim build, straight-backed stance, hands loosely at sides.
+      palette: >-
+        Muted grey-brown top and pants, medium warm skin tone, near-black hair; consistent tone across
+        seeds.
+      light_shading: Even soft studio lighting, subtle shadow, no strong directional falloff.
+      framing: Full-length frontal crop matching the set, minor headroom variation seed to seed.
+      ornament: No recurring decorative motif; unadorned knit top and trousers.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Facial proportions and fringe shape repeat closely across the three renders, giving a moderately
+      consistent look.
+  artist_333:
+    axes:
+      linework: Soft photographic edges, no linework, smooth even skin texture throughout.
+      face: Slim oval face, hair swept back off the forehead exposing more brow, neutral composed expression.
+      eyes: Medium almond eyes, softly downturned outer corner, calm steady gaze.
+      body: Slender build, relaxed standing posture, weight evenly balanced on both feet.
+      palette: Same muted greige top/trousers palette, warm-neutral skin, dark brown hair across seeds.
+      light_shading: Soft even frontal light, minimal shadow definition, low contrast.
+      framing: Full-length centered crop consistent with the set, feet just inside frame.
+      ornament: No recurring decorative motif; plain long-sleeve top and trousers.
+    confidence: 2
+    stable_across_seeds: true
+    notes: >-
+      Reads as a fairly generic composed portrait with only the swept-back hairline as a mild repeating
+      trait.
+  artist_334:
+    axes:
+      linework: Soft photographic edges, smooth skin and fabric rendering, no drawn outline quality.
+      face: Rounder face shape with fuller cheeks and a soft chin, warm gentle smile across all three
+        seeds.
+      eyes: Almond eyes with a slightly heavier lower lid, warm relaxed expression.
+      body: Average build, relaxed upright stance, arms at sides.
+      palette: Warm greige top and trousers, warm skin tone, dark hair; consistent value across seeds.
+      light_shading: Soft frontal light, gentle shadow beneath chin, low overall contrast.
+      framing: Full-length centered standing crop matching the set.
+      ornament: No recurring decorative motif; plain crew-neck top.
+    confidence: 3
+    stable_across_seeds: true
+    notes: Rounder cheek structure and warm smile repeat consistently across all three seeds.
+  artist_335:
+    axes:
+      linework: >-
+        Soft photographic edges; one seed shifts to a flatter, higher-key desaturated rendering with less
+        tonal depth.
+      face: >-
+        Longer center-parted wavy bob reaching past the chin, slightly more angular jaw, composed neutral
+        expression.
+      eyes: Almond eyes, level steady gaze, minimal expression change across seeds.
+      body: Slim build, relaxed standing posture, arms loosely at sides.
+      palette: Two seeds keep warm muted brown tones; the third renders in a desaturated near-monochrome
+        grade.
+      light_shading: Soft frontal light in two seeds; the desaturated seed reads flatter and higher-key
+        overall.
+      framing: Full-length centered crop, one seed shows slightly more headroom above the head.
+      ornament: No recurring decorative motif; plain long-sleeve top and trousers.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Hair length and face shape hold steady, but color grading diverges notably in one seed toward a
+      desaturated look.
+  artist_336:
+    axes:
+      linework: Soft photographic edges; one seed rendered in a flatter, desaturated near-monochrome style.
+      face: Shoulder-length wavy bob with center part, softly angular jaw, calm composed expression.
+      eyes: Almond eyes, steady level gaze, subtle closed-mouth smile.
+      body: Slim build, upright relaxed stance, weight evenly balanced.
+      palette: Warm muted brown tones in two seeds; third seed shifts to a desaturated grayscale-leaning
+        grade.
+      light_shading: Soft even frontal light in two seeds; the desaturated seed appears flatter and higher-key.
+      framing: Full-length centered standing crop consistent with the set.
+      ornament: No recurring decorative motif; plain knit top and trousers.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Hairstyle and face shape are consistent, though one seed's color treatment diverges into a desaturated
+      look.
+  artist_337:
+    axes:
+      linework: Soft photographic rendering, smooth even edges, no drawn linework.
+      face: Shoulder-length side-parted bob, softly rounded jaw, closed-mouth gentle smile.
+      eyes: Almond eyes, relaxed neutral gaze, minimal makeup emphasis.
+      body: Average slim build, relaxed upright posture, arms at sides.
+      palette: >-
+        Muted greige top and trousers, warm skin tone, dark hair; consistent across seeds with mild exposure
+        shift.
+      light_shading: Soft diffused frontal light, faint floor shadow, low contrast.
+      framing: Full-length centered crop matching the set.
+      ornament: No recurring decorative motif; plain long-sleeve knit top.
+    confidence: 2
+    stable_across_seeds: true
+    notes: A fairly generic composed portrait with only the side-part bob repeating as a mild consistent
+      trait.
+  artist_338:
+    axes:
+      linework: >-
+        Soft photographic edges; one seed shows notably crisper, cooler-toned rendering distinct from
+        the other two.
+      face: >-
+        Chin-length front-swept bob in two seeds; the third seed shows longer, straighter hair and a leaner
+        face.
+      eyes: Almond eyes in two seeds with dark iris; the third seed shows lighter, greyish iris coloring.
+      body: Slim build, upright relaxed posture, arms at sides across all three.
+      palette: >-
+        Warm muted brown tones in two seeds; the third shifts to a cooler, lighter, more desaturated palette.
+      light_shading: >-
+        Soft frontal light in two seeds; the third reads flatter with higher contrast and cooler shadow
+        tone.
+      framing: Full-length centered crop, consistent across all three despite the appearance shift.
+      ornament: No recurring decorative motif; plain long-sleeve top and trousers.
+    confidence: 2
+    stable_across_seeds: false
+    notes: >-
+      Two seeds share a consistent look, but the third diverges noticeably in hair length, eye color,
+      and overall tone.
+  artist_339:
+    axes:
+      linework: Soft photographic edges, smooth skin and fabric rendering throughout.
+      face: Shoulder-length side-swept wavy bob, softly oval face, calm composed expression.
+      eyes: Almond eyes, steady relaxed gaze, subtle closed smile.
+      body: Slim-to-average build, relaxed upright stance, arms loosely at sides.
+      palette: >-
+        Warm muted brown tones in two seeds; third seed shifts to a warmer sepia-toned, lower-saturation
+        grade.
+      light_shading: Soft frontal light with mild floor shadow; the sepia seed reads flatter overall.
+      framing: Full-length centered crop consistent with the set.
+      ornament: No recurring decorative motif; plain knit top and trousers.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Hairstyle and face shape stay consistent across seeds, with only a warm-toned grading shift in one
+      render.
+  artist_340:
+    axes:
+      linework: Soft photographic edges, smooth even skin and fabric texture, no drawn line quality.
+      face: Chin-to-shoulder length side-swept bob, softly oval face, composed neutral-to-gentle expression.
+      eyes: Almond eyes, calm steady gaze, minimal visible makeup.
+      body: Slim build, relaxed upright standing posture, arms at sides.
+      palette: Warm muted brown tones in two seeds; third seed rendered in a sepia-toned, lower-saturation
+        grade.
+      light_shading: Soft diffused frontal light; the sepia seed reads flatter with reduced tonal range.
+      framing: Full-length centered standing crop matching the set.
+      ornament: No recurring decorative motif; plain long-sleeve top and trousers.
+    confidence: 3
+    stable_across_seeds: true
+    notes: >-
+      Face shape and hairstyle repeat consistently across seeds, with only a sepia-toned grading shift
+      in one render.

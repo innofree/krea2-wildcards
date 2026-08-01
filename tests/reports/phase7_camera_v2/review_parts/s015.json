@@ -1,0 +1,42 @@
+{
+  "case_015": [
+    "pass",
+    "True profile all 3 seeds, chest_up crop stable"
+  ],
+  "case_040": [
+    "hold",
+    "close_face crop too wide; also seed_3003 breaks clean_profile, rendering frontal with both eyes"
+  ],
+  "case_065": [
+    "hold",
+    "full_length clean_profile: true profile all seeds, but seed_3003 has white bar artifacts"
+  ],
+  "case_090": [
+    "pass",
+    "full_length crown-to-feet consistent, slight_low subtle"
+  ],
+  "case_115": [
+    "pass",
+    "head_shoulders crop correct, three_quarter_front turn consistent across seeds"
+  ],
+  "case_140": [
+    "hold",
+    "thigh_up crop shows only chest, no thighs visible; recurring crop-boundary bug"
+  ],
+  "case_165": [
+    "hold",
+    "vertical_full_scene unstable: seed_1001 full body but seeds_2002/3003 crop to chest_up only"
+  ],
+  "case_190": [
+    "pass",
+    "waist_up crop correct, slight_high subtle, consistent gesture pose across seeds"
+  ],
+  "case_215": [
+    "pass",
+    "waist_up crop correct, three_quarter_front turn consistent"
+  ],
+  "case_240": [
+    "pass",
+    "wide_environmental consistent across seeds, minor outfit color variance"
+  ]
+}

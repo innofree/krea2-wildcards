@@ -1,0 +1,42 @@
+{
+  "case_013": [
+    "pass",
+    "True profile all seeds, chest_up crop stable"
+  ],
+  "case_038": [
+    "hold",
+    "close_face crop too wide (torso/chest visible), not a tight face-only crop"
+  ],
+  "case_063": [
+    "hold",
+    "close_face crop too wide, torso visible; turn-back pose ok but crop fails"
+  ],
+  "case_088": [
+    "hold",
+    "full_length crop correct but seed_3003 has stray white bar artifacts on both edges"
+  ],
+  "case_113": [
+    "pass",
+    "head_shoulders crop correct, rear_three_quarter turn consistent across seeds"
+  ],
+  "case_138": [
+    "hold",
+    "thigh_up crop shows only chest (no thighs); seed_3003 also has white bar artifacts"
+  ],
+  "case_163": [
+    "pass",
+    "vertical_full_scene full body with floor visible, consistent across seeds"
+  ],
+  "case_188": [
+    "hold",
+    "vertical_full_scene crop wrong: chest_up headshot only, no full body shown, all seeds"
+  ],
+  "case_213": [
+    "pass",
+    "waist_up crop correct, three_quarter_front turn subtle and consistent"
+  ],
+  "case_238": [
+    "pass",
+    "wide_environmental consistent, small figure with floor/props"
+  ]
+}

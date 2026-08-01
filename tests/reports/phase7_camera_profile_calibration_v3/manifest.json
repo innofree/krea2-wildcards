@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/phase7_camera_profile_calibration_v3.jsonl",
+  "matrix_sha256": "d995db3ca75731aedeb9eaa2e023492cafa493b01549c780143ce9bf5c0171d5",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 6,
+  "batch_size": 1,
+  "job_count": 6,
+  "completed_count": 6,
+  "style_count": 2,
+  "modes": {
+    "mass_axis_camera": 6
+  },
+  "seeds": [
+    71001,
+    72002,
+    73003
+  ],
+  "scorecard": "tests/reports/phase7_camera_profile_calibration_v3/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 71001,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 72002,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 73003,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000003/run.json"
+    },
+    {
+      "test_id": "P7000004",
+      "style_id": "camera_chest_up_clean_profile_moderate_wide_centered_symmetry_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 71001,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000004/run.json"
+    },
+    {
+      "test_id": "P7000005",
+      "style_id": "camera_chest_up_clean_profile_moderate_wide_centered_symmetry_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 72002,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000005/run.json"
+    },
+    {
+      "test_id": "P7000006",
+      "style_id": "camera_chest_up_clean_profile_moderate_wide_centered_symmetry_complete_camera",
+      "mode": "mass_axis_camera",
+      "seed": 73003,
+      "run": "tests/reports/phase7_camera_profile_calibration_v3/runs/P7000006/run.json"
+    }
+  ]
+}
