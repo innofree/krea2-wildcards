@@ -210,10 +210,14 @@ const overturned = new Map(
 
 // Emit the format build_phase7_review_yaml.py already consumes:
 // review_parts/sNNN.json = { case_NNN: [verdict, reasoning] }
+// Only a hold can be overturned. A pass routed to verification for
+// needs_full_resolution comes back holds=false too, and treating that as an
+// overturn writes "overturned at full resolution" onto a case where nothing was
+// ever in question -- it reads as though a defect had been found and dismissed.
 const parts = results.map((sheet) => {
   const body = {}
   for (const c of sheet.cases) {
-    const flip = overturned.get(c.alias)
+    const flip = c.verdict === 'hold' ? overturned.get(c.alias) : undefined
     body[c.alias] = flip
       ? ['pass', `${c.reasoning} -- overturned at full resolution: ${flip.reasoning}`]
       : [c.verdict, c.reasoning]

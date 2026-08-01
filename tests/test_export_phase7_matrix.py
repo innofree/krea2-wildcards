@@ -145,8 +145,27 @@ def test_phase6_prompt_corpus_survives_as_a_superseded_baseline() -> None:
             if item_id in rendered:
                 assert rendered[item_id] != prompt, (axis, item_id)
 
-    for axis in sorted(PHASE7_AXIS_CATALOGS):
-        assert not _axis_items(axis, {"approved"}), axis
+    # The guard protected promotion runs, and a promotion has now happened
+    # (linework_coloring v2), so "nothing is promoted" is no longer what makes the
+    # retirement safe. This is the stronger invariant it gives way to: every
+    # decided item's recorded evaluated_prompt_sha256 must still be the digest of
+    # the prompt the catalog carries. That is the same property the phase6 corpus
+    # was standing in for -- a verdict describing a prompt that no longer exists --
+    # asserted directly against the catalog instead of against a frozen baseline,
+    # so it holds for every future revalidation without needing a new corpus.
+    for axis, catalog_path in sorted(PHASE7_AXIS_CATALOGS.items()):
+        items = load_yaml(Path(catalog_path))["items"]
+        for item_id, item in items.items():
+            validation = item.get("validation") or {}
+            if validation.get("status") not in {"approved", "rejected"}:
+                continue
+            recorded = validation.get("evaluated_prompt_sha256")
+            assert recorded, (axis, item_id, "decided without a prompt digest")
+            assert recorded == canonical_prompt_sha256(item["prompt"]), (
+                axis,
+                item_id,
+                "verdict describes a prompt the catalog no longer carries",
+            )
 
 
 def test_presets_stay_on_the_complete_scene_five_seed_bar() -> None:

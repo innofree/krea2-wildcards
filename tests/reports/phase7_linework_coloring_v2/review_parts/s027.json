@@ -1,0 +1,42 @@
+{
+  "case_027": [
+    "pass",
+    "angular_precise + muted_split_complement + subtle_contact_shadow: straight-edged precise contours with angular corners on lapels/collar in all 3 seeds, desaturated teal garment (measured hue 187-200, p95 sat 0.30) played against warm peach skin and terracotta lip = muted split pair, plus soft contact darkening under jaw and where hair meets the lapel."
+  ],
+  "case_057": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + soft_two_band: heavy dark hair/shoulder silhouette with almost no interior garment lines, garment measured at hue 200-240 sat 0.40-0.45 value 0.25 (true cool night key), and face plus sleeves each carry two soft-boundary tonal bands."
+  ],
+  "case_087": [
+    "pass",
+    "broken_dry + airy_pastel + transparent_glaze: shirt built from discontinuous dry strokes with gapped outlines, palette measured mean sat 0.08 at value 0.84 (pale pastel), and overlapping translucent pink/mint/lilac washes let underlying tone read through."
+  ],
+  "case_117": [
+    "pass",
+    "crisp_uniform + limited_two_tone + crisp_shape_shadow: thin even-weight contour on lapels and tee neckline across all 3 seeds, garment restricted to a two-tone ivory-jacket/white-tee pair, and hard-edged flat shadow patches on neck and chest."
+  ],
+  "case_147": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + subtle_contact_shadow: thin consistent-weight outlines on sleeve seam and neckline (clearest in 1001/3003, faint in 2002), greige top keyed to the skin value on a warm neutral ground, and soft contact shadow under the jaw and at the hair-on-shoulder overlap."
+  ],
+  "case_177": [
+    "pass",
+    "elastic_pressure + warm_earth + broad_blended_plane: olive/brown/tan palette and large soft blended tonal masses are unambiguous, but the only pressure-varying strokes are a few swell-and-taper accents at the elbow crease and cuff (silhouette is otherwise lineless) - line quality is marginal at 262px tile size."
+  ],
+  "case_207": [
+    "pass",
+    "fine_tapered + skin_centered_neutral + crisp_shape_shadow: thin tapering lines on sleeve folds, cuffs and hands, ivory top plus taupe skirt on greige ground all keyed to skin, and sleeve/torso shadows render as flat grey shapes with hard boundaries."
+  ],
+  "case_237": [
+    "pass",
+    "deep_jewel is a real defect - garment is achromatic black (dark-pixel mean RGB 19,18,18 / 21,19,18 / 22,19,20 across the 3 seeds) and the only saturated hues anywhere in the tiles are 20-60 deg skin/hair warmth, so no gem hue is present; rounded_soft contours and crisp_shape_shadow face planes are fine. -- overturned at full resolution: Thumbnail read was pixel-accurate but is not a defect for this item. test_id P7000709/P7000710/P7000711 (seeds 1001/2002/3003) at 1024x1024 confirm the garment is achromatic black: dark-region mean RGB 18.8,16.8,16.2 / 20.0,17.5,16.6 / 22.6,19.0,18.9, mean chroma 3.3-4.5 of 255, and all chromatic dark pixels fall in the 0-30 deg warm bin with zero energy in the 70-340 deg jewel range. Even gamma-boosted the blazer stays neutral grey-black. However the hold fails the group-relative standard. saturation_screen.json (deviation 0.5, grouped on coloring) gives deep_jewel 43 items, median 0.1628, min 0.1107, outlier_count 0. Reproducing that metric per item puts case_237 at 0.1751 (per-seed 0.1655/0.1909/0.1690) against a group median of 0.1682 - 1.04x its own group median, rank 26 of 43, ABOVE the median, not below it. Further, a visible gem hue in dark regions occurs only in the angular_precise contour sub-family (12 of 43 deep_jewel items); the group median for jewel-hue fraction among dark pixels is 0.0000, and every rounded_soft, broken_dry, selective_edge and crisp_uniform deep_jewel item scores 0.0000, case_237 included. Accepted rounded_soft peers are visually indistinguishable in the disputed respect: P7000703 (sat 0.1763, just above case_237) and P7000715 (sat 0.1976, the highest-saturation rounded_soft deep_jewel item) both render fully achromatic black garments with no gem hue, while P7000007 (angular_precise) is the contrast case that does show a deep emerald blazer. So the achromatic dark garment is the deep_jewel x non-angular family norm, not a case_237-specific failure, and this item sits above its own palette group's median saturation. Any concern about deep_jewel only reading as a gem hue under angular_precise contours is an axis-level palette/contour interaction worth a separate pass across the 31 non-angular deep_jewel items, not a hold on case_237."
+  ],
+  "case_267": [
+    "pass",
+    "selective_edge + airy_pastel + fine_tonal_hatching: lines confined to collar, placket, cuffs and hands with the shirt body unlined, palette measured mean sat 0.06-0.09 at value 0.85, and fine diagonal hatch strokes describe the sleeve and body folds."
+  ],
+  "case_297": [
+    "hold",
+    "warm_earth (olive/brown, sat 0.28-0.34) plus selective_edge and fine_tonal_hatching read correctly in 1001/2002, but seed 3003 is a real framing defect - 66 of 262 tile columns are pure white pillarbox, i.e. that render came out at a different aspect and its hatching is washed out by the rescale."
+  ]
+}

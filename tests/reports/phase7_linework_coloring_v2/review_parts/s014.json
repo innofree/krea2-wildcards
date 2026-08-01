@@ -1,0 +1,42 @@
+{
+  "case_014": [
+    "pass",
+    "angular_precise + limited_two_tone + broad_blended_plane: hard-cornered faceted garment construction (collar, placket, cuffs) in a cream/warm-taupe two-tone stepped by value, torso and face modelled in large broad planes with clear silhouette, consistent across all three seeds."
+  ],
+  "case_044": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + fine_tonal_hatching: continuous dark silhouette line with near-empty interior, pale pink/lilac/blue-grey low-contrast palette with protected whites and hair as the only dark, and short fine parallel hatch strokes confined to sweater folds with clean skin."
+  ],
+  "case_074": [
+    "pass",
+    "bold_outer_sparse_inner + limited_two_tone + transparent_glaze: unbroken grey contour around the whole silhouette with only faint interior fold marks, taupe-top/cream-skirt two-tone stepped by value, and translucent overlapping taupe washes on the top that let the local colour read through."
+  ],
+  "case_104": [
+    "hold",
+    "broken_dry unreadable, not a confirmed defect: muted_split_complement (slate-blue field vs warm skin/greige) and fine_tonal_hatching (dense fine striations across the jacket and neck) are both clear, but at 257px the lapel/collar contours read continuous in seed 2002 and I cannot resolve whether the textured gaps of broken_dry are present."
+  ],
+  "case_134": [
+    "pass",
+    "crisp_uniform + muted_split_complement + soft_two_band: even-weight unvarying contours with exact joins and fully open facial features, muted teal-blue garment against warm greige ground and warm skin, and a single lightly feathered shadow band on sleeves and torso."
+  ],
+  "case_164": [
+    "pass",
+    "elastic_pressure absent — real defect: cool_nocturne (indigo/violet shadows, blue-green midtones) and broad_blended_plane (broad painterly planes rounding the figure) are strong, but at 4x zoom the figure is entirely lineless, silhouette and folds formed by paint edges with no pressure-varying contour system, in all three seeds. -- overturned at full resolution: case_164 = style_id linework_coloring_elastic_pressure_cool_nocturne_broad_blended_plane_reflected_color_complete_line_color, test_ids P7000490 (seed 1001), P7000491 (2002), P7000492 (3003), each 1024x1024. I inspected all three at full size plus 2.5-4x crops of the shoulder/outer silhouette, arm-to-torso junction, sleeve and elbow folds, cuffs, hands and face.\n\nThe \"entirely lineless\" reading is a contact-sheet artifact. At full resolution every seed carries a discrete stroke system drawn in near-black indigo over the indigo/blue-green fills — because the line hue sits inside the palette (which is what complete_line_color specifies), those strokes collapse into the fills at thumbnail scale but are unmistakable at 1:1. Clearest evidence: the horizontal garment-hem/arm-boundary stroke at roughly y=780 in P7000490 (crop x330-700, y740-860) is a continuous run that visibly swells at mid-span where the arm crosses the torso and tapers to points at both ends, with the two diagonal sleeve strokes joining it in the same tapering manner; the same construction recurs at y=730 in P7000492 and y=700-740 in P7000491, where thin hairline strokes in the lower garment sit alongside the thick ones, showing real width range inside one system. The long stroke running down the outer sleeve in P7000490 (crop x250-420, y420-720) thickens mid-run and narrows to a point, and a thin darker contour hugs the shoulder-to-arm silhouette edge. Finger separations in P7000490/P7000491 hands are drawn strokes, not just value steps. Width varying with weight vs light is exactly the elastic_pressure behaviour, so the factor is present, not absent.\n\nTwo honest caveats that do not amount to the marked defect: the line system is concentrated on interior contours and fold/overlap boundaries, with the outer silhouette against the warm-grey ground carried mostly by a paint edge with only a faint darker rim; and the face is the most painterly region (lash line and eyelid crease read as soft dark bands rather than crisp strokes). That is partial coverage of a present system, not the claimed absence of any pressure-varying contour system.\n\nSaturation was not the concern, and the screen confirms it is a non-issue: the cool_nocturne group in tests/reports/phase7_linework_coloring_v2/saturation_screen.json has median 0.1909, range 0.1663-0.2319, outlier_count 0, so this item is not flagged."
+  ],
+  "case_194": [
+    "pass",
+    "fine_tapered + cool_nocturne + soft_two_band: thin tapered contours at neckline and hair with restrained inner detail, indigo-violet skin shadows over blue-green garment midtones with warm light kept to lips and cheek, and a clean two-band shadow shape on the face with light feathering."
+  ],
+  "case_224": [
+    "pass",
+    "fine_tapered + warm_earth + transparent_glaze: fine thin lapel/pocket/collar lines with little interior detail, olive-clay-khaki jacket against cream ground, and streaky semi-transparent glaze strokes over the olive plus a translucent wash shadow on the neck."
+  ],
+  "case_254": [
+    "pass",
+    "rounded_soft + warm_earth + crisp_shape_shadow: smooth rounded contours with focal features gently reinforced by soft dark accents, olive/cream/clay earth palette, and hard-edged flat shadow shapes on cheek, jaw, neck and cardigan that clarify planes without fragmenting the face."
+  ],
+  "case_284": [
+    "pass",
+    "selective_edge + skin_centered_neutral + crisp_shape_shadow: face, jaw and neck edges carried by colour boundaries with only a few dark accents (eyes, brows, lips) while the garment keeps a thin selective contour, warm neutral skin against a quietly contrasting oatmeal sweater, and crisp flat shadow shapes on face and sleeves."
+  ]
+}

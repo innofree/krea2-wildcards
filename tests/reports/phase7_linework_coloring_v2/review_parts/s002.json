@@ -1,0 +1,42 @@
+{
+  "case_002": [
+    "pass",
+    "angular_precise + deep_jewel + broad_blended_plane: hard-cornered lapel notches and straight-edged garment construction, deep emerald green against navy-indigo separated by near-black neutrals (measured hue ~110-180deg / ~255deg, S~0.32), torso and sleeves rounded by large single planes with clean silhouette edges."
+  ],
+  "case_032": [
+    "pass",
+    "angular_precise + skin_centered_neutral + crisp_shape_shadow: measured angular lapel/collar corners on clean cream tailoring, skin is the chromatic centre with warm undertones against a quietly contrasting cream suit (S~0.15, hue ~28deg), and jaw/neck/cheek shadows are hard-edged flat shapes that clarify planes without fragmenting the face."
+  ],
+  "case_062": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + transparent_glaze: heavy dark outer contour around figure and hair with very few interior marks, indigo/blue-green palette measured at hue 215-224deg S~0.49 with warm light restricted to lips and a thin cheek accent, and shadows read as translucent violet washes layered over the green local colour with luminous overlap."
+  ],
+  "case_092": [
+    "hold",
+    "broken_dry + deep_jewel + fine_tonal_hatching: real defect, not a readability problem - broken_dry dry-media contour and fine graphite tonal rendering are present, but deep_jewel is absent in all three seeds; the garment band carries only sepia hue 20-40deg with no green/blue/violet jewel hue anywhere, so the palette has collapsed to monochrome graphite."
+  ],
+  "case_122": [
+    "pass",
+    "crisp_uniform + limited_two_tone + soft_two_band: thin even-weight contours with exact joins at sleeves and hands and consistently open facial features, palette restricted to two families (grey-blue top, cream skirt) expanded through several value steps with translucent overlap at the cuffs, and sleeve shading sits in two clean bands with lightly feathered transitions."
+  ],
+  "case_152": [
+    "pass",
+    "elastic_pressure + airy_pastel + broad_blended_plane: airy_pastel is unmistakable (S~0.06, V~0.89, protected whites, grounding dark hair) and broad blended planes round the figure, but elastic_pressure cannot be read - at 6x zoom the figure carries no dark contour system at all, only pale pastel fold strokes with some width variation, so pressure modulation is undecidable at this density."
+  ],
+  "case_182": [
+    "pass",
+    "elastic_pressure + warm_earth + soft_two_band: contours visibly swell at the shoulder seam and armhole and taper to the lapel point with tapered hair strokes, palette is olive/clay/cream warm earth (hue 24-32deg, S~0.36), and the sleeve and shoulder carry a broad two-band shadow with feathered transition."
+  ],
+  "case_212": [
+    "pass",
+    "fine_tapered + skin_centered_neutral + transparent_glaze: hairline contours that taper and break with restrained interior detail, oatmeal/cream garment with skin as the chromatic centre (hue ~25deg, S~0.14-0.29), and garment shadows are thin translucent tan washes that let the cream base show through and darken where strokes overlap."
+  ],
+  "case_242": [
+    "hold",
+    "rounded_soft + deep_jewel + soft_two_band: real defect, not a readability problem - rounded smooth contours are present, but deep_jewel is absent; seeds 1001 and 3003 are effectively achromatic (only 2 and 48 chroma pixels out of ~4700 in the garment region, V~0.11) and seed 2002 is warm brown hue 26deg, so no jewel hue survives anywhere."
+  ],
+  "case_272": [
+    "hold",
+    "selective_edge + deep_jewel + subtle_contact_shadow: real defect, not a readability problem - selective near-invisible jaw/cheek edges completed by colour with a few dark lash/hair accents, and subtle contact shadows with open midtones both read clearly, but the garment is flat black/dark warm neutral (hue 20-75deg, V 0.08-0.23) with no jewel hue, so deep_jewel is not expressed."
+  ]
+}

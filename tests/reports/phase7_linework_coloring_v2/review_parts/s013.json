@@ -1,0 +1,42 @@
+{
+  "case_013": [
+    "pass",
+    "angular_precise + limited_two_tone + broad_blended_plane: measured-corner lapel notches and straight-edged facets, palette held to warm taupe + cool grey stepped through values, broad blended planes rounding the torso with a clear silhouette."
+  ],
+  "case_043": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + fine_tonal_hatching: continuous heavy dark outer contour with almost no interior line, low-contrast pink/blue/green pastels over protected whites with black hair as the grounding dark, and fine parallel pencil hatching concentrated in sleeve and placket folds, sparse on skin."
+  ],
+  "case_073": [
+    "pass",
+    "bold_outer_sparse_inner + limited_two_tone + transparent_glaze: crisp bold dark garment/hair outline with bare interior, ivory + warm-grey two-tone stepped in value, and translucent glazed shadows on the ivory cloth where local colour stays visible with luminous overlap at neck and lapel."
+  ],
+  "case_103": [
+    "hold",
+    "broken_dry contradicted (real defect): muted_split_complement reads (slate-teal/olive fields against warm beige ground and warm skin) and crisp_shape_shadow reads (hard-edged shadow shapes on sleeve and skirt), but contours are smooth, continuous, even vector-clean lines in all three seeds with no textured gaps or dry-brush breakage."
+  ],
+  "case_133": [
+    "pass",
+    "crisp_uniform + muted_split_complement + soft_two_band: even-weight dark contour with exact lapel joins and open facial features, desaturated slate-blue garment against warm beige ground and warm skin, and a single lightly feathered shadow band over a clean base tone on neck and jacket."
+  ],
+  "case_163": [
+    "pass",
+    "elastic_pressure not visibly expressed (defect, confirm at full res): cool_nocturne is emphatic (indigo/violet shadows, blue-green midtones, restrained warm light at jaw and neck) and broad_blended_plane reads, but seeds 1001 and 3003 are pure painted planes with no drawn contour at all and only seed 2002 shows thin lapel lines, so thickening-around-weight cannot be seen."
+  ],
+  "case_193": [
+    "pass",
+    "fine_tapered unreadable at this density: cool_nocturne reads (navy/indigo shadows with teal-green midtones and restrained warm skin light) and fine_tonal_hatching reads as faint parallel striations in occluded sleeve and skirt folds kept off the skin, but the contours are soft painted edges with no resolvable line taper or pressure variation at 256 px. -- overturned at full resolution: Thumbnail artifact — fine_tapered is clearly resolvable at full resolution in all three seeds.\n\nResolution path: manifest.json cases[192] alias `case_193` -> style_id `linework_coloring_fine_tapered_cool_nocturne_fine_tonal_hatching_reflected_color_complete_line_color` -> scorecard rows P7000577 (seed 1001), P7000578 (2002), P7000579 (3003), each 1024x1024.\n\nWhat the 1024 px renders show (inspected native crops at 4x on hands, sleeve cuff, and face):\n- Seed 1001 (P7000577): the finger-separation and knuckle lines are discrete dark ink strokes that start wide at the base and taper to hairline points at the fingertips; nail contours are thin drawn lines. Sleeve cuff has a continuous contour line whose weight thickens at folds and thins along straight runs, plus fan hatching off the elbow that tapers to points.\n- Seed 2002 (P7000578): the strongest case. Long thin strokes fanning from the elbow visibly taper to hair-fine ends, and the cuff outline modulates in weight. Hands show the same tapered contour behaviour; dense parallel striations cover the skirt.\n- Seed 3003 (P7000579): the most painterly of the three — fold interiors are brushed shapes rather than hatching — but the hand contours still resolve as tapered ink lines thinning to points at the fingertips, and the outer sleeve/skirt contour is a drawn line of varying weight. It does not disagree enough to sustain the hold.\n\nSo the \"soft painted edges with no resolvable line taper or pressure variation\" reading was purely a 256 px downsample effect. The rest of the original note is confirmed and consistent with the rule: cool_nocturne reads (navy/indigo shadows, teal-green midtones, restrained warm skin light), and fine_tonal_hatching appears as faint parallel striations in occluded sleeve and skirt folds kept off the skin. The face is painterly with no hard outline, which is expected given hatching is kept off skin — the linework axis reads on garment and hands.\n\nSaturation was not the concern, but checked for completeness: saturation_screen.json groups by palette; the cool_nocturne group (43 items) has median 0.1909, min 0.1663, and outlier_count 0, so there is no saturation evidence against this item either.\n\nFiles: /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/P7000577/image_01.png, .../runs/P7000578/image_01.png, .../runs/P7000579/image_01.png"
+  ],
+  "case_223": [
+    "pass",
+    "fine_tapered + warm_earth + subtle_contact_shadow: thin contour and fold lines that visibly taper to points at sleeve creases and fingers with restrained inner detail, olive/clay/brown/sand palette, and open unshaded midtones broken only by faint contact shadows at sweater hem, sleeve underside, and where hands rest on the skirt."
+  ],
+  "case_253": [
+    "pass",
+    "rounded_soft + warm_earth + broad_blended_plane: soft rounded contours with smooth turns at shoulders, cuffs and hands and gently reinforced eyes/lips, khaki-olive and clay-brown over cream ground, and broad blended value planes rounding the torso with the silhouette still clear."
+  ],
+  "case_283": [
+    "pass",
+    "selective_edge + skin_centered_neutral + broad_blended_plane: the ivory sweater edge dissolves into the grey ground and is completed by the colour boundary with only a few dark accents at cuff, hem and hair, neutrals keyed to skin undertone with a quietly contrasting taupe/black skirt, and broad blended planes across the sweater."
+  ]
+}

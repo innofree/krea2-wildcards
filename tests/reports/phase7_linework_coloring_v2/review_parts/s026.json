@@ -1,0 +1,42 @@
+{
+  "case_026": [
+    "pass",
+    "angular_precise + muted_split_complement + soft_two_band: crisp vector-clean contours with sharp angular wedge folds on the sleeves/lapel, desaturated slate-teal jacket against khaki-tan skirt (measured S 0.16-0.20, a muted split-complement pairing), garment tone resolves into base plus one softer-edged darker fold band."
+  ],
+  "case_056": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + fine_tonal_hatching: dim navy/teal-green nocturne palette (measured meanRGB 0.13-0.21-0.23, S 0.44 vs the near-hueless blacks elsewhere on the sheet), silhouette carries a distinctly darker 2-3px navy rim (scanline luma 22-26 at the edge vs 40-68 interior) while the interior has no drawn lines at all, and the sweater tone is built from visible fine parallel hatch strokes."
+  ],
+  "case_086": [
+    "pass",
+    "broken_dry + airy_pastel + transparent_glaze: pale pink/mint/butter/lilac tints throughout, colour laid as thin translucent veils that let the white shirt read through the overlaps, and the contours are visibly interrupted — the shoulder and arm outlines break into gaps and the placket is a dashed dry stroke."
+  ],
+  "case_116": [
+    "pass",
+    "crisp_uniform + limited_two_tone + broad_blended_plane: thin even-weight crisp outline of constant thickness around collar ring, cuffs and silhouette, palette restricted to a light taupe plus one darker grey-taupe, and the sweater is modelled in broad soft-blended tonal planes with no banding or hatching."
+  ],
+  "case_146": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + soft_two_band: uniform thin crisp contour on cuffs, collar and skirt panel seams, ivory-cream top with taupe skirt sitting entirely in the skin-adjacent neutral range, and shading limited to base plus one soft warm-grey band under the arms and at the waist."
+  ],
+  "case_176": [
+    "pass",
+    "elastic_pressure unreadable (not a defect): warm_earth is clear (olive/khaki) and broad_blended_plane is clear (wide soft-blended painterly planes), but the render is almost lineless — tile 2 has no contour stroke at all and tiles 1 and 3 offer only a single lapel/placket line whose weight modulation cannot be separated from downscale artefact at 256px. -- overturned at full resolution: Thumbnail artifact — the \"almost lineless\" reading does not survive full resolution.\n\ntest_id resolution: case_176 = style_id `linework_coloring_elastic_pressure_warm_earth_broad_blended_plane_controlled_rim_complete_line_color`, scorecard rows 527-529 → P7000526 (seed 1001), P7000527 (seed 2002), P7000528 (seed 3003), all 1024x1024 at /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/<test_id>/image_01.png. The saturation screen was not consulted because the hold concerned linework legibility, not colour saturation.\n\nThe hold's specific claims fail:\n\n1. \"Tile 2 has no contour stroke at all\" (P7000527, seed 2002) is false. At 4x on the shoulder (crop 100,700-300,860) there is an unmistakable garment stroke that begins in a heavy pressure node at the shoulder point, runs down-right with a thick belly, and tapers to a fine hairline tail — textbook elastic-pressure entry-swell/exit-taper. At 4x on the neckline (crop 400,580-720,720) a dark contour follows the underside of the crew collar band, modulating from a near-invisible hairline where it exits right, through moderate weight along the curve, into a distinctly heavier stroke at the left shoulder. A soft dry-brush silhouette contour also separates the left arm from the background.\n\n2. \"Only a single lapel/placket line\" in tiles 1 and 3 is an undercount. P7000526 carries the lapel roll edge, the notch (heavy), the placket running from notch to hem with a clear thin→thick→thin progression, a fully drawn button ring whose stroke is heavy at the bottom and thin at the top, plus a light tapered flap stroke on the wearer's right. P7000528 carries the collar edge, lapel roll, notch corner, placket, and a fine sleeve/shoulder seam hairline, contrasting fine hairlines against heavy notch strokes.\n\n3. Quantitatively, the three seeds are indistinguishable in line content, so tile 2 is not an outlier: dark-line pixel fraction 0.0049 / 0.0047 / 0.0048, with scanline run widths spanning p10=1px to max 25 / 19 / 24px. That ~20x spread between hairline and belly is the weight modulation elastic_pressure encodes, and it is far larger than any 256px downscale could preserve — which is exactly why the contact sheet flattened it into \"no stroke\".\n\nelastic_pressure is readable and separable at full resolution across all three seeds; warm_earth (olive/khaki) and broad_blended_plane were already conceded as clear. No defect."
+  ],
+  "case_206": [
+    "pass",
+    "fine_tapered + skin_centered_neutral + crisp_shape_shadow: thin contours that visibly taper to nothing at the shoulder and lapel ends, oatmeal-greige jacket held in the same neutral family as the skin, and shadows rendered as flat hard-edged shapes — the neck cast shadow is a crisp wedge and the jacket shadows are discrete sharp-edged streaks."
+  ],
+  "case_236": [
+    "hold",
+    "deep_jewel defect: all three seeds render a neutral black blazer with no jewel hue — measured garment meanRGB (0.14,0.14,0.13)/(0.16,0.15,0.14)/(0.14,0.14,0.13) with mean saturation 0.12-0.13 at value 0.15, i.e. hueless, versus 0.37-0.44 for the genuinely coloured cool_nocturne row; rounded_soft contours are present but broad_blended_plane is also swallowed by the black mass."
+  ],
+  "case_266": [
+    "pass",
+    "selective_edge + airy_pastel + fine_tonal_hatching: outline is drawn on the collar, placket and left shoulder then drops out entirely along the right sleeve and lower shirt where the edge is carried by tone alone, palette is pale pink/blue/lilac pastel, and tone is built from fine parallel pastel strokes across chest and sleeves."
+  ],
+  "case_296": [
+    "pass",
+    "selective_edge + warm_earth + fine_tonal_hatching: olive-brown warm earth jacket, dense fine parallel hatch strokes visible under the lapel, across the chest and down the sleeve, and the contour is applied selectively — firm on lapel and collar, dissolving to nothing along the right shoulder and outer sleeve."
+  ]
+}

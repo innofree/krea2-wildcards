@@ -1,0 +1,42 @@
+{
+  "case_015": [
+    "pass",
+    "angular_precise + limited_two_tone + crisp_shape_shadow: measured straight-edged lapel/pocket corners and faceted planes, palette restricted to greige-cream value steps plus black hair, hard-edged flat shadow shapes on cheek/temple and jacket."
+  ],
+  "case_045": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + soft_two_band: airy_pastel unmistakable (pink/mint/lavender/yellow strokes, protected whites, hair as grounding dark) and interior marks are sparse, but the figure reads essentially flat — no two-band light/shadow structure or feathered transition is separable from the low-contrast pastel field at this density, and the garment outer contour is a thin grey line rather than clearly bold; unreadable, not a confirmed defect. -- overturned at full resolution: Thumbnail artifact — both halves of the hold reasoning dissolve at 1024x1024. Test IDs P7000133/P7000134/P7000135 (seeds 1001/2002/3003), all three inspected plus magnified face and shoulder crops. (1) The \"essentially flat, no separable two-band\" claim is wrong: the garment shows an unmistakable soft_two_band on every seed — cream/white lit band over inner shoulder and chest against a distinctly pink/peach shadow band down the outer arm, divided by a visibly feathered (not hard-edged) transition. The face repeats it on seeds 1001 and 2002: lit cream plateau stepping down to a mauve/pink shadow band on the viewer-left cheek and left side of the nose. Measured skin lightness spread (p5-p95) is 36.3/41.3/29.3 levels, and the P7000133 horizontal cheek profile steps 224 -> 202 -> 217, a real band step with a soft 2-3 sample transition rather than a flat field. Seed 3003 is flattest facially but still carries the two-band on the garment, so the seeds do not disagree on whether the structure exists. (2) The \"outer contour is a thin grey line\" claim is also wrong: the silhouette is a continuous dark charcoal stroke with visible brush texture, clearly heavier than the sparse, broken, light-grey interior hairlines, so the bold_outer_sparse_inner weight contrast is legible in all three shoulder crops. (A crude numeric line scan was discarded as unreliable because the hair mass was captured as an \"interior\" minimum.) controlled_rim also resolves as a thin warm reddish rim along the top-outer shoulder edge, clearest on seed 1001, and airy_pastel is confirmed with protected whites and hair as grounding dark. Saturation is not implicated: saturation_screen.json gives the airy_pastel group (42 items) median 0.0839, range 0.0672-0.1085, outlier_count 0, and this item measures 0.0873/0.0782/0.0866 — at its own group's median, so the low absolute pastel saturation is by design."
+  ],
+  "case_075": [
+    "pass",
+    "bold_outer_sparse_inner + muted_split_complement + transparent_glaze: heavy dark silhouette line with sparse thin interior fold marks, cool blue-grey field against warm skin and khaki/sand notes, fold shadows are translucent washes with the local blue still reading through and luminous overlaps."
+  ],
+  "case_105": [
+    "pass",
+    "broken_dry + muted_split_complement + fine_tonal_hatching: dry intermittent pencil-like contours instead of solid ink, blue-teal top against olive-brown skirt with warm skin, fine directional hatch concentrated in elbow/chest folds and sparse across skin."
+  ],
+  "case_135": [
+    "pass",
+    "crisp_uniform + muted_split_complement + subtle_contact_shadow: even-weight contours with exact joins at collar/lapel and consistently open facial features, cool teal jacket against warm peach skin on greige, midtones held open with small contact shadows only under jaw and along lapel edge."
+  ],
+  "case_165": [
+    "pass",
+    "elastic_pressure + cool_nocturne + crisp_shape_shadow: indigo/violet shadows with blue-green skin midtones and a restrained warm accent at nose bridge and ear, crisp-edged flat shadow planes across cheek/neck and lapel, contours heavier at hair mass and shadow-side jacket seams and thinning to near-absent along lit jaw."
+  ],
+  "case_195": [
+    "pass",
+    "fine_tapered + cool_nocturne + soft_two_band: thin delicate contours at collar/cuffs/hands with restrained interior marks, indigo shadow and blue-green midtone garment with restrained warm light on lips, shading resolves into two broad value zones (green light plane, indigo shadow plane) with softly feathered joins."
+  ],
+  "case_225": [
+    "pass",
+    "fine_tapered + warm_earth + transparent_glaze: olive/clay/sand/cream palette throughout, contour lines thin and tapering with minimal interior detail, fold shadows on the olive top are translucent layered washes that keep the local olive visible."
+  ],
+  "case_255": [
+    "pass",
+    "rounded_soft + warm_earth + crisp_shape_shadow: smooth rounded contour turns with gently reinforced eyes/lips, olive top over brown skirt on greige, clean hard-edged darker-olive shadow shapes on sleeves and torso."
+  ],
+  "case_285": [
+    "pass",
+    "selective_edge + skin_centered_neutral + crisp_shape_shadow: cream top silhouette largely unlined and completed by the colour boundary against greige with a few dark accents (hair, black skirt, cuffs), neutral skin-centred palette, crisp diagonal hard-edged shadow shapes across sleeve and torso."
+  ]
+}

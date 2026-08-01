@@ -1,0 +1,42 @@
+{
+  "case_010": [
+    "pass",
+    "angular_precise + deep_jewel + subtle_contact_shadow: hard-angled lapel geometry and straight-edged facet planes on jacket and cheek/jaw; deep forest-green and aubergine/plum jewel panels in seeds 1001/2002 (3003 collapses to near-black, no hue); shading limited to contact points only — under jaw onto neck, lapel overlap, under arm — skin otherwise flat."
+  ],
+  "case_040": [
+    "hold",
+    "airy_pastel + broad_blended_plane both clearly expressed (pink/mint/lavender/butter washes in large soft-blended fields), but bold_outer_sparse_inner is unreadable: nearest-neighbour pixel zoom of the sleeve silhouette shows a single 1px pale line, no heavier than the sparse interior marks, so outer-vs-inner weight ratio is destroyed at 256px — not a judged defect."
+  ],
+  "case_070": [
+    "pass",
+    "limited_two_tone (greige top + cream skirt) and soft_two_band (light zone plus soft darker band on sweater and face) read, but bold_outer_sparse_inner does not: pixel zoom shows a thin 1px uniform contour with no weight emphasis while the sleeve carries moderately dense fold hatching rather than sparse interior — line weight is below thumbnail resolution, so unreadable rather than confirmed defect. -- overturned at full resolution: Thumbnail artifact — the defect does not survive full resolution.\n\ntest_id resolution: manifest alias `case_070` -> style_id `linework_coloring_bold_outer_sparse_inner_limited_two_tone_soft_two_band_reflected_color_complete_line_color` -> scorecard rows P7000208 (seed 1001), P7000209 (seed 2002), P7000210 (seed 3003). All three 1024x1024 renders were opened full size plus 3x NEAREST pixel crops of the sleeve/silhouette regions.\n\nThe hold rested on two claims; both fail at full resolution.\n\n1. \"thin 1px uniform contour with no weight emphasis\" is false. Horizontal scanline runs across the left sleeve silhouette of P7000208 give an outer contour 2-3 px wide with minimum luminance ~28-71, while the interior fold marks in the same rows are 1 px wide at ~99-161 luminance. That is a clear dual emphasis in both width and value, and it is visible directly in the 3x crops: a continuous near-black heavier silhouette line against thin light-grey interior hairlines. The same hierarchy holds in P7000209 and P7000210 (the cuff/sleeve edges in both are distinctly darker and heavier than any interior mark). A 2-3 px contour collapses to 1 px and loses its value separation from 1 px grey interior lines under contact-sheet downsampling, which is exactly the artifact the original note flagged as \"below thumbnail resolution.\"\n\n2. \"moderately dense fold hatching rather than sparse interior\" is seed-local, not the case. It is a fair description of P7000208 only. P7000209 and P7000210 both show a markedly clean, sparse sweater interior — a handful of delicate fold marks with large untouched areas. Even on P7000208 the interior marks are all thin light-grey, so the bold-outer/delicate-inner relationship the token specifies is intact; the density is at the high end of \"sparse,\" not inverted.\n\nCross-checked against the three other cases sharing the identical coloring/shading/accent triple (case_020 angular_precise, case_122 crisp_uniform, case_201 fine_tapered): case_070 has the highest outer-to-inner width ratio of the four (mean ~1.89 vs 1.39-1.55), i.e. the bold-outer emphasis is discriminative against the uniform-weight control rather than generic to the rig. A naive dark-run density metric ranked case_070's interior highest, but inspection shows that metric is counting soft_two_band shading edges rather than lines, so it is not evidence on sparseness.\n\nSaturation was not the concern, but saturation_screen.json was checked for completeness: this item's palette group `limited_two_tone` (43 items, median 0.1378) reports outlier_count 0, so no colour evidence against it either.\n\nRecommend clearing the hold to pass."
+  ],
+  "case_100": [
+    "pass",
+    "broken_dry + muted_split_complement + broad_blended_plane: short interrupted dry strokes with discontinuous lapel and neck contours and separated hair strands; slate-blue jacket against warm peach skin, muted rose lips and olive neck-shadow note; face built from large soft-edged blended planes across forehead, cheek and jaw."
+  ],
+  "case_130": [
+    "pass",
+    "crisp_uniform + muted_split_complement + crisp_shape_shadow: interior fold strokes are even-weight, hard-edged and consistent throughout (pixel zoom confirms uniform width); desaturated slate-blue and navy garment against warm tan skin and muted rose lips; sleeves and bust carry distinct hard-boundaried darker shadow shapes rather than gradients."
+  ],
+  "case_160": [
+    "pass",
+    "elastic_pressure + airy_pastel + subtle_contact_shadow: pixel zoom of the sleeve shows the contour swelling at shoulder and cuff and thinning mid-arm, with interior fold strokes tapering to points; pale lilac/pink/baby-blue pastels; shadow confined to where sleeve and hands meet skirt, under jaw and under hair, garment otherwise flat."
+  ],
+  "case_190": [
+    "pass",
+    "fine_tapered + cool_nocturne + crisp_shape_shadow: fine thin tapering hair strands and temple/lapel hatch strokes with a thin neck contour; strong cool night palette — blue-green and violet garments with green/violet-cast skin; each seed carries a hard-edged flat shadow shape across cheek and jaw (clearest in 1001 and 3003)."
+  ],
+  "case_220": [
+    "pass",
+    "fine_tapered + warm_earth + soft_two_band: fine tapering hair strands and thin tapering fold lines on the jacket; olive/khaki jacket with warm tan skin and brown earth notes; jacket and face resolve into two value steps (base plus shadow) with soft transitions between them."
+  ],
+  "case_250": [
+    "pass",
+    "rounded_soft + limited_two_tone + subtle_contact_shadow: all contours soft and blunt-rounded with no sharp corners at jaw, collar or garment edge; palette restricted to one neutral garment tone plus skin per seed (grey / cream / white); shading only at contacts — jaw onto neck, hair against garment, inside the collar V — elsewhere unmodelled."
+  ],
+  "case_280": [
+    "pass",
+    "selective_edge + muted_split_complement + transparent_glaze: edges drawn only where needed — crisp collar/lapel and neckline lines while shoulder-to-background and sleeve edges are colour-only and the jaw contour drops out; dusty blue-grey shirt against warm peach skin and muted rose lips; shadow washes on shirt and face are translucent with the base colour reading through."
+  ]
+}

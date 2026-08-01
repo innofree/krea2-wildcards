@@ -1,0 +1,42 @@
+{
+  "case_030": [
+    "pass",
+    "angular_precise + muted_split_complement + transparent_glaze: measured-corner lapels and clean straight garment joins; cool sage/slate/mauve fields against warm skin and olive (dark-region hue ~193-196, sat 0.23-0.27); fold shadows are translucent same-hue washes with overlapping panels that keep local colour visible."
+  ],
+  "case_060": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + subtle_contact_shadow: heavy outer silhouette contour with only a few sparse interior fold strokes; indigo shadows and blue-green midtones (garment RGB 34/48/71, hue ~215) with warm light restrained to the hands; darkening confined to hair-on-shoulder, cuff-on-waistband and hands-on-lap while midtones stay open."
+  ],
+  "case_090": [
+    "hold",
+    "broken_dry and crisp_shape_shadow do read (gapped jaw/neck contour, hard-edged shape shadows on neck and jaw) but deep_jewel is absent in all 3 seeds - jacket/top are neutral near-black and grey (dark-region RGB 44/37/36, hue in the skin band), so there is no jewel colour for dark neutrals to separate: real defect on coloring."
+  ],
+  "case_120": [
+    "pass",
+    "crisp_uniform + limited_two_tone + fine_tonal_hatching: even-weight crisp contours with exact cuff and hem joins; exactly two garment tones (taupe top, darker grey-brown skirt) expanded by value steps; fine hatch strokes concentrated in occluded sleeve/skirt folds and kept off the skin (clear striation in seed 3003)."
+  ],
+  "case_150": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + transparent_glaze: thin uniform outline running the whole sleeve/silhouette with exact joins; cream/oatmeal and khaki neutrals with believable skin undertone against a quietly contrasting dark skirt; fold shadows are translucent warm-grey glazes layered over still-visible cream local colour."
+  ],
+  "case_180": [
+    "pass",
+    "elastic_pressure + warm_earth + fine_tonal_hatching: lapel line thickens at the notch and along the shadowed under-edge and narrows on the lit collar edge; olive/clay/sand/cream palette at sat 0.21-0.22; dense fine hatch striation in the jacket folds, sparse across skin."
+  ],
+  "case_210": [
+    "pass",
+    "fine_tapered + skin_centered_neutral + subtle_contact_shadow: thin tapering lapel and pocket lines that fade out at their ends with restrained interior detail; greige/cream neutrals with taupe inner layer and warm skin; shadow only under the jaw and where the lapel overlaps the chest, midtones open with reflected light preserved on the neck."
+  ],
+  "case_240": [
+    "pass",
+    "rounded_soft is present (smooth rounded contours, gently reinforced focal features) but deep_jewel is absent: blouse is flat black and skirt neutral grey across all 3 seeds (dark-region RGB ~44/39/39 and ~35/34/36, no chromatic hue), and fine_tonal_hatching survives only as faint skirt texture: real defect on coloring. -- overturned at full resolution: case_240 = style_id linework_coloring_rounded_soft_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color -> test_ids P7000718 (seed 1001), P7000719 (2002), P7000720 (3003), all 1024x1024. Both halves of the hold reasoning fail at full resolution.\n\n(1) \"deep_jewel absent / no chromatic hue in dark regions\" is a thumbnail artifact. Segmenting garment mid-tones (V 14-110, excluding ink lines and skin) in the lower half gives a coherent, seed-specific jewel hue in each render, not neutral grey: P7000720 has 59% chromatic garment pixels with hue tightly clustered at 210-270 deg (deep sapphire / ink navy; blouse mean RGB 23.3/24.1/27.0, i.e. B > R by ~4 levels, plainly visible as blue-black at 1:1 and unmistakable under a 3x brightness/saturation boost); P7000718 has 38% chromatic pixels clustered at 0-60 deg with a warm/cool split - cool indigo blouse (22.5/21.2/22.9) against a warm garnet-brown skirt (57.6/51.7/48.8, R-B +8.9); P7000719 is the weakest (18% chromatic, warm plus violet/magenta). The reviewer's RGB samples were roughly accurate, but the inference was wrong: the catalog text for this item is \"deep jewel color separated by dark neutrals and small high-value accents\", so dark neutral separation is specified behaviour, and low absolute chroma here tracks the reflected_color light factor rather than a coloring failure.\n\nPalette-group calibration confirms this. saturation_screen.json (group_axis coloring, deviation 0.5) reports deep_jewel: 43 items, median 0.1628, min 0.1107, max 0.2117, outlier_count 0 - no deep_jewel item is flagged, including this one. Recomputing per-item mean HSV saturation across all 43 deep_jewel items ranks this item 12th of 43 at 0.1285, above the group minimum, and every one of the ~15 reflected_color siblings sits in the same 0.11-0.17 band while the controlled_rim siblings sit at 0.16-0.21. The nearest neighbours differing only in light (P7000715, rounded_soft_deep_jewel_fine_tonal_hatching_controlled_rim, 0.1958) and only in shading (P7000712, rounded_soft_deep_jewel_crisp_shape_shadow_reflected_color, 0.1132 - the group minimum) render the same dark blouse plus grey skirt wardrobe, so the near-black garment reading is a rig-wide property of deep_jewel under this subject anchor, not a defect specific to case_240.\n\n(2) \"fine_tonal_hatching survives only as faint skirt texture\" is flatly contradicted at full resolution. At 2x on the torso crop of P7000718 the skirt, waistband, and sleeve/hem folds carry dense parallel fine hatch strokes, and P7000719 shows fine hatching on both sleeves, the chest folds, the waistband, and the skirt - exactly the specified \"concentrated in occluded folds and kept sparse across skin\". P7000720 is the weakest hatching seed (folds resolved mostly as planar dark shapes with hatch-like parallel bands at hem and cuffs), but it is also the seed with the strongest jewel hue, so no seed is missing both factors. rounded_soft is present in all three, as the reviewer already granted.\n\nResidual caveat: chroma is genuinely low in absolute terms and seed 2002 is the marginal one; nothing here is a saturated emerald/ruby. But the defect as written - deep_jewel absent, hatching reduced to faint skirt texture - does not survive full-resolution inspection, and the item is in-band for its own palette group."
+  ],
+  "case_270": [
+    "hold",
+    "selective_edge and fine_tonal_hatching are plausible but deep_jewel failed outright: all three seeds render essentially greyscale, with skin desaturated to grey-white and garment RGB 36/31/29, so there is no jewel colour and no small high-value chromatic accent: real defect."
+  ],
+  "case_300": [
+    "pass",
+    "selective_edge + warm_earth + transparent_glaze: silhouette edge meets the background with no outline and shapes are closed by colour boundaries plus a few short dark accent strokes; olive/clay/brown/cream earth palette at sat 0.20-0.22; sleeve and skirt shadows are translucent same-hue glazes with luminous overlap onto the skirt."
+  ]
+}
