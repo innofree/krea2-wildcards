@@ -132,6 +132,24 @@ python3 scripts/sync_catalog_v2.py --apply && python3 scripts/validate_catalog_v
 python3 -m pytest -q
 ```
 
+## The A6000 endpoints are shared, not dedicated
+
+`10.169.10.28:8188` and `:8288` are used interactively by other people/processes
+(LoRA + face-detailer workflows have shown up mid-run, unrelated to this
+pipeline). `run_remote_prompt_matrix.py` checks `require_empty_queue` right after
+the last image completes, before writing `scorecard.csv`/`manifest.json` -- if
+someone else queues a job on that endpoint in that window, the shard's images are
+all real and verified (`run-state.json` already says `status: completed`) but
+`scorecard.csv` is missing. `run_sharded_prompt_matrix.py`'s `merge()` requires
+that file per shard and will refuse to fold an incomplete one in.
+
+Recovery: wait for the endpoint's queue to actually clear (`GET /queue`, do not
+touch someone else's job), then re-run the exact same
+`run_remote_prompt_matrix.py` invocation with `--resume` against that shard's own
+output directory alone. All jobs are already in `run-state.json`, so this is a
+no-op generation pass that only needs the trailing empty-queue check to pass
+before it writes the missing files.
+
 ## Traps this pipeline has hit
 
 - **`--spread-cases` is not optional.** These catalogs are combinatorial, so item
