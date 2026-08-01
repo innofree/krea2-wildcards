@@ -179,3 +179,38 @@ def test_invalid_expected_seeds_is_rejected(tmp_path: Path) -> None:
     scorecard, run_state, root = build_run(tmp_path)
     with pytest.raises(ValueError, match="expected_seeds"):
         audit(scorecard, run_state, axis="effect", expected_seeds=0, root=root)
+
+
+def test_saturation_is_measured_but_never_a_failure(tmp_path: Path) -> None:
+    """A greyscale render passes Stage A and reports 0.0 saturation.
+
+    plan.md 7.18 held 35 catalog items on a coloring value said to collapse to
+    greyscale, and Stage A would not have shown it -- luminance stddev stays high
+    on a contrasty black-and-white frame. mean_saturation closes that blind spot.
+
+    It stays a measurement rather than a gate because there is no honest
+    threshold: airy_pastel renders around 0.10 and limited_two_tone around 0.13
+    while behaving exactly as their names promise. A gate set anywhere above zero
+    would reject them. The collapse is only legible against the other items in the
+    same coloring family, which is a comparison for review, not a per-frame check.
+    """
+    from audit_phase7_stage_a import inspect_image
+
+    grey = tmp_path / "grey.png"
+    Image.effect_noise((1024, 1024), 64).convert("RGB").save(grey)
+    reasons, measured = inspect_image(grey)
+    assert reasons == [], reasons
+    assert measured["mean_saturation"] == 0.0
+
+    colored = tmp_path / "colored.png"
+    Image.merge(
+        "RGB",
+        (
+            Image.effect_noise((1024, 1024), 64),
+            Image.new("L", (1024, 1024), 20),
+            Image.new("L", (1024, 1024), 200),
+        ),
+    ).save(colored)
+    reasons, measured = inspect_image(colored)
+    assert reasons == [], reasons
+    assert measured["mean_saturation"] > 0.5
