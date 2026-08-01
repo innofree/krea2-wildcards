@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_contact_sheet_review",
+  "scorecard": "tests/reports/pilot_subject_anchor_v1/scorecard.csv",
+  "matrix": "tests/prompt_matrix/pilot_subject_anchor_v1.jsonl",
+  "expected_seeds_per_case": 1,
+  "seeds": [
+    1001
+  ],
+  "cases_per_sheet": 20,
+  "spread_cases": false,
+  "case_count": 20,
+  "style_count": 20,
+  "image_count": 20,
+  "sheet_count": 1,
+  "modes": {
+    "mass_axis_linework_coloring": {
+      "case_count": 20,
+      "image_count": 20,
+      "sheet_count": 1,
+      "sheets": [
+        "tests/reports/pilot_subject_anchor_v1/review/prompt_matrix_mass_axis_linework_coloring_001.png"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "mode": "mass_axis_linework_coloring",
+      "sheet_index": 1,
+      "path": "tests/reports/pilot_subject_anchor_v1/review/prompt_matrix_mass_axis_linework_coloring_001.png",
+      "case_count": 20,
+      "image_count": 20,
+      "case_aliases": [
+        "case_001",
+        "case_002",
+        "case_003",
+        "case_004",
+        "case_005",
+        "case_006",
+        "case_007",
+        "case_008",
+        "case_009",
+        "case_010",
+        "case_011",
+        "case_012",
+        "case_013",
+        "case_014",
+        "case_015",
+        "case_016",
+        "case_017",
+        "case_018",
+        "case_019",
+        "case_020"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "alias": "case_001",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_2119e63c5e4411f9a828a1c3008b62d0760319c36690e8465e76bd15fb20483a",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000001",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000001/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_002",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_80256881c41abb063eaa0dd461bb32d46036cd8acc5cfba73bdbd2531834ce2c",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000002",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000002/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_003",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_b30da4ebf7e725b7eb05c60bf47f0ab26872ef4a6331613121c28eb15ee2716b",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000003",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000003/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_004",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_d294c1935887b88ea22d287b33d41b46fee320b307b7f3f29ae60510dc6c16f2",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000004",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000004/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_005",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_cb132c410e505e94acbd32daf091290e2c78fd91bbcbe6adcf24dd155a68b878",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000005",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000005/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_006",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_5e10d751f35fb7f855ea0aaf31fe157589afb0dc8fecc6af98e8768674f84216",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000006",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000006/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_007",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_e67cfa1be832b395f3bb60991caa47ab7444488d5000644b1ff0b422db8ad73e",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000007",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000007/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_008",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_8799efef976ba6dd9f24843fe3cedcaef4a3ee0b7c5c9b11a000e12206421206",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000008",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000008/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_009",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_9f9088238d91466c300529e97896d36cb6f9467e03c11af72f6a98c88963d0c8",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000009",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000009/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_010",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_d190e16aec50bc2283383339d9170579c21aea0d7a3d11b9a56f659f9cd81a95",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000010",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000010/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_011",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_b90f789da0bfca08fe991d14a9a5eee42f8ba9a0cfd36300d960b088a301e393",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000011",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000011/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_012",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_3afa7cf1d4fde2357a8749719cf51735ce6e4ceef20e805eda347c26ca5500b4",
+        "item_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000012",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000012/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_013",
+      "style_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_4c793dce518b8832b42768599bc6b285cc812165d50c88334667419c2c489d4d",
+        "item_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000013",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000013/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_014",
+      "style_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_40ca7da22d597d5403071f031ed82afa36a1a30ab7101d044cf1590413e02357",
+        "item_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000014",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000014/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_015",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_e7bd43537f67011ac843cfac5089414053132fe134fcef6a0971ebc29d783107",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000015",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000015/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_016",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_9deeb53c27d66f3d3e232ba59fe168c7d2ba311f89b415cd2c3ff06c2a6ec420",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000016",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000016/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_017",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_f963b102d0fc4afcad44c917156f7a20a5c5449d1f8f3599f422ecb97fca15e8",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000017",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000017/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_018",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_0b954d9cd77fc545d93989a6da68588a9ba71fa351872aa5fde73e913139003a",
+        "item_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000018",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000018/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_019",
+      "style_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_06952b40bce1374fbf28c5a96a6f13e8b62871e5dec622c15487f72242bb049e",
+        "item_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000019",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000019/image_01.png"
+        }
+      ]
+    },
+    {
+      "alias": "case_020",
+      "style_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "factors": {
+        "axis": "linework_coloring",
+        "evaluated_prompt_sha256": "sha256_a11507e057d4de94ef5d04cccc61b0325d729f61f5c76f956ae313f3034cc0f5",
+        "item_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color",
+        "prompt_profile_sha256": "sha256_9d033464cda90c47026985ef19d97605ee37a426f3bde6c9c7ae5e6c1d92ad9e"
+      },
+      "items": [
+        {
+          "test_id": "P7000020",
+          "seed": 1001,
+          "image_path": "tests/reports/pilot_subject_anchor_v1/runs/P7000020/image_01.png"
+        }
+      ]
+    }
+  ]
+}
