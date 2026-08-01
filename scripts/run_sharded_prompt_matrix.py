@@ -83,6 +83,19 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
 
 
+def parse_shard_workflows(raw: list[str] | None, count: int) -> list[Path | None]:
+    """--shard-workflow overrides --workflow per shard, e.g. for a checkpoint that
+    only exists on some endpoints. Positional: same order as --api-url. A shard
+    left unspecified (fewer entries than endpoints) falls back to --workflow."""
+    if not raw:
+        return [None] * count
+    if len(raw) > count:
+        raise ValueError(f"--shard-workflow given {len(raw)} time(s) but only {count} endpoint(s)")
+    paths: list[Path | None] = [Path(p) if p else None for p in raw]
+    paths += [None] * (count - len(paths))
+    return paths
+
+
 def launch(
     matrix: Path,
     output: Path,
@@ -177,10 +190,15 @@ def merge(output: Path, shard_dirs: list[Path]) -> dict[str, Any]:
         writer.writeheader()
         writer.writerows(scorecard_rows)
 
-    # matrix_sha256 and run_id describe one shard, so they would misdescribe the
-    # merge. Stage A reads only `jobs`; the honest thing is to say what this is.
+    # matrix_sha256, run_id and workflow_source_sha256 describe one shard, so they
+    # would misdescribe the merge -- especially workflow_source_sha256 when shards
+    # ran different checkpoints on purpose (e.g. an Int8 variant on a GPU that
+    # lacks the primary Mxfp8 file). Stage A reads only `jobs`, and each job's own
+    # `workflow_sha256` is already correct per shard, so nothing downstream loses
+    # provenance; the honest thing at the header level is to say what this is.
     state_header.pop("matrix_sha256", None)
     state_header.pop("run_id", None)
+    state_header.pop("workflow_source_sha256", None)
     merged_state = {
         **state_header,
         "kind": "sharded_prompt_matrix_run",
@@ -215,6 +233,16 @@ def main() -> int:
         help="comma-separated relative throughput per endpoint, e.g. 2,1,1 for one fast box",
     )
     parser.add_argument("--workflow", type=Path)
+    parser.add_argument(
+        "--shard-workflow",
+        action="append",
+        help=(
+            "override --workflow for one shard, positional with --api-url, e.g. "
+            "--shard-workflow '' --shard-workflow tests/baseline/workflow_int8.json "
+            "--shard-workflow tests/baseline/workflow_int8.json for a primary endpoint "
+            "plus two running a different checkpoint. Empty string keeps --workflow."
+        ),
+    )
     parser.add_argument("--queue-depth", type=int, default=8)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--submit", action="store_true")
@@ -225,16 +253,19 @@ def main() -> int:
         weights = parse_weights(args.weights, len(args.api_url))
         buckets = shard(rows, weights)
         shard_dirs = [args.output / f"shard_{i + 1}" for i in range(len(buckets))]
+        shard_workflows = parse_shard_workflows(args.shard_workflow, len(args.api_url))
 
         processes = []
-        for index, (bucket, shard_dir, api_url) in enumerate(
-            zip(buckets, shard_dirs, args.api_url), start=1
+        for index, (bucket, shard_dir, api_url, shard_workflow) in enumerate(
+            zip(buckets, shard_dirs, args.api_url, shard_workflows), start=1
         ):
+            effective_workflow = shard_workflow or args.workflow
             shard_matrix = args.output / f"shard_{index}.jsonl"
             write_jsonl(shard_matrix, bucket)
+            workflow_note = f" workflow={effective_workflow}" if effective_workflow else ""
             print(
                 f"shard {index}: {len(bucket)} job(s) -> {api_url} "
-                f"(weight {weights[index - 1]:g})"
+                f"(weight {weights[index - 1]:g}){workflow_note}"
             )
             if not args.submit:
                 continue
@@ -246,7 +277,7 @@ def main() -> int:
                         shard_matrix,
                         shard_dir,
                         api_url,
-                        workflow=args.workflow,
+                        workflow=effective_workflow,
                         queue_depth=args.queue_depth,
                         resume=args.resume,
                         submit=True,
