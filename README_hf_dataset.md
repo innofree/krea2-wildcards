@@ -23,8 +23,8 @@ composition, character design — into ComfyUI Dynamic Prompts wildcards for the
 
 This dataset isn't the wildcard library itself. It's the photographic evidence a reviewer looked at
 when deciding, for each catalog entry, whether a given prompt fragment actually changes the rendered
-image the way it's supposed to. 17,584 images, 21.6 GB: 432 contact sheets (each tiling 5–10 generated
-cases with the catalog item ID and seed printed under every thumbnail) plus the 17,152 individual
+image the way it's supposed to. 18,535 images, 22.8 GB: 463 contact sheets (each tiling 5–10 generated
+cases with the catalog item ID and seed printed under every thumbnail) plus the 18,072 individual
 1024×1024 renders each sheet was tiled from.
 
 ## Why this exists
@@ -45,6 +45,7 @@ here, so the verdict is never a black box — anyone can re-open exactly what wa
 | Phase 6 — presets / random / benchmark | 3 | 13 | Full-scene preset contracts, random-utility sampling, the fixed benchmark case |
 | Phase 7 — mass promotion | 12 | 258 | Full-catalog promotion runs per axis (character design, background, camera, lighting, linework/coloring, pose, preset) plus their calibration probes |
 | Artist research | 4 | 11 | Artist-signature and art-style-family screening/retest |
+| Anchored rig | 2 | 31 | The corrected subject: a 20-item probe and the 300-item three-seed revalidation that promoted `linework_coloring` 268/300 |
 
 ## Structure
 
@@ -52,7 +53,9 @@ here, so the verdict is never a black box — anyone can re-open exactly what wa
 reports/<run_name>/review/
   prompt_matrix_<mode>_<NNN>.png   # the contact sheet image(s)
   manifest.json                    # sheet -> case mapping: which item/seed is in which cell
-  crib.txt                         # (3 runs) reviewer's per-case reasoning notes
+  crib.txt                         # (4 runs) reviewer's per-case reasoning notes
+  review_parts/sNNN.json           # (v2 runs) per-sheet verdicts, one file per sheet
+  saturation_screen.json           # (v2 runs) per-item saturation against its palette group
 reports/<run_name>/runs/<style_id>_seed_<seed>/
   image_01.png                     # the original 1024x1024 render behind one sheet cell
   run.json                         # seed, resolved prompt, generation provenance
@@ -77,7 +80,7 @@ else held constant. Wardrobe across the corpus is studio and editorial fashion t
 blazers, blouses, coats, dresses. Because this corpus spans dozens of independent evaluation runs
 collected over time, we recommend a scan for scope before relying on any single image outside its
 own run's manifest — the description above reflects what the runs were designed to test, not a
-frame-by-frame audit of all 17,584 images.
+frame-by-frame audit of all 18,535 images.
 
 ## Known limitation in the early history
 
@@ -95,10 +98,21 @@ worth knowing before trusting an older verdict in this dataset:
   `deep_jewel`.
 
 A subject-anchor fix landed in the GitHub repo on 2026-08-01 (`fix: anchor the benchmark subject and
-repair five dead body rewrites`). Sheets and runs from that commit onward reflect the corrected
-subject; anything earlier does not. Check a run's `manifest.json` timestamp or the corresponding
-commit in the GitHub repo's `tests/reports/` history if the date matters for what you're doing with
-a given image.
+repair five dead body rewrites`). Two runs here were generated after it and depict the intended
+subject: `pilot_subject_anchor_v1` and `phase7_linework_coloring_v2`. Every other run predates it.
+
+The `deep_jewel` claim above is now settled rather than merely suspected.
+`phase7_linework_coloring_v2` covers all 300 items at three seeds, and the six shading medians fall
+between 0.1541 and 0.1708 — `crisp_shape_shadow`, the pairing recorded as collapsing to greyscale,
+measures highest. The actual driver is `accent_light`: on `deep_jewel`, `controlled_rim` averages
+0.1751 against `reflected_color`'s 0.1237. The original finding compared a `controlled_rim` render
+against `reflected_color` ones and attributed the gap to shading. Its per-run
+`saturation_screen.json` carries the measurements.
+
+That revalidation also found 56 of its own sheet verdicts to be thumbnail misreads once reopened at
+1024×1024 — which is the practical warning for anyone using this dataset. A contact sheet is a
+navigation aid. Judge nothing about saturation or fine linework from one; open the render in
+`runs/<test_id>/image_01.png`.
 
 ## Provenance
 
