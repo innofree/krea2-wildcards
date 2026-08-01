@@ -23,7 +23,7 @@ composition, character design — into ComfyUI Dynamic Prompts wildcards for the
 
 This dataset isn't the wildcard library itself. It's the photographic evidence a reviewer looked at
 when deciding, for each catalog entry, whether a given prompt fragment actually changes the rendered
-image the way it's supposed to. 17,584 images, 20.1 GB: 432 contact sheets (each tiling 5–10 generated
+image the way it's supposed to. 17,584 images, 21.6 GB: 432 contact sheets (each tiling 5–10 generated
 cases with the catalog item ID and seed printed under every thumbnail) plus the 17,152 individual
 1024×1024 renders each sheet was tiled from.
 
@@ -56,11 +56,18 @@ reports/<run_name>/review/
 reports/<run_name>/runs/<style_id>_seed_<seed>/
   image_01.png                     # the original 1024x1024 render behind one sheet cell
   run.json                         # seed, resolved prompt, generation provenance
+reports/runs/<style_id>_seed_<seed>/
+  image_01.png                     # 15 standalone smoke renders, see below
+  run.json
 ```
 
 `run_name` matches the report directory in the GitHub repo's `tests/reports/`, so a sheet, the
 originals it was tiled from, and the scorecard/summary that judged it are always traceable to the
 same run and the same catalog commit.
+
+The one exception is `reports/runs/` with no `<run_name>` above it: 15 renders of five style packs
+at three seeds each, generated as smoke checks outside any evaluation run. They have no contact
+sheet and no verdict attached — they're here for completeness, not as evidence of anything.
 
 ## The subject
 
