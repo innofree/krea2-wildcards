@@ -73,10 +73,8 @@ collections:
     templates:
       - id: complete_pose
         text: >-
-          An adult subject holds {body_arrangement}, with {arm_gesture}. The head and gaze are
-          {head_gaze}, and the posture conveys {motion_quality}. Preserve realistic skin texture,
-          coherent hands and feet, believable fabric, natural proportions, cinematic depth, and a
-          frame free of text, logos, and watermarks.
+          holding {body_arrangement}, with {arm_gesture}, the head and gaze {head_gaze}, the
+          posture conveying {motion_quality}
     compatibility:
       avoid: [chibi_proportions]
 
@@ -109,7 +107,7 @@ collections:
           - id: full_length
             text: full-length framing with both feet visible and clear space below the subject
           - id: wide_environmental
-            text: wide environmental framing with the adult subject occupying about one third of the image
+            text: wide environmental framing with the figure occupying about one third of the image
           - id: vertical_full_scene
             text: vertical full-scene framing with uninterrupted headroom and a stable foreground anchor
       - id: camera_position
@@ -153,10 +151,7 @@ collections:
     templates:
       - id: complete_camera
         text: >-
-          Photograph an adult subject using {framing} from {camera_position}. The view uses
-          {lens_language} and {composition}. Preserve realistic skin texture, coherent visible hands,
-          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
-          and watermarks.
+          captured in {framing} from {camera_position}, using {lens_language} and {composition}
     compatibility:
       avoid: []
 
@@ -228,10 +223,7 @@ collections:
     templates:
       - id: complete_lighting
         text: >-
-          Light an adult subject with {source_character}, {direction}. The image uses {softness} and
-          {color_balance}. Preserve realistic skin texture, coherent hands, believable fabric, natural
-          proportions, cinematic depth, unclipped highlights, readable shadows, and a frame free of
-          text, logos, and watermarks.
+          lit by {source_character}, {direction}, resolving into {softness} and {color_balance}
     compatibility:
       avoid: []
 
@@ -313,9 +305,7 @@ collections:
     templates:
       - id: complete_background
         text: >-
-          An adult subject stands in {place_type}, with {spatial_layout}, {air_character}, and
-          {color_continuity}. Preserve realistic skin texture, coherent hands, believable fabric,
-          natural proportions, cinematic depth, and no text, logos, or watermarks.
+          standing in {place_type}, with {spatial_layout}, {air_character}, and {color_continuity}
     compatibility:
       avoid: []
 
@@ -389,9 +379,7 @@ collections:
     templates:
       - id: complete_effect
         text: >-
-          Add {effect_element}, {placement}. Use {density}, with the elements {motion}. Keep the adult
-          subject fully readable with realistic skin texture, coherent hands, believable fabric,
-          natural proportions, cinematic depth, controlled highlights, and no text, logos, or watermarks.
+          overlaid with {effect_element}, {placement}, at {density}, with the elements {motion}
     compatibility:
       avoid: []
 
@@ -433,15 +421,15 @@ collections:
       - id: pose_direction
         values:
           - id: balanced_contrapposto
-            text: holds a balanced contrapposto with both hands visible
+            text: holding a balanced contrapposto with both hands visible
           - id: three_quarter_still
-            text: stands three-quarters, one hand at the waist and one lowered
+            text: standing three-quarters, one hand at the waist and one lowered
           - id: walking_pause
-            text: pauses mid-step with separated arms and stable weight
+            text: pausing mid-step with separated arms and stable weight
           - id: frontal_composed
-            text: stands frontally with level shoulders and loosely clasped hands
+            text: standing frontally with level shoulders and loosely clasped hands
           - id: turned_gaze
-            text: turns through the torso while looking back toward the camera
+            text: turning through the torso while looking back toward the camera
       - id: wardrobe
         values:
           - id: tailored_coat_trouser
@@ -491,8 +479,7 @@ collections:
     templates:
       - id: complete_scene
         text: >-
-          An adult {pose_direction} in {scene_setting}, wearing {wardrobe}, with {expression}. Use
-          {camera_direction} and {lighting_direction}. Preserve realistic skin texture, coherent hands,
-          believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
+          {pose_direction} in {scene_setting}, wearing {wardrobe}, with {expression}, framed in
+          {camera_direction} and {lighting_direction}
     compatibility:
       avoid: [chibi_proportions]

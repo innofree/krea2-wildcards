@@ -972,10 +972,27 @@ def _body_without_validation(item: dict[str, Any]) -> dict[str, Any]:
     return {key: value for key, value in item.items() if key != "validation"}
 
 
+def _reset_validation(previous_validation: dict[str, Any]) -> dict[str, Any]:
+    """Return the 'never evaluated' validation block for a rewritten prompt.
+
+    An approved or testing verdict is evidence about one exact prompt string, recorded
+    as evaluated_prompt_sha256. Once the blueprint rewrites that string the evidence no
+    longer describes the item, so the scores are dropped rather than carried forward.
+    """
+    return {
+        "model": previous_validation.get("model", "krea2_turbo"),
+        "tested_seeds": 0,
+        "status": "generated",
+    }
+
+
 def _preserve_evaluated_validation(
     output_file: str,
     generated_items: dict[str, dict[str, Any]],
     previous_items: dict[str, dict[str, Any]],
+    *,
+    reset_on_change: bool = False,
+    reset_log: list[str] | None = None,
 ) -> None:
     for item_id, item in generated_items.items():
         previous = previous_items.get(item_id)
@@ -1007,10 +1024,15 @@ def _preserve_evaluated_validation(
             item["validation"] = dict(previous_validation)
             continue
         status = previous_validation.get("status")
-        if status not in {"generated", "rejected"}:
+        if status in {"generated", "rejected"}:
+            continue
+        if not reset_on_change:
             raise ValueError(
                 f"refusing to rewrite managed {status!r} item in {output_file}: {item_id}"
             )
+        item["validation"] = _reset_validation(previous_validation)
+        if reset_log is not None:
+            reset_log.append(f"{output_file}:{status}:{item_id}")
 
 
 def _display_path(path: Path, fallback: str) -> str:
@@ -1025,6 +1047,9 @@ def compile_expansion(
     output_root: Path,
     sources_path: Path,
     manifest_path: Path,
+    *,
+    reset_validation_on_change: bool = False,
+    reset_log: list[str] | None = None,
 ) -> Compilation:
     collections, blueprint_records = load_collections(blueprint_root, sources_path)
     grouped: dict[str, list[CollectionSpec]] = {}
@@ -1051,7 +1076,13 @@ def compile_expansion(
         generated_ids: list[str] = []
         for collection in sorted(grouped[output_file], key=lambda item: item.id):
             generated_items = compile_collection(collection)
-            _preserve_evaluated_validation(output_file, generated_items, previous_items)
+            _preserve_evaluated_validation(
+                output_file,
+                generated_items,
+                previous_items,
+                reset_on_change=reset_validation_on_change,
+                reset_log=reset_log,
+            )
             collisions = set(items) & set(generated_items)
             if collisions:
                 raise ValueError(
@@ -1199,18 +1230,38 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="print the complete planned manifest during a dry-run",
     )
+    parser.add_argument(
+        "--reset-validation-on-change",
+        action="store_true",
+        help=(
+            "demote approved/testing items back to 'generated' when the blueprint rewrites "
+            "their prompt, instead of refusing; the prior scores describe a prompt string "
+            "that no longer exists, so they are dropped rather than carried forward"
+        ),
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
+    reset_log: list[str] = []
     try:
         compilation = compile_expansion(
             args.blueprints,
             args.output,
             args.sources,
             args.manifest,
+            reset_validation_on_change=args.reset_validation_on_change,
+            reset_log=reset_log,
         )
+        if reset_log:
+            counts = Counter(entry.split(":")[0] for entry in reset_log)
+            print(
+                f"Demoted {len(reset_log)} evaluated item(s) to 'generated' because the "
+                "blueprint rewrote their prompt:"
+            )
+            for output_file, count in sorted(counts.items()):
+                print(f"  {output_file}: {count}")
         if args.apply:
             apply_compilation(compilation, args.output, args.manifest)
             print(
