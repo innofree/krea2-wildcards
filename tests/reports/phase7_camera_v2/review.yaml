@@ -1,0 +1,3150 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+styles:
+  camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_001: true side profile, single eye visible, chest-up crop stable across all 3
+      seeds'
+  camera_chest_up_clean_profile_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_002: clean_profile bug recurs: fully frontal face, both eyes visible, not a side
+      profile'
+  camera_chest_up_clean_profile_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_003: true side profile, single eye, chest-up crop stable across all seeds'
+  camera_chest_up_clean_profile_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_004: true side profile, single eye, chest-up crop stable across all seeds'
+  camera_chest_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_005: true side profile, single eye visible, chest-up crop stable across seeds'
+  camera_chest_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_006: true ~90deg profile, single eye visible, chest_up crop stable across all
+      3 seeds'
+  camera_chest_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_007: true side profile, single eye visible, chest_up crop stable across seeds'
+  camera_chest_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_008: true side profile, single eye, chest_up crop stable across seeds'
+  camera_chest_up_clean_profile_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_009: correct profile and chest_up crop but stray white bar artifact in seed 3003'
+  camera_chest_up_clean_profile_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_010: true side profile chest_up crop stable, darker lighting but coherent across
+      seeds'
+  camera_chest_up_clean_profile_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_011: True side profile, single eye, chest_up crop stable across all 3 seeds'
+  camera_chest_up_clean_profile_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_012: True profile all 3 seeds, chest_up crop stable'
+  camera_chest_up_clean_profile_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_013: True profile all seeds, chest_up crop stable'
+  camera_chest_up_clean_profile_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_014: clean_profile bug recurs: seed_1001 true profile but seeds_2002/3003 render frontal,
+      both eyes visible
+  camera_chest_up_clean_profile_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_015: True profile all 3 seeds, chest_up crop stable'
+  camera_chest_up_clean_profile_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_016: true side profile, single eye visible, chest-up crop stable across all 3
+      seeds'
+  camera_chest_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_017: true side profile, single eye visible, chest-up crop stable across seeds'
+  camera_chest_up_clean_profile_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_018: true side profile, single eye visible, chest-up crop stable'
+  camera_chest_up_clean_profile_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_019: true side profile, single eye visible, chest-up crop stable'
+  camera_chest_up_clean_profile_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_020: true side profile, single eye visible, chest-up crop stable'
+  camera_chest_up_clean_profile_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_021: true ~90-deg side profile, single eye visible, chest-up crop stable across all
+      3 seeds
+  camera_chest_up_clean_profile_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_022: renders frontal with both eyes clearly visible in all 3 seeds, not a true side
+      profile - bug persists
+  camera_chest_up_clean_profile_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_023: true side profile, single eye visible, chest-up crop stable across all 3
+      seeds'
+  camera_chest_up_clean_profile_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_024: renders frontal with both eyes clearly visible in all 3 seeds, not a true side
+      profile - bug persists
+  camera_chest_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_025: eye_level_front chest-up crop consistent, frontal as expected across all
+      3 seeds'
+  camera_chest_up_eye_level_front_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_026: frontal eye-level view, chest-up crop consistent across seeds'
+  camera_chest_up_eye_level_front_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_027: frontal chest-up crop stable across seeds'
+  camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_028: frontal chest-up crop consistent across seeds'
+  camera_chest_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_029: frontal chest-up crop consistent across seeds'
+  camera_chest_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_030: frontal chest-up crop consistent across seeds'
+  camera_chest_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_031: frontal eye-level, hands on hips, chest_up crop consistent across seeds'
+  camera_chest_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_032: frontal eye-level, hands on hips, chest_up crop consistent'
+  camera_close_face_clean_profile_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_033: close_face crop too wide (chest visible, not tight face); stray white bars in seed
+      3003
+  camera_close_face_clean_profile_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_034: close_face crop too wide, shows chest/shoulders not tight face-only'
+  camera_close_face_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_035: close_face crop too wide, shows chest; bg artifact patches in seed 2002'
+  camera_close_face_clean_profile_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_036: close_face crop too wide, shows shoulders/chest like chest_up, not tight hairline-to-chin
+  camera_close_face_clean_profile_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_037: close_face crop too wide (chest/torso visible), same issue as case_036'
+  camera_close_face_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_038: close_face crop too wide (torso/chest visible), not a tight face-only crop'
+  camera_close_face_clean_profile_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_039: Profile pose correct all seeds but close_face crop too wide (torso/chest
+      visible)'
+  camera_close_face_clean_profile_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_040: close_face crop too wide; also seed_3003 breaks clean_profile, rendering frontal
+      with both eyes
+  camera_close_face_rear_three_quarter_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_041: close_face crop too wide, shows shoulder/back like head_shoulders; seed3003 has
+      stray white bar
+  camera_close_face_rear_three_quarter_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_042: close_face crop too wide, shoulder/back visible during turn, resembles head_shoulders
+  camera_close_face_rear_three_quarter_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_043: close_face crop too wide, shoulder/back visible, resembles head_shoulders not tight
+      face crop
+  camera_close_face_rear_three_quarter_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_044: close_face crop too wide, shoulder/back visible, resembles head_shoulders not tight
+      face crop
+  camera_close_face_rear_three_quarter_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_045: close_face crop too wide, shoulder/back visible during turn, resembles head_shoulders
+      crop
+  camera_close_face_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_046: close_face crop reads as wide as head_shoulders scale, shoulders heavily included,
+      not tight face-only
+  camera_close_face_rear_three_quarter_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_047: close_face crop too wide, matches head_shoulders scale (back-turned view with shoulders
+      included)
+  camera_close_face_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_048: close_face crop too wide, shoulder-inclusive like head_shoulders, not a tight face
+      crop
+  camera_close_face_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_049: close_face crop too wide (shoulder-inclusive) and seed 3003 has white vertical
+      bar artifact
+  camera_close_face_rear_three_quarter_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_050: close_face crop too wide, shoulder-inclusive like head_shoulders'
+  camera_close_face_rear_three_quarter_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_051: close_face crop too loose, shows shoulder/upper-arm same as head_shoulders, not
+      tight head-only
+  camera_close_face_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_052: close_face crop too loose, includes shoulder/torso like head_shoulders, not tight
+      face crop
+  camera_close_face_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_053: close_face crop too loose (shoulder/torso visible); seed3 has stray white bar artifact
+  camera_close_face_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_054: close_face crop too loose, matches head_shoulders framing not tight face
+      crop'
+  camera_close_face_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_055: close_face crop too loose, shows shoulder/torso like head_shoulders not tight face
+      crop
+  camera_close_face_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_056: close_face crop far too wide, shows down to elbows/forearms like head_shoulders,
+      not tight face-only
+  camera_close_face_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_057: close_face crop too wide, extends to forearms; small bg artifact patch in
+      2 seeds'
+  camera_close_face_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_058: close_face crop too wide, shows down to elbows/forearms'
+  camera_close_face_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_059: close_face crop too wide, extends to elbows/forearms'
+  camera_close_face_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_060: close_face crop too wide, extends to elbows, not tight face-only'
+  camera_close_face_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_061: close_face crop too wide (torso visible); look-back turn pose ok but framing
+      fails'
+  camera_close_face_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_062: close_face crop too wide, torso/shoulder visible; framing fails despite reasonable
+      turn
+  camera_close_face_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_063: close_face crop too wide, torso visible; turn-back pose ok but crop fails'
+  camera_close_face_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_064: close_face crop too wide (torso visible); rear_three_quarter turn-back pose acceptable
+  camera_full_length_clean_profile_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_065: full_length clean_profile: true profile all seeds, but seed_3003 has white bar
+      artifacts
+  camera_full_length_clean_profile_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_066: true side profile, full-length crown-to-feet crop, stable across seeds'
+  camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_067: true side profile, full-length crop, stable across seeds'
+  camera_full_length_eye_level_front_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_068: frontal full-length crop, eye_level_front, stable across seeds'
+  camera_full_length_eye_level_front_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_069: frontal full-length crop, eye_level_front, stable across seeds'
+  camera_full_length_eye_level_front_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_070: frontal full-length crop, eye_level_front, stable across seeds'
+  camera_full_length_eye_level_front_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_071: full-length pose/crop correct but seed 3003 has white vertical bar artifacts flanking
+      frame
+  camera_full_length_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_072: full-length frontal crop consistent, crown to feet, stable across all 3 seeds'
+  camera_full_length_eye_level_front_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_073: full-length pose correct but seed 3003 has white vertical bar artifacts'
+  camera_full_length_eye_level_front_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_074: full-length frontal crop consistent across all 3 seeds'
+  camera_full_length_eye_level_front_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_075: full-length frontal crop consistent across all 3 seeds'
+  camera_full_length_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_076: seed1 full-length but seed2/seed3 collapse to chest-up crop, major instability'
+  camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_077: full-length crop consistent; seed3 has stray white vertical bars artifact'
+  camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_078: full-length crop, crown to feet, consistent across all 3 seeds'
+  camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_079: full-length crop consistent across all 3 seeds'
+  camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_080: full-length crop consistent; seed3 has stray white vertical bars artifact'
+  camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_081: full_length crown-to-feet frontal, consistent scale/pose across 3 seeds'
+  camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_082: full_length frontal crown-to-feet, consistent across seeds'
+  camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_083: full_length frontal crown-to-feet, consistent across seeds'
+  camera_full_length_slight_low_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_084: full_length pose correct but stray white bars both edges in seed 3003'
+  camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_085: full_length frontal crown-to-feet, consistent across seeds'
+  camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_086: full_length crop crown-to-feet, slight_low subtle, consistent across all
+      3 seeds'
+  camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_087: full_length crown-to-feet, consistent across seeds'
+  camera_full_length_slight_low_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_088: full_length crop correct but seed_3003 has stray white bar artifacts on both
+      edges'
+  camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_089: full_length crown-to-feet consistent across seeds'
+  camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_090: full_length crown-to-feet consistent, slight_low subtle'
+  camera_full_length_slight_low_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_091: seed3003 shows stray white vertical bars/canvas artifact breaking stability'
+  camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_092: full-length, slight_low angle, stable across seeds, no artifacts'
+  camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_093: full-length, slight_low angle, stable across seeds, no artifacts'
+  camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_094: full-length, slight_low angle, stable across seeds, no artifacts'
+  camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_095: full-length, slight_low angle, stable across seeds, no artifacts'
+  camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_096: rear three-quarter turn, head-and-shoulders crop consistent across seeds'
+  camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_097: rear three-quarter head-and-shoulders crop consistent across seeds'
+  camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_098: rear three-quarter head-and-shoulders crop consistent across seeds'
+  camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_099: rear three-quarter head-and-shoulders crop consistent across seeds'
+  camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_100: rear three-quarter head-and-shoulders crop consistent across seeds'
+  camera_head_shoulders_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_101: head_shoulders crop correct, turned mostly away with back of head/shoulder
+      visible'
+  camera_head_shoulders_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_102: head_shoulders crop correct, rear three-quarter turn consistent'
+  camera_head_shoulders_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_103: head_shoulders crop correct, consistent rear three-quarter turn'
+  camera_head_shoulders_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_104: head_shoulders crop correct, consistent rear three-quarter turn'
+  camera_head_shoulders_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_105: head_shoulders crop correct, consistent rear three-quarter turn'
+  camera_head_shoulders_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_106: rear three-quarter turn with profile face and back visible, head_shoulders crop
+      stable; tiny bg patch artifact
+  camera_head_shoulders_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_107: rear three-quarter, head turned to profile, head_shoulders crop stable'
+  camera_head_shoulders_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_108: rear three-quarter, head_shoulders crop stable across seeds'
+  camera_head_shoulders_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_109: rear three-quarter, head_shoulders crop stable across seeds'
+  camera_head_shoulders_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_110: rear three-quarter, head_shoulders crop stable across seeds'
+  camera_head_shoulders_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_111: head_shoulders crop correct, rear_three_quarter turn with back/shoulder visible,
+      stable across seeds
+  camera_head_shoulders_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_112: head_shoulders crop correct, rear_three_quarter turn consistent'
+  camera_head_shoulders_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_113: head_shoulders crop correct, rear_three_quarter turn consistent across seeds'
+  camera_head_shoulders_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_114: head_shoulders crop correct, three_quarter_front turn subtle and consistent'
+  camera_head_shoulders_three_quarter_front_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_115: head_shoulders crop correct, three_quarter_front turn consistent across seeds'
+  camera_head_shoulders_three_quarter_front_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_116: head_shoulders crop correct, subtle three_quarter turn, stable across seeds'
+  camera_head_shoulders_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_117: head_shoulders crop, subtle three_quarter turn, stable across seeds'
+  camera_head_shoulders_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_118: head_shoulders crop, subtle turn, stable across seeds'
+  camera_head_shoulders_three_quarter_front_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_119: head_shoulders crop, subtle turn, stable across seeds'
+  camera_head_shoulders_three_quarter_front_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_120: head_shoulders crop, subtle turn, stable across seeds'
+  camera_head_shoulders_three_quarter_front_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_121: seeds 2002/3003 render in flat illustrated/line-art style vs photographic seed
+      1001, style unstable
+  camera_head_shoulders_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_122: three-quarter front head-shoulders crop consistent, partial turn visible in all
+      seeds
+  camera_head_shoulders_three_quarter_front_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_123: three-quarter front head-shoulders crop consistent across seeds'
+  camera_head_shoulders_three_quarter_front_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_124: three-quarter front head-shoulders crop consistent across seeds'
+  camera_head_shoulders_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_125: three-quarter front head-shoulders crop consistent across seeds'
+  camera_head_shoulders_three_quarter_front_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_126: head_shoulders crop, slight turn toward camera, stable across seeds'
+  camera_thigh_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_127: true profile pose correct but crop stops near waist, not mid-thigh; seed3 has white
+      bars
+  camera_thigh_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_128: true profile correct but crop stops at waist/hip, thighs not shown'
+  camera_thigh_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_129: true profile correct but crop stops at waist, not mid-thigh; seed2 has cartoon-style
+      rendering
+  camera_thigh_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_130: true profile correct but crop stops at waist/hip, thighs never shown'
+  camera_thigh_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_131: correct profile pose and thigh_up crop but stray white vertical bars in bg (seeds
+      1001, 3003)
+  camera_thigh_up_clean_profile_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_132: true side profile, single eye, thigh_up crop stable across seeds'
+  camera_thigh_up_clean_profile_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_133: true side profile, thigh_up crop stable across seeds'
+  camera_thigh_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_134: thigh_up cropped as chest_up with no legs visible; stray bars in seed 3003'
+  camera_thigh_up_eye_level_front_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_135: thigh_up cropped as chest_up, no legs visible in any seed'
+  camera_thigh_up_eye_level_front_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_136: thigh_up mislabeled: crop shows only chest, no thighs/legs visible in any
+      seed'
+  camera_thigh_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_137: thigh_up crop shows only chest, no thighs visible; same crop bug as case_136'
+  camera_thigh_up_eye_level_front_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_138: thigh_up crop shows only chest (no thighs); seed_3003 also has white bar
+      artifacts'
+  camera_thigh_up_eye_level_front_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_139: thigh_up crop shows only chest, no thighs; same recurring crop bug'
+  camera_thigh_up_eye_level_front_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_140: thigh_up crop shows only chest, no thighs visible; recurring crop-boundary
+      bug'
+  camera_thigh_up_eye_level_front_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_141: crop reads waist-level with hands clasped, doesn''t clearly reach mid-thigh'
+  camera_thigh_up_eye_level_front_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_142: seed3003 shows stray white bars/artifact; crop also looks waist-level not
+      mid-thigh'
+  camera_thigh_up_eye_level_front_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_143: crop appears waist-level, uncertain whether it reaches mid-thigh as required'
+  camera_thigh_up_eye_level_front_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_144: crop looks waist-level, uncertain whether it reaches mid-thigh as thigh_up
+      requires'
+  camera_thigh_up_eye_level_front_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_145: crop looks waist-level, uncertain whether it reaches mid-thigh as thigh_up
+      requires'
+  camera_thigh_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_146: thigh-up crop consistent but seed 3003 has white vertical bar artifacts on both
+      sides
+  camera_thigh_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_147: thigh-up frontal crop consistent across all 3 seeds'
+  camera_thigh_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_148: thigh-up frontal crop consistent across all 3 seeds'
+  camera_thigh_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_149: thigh-up frontal crop consistent across all 3 seeds'
+  camera_thigh_up_eye_level_front_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_150: thigh-up crop consistent but seed 3003 has white vertical bar artifacts'
+  camera_thigh_up_eye_level_front_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_151: thigh_up mislabeled, crop stops at chest, no thigh visible, consistent but wrong
+      crop
+  camera_thigh_up_eye_level_front_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_152: thigh_up crop stops at chest, thighs never visible, consistent but wrong
+      crop'
+  camera_thigh_up_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_153: thigh_up crop stops at chest, no thigh visible, consistent but wrong crop'
+  camera_thigh_up_eye_level_front_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_154: thigh_up crop stops at chest; seed3 has stray white bars artifact'
+  camera_thigh_up_eye_level_front_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_155: thigh_up crop stops at chest, no thigh visible, consistent but wrong crop'
+  camera_thigh_up_eye_level_front_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_156: thigh_up mislabeled crop renders as chest_up, no legs visible at all in any
+      seed'
+  camera_thigh_up_eye_level_front_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_157: thigh_up cropped as chest_up, no legs visible in any seed'
+  camera_vertical_full_scene_slight_high_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_158: vertical_full_scene same scale as full_length, not clearly pulled back further;
+      stray white bars in seed 3003
+  camera_vertical_full_scene_slight_high_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_159: vertical_full_scene not distinctly pulled back further than full_length scale'
+  camera_vertical_full_scene_slight_high_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_160: vertical_full_scene same scale as full_length, not distinctly pulled back'
+  camera_vertical_full_scene_slight_high_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_161: vertical_full_scene shows full body with floor visible, stable across seeds'
+  camera_vertical_full_scene_slight_high_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_162: vertical_full_scene full-body ok but seed_3003 has stray white vertical bar artifacts
+  camera_vertical_full_scene_slight_high_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_163: vertical_full_scene full body with floor visible, consistent across seeds'
+  camera_vertical_full_scene_slight_high_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_164: vertical_full_scene unstable: seed_2002 steep high-angle look-down differs; seed_3003
+      has white bar artifact
+  camera_vertical_full_scene_slight_high_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_165: vertical_full_scene unstable: seed_1001 full body but seeds_2002/3003 crop to chest_up
+      only
+  camera_vertical_full_scene_slight_high_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_166: seed2002 shows extreme top-down angle inconsistent with 1001/3003 slight_high
+      view'
+  camera_vertical_full_scene_slight_high_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_167: seed2002 extreme top-down angle diverges from 1001/3003 slight_high view'
+  camera_vertical_full_scene_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_168: shows head/shoulders portrait crop, not full body pulled back as vertical_full_scene
+      needs
+  camera_vertical_full_scene_three_quarter_front_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_169: shows head/shoulders portrait crop instead of full body pulled back for vertical_full_scene
+  camera_vertical_full_scene_three_quarter_front_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_170: shows head/shoulders portrait crop instead of full body pulled back for vertical_full_scene
+  camera_vertical_full_scene_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_171: seed 3003 diverges into illustrated/painterly style and different pose vs seeds
+      1001/2002
+  camera_vertical_full_scene_three_quarter_front_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_172: vertical_full_scene pose consistent but seed 3003 has white vertical bar
+      artifacts'
+  camera_vertical_full_scene_three_quarter_front_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_173: seed 1001 cropped tighter than 2002/3003, plus 3003 shifts to illustrated style
+      - unstable
+  camera_vertical_full_scene_three_quarter_front_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_174: seed 2002 shows a much tighter bust-level leaning crop vs standing full-body seeds
+      1001/3003
+  camera_vertical_full_scene_three_quarter_front_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_175: seeds diverge sharply: standing full-body (1001) vs tight bust crop (2002) vs seated/perched
+      pose (3003)
+  camera_vertical_full_scene_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_176: severe cartoon/line-art artifacts, wrong crop (chest-up not vertical_full_scene),
+      stray white bars
+  camera_vertical_full_scene_three_quarter_front_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_177: unstable: seed1 full-length, seed2/3 cartoon-style chest-up crops, wrong
+      framing'
+  camera_vertical_full_scene_three_quarter_front_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_178: unstable: seed1 full-length, seed2 chest-up, seed3 cartoon chest-up, wrong
+      crop'
+  camera_vertical_full_scene_three_quarter_front_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_179: unstable: seed1 full-length, seed2/3 cartoon chest-up crops, wrong framing'
+  camera_vertical_full_scene_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_180: unstable: chest/waist crop across seeds, cartoon artifacts, white bars, no full-scene
+      pullback
+  camera_vertical_full_scene_three_quarter_front_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_181: vertical_full_scene barely differs from full_length scale, turn unclear/frontal,
+      inconsistent art style across seeds
+  camera_vertical_full_scene_three_quarter_front_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_182: vertical_full_scene rendered as waist/chest crop, not full body with floor; framing
+      failure
+  camera_vertical_full_scene_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_183: severe instability: seed 1001 full body, seeds 2002/3003 tight chest crop; wrong/unstable
+      framing
+  camera_vertical_full_scene_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_184: severe instability: seeds 1001/2002 tight chest crop, seed 3003 waist crop; wrong
+      framing
+  camera_vertical_full_scene_three_quarter_front_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_185: severe instability: seed 1001 full body, seeds 2002/3003 tight seated-look chest
+      crop; wrong framing
+  camera_vertical_full_scene_three_quarter_front_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_186: vertical_full_scene crop wrong: shows chest_up headshot only, no full body, all
+      seeds
+  camera_vertical_full_scene_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_187: vertical_full_scene crop wrong: chest_up headshot crop, no full body, all
+      3 seeds'
+  camera_vertical_full_scene_three_quarter_front_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_188: vertical_full_scene crop wrong: chest_up headshot only, no full body shown, all
+      seeds
+  camera_waist_up_slight_high_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_189: waist_up crop correct, slight_high subtle, consistent'
+  camera_waist_up_slight_high_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_190: waist_up crop correct, slight_high subtle, consistent gesture pose across
+      seeds'
+  camera_waist_up_slight_high_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_191: waist-up crop, hand gesture, slight_high angle, stable across seeds'
+  camera_waist_up_slight_high_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_192: waist-up crop, hand gesture, slight_high, stable across seeds'
+  camera_waist_up_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_193: waist-up crop, hand gestures, slight_high, stable across seeds'
+  camera_waist_up_slight_high_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_194: waist-up crop, hands spread gesture, slight_high, stable across seeds'
+  camera_waist_up_slight_high_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_195: waist-up crop, hand gestures, slight_high, stable across seeds'
+  camera_waist_up_slight_high_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_196: waist-up gesture crop consistent, slight-high angle acceptable across all
+      3 seeds'
+  camera_waist_up_slight_high_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_197: waist-up gesture crop consistent across all 3 seeds'
+  camera_waist_up_slight_high_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_198: waist-up gesture (hands out) crop consistent across all 3 seeds'
+  camera_waist_up_slight_high_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_199: waist-up gesture crop consistent across all 3 seeds'
+  camera_waist_up_slight_high_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_200: waist-up gesture crop consistent across all 3 seeds'
+  camera_waist_up_slight_high_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_201: waist_up crop with gesturing hands, consistent across seeds'
+  camera_waist_up_slight_high_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_202: waist_up crop with open-hand gesture, consistent across seeds'
+  camera_waist_up_slight_high_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_203: waist_up crop with gesturing hands, consistent across seeds'
+  camera_waist_up_slight_high_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_204: waist_up crop with gesturing hands, consistent across seeds'
+  camera_waist_up_slight_high_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_205: waist_up crop with gesturing hands, consistent across seeds'
+  camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_206: waist_up frontal gesture pose, consistent crop and hands across seeds'
+  camera_waist_up_slight_high_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_207: waist_up frontal, hands clasped, consistent across seeds'
+  camera_waist_up_slight_high_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_208: waist_up frontal gesture, consistent across seeds'
+  camera_waist_up_slight_high_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[hold] case_209: waist_up crop/pose correct but stray white bars in seed 3003'
+  camera_waist_up_slight_high_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_210: waist_up frontal gesture, consistent across seeds'
+  camera_waist_up_slight_high_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_211: waist_up crop correct, slight_high subtle, consistent across seeds'
+  camera_waist_up_slight_high_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_212: waist_up crop correct, slight_high subtle, stable across seeds'
+  camera_waist_up_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_213: waist_up crop correct, three_quarter_front turn subtle and consistent'
+  camera_waist_up_three_quarter_front_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_214: waist_up crop correct, three_quarter_front turn consistent across seeds'
+  camera_waist_up_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_215: waist_up crop correct, three_quarter_front turn consistent'
+  camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_216: waist-up crop, three_quarter turn, hands clasped, stable across seeds'
+  camera_waist_up_three_quarter_front_natural_perspective_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_217: waist-up crop, three_quarter turn, stable across seeds'
+  camera_waist_up_three_quarter_front_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_218: waist-up crop, three_quarter turn, stable across seeds'
+  camera_waist_up_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_219: waist-up crop, three_quarter turn, stable across seeds'
+  camera_wide_environmental_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_220: small figure pulled back in set environment, slight_high, stable across seeds'
+  camera_wide_environmental_slight_high_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_221: wide environmental, small figure pulled back with visible set, consistent across
+      seeds
+  camera_wide_environmental_slight_high_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_222: wide environmental consistent, side stance held across seeds'
+  camera_wide_environmental_slight_high_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_223: wide environmental consistent across all 3 seeds'
+  camera_wide_environmental_slight_high_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_224: wide environmental side stance consistent across all 3 seeds'
+  camera_wide_environmental_slight_high_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_225: wide environmental consistent across all 3 seeds'
+  camera_wide_environmental_slight_high_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_226: small figure pulled back with visible environment, consistent across seeds'
+  camera_wide_environmental_slight_high_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_227: small figure in wide environment consistent; seed3 slightly desaturated but pose
+      stable
+  camera_wide_environmental_slight_low_classic_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_228: small figure in wide environment consistent; seed3 desaturated but pose/scale stable
+  camera_wide_environmental_slight_low_classic_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_229: small figure in wide environment, consistent scale/pose across seeds'
+  camera_wide_environmental_slight_low_classic_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_230: small figure in wide environment, consistent scale/pose across seeds'
+  camera_wide_environmental_slight_low_classic_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_231: wide_environmental renders as full side profile instead of expected slight_low
+      frontal-ish stance
+  camera_wide_environmental_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_232: wide_environmental shows full profile instead of expected slight_low frontal-ish
+      stance
+  camera_wide_environmental_slight_low_deep_focus_language_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_233: wide_environmental shows full profile instead of expected slight_low frontal-ish
+      stance
+  camera_wide_environmental_slight_low_deep_focus_language_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_234: wide_environmental rendered as full profile instead of slight_low frontal-ish stance
+  camera_wide_environmental_slight_low_deep_focus_language_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_235: wide_environmental shows full profile instead of expected slight_low frontal-ish
+      stance
+  camera_wide_environmental_slight_low_long_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_236: wide_environmental: small figure, floor+props visible, consistent across
+      seeds'
+  camera_wide_environmental_slight_low_long_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_237: wide_environmental consistent, small figure with floor/props across seeds'
+  camera_wide_environmental_slight_low_long_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_238: wide_environmental consistent, small figure with floor/props'
+  camera_wide_environmental_slight_low_long_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_239: wide_environmental consistent; minor outfit variation in seed_3003 (jacket vs sweater)
+  camera_wide_environmental_slight_low_moderate_wide_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_240: wide_environmental consistent across seeds, minor outfit color variance'
+  camera_wide_environmental_slight_low_moderate_wide_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_241: small figure pulled back into set environment, slight_low, stable across
+      seeds'
+  camera_wide_environmental_slight_low_moderate_wide_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_242: small figure in wide set environment, slight_low, stable across seeds'
+  camera_wide_environmental_slight_low_moderate_wide_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_243: small figure in set environment, slight_low, stable across seeds'
+  camera_wide_environmental_slight_low_natural_perspective_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_244: small figure in set environment, slight_low, stable across seeds'
+  camera_wide_environmental_slight_low_natural_perspective_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_245: small figure in set environment, slight_low, stable across seeds'
+  camera_wide_environmental_slight_low_natural_perspective_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_246: wide environmental consistent, slight-low angle plausible across all 3 seeds'
+  camera_wide_environmental_slight_low_portrait_compression_asymmetric_negative_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_247: wide environmental consistent across all 3 seeds'
+  camera_wide_environmental_slight_low_portrait_compression_centered_symmetry_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_248: wide environmental consistent across all 3 seeds'
+  camera_wide_environmental_slight_low_portrait_compression_diagonal_depth_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_249: wide environmental consistent across all 3 seeds'
+  camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: '[pass] case_250: wide environmental consistent across all 3 seeds'

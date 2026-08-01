@@ -41,6 +41,7 @@ def artist_rows(
     seeds: Iterable[int] = DEFAULT_SEEDS,
     *,
     expected_artists: int = EXPECTED_ARTISTS,
+    include_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     seed_values = validate_seeds(seeds)
     document = load_yaml(registry_path)
@@ -51,9 +52,15 @@ def artist_rows(
         raise ValueError(
             f"artist registry must contain exactly {expected_artists} artists; found {len(artists)}"
         )
+    if include_ids is not None:
+        missing = include_ids - set(artists)
+        if missing:
+            raise ValueError(f"registry has no such artist id(s): {sorted(missing)}")
 
     rows: list[dict[str, Any]] = []
     for artist_id in sorted(artists):
+        if include_ids is not None and artist_id not in include_ids:
+            continue
         artist = artists[artist_id]
         if not isinstance(artist_id, str) or not ARTIST_ID_RE.fullmatch(artist_id):
             raise ValueError(f"invalid artist internal id: {artist_id!r}")
@@ -103,14 +110,32 @@ def main() -> int:
     parser.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--seed", action="append", type=int, default=None)
+    parser.add_argument(
+        "--expected-artists",
+        type=int,
+        default=EXPECTED_ARTISTS,
+        help="exact registry size required, for batches added after the original 300",
+    )
+    parser.add_argument(
+        "--artist-id",
+        action="append",
+        default=None,
+        help="restrict to these registry artist ids, for a targeted batch",
+    )
     args = parser.parse_args()
 
     try:
-        rows = artist_rows(args.registry, args.seed or DEFAULT_SEEDS)
+        rows = artist_rows(
+            args.registry,
+            args.seed or DEFAULT_SEEDS,
+            expected_artists=args.expected_artists,
+            include_ids=set(args.artist_id) if args.artist_id else None,
+        )
         write_jsonl(args.output, rows)
         seeds = validate_seeds(args.seed or DEFAULT_SEEDS)
+        items = len({row["style_id"] for row in rows})
         print(
-            f"Wrote {len(rows)} resolved prompt(s): {EXPECTED_ARTISTS} artists x "
+            f"Wrote {len(rows)} resolved prompt(s): {items} artist(s) x "
             f"{len(seeds)} seed(s)."
         )
         return 0

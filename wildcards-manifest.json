@@ -3,14 +3,16 @@
   "included_statuses": [
     "approved"
   ],
-  "item_count": 1867,
-  "prompt_count": 1867,
+  "item_count": 2196,
+  "prompt_count": 2196,
   "files": [
     "krea2/artist_signature/modern.yaml",
+    "krea2/camera/composition.yaml",
     "krea2/character/design_language.yaml",
     "krea2/environment/complete.yaml",
     "krea2/lighting/complete.yaml",
     "krea2/pose/gesture.yaml",
+    "krea2/preset/complete.yaml",
     "krea2/style/coloring.yaml",
     "krea2/style/complete_pack.yaml"
   ],
@@ -181,6 +183,70 @@
       "source": "catalog/art_styles.yaml",
       "runtime_file": "krea2/style/complete_pack.yaml",
       "runtime_path": "krea2/style/complete_pack/monochrome_magazine",
+      "prompt_count": 1
+    },
+    {
+      "id": "gilded_sunburst_deco",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/gilded_sunburst_deco",
+      "prompt_count": 1
+    },
+    {
+      "id": "chevron_geometric_deco",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/chevron_geometric_deco",
+      "prompt_count": 1
+    },
+    {
+      "id": "lacquered_fan_deco",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/lacquered_fan_deco",
+      "prompt_count": 1
+    },
+    {
+      "id": "champagne_metal_deco",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/champagne_metal_deco",
+      "prompt_count": 1
+    },
+    {
+      "id": "atomic_starburst_midcentury",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/atomic_starburst_midcentury",
+      "prompt_count": 1
+    },
+    {
+      "id": "boomerang_pattern_midcentury",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/boomerang_pattern_midcentury",
+      "prompt_count": 1
+    },
+    {
+      "id": "teak_and_teal_midcentury",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/teak_and_teal_midcentury",
+      "prompt_count": 1
+    },
+    {
+      "id": "graphic_silhouette_midcentury",
+      "status": "approved",
+      "source": "catalog/art_styles.yaml",
+      "runtime_file": "krea2/style/complete_pack.yaml",
+      "runtime_path": "krea2/style/complete_pack/graphic_silhouette_midcentury",
       "prompt_count": 1
     },
     {
@@ -5165,6 +5231,1158 @@
       "source": "catalog/backgrounds.yaml",
       "runtime_file": "krea2/environment/complete.yaml",
       "runtime_path": "krea2/environment/complete/background_transit_concourse_repeated_recession_soft_ambient_diffusion_warm_neutral_complete_background",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_deep_focus_language_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_deep_focus_language_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_natural_perspective_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_portrait_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_portrait_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_clean_profile_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_clean_profile_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_classic_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_classic_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_chest_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_chest_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_clean_profile_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_clean_profile_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_clean_profile_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_eye_level_front_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_eye_level_front_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_classic_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_deep_focus_language_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_deep_focus_language_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_deep_focus_language_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_full_length_slight_low_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_deep_focus_language_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_deep_focus_language_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_long_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_natural_perspective_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_portrait_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_rear_three_quarter_portrait_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_classic_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_classic_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_long_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_head_shoulders_three_quarter_front_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_head_shoulders_three_quarter_front_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_thigh_up_clean_profile_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_thigh_up_clean_profile_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_thigh_up_clean_profile_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_thigh_up_clean_profile_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_thigh_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_thigh_up_eye_level_front_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_thigh_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_thigh_up_eye_level_front_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_thigh_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_thigh_up_eye_level_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_vertical_full_scene_slight_high_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_vertical_full_scene_slight_high_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_vertical_full_scene_slight_high_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_vertical_full_scene_slight_high_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_classic_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_classic_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_classic_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_classic_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_deep_focus_language_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_deep_focus_language_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_deep_focus_language_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_deep_focus_language_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_deep_focus_language_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_deep_focus_language_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_long_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_long_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_natural_perspective_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_natural_perspective_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_slight_high_portrait_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_slight_high_portrait_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_natural_perspective_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_natural_perspective_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_waist_up_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_waist_up_three_quarter_front_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_deep_focus_language_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_deep_focus_language_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_deep_focus_language_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_deep_focus_language_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_deep_focus_language_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_deep_focus_language_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_portrait_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_portrait_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_high_portrait_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_high_portrait_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_classic_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_classic_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_classic_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_classic_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_classic_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_classic_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_long_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_long_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_long_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_long_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_long_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_long_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_long_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_long_compression_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_moderate_wide_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_moderate_wide_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_moderate_wide_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_moderate_wide_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_moderate_wide_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_moderate_wide_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_moderate_wide_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_moderate_wide_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_natural_perspective_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_natural_perspective_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_natural_perspective_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_natural_perspective_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_natural_perspective_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_natural_perspective_thirds_gaze_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_portrait_compression_asymmetric_negative_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_portrait_compression_asymmetric_negative_space_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_portrait_compression_centered_symmetry_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_portrait_compression_centered_symmetry_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_portrait_compression_diagonal_depth_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_portrait_compression_diagonal_depth_complete_camera",
+      "prompt_count": 1
+    },
+    {
+      "id": "camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera",
+      "status": "approved",
+      "source": "catalog/cameras.yaml",
+      "runtime_file": "krea2/camera/composition.yaml",
+      "runtime_path": "krea2/camera/composition/camera_wide_environmental_slight_low_portrait_compression_thirds_gaze_space_complete_camera",
       "prompt_count": 1
     },
     {
@@ -13917,6 +15135,1422 @@
       "source": "catalog/poses.yaml",
       "runtime_file": "krea2/pose/gesture.yaml",
       "runtime_path": "krea2/pose/gesture/pose_upright_seated_open_palms_extended_lifted_attentive_gentle_transition_complete_pose",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_quiet_museum_frontal_composed_vest_pleated_skirt_waist_up_natural_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_quiet_museum_frontal_composed_vest_pleated_skirt_waist_up_natural_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_balanced_contrapposto_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_balanced_contrapposto_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_attentive_calm_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_composed_direct_complete_scene",
+      "prompt_count": 1
+    },
+    {
+      "id": "preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
+      "status": "approved",
+      "source": "catalog/presets.yaml",
+      "runtime_file": "krea2/preset/complete.yaml",
+      "runtime_path": "krea2/preset/complete/preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene",
       "prompt_count": 1
     },
     {

@@ -1945,3 +1945,552 @@ items:
       stability: 5.0
       compatibility: 4.0
       critical_failures: 0
+  gilded_sunburst_deco:
+    family: art_deco
+    visual_axes:
+      - elongated_deco_silhouette
+      - sunburst_radiance
+      - gold_linework
+      - jewel_flat_palette
+      - poster_flat_lighting
+    prompt: >-
+      Bold Art Deco character artwork with elongated stylized proportions, a radiating gilded sunburst
+      motif framing the figure, crisp metallic gold contour lines, flat saturated jewel-tone color blocks,
+      and confident poster-flat lighting with no soft gradients
+    compatibility:
+      recommended:
+        - gilded_linework
+        - jewel_flat_palette
+      avoid:
+        - soft_watercolor_bleed
+        - rustic_grain
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - gilded_sunburst_deco
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: 66db9764fbb486bc931d50395cc71a48d5dc9e33154995586bcb1a9b63ae2c81
+      prompt_adherence: 5.0
+      style_fidelity: 5.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  chevron_geometric_deco:
+    family: art_deco
+    visual_axes:
+      - angular_deco_silhouette
+      - chevron_patterning
+      - black_and_gold_linework
+      - sharp_color_blocking
+      - symmetrical_deco_composition
+    prompt: >-
+      Geometric Art Deco character artwork built from repeating angular chevron and zigzag patterning
+      across garment and background, sharp black-and-gold contour lines, hard-edged color blocking, and
+      a strictly symmetrical composition
+    compatibility:
+      recommended:
+        - symmetrical_framing
+        - jewel_flat_palette
+      avoid:
+        - chaotic_asymmetry
+        - soft_watercolor_bleed
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - chevron_geometric_deco
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: e33902d19fb106b4abe49c6f2f8e906eeb3d1878249d4bfdd9baf875ab8a361a
+      prompt_adherence: 5.0
+      style_fidelity: 5.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  lacquered_fan_deco:
+    family: art_deco
+    visual_axes:
+      - elongated_deco_silhouette
+      - fan_and_scallop_motif
+      - lacquer_gloss_surface
+      - deep_jewel_flat_palette
+      - elegant_stillness
+    prompt: >-
+      Elegant Art Deco character artwork with a fanned scallop-edge motif echoed in hair and fabric, high-gloss
+      black lacquer surface quality, deep flat jewel-tone color, and a poised, still composition
+    compatibility:
+      recommended:
+        - jewel_flat_palette
+        - poster_flat_lighting
+      avoid:
+        - rustic_grain
+        - matte_charcoal
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - lacquered_fan_deco
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: 99269bfe573ab62ce17a8214a102d12b80ba8a22a26e2ff9baec931249df20da
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  stepped_skyline_deco:
+    family: art_deco
+    visual_axes:
+      - elongated_deco_silhouette
+      - stepped_ziggurat_backdrop
+      - crisp_linework
+      - muted_metallic_palette
+      - architectural_composition
+    prompt: >-
+      Art Deco character artwork set against a stepped ziggurat skyline backdrop rendered in flat receding
+      bands, crisp confident contour lines, a muted metallic gold-and-charcoal palette, and a strongly
+      architectural vertical composition
+    compatibility:
+      recommended:
+        - gilded_linework
+        - symmetrical_framing
+      avoid:
+        - soft_watercolor_bleed
+        - chaotic_asymmetry
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - stepped_skyline_deco
+    validation:
+      model: krea2_turbo
+      tested_seeds: 3
+      status: rejected
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: 8d0189fe73233b01fa023576d024dd15eaaf84a6637cdb9dac4be04cbb53d689
+      prompt_adherence: 3.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  champagne_metal_deco:
+    family: art_deco
+    visual_axes:
+      - elongated_deco_silhouette
+      - minimal_deco_ornament
+      - champagne_metallic_palette
+      - soft_flat_shading
+      - restrained_composition
+    prompt: >-
+      Restrained Art Deco character artwork with minimal geometric ornament, a warm champagne-and-rose-gold
+      metallic palette, soft flat cel shading without gloss highlights, and an uncluttered restrained
+      composition
+    compatibility:
+      recommended:
+        - poster_flat_lighting
+        - muted_metallic_palette
+      avoid:
+        - rustic_grain
+        - chaotic_asymmetry
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - champagne_metal_deco
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: fd134f25a13c0882ac7654630154f5caf5d88aa09a5b88edff02805f5558e678
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  atomic_starburst_midcentury:
+    family: mid_century_modern
+    visual_axes:
+      - flat_graphic_silhouette
+      - atomic_starburst_motif
+      - warm_retro_palette
+      - screenprint_grain
+      - confident_negative_space
+    prompt: >-
+      Mid-century modern character artwork with a flat confident graphic silhouette, a stylized atomic-age
+      starburst motif in the background, a warm mustard-and-burnt-orange retro palette, and a fine screen-print
+      grain texture across every surface
+    compatibility:
+      recommended:
+        - warm_retro_palette
+        - screenprint_grain
+      avoid:
+        - photorealistic_gloss
+        - neon_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - atomic_starburst_midcentury
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: 204f6965bc49b459e3d642ff695746ddb8ca31fc8f411320d1158ac0ccb620f0
+      prompt_adherence: 5.0
+      style_fidelity: 5.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  boomerang_pattern_midcentury:
+    family: mid_century_modern
+    visual_axes:
+      - flat_graphic_silhouette
+      - boomerang_pattern_motif
+      - teal_and_mustard_palette
+      - hard_flat_shading
+      - playful_asymmetry
+    prompt: >-
+      Mid-century modern character artwork featuring a repeating boomerang-and-kidney-shape pattern across
+      garment and background, a teal-and-mustard limited palette, hard flat cel shading with no soft gradients,
+      and a playful asymmetrical composition
+    compatibility:
+      recommended:
+        - flat_graphic_silhouette
+        - warm_retro_palette
+      avoid:
+        - gothic_ornament
+        - photorealistic_gloss
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - boomerang_pattern_midcentury
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: de8242d832123cdf8aeaffe21ec8fdd4390ae3c61ec05698c959a59dc76abd69
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  pastel_screenprint_midcentury:
+    family: mid_century_modern
+    visual_axes:
+      - flat_graphic_silhouette
+      - soft_pastel_retro_palette
+      - fine_screenprint_grain
+      - rounded_atomic_shapes
+      - gentle_asymmetry
+    prompt: >-
+      Mid-century modern character artwork in a soft pastel retro palette of dusty pink, sage, and cream,
+      rendered with a fine screen-print grain texture, rounded atomic-age geometric shapes, and a gently
+      asymmetrical layout
+    compatibility:
+      recommended:
+        - screenprint_grain
+        - atomic_motif
+      avoid:
+        - neon_bloom
+        - gothic_ornament
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - pastel_screenprint_midcentury
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: rejected
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: 2dabd7eb5feb61bef37b483984340083e13579e9a8376dbd25e65ab1e627cd91
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 2.0
+      compatibility: 4.0
+      critical_failures: 0
+  teak_and_teal_midcentury:
+    family: mid_century_modern
+    visual_axes:
+      - flat_graphic_silhouette
+      - warm_wood_tone_palette
+      - teal_accent_color
+      - confident_flat_linework
+      - horizontal_composition
+    prompt: >-
+      Mid-century modern character artwork in a warm teak-wood-toned palette accented with a single confident
+      teal color block, clean flat contour linework with no interior detail crowding, and a calm horizontal
+      composition
+    compatibility:
+      recommended:
+        - warm_retro_palette
+        - flat_graphic_silhouette
+      avoid:
+        - photorealistic_gloss
+        - neon_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - teak_and_teal_midcentury
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: b46db8d6dec47c3327bdea6eb098e7fe820567e1e097741a8278d320b305e0bc
+      prompt_adherence: 5.0
+      style_fidelity: 5.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  graphic_silhouette_midcentury:
+    family: mid_century_modern
+    visual_axes:
+      - bold_flat_silhouette
+      - high_contrast_retro_palette
+      - minimal_interior_linework
+      - atomic_accent_shapes
+      - poster_composition
+    prompt: >-
+      Mid-century modern character artwork reduced to a bold flat silhouette against a high-contrast retro
+      two-tone palette, minimal interior linework, small atomic-age accent shapes scattered in the negative
+      space, and a confident poster-style composition
+    compatibility:
+      recommended:
+        - flat_graphic_silhouette
+        - atomic_motif
+      avoid:
+        - gothic_ornament
+        - neon_bloom
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - graphic_silhouette_midcentury
+    validation:
+      model: krea2_turbo
+      tested_seeds: 5
+      status: approved
+      last_evaluation: art_style_new_families_v1
+      evaluated_prompt_sha256: d23dafd6133e1fbd54192e54da1c5fed8513e71d00743c2d54a5793839f85479
+      prompt_adherence: 4.0
+      style_fidelity: 4.0
+      stability: 5.0
+      compatibility: 4.0
+      critical_failures: 0
+  chrome_bubble_y2k:
+    family: y2k_futurism
+    visual_axes:
+      - rounded_bubble_silhouette
+      - chrome_reflective_surface
+      - cool_cyber_palette
+      - soft_specular_highlights
+      - playful_futurism
+    prompt: >-
+      Y2K futurist character artwork with soft rounded bubble-like silhouette shapes, a bright chrome
+      reflective surface quality across garment and accessories, a cool cyan-and-silver palette, and playful
+      specular highlights
+    compatibility:
+      recommended:
+        - chrome_reflective_surface
+        - cyber_grid_accents
+      avoid:
+        - rustic_watercolor
+        - antique_parchment
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - chrome_bubble_y2k
+    validation:
+      model: krea2_turbo
+      tested_seeds: 0
+      status: generated
+  holographic_iridescent_y2k:
+    family: y2k_futurism
+    visual_axes:
+      - sleek_futurist_silhouette
+      - holographic_surface_shimmer
+      - iridescent_oil_slick_palette
+      - soft_gradient_lighting
+      - optimistic_energy
+    prompt: >-
+      Y2K futurist character artwork with a sleek streamlined silhouette, a holographic surface shimmer
+      that shifts across an iridescent oil-slick palette of pink, teal, and violet, and soft optimistic
+      gradient lighting
+    compatibility:
+      recommended:
+        - holographic_shimmer
+        - chrome_reflective_surface
+      avoid:
+        - matte_charcoal
+        - rustic_watercolor
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - holographic_iridescent_y2k
+    validation:
+      model: krea2_turbo
+      tested_seeds: 0
+      status: generated
+  translucent_plastic_y2k:
+    family: y2k_futurism
+    visual_axes:
+      - rounded_bubble_silhouette
+      - translucent_plastic_texture
+      - bright_candy_palette
+      - soft_internal_glow
+      - playful_bubble_space
+    prompt: >-
+      Y2K futurist character artwork rendered with translucent colored-plastic surface texture on garment
+      and accessories, a bright candy-colored palette, a soft internal glow visible through the translucent
+      material, and a playful rounded silhouette
+    compatibility:
+      recommended:
+        - translucent_plastic
+        - chrome_reflective_surface
+      avoid:
+        - antique_parchment
+        - matte_charcoal
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - translucent_plastic_y2k
+    validation:
+      model: krea2_turbo
+      tested_seeds: 0
+      status: generated
+  cyber_optimism_y2k:
+    family: y2k_futurism
+    visual_axes:
+      - sleek_futurist_silhouette
+      - cyber_grid_accents
+      - cool_metallic_palette
+      - crisp_specular_edges
+      - confident_futurism
+    prompt: >-
+      Y2K futurist character artwork with a sleek confident silhouette accented by fine cyber-grid line
+      details, a cool metallic silver-and-blue palette, crisp specular edge highlights, and an optimistic
+      forward-leaning energy
+    compatibility:
+      recommended:
+        - cyber_grid_accents
+        - chrome_reflective_surface
+      avoid:
+        - rustic_watercolor
+        - antique_parchment
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - cyber_optimism_y2k
+    validation:
+      model: krea2_turbo
+      tested_seeds: 0
+      status: generated
+  pixel_glitch_y2k:
+    family: y2k_futurism
+    visual_axes:
+      - sleek_futurist_silhouette
+      - pixel_glitch_accents
+      - cool_cyber_palette
+      - scanline_texture
+      - digital_optimism_space
+    prompt: >-
+      Y2K futurist character artwork with small pixel-glitch accent details scattered along garment edges,
+      a fine horizontal scanline texture overlay, a cool cyan-and-magenta cyber palette, and a bright
+      digital-optimism mood
+    compatibility:
+      recommended:
+        - pixel_glitch_accents
+        - cyber_grid_accents
+      avoid:
+        - antique_parchment
+        - rustic_watercolor
+    source_refs:
+      - internal_taxonomy_v1
+    runtime:
+      file: krea2/style/complete_pack.yaml
+      path:
+        - krea2
+        - style
+        - complete_pack
+        - pixel_glitch_y2k
+    validation:
+      model: krea2_turbo
+      tested_seeds: 0
+      status: generated

@@ -1,0 +1,42 @@
+{
+  "case_002": [
+    "hold",
+    "clean_profile bug recurs: fully frontal face, both eyes visible, not a side profile"
+  ],
+  "case_027": [
+    "pass",
+    "frontal chest-up crop stable across seeds"
+  ],
+  "case_052": [
+    "hold",
+    "close_face crop too loose, includes shoulder/torso like head_shoulders, not tight face crop"
+  ],
+  "case_077": [
+    "pass",
+    "full-length crop consistent; seed3 has stray white vertical bars artifact"
+  ],
+  "case_102": [
+    "pass",
+    "head_shoulders crop correct, rear three-quarter turn consistent"
+  ],
+  "case_127": [
+    "hold",
+    "true profile pose correct but crop stops near waist, not mid-thigh; seed3 has white bars"
+  ],
+  "case_152": [
+    "hold",
+    "thigh_up crop stops at chest, thighs never visible, consistent but wrong crop"
+  ],
+  "case_177": [
+    "hold",
+    "unstable: seed1 full-length, seed2/3 cartoon-style chest-up crops, wrong framing"
+  ],
+  "case_202": [
+    "pass",
+    "waist_up crop with open-hand gesture, consistent across seeds"
+  ],
+  "case_227": [
+    "pass",
+    "small figure in wide environment consistent; seed3 slightly desaturated but pose stable"
+  ]
+}

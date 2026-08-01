@@ -133,11 +133,20 @@ def test_all_template_wildcards_resolve_in_preview(tmp_path: Path) -> None:
 def test_scene_templates_follow_prompt_pool_safety_and_option_counts() -> None:
     for path in sorted((ROOT / "templates").glob("*.txt")):
         text = path.read_text(encoding="utf-8").strip()
-        is_artist_signature = (
-            path.name == "benchmark_expansion_artist_signature.txt"
-        )
+        # Most benchmark scenes are photorealistic anchors and must say so.
+        # A family whose whole point is a non-photographic medium (hand-drawn
+        # artist signatures, or an illustrated art_style like mid-century
+        # flat graphic or Y2K chrome/holographic surfaces) instead follows
+        # the illustrated-safety phrase set: it must NOT claim realistic skin
+        # texture, and is exempt from the anime/illustration/2d prose ban
+        # since it needs those exact words to state its own medium.
+        is_illustrated = path.name in {
+            "benchmark_expansion_artist_signature.txt",
+            "style_benchmark_mid_century_modern.txt",
+            "style_benchmark_y2k_futurism.txt",
+        }
         assert "adult" in text.lower(), path
-        if is_artist_signature:
+        if is_illustrated:
             assert "clearly hand-drawn two-dimensional" in text.lower(), path
             assert "coherent illustrated anatomy" in text.lower(), path
             assert "readable hands" in text.lower(), path
@@ -149,7 +158,7 @@ def test_scene_templates_follow_prompt_pool_safety_and_option_counts() -> None:
             assert "natural proportions" in text.lower(), path
             assert "cinematic depth" in text.lower(), path
         assert "no text, logos, or watermarks" in text.lower() or "no generated text, logos, or watermarks" in text.lower(), path
-        if not is_artist_signature:
+        if not is_illustrated:
             assert not PROHIBITED.search(text), path
         assert "BREAK," not in text
 

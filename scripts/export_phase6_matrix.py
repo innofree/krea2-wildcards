@@ -631,10 +631,19 @@ def _profiled_prompt(
     focus: str,
     *,
     framing_value: str | None = None,
+    framing_override: str | None = None,
+    framing_suffix: str = "",
     subject_contract: str = SUBJECT_CONTRACT,
     reconciliation: str = "",
 ) -> str:
-    framing = _framing_contract(framing_value or value)
+    framing = (
+        framing_override
+        if framing_override is not None
+        else _framing_contract(framing_value or value)
+    )
+    framing_suffix = framing_suffix.strip()
+    if framing_suffix:
+        framing = f"{framing} {framing_suffix}"
     reconciliation = reconciliation.strip()
     closing = f" {reconciliation}" if reconciliation else ""
     return (
@@ -841,7 +850,13 @@ def _rows(
 
 
 def single_axis_prompt(
-    axis: str, prompt: str, *, subject_contract: str | None = None
+    axis: str,
+    prompt: str,
+    *,
+    subject_contract: str | None = None,
+    framing_override: str | None = None,
+    framing_suffix: str = "",
+    reconciliation_suffix: str = "",
 ) -> str:
     """Render the validated single-axis prompt for one catalog item body.
 
@@ -852,6 +867,21 @@ def single_axis_prompt(
     because the selection below looks for the literal "clean profile", which no
     real camera catalog body contains, so profile items would otherwise be told
     to keep both eyes readable. Leaving it None preserves Phase 6 exactly.
+
+    ``framing_override``, ``framing_suffix``, and ``reconciliation_suffix``
+    give Phase 7 the same escape hatch for the closing camera lock.
+    ``_framing_contract`` has no branch for the close-face, head-and-shoulders,
+    or vertical-full-scene crops, so those 94 camera items fall through to the
+    generic mid-thigh default, which demands "both eyes" -- a direct conflict
+    for the 8 of them that also ask for a profile view. And even where the
+    branch exists (e.g. chest-up), it never reasserts view direction, so a
+    profile request from early in the prompt decays by the time generation
+    reaches the final camera lock: a 12-shot recalibration after the crop fix
+    alone still rendered chest-up-profile frontal in 5 of 6 seeds.
+    ``framing_suffix`` is appended after the closing lock itself -- the last
+    text in the prompt -- because that is the position calibration showed
+    reliably holds the view. Leaving all three unset preserves Phase 6
+    exactly. See plan.md 7.5.
     """
     camera_counterweight = ""
     if axis == "camera":
@@ -883,11 +913,14 @@ def single_axis_prompt(
         value,
         SINGLE_AXIS_FOCUS[axis],
         framing_value=prompt if axis == "camera" else SINGLE_AXIS_FRAMING[axis],
+        framing_override=framing_override,
+        framing_suffix=framing_suffix,
         subject_contract=subject_contract,
         reconciliation=(
             "The requested camera position and asymmetric placement are the final "
             "composition blueprint; make the visible view angle, open side region, "
             f"and separate counterweight unmistakable. {camera_counterweight}"
+            f"{reconciliation_suffix}"
             if axis == "camera"
             else ""
         ),

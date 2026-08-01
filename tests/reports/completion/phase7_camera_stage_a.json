@@ -2,8 +2,8 @@
   "schema_version": 1,
   "report_type": "phase7_stage_a_audit",
   "axis": "camera",
-  "scorecard": "tests/reports/phase7_camera_v1/scorecard.csv",
-  "run_state": "tests/reports/phase7_camera_v1/run-state.json",
+  "scorecard": "tests/reports/phase7_camera_v2/scorecard.csv",
+  "run_state": "tests/reports/phase7_camera_v2/run-state.json",
   "expected_seeds": 3,
   "item_count": 250,
   "passed_count": 250,
@@ -20,22 +20,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.886,
-          "luminance_levels": 207
+          "luminance_stddev": 39.576,
+          "luminance_levels": 200
         },
         "P7000002": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.434,
-          "luminance_levels": 205
+          "luminance_stddev": 37.284,
+          "luminance_levels": 211
         },
         "P7000003": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.805,
-          "luminance_levels": 205
+          "luminance_stddev": 36.221,
+          "luminance_levels": 213
         }
       },
       "reasons": []
@@ -48,22 +48,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.765,
-          "luminance_levels": 203
+          "luminance_stddev": 36.017,
+          "luminance_levels": 205
         },
         "P7000005": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.559,
-          "luminance_levels": 200
+          "luminance_stddev": 36.867,
+          "luminance_levels": 206
         },
         "P7000006": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.671,
-          "luminance_levels": 201
+          "luminance_stddev": 34.855,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -76,22 +76,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.302,
-          "luminance_levels": 206
+          "luminance_stddev": 38.802,
+          "luminance_levels": 200
         },
         "P7000008": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.279,
-          "luminance_levels": 203
+          "luminance_stddev": 37.143,
+          "luminance_levels": 195
         },
         "P7000009": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.286,
-          "luminance_levels": 205
+          "luminance_stddev": 37.772,
+          "luminance_levels": 200
         }
       },
       "reasons": []
@@ -104,22 +104,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.793,
-          "luminance_levels": 202
+          "luminance_stddev": 36.626,
+          "luminance_levels": 201
         },
         "P7000011": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.446,
-          "luminance_levels": 199
+          "luminance_stddev": 36.861,
+          "luminance_levels": 198
         },
         "P7000012": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.938,
-          "luminance_levels": 203
+          "luminance_stddev": 38.429,
+          "luminance_levels": 195
         }
       },
       "reasons": []
@@ -132,22 +132,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.933,
-          "luminance_levels": 208
+          "luminance_stddev": 39.94,
+          "luminance_levels": 197
         },
         "P7000014": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.766,
-          "luminance_levels": 204
+          "luminance_stddev": 37.911,
+          "luminance_levels": 200
         },
         "P7000015": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.155,
-          "luminance_levels": 205
+          "luminance_stddev": 52.835,
+          "luminance_levels": 179
         }
       },
       "reasons": []
@@ -160,22 +160,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.702,
-          "luminance_levels": 206
+          "luminance_stddev": 38.441,
+          "luminance_levels": 201
         },
         "P7000017": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.341,
-          "luminance_levels": 202
+          "luminance_stddev": 39.975,
+          "luminance_levels": 197
         },
         "P7000018": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.556,
-          "luminance_levels": 202
+          "luminance_stddev": 39.828,
+          "luminance_levels": 195
         }
       },
       "reasons": []
@@ -188,21 +188,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.837,
-          "luminance_levels": 207
+          "luminance_stddev": 39.447,
+          "luminance_levels": 204
         },
         "P7000020": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.007,
+          "luminance_stddev": 39.459,
           "luminance_levels": 203
         },
         "P7000021": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.828,
+          "luminance_stddev": 39.169,
           "luminance_levels": 206
         }
       },
@@ -216,21 +216,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.473,
-          "luminance_levels": 199
+          "luminance_stddev": 39.882,
+          "luminance_levels": 198
         },
         "P7000023": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.176,
-          "luminance_levels": 199
+          "luminance_stddev": 40.261,
+          "luminance_levels": 198
         },
         "P7000024": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.742,
+          "luminance_stddev": 37.349,
           "luminance_levels": 205
         }
       },
@@ -244,22 +244,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.113,
-          "luminance_levels": 204
+          "luminance_stddev": 61.19,
+          "luminance_levels": 182
         },
         "P7000026": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.545,
-          "luminance_levels": 215
+          "luminance_stddev": 57.417,
+          "luminance_levels": 179
         },
         "P7000027": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 42.011,
-          "luminance_levels": 200
+          "luminance_stddev": 68.755,
+          "luminance_levels": 230
         }
       },
       "reasons": []
@@ -272,22 +272,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.384,
-          "luminance_levels": 202
+          "luminance_stddev": 65.429,
+          "luminance_levels": 193
         },
         "P7000029": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.66,
-          "luminance_levels": 197
+          "luminance_stddev": 70.198,
+          "luminance_levels": 190
         },
         "P7000030": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 71.194,
-          "luminance_levels": 191
+          "luminance_stddev": 74.03,
+          "luminance_levels": 195
         }
       },
       "reasons": []
@@ -300,22 +300,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.887,
-          "luminance_levels": 202
+          "luminance_stddev": 60.874,
+          "luminance_levels": 183
         },
         "P7000032": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.384,
-          "luminance_levels": 201
+          "luminance_stddev": 65.954,
+          "luminance_levels": 189
         },
         "P7000033": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 54.927,
-          "luminance_levels": 185
+          "luminance_stddev": 66.265,
+          "luminance_levels": 192
         }
       },
       "reasons": []
@@ -328,22 +328,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.912,
-          "luminance_levels": 201
+          "luminance_stddev": 72.049,
+          "luminance_levels": 196
         },
         "P7000035": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.067,
-          "luminance_levels": 207
+          "luminance_stddev": 71.4,
+          "luminance_levels": 197
         },
         "P7000036": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 72.547,
-          "luminance_levels": 189
+          "luminance_stddev": 71.421,
+          "luminance_levels": 188
         }
       },
       "reasons": []
@@ -356,22 +356,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.831,
-          "luminance_levels": 206
+          "luminance_stddev": 40.372,
+          "luminance_levels": 200
         },
         "P7000038": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.361,
-          "luminance_levels": 208
+          "luminance_stddev": 36.931,
+          "luminance_levels": 204
         },
         "P7000039": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.567,
-          "luminance_levels": 207
+          "luminance_stddev": 36.924,
+          "luminance_levels": 186
         }
       },
       "reasons": []
@@ -384,22 +384,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.443,
-          "luminance_levels": 205
+          "luminance_stddev": 37.896,
+          "luminance_levels": 204
         },
         "P7000041": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.908,
-          "luminance_levels": 202
+          "luminance_stddev": 37.76,
+          "luminance_levels": 208
         },
         "P7000042": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.098,
-          "luminance_levels": 202
+          "luminance_stddev": 36.834,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -412,22 +412,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.893,
-          "luminance_levels": 204
+          "luminance_stddev": 39.678,
+          "luminance_levels": 202
         },
         "P7000044": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.153,
-          "luminance_levels": 206
+          "luminance_stddev": 37.498,
+          "luminance_levels": 205
         },
         "P7000045": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.682,
-          "luminance_levels": 199
+          "luminance_stddev": 39.371,
+          "luminance_levels": 198
         }
       },
       "reasons": []
@@ -440,22 +440,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.732,
-          "luminance_levels": 197
+          "luminance_stddev": 40.327,
+          "luminance_levels": 202
         },
         "P7000047": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.776,
-          "luminance_levels": 205
+          "luminance_stddev": 38.472,
+          "luminance_levels": 198
         },
         "P7000048": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.934,
-          "luminance_levels": 206
+          "luminance_stddev": 38.869,
+          "luminance_levels": 197
         }
       },
       "reasons": []
@@ -468,22 +468,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.797,
-          "luminance_levels": 205
+          "luminance_stddev": 39.906,
+          "luminance_levels": 196
         },
         "P7000050": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.033,
-          "luminance_levels": 233
+          "luminance_stddev": 36.986,
+          "luminance_levels": 197
         },
         "P7000051": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.944,
-          "luminance_levels": 206
+          "luminance_stddev": 37.775,
+          "luminance_levels": 194
         }
       },
       "reasons": []
@@ -496,22 +496,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.693,
-          "luminance_levels": 203
+          "luminance_stddev": 37.399,
+          "luminance_levels": 199
         },
         "P7000053": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.528,
-          "luminance_levels": 199
+          "luminance_stddev": 37.881,
+          "luminance_levels": 191
         },
         "P7000054": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.329,
-          "luminance_levels": 201
+          "luminance_stddev": 39.236,
+          "luminance_levels": 193
         }
       },
       "reasons": []
@@ -524,21 +524,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.75,
-          "luminance_levels": 204
+          "luminance_stddev": 39.644,
+          "luminance_levels": 197
         },
         "P7000056": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.877,
-          "luminance_levels": 202
+          "luminance_stddev": 37.491,
+          "luminance_levels": 197
         },
         "P7000057": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.073,
+          "luminance_stddev": 41.295,
           "luminance_levels": 201
         }
       },
@@ -552,22 +552,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.686,
-          "luminance_levels": 200
+          "luminance_stddev": 39.059,
+          "luminance_levels": 207
         },
         "P7000059": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.866,
-          "luminance_levels": 201
+          "luminance_stddev": 38.814,
+          "luminance_levels": 196
         },
         "P7000060": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.391,
-          "luminance_levels": 205
+          "luminance_stddev": 38.3,
+          "luminance_levels": 196
         }
       },
       "reasons": []
@@ -580,22 +580,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.905,
-          "luminance_levels": 206
+          "luminance_stddev": 37.491,
+          "luminance_levels": 200
         },
         "P7000062": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.669,
+          "luminance_stddev": 34.006,
           "luminance_levels": 207
         },
         "P7000063": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.27,
-          "luminance_levels": 210
+          "luminance_stddev": 34.406,
+          "luminance_levels": 206
         }
       },
       "reasons": []
@@ -608,21 +608,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.034,
-          "luminance_levels": 202
+          "luminance_stddev": 35.829,
+          "luminance_levels": 205
         },
         "P7000065": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.88,
-          "luminance_levels": 209
+          "luminance_stddev": 37.492,
+          "luminance_levels": 204
         },
         "P7000066": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.444,
+          "luminance_stddev": 35.811,
           "luminance_levels": 200
         }
       },
@@ -636,22 +636,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.61,
-          "luminance_levels": 206
+          "luminance_stddev": 34.444,
+          "luminance_levels": 204
         },
         "P7000068": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.127,
-          "luminance_levels": 203
+          "luminance_stddev": 34.331,
+          "luminance_levels": 210
         },
         "P7000069": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.112,
-          "luminance_levels": 203
+          "luminance_stddev": 34.228,
+          "luminance_levels": 206
         }
       },
       "reasons": []
@@ -664,22 +664,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.213,
-          "luminance_levels": 202
+          "luminance_stddev": 36.587,
+          "luminance_levels": 208
         },
         "P7000071": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.525,
-          "luminance_levels": 210
+          "luminance_stddev": 36.047,
+          "luminance_levels": 206
         },
         "P7000072": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.437,
-          "luminance_levels": 203
+          "luminance_stddev": 31.306,
+          "luminance_levels": 202
         }
       },
       "reasons": []
@@ -916,22 +916,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.613,
-          "luminance_levels": 215
+          "luminance_stddev": 41.291,
+          "luminance_levels": 224
         },
         "P7000098": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.217,
-          "luminance_levels": 228
+          "luminance_stddev": 41.882,
+          "luminance_levels": 189
         },
         "P7000099": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.921,
-          "luminance_levels": 231
+          "luminance_stddev": 69.191,
+          "luminance_levels": 217
         }
       },
       "reasons": []
@@ -944,22 +944,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.764,
-          "luminance_levels": 206
+          "luminance_stddev": 39.474,
+          "luminance_levels": 221
         },
         "P7000101": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.414,
-          "luminance_levels": 211
+          "luminance_stddev": 38.703,
+          "luminance_levels": 213
         },
         "P7000102": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.424,
-          "luminance_levels": 200
+          "luminance_stddev": 37.729,
+          "luminance_levels": 210
         }
       },
       "reasons": []
@@ -972,22 +972,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.877,
-          "luminance_levels": 192
+          "luminance_stddev": 37.429,
+          "luminance_levels": 208
         },
         "P7000104": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.002,
-          "luminance_levels": 193
+          "luminance_stddev": 45.292,
+          "luminance_levels": 191
         },
         "P7000105": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.464,
-          "luminance_levels": 201
+          "luminance_stddev": 39.268,
+          "luminance_levels": 202
         }
       },
       "reasons": []
@@ -1000,22 +1000,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.344,
+          "luminance_stddev": 36.906,
           "luminance_levels": 196
         },
         "P7000107": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.131,
-          "luminance_levels": 208
+          "luminance_stddev": 37.14,
+          "luminance_levels": 188
         },
         "P7000108": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.277,
-          "luminance_levels": 199
+          "luminance_stddev": 37.583,
+          "luminance_levels": 194
         }
       },
       "reasons": []
@@ -1028,22 +1028,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.622,
+          "luminance_stddev": 43.603,
           "luminance_levels": 199
         },
         "P7000110": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.572,
-          "luminance_levels": 204
+          "luminance_stddev": 43.824,
+          "luminance_levels": 192
         },
         "P7000111": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.935,
-          "luminance_levels": 200
+          "luminance_stddev": 41.575,
+          "luminance_levels": 201
         }
       },
       "reasons": []
@@ -1056,22 +1056,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.556,
-          "luminance_levels": 197
+          "luminance_stddev": 39.19,
+          "luminance_levels": 204
         },
         "P7000113": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.846,
-          "luminance_levels": 203
+          "luminance_stddev": 41.509,
+          "luminance_levels": 209
         },
         "P7000114": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.412,
-          "luminance_levels": 200
+          "luminance_stddev": 40.124,
+          "luminance_levels": 208
         }
       },
       "reasons": []
@@ -1084,22 +1084,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.238,
-          "luminance_levels": 210
+          "luminance_stddev": 35.323,
+          "luminance_levels": 199
         },
         "P7000116": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.737,
-          "luminance_levels": 205
+          "luminance_stddev": 38.206,
+          "luminance_levels": 204
         },
         "P7000117": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.513,
-          "luminance_levels": 206
+          "luminance_stddev": 39.623,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -1112,22 +1112,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.234,
+          "luminance_stddev": 38.246,
           "luminance_levels": 204
         },
         "P7000119": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.049,
-          "luminance_levels": 201
+          "luminance_stddev": 38.723,
+          "luminance_levels": 197
         },
         "P7000120": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.968,
-          "luminance_levels": 205
+          "luminance_stddev": 32.963,
+          "luminance_levels": 206
         }
       },
       "reasons": []
@@ -1140,22 +1140,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.877,
-          "luminance_levels": 206
+          "luminance_stddev": 41.403,
+          "luminance_levels": 217
         },
         "P7000122": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.877,
-          "luminance_levels": 206
+          "luminance_stddev": 40.77,
+          "luminance_levels": 203
         },
         "P7000123": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.76,
-          "luminance_levels": 209
+          "luminance_stddev": 53.287,
+          "luminance_levels": 251
         }
       },
       "reasons": []
@@ -1168,22 +1168,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.635,
-          "luminance_levels": 204
+          "luminance_stddev": 28.417,
+          "luminance_levels": 203
         },
         "P7000125": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.282,
-          "luminance_levels": 197
+          "luminance_stddev": 34.435,
+          "luminance_levels": 198
         },
         "P7000126": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.387,
-          "luminance_levels": 201
+          "luminance_stddev": 38.949,
+          "luminance_levels": 205
         }
       },
       "reasons": []
@@ -1196,22 +1196,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.193,
-          "luminance_levels": 204
+          "luminance_stddev": 41.742,
+          "luminance_levels": 212
         },
         "P7000128": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.249,
-          "luminance_levels": 202
+          "luminance_stddev": 41.614,
+          "luminance_levels": 201
         },
         "P7000129": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.253,
-          "luminance_levels": 196
+          "luminance_stddev": 36.235,
+          "luminance_levels": 202
         }
       },
       "reasons": []
@@ -1224,22 +1224,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.823,
-          "luminance_levels": 205
+          "luminance_stddev": 37.536,
+          "luminance_levels": 207
         },
         "P7000131": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.189,
-          "luminance_levels": 201
+          "luminance_stddev": 32.979,
+          "luminance_levels": 200
         },
         "P7000132": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.102,
-          "luminance_levels": 201
+          "luminance_stddev": 34.475,
+          "luminance_levels": 204
         }
       },
       "reasons": []
@@ -1252,22 +1252,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.275,
-          "luminance_levels": 201
+          "luminance_stddev": 44.681,
+          "luminance_levels": 213
         },
         "P7000134": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.166,
-          "luminance_levels": 203
+          "luminance_stddev": 42.43,
+          "luminance_levels": 200
         },
         "P7000135": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.304,
-          "luminance_levels": 182
+          "luminance_stddev": 44.794,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -1280,22 +1280,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.506,
-          "luminance_levels": 207
+          "luminance_stddev": 42.258,
+          "luminance_levels": 211
         },
         "P7000137": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.626,
-          "luminance_levels": 204
+          "luminance_stddev": 53.866,
+          "luminance_levels": 185
         },
         "P7000138": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.367,
-          "luminance_levels": 205
+          "luminance_stddev": 54.068,
+          "luminance_levels": 182
         }
       },
       "reasons": []
@@ -1308,22 +1308,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.226,
-          "luminance_levels": 204
+          "luminance_stddev": 45.541,
+          "luminance_levels": 219
         },
         "P7000140": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.908,
-          "luminance_levels": 211
+          "luminance_stddev": 49.374,
+          "luminance_levels": 205
         },
         "P7000141": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.805,
-          "luminance_levels": 200
+          "luminance_stddev": 49.113,
+          "luminance_levels": 199
         }
       },
       "reasons": []
@@ -1336,22 +1336,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.068,
-          "luminance_levels": 203
+          "luminance_stddev": 45.301,
+          "luminance_levels": 211
         },
         "P7000143": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.755,
-          "luminance_levels": 209
+          "luminance_stddev": 45.687,
+          "luminance_levels": 199
         },
         "P7000144": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 42.016,
-          "luminance_levels": 203
+          "luminance_stddev": 50.887,
+          "luminance_levels": 196
         }
       },
       "reasons": []
@@ -1364,22 +1364,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 62.799,
-          "luminance_levels": 185
+          "luminance_stddev": 63.67,
+          "luminance_levels": 192
         },
         "P7000146": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 62.542,
-          "luminance_levels": 185
+          "luminance_stddev": 63.562,
+          "luminance_levels": 187
         },
         "P7000147": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 61.28,
-          "luminance_levels": 180
+          "luminance_stddev": 71.186,
+          "luminance_levels": 220
         }
       },
       "reasons": []
@@ -1392,22 +1392,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 67.934,
-          "luminance_levels": 184
+          "luminance_stddev": 68.489,
+          "luminance_levels": 191
         },
         "P7000149": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.843,
+          "luminance_stddev": 70.27,
           "luminance_levels": 192
         },
         "P7000150": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 64.763,
-          "luminance_levels": 185
+          "luminance_stddev": 67.8,
+          "luminance_levels": 187
         }
       },
       "reasons": []
@@ -1420,22 +1420,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.408,
-          "luminance_levels": 185
+          "luminance_stddev": 68.441,
+          "luminance_levels": 187
         },
         "P7000152": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 71.718,
-          "luminance_levels": 191
+          "luminance_stddev": 72.829,
+          "luminance_levels": 189
         },
         "P7000153": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.21,
-          "luminance_levels": 188
+          "luminance_stddev": 67.399,
+          "luminance_levels": 186
         }
       },
       "reasons": []
@@ -1448,22 +1448,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 65.944,
-          "luminance_levels": 183
+          "luminance_stddev": 65.919,
+          "luminance_levels": 191
         },
         "P7000155": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 70.119,
-          "luminance_levels": 192
+          "luminance_stddev": 61.976,
+          "luminance_levels": 199
         },
         "P7000156": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 65.527,
-          "luminance_levels": 183
+          "luminance_stddev": 65.732,
+          "luminance_levels": 196
         }
       },
       "reasons": []
@@ -1476,22 +1476,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.763,
-          "luminance_levels": 200
+          "luminance_stddev": 42.359,
+          "luminance_levels": 214
         },
         "P7000158": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.607,
-          "luminance_levels": 200
+          "luminance_stddev": 50.972,
+          "luminance_levels": 170
         },
         "P7000159": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.14,
-          "luminance_levels": 205
+          "luminance_stddev": 59.715,
+          "luminance_levels": 245
         }
       },
       "reasons": []
@@ -1504,21 +1504,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.261,
+          "luminance_stddev": 36.768,
           "luminance_levels": 204
         },
         "P7000161": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.571,
-          "luminance_levels": 196
+          "luminance_stddev": 40.504,
+          "luminance_levels": 183
         },
         "P7000162": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.252,
+          "luminance_stddev": 41.817,
           "luminance_levels": 204
         }
       },
@@ -1532,22 +1532,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 42.158,
-          "luminance_levels": 207
+          "luminance_stddev": 42.346,
+          "luminance_levels": 215
         },
         "P7000164": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.933,
-          "luminance_levels": 208
+          "luminance_stddev": 43.732,
+          "luminance_levels": 197
         },
         "P7000165": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.076,
-          "luminance_levels": 201
+          "luminance_stddev": 38.166,
+          "luminance_levels": 195
         }
       },
       "reasons": []
@@ -1560,22 +1560,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.675,
-          "luminance_levels": 206
+          "luminance_stddev": 43.089,
+          "luminance_levels": 216
         },
         "P7000167": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.078,
-          "luminance_levels": 205
+          "luminance_stddev": 43.395,
+          "luminance_levels": 204
         },
         "P7000168": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.154,
-          "luminance_levels": 201
+          "luminance_stddev": 38.17,
+          "luminance_levels": 198
         }
       },
       "reasons": []
@@ -1588,22 +1588,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.421,
-          "luminance_levels": 202
+          "luminance_stddev": 41.837,
+          "luminance_levels": 221
         },
         "P7000170": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.966,
-          "luminance_levels": 209
+          "luminance_stddev": 44.946,
+          "luminance_levels": 175
         },
         "P7000171": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.884,
-          "luminance_levels": 202
+          "luminance_stddev": 43.383,
+          "luminance_levels": 204
         }
       },
       "reasons": []
@@ -1616,22 +1616,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.294,
-          "luminance_levels": 207
+          "luminance_stddev": 42.966,
+          "luminance_levels": 214
         },
         "P7000173": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.166,
-          "luminance_levels": 204
+          "luminance_stddev": 42.866,
+          "luminance_levels": 179
         },
         "P7000174": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.164,
-          "luminance_levels": 202
+          "luminance_stddev": 42.989,
+          "luminance_levels": 204
         }
       },
       "reasons": []
@@ -1644,22 +1644,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.449,
-          "luminance_levels": 204
+          "luminance_stddev": 40.911,
+          "luminance_levels": 216
         },
         "P7000176": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.204,
-          "luminance_levels": 205
+          "luminance_stddev": 43.737,
+          "luminance_levels": 210
         },
         "P7000177": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.686,
-          "luminance_levels": 197
+          "luminance_stddev": 39.683,
+          "luminance_levels": 208
         }
       },
       "reasons": []
@@ -1672,22 +1672,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.515,
-          "luminance_levels": 204
+          "luminance_stddev": 43.439,
+          "luminance_levels": 218
         },
         "P7000179": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.751,
-          "luminance_levels": 200
+          "luminance_stddev": 42.34,
+          "luminance_levels": 201
         },
         "P7000180": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 42.132,
-          "luminance_levels": 195
+          "luminance_stddev": 40.934,
+          "luminance_levels": 199
         }
       },
       "reasons": []
@@ -1700,22 +1700,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.478,
-          "luminance_levels": 218
+          "luminance_stddev": 40.612,
+          "luminance_levels": 217
         },
         "P7000182": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.589,
-          "luminance_levels": 204
+          "luminance_stddev": 39.621,
+          "luminance_levels": 209
         },
         "P7000183": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.604,
-          "luminance_levels": 209
+          "luminance_stddev": 35.585,
+          "luminance_levels": 208
         }
       },
       "reasons": []
@@ -1728,22 +1728,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.747,
+          "luminance_stddev": 33.033,
           "luminance_levels": 204
         },
         "P7000185": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.671,
+          "luminance_stddev": 36.87,
           "luminance_levels": 203
         },
         "P7000186": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.32,
-          "luminance_levels": 204
+          "luminance_stddev": 36.046,
+          "luminance_levels": 207
         }
       },
       "reasons": []
@@ -1756,21 +1756,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.691,
-          "luminance_levels": 197
+          "luminance_stddev": 35.365,
+          "luminance_levels": 209
         },
         "P7000188": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.497,
-          "luminance_levels": 201
+          "luminance_stddev": 42.39,
+          "luminance_levels": 206
         },
         "P7000189": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.398,
+          "luminance_stddev": 33.07,
           "luminance_levels": 205
         }
       },
@@ -1784,22 +1784,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.78,
-          "luminance_levels": 199
+          "luminance_stddev": 35.757,
+          "luminance_levels": 205
         },
         "P7000191": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.369,
-          "luminance_levels": 199
+          "luminance_stddev": 38.403,
+          "luminance_levels": 218
         },
         "P7000192": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.866,
-          "luminance_levels": 203
+          "luminance_stddev": 37.185,
+          "luminance_levels": 217
         }
       },
       "reasons": []
@@ -1812,22 +1812,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.585,
-          "luminance_levels": 235
+          "luminance_stddev": 33.06,
+          "luminance_levels": 242
         },
         "P7000194": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 26.113,
-          "luminance_levels": 231
+          "luminance_stddev": 24.592,
+          "luminance_levels": 237
         },
         "P7000195": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 63.603,
-          "luminance_levels": 246
+          "luminance_stddev": 66.198,
+          "luminance_levels": 235
         }
       },
       "reasons": []
@@ -1840,22 +1840,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.58,
-          "luminance_levels": 208
+          "luminance_stddev": 32.75,
+          "luminance_levels": 206
         },
         "P7000197": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.993,
-          "luminance_levels": 206
+          "luminance_stddev": 32.278,
+          "luminance_levels": 212
         },
         "P7000198": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.48,
-          "luminance_levels": 200
+          "luminance_stddev": 31.272,
+          "luminance_levels": 208
         }
       },
       "reasons": []
@@ -1868,22 +1868,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 30.443,
-          "luminance_levels": 197
+          "luminance_stddev": 30.263,
+          "luminance_levels": 205
         },
         "P7000200": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 30.952,
-          "luminance_levels": 207
+          "luminance_stddev": 32.373,
+          "luminance_levels": 206
         },
         "P7000201": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 30.614,
-          "luminance_levels": 207
+          "luminance_stddev": 30.763,
+          "luminance_levels": 202
         }
       },
       "reasons": []
@@ -2680,22 +2680,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.791,
-          "luminance_levels": 202
+          "luminance_stddev": 43.332,
+          "luminance_levels": 207
         },
         "P7000287": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.696,
-          "luminance_levels": 193
+          "luminance_stddev": 44.678,
+          "luminance_levels": 201
         },
         "P7000288": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.551,
-          "luminance_levels": 200
+          "luminance_stddev": 45.664,
+          "luminance_levels": 177
         }
       },
       "reasons": []
@@ -2708,22 +2708,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.483,
-          "luminance_levels": 203
+          "luminance_stddev": 43.309,
+          "luminance_levels": 210
         },
         "P7000290": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.568,
-          "luminance_levels": 194
+          "luminance_stddev": 47.288,
+          "luminance_levels": 204
         },
         "P7000291": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.305,
-          "luminance_levels": 194
+          "luminance_stddev": 45.295,
+          "luminance_levels": 177
         }
       },
       "reasons": []
@@ -2736,22 +2736,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 62.517,
-          "luminance_levels": 191
+          "luminance_stddev": 67.045,
+          "luminance_levels": 189
         },
         "P7000293": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 60.322,
-          "luminance_levels": 193
+          "luminance_stddev": 72.064,
+          "luminance_levels": 199
         },
         "P7000294": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 60.481,
-          "luminance_levels": 185
+          "luminance_stddev": 67.317,
+          "luminance_levels": 182
         }
       },
       "reasons": []
@@ -2764,22 +2764,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 65.233,
-          "luminance_levels": 185
+          "luminance_stddev": 73.741,
+          "luminance_levels": 190
         },
         "P7000296": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 66.109,
-          "luminance_levels": 192
+          "luminance_stddev": 73.17,
+          "luminance_levels": 193
         },
         "P7000297": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 69.151,
-          "luminance_levels": 188
+          "luminance_stddev": 73.064,
+          "luminance_levels": 191
         }
       },
       "reasons": []
@@ -2792,22 +2792,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 67.618,
-          "luminance_levels": 189
+          "luminance_stddev": 69.957,
+          "luminance_levels": 190
         },
         "P7000299": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.133,
-          "luminance_levels": 197
+          "luminance_stddev": 72.572,
+          "luminance_levels": 193
         },
         "P7000300": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 64.502,
-          "luminance_levels": 184
+          "luminance_stddev": 74.334,
+          "luminance_levels": 190
         }
       },
       "reasons": []
@@ -2820,22 +2820,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 64.966,
-          "luminance_levels": 184
+          "luminance_stddev": 71.072,
+          "luminance_levels": 191
         },
         "P7000302": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 65.433,
-          "luminance_levels": 191
+          "luminance_stddev": 72.123,
+          "luminance_levels": 193
         },
         "P7000303": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 65.935,
-          "luminance_levels": 190
+          "luminance_stddev": 75.055,
+          "luminance_levels": 194
         }
       },
       "reasons": []
@@ -2848,22 +2848,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.04,
-          "luminance_levels": 201
+          "luminance_stddev": 44.815,
+          "luminance_levels": 192
         },
         "P7000305": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.138,
-          "luminance_levels": 195
+          "luminance_stddev": 45.247,
+          "luminance_levels": 202
         },
         "P7000306": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.965,
-          "luminance_levels": 199
+          "luminance_stddev": 38.1,
+          "luminance_levels": 180
         }
       },
       "reasons": []
@@ -2876,22 +2876,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.623,
-          "luminance_levels": 197
+          "luminance_stddev": 41.011,
+          "luminance_levels": 209
         },
         "P7000308": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.533,
-          "luminance_levels": 195
+          "luminance_stddev": 41.6,
+          "luminance_levels": 198
         },
         "P7000309": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.359,
-          "luminance_levels": 184
+          "luminance_stddev": 40.685,
+          "luminance_levels": 186
         }
       },
       "reasons": []
@@ -2904,22 +2904,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.022,
-          "luminance_levels": 201
+          "luminance_stddev": 41.223,
+          "luminance_levels": 204
         },
         "P7000311": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.102,
-          "luminance_levels": 201
+          "luminance_stddev": 43.26,
+          "luminance_levels": 197
         },
         "P7000312": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.574,
-          "luminance_levels": 200
+          "luminance_stddev": 42.609,
+          "luminance_levels": 201
         }
       },
       "reasons": []
@@ -2932,22 +2932,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.289,
-          "luminance_levels": 206
+          "luminance_stddev": 41.778,
+          "luminance_levels": 198
         },
         "P7000314": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.019,
-          "luminance_levels": 201
+          "luminance_stddev": 44.04,
+          "luminance_levels": 196
         },
         "P7000315": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.323,
-          "luminance_levels": 200
+          "luminance_stddev": 43.973,
+          "luminance_levels": 193
         }
       },
       "reasons": []
@@ -2960,22 +2960,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.263,
-          "luminance_levels": 215
+          "luminance_stddev": 45.228,
+          "luminance_levels": 193
         },
         "P7000317": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.035,
-          "luminance_levels": 215
+          "luminance_stddev": 44.306,
+          "luminance_levels": 211
         },
         "P7000318": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.501,
-          "luminance_levels": 215
+          "luminance_stddev": 35.871,
+          "luminance_levels": 210
         }
       },
       "reasons": []
@@ -2988,22 +2988,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.438,
-          "luminance_levels": 200
+          "luminance_stddev": 43.819,
+          "luminance_levels": 204
         },
         "P7000320": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.683,
-          "luminance_levels": 193
+          "luminance_stddev": 43.73,
+          "luminance_levels": 203
         },
         "P7000321": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.786,
-          "luminance_levels": 197
+          "luminance_stddev": 42.534,
+          "luminance_levels": 180
         }
       },
       "reasons": []
@@ -3016,21 +3016,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.563,
-          "luminance_levels": 201
+          "luminance_stddev": 43.385,
+          "luminance_levels": 208
         },
         "P7000323": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.851,
-          "luminance_levels": 200
+          "luminance_stddev": 46.108,
+          "luminance_levels": 198
         },
         "P7000324": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.695,
+          "luminance_stddev": 43.974,
           "luminance_levels": 197
         }
       },
@@ -3044,22 +3044,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.172,
-          "luminance_levels": 202
+          "luminance_stddev": 43.046,
+          "luminance_levels": 200
         },
         "P7000326": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.865,
-          "luminance_levels": 196
+          "luminance_stddev": 44.809,
+          "luminance_levels": 200
         },
         "P7000327": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.138,
-          "luminance_levels": 199
+          "luminance_stddev": 47.596,
+          "luminance_levels": 182
         }
       },
       "reasons": []
@@ -3072,22 +3072,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.671,
-          "luminance_levels": 206
+          "luminance_stddev": 41.46,
+          "luminance_levels": 204
         },
         "P7000329": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.655,
-          "luminance_levels": 197
+          "luminance_stddev": 41.316,
+          "luminance_levels": 199
         },
         "P7000330": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.614,
-          "luminance_levels": 199
+          "luminance_stddev": 39.517,
+          "luminance_levels": 194
         }
       },
       "reasons": []
@@ -3100,22 +3100,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.884,
-          "luminance_levels": 204
+          "luminance_stddev": 42.962,
+          "luminance_levels": 211
         },
         "P7000332": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.263,
-          "luminance_levels": 193
+          "luminance_stddev": 43.206,
+          "luminance_levels": 211
         },
         "P7000333": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.683,
-          "luminance_levels": 193
+          "luminance_stddev": 38.008,
+          "luminance_levels": 181
         }
       },
       "reasons": []
@@ -3128,22 +3128,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.384,
-          "luminance_levels": 206
+          "luminance_stddev": 40.389,
+          "luminance_levels": 208
         },
         "P7000335": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.649,
-          "luminance_levels": 199
+          "luminance_stddev": 40.322,
+          "luminance_levels": 206
         },
         "P7000336": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.916,
-          "luminance_levels": 198
+          "luminance_stddev": 41.389,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -3156,22 +3156,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.836,
+          "luminance_stddev": 41.015,
           "luminance_levels": 204
         },
         "P7000338": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.876,
-          "luminance_levels": 199
+          "luminance_stddev": 41.506,
+          "luminance_levels": 205
         },
         "P7000339": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.394,
-          "luminance_levels": 196
+          "luminance_stddev": 40.566,
+          "luminance_levels": 204
         }
       },
       "reasons": []
@@ -3184,22 +3184,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 30.97,
-          "luminance_levels": 236
+          "luminance_stddev": 36.656,
+          "luminance_levels": 224
         },
         "P7000341": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.624,
-          "luminance_levels": 240
+          "luminance_stddev": 38.057,
+          "luminance_levels": 236
         },
         "P7000342": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.47,
-          "luminance_levels": 227
+          "luminance_stddev": 36.711,
+          "luminance_levels": 232
         }
       },
       "reasons": []
@@ -3212,22 +3212,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.526,
-          "luminance_levels": 200
+          "luminance_stddev": 34.872,
+          "luminance_levels": 202
         },
         "P7000344": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.873,
-          "luminance_levels": 225
+          "luminance_stddev": 35.824,
+          "luminance_levels": 203
         },
         "P7000345": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.005,
-          "luminance_levels": 208
+          "luminance_stddev": 36.887,
+          "luminance_levels": 204
         }
       },
       "reasons": []
@@ -3240,21 +3240,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.761,
-          "luminance_levels": 202
+          "luminance_stddev": 35.645,
+          "luminance_levels": 204
         },
         "P7000347": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.052,
-          "luminance_levels": 225
+          "luminance_stddev": 35.436,
+          "luminance_levels": 205
         },
         "P7000348": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.738,
+          "luminance_stddev": 37.548,
           "luminance_levels": 206
         }
       },
@@ -3268,21 +3268,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.504,
+          "luminance_stddev": 35.29,
           "luminance_levels": 204
         },
         "P7000350": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.647,
-          "luminance_levels": 233
+          "luminance_stddev": 35.001,
+          "luminance_levels": 204
         },
         "P7000351": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.3,
+          "luminance_stddev": 36.076,
           "luminance_levels": 208
         }
       },
@@ -3296,22 +3296,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.05,
-          "luminance_levels": 233
+          "luminance_stddev": 47.133,
+          "luminance_levels": 248
         },
         "P7000353": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.761,
-          "luminance_levels": 226
+          "luminance_stddev": 49.05,
+          "luminance_levels": 212
         },
         "P7000354": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 58.014,
-          "luminance_levels": 240
+          "luminance_stddev": 38.756,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -3324,22 +3324,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.687,
+          "luminance_stddev": 40.423,
           "luminance_levels": 198
         },
         "P7000356": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.546,
-          "luminance_levels": 233
+          "luminance_stddev": 48.258,
+          "luminance_levels": 224
         },
         "P7000357": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.745,
-          "luminance_levels": 221
+          "luminance_stddev": 41.398,
+          "luminance_levels": 196
         }
       },
       "reasons": []
@@ -3352,22 +3352,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.521,
-          "luminance_levels": 201
+          "luminance_stddev": 42.441,
+          "luminance_levels": 205
         },
         "P7000359": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.969,
-          "luminance_levels": 228
+          "luminance_stddev": 47.926,
+          "luminance_levels": 220
         },
         "P7000360": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.663,
-          "luminance_levels": 208
+          "luminance_stddev": 40.315,
+          "luminance_levels": 205
         }
       },
       "reasons": []
@@ -3380,22 +3380,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.41,
-          "luminance_levels": 214
+          "luminance_stddev": 41.316,
+          "luminance_levels": 209
         },
         "P7000362": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.068,
-          "luminance_levels": 222
+          "luminance_stddev": 50.499,
+          "luminance_levels": 225
         },
         "P7000363": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.061,
-          "luminance_levels": 225
+          "luminance_stddev": 43.668,
+          "luminance_levels": 224
         }
       },
       "reasons": []
@@ -3408,22 +3408,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.863,
-          "luminance_levels": 216
+          "luminance_stddev": 37.918,
+          "luminance_levels": 223
         },
         "P7000365": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.125,
-          "luminance_levels": 228
+          "luminance_stddev": 38.32,
+          "luminance_levels": 234
         },
         "P7000366": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.369,
-          "luminance_levels": 225
+          "luminance_stddev": 36.26,
+          "luminance_levels": 229
         }
       },
       "reasons": []
@@ -3436,22 +3436,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.166,
+          "luminance_stddev": 35.285,
           "luminance_levels": 201
         },
         "P7000368": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.121,
+          "luminance_stddev": 36.408,
           "luminance_levels": 204
         },
         "P7000369": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.418,
-          "luminance_levels": 202
+          "luminance_stddev": 38.243,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -3464,22 +3464,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.454,
-          "luminance_levels": 201
+          "luminance_stddev": 34.573,
+          "luminance_levels": 203
         },
         "P7000371": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.668,
-          "luminance_levels": 215
+          "luminance_stddev": 39.057,
+          "luminance_levels": 207
         },
         "P7000372": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.655,
-          "luminance_levels": 206
+          "luminance_stddev": 38.385,
+          "luminance_levels": 205
         }
       },
       "reasons": []
@@ -3492,22 +3492,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.156,
-          "luminance_levels": 199
+          "luminance_stddev": 35.176,
+          "luminance_levels": 200
         },
         "P7000374": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.102,
-          "luminance_levels": 222
+          "luminance_stddev": 37.633,
+          "luminance_levels": 205
         },
         "P7000375": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.488,
-          "luminance_levels": 207
+          "luminance_stddev": 37.945,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -3520,22 +3520,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.538,
-          "luminance_levels": 200
+          "luminance_stddev": 34.514,
+          "luminance_levels": 202
         },
         "P7000377": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.105,
-          "luminance_levels": 203
+          "luminance_stddev": 36.211,
+          "luminance_levels": 210
         },
         "P7000378": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.726,
-          "luminance_levels": 201
+          "luminance_stddev": 37.548,
+          "luminance_levels": 209
         }
       },
       "reasons": []
@@ -3548,22 +3548,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.926,
-          "luminance_levels": 203
+          "luminance_stddev": 40.007,
+          "luminance_levels": 178
         },
         "P7000380": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.717,
-          "luminance_levels": 198
+          "luminance_stddev": 36.411,
+          "luminance_levels": 175
         },
         "P7000381": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 62.386,
-          "luminance_levels": 224
+          "luminance_stddev": 71.821,
+          "luminance_levels": 229
         }
       },
       "reasons": []
@@ -3576,22 +3576,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.517,
-          "luminance_levels": 205
+          "luminance_stddev": 38.469,
+          "luminance_levels": 204
         },
         "P7000383": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.4,
-          "luminance_levels": 196
+          "luminance_stddev": 37.561,
+          "luminance_levels": 221
         },
         "P7000384": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.028,
-          "luminance_levels": 194
+          "luminance_stddev": 34.429,
+          "luminance_levels": 203
         }
       },
       "reasons": []
@@ -3604,22 +3604,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.313,
-          "luminance_levels": 197
+          "luminance_stddev": 42.35,
+          "luminance_levels": 198
         },
         "P7000386": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.868,
-          "luminance_levels": 200
+          "luminance_stddev": 42.177,
+          "luminance_levels": 234
         },
         "P7000387": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.263,
-          "luminance_levels": 203
+          "luminance_stddev": 35.335,
+          "luminance_levels": 199
         }
       },
       "reasons": []
@@ -3632,22 +3632,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.485,
-          "luminance_levels": 197
+          "luminance_stddev": 39.799,
+          "luminance_levels": 200
         },
         "P7000389": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.107,
-          "luminance_levels": 218
+          "luminance_stddev": 38.334,
+          "luminance_levels": 203
         },
         "P7000390": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.077,
-          "luminance_levels": 205
+          "luminance_stddev": 35.184,
+          "luminance_levels": 198
         }
       },
       "reasons": []
@@ -3660,22 +3660,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 54.167,
-          "luminance_levels": 244
+          "luminance_stddev": 49.363,
+          "luminance_levels": 236
         },
         "P7000392": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.995,
-          "luminance_levels": 214
+          "luminance_stddev": 36.968,
+          "luminance_levels": 181
         },
         "P7000393": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 59.522,
-          "luminance_levels": 227
+          "luminance_stddev": 67.089,
+          "luminance_levels": 219
         }
       },
       "reasons": []
@@ -3688,22 +3688,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.848,
-          "luminance_levels": 206
+          "luminance_stddev": 35.203,
+          "luminance_levels": 228
         },
         "P7000395": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.724,
-          "luminance_levels": 196
+          "luminance_stddev": 39.705,
+          "luminance_levels": 212
         },
         "P7000396": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.001,
-          "luminance_levels": 199
+          "luminance_stddev": 33.707,
+          "luminance_levels": 215
         }
       },
       "reasons": []
@@ -3716,22 +3716,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.141,
-          "luminance_levels": 207
+          "luminance_stddev": 39.203,
+          "luminance_levels": 195
         },
         "P7000398": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.234,
-          "luminance_levels": 196
+          "luminance_stddev": 39.311,
+          "luminance_levels": 207
         },
         "P7000399": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.544,
-          "luminance_levels": 206
+          "luminance_stddev": 35.795,
+          "luminance_levels": 196
         }
       },
       "reasons": []
@@ -4416,22 +4416,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.894,
-          "luminance_levels": 185
+          "luminance_stddev": 40.409,
+          "luminance_levels": 225
         },
         "P7000473": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.943,
-          "luminance_levels": 194
+          "luminance_stddev": 34.839,
+          "luminance_levels": 212
         },
         "P7000474": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 75.243,
-          "luminance_levels": 229
+          "luminance_stddev": 76.586,
+          "luminance_levels": 253
         }
       },
       "reasons": []
@@ -4444,22 +4444,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 43.179,
-          "luminance_levels": 195
+          "luminance_stddev": 38.278,
+          "luminance_levels": 216
         },
         "P7000476": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.717,
-          "luminance_levels": 177
+          "luminance_stddev": 36.302,
+          "luminance_levels": 205
         },
         "P7000477": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.43,
-          "luminance_levels": 176
+          "luminance_stddev": 36.961,
+          "luminance_levels": 205
         }
       },
       "reasons": []
@@ -4472,22 +4472,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 41.024,
-          "luminance_levels": 205
+          "luminance_stddev": 39.001,
+          "luminance_levels": 209
         },
         "P7000479": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 57.003,
-          "luminance_levels": 187
+          "luminance_stddev": 37.392,
+          "luminance_levels": 207
         },
         "P7000480": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.282,
-          "luminance_levels": 195
+          "luminance_stddev": 35.516,
+          "luminance_levels": 199
         }
       },
       "reasons": []
@@ -4500,22 +4500,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 42.015,
-          "luminance_levels": 197
+          "luminance_stddev": 41.135,
+          "luminance_levels": 221
         },
         "P7000482": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.914,
-          "luminance_levels": 182
+          "luminance_stddev": 36.992,
+          "luminance_levels": 203
         },
         "P7000483": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.099,
-          "luminance_levels": 197
+          "luminance_stddev": 34.771,
+          "luminance_levels": 207
         }
       },
       "reasons": []
@@ -4528,22 +4528,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.941,
-          "luminance_levels": 206
+          "luminance_stddev": 31.44,
+          "luminance_levels": 212
         },
         "P7000485": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.081,
-          "luminance_levels": 212
+          "luminance_stddev": 27.536,
+          "luminance_levels": 215
         },
         "P7000486": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.889,
-          "luminance_levels": 224
+          "luminance_stddev": 71.424,
+          "luminance_levels": 253
         }
       },
       "reasons": []
@@ -4556,22 +4556,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.586,
-          "luminance_levels": 204
+          "luminance_stddev": 34.53,
+          "luminance_levels": 208
         },
         "P7000488": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.356,
-          "luminance_levels": 207
+          "luminance_stddev": 36.038,
+          "luminance_levels": 209
         },
         "P7000489": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.552,
-          "luminance_levels": 203
+          "luminance_stddev": 33.609,
+          "luminance_levels": 214
         }
       },
       "reasons": []
@@ -4584,22 +4584,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.184,
-          "luminance_levels": 208
+          "luminance_stddev": 32.732,
+          "luminance_levels": 206
         },
         "P7000491": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.891,
-          "luminance_levels": 205
+          "luminance_stddev": 29.039,
+          "luminance_levels": 216
         },
         "P7000492": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 68.427,
-          "luminance_levels": 227
+          "luminance_stddev": 69.343,
+          "luminance_levels": 243
         }
       },
       "reasons": []
@@ -4612,22 +4612,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.064,
+          "luminance_stddev": 35.204,
           "luminance_levels": 205
         },
         "P7000494": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.784,
-          "luminance_levels": 202
+          "luminance_stddev": 33.866,
+          "luminance_levels": 205
         },
         "P7000495": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.98,
-          "luminance_levels": 204
+          "luminance_stddev": 32.698,
+          "luminance_levels": 206
         }
       },
       "reasons": []
@@ -4640,22 +4640,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.415,
-          "luminance_levels": 210
+          "luminance_stddev": 35.435,
+          "luminance_levels": 212
         },
         "P7000497": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.279,
-          "luminance_levels": 208
+          "luminance_stddev": 35.592,
+          "luminance_levels": 210
         },
         "P7000498": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.204,
-          "luminance_levels": 203
+          "luminance_stddev": 33.478,
+          "luminance_levels": 212
         }
       },
       "reasons": []
@@ -4668,22 +4668,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.633,
-          "luminance_levels": 205
+          "luminance_stddev": 35.135,
+          "luminance_levels": 209
         },
         "P7000500": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.44,
-          "luminance_levels": 210
+          "luminance_stddev": 36.608,
+          "luminance_levels": 213
         },
         "P7000501": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.964,
-          "luminance_levels": 199
+          "luminance_stddev": 34.649,
+          "luminance_levels": 211
         }
       },
       "reasons": []
@@ -4696,22 +4696,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.247,
-          "luminance_levels": 221
+          "luminance_stddev": 44.153,
+          "luminance_levels": 235
         },
         "P7000503": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.285,
-          "luminance_levels": 229
+          "luminance_stddev": 31.956,
+          "luminance_levels": 222
         },
         "P7000504": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 57.557,
-          "luminance_levels": 237
+          "luminance_stddev": 52.253,
+          "luminance_levels": 227
         }
       },
       "reasons": []
@@ -4724,22 +4724,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.15,
-          "luminance_levels": 211
+          "luminance_stddev": 31.372,
+          "luminance_levels": 205
         },
         "P7000506": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.452,
-          "luminance_levels": 210
+          "luminance_stddev": 34.026,
+          "luminance_levels": 233
         },
         "P7000507": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.392,
-          "luminance_levels": 206
+          "luminance_stddev": 28.122,
+          "luminance_levels": 234
         }
       },
       "reasons": []
@@ -4752,21 +4752,21 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.346,
-          "luminance_levels": 206
+          "luminance_stddev": 33.324,
+          "luminance_levels": 215
         },
         "P7000509": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.461,
-          "luminance_levels": 209
+          "luminance_stddev": 34.885,
+          "luminance_levels": 221
         },
         "P7000510": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.309,
+          "luminance_stddev": 29.463,
           "luminance_levels": 212
         }
       },
@@ -4780,22 +4780,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.995,
-          "luminance_levels": 210
+          "luminance_stddev": 33.467,
+          "luminance_levels": 225
         },
         "P7000512": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.991,
-          "luminance_levels": 209
+          "luminance_stddev": 34.286,
+          "luminance_levels": 246
         },
         "P7000513": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.634,
-          "luminance_levels": 199
+          "luminance_stddev": 29.0,
+          "luminance_levels": 228
         }
       },
       "reasons": []
@@ -4808,22 +4808,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.554,
-          "luminance_levels": 209
+          "luminance_stddev": 27.65,
+          "luminance_levels": 235
         },
         "P7000515": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.713,
-          "luminance_levels": 231
+          "luminance_stddev": 31.864,
+          "luminance_levels": 200
         },
         "P7000516": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 63.263,
-          "luminance_levels": 230
+          "luminance_stddev": 66.684,
+          "luminance_levels": 225
         }
       },
       "reasons": []
@@ -4836,22 +4836,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.082,
-          "luminance_levels": 212
+          "luminance_stddev": 35.156,
+          "luminance_levels": 222
         },
         "P7000518": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.6,
-          "luminance_levels": 208
+          "luminance_stddev": 26.727,
+          "luminance_levels": 224
         },
         "P7000519": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.841,
-          "luminance_levels": 204
+          "luminance_stddev": 26.389,
+          "luminance_levels": 238
         }
       },
       "reasons": []
@@ -4864,22 +4864,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.886,
-          "luminance_levels": 208
+          "luminance_stddev": 35.671,
+          "luminance_levels": 210
         },
         "P7000521": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.103,
-          "luminance_levels": 202
+          "luminance_stddev": 34.438,
+          "luminance_levels": 199
         },
         "P7000522": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.147,
-          "luminance_levels": 202
+          "luminance_stddev": 34.408,
+          "luminance_levels": 206
         }
       },
       "reasons": []
@@ -4892,22 +4892,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.2,
-          "luminance_levels": 207
+          "luminance_stddev": 36.839,
+          "luminance_levels": 208
         },
         "P7000524": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.176,
-          "luminance_levels": 210
+          "luminance_stddev": 35.672,
+          "luminance_levels": 205
         },
         "P7000525": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.692,
-          "luminance_levels": 204
+          "luminance_stddev": 27.632,
+          "luminance_levels": 216
         }
       },
       "reasons": []
@@ -4920,22 +4920,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.043,
-          "luminance_levels": 229
+          "luminance_stddev": 35.509,
+          "luminance_levels": 238
         },
         "P7000527": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.055,
-          "luminance_levels": 221
+          "luminance_stddev": 32.11,
+          "luminance_levels": 181
         },
         "P7000528": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 61.341,
-          "luminance_levels": 235
+          "luminance_stddev": 69.261,
+          "luminance_levels": 221
         }
       },
       "reasons": []
@@ -4948,22 +4948,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.756,
-          "luminance_levels": 196
+          "luminance_stddev": 38.914,
+          "luminance_levels": 212
         },
         "P7000530": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.816,
-          "luminance_levels": 212
+          "luminance_stddev": 34.64,
+          "luminance_levels": 218
         },
         "P7000531": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.159,
-          "luminance_levels": 196
+          "luminance_stddev": 39.972,
+          "luminance_levels": 228
         }
       },
       "reasons": []
@@ -4976,22 +4976,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.564,
-          "luminance_levels": 208
+          "luminance_stddev": 39.715,
+          "luminance_levels": 210
         },
         "P7000533": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.011,
-          "luminance_levels": 205
+          "luminance_stddev": 41.794,
+          "luminance_levels": 178
         },
         "P7000534": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.112,
-          "luminance_levels": 198
+          "luminance_stddev": 28.182,
+          "luminance_levels": 211
         }
       },
       "reasons": []
@@ -5004,22 +5004,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.02,
-          "luminance_levels": 206
+          "luminance_stddev": 41.487,
+          "luminance_levels": 202
         },
         "P7000536": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 40.213,
-          "luminance_levels": 217
+          "luminance_stddev": 36.479,
+          "luminance_levels": 214
         },
         "P7000537": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.59,
-          "luminance_levels": 202
+          "luminance_stddev": 38.411,
+          "luminance_levels": 241
         }
       },
       "reasons": []
@@ -5032,22 +5032,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.226,
-          "luminance_levels": 213
+          "luminance_stddev": 30.105,
+          "luminance_levels": 219
         },
         "P7000539": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.539,
-          "luminance_levels": 233
+          "luminance_stddev": 29.19,
+          "luminance_levels": 238
         },
         "P7000540": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 58.342,
-          "luminance_levels": 229
+          "luminance_stddev": 63.493,
+          "luminance_levels": 216
         }
       },
       "reasons": []
@@ -5060,22 +5060,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.389,
-          "luminance_levels": 210
+          "luminance_stddev": 35.244,
+          "luminance_levels": 206
         },
         "P7000542": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.62,
-          "luminance_levels": 207
+          "luminance_stddev": 26.367,
+          "luminance_levels": 214
         },
         "P7000543": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.032,
-          "luminance_levels": 202
+          "luminance_stddev": 27.151,
+          "luminance_levels": 217
         }
       },
       "reasons": []
@@ -5088,22 +5088,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 36.619,
-          "luminance_levels": 212
+          "luminance_stddev": 35.48,
+          "luminance_levels": 204
         },
         "P7000545": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.794,
-          "luminance_levels": 205
+          "luminance_stddev": 33.389,
+          "luminance_levels": 215
         },
         "P7000546": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.924,
-          "luminance_levels": 203
+          "luminance_stddev": 32.929,
+          "luminance_levels": 199
         }
       },
       "reasons": []
@@ -5116,22 +5116,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.503,
-          "luminance_levels": 208
+          "luminance_stddev": 33.893,
+          "luminance_levels": 219
         },
         "P7000548": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.882,
-          "luminance_levels": 211
+          "luminance_stddev": 32.043,
+          "luminance_levels": 221
         },
         "P7000549": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.796,
-          "luminance_levels": 202
+          "luminance_stddev": 27.424,
+          "luminance_levels": 227
         }
       },
       "reasons": []
@@ -5144,22 +5144,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 35.671,
-          "luminance_levels": 212
+          "luminance_stddev": 33.713,
+          "luminance_levels": 229
         },
         "P7000551": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 32.784,
-          "luminance_levels": 230
+          "luminance_stddev": 32.4,
+          "luminance_levels": 225
         },
         "P7000552": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 56.436,
-          "luminance_levels": 234
+          "luminance_stddev": 60.762,
+          "luminance_levels": 215
         }
       },
       "reasons": []
@@ -5172,22 +5172,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.74,
-          "luminance_levels": 214
+          "luminance_stddev": 28.294,
+          "luminance_levels": 221
         },
         "P7000554": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.52,
-          "luminance_levels": 224
+          "luminance_stddev": 35.441,
+          "luminance_levels": 251
         },
         "P7000555": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 30.382,
-          "luminance_levels": 202
+          "luminance_stddev": 30.052,
+          "luminance_levels": 229
         }
       },
       "reasons": []
@@ -5200,22 +5200,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.575,
-          "luminance_levels": 207
+          "luminance_stddev": 35.985,
+          "luminance_levels": 226
         },
         "P7000557": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 38.865,
-          "luminance_levels": 212
+          "luminance_stddev": 36.289,
+          "luminance_levels": 231
         },
         "P7000558": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.666,
-          "luminance_levels": 206
+          "luminance_stddev": 32.224,
+          "luminance_levels": 215
         }
       },
       "reasons": []
@@ -5228,22 +5228,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 39.135,
-          "luminance_levels": 206
+          "luminance_stddev": 35.084,
+          "luminance_levels": 226
         },
         "P7000560": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 37.5,
-          "luminance_levels": 228
+          "luminance_stddev": 34.215,
+          "luminance_levels": 241
         },
         "P7000561": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 31.87,
-          "luminance_levels": 200
+          "luminance_stddev": 29.699,
+          "luminance_levels": 235
         }
       },
       "reasons": []
@@ -5256,22 +5256,22 @@
           "seed": "1001",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.735,
-          "luminance_levels": 210
+          "luminance_stddev": 34.504,
+          "luminance_levels": 200
         },
         "P7000563": {
           "seed": "2002",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 34.704,
-          "luminance_levels": 210
+          "luminance_stddev": 33.84,
+          "luminance_levels": 200
         },
         "P7000564": {
           "seed": "3003",
           "width": 1024,
           "height": 1024,
-          "luminance_stddev": 33.23,
-          "luminance_levels": 199
+          "luminance_stddev": 32.068,
+          "luminance_levels": 203
         }
       },
       "reasons": []

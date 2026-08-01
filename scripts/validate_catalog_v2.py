@@ -487,15 +487,23 @@ def validate_catalog_v2(catalog_root: Path = DEFAULT_CATALOG) -> list[str]:
 
             lifecycle = _mapping(lifecycles.get(item.get("lifecycle_ref")))
             validation = _mapping(legacy.get("validation"))
-            if lifecycle.get("current_status") != validation.get("status"):
+            legacy_status = validation.get("status")
+            if lifecycle.get("current_status") != legacy_status:
                 errors.append(
                     f"{context}: {expected_item_id!r} lifecycle status does not match legacy validation"
                 )
-            evaluation = _mapping(evaluations.get(item.get("evaluation_ref")))
-            if evaluation.get("distinct_seed_count") != validation.get("tested_seeds"):
-                errors.append(
-                    f"{context}: {expected_item_id!r} seed count does not match legacy validation"
-                )
+            # A freshly generated item carries no evaluation yet -- the same
+            # exemption the per-item lifecycle check above already grants via
+            # evaluation_required_statuses. Without it, adding any new
+            # not-yet-evaluated item to a legacy-covered family (e.g.
+            # art_styles.yaml) would fail here even though it is not supposed
+            # to have an evaluation_ref at all.
+            if legacy_status in evaluation_required:
+                evaluation = _mapping(evaluations.get(item.get("evaluation_ref")))
+                if evaluation.get("distinct_seed_count") != validation.get("tested_seeds"):
+                    errors.append(
+                        f"{context}: {expected_item_id!r} seed count does not match legacy validation"
+                    )
 
     for evaluation_id, raw_evaluation in evaluations.items():
         evaluation = _mapping(raw_evaluation)

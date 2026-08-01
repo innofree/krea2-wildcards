@@ -1,0 +1,42 @@
+{
+  "case_006": [
+    "pass",
+    "true ~90deg profile, single eye visible, chest_up crop stable across all 3 seeds"
+  ],
+  "case_031": [
+    "pass",
+    "frontal eye-level, hands on hips, chest_up crop consistent across seeds"
+  ],
+  "case_056": [
+    "hold",
+    "close_face crop far too wide, shows down to elbows/forearms like head_shoulders, not tight face-only"
+  ],
+  "case_081": [
+    "pass",
+    "full_length crown-to-feet frontal, consistent scale/pose across 3 seeds"
+  ],
+  "case_106": [
+    "pass",
+    "rear three-quarter turn with profile face and back visible, head_shoulders crop stable; tiny bg patch artifact"
+  ],
+  "case_131": [
+    "hold",
+    "correct profile pose and thigh_up crop but stray white vertical bars in bg (seeds 1001, 3003)"
+  ],
+  "case_156": [
+    "hold",
+    "thigh_up mislabeled crop renders as chest_up, no legs visible at all in any seed"
+  ],
+  "case_181": [
+    "hold",
+    "vertical_full_scene barely differs from full_length scale, turn unclear/frontal, inconsistent art style across seeds"
+  ],
+  "case_206": [
+    "pass",
+    "waist_up frontal gesture pose, consistent crop and hands across seeds"
+  ],
+  "case_231": [
+    "hold",
+    "wide_environmental renders as full side profile instead of expected slight_low frontal-ish stance"
+  ]
+}

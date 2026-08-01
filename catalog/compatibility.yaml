@@ -31,6 +31,15 @@ style_families:
   editorial_fashion:
     recommended: [clean_silhouette, controlled_palette, deliberate_pose, spacious_composition]
     avoid: [chibi_proportions, chaotic_particles, dense_fantasy_ornament]
+  art_deco:
+    recommended: [gilded_linework, jewel_flat_palette, symmetrical_framing, poster_flat_lighting]
+    avoid: [soft_watercolor_bleed, rustic_grain, chaotic_asymmetry]
+  mid_century_modern:
+    recommended: [flat_graphic_silhouette, warm_retro_palette, screenprint_grain, atomic_motif]
+    avoid: [photorealistic_gloss, gothic_ornament, neon_bloom]
+  y2k_futurism:
+    recommended: [chrome_reflective_surface, holographic_shimmer, translucent_plastic, cyber_grid_accents]
+    avoid: [rustic_watercolor, antique_parchment, matte_charcoal]
 conflicts:
   hard_photorealism: [flat_cel_rendering, monochrome_screen_tone]
   rough_charcoal: [clean_vector_linework, glossy_mobile_rendering]
