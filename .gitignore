@@ -23,15 +23,21 @@ tests/prompt_matrix/*.jsonl
 !tests/prompt_matrix/phase6_presets.jsonl
 !tests/prompt_matrix/phase6_random_utility.jsonl
 !tests/prompt_matrix/phase6_benchmark.jsonl
-# Phase 7 per-image run records: ~10,453 files and 36 MB across the ten axes.
+# Per-image run records: 17,584 images and 20 GB across every evaluation run.
 # run-state.json already carries every resolved_prompt_sha256, workflow_sha256,
 # and image_sha256, and the matrix is deterministically re-exportable, so the
-# evidence chain stays verifiable without committing these.
+# evidence chain stays verifiable without committing these. The review contact
+# sheets live in the innofree/krea2-wildcards dataset on the Hugging Face Hub.
 tests/reports/phase7_*/runs/
 tests/reports/**/*.png
 tests/reports/**/*.jpg
 tests/reports/**/*.jpeg
 tests/reports/**/*.webp
+# Except the two images the reproducibility proof attests to. A proof nobody can
+# recheck is not a proof, and test_reproducibility hashes both of these, so a
+# fresh clone cannot verify determinism without them. 1.5 MB for the pair.
+!tests/reports/production_smoke_v0_1/runs/crystal_iris_pastel_seed_6006/image_01.png
+!tests/reports/reproducibility_v0_1/repeat/runs/crystal_iris_pastel_seed_6006/image_01.png
 
 # Transient codex/gstack skill scratch: gstack-paths resolves TMP_ROOT into the
 # repo, and codex stderr captures contain local account identifiers that

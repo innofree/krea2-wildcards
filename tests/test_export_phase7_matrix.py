@@ -79,74 +79,70 @@ def test_axis_coverage_matches_the_planned_counts() -> None:
         assert len(select_axis_items(axis)) == expected, axis
 
 
+def _axis_items(axis: str, statuses: set[str]) -> list[tuple[str, dict]]:
+    """select_axis_items, but an empty selection is [] instead of a raise."""
+    try:
+        return select_axis_items(axis, statuses=statuses)
+    except ValueError:
+        return []
+
+
 def test_promoted_axes_have_no_generated_items_left() -> None:
-    """A promoted axis must be fully decided: nothing left in generated."""
-    promoted = {"lighting", "background", "character_design", "pose", "linework_coloring"}
-    for axis in promoted:
-        with pytest.raises(ValueError, match="no matching items"):
-            select_axis_items(axis, statuses={"generated"})
-        decided = select_axis_items(axis, statuses={"approved", "rejected"})
-        assert len(decided) == EXPECTED_ITEM_COUNTS[axis], axis
+    """A promoted axis must be fully decided: nothing left in generated.
 
-    for axis in set(PHASE7_AXIS_CATALOGS) - promoted:
-        pending = select_axis_items(axis, statuses={"generated"})
-        assert len(pending) == EXPECTED_ITEM_COUNTS[axis], axis
-
-
-def test_proven_axis_prompts_are_identical_to_phase6() -> None:
-    """A promotion run must submit the prompt the coverage gate already passed.
-
-    camera is excluded: its profile contract was repaired, so it now carries the
-    Phase 7 digest and is covered by the camera-specific tests below.
+    Which axes count as promoted is read from the catalog rather than hardcoded,
+    so a promotion and the subject fragmentation that sent all eleven axes back
+    to generated both move the expectation instead of breaking the test.
     """
-    expected = {
-        item_id: prompt
-        for item_id, prompt in phase6_prompts().items()
-        if not item_id.startswith("camera_")
-    }
-    assert len(expected) == 80
-
-    compared = 0
-    for axis in PROVEN_AXES:
-        rendered = {
-            row["style_id"]: row["prompt"] for row in mass_axis_rows(axis)
-        }
-        for item_id, prompt in expected.items():
-            if item_id not in rendered:
-                continue
-            compared += 1
-            assert rendered[item_id] == prompt, (axis, item_id)
-    assert compared == len(expected)
+    for axis in sorted(PHASE7_AXIS_CATALOGS):
+        counted = sum(
+            len(_axis_items(axis, {status}))
+            for status in ("generated", "testing", "approved", "rejected")
+        )
+        assert counted == EXPECTED_ITEM_COUNTS[axis], axis
+        if _axis_items(axis, {"approved"}):
+            assert not _axis_items(axis, {"generated"}), axis
 
 
-def test_camera_non_profile_prompts_still_match_phase6() -> None:
-    """The repair must not disturb the 208 items Phase 6 rendered correctly."""
-    expected = phase6_prompts("camera")
-    assert len(expected) == 16
-    rendered = {row["style_id"]: row["prompt"] for row in mass_axis_rows("camera")}
-    matched = 0
-    for item_id, prompt in expected.items():
-        if "clean_profile" in item_id:
-            assert rendered[item_id] != prompt, item_id
-        else:
-            assert rendered[item_id] == prompt, item_id
-            matched += 1
-    assert matched == 11
-
-
-def test_preset_prompts_are_identical_to_the_phase6_conflict_audit() -> None:
-    expected: dict[str, str] = {}
+def _phase6_preset_prompts() -> dict[str, str]:
+    prompts: dict[str, str] = {}
     for line in PHASE6_PRESETS.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         row = json.loads(line)
-        expected[row["factors"]["preset"]] = row["prompt"]
-    assert len(expected) == 100
+        prompts[row["factors"]["preset"]] = row["prompt"]
+    return prompts
 
-    rendered = {row["style_id"]: row["prompt"] for row in mass_axis_rows("preset")}
-    assert set(expected) <= set(rendered)
-    for preset_id, prompt in expected.items():
-        assert rendered[preset_id] == prompt, preset_id
+
+def test_phase6_prompt_corpus_survives_as_a_superseded_baseline() -> None:
+    """The phase6 jsonl files record what Phase 6 actually submitted, so they stay.
+
+    These files used to back an identity guard: a promotion run had to submit the
+    exact prompt the coverage gate already passed. The subject fragmentation
+    retired that guard rather than broke it. Every catalog prompt dropped its
+    "An adult subject ..." opening, so no current rendering can match a recorded
+    one, and re-exporting the baselines to make them match would destroy the
+    record of what was tested.
+
+    What keeps the retirement honest is the second half of this test: the guard
+    only ever protected promotion runs, and nothing is promoted right now, so
+    there is no run that could be submitting a stale prompt. Restoring the guard
+    means recording a fresh baseline once a new coverage gate passes.
+    """
+    single_axis = phase6_prompts()
+    non_camera = {k: v for k, v in single_axis.items() if not k.startswith("camera_")}
+    assert len(non_camera) == 80
+    assert len(phase6_prompts("camera")) == 16
+    assert len(_phase6_preset_prompts()) == 100
+
+    for axis in PROVEN_AXES:
+        rendered = {row["style_id"]: row["prompt"] for row in mass_axis_rows(axis)}
+        for item_id, prompt in non_camera.items():
+            if item_id in rendered:
+                assert rendered[item_id] != prompt, (axis, item_id)
+
+    for axis in sorted(PHASE7_AXIS_CATALOGS):
+        assert not _axis_items(axis, {"approved"}), axis
 
 
 def test_presets_stay_on_the_complete_scene_five_seed_bar() -> None:
