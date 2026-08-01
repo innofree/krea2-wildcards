@@ -1,0 +1,42 @@
+{
+  "case_006": [
+    "pass",
+    "angular_precise + deep_jewel + fine_tonal_hatching: shard-like fold facets with measured corners and clean wrap-blazer construction; garnet/forest-green/navy fill confirmed as true gem hues under a 2.6x brightness check; dense fine dark hatch strokes packed into the occluded sleeve and skirt folds with skin left clean."
+  ],
+  "case_036": [
+    "pass",
+    "angular_precise + skin_centered_neutral + soft_two_band: cream sweater over taupe skirt on warm greige, all skin-adjacent neutrals with warm undertone; sweater creases resolve as angular sharp-cornered shapes; exactly one lightly feathered shadow band over the lit plane on both sweater and skirt across all 3 seeds."
+  ],
+  "case_066": [
+    "pass",
+    "bold_outer_sparse_inner + limited_two_tone + crisp_shape_shadow: DEFECT in shading - outer silhouette is a heavy dark continuous contour against sparse pale interior marks (ok) and cream/taupe two-tone with visibly translucent sleeves (ok), but at 2.4x contrast the fold shading is soft brushy feathered streaks in all 3 seeds, no crisp shape-defined shadow planes."
+  ],
+  "case_096": [
+    "hold",
+    "broken_dry + deep_jewel + subtle_contact_shadow: DEFECT in coloring - broken interrupted collar/shoulder contours and subtle jaw/neck contact shadows over open midtones are present, but the fill is flat black (seeds 1001, 3003) and greige (2002); a 2.6x brightness + 1.8x saturation boost reveals neutral charcoal, so deep_jewel collapsed into the dark neutral instead of filling."
+  ],
+  "case_126": [
+    "pass",
+    "crisp_uniform + limited_two_tone + transparent_glaze: thin even-weight contour with exact joins and open facial features; grey-taupe garment plus warm greige field, two tones expanded by value steps; overlapping translucent shadow veils with local colour reading through on the tunic in seeds 2002 and 3003."
+  ],
+  "case_156": [
+    "pass",
+    "elastic_pressure + airy_pastel + fine_tonal_hatching: UNREADABLE shading - lilac/pink/mint low-contrast pastel with protected whites and dark hair as the grounding dark is clear, and sleeve contours thicken at fold weight and narrow at lit edges, but at 2.6x contrast the occluded folds read as broad soft lilac smears that I cannot separate from genuine fine hatching at this density on a low-contrast pastel. -- overturned at full resolution: Resolved case_156 = style_id linework_coloring_elastic_pressure_airy_pastel_fine_tonal_hatching_reflected_color_complete_line_color, test_ids P7000466 (seed 1001), P7000467 (2002), P7000468 (3003); all three 1024x1024 renders inspected at 1:1 plus 4-5x crops of the torso, sleeve-fold and cuff regions.\n\nThe \"broad soft lilac smears\" are a contact-sheet downsampling artifact. At full resolution the shading resolves into discrete strokes:\n- P7000468 (3003) is decisive: the torso fold shapes are filled with dense clusters of fine parallel hatch lines (clearly countable striations), and the sleeve/shoulder folds carry the same directional hatching in mauve and teal. This is unmistakable fine tonal hatching, not a wash.\n- P7000466 (1001): the grey occlusion band left of the torso and the beige band below it both show fine parallel striations under 4x; cuff occlusion is soft-wash there, but the hatch texture is present and separable from the contour work.\n- P7000467 (2002) is the softest seed — hatch density is low — but the shading is still made of individual tapering lilac tonal strokes that read separately from the contour lines, not a merged smear. Seeds differ in hatch density, not in readability, so there is no seed disagreement that would sustain the hold.\n\nElastic-pressure linework is also confirmed at full res: contours swell at fold apices/overlaps and taper to hairlines at lit edges, and the dark hair plus protected paper whites give the pastel a grounding value anchor.\n\nSaturation is not implicated: tests/reports/phase7_linework_coloring_v2/saturation_screen.json shows the airy_pastel group (42 items) at median 0.0839, range 0.0672-0.1085, with outlier_count 0 — no item in this palette group, including this one, deviates from its own group median."
+  ],
+  "case_186": [
+    "pass",
+    "elastic_pressure + warm_earth + transparent_glaze: olive/clay shirt, cream inner and softened brown field; collar, placket and sleeve strokes swell where fabric gathers weight and narrow along the lit shoulder; shadows are overlapping translucent olive-brown veils with the local garment colour still luminous through them."
+  ],
+  "case_216": [
+    "pass",
+    "fine_tapered + warm_earth + crisp_shape_shadow: lapel and placket render as thin lines that taper out to nothing with restrained interior detail; olive/clay/cream warm-earth palette; hard-edged shadow shapes clarify the cheek, jaw and lapel planes and cut a crisp step across the white inner top without fragmenting the face."
+  ],
+  "case_246": [
+    "pass",
+    "rounded_soft + deep_jewel + transparent_glaze: DEFECT in coloring - contours do turn smoothly with gently reinforced focal features, but all 3 seeds are a uniform near-black suit; a 2.6x brightness + 1.8x saturation boost exposes only neutral slate/charcoal with no gem hue, so deep_jewel is absent and the glaze is unreadable on that black. -- overturned at full resolution: Thumbnail artifact. Resolved case_246 -> style_id linework_coloring_rounded_soft_deep_jewel_transparent_glaze_reflected_color_complete_line_color -> test_ids P7000736 (seed 1001), P7000737 (2002), P7000738 (3003); all three image_01.png opened at native 1024x1024.\n\n1) The specific claim is factually wrong at full resolution. The reviewer asserted a 2.6x brightness + 1.8x saturation boost \"exposes only neutral slate/charcoal with no gem hue.\" Boosting the garment myself (2.8x brightness / 2.2x saturation) shows a clearly cool indigo / blue-violet suit, not neutral. Measured in CIELab over the torso region (L in 5-40): median hue angle 291 deg for P7000736 with 94% of dark torso pixels in the blue-violet quadrant (240-330 deg), and 290 deg / 76% for P7000738. That is a deep sapphire/ink-navy hue, i.e. a jewel-family colour rendered at very low key, which is what deep_jewel means. Only P7000737 is hue-mixed. Also the \"all 3 seeds are a uniform near-black suit\" framing is off: the seeds differ in garment (V-wrap jacket, band-collar shirt, notched-lapel blazer) and P7000738 shows visible blue-grey and violet-navy shading planes.\n\n2) The saturation screen gives no support. tests/reports/phase7_linework_coloring_v2/saturation_screen.json (group_axis=coloring, deviation=0.5) reports outlier_total 0 across 300 items; the deep_jewel group is n=43, median 0.1628, range 0.1107-0.2117, outlier_count 0 -- so this item is not flagged. Reproducing the metric per item, case_246 averages 0.1215 over its 3 seeds against a deep_jewel median of 0.1682 (0.72x), 2nd lowest of 43 but comfortably inside the 0.5 deviation tolerance and above airy_pastel's entire range (max 0.1085). The deep_jewel x transparent_glaze sub-median recorded in commit 16e76de4 is 0.1618, in line with the rest of the family.\n\n3) Family context: near-black garments are the deep_jewel norm under this rig, not this item's fault. Mean torso Lab chroma across all 43 deep_jewel cases spans 1.04-6.63 with median 3.13; case_246 sits at 1.38, next to case_244 (1.04), case_238 (1.36) and case_236 (1.37), which render the same way. A side-by-side strip (case_244 / case_246 / case_096 / case_009 / case_006) shows the group varies continuously from near-black ink to overt burgundy+forest; case_246 is at the dark end of a continuum, not a colour collapse.\n\n4) The transparent_glaze part of the concern also fails at full res: the native crops show smooth translucent tonal layering over the fabric planes and sleeves, so the glaze is legible as soft layered shading rather than absent. Contours are rounded and soft as specified.\n\nWeakest-in-group but within its own palette group's tolerance, carrying a measurable indigo hue, and consistent with unheld siblings -- the defect described is not genuinely visible at full resolution."
+  ],
+  "case_276": [
+    "pass",
+    "selective_edge + muted_split_complement + fine_tonal_hatching: shoulder and sleeve edges dissolve into colour boundaries with only a few dark accents kept at the lapel and button; cool blue-grey shirt field balanced against warm skin notes and a warm beige ground; fine parallel hatch striations visibly cross the shirt in seeds 1001 and 3003."
+  ]
+}

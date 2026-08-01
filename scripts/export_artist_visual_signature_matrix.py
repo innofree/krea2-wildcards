@@ -9,7 +9,7 @@ import tempfile
 from pathlib import Path
 from typing import Any, Iterable
 
-from common import canonical_prompt_sha256, load_yaml
+from common import SUBJECT_IDENTITY, canonical_prompt_sha256, load_yaml
 from export_artist_native_matrix import validate_seeds
 from run_remote_prompt_matrix import STYLE_ID_RE, validate_job
 
@@ -81,7 +81,7 @@ REPAIR_ILLUSTRATED_BENCHMARK_FINISH = (
     "coherent illustrated anatomy, readable fingers, and no text, logos, or watermarks."
 )
 FIXED_SCENE = (
-    "Create exactly one adult woman as a standing character-design portrait framed from "
+    f"Create exactly {SUBJECT_IDENTITY}, as a standing character-design portrait framed from "
     "mid-thigh upward at eye level. Keep her face and both eyes large enough to inspect, and show "
     "both complete hands clearly near the torso. Give her a simple long-sleeve garment with broad "
     "readable surfaces for the requested palette and ornament, against a quiet uncluttered studio "
@@ -91,7 +91,7 @@ FIXED_SCENE = (
     "ornament."
 )
 REPAIR_FIXED_SCENE = (
-    "Create exactly one adult woman as a standing character-design portrait framed from "
+    f"Create exactly {SUBJECT_IDENTITY}, as a standing character-design portrait framed from "
     "mid-thigh upward at eye level, with the lower image edge crossing both thighs at mid-thigh "
     "and breathing room around the top of the head, elbows, and both complete hands. Present an "
     "accessory-free, completely exposed face and eye area, with hair and ornament arranged "
@@ -106,7 +106,7 @@ REPAIR_FIXED_SCENE = (
     "comparable while the requested signature controls the eight visual axes."
 )
 FRAMING_CALIBRATION_OPEN = (
-    "Full-body character sheet, camera far back. Exactly one adult woman stands centered. Keep "
+    f"Full-body character sheet, camera far back. Exactly {SUBJECT_IDENTITY}, stands centered. Keep "
     "her complete hair-to-shoes silhouette inside the square canvas with clear margins. Face "
     "and eyes forward; show both whole hands. Nothing touches an edge. Never zoom, crop, "
     "occlude, or cut her body."
@@ -121,7 +121,7 @@ FRAMING_CALIBRATION_CLOSE = (
     "eyes, hands visible; no text, logos, or watermarks."
 )
 SINGLE_VIEW_CALIBRATION_OPEN = (
-    "Full-body single-view, camera far back. Show exactly one adult woman once in one scene; no "
+    f"Full-body single-view, camera far back. Show exactly {SUBJECT_IDENTITY}, once in one scene; no "
     "duplicate, lineup, alternate view, front-back pair, turnaround, inset, or panel. Keep her "
     "hair-to-shoes silhouette inside the square canvas with margins. Face and eyes forward, both "
     "hands whole. Nothing touches an edge. Never zoom, crop, or occlude."
@@ -136,11 +136,11 @@ SINGLE_VIEW_CALIBRATION_CLOSE = (
     "one full silhouette, face, eyes, hands; no text, logos, or watermarks."
 )
 EDITORIAL_CALIBRATION_SCENE = (
-    "An adult fashion model holds a balanced full-length contrapposto pose on a spacious "
+    f"Exactly {SUBJECT_IDENTITY}, holds a balanced full-length contrapposto pose on a spacious "
     "warm-grey cyclorama, wearing a plain long-sleeve top and straight full-length trousers, "
     "with both hands and both feet clearly visible. Her composed direct gaze, unobstructed eyes, "
     "eye-level head-to-toe framing, fixed camera position, and generous negative space around "
-    "the complete silhouette remain unchanged. Keep exactly one complete adult figure with "
+    "the complete silhouette remain unchanged. Keep exactly one complete figure with "
     "coherent illustrated anatomy and fingers, and no text, logos, or watermarks."
 )
 EDITORIAL_CALIBRATION_LEDGER = (

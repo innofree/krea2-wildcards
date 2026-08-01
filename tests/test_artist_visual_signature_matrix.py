@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 import yaml
 
+from common import SUBJECT_IDENTITY
 from export_artist_visual_signature_matrix import (
     ARTIST_REFERENCE_RE,
     CATALOG_QUALITY_SUFFIX,
@@ -102,7 +103,7 @@ def test_real_catalog_exports_exact_generated_three_seed_matrix(
     assert all(row["test_id"].startswith("VS") for row in rows)
     for row in rows:
         prompt = row["prompt"]
-        assert "exactly one adult woman" in prompt
+        assert SUBJECT_IDENTITY in prompt
         assert (
             "standing character-design portrait framed from mid-thigh upward" in prompt
         )
@@ -192,7 +193,7 @@ def test_signature_brief_precedes_fixed_scene_for_prompt_priority(
     [row] = signature_rows(catalog, seeds=(1001,))
 
     assert row["prompt"].index("narrow architectural lines") < row["prompt"].index(
-        "Create exactly one adult woman"
+        f"Create exactly {SUBJECT_IDENTITY}"
     )
 
 

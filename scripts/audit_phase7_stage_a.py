@@ -73,7 +73,25 @@ def inspect_image(path: Path) -> tuple[list[str], dict[str, Any]]:
         "height": size[1],
         "luminance_stddev": round(stddev, 3),
         "luminance_levels": levels,
+        "mean_saturation": mean_saturation(path),
     }
+
+
+def mean_saturation(path: Path) -> float:
+    """Mean HSV saturation, reported but never scored.
+
+    plan.md 7.18 recorded a coloring value collapsing to greyscale and Stage A
+    had no measurement that would have shown it -- luminance stddev stays high
+    on a perfectly contrasty black-and-white render. This closes that blind spot
+    without inventing a threshold, because there isn't an honest one: airy_pastel
+    measures around 0.10 and limited_two_tone around 0.13 while rendering exactly
+    as named. A collapse is only visible next to the other items in the same
+    coloring family, which is a comparison for review, not a per-frame gate.
+    """
+    with Image.open(path) as image:
+        thumbnail = image.convert("RGB").resize((128, 128))
+        saturation = thumbnail.convert("HSV").getchannel("S")
+    return round(ImageStat.Stat(saturation).mean[0] / 255.0, 4)
 
 
 def audit(

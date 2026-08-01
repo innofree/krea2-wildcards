@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "kind": "resolved_prompt_matrix_run",
+  "remote": "private_comfyui",
+  "matrix": "tests/prompt_matrix/pilot_subject_anchor_v1.jsonl",
+  "matrix_sha256": "8ebf807cb340357ad518112eb4171da3bab36eee07770967e3a7bc88aadfb319",
+  "workflow": "tests/baseline/workflow.json",
+  "workflow_sha256": "6ad98782401193640afe7b8e71b7e28e8a420c07e1c1473501915cbb0f5033bb",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "queue_depth": 8,
+  "batch_size": 1,
+  "job_count": 20,
+  "completed_count": 20,
+  "style_count": 20,
+  "modes": {
+    "mass_axis_linework_coloring": 20
+  },
+  "seeds": [
+    1001
+  ],
+  "scorecard": "tests/reports/pilot_subject_anchor_v1/scorecard.csv",
+  "runs": [
+    {
+      "test_id": "P7000001",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000001/run.json"
+    },
+    {
+      "test_id": "P7000002",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_broad_blended_plane_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000002/run.json"
+    },
+    {
+      "test_id": "P7000003",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000003/run.json"
+    },
+    {
+      "test_id": "P7000004",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000004/run.json"
+    },
+    {
+      "test_id": "P7000005",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000005/run.json"
+    },
+    {
+      "test_id": "P7000006",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_fine_tonal_hatching_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000006/run.json"
+    },
+    {
+      "test_id": "P7000007",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000007/run.json"
+    },
+    {
+      "test_id": "P7000008",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_soft_two_band_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000008/run.json"
+    },
+    {
+      "test_id": "P7000009",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000009/run.json"
+    },
+    {
+      "test_id": "P7000010",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_subtle_contact_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000010/run.json"
+    },
+    {
+      "test_id": "P7000011",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000011/run.json"
+    },
+    {
+      "test_id": "P7000012",
+      "style_id": "linework_coloring_angular_precise_deep_jewel_transparent_glaze_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000012/run.json"
+    },
+    {
+      "test_id": "P7000013",
+      "style_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000013/run.json"
+    },
+    {
+      "test_id": "P7000014",
+      "style_id": "linework_coloring_angular_precise_limited_two_tone_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000014/run.json"
+    },
+    {
+      "test_id": "P7000015",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000015/run.json"
+    },
+    {
+      "test_id": "P7000016",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_airy_pastel_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000016/run.json"
+    },
+    {
+      "test_id": "P7000017",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000017/run.json"
+    },
+    {
+      "test_id": "P7000018",
+      "style_id": "linework_coloring_bold_outer_sparse_inner_cool_nocturne_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000018/run.json"
+    },
+    {
+      "test_id": "P7000019",
+      "style_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_controlled_rim_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000019/run.json"
+    },
+    {
+      "test_id": "P7000020",
+      "style_id": "linework_coloring_elastic_pressure_warm_earth_crisp_shape_shadow_reflected_color_complete_line_color",
+      "mode": "mass_axis_linework_coloring",
+      "seed": 1001,
+      "run": "tests/reports/pilot_subject_anchor_v1/runs/P7000020/run.json"
+    }
+  ]
+}

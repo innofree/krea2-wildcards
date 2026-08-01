@@ -105,8 +105,8 @@ collections:
     templates:
       - id: complete_signature
         text: >-
-          An adult portrait uses {line_language}, {face_design}, {eye_design}, {body_design},
-          {palette_language}, {light_modeling}, {framing_language}, and {ornament_language}.
+          drawn with {line_language}, {face_design}, {eye_design}, {body_design},
+          {palette_language}, {light_modeling}, {framing_language}, and {ornament_language}
     compatibility:
       avoid: [hard_photorealism]
 
@@ -185,8 +185,8 @@ collections:
     templates:
       - id: complete_style
         text: >-
-          Photorealistic adult editorial treatment: {shape_language}. Use {color_strategy},
-          {surface_character}, {atmosphere}, and {edge_language}.
+          treated with {shape_language}, {color_strategy}, {surface_character}, {atmosphere},
+          and {edge_language}
     prompt_overrides:
       style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_crisp_cut_complete_style: >-
         Build obvious diagonal planes around the figure; coat backdrop in visible dry chalk dust; drop the set into deep black evening; give shadows hard knife-cut boundaries.
@@ -352,18 +352,18 @@ collections:
         Center one large circular light pool; cover backdrop in large peeling ink patches; drop the set into deep black evening; focus face and hands while the set perimeter blurs.
     retry:
       template: >-
-        One adult full-length editorial photograph: {surface_character}; {shape_language};
+        in a full-length editorial setup: {surface_character}; {shape_language};
         {color_strategy}; {atmosphere}; {edge_language}. Keep one human only, realistic skin,
         coherent hands, believable fabric, natural proportions, cinematic depth, and no text,
         logos, or watermarks.
       dimensions:
         shape_language:
-          faceted_rhythmic: two huge diagonal light slabs crossed behind the adult
-          geometric_slender: exactly three empty narrow light columns behind the adult
+          faceted_rhythmic: two huge diagonal light slabs crossed behind the figure
+          geometric_slender: exactly three empty narrow light columns behind the figure
           minimal_quiet: one simple material backdrop and broad empty space
           organic_flowing: one curved light path and two flowing set shapes
-          ornamental_layered: a layered mineral arch and scalloped border around the adult
-          rounded_graphic: one huge clean-edged disc centered behind the adult
+          ornamental_layered: a layered mineral arch and scalloped border around the figure
+          rounded_graphic: one huge clean-edged disc centered behind the figure
         color_strategy:
           low_contrast_pastel: only pale blush, powder blue, and ivory
           warm_cool_split: amber and blue split across subject and set
@@ -403,20 +403,20 @@ collections:
         Make the disc thick transparent glass with a visible rim and strongly refracted backdrop
     retry_prompt_replacements:
       style_pack_expansion_faceted_rhythmic_warm_cool_split_chalk_matte_nocturnal_tension_etched_accent_complete_style: >-
-        One adult full-length editorial photograph before two huge chalk slabs crossed as an X: one
+        in a full-length editorial setup before two huge chalk slabs crossed as an X: one
         solid amber-orange slab runs from upper left to lower right and one solid cobalt-blue slab runs
         from upper right to lower left. Both show thick dry strokes and loose dust. A deep-black surround
         and one narrow overhead light create nocturnal tension. A thin white etched line follows only
         the slab and floor edges. Keep natural unmarked skin, coherent hands, believable fabric, natural
         proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_faceted_rhythmic_warm_cool_split_glazed_luminous_nocturnal_tension_etched_accent_complete_style: >-
-        One adult full-length editorial photograph before two huge transparent amber-and-blue glass
+        in a full-length editorial setup before two huge transparent amber-and-blue glass
         slabs crossed as an X, with thick visible rims and strong backdrop refraction. A deep-black
         surround and one narrow overhead light create nocturnal tension. A thin white etched line
         follows only the glass perimeter and floor seams. Keep natural unmarked skin, coherent hands,
         believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_contemplative_air_etched_accent_complete_style: >-
-        One adult full-length editorial photograph before a flat charcoal-black wall cut by exactly
+        in a full-length editorial setup before a flat charcoal-black wall cut by exactly
         three tall narrow glowing ivory rectangular doorways. They are flat light openings, never
         cylinders or solid columns, with wide black gaps between them. Giant torn ink sheets peel from
         the black wall to expose warm ivory underneath. Keep calm open spacing and thin haze, and cut a
@@ -424,7 +424,7 @@ collections:
         unmarked skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no
         text, logos, or watermarks.
       style_pack_expansion_geometric_slender_limited_duotone_weathered_ink_nocturnal_tension_etched_accent_complete_style: >-
-        One adult editorial photograph before a flat charcoal-black wall cut by exactly
+        in an editorial setup before a flat charcoal-black wall cut by exactly
         three tall narrow glowing ivory rectangular doorways. They are flat light openings, never
         cylinders or solid columns, with wide black gaps between them. Giant torn ink sheets peel from
         the black wall to expose warm ivory underneath. Keep a deep-black surround and a narrow
@@ -432,66 +432,61 @@ collections:
         Preserve natural unmarked skin, coherent hands, believable fabric, natural proportions,
         cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_crisp_cut_complete_style: >-
-        One adult full-length editorial photograph before one giant coarse handmade-paper panel with
-        large rope-like visible fibers. Fill its upper two-thirds with solid emerald and its entire lower
+        in a full-length editorial setup before one giant coarse handmade-paper panel with large rope-like visible fibers. Fill its upper two-thirds with solid emerald and its entire lower
         third with a broad solid garnet horizontal field, all enclosed by a thick metallic-gold frame.
         Keep calm open spacing and thin haze. Make the gold perimeter straight and hard and give the
         floor shadow a knife-sharp boundary. Preserve realistic skin, coherent hands, believable fabric,
         natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_etched_accent_complete_style: >-
-        One adult full-length editorial photograph before one giant coarse handmade-paper panel with
-        large rope-like visible fibers. Fill its upper two-thirds with solid emerald and its entire lower
+        in a full-length editorial setup before one giant coarse handmade-paper panel with large rope-like visible fibers. Fill its upper two-thirds with solid emerald and its entire lower
         third with a broad solid garnet horizontal field, all enclosed by a thick metallic-gold frame.
         Keep calm open spacing and thin haze. Cut one bright continuous white engraved inset line around
         all four sides of the gold frame and continue it across the floor seam. Preserve natural unmarked
         skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no text,
         logos, or watermarks.
       style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_lost_and_found_complete_style: >-
-        One adult full-length editorial photograph before one giant coarse handmade-paper panel with
-        large visible fibers, broad emerald and garnet fields, and a thick metallic-gold frame. Keep
+        in a full-length editorial setup before one giant coarse handmade-paper panel with large visible fibers, broad emerald and garnet fields, and a thick metallic-gold frame. Keep
         calm open spacing and thin haze. Align one dark garnet band behind short sections of the left
         sleeve and trouser so those outlines merge into it. Preserve realistic skin, coherent hands,
         believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_jewel_and_gold_fibrous_paper_contemplative_air_selective_taper_complete_style: >-
-        One adult full-length editorial photograph before one giant coarse handmade-paper panel with
-        large visible fibers, broad emerald and garnet fields, and a thick metallic-gold frame. Keep
+        in a full-length editorial setup before one giant coarse handmade-paper panel with large visible fibers, broad emerald and garnet fields, and a thick metallic-gold frame. Keep
         calm open spacing and thin haze. Render the face and hands tack-sharp while the outer gold frame
         becomes softly defocused. Preserve realistic skin, coherent hands, believable fabric, natural
         proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_crisp_cut_complete_style: >-
-        One adult full-length editorial photograph before one floor-to-ceiling mural of thick powder-blue
+        in a full-length editorial setup before one floor-to-ceiling mural of thick powder-blue
         and ivory chalk strokes with loose dry dust, flanked by deep-black side panels. Keep broad empty
         space and one narrow overhead light path. Give the silhouette and floor shadow hard knife-cut
         boundaries. Preserve realistic skin, coherent hands, believable fabric, natural proportions,
         cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_etched_accent_complete_style: >-
-        One adult centered in a full-length editorial photograph before one uninterrupted rectangular
+        centered in a full-length editorial setup before one uninterrupted rectangular
         floor-to-ceiling mural, never split into separate slabs. Cover that single mural with thick
         powder-blue and ivory chalk strokes and loose dry dust; keep deep-black panels only outside its
         two vertical edges. Cut one bright continuous white engraved border around the whole mural and
         continue it across the floor seam. Preserve natural unmarked skin, coherent hands, believable
         fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_lost_and_found_complete_style: >-
-        One adult full-length editorial photograph before one floor-to-ceiling mural of thick powder-blue
+        in a full-length editorial setup before one floor-to-ceiling mural of thick powder-blue
         and ivory chalk strokes with loose dry dust, flanked by deep-black side panels. Keep broad empty
         space and one narrow overhead light path. Align a black panel behind short sections of the left
         sleeve and trouser so those outlines merge into it. Preserve realistic skin, coherent hands,
         believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_chalk_matte_nocturnal_tension_soft_bleed_complete_style: >-
-        One adult full-length editorial photograph before one floor-to-ceiling mural of thick powder-blue
+        in a full-length editorial setup before one floor-to-ceiling mural of thick powder-blue
         and ivory chalk strokes with loose dry dust, flanked by deep-black side panels. Keep broad empty
-        space and one narrow overhead light path. Paint one wide nonfigurative circular chalk halo with
-        a softly diffused boundary behind the adult. Preserve realistic skin, coherent hands, believable
+        space and one narrow overhead light path. Paint one wide nonfigurative circular chalk halo with a softly diffused boundary behind the figure. Preserve realistic skin, coherent hands, believable
         fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_crisp_cut_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Across the back wall, place exactly
         three fully visible tall white rectangular light-box panels in one row, separated by wide black
         gaps. Give the silhouette and cast shadow hard knife-cut boundaries. Preserve realistic skin,
         coherent hands, believable fabric, natural proportions, cinematic depth, and no text, logos,
         or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_etched_accent_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Across the back wall, place exactly
         three fully visible tall white rectangular light-box panels in one row, separated by wide black
         gaps. Cut a bright continuous luminous-white engraved channel into the entire lower curtain hem
@@ -499,43 +494,43 @@ collections:
         coherent hands, believable fabric, natural proportions, cinematic depth, and no text, logos, or
         watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_lost_and_found_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Across the back wall, place exactly
         three fully visible tall white rectangular light-box panels in one row, separated by wide black
         gaps. Align one black gap behind short left sleeve and trouser sections so those outlines merge
         into it. Preserve realistic skin, coherent hands, believable fabric, natural proportions,
         cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_ceremonial_energy_soft_bleed_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Across the back wall, place exactly
         three fully visible tall white rectangular light-box panels in one row, separated by wide black
         gaps and sharing one wide softly diffused oval glow. Preserve realistic skin, coherent hands,
         believable fabric, natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_etched_accent_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Reserve broad calm unlit space and
         thin haze. Cut a bright continuous luminous-white engraved channel into the entire lower curtain
         hem and extend the same clearly visible groove across the floor seam. Preserve natural unmarked
         skin, coherent hands, believable fabric, natural proportions, cinematic depth, and no text,
         logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_lost_and_found_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Reserve broad calm unlit space and
         thin haze. Align one dark curtain gap behind short sections of the left sleeve and trouser so
         those outlines merge into it. Preserve realistic skin, coherent hands, believable fabric,
         natural proportions, cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_selective_taper_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Reserve broad calm unlit space and
-        thin haze. Keep the adult's face, fingers, and clothing seams tack-sharp, but render the outer
+        thin haze. Keep the figure's face, fingers, and clothing seams tack-sharp, but render the outer
         third of the curtain as strongly defocused broad color bands with no visible weave or fine pleat
         detail. Preserve realistic skin, coherent hands, believable fabric, natural proportions,
         cinematic depth, and no text, logos, or watermarks.
       style_pack_expansion_minimal_quiet_low_contrast_pastel_satin_clean_contemplative_air_soft_bleed_complete_style: >-
-        One adult full-length editorial photograph beside one floor-to-ceiling powder-blue, blush, and
+        in a full-length editorial setup beside one floor-to-ceiling powder-blue, blush, and
         ivory satin curtain with deep pleats and mirror-bright folds. Reserve broad calm unlit space and
         thin haze. Place one wide nonfigurative powder-blue oval glow with a softly diffused boundary
-        behind the adult. Preserve realistic skin, coherent hands, believable fabric, natural proportions,
+        behind the figure. Preserve realistic skin, coherent hands, believable fabric, natural proportions,
         cinematic depth, and no text, logos, or watermarks.
     compatibility:
       avoid: []
@@ -610,9 +605,8 @@ collections:
     templates:
       - id: complete_media
         text: >-
-          An adult subject uses {mark_making} on {surface_behavior}, with {depth_treatment} and
-          {light_response}. Preserve realistic skin texture, coherent hands, believable fabric,
-          natural proportions, cinematic depth, and no text, logos, or watermarks.
+          rendered in {mark_making} on {surface_behavior}, carrying {depth_treatment} and
+          {light_response}
     compatibility:
       avoid: []
 
@@ -687,10 +681,8 @@ collections:
     templates:
       - id: complete_line_color
         text: >-
-          An adult subject is defined by {linework}, filled with {coloring}, and modeled through
-          {shading}. The finish adds {accent_light}. Preserve realistic skin texture, coherent hands,
-          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
-          and watermarks.
+          defined by {linework}, filled with {coloring}, modeled through {shading}, and finished
+          with {accent_light}
     compatibility:
       avoid: [hard_photorealism]
 
@@ -718,7 +710,7 @@ collections:
           - id: narrow_angular
             text: a narrow angular silhouette with long clean lines and sharply controlled joints
           - id: soft_rounded
-            text: a soft rounded silhouette with gentle transitions and natural adult proportions
+            text: a soft rounded silhouette with gentle transitions and natural body proportions
           - id: layered_regal
             text: a layered regal silhouette with a tall posture and measured outward volume
           - id: practical_athletic
@@ -732,13 +724,13 @@ collections:
           - id: square_strong_jaw
             text: a square mature face with a strong jaw, broad brow, and restrained mouth
           - id: heart_tapered_chin
-            text: a heart-shaped adult face with high cheeks and a gently tapered chin
+            text: a heart-shaped face with high cheeks and a gently tapered chin
           - id: long_high_cheek
-            text: a long adult face with high cheekbones, a narrow nose bridge, and calm eyes
+            text: a long face with high cheekbones, a narrow nose bridge, and calm eyes
           - id: round_soft_jaw
-            text: a round adult face with a soft jaw, balanced features, and clear eyelid structure
+            text: a round face with a soft jaw, balanced features, and clear eyelid structure
           - id: diamond_defined
-            text: a diamond-shaped adult face with defined cheek planes and a compact chin
+            text: a diamond-shaped face with defined cheek planes and a compact chin
           - id: rectangular_composed
             text: a rectangular mature face with a level brow, structured jaw, and composed expression
       - id: body_proportion
@@ -746,13 +738,13 @@ collections:
           - id: natural_balanced
             text: naturally balanced body proportions with believable hands, feet, and joint placement
           - id: long_legged
-            text: long-legged adult proportions with a moderate torso and relaxed shoulder width
+            text: long-legged proportions with a moderate torso and relaxed shoulder width
           - id: grounded_broad_torso
-            text: grounded adult proportions with a broad torso, sturdy limbs, and stable weight distribution
+            text: grounded proportions with a broad torso, sturdy limbs, and stable weight distribution
           - id: compact_adult
-            text: compact adult proportions with a shorter frame and fully mature facial structure
+            text: compact proportions with a shorter frame and fully mature facial structure
           - id: statuesque
-            text: statuesque adult proportions with an upright spine and measured limb length
+            text: statuesque proportions with an upright spine and measured limb length
           - id: agile_medium_frame
             text: agile medium-frame proportions with flexible posture and clear anatomical balance
       - id: design_motif
@@ -766,9 +758,7 @@ collections:
     templates:
       - id: complete_character
         text: >-
-          An adult character has {silhouette}, {face_structure}, and {body_proportion}. The design is
-          unified by {design_motif}. Preserve realistic skin texture, coherent hands, believable fabric,
-          natural proportions, cinematic depth, and a frame free of text, logos, and watermarks.
+          shaped by {silhouette}, {face_structure}, and {body_proportion}, unified by {design_motif}
     compatibility:
       avoid: [chibi_proportions]
 
@@ -850,10 +840,8 @@ collections:
     templates:
       - id: complete_hair
         text: >-
-          An adult character wears {cut_shape}, defined by {strand_texture}. The hair is arranged with
-          {arrangement} and colored in {color_design}. Preserve realistic skin texture, coherent hands,
-          believable fabric, natural proportions, cinematic depth, and a frame free of text, logos,
-          and watermarks.
+          hair in {cut_shape}, defined by {strand_texture}, arranged with {arrangement}, and
+          colored in {color_design}
     compatibility:
       avoid: []
 
@@ -931,9 +919,7 @@ collections:
     templates:
       - id: complete_outfit
         text: >-
-          An adult model wears {garment_pairing}, made from {fabric_system}. The outfit uses
-          {construction_detail} and {palette}. Preserve realistic skin texture, coherent hands,
-          believable fabric construction, natural proportions, cinematic depth, and a frame free
-          of text, logos, and watermarks.
+          wearing {garment_pairing}, made from {fabric_system}, using {construction_detail}
+          and {palette}
     compatibility:
       avoid: [chibi_proportions]

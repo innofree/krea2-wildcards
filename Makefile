@@ -1,3 +1,4 @@
+REV ?= v1
 REMOTE_QUEUE_DEPTH ?= 32
 REMOTE_BATCH_SIZE ?= 1
 
@@ -492,20 +493,26 @@ phase6-benchmark-matrix:
 # Phase 7 mass promotion, one axis per invocation:
 #   make phase7-axis-matrix AXIS=camera
 #   make phase7-axis-calibration AXIS=fashion
+#
+# REV selects the report generation and defaults to v1. The subject anchor fix
+# (plan.md 7.35) invalidated every Phase 7 verdict, so each axis needs a second
+# pass under the corrected rig: pass REV=v2 to keep that run and its evidence
+# beside the original rather than overwriting it.
+#   make remote-phase7-axis AXIS=linework_coloring REV=v2
 phase7-axis-matrix:
 	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-matrix AXIS=camera" && exit 1)
 	python3 scripts/export_phase7_matrix.py $(AXIS) \
 		--output tests/prompt_matrix/phase7_$(AXIS).jsonl \
-		--binding-output tests/reports/phase7_$(AXIS)_v1/prompt_binding.json
+		--binding-output tests/reports/phase7_$(AXIS)_$(REV)/prompt_binding.json
 
 phase7-axis-calibration:
 	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-calibration AXIS=fashion" && exit 1)
 	python3 scripts/export_phase7_matrix.py $(AXIS) --calibration --limit $(or $(LIMIT),1) \
 		--output tests/prompt_matrix/phase7_$(AXIS)_calibration.jsonl \
-		--binding-output tests/reports/phase7_$(AXIS)_calibration_v1/prompt_binding.json
+		--binding-output tests/reports/phase7_$(AXIS)_calibration_$(REV)/prompt_binding.json
 
 remote-phase7-axis: phase7-axis-matrix
-	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase7_$(AXIS).jsonl --output tests/reports/phase7_$(AXIS)_v1 --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
+	python3 scripts/run_remote_prompt_matrix.py tests/prompt_matrix/phase7_$(AXIS).jsonl --output tests/reports/phase7_$(AXIS)_$(REV) --batch-size $(REMOTE_BATCH_SIZE) --queue-depth $(REMOTE_QUEUE_DEPTH) --resume --submit
 
 # Stage A is the deterministic prefilter: no model call, fails the axis if any
 # item has a missing seed, failed job, wrong resolution, seed-identical output,
@@ -513,9 +520,9 @@ remote-phase7-axis: phase7-axis-matrix
 phase7-axis-stage-a:
 	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-stage-a AXIS=camera" && exit 1)
 	python3 scripts/export_phase7_matrix.py $(AXIS) \
-		--verify-binding tests/reports/phase7_$(AXIS)_v1/prompt_binding.json
-	python3 scripts/audit_phase7_stage_a.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
-		--run-state tests/reports/phase7_$(AXIS)_v1/run-state.json \
+		--verify-binding tests/reports/phase7_$(AXIS)_$(REV)/prompt_binding.json
+	python3 scripts/audit_phase7_stage_a.py tests/reports/phase7_$(AXIS)_$(REV)/scorecard.csv \
+		--run-state tests/reports/phase7_$(AXIS)_$(REV)/run-state.json \
 		--axis $(AXIS) --expected-seeds $(or $(EXPECTED_SEEDS),3) \
 		--output tests/reports/completion/phase7_$(AXIS)_stage_a.json
 
@@ -535,13 +542,13 @@ phase7-axis-stage-a:
 # attribute a reviewer infers from an item's position.
 phase7-axis-sheets: phase7-axis-stage-a
 	@test -n "$(CATALOG)" || (echo "ERROR: set CATALOG, e.g. make phase7-axis-sheets AXIS=linework_coloring CATALOG=catalog/linework_coloring.yaml" && exit 1)
-	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv \
+	python3 scripts/build_prompt_matrix_contact_sheets.py tests/reports/phase7_$(AXIS)_$(REV)/scorecard.csv \
 		--matrix tests/prompt_matrix/phase7_$(AXIS).jsonl \
-		--output tests/reports/phase7_$(AXIS)_v1/review \
+		--output tests/reports/phase7_$(AXIS)_$(REV)/review \
 		--expected-seeds $(or $(EXPECTED_SEEDS),3) --cases-per-sheet $(or $(CASES_PER_SHEET),10) --spread-cases --overwrite
-	python3 scripts/build_phase7_review_crib.py tests/reports/phase7_$(AXIS)_v1/review/manifest.json \
+	python3 scripts/build_phase7_review_crib.py tests/reports/phase7_$(AXIS)_$(REV)/review/manifest.json \
 		--catalog $(CATALOG) $(foreach axis,$(EXCLUDE_AXES),--exclude-axis $(axis)) \
-		--output tests/reports/phase7_$(AXIS)_v1/review/crib.txt
+		--output tests/reports/phase7_$(AXIS)_$(REV)/review/crib.txt
 
 # Turns a completed batch review into catalog approvals. The catalogs are
 # blueprint-managed, so refresh_generation_manifest.py must adopt the
@@ -550,9 +557,9 @@ phase7-axis-sheets: phase7-axis-stage-a
 phase7-axis-apply:
 	@test -n "$(AXIS)" || (echo "ERROR: set AXIS, e.g. make phase7-axis-apply AXIS=lighting CATALOG=catalog/lighting.yaml" && exit 1)
 	@test -n "$(CATALOG)" || (echo "ERROR: set CATALOG, e.g. CATALOG=catalog/lighting.yaml" && exit 1)
-	python3 scripts/apply_visual_review.py tests/reports/phase7_$(AXIS)_v1/scorecard.csv tests/reports/phase7_$(AXIS)_v1/review.yaml --output tests/reports/phase7_$(AXIS)_v1/scored.csv --overwrite
-	python3 scripts/summarize_results.py tests/reports/phase7_$(AXIS)_v1/scored.csv --policy catalog/evaluation.yaml --output tests/reports/phase7_$(AXIS)_v1/summary.json
-	python3 scripts/apply_evaluation_summary.py tests/reports/phase7_$(AXIS)_v1/summary.json --catalog $(CATALOG) --evaluation-id phase7_$(AXIS)_v1 --from-status generated --require-tested-seeds $(or $(EXPECTED_SEEDS),3) --allow-recommendation approved --allow-recommendation rejected --apply
+	python3 scripts/apply_visual_review.py tests/reports/phase7_$(AXIS)_$(REV)/scorecard.csv tests/reports/phase7_$(AXIS)_$(REV)/review.yaml --output tests/reports/phase7_$(AXIS)_$(REV)/scored.csv --overwrite
+	python3 scripts/summarize_results.py tests/reports/phase7_$(AXIS)_$(REV)/scored.csv --policy catalog/evaluation.yaml --output tests/reports/phase7_$(AXIS)_$(REV)/summary.json
+	python3 scripts/apply_evaluation_summary.py tests/reports/phase7_$(AXIS)_$(REV)/summary.json --catalog $(CATALOG) --evaluation-id phase7_$(AXIS)_$(REV) --from-status generated --require-tested-seeds $(or $(EXPECTED_SEEDS),3) --allow-recommendation approved --allow-recommendation rejected --apply
 	python3 scripts/refresh_generation_manifest.py $(CATALOG) --apply
 	$(MAKE) impact-production
 

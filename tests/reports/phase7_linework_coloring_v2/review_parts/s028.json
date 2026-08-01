@@ -1,0 +1,42 @@
+{
+  "case_028": [
+    "pass",
+    "angular_precise + muted_split_complement + subtle_contact_shadow: straight hard-cornered contours (sharp V lapel, wedge-shaped sleeve folds) in slate blue-teal against muted khaki trousers (garment chroma ~19-21/255, low-saturation blue-green vs yellow-orange pairing), darks limited to narrow contact shadows where sleeve meets lap."
+  ],
+  "case_058": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + soft_two_band: distinctly heavier near-black contour on the outer silhouette with only a thin placket and a few cuff folds inside, deep indigo/teal/violet night palette (chroma 33-36, mean RGB 42,55,72), garment split into an indigo band and a softly blended teal-green band."
+  ],
+  "case_088": [
+    "hold",
+    "broken_dry + deep_jewel + broad_blended_plane: real defect — broad blended skin planes and patchy dry edges are present, but deep_jewel is absent; garment is neutral near-black in seeds 1001/3003 (mean RGB 30,24,21 and 26,21,20, chroma 6-9) and warm cream in 2002 (168,154,139), no jewel hue anywhere. Near-black value (V~0.12) makes thumbnail hue weak evidence, so flagging for full-res confirmation."
+  ],
+  "case_118": [
+    "pass",
+    "crisp_uniform + limited_two_tone + crisp_shape_shadow: thin even-weight grey contour running unbroken down sleeve and hem with no taper, palette restricted to warm greige plus dark olive-taupe, and flat hard-edged shadow patches on the skirt and under the arms."
+  ],
+  "case_148": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + subtle_contact_shadow: consistent-width thin dark line at collar, cuffs and hem, oatmeal garment sitting in the same warm neutral band as the skin, and shading reduced to small contact shadows at the sleeve hem and waist."
+  ],
+  "case_178": [
+    "pass",
+    "elastic_pressure + warm_earth + crisp_shape_shadow: placket and lapel strokes visibly swell then taper to a point at the notch, olive-khaki earth garment on warm tan skin (chroma 31-34, mean RGB 83,70,52), shoulder and sleeve shadows are flat-toned patches with defined boundaries."
+  ],
+  "case_208": [
+    "pass",
+    "fine_tapered + skin_centered_neutral + soft_two_band: very fine dark contours that thin and fade out toward the shoulders, cream/oatmeal palette entirely skin-adjacent, and two soft tonal bands (cream base plus a blended warm-taupe band down the sides and under the arms)."
+  ],
+  "case_238": [
+    "hold",
+    "rounded_soft + deep_jewel + crisp_shape_shadow: real defect — contours are smoothly rounded as specified, but deep_jewel renders fully achromatic; shirt is flat black and the mid-value skirt measures RGB (65,63,65) with chroma 3.3, i.e. neutral grey, and no jewel hue appears in any of the three seeds."
+  ],
+  "case_268": [
+    "pass",
+    "selective_edge + deep_jewel + broad_blended_plane: real defect — selective edges and broad blended skin planes are both readable, but the blazer is neutral near-black in all three seeds (mean RGB 29,23,20 / 27,24,22, chroma 5-10) with no jewel saturation. Low garment value (V~0.11) leaves thumbnail hue weakly determined, so flagging for full-res confirmation. -- overturned at full resolution: Thumbnail artifact — the hold does not survive full resolution. Case resolves to style_id linework_coloring_selective_edge_deep_jewel_broad_blended_plane_controlled_rim_complete_line_color, test_ids P7000802/803/804 (seeds 1001/2002/3003). At full res the two other named attributes are plainly readable: selective near-invisible edges completed by color boundaries with sparse dark accents, and broad blended planes rounding the face/neck with a clear silhouette. The reviewer's pixel reading of the blazer is accurate (neutral near-black in all three seeds; a 3.2x brightness / 2.5x saturation boost of the P7000803 blazer resolves only to neutral grey-violet, no latent jewel hue), but that is not an item-specific defect. saturation_screen.json reports the deep_jewel group (43 items) at median 0.1628, min 0.1107, max 0.2117, outlier_count 0; reproducing the metric per item places this case at 0.204 — rank 41 of 43, well ABOVE its own group's median, so the stated evidence rule (only a value well below the group median counts) is not met. Measuring bottom-band garment chroma across all 43 deep_jewel items shows the near-black garment tracks the controlled_rim edge-accent token rather than the palette token: the five lowest-chroma items are all controlled_rim variants (chroma 5.5-8.1, value 40-60) and the five highest are all reflected_color variants (chroma 17.8-20.9, value 114-122). Chroma/value ratio for this case (8.13/46.5 = 0.175) exceeds that of the brightest sibling (17.8/114 = 0.156), so there is no under-saturation once value is controlled for. The linework-only sibling broken_dry_deep_jewel_broad_blended_plane_controlled_rim (runs/P7000262) and the group's lowest-saturation item (runs/P7000712) render the same near-black garment over warm-grey ground, confirming rig-wide behavior. The hold rested on the reviewer's own caveat that low garment value (V~0.11) left thumbnail hue weakly determined; at full resolution the palette sits within its group norm."
+  ],
+  "case_298": [
+    "pass",
+    "selective_edge + warm_earth + soft_two_band: linework is drawn only where needed (dark lapel/collar lines while the coat's outer silhouette dissolves into colour with no outline), olive-brown earth palette (chroma 30-45, mean RGB 98,80,59), coat carries one softly transitioned darker band against its lighter plane."
+  ]
+}

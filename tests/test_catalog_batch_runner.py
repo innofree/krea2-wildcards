@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import struct
+import zlib
 from pathlib import Path
 
 from run_remote_catalog_batch import catalog_jobs, limit_style_jobs, pending_jobs, write_scorecard
@@ -49,16 +51,35 @@ def test_style_limit_keeps_every_seed_for_selected_styles() -> None:
     assert len(limited) == 6
 
 
-def test_resume_accepts_only_complete_matching_runs(tmp_path: Path) -> None:
-    source_image = (
-        ROOT
-        / "tests/reports/production_smoke_v0_1/runs/crystal_iris_pastel_seed_6006/image_01.png"
+def _blank_png(width: int, height: int) -> bytes:
+    """A real, decodable 8-bit greyscale PNG.
+
+    Synthesised rather than copied out of tests/reports, because .gitignore keeps
+    the generated images out of the repo and a fixture read from there only
+    resolves in a checkout that happens to have leftovers. Resume validation only
+    reads the IHDR dimensions, so the pixels are free to be blank.
+    """
+
+    def chunk(tag: bytes, data: bytes) -> bytes:
+        body = tag + data
+        return struct.pack(">I", len(data)) + body + struct.pack(">I", zlib.crc32(body))
+
+    header = struct.pack(">IIBBBBB", width, height, 8, 0, 0, 0, 0)
+    scanlines = b"".join(b"\x00" + b"\x00" * width for _ in range(height))
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", header)
+        + chunk(b"IDAT", zlib.compress(scanlines))
+        + chunk(b"IEND", b"")
     )
+
+
+def test_resume_accepts_only_complete_matching_runs(tmp_path: Path) -> None:
     output = tmp_path / "batch"
     run_dir = output / "runs/example_style_seed_42"
     run_dir.mkdir(parents=True)
     image = run_dir / "image_01.png"
-    image.write_bytes(source_image.read_bytes())
+    image.write_bytes(_blank_png(1024, 1024))
     record = {
         "style_id": "example_style",
         "seed": 42,

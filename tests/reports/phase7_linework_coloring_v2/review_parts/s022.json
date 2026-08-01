@@ -1,0 +1,42 @@
+{
+  "case_022": [
+    "pass",
+    "angular_precise + limited_two_tone + subtle_contact_shadow: every contour is a straight precisely-ruled segment with sharp corners (collar, cuffs, hem, angular slab folds), palette held to warm taupe + cool grey only, and shadow appears only at contact points (under collar, under waistband, under cuffs)."
+  ],
+  "case_052": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + broad_blended_plane: thick black outer contour rings the whole silhouette while the interior carries only a faint shoulder seam and cuff line, in indigo/navy/deep-teal night key, with large soft blended colour planes sweeping across the sweater."
+  ],
+  "case_082": [
+    "pass",
+    "broken_dry + airy_pastel + soft_two_band: jaw and collar lines are thin and visibly interrupted with frayed dry-brush hair edges, palette is high-key pale rose/mint/powder-blue/cream, and the neck resolves into exactly two soft-edged value bands."
+  ],
+  "case_112": [
+    "pass",
+    "skin_centered_neutral + broad_blended_plane clearly read (cream/taupe keyed to skin, large soft blended planes on sweater and skirt), but broken_dry is unreadable at this density — only intermittent thin dark fragments at the sleeve/skirt boundary, indistinguishable from an outline-free painterly render. Unreadable, not a confirmed defect. -- overturned at full resolution: Thumbnail artifact — the hold does not survive full resolution.\n\nResolution: case_112 = style_id `linework_coloring_broken_dry_skin_centered_neutral_broad_blended_plane_reflected_color_complete_line_color`, test_ids P7000334 (seed 1001), P7000335 (seed 2002), P7000336 (seed 3003), each 1024x1024 at /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/<test_id>/image_01.png.\n\nSeed 2002 (P7000335) renders broken_dry unmistakably at full resolution. Zooming the outer sleeve edge, cuff, collar and hands at 4x shows a granular charcoal/dry-pencil contour that runs the whole silhouette with visible dropouts and textured gaps — the line thins to nothing and picks up again along the arm, and the cuff line breaks mid-stroke. The gaps sit on garment and silhouette, away from critical anatomy, exactly as the resolved prompt specifies (\"broken dry contours with textured gaps placed away from critical anatomy\"). This is clearly distinguishable from a continuous line: the sibling case_283 (`selective_edge`, same coloring/shading/accent, P7000847) at the same seed draws a thin, even, unbroken contour, so the dry broken quality is a real differentiated read, not an artifact of my inspection. skin_centered_neutral and broad_blended_plane also read on this seed. The \"intermittent thin dark fragments\" the contact sheet reported are precisely what this dry broken contour collapses into when downsampled to thumbnail density — the reviewer was seeing the correct render, just below its legibility threshold.\n\nSeed disagreement, reported for completeness but not grounds for holding this case: seeds 1001 (P7000334) and 3003 (P7000336) render outline-free painterly — I checked the shoulder, both arm silhouettes, cuffs, waistband and face at 4-6x and there is no contour system at all, only soft paint-mass edges plus a few thin dark strokes at the waistband and the sleeve/skirt gap that are shadow/crease, not linework. That is a rig/seed tendency in this palette family rather than a fault in the broken_dry value: the sibling case_140 (`crisp_uniform`, same coloring/shading/accent, P7000418) is likewise fully painterly with no visible line at seed 1001, so seed 1001 drops linework regardless of which linework value is requested. Any follow-up belongs in a stability note about outline dropout in the skin_centered_neutral + broad_blended_plane + reflected_color family, not in a broken_dry axis-adherence hold.\n\nSaturation was not the recorded concern, but I checked tests/reports/phase7_linework_coloring_v2/saturation_screen.json anyway: the skin_centered_neutral group (43 items) has median 0.1448, range 0.1165-0.1713, and outlier_count 0 at deviation 0.5, so this item is not a saturation outlier within its own palette group."
+  ],
+  "case_142": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + crisp_shape_shadow: a constant-width thin dark line traces silhouette, cuffs, collar rib and fingers, oatmeal/greige garment keyed to skin, and fold shadows are discrete hard-edged wedges at the elbow crook and sleeve rather than blends."
+  ],
+  "case_172": [
+    "pass",
+    "elastic_pressure + cool_nocturne + subtle_contact_shadow: contour swells at shoulder and underarm then thins to a hairline down the forearm, garment in teal/navy/green with violet shadow, and shading is localised to the waistband, cuffs and hands only."
+  ],
+  "case_202": [
+    "pass",
+    "fine_tapered + muted_split_complement + broad_blended_plane: very fine tapering hair and lapel strokes, dusty slate-blue jacket set against muted warm peach skin and greige ground, with face and jacket modelled in broad softly blended planes."
+  ],
+  "case_232": [
+    "pass",
+    "rounded_soft + cool_nocturne + subtle_contact_shadow: jaw, hair and neck contours are soft rounded strokes with no sharp terminals, skin itself keyed cool grey-green with indigo hair and teal garment, and shadow limited to the soft violet band under the jaw and where hair meets shoulder."
+  ],
+  "case_262": [
+    "pass",
+    "rounded_soft + warm_earth + transparent_glaze: soft rounded collar and hair edges, olive/khaki/ochre earth palette on warm greige ground, and neck and cheek shading laid in as thin translucent washes that let the base tone read through."
+  ],
+  "case_292": [
+    "pass",
+    "selective_edge + skin_centered_neutral + transparent_glaze: a crisp line runs along the lapel and jaw while the shoulder and outer jacket edge dissolve into the ground with no line at all, ivory/greige garment keyed to skin, shading as thin translucent warm glazes on neck and chest."
+  ]
+}

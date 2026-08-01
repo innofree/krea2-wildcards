@@ -21,6 +21,26 @@ VALID_STATUSES = {
 }
 KEY_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
+# The benchmark subject, stated once per exported prompt.
+#
+# Every rig used to open on "exactly one adult woman", which does not avoid
+# choosing an age and an ethnicity -- it delegates both to the model's prior.
+# Krea2's prior for a bare adult woman is a middle-aged Western face, so every
+# contact sheet reviewed through Phase 6 and Phase 7 judged its axis on a subject
+# nobody asked for, and the accompanying "realistic skin texture" instruction
+# pushed that face older still by rendering pores and creases onto it.
+#
+# This anchor is the subject the library is written for, so an axis is measured
+# in the context where it will actually be used. It lives here because both
+# export_phase6_matrix and export_artist_visual_signature_matrix need it and the
+# latter is imported by the former. Swap this one constant to benchmark against a
+# different subject; the profile digests are computed over it and will follow.
+SUBJECT_IDENTITY = (
+    "one slender Korean woman in her twenties with long black hair, an East Asian face with "
+    "youthful adult features, dark brown eyes, long well-defined eyelashes, a softly defined "
+    "jawline, and clear smooth skin with visible pores and natural subsurface scattering"
+)
+
 
 class UniqueKeyLoader(yaml.SafeLoader):
     """Safe YAML loader that rejects duplicate mapping keys."""

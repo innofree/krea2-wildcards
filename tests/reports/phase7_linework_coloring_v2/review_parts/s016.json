@@ -1,0 +1,42 @@
+{
+  "case_016": [
+    "pass",
+    "angular_precise + limited_two_tone + crisp_shape_shadow: straight-segment precise contours, palette held to cream + taupe-grey only, and hard-edged flat angular shadow wedges on the shirt with no gradient (all 3 seeds)."
+  ],
+  "case_046": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + soft_two_band: edge zoom shows a continuous darker outer silhouette line with a near line-free interior, pale blue/pink/cream pastels, and a light band softly transitioning to a shadow band on tee and sleeves."
+  ],
+  "case_076": [
+    "pass",
+    "broken_dry unreadable (not a confirmed defect): airy_pastel and broad_blended_plane are clearly there (pale mint/pink/lemon planes, soft blended face planes), but all 3 seeds are fully painterly gouache blocks with no discernible contour, so I cannot tell broken/dry line quality from plane edges at this density. -- overturned at full resolution: Thumbnail artifact — resolved at full resolution, the defect is not present.\n\nCase mapping: `case_076` = style_id `linework_coloring_broken_dry_airy_pastel_broad_blended_plane_controlled_rim_complete_line_color`, test_ids P7000226 (seed 1001), P7000227 (2002), P7000228 (3003) under /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/.\n\nThe contact-sheet reading was \"fully painterly gouache blocks with no discernible contour, so broken/dry line quality is unreadable.\" At 1024x1024 that is wrong: the images are gouache-plane paintings that DO carry a discrete dark contour line on top, and that contour is visibly broken and dry-tapered.\n\nSeed 1001 (P7000226) — clearest case. The jaw/chin contour is a thin dark line that fades in from nothing under the chin, thickens toward the right jaw, and dies out again (dry taper, not a uniform ink line). The lip line is a dry stroke with a break at the philtrum center. The nose is contoured only on one side with nostril accents, the bridge left as plane edge only. Most decisively, the shirt placket and lapel edges are thin dark lines that plainly start, stop, and resume — a gap in the right placket line and a broken left lapel line — i.e. textured gaps placed on garment construction, away from critical anatomy. Dry-brush striations also run through the pastel garment planes.\n\nSeed 2002 (P7000227) — same treatment, sparser: eyelid lines with dry tapers, nostril marks, a lip line with an explicit gap left of centre, and the jaw deliberately left lineless (plane-only) which is the \"textured gap\" behaviour rather than an absence of linework.\n\nSeed 3003 (P7000228) — eyelid lines taper and break, lip line has a clear gap left of centre and resumes, nostril accents present. Consistent with the other two seeds; no seed disagreement.\n\nThe other named factors also hold: airy_pastel (pale mint/pink/lemon/lilac planes with protected whites and grounding black hair darks), broad_blended_plane (broad faceted face/garment planes rounding the form while the silhouette stays crisp), controlled_rim (thin warm/pale rim separating the shadow-side silhouette).\n\nSaturation was not the flagged concern and is clean anyway: tests/reports/phase7_linework_coloring_v2/saturation_screen.json groups by `coloring`, and the airy_pastel group (42 items, median 0.0839, range 0.0672-0.1085) reports outlier_count 0 with an empty outliers list, so this item is not a saturation outlier against its own group.\n\nOnly non-flagged nit observed, not a defect for this axis: the actual crop reads chest/waist-up rather than the prompted mid-thigh frame — that is a framing question for the frame axis, not evidence for broken_dry."
+  ],
+  "case_106": [
+    "pass",
+    "broken_dry + muted_split_complement + soft_two_band: contour visibly discontinues along cheek/jaw and collar with dry hatchy hair strokes, desaturated slate-teal against warm peach skin plus rose lips, and a softly-transitioning light/shadow band pair on the garment."
+  ],
+  "case_136": [
+    "pass",
+    "crisp_uniform + muted_split_complement + subtle_contact_shadow: even-weight clean dark outline with no taper, muted teal/navy against warm cream skin, and shading confined to contact zones (sleeve-to-torso, hem over skirt, hair on shoulder) with flat garment elsewhere."
+  ],
+  "case_166": [
+    "pass",
+    "elastic_pressure + cool_nocturne + crisp_shape_shadow: sleeve/shoulder contour swells at underarm and cuff and thins along the upper arm, deep indigo/violet/teal-green dim palette, and hard-edged violet-green shadow shapes on the sweater."
+  ],
+  "case_196": [
+    "pass",
+    "fine_tapered + cool_nocturne + subtle_contact_shadow: very thin jaw/neck/collar lines that taper out to nothing, blue-violet cast skin with dim teal garment, and shadow only under the jaw and where hair meets collar."
+  ],
+  "case_226": [
+    "pass",
+    "rounded_soft + airy_pastel + subtle_contact_shadow: soft rounded contours with no angular corners, high-key pale pink/blue/cream tints (strongest in seed 2002), and shading limited to the neck/collar contact and under the jaw."
+  ],
+  "case_256": [
+    "pass",
+    "rounded_soft + warm_earth + fine_tonal_hatching: soft rounded non-angular edges on collar and lapel, olive/khaki/ochre warm earth palette, and fine parallel hatch strokes readable across the garment and neck."
+  ],
+  "case_286": [
+    "pass",
+    "selective_edge + skin_centered_neutral + fine_tonal_hatching: lapel and collar carry a defined line while the outer shoulder edge dissolves into the ground, palette held to cream/greige/skin with no chromatic accent, and fine hatch strokes on lapel and sleeves."
+  ]
+}

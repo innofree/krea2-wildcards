@@ -2921,9 +2921,113 @@ post_count 순위 추출이 아니라 국적 리서치로 큐레이션됐음을 
 제외된 2건도 기록했다. `visual_signature.axes`는 전부 `null`(아직 native
 관찰 전).
 
-**남은 것:** native 관찰 생성(§7.35 예정) — `export_artist_native_matrix.py`류
+**남은 것:** native 관찰 생성(§7.36 예정) — `export_artist_native_matrix.py`류
 스크립트가 `EXPECTED_ARTISTS=300`을 하드코딩하고 있어 40명분 실행 시
 `--expected-artists 340`(또는 신규 40명만 스코프하는 옵션) 확인 필요.
+
+### 7.35 벤치마크 피험자 앵커 결함 — Phase 6·7 전체 판정의 근거를 무효화
+
+**발단.** 사용자가 샘플 컨택트시트의 인물이 "중년"이고 "인종도 서구중심"이라고
+지적했다. 실제 사용 프롬프트는 `a slender, stylish Korean woman in her twenties`로
+피험자를 명시하는데 벤치마크 rig는 그렇지 않았다.
+
+**원인.** `export_phase6_matrix.py`의 `SUBJECT_CONTRACT`가 `exactly one clearly
+adult woman`으로 열렸다. 나이와 인종을 지정하지 않는 것은 선택을 피하는 게 아니라
+모델 prior에 위임하는 것이고, Krea2의 bare adult woman prior는 중년 서구 얼굴이다.
+동반된 `Preserve realistic skin texture`가 모공과 주름을 렌더해 같은 얼굴을 더
+늙게 만들었다. **Phase 6·7의 모든 컨택트시트가 아무도 지정하지 않은 피험자 위에서
+축을 판정한 것이다.**
+
+**같은 결함이 카탈로그에도 있었다.** 빌드된 런타임에 `An adult subject/character/
+model/portrait`가 3,366회 박혀 있었다. 사용자 프롬프트는 이미 주어를 선언하므로
+wildcard를 뽑으면 한 프롬프트에 주어가 둘이 되고, 뒤에 온 무앵커 주어가 나이·인종
+슬롯을 가져간다. 즉 카탈로그가 실사용 프롬프트와 **결합 불가능한 형태**였다.
+
+**수정.** 3,765개 프롬프트 전부가 `catalog/blueprints/`의 템플릿 13개에서 나오므로
+거기서 고쳤다. 각 템플릿이 주어 없는 분사·전치사구 조각을 뱉도록 바꾸고, 항목마다
+반복되던 `Preserve realistic skin texture ...` 보일러플레이트를 제거했다(축을 여러 개
+뽑으면 그만큼 반복되어 프롬프트를 희석했고, 일러스트 축에서는 항목과 정면 충돌했다).
+`common.SUBJECT_IDENTITY`에 실제 대상 피험자를 정의하고 세 exporter가 공유한다.
+주어는 프롬프트당 한 번만 선언하고 이후는 `her`로 받는다. lighting 축만 예외인데
+subject contract가 붙기 전에 조기 반환하므로 앵커가 유일한 주어 선언이다.
+
+**승인 무효화.** `evaluated_prompt_sha256`이 가리키던 문자열이 사라졌으므로 점수를
+승계할 수 없다. 생성기의 승인항목 재작성 거부 가드를 우회하는 대신
+`--reset-validation-on-change`로 **강등 경로**를 만들었다. main 병합 후 2,167개가
+`generated`로 되돌아갔고 production 런타임은 29개(수작업 art_styles)만 남았다.
+
+**§7.18 deep_jewel 규칙 반증.** 앵커 rig로 linework_coloring 20항목(deep_jewel의
+shading 6종 × accent 2종 + 대조군 8) 파일럿을 돌렸다. §7.18은 deep_jewel이
+`broad_blended_plane`과 짝지을 때만 채도를 유지한다며 43개 중 35개를 위험군으로
+분류했는데, **전 조합이 대조군과 같은 채도 대역에 있었다.**
+
+| shading | 평균 채도 | §7.18 판정 |
+| --- | --- | --- |
+| `broad_blended_plane` | 0.224 / 0.173 | 안전 |
+| `crisp_shape_shadow` | **0.229** / 0.173 | 흑백 붕괴 |
+| `fine_tonal_hatching` | 0.196 / 0.175 | 흑백 붕괴 |
+| `soft_two_band` | 0.181 / 0.167 | 흑백 붕괴 |
+| `subtle_contact_shadow` | 0.202 / 0.164 | 흑백 붕괴 |
+| `transparent_glaze` | 0.208 / 0.177 | 흑백 붕괴 |
+
+원본을 직접 보면 `crisp_shape_shadow` 항목에도 짙은 초록·버건디·남색이 뚜렷하다.
+대조군 중 낮은 값(`limited_two_tone` 0.164/0.131, `airy_pastel` 0.098/0.071)은
+팔레트 이름대로 동작한 것이지 결함이 아니다. **§7.18은 deep_jewel의 성질이 아니라
+옛 rig의 성질이었다** — 무앵커 주어에 붙은 photorealism 지시를 이기려면 일러스트
+신호 3개가 겹쳐야 했고, 하나로는 졌다. 되돌릴 것은 없다. 조각화가 이미 300개를
+전부 `generated`로 리셋했으므로 축을 처음부터 다시 판정한다.
+
+**부수 발견 — 죽은 리터럴 재작성 7건.** exporter가 카탈로그 본문을 리터럴 문자열로
+재작성하는데, 매칭이 실패하면 예외가 아니라 보정이 조용히 사라진다. 조각화가 5건을
+죽였고(contrapposto 과장, 크롭별 걷기·3/4 자세, full-length 프레이밍 확장,
+storyboard camera), 이를 잡는 테스트를 추가하니 **이 브랜치 이전부터 죽어 있던 2건**이
+더 나왔다. `wearing a longline vest, fitted top, and pleated skirt`와 `a wrapped top
+and tapered trousers`를 찾는데 카탈로그는 `mid-calf pleated skirt`와 `a structured
+wrap top, tapered trousers, and simple accessories`다. **preset 6개 의상 중 2개가
+chest-up/waist-up 크롭에서 프레임 밖 의류 보정을 한 번도 받지 못했고**, §7.31의
+177/200 승격도 그 상태로 진행됐다. 기존 테스트가 못 잡은 이유는 전부 손으로 쓴
+픽스처를 쓰기 때문이다 — 카탈로그와 독립적이라 같은 방향으로 같이 낡았다.
+
+**전수 확인 — 파일럿 결론이 300항목에서 재확인됐다.** linework_coloring 900장
+(300항목 × 3seed)을 앵커 rig로 재생성했다. Stage A 300/300 통과. `coloring` 축으로
+그룹한 채도 스크리닝은 **300개 중 이상치 0건**이다.
+
+| coloring | n | median | range |
+| --- | --- | --- | --- |
+| `airy_pastel` | 42 | 0.0839 | 0.0672 – 0.1085 |
+| `limited_two_tone` | 43 | 0.1378 | 0.1129 – 0.1931 |
+| `skin_centered_neutral` | 43 | 0.1448 | 0.1165 – 0.1713 |
+| `muted_split_complement` | 43 | 0.1550 | 0.1285 – 0.1986 |
+| `deep_jewel` | 43 | 0.1628 | **0.1107 – 0.2117** |
+| `cool_nocturne` | 43 | 0.1909 | 0.1663 – 0.2319 |
+| `warm_earth` | 43 | 0.2194 | 0.1838 – 0.2716 |
+
+deep_jewel의 **최소값 0.1107이 airy_pastel의 최대값 0.1085보다 높다.** 43개 중 어느
+것도 회색으로 무너지지 않았다. §7.18의 정확한 주장(shading에 따라 갈린다)을 그
+단위로 쪼개면 이렇다.
+
+| deep_jewel × shading | n | median | §7.18 판정 |
+| --- | --- | --- | --- |
+| `broad_blended_plane` | 8 | 0.1687 | 안전 |
+| `crisp_shape_shadow` | 7 | **0.1708** | 흑백 붕괴 |
+| `transparent_glaze` | 6 | 0.1618 | 흑백 붕괴 |
+| `fine_tonal_hatching` | 8 | 0.1593 | 흑백 붕괴 |
+| `soft_two_band` | 6 | 0.1572 | 흑백 붕괴 |
+| `subtle_contact_shadow` | 8 | 0.1541 | 흑백 붕괴 |
+
+중앙값 전체 폭이 0.1541–0.1708, 즉 10% 이내다. "안전"하다던 조합보다 "붕괴"한다던
+`crisp_shape_shadow`가 오히려 높다. **분기가 아니라 노이즈다.**
+
+**스크리닝 그룹 축을 잘못 잡으면 오탐이 난다.** 같은 데이터를 `shading`으로 그룹하면
+이상치 12건이 잡히는데, shading 그룹은 팔레트 7종을 섞으므로 `airy_pastel` 항목이
+채도 높은 팔레트가 지배하는 중앙값 아래로 떨어질 뿐이다. 채도 비교는 팔레트를
+정의하는 축(`coloring`)으로 그룹해야 한다.
+
+**남은 것:** linework_coloring 시트 30장 병렬 리뷰 진행 중. camera·preset·
+background·character_design·pose·lighting도 같은 결함 rig로 판정됐으므로 재검증
+대상이다. media_rendering(§7.29)·effect(§7.30) 차단 사유 중 "템플릿 보일러플레이트
+모순"은 이번 조각화로 해소됐으나, §7.29가 이미 그 수정만으로는 효과가 없었음을
+확인했으므로 매체 구분 실패는 모델 한계일 가능성이 높다.
 
 ---
 

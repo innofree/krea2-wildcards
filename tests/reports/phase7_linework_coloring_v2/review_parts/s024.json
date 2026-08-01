@@ -1,0 +1,42 @@
+{
+  "case_024": [
+    "pass",
+    "angular_precise + limited_two_tone + transparent_glaze: straight-edged polygonal facets and precise straight contour segments across the blouse/skirt, palette restricted to cream-greige + grey-taupe, and overlapping semi-transparent sleeve planes let the underlying tone read through."
+  ],
+  "case_054": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + crisp_shape_shadow: heavy dark silhouette contour with almost no interior fold lines, deep navy/teal-green low-key cool palette with violet-cooled skin, and hard-edged flat violet shadow shapes on the sweater."
+  ],
+  "case_084": [
+    "pass",
+    "airy_pastel + subtle_contact_shadow read clearly (V~220-235, S~16-32, pale pink/mint/butter streaks, faint contact shading under jaw and hair) but broken_dry is unreadable at this density — at max sheet zoom the neckline and shoulder contours are thin and continuous, so I can neither confirm nor call a defect. -- overturned at full resolution: Thumbnail artifact, not a defect. test_id P7000250 (seed 1001), P7000251 (2002), P7000252 (3003) for style_id linework_coloring_broken_dry_airy_pastel_subtle_contact_shadow_controlled_rim_complete_line_color. At full 1024x1024 resolution with 2-3x crops of the neckline and both shoulder contours, broken_dry is plainly readable in all three seeds: the silhouette contours are granular stippled dry-media strokes, not crisp continuous ink. Seed 1001 shows the left shoulder line fading to nothing across the shoulder crest, the right shoulder line thinning to broken stipple down the sleeve, and the collar fragmenting into discrete dashes plus dry-brush scuffs on the shirt. Seed 2002 shows an outright gap in the silhouette where shoulder meets sleeve, plus a dry skipping collar line. Seed 3003 shows dry grain on the shoulder outline and a broken, skipping V-neck line with short dry accent strokes on the neck/collarbone. Gaps sit on garment contours, away from face and hands, exactly as the item specifies. The contact-sheet read of \"thin and continuous\" is explained by downsampling: a 1-2 px stippled dry line collapses to an apparently solid stroke and sub-pixel gaps vanish at sheet density. Seeds agree, no disagreement to arbitrate. Saturation was not the concern, and this item is not present in saturation_screen.json anyway; airy_pastel and subtle_contact_shadow both confirm as the reviewer originally read them."
+  ],
+  "case_114": [
+    "hold",
+    "deep_jewel defect: crisp_uniform (even-weight clean contours) and crisp_shape_shadow (hard-edged brown neck shadow shapes) are present, but the garment samples as pure black (dominant RGB 0,0,0; cell 3 S=32/V=35) against neutral skin and grey ground — no jewel hue anywhere on the figure."
+  ],
+  "case_144": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + fine_tonal_hatching: thin even-weight contours on cuffs/waist, taupe-greige-brown palette built entirely around the skin tone, and bundles of fine parallel hatch strokes visible on sleeves, torso and skirt."
+  ],
+  "case_174": [
+    "pass",
+    "elastic_pressure + cool_nocturne + transparent_glaze: sleeve and cuff strokes visibly swell then taper, palette is deep teal/blue-violet low-key cool (S~102-106), and violet washes sit translucently over the green garment so both layers read."
+  ],
+  "case_204": [
+    "pass",
+    "fine_tapered + muted_split_complement + crisp_shape_shadow: thin lapel/neck lines taper to points at both ends, muted slate blue (S~63-74) set against peach skin and warm tan ground, and angular hard-edged shadow shapes under the jaw and on the neck."
+  ],
+  "case_234": [
+    "pass",
+    "rounded_soft + cool_nocturne + transparent_glaze: soft blunt-ended rounded contours on hair tips and neckline with no sharp stroke terminals, cool violet-shadowed skin over blue-green garment (S~92-112), and blue-violet glazes reading through the green collar."
+  ],
+  "case_264": [
+    "pass",
+    "selective_edge + airy_pastel + broad_blended_plane: line appears only at collar/placket and hair edge with the rest defined by colour, very pale pastel pink/mint/butter (S~12-21, V~217-242), and large soft-transition planes across garment and face."
+  ],
+  "case_294": [
+    "pass",
+    "selective_edge + warm_earth + broad_blended_plane: dark line used only as short accents at the lapel notch and collar break, olive/khaki/ochre earth palette (mean RGB ~103,81,58), and broad brushed tonal planes blending across the coat and face."
+  ]
+}

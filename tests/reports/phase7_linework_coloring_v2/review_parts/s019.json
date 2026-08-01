@@ -1,0 +1,42 @@
+{
+  "case_019": [
+    "pass",
+    "angular_precise + limited_two_tone + soft_two_band: measured square-cornered notch lapels and angular facet blocks, palette restricted to warm cream/beige plus black-grey neutral stepped by value (hue histogram is 98% in 0-60deg), and a clean feathered light/shadow band across face and neck."
+  ],
+  "case_049": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + transparent_glaze: a firm continuous dark outer contour around shirt and arms against only sparse faint interior strokes, pale pink/blue/yellow at meanS 0.09 and meanV 0.76 with protected whites and black hair as the grounding dark, and overlapping translucent washes on the shirt."
+  ],
+  "case_079": [
+    "hold",
+    "broken_dry defect: airy_pastel and crisp cuff/fold shadow shapes are present, but the sleeve, skirt and body contours are continuous smooth edges with no textured gaps or dry breaks in any of the three seeds."
+  ],
+  "case_109": [
+    "hold",
+    "broken_dry defect: muted_split_complement (teal/navy cool fields against warm skin) and subtle_contact_shadow read fine, but the figure is drawn with one unbroken clean dark contour throughout, the opposite of broken dry gaps."
+  ],
+  "case_139": [
+    "pass",
+    "crisp_uniform defect: skin_centered_neutral greige and broad_blended_plane modelling are clearly there, but there is no drawn contour anywhere - shoulder seam, collar and silhouette are soft painterly brush edges, and facial features are painted with no uniform line."
+  ],
+  "case_169": [
+    "pass",
+    "elastic_pressure unreadable: cool_nocturne (indigo shadows, blue-green midtone skin, small warm nose/lip note) and soft_two_band both pass, but whether the thin collar/shoulder lines thicken around weight and narrow around light cannot be settled at 256px, and seed 1001 shows only near-uniform hairlines. -- overturned at full resolution: Thumbnail artifact — the elastic_pressure modulation is readable at 1024px in all three seeds.\n\nResolution path: case_169 -> style_id linework_coloring_elastic_pressure_cool_nocturne_soft_two_band_controlled_rim_complete_line_color -> test_ids P7000505 (seed 1001), P7000506 (2002), P7000507 (3003) in tests/reports/phase7_linework_coloring_v2/runs/<id>/image_01.png (all 1024x1024). I viewed all three full frames plus 2x-4x crops of the collar/lapel/shoulder-seam and sleeve-fold strokes.\n\nWhat full resolution shows:\n- Seed 2002 (P7000506): the collar/lapel strokes are unmistakably pressure-modulated. The upper collar edge facing the light runs as a hairline, and the same stroke swells to a heavy weight where the collar folds over and meets the shoulder, ending in a blunt loaded terminal at the collar tip; the collar-tip stroke going down-left starts as a hairline and thickens as it descends into the fold.\n- Seed 3003 (P7000507): the lapel line enters at the shoulder as a hairline and gradates continuously thicker down to the lapel notch, thickest exactly at the notch/fold corners where the fabric gathers, then continues heavy down the lapel break. The mirrored collar line does the same.\n- Seed 1001 (P7000505): this is the seed that read as \"near-uniform hairlines\" at 256px, and that is the artifact. The garment strokes here are few and delicate, but at 4x each sleeve-fold stroke visibly begins as a broken near-invisible hairline in the lit green-teal plane and swells to a distinctly heavier stroke as it runs down into the shadowed fold; the shoulder silhouette also carries more weight on the shadow side. Thin-to-thick within a single stroke, correctly correlated with weight/shadow versus light.\n\nSo the specific unsettled question — whether the thin collar/shoulder lines thicken around weight and narrow around light — resolves in favour of the item on every seed; there is no seed disagreement, only a density difference (1001 simply has fewer garment strokes to read, which is what flattened at thumbnail scale). The reviewer already granted cool_nocturne (indigo shadows, blue-green midtone skin, warm nose/lip note) and soft_two_band; controlled_rim is also present as the warm rust rim confined to the shadow-side shoulder silhouette.\n\nSaturation was not the concern, but I checked tests/reports/phase7_linework_coloring_v2/saturation_screen.json for completeness: the cool_nocturne group (43 items, median 0.1909, range 0.1663-0.2319) reports outlier_count 0, so nothing flags there either.\n\nQuantitative note for honesty: I also ran a pixel-level stroke-width script (local-median darkness mask, skeleton + distance transform) against crisp_uniform and fine_tapered controls. That metric was not discriminative — it picks up soft_two_band shading boundaries as well as pen strokes, and the crisp_uniform controls scored equal or higher width variance. I am therefore basing the verdict on direct visual inspection of the full-resolution strokes, not on that metric."
+  ],
+  "case_199": [
+    "pass",
+    "fine_tapered + cool_nocturne + transparent_glaze: a fine dark contour along the sleeve silhouette that thins and fades toward the cuff with no interior line detail, indigo/violet over blue-green fields, and clearly overlapping translucent glaze planes on the garment."
+  ],
+  "case_229": [
+    "pass",
+    "rounded_soft + cool_nocturne + broad_blended_plane: smoothly rounded soft-edged shoulder and sleeve turns with only the eyes and lips gently reinforced, navy/indigo with blue-green midtones, and broad blended planes rounding the torso while the silhouette stays clear."
+  ],
+  "case_259": [
+    "pass",
+    "rounded_soft + warm_earth + soft_two_band: thin soft rounded contours on sleeves and cuffs, an olive sweater with clay-brown skirt on sand/cream ground (all hues in 0-60deg), and a lit chest plane against a soft feathered shadow band down the left side."
+  ],
+  "case_289": [
+    "pass",
+    "selective_edge + skin_centered_neutral + soft_two_band: the cream sweater's edge against grey is near-invisible and completed by the colour boundary with dark accents only at eyes, hair and black skirt; neutral cream/beige/black with warm skin undertones; sweater shows two soft value bands with feathered transitions."
+  ]
+}

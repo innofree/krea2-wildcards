@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -30,6 +31,9 @@ from export_phase6_matrix import (
     random_utility_rows,
     single_axis_rows,
 )
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def _item(item_id: str, family: str, *, status: str = "generated") -> dict[str, object]:
@@ -259,9 +263,9 @@ def test_calibration_covers_every_phase6_prompt_path_with_69_jobs(
 
 def test_crop_aware_scene_body_removes_out_of_frame_lower_garments() -> None:
     chest = (
-        "An adult pauses mid-step with separated arms and stable weight in a library, "
+        "pausing mid-step with separated arms and stable weight in a library, "
         "wearing a structured overshirt, fluid column dress, and tapered trousers, with a "
-        "quiet smile. Use chest-up framing with gentle compression."
+        "quiet smile, framed in chest-up framing with gentle compression."
     )
     rendered = _crop_aware_scene_body(chest)
     assert "mid-step" not in rendered
@@ -271,17 +275,17 @@ def test_crop_aware_scene_body_removes_out_of_frame_lower_garments() -> None:
     assert "chest-up framing" in rendered
 
     thigh = (
-        "An adult turns in a coastal setting, wearing a collarless jacket, wide-leg trousers, "
-        "and high-neck base, with a calm gaze. Use eye-level thigh-up framing."
+        "turning in a coastal setting, wearing a collarless jacket, wide-leg trousers, "
+        "and high-neck base, with a calm gaze, framed in eye-level thigh-up framing."
     )
     rendered = _crop_aware_scene_body(thigh)
     assert "wide-leg trousers" not in rendered
     assert "two broad upper-leg fabric panels intersected at mid-thigh" in rendered
 
     chest_hand = (
-        "An adult stands three-quarters, one hand at the waist and one lowered in a concourse, "
-        "wearing a longline vest, fitted top, and straight trousers, with a calm gaze. "
-        "Use chest-up framing."
+        "standing three-quarters, one hand at the waist and one lowered in a concourse, "
+        "wearing a longline vest, fitted top, and straight trousers, with a calm gaze, "
+        "framed in chest-up framing."
     )
     rendered = _crop_aware_scene_body(chest_hand)
     assert "one hand at the waist" not in rendered
@@ -304,14 +308,29 @@ def test_wide_camera_contract_fixes_scale_and_floor_margin() -> None:
         assert "large enough for the face" not in value
 
 
-def test_storyboard_camera_body_normalizes_medium_and_counterweight() -> None:
-    body, counterweight = _storyboard_camera_body(
-        "Photograph an adult subject from a clean side camera with one clear visual counterweight."
+def test_storyboard_camera_body_adds_a_counterweight_and_leaves_the_body_alone() -> None:
+    """The medium rewrite is gone; only the counterweight clause is still derived.
+
+    A camera body used to open "Photograph an adult subject", and that literal
+    fought the storyboard baseline, so it was rewritten. The subject
+    fragmentation dropped the opening, so there is nothing left to normalise and
+    the body now passes through untouched.
+    """
+    original = (
+        "captured in chest-up framing from a clean side camera position, using a classic wide "
+        "field of view and one clear visual counterweight."
     )
-    assert body.startswith("Show the adult subject in this storyboard")
+    body, counterweight = _storyboard_camera_body(original)
+    assert body == original
     assert "Photograph" not in body
     assert "small neutral-grey rectangular storyboard block" in counterweight
     assert "sole visual counterweight" in counterweight
+
+    quiet_body, quiet_counterweight = _storyboard_camera_body(
+        "captured in full-length framing from an eye-level frontal camera position."
+    )
+    assert quiet_counterweight == ""
+    assert "counterweight" not in quiet_body
 
 
 def test_lighting_style_synthesis_and_pose_ledger_remove_conflicts() -> None:
@@ -354,3 +373,49 @@ def test_lighting_style_synthesis_and_pose_ledger_remove_conflicts() -> None:
     assert "right heel lifted high off the ground" in pose_lock
     assert "Keep trousers slim enough" in pose_lock
     assert "only the toe touching" in pose_lock
+
+
+def test_every_body_rewrite_literal_still_occurs_in_the_catalog() -> None:
+    """A rewrite that no longer matches is a silent no-op, not an error.
+
+    export_phase6_matrix reshapes catalog bodies by literal string replacement --
+    exaggerating a contrapposto so the pose is measurable, dropping garments that
+    fall outside a crop, widening a framing clause. When the catalog wording moves
+    under those literals they simply stop firing, the prompt loses the correction,
+    and nothing raises. The subject fragmentation did exactly that to five of them,
+    and every existing test missed it because they all feed hand-written bodies
+    rather than real catalog text.
+
+    So this asserts the coupling directly: each literal the exporter searches for
+    must still be findable somewhere in the catalog it is meant to rewrite.
+    """
+    corpus: list[str] = []
+    for path in sorted((ROOT / "catalog").glob("*.yaml")):
+        document = yaml.safe_load(path.read_text(encoding="utf-8"))
+        if not isinstance(document, dict):
+            continue
+        items = document.get("items")
+        if not isinstance(items, dict):
+            continue
+        for item in items.values():
+            if isinstance(item, dict) and isinstance(item.get("prompt"), str):
+                corpus.append(item["prompt"])
+    assert corpus, "catalog corpus is empty"
+    blob = "\n".join(corpus)
+
+    source = (ROOT / "scripts" / "export_phase6_matrix.py").read_text(encoding="utf-8")
+    searches = re.findall(r'''\.replace\(\s*["']([^"']{25,})["']''', source)
+    assert len(searches) >= 8, "rewrite literals disappeared from the exporter"
+
+    # These six are produced by reinforced_axis_visibility_ledger rather than read
+    # from a catalog body, so their absence from the corpus is correct.
+    intermediate = {
+        "a compact grounded full-body stance",
+        "a balanced narrow full-body silhouette",
+        "within the full-length figure",
+        "Keep the complete figure in front of every decorative framing element",
+        "a centered figure inside an emblem-like border",
+        "an off-center figure with broad open side space",
+    }
+    dead = [s for s in searches if s not in intermediate and s not in blob]
+    assert not dead, f"rewrite literals no longer present in any catalog prompt: {dead}"

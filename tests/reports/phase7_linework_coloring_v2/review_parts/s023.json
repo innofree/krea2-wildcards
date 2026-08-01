@@ -1,0 +1,42 @@
+{
+  "case_023": [
+    "pass",
+    "angular_precise + limited_two_tone + transparent_glaze: straight-edged faceted planes on neck/lapel with precise angular contours, palette held to warm cream/tan plus cool grey-white only, and overlapping semi-transparent tan/grey washes on neck and jacket where the under-layer still reads through."
+  ],
+  "case_053": [
+    "pass",
+    "bold_outer_sparse_inner + cool_nocturne + crisp_shape_shadow: heavy dark silhouette/jaw-hair outline with almost no interior line (one clavicle mark), desaturated violet/teal/green night palette across all three seeds, and hard-edged violet shadow shapes cut cleanly under the jaw and on the neck."
+  ],
+  "case_083": [
+    "hold",
+    "broken_dry + airy_pastel + soft_two_band: defect — pastel lilac/pink/blue and soft two-value sleeve banding are both present, but at 4x every contour is a smooth continuous grey line with no interrupted or dry-brush stroke character (compare case_113 in the same sheet, where the breaks are plainly visible), so the linework attribute is not expressed."
+  ],
+  "case_113": [
+    "pass",
+    "broken_dry + skin_centered_neutral + transparent_glaze: fragmentary interrupted strokes along the tee neckline and jacket edges plus scratchy dry marks in the hair, palette restricted to skin tones with cream/oatmeal neutrals, and layered translucent tan washes over neck and chest."
+  ],
+  "case_143": [
+    "pass",
+    "crisp_uniform + skin_centered_neutral + fine_tonal_hatching: thin even-weight crisp contours on lapel and collar, fine parallel diagonal hatch strokes visible across the taupe jacket (seed 1001) and kimono sleeve (seed 3003), palette skin plus neutral taupe."
+  ],
+  "case_173": [
+    "pass",
+    "elastic_pressure + cool_nocturne + transparent_glaze: collar/placket strokes and hair lines visibly swell and thin along their length, palette is blue/green/violet nocturne, and translucent violet-pink-green washes overlap across face and neck with the under-colour showing through."
+  ],
+  "case_203": [
+    "pass",
+    "fine_tapered + muted_split_complement + broad_blended_plane: not a defect but unreadable — broad soft-blended blue-grey planes and the muted blue vs olive/khaki split-complement pairing are clear, but the render is lineless-painterly and the only candidate lines (collar edge, finger indications) are too thin at 256 px to judge taper; reopen at 1024. -- overturned at full resolution: Thumbnail artifact — resolved at 1024 px, no defect. test_id for case_203 (style_id `linework_coloring_fine_tapered_muted_split_complement_broad_blended_plane_reflected_color_complete_line_color`) resolves to three seeds: P7000607 (1001), P7000608 (2002), P7000609 (3003), all 1024x1024. The \"lineless-painterly / lines too thin to judge taper\" reading does not survive at full resolution. Every seed carries a coherent thin dark-ink contour system that is clearly width-modulated and tapered: (a) P7000607 collar traces a continuous fine line that is widest along the upper collar edge and thins to nothing at the collar point and where it meets the shoulder, with the jaw/neck contour likewise fading out; the finger separation strokes on both hands start wider at the knuckle and taper to points at the fingertips. (b) P7000608 hands show the same tapered fine finger lines, darker at the base and thinning to hairline at the tips. (c) P7000609 has a fine dark-teal placket line running the full torso that visibly swells mid-chest and tapers at both ends, plus a tapered mandarin-collar line. So fine_tapered is legible and correctly rendered, and it coexists cleanly with broad_blended_plane (broad soft-blended blue-grey planes) rather than being erased by it — the accent lines sit on top of the blended planes exactly as the combination intends. Palette was not the flagged concern and the reviewer had already accepted it, but for completeness saturation_screen.json reports outlier_total 0 across the whole axis and the muted_split_complement group (43 items, median 0.155, range 0.1285-0.1986) has outlier_count 0, so there is no saturation evidence against this item. Seed 1 shows the split complement most explicitly (muted blue shirt vs olive/khaki trousers); seeds 2 and 3 lean blue-grey with blue/cream, a mild weakening of the second leg but not the reason for the hold and not a defect. Key files: /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/P7000607/image_01.png, .../P7000608/image_01.png, .../P7000609/image_01.png."
+  ],
+  "case_233": [
+    "pass",
+    "rounded_soft + cool_nocturne + subtle_contact_shadow: rounded soft-cornered sleeve and shoulder contours, deep navy/teal/green nocturne palette, and on the brightened lap crop the shading is confined to contact junctions — under the cuffs, beneath the hands on the lap, and where the sleeve overlaps the skirt — with flat colour elsewhere."
+  ],
+  "case_263": [
+    "pass",
+    "rounded_soft + warm_earth + transparent_glaze: soft rounded sleeve/hem contours with no crisp corners, olive-khaki top against brown skirt for the warm-earth palette, and streaky overlapping translucent darker glazes on the olive sweater chest and shoulder."
+  ],
+  "case_293": [
+    "pass",
+    "selective_edge + skin_centered_neutral + transparent_glaze: line present on some edges only (one sleeve silhouette and cuff drawn, shoulder top and sweater hem left lineless and defined by tone), oatmeal/cream plus skin neutrals, and pale layered translucent washes across the sweater chest and sleeves."
+  ]
+}

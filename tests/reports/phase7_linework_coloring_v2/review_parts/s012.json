@@ -1,0 +1,42 @@
+{
+  "case_012": [
+    "pass",
+    "angular_precise + deep_jewel + transparent_glaze: hard-edged angular facets with sharp straight corners on the blazer/lapel, forest-green + aubergine + navy jewel fields, and stacked translucent films where the under-hue still reads through the darks (seed 3003 weakest, near-black, but 1001/2002 unambiguous)."
+  ],
+  "case_042": [
+    "pass",
+    "bold_outer_sparse_inner + airy_pastel + crisp_shape_shadow: distinctly heavier dark silhouette contour on sleeves/torso with a near-lineless interior, pale pink/blue/mint pastel washes, and flat hard-edged pastel shadow patches rather than gradients."
+  ],
+  "case_072": [
+    "pass",
+    "Real defect - bold_outer_sparse_inner is inverted: outer contour is a thin light-grey sketch line while the interior carries dense fold/hatch strokes across shirt and sleeves (seeds 1001 and 2002 both); limited_two_tone (grey top + cream/olive bottom) and subtle_contact_shadow do read. -- overturned at full resolution: Resolved case_072 -> style_id linework_coloring_bold_outer_sparse_inner_limited_two_tone_subtle_contact_shadow_reflected_color_complete_line_color -> test_ids P7000214 (seed 1001), P7000215 (2002), P7000216 (3003), all under /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/<id>/image_01.png.\n\nThe claimed inversion does not survive full resolution. In all three seeds the outer silhouette (shoulders, outer arms, sleeve edges, hem, hands) is drawn with a near-black ink contour that is clearly the heaviest, darkest mark in the image; the interior fold/hatch marks are thin, light grey, delicate hairlines. Zoomed 2-3x crops of the left/right shoulder and sleeve edges show this unambiguously for seeds 1001 and 2002, and the seed-3003 full frame shows the same bold silhouette against faint interior marks.\n\nQuantitative confirmation (garment band, dark-run scan per row, threshold bg-45): outer contour runs vs interior runs — P7000214 outer meanW 4.40 px / mean min-luminance 31 vs interior meanW 3.89 / 91; P7000215 outer 8.25 / 27 vs interior 4.54 / 91; P7000216 outer 6.91 / 29 vs interior 3.21 / 100. The outer contour is both wider and roughly 60-70 luminance levels darker than any interior stroke, i.e. the opposite of \"thin light-grey outer, dense dark interior\".\n\nExplanation of the thumbnail artifact: the outer contour is a fine 2-3 px ink line sitting against a mid-grey (bg ~181-192) studio ground, so downsampling blends it toward light grey and drops its weight, while the many delicate interior hatch strokes aggregate into apparent interior density. Seed 1001 is the busiest interior of the three (slightly more hatching than a strict reading of \"sparse\"), but the strokes are delicate and light and the bold outer contour still dominates, so it is not a defect. limited_two_tone (grey top + cream/olive bottom) and subtle_contact_shadow read as the reviewer already noted. Saturation was not the concern, so saturation_screen.json was not the deciding evidence."
+  ],
+  "case_102": [
+    "hold",
+    "Real defect - broken_dry absent: all three seeds draw jaw, lapel and collar with smooth unbroken vector-clean lines, no dry-brush interruption or skipped stroke; muted_split_complement (dusty blue jacket vs warm coral skin) and crisp_shape_shadow (hard-edged flat cheek/neck shadow shapes) do read."
+  ],
+  "case_132": [
+    "pass",
+    "crisp_uniform + muted_split_complement + fine_tonal_hatching: even-weight thin dark outline running consistently around sleeves/hem/collar, dusty blue top against olive-brown skirt, and a fine hatch grain visible across top and skirt."
+  ],
+  "case_162": [
+    "pass",
+    "Unreadable at this density - airy_pastel and transparent_glaze read clearly (overlapping translucent pink/mint/lilac films), but elastic_pressure cannot be judged: the garment contour is a thin near-uniform grey line with no legible pressure swelling or tapering in a 256px tile. -- overturned at full resolution: Thumbnail artifact. case_162 = style_id linework_coloring_elastic_pressure_airy_pastel_transparent_glaze_reflected_color_complete_line_color, test_ids P7000484 (seed 1001), P7000485 (2002), P7000486 (3003), all 1024x1024 at /media/interbus/WORKS/krea2-wildcards/tests/.claude/worktrees/meaning-of-work-8f58bf/tests/reports/phase7_linework_coloring_v2/runs/<test_id>/image_01.png.\n\nThe hold claimed the garment contour is \"a thin near-uniform grey line with no legible pressure swelling or tapering.\" At full resolution that is false on all three seeds, and the three seeds agree (no seed disagreement to arbitrate).\n\nSeed 1001: the outer sleeve contour swells monotonically from the shoulder to the cuff — sub-pixel slope-corrected ink mass along the left sleeve contour rises from ~1.1 at the upper sleeve to ~3.3 near the cuff (roughly 3x). Interior fold strokes on the sleeve and shoulder enter as fine hairlines, swell mid-stroke, and taper to points.\nSeeds 2002 and 3003: same behaviour at the weight-bearing locations — the elbow-crease and cuff-fold strokes each enter thin, swell in the crease, and taper to hairline terminals, while the straight forearm run of the contour stays thin. The contour is dark near-black, not grey.\n\nControl comparison confirms this is real modulation and not the incidental wobble any generated line has. Rendering P7000450 (crisp_uniform + transparent_glaze + reflected_color, seed 3003 — the deliberately even-weight linework value) at the identical crop and zoom shows a genuinely constant-thickness contour from shoulder to cuff with no swelling and no tapering. That is what \"near-uniform\" actually looks like, and case_162 does not look like it.\n\nNote on method: the automated stroke-mass statistic is NOT a usable discriminator here and I did not rely on it for the verdict — median smoothed max/min ratio is 2.86 for crisp_uniform, 3.30 for elastic_pressure, 3.23 for fine_tapered, because the leftmost-dark-run scan picks up hair and is confounded by contour curvature. The verdict rests on direct visual inspection of the full-resolution crops against the crisp_uniform control.\n\nSaturation was not the concern, but the screen is clean anyway: this item is in the airy_pastel group (median 0.0839, range 0.0672-0.1085), which has outlier_count 0, and the whole screen has outlier_total 0. The item appears in no outlier list.\n\nThe defect was a 256px downsampling artifact: the pressure modulation lives in a 1-3px stroke-width range, which the contact-sheet tile collapses into a single flat grey pixel line."
+  ],
+  "case_192": [
+    "pass",
+    "fine_tapered + cool_nocturne + fine_tonal_hatching: cool blue/violet/teal nocturne palette carried into the skin itself, fine directional hatch strokes modelling neck, chest and garment, and fine hair/fold strands tapering to points."
+  ],
+  "case_222": [
+    "pass",
+    "fine_tapered + warm_earth + subtle_contact_shadow: olive-khaki jacket with warm tan skin and warm grey ground, thin tapering lapel and hair strokes, and soft contact darkening under the jaw and where hair overlaps the shoulder."
+  ],
+  "case_252": [
+    "pass",
+    "rounded_soft + warm_earth + broad_blended_plane: olive/tan warm earth, broad softly blended tonal planes over garment and face with no hard shadow boundary, and blunt rounded brush-stroke ends on hair tips and fold marks with no sharp corners."
+  ],
+  "case_282": [
+    "pass",
+    "selective_edge + skin_centered_neutral + broad_blended_plane: cream top sitting in the same warm-neutral family as skin and background, broad blended planes across the shirt, and edge present only selectively - crisp collar rim and right shoulder seam while the left sleeve edge dissolves into the ground."
+  ]
+}
