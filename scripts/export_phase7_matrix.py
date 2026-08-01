@@ -63,25 +63,25 @@ PROVEN_AXES = (
 CAMERA_PROFILE_MARKERS = ("clean side camera position", "facial profile")
 PHASE7_AXIS_ANCHORS = {
     "fashion": (
-        "Show exactly one adult woman in a balanced standing pose with a simple "
+        "Show her in a balanced standing pose with a simple "
         "shoulder-length neutral-brown hairstyle. Use an eye-level full-length camera, "
         "broad neutral diffused lighting, and an uncluttered warm-grey studio cyclorama, "
         "with her head, both hands, and both feet visible."
     ),
     "hair_design": (
-        "Show exactly one adult woman in a plain long-sleeve top, facing the camera in a "
+        "Dress her in a plain long-sleeve top, facing the camera in a "
         "balanced upright pose. Use broad neutral diffused lighting and an uncluttered "
         "warm-grey studio cyclorama, keeping her complete crown, hairline, face, and both "
         "eyes readable."
     ),
     "effect": (
-        "Show exactly one adult woman in a balanced standing pose, wearing a plain "
+        "Place her in a balanced standing pose, wearing a plain "
         "long-sleeve top and straight trousers, on an uncluttered warm-grey studio ground "
         "under broad neutral diffused lighting. Keep her the dominant subject: the named "
         "elements never cover her face, both hands, or silhouette."
     ),
     "media_rendering": (
-        "Render the adult as a clearly drawn editorial character illustration whose named "
+        "Render her as a clearly drawn editorial character illustration whose named "
         "medium covers the face, hair, clothing, and silhouette. Use an eye-level mid-thigh "
         "frame, broad neutral diffused lighting, and an uncluttered warm-grey studio ground, "
         "with her face, eyes, and both hands readable."
@@ -128,7 +128,7 @@ BINDING_ARTIFACT_TYPE = "phase7_axis_prompt_binding"
 PHASE7_PROFILE_ALGORITHM = (
     "phase7-mass-axis-v2|phase6-single-axis-prompt-reuse|"
     "item-id-keyed-rows-v1|per-item-prompt-digest-binding-v1|"
-    "camera-profile-contract-repair-v1"
+    "camera-profile-contract-repair-v1|anchored-subject-identity-v1"
 )
 PHASE7_PROFILE_SHA256 = hashlib.sha256(
     json.dumps(
@@ -139,7 +139,7 @@ PHASE7_PROFILE_SHA256 = hashlib.sha256(
             "phase7_axis_focus": PHASE7_AXIS_FOCUS,
             "phase7_axis_framing": PHASE7_AXIS_FRAMING,
             "profile_algorithm": PHASE7_PROFILE_ALGORITHM,
-            "version": "phase7_mass_axis_v2",
+            "version": "phase7_mass_axis_v3",
         },
         sort_keys=True,
         separators=(",", ":"),

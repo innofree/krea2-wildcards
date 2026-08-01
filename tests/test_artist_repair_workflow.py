@@ -8,7 +8,7 @@ import pytest
 import yaml
 
 from bind_artist_prompt_evidence import atomic_write_json, build_binding
-from common import canonical_prompt_sha256
+from common import SUBJECT_IDENTITY, canonical_prompt_sha256
 from export_artist_testing_retest_matrix import retest_rows
 from export_artist_visual_signature_matrix import (
     AXIS_CALIBRATION_PROFILE,
@@ -391,7 +391,7 @@ def test_single_view_calibration_forbids_turnarounds_and_strengthens_axes(
         assert prompt.count(body) == 1
         assert len(prompt) <= 1500
         assert len(prompt.split()) <= 210
-        assert "exactly one adult woman once" in prompt
+        assert f"exactly {SUBJECT_IDENTITY}, once" in prompt
         assert "no duplicate, lineup, alternate view" in prompt
         assert "turnaround" in prompt
         assert "Make each cue bold and independent" in prompt
@@ -445,7 +445,8 @@ def test_editorial_calibration_uses_proven_positive_head_to_toe_anchors(
         assert "both hands and both feet clearly visible" in prompt
         assert "Render distinct visible cues" in prompt
         assert "flat decorative outer border behind the figure" in prompt
-        assert "exactly one complete adult figure" in prompt
+        assert "exactly one complete figure" in prompt
+        assert SUBJECT_IDENTITY in prompt
 
     matrix = tmp_path / "tests/prompt_matrix/editorial_calibration.jsonl"
     write_immutable_jsonl(matrix, rows)

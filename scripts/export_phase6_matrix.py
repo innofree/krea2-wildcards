@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 from typing import Any, Iterable
 
-from common import load_yaml
+from common import SUBJECT_IDENTITY, load_yaml
 from export_artist_visual_signature_matrix import reinforced_axis_visibility_ledger
 from export_artist_native_matrix import validate_seeds, write_jsonl
 from run_remote_prompt_matrix import validate_job
@@ -19,14 +19,14 @@ DEFAULT_SEEDS = (1001, 2002, 3003)
 CALIBRATION_SEEDS = (91001, 92002, 93003)
 BENCHMARK_SEEDS = (1001, 2002, 3003, 4004, 5005)
 SUBJECT_CONTRACT = (
-    "Compose one continuous single-view vertical image built around exactly one clearly adult "
-    "woman as the only figure. Every visible face, body, and hand belongs to this same woman. "
+    f"Compose one continuous single-view vertical image built around exactly {SUBJECT_IDENTITY} "
+    "as the only figure. Every visible face, body, and hand belongs to this same woman. "
     "Place a clearly visible strip of background above her entire hairstyle, and keep her complete "
     "crown, face, and both eyes clearly readable."
 )
 CAMERA_SUBJECT_CONTRACT = (
-    "Compose one continuous single-view vertical image built around exactly one clearly adult "
-    "woman as the only figure. Every visible face, body, and hand belongs to this same woman. "
+    f"Compose one continuous single-view vertical image built around exactly {SUBJECT_IDENTITY} "
+    "as the only figure. Every visible face, body, and hand belongs to this same woman. "
     "Place a clearly visible strip of background above her entire hairstyle, and keep her complete "
     "crown, facial profile, and visible profile eye clearly readable."
 )
@@ -43,6 +43,7 @@ PHASE6_PROFILE_ALGORITHM = (
     "pose-body-state-anchor-v2|conditional-camera-storyboard-v2|"
     "background-nonhuman-structure-anchor-v1|wide-environmental-framing-v1|"
     "single-axis-unstable-pose-exclusion-v3|"
+    "anchored-subject-identity-v1|"
     "proven-short-paths-v2"
 )
 SINGLE_AXIS_EXCLUDED_ITEM_PREFIXES = (
@@ -79,9 +80,10 @@ PRESET_FOCUS = (
 )
 PROVEN_VISIBILITY_FINISH = (
     "Make every requested visual direction plainly legible without replacing the selected medium "
-    "with a generic default look. Keep exactly one clearly adult subject with coherent face, eyes, "
-    "hands, joints, garment construction, and spatial relationships. Preserve the requested line, "
-    "color, surface, lighting, and composition cues, with no text, logos, or watermarks."
+    "with a generic default look. Keep exactly one figure, the woman described above, with coherent "
+    "face, eyes, hands, joints, garment construction, and spatial relationships. Preserve the "
+    "requested line, color, surface, lighting, and composition cues, with no text, logos, or "
+    "watermarks."
 )
 FINISH = (
     "Give every named visual cue an obvious, concrete location on the face, clothing, silhouette, "
@@ -90,7 +92,7 @@ FINISH = (
     "cleanly with text-free, logo-free, watermark-free imagery."
 )
 FIXED_SCENE = (
-    "Depict exactly one adult woman standing naturally on an uncluttered warm-grey studio "
+    f"Depict exactly {SUBJECT_IDENTITY}, standing naturally on an uncluttered warm-grey studio "
     "cyclorama. Use an eye-level full-length camera, broad neutral diffused lighting, a plain "
     "long-sleeve top and straight trousers, with her head, both hands, and both feet visible."
 )
@@ -130,34 +132,36 @@ STYLE_PACK_EDGE = {
 }
 SINGLE_AXIS_ANCHORS = {
     "character_design": (
-        "Show the described adult design in a balanced standing pose. Dress her in a complete "
+        "Show the described design on her in a balanced standing pose. Dress her in a complete "
         "front-readable outfit that visibly carries every named layer, seam, closure, silhouette, "
         "and proportion cue. Use an eye-level full-length camera, broad neutral diffused lighting, "
         "and an uncluttered warm-grey studio cyclorama."
     ),
     "pose": (
-        "Show exactly one adult woman in a plain long-sleeve top and straight trousers. Use an "
+        "Dress her in a plain long-sleeve top and straight trousers. Use an "
         "eye-level full-length camera, broad neutral diffused lighting, and an uncluttered "
         "warm-grey studio cyclorama, with her head, both hands, and both feet visible."
     ),
+    # lighting is the one axis that returns before the subject contract is
+    # prepended, so its anchor carries the full identity itself.
     "lighting": (
-        "Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve "
+        f"Show exactly {SUBJECT_IDENTITY}, in a balanced standing pose, wearing a plain long-sleeve "
         "top and straight trousers. Use an eye-level full-length camera on an uncluttered neutral "
         "studio cyclorama, with her head, both hands, and both feet visible."
     ),
     "background": (
-        "Show exactly one adult woman in a balanced standing pose, wearing a plain long-sleeve "
+        "Place her in a balanced standing pose, wearing a plain long-sleeve "
         "top and straight trousers. Use an eye-level full-length camera and broad neutral "
         "diffused lighting, with her head, both hands, and both feet visible."
     ),
     "linework_coloring": (
-        "Render the adult as a clearly drawn editorial character illustration whose named line "
+        "Render her as a clearly drawn editorial character illustration whose named line "
         "quality and color treatment cover the face, hair, clothing, and silhouette. Use an "
         "eye-level mid-thigh frame, broad neutral diffused lighting, and an uncluttered warm-grey "
         "studio ground, with her face, eyes, and both hands readable."
     ),
     "camera": (
-        "Show the adult woman in a balanced pose, wearing a plain long-sleeve top under broad "
+        "Show her in a balanced pose, wearing a plain long-sleeve top under broad "
         "neutral diffused lighting on an uncluttered warm-grey studio cyclorama. Treat the named "
         "camera boundary, view position, field of view, placement, and negative space as literal."
     ),
@@ -216,7 +220,7 @@ PHASE6_PROFILE_SHA256 = hashlib.sha256(
             "style_pack_surface": STYLE_PACK_SURFACE,
             "subject_contract": SUBJECT_CONTRACT,
             "single_axis_anchors": SINGLE_AXIS_ANCHORS,
-            "version": "phase6_positive_profile_v15",
+            "version": "phase6_positive_profile_v16",
         },
         sort_keys=True,
         separators=(",", ":"),
@@ -326,7 +330,7 @@ def _feature_axis_phrase(
 
 def _lighting_neutral_style_direction(item: dict[str, Any]) -> str:
     return (
-        "Use a photorealistic adult editorial material treatment with "
+        "Use a photorealistic editorial material treatment with "
         f"{_feature_axis_phrase(item, 'shape_language', STYLE_PACK_SHAPE)}; "
         f"{_feature_axis_phrase(item, 'color_strategy', STYLE_PACK_COLOR)}; "
         f"{_feature_axis_phrase(item, 'surface_character', STYLE_PACK_SURFACE)}; "
@@ -394,21 +398,21 @@ def _crop_aware_scene_body(value: str) -> str:
         return value
     if kind in {"chest-up", "waist-up"}:
         value = value.replace(
-            "pauses mid-step with separated arms and stable weight",
-            "pauses during a walk with both separated upper-arm gestures visible",
+            "pausing mid-step with separated arms and stable weight",
+            "pausing during a walk with both separated upper-arm gestures visible",
         )
         value = value.replace(
-            "stands three-quarters, one hand at the waist and one lowered",
-            "stands three-quarters with one upper arm bending toward a hand that continues below "
+            "standing three-quarters, one hand at the waist and one lowered",
+            "standing three-quarters with one upper arm bending toward a hand that continues below "
             "the frame and the other arm descending beyond it",
         )
         value = value.replace(
-            "wearing a longline vest, fitted top, and pleated skirt",
+            "wearing a longline vest, fitted top, and mid-calf pleated skirt",
             "wearing only the visible vest neckline, vest lapels, fitted-top shoulders, and upper "
             "chest fabric; the pleated skirt is outside the frame",
         )
         value = value.replace(
-            "wearing a wrapped top and tapered trousers",
+            "wearing a structured wrap top, tapered trousers, and simple accessories",
             "wearing only visible wrap-top shoulders, neckline, crossed chest fabric, and upper "
             "sleeves; the trousers are outside the frame",
         )
@@ -475,11 +479,12 @@ def _crop_aware_scene_body(value: str) -> str:
 
 
 def _storyboard_camera_body(value: str) -> tuple[str, str]:
-    value = re.sub(
-        r"^Photograph an adult subject",
-        "Show the adult subject in this storyboard",
-        value,
-    )
+    # A camera body used to open "Photograph an adult subject using ...", and that
+    # literal "Photograph" fought the storyboard baseline this axis renders under,
+    # so it was rewritten to "Show the adult subject in this storyboard". The
+    # subject fragmentation removed the opening entirely -- a body now reads
+    # "captured in {framing} from {position}" -- so there is nothing left to
+    # rewrite and the substitution is gone rather than left as a dead pattern.
     counterweight = ""
     if "counterweight" in value.lower():
         counterweight = (
@@ -494,22 +499,22 @@ def _camera_storyboard_baseline(value: str) -> str:
     clauses = [CAMERA_STORYBOARD_BASELINE]
     if "clean profile" in lowered:
         clauses.append(
-            "Draw the adult as one clean side-profile silhouette with exactly one visible eye, "
+            "Draw her as one clean side-profile silhouette with exactly one visible eye, "
             "one visible nose bridge, one visible mouth line, and one visible ear."
         )
     elif "rear three-quarter" in lowered:
         clauses.append(
-            "Turn the adult away from the viewer into a rear three-quarter view, with the back "
+            "Turn her away from the viewer into a rear three-quarter view, with the back "
             "plane, one cheek edge, one ear or hair-side edge, and the far shoulder visibly offset."
         )
     elif "three-quarter front" in lowered:
         clauses.append(
-            "Turn the adult into a clear three-quarter-front view with both shoulders visible at "
+            "Turn her into a clear three-quarter-front view with both shoulders visible at "
             "different depths and the face angled rather than flattened into a side profile."
         )
     elif "eye-level front" in lowered:
         clauses.append(
-            "Face the adult directly toward the camera at eye level with symmetrical shoulders and "
+            "Face her directly toward the camera at eye level with symmetrical shoulders and "
             "a frontal torso while preserving the requested crop and open side region."
         )
     if "wide environmental" in lowered or "wide view" in lowered:
@@ -527,7 +532,7 @@ def _background_axis_anchor(value: str) -> str:
         "horizon, flanking, and repeated vertical feature from non-human architectural or "
         "landscape objects such as empty railings, posts, planters, shelves, tree trunks, "
         "window mullions, columns, benches, parapets, or wall openings. Keep the measured "
-        "adult as the only human-shaped figure in the scene."
+        "woman as the only human-shaped figure in the scene."
     )
 
 
@@ -535,7 +540,7 @@ def _camera_axis_anchor(value: str) -> str:
     lowered = value.lower()
     if "wide environmental" in lowered or "wide view" in lowered:
         return (
-            "Show the adult woman as a small complete figure inside a deliberately wide "
+            "Show her as a small complete figure inside a deliberately wide "
             "environmental storyboard set. Use broad neutral diffused lighting, visible floor "
             "planes, a stable horizon, side-wall or parapet masses, and distant rectangular "
             "depth markers. Treat the named camera boundary, view position, field of view, "
@@ -547,7 +552,7 @@ def _camera_axis_anchor(value: str) -> str:
 def _pose_axis_anchor(value: str) -> str:
     lowered = value.lower()
     base = (
-        "Show exactly one adult woman in a plain long-sleeve top and straight trousers under "
+        "Dress her in a plain long-sleeve top and straight trousers under "
         "broad neutral diffused lighting on an uncluttered warm-grey studio cyclorama."
     )
     if "low kneeling" in lowered:
@@ -723,8 +728,8 @@ def _contrapposto_scene_body(value: str) -> str:
     if "contrapposto" not in value.lower():
         return value
     value = value.replace(
-        "An adult holds a balanced contrapposto with both hands visible",
-        "An adult holds an exaggerated editorial fashion contrapposto with the entire body shaped "
+        "holding a balanced contrapposto with both hands visible",
+        "holding an exaggerated editorial fashion contrapposto with the entire body shaped "
         "as a clear S-curve, weight entirely on the left straight leg, the right knee visibly bent "
         "outward, the right heel lifted high with only the toe touching, hips slanting steeply "
         "down to the right, shoulders slanting steeply down to the left, and both hands visible",
@@ -735,8 +740,8 @@ def _contrapposto_scene_body(value: str) -> str:
         "a high-neck base",
     )
     value = value.replace(
-        "Use eye-level full-length framing with visible feet and ample headroom",
-        "Use eye-level full-length framing with visible separated feet, ample headroom, and enough "
+        "eye-level full-length framing with visible feet and ample headroom",
+        "eye-level full-length framing with visible separated feet, ample headroom, and enough "
         "floor below the shoes to see the lifted heel and toe-only contact",
     )
     return value
@@ -1010,12 +1015,12 @@ def pairwise_rows(
             value = (
                 f"{left_direction.rstrip('.,;:')}. "
                 "Combine it coherently with this second visual direction: "
-                f"{right_prompt}. Resolve both directions on the same adult subject"
+                f"{right_prompt}. Resolve both directions on the same woman"
             )
             if right_family == "pose":
                 rendered_prompt = (
                     f"{left_prompt}. Combine it coherently with this second visual direction: "
-                    f"{right_prompt}. Resolve both directions on exactly one adult subject. "
+                    f"{right_prompt}. Resolve both directions on exactly one figure, the same woman. "
                     "Use eye-level full-length framing with the complete crown, both hand "
                     f"placements, both supporting legs, and both feet visible. "
                     f"{PROVEN_VISIBILITY_FINISH} "
