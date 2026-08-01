@@ -22,6 +22,44 @@
 
 ## Unreleased
 
+### Fixed
+
+- Anchored the benchmark subject. Every export rig opened on `exactly one adult woman`, which
+  delegated age and ethnicity to the model's prior and rendered a middle-aged Western face
+  instead of the intended subject. `common.SUBJECT_IDENTITY` now names it once per prompt and
+  all three exporters share it. See plan.md 7.35.
+- Made every catalog prompt a subject-free fragment. The built runtime carried 3,366
+  `An adult subject/character/model/portrait` openings, so a wildcard draw injected a second
+  subject into prompts that already declared their own and the unanchored one won the age and
+  ethnicity slot. All 3,765 prompts come from 13 blueprint templates, which now emit
+  participial fragments without the per-item `Preserve realistic skin texture ...` boilerplate.
+- Repaired seven literal body rewrites in `export_phase6_matrix.py` that silently matched
+  nothing. Five broke on the fragmentation; two predated it, leaving two of six preset
+  wardrobes without their out-of-frame garment correction on chest-up and waist-up crops
+  through the run that promoted preset at 177/200.
+
+### Changed
+
+- Reset 2,167 evaluated items to `generated`. Each verdict recorded an
+  `evaluated_prompt_sha256` for a prompt string the rewrite replaced, so the scores no longer
+  described their items. `generate_catalog_expansion.py --reset-validation-on-change` demotes
+  rather than bypassing the guard that refuses to rewrite an approved item. Production runtime
+  is 29 items, the hand-maintained `art_styles` packs.
+- Retired plan.md 7.18's `deep_jewel` rule. A 20-item pilot under the anchored rig put all six
+  shading pairings in the same saturation band as the control, so the 35 items it had held look
+  like an artifact of the old rig rather than a property of the coloring value.
+- `phase7-axis-*` Make targets take `REV` (default `v1`) so an axis can be re-run under the
+  corrected rig without overwriting its original evidence.
+
+### Added
+
+- `mean_saturation` to the Stage A prefilter, as a measurement and not a gate: `airy_pastel`
+  and `limited_two_tone` render near 0.10 by design, so no honest per-frame threshold exists.
+- `README_hf_dataset.md`, the card for the `innofree/krea2-wildcards` evidence dataset —
+  17,584 review images published to the Hugging Face Hub.
+- A test asserting every literal the exporter rewrites still occurs in the catalog, which is
+  the check that would have caught all seven dead rewrites.
+
 ### Expansion
 
 - Added source-grounded deterministic blueprints for 3,700 entries across 13 content categories.
