@@ -1,0 +1,42 @@
+{
+  "case_008": [
+    "pass",
+    "chest_up + clean_profile: chest-up crop with body turned to a clean side profile, face angled back toward camera — both visible. thirds_gaze_space: real defect — seed_2002 is dead-center/frontal with no offset or gaze-side space, contradicting rule-of-thirds placement; deep_focus_language also unreadable against the flat, structureless studio backdrop. -- overturned at full resolution: Resolved case_008 (style_id camera_chest_up_clean_profile_deep_focus_language_thirds_gaze_space_complete_camera) to test_ids P7000022 (seed 1001), P7000023 (seed 2002), P7000024 (seed 3003) via tests/reports/phase7_camera_v3/review/manifest.json 'cases' entries, then opened all three tests/reports/phase7_camera_v3/runs/<test_id>/image_01.png at full resolution (1024x1024).\n\nchest_up + clean_profile + face-turned-to-camera: confirmed correct in all three seeds, not in dispute.\n\nthirds_gaze_space (the cited 'real defect', specifically about seed_2002/P7000023): does NOT hold. I overlaid rule-of-thirds gridlines on all three full-res renders and measured torso silhouette bounding boxes via gradient-edge detection. All three seeds — including the two seeds the thumbnail review implicitly treated as fine (1001, 3003) — place the face essentially on/near the vertical center line with eyes sitting on the upper horizontal third line (center fractions 0.47-0.51 across all three by torso-edge measurement). Seed_2002 is not meaningfully more 'dead-center/frontal' than seed_1001 or seed_3003 — the three are compositionally indistinguishable at full resolution. This reads as a thumbnail-scale misjudgment: at contact-sheet thumbnail size, subtle anti-aliasing/compression differences in hair drape and shoulder angle likely made seed_2002 look flatter/more frontal than it actually is.\n\ndeep_focus_language / flat studio backdrop: the plain, structureless gray backdrop is identical in character across all three seeds (and appears to be the deliberate studio-portrait background for this entire prompt/style, not an anomaly unique to this case). Since it's consistent across every seed of this case rather than a seed-specific flaw, it doesn't support a case-specific hold either.\n\nConcern was about composition/background, not color, so saturation_screen.json was not consulted (per the routing instructions). Conclusion: this was a thumbnail artifact, not a genuine full-resolution defect — hold does not survive."
+  ],
+  "case_033": [
+    "hold",
+    "clean_profile: body-profile pose with face turned toward camera is visible. close_face: real defect — all three seeds crop down to chest/upper-arm with garment fabric visible, not 'top of hair to just below the chin' as the crib specifies."
+  ],
+  "case_058": [
+    "pass",
+    "rear_three_quarter + centered_symmetry: over-the-shoulder turn with face readable and subject centered in all three seeds — both visible. close_face: real defect — same as case_033, crop extends well past the chin into chest/shoulder territory. -- overturned at full resolution: Resolved test_id P7000172/173/174 (style_id camera_close_face_rear_three_quarter_natural_perspective_centered_symmetry_complete_camera) and opened image_01.png at full resolution for all three seeds.\n\nrear_three_quarter + centered_symmetry: confirmed correct as originally noted — an over-the-shoulder turn with the face fully readable and the subject centered in frame across all three seeds. No defect.\n\nclose_face: does NOT hold at full resolution. In all three seeds the entire face is visible with the chin clearly free of the frame edge — there is a visible neck/collar gap between the chin and where the shoulder/chest line begins (sweater neckline sits well below the jaw). This is a standard head-and-shoulders portrait crop, not a tight face crop that clips into the chin. The thumbnail apparently compressed that neck-to-shoulder gap enough to read as \"crop extends into chest,\" but at full resolution the framing is generous, not clipped. No saturation concern was raised for this item (grayscale/sepia toning), so saturation_screen.json was not relevant here.\n\nVerdict: this was a thumbnail-scale misread, not a genuine defect. holds=false for both flagged concerns."
+  ],
+  "case_083": [
+    "hold",
+    "full_length: real defect — only seed_1001 shows both feet and floor space; seed_2002 is a chest-up crop and seed_3003 stops at the thighs, so full-length framing is not reliably expressed across the case."
+  ],
+  "case_108": [
+    "hold",
+    "head_shoulders + rear_three_quarter: framing and the readable-through-the-turn face are both visible. diagonal_depth: not readable — plain backdrop gives no foreground anchor or diagonal leading line, and the subject sits centered in all three seeds."
+  ],
+  "case_133": [
+    "hold",
+    "clean_profile: side-profile pose with face turned to camera is visible. thigh_up: real defect — all three seeds crop at chest level; no waist, hand gesture, or garment silhouette down to the thigh is visible anywhere in the case."
+  ],
+  "case_158": [
+    "hold",
+    "vertical_full_scene: real defect — all three seeds render a tight chest-up portrait with no headroom or foreground/floor anchor, contradicting the vertical full-scene framing the crib specifies."
+  ],
+  "case_183": [
+    "hold",
+    "vertical_full_scene: real defect — same failure mode as case_158; chest-up crop only, no scene or headroom around the subject in any of the three seeds."
+  ],
+  "case_208": [
+    "pass",
+    "waist_up: framing with complete, uncropped hands is clearly shown in all three seeds. thirds_gaze_space: not readable — subject and hands sit centered in every seed with no rule-of-thirds offset or open gaze-side space visible. -- overturned at full resolution: test_id P7000622/623/624 (style_id camera_waist_up_slight_high_natural_perspective_thirds_gaze_space_complete_camera), viewed at full 1024x1024 resolution.\n\nwaist_up: confirmed fine in all three seeds — hands are complete and uncropped, matches the thumbnail read.\n\nthirds_gaze_space: the \"centered in every seed, no offset\" claim does not hold up. I measured horizontal centroid position (as fraction of image width) for both the head/face region and the full subject mass in each seed:\n- P7000622: head centroid at 44.7% width (slightly left), full subject mass at 60.4% (pulled right by the raised hand) — a clear left/right split between face and gesture, not a centered composition.\n- P7000623: head centroid at 40.8% width — face sits close to the left-third line, with the raised hand extending out to the right side (mass centroid 50.1%), producing open background space in the upper-right that reads as classic thirds/gaze-space framing.\n- P7000624: head centroid at 50.7% (genuinely centered) with only the hand offset left — this is the one seed that actually matches the \"centered\" description.\n\nSo 2 of 3 seeds (622, 623) show clear off-center face/subject placement with corresponding open space on the opposite side, directly contradicting the reasoning used to place this on hold (\"subject and hands sit centered in every seed with no rule-of-thirds offset or open gaze-space visible\"). That reasoning was accurate for only one of the three seeds. This reads as a thumbnail-scale artifact — the small contact-sheet crop apparently flattened the compositional asymmetry that is visible at full resolution. No saturation_screen.json exists in this report directory and the flagged concern was compositional, not color, so that check doesn't apply. Recommend releasing case_208 from hold."
+  ],
+  "case_233": [
+    "hold",
+    "wide_environmental: figure-to-scene scale is roughly right, but real defect — rendering has collapsed into flat vector/cartoon style (blank facial features, flat-shaded bench shapes) unlike the photographic rig used everywhere else on the sheet, so camera_position (slight_low), lens_language (deep_focus_language), and composition (centered_symmetry) can't be judged in the intended photographic sense."
+  ]
+}

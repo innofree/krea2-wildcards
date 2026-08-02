@@ -1,0 +1,42 @@
+{
+  "case_019": [
+    "hold",
+    "chest_up framing is correct (shoulders + arm gesture visible), but clean_profile fails: all 3 seeds show both eyes clearly readable in a near-frontal face turn despite side-angled shoulders, not the strict side-profile (only near eye visible, far eye hidden) the axis prompt requires."
+  ],
+  "case_044": [
+    "hold",
+    "close_face + rear_three_quarter both fail: crop shows neck, shoulders, and chest (should cut just below chin, no chest/shoulders), and the face is frontal with both eyes visible instead of turned away showing back-plane/cheek-edge as rear_three_quarter requires."
+  ],
+  "case_069": [
+    "hold",
+    "full_length framing fails: all 3 seeds (1001/2002/3003) show only a chest-up crop with no legs, knees, or feet visible; eye_level_front reads fine but the framing defect blocks approval."
+  ],
+  "case_094": [
+    "hold",
+    "full_length framing is inconsistent: seed 1001 correctly shows the full body to bare feet, but seeds 2002 and 3003 revert to a chest-up crop with no legs or feet visible."
+  ],
+  "case_119": [
+    "hold",
+    "head_shoulders framing fails: all 3 seeds show chest and upper arms well below the shoulder line, contrary to the tight head-and-shoulders crop (no chest/arms) the axis prompt specifies."
+  ],
+  "case_144": [
+    "hold",
+    "thigh_up framing fails: all 3 seeds show only a chest-up crop with no waist, hips, or thighs visible anywhere in the frame."
+  ],
+  "case_169": [
+    "hold",
+    "vertical_full_scene framing fails: all 3 seeds show a tight bust-level portrait crop with no environmental context or full body, contrary to the wide full-scene framing required."
+  ],
+  "case_194": [
+    "hold",
+    "waist_up framing and centered_symmetry read correctly (complete, symmetric raised-hand gesture at hip level), but slight_high camera elevation can't be confirmed: no floor or perspective cue exists in the plain-background crop to verify an elevated angle."
+  ],
+  "case_219": [
+    "hold",
+    "three_quarter_front camera_position reads correctly (shoulders at different depths, face angled not flattened), but waist_up framing fails: all 3 seeds crop at chest/bust level with no waistline or hands visible."
+  ],
+  "case_244": [
+    "pass",
+    "wide_environmental + slight_low + asymmetric_negative_space: full-body figure shown against a floor/step environment with clear open negative space offset to one side, consistent across all 3 seeds."
+  ]
+}

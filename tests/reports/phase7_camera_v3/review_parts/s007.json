@@ -1,0 +1,42 @@
+{
+  "case_007": [
+    "hold",
+    "chest_up + clean_profile visibly correct (body turned into profile stance, consistent 3/3 seeds); deep_focus_language and diagonal_depth unreadable - flat studio backdrop gives no depth/diagonal cue and subject sits dead-center, not a resolution problem."
+  ],
+  "case_032": [
+    "hold",
+    "chest_up + eye_level_front correctly expressed (straight frontal, eye-level); thirds_gaze_space composition is a real miss - subject is centered/symmetric in all 3 seeds instead of offset with gaze space, moderate_wide lens cue unreadable against plain backdrop."
+  ],
+  "case_057": [
+    "hold",
+    "rear_three_quarter well expressed (back-turned pose, face glancing over shoulder); real defect on framing - close_face should crop hair-to-chin per catalog but full chest/shoulders are shown; faint asymmetric gray block in each corner is too small to confirm as asymmetric_negative_space intent vs artifact."
+  ],
+  "case_082": [
+    "hold",
+    "real defect - full_length requires both feet visible per catalog prompt, but crop shows only head-to-torso with no legs/feet at all; deep_focus_language/diagonal_depth also unreadable on the plain backdrop."
+  ],
+  "case_107": [
+    "hold",
+    "real defect - rear_three_quarter only appears in 1 of 3 seeds (_3003 shows back-turned glance); _1001 and _2002 render as plain frontal, contradicting the required camera position in 2/3 samples."
+  ],
+  "case_132": [
+    "hold",
+    "real defect - thigh_up should preserve waist/hand gesture/garment silhouette per catalog, but crop stops at chest exactly like the chest_up rows, no waist or hands visible; clean_profile body-turn itself is fine."
+  ],
+  "case_157": [
+    "hold",
+    "real defect - thigh_up framing not met, crop identical scale to chest_up rows with no waist/hand visibility; eye_level_front camera position is correctly frontal."
+  ],
+  "case_182": [
+    "hold",
+    "real defect - vertical_full_scene should show uninterrupted headroom/fuller scene but renders as a standard tight chest-up studio crop identical to other rows, no environmental scene present; three_quarter_front turn itself looks plausible."
+  ],
+  "case_207": [
+    "pass",
+    "waist_up correctly shows complete clasped hands per catalog wording; slight_high camera elevation and diagonal_depth composition are not confidently distinguishable from eye-level/centered at this size. -- overturned at full resolution: Resolved case_207 to style_id camera_waist_up_slight_high_natural_perspective_diagonal_depth_complete_camera, test_ids P7000619/620/621 (seeds 1001/2002/3003), and viewed all three full-resolution 1024x1024 renders at tests/reports/phase7_camera_v3/runs/P7000619..621/image_01.png.\n\nComposition (diagonal_depth): clearly visible at full resolution and consistent across all 3 seeds. Each render places the subject off-axis (body/head shifted left or right of center) with the hands brought together at chest/waist height on one side, creating an implied diagonal line from the raised hands across to the face — a materially different arrangement from the symmetric, dead-center two-hand gesture in the sibling control case_206 (camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera, P7000616-618), where hands are spread evenly on both sides of a perfectly centered figure. Side-by-side, diagonal_depth vs. centered_symmetry is unambiguous — this was a thumbnail-scale artifact, not a real defect.\n\nCamera elevation (slight_high): genuinely subtle even at full resolution — comparing against an eye_level_front reference (case_151, P7000451), gaze angle, chin/forehead proportions, and headroom look nearly identical; no confident \"looking up at an elevated lens\" cue is visible in case_207. However, \"slight\" is the operative word in this axis value — a small elevation offset is expected to be subtle by design, analogous to the saturation-screen caveat that low-magnitude-by-design values aren't defects. This is an inherent, expected subtlety of the axis grade, not a rendering failure.\n\nNet: the composition half of the original concern is refuted outright by full-res inspection (clearly distinguishable, present in all seeds), and the elevation half reflects the intentionally small magnitude of \"slight_high\" rather than a visible defect. Catalog wording (complete clasped/joined hands) is also satisfied in all three seeds. Holds=false — thumbnail-artifact hold, not a genuine full-resolution defect."
+  ],
+  "case_232": [
+    "pass",
+    "wide_environmental framing and asymmetric_negative_space read fine (full figure with asymmetrically placed background blocks, differs per seed); slight_low camera elevation and deep_focus_language can't be confirmed in the flat 2D storyboard render at this size. -- overturned at full resolution: test_id resolved to P7000694/695/696 (seeds 1001/2002/3003) for style_id camera_wide_environmental_slight_low_deep_focus_language_asymmetric_negative_space_complete_camera. At full resolution across all 3 seeds: wide_environmental framing and asymmetric_negative_space are clearly correct (full figure, asymmetric background blocks differing per seed), confirming the original thumbnail read. deep_focus_language is satisfied — all renders are uniformly sharp with no blur anywhere. slight_low camera elevation shows no dramatic low-angle cue, but the resolved prompt (run.json) specifies this axis value as 'a mildly lowered camera position that lengthens the stance without distorting the face' — i.e. deliberately subtle by design, unlike the sibling slight_high case (case_226/P7000658) whose prompt calls for a more pronounced 'gently elevated' view and which does render an obvious overhead angle. Sibling case_233 (same camera_position/framing, different composition) shows the identical subtle, non-distorted rendering, confirming this is consistent by-design behavior for this item family, not a case_232-specific anomaly. No saturation_screen.json exists and the concern was never about saturation. No genuine visual defect (anatomical distortion, wrong elevation direction, unwanted blur) is present at full resolution — this was a thumbnail-viewing limitation, correctly resolved as a non-issue."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_021": [
+    "pass",
+    "chest_up + clean_profile + portrait_compression + asymmetric_negative_space: crop ends mid-chest, body turned to a side profile stance with face glancing to camera, soft plain backdrop reads as compressed, subject sits left-of-frame with negative space/edge element to the right."
+  ],
+  "case_046": [
+    "hold",
+    "rear_three_quarter not expressed: pose is the same side-profile-with-face-to-camera stance as case_021's clean_profile (front of torso and full face visible), not a rear-turned three-quarter view; close_face and centered_symmetry look fine. Real defect on camera_position."
+  ],
+  "case_071": [
+    "hold",
+    "full_length framing not expressed: all three seeds are cropped at waist/torso level, no legs or feet visible, though eye_level_front is clearly correct. Real defect on framing."
+  ],
+  "case_096": [
+    "hold",
+    "rear_three_quarter inconsistent: seeds 1001 and 2002 show a plain eye-level frontal face (matching neither rear nor three-quarter), only 3003 shows the turned-profile pose; head_shoulders framing is correct. Real defect on camera_position majority failure."
+  ],
+  "case_121": [
+    "pass",
+    "head_shoulders + three_quarter_front + thirds_gaze_space: tight head/shoulder crop, face turned slightly off-axis toward camera rather than dead-on, gaze directed into open space to one side of frame consistent with thirds placement."
+  ],
+  "case_146": [
+    "hold",
+    "thigh_up framing not expressed: crop stops at chest/upper-torso like a chest_up shot, thighs are nowhere in frame; eye_level_front reads correctly. Real defect on framing."
+  ],
+  "case_171": [
+    "hold",
+    "vertical_full_scene framing not expressed: all three seeds are tight head/shoulder studio headshots with no environment or full figure, the opposite of a wide vertical scene. Real defect on framing."
+  ],
+  "case_196": [
+    "hold",
+    "slight_high camera_position unreadable: hands-at-waist crop is consistent with waist_up framing, but the few-degree elevated camera angle versus eye_level_front cannot be reliably distinguished at this thumbnail density. Attribute unreadable, not a confirmed defect."
+  ],
+  "case_221": [
+    "hold",
+    "wide_environmental + slight_high inconsistent: seeds 1001/2002 show a full-body high-angle shot centered between symmetric block shapes matching centered_symmetry, but seed 3003 is a tight close-face crop with no environment or elevated angle at all. Real defect on framing/camera_position consistency."
+  ],
+  "case_246": [
+    "pass",
+    "wide_environmental + slight_low + thirds_gaze_space: full-body figures placed off-center within the block environment across all three seeds, seed 2002's close low-angle view still keeps environment visible and reads consistent with a low camera position."
+  ]
+}

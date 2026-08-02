@@ -1,0 +1,42 @@
+{
+  "case_018": [
+    "hold",
+    "chest_up + clean_profile + natural_perspective + centered_symmetry: chest-up crop and centering are correct, but all 3 seeds show a near-frontal face with both eyes clearly visible instead of the required strict profile with the far eye fully hidden — camera_position defect."
+  ],
+  "case_043": [
+    "hold",
+    "close_face + rear_three_quarter + classic_wide + diagonal_depth: crop extends past the chin into neckline/shoulders (close_face must stop below the chin) and the pose faces the viewer instead of turning away into a rear three-quarter view — framing and camera_position defects, consistent across all 3 seeds."
+  ],
+  "case_068": [
+    "hold",
+    "full_length + eye_level_front + classic_wide + diagonal_depth: only a tight chest-up crop is rendered in all 3 seeds; legs, knees, and feet required by the crown-through-both-feet framing are entirely absent — framing defect."
+  ],
+  "case_093": [
+    "hold",
+    "full_length + slight_low + natural_perspective + diagonal_depth: crop is waist-up in all 3 seeds, no legs or feet visible despite the full_length requirement — framing defect."
+  ],
+  "case_118": [
+    "hold",
+    "head_shoulders + three_quarter_front + long_compression + asymmetric_negative_space: framing and the grey counterweight block are correct, but shoulders sit level/squared to camera in all 3 seeds rather than showing the required two shoulders at different depths — camera_position defect."
+  ],
+  "case_143": [
+    "hold",
+    "thigh_up + eye_level_front + long_compression + centered_symmetry: eye-level centered pose is fine, but the crop stops at the upper chest in all 3 seeds, well short of the thighs required by thigh_up — framing defect."
+  ],
+  "case_168": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + classic_wide + asymmetric_negative_space: counterweight block is present, but all 3 seeds are tight chest-up portraits with no floor or shoes, failing the vertical full-scene both-shoes-and-floor requirement — framing defect."
+  ],
+  "case_193": [
+    "hold",
+    "waist_up + slight_high + deep_focus_language + asymmetric_negative_space: waist-up framing with complete hands and the counterweight block read correctly, but the gently-elevated camera position and deep-focus depth layering can't be distinguished against the flat, prop-free backdrop at this density."
+  ],
+  "case_218": [
+    "hold",
+    "waist_up + three_quarter_front + natural_perspective + diagonal_depth: waist-up framing with hands and a visible three-quarter shoulder turn read correctly, but the diagonal foreground-to-face depth flow and natural-perspective scale can't be confirmed against the flat, anchor-free backdrop at this density."
+  ],
+  "case_243": [
+    "pass",
+    "wide_environmental + slight_low + moderate_wide + thirds_gaze_space: small full figure inside a wide floor/wall set, positioned on a vertical third with gaze extending into the open side, and the deep floor recession visibly supports the lowered, moderately wide camera position."
+  ]
+}

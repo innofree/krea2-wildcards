@@ -1,0 +1,42 @@
+{
+  "case_013": [
+    "pass",
+    "chest_up + clean_profile + moderate_wide + asymmetric_negative_space: chest-level crop with body turned into a strong side profile and face rotated back to camera; a lighter background block breaks symmetry for negative space."
+  ],
+  "case_038": [
+    "pass",
+    "close_face + clean_profile + deep_focus_language + thirds_gaze_space: noticeably tighter face-forward crop than the chest_up cases on this sheet, same profile-body/face-to-camera turn, subject sits left-of-center with gaze room to the right."
+  ],
+  "case_063": [
+    "pass",
+    "close_face + rear_three_quarter + portrait_compression + diagonal_depth: framing and body turn read fine, but camera_position is a real defect - the pose is the identical ~90 deg body-profile/face-to-camera angle as the clean_profile cases, with no extra back-facing rotation to justify rear_three_quarter. -- overturned at full resolution: Resolved case_063 to test_ids P7000187/188/189 (seeds 1001/2002/3003) via style_id camera_close_face_rear_three_quarter_portrait_compression_diagonal_depth_complete_camera. Viewed all three image_01.png renders at full 1024x1024 resolution.\n\nThe hold reasoning claimed the body turn is identical to clean_profile cases with \"no extra back-facing rotation.\" At full resolution this doesn't hold up. I cropped and compared the shoulder/back region of all three case_063 seeds against a same-modifier clean_profile reference (P7000097, camera_close_face_clean_profile...diagonal_depth-equivalent asymmetric variant, and the chest_up diagonal_depth clean_profile family):\n\n- In the clean_profile reference, the crew-neck's front collar is visible as a curved \"U\" dipping down at the base of the throat/collarbone — evidence we're seeing a sliver of the front torso, consistent with a true ~90 degree side profile.\n- In all three case_063 renders, no front collar curve is visible at all. Instead there's a diagonal shoulder seam (a back/raglan seam line) and a broad expanse of what reads as the back of the shoulder and upper back, with hair falling straight down the rear rather than draping over a visible front shoulder. This is consistent across all three seeds (1001/2002/3003), so it isn't a seed-specific fluke.\n\nThat absence of any front-plane cue, combined with the visible back-seam/shoulder-blade plane, is the \"extra back-facing rotation\" the rear_three_quarter label calls for — it reads as more rotated than the clean_profile baseline, not identical to it. The face-to-camera compensating turn (portrait_compression) is also sharper/tighter than in the clean_profile examples, consistent with the body being rotated further past profile toward the rear.\n\nThis looks like a thumbnail-scale misjudgment: the contact-sheet crop likely didn't resolve the shoulder-seam/collar-curve distinction that becomes clear at full resolution. Recommend releasing the hold — camera_position defect does not survive full-resolution inspection."
+  ],
+  "case_088": [
+    "hold",
+    "full_length + slight_low + moderate_wide + asymmetric_negative_space: real defect - crop stops at mid-thigh/knee with no feet or full body visible, so the full_length framing is not achieved."
+  ],
+  "case_113": [
+    "hold",
+    "head_shoulders + rear_three_quarter + portrait_compression + thirds_gaze_space: real defect - same rear_three_quarter problem as case_063, pose is indistinguishable from the clean_profile/three_quarter poses elsewhere on the sheet, no rear-facing rotation visible."
+  ],
+  "case_138": [
+    "hold",
+    "thigh_up + eye_level_front + deep_focus_language + asymmetric_negative_space: eye_level_front frontal pose is clear, but real framing defect - crop is tighter than the waist_up case_213 on this same sheet, cutting off above the waist instead of reaching the thigh."
+  ],
+  "case_163": [
+    "hold",
+    "vertical_full_scene + slight_high + natural_perspective + diagonal_depth: real framing defect - image is a tight chest-level headshot, not a wide vertical full scene; the framing attribute is not expressed at all."
+  ],
+  "case_188": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + portrait_compression + centered_symmetry: same vertical_full_scene framing failure as case_163 - only a chest-level crop is shown, no wide scene."
+  ],
+  "case_213": [
+    "pass",
+    "waist_up + three_quarter_front + moderate_wide + asymmetric_negative_space: crop extends down to the waist with hands visible, torso/face turned three-quarter toward camera, background block breaks symmetry for negative space."
+  ],
+  "case_238": [
+    "pass",
+    "wide_environmental + slight_low + long_compression + diagonal_depth: wide_environmental staging and diagonal background architecture are clearly visible, but the figure is too small at this thumbnail to confirm camera tilt (slight_low) or lens compression (long_compression) - genuinely unreadable at this density, needs full-resolution reopen. -- overturned at full resolution: Resolved case_238 -> style_id \"camera_wide_environmental_slight_low_long_compression_diagonal_depth_complete_camera\" -> test_ids P7000712 (seed 1001), P7000713 (seed 2002), P7000714 (seed 3003) in tests/reports/phase7_camera_v3/scorecard.csv, images at tests/reports/phase7_camera_v3/runs/P700071{2,3,4}/image_01.png.\n\nThe original hold reasoning was purely about thumbnail-density unreadability (\"figure too small to confirm camera tilt or lens compression\"), not an identified defect. At full resolution (1024x1024, clean vector-line render, not blurry/compressed) all three seeds are fully legible:\n\n- wide_environmental staging and diagonal background architecture (two receding grey block/wall forms with a connecting horizontal band) are clearly visible in all three seeds, confirming the environmental/diagonal-depth elements.\n- The horizon band sits consistently at torso/waist height relative to the standing figure across all three seeds (not at eye/head height), which is the expected perspective signature of a camera positioned below eye level looking slightly up — consistent with the intended \"slight_low\" tilt.\n- The background walls recede with a gentle, non-exaggerated diagonal convergence and the subject-to-background scale relationship shows no wide-angle stretching, consistent with the intended \"long_compression\" (longer lens, flatter perspective) rather than a bug.\n- All three seeds (1001/2002/3003) agree on this staging, so it isn't a single-seed fluke.\n\nNo saturation_screen.json exists for this axis run (confirmed absent), and the concern was never about color/saturation, so that check doesn't apply here.\n\nThis is a case where the full-resolution reopen actually resolves what the thumbnail could not show — the camera treatment is present and legible, not missing or contradicted. That is the \"thumbnail artifact\" outcome, not a confirmed defect, so holds=false."
+  ]
+}

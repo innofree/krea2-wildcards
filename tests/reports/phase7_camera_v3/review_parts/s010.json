@@ -1,0 +1,42 @@
+{
+  "case_010": [
+    "hold",
+    "chest_up + clean_profile + centered_symmetry: chest_up crop is fine but clean_profile only appears in 1/3 samples (_3003 turned); _1001 and _2002 are fully frontal, and _3003 also breaks centered_symmetry by shifting off-center — real defect, not a resolution issue."
+  ],
+  "case_035": [
+    "pass",
+    "close_face + clean_profile + asymmetric_negative_space: consistent tight face crop with a matching ~45-60deg turned camera position across all 3 seeds, subject held left-of-frame with open space to the right in each."
+  ],
+  "case_060": [
+    "pass",
+    "close_face + rear_three_quarter + thirds_gaze_space: consistent over-the-shoulder pose (body turned away, face turned back to camera) across all 3 seeds matching the sheet's rear_three_quarter signature, subject offset from center for gaze-space composition."
+  ],
+  "case_085": [
+    "hold",
+    "full_length: only case_085_1001 shows the whole body to the shoes; _2002 and _3003 are cropped to upper torso, contradicting full_length in 2/3 samples — real defect, not a resolution limit."
+  ],
+  "case_110": [
+    "pass",
+    "head_shoulders + rear_three_quarter + asymmetric_negative_space: consistent head/shoulders crop with the same over-the-shoulder rear_three_quarter pose as case_060 across all 3 seeds, clear negative space to one side."
+  ],
+  "case_135": [
+    "hold",
+    "thigh_up: all 3 crops stop at chest/upper torso with no thigh visible (identical crop depth to the chest_up case_010 row) — framing attribute not expressed, real defect."
+  ],
+  "case_160": [
+    "hold",
+    "vertical_full_scene: all 3 samples are tight chest-up portraits with no body/environment shown, not a full vertical scene — real defect, framing not expressed at all."
+  ],
+  "case_185": [
+    "hold",
+    "vertical_full_scene: same as case_160, all 3 samples are cropped tight portraits rather than a full vertical scene — real defect."
+  ],
+  "case_210": [
+    "pass",
+    "waist_up + centered_symmetry: consistent crop extending to hands/waist with a symmetric raised-hands gesture, subject centered in all 3 seeds."
+  ],
+  "case_235": [
+    "pass",
+    "wide_environmental: case_235_2002 renders in a flat cartoon/linework style with a much closer crop than _1001 and _3003, breaking the wide_environmental scale consistency — real defect (render/style inconsistency), not a resolution limit. -- overturned at full resolution: Resolved case_235 to style_id camera_wide_environmental_slight_low_deep_focus_language_thirds_gaze_space_complete_camera, with seeds P7000703 (1001), P7000704 (2002), P7000705 (3003). At full resolution, all three seeds render in the identical flat cartoon/linework illustration style with the same muted palette and background props -- the claimed \"style inconsistency\" (2002 uniquely cartoon/linework vs 1001/3003) does not exist; it's uniform across the triplet. Seed 2002 does show a somewhat closer/tighter crop (subject larger in frame, slightly higher angle, less negative space) than 1001/3003, but it still shows the full figure with environmental background context -- this is ordinary seed-to-seed camera/composition variance, not an axis-breaking rendering defect. No saturation_screen.json exists (concern wasn't about saturation anyway). This was a thumbnail-viewing artifact, not a genuine full-resolution defect."
+  ]
+}

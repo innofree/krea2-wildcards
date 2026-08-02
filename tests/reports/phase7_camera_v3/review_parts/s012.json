@@ -1,0 +1,42 @@
+{
+  "case_012": [
+    "hold",
+    "chest_up + long_compression + thirds_gaze_space: chest_up crop is correct, but clean_profile shows both eyes in a near-frontal turn instead of a true side profile with the far eye hidden — real defect (known clean_profile regression)."
+  ],
+  "case_037": [
+    "hold",
+    "close_face + clean_profile + deep_focus_language + diagonal_depth: crop still includes neck/shoulders/upper chest instead of isolating the face (documented close_face-vs-chest_up crop defect), and clean_profile again shows both eyes rather than a true profile — two real defects."
+  ],
+  "case_062": [
+    "hold",
+    "close_face + rear_three_quarter + portrait_compression + centered_symmetry: rear_three_quarter correctly reads as a natural over-the-shoulder turn with face visible and centered_symmetry placement is fine, but close_face crop again extends to shoulders/chest instead of face-only — real framing defect."
+  ],
+  "case_087": [
+    "hold",
+    "full_length + slight_low + long_compression + thirds_gaze_space: only the _1001 seed shows true full_length (head-to-toe); _2002 and _3003 crop to a chest-up/bust framing instead — real seed-instability defect, framing not reliably expressed."
+  ],
+  "case_112": [
+    "pass",
+    "head_shoulders + rear_three_quarter + portrait_compression + diagonal_depth: head_shoulders framing holds tight to the shoulder line across all 3 seeds, and rear_three_quarter reads correctly as a natural turn-back pose with face visible; composition/lens are secondary criteria and not decisive here."
+  ],
+  "case_137": [
+    "hold",
+    "thigh_up + eye_level_front + classic_wide + thirds_gaze_space: crop ends at the upper torso/waist with no thigh visible at all (documented thigh_up crop-shortfall defect); eye_level_front itself reads correctly but the framing failure blocks approval."
+  ],
+  "case_162": [
+    "hold",
+    "vertical_full_scene + slight_high + natural_perspective + asymmetric_negative_space: renders as a plain chest-up studio headshot with no environment or full vertical scene at all (matches the documented vertical_full_scene collapse) — real framing defect."
+  ],
+  "case_187": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + natural_perspective + thirds_gaze_space: same vertical_full_scene collapse as case_162 — tight chest-up crop with no environment/scene, real defect regardless of an otherwise plausible three_quarter_front pose."
+  ],
+  "case_212": [
+    "hold",
+    "waist_up + slight_high + portrait_compression + thirds_gaze_space: waist_up framing is confirmed consistent across seeds, but the face reads as flat/eye-level with no discernible high-angle tilt — slight_high vs eye-level is not distinguishable at this thumbnail size, not a confirmed defect."
+  ],
+  "case_237": [
+    "hold",
+    "wide_environmental + slight_low + long_compression + centered_symmetry: entire image renders as a flat vector/cartoon illustration with an abstract non-photoreal background instead of a photographic wide environmental scene — severe real render-quality defect across all seeds."
+  ]
+}

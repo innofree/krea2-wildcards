@@ -1,0 +1,42 @@
+{
+  "case_016": [
+    "pass",
+    "chest_up + clean_profile + thirds_gaze_space read correctly (body-profile stance, head turned to camera, subject offset with open gaze space); moderate_wide lens signature not distinguishable against the plain backdrop at this density. -- overturned at full resolution: test_id resolved via manifest.json cases[15] (alias=case_016, style_id=camera_chest_up_clean_profile_moderate_wide_thirds_gaze_space_complete_camera) cross-checked against scorecard.csv: seeds 1001/2002/3003 -> P7000046/P7000047/P7000048. Viewed tests/reports/phase7_camera_v3/runs/{P7000046,P7000047,P7000048}/image_01.png at full 1024x1024 resolution.\n\nAll three seeds agree: chest_up crop, clean body-profile stance (shoulders/torso in profile), head rotated toward camera, and thirds_gaze_space (subject offset left-of-frame with open negative space toward the right, in the direction the gaze/turn opens into) all read correctly and consistently — no disagreement across seeds.\n\nThe moderate_wide lens-signature concern does not hold up as a visible defect. At full resolution there is no facial/perspective distortion, unnatural compression, or FOV cue inconsistent with a moderate-wide lens — but there's also nothing in the frame (no lines, doorframes, floor/wall junctions, or other geometry) against the plain seamless backdrop that could positively confirm or contradict a wide-angle signature at chest-up framing distance. This is a structural limitation of a plain-backdrop close portrait, not a rendering flaw that resolution would reveal — increasing to full size didn't surface any incorrect lens artifact, it simply confirmed the same lack of diagnostic geometry noted at thumbnail size. Since nothing about the render actively contradicts moderate_wide, and the three other factors are unambiguously correct across all seeds, this resolves as a thumbnail-density red herring rather than a genuine full-resolution defect. Concern was compositional/lens-signature, not color, so saturation_screen.json was not consulted per the routing instructions."
+  ],
+  "case_041": [
+    "hold",
+    "close_face + rear_three_quarter + asymmetric_negative_space read correctly (tight face crop, shoulders turned away with head twisted back to camera, visible off-center negative-space block); classic_wide lens signature unreadable at this density."
+  ],
+  "case_066": [
+    "hold",
+    "full_length real defect: only _1001 shows the full standing body (clean_profile confirmed there); _2002 and _3003 crop tight to a profile face, not full_length, so the framing attribute fails on 2 of 3 renders."
+  ],
+  "case_091": [
+    "hold",
+    "full_length real defect: _1001 is near full-length but _2002/_3003 crop to chest/waist-up, failing full_length in 2 of 3 renders; slight_low camera angle also not clearly readable given the frontal, level-looking poses."
+  ],
+  "case_116": [
+    "hold",
+    "head_shoulders + three_quarter_front read correctly, but all three variants place the subject dead-center against a flat symmetric backdrop with no diagonal line or depth cue — diagonal_depth composition is not expressed (real defect, not a density issue)."
+  ],
+  "case_141": [
+    "hold",
+    "thigh_up real defect: all three variants crop at chest/waist with no thighs visible; eye_level_front reads correctly but subject is centered rather than thirds-placed, so composition is also unmet."
+  ],
+  "case_166": [
+    "hold",
+    "vertical_full_scene real defect: all three variants render a tight head/upper-chest close-up with no environment or vertical scene visible, so framing is not delivered regardless of position/lens/composition."
+  ],
+  "case_191": [
+    "hold",
+    "waist_up framing correct and the clasped-hand poses form clear diagonal arm lines matching diagonal_depth; slight_high camera angle and classic_wide lens signature are not distinguishable at this density."
+  ],
+  "case_216": [
+    "pass",
+    "waist_up + three_quarter_front + asymmetric_negative_space read correctly (off-center subject, visible negative-space block bottom-right); natural_perspective lens signature is unreadable at this density. -- overturned at full resolution: Resolved case_216 to style_id camera_waist_up_three_quarter_front_natural_perspective_asymmetric_negative_space_complete_camera, test_ids P7000646/P7000647/P7000648 (seeds 1001/2002/3003) in tests/reports/phase7_camera_v3/scorecard.csv, images at tests/reports/phase7_camera_v3/runs/P7000646(47)(48)/image_01.png.\n\nThe concern was not about saturation, so tests/reports/phase7_camera_v3/saturation_screen.json (which does not exist in this report directory anyway) is not applicable here.\n\nAt full resolution across all three seeds, the waist_up + three_quarter_front + asymmetric_negative_space elements read exactly as the original note said: an off-center subject with a clear small neutral-grey rectangular counterweight block in the open region (bottom-right in seeds 1 and 3, bottom-left in seed 2 — consistent with the prompt's 'far opposite edge' instruction, just mirrored by pose direction).\n\nFor the natural_perspective lens signature specifically: at full resolution all three renders show normal, undistorted body/face proportions — no wide-angle bulging of the near shoulder/face, no telephoto flattening or background compression artifacts, and subject-to-background scale reads as an ordinary human-eye viewing distance (matching the prompt's 'natural perspective close to ordinary vision with balanced subject-to-background scale'). This is consistent and legible across all three seeds, not marginal or seed-dependent.\n\nThe plain grey cyclorama background has no lines/props to serve as a perspective reference, which is presumably why the lens signature was hard to judge from a small thumbnail — but at full size the proportions themselves are the tell, and they read as natural in all three seeds with no distortion artifacts. This confirms the original 'hold' reasoning was a thumbnail-resolution limitation rather than an actual defect in the render. Recommend releasing the hold (holds=false)."
+  ],
+  "case_241": [
+    "hold",
+    "wide_environmental + centered_symmetry read correctly (full figure flanked by symmetric set-blocks); slight_low camera angle and moderate_wide lens signature are not distinguishable at this density."
+  ]
+}

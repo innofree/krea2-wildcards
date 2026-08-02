@@ -1,0 +1,42 @@
+{
+  "case_006": [
+    "hold",
+    "chest_up framing present in all 3, but clean_profile (camera_position) fails: 1001/2002 are dead-on frontal (both eyes, symmetric), and 3003 turns the torso to profile but the face turns back toward camera showing both eyes — no seed gives the required single-visible-eye side profile."
+  ],
+  "case_031": [
+    "pass",
+    "chest_up + eye_level_front clearly expressed across all 3 seeds (front-facing, camera at eye height); moderate_wide/diagonal_depth are the auxiliary lens/composition cues and aren't contradicted."
+  ],
+  "case_056": [
+    "hold",
+    "rear_three_quarter camera_position matches (body turned away, face turned back), but close_face framing fails — crop shows shoulders and upper chest, indistinguishable from a chest_up/head_shoulders crop rather than a tight face-only frame."
+  ],
+  "case_081": [
+    "hold",
+    "full_length framing only holds in 1001 (feet-to-head visible); 2002 and 3003 both render as chest-up crops with no legs/feet, so 2/3 seeds fail the required framing."
+  ],
+  "case_106": [
+    "pass",
+    "head_shoulders framing and rear_three_quarter camera_position (torso turned away, face turned three-quarter back to camera) are both consistently expressed across all 3 seeds."
+  ],
+  "case_131": [
+    "hold",
+    "clean_profile camera_position is actually well rendered (true side profile, far eye hidden, in all 3), but thigh_up framing fails — every seed crops at chest/waist with no thigh visible."
+  ],
+  "case_156": [
+    "hold",
+    "eye_level_front camera_position matches, but thigh_up framing fails the same way as case_131 — crop stops at chest/waist in all 3 seeds, thighs never enter frame."
+  ],
+  "case_181": [
+    "hold",
+    "vertical_full_scene framing fails outright — all 3 seeds render a chest-up headshot with no body or environment, so three_quarter_front camera_position can't compensate for the missing full-scene crop."
+  ],
+  "case_206": [
+    "pass",
+    "waist_up framing looks correct (crop includes raised hands at chest/waist level), but slight_high camera_position (subtle elevated angle) can't be confidently confirmed vs. plain eye-level at this thumbnail size — attribute unreadable, not a confirmed defect. -- overturned at full resolution: Resolved case_206 (style_id camera_waist_up_slight_high_natural_perspective_centered_symmetry_complete_camera) to test_ids P7000616/617/618 via scorecard.csv + manifest.json cross-check. Opened all three seeds' image_01.png at full 1024x1024 resolution:\n- tests/reports/phase7_camera_v3/runs/P7000616/image_01.png\n- tests/reports/phase7_camera_v3/runs/P7000617/image_01.png\n- tests/reports/phase7_camera_v3/runs/P7000618/image_01.png\n\nAll three seeds agree: waist_up framing is confirmed correct (crop cleanly includes both raised hands at chest/waist level, consistent with the thumbnail assessment). The slight_high camera_position claim does not hold up as a defect at full resolution either — in all three renders the subject's face is frontal and symmetric with a level eyeline, no compressed forehead/receding-chin geometry or top-of-head foreshortening that would signal an elevated camera looking down. The framing reads as plain eye-level across all seeds, not a confirmable slight_high angle in either direction (i.e., not confirmable as wrong, but also not confirmable as a broken/incorrect render). This is a not-a-defect case: the original thumbnail concern was correctly cautious, and full-resolution inspection shows no genuine visible flaw (no distorted proportions, no crop error, no artifact) — the subtlety of the intended attribute simply isn't something that manifests as a visible problem. Saturation was not the flagged concern here, so saturation_screen.json was not applicable. Verdict: hold does not hold as a confirmed defect — this was thumbnail-level ambiguity about a subtle attribute, not a real flaw."
+  ],
+  "case_231": [
+    "hold",
+    "wide_environmental + thirds_gaze_space are expressed in 1001/3003 (small figure placed off-center in a large set), but case_231_2002 breaks entirely into a close-up face crop rendered in a flat illustrated/cartoon style, contradicting both framing and photographic consistency."
+  ]
+}

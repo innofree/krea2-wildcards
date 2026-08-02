@@ -1,0 +1,42 @@
+{
+  "case_009": [
+    "pass",
+    "chest_up + clean_profile + asymmetric_negative_space: head-to-upper-chest crop with body turned to a clean side profile and face toward camera; grey negative-space patch visible in background of 2002. long_compression not contradicted by the plain soft backdrop."
+  ],
+  "case_034": [
+    "pass",
+    "close_face + clean_profile + thirds_gaze_space: tight face/shoulder crop, profile-turned body matches the clean_profile convention seen in case_009; subject sits left-of-center with gaze into open space, no negative-space patch (consistent with thirds_gaze_space rather than asymmetric_negative_space). classic_wide lens not contradicted."
+  ],
+  "case_059": [
+    "pass",
+    "close_face reads fine, but rear_three_quarter camera_position is visually indistinguishable from the clean_profile pose in case_009/034 (both eyes visible, near-frontal face, side-turned torso) — cannot confirm the rear three-quarter angle is actually expressed at this density. -- overturned at full resolution: Traced case_059 to style_id camera_close_face_rear_three_quarter_natural_perspective_diagonal_depth_complete_camera, test rows P7000175/176/177 (seeds 1001/2002/3003) in tests/reports/phase7_camera_v3/scorecard.csv, images at tests/reports/phase7_camera_v3/runs/P7000175..177/image_01.png. tests/reports/phase7_camera_v3/saturation_screen.json does not exist and isn't needed since the flagged concern was pose/angle legibility, not color.\n\nAt full resolution, all three seeds consistently show: the torso rotated so the BACK of the shoulder and the back of the sweater are toward camera (no neckline visible, garment seam/shoulder-blade side shown), hair falling down the back of the figure, with the head then turned back over the shoulder toward the lens (a classic 'looking back' rear three-quarter gesture).\n\nCompared against the clean_profile exemplars (case_009 -> P7000025, case_034 -> P7000100): both show the FRONT of the torso (crew neckline clearly visible, chest facing partially toward camera) in a simple side-profile head turn, with no back-of-body rotation.\n\nThis is a clear, structurally distinct cue (front-of-torso-visible vs back-of-torso-visible + over-the-shoulder head turn) that a low-resolution contact-sheet thumbnail would plausibly compress away (both read as 'side-turned torso, face turned toward camera' at thumbnail scale), but which is unambiguous at full size and consistent across all 3 seeds. The rear three-quarter angle is genuinely expressed. This was a thumbnail-resolution artifact, not a real defect — hold does not survive full-resolution review."
+  ],
+  "case_084": [
+    "hold",
+    "full_length framing fails on 2 of 3 variants: case_084_2002 crops to chest_up and case_084_3003 crops to waist_up; only case_084_1001 (rendered as a flat illustration rather than photoreal) shows the full body. Real, confidently-observed defect, not a resolution problem."
+  ],
+  "case_109": [
+    "hold",
+    "head_shoulders framing reads fine, but rear_three_quarter camera_position again looks identical to the frontal/profile pose used for clean_profile cases (both eyes clearly visible, no back-of-head emphasis) — cannot confirm at this density."
+  ],
+  "case_134": [
+    "hold",
+    "thigh_up framing fails: all three variants (1001/2002/3003) crop at chest/waist level with no thighs visible, despite eye_level_front and the asymmetric_negative_space patch (bottom-right) both reading correctly. Confident, non-resolution-limited defect."
+  ],
+  "case_159": [
+    "hold",
+    "vertical_full_scene framing fails: all three variants show only a tight head-to-chest portrait, no vertical environment or full body visible; centered_symmetry composition reads correctly (subject dead-center, no offset patch) but the framing miss is a confident defect."
+  ],
+  "case_184": [
+    "hold",
+    "vertical_full_scene framing fails the same way as case_159 (tight chest_up crop instead of full vertical scene); three_quarter_front camera_position and the asymmetric_negative_space patch both read correctly, but the framing defect is confident."
+  ],
+  "case_209": [
+    "hold",
+    "waist_up framing and the asymmetric_negative_space patch (left side, 2002) both read clearly; slight_high camera_position is not visually distinguishable from the eye_level_front pose in case_134 (same head tilt/chin-forehead ratio) — genuinely unreadable at this density."
+  ],
+  "case_234": [
+    "pass",
+    "wide_environmental framing and diagonal_depth composition (converging diagonal walls) both read clearly on these illustration-style renders; slight_low camera_position cannot be confirmed on the small distant figures at this size. -- overturned at full resolution: Resolved test_id via manifest: alias \"case_234\" -> style_id \"camera_wide_environmental_slight_low_deep_focus_language_diagonal_depth_complete_camera\" -> test_ids P7000700/701/702 (seeds 1001/2002/3003), confirmed in scorecard.csv. No saturation_screen.json exists for this axis run (and the concern wasn't about color anyway, so it doesn't apply).\n\nViewed tests/reports/phase7_camera_v3/runs/P7000700/702/701/image_01.png at full 1024x1024 resolution. Unlike the thumbnail, the figure is large in frame (~70-78% of frame height), so the composition is fully legible. wide_environmental framing and diagonal_depth (converging side walls) are clearly confirmed, as the original note said.\n\nFor camera_position, I overlaid a 50px reference grid on each render and compared the subject's eye-line to the vanishing/horizon height set by the converging wall tops:\n- In all three seeds, the wall-top convergence (horizon proxy) sits around y≈400-420, while the subject's eyes sit around y≈180-220 — consistently ~180-220px higher on screen.\n- Since the subject's eyes appear well above the horizon line, the camera's eye-height is physically below the subject's eye-height, i.e. a genuine (mild, not extreme) low camera angle — exactly the \"slight_low\" characteristic the axis specifies. This pattern is consistent across all three seeds, not a one-off.\n\nSo at full resolution the slight_low camera_position is confirmable and present, resolving the original uncertainty in the item's favor. The \"cannot be confirmed\" note was a thumbnail-scale limitation (figure too small/distant to read subtle perspective cues at contact-sheet size), not evidence of an actual missing/defective camera characteristic. No defect is genuinely visible at full resolution."
+  ]
+}

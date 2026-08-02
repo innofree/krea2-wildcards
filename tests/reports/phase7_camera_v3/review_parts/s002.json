@@ -1,0 +1,42 @@
+{
+  "case_002": [
+    "hold",
+    "chest_up + clean_profile: chest-up crop is correct, but all 3 seeds show a front/eye-level face, not a side profile (contrast case_127 in this same sheet, which shows a genuine profile) — real defect."
+  ],
+  "case_027": [
+    "pass",
+    "chest_up + eye_level_front: straight-on, eye-level chest-up crop is correctly and consistently rendered across all 3 seeds."
+  ],
+  "case_052": [
+    "hold",
+    "rear_three_quarter + close_face: back-turned three-quarter pose with face turned toward camera is correct, but the crop includes full shoulders and upper chest rather than an isolated face-only close_face crop — real defect (matches the known close_face crop bug)."
+  ],
+  "case_077": [
+    "hold",
+    "full_length + slight_low: crop is chest-up only (no legs or full body), and the camera reads level/eye-height rather than a low upward-looking angle; seed 3003 also shows a bright vertical artifact bar on the right edge — real defect."
+  ],
+  "case_102": [
+    "pass",
+    "head_shoulders + rear_three_quarter: head-and-shoulders crop with the body/shoulder turned away and face turned back toward camera matches both crib attributes cleanly."
+  ],
+  "case_127": [
+    "hold",
+    "clean_profile + thigh_up: a true side profile is clearly and correctly shown, but the crop stops at chest/waist — no thigh-level framing is reached, real defect."
+  ],
+  "case_152": [
+    "hold",
+    "eye_level_front + thigh_up: straight-on eye-level face is correct, but the crop again stops at chest — thigh_up framing not reached, real defect."
+  ],
+  "case_177": [
+    "hold",
+    "vertical_full_scene: renders as a plain chest-up headshot in all 3 seeds, not a full vertical scene/body — framing requirement not met, real defect."
+  ],
+  "case_202": [
+    "hold",
+    "waist_up + centered_symmetry: waist-up crop with a symmetric raised-hand gesture is correct, but slight_high is not expressed — the eye-line reads level/eye-height in all 3 seeds with no elevated look-down angle cue, real defect."
+  ],
+  "case_227": [
+    "hold",
+    "wide_environmental + thirds_gaze_space: an environmental backdrop (stepped set pieces) with off-center thirds placement is present, but slight_high is not expressed — camera again reads level, not elevated, real defect."
+  ]
+}

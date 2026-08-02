@@ -1,0 +1,42 @@
+{
+  "case_022": [
+    "hold",
+    "chest_up + clean_profile + portrait_compression + centered_symmetry: chest_up and centered_symmetry hold, but clean_profile fails — 1001/3003 show a 3/4 turn with both eyes visible and 2002 is fully front-facing to camera; no seed shows a true side profile (real defect)."
+  ],
+  "case_047": [
+    "hold",
+    "close_face + rear_three_quarter + deep_focus_language + diagonal_depth: framing renders wide enough to include shoulders/upper arm (not close_face), and all 3 seeds show the face turned toward camera in a front three-quarter view rather than rear_three_quarter (real defect on both axes)."
+  ],
+  "case_072": [
+    "hold",
+    "full_length + eye_level_front + natural_perspective + thirds_gaze_space: eye_level_front reads fine, but full_length is not expressed — all 3 seeds are cropped to a head/chest headshot with no legs or full body visible (real defect)."
+  ],
+  "case_097": [
+    "hold",
+    "head_shoulders + rear_three_quarter + deep_focus_language + thirds_gaze_space: head_shoulders framing is correct, but rear_three_quarter is not expressed — all 3 seeds show the face fully turned toward the camera in a front three-quarter pose, same as the three_quarter_front cases on this sheet (real defect)."
+  ],
+  "case_122": [
+    "pass",
+    "head_shoulders + three_quarter_front + moderate_wide + asymmetric_negative_space: head/shoulders crop with a front-facing slight turn is visible, and a background block element sits off to one side creating asymmetric negative space around the off-center figure."
+  ],
+  "case_147": [
+    "hold",
+    "thigh_up + eye_level_front + moderate_wide + centered_symmetry: eye_level_front and centered_symmetry hold, but thigh_up is not expressed — all 3 seeds are cropped at chest height with no waist/thigh visible (real defect)."
+  ],
+  "case_172": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + deep_focus_language + asymmetric_negative_space: three_quarter_front pose reads correctly, but vertical_full_scene is not expressed — all 3 seeds render as a chest-up headshot with no full body or surrounding scene (real defect)."
+  ],
+  "case_197": [
+    "hold",
+    "waist_up + slight_high + long_compression + asymmetric_negative_space: waist_up framing and the off-center background block (asymmetric_negative_space) are visible, but slight_high camera elevation cannot be confidently distinguished from a plain eye-level shot at this crop/density."
+  ],
+  "case_222": [
+    "pass",
+    "wide_environmental + slight_high + deep_focus_language + diagonal_depth: full figure shown within an architectural plaza environment, background walls rendered in sharp deep focus alongside the subject, and the converging diagonal walls give clear diagonal_depth; ground-plane view is consistent with a slightly elevated camera."
+  ],
+  "case_247": [
+    "hold",
+    "wide_environmental + slight_low + portrait_compression + asymmetric_negative_space: wide_environmental framing (full body + steps/room) holds, but slight_low is not expressed — 1001/3003 read as plain eye-level and 2002 is an extreme top-down/high-angle shot, the opposite of a low camera position (real defect)."
+  ]
+}

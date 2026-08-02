@@ -1,0 +1,42 @@
+{
+  "case_023": [
+    "pass",
+    "chest_up + clean_profile + portrait_compression + diagonal_depth: chest-level crop, torso turned to near-profile with face returned toward camera, soft plain portrait backdrop, diagonal shoulder line with off-center negative space."
+  ],
+  "case_048": [
+    "pass",
+    "close_face + rear_three_quarter + deep_focus_language + thirds_gaze_space: tighter face-forward crop than the chest_up cases, body turned away with face returned over the shoulder (rear three-quarter), gaze directed into right-side negative space per thirds placement."
+  ],
+  "case_073": [
+    "hold",
+    "full_length + eye_level_front + portrait_compression + asymmetric_negative_space: eye_level_front frontal pose reads fine, but framing is a real defect — all three variants crop at chest level with no legs or lower body visible, so full_length is not expressed."
+  ],
+  "case_098": [
+    "pass",
+    "head_shoulders + rear_three_quarter + long_compression + asymmetric_negative_space: head-and-shoulders crop, body turned away with face returned toward camera (rear three-quarter), subject left-of-frame leaving asymmetric negative space at right."
+  ],
+  "case_123": [
+    "pass",
+    "head_shoulders + three_quarter_front + moderate_wide + centered_symmetry: head/shoulders crop with a subtle frontal turn (one shoulder forward, asymmetric ear visibility) consistent with three_quarter_front, subject centered symmetrically in frame."
+  ],
+  "case_148": [
+    "hold",
+    "thigh_up + eye_level_front + moderate_wide + diagonal_depth: eye_level_front pose reads fine, but framing is a real defect — all three variants crop at chest level with no thighs or lower body visible, so thigh_up is not expressed."
+  ],
+  "case_173": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + deep_focus_language + centered_symmetry: three_quarter_front turn and centered placement read fine, but framing is a real defect — crop is a tight chest-up portrait, not any full-body vertical scene."
+  ],
+  "case_198": [
+    "pass",
+    "waist_up + slight_high + long_compression + centered_symmetry: crop extends to waist with both raised hands visible, centered symmetric gesture pose; slight_high angle is subtle but not contradicted."
+  ],
+  "case_223": [
+    "hold",
+    "wide_environmental + slight_high + deep_focus_language + thirds_gaze_space: real defect — only the 1001 variant shows the wide environmental full-body framing, 2002 and 3003 crop progressively tighter to chest and then an extreme close face, and the render style breaks to flat illustration instead of the sheet's photographic look."
+  ],
+  "case_248": [
+    "hold",
+    "wide_environmental + slight_low + portrait_compression + centered_symmetry: real defect — 1001/3003 show a proper small centered figure in a wide scene, but 2002 renders a severe fisheye/wide-angle distortion (oversized head, shrunken legs) that contradicts portrait_compression."
+  ]
+}

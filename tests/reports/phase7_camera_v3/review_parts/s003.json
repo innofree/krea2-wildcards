@@ -1,0 +1,42 @@
+{
+  "case_003": [
+    "pass",
+    "chest_up + clean_profile + classic_wide + diagonal_depth: chest-up crop with shoulders/body turned to a clean side profile and head turned back toward camera, diagonal shoulder-to-head line reads as intended depth composition; no lens or framing contradiction."
+  ],
+  "case_028": [
+    "pass",
+    "chest_up + eye_level_front + classic_wide + thirds_gaze_space: chest-up crop, squared shoulders facing camera directly at eye level, standard wide portrait rendering with no distortion; composition placement is plausible for the stated attribute."
+  ],
+  "case_053": [
+    "pass",
+    "close_face + rear_three_quarter + moderate_wide + asymmetric_negative_space: tighter facial crop than the chest_up cases, body/shoulder turned substantially away from camera with head turned back over the shoulder (rear three-quarter), visible open background to one side across all three seeds."
+  ],
+  "case_078": [
+    "hold",
+    "full_length required but all three seeds render as a tight chest-up portrait crop with no waist, legs, or feet visible — this is a real framing defect, not a resolution issue."
+  ],
+  "case_103": [
+    "hold",
+    "head_shoulders framing is correct, but camera_position=rear_three_quarter fails: seeds 1001 and 2002 show the subject squared up and facing the camera directly (front-on), only seed 3003 shows a turned/rear angle — real defect, majority of seeds contradict the crib pose."
+  ],
+  "case_128": [
+    "hold",
+    "thigh_up required but all three seeds show the same tight chest-up crop with no thigh, waist, or lower body visible — real framing defect."
+  ],
+  "case_153": [
+    "hold",
+    "thigh_up required but all three seeds render a chest-up portrait crop, no thighs or waist in frame — real framing defect."
+  ],
+  "case_178": [
+    "hold",
+    "vertical_full_scene required (full body plus environment in a tall frame) but all three seeds show only a chest-up head/shoulders crop with no body or scene — real framing defect."
+  ],
+  "case_203": [
+    "pass",
+    "waist_up + slight_high + moderate_wide + diagonal_depth: looser crop than chest_up showing both raised/clasped hands at chest-waist level (consistent with waist_up), diagonal arm lines support diagonal_depth composition; no contradiction across seeds."
+  ],
+  "case_228": [
+    "hold",
+    "wide_environmental full-body-in-scene framing is correctly expressed in seeds 1001/3003, but seed 2002 is a catastrophic render failure — an entirely different flat cartoon/anime character shot from an extreme top-down angle, breaking both the photographic style and the slight_low camera_position — real defect."
+  ]
+}

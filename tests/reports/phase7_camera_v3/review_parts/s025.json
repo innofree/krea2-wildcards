@@ -1,0 +1,42 @@
+{
+  "case_025": [
+    "pass",
+    "chest_up + eye_level_front + classic_wide + asymmetric_negative_space: tight chest-up frontal crop at eye level with undistorted perspective, subject shifted off-center across the three renders with open space to one side."
+  ],
+  "case_050": [
+    "pass",
+    "close_face + rear_three_quarter + long_compression + centered_symmetry: tight face crop, body turned away with head glancing back over the shoulder (rear three-quarter), flattened compressed look, subject centered in frame."
+  ],
+  "case_075": [
+    "hold",
+    "full_length + eye_level_front + portrait_compression + diagonal_depth: crop is identical in scale to the chest-up/close-face cases -- no waist, legs, or lower body visible, so full_length is not expressed. Real defect, clearly visible, not a resolution issue."
+  ],
+  "case_100": [
+    "pass",
+    "head_shoulders + rear_three_quarter + long_compression + diagonal_depth: head-and-shoulders crop, body turned away with face glancing back over the shoulder, compressed look, diagonal shoulder line across the frame."
+  ],
+  "case_125": [
+    "pass",
+    "head_shoulders + three_quarter_front + moderate_wide + thirds_gaze_space: head-and-shoulders crop with a subtle three-quarter turn of the face, visibly asymmetric versus case_025's dead-frontal pose, gaze offset toward open space."
+  ],
+  "case_150": [
+    "hold",
+    "thigh_up + eye_level_front + natural_perspective + asymmetric_negative_space: crop stops at the chest, same scale as the chest_up/close_face cases -- no thigh or lower body visible, so thigh_up is not expressed. Real defect, clearly visible."
+  ],
+  "case_175": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + deep_focus_language + thirds_gaze_space: crop is a plain chest-up portrait with no environment, floor, or wider scene visible at all -- vertical_full_scene is not expressed. Real defect, clearly visible."
+  ],
+  "case_200": [
+    "hold",
+    "waist_up + slight_high + long_compression + thirds_gaze_space: waist-up crop with hands correctly framed, but all three renders read as level/frontal with no visible elevated-camera cue -- slight_high is too subtle to confirm at this density."
+  ],
+  "case_225": [
+    "hold",
+    "wide_environmental + slight_high + portrait_compression + centered_symmetry: only the middle render (2002) actually pulls back to a small figure in the wide scene from a clear high angle; the outer renders (1001, 3003) stay tight chest-up crops with the set merely visible behind. Real defect, inconsistent across the triplet."
+  ],
+  "case_250": [
+    "hold",
+    "wide_environmental + slight_low + portrait_compression + thirds_gaze_space: 1001 and 3003 correctly show a small full-length figure in the wide set, but 2002 breaks to a tight face-only crop with no scene visible. Real defect, inconsistent across the triplet."
+  ]
+}

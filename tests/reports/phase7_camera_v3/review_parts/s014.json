@@ -1,0 +1,42 @@
+{
+  "case_014": [
+    "hold",
+    "chest_up + centered_symmetry read fine, but clean_profile fails: 1001/2002 are fully frontal (both eyes, no turn) and only 3003 shows a body-profile pose - majority contradicts the crib position, real defect."
+  ],
+  "case_039": [
+    "hold",
+    "close_face + centered_symmetry read fine, but clean_profile is inconsistent: 2002 is fully frontal, and 1001/3003 show body-in-profile with face turned back toward camera (both eyes visible) rather than a true side profile - real defect, not resolution."
+  ],
+  "case_064": [
+    "pass",
+    "close_face + rear_three_quarter clearly and consistently expressed in all three seeds (shoulders/back turned away, face turned back over shoulder toward camera); thirds_gaze_space visible via open background space on the side she gazes toward."
+  ],
+  "case_089": [
+    "hold",
+    "full_length framing only appears in case_089_1001 (head-to-feet); 2002 and 3003 crop to a chest-up bust shot with no legs visible - inconsistent framing, real defect visible plainly at this size."
+  ],
+  "case_114": [
+    "hold",
+    "head_shoulders reads fine, but three_quarter_front fails - all three seeds show a fully frontal face with no perceptible turn - and asymmetric_negative_space fails - subject stays centered, only a stray gray artifact box sits in one corner, not a deliberate off-center composition."
+  ],
+  "case_139": [
+    "hold",
+    "eye_level_front + centered_symmetry read fine, but thigh_up framing is not achieved - crop stops around the waist/lower chest with no thighs visible in any of the three seeds - real defect."
+  ],
+  "case_164": [
+    "hold",
+    "vertical_full_scene framing is absent - all three seeds are tight chest-up bust crops with no environment/full-scene context, contradicting the crib's expected wide vertical scene - real defect, clearly visible."
+  ],
+  "case_189": [
+    "pass",
+    "waist_up framing reads correctly (hands/torso to waist visible), but asymmetric_negative_space is not achieved - the gesturing subject stays centered in all three seeds, with only a stray gray artifact box breaking symmetry rather than an intentional off-center composition. -- overturned at full resolution: Traced case_189 → style_id camera_waist_up_slight_high_classic_wide_asymmetric_negative_space_complete_camera → test_ids P7000565/566/567 in tests/reports/phase7_camera_v3/scorecard.csv, and opened all three tests/reports/phase7_camera_v3/runs/P70005{65,66,67}/image_01.png at full 1024x1024 resolution (no saturation_screen.json exists for this axis, and the concern isn't saturation-related anyway, so that check doesn't apply).\n\nwaist_up framing is confirmed correct in all three seeds (hands/torso to waist visible).\n\nOn the asymmetric_negative_space claim, the thumbnail-level \"centered in all three seeds\" reading does not survive at full resolution:\n- Seed 1 (P7000565): torso sits left-of-center with the raised hand/forearm extending to the right, leaving markedly more open space at lower-left than lower-right — a real (if modest) asymmetric composition, plus a small gray artifact box bottom-right.\n- Seed 2 (P7000566): subject is clearly shifted into the left portion of the frame in a 3/4 pose with clasped hands off to the right; there is substantially more negative space on the right side of the frame. This is a clean, intentional-looking asymmetric composition, not centered.\n- Seed 3 (P7000567): subject is dead-center with both hands symmetrically raised on either side — this one genuinely is a symmetric composition with no asymmetric negative space, plus a small gray artifact box bottom-left.\n\nSo 2 of 3 seeds do achieve genuine off-center framing with real negative-space asymmetry; only 1 of 3 fails. The original \"hold\" reasoning overstated the defect as present in \"all three seeds,\" which isn't supported once viewed at full size — that's a thumbnail-scale misread rather than a real, consistent defect. The stray gray artifact boxes are a separate, minor, and non-blocking rendering artifact, not evidence against the composition itself."
+  ],
+  "case_214": [
+    "hold",
+    "waist_up + centered_symmetry read fine, but three_quarter_front fails - all three seeds show a fully frontal pose with no perceptible 3/4 turn, same defect pattern as case_114."
+  ],
+  "case_239": [
+    "hold",
+    "wide_environmental framing is technically present (small full figure in a wide scene), but all three seeds render in a flat cel-shaded illustration style rather than the photographic look used elsewhere on this sheet, making camera_position (slight_low) and lens_language (long_compression) unjudgeable as photographic camera language - real render-quality defect."
+  ]
+}

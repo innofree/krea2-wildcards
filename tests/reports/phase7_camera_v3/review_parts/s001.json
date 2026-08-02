@@ -1,0 +1,42 @@
+{
+  "case_001": [
+    "hold",
+    "chest_up + clean_profile + classic_wide + asymmetric_negative_space: chest_up crop and off-center asymmetric placement read fine, but the face rotates back toward camera (case_001_2002 is near-frontal) so the clean side profile that should preserve facial profile is not held across all three seeds -- real defect."
+  ],
+  "case_026": [
+    "pass",
+    "chest_up + eye_level_front + classic_wide + centered_symmetry: frontal squared body/face and centered placement all read clearly across seeds, but classic_wide's field-of-view/compression signature is not distinguishable from other lens tags in a plain-backdrop bust crop at this density -- unreadable, not a visible defect. -- overturned at full resolution: test_id resolution: style_id \"camera_chest_up_eye_level_front_classic_wide_centered_symmetry_complete_camera\" maps to case_026 in tests/reports/phase7_camera_v3/review/manifest.json (line ~1231), which lists three items: P7000076 (seed 1001), P7000077 (seed 2002), P7000078 (seed 3003).\n\nViewed all three full-resolution renders at tests/reports/phase7_camera_v3/runs/{P7000076,P7000077,P7000078}/image_01.png (1024x1024 each, not thumbnails). All three seeds show the same construction: a frontal, eye-level, squared chest-up bust crop, centered symmetrically against a plain warm-neutral seamless backdrop, consistent across seeds.\n\nAt full resolution there is no visible contradiction of the classic_wide tag (no unexpected fisheye/telephoto distortion, no compression artifact, no background cue that reads as a different lens) — but there is also no positive evidence of classic_wide's specific field-of-view/compression signature, because the plain backdrop and tight bust crop give the frame no depth cues (no lines, receding surfaces, or background objects) by which a wide-angle vs. normal vs. long lens signature could be distinguished. This is a structural property of the shot (subject distance + crop + featureless backdrop), not a rendering flaw, and it holds identically across all three seeds — so it is not something full resolution reveals that the thumbnail hid.\n\nThe original contact-sheet reasoning was correct: chest_up/eye_level_front/centered_symmetry read clearly, and classic_wide's lens signature is genuinely unreadable in this composition — that is an inherent limitation of the shot setup, not a visible defect. This is not a saturation-related concern, so tests/reports/phase7_camera_v3/saturation_screen.json was not applicable/needed. Conclusion: the \"hold\" does not represent a real defect surviving at full resolution — it was correctly flagged as an unreadable-but-harmless tag/crop interaction, so holds=false (no promotion-blocking defect found)."
+  ],
+  "case_051": [
+    "hold",
+    "close_face + rear_three_quarter + long_compression + diagonal_depth: rear three-quarter pose (shoulder turned away, face turned back to camera) reads correctly, but the framing shows full shoulders and collar rather than the hair-to-just-below-chin close_face crop the axis calls for -- real defect."
+  ],
+  "case_076": [
+    "hold",
+    "full_length + eye_level_front + portrait_compression + thirds_gaze_space: frontal eye-level face reads fine, but framing is the same chest-up crop as every other row with no legs, feet, or full body visible at all, so full_length is not expressed -- real defect."
+  ],
+  "case_101": [
+    "pass",
+    "head_shoulders + rear_three_quarter + long_compression + thirds_gaze_space: head-and-shoulders crop with rear three-quarter turn and an off-center gaze-space offset all read plausibly, but long_compression's lens signature cannot be distinguished from the sheet's other lens tags at this density -- unreadable. -- overturned at full resolution: Resolved case_101 (style_id camera_head_shoulders_rear_three_quarter_long_compression_thirds_gaze_space_complete_camera) to test_ids P7000301/302/303 via tests/reports/phase7_camera_v3/review/manifest.json and confirmed the row match in scorecard.csv. Viewed all three seeds' full-resolution renders at tests/reports/phase7_camera_v3/runs/P7000301|302|303/image_01.png (1024x1024).\n\nAll three seeds consistently show: a head-and-shoulders crop, the torso/shoulder turned away (rear three-quarter) with the face turning back toward camera, and an off-center thirds placement with gaze-space toward the camera side — all reading plausibly as in the original thumbnail assessment.\n\nThe originally-unreadable element was the long_compression lens signature. At full resolution this is now distinguishable: a simple gradient-energy check on the background corners vs. the in-focus face region shows background sharpness ~0.7-1.1 vs. face sharpness ~20.6-22.2 (roughly 20-25x difference) in all three seeds — i.e., a consistently soft, smoothly falling-off background against a sharp subject, the visual signature of a longer-focal-length/compressed-perspective portrait lens rather than a wide or standard-lens rendering. This bokeh/compression cue is fine-grained and was plausibly invisible when packed into a small contact-sheet thumbnail, but is clearly present and legible at full resolution.\n\nSince none of the four described elements are actually contradicted at full resolution — the lens signature that was flagged as \"unreadable\" turns out to be legible once viewed at full size — this was a thumbnail-density artifact, not a genuine defect. holds=false."
+  ],
+  "case_126": [
+    "hold",
+    "head_shoulders + three_quarter_front + portrait_compression + diagonal_depth: head-and-shoulders crop with a partial frontal body turn reads fine and the shoulder line gives a mild diagonal, but portrait_compression's lens signature is not distinguishable from the other lens tags at this density -- unreadable."
+  ],
+  "case_151": [
+    "hold",
+    "thigh_up + eye_level_front + natural_perspective + centered_symmetry: eye-level frontal centered pose reads fine, but framing is the identical chest-up crop used across the sheet with no thigh or lower-torso visible -- real defect."
+  ],
+  "case_176": [
+    "hold",
+    "vertical_full_scene + three_quarter_front + long_compression + asymmetric_negative_space: partial frontal turn reads fine, but framing is a chest-up crop rather than a vertical full scene showing body/environment -- real defect."
+  ],
+  "case_201": [
+    "hold",
+    "waist_up + slight_high + moderate_wide + asymmetric_negative_space: waist_up framing (hands fully in frame) and the off-center hand-gesture asymmetry read correctly, but slight_high's elevated camera angle and moderate_wide's lens signature are not distinguishable from eye-level/other-lens variants at this density -- unreadable."
+  ],
+  "case_226": [
+    "hold",
+    "wide_environmental + slight_high + portrait_compression + diagonal_depth: the architectural backdrop genuinely delivers diagonal depth, but the figure fills most of the frame instead of the roughly one-third occupancy wide_environmental requires -- real defect."
+  ]
+}
