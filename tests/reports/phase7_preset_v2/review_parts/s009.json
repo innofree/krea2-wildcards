@@ -1,0 +1,42 @@
+{
+  "case_009": [
+    "pass",
+    "coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + diffused_key_ambient + attentive_calm: clifftop/ocean backdrop, body turned with head turned back toward camera, clean round collarless neckline on cream jacket, thigh-up three-quarter crop, soft even daylight, calm attentive gaze all visible."
+  ],
+  "case_029": [
+    "hold",
+    "Real defect: entire row is rendered fully monochrome/grayscale (measured mean channel diff ~0.7, i.e. no color anywhere), so cool_overcast_warm_fill cannot be verified at all; covered_arcade, three_quarter_still, tailored_coat_trouser, eye_level_full are otherwise visible."
+  ],
+  "case_049": [
+    "hold",
+    "Real defect: pose_direction is called turned_gaze but 4 of 5 tiles (1001, 4004, 5005 and near-frontal 2002) show body and gaze square to camera, only 3003 shows a slight turn; covered_arcade, wrap_top_tapered, portrait_compressed, warm_low_sun rim light, composed_direct all otherwise read fine."
+  ],
+  "case_069": [
+    "pass",
+    "glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental + diffused_key_ambient + composed_direct: greenhouse doorway setting, arms-spread balanced stance with belted midi dress and cropped jacket, full wide environmental framing, soft even glasshouse light, direct composed gaze."
+  ],
+  "case_089": [
+    "hold",
+    "Real defect/unreadable: pose_direction (walking_pause) cannot be judged because portrait_compressed framing crops tightly to chest-up, no legs or stride visible in any of the 5 tiles; modern_library, overshirt_column_dress (visible portion), composed-ish expression otherwise fine."
+  ],
+  "case_109": [
+    "pass",
+    "quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + broad_neutral_daylight + attentive_calm: museum pedestal gallery, symmetric frontal still pose hands clasped, sleeveless vest over pleated midi skirt, full-body eye-level framing, neutral daylight through doorway, calm attentive gaze."
+  ],
+  "case_129": [
+    "hold",
+    "Unreadable: wardrobe is vest_pleated_skirt but waist_up_natural framing cuts off below the waist in all 5 tiles, so the pleated_skirt portion cannot be confirmed; rooftop_terrace, three_quarter_still-ish arms-crossed pose, warm_low_sun rim light, attentive_calm otherwise visible."
+  ],
+  "case_149": [
+    "pass",
+    "rooftop_terrace + three_quarter_still + wrap_top_tapered + wide_environmental + warm_low_sun + quiet_reflective: rooftop cityscape backdrop, hand-on-hip three-quarter still stance, cross-front wrap jacket with tapered trousers, wide full-body framing, warm golden-hour glow on skyline, composed reflective expression."
+  ],
+  "case_169": [
+    "pass",
+    "stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental + diffused_key_ambient + composed_direct: stone garden courtyard, mid-stride walking pose, long tailored coat over trousers, wide environmental framing, soft diffused ambient light, direct composed gaze toward camera while walking."
+  ],
+  "case_189": [
+    "hold",
+    "Real defect: wardrobe is tailored_coat_trouser but the garment shown is a casual color-blocked snap-front shirt-jacket (black/tan panels) with no tailored lapel structure, not a tailored coat, and trousers are unverifiable due to portrait_compressed crop; transit_concourse, frontal_composed, cool_overcast_warm_fill cast, quiet_reflective otherwise read fine."
+  ]
+}

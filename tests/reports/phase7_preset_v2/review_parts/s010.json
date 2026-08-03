@@ -1,0 +1,42 @@
+{
+  "case_010": [
+    "hold",
+    "coastal_overlook+turned_gaze+collarless_suit+diffused_key_ambient+composed_direct all visible, but thigh_up_three_quarter fails: crop is chest-up only in all 5 variants, no thigh framing (real defect)."
+  ],
+  "case_030": [
+    "pass",
+    "covered_arcade+three_quarter_still+tailored_coat_trouser+eye_level_full+diffused_key_ambient+attentive_calm: full-body figure in shuttered arcade, long tailored coat over trousers, calm attentive gaze at eye-level crop."
+  ],
+  "case_050": [
+    "pass",
+    "covered_arcade+turned_gaze+warm_low_sun+quiet_reflective visible, wrap top visible in bust crop but tapered hem unreadable — portrait_compressed crop excludes lower garment (not a defect, just out of frame). -- overturned at full resolution: test_ids P7000246-P7000250 (seeds 1001/2002/3003/4004/5005) for style_id preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene. Viewed all 5 full-resolution image_01.png renders. Every seed shows the covered arcade backdrop, a turned/off-axis gaze, warm low-sun lighting, and a quiet reflective expression correctly, and the wrap-style top is clearly rendered in the bust-level crop. In all 5 frames the composition is cropped at chest/upper-torso height per the portrait_compressed preset, so the tapered hem is simply outside the frame in every seed, not malformed or missing due to a rendering defect. There is no garment artifact visible where the hem would be (no truncation glitch, no morphing) -- the crop boundary itself is just above where the hem would appear. No saturation_screen.json exists in tests/reports/phase7_preset_v2/, which is expected since the flagged concern was framing/crop, not color saturation, so that check is not applicable here. This confirms the original thumbnail read: the \"tapered hem unreadable\" issue is an out-of-frame consequence of the portrait_compressed crop preset, not a defect in the render."
+  ],
+  "case_070": [
+    "pass",
+    "glasshouse_walkway+balanced_contrapposto+belted_midi_layer+wide_environmental+diffused_key_ambient+quiet_reflective: full figure in greenhouse doorway, belted midi dress with cropped layer, weight shifted onto one leg in several frames, calm expression."
+  ],
+  "case_090": [
+    "hold",
+    "modern_library+overshirt_column_dress+portrait_compressed+quiet_reflective visible, but walking_pause unreadable (crop hides legs/stride) and warm_low_sun not expressed — lighting reads as flat neutral indoor ambient with a blown-out window, no directional warm sun (real defect)."
+  ],
+  "case_110": [
+    "pass",
+    "quiet_museum+frontal_composed+vest_pleated_skirt+eye_level_full+broad_neutral_daylight+composed_direct: full figure frontal in museum hall, pleated skirt and vest visible, broad daylight through rear opening, calm direct gaze."
+  ],
+  "case_130": [
+    "hold",
+    "rooftop_terrace+three_quarter_still+waist_up_natural+warm_low_sun+composed_direct all visible; vest confirmed but pleated_skirt unreadable — waist-up crop stops above the skirt in all 5 variants."
+  ],
+  "case_150": [
+    "pass",
+    "rooftop_terrace+three_quarter_still+wrap_top_tapered(trousers visible)+wide_environmental+warm_low_sun all confirmed; subtle_warmth expression unreadable — face is too small/soft at this density to judge. -- overturned at full resolution: Resolved case_150 (style_id preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene) to test_ids P7000746-P7000750 (5 seeds) via manifest.json and confirmed against scorecard.csv. All five image_01.png renders are 1024x1024 full resolution. I cropped and 2x-upscaled the face region of each seed for close inspection.\n\nAt full resolution the face is not too small or soft to judge in any of the 5 seeds. Each shows a clearly legible, consistent expression: a gentle, closed-mouth slight smile with softly upturned mouth corners and warm, relaxed eyes — a textbook rendering of \"subtle_warmth\" rather than a neutral or ambiguous expression. This held uniformly across all seeds (1001, 2002, 3003, 4004, 5005), with no disagreement between them.\n\nThe other confirmed elements also check out visually: rooftop_terrace (concrete parapet wall, city skyline), three_quarter_still (turned three-quarter body angle, static standing pose), wrap_top_tapered with trousers visible, wide_environmental framing (full-body wide shot with generous environment), and warm_low_sun lighting (warm golden-hour tone on skin/fabric, long soft shadows).\n\nThe concern in this case was expression readability, not color saturation, so saturation_screen.json is not applicable here and was not consulted. The original \"unreadable at thumbnail density\" note was accurate for the contact-sheet thumbnail but does not hold at full resolution — this is the expected thumbnail-artifact outcome, not a genuine defect. Verdict: hold does not survive at full res."
+  ],
+  "case_170": [
+    "pass",
+    "stone_courtyard+walking_pause+tailored_coat_trouser+wide_environmental+diffused_key_ambient+quiet_reflective: full figure mid-stride in stone courtyard, long tailored coat over trousers, soft diffused light, calm downward gaze."
+  ],
+  "case_190": [
+    "hold",
+    "transit_concourse+frontal_composed+broad_neutral_daylight+attentive_calm visible, but thigh_up_three_quarter fails (crop is chest-up with clasped hands, no thigh framing) and tailored_coat_trouser unreadable — garment reads as a knit sweater/cardigan, no coat structure or trousers visible (real defect)."
+  ]
+}

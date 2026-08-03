@@ -1,0 +1,42 @@
+{
+  "case_012": [
+    "hold",
+    "coastal_overlook+turned_gaze+collarless_suit/diffused_key_ambient/subtle_warmth all read correctly, but thigh_up_three_quarter camera_direction fails: crop stops at upper chest, hiding waist/hands/garment silhouette that catalog defines thigh-up framing to preserve — real framing defect."
+  ],
+  "case_032": [
+    "pass",
+    "covered_arcade+three_quarter_still+tailored_coat_trouser+eye_level_full+diffused_key_ambient+quiet_reflective: full-body eye-level shot in shaded arcade, tailored coat over trousers, calm reserved gaze all visible."
+  ],
+  "case_052": [
+    "hold",
+    "glasshouse_walkway+waist_up_natural+broad_neutral_daylight+subtle_warmth read fine, but belted_midi_layer wardrobe fails: plain sleeveless dress with no belt and no outer layer, versus case_072's same attribute clearly showing cardigan+belt — real wardrobe defect."
+  ],
+  "case_072": [
+    "pass",
+    "glasshouse_walkway+balanced_contrapposto+belted_midi_layer+wide_environmental+warm_low_sun+attentive_calm: full figure shows belted midi dress with cropped cardigan layer, warm low-sun light, calm attentive gaze off-camera."
+  ],
+  "case_092": [
+    "hold",
+    "modern_library+overshirt_column_dress+broad_neutral_daylight+attentive_calm confirmed, but walking_pause pose is unreadable: waist_up_natural crop hides legs/stride entirely and visible torso is squared frontal with no motion cue — genuinely unreadable, not a confirmed defect."
+  ],
+  "case_112": [
+    "pass",
+    "quiet_museum+frontal_composed+vest_pleated_skirt+eye_level_full+broad_neutral_daylight+subtle_warmth: full body frontal shot, vest over visibly pleated skirt, soft smile, bright neutral museum daylight."
+  ],
+  "case_132": [
+    "hold",
+    "rooftop_terrace+warm_low_sun+subtle_warmth read fine, but waist_up_natural camera_direction fails: crop stops at chest/underarm well above the waist (tighter than comparable case_052/092 waist_up shots), so vest_pleated_skirt's skirt is never shown — real framing defect cascading into unverifiable wardrobe."
+  ],
+  "case_152": [
+    "pass",
+    "stone_courtyard+eye_level_full+collarless_suit+broad_neutral_daylight+quiet_reflective: full body collarless cropped jacket over trousers visible, calm reserved expression, neutral daylight."
+  ],
+  "case_172": [
+    "pass",
+    "stone_courtyard+walking_pause+tailored_coat_trouser+wide_environmental+warm_low_sun+attentive_calm: clear mid-stride walking pose, coat+trouser wardrobe, wide environmental framing, warm low sun, alert calm gaze."
+  ],
+  "case_192": [
+    "hold",
+    "transit_concourse+frontal_composed+broad_neutral_daylight+quiet_reflective read fine, but thigh_up_three_quarter camera_direction fails: crop is a tight bust/chest shot, never reaching thigh, so hands/lower coat-trouser silhouette required by thigh-up framing are absent — same failure mode as case_012."
+  ]
+}

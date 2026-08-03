@@ -1,0 +1,42 @@
+{
+  "case_008": [
+    "hold",
+    "coastal_overlook + turned_gaze read correctly (torso turned, head back to camera over rocky coast/ocean), but camera_direction=thigh_up_three_quarter is a real defect: frame cuts at upper chest/bust, matching portrait_compressed's definition instead of thigh-up framing."
+  ],
+  "case_028": [
+    "pass",
+    "covered_arcade + eye_level_full + tailored_coat_trouser all visible (full body, feet, long coat over trousers in shuttered arcade); three_quarter_still (hand at waist/one lowered) and quiet_reflective expression also match."
+  ],
+  "case_048": [
+    "hold",
+    "covered_arcade + wrap_top_tapered + portrait_compressed + warm_low_sun all read fine, but pose_direction=turned_gaze is a real defect: shoulders/torso are squarely frontal to camera with no turn, contradicting 'turning through the torso while looking back.'"
+  ],
+  "case_068": [
+    "pass",
+    "glasshouse_walkway + wide_environmental + belted_midi_layer + diffused_key_ambient confirmed; balanced_contrapposto satisfied per catalog def (both hands visible, symmetric door-frame stance) and attentive_calm expression matches."
+  ],
+  "case_088": [
+    "pass",
+    "modern_library + portrait_compressed + overshirt visible and match, but pose_direction=walking_pause is unreadable, not a defect: the chest-up crop hides arms/legs entirely so mid-step/separated-arms cannot be confirmed or denied. -- overturned at full resolution: test_id resolved via tests/reports/phase7_preset_v2/review/crib.txt (case_088 → modern_library, walking_pause, overshirt_column_dress, portrait_compressed, warm_low_sun, attentive_calm) matched against tests/prompt_matrix/phase7_preset.jsonl to style_id preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene, i.e. test_ids P7000436-P7000440 in scorecard.csv (5 seeds: 1001,2002,3003,4004,5005).\n\nViewed tests/reports/phase7_preset_v2/runs/P7000436..440/image_01.png at full resolution. All five seeds independently and consistently render a chest-up / shoulders-up crop (portrait_compressed camera boundary): modern_library setting is clearly present (bookshelves, reading tables), the beige overshirt over a dark/olive base layer is clearly visible and matches, and the crop's lower edge cuts across the upper chest in every seed — no elbows, hands, or legs are visible in any of the 5 renders. There is no seed where the frame opens up enough to reveal mid-step stance or arm separation.\n\nThis confirms the original contact-sheet reasoning at full resolution: the walking_pause pose (mid-step/separated arms) genuinely cannot be confirmed or denied because the requested camera boundary (portrait_compressed) structurally excludes the entire lower body and arms below shoulder level across all seeds. This is not a rendering defect — it's an inherent consequence of the crop contract for this preset — so the \"hold, not a defect\" conclusion holds. No saturation_screen.json exists for this run, and the flagged concern was never about color saturation, so that check doesn't apply. Returning holds=false: this was correctly identified as a thumbnail-limited non-defect, not a failure to find a real problem."
+  ],
+  "case_108": [
+    "pass",
+    "quiet_museum + frontal_composed (level shoulders, loosely clasped hands) + belted_midi_layer + diffused_key_ambient + subtle_warmth (small warm smile) all visibly expressed; wide_environmental depth path present even if subject reads centered rather than strictly on a third."
+  ],
+  "case_128": [
+    "hold",
+    "rooftop_terrace scene is fine, but two real defects: pose_direction=three_quarter_still expects 'one hand at waist, one lowered' yet arms are crossed at chest, and camera_direction=waist_up_natural expects waist-up with visible hand gestures yet the crop is chest-up with hands tucked/hidden."
+  ],
+  "case_148": [
+    "pass",
+    "rooftop_terrace + three_quarter_still (hand at waist, one lowered) + wrap_top_tapered (wrap jacket, tapered skirt hem visible) + thigh_up_three_quarter (frame reaches mid-thigh at three-quarter angle) + warm_low_sun (golden-hour skyline light) + subtle_warmth all confirmed."
+  ],
+  "case_168": [
+    "pass",
+    "stone_courtyard + walking_pause (mid-stride, separated swinging arms) + tailored_coat_trouser + wide_environmental (deep courtyard path) + diffused_key_ambient + attentive_calm all visibly expressed."
+  ],
+  "case_188": [
+    "pass",
+    "transit_concourse + frontal_composed (level shoulders, clasped hands) + portrait_compressed + cool_overcast_warm_fill + composed_direct expression all match; tailored coat structure visible even though trousers fall outside the chest-up crop."
+  ]
+}

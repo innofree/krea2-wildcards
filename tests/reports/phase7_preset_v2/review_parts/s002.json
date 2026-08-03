@@ -1,0 +1,42 @@
+{
+  "case_002": [
+    "hold",
+    "coastal_overlook + turned_gaze read fine, but camera_direction=thigh_up_three_quarter not expressed: all 5 variants crop tight to head-and-chest, no thigh visible (defect, not a density issue)."
+  ],
+  "case_022": [
+    "hold",
+    "coastal_overlook + turned_gaze + collarless_suit (high-neck base under collarless jacket) read fine, but camera_direction=waist_up_natural requires 'complete visible hand gestures' and no hands appear in any of the 5 variants — crop stops above the waist (defect)."
+  ],
+  "case_042": [
+    "hold",
+    "covered_arcade + portrait_compressed read fine, but pose_direction=turned_gaze ('turning through the torso while looking back') not expressed: subject stands frontally with squared shoulders and direct gaze, matching frontal_composed instead (defect)."
+  ],
+  "case_062": [
+    "pass",
+    "glasshouse_walkway + balanced_contrapposto (weight-shifted stance, both hands visible on glass panels) + belted_midi_layer (belted dress with cropped outer layer) + wide_environmental + broad_neutral_daylight + quiet_reflective all visibly expressed."
+  ],
+  "case_082": [
+    "hold",
+    "modern_library + portrait_compressed + overshirt_column_dress read fine, but pose_direction=walking_pause ('mid-step with separated arms') cannot be confirmed: the compressed chest-up crop excludes arms/legs and the visible shoulders are flat and frontal like frontal_composed."
+  ],
+  "case_102": [
+    "pass",
+    "quiet_museum + frontal_composed (level shoulders, loosely clasped hands) + belted_midi_layer + wide_environmental + broad_neutral_daylight + composed_direct all visibly expressed."
+  ],
+  "case_122": [
+    "pass",
+    "quiet_museum + frontal_composed + vest_pleated_skirt (longline vest over mid-calf pleated skirt) + eye_level_full + warm_low_sun (warm cast on stone, long low-angle shadows) + composed_direct all visibly expressed."
+  ],
+  "case_142": [
+    "hold",
+    "rooftop_terrace + three_quarter_still (hand at waist, arm lowered) + thigh_up_three_quarter + diffused_key_ambient + composed_direct read fine, but wardrobe=wrap_top_tapered's required tapered trousers are unconfirmable: the bottom garment drapes like a flowing color-blocked skirt with no visible trouser-leg separation."
+  ],
+  "case_162": [
+    "hold",
+    "stone_courtyard + walking_pause (mid-step, separated arms) + tailored_coat_trouser + wide_environmental read fine, but the frame renders near-monochrome (measured saturation ~0.03 vs ~0.16-0.18 on comparable rows), undermining broad_neutral_daylight's 'accurate skin tone' criterion."
+  ],
+  "case_182": [
+    "pass",
+    "transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural (hands clasped, visible) + broad_neutral_daylight + composed_direct all visibly expressed."
+  ]
+}

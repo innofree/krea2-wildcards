@@ -1,0 +1,42 @@
+{
+  "case_017": [
+    "pass",
+    "coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + broad_neutral_daylight + attentive_calm: rocky cliff/ocean backdrop, body turned to camera's side with head turned back into gaze, two-tone collarless jacket, waist-up crop, bright neutral daylight, calm alert expression all visibly present."
+  ],
+  "case_037": [
+    "pass",
+    "covered_arcade + wrap_top_tapered + portrait_compressed + broad_neutral_daylight + composed_direct read fine (shuttered arcade, wrap-front top, tight bright-daylight headshot, direct composed gaze); cannot read: portrait_compressed crop cuts off at upper chest so the tapered-trousers half of the wardrobe and the extent of any body turn (turned_gaze) are out of frame, not a defect. -- overturned at full resolution: Resolved case_037 to style_id preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene, test_ids P7000181-P7000185. Viewed all 5 seeds at full resolution: each shows a shuttered arcade corridor, a wrap-front top bodice, a tight headshot crop ending at the upper chest, direct composed gaze, and neutral daylight -- consistent with the thumbnail read. The crop cutting off before the waist (so tapered trousers and any body-turn extent from turned_gaze are invisible) is inherent to the portrait_compressed framing itself, not a rendering failure -- a tight portrait crop is expected to exclude lower-body wardrobe and torso-turn cues by construction. No saturation concern was part of the original flag, so saturation_screen.json was not applicable. All legible elements (arcade, wrap-top, daylight, gaze) render correctly across every seed. This confirms the original reviewer's own conclusion that it was 'not a defect' -- the hold does not hold up as a genuine defect at full resolution."
+  ],
+  "case_057": [
+    "hold",
+    "glasshouse_walkway + diffused_key_ambient + composed_direct read fine (greenhouse walkway, soft ambient light, direct calm gaze); real defect suspected: belted_midi_layer shows no visible belt, just a color-blocked sleeveless dress with a waist seam, matching the previously logged glasshouse_walkway+balanced_contrapposto beltless-corset rendering issue (plan.md 7.31)."
+  ],
+  "case_077": [
+    "hold",
+    "modern_library + overshirt_column_dress + portrait_compressed + broad_neutral_daylight + composed_direct read fine (library stacks, overshirt over dress, bright daylight, composed direct gaze); cannot read: portrait_compressed crop excludes legs/stride entirely so walking_pause cannot be confirmed, not a defect."
+  ],
+  "case_097": [
+    "hold",
+    "modern_library + overshirt_column_dress + waist_up_natural + cool_overcast_warm_fill + composed_direct read fine (library scene, overshirt/column dress, cool exterior light with warm ceiling fill, composed direct gaze); cannot read: even waist_up_natural framing stops above the legs so walking_pause still cannot be confirmed, not a defect."
+  ],
+  "case_117": [
+    "pass",
+    "quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + diffused_key_ambient + attentive_calm: museum gallery with pedestals, frontal symmetric stance with hands clasped, sleeveless vest over clearly pleated skirt, full-length eye-level framing, soft diffused light, calm attentive expression all visible."
+  ],
+  "case_137": [
+    "pass",
+    "rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter + cool_overcast_warm_fill + attentive_calm: city-skyline rooftop, three-quarter still stance with hand on hip, wrap top visible, crop correctly extends to mid-thigh (not truncated to portrait), overcast cool sky with warm skin fill, calm attentive expression all visible."
+  ],
+  "case_157": [
+    "pass",
+    "stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + warm_low_sun + attentive_calm: traditional stone-walled courtyard, balanced standing pose, collarless jacket-and-trouser suit clearly visible, full-length eye-level framing, warm golden low-sun light, calm attentive expression all visible."
+  ],
+  "case_177": [
+    "pass",
+    "transit_concourse + balanced_contrapposto + vest_pleated_skirt + eye_level_full + diffused_key_ambient + attentive_calm: columned station concourse, balanced standing pose, long vest over clearly pleated skirt, full-length eye-level framing, soft diffused ambient light, calm attentive expression all visible."
+  ],
+  "case_197": [
+    "hold",
+    "transit_concourse + three_quarter_still + portrait_compressed + diffused_key_ambient + subtle_warmth read fine (concourse backdrop, three-quarter turned stance with crossed arms, soft ambient light, subtle warm smile); cannot read: portrait_compressed crop excludes the skirt entirely so vest_pleated_skirt's pleated-skirt half cannot be confirmed, not a defect."
+  ]
+}

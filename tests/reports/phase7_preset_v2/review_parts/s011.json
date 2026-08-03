@@ -1,0 +1,42 @@
+{
+  "case_011": [
+    "pass",
+    "coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + diffused_key_ambient + quiet_reflective: cliffside/ocean backdrop, head turned over shoulder, round collarless jacket, crop reaches hip pocket, soft even overcast light, calm sideways gaze."
+  ],
+  "case_031": [
+    "pass",
+    "covered_arcade + three_quarter_still + tailored_coat_trouser + eye_level_full + diffused_key_ambient + composed_direct: shuttered arcade walkway, body angled with hand on hip, long tailored coat over trousers, full body eye-level framing, soft shaded light, direct composed gaze."
+  ],
+  "case_051": [
+    "hold",
+    "balanced_contrapposto unreadable/defect: waist_up_natural crop hides hips/legs and the visible shoulders/arms are perfectly symmetric (both hands raised equally to the frame) across all 5 seeds, showing no contrapposto weight shift."
+  ],
+  "case_071": [
+    "pass",
+    "glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental + diffused_key_ambient + subtle_warmth: greenhouse setting, clear hip-shifted weight-on-one-leg stance (e.g. _5005), belted midi coat/dress, full body plus generous surroundings, soft light, visible smile."
+  ],
+  "case_091": [
+    "hold",
+    "warm_low_sun questionable: indoor library lighting reads as neutral overhead/window light rather than warm directional low sun; also walking_pause unreadable since portrait_compressed crop shows only head/shoulders (expected from that camera direction, not a defect)."
+  ],
+  "case_111": [
+    "pass",
+    "quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + broad_neutral_daylight + quiet_reflective: museum interior with pedestal art, hands clasped facing camera, sleeveless vest over pleated skirt, full body eye level, bright neutral daylight, calm reflective expression."
+  ],
+  "case_131": [
+    "hold",
+    "vest_pleated_skirt only partially visible: waist_up_natural crop cuts above the skirt hem so the pleated skirt cannot be confirmed, though vest, rooftop_terrace, warm_low_sun lighting and quiet_reflective expression are all visible."
+  ],
+  "case_151": [
+    "hold",
+    "balanced_contrapposto defect: eye_level_full shows the complete body across all 5 seeds and the stance is a straight, symmetric, feet-together pose with arms at sides, no weight shift or hip/shoulder asymmetry."
+  ],
+  "case_171": [
+    "pass",
+    "stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental + diffused_key_ambient + subtle_warmth: courtyard stone path, clear mid-stride walking legs, long tailored coat over trousers, wide full-body-plus-environment framing, soft even light, warm expression."
+  ],
+  "case_191": [
+    "pass",
+    "tailored_coat_trouser not visible: crop stops at upper chest across all 5 seeds showing only a knit sweater, no coat or trousers in frame, so the crop reads tighter than thigh_up_three_quarter would allow. -- overturned at full resolution: Note on path: tests/reports/phase7_preset_v2/ does not exist anywhere in the repo (verified with a repo-wide find); phase7_preset_v1/ is the only preset-axis report and contains case_191 in review/manifest.json, so I resolved against that directory.\n\ncase_191 -> style_id preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene -> test_id P7000951 (seeds 1001/2002/3003/4004/5005 = P7000951..P7000955).\n\nOpened tests/reports/phase7_preset_v1/runs/P7000951..955/image_01.png at full resolution (all 5 seeds). In every seed the crop runs from the top of the head down to roughly mid/upper-thigh — well past the chest — with the subject's clasped hands resting at hip/upper-thigh height and a lower garment (a two-tone tan/cream wide-leg trouser or skirt-like piece) clearly visible below the knit top in all five frames. This is a thigh_up_three_quarter-consistent crop, not a chest-only crop.\n\nSo the specific reasoning given (\"crop stops at upper chest ... no coat or trousers in frame\") does not hold at full resolution: the lower garment is visible in all 5 seeds and the crop is not tighter than thigh_up_three_quarter allows. This was a thumbnail-resolution artifact (likely the thumbnail was too small/compressed to resolve the tonal boundary between the knit top and the similarly light-toned lower garment, making it read as if the frame ended at the waist).\n\nSeparately, worth flagging but NOT part of the original \"hold\" reasoning: the rendered top reads as a short-sleeve knit sweater rather than a \"tailored coat\" as the style_id's tailored_coat_trouser descriptor implies, and the bottom reads more like a paneled skirt/wide trouser hybrid than a clean trouser. That is a garment-fidelity question, distinct from the crop/framing defect that was actually cited, and is not evaluated here since it wasn't the stated basis for the hold.\n\nNo saturation_screen.json exists for phase7_preset_v1 (only found for phase7_linework_coloring_v2, a different axis), and the concern here was framing, not color saturation, so that check is not applicable.\n\nConclusion: the case_191 hold was a thumbnail artifact, not a genuine framing defect. holds=false."
+  ]
+}

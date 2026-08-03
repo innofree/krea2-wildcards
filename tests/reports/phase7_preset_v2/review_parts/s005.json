@@ -1,0 +1,42 @@
+{
+  "case_005": [
+    "hold",
+    "thigh_up_three_quarter: real defect — all 5 variants crop tight at chest/upper-torso against the coastal cliff backdrop, no thigh or leg visible at all (compare case_145's genuine thigh-level crop on this same sheet); scene/pose/wardrobe/lighting/expression (coastal_overlook, turned_gaze, collarless_suit, cool_overcast_warm_fill, attentive_calm) otherwise read as intended."
+  ],
+  "case_025": [
+    "hold",
+    "thigh_up_three_quarter: real defect — same chest-up crop as case_005, no thigh level shown despite the same camera_direction spec; coastal_overlook, turned_gaze, overshirt_column_dress, warm_low_sun, attentive_calm are otherwise visibly expressed."
+  ],
+  "case_045": [
+    "hold",
+    "turned_gaze: real defect — all 5 variants show a fully frontal, symmetric head-on portrait with direct gaze, no body/head turn visible; covered_arcade, wrap_top_tapered, portrait_compressed, diffused_key_ambient, composed_direct are visibly expressed."
+  ],
+  "case_065": [
+    "hold",
+    "balanced_contrapposto: real defect — pose is a bilaterally symmetric arms-spread stance touching both door frames with feet together, no weight-shifted S-curve visible; glasshouse_walkway, belted_midi_layer, wide_environmental, cool_overcast_warm_fill, composed_direct are otherwise expressed."
+  ],
+  "case_085": [
+    "pass",
+    "walking_pause: unreadable, not a defect I can prove — portrait_compressed crops to chest-up so no legs/stride are ever in frame to confirm the pose; modern_library, overshirt_column_dress, portrait_compressed, diffused_key_ambient, composed_direct are visibly expressed. -- overturned at full resolution: Traced case_085 -> style_id preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene -> test_ids P7000421-P7000425 (5 seeds) via tests/reports/phase7_preset_v2/review/manifest.json and confirmed in tests/reports/phase7_preset_v2/scorecard.csv. Opened all 5 full-resolution renders (tests/reports/phase7_preset_v2/runs/P7000421..425/image_01.png). Every seed is a tight chest-up crop (portrait_compressed) in a library interior (modern_library), figure wearing a beige overshirt over a dark column dress (overshirt_column_dress), softly and evenly lit (diffused_key_ambient), facing the camera calmly and directly (composed_direct). None of the five frames include hips, legs, or any stride/gait cues — the portrait_compressed camera boundary crops the figure off well above the waist in every seed, exactly as the original hold noted. This is not a case where a larger view reveals or disproves the pose; the crop structurally excludes the body region needed to confirm or refute walking_pause in all 5/5 seeds. The other five named cues (modern_library, overshirt_column_dress, portrait_compressed, diffused_key_ambient, composed_direct) are all clearly and consistently expressed. The concern was not about color saturation, so saturation_screen.json was not needed. Since walking_pause remains genuinely unreadable/unprovable at full resolution (not visibly wrong, just out of frame by camera-contract design) rather than a confirmed visible defect, the hold does not stand as a real defect — it should be released."
+  ],
+  "case_105": [
+    "pass",
+    "quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + diffused_key_ambient + attentive_calm: gallery interior with sculptures, symmetric frontal stance with clasped hands, belted midi dress with cropped vest layer, full-body wide framing, soft even light, calm attentive face — all visible."
+  ],
+  "case_125": [
+    "hold",
+    "waist_up_natural: real defect — crop stops at upper chest/sternum (hands clasped well above the waist), much tighter than the true waist-level crop seen on case_185 in this same sheet; the pleated_skirt half of vest_pleated_skirt is consequently out of frame and unconfirmable. quiet_museum, frontal_composed, vest (top half), diffused_key_ambient, attentive_calm read fine."
+  ],
+  "case_145": [
+    "pass",
+    "rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter + warm_low_sun + attentive_calm: rooftop skyline backdrop, body angled three-quarter with hand on hip in a static stance, wrap-style top over skirt, genuine thigh-level crop, warm golden low-sun light, calm expression — all visible."
+  ],
+  "case_165": [
+    "pass",
+    "stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental + cool_overcast_warm_fill + composed_direct: hanok-style stone courtyard, clear mid-stride walking legs, tailored long coat over trousers, full-body wide framing, cool overcast tones, composed expression all read on 4 of 5 seeds; one seed (_5005) renders near-monochrome/desaturated but this is an isolated seed artifact, not a case-wide failure."
+  ],
+  "case_185": [
+    "pass",
+    "transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural + diffused_key_ambient + quiet_reflective: station concourse with columns/signage, frontal clasped-hands stance, overshirt over column dress, crop correctly reaches waist/hip line, soft ambient light, quiet reflective expression — all visible."
+  ]
+}

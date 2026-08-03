@@ -1,0 +1,42 @@
+{
+  "case_016": [
+    "hold",
+    "camera_direction=thigh_up_three_quarter: all 5 variants show only head/neck/upper-chest, tighter than even the portrait_compressed rows elsewhere on this sheet -- thigh-up framing not expressed (real defect); coastal_overlook cliffs+ocean, turned_gaze, collarless cream jacket, and warm sunlit tone are otherwise fine."
+  ],
+  "case_036": [
+    "pass",
+    "covered_arcade + turned_gaze + wrap_top_tapered + portrait_compressed + broad_neutral_daylight + attentive_calm: shaded shuttered arcade corridor, head turned away from lens in profile/three-quarter gaze, brown/cream diagonal wrap-front top, tight head-and-shoulders crop, soft neutral daylight, calm attentive expression."
+  ],
+  "case_056": [
+    "pass",
+    "camera_direction=waist_up_natural: all 5 variants show the full figure head-to-shoes with arms raised to the doorframe, not a waist-up crop -- real framing defect; glasshouse_walkway, belted cream/olive midi layer, and cool overcast light with warm skin fill are otherwise present. -- overturned at full resolution: Traced case_056 to style_id \"preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene\" via manifest.json (cases[].alias == \"case_056\"), which maps to test_ids P7000276-P7000280 in scorecard.csv (all 5 seeds: 1001, 2002, 3003, 4004, 5005).\n\nOpened tests/reports/phase7_preset_v2/runs/P7000276..280/image_01.png at full 1024x1024 resolution. All 5 seeds consistently show a waist-up crop: head down to roughly waist/hip level, hands raised to shoulder/chest height holding the glasshouse door frame open. None show the full figure, legs, or shoes — the \"head-to-shoes with arms raised to doorframe\" framing defect described from the thumbnail is not present at full resolution.\n\nAll other named attributes are correctly present across all seeds: glasshouse_walkway setting (visible greenhouse structure with glass roof and plantings), belted cream/olive midi dress (sleeveless, waist seam/belt line, skirt extending into frame), cool overcast ambient light (grey, diffuse sky through glass) with warm skin fill (warm-toned skin against the cooler background).\n\nThe concern was framing/crop, not saturation, so saturation_screen.json was not needed for this case. This was a thumbnail-resolution misread (the low-res contact-sheet thumbnail apparently was mistaken for a full-body shot), not a real framing defect — the hold does not survive full-resolution review."
+  ],
+  "case_076": [
+    "pass",
+    "pose_direction=walking_pause: portrait_compressed crop shows only head/shoulders with no legs or stride visible, so a walking-pause cannot be confirmed (unreadable at this crop, not a defect); modern_library, overshirt_column_dress, camera crop, broad_neutral_daylight, and attentive_calm all read fine. -- overturned at full resolution: test_id resolved via manifest.json: case_076 → style_id \"preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene\" → scorecard rows P7000376–P7000380 (seeds 1001/2002/3003/4004/5005). Viewed all 5 image_01.png full-resolution renders in tests/reports/phase7_preset_v2/runs/P70003{76,77,78,79,80}/. All five seeds are consistent: a tight portrait_compressed crop framing head, neck, and upper chest only — no waistline, legs, or ground plane is ever in frame, so a walking-pause stride literally cannot be depicted or contradicted at this crop, regardless of resolution. This is not a resolution-dependent artifact (nothing gets clearer or reveals legs at full size); it is a structural consequence of the portrait_compressed camera setting itself, exactly as the original thumbnail-based reasoning concluded. All other axis elements read correctly and consistently across seeds: modern_library setting (visible bookshelves/reading tables), overshirt_column_dress (beige overshirt open over a dark/olive underlayer at the neckline), broad_neutral_daylight (even, neutral daylight through windows), and attentive_calm expression (calm, slightly off-camera gaze) all check out fine. No saturation_screen.json exists for this run (and the concern was never about saturation), so no additional check was needed there. Since the unreadability is an expected, by-design consequence of the crop rather than a genuine rendering defect, the original \"hold\" does not escalate to a real failure — this resolves as a non-defect, matching the reviewer's original judgment."
+  ],
+  "case_096": [
+    "hold",
+    "pose_direction=walking_pause: waist_up_natural crop ends above the hips with shoulders squared and static, no stride cue visible, so walking-pause is unreadable at this crop; modern_library, overshirt_column_dress, camera crop, cool_overcast_warm_fill, and attentive_calm all check out."
+  ],
+  "case_116": [
+    "pass",
+    "quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + cool_overcast_warm_fill + subtle_warmth: museum hall with pedestal art, hands clasped in a frontal stance, grey vest over a visibly pleated skirt, full figure at eye level, cool window daylight with warm skin fill, softly warm expression."
+  ],
+  "case_136": [
+    "hold",
+    "lighting_direction=broad_neutral_daylight: 4 of 5 variants (1001/3003/4004/5005) render as near-monochrome/desaturated despite the daylight rooftop setting, only 2002 keeps normal color -- a real color-rendering defect, clearly visible at this size; rooftop_terrace, three_quarter_still hand-on-hip stance, wrap_top_tapered, and the thigh-up-three-quarter crop are otherwise correct."
+  ],
+  "case_156": [
+    "pass",
+    "stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + diffused_key_ambient + subtle_warmth: stone-walled courtyard, weight-shifted stance with one leg forward/turned out in several variants, collarless cropped jacket over wide trousers, full figure at eye level, soft even ambient light, gently warm expression."
+  ],
+  "case_176": [
+    "hold",
+    "wardrobe=collarless_suit: the jacket has a raised funnel/mock-turtleneck collar clearly visible at the neck, contradicting 'collarless' -- real wardrobe defect; transit_concourse, waist_up_natural crop, warm low-sun highlighting, and attentive_calm are otherwise present."
+  ],
+  "case_196": [
+    "hold",
+    "pose_direction=three_quarter_still: shoulders and face are squared frontal to the camera rather than turned three-quarter -- real pose defect; also vest_pleated_skirt is unreadable since the portrait_compressed crop ends at the chest before the skirt. transit_concourse, diffused_key_ambient, and quiet_reflective expression read fine."
+  ]
+}
