@@ -1,0 +1,3316 @@
+schema_version: 1
+review_method: partitioned_contact_sheet_visual_review
+styles:
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_001: coastal_overlook + turned_gaze + collarless_suit + broad_neutral_daylight + attentive_calm:
+      rocky cliff/sea backdrop, body turned to profile with head turned back toward camera, collarless
+      cream jacket, bright neutral daylight sky, calm attentive gaze.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_002: coastal_overlook + turned_gaze read fine, but camera_direction=thigh_up_three_quarter
+      not expressed: all 5 variants crop tight to head-and-chest, no thigh visible (defect, not a density
+      issue).
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_003: camera_direction=thigh_up_three_quarter requires eye-level thigh-up three-quarter
+      framing, but all 5 seeds are tight bust/chest-only crops showing only shoulders — real defect, clearly
+      visible not unreadable.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_004: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + broad_neutral_daylight
+      + subtle_warmth: clifftop ocean/rock backdrop, body turned to profile with gaze back to camera,
+      collarless cream jacket (no lapel), framing runs to hip/pocket level at a three-quarter angle, bright
+      neutral daylight, soft warm smile.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_005: thigh_up_three_quarter: real defect — all 5 variants crop tight at chest/upper-torso
+      against the coastal cliff backdrop, no thigh or leg visible at all (compare case_145's genuine thigh-level
+      crop on this same sheet); scene/pose/wardrobe/lighting/expression (coastal_overlook, turned_gaze,
+      collarless_suit, cool_overcast_warm_fill, attentive_calm) otherwise read as intended.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_006: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + cool_overcast_warm_fill
+      + composed_direct: cliffside ocean backdrop, torso turned with gaze redirected back to camera, collarless
+      jacket (no lapel), thigh-up three-quarter crop, overcast sky with warm facial fill, calm direct
+      expression.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_007: thigh_up_three_quarter: crop is actually a tight chest-up bust shot with no thighs
+      visible in any of the 5 frames — camera_direction defect (real defect); coastal_overlook/turned_gaze/collarless_suit/cool_overcast_warm_fill/quiet_reflective
+      otherwise read fine.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_008: coastal_overlook + turned_gaze read correctly (torso turned, head back to camera
+      over rocky coast/ocean), but camera_direction=thigh_up_three_quarter is a real defect: frame cuts
+      at upper chest/bust, matching portrait_compressed's definition instead of thigh-up framing.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_009: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + diffused_key_ambient
+      + attentive_calm: clifftop/ocean backdrop, body turned with head turned back toward camera, clean
+      round collarless neckline on cream jacket, thigh-up three-quarter crop, soft even daylight, calm
+      attentive gaze all visible.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_010: coastal_overlook+turned_gaze+collarless_suit+diffused_key_ambient+composed_direct
+      all visible, but thigh_up_three_quarter fails: crop is chest-up only in all 5 variants, no thigh
+      framing (real defect).
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_011: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + diffused_key_ambient
+      + quiet_reflective: cliffside/ocean backdrop, head turned over shoulder, round collarless jacket,
+      crop reaches hip pocket, soft even overcast light, calm sideways gaze.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_012: coastal_overlook+turned_gaze+collarless_suit/diffused_key_ambient/subtle_warmth
+      all read correctly, but thigh_up_three_quarter camera_direction fails: crop stops at upper chest,
+      hiding waist/hands/garment silhouette that catalog defines thigh-up framing to preserve — real framing
+      defect.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_013: coastal_overlook + collarless_suit + attentive_calm hold up, but thigh_up_three_quarter
+      fails: all 5 seeds crop at chest/upper-torso (jacket hem never reaches waist), far tighter than
+      a thigh-up three-quarter frame — camera_direction defect.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_014: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + warm_low_sun
+      + composed_direct: clifftop/ocean backdrop, torso turned with direct gaze toward camera, collarless
+      cream jacket, thigh-up quarter-turn framing, warm low golden sunlight, composed direct expression.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_015: coastal_overlook + turned_gaze + collarless_suit + thigh_up_three_quarter + warm_low_sun
+      + quiet_reflective: rocky coastal cliffs with ocean behind, body turned away with gaze redirected
+      to camera, collarless cream jacket, crop runs to hip/thigh, warm golden-hour rim light on skin and
+      hair, calm contemplative expression.
+  preset_coastal_overlook_turned_gaze_collarless_suit_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_016: camera_direction=thigh_up_three_quarter: all 5 variants show only head/neck/upper-chest,
+      tighter than even the portrait_compressed rows elsewhere on this sheet -- thigh-up framing not expressed
+      (real defect); coastal_overlook cliffs+ocean, turned_gaze, collarless cream jacket, and warm sunlit
+      tone are otherwise fine.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_017: coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + broad_neutral_daylight
+      + attentive_calm: rocky cliff/ocean backdrop, body turned to camera's side with head turned back
+      into gaze, two-tone collarless jacket, waist-up crop, bright neutral daylight, calm alert expression
+      all visibly present.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_018: coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + broad_neutral_daylight
+      + composed_direct: cliffside/ocean backdrop, head turned over shoulder with calm direct eyes, black/beige
+      collarless color-block top, waist-up crop, even bright daylight all visible.
+  ? preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_019: coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + broad_neutral_daylight
+      + quiet_reflective: sea-cliff backdrop, head/torso clearly turned with gaze redirected, black collarless
+      top over tan base, waist-up crop, bright neutral daylight, calm unsmiling expression.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_020: coastal_overlook + turned_gaze + collarless_suit: cliff/ocean backdrop, body turned
+      to profile with gaze back to camera, collarless color-blocked jacket top; broad_neutral_daylight
+      and subtle_warmth (soft smile) also visible.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_021: coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + warm_low_sun
+      + attentive_calm: same cliff coastline, profile-turned pose with gaze to camera, collarless two-tone
+      jacket, waist-cropped natural framing, golden low-sun light on rocks, calm expression.
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_022: coastal_overlook + turned_gaze + collarless_suit (high-neck base under collarless
+      jacket) read fine, but camera_direction=waist_up_natural requires 'complete visible hand gestures'
+      and no hands appear in any of the 5 variants — crop stops above the waist (defect).
+  preset_coastal_overlook_turned_gaze_collarless_suit_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_023: coastal_overlook + turned_gaze + collarless_suit + waist_up_natural + warm_low_sun
+      + subtle_warmth: torso turned with head looking back over the shoulder against cliff/ocean, collarless
+      jacket over the visible high-neck base (per catalog prompt) at waist-up framing, warm golden light,
+      closed-mouth subtle smile.
+  ? preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_024: Real defect: thigh_up_three_quarter camera_direction not expressed — frame crops
+      at chest/collarbone, visibly tighter than case_004's hip-level crop despite the same crib camera_direction
+      value; coastal_overlook, turned_gaze, cool_overcast_warm_fill, quiet_reflective are all visible,
+      and overshirt_column_dress can't be confirmed since the dress layer is cropped out.
+  ? preset_coastal_overlook_turned_gaze_overshirt_column_dress_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_025: thigh_up_three_quarter: real defect — same chest-up crop as case_005, no thigh
+      level shown despite the same camera_direction spec; coastal_overlook, turned_gaze, overshirt_column_dress,
+      warm_low_sun, attentive_calm are otherwise visibly expressed.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_026: covered_arcade + three_quarter_still + tailored_coat_trouser + eye_level_full +
+      cool_overcast_warm_fill + attentive_calm: shuttered arcade corridor, three-quarter stance with one
+      hand at waist/one lowered, tailored long coat over straight trousers, full-length eye-level crop
+      with feet visible, overcast light with warm face fill, calm attentive look.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_027: pose_direction three_quarter_still: all 5 frames show a fully squared frontal stance
+      (shoulders/feet facing camera, hand on hip), no three-quarter body turn visible — pose mismatch
+      (real defect); covered_arcade/tailored_coat_trouser/eye_level_full/cool_overcast_warm_fill/composed_direct
+      otherwise match.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_028: covered_arcade + eye_level_full + tailored_coat_trouser all visible (full body,
+      feet, long coat over trousers in shuttered arcade); three_quarter_still (hand at waist/one lowered)
+      and quiet_reflective expression also match.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_029: Real defect: entire row is rendered fully monochrome/grayscale (measured mean channel
+      diff ~0.7, i.e. no color anywhere), so cool_overcast_warm_fill cannot be verified at all; covered_arcade,
+      three_quarter_still, tailored_coat_trouser, eye_level_full are otherwise visible.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_030: covered_arcade+three_quarter_still+tailored_coat_trouser+eye_level_full+diffused_key_ambient+attentive_calm:
+      full-body figure in shuttered arcade, long tailored coat over trousers, calm attentive gaze at eye-level
+      crop.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_031: covered_arcade + three_quarter_still + tailored_coat_trouser + eye_level_full +
+      diffused_key_ambient + composed_direct: shuttered arcade walkway, body angled with hand on hip,
+      long tailored coat over trousers, full body eye-level framing, soft shaded light, direct composed
+      gaze.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_032: covered_arcade+three_quarter_still+tailored_coat_trouser+eye_level_full+diffused_key_ambient+quiet_reflective:
+      full-body eye-level shot in shaded arcade, tailored coat over trousers, calm reserved gaze all visible.
+  ? preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_033: covered_arcade + tailored_coat_trouser + eye_level_full + diffused_key_ambient
+      + subtle_warmth: full-body eye-level shot in the shuttered arcade corridor, long tailored coat over
+      trousers, soft overcast light, gentle warm half-smile visible on zoom.
+  preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_034: covered_arcade + three_quarter_still + tailored_coat_trouser + eye_level_full +
+      warm_low_sun + attentive_calm: covered market arcade with roller shutters, still three-quarter stance,
+      long tailored coat over trousers, full-body eye-level framing, warm low-angle sunlight on the walkway,
+      calm attentive expression.
+  preset_covered_arcade_three_quarter_still_tailored_coat_trouser_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_035: covered_arcade + three_quarter_still + tailored_coat_trouser + eye_level_full +
+      warm_low_sun + subtle_warmth: shuttered arcade walkway, still three-quarter stance with hand on
+      hip, long tailored coat over trousers, full body at eye level, warm low-angle sunlight raking the
+      passage, soft warm smile.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_036: covered_arcade + turned_gaze + wrap_top_tapered + portrait_compressed + broad_neutral_daylight
+      + attentive_calm: shaded shuttered arcade corridor, head turned away from lens in profile/three-quarter
+      gaze, brown/cream diagonal wrap-front top, tight head-and-shoulders crop, soft neutral daylight,
+      calm attentive expression.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_037: covered_arcade + wrap_top_tapered + portrait_compressed + broad_neutral_daylight
+      + composed_direct read fine (shuttered arcade, wrap-front top, tight bright-daylight headshot, direct
+      composed gaze); cannot read: portrait_compressed crop cuts off at upper chest so the tapered-trousers
+      half of the wardrobe and the extent of any body turn (turned_gaze) are out of frame, not a defect.
+      -- overturned at full resolution: Resolved case_037 to style_id preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene,
+      test_ids P7000181-P7000185. Viewed all 5 seeds at full resolution: each shows a shuttered arcade
+      corridor, a wrap-front top bodice, a tight headshot crop ending at the upper chest, direct composed
+      gaze, and neutral daylight -- consistent with the thumbnail read. The crop cutting off before the
+      waist (so tapered trousers and any body-turn extent from turned_gaze are invisible) is inherent
+      to the portrait_compressed framing itself, not a rendering failure -- a tight portrait crop is expected
+      to exclude lower-body wardrobe and torso-turn cues by construction. No saturation concern was part
+      of the original flag, so saturation_screen.json was not applicable. All legible elements (arcade,
+      wrap-top, daylight, gaze) render correctly across every seed. This confirms the original reviewer's
+      own conclusion that it was 'not a defect' -- the hold does not hold up as a genuine defect at full
+      resolution.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_038: covered_arcade + wrap_top_tapered + portrait_compressed + broad_neutral_daylight
+      + quiet_reflective: shuttered arcade corridor, diagonal wrap-front top, tight compressed head/shoulder
+      crop, soft neutral shade light, calm reflective face; slight head turn supports turned_gaze.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_039: DEFECT: covered_arcade + wrap_top_tapered + portrait_compressed + broad_neutral_daylight
+      + subtle_warmth all read correctly, but pose_direction=turned_gaze (catalog: 'turning through the
+      torso while looking back toward camera') is not expressed — all 5 variants show shoulders squared
+      flat to camera with no torso rotation.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_040: Real defect: crib calls for turned_gaze but all 5 frames show the body and gaze
+      square to camera (frontal), same as the frontal_composed cases elsewhere on this sheet.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_041: DEFECT: covered_arcade + wrap_top_tapered + portrait_compressed + cool_overcast_warm_fill
+      + composed_direct all visibly present, but turned_gaze pose is not expressed — figure is fully frontal
+      with squared, symmetric shoulders and no visible head/body turn across all 5 variants.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_042: covered_arcade + portrait_compressed read fine, but pose_direction=turned_gaze
+      ('turning through the torso while looking back') not expressed: subject stands frontally with squared
+      shoulders and direct gaze, matching frontal_composed instead (defect).
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_043: pose_direction=turned_gaze requires the torso turning with a look back toward the
+      camera; all 5 seeds show a flat, symmetric, fully frontal face-on gaze straight into the lens —
+      real defect, clearly visible not unreadable.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_044: Real defect: turned_gaze not expressed — shoulders are square and head is straight-on
+      to camera (reads as frontal_composed) rather than a turned body/gaze; covered_arcade, wrap_top_tapered,
+      portrait_compressed, diffused_key_ambient, attentive_calm are all clearly visible.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_045: turned_gaze: real defect — all 5 variants show a fully frontal, symmetric head-on
+      portrait with direct gaze, no body/head turn visible; covered_arcade, wrap_top_tapered, portrait_compressed,
+      diffused_key_ambient, composed_direct are visibly expressed.
+  ? preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_046: covered_arcade + turned_gaze + wrap_top_tapered + portrait_compressed + diffused_key_ambient
+      + quiet_reflective: arcade, wrap top, chest-up compression, soft ambient light and reflective mood
+      all present, but all 5 samples show squared frontal shoulders looking straight at camera with no
+      torso rotation — turned_gaze (turning through the torso, looking back) is not expressed. Real defect,
+      not a resolution issue.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_047: pose_direction turned_gaze: all 5 frames show face and body fully frontal to camera
+      with no head/gaze turn — pose mismatch (real defect); covered_arcade/wrap_top_tapered/portrait_compressed/diffused_key_ambient/subtle_warmth
+      otherwise match.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_048: covered_arcade + wrap_top_tapered + portrait_compressed + warm_low_sun all read
+      fine, but pose_direction=turned_gaze is a real defect: shoulders/torso are squarely frontal to camera
+      with no turn, contradicting 'turning through the torso while looking back.'
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_049: Real defect: pose_direction is called turned_gaze but 4 of 5 tiles (1001, 4004,
+      5005 and near-frontal 2002) show body and gaze square to camera, only 3003 shows a slight turn;
+      covered_arcade, wrap_top_tapered, portrait_compressed, warm_low_sun rim light, composed_direct all
+      otherwise read fine.
+  preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_050: covered_arcade+turned_gaze+warm_low_sun+quiet_reflective visible, wrap top visible
+      in bust crop but tapered hem unreadable — portrait_compressed crop excludes lower garment (not a
+      defect, just out of frame). -- overturned at full resolution: test_ids P7000246-P7000250 (seeds
+      1001/2002/3003/4004/5005) for style_id preset_covered_arcade_turned_gaze_wrap_top_tapered_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene.
+      Viewed all 5 full-resolution image_01.png renders. Every seed shows the covered arcade backdrop,
+      a turned/off-axis gaze, warm low-sun lighting, and a quiet reflective expression correctly, and
+      the wrap-style top is clearly rendered in the bust-level crop. In all 5 frames the composition is
+      cropped at chest/upper-torso height per the portrait_compressed preset, so the tapered hem is simply
+      outside the frame in every seed, not malformed or missing due to a rendering defect. There is no
+      garment artifact visible where the hem would be (no truncation glitch, no morphing) -- the crop
+      boundary itself is just above where the hem would appear. No saturation_screen.json exists in tests/reports/phase7_preset_v2/,
+      which is expected since the flagged concern was framing/crop, not color saturation, so that check
+      is not applicable here. This confirms the original thumbnail read: the "tapered hem unreadable"
+      issue is an out-of-frame consequence of the portrait_compressed crop preset, not a defect in the
+      render.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_051: balanced_contrapposto unreadable/defect: waist_up_natural crop hides hips/legs
+      and the visible shoulders/arms are perfectly symmetric (both hands raised equally to the frame)
+      across all 5 seeds, showing no contrapposto weight shift.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_052: glasshouse_walkway+waist_up_natural+broad_neutral_daylight+subtle_warmth read fine,
+      but belted_midi_layer wardrobe fails: plain sleeveless dress with no belt and no outer layer, versus
+      case_072's same attribute clearly showing cardigan+belt — real wardrobe defect.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_053: glasshouse_walkway + waist_up_natural + attentive_calm hold up, but belted_midi_layer
+      fails: across all 5 seeds the garment is a plain single-layer sleeveless dress with no belt/sash
+      visible at the waistline — wardrobe defect (compare case_073 same wardrobe tag, which does show
+      the belt+layer clearly).
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_054: belted_midi_layer: no belt is visible at the waist in any of the 5 seeds, and seeds
+      3003/5005 render a completely different colorblocked bodice (cream/black/maroon, teal/maroon/mustard
+      panels) versus the plain taupe pinafore in 1001/2002/4004 -- a wardrobe rendering defect, not a
+      resolution issue.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_055: glasshouse_walkway + cool_overcast_warm_fill + quiet_reflective read fine, but
+      balanced_contrapposto is unreadable — the waist_up_natural crop excludes hips/legs entirely so no
+      weight-shift can be judged; belted_midi_layer is also not supported — the visible waistline shows
+      a plain gathered dress seam with no belt (real defect, not a resolution issue).
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_056: camera_direction=waist_up_natural: all 5 variants show the full figure head-to-shoes
+      with arms raised to the doorframe, not a waist-up crop -- real framing defect; glasshouse_walkway,
+      belted cream/olive midi layer, and cool overcast light with warm skin fill are otherwise present.
+      -- overturned at full resolution: Traced case_056 to style_id "preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene"
+      via manifest.json (cases[].alias == "case_056"), which maps to test_ids P7000276-P7000280 in scorecard.csv
+      (all 5 seeds: 1001, 2002, 3003, 4004, 5005).
+
+
+      Opened tests/reports/phase7_preset_v2/runs/P7000276..280/image_01.png at full 1024x1024 resolution.
+      All 5 seeds consistently show a waist-up crop: head down to roughly waist/hip level, hands raised
+      to shoulder/chest height holding the glasshouse door frame open. None show the full figure, legs,
+      or shoes — the "head-to-shoes with arms raised to doorframe" framing defect described from the thumbnail
+      is not present at full resolution.
+
+
+      All other named attributes are correctly present across all seeds: glasshouse_walkway setting (visible
+      greenhouse structure with glass roof and plantings), belted cream/olive midi dress (sleeveless,
+      waist seam/belt line, skirt extending into frame), cool overcast ambient light (grey, diffuse sky
+      through glass) with warm skin fill (warm-toned skin against the cooler background).
+
+
+      The concern was framing/crop, not saturation, so saturation_screen.json was not needed for this
+      case. This was a thumbnail-resolution misread (the low-res contact-sheet thumbnail apparently was
+      mistaken for a full-body shot), not a real framing defect — the hold does not survive full-resolution
+      review.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_057: glasshouse_walkway + diffused_key_ambient + composed_direct read fine (greenhouse
+      walkway, soft ambient light, direct calm gaze); real defect suspected: belted_midi_layer shows no
+      visible belt, just a color-blocked sleeveless dress with a waist seam, matching the previously logged
+      glasshouse_walkway+balanced_contrapposto beltless-corset rendering issue (plan.md 7.31).
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_058: DEFECT (visible, not resolution): glasshouse_walkway setting confirmed, but pose
+      is a mirrored symmetric stance (both arms raised identically to the two doorframes) rather than
+      balanced_contrapposto, and the dress is a plain sleeveless bodice with no visible belt or second
+      layer, so belted_midi_layer is not expressed.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_059: UNCLEAR (could be defect or resolution limit): glasshouse_walkway + balanced_contrapposto
+      (both hands visible on frame) + waist_up_natural + subtle_warmth read fine, but wardrobe=belted_midi_layer
+      (catalog: 'belted midi dress with a clean cropped outer layer') shows only a single seamless sleeveless
+      dress with a waist seam — no distinct belt or cropped outer layer is distinguishable at this size.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_060: Real defect (weak): balanced_contrapposto barely reads — arms are raised symmetrically
+      to touch both door frames with feet mostly together; only case_060_5005 shows any leg-cross weight
+      shift, others look frontal.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_061: glasshouse_walkway + belted_midi_layer + wide_environmental + broad_neutral_daylight
+      + composed_direct: full-body glasshouse corridor with foliage, cream cropped jacket over belted
+      taupe midi dress, wide framing with generous environment, bright neutral daylight, calm direct expression;
+      contrapposto plausible under skirt though not sharply visible.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_062: glasshouse_walkway + balanced_contrapposto (weight-shifted stance, both hands visible
+      on glass panels) + belted_midi_layer (belted dress with cropped outer layer) + wide_environmental
+      + broad_neutral_daylight + quiet_reflective all visibly expressed.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_063: glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental
+      + broad_neutral_daylight + subtle_warmth: both hands visible bracing the greenhouse doorframe with
+      a weight-shifted leg-cross stance, belted midi dress under a cropped jacket, full wide environmental
+      framing in bright neutral daylight with a soft closed-mouth smile.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_064: Real defect: balanced_contrapposto not consistently expressed — most of the 5 variants
+      show a symmetric braced stance (both hands on the glasshouse door frame, feet even) rather than
+      a weight-shifted contrapposto; glasshouse_walkway, belted_midi_layer, wide_environmental, cool_overcast_warm_fill,
+      attentive_calm all read correctly.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_065: balanced_contrapposto: real defect — pose is a bilaterally symmetric arms-spread
+      stance touching both door frames with feet together, no weight-shifted S-curve visible; glasshouse_walkway,
+      belted_midi_layer, wide_environmental, cool_overcast_warm_fill, composed_direct are otherwise expressed.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_066: glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental
+      + cool_overcast_warm_fill + quiet_reflective: glass-paneled greenhouse doorway with foliage, both
+      hands visibly braced on the frame in a balanced stance, belted midi dress with cropped outer layer,
+      wide environmental framing, cool overcast light with warm skin fill, reflective calm expression.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_067: glasshouse_walkway + belted_midi_layer + wide_environmental: glass-paneled doorway
+      wide shot with belted midi dress and cropped jacket; later frames show a weight-shifted crossed-ankle
+      stance consistent with balanced_contrapposto; cool overcast light with warm-toned skin and a gentle
+      smile (subtle_warmth).
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_068: glasshouse_walkway + wide_environmental + belted_midi_layer + diffused_key_ambient
+      confirmed; balanced_contrapposto satisfied per catalog def (both hands visible, symmetric door-frame
+      stance) and attentive_calm expression matches.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_069: glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental
+      + diffused_key_ambient + composed_direct: greenhouse doorway setting, arms-spread balanced stance
+      with belted midi dress and cropped jacket, full wide environmental framing, soft even glasshouse
+      light, direct composed gaze.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_070: glasshouse_walkway+balanced_contrapposto+belted_midi_layer+wide_environmental+diffused_key_ambient+quiet_reflective:
+      full figure in greenhouse doorway, belted midi dress with cropped layer, weight shifted onto one
+      leg in several frames, calm expression.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_071: glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental
+      + diffused_key_ambient + subtle_warmth: greenhouse setting, clear hip-shifted weight-on-one-leg
+      stance (e.g. _5005), belted midi coat/dress, full body plus generous surroundings, soft light, visible
+      smile.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_072: glasshouse_walkway+balanced_contrapposto+belted_midi_layer+wide_environmental+warm_low_sun+attentive_calm:
+      full figure shows belted midi dress with cropped cardigan layer, warm low-sun light, calm attentive
+      gaze off-camera.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_073: glasshouse_walkway + belted_midi_layer + wide_environmental + warm_low_sun + composed_direct:
+      full-body wide shot shows a cardigan layer over a midi dress cinched with a visible fabric belt,
+      warm golden backlight through the glasshouse, calm direct gaze.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_074: glasshouse_walkway + balanced_contrapposto + belted_midi_layer + wide_environmental
+      + warm_low_sun + quiet_reflective: greenhouse doorway setting, symmetric hands-on-frame stance,
+      cream cropped jacket over a visibly belted taupe midi dress, wide framing showing the full doorway/garden,
+      warm low sun through the glass, calm reflective demeanor.
+  ? preset_glasshouse_walkway_balanced_contrapposto_belted_midi_layer_wide_environmental_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_075: glasshouse_walkway + belted_midi_layer (visible belt + midi dress + cropped jacket)
+      + wide_environmental + warm_low_sun + subtle_warmth all read correctly, but balanced_contrapposto
+      is a real defect: full body is visible and stance is straight/symmetric with feet together, no hip
+      weight-shift shown.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_076: pose_direction=walking_pause: portrait_compressed crop shows only head/shoulders
+      with no legs or stride visible, so a walking-pause cannot be confirmed (unreadable at this crop,
+      not a defect); modern_library, overshirt_column_dress, camera crop, broad_neutral_daylight, and
+      attentive_calm all read fine. -- overturned at full resolution: test_id resolved via manifest.json:
+      case_076 → style_id "preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_attentive_calm_complete_scene"
+      → scorecard rows P7000376–P7000380 (seeds 1001/2002/3003/4004/5005). Viewed all 5 image_01.png full-resolution
+      renders in tests/reports/phase7_preset_v2/runs/P70003{76,77,78,79,80}/. All five seeds are consistent:
+      a tight portrait_compressed crop framing head, neck, and upper chest only — no waistline, legs,
+      or ground plane is ever in frame, so a walking-pause stride literally cannot be depicted or contradicted
+      at this crop, regardless of resolution. This is not a resolution-dependent artifact (nothing gets
+      clearer or reveals legs at full size); it is a structural consequence of the portrait_compressed
+      camera setting itself, exactly as the original thumbnail-based reasoning concluded. All other axis
+      elements read correctly and consistently across seeds: modern_library setting (visible bookshelves/reading
+      tables), overshirt_column_dress (beige overshirt open over a dark/olive underlayer at the neckline),
+      broad_neutral_daylight (even, neutral daylight through windows), and attentive_calm expression (calm,
+      slightly off-camera gaze) all check out fine. No saturation_screen.json exists for this run (and
+      the concern was never about saturation), so no additional check was needed there. Since the unreadability
+      is an expected, by-design consequence of the crop rather than a genuine rendering defect, the original
+      "hold" does not escalate to a real failure — this resolves as a non-defect, matching the reviewer's
+      original judgment.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_077: modern_library + overshirt_column_dress + portrait_compressed + broad_neutral_daylight
+      + composed_direct read fine (library stacks, overshirt over dress, bright daylight, composed direct
+      gaze); cannot read: portrait_compressed crop excludes legs/stride entirely so walking_pause cannot
+      be confirmed, not a defect. -- overturned at full resolution: test_id block resolved from manifest.json:
+      alias case_077 → style_id preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_composed_direct_complete_scene
+      → test_ids P7000381-P7000385 (seeds 1001/2002/3003/4004/5005), confirmed against matching rows in
+      scorecard.csv.
+
+
+      Opened all 5 full-resolution renders at tests/reports/phase7_preset_v2/runs/P70003{81..85}/image_01.png.
+      All seeds agree: this is a tight chest-up portrait crop (portrait_compressed) that ends just below
+      the collarbone/upper chest — legs, hips, and any stride/gait cues are entirely outside the frame
+      in every seed, consistently. Everything else the original reviewer could read is confirmed at full
+      res too: modern library stacks in the background, beige overshirt worn open over a dark/olive column
+      dress, bright broad neutral daylight from the windows, and a composed, direct-to-camera gaze.
+
+
+      This is not a colour/saturation concern, so saturation_screen.json is not applicable here. The original
+      "hold" reasoning was explicit that walking_pause simply could not be confirmed or denied because
+      the crop excludes the legs — it was never claimed to be visibly wrong, just unverifiable from the
+      thumbnail. At full resolution the same structural limitation holds: there is no visible contradiction
+      of walking_pause (no legs are shown at all, so nothing reads as a static/wrong pose either) — it's
+      an inherent framing consequence of pairing portrait_compressed with a preset that specifies a walking-related
+      pose, not a rendering defect. Per the resolution rule, an unconfirmable-due-to-crop item is a real/expected
+      outcome, not a failure to find something.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_078: modern_library + overshirt_column_dress + portrait_compressed + broad_neutral_daylight
+      + quiet_reflective: bookshelf backdrop, beige overshirt open over a dark column dress, tight compressed
+      portrait crop, bright neutral window light, calm reflective expression; walking_pause stance not
+      checkable but legs are cropped out by design.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_079: UNREADABLE (occlusion, not resolution): modern_library + overshirt_column_dress
+      + portrait_compressed + broad_neutral_daylight + subtle_warmth all confirmed, but pose_direction=walking_pause
+      (catalog: 'pausing mid-step with separated arms and stable weight') cannot be judged — chest-up
+      crop excludes arms/legs entirely, only head and shoulders visible.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_080: Unreadable: walking_pause cannot be judged because the portrait_compressed crop
+      cuts off the body at the shoulders, leaving no stance/legs visible to confirm a paused stride.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_081: DEFECT: modern_library + overshirt_column_dress + portrait_compressed + cool_overcast_warm_fill
+      + composed_direct all visibly present, but walking_pause pose is not expressed — fully frontal,
+      static, symmetric portrait with no sense of paused stride.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_082: modern_library + portrait_compressed + overshirt_column_dress read fine, but pose_direction=walking_pause
+      ('mid-step with separated arms') cannot be confirmed: the compressed chest-up crop excludes arms/legs
+      and the visible shoulders are flat and frontal like frontal_composed.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_083: pose_direction=walking_pause (mid-step, separated arms) is unreadable — camera_direction=portrait_compressed
+      crops to chest-up only, so no arms or legs are ever in frame to confirm the stance; a genuine framing-limited
+      unreadability, not a resolution problem.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_084: Cannot read: walking_pause is unverifiable because the portrait_compressed crop
+      shows only head/shoulders with no legs or stride visible; modern_library, overshirt_column_dress,
+      diffused_key_ambient, attentive_calm are all visible and correct.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_085: walking_pause: unreadable, not a defect I can prove — portrait_compressed crops
+      to chest-up so no legs/stride are ever in frame to confirm the pose; modern_library, overshirt_column_dress,
+      portrait_compressed, diffused_key_ambient, composed_direct are visibly expressed. -- overturned
+      at full resolution: Traced case_085 -> style_id preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_composed_direct_complete_scene
+      -> test_ids P7000421-P7000425 (5 seeds) via tests/reports/phase7_preset_v2/review/manifest.json
+      and confirmed in tests/reports/phase7_preset_v2/scorecard.csv. Opened all 5 full-resolution renders
+      (tests/reports/phase7_preset_v2/runs/P7000421..425/image_01.png). Every seed is a tight chest-up
+      crop (portrait_compressed) in a library interior (modern_library), figure wearing a beige overshirt
+      over a dark column dress (overshirt_column_dress), softly and evenly lit (diffused_key_ambient),
+      facing the camera calmly and directly (composed_direct). None of the five frames include hips, legs,
+      or any stride/gait cues — the portrait_compressed camera boundary crops the figure off well above
+      the waist in every seed, exactly as the original hold noted. This is not a case where a larger view
+      reveals or disproves the pose; the crop structurally excludes the body region needed to confirm
+      or refute walking_pause in all 5/5 seeds. The other five named cues (modern_library, overshirt_column_dress,
+      portrait_compressed, diffused_key_ambient, composed_direct) are all clearly and consistently expressed.
+      The concern was not about color saturation, so saturation_screen.json was not needed. Since walking_pause
+      remains genuinely unreadable/unprovable at full resolution (not visibly wrong, just out of frame
+      by camera-contract design) rather than a confirmed visible defect, the hold does not stand as a
+      real defect — it should be released.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_086: modern_library + walking_pause + overshirt_column_dress + portrait_compressed +
+      diffused_key_ambient + quiet_reflective: library shelves, overshirt-over-dress layering, chest-up
+      compression, soft ambient light and reflective look all present, but walking_pause's defining cues
+      (mid-step stance, separated arms) fall entirely below the chest-up crop line, so the pose itself
+      cannot be confirmed or denied. Unreadable due to framing, not a resolution issue — full-res would
+      not reveal the cropped-out body.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_087: pose_direction walking_pause unreadable: portrait_compressed crop is head-and-shoulders
+      only in all 5 frames, no legs/stride visible to confirm a walking pause — genuine visibility gap
+      from framing, not a resolution problem; modern_library/overshirt_column_dress/diffused_key_ambient/subtle_warmth
+      otherwise match.
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_088: modern_library + portrait_compressed + overshirt visible and match, but pose_direction=walking_pause
+      is unreadable, not a defect: the chest-up crop hides arms/legs entirely so mid-step/separated-arms
+      cannot be confirmed or denied. -- overturned at full resolution: test_id resolved via tests/reports/phase7_preset_v2/review/crib.txt
+      (case_088 → modern_library, walking_pause, overshirt_column_dress, portrait_compressed, warm_low_sun,
+      attentive_calm) matched against tests/prompt_matrix/phase7_preset.jsonl to style_id preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_attentive_calm_complete_scene,
+      i.e. test_ids P7000436-P7000440 in scorecard.csv (5 seeds: 1001,2002,3003,4004,5005).
+
+
+      Viewed tests/reports/phase7_preset_v2/runs/P7000436..440/image_01.png at full resolution. All five
+      seeds independently and consistently render a chest-up / shoulders-up crop (portrait_compressed
+      camera boundary): modern_library setting is clearly present (bookshelves, reading tables), the beige
+      overshirt over a dark/olive base layer is clearly visible and matches, and the crop's lower edge
+      cuts across the upper chest in every seed — no elbows, hands, or legs are visible in any of the
+      5 renders. There is no seed where the frame opens up enough to reveal mid-step stance or arm separation.
+
+
+      This confirms the original contact-sheet reasoning at full resolution: the walking_pause pose (mid-step/separated
+      arms) genuinely cannot be confirmed or denied because the requested camera boundary (portrait_compressed)
+      structurally excludes the entire lower body and arms below shoulder level across all seeds. This
+      is not a rendering defect — it's an inherent consequence of the crop contract for this preset —
+      so the "hold, not a defect" conclusion holds. No saturation_screen.json exists for this run, and
+      the flagged concern was never about color saturation, so that check doesn't apply. Returning holds=false:
+      this was correctly identified as a thumbnail-limited non-defect, not a failure to find a real problem.
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_089: Real defect/unreadable: pose_direction (walking_pause) cannot be judged because
+      portrait_compressed framing crops tightly to chest-up, no legs or stride visible in any of the 5
+      tiles; modern_library, overshirt_column_dress (visible portion), composed-ish expression otherwise
+      fine.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_090: modern_library+overshirt_column_dress+portrait_compressed+quiet_reflective visible,
+      but walking_pause unreadable (crop hides legs/stride) and warm_low_sun not expressed — lighting
+      reads as flat neutral indoor ambient with a blown-out window, no directional warm sun (real defect).
+  preset_modern_library_walking_pause_overshirt_column_dress_portrait_compressed_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_091: warm_low_sun questionable: indoor library lighting reads as neutral overhead/window
+      light rather than warm directional low sun; also walking_pause unreadable since portrait_compressed
+      crop shows only head/shoulders (expected from that camera direction, not a defect).
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_092: modern_library+overshirt_column_dress+broad_neutral_daylight+attentive_calm confirmed,
+      but walking_pause pose is unreadable: waist_up_natural crop hides legs/stride entirely and visible
+      torso is squared frontal with no motion cue — genuinely unreadable, not a confirmed defect.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_093: modern_library + overshirt_column_dress + waist_up_natural + broad_neutral_daylight
+      + composed_direct hold up, but walking_pause is not verifiable: the visible waist-up crop shows
+      a fully frontal, symmetric, static stance with no stride or torso-rotation cue and legs are entirely
+      outside frame — pose_direction unreadable/likely not expressed.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_094: modern_library + walking_pause + overshirt_column_dress + waist_up_natural + broad_neutral_daylight
+      + quiet_reflective: library stacks and reading tables, paused stance, cream overshirt open over
+      an olive column dress, waist-up natural framing, bright neutral daylight through the windows, quiet
+      reflective expression.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_095: modern_library + overshirt_column_dress + waist_up_natural + broad_neutral_daylight
+      + subtle_warmth all check out, but walking_pause is unreadable — crop is a static frontal bust shot
+      with arms/legs excluded, no stride or weight cue visible to confirm a paused-mid-walk pose.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_096: pose_direction=walking_pause: waist_up_natural crop ends above the hips with shoulders
+      squared and static, no stride cue visible, so walking-pause is unreadable at this crop; modern_library,
+      overshirt_column_dress, camera crop, cool_overcast_warm_fill, and attentive_calm all check out.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_097: modern_library + overshirt_column_dress + waist_up_natural + cool_overcast_warm_fill
+      + composed_direct read fine (library scene, overshirt/column dress, cool exterior light with warm
+      ceiling fill, composed direct gaze); cannot read: even waist_up_natural framing stops above the
+      legs so walking_pause still cannot be confirmed, not a defect. -- overturned at full resolution:
+      Resolved case_097 → style_id preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+      → test_ids P7000481–P7000485 in tests/reports/phase7_preset_v2/scorecard.csv. Viewed all 5 seeds
+      at full resolution (tests/reports/phase7_preset_v2/runs/P7000481..485/image_01.png). All five agree:
+      modern library interior, cream overshirt over sage-green column dress, cool overcast daylight through
+      the glass wall balanced with warm ceiling downlights as fill, composed direct gaze at camera — all
+      correctly rendered. Consistent with the thumbnail read, the waist_up_natural crop stops just below
+      the collarbone/shoulders in every seed, so no leg or gait movement is ever in frame — walking_pause
+      genuinely cannot be confirmed or denied from any of these renders. This is a structural consequence
+      of combining a waist_up framing factor with a pose factor that only manifests in the legs, not a
+      rendering defect, artifact, or full-resolution-only issue. Saturation was not the concern here,
+      so saturation_screen.json was not needed. The original "hold" reasoning is confirmed correct — this
+      is a real, expected non-finding, not a failure to detect a defect.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_098: modern_library + overshirt_column_dress + waist_up_natural + cool_overcast_warm_fill
+      + quiet_reflective: same library/overshirt-dress pairing at a waist-up crop, cool grey-green tone
+      through the window against warm fill light on the face, quiet expression all match.
+  ? preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_099: UNREADABLE (occlusion, not resolution): modern_library + overshirt_column_dress
+      + cool_overcast_warm_fill + subtle_warmth confirmed, but pose_direction=walking_pause ('separated
+      arms', mid-step) is unverifiable — waist_up_natural crop cuts off forearms/legs, no stepping or
+      arm-separation cue visible.
+  preset_modern_library_walking_pause_overshirt_column_dress_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_100: Unreadable: walking_pause not confirmable — waist_up_natural crop shows a static
+      frontal stand with no legs/stride visible to show mid-walk pause.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_101: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + broad_neutral_daylight
+      + attentive_calm: museum hall with pedestal sculptures, frontal pose with hands clasped, cropped
+      jacket over belted midi dress, wide full-body framing, bright daylight through doorway, calm attentive
+      look.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_102: quiet_museum + frontal_composed (level shoulders, loosely clasped hands) + belted_midi_layer
+      + wide_environmental + broad_neutral_daylight + composed_direct all visibly expressed.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_103: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + broad_neutral_daylight
+      + quiet_reflective: symmetric frontal stance with hands clasped in a stone museum corridor, belted
+      cropped-jacket midi dress, full wide shot in bright neutral daylight, calm reflective look.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_104: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + broad_neutral_daylight
+      + subtle_warmth: stone museum hallway with pedestals, symmetric frontal stance with hands clasped,
+      cream jacket belted over a midi dress, wide full-body framing, bright neutral daylight through the
+      doorway, soft smile.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_105: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + diffused_key_ambient
+      + attentive_calm: gallery interior with sculptures, symmetric frontal stance with clasped hands,
+      belted midi dress with cropped vest layer, full-body wide framing, soft even light, calm attentive
+      face — all visible.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_106: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + diffused_key_ambient
+      + composed_direct: pale-stone gallery hall with pedestal sculptures, frontal stance with hands loosely
+      clasped, belted midi dress with cropped layer, wide framing with generous headroom, diffused ambient
+      light, direct composed gaze.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_107: quiet_museum + frontal_composed + belted_midi_layer + wide_environmental + diffused_key_ambient
+      + quiet_reflective: gallery corridor with sculptures, subject squared to camera with hands clasped,
+      belted midi dress under cropped vest, soft doorway light, calm subdued expression.
+  ? preset_quiet_museum_frontal_composed_belted_midi_layer_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_108: quiet_museum + frontal_composed (level shoulders, loosely clasped hands) + belted_midi_layer
+      + diffused_key_ambient + subtle_warmth (small warm smile) all visibly expressed; wide_environmental
+      depth path present even if subject reads centered rather than strictly on a third.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_109: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + broad_neutral_daylight
+      + attentive_calm: museum pedestal gallery, symmetric frontal still pose hands clasped, sleeveless
+      vest over pleated midi skirt, full-body eye-level framing, neutral daylight through doorway, calm
+      attentive gaze.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_110: quiet_museum+frontal_composed+vest_pleated_skirt+eye_level_full+broad_neutral_daylight+composed_direct:
+      full figure frontal in museum hall, pleated skirt and vest visible, broad daylight through rear
+      opening, calm direct gaze.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_111: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + broad_neutral_daylight
+      + quiet_reflective: museum interior with pedestal art, hands clasped facing camera, sleeveless vest
+      over pleated skirt, full body eye level, bright neutral daylight, calm reflective expression.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_broad_neutral_daylight_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_112: quiet_museum+frontal_composed+vest_pleated_skirt+eye_level_full+broad_neutral_daylight+subtle_warmth:
+      full body frontal shot, vest over visibly pleated skirt, soft smile, bright neutral museum daylight.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_113: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + attentive_calm:
+      full-body frontal symmetric stance with hands clasped, vest over pleated midi skirt, calm neutral
+      expression in the gallery setting.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_114: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + cool_overcast_warm_fill
+      + composed_direct: museum gallery with sculpture pedestals, frontal composed stance with hands clasped,
+      sleeveless vest over a pleated midi skirt, full-body eye-level framing, cool overcast exterior light
+      with warm interior fill, direct composed gaze confirmed on zoom.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_115: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + cool_overcast_warm_fill
+      + quiet_reflective: gallery interior with pedestal displays, squarely frontal stance with hands
+      clasped, sleeveless vest over pleated midi skirt, full body at eye level, soft overcast daylight
+      through the end window, calm composed expression.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_116: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + cool_overcast_warm_fill
+      + subtle_warmth: museum hall with pedestal art, hands clasped in a frontal stance, grey vest over
+      a visibly pleated skirt, full figure at eye level, cool window daylight with warm skin fill, softly
+      warm expression.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_117: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + diffused_key_ambient
+      + attentive_calm: museum gallery with pedestals, frontal symmetric stance with hands clasped, sleeveless
+      vest over clearly pleated skirt, full-length eye-level framing, soft diffused light, calm attentive
+      expression all visible.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_118: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + diffused_key_ambient
+      + composed_direct: museum pedestal backdrop, symmetric frontal stance with hands clasped, vest over
+      pleated skirt, full-body eye-level framing, soft diffused backlight, calm direct gaze.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_119: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + diffused_key_ambient
+      + quiet_reflective: stone gallery with sculptures, hands clasped frontally, sleeveless vest over
+      pleated midi skirt, full body at eye level, soft diffused window backlight, calm closed expression.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_120: quiet_museum + frontal_composed + vest_pleated_skirt: gallery corridor with pedestal
+      statues, symmetric hands-clasped frontal stance, sleeveless vest over visibly pleated skirt; eye_level_full,
+      diffused_key_ambient, subtle_warmth (slight smile) all match.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_121: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + warm_low_sun
+      + attentive_calm: same museum gallery, frontal clasped-hands stance, sleeveless vest over pleated
+      skirt, full-body eye-level framing, warm golden low-sun light with long shadows, calm attentive
+      expression.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_122: quiet_museum + frontal_composed + vest_pleated_skirt (longline vest over mid-calf
+      pleated skirt) + eye_level_full + warm_low_sun (warm cast on stone, long low-angle shadows) + composed_direct
+      all visibly expressed.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_123: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + warm_low_sun
+      + quiet_reflective: frontal hands-clasped stance, sleeveless vest over a pleated midi skirt, full-body
+      eye-level framing, warm low golden light casting long floor shadows, calm reflective expression.
+  preset_quiet_museum_frontal_composed_vest_pleated_skirt_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_124: quiet_museum + frontal_composed + vest_pleated_skirt + eye_level_full + warm_low_sun
+      + subtle_warmth: same museum hall, frontal composed stance, sleeveless vest over a pleated skirt,
+      eye-level full-body framing, warm golden low-angle light on the walls, soft smile.
+  ? preset_quiet_museum_frontal_composed_vest_pleated_skirt_waist_up_natural_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_125: waist_up_natural: real defect — crop stops at upper chest/sternum (hands clasped
+      well above the waist), much tighter than the true waist-level crop seen on case_185 in this same
+      sheet; the pleated_skirt half of vest_pleated_skirt is consequently out of frame and unconfirmable.
+      quiet_museum, frontal_composed, vest (top half), diffused_key_ambient, attentive_calm read fine.
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_126: rooftop_terrace + three_quarter_still + vest_pleated_skirt + waist_up_natural +
+      cool_overcast_warm_fill + composed_direct: rooftop skyline, waist-up crop, overcast light with warm
+      fill, and composed direct gaze all present, but the pose is squared-frontal with both arms crossed
+      at the chest rather than the specified three-quarter stance with one hand at the waist and one lowered.
+      Real defect, clearly visible at thumbnail scale.
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_127: camera_direction waist_up_natural defect: actual crop is tighter than waist (chest-up
+      only) in all 5 frames, so vest_pleated_skirt's skirt half never enters frame — cannot confirm (real
+      defect); rooftop_terrace, arms-crossed static pose, and cool_overcast_warm_fill otherwise read fine.
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_128: rooftop_terrace scene is fine, but two real defects: pose_direction=three_quarter_still
+      expects 'one hand at waist, one lowered' yet arms are crossed at chest, and camera_direction=waist_up_natural
+      expects waist-up with visible hand gestures yet the crop is chest-up with hands tucked/hidden.
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_129: Unreadable: wardrobe is vest_pleated_skirt but waist_up_natural framing cuts off
+      below the waist in all 5 tiles, so the pleated_skirt portion cannot be confirmed; rooftop_terrace,
+      three_quarter_still-ish arms-crossed pose, warm_low_sun rim light, attentive_calm otherwise visible.
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_130: rooftop_terrace+three_quarter_still+waist_up_natural+warm_low_sun+composed_direct
+      all visible; vest confirmed but pleated_skirt unreadable — waist-up crop stops above the skirt in
+      all 5 variants.
+  ? preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_131: vest_pleated_skirt only partially visible: waist_up_natural crop cuts above the
+      skirt hem so the pleated skirt cannot be confirmed, though vest, rooftop_terrace, warm_low_sun lighting
+      and quiet_reflective expression are all visible.
+  preset_rooftop_terrace_three_quarter_still_vest_pleated_skirt_waist_up_natural_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_132: rooftop_terrace+warm_low_sun+subtle_warmth read fine, but waist_up_natural camera_direction
+      fails: crop stops at chest/underarm well above the waist (tighter than comparable case_052/092 waist_up
+      shots), so vest_pleated_skirt's skirt is never shown — real framing defect cascading into unverifiable
+      wardrobe.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_133: rooftop_terrace + wrap_top_tapered + thigh_up_three_quarter + broad_neutral_daylight
+      + attentive_calm: crop extends to upper thigh showing wrap top over tapered trousers, bright clear-sky
+      daylight, calm attentive gaze over the cityscape.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_134: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + broad_neutral_daylight + composed_direct: rooftop with city skyline, still three-quarter stance,
+      wrap-style tapered-waist top, thigh-up three-quarter framing, bright neutral daylight, direct composed
+      gaze.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_135: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + broad_neutral_daylight + quiet_reflective: city-skyline rooftop, still three-quarter stance with
+      hand on hip, wrap-front tapered-waist top, crop to thigh, bright neutral blue-sky daylight, composed
+      reflective gaze.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_136: lighting_direction=broad_neutral_daylight: 4 of 5 variants (1001/3003/4004/5005)
+      render as near-monochrome/desaturated despite the daylight rooftop setting, only 2002 keeps normal
+      color -- a real color-rendering defect, clearly visible at this size; rooftop_terrace, three_quarter_still
+      hand-on-hip stance, wrap_top_tapered, and the thigh-up-three-quarter crop are otherwise correct.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_137: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + cool_overcast_warm_fill + attentive_calm: city-skyline rooftop, three-quarter still stance with
+      hand on hip, wrap top visible, crop correctly extends to mid-thigh (not truncated to portrait),
+      overcast cool sky with warm skin fill, calm attentive expression all visible.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_138: rooftop_terrace + wrap_top_tapered + thigh_up_three_quarter + cool_overcast_warm_fill
+      + composed_direct: city-skyline rooftop, grey wrap top with tapered sleeves, three-quarter angled
+      thigh-up crop, overcast cool sky, composed direct gaze; three_quarter_still pose (hand on hip, angled
+      body) also matches.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_139: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + cool_overcast_warm_fill + quiet_reflective: city skyline rooftop, body angled three-quarter with
+      hand on hip, grey wrap top over tapered skirt, thigh-up three-quarter framing, overcast cool sky
+      with warm skin fill, serious/still expression.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_140: rooftop_terrace + three_quarter_still + wrap_top_tapered: cityscape rooftop, body
+      angled three-quarter with hands on hips held still, tapered wrap-style top over dark skirt; thigh_up_three_quarter
+      crop, cool_overcast_warm_fill light, subtle_warmth expression all visible.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_141: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + diffused_key_ambient + attentive_calm: city rooftop skyline backdrop, angled still stance with
+      hand on hip and gaze off to the side, tapered wrap top over color-block skirt, thigh-up three-quarter
+      crop, soft hazy diffused light, calm attentive look.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_142: rooftop_terrace + three_quarter_still (hand at waist, arm lowered) + thigh_up_three_quarter
+      + diffused_key_ambient + composed_direct read fine, but wardrobe=wrap_top_tapered's required tapered
+      trousers are unconfirmable: the bottom garment drapes like a flowing color-blocked skirt with no
+      visible trouser-leg separation.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_143: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + diffused_key_ambient + quiet_reflective: three-quarter stance with one hand at the waist and one
+      lowered, wrap-front top over tapered trousers, correct thigh-up three-quarter framing against the
+      rooftop skyline in soft diffused ambient light.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_144: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + diffused_key_ambient + subtle_warmth: rooftop with hazy city skyline, still three-quarter stance
+      with hand on hip, tapered wrap top over color-blocked skirt, thigh/knee-level three-quarter framing,
+      soft hazy diffused light, slight smile.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_145: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + warm_low_sun + attentive_calm: rooftop skyline backdrop, body angled three-quarter with hand on
+      hip in a static stance, wrap-style top over skirt, genuine thigh-level crop, warm golden low-sun
+      light, calm expression — all visible.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_146: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + warm_low_sun + composed_direct: rooftop skyline, three-quarter angled stance with a hand at the
+      waist, wrap top over tapered trouser visible to thigh, thigh-up three-quarter crop, warm golden
+      low-sun light with long shadows, composed direct gaze.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_147: rooftop_terrace + three_quarter_still + wrap_top_tapered + thigh_up_three_quarter
+      + warm_low_sun + quiet_reflective: three-quarter angled stance with hands on hips, wrap top with
+      tie visible to thigh level, warm golden low-sun light on skin, subdued off-camera gaze.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_thigh_up_three_quarter_warm_low_sun_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_148: rooftop_terrace + three_quarter_still (hand at waist, one lowered) + wrap_top_tapered
+      (wrap jacket, tapered skirt hem visible) + thigh_up_three_quarter (frame reaches mid-thigh at three-quarter
+      angle) + warm_low_sun (golden-hour skyline light) + subtle_warmth all confirmed.
+  ? preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_149: rooftop_terrace + three_quarter_still + wrap_top_tapered + wide_environmental +
+      warm_low_sun + quiet_reflective: rooftop cityscape backdrop, hand-on-hip three-quarter still stance,
+      cross-front wrap jacket with tapered trousers, wide full-body framing, warm golden-hour glow on
+      skyline, composed reflective expression.
+  preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_150: rooftop_terrace+three_quarter_still+wrap_top_tapered(trousers visible)+wide_environmental+warm_low_sun
+      all confirmed; subtle_warmth expression unreadable — face is too small/soft at this density to judge.
+      -- overturned at full resolution: Resolved case_150 (style_id preset_rooftop_terrace_three_quarter_still_wrap_top_tapered_wide_environmental_warm_low_sun_subtle_warmth_complete_scene)
+      to test_ids P7000746-P7000750 (5 seeds) via manifest.json and confirmed against scorecard.csv. All
+      five image_01.png renders are 1024x1024 full resolution. I cropped and 2x-upscaled the face region
+      of each seed for close inspection.
+
+
+      At full resolution the face is not too small or soft to judge in any of the 5 seeds. Each shows
+      a clearly legible, consistent expression: a gentle, closed-mouth slight smile with softly upturned
+      mouth corners and warm, relaxed eyes — a textbook rendering of "subtle_warmth" rather than a neutral
+      or ambiguous expression. This held uniformly across all seeds (1001, 2002, 3003, 4004, 5005), with
+      no disagreement between them.
+
+
+      The other confirmed elements also check out visually: rooftop_terrace (concrete parapet wall, city
+      skyline), three_quarter_still (turned three-quarter body angle, static standing pose), wrap_top_tapered
+      with trousers visible, wide_environmental framing (full-body wide shot with generous environment),
+      and warm_low_sun lighting (warm golden-hour tone on skin/fabric, long soft shadows).
+
+
+      The concern in this case was expression readability, not color saturation, so saturation_screen.json
+      is not applicable here and was not consulted. The original "unreadable at thumbnail density" note
+      was accurate for the contact-sheet thumbnail but does not hold at full resolution — this is the
+      expected thumbnail-artifact outcome, not a genuine defect. Verdict: hold does not survive at full
+      res.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_151: balanced_contrapposto defect: eye_level_full shows the complete body across all
+      5 seeds and the stance is a straight, symmetric, feet-together pose with arms at sides, no weight
+      shift or hip/shoulder asymmetry.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_152: stone_courtyard+eye_level_full+collarless_suit+broad_neutral_daylight+quiet_reflective:
+      full body collarless cropped jacket over trousers visible, calm reserved expression, neutral daylight.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_153: stone_courtyard + collarless_suit + eye_level_full + diffused_key_ambient + attentive_calm:
+      full-body shot of collarless cropped jacket and trousers in a softly, evenly lit stone courtyard,
+      calm composed expression.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_154: stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + diffused_key_ambient
+      + composed_direct: traditional stone courtyard with garden, balanced standing pose, collarless cropped
+      jacket over wide trousers, full-body eye-level framing, soft diffused ambient light, direct composed
+      expression.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_155: stone_courtyard + collarless_suit + eye_level_full + diffused_key_ambient + quiet_reflective
+      all read correctly, but balanced_contrapposto is a real defect: full body is visible across all
+      five variants and every one shows a stiff, symmetric frontal stance with feet together, no weight-shift/hip-cock.
+  ? preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_156: stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + diffused_key_ambient
+      + subtle_warmth: stone-walled courtyard, weight-shifted stance with one leg forward/turned out in
+      several variants, collarless cropped jacket over wide trousers, full figure at eye level, soft even
+      ambient light, gently warm expression.
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_157: stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + warm_low_sun
+      + attentive_calm: traditional stone-walled courtyard, balanced standing pose, collarless jacket-and-trouser
+      suit clearly visible, full-length eye-level framing, warm golden low-sun light, calm attentive expression
+      all visible.
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_158: DEFECT (visible, not resolution): stone_courtyard + collarless_suit clearly present,
+      but stance across all 5 frames is straight and even-weighted (feet together, level shoulders) rather
+      than balanced_contrapposto; warm_low_sun raking light is otherwise well expressed.
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_159: stone_courtyard + balanced_contrapposto + collarless_suit + eye_level_full + warm_low_sun
+      + quiet_reflective: weathered stone courtyard with plants, relaxed standing pose with both hands
+      visible at sides, collarless jacket over wide-leg trousers, full body eye level, strong warm golden
+      low-angle light, calm expression.
+  preset_stone_courtyard_balanced_contrapposto_collarless_suit_eye_level_full_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_160: stone_courtyard + balanced_contrapposto + collarless_suit: walled courtyard setting,
+      feet crossed with visible hip/weight shift, collarless jacket-and-trouser suit; eye_level_full,
+      warm_low_sun golden light, subtle_warmth all match.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_161: DEFECT: stone_courtyard + tailored coat (collar visible) + portrait_compressed
+      + cool_overcast_warm_fill + subtle_warmth all present, but walking_pause pose is not expressed —
+      frontal, static, symmetric portrait with a soft smile, no walking cue.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_162: stone_courtyard + walking_pause (mid-step, separated arms) + tailored_coat_trouser
+      + wide_environmental read fine, but the frame renders near-monochrome (measured saturation ~0.03
+      vs ~0.16-0.18 on comparable rows), undermining broad_neutral_daylight's 'accurate skin tone' criterion.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_163: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      broad_neutral_daylight + quiet_reflective: clear mid-stride walking pose through a stone courtyard,
+      tailored long coat over trousers, wide environmental framing in bright neutral daylight, quiet composed
+      expression.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_164: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      cool_overcast_warm_fill + attentive_calm: hanok stone courtyard, clear mid-stride walking pose across
+      variants, long tailored coat over trousers, wide full-body environmental framing, overcast grey
+      walls with warm skin fill, calm attentive expression.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_165: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      cool_overcast_warm_fill + composed_direct: hanok-style stone courtyard, clear mid-stride walking
+      legs, tailored long coat over trousers, full-body wide framing, cool overcast tones, composed expression
+      all read on 4 of 5 seeds; one seed (_5005) renders near-monochrome/desaturated but this is an isolated
+      seed artifact, not a case-wide failure.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_166: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      cool_overcast_warm_fill + quiet_reflective: traditional stone-walled courtyard, clear mid-stride
+      walking pose with forward leg extended, tailored coat over trousers, wide environmental framing,
+      cool overcast light with warm fill, quiet reflective demeanor.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_167: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      cool_overcast_warm_fill + subtle_warmth: traditional stone-walled courtyard, mid-stride walking
+      leg visible, long tailored coat over trouser, full wide shot, cool desaturated ambient with warm-toned
+      smiling face.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_168: stone_courtyard + walking_pause (mid-stride, separated swinging arms) + tailored_coat_trouser
+      + wide_environmental (deep courtyard path) + diffused_key_ambient + attentive_calm all visibly expressed.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_169: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      diffused_key_ambient + composed_direct: stone garden courtyard, mid-stride walking pose, long tailored
+      coat over trousers, wide environmental framing, soft diffused ambient light, direct composed gaze
+      toward camera while walking.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_170: stone_courtyard+walking_pause+tailored_coat_trouser+wide_environmental+diffused_key_ambient+quiet_reflective:
+      full figure mid-stride in stone courtyard, long tailored coat over trousers, soft diffused light,
+      calm downward gaze.
+  ? preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_171: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      diffused_key_ambient + subtle_warmth: courtyard stone path, clear mid-stride walking legs, long
+      tailored coat over trousers, wide full-body-plus-environment framing, soft even light, warm expression.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_172: stone_courtyard+walking_pause+tailored_coat_trouser+wide_environmental+warm_low_sun+attentive_calm:
+      clear mid-stride walking pose, coat+trouser wardrobe, wide environmental framing, warm low sun,
+      alert calm gaze.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_composed_direct_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_173: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      warm_low_sun + composed_direct: wide full-body shot clearly mid-stride (forward leg, coat swinging),
+      warm low golden light on the courtyard walls, composed expression.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_quiet_reflective_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_174: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      warm_low_sun + quiet_reflective: stone courtyard walls and garden, clear mid-stride walking pose,
+      long tailored coat over trousers, wide environmental framing, warm low sun with long shadows, quiet
+      reflective gaze.
+  preset_stone_courtyard_walking_pause_tailored_coat_trouser_wide_environmental_warm_low_sun_subtle_warmth_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_175: stone_courtyard + walking_pause + tailored_coat_trouser + wide_environmental +
+      warm_low_sun + subtle_warmth: traditional stone-walled courtyard, clear mid-stride walking gait,
+      long tailored coat over trousers, wide full-body environmental framing, warm low golden sunlight
+      casting long shadows, soft smile.
+  preset_transit_concourse_balanced_contrapposto_collarless_suit_waist_up_natural_warm_low_sun_attentive_calm_complete_scene:
+    metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_176: wardrobe=collarless_suit: the jacket has a raised funnel/mock-turtleneck collar
+      clearly visible at the neck, contradicting 'collarless' -- real wardrobe defect; transit_concourse,
+      waist_up_natural crop, warm low-sun highlighting, and attentive_calm are otherwise present.
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_177: transit_concourse + balanced_contrapposto + vest_pleated_skirt + eye_level_full
+      + diffused_key_ambient + attentive_calm: columned station concourse, balanced standing pose, long
+      vest over clearly pleated skirt, full-length eye-level framing, soft diffused ambient light, calm
+      attentive expression all visible.
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_178: DEFECT (visible, not resolution): transit_concourse + vest_pleated_skirt confirmed,
+      eye_level_full framing correct, diffused_key_ambient light correct, but pose is a flat frontal even
+      stance (feet together, no hip/shoulder counter-tilt), not balanced_contrapposto.
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_179: transit_concourse + balanced_contrapposto + vest_pleated_skirt + eye_level_full
+      + diffused_key_ambient + quiet_reflective: covered station concourse with columns/signage, relaxed
+      standing pose hands visible at sides, vest over pleated midi skirt, full body eye level, soft diffused
+      ambient light, calm expression.
+  ? preset_transit_concourse_balanced_contrapposto_vest_pleated_skirt_eye_level_full_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_180: Real defect: balanced_contrapposto not expressed — stance is symmetric/frontal
+      with feet together and arms straight at sides, indistinguishable from the frontal_composed pose
+      used elsewhere on the sheet.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_181: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      + broad_neutral_daylight + attentive_calm: station concourse with pillars and signage, frontal clasped-hands
+      pose, overshirt over column dress, waist-up natural framing, bright neutral daylight, calm attentive
+      expression.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_182: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      (hands clasped, visible) + broad_neutral_daylight + composed_direct all visibly expressed.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_183: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      + broad_neutral_daylight + quiet_reflective: frontal hands-clasped stance in a station concourse,
+      buttoned overshirt over a column dress, waist-up framing in bright neutral daylight, quiet reflective
+      expression.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_184: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      + broad_neutral_daylight + subtle_warmth: station concourse with columns, frontal composed hands-clasped
+      stance, overshirt open over a column dress, natural waist-up framing, bright neutral daylight, soft
+      smile.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_185: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      + diffused_key_ambient + quiet_reflective: station concourse with columns/signage, frontal clasped-hands
+      stance, overshirt over column dress, crop correctly reaches waist/hip line, soft ambient light,
+      quiet reflective expression — all visible.
+  ? preset_transit_concourse_frontal_composed_overshirt_column_dress_waist_up_natural_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_186: transit_concourse + frontal_composed + overshirt_column_dress + waist_up_natural
+      + diffused_key_ambient + subtle_warmth: station concourse with pillars, frontal stance with hands
+      clasped, overshirt worn open over column dress, waist-up natural crop, diffused ambient light, subtle
+      warm smile.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_187: wardrobe tailored_coat_trouser unreadable: portrait_compressed crop cuts off at
+      chest in all 5 frames, colorblock coat collar visible but trouser half never enters frame — cannot
+      confirm (framing gap, not resolution); transit_concourse/frontal_composed/cool_overcast_warm_fill/attentive_calm
+      otherwise match.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_188: transit_concourse + frontal_composed (level shoulders, clasped hands) + portrait_compressed
+      + cool_overcast_warm_fill + composed_direct expression all match; tailored coat structure visible
+      even though trousers fall outside the chest-up crop.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_portrait_compressed_cool_overcast_warm_fill_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_189: Real defect: wardrobe is tailored_coat_trouser but the garment shown is a casual
+      color-blocked snap-front shirt-jacket (black/tan panels) with no tailored lapel structure, not a
+      tailored coat, and trousers are unverifiable due to portrait_compressed crop; transit_concourse,
+      frontal_composed, cool_overcast_warm_fill cast, quiet_reflective otherwise read fine.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_190: transit_concourse+frontal_composed+broad_neutral_daylight+attentive_calm visible,
+      but thigh_up_three_quarter fails (crop is chest-up with clasped hands, no thigh framing) and tailored_coat_trouser
+      unreadable — garment reads as a knit sweater/cardigan, no coat structure or trousers visible (real
+      defect).
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_191: tailored_coat_trouser not visible: crop stops at upper chest across all 5 seeds
+      showing only a knit sweater, no coat or trousers in frame, so the crop reads tighter than thigh_up_three_quarter
+      would allow. -- overturned at full resolution: Note on path: tests/reports/phase7_preset_v2/ does
+      not exist anywhere in the repo (verified with a repo-wide find); phase7_preset_v1/ is the only preset-axis
+      report and contains case_191 in review/manifest.json, so I resolved against that directory.
+
+
+      case_191 -> style_id preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_composed_direct_complete_scene
+      -> test_id P7000951 (seeds 1001/2002/3003/4004/5005 = P7000951..P7000955).
+
+
+      Opened tests/reports/phase7_preset_v1/runs/P7000951..955/image_01.png at full resolution (all 5
+      seeds). In every seed the crop runs from the top of the head down to roughly mid/upper-thigh — well
+      past the chest — with the subject's clasped hands resting at hip/upper-thigh height and a lower
+      garment (a two-tone tan/cream wide-leg trouser or skirt-like piece) clearly visible below the knit
+      top in all five frames. This is a thigh_up_three_quarter-consistent crop, not a chest-only crop.
+
+
+      So the specific reasoning given ("crop stops at upper chest ... no coat or trousers in frame") does
+      not hold at full resolution: the lower garment is visible in all 5 seeds and the crop is not tighter
+      than thigh_up_three_quarter allows. This was a thumbnail-resolution artifact (likely the thumbnail
+      was too small/compressed to resolve the tonal boundary between the knit top and the similarly light-toned
+      lower garment, making it read as if the frame ended at the waist).
+
+
+      Separately, worth flagging but NOT part of the original "hold" reasoning: the rendered top reads
+      as a short-sleeve knit sweater rather than a "tailored coat" as the style_id's tailored_coat_trouser
+      descriptor implies, and the bottom reads more like a paneled skirt/wide trouser hybrid than a clean
+      trouser. That is a garment-fidelity question, distinct from the crop/framing defect that was actually
+      cited, and is not evaluated here since it wasn't the stated basis for the hold.
+
+
+      No saturation_screen.json exists for phase7_preset_v1 (only found for phase7_linework_coloring_v2,
+      a different axis), and the concern here was framing, not color saturation, so that check is not
+      applicable.
+
+
+      Conclusion: the case_191 hold was a thumbnail artifact, not a genuine framing defect. holds=false.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_192: transit_concourse+frontal_composed+broad_neutral_daylight+quiet_reflective read
+      fine, but thigh_up_three_quarter camera_direction fails: crop is a tight bust/chest shot, never
+      reaching thigh, so hands/lower coat-trouser silhouette required by thigh-up framing are absent —
+      same failure mode as case_012.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_broad_neutral_daylight_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_193: transit_concourse + frontal_composed + subtle_warmth hold up, but thigh_up_three_quarter
+      and tailored_coat_trouser fail: framing is a tight chest-up portrait (no waist/hip/thigh visible)
+      and only a knit sweater is visible with no coat or trousers in frame — camera_direction and wardrobe
+      defect.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_cool_overcast_warm_fill_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_194: tailored_coat_trouser: no coat or trousers visible -- figure wears a plain color-blocked
+      knit top cropped at the chest; framing is also far tighter than thigh_up_three_quarter (bust-only,
+      not to mid-thigh) -- a wardrobe and camera-framing defect, not a resolution issue.
+  ? preset_transit_concourse_frontal_composed_tailored_coat_trouser_thigh_up_three_quarter_cool_overcast_warm_fill_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_195: transit_concourse + frontal_composed + subtle_warmth read fine, but tailored_coat_trouser
+      is a real defect — only a plain crew-neck sweater is visible, no coat or trousers in frame — and
+      the crop is a tight chest-up portrait, markedly tighter than the crib's thigh_up_three_quarter.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_196: pose_direction=three_quarter_still: shoulders and face are squared frontal to the
+      camera rather than turned three-quarter -- real pose defect; also vest_pleated_skirt is unreadable
+      since the portrait_compressed crop ends at the chest before the skirt. transit_concourse, diffused_key_ambient,
+      and quiet_reflective expression read fine.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_197: transit_concourse + three_quarter_still + portrait_compressed + diffused_key_ambient
+      + subtle_warmth read fine (concourse backdrop, three-quarter turned stance with crossed arms, soft
+      ambient light, subtle warm smile); cannot read: portrait_compressed crop excludes the skirt entirely
+      so vest_pleated_skirt's pleated-skirt half cannot be confirmed, not a defect. -- overturned at full
+      resolution: Resolved case_197 to style_id preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_diffused_key_ambient_subtle_warmth_complete_scene,
+      which maps to test_ids P7000981–P7000985 (seeds 1001/2002/3003/4004/5005) in tests/reports/phase7_preset_v2/scorecard.csv,
+      confirmed against tests/reports/phase7_preset_v2/review/manifest.json.
+
+
+      Opened all 5 seeds' tests/reports/phase7_preset_v2/runs/P70009{81..85}/image_01.png at full 1024x1024
+      resolution. All five renders show the same tight portrait_compressed framing: crop runs from roughly
+      mid-torso/crossed-arms up through the top of the head, with the concourse/hallway backdrop, three-quarter
+      turned stance, crossed arms, soft diffused ambient light, and a subtle warm smile all clearly legible
+      — matching the "read fine" part of the original note exactly.
+
+
+      Critically, in every one of the 5 seeds the frame bottom cuts off at or above the crossed forearms/upper
+      waist — none of the images extend low enough to show a hemline, skirt silhouette, or pleats. This
+      is a consistent, seed-independent consequence of the portrait_compressed crop parameter itself,
+      not a rendering failure or garment-generation problem (the visible vest/blazer portion renders correctly
+      and consistently across seeds, just in two color variants — beige and black — which is a separate,
+      non-flagged observation). Since the crop geometry structurally excludes the waist-down region in
+      all 5 seeds, there is no way to confirm or deny the pleated-skirt half of vest_pleated_skirt from
+      these images, exactly as the thumbnail reviewer noted.
+
+
+      The concern was about framing/crop, not color saturation, so tests/reports/phase7_preset_v2/saturation_screen.json
+      was not applicable here.
+
+
+      This is a thumbnail-consistent, expected outcome of the crop preset interacting with a two-piece
+      garment concept — not a defect that was missed at low resolution. Full-resolution inspection across
+      all seeds confirms the original "not a defect" call. Hold does not hold as a genuine defect.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_attentive_calm_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 4
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [pass] case_198: transit_concourse + three_quarter_still + portrait_compressed + attentive_calm:
+      column backdrop, arms-crossed three-quarter turned stance, tight compressed portrait crop, focused
+      calm expression; black notch-lapel vest visible (pleated skirt itself is out of frame, expected
+      given the compressed crop), and warm low-sun patches read on the concourse floor/glass.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_composed_direct_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_199: UNREADABLE (occlusion, not resolution): transit_concourse + three_quarter_still
+      (torso angled, arms crossed) + portrait_compressed + warm_low_sun (visible warm rim light on shoulder/hair)
+      + composed_direct (direct engaged gaze) all confirmed, but wardrobe=vest_pleated_skirt only shows
+      the vest — chest-up crop excludes the skirt entirely so it cannot be verified.
+  ? preset_transit_concourse_three_quarter_still_vest_pleated_skirt_portrait_compressed_warm_low_sun_quiet_reflective_complete_scene
+  : metrics:
+      prompt_adherence: 4
+      style_fidelity: 2
+      stability: 4
+      character_quality: 4
+      composition_quality: 4
+      compatibility: 4
+      distinctiveness: 4
+      prompt_efficiency: 4
+    critical_failure: false
+    notes: >-
+      [hold] case_200: Unreadable: vest_pleated_skirt cannot be confirmed — portrait_compressed crop cuts
+      off at the waist/chest, so the pleated skirt is out of frame even though the vest and three_quarter_still
+      pose are visible.
