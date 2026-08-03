@@ -1,0 +1,42 @@
+{
+  "case_010": [
+    "pass",
+    "coastal_overlook + clear_depth_layers + faint_depth_haze + warm_neutral: railing/ocean/horizon give distinct depth layers, horizon carries a soft hazy glow while the subject plane stays clear, and the palette is a consistent warm cream/beige throughout."
+  ],
+  "case_050": [
+    "hold",
+    "covered_market + centered_opening + delicate_particles + deep_neutral_accent: market-stall corridor with a correct centered symmetric opening, but all three renders are fully desaturated (pixel sat max ~10/255, no hue anywhere) — confirmed color_continuity defect (missing the required 'one controlled color accent'), not a resolution issue; delicate_particles cannot be read at this density."
+  ],
+  "case_090": [
+    "hold",
+    "forest_clearing + centered_opening + delicate_particles + deep_neutral_accent: symmetric tree-flanked clearing structure is correct, but the scene is completely monochrome (max sat ~10/255) with no color accent on the concrete/wood elements — confirmed color_continuity defect; particle haze unreadable at this density."
+  ],
+  "case_130": [
+    "hold",
+    "glasshouse_corridor + leading_path + delicate_particles + deep_neutral_accent: leading walkway through a plant-filled greenhouse is correct, but despite the greenery the render is fully desaturated (max sat ~13/255, no green showing at all) — confirmed color_continuity defect; particles unreadable at this density."
+  ],
+  "case_170": [
+    "hold",
+    "library_room + low_horizon + delicate_particles + deep_neutral_accent: low-horizon library interior is correct, and the _1001 tile does carry a warm wood-shelf accent (sat ~34/255), but the _2002 and _3003 tiles are fully desaturated (sat ~4/255) — color_continuity only expressed in 1 of 3 renders, majority defect."
+  ],
+  "case_210": [
+    "hold",
+    "museum_hall + elevated_horizon + delicate_particles + deep_neutral_accent: elevated gallery vantage over a lower level is correct, but all three renders are fully desaturated (max sat ~8/255) with no color accent anywhere — confirmed color_continuity defect."
+  ],
+  "case_250": [
+    "hold",
+    "riverbank_path + clear_depth_layers + delicate_particles + deep_neutral_accent: path/reed/river depth layering is correct, but the scene is fully monochrome (max sat ~12/255) despite natural foliage/water that would normally carry hue — confirmed color_continuity defect."
+  ],
+  "case_290": [
+    "hold",
+    "rooftop_terrace + flanking_verticals + delicate_particles + deep_neutral_accent: tree/pole verticals flanking the subject are correct, but all three renders are fully desaturated (max sat ~11/255) with no color accent — confirmed color_continuity defect."
+  ],
+  "case_330": [
+    "hold",
+    "stone_courtyard + flanking_verticals + delicate_particles + deep_neutral_accent: tree and iron-frame verticals flanking the subject are correct, but all three renders are fully desaturated (max sat ~10/255) with no color accent — confirmed color_continuity defect."
+  ],
+  "case_370": [
+    "pass",
+    "transit_concourse + centered_opening + faint_depth_haze + warm_neutral: repeated columns, matte flooring and a centered distant entrance match the concourse description, soft haze sits near the far doorway while the subject stays clear, and the palette is a consistent warm tan/beige."
+  ]
+}

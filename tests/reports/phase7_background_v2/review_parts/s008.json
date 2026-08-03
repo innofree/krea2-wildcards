@@ -1,0 +1,42 @@
+{
+  "case_008": [
+    "hold",
+    "coastal_overlook + clear_depth_layers + faint_depth_haze read fine (stone planters/railing foreground, hazy sea horizon background), but deep_neutral_accent (spec: deep neutral surroundings lifted by ONE controlled color accent) is not met — image is rendered as full monochrome/grayscale with zero color anywhere, not a desaturated-plus-accent grade. Real defect, not a resolution issue."
+  ],
+  "case_048": [
+    "pass",
+    "covered_market + centered_opening + crisp_visibility + warm_neutral: market arcade with closed stall counters, bright centered opening at corridor end, sharp/no-haze rendering, warm cream/tan palette throughout."
+  ],
+  "case_088": [
+    "pass",
+    "forest_clearing + centered_opening + crisp_visibility + warm_neutral: tall trunks with visible depth, pale pavilion opening centered behind subject framing the forest, crisp sharp trees, warm cream/beige tones."
+  ],
+  "case_128": [
+    "pass",
+    "glasshouse_corridor + leading_path + crisp_visibility + warm_neutral: glass-framed structure with layered foliage, railed walkway leading toward subject, crisp detail, warm beige/tan grade."
+  ],
+  "case_168": [
+    "pass",
+    "library_room + low_horizon + crisp_visibility + warm_neutral: tall shelves and warm wood with broad aisles, low stable horizon leaving a clean upper background above the shelving, crisp rendering, warm neutral palette."
+  ],
+  "case_208": [
+    "pass",
+    "museum_hall + elevated_horizon + crisp_visibility + warm_neutral: pale stone hall with deep doorways and sparse pedestal displays, moderately elevated horizon revealing floor-tile pattern without crowding the figure, crisp, warm stone tones."
+  ],
+  "case_248": [
+    "pass",
+    "riverbank_path + clear_depth_layers + crisp_visibility + warm_neutral: reeds and calm water with distinct foreground rail/path, mid-ground water, and background bank layers, crisp sharp detail, warm beige grade."
+  ],
+  "case_288": [
+    "pass",
+    "rooftop_terrace + flanking_verticals + crisp_visibility + warm_neutral: parapet terrace with distant skyline, tree trunks and columns paired flanking the subject with silhouette clear, crisp controlled contrast, warm cream palette."
+  ],
+  "case_328": [
+    "pass",
+    "stone_courtyard + flanking_verticals + crisp_visibility + warm_neutral: textured stone walls with restrained planting, paired trees/shelf structures flanking the subject, crisp detail, warm cream/tan tones."
+  ],
+  "case_368": [
+    "hold",
+    "transit_concourse + centered_opening read fine (repeated columns, centered far opening); faint_depth_haze plausible in the pale far background, but deep_neutral_accent again fails — this frame is also full monochrome/grayscale with no color accent anywhere, same real defect as case_008, not a resolution limitation."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_013": [
+    "hold",
+    "coastal_overlook + elevated_horizon + clear_still read fine (cliff railing, calm ocean, clear sky), but natural_green_earth color_continuity fails: pixel check shows the whole tile is near-zero saturation (max R-G/G-B channel diff ~10-13 vs 40-120+ on every other row of this sheet) — the image renders essentially black-and-white with no green/earth coloring. Real defect, not a resolution issue."
+  ],
+  "case_053": [
+    "pass",
+    "covered_market + centered_opening + faint_depth_haze + cool_mineral: market stall corridor with counters/shutters, view centered on a softly bright opening at the far end, blue-green/gray cool-toned stone and woodwork throughout."
+  ],
+  "case_093": [
+    "pass",
+    "forest_clearing + centered_opening + faint_depth_haze + cool_mineral: tree trunks framing a centered clearing/path opening, visible soft atmospheric haze fading the far trees, muted cool blue-gray color grade over the greenery."
+  ],
+  "case_133": [
+    "pass",
+    "glasshouse_corridor + leading_path + faint_depth_haze + cool_mineral: glass-and-metal greenhouse structure with a stone path leading back into the frame, soft bright haze glowing through the glass at the rear, cool gray-blue cast over the foliage."
+  ],
+  "case_173": [
+    "pass",
+    "library_room + faint_depth_haze + cool_mineral: bookshelves and reading walkway clearly present, windows at the end glow softly/hazy, cool gray-green-blue palette dominates floor/railings/planters."
+  ],
+  "case_213": [
+    "pass",
+    "museum_hall + faint_depth_haze + cool_mineral: marble museum hall with pedestals/artifacts, faint soft haze in the rear archway, cool green-gray marble tones throughout."
+  ],
+  "case_253": [
+    "pass",
+    "riverbank_path + clear_depth_layers + faint_depth_haze + cool_mineral: distinct foreground stones/midground river bend/background reed-lined banks give clear layered depth, background softly hazy under bright sky, cool muted gray-green color grade."
+  ],
+  "case_293": [
+    "pass",
+    "rooftop_terrace + flanking_verticals + faint_depth_haze + cool_mineral: tall tree trunks/columns flank the subject on both sides, hazy city skyline visible behind the railing, cool green-gray mineral tones on the terrace surfaces."
+  ],
+  "case_333": [
+    "pass",
+    "stone_courtyard + flanking_verticals + faint_depth_haze + cool_mineral: stacked-stone walls and benches flank both sides with tree trunks framing center, bright hazy glow visible between the trunks at the back, cool blue-green stone coloring."
+  ],
+  "case_373": [
+    "pass",
+    "transit_concourse + leading_path + clear_still + natural_green_earth: station concourse with pillars/benches, path leads straight back through the corridor, clear still quiet air with no haze, olive-green/earthy brown tones in path, planters, and wardrobe."
+  ]
+}

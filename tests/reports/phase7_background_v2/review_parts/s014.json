@@ -1,0 +1,42 @@
+{
+  "case_014": [
+    "pass",
+    "coastal_overlook + elevated_horizon + clear_still + warm_neutral: cliffside overlook with railing/pergola over the sea, horizon line set high in frame, clear calm sky/water with no haze, warm cream-tan color cast throughout (confirmed colored, not desaturated)."
+  ],
+  "case_054": [
+    "hold",
+    "covered_market + centered_opening + faint_depth_haze + deep_neutral_accent: shuttered market corridor with a centered bright opening ahead and soft hazy light at the far end (those three read fine), but the frame renders essentially fully desaturated/monochrome with no accent color visible anywhere - real defect on color_continuity, not a legibility issue, but flagging for full-res confirmation since a compositing-only grayscale bug is possible."
+  ],
+  "case_094": [
+    "hold",
+    "forest_clearing + centered_opening + faint_depth_haze + deep_neutral_accent: tree-lined clearing path centered on an opening with visible atmospheric mist/glow through the trees (matches), but the image is essentially grayscale - no deep_neutral_accent color visible - real defect, flagged for full-res confirmation."
+  ],
+  "case_134": [
+    "hold",
+    "glasshouse_corridor + leading_path + faint_depth_haze + deep_neutral_accent: greenhouse aisle with diagonal railings leading forward and soft hazy glow through the glass roof (matches), but the frame is fully monochrome with no accent color - real defect, flagged for full-res confirmation."
+  ],
+  "case_174": [
+    "hold",
+    "library_room + low_horizon + faint_depth_haze + deep_neutral_accent: bookshelf aisle with soft window haze (matches air_character); color is essentially absent aside from incidental warm wood-brown material, no deliberate deep_neutral_accent visible - real defect, flagged for full-res since some measurable warmth is present and worth a closer look."
+  ],
+  "case_214": [
+    "hold",
+    "museum_hall + elevated_horizon + faint_depth_haze + deep_neutral_accent: gallery hall with pedestals/artifacts and soft ambient light (place/air plausible), but frame is monochrome with no accent color - real defect, flagged for full-res confirmation."
+  ],
+  "case_254": [
+    "hold",
+    "riverbank_path + clear_depth_layers + faint_depth_haze + deep_neutral_accent: clear foreground/reed-midground/background-structure layering along the water with a hazy bright sky softening the far bank (matches layout+air), but image is fully desaturated with no accent color - real defect, flagged for full-res confirmation."
+  ],
+  "case_294": [
+    "hold",
+    "rooftop_terrace + flanking_verticals + faint_depth_haze + deep_neutral_accent: tree trunks/poles flanking the subject with a hazy city skyline behind (matches layout+air), but frame is monochrome with no accent color visible - real defect, flagged for full-res confirmation."
+  ],
+  "case_334": [
+    "hold",
+    "stone_courtyard + flanking_verticals + faint_depth_haze + deep_neutral_accent: trellis/rail structures flanking the subject in a stone courtyard with soft diffuse light (matches layout+air), but image is fully desaturated with no accent color - real defect, flagged for full-res confirmation."
+  ],
+  "case_374": [
+    "pass",
+    "transit_concourse + leading_path + clear_still + warm_neutral: covered concourse walkway with columns/railings leading back, clear bright daylight with no haze, warm tan/beige color cast throughout (confirmed colored, not desaturated)."
+  ]
+}

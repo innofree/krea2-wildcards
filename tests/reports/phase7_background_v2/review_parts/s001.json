@@ -1,0 +1,42 @@
+{
+  "case_001": [
+    "hold",
+    "coastal_overlook + clear_depth_layers + clear_still read fine (fence/path foreground, sea horizon background, no haze), but color_continuity=deep_neutral_accent fails: the frame is rendered essentially full grayscale (measured RGB channel spread ~1, vs ~5-8 on neighboring cool_mineral rows) — a desaturation defect, not a neutral-with-accent grade."
+  ],
+  "case_041": [
+    "pass",
+    "covered_market + centered_opening + clear_still + cool_mineral: market stall corridor with a bright centered archway opening beyond, clear air, consistent cool blue-gray cast on stalls and stone floor."
+  ],
+  "case_081": [
+    "pass",
+    "forest_clearing + centered_opening + clear_still + cool_mineral: tree-ringed clearing with a centered structural opening to the woods beyond, clear still air, strong cool blue-gray color grade throughout."
+  ],
+  "case_121": [
+    "pass",
+    "glasshouse_corridor + leading_path + clear_still + cool_mineral: metal-framed glasshouse with a walkway leading straight back between benches/plants, clear air, cool bluish-gray cast."
+  ],
+  "case_161": [
+    "pass",
+    "library_room + low_horizon + clear_still + cool_mineral: bookshelf-lined room with mezzanine railing sitting low in frame, clear air, overall cool-gray ambient grade despite warm wood shelving objects."
+  ],
+  "case_201": [
+    "pass",
+    "museum_hall + elevated_horizon + clear_still + cool_mineral: marble gallery with wall-mural horizon line set high, clear still air, cool green-gray marble tones dominate."
+  ],
+  "case_241": [
+    "pass",
+    "riverbank_path + clear_depth_layers + clear_still + cool_mineral: distinct foreground path/rail, midground river bend, background fields form clear depth layers; clear air; cool blue-gray cast."
+  ],
+  "case_281": [
+    "pass",
+    "rooftop_terrace + flanking_verticals + clear_still + cool_mineral: tree trunk and pillar flank the figure on rooftop terrace with city skyline, clear air, cool green-gray concrete cast."
+  ],
+  "case_321": [
+    "pass",
+    "stone_courtyard + flanking_verticals + clear_still + cool_mineral: stone wall and tree flank the figure symmetrically with benches either side, clear air, cool gray-green stone tones."
+  ],
+  "case_361": [
+    "pass",
+    "transit_concourse + centered_opening + crisp_visibility + cool_mineral: pillared concourse with a bright centered doorway opening, sharp crisp visibility, cool teal-gray color grade."
+  ]
+}
