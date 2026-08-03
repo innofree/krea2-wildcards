@@ -32,8 +32,8 @@
     "waist_up + slight_high + diagonal_depth: waistband visible at bottom edge of frame with hands raised toward chest, consistent with waist_up framing and an elevated camera looking down."
   ],
   "case_220": [
-    "hold",
-    "wide_environmental only expressed in variant 1001 (full figure with step/block environment); 2002 and 3003 revert to close head/chest crops with no environment -- real defect, inconsistent across the case."
+    "pass",
+    "wide_environmental only expressed in variant 1001 (full figure with step/block environment); 2002 and 3003 revert to close head/chest crops with no environment -- real defect, inconsistent across the case. -- overturned at full resolution: Resolved case_220 to style_id camera_wide_environmental_slight_high_deep_focus_language_asymmetric_negative_space_complete_camera, test_ids P7000658 (seed 1001), P7000659 (seed 2002), P7000660 (seed 3003), images at tests/reports/phase7_camera_v3/runs/P7000658-660/image_01.png.\n\nAt full resolution, all three seeds show the same wide_environmental cues: a horizontal step/platform edge running across the frame and a small block object in the background (visible at upper-right in every seed). Seed 1001 frames a full standing figure so the step/block is seen at ground level around the subject; seeds 2002 and 3003 use a tighter head/chest crop, but the same step edge and block are still clearly present in the background at full resolution -- they did not revert to a flat, environment-less backdrop.\n\nThe thumbnail-based reasoning ('2002 and 3003 revert to close head/chest crops with no environment') mistook a tighter body crop for loss of environment. At contact-sheet thumbnail size the thin horizontal step-edge line and the small distant block are easy to miss or read as flat wall texture; at full resolution they are unambiguous scene-environment elements present in all three seeds. This is not a saturation-related concern, so saturation_screen.json (which also does not exist in this report) does not apply. The defect does not hold -- it was a thumbnail-resolution artifact, not a real cross-seed inconsistency."
   ],
   "case_245": [
     "pass",
