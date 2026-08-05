@@ -112,7 +112,15 @@ const manifest = await agent(
   },
 )
 
-const sheets = (manifest?.sheets ?? []).filter(Boolean)
+// input.sheets restricts this run to a batch, e.g. {"sheets":[1,20]} for sheets
+// 1-20 inclusive, or {"sheets":[21,40]} for the rest. Large axes (400+ cases,
+// 40 sheets) hit the org's spend limit hard enough mid-run to fail sheets that
+// never even got reviewed once, not just the verification pass -- splitting the
+// review into batches keeps one failure from taking out the whole axis.
+const [batchStart, batchEnd] = Array.isArray(input.sheets) ? input.sheets : [null, null]
+const sheets = (manifest?.sheets ?? [])
+  .filter(Boolean)
+  .filter((s) => batchStart == null || (s.sheet_index >= batchStart && s.sheet_index <= batchEnd))
 if (!sheets.length) throw new Error(`no sheets found in ${reviewDir}/manifest.json`)
 log(`${sheets.length} sheet(s) to review for ${axis} ${rev}`)
 
