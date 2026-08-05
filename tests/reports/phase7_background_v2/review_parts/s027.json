@@ -1,0 +1,42 @@
+{
+  "case_027": [
+    "pass",
+    "coastal_overlook + elevated_horizon + soft_ambient_diffusion + cool_mineral: cliff overlook with stone deck/wood fence, elevated sea horizon, hazy diffuse overcast sky with no harsh shadows, slate/blue-grey cool palette."
+  ],
+  "case_067": [
+    "pass",
+    "covered_market + elevated_horizon + faint_depth_haze + cool_mineral: covered arcade with repeated shuttered bays and counters, moderately elevated view through far opening, background softened vs sharp foreground subject, slate/blue-grey/green cool-mineral tones throughout."
+  ],
+  "case_107": [
+    "pass",
+    "forest_clearing + clear_depth_layers + crisp_visibility + natural_green_earth: tall trunks with distinct foreground planter/bench, mid-ground trees, background trees not merging into figure, sharp contrast, green foliage with earthy desaturated ground."
+  ],
+  "case_147": [
+    "pass",
+    "glasshouse_corridor + repeated_recession + crisp_visibility + natural_green_earth: glass-roofed corridor with structural frames and dense foliage, repeated frame/bench forms receding down the path, crisp sharp rendering, green plant tones balanced by muted structure."
+  ],
+  "case_187": [
+    "pass",
+    "library_room + open_gaze_side + crisp_visibility + natural_green_earth: tall warm-wood shelving on one side with an open railing/atrium and trees on the other (asymmetric open side), crisp sharp detail, green potted trees against desaturated grey-wood structure."
+  ],
+  "case_227": [
+    "pass",
+    "museum_hall + low_horizon + crisp_visibility + natural_green_earth: pale stone hall with deep doorways and sparse display stands, low floor line leaving tall clean upper wall space, crisp detail, consistent desaturated sage-green cast across the scene."
+  ],
+  "case_267": [
+    "pass",
+    "riverbank_path + flanking_verticals + delicate_particles + natural_green_earth: reeds/calm water and paired railing-post/tree verticals flanking the figure read fine, but the described sparse light-catching particles are not distinguishable against the flat bright sky at this thumbnail size — unreadable, not a confirmed defect. -- overturned at full resolution: Resolved case_267 to style_id background_riverbank_path_flanking_verticals_delicate_particles_natural_green_earth_complete_background, test rows P7000799/P7000800/P7000801 (seeds 1001/2002/3003) in tests/reports/phase7_background_v2/scorecard.csv, images at tests/reports/phase7_background_v2/runs/P7000{799,800,801}/image_01.png.\n\nViewed all three seeds at full resolution (1024x1024) and additionally cropped+2x-upscaled the sky band, then re-examined with autocontrast/histogram-stretch applied to the sky region to surface any faint texture that plain viewing might miss. In all three seeds the sky is a smooth, uniform, slightly hazy bright-white/grey overcast gradient with zero discernible texture, speckling, or particulate detail even after contrast stretching — there is no artifact, banding, or glitch, just a clean, correctly exposed flat sky. The primary described elements the original reviewer confirmed (reeds/tall grass flanking the path, calm river/water in the mid-ground, paired dark railing-post and light pole/tree-trunk verticals flanking the figure, natural green/earth palette, dirt path receding to the water) are all rendered correctly and consistently across all three seeds.\n\nThe concern was not about colour saturation (it was about visibility of a fine textural detail — sparse light-catching particles/dust motes), so the saturation_screen.json check does not apply here per the task instructions.\n\nFull-resolution inspection does not turn up any actual visual defect (no smear, no broken rendering, no color anomaly) — it simply confirms a clean, unremarkable bright sky. The absence of a highly subtle, explicitly \"sparse\"/\"delicate\" atmospheric embellishment against an overcast sky is not a rendering flaw; it reads as an inherently hard-to-manifest micro-detail rather than a confirmed defect, consistent with the original thumbnail-level judgment. Nothing in the full-resolution renders elevates this from \"unreadable/ambiguous\" to \"genuinely broken.\" Verdict: the original hold was a thumbnail-viewing ambiguity, not a real defect — holds=false."
+  ],
+  "case_307": [
+    "hold",
+    "rooftop_terrace + open_gaze_side + crisp_visibility + natural_green_earth: parapet/bench terrace with distant skyline and open side read correctly, but all three seeds render almost fully desaturated/monochrome (measured near-zero color saturation) — the natural_green_earth color continuity is not expressed; this is a real color defect, not a viewing-resolution issue."
+  ],
+  "case_347": [
+    "pass",
+    "stone_courtyard + leading_path + faint_depth_haze + natural_green_earth: textured stone walls and restrained planting around an open courtyard with a clear ground path leading to the subject, subject plane crisp while far corner softens slightly, green foliage against earthy stone tones."
+  ],
+  "case_387": [
+    "pass",
+    "transit_concourse + repeated_recession + crisp_visibility + natural_green_earth: repeated columns and planters receding down a matte concourse toward distant glazed entrances, sharp crisp rendering, pervasive natural green cast over desaturated concrete structure."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_030": [
+    "pass",
+    "coastal_overlook + elevated_horizon + soft_ambient_diffusion + warm_neutral: cliffside overlook with wood railing, sea horizon set high with soft hazy sky, warm cream/beige palette throughout (measured saturation 0.157)."
+  ],
+  "case_070": [
+    "pass",
+    "covered_market + elevated_horizon + faint_depth_haze + warm_neutral: market stall corridor with shutters/counters, soft glowing haze at the far end, warm tan/beige color cast (saturation 0.219)."
+  ],
+  "case_110": [
+    "pass",
+    "REAL DEFECT: forest_clearing + clear_depth_layers visible (layered tree trunks near/mid/far), but color_continuity=deep_neutral_accent is not expressed — image is fully desaturated grayscale (measured saturation 0.016, no accent color at all). -- overturned at full resolution: Resolved case_110 -> style_id background_forest_clearing_clear_depth_layers_delicate_particles_deep_neutral_accent_complete_background -> test_id P7000328 (seeds 1001/2002/3003, test_ids P7000328-P7000330) via tests/reports/phase7_background_v2/review/manifest.json and confirmed in scorecard.csv.\n\nViewed all three seeds at full resolution (tests/reports/phase7_background_v2/runs/P7000328..330/image_01.png). All three do show forest_clearing with clear layered near/mid/far tree trunks, and all three render as essentially desaturated grayscale/taupe with no distinct accent color — so the visual observation in the thumbnail review is accurate as far as it goes.\n\nHowever, no tests/reports/phase7_background_v2/saturation_screen.json file exists for this axis, so I computed mean HSV saturation myself (PIL, resized to 96x96) for case_110 and for the full population of 100 cases sharing the same deep_neutral_accent palette group (matched by 'deep_neutral_accent' in style_id). Result: group median saturation = 0.0186, case_110 (seed 1001) = 0.020, ranking 63rd out of 100 (i.e. slightly ABOVE its own group's median, not below). The large majority of deep_neutral_accent cases across this axis cluster tightly in the 0.011-0.03 saturation range (near-grayscale), with only a handful of outliers reaching 0.10-0.14. So near-total desaturation is the norm for this whole palette group by design, not an anomaly specific to case_110.\n\nPer the task's own criterion (\"Only a value well below its own group's median is evidence\"), case_110 sitting at/above the median means the flagged 'color not expressed' concern is a property of the deep_neutral_accent group as rendered across the entire axis, not a case-specific defect. This is a thumbnail-review artifact (likely the reviewer under/over-estimating what 'deep_neutral_accent' should look like) rather than a genuine outlier defect in case_110 itself."
+  ],
+  "case_150": [
+    "hold",
+    "REAL DEFECT: glasshouse_corridor + repeated_recession visible (repeating benches/rails receding through greenhouse), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.021)."
+  ],
+  "case_190": [
+    "pass",
+    "REAL DEFECT: library_room + open_gaze_side visible (bookshelf corridor with open lateral window view), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.015). -- overturned at full resolution: test_id resolved: style_id background_library_room_open_gaze_side_delicate_particles_deep_neutral_accent_complete_background → scorecard rows P7000568/P7000569/P7000570 (seeds 1001/2002/3003). Opened all three image_01.png at full 1024x1024 resolution: composition matches the case (library bookshelf corridor with an open lateral window/balcony view visible on the right), and all three seeds agree — no disagreement between seeds.\n\nThe reasoning behind the hold was that the render is \"fully desaturated grayscale (saturation 0.015)\" despite deep_neutral_accent being the specified color. But there is no tests/reports/phase7_background_v2/saturation_screen.json file (only phase7_linework_coloring_v2 has one), so I computed the comparison myself: measured mean saturation for this case (~0.019–0.028 across the three seeds, consistent with the thumbnail's 0.015) and then measured mean saturation for all 100 distinct style_ids in the same deep_neutral_accent color group (300 images total, averaged per style across its 3 seeds).\n\nResult: the deep_neutral_accent group's own median mean-saturation is ~0.0189, and this case's value (~0.0188) sits almost exactly at that median (rank 48/100, with the group spanning 0.011 to 0.127). This is not \"well below its own group's median\" — it IS the group median. Per the review guidance (the airy_pastel precedent: a low absolute number is not a defect if it matches the color family's design), deep_neutral_accent is evidently a muted/near-monochrome neutral tone family by design, and this case's saturation is entirely typical for that family, not anomalously low.\n\nSo the \"defect\" was an artifact of judging absolute saturation from a thumbnail without the group-relative context — the scene content (library_room, open_gaze_side) is rendered correctly, and the color is consistent with how deep_neutral_accent renders across the whole axis. This does not hold as a real defect."
+  ],
+  "case_230": [
+    "hold",
+    "REAL DEFECT: museum_hall + low_horizon composition visible (tall gallery walls above a low eye-line), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.011), confirmed on 8x zoom of wall/background."
+  ],
+  "case_270": [
+    "pass",
+    "riverbank_path + flanking_verticals + faint_depth_haze + natural_green_earth: river path flanked by wooden posts, soft hazy far bank, clearly green/earthy natural color palette (saturation 0.115)."
+  ],
+  "case_310": [
+    "hold",
+    "REAL DEFECT: rooftop_terrace + open_gaze_side visible (open skyline view past furniture), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.010)."
+  ],
+  "case_350": [
+    "hold",
+    "REAL DEFECT: stone_courtyard + leading_path visible (stone path leading through courtyard), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.017)."
+  ],
+  "case_390": [
+    "hold",
+    "REAL DEFECT: transit_concourse + repeated_recession visible (repeating columns/rails receding down concourse), but deep_neutral_accent color is absent — fully desaturated grayscale render (saturation 0.018)."
+  ]
+}

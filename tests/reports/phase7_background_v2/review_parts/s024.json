@@ -1,0 +1,42 @@
+{
+  "case_024": [
+    "pass",
+    "coastal_overlook + elevated_horizon + faint_depth_haze all visible (railing overlook, high horizon line, soft hazy sea); but deep_neutral_accent color_continuity fails — pixel check confirms R=G=B across the whole frame (all three seeds are fully desaturated grayscale, not merely a muted neutral palette), a real rendering defect not seen on any other row of this sheet. -- overturned at full resolution: test_id resolved via manifest: case_024 → style_id \"background_coastal_overlook_elevated_horizon_faint_depth_haze_deep_neutral_accent_complete_background\" → items P7000070/71/72 (seeds 1001/2002/3003).\n\nFull-resolution inspection of all three image_01.png files (1024x1024) confirms coastal_overlook (railing overlook over the sea), elevated_horizon (high horizon line), and faint_depth_haze (soft hazy sea/sky) are all correctly rendered, matching the thumbnail's positive read.\n\nThe color_continuity concern does not hold at full resolution. A pixel-level check (no saturation_screen.json exists for this run, so the raw-pixel test was used instead) shows R, G, B channels are NOT identical: max per-pixel channel difference is 14-20 (of 255) across the three seeds, with 15-29% of pixels showing a channel diff >2, and HSV saturation reaching up to 1.0 in localized regions (mean saturation 0.018-0.024, median 0.008-0.012 per seed). This is a subtle warm-toned muted palette, not literal R=G=B grayscale.\n\nCritically, this saturation profile is not anomalous for this sheet: four other deep_neutral_accent cases from the same manifest (case_001, case_004, case_008, case_012 → P7000001/P7000010/P7000022/P7000034) were sampled and show essentially identical saturation statistics (mean 0.020-0.026, median 0.008-0.012). So case_024 is consistent with — not an outlier from — the rest of the deep_neutral_accent group, contradicting the thumbnail claim that it was \"a real rendering defect not seen on any other row of this sheet.\"\n\nConclusion: this was a thumbnail-compression artifact (JPEG/downscale compression crushing already-low chroma toward apparent gray), not a genuine desaturation defect. The muted neutral look is the deep_neutral_accent palette rendering as designed. Case_024 should be released from hold."
+  ],
+  "case_064": [
+    "pass",
+    "covered_market + elevated_horizon + clear_still + warm_neutral: covered arcade with roller-shutter stalls/counters, corridor vanishing point set high in frame, calm clear air, warm beige/tan cast confirmed (R>G>B ~100/92/81)."
+  ],
+  "case_104": [
+    "pass",
+    "forest_clearing + clear_depth_layers + clear_still + warm_neutral: distinct foreground deck/mid trees/far trees layering, clear calm air, warm cream tones throughout all three seeds."
+  ],
+  "case_144": [
+    "pass",
+    "glasshouse_corridor + repeated_recession + clear_still + warm_neutral: glass conservatory with repeating benches/railings receding down the aisle, clear still air, warm amber-toned foliage/wood background consistent across seeds (clothing color varies but that's a wardrobe attribute, not background color_continuity)."
+  ],
+  "case_184": [
+    "pass",
+    "library_room + open_gaze_side + clear_still + warm_neutral: bookshelf stacks with an open side view to windows/trees, clear still air, warm wood-and-stone tan palette."
+  ],
+  "case_224": [
+    "pass",
+    "museum_hall + low_horizon + clear_still + warm_neutral: gallery hall with pedestals/artifacts, composition line kept low leaving tall wall/ceiling above, clear still air, warm beige stone tones."
+  ],
+  "case_264": [
+    "pass",
+    "riverbank_path + flanking_verticals + clear_still + warm_neutral: posts and bare trees flank the figure on both sides along the river path, calm clear water/air, warm cream tones."
+  ],
+  "case_304": [
+    "pass",
+    "rooftop_terrace + open_gaze_side + clear_still + warm_neutral: rooftop deck opening onto a wide city skyline to the side, clear calm sky, warm cream palette."
+  ],
+  "case_344": [
+    "pass",
+    "stone_courtyard + leading_path + crisp_visibility + warm_neutral: stone-walled courtyard with a stepped stone path leading straight into the frame, sharp crisp rendering, warm tan/beige stone tones."
+  ],
+  "case_384": [
+    "pass",
+    "transit_concourse + repeated_recession + clear_still + warm_neutral: covered colonnade with repeated columns/benches receding down the walkway, clear still air, warm-biased tones confirmed (R>G>B ~103/93/80)."
+  ]
+}

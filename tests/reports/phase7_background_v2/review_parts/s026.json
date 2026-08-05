@@ -1,0 +1,42 @@
+{
+  "case_026": [
+    "pass",
+    "coastal_overlook + elevated_horizon + faint_depth_haze + warm_neutral: cliff-edge overlook with sea horizon at mid-frame, visible atmospheric haze over the water, and overall warm cream/tan tonality (avg saturation ~0.16 vs ~0.02 for the neutral rows)."
+  ],
+  "case_066": [
+    "pass",
+    "covered_market + elevated_horizon + deep_neutral_accent read fine (shuttered stall corridor, bright vanishing point high in frame, desaturated deep tone), but delicate_particles is unreadable — sky/end of corridor is blown to flat white at this thumbnail density, no fine airborne texture visible either way; not a confirmed defect. -- overturned at full resolution: Resolved case_066 (style_id background_covered_market_elevated_horizon_delicate_particles_deep_neutral_accent_complete_background) to test_ids P7000196/197/198 (seeds 1001/2002/3003) via tests/reports/phase7_background_v2/review/manifest.json, confirmed against scorecard.csv rows 197-199, and opened all three tests/reports/phase7_background_v2/runs/P700019{6,7,8}/image_01.png at full 1024x1024 resolution.\n\ncovered_market, elevated_horizon, and deep_neutral_accent all read correctly in every seed: shuttered market stalls/roof structure line both sides of a corridor, the vanishing point/sky is high and bright in frame, and the whole image is desaturated to a deep neutral grayscale.\n\nFor delicate_particles, I cropped the bright vanishing-point/sky region in each seed and applied progressive contrast stretching (including an extreme 228-255 stretch) to try to pull out any latent airborne texture. Result was consistent across all three seeds: the region is genuinely blown to near-flat white (pixel values clustering 246-251, std ~4-6 within the bright mask) with only generic uniform grain/noise visible under extreme stretch — no discrete dust motes, streaks, or any texture that specifically reads as \"airborne particles\" versus plain sensor/render noise. There is no saturation_screen.json in tests/reports/phase7_background_v2/, so the saturation check step doesn't apply (concern here was texture readability, not color saturation).\n\nThis is the same inconclusive state the thumbnail reviewer found, not a new full-resolution discovery of a genuine defect: the highlight blow-out is real (not a downsampling/compression artifact of the thumbnail), but it doesn't confirm delicate_particles is missing or wrong either — it's simply unreadable in that area at any resolution, consistent with plausible real-world backlit-corridor overexposure. Per the task's criteria, holds=true requires a defect genuinely visible at full resolution; here nothing genuinely resolves as a defect, so this reverts to holds=false — a real, expected 'inconclusive from thumbnail, still inconclusive at full res, not a confirmed defect' outcome rather than a failure to find something."
+  ],
+  "case_106": [
+    "pass",
+    "forest_clearing + clear_depth_layers + crisp_visibility + deep_neutral_accent: pine clearing with distinct foreground planter/frame, midground bench, and background tree wall, all rendered sharp with no haze, in desaturated deep-neutral tone."
+  ],
+  "case_146": [
+    "pass",
+    "glasshouse_corridor + repeated_recession + crisp_visibility + deep_neutral_accent: glass-roofed plant corridor with repeating railing/bench units receding toward the back, sharply resolved, desaturated tone."
+  ],
+  "case_186": [
+    "pass",
+    "library_room + open_gaze_side + crisp_visibility + deep_neutral_accent: bookshelf stacks flank one side while windows/trees open up the other side, crisply rendered, deep-neutral desaturated palette."
+  ],
+  "case_226": [
+    "pass",
+    "museum_hall + low_horizon + crisp_visibility + deep_neutral_accent: tall gallery walls with pedestals/display cases, generous ceiling space above a low sightline, sharp rendering, desaturated tone."
+  ],
+  "case_266": [
+    "hold",
+    "riverbank_path + flanking_verticals + deep_neutral_accent confirmed (fence posts/wood post flanking subject beside reeds and water, desaturated tone), but delicate_particles unreadable — sky is flat blown-out white at this density, can't confirm fine airborne particles present or absent."
+  ],
+  "case_306": [
+    "pass",
+    "rooftop_terrace + open_gaze_side + crisp_visibility + deep_neutral_accent: terrace railing with open city-skyline view to the side, buildings crisply resolved, desaturated deep-neutral tone."
+  ],
+  "case_346": [
+    "pass",
+    "stone_courtyard + leading_path + faint_depth_haze + deep_neutral_accent: stone-walled courtyard with a railed path leading toward the building, back wall slightly softer/lighter than foreground consistent with faint haze at short range, desaturated tone."
+  ],
+  "case_386": [
+    "pass",
+    "transit_concourse + repeated_recession + crisp_visibility + deep_neutral_accent: station concourse with repeating columns/benches receding past silhouetted figures, sharply resolved, desaturated tone."
+  ]
+}

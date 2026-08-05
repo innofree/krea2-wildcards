@@ -1,0 +1,42 @@
+{
+  "case_028": [
+    "hold",
+    "coastal_overlook + elevated_horizon + soft_ambient_diffusion pass (cliff overlook, railing, sea horizon mid-frame, soft diffuse light), but deep_neutral_accent fails: image is fully desaturated grayscale (channel diffs <1/255) with zero controlled color accent, a real defect not a resolution issue."
+  ],
+  "case_068": [
+    "pass",
+    "covered_market + elevated_horizon + faint_depth_haze pass (arcade with rolling shutters/benches, elevated view of surface pattern, hazy far end), but deep_neutral_accent fails: fully monochrome image (channel diffs ~1/255), no color accent present, a real defect. -- overturned at full resolution: Resolved case_068 to style_id background_covered_market_elevated_horizon_faint_depth_haze_deep_neutral_accent_complete_background, test_ids P7000202/203/204 (seeds 1001/2002/3003). Viewed all three seeds at full resolution: all show the covered-market arcade with rolling shutters, benches, elevated view of the paved surface pattern, and a hazy far end — covered_market, elevated_horizon, and faint_depth_haze factors clearly pass, matching the thumbnail review.\n\nFor deep_neutral_accent, the images are indeed near-monochrome (measured HSV mean saturation 0.032-0.044, mean RGB channel diffs ~1.0-1.5/255), consistent with the thumbnail's \"fully monochrome\" observation. However, tests/reports/phase7_background_v2/saturation_screen.json does not exist, so I built the comparison myself: I sampled 6 other deep_neutral_accent cases spanning different scenes (case_001 coastal_overlook, case_042 covered_market/centered_opening, case_082 forest_clearing, case_122 glasshouse_corridor, case_162 library_room, case_202 museum_hall, case_362 transit_concourse — 21 renders total) and computed the same mean-saturation metric. The group median is ~0.028 (mean ~0.041, with one scene — library_room — running notably higher at 0.08-0.15). case_068's values (0.032, 0.044, 0.038) sit at or above this group median, not below it.\n\nThis means the near-grayscale look is how the deep_neutral_accent factor renders across the whole axis regardless of scene — it is the intended low-saturation \"deep neutral\" aesthetic, not a case-specific defect. case_068 is not an outlier; if anything it is slightly more saturated than the group's typical case. The thumbnail reviewer's \"no color accent, real defect\" call was a thumbnail-scale misread of a factor-wide, by-design characteristic — exactly the kind of thumbnail artifact the resolution protocol is meant to catch. Holds=false: case_068 should be released from hold."
+  ],
+  "case_108": [
+    "pass",
+    "forest_clearing + clear_depth_layers + crisp_visibility + warm_neutral: tall trunks with layered fore/mid/background depth, sharp clear detail, warm cream/wood palette (R>G>B cast confirmed)."
+  ],
+  "case_148": [
+    "pass",
+    "glasshouse_corridor + repeated_recession + crisp_visibility + warm_neutral: glass-roofed corridor with repeated posts/benches receding into distance, sharp detail, warm cream/brown tones."
+  ],
+  "case_188": [
+    "pass",
+    "library_room + open_gaze_side + crisp_visibility + warm_neutral: bookshelves on one side, open railed sightline to the side with a tree, crisp detail, warm wood/stone tones."
+  ],
+  "case_228": [
+    "pass",
+    "museum_hall + low_horizon + crisp_visibility + warm_neutral: stone-walled hall with pedestal displays, low floor line emphasizing tall clean upper walls, crisp detail, warm cream stone palette."
+  ],
+  "case_268": [
+    "hold",
+    "riverbank_path + flanking_verticals + warm_neutral pass (reed-lined path, tree/post flanking subject on both sides, cream tones), but delicate_particles (fine suspended specks catching light) cannot be confirmed at this thumbnail density."
+  ],
+  "case_308": [
+    "pass",
+    "rooftop_terrace + open_gaze_side + crisp_visibility + warm_neutral: terrace with skyline visible to the side past railing, clearly resolved distant buildings, warm cream tones."
+  ],
+  "case_348": [
+    "pass",
+    "stone_courtyard + leading_path + faint_depth_haze + warm_neutral: stone-walled courtyard with path leading toward back wall, visible soft haze on distant tree/wall, warm cream/stone palette."
+  ],
+  "case_388": [
+    "pass",
+    "transit_concourse + repeated_recession + crisp_visibility + warm_neutral: covered colonnade with repeated columns/trunks receding into depth, sharp clear detail, warm beige/brown tones."
+  ]
+}

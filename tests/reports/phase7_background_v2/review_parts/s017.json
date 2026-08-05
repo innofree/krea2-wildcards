@@ -1,0 +1,42 @@
+{
+  "case_017": [
+    "hold",
+    "coastal_overlook + elevated_horizon + crisp_visibility pass (overlook with railings, high sea horizon, sharp clear day), but natural_green_earth color_continuity fails: all three variants are essentially fully desaturated/grayscale (measured avg saturation ~0.014 vs ~0.20 for case_377's natural_green_earth render) — real defect, not a resolution-limited read."
+  ],
+  "case_057": [
+    "pass",
+    "covered_market + centered_opening + soft_ambient_diffusion + cool_mineral: wooden market stalls forming a centered aisle with hazy soft-lit opening at the end, cool blue-green muted palette throughout."
+  ],
+  "case_097": [
+    "pass",
+    "forest_clearing + centered_opening + soft_ambient_diffusion + cool_mineral: misty forest with a centered clearing/path between structures, soft diffused light through trees, cool blue-gray cast."
+  ],
+  "case_137": [
+    "pass",
+    "glasshouse_corridor + leading_path + soft_ambient_diffusion + cool_mineral: glass-roofed corridor with plants, a path leading forward through the space, soft hazy light, cool grayish-green tones."
+  ],
+  "case_177": [
+    "pass",
+    "library_room + low_horizon + soft_ambient_diffusion + cool_mineral: bookshelves and a tall glazed corridor with the horizon kept low, emphasizing the tall vertical space above (matches catalog 'low stable horizon that emphasizes vertical space'), soft even light, cool slate/green palette."
+  ],
+  "case_217": [
+    "pass",
+    "museum_hall + elevated_horizon + soft_ambient_diffusion + cool_mineral: marble museum hall with pedestals, moderately elevated horizon revealing floor surface patterns per catalog definition, soft even light, cool slate/blue-green stone tones."
+  ],
+  "case_257": [
+    "pass",
+    "riverbank_path + clear_depth_layers + soft_ambient_diffusion + cool_mineral: stone path with reeds, river bend, and background hills forming distinct depth layers, hazy soft light, cool muted blue-green cast."
+  ],
+  "case_297": [
+    "pass",
+    "rooftop_terrace + flanking_verticals + soft_ambient_diffusion + cool_mineral: rooftop terrace overlooking a city skyline, tree trunks and pillars flanking the figure on both sides, soft hazy twilight light, cool green-gray palette."
+  ],
+  "case_337": [
+    "pass",
+    "stone_courtyard + flanking_verticals + soft_ambient_diffusion + cool_mineral: stone-walled courtyard with tree trunks and vertical wall/bench elements flanking the figure, soft diffused light, cool slate-green stone tones."
+  ],
+  "case_377": [
+    "pass",
+    "transit_concourse + leading_path + crisp_visibility + natural_green_earth: covered station concourse with a centered walkway leading forward, sharp clear visibility (no haze), visible olive/moss green-earth color cast (confirmed higher saturation than case_017's failed render)."
+  ]
+}
